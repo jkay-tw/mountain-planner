@@ -1,46 +1,64 @@
-export async function exportExcel({route, items, rows, startTime, summary, datasetVersion}){
+import {buildTimeline, summarizeDay, edgeActual} from './planner.js';
+
+export async function exportExcel({route, days, defaultCoefficient, datasetVersion}){
   if(!window.ExcelJS) throw new Error('ExcelJS 尚未載入');
-  const wb = new ExcelJS.Workbook();
-  wb.creator = 'Mountain Planner';
-  wb.created = new Date();
-  const ws = wb.addWorksheet('登山行程', {views:[{state:'frozen', ySplit:5}]});
+  const wb=new ExcelJS.Workbook();
+  wb.creator='Mountain Planner';
+  wb.created=new Date();
 
-  ws.mergeCells('A1:I1');
-  ws.getCell('A1').value = `${route.route_name}｜登山行程規劃`;
-  ws.getCell('A1').font = {bold:true,size:18};
-  ws.getCell('A1').alignment = {vertical:'middle'};
-  ws.getRow(1).height = 28;
+  for(let d=0; d<days.length; d++){
+    const day=days[d];
+    const {rows}=buildTimeline(day,defaultCoefficient);
+    const sum=summarizeDay(day,defaultCoefficient);
+    const ws=wb.addWorksheet(`Day ${d+1}`,{views:[{state:'frozen',ySplit:5}]});
+    ws.mergeCells('A1:I1');
+    ws.getCell('A1').value=`Day ${d+1}｜${route.route_name}`;
+    ws.getCell('A1').font={bold:true,size:17};
+    ws.addRow(['出發',day.startTime,'總行程(分)',sum.total,'行進(分)',sum.movement,'休息(分)',sum.rest,'']);
+    ws.addRow(['上河原始(分)',sum.official,'平均上河係數',sum.coefficient ?? '—','手動段(分)',sum.manual,'資料版本',datasetVersion,'']);
+    ws.addRow([]);
+    ws.addRow(['時間','類型','地點 / 事件','規劃時間(分)','上河時間(分)','係數','休息至','來源','備註']);
 
-  ws.addRow(['出發時間',startTime,'資料版本',datasetVersion,'路線狀態',route.status,'資料來源',route.source.publisher,'']);
-  ws.addRow(['上河原始合計',summary.sunriver,'預估步行合計',summary.adjusted,'休息合計',summary.rest,'總行程',summary.total,'分鐘']);
-  ws.addRow([]);
-  const header = ['#','抵達','地點','上河步程(分)','係數','預估步行(分)','休息(分)','離開','上河來源'];
-  ws.addRow(header);
+    for(const r of rows){
+      if(r.type==='rest'){
+        ws.addRow([r.startTime,'休息','休息',r.minutes,'','',r.endTime,'','']);
+      }else{
+        const incoming=r.incoming;
+        const actual=incoming?edgeActual(incoming,defaultCoefficient):'';
+        const coef=incoming?.kind==='official' ? Math.round((actual/incoming.officialMinutes)*100)/100 : '';
+        ws.addRow([
+          r.arrival,
+          r.type==='manual-location'?'手動節點':'上河節點',
+          r.name,
+          incoming?actual:'',
+          incoming?.kind==='official'?incoming.officialMinutes:'',
+          coef,
+          '',
+          incoming?.kind==='official'?route.source.image_url:'',
+          incoming?.kind==='manual'?'手動設定':''
+        ]);
+      }
+    }
 
-  rows.forEach(r => ws.addRow([r.index,r.arrive,r.to,r.minutes,r.coefficient,r.walk,r.rest,r.depart,route.source.image_url]));
+    ws.columns=[{width:10},{width:12},{width:24},{width:15},{width:15},{width:10},{width:11},{width:44},{width:16}];
+    const hr=ws.getRow(5); hr.font={bold:true};
+    hr.eachCell(c=>c.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FFDDE9DF'}});
+    ws.autoFilter={from:'A5',to:'I5'};
+    ws.eachRow((row,n)=>{
+      row.alignment={vertical:'middle'};
+      if(n>=6 && n%2===0) row.eachCell(c=>c.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FFF7F9F7'}});
+    });
+    for(let n=6;n<=ws.rowCount;n++){
+      const c=ws.getCell(n,8);
+      if(c.value){c.value={text:`上河 ${route.route_id}`,hyperlink:route.source.image_url};c.font={color:{argb:'FF315D42'},underline:true};}
+    }
+  }
 
-  const headRow = ws.getRow(5);
-  headRow.font = {bold:true};
-  headRow.alignment = {vertical:'middle'};
-  headRow.height = 22;
-  headRow.eachCell(c=>{c.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FFDDE9DF'}};c.border={bottom:{style:'thin',color:{argb:'FFB7C7BA'}}};});
-
-  [2,3].forEach(n=>{ws.getRow(n).eachCell((c,col)=>{ if(col%2===1) c.font={bold:true}; });});
-  ws.columns = [
-    {width:6},{width:10},{width:22},{width:15},{width:10},{width:16},{width:12},{width:10},{width:48}
-  ];
-  ws.eachRow((row,rowNumber)=>{
-    row.alignment={vertical:'middle'};
-    if(rowNumber>=6 && rowNumber%2===0){ row.eachCell(c=>c.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FFF7F9F7'}}); }
-  });
-  rows.forEach((_,i)=>{const c=ws.getCell(6+i,9); c.value={text:'上河 G06 官方步程圖', hyperlink:route.source.image_url}; c.font={color:{argb:'FF315D42'},underline:true};});
-  ws.autoFilter = {from:'A5',to:'I5'};
-
-  const buf = await wb.xlsx.writeBuffer();
-  const blob = new Blob([buf], {type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = `${route.route_id}_${route.route_name}_行程.xlsx`;
+  const buf=await wb.xlsx.writeBuffer();
+  const blob=new Blob([buf],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download=`${route.route_id}_${route.route_name}_多日行程.xlsx`;
   a.click();
   setTimeout(()=>URL.revokeObjectURL(a.href),1000);
 }
