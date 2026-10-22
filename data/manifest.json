@@ -1,0 +1,12 @@
+{
+  "dataset_version": "0.1.0-prototype",
+  "routes": [
+    {
+      "id": "G06",
+      "name": "白姑大山",
+      "file": "data/routes/G06.json",
+      "status": "checked",
+      "source_url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg"
+    }
+  ]
+}
