@@ -1,0 +1,32 @@
+{
+  "route_id": "G06",
+  "route_name": "白姑大山",
+  "source": {
+    "publisher": "上河文化",
+    "page_url": "https://www.sunriver.com.tw/step2020.htm",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+    "revision": "2020 page / current official image checked 2026-10-22"
+  },
+  "status": "checked",
+  "notes": "Prototype 僅收錄官方步程圖中的步行時間段；停車場以下車行/距離段未納入。正式資料庫仍需人工逐筆最終驗證。",
+  "segments": [
+    {"from":"白姑大山","to":"草青池","minutes":45,"status":"checked"},
+    {"from":"草青池","to":"白姑大山","minutes":55,"status":"checked"},
+    {"from":"草青池","to":"一線天岩壁","minutes":65,"status":"checked"},
+    {"from":"一線天岩壁","to":"草青池","minutes":75,"status":"checked"},
+    {"from":"一線天岩壁","to":"吉他營地","minutes":70,"status":"checked"},
+    {"from":"吉他營地","to":"一線天岩壁","minutes":85,"status":"checked"},
+    {"from":"吉他營地","to":"白姑大山東南峰","minutes":80,"status":"checked"},
+    {"from":"白姑大山東南峰","to":"吉他營地","minutes":60,"status":"checked"},
+    {"from":"白姑大山東南峰","to":"司晏池營地","minutes":50,"status":"checked"},
+    {"from":"司晏池營地","to":"白姑大山東南峰","minutes":60,"status":"checked"},
+    {"from":"司晏池營地","to":"三錐山","minutes":110,"status":"checked"},
+    {"from":"三錐山","to":"司晏池營地","minutes":130,"status":"checked"},
+    {"from":"三錐山","to":"水管路岔路口","minutes":110,"status":"checked"},
+    {"from":"水管路岔路口","to":"三錐山","minutes":160,"status":"checked"},
+    {"from":"水管路岔路口","to":"白姑大山登山口","minutes":25,"status":"checked"},
+    {"from":"白姑大山登山口","to":"水管路岔路口","minutes":25,"status":"checked"},
+    {"from":"白姑大山登山口","to":"停車場","minutes":5,"status":"checked"},
+    {"from":"停車場","to":"白姑大山登山口","minutes":10,"status":"checked"}
+  ]
+}
