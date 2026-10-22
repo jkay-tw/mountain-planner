@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>登山行程快速規劃器</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div>
+        <p class="eyebrow">Mountain Planner Prototype</p>
+        <h1>登山行程快速規劃器</h1>
+        <p class="sub">以上河步程資料為基準，套用個人係數與休息時間，自動產生行程表。</p>
+      </div>
+      <a class="source" href="https://www.sunriver.com.tw/step2020.htm" target="_blank" rel="noreferrer">上河來源</a>
+    </header>
+
+    <section class="card controls">
+      <div class="field">
+        <label for="routeSelect">路線資料</label>
+        <select id="routeSelect"></select>
+      </div>
+      <div class="field">
+        <label for="coefficient">上河係數</label>
+        <input id="coefficient" type="number" value="0.8" min="0.1" max="3" step="0.05" />
+      </div>
+      <div class="field">
+        <label for="startTime">出發時間</label>
+        <input id="startTime" type="time" value="06:00" />
+      </div>
+      <div class="field action-field">
+        <label>&nbsp;</label>
+        <button id="resetBtn" class="secondary">清空行程</button>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card builder">
+        <div class="section-title">
+          <div>
+            <h2>加入路段</h2>
+            <p id="routeMeta" class="muted"></p>
+          </div>
+        </div>
+        <div class="field">
+          <label for="fromSelect">目前位置</label>
+          <select id="fromSelect"></select>
+        </div>
+        <div class="field">
+          <label for="toSelect">下一地點</label>
+          <select id="toSelect"></select>
+        </div>
+        <div class="field">
+          <label for="restMinutes">抵達後休息（分鐘）</label>
+          <input id="restMinutes" type="number" value="0" min="0" step="5" />
+        </div>
+        <button id="addBtn">加入行程</button>
+        <div id="segmentInfo" class="segment-info"></div>
+      </div>
+
+      <div class="card summary">
+        <h2>摘要</h2>
+        <div class="metrics">
+          <div><span>上河原始</span><strong id="sumSunriver">0 分</strong></div>
+          <div><span>預估步行</span><strong id="sumAdjusted">0 分</strong></div>
+          <div><span>休息</span><strong id="sumRest">0 分</strong></div>
+          <div><span>總行程</span><strong id="sumTotal">0 分</strong></div>
+        </div>
+        <button id="exportBtn" class="export">匯出 Excel</button>
+        <p class="hint">Excel 會保留上河原始時間、係數、休息、預估時間與資料來源。</p>
+      </div>
+    </section>
+
+    <section class="card itinerary-card">
+      <div class="section-title">
+        <div>
+          <h2>行程表</h2>
+          <p class="muted">Prototype 僅使用已載入的官方步程資料；未驗證資料不建議用於正式行程。</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th><th>抵達</th><th>地點</th><th>上河步程</th><th>係數</th><th>預估步行</th><th>休息</th><th>離開</th><th>來源</th><th></th>
+            </tr>
+          </thead>
+          <tbody id="itineraryBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
