@@ -180,3 +180,16 @@ test('reviewed identity map has 81 clusters, all 79 exclusions and no contradict
  changed.deniedPairRecords.push({name:'三岔路口',groupA:'南二段',groupB:'馬博拉斯橫斷'});
  assert.throws(()=>verifyCrosswalk(changed),/Denied pair merged/);
 });
+
+test('walking routing refuses a vehicle shortcut and unverified edge',()=>{
+ const r=addRouteIdentity({route_id:'X',nodes:[
+  {id:'a',name:'A'},{id:'b',name:'B'},{id:'c',name:'C'}],
+  segments:[
+   {from:'A',to:'B',minutes:50},
+   {from:'B',to:'C',minutes:50},
+   {from:'A',to:'C',minutes:1,travelMode:'vehicle'},
+   {from:'A',to:'C',minutes:2,verificationStatus:'unverified'}
+  ]});
+ assert.deepEqual(shortestPath(r,'a','c').nodes,['a','b','c']);
+ assert.equal(shortestPath(r,'a','c').minutes,100);
+});
