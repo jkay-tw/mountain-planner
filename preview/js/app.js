@@ -1,11 +1,12 @@
 import {loadManifest,loadRoute} from './data-loader.js';
 import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming} from './planner.js';
 import {validatePlan} from './validation.js';
+import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js';
 import {exportExcel} from './exporter.js';
 
 const $=id=>document.getElementById(id);
 const STORAGE_KEY='mountain-planner.autosave.v1';
-const APP_VERSION='v0.6.2 Preview';
+const APP_VERSION='v0.7.0 Preview';
 const COLLAPSE_KEY='mountain-planner.collapsed-days.v1';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='';
@@ -15,7 +16,7 @@ function buttons(){
   ['undoBtn','floatUndoBtn'].forEach(id=>{if($(id))$(id).disabled=at<1});
   ['redoBtn','floatRedoBtn'].forEach(id=>{if($(id))$(id).disabled=at>=snapshots.length-1});
 }
-async function restore(i){if(i<0||i>=snapshots.length)return;const x=JSON.parse(snapshots[i]);restoring=true;try{if(x.routeId)await loadGroup(x.routeId);else setNoRoute();$('routeSelect').value=x.routeId||'';tripStartDate=x.tripStartDate;$('tripDate').value=tripStartDate;days=x.days;$('dayCount').value=String(days.length);at=i;render();buttons()}finally{restoring=false}}
+async function restore(i){if(i<0||i>=snapshots.length)return;const x=JSON.parse(snapshots[i]);restoring=true;try{if(x.routeId)await loadGroup(x.routeId);else setNoRoute();$('routeSelect').value=x.routeId||'';tripStartDate=x.tripStartDate;$('tripDate').value=tripStartDate;days=migrateDaysToNodeIds(x.days,route);$('dayCount').value=String(days.length);at=i;render();buttons()}finally{restoring=false}}
 const checkMissing=()=>{const n=days.reduce((sum,d)=>sum+missingSegments(d),0);return n===0||confirm('有 '+n+' 個路段未填時間，匯出結果含未完成時間。仍繼續？')};
 
 
@@ -45,7 +46,7 @@ async function init(){
 
   tripStartDate=restored?.tripStartDate||'';
   $('tripDate').value=tripStartDate;
-  days=restored?.days?.length?sanitizeDays(restored.days):[newDay(0)];
+  days=restored?.days?.length?sanitizeDays(migrateDaysToNodeIds(restored.days,route)):[newDay(0)];
   $('dayCount').value=String(days.length);
   bindGlobal();
   render(false);checkpoint();
@@ -54,7 +55,7 @@ async function init(){
 async function loadGroup(id){
   const meta=manifest.routes.find(r=>r.id===id);
   if(!meta){setNoRoute();return}
-  route=await loadRoute(meta.file);
+  route=addRouteIdentity(await loadRoute(meta.file));
   nodes=allNodes(route);
   $('routeMeta').textContent=route.route_id+'｜'+route.route_name+'｜'+route.status;
 }
@@ -143,25 +144,28 @@ function unlinkNextIfEndpointChanges(day){
   const i=days.indexOf(day),next=days[i+1];
   if(next?.linkedStart){next.linkedStart=false;const f=first(next);if(f)f._linkedStart=false}
 }
-function addNode(day,name){
+function addNode(day,nodeId){
   if(!route){alert('請先選擇上河圖');return}
+  const selected=findNodeById(route,nodeId);
+  if(!selected){alert('找不到所選的官方地點');return}
+  const name=selected.name;
   const p=last(day);
   if(p)unlinkNextIfEndpointChanges(day);
   if(!p){
-    day.items.push({id:uid(),type:'location',name,note:'',isPeak:false,hasWater:false,incoming:null});
+    day.items.push({id:uid(),type:'location',name,nodeId,note:'',isPeak:false,hasWater:false,incoming:null});
     return;
   }
   if(p.type==='manual-location'){
     const id=uid();
-    day.items.push({id,type:'location',name,note:'',isPeak:false,hasWater:false,incoming:{kind:'manual',fromId:p.id,toId:id,actualMinutes:null}});
+    day.items.push({id,type:'location',name,nodeId,note:'',isPeak:false,hasWater:false,incoming:{kind:'manual',fromId:p.id,toId:id,actualMinutes:null}});
     return;
   }
-  const path=shortestPath(route,p.name,name);
+  const path=shortestPath(route,p.nodeId,nodeId);
   if(!path){alert('找不到 '+p.name+' → '+name+' 的上河路徑');return}
   path.segments.forEach((s,i)=>day.items.push({
-    id:uid(),type:'location',name:s.to,
+    id:uid(),type:'location',name:s.to,nodeId:s.toId,
     note:'',isPeak:false,hasWater:false,
-    incoming:{kind:'official',from:s.from,to:s.to,officialMinutes:s.minutes,actualMinutes:null,source:route.source.image_url}
+    incoming:{kind:'official',from:s.from,to:s.to,fromNodeId:s.fromId,toNodeId:s.toId,officialMinutes:s.minutes,actualMinutes:null,source:route.source.image_url}
   }));
 }
 
@@ -170,10 +174,10 @@ function connectToPrevious(i){
   const prevEnd=last(days[i-1]),d=days[i];
   if(!prevEnd){d.linkedStart=false;return}
   const f=first(d);
-  if(f&&f.name===prevEnd.name&&f.type===prevEnd.type){
+  if(f&&f.type===prevEnd.type&&(f.type==='location'?f.nodeId&&f.nodeId===prevEnd.nodeId:f.name===prevEnd.name)){
     f.incoming=null;f._linkedStart=true;d.linkedStart=true;
   }else{
-    d.items.unshift({id:uid(),type:prevEnd.type,name:prevEnd.name,note:'',isPeak:!!prevEnd.isPeak,hasWater:!!prevEnd.hasWater,incoming:null,_linkedStart:true});
+    d.items.unshift({id:uid(),type:prevEnd.type,name:prevEnd.name,...(prevEnd.nodeId?{nodeId:prevEnd.nodeId}:{}),note:'',isPeak:!!prevEnd.isPeak,hasWater:!!prevEnd.hasWater,incoming:null,_linkedStart:true});
     d.linkedStart=true;
   }
   normalizeDay(d,route);
@@ -253,12 +257,13 @@ async function importPlan(e){
  const file=e.target.files?.[0];e.target.value='';if(!file)return;
  try{
   const data=validatePlan(JSON.parse(await file.text()),manifest.routes.map(r=>r.id));
-  let loaded=null;if(data.routeId){const m=manifest.routes.find(r=>r.id===data.routeId);loaded=await loadRoute(m.file)}
+  let loaded=null;if(data.routeId){const m=manifest.routes.find(r=>r.id===data.routeId);loaded=addRouteIdentity(await loadRoute(m.file))}
+  const importedDays=sanitizeDays(migrateDaysToNodeIds(data.days,loaded));
   if(days.some(d=>d.items.length)&&!confirm('匯入將取代目前行程，可以使用復原。確定？'))return;
   if(loaded){route=loaded;nodes=allNodes(route);$('routeMeta').textContent=route.route_id+'｜'+route.route_name+'｜'+route.status;$('routeSelect').value=data.routeId}
   else{setNoRoute();$('routeSelect').value=''}
   tripStartDate=data.tripStartDate||'';$('tripDate').value=tripStartDate;
-  days=sanitizeDays(data.days);$('dayCount').value=String(days.length);
+  days=importedDays;$('dayCount').value=String(days.length);
   render();if(data.datasetVersion&&data.datasetVersion!==manifest.dataset_version)alert('資料庫版本不同；已保留檔案中的官方時間快照，請核對。');else toast('行程已匯入');
  }catch(err){alert('匯入失敗：'+err.message)}
 }
@@ -268,7 +273,7 @@ function dayDate(index){
   const d=new Date(tripStartDate+'T00:00:00');d.setDate(d.getDate()+index);
   return String(d.getMonth()+1).padStart(2,'0')+'/'+String(d.getDate()).padStart(2,'0');
 }
-function opts(){return nodes.map(n=>'<option value="'+esc(n)+'">'+esc(n)+'</option>').join('')}
+function opts(){return (route?.nodes||[]).slice().sort((a,b)=>a.name.localeCompare(b.name,'zh-Hant')).map(n=>'<option value="'+esc(n.id)+'">'+esc(n.name)+'</option>').join('')}
 function render(persist=true){
   $('daysContainer').innerHTML=days.map(renderDay).join('');
   bindDays();
