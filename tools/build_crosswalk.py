@@ -26,8 +26,10 @@ def build(input_file,out_dir):
                     if ta and tb:
                         if ta&tb:matches+=1
                         else:conflicts+=1
-            if name in blocked_names:
+            if name=='主北岔路' and {ga,gb}=={'玉山群峰','奇萊'}:
                 status='do_not_merge'
+            elif name in blocked_names and len(shared)>=2 and matches>=2:
+                status='generic_priority_review'
             elif len(shared)>=2 and matches>=2:
                 status='high_priority_review'
             elif shared:status='review'
@@ -37,7 +39,7 @@ def build(input_file,out_dir):
                 shared_neighbors=' / '.join(sorted(shared)),shared_count=len(shared),
                 matching_directed_times=matches,conflicting_directed_times=conflicts,
                 status=status,user_decision='',user_note='',canonical_node_id='',reviewed_by='',evidence_url=''))
-    priority={'do_not_merge':0,'high_priority_review':1,'review':2,'unresolved':3}
+    priority={'generic_priority_review':0,'high_priority_review':1,'review':2,'unresolved':3,'do_not_merge':4}
     rows.sort(key=lambda r:(priority[r['status']],-r['matching_directed_times'],-r['shared_count'],r['name']))
     out=Path(out_dir);out.mkdir(parents=True,exist_ok=True)
     with (out/'cross_group_node_review.csv').open('w',encoding='utf-8-sig',newline='') as f:
