@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "description": "Candidate groups mapped to Sunriver 2020 G02–G20 official chart families, reviewed by official index; supplemental dataset groups have no standalone G number.",
+  "officialIndexURL": "https://www.sunriver.com.tw/step2020.htm",
+  "officialNumberingScope": "G01 is overview and not a discrete detailed walking-line group; G02–G20 encompass 19 chart families.",
+  "mapping": [
+    {
+      "candidateGroup": "玉山群峰",
+      "officialChartId": "G02",
+      "relationship": "direct",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "八通關越嶺",
+      "officialChartId": null,
+      "relationship": "supplemental",
+      "verificationStatus": "supplemental_group_no_standalone_official_chart",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "郡大山",
+      "officialChartId": "G03",
+      "relationship": "subroute",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "西巒大山",
+      "officialChartId": "G03",
+      "relationship": "subroute",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "大霸聖稜武陵四秀",
+      "officialChartId": "G04",
+      "relationship": "alias",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "雪山西南稜",
+      "officialChartId": "G05",
+      "relationship": "alias",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "白姑大山",
+      "officialChartId": "G06",
+      "relationship": "direct",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "北一段",
+      "officialChartId": "G07",
+      "relationship": "direct",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "畢祿羊頭連峰縱走",
+      "officialChartId": "G08",
+      "relationship": "subroute",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "北二段",
+      "officialChartId": "G08",
+      "relationship": "subroute",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "合歡群峰",
+      "officialChartId": "G09",
+      "relationship": "subroute",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "屏風山",
+      "officialChartId": "G09",
+      "relationship": "subroute",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "奇萊",
+      "officialChartId": "G09",
+      "relationship": "subroute",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "太魯閣山列",
+      "officialChartId": "G10",
+      "relationship": "direct",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "能高越嶺",
+      "officialChartId": "G11",
+      "relationship": "direct",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "能高安東軍",
+      "officialChartId": "G12",
+      "relationship": "direct",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "干卓萬群峰",
+      "officialChartId": "G13",
+      "relationship": "direct",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "丹大山列",
+      "officialChartId": "G14",
+      "relationship": "alias",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "丹大東郡",
+      "officialChartId": "G15",
+      "relationship": "direct",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "馬博拉斯橫斷",
+      "officialChartId": "G16",
+      "relationship": "direct",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "南二段",
+      "officialChartId": "G17",
+      "relationship": "direct",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "新康橫斷",
+      "officialChartId": "G18",
+      "relationship": "direct",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "北大武山",
+      "officialChartId": "G20",
+      "relationship": "direct",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    },
+    {
+      "candidateGroup": "南一段",
+      "officialChartId": "G19",
+      "relationship": "direct",
+      "verificationStatus": "official_index_name_mapping_checked",
+      "routingVerified": false
+    }
+  ],
+  "renames": [
+    {
+      "group": "干卓萬群峰",
+      "officialChartId": "G13",
+      "from": "萬里山西峰",
+      "to": "火山",
+      "kind": "display_canonical_name",
+      "userConfirmed": true,
+      "retainSearchAlias": true,
+      "neverChangeOtherGroups": true
+    }
+  ],
+  "supplementalGroups": [
+    {
+      "name": "八通關越嶺",
+      "status": "separate_candidate_collection",
+      "chartId": null,
+      "notes": "Related to routes that can overlap several chart families; no invented official G number. Individual segments require source chart mapping."
+    }
+  ],
+  "publicationGate": "Mapping and aliases alone do not verify walking times or authorize publication."
+}
