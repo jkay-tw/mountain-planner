@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "batch": "G18-east-ridge-01",
+  "recordedDate": "2026-10-27",
+  "scope": "G18 east ridge: 12 additional undirected pairs, represented as 24 directed walking edges",
+  "chartURL": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+  "candidateSource": "user-uploaded hiking-segments JSON",
+  "reviewMethod": "visual comparison against official G18 walk-time chart, each directed segment",
+  "status": "source-checked-preview-only",
+  "pairs": [
+    {
+      "from": "3058公尺峰",
+      "to": "連理西峰前營地",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "status": "visually-checked"
+    },
+    {
+      "from": "連理西峰前營地",
+      "to": "西峰東稜平台",
+      "forwardMinutes": 40,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "status": "visually-checked"
+    },
+    {
+      "from": "西峰東稜平台",
+      "to": "飛機殘骸",
+      "forwardMinutes": 80,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "status": "visually-checked"
+    },
+    {
+      "from": "飛機殘骸",
+      "to": "桃源營地",
+      "forwardMinutes": 60,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "status": "visually-checked"
+    },
+    {
+      "from": "桃源營地",
+      "to": "連理山",
+      "forwardMinutes": 130,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "status": "visually-checked"
+    },
+    {
+      "from": "連理山",
+      "to": "鞍部黑水塘",
+      "forwardMinutes": 65,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "status": "visually-checked"
+    },
+    {
+      "from": "鞍部黑水塘",
+      "to": "新仙山前營地",
+      "forwardMinutes": 45,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "status": "visually-checked"
+    },
+    {
+      "from": "新仙山前營地",
+      "to": "新仙山營地",
+      "forwardMinutes": 20,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "status": "visually-checked"
+    },
+    {
+      "from": "新仙山營地",
+      "to": "新仙山",
+      "forwardMinutes": 1,
+      "reverseMinutes": 1,
+      "travelMode": "walking",
+      "status": "visually-checked"
+    },
+    {
+      "from": "新仙山",
+      "to": "最低鞍部",
+      "forwardMinutes": 70,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "status": "visually-checked"
+    },
+    {
+      "from": "最低鞍部",
+      "to": "新康山",
+      "forwardMinutes": 75,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "status": "visually-checked"
+    },
+    {
+      "from": "新康山",
+      "to": "天宮堡壘",
+      "forwardMinutes": 25,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "status": "visually-checked"
+    }
+  ],
+  "remainingUnverified": "All G18 candidate segments outside audited batches; visual agreement does not establish route passability or up-to-date trail conditions.",
+  "releaseGate": "Preview only until user acceptance; never publish candidate-only edges as official walk time"
+}
