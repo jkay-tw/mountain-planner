@@ -1,5 +1,5 @@
 {
-  "dataset_version": "v0.7.12-global-graph-preview",
+  "dataset_version": "v0.7.13-global-graph-preview",
   "mode": "global-verified-graph-scoped-node-browser-preview",
   "routes": [
     {
@@ -8,6 +8,13 @@
       "file": "data/routes/G06.json",
       "status": "checked",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg"
+    },
+    {
+      "id": "G07",
+      "name": "G07｜北一段（更新版已核對）",
+      "file": "data/routes/G07.preview.json",
+      "status": "source-reviewed-preview",
+      "source_url": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg"
     },
     {
       "id": "G17G18-PREVIEW",
