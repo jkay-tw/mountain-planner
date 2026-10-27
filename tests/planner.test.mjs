@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {edgeActual,buildTimeline,summarizeDay,recalcConnections,canDeleteItem,normalizeDay} from '../js/planner.js';
+import {edgeActual,buildTimeline,summarizeDay,recalcConnections,canDeleteItem,normalizeDay,retargetSplitIncoming} from '../js/planner.js';
 import {validatePlan} from '../js/validation.js';
 const route={source:{image_url:'official'},segments:[
  {from:'A',to:'B',minutes:30},{from:'B',to:'C',minutes:40},
@@ -70,4 +70,14 @@ test('normalization never leaves a later location marked as a second start',()=>
  assert.deepEqual(d.items.map(x=>x.name),['A','B','C']);
  assert.equal(d.items[0].incoming,null);
  assert.ok(d.items.slice(1).every(x=>x.incoming));
+});
+
+test('split-day retarget keeps manual minutes when only start id changes',()=>{
+ const moved=[
+   {id:'m',type:'manual-location',name:'手動1',note:'',incoming:{kind:'manual',fromId:'cut',toId:'m',actualMinutes:10}},
+   point('b','B',{kind:'manual',fromId:'m',toId:'b',actualMinutes:10})
+ ];
+ retargetSplitIncoming(moved,'cut','new-cut');
+ assert.equal(moved[0].incoming.fromId,'new-cut');
+ assert.equal(moved[0].incoming.actualMinutes,10);
 });
