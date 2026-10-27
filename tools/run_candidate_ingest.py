@@ -23,7 +23,7 @@ def run(input_file, ledger_file, mapping_file, crosswalk_file, staging_dir, outp
     mapping_result=process(review_dir/'reviewed_candidates.json',mapping_file,mapped_dir)
     audit_result=audit(mapped_dir/'normalized_candidate.json',validation_dir,
                        crosswalk=crosswalk_file,staging=staging_dir)
-    source_review=build_source_queue(mapped_dir/'normalized_candidate.json',mapping_file,out/'04_source_review')
+    source_review=build_source_queue(mapped_dir/'normalized_candidate.json',mapping_file,out/'04_source_review',Path(__file__).resolve().parents[1]/'data'/'official_chart_sources.json')
     if audit_result['structuralIssues'] or audit_result['conflictingDirectedKeys']:
         readiness='BLOCKED_DATA_CONFLICTS'
     else:
