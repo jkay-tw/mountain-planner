@@ -13,4 +13,7 @@ jobs:
         with:
           node-version: '22'
       - name: Verify planner logic
-        run: node --experimental-default-type=module --test tests/*.test.mjs
+        run: |
+          node --check js/app.js
+          node --check js/planner.js
+          node --experimental-default-type=module --test tests/*.test.mjs
