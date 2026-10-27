@@ -93,10 +93,10 @@ def compile_graph(staging_dir,crosswalk_file,approval_file,group_map_file):
             alt=approved.get('timeAlternatives',[])
             if not isinstance(alt,list) or any(a.get('kind') not in ('slow','heavy_pack') or type(a.get('minutes')) not in (float,int) or a['minutes']<=0 for a in alt):
                 raise ValueError('Invalid conditional alternatives')
-            edge=dict(fromId=pair[0],toId=pair[1],**{'from':entry['from'],'to':entry['to']},
+            edge=dict(fromId=pair[0],toId=pair[1],**{'from':nodes[pair[0]]['name'],'to':nodes[pair[1]]['name']},
                 minutes=entry['minutes'],travelMode='walking',
                 verificationStatus='verified',source=entry['source'],
-                sourceGroups=[group],timeAlternatives=alt,
+                sourceGroups=[group],sourceLocalNames={'from':entry['from'],'to':entry['to']},timeAlternatives=alt,
                 evidence=dict(reviewedBy=approved['reviewedBy'],reviewedAt=approved['reviewedAt'],
                               evidenceNote=approved['evidenceNote']))
             if pair in edge_by_direction:
