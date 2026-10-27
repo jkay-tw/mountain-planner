@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {edgeActual,buildTimeline,summarizeDay,recalcConnections,canDeleteItem} from '../js/planner.js';
+import {edgeActual,buildTimeline,summarizeDay,recalcConnections,canDeleteItem,normalizeDay} from '../js/planner.js';
 import {validatePlan} from '../js/validation.js';
 const route={source:{image_url:'official'},segments:[
  {from:'A',to:'B',minutes:30},{from:'B',to:'C',minutes:40},
@@ -49,4 +49,25 @@ test('official-node deletion follows boundary and manual-neighbor rules',()=>{
  assert.equal(canDeleteItem(d,1),true);
  assert.equal(canDeleteItem(d,2),true);
  assert.equal(canDeleteItem(d,3),true);
+});
+
+test('normalization merges adjacent identical official locations',()=>{
+ const d={items:[
+   point('a','A'),
+   point('b1','B',{kind:'official',from:'A',to:'B',officialMinutes:30,actualMinutes:null}),
+   {id:'m',type:'manual-location',name:'手動',note:'',incoming:{kind:'manual',fromId:'b1',toId:'m',actualMinutes:null}},
+   point('b2','B',{kind:'manual',fromId:'m',toId:'b2',actualMinutes:null})
+ ]};
+ d.items.splice(2,1);
+ normalizeDay(d,route);
+ assert.deepEqual(d.items.map(x=>x.name),['A','B']);
+ assert.equal(d.items[0].incoming,null);
+ assert.equal(d.items[1].incoming.kind,'official');
+});
+test('normalization never leaves a later location marked as a second start',()=>{
+ const d={items:[point('a','A'),point('c','C',null)]};
+ normalizeDay(d,route);
+ assert.deepEqual(d.items.map(x=>x.name),['A','B','C']);
+ assert.equal(d.items[0].incoming,null);
+ assert.ok(d.items.slice(1).every(x=>x.incoming));
 });
