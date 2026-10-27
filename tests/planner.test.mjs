@@ -388,3 +388,13 @@ test('crossmap preview cache bust and browser control bindings are versioned tog
  assert.match(app,/addEventListener\('input',\(\)=>renderSearch\(which\)\)/);
  assert.match(app,/搜尋與相鄰節點已啟用/);
 });
+
+test('integrated preview day selector has scoped search and keeps v1 itinerary schema',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const app=readFileSync(new URL('../js/app.js',import.meta.url),'utf8');
+ assert.match(app,/node-search-inline/);
+ assert.match(app,/filterLocations\(/);
+ assert.match(app,/search\.oninput/);
+ assert.match(app,/schemaVersion:1/);
+ assert.match(app,/STORAGE_KEY='mountain-planner\.autosave\.v1'/);
+});
