@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "scope": "official chart visual audit; not route publication",
+  "sourceURL": "https://www.sunriver.com.tw/step2020.htm",
+  "items": [
+    {
+      "group": "白姑大山",
+      "officialChart": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+      "jsonCount": 11,
+      "verifiedWalkingEdges": 9,
+      "vehicleEdges": 2,
+      "notes": "9步行路段去回時間及名稱與官方圖吻合；最後農家→紅香溫泉、紅香溫泉→霧社為車程，官方未給反向時間。"
+    },
+    {
+      "group": "能高越嶺",
+      "officialChart": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "jsonCount": 19,
+      "verifiedWalkingEdges": null,
+      "vehicleEdges": 6,
+      "notes": "初步辨識車行路段並列入排除名單，其餘13段尚待逐項核時。",
+      "vehiclePairs": [
+        [
+          "霧社",
+          "廬山部落"
+        ],
+        [
+          "廬山部落",
+          "屯原登山口"
+        ],
+        [
+          "奇萊保線所",
+          "銅門"
+        ],
+        [
+          "銅門",
+          "仁壽橋"
+        ],
+        [
+          "仁壽橋",
+          "花蓮"
+        ],
+        [
+          "仁壽橋",
+          "鯉魚潭"
+        ]
+      ]
+    }
+  ],
+  "otherGroups": "not yet checked",
+  "routingRule": "Only walking edges verified against official chart may enter graph; drive transfers require separate transport graph."
+}
