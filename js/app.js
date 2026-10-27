@@ -145,10 +145,10 @@ function unlinkNextIfEndpointChanges(day){
   if(next?.linkedStart){next.linkedStart=false;const f=first(next);if(f)f._linkedStart=false}
 }
 function addNode(day,nodeId){
+  if(!route){alert('請先選擇上河圖');return}
   const selected=findNodeById(route,nodeId);
   if(!selected){alert('找不到所選的官方地點');return}
   const name=selected.name;
-  if(!route){alert('請先選擇上河圖');return}
   const p=last(day);
   if(p)unlinkNextIfEndpointChanges(day);
   if(!p){
