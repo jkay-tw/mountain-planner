@@ -4,20 +4,21 @@ import {validatePlan} from './validation.js';
 import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js';
 import {exportExcel} from './exporter.js';
 import {filterLocations} from './node-browser.js?v=v074';
+import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=v0712';
 
 const $=id=>document.getElementById(id);
 const STORAGE_KEY='mountain-planner.unified-preview-autosave.v0711';
-const APP_VERSION='v0.7.11 Unified Preview';
+const APP_VERSION='v0.7.12 Unified Preview';
 const COLLAPSE_KEY='mountain-planner.unified-preview-collapsed.v0711';
 let collapsedDays=new Set();
-let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='';
+let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',scope='';
 let snapshots=[],at=-1,restoring=false;
-function checkpoint(){if(restoring)return;const state=JSON.stringify({routeId:route?.route_id||null,tripStartDate,days});if(state===snapshots[at])return;snapshots=snapshots.slice(0,at+1);snapshots.push(state);if(snapshots.length>50)snapshots.shift();at=snapshots.length-1;buttons()}
+function checkpoint(){if(restoring)return;const state=JSON.stringify({routeId:route?.route_id||null,scope,tripStartDate,days});if(state===snapshots[at])return;snapshots=snapshots.slice(0,at+1);snapshots.push(state);if(snapshots.length>50)snapshots.shift();at=snapshots.length-1;buttons()}
 function buttons(){
   ['undoBtn','floatUndoBtn'].forEach(id=>{if($(id))$(id).disabled=at<1});
   ['redoBtn','floatRedoBtn'].forEach(id=>{if($(id))$(id).disabled=at>=snapshots.length-1});
 }
-async function restore(i){if(i<0||i>=snapshots.length)return;const x=JSON.parse(snapshots[i]);restoring=true;try{if(x.routeId)await loadGroup(x.routeId);else setNoRoute();$('routeSelect').value=x.routeId||'';tripStartDate=x.tripStartDate;$('tripDate').value=tripStartDate;days=migrateDaysToNodeIds(x.days,route);$('dayCount').value=String(days.length);at=i;render();buttons()}finally{restoring=false}}
+async function restore(i){if(i<0||i>=snapshots.length)return;const x=JSON.parse(snapshots[i]);restoring=true;try{scope=x.scope||'all';$('routeSelect').value=scope;tripStartDate=x.tripStartDate;$('tripDate').value=tripStartDate;days=sanitizeDays(migrateDaysToNodeIds(x.days,route));$('dayCount').value=String(days.length);at=i;render(false);saveAutosave();buttons()}finally{restoring=false}}
 const checkMissing=()=>{const n=days.reduce((sum,d)=>sum+missingSegments(d),0);return n===0||confirm('有 '+n+' 個路段未填時間，匯出結果含未完成時間。仍繼續？')};
 
 
@@ -30,20 +31,17 @@ const clampMin=v=>Math.max(0,Number(v)||0);
 
 async function init(){
   manifest=await (await fetch('data/unified-editor-manifest.json',{cache:'no-store'})).json();
+  await loadGlobalGraph();
   if($('appVersion'))$('appVersion').textContent=APP_VERSION;
-  $('routeSelect').innerHTML='<option value="">請選擇上河圖</option>'+manifest.routes.map(r=>'<option value="'+r.id+'">'+r.id+'｜'+r.name+'</option>').join('');
+  $('routeSelect').innerHTML='<option value="all">全部已收錄節點</option>'+manifest.routes.map(r=>'<option value="'+r.id+'">'+r.name+'</option>').join('');
   $('dayCount').innerHTML=Array.from({length:10},(_,i)=>'<option value="'+(i+1)+'">'+(i+1)+' 天</option>').join('');
 
   try{collapsedDays=new Set(JSON.parse(localStorage.getItem(COLLAPSE_KEY)||'[]'))}catch(e){collapsedDays=new Set()}
 
   const restored=loadAutosave();
-  if(restored?.routeId&&manifest.routes.some(r=>r.id===restored.routeId)){
-    await loadGroup(restored.routeId);
-    $('routeSelect').value=restored.routeId;
-  }else{
-    setNoRoute();
-    $('routeSelect').value='';
-  }
+  scope=restored?.scope||'all';
+  if(!['all',...manifest.routes.map(r=>r.id)].includes(scope))scope='all';
+  $('routeSelect').value=scope;
 
   tripStartDate=restored?.tripStartDate||'';
   $('tripDate').value=tripStartDate;
@@ -53,15 +51,15 @@ async function init(){
   render(false);checkpoint();
 }
 
-async function loadGroup(id){
-  const meta=manifest.routes.find(r=>r.id===id);
-  if(!meta){setNoRoute();return}
-  route=addRouteIdentity(await loadRoute(meta.file));
+async function loadGlobalGraph(){
+  const datasets=await Promise.all(manifest.routes.map(async m=>addRouteIdentity(await loadRoute(m.file))));
+  route=mergeReviewedRoutes(datasets);
   nodes=allNodes(route);
-  $('routeMeta').textContent=route.route_id+'｜'+route.route_name+'｜'+route.status;
+  $('routeMeta').textContent='全域路網｜'+datasets.length+' 個路線資料集｜僅已核對的步行路段';
 }
 function setNoRoute(){
-  route=null;nodes=[];$('routeMeta').textContent='尚未選擇上河圖';
+  // Explicit reset does not discard the catalog, only resets browser scope.
+  scope='all';$('routeSelect').value='all';
 }
 
 function sanitizeDays(rawDays){
@@ -80,6 +78,7 @@ function saveAutosave(){
     localStorage.setItem(STORAGE_KEY,JSON.stringify({
       format:'mountain-planner',schemaVersion:1,
       routeId:route?.route_id||null,
+      scope,
       datasetVersion:manifest.dataset_version,
       tripStartDate,days
     }));
@@ -91,14 +90,8 @@ function loadAutosave(){
 function clearAutosave(){try{localStorage.removeItem(STORAGE_KEY)}catch(e){}}
 
 function bindGlobal(){
-  $('routeSelect').onchange=async e=>{
-    const id=e.target.value;
-    if(days.some(d=>d.items.length)&&!confirm('切換上河圖會清空目前行程，確定切換？')){
-      e.target.value=route?.route_id||'';return;
-    }
-    if(id)await loadGroup(id);else setNoRoute();
-    days=[newDay(0)];
-    $('dayCount').value='1';
+  $('routeSelect').onchange=e=>{
+    scope=e.target.value||'all';
     render();
   };
   $('tripDate').onchange=e=>{tripStartDate=e.target.value;render()};
@@ -128,13 +121,12 @@ function bindGlobal(){
   });
   $('resetBtn').onclick=()=>{
     if(!confirm('確定清除全部行程？可使用復原還原。'))return;
-    setNoRoute();$('routeSelect').value='';
+    setNoRoute();
     tripStartDate='';$('tripDate').value='';
     days=[newDay(0)];$('dayCount').value='1';
     clearAutosave();render();
   };
   $('exportBtn').onclick=async()=>{
-    if(!route){alert('請先選擇上河圖');return}
     if(!days.some(d=>locs(d).length)){alert('請先建立行程');return}
     if(!checkMissing())return;
     await exportExcel({route,days,datasetVersion:manifest.dataset_version,tripStartDate});
@@ -166,7 +158,7 @@ function addNode(day,nodeId){
     return;
   }
   const path=shortestPath(route,p.nodeId,nodeId);
-  if(!path){alert('找不到 '+p.name+' → '+name+' 的上河路徑');return}
+  if(!path){appendDisconnectedNode(day,selected,uid);toast('已加入節點；前一段尚未連通，請手動填入時間');return}
   path.segments.forEach((s,i)=>day.items.push({
     id:uid(),type:'location',name:s.to,nodeId:s.toId,
     note:'',isPeak:false,hasWater:false,
@@ -251,7 +243,7 @@ function toast(msg){const t=document.createElement('div');t.className='toast';t.
 function downloadPlan(){
   if(!checkMissing())return;
   if(!route&&!days.some(d=>d.items.length)){alert('目前沒有可匯出的行程');return}
-  const payload={format:'mountain-planner',schemaVersion:1,savedAt:new Date().toISOString(),routeId:route?.route_id||null,datasetVersion:manifest.dataset_version,tripStartDate,days};
+  const payload={format:'mountain-planner',schemaVersion:1,savedAt:new Date().toISOString(),routeId:route?.route_id||null,scope,datasetVersion:manifest.dataset_version,tripStartDate,days};
   const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
   const a=document.createElement('a');
   a.href=URL.createObjectURL(blob);
@@ -261,12 +253,11 @@ function downloadPlan(){
 async function importPlan(e){
  const file=e.target.files?.[0];e.target.value='';if(!file)return;
  try{
-  const data=validatePlan(JSON.parse(await file.text()),manifest.routes.map(r=>r.id));
-  let loaded=null;if(data.routeId){const m=manifest.routes.find(r=>r.id===data.routeId);loaded=addRouteIdentity(await loadRoute(m.file))}
-  const importedDays=sanitizeDays(migrateDaysToNodeIds(data.days,loaded));
+  const data=validatePlan(JSON.parse(await file.text()),['GLOBAL-PREVIEW',...manifest.routes.map(r=>r.id)]);
+  const importedDays=sanitizeDays(migrateDaysToNodeIds(data.days,route));
   if(days.some(d=>d.items.length)&&!confirm('匯入將取代目前行程，可以使用復原。確定？'))return;
-  if(loaded){route=loaded;nodes=allNodes(route);$('routeMeta').textContent=route.route_id+'｜'+route.route_name+'｜'+route.status;$('routeSelect').value=data.routeId}
-  else{setNoRoute();$('routeSelect').value=''}
+  scope=data.scope&&['all',...manifest.routes.map(m=>m.id)].includes(data.scope)?data.scope:'all';
+  $('routeSelect').value=scope;
   tripStartDate=data.tripStartDate||'';$('tripDate').value=tripStartDate;
   days=importedDays;$('dayCount').value=String(days.length);
   render();if(data.datasetVersion&&data.datasetVersion!==manifest.dataset_version)alert('資料庫版本不同；已保留檔案中的官方時間快照，請核對。');else toast('行程已匯入');
@@ -278,7 +269,7 @@ function dayDate(index){
   const d=new Date(tripStartDate+'T00:00:00');d.setDate(d.getDate()+index);
   return String(d.getMonth()+1).padStart(2,'0')+'/'+String(d.getDate()).padStart(2,'0');
 }
-function opts(){return (route?.nodes||[]).slice().sort((a,b)=>a.name.localeCompare(b.name,'zh-Hant')).map(n=>'<option value="'+esc(n.id)+'">'+esc(n.name)+'</option>').join('')}
+function opts(){return nodesInScope(route,scope).slice().sort((a,b)=>a.name.localeCompare(b.name,'zh-Hant')).map(n=>'<option value="'+esc(n.id)+'">'+esc(n.name)+'</option>').join('')}
 function render(persist=true){
   $('daysContainer').innerHTML=days.map(renderDay).join('');
   bindDays();
@@ -324,7 +315,7 @@ function renderTimeline(d){
         const altHtml=alternatives.map(t=>'<button type="button" class="alternate-time" data-index="'+idx+'" data-minutes="'+t.minutes+'" title="套用'+labels[t.kind]+'條件參考 '+t.minutes+' 分鐘">'+labels[t.kind]+' '+t.minutes+'m</button>').join('');
         routeInfo='<input class="edge-time minute-input" data-index="'+idx+'" type="number" min="0" value="'+a+'"><span>m</span><span class="secondary-info">上河'+Math.round(Number(e.officialMinutes)||0)+'m · ×'+Number(k).toFixed(2)+'</span>'+altHtml;
       }else if(e?.kind==='manual'){
-        routeInfo='<input class="edge-time minute-input" data-index="'+idx+'" type="number" min="0" placeholder="0" value="'+(e.actualMinutes??'')+'"><span>m</span><span class="manual-note">手動</span>';
+        routeInfo='<input class="edge-time minute-input" data-index="'+idx+'" type="number" min="0" placeholder="時間未填" value="'+(e.actualMinutes??'')+'"><span>m</span><span class="manual-note">'+(e.connectionStatus==='unverified'?'未連通・手動估時':'手動')+'</span>';
       }
       const peak='<button class="icon-toggle peak '+(r.isPeak?'active':'')+'" data-index="'+idx+'" title="山頭">⛰</button>';
       const water='<button class="icon-toggle water '+(r.hasWater?'active':'')+'" data-index="'+idx+'" title="水源">💧</button>';
@@ -367,7 +358,7 @@ function bindDays(){
     const nodeSelect=card.querySelector('.add-node');
     if(search&&nodeSelect)search.oninput=()=>{
       const previouslySelected=nodeSelect.value;
-      const entries=filterLocations((route?.nodes||[]).map(n=>({id:n.id,name:n.name,route:route.route_name})),search.value,100,{includeRoute:false});
+      const entries=filterLocations(nodesInScope(route,scope).map(n=>({id:n.id,name:n.name,route:route.route_name})),search.value,100,{includeRoute:false});
       nodeSelect.replaceChildren();
       const prompt=document.createElement('option');prompt.value='';
       prompt.textContent=entries.length?'選擇下一個行程點':'找不到符合的節點';
