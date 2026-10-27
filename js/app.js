@@ -3,7 +3,7 @@ import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,r
 import {validatePlan} from './validation.js';
 import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js';
 import {exportExcel} from './exporter.js';
-import {filterLocations} from './node-browser.js';
+import {filterLocations} from './node-browser.js?v=v074';
 
 const $=id=>document.getElementById(id);
 const STORAGE_KEY='mountain-planner.autosave.v1';
