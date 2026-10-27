@@ -1,5 +1,5 @@
 import {loadManifest,loadRoute} from './data-loader.js';
-import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments} from './planner.js';
+import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem} from './planner.js';
 import {validatePlan} from './validation.js';
 import {exportExcel} from './exporter.js';
 
@@ -99,6 +99,13 @@ function bindGlobal(){
   };
   $('undoBtn').onclick=()=>restore(at-1);$('redoBtn').onclick=()=>restore(at+1);
   document.addEventListener('keydown',e=>{if(!(e.ctrlKey||e.metaKey))return;const a=document.activeElement;if(['INPUT','TEXTAREA','SELECT'].includes(a?.tagName))return;const k=e.key.toLowerCase();if(k==='z'||k==='y'){e.preventDefault();restore(at+(k==='y'||e.shiftKey?1:-1))}});
+  document.addEventListener('click',e=>{
+    if(e.target.closest('.row-menu'))return;
+    document.querySelectorAll('.row-menu[open]').forEach(x=>x.open=false);
+  });
+  document.addEventListener('keydown',e=>{
+    if(e.key==='Escape')document.querySelectorAll('.row-menu[open]').forEach(x=>x.open=false);
+  });
   $('resetBtn').onclick=()=>{
     if(!confirm('確定清除全部行程？可使用復原還原。'))return;
     setNoRoute();$('routeSelect').value='';
@@ -169,6 +176,7 @@ function insertManualBefore(d,destIdx){
   d.items.splice(destIdx,0,m);render();
 }
 function removeItem(d,idx){
+  if(!canDeleteItem(d,idx,route))return;
   d.items.splice(idx,1);
   if(route)recalcConnections(d,route);
   render();
@@ -262,7 +270,7 @@ function renderTimeline(d){
       html+='<div class="it-row rest-row" data-index="'+idx+'">'+
       '<div class="place"><span class="drag-handle" draggable="true" data-index="'+idx+'">⋮⋮</span><span class="place-name">☕ 休息</span></div>'+
       '<div class="arrival">'+r.endTime+'</div>'+
-      '<div class="route-info"><input class="rest-min minute-input" data-index="'+idx+'" type="number" min="0" value="'+r.minutes+'"><span>m</span></div><div></div>'+menuHtml(idx,true,false)+'</div>';
+      '<div class="route-info"><input class="rest-min minute-input" data-index="'+idx+'" type="number" min="0" value="'+r.minutes+'"><span>m</span></div><div></div>'+menuHtml(idx,true,false,true)+'</div>';
     }else{
       const e=r.incoming,a=e?edgeActual(e,d.coefficient):0,manual=r.type==='manual-location';
       let routeInfo='<span class="secondary-info">起點</span>';
@@ -282,18 +290,21 @@ function renderTimeline(d){
       '<div class="arrival">'+r.arrival+'</div>'+
       '<div class="route-info">'+routeInfo+'</div>'+
       '<input class="note-input" data-index="'+idx+'" placeholder="備註" value="'+esc(r.note||'')+'">'+
-      menuHtml(idx,false,!!r.incoming)+'</div>';
+      menuHtml(idx,false,!!r.incoming,canDeleteItem(d,idx,route))+'</div>';
     }
     html+='<div class="drop-zone" data-drop="'+(idx+1)+'"></div>';
   });
   return html;
 }
-function menuHtml(idx,isRest,canManual){
+function menuHtml(idx,isRest,canManual,canDelete){
   if(isRest)return '<details class="row-menu"><summary>⋯</summary><div class="menu-box"><button class="delete" data-action="delete" data-index="'+idx+'">刪除</button></div></details>';
-  return '<details class="row-menu"><summary>⋯</summary><div class="menu-box"><button data-action="rest" data-index="'+idx+'">插入休息</button>'+(canManual?'<button data-action="manual" data-index="'+idx+'">在此段插入手動點</button>':'')+'<button data-action="split" data-index="'+idx+'">從此點開始下一天</button><button class="delete" data-action="delete" data-index="'+idx+'">刪除節點</button></div></details>';
+  return '<details class="row-menu"><summary>⋯</summary><div class="menu-box"><button data-action="rest" data-index="'+idx+'">插入休息</button>'+(canManual?'<button data-action="manual" data-index="'+idx+'">在此段插入手動點</button>':'')+'<button data-action="split" data-index="'+idx+'">從此點開始下一天</button>'+(canDelete?'<button class="delete" data-action="delete" data-index="'+idx+'">刪除節點</button>':'')+'</div></details>';
 }
 
 function bindDays(){
+  document.querySelectorAll('.row-menu').forEach(menu=>menu.addEventListener('toggle',()=>{
+    if(menu.open)document.querySelectorAll('.row-menu[open]').forEach(other=>{if(other!==menu)other.open=false});
+  }));
   document.querySelectorAll('.day-card').forEach(card=>{
     const i=+card.dataset.day,d=days[i];
     card.querySelector('.start-time').onchange=e=>{d.startTime=e.target.value;render()};
