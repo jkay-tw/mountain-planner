@@ -28,15 +28,18 @@
         <select id="dayCount"></select>
       </div>
       <div class="top-actions">
-        <button id="copyBtn" class="secondary">複製文字行程</button>
+        <button id="saveBtn" class="secondary">儲存行程</button>
+        <button id="importBtn" class="secondary">匯入行程</button>
+        <button id="copyBtn" class="secondary">複製文字</button>
         <button id="exportBtn">匯出 Excel</button>
-        <button id="resetBtn" class="secondary">清空</button>
+        <button id="resetBtn" class="danger-main">全部清除</button>
+        <input id="importFile" type="file" accept=".json,.mplan.json,application/json" hidden />
       </div>
     </section>
 
     <div class="notice">
       <strong id="routeMeta"></strong>
-      <span>目前資料仍以 checked 為主；正式行程請以官方原圖再次核對。</span>
+      <span>行程會自動暫存在此瀏覽器；正式行程請以官方原圖再次核對。</span>
     </div>
 
     <section id="daysContainer" class="days"></section>
