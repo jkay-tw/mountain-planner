@@ -299,3 +299,14 @@ test('G17 and G18 staged excerpts contain only four audited bidirectional walkin
  assert.equal(a.segments.length,4);assert.equal(b.segments.length,4);
  assert.ok([...a.segments,...b.segments].every(e=>e.travelMode==='walking'&&e.verificationStatus==='verified'&&e.source.startsWith('https://www.sunriver.com.tw/')));
 });
+
+test('G17/G18 overlap audit isolates directional inversion without trusting candidate times',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const review=JSON.parse(readFileSync(new URL('../data/audits/G17_G18_overlap_review.json',import.meta.url),'utf8'));
+ assert.equal(review.counts.sharedDirectedEdges,24);
+ assert.equal(review.counts.conflictingDirectedValues,2);
+ assert.equal(review.confirmedIssue.officialGo,25);
+ assert.equal(review.confirmedIssue.officialBack,35);
+ assert.equal(review.routingSubset.published,false);
+ assert.equal(review.routingSubset.previewIntegrated,false);
+});
