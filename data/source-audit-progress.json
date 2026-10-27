@@ -44,8 +44,26 @@
           "鯉魚潭"
         ]
       ]
+    },
+    {
+      "group": "南二段",
+      "officialChart": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "jsonCount": 68,
+      "verifiedWalkingEdges": 2,
+      "vehicleEdges": 0,
+      "auditScope": "two selected two-way walking pairs only, not all 68 candidate rows",
+      "notes": "Shared directed comparison G17↔G18: 22 matches, 2 conflicting directions. G17 向陽山→西側登山口 candidate 35/25 reversed versus official 25/35. Pending correction; all other candidate rows remain unverified."
+    },
+    {
+      "group": "新康橫斷",
+      "officialChart": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "jsonCount": 50,
+      "verifiedWalkingEdges": 2,
+      "vehicleEdges": 0,
+      "auditScope": "two selected two-way walking pairs only, not all 50 candidate rows",
+      "notes": "Overlapping path at 新康山岔路口 independently staged; all other candidate rows remain unverified."
     }
   ],
-  "otherGroups": "not yet checked",
+  "otherGroups": "remaining groups not yet source-audited",
   "routingRule": "Only walking edges verified against official chart may enter graph; drive transfers require separate transport graph."
 }
