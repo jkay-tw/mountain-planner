@@ -5,7 +5,7 @@ import {exportExcel} from './exporter.js';
 
 const $=id=>document.getElementById(id);
 const STORAGE_KEY='mountain-planner.autosave.v1';
-const APP_VERSION='v0.6.2 Preview';
+const APP_VERSION='v0.6.2';
 const COLLAPSE_KEY='mountain-planner.collapsed-days.v1';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='';
