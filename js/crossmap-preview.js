@@ -1,4 +1,5 @@
 import {buildVerifiedWalkingGraph,shortestVerifiedWalkingPath} from './crossmap-routing.js';
+import {filterLocations,adjacentLocations} from './node-browser.js';
 
 const $=id=>document.getElementById(id);
 const fmt=min=>Math.floor(min/60)+' 小時 '+String(min%60).padStart(2,'0')+' 分鐘';
@@ -8,6 +9,7 @@ const dataset=[
   'data/staging/G18.overlap-verified-subset.json'
 ];
 let routes=[],graph=null,options=[];
+const optionValue=o=>o.route+'|'+o.localId;
 function updateOptions(){
   options=routes.flatMap(r=>r.nodes.map(n=>({
     key:graph.locationId.get(JSON.stringify([r.route_id,n.id])),
@@ -27,14 +29,65 @@ function getSelection(id){
   const val=$(id).value,selected=options.find(o=>o.route+'|'+o.localId===val);
   return selected?.key||null;
 }
+function chooseLocation(which,choice){
+  const o=options.find(x=>optionValue(x)===choice);
+  if(!o)return;
+  $(which).value=choice;
+  $(which+'Search').value='';
+  renderSearch(which);
+  render();
+}
+function renderSearch(which){
+  const query=$(which+'Search').value.trim();
+  const results=$(which+'Matches');
+  if(!query){results.replaceChildren();return;}
+  const matches=filterLocations(options,query,40);
+  results.replaceChildren();
+  if(!matches.length){const p=document.createElement('p');p.className='search-hint';p.textContent='沒有符合的已驗證節點';results.append(p);return;}
+  const seen=new Set();
+  for(const o of matches){
+    const identity=o.key;
+    if(seen.has(identity))continue;seen.add(identity);
+    const btn=document.createElement('button');btn.type='button';
+    btn.textContent=o.name+'｜'+o.route;
+    btn.addEventListener('click',()=>chooseLocation(which,optionValue(o)));
+    results.append(btn);
+  }
+}
+function renderNeighbors(){
+  const container=$('neighbors');container.replaceChildren();
+  const start=getSelection('start');
+  const linked=adjacentLocations(graph,start);
+  if(!linked.length){
+    const p=document.createElement('p');p.className='search-hint';
+    p.textContent='目前起點沒有已核實的直接相鄰步行路段。';
+    container.append(p);return;
+  }
+  for(const item of linked){
+    const wrapper=document.createElement('div');wrapper.className='neighbor-item';
+    const dest=options.find(x=>x.key===item.id);
+    if(!dest)continue;
+    const btn=document.createElement('button');btn.type='button';
+    const name=document.createElement('strong');name.textContent=item.name;
+    const desc=document.createElement('small');
+    desc.textContent=fmt(item.minutes)+'｜'+item.sources.map(id=>routes.find(r=>r.route_id===id)?.route_name||id).join('、');
+    btn.append(name,desc);
+    btn.title='將此節點設為終點';
+    btn.addEventListener('click',()=>chooseLocation('end',optionValue(dest)));
+    const advance=document.createElement('button');advance.type='button';advance.textContent='以此為起點';
+    advance.title='繼續沿相鄰路段探索';advance.addEventListener('click',()=>chooseLocation('start',optionValue(dest)));
+    wrapper.append(btn,advance);container.append(wrapper);
+  }
+}
 function render(){
   if(!graph)return;
+  renderNeighbors();
   const start=getSelection('start'),end=getSelection('end');
   const result=shortestVerifiedWalkingPath(graph,start,end);
   const box=$('result');
   if(!start||!end){box.innerHTML='<p>請選擇起點與終點。</p>';return;}
   if(!result){
-    box.innerHTML='<h2>目前無法計算完整步行路徑</h2><p>測試資料只收錄四組已核對的雙向路段；其餘路段尚未進入路網。這不代表實際山徑不相通。</p>';return;
+    box.innerHTML='<h2>目前無法計算完整步行路徑</h2><p>測試資料只收錄部分已核對的雙向路段；其餘路段尚未進入路網。這不代表實際山徑不相通。</p>';return;
   }
   const transitions=result.segments.reduce((n,e,i,a)=>n+(i>0&&e.routeId!==a[i-1].routeId?1:0),0);
   const rows=result.segments.map((e,i)=>{
@@ -59,8 +112,10 @@ async function init(){
     throw Error('跨圖資料檢查失敗');
   graph=buildVerifiedWalkingGraph(routes,crosswalk,{allowCrossMap:true});
   updateOptions();
-  $('start').addEventListener('change',render);
-  $('end').addEventListener('change',render);
+  for(const which of ['start','end']){
+    $(which).addEventListener('change',()=>{renderSearch(which);render();});
+    $(which+'Search').addEventListener('input',()=>renderSearch(which));
+  }
   $('swap').addEventListener('click',()=>{
     const a=$('start').value;$('start').value=$('end').value;$('end').value=a;render();
   });
