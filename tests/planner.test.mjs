@@ -467,11 +467,11 @@ test('v0.7.5 crossmap editor never shares main planner autosave key or route man
  assert.equal(manifest.routes.length,1);
 });
 
-test('v0.7.6 day tools use explicit six-element grid placements across breakpoints',async()=>{
+test('v0.7.7 day tools use explicit six-element grid placements across breakpoints',async()=>{
  const {readFileSync}=await import('node:fs');
  const css=readFileSync(new URL('../css/style.css',import.meta.url),'utf8');
  const html=readFileSync(new URL('../crossmap-editor.html',import.meta.url),'utf8');
- const section=css.slice(css.lastIndexOf('/* v0.7.6:'));
+ const section=css.slice(css.lastIndexOf('/* v0.7.7:'));
  assert.ok(section.length>0);
  for(const area of ['link','search','select','add','manual-start','manual-end'])
    assert.match(section,new RegExp('grid-area:'+area+'(?:;|\\s)'));
