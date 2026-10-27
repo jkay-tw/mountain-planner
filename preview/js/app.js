@@ -6,7 +6,7 @@ import {exportExcel} from './exporter.js';
 
 const $=id=>document.getElementById(id);
 const STORAGE_KEY='mountain-planner.autosave.v1';
-const APP_VERSION='v0.7.0 Preview';
+const APP_VERSION='v0.7.1 Preview';
 const COLLAPSE_KEY='mountain-planner.collapsed-days.v1';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='';
@@ -114,12 +114,16 @@ function bindGlobal(){
   const floatHistory=$('floatingHistory'),syncFloating=()=>{if(floatHistory)floatHistory.classList.toggle('visible',window.scrollY>240)};
   window.addEventListener('scroll',syncFloating,{passive:true});syncFloating();
   document.addEventListener('keydown',e=>{if(!(e.ctrlKey||e.metaKey))return;const a=document.activeElement;if(['INPUT','TEXTAREA','SELECT'].includes(a?.tagName))return;const k=e.key.toLowerCase();if(k==='z'||k==='y'){e.preventDefault();restore(at+(k==='y'||e.shiftKey?1:-1))}});
+  // Close popovers when interacting elsewhere. Keep the clicked menu open
+  // and allow native <details>/<summary> to handle its own toggle.
+  const menus='.row-menu[open],.header-more[open],.global-menu[open]';
   document.addEventListener('click',e=>{
-    if(e.target.closest('.row-menu'))return;
-    document.querySelectorAll('.row-menu[open]').forEach(x=>x.open=false);
+    document.querySelectorAll(menus).forEach(menu=>{
+      if(!menu.contains(e.target))menu.open=false;
+    });
   });
   document.addEventListener('keydown',e=>{
-    if(e.key==='Escape')document.querySelectorAll('.row-menu[open]').forEach(x=>x.open=false);
+    if(e.key==='Escape')document.querySelectorAll(menus+'[open]').forEach(menu=>menu.open=false);
   });
   $('resetBtn').onclick=()=>{
     if(!confirm('確定清除全部行程？可使用復原還原。'))return;
