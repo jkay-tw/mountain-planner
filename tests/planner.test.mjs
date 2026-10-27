@@ -235,3 +235,23 @@ test('cross-map denies user-excluded membership and does not guess from identica
  deniedPairRecords:[{name:'岔路',groupA:'圖甲',groupB:'圖乙'}]};
  assert.throws(()=>buildVerifiedWalkingGraph([base,other],conflict,{allowCrossMap:true}),/Denied cross-map/);
 });
+
+test('G11 staged source-audited walking graph has 13 two-way paths but zero road legs',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const g11=JSON.parse(readFileSync(new URL('../data/staging/G11.verified-walking.json',import.meta.url),'utf8'));
+ assert.equal(g11.segments.length,26);
+ assert.equal(g11.nodes.length,13);
+ assert.ok(g11.segments.every(s=>s.travelMode==='walking'&&s.verificationStatus==='verified'));
+ assert.ok(!g11.nodes.some(n=>['霧社','銅門','仁壽橋','花蓮'].includes(n.name)));
+ const graph=buildVerifiedWalkingGraph([g11],{canonicalNodes:[]});
+ const start=g11.nodes.find(n=>n.name==='屯原登山口').id;
+ const end=g11.nodes.find(n=>n.name==='天池山莊').id;
+ const id=x=>graph.locationId.get(JSON.stringify(['G11-STAGING',x]));
+ assert.equal(shortestVerifiedWalkingPath(graph,id(start),id(end)).minutes,330);
+ assert.equal(shortestVerifiedWalkingPath(graph,id(end),id(start)).minutes,280);
+});
+test('G11 staging is not present in publicly selectable manifest',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const manifest=JSON.parse(readFileSync(new URL('../data/manifest.json',import.meta.url),'utf8'));
+ assert.ok(!manifest.routes.some(r=>r.id==='G11-STAGING'||r.id==='G11'));
+});
