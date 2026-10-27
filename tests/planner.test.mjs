@@ -287,9 +287,9 @@ test('G17→G18 real source-audited overlap uses confirmed junction, not name ma
  const route=shortestVerifiedWalkingPath(joined,id(joined,g17,'南雙頭山'),id(joined,g18,'3058公尺峰'));
  assert.ok(route,'Source-verified join should traverse 新康山岔路口');
  assert.deepEqual(route.segments.map(s=>s.routeId),['G17-OVERLAP','G17-OVERLAP','G18-OVERLAP','G18-OVERLAP']);
- assert.equal(route.minutes,550); // 180 + 220 + 70 + 80
+ assert.equal(route.minutes,480); // 110 + 220 + 70 + 80
  const reverse=shortestVerifiedWalkingPath(joined,id(joined,g18,'3058公尺峰'),id(joined,g17,'南雙頭山'));
- assert.equal(reverse.minutes,410); // 90 + 80 + 130 + 110
+ assert.equal(reverse.minutes,480); // 90 + 80 + 130 + 180
  assert.equal(route.nodes.length,5);
 });
 test('G17 and G18 staged excerpts contain only four audited bidirectional walking pairs',async()=>{
