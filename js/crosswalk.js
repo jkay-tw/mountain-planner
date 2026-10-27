@@ -15,6 +15,12 @@ export function verifyCrosswalk(crosswalk) {
       used.set(key,group.canonicalId);
     }
   }
+  for(const denied of crosswalk.deniedPairRecords||[]){
+    if(!denied.name||!denied.groupA||!denied.groupB)throw Error('Invalid denied pair');
+    const a=used.get(JSON.stringify([denied.groupA,denied.name]));
+    const b=used.get(JSON.stringify([denied.groupB,denied.name]));
+    if(a&&a===b)throw Error('Denied pair merged: '+denied.name+' '+denied.groupA+' / '+denied.groupB);
+  }
   return {groups:canonical.size,members:used.size};
 }
 export function canonicalIdFor(crosswalk,group,name){
