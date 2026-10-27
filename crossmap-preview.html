@@ -12,13 +12,13 @@ h1{font-size:clamp(23px,4vw,34px);margin:10px 0}h2{margin:0 0 8px;font-size:20px
 select{width:100%;min-width:0;background:white;border:1px solid #abbcaf}
 button{border:0;background:#275f44;color:white;cursor:pointer}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #82ab88;outline-offset:2px}
 .note{background:#fff8e6;border:1px solid #ecd99b;border-radius:12px;padding:14px 16px;line-height:1.75}
-.node-search{margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.search-field{display:grid;gap:7px;font-weight:600}.search-field input{font:inherit;border:1px solid #abbcaf;border-radius:9px;padding:11px 12px;width:100%;min-width:0}
+.node-search{margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:16px}.search-box{padding:14px;border:1px solid #d7e5d9;border-radius:13px;background:#f8fbf8}
+.search-field{display:grid;gap:7px;font-weight:600}.node-search input{font:inherit;border:1px solid #abbcaf;border-radius:9px;padding:12px 14px;width:100%;min-width:0;background:#fff}.node-search input:focus{outline:2px solid #7cae8a;outline-offset:1px}
 .search-results{max-height:230px;overflow-y:auto;display:grid;gap:5px;margin-top:8px}
-.search-results button,.neighbors button{background:#eef4ee;color:#204b34;border:1px solid #d8e2d9;text-align:left;padding:9px 11px;border-radius:9px}
+.search-results button,.neighbors button{background:#eef4ee;color:#204b34;border:1px solid #d8e2d9;text-align:left;padding:10px 12px;border-radius:9px;cursor:pointer}.search-results button{width:100%}
 .search-results button:hover,.neighbors button:hover{background:#dcebdc}
-.search-results small,.neighbors small{display:block;color:#5c7162;margin-top:3px}
-.neighbors{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.search-results small,.neighbors small{display:block;color:#5c7162;margin-top:4px}
+.neighbors{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin-top:10px}.neighbor-item{display:flex;flex-direction:column;gap:6px;padding:8px;border:1px solid #deeadf;border-radius:11px;background:#f7faf7}.neighbor-item button{flex:initial}.neighbor-item button:last-child{background:#276346;color:#fff;text-align:center}
 .neighbors button{flex:1 1 170px}
 .search-hint{font-size:13px;color:#52685b;font-weight:400}
 .table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:630px}th,td{border-bottom:1px solid #e0e8e1;text-align:left;padding:11px 9px;vertical-align:top}th{background:#e8f0e9}#status{color:#52685b}
@@ -34,8 +34,8 @@ button{border:0;background:#275f44;color:white;cursor:pointer}button:focus-visib
 <label class="field">終點<select id="end" aria-label="跨圖終點"></select></label>
 </div>
 <div class="node-search">
-<div><label class="search-field" for="startSearch">搜尋起點 <span class="search-hint">輸入地點／圖組關鍵字</span></label><input type="search" id="startSearch" autocomplete="off" placeholder="例如：嘉明湖、南二段" aria-controls="startMatches"><div id="startMatches" class="search-results" aria-live="polite"></div></div>
-<div><label class="search-field" for="endSearch">搜尋終點 <span class="search-hint">點擊結果立即選取</span></label><input type="search" id="endSearch" autocomplete="off" placeholder="例如：新康、3058" aria-controls="endMatches"><div id="endMatches" class="search-results" aria-live="polite"></div></div>
+<div class="search-box"><label class="search-field" for="startSearch">搜尋起點 <span class="search-hint">輸入地點／圖組關鍵字</span></label><input type="search" id="startSearch" autocomplete="off" placeholder="例如：嘉明湖、南二段" aria-controls="startMatches"><div id="startMatches" class="search-results" aria-live="polite"></div></div>
+<div class="search-box"><label class="search-field" for="endSearch">搜尋終點 <span class="search-hint">點擊結果立即選取</span></label><input type="search" id="endSearch" autocomplete="off" placeholder="例如：新康、3058" aria-controls="endMatches"><div id="endMatches" class="search-results" aria-live="polite"></div></div>
 </div>
 </section>
 <section class="panel"><h2>沿著路網找下一個節點</h2>
@@ -43,4 +43,4 @@ button{border:0;background:#275f44;color:white;cursor:pointer}button:focus-visib
 <div id="neighbors" class="neighbors" aria-live="polite"></div>
 </section>
 <section class="panel" id="result" aria-live="polite"><p>路徑計算準備中⋯</p></section>
-</main><script type="module" src="js/crossmap-preview.js"></script></body></html>
+</main><script type="module" src="js/crossmap-preview.js?v=20261027b"></script></body></html>
