@@ -25,5 +25,13 @@ Output: `cross_group_node_review.csv`, `summary.json`. Review columns:
 4. Confirm data permission and attribution before incorporating any third-party route content.
 5. Add regression tests for both confirmed joins and forbidden joins. Publish only after separate UI and data acceptance.
 
+## User review accepted — 202 cross-map pairs (2026-10-27)
+- The two user-edited review workbooks plus explicit CW-004, CW-028 and CW-039 confirmations establish 123 same and 79 different pairs, without transitive contradictions.
+- `data/crosswalk-reviewed.json` records 81 stable canonical identity clusters (180 group members) plus all 79 denied pairs.
+- `js/crosswalk.js` rejects a canonical cluster that contradicts any denied pair. The generic names are no longer blanket-rejected.
+- Identity does **not** imply that hiking time, direction, or edge class has been verified.
+- All canonical records have `routingEnabled:false`. In particular, a transit junction such as 霧社 must not turn road travel into a walking connection.
+- `data/source-audit-progress.json` tracks chart checks for G06 and G11; other groups remain pending.
+
 ## Current scope
 The v0.7 preview has only G06 official route segments. Candidate cross-group matches are a separate research workflow, **not yet connected to the planner**, and the production app remains v0.6.2.
