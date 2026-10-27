@@ -46,7 +46,7 @@ export async function exportExcel({route,days,datasetVersion,tripStartDate}){
         }
       }
       const rr=ws.getRow(rowNo);
-      rr.eachCell((c,col)=>{c.font={...(c.font||{}),name=col===2||col===3||col===4||col===5?'Calibri':'Microsoft JhengHei'};c.alignment={vertical:'middle',horizontal:col>=2&&col<=5?'center':'left',wrapText:true}});
+      rr.eachCell((c,col)=>{c.font={...(c.font||{}),name:col===2||col===3||col===4||col===5?'Calibri':'Microsoft JhengHei'};c.alignment={vertical:'middle',horizontal:col>=2&&col<=5?'center':'left',wrapText:true}});
       rowNo++;
     }
 
