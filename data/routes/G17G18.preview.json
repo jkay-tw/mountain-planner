@@ -5,7 +5,7 @@
   "source": {
     "image_url": "https://www.sunriver.com.tw/step2020.htm"
   },
-  "dataset_version": "v0.7.5-crossmap-staging",
+  "dataset_version": "v0.7.8-crossmap-staging",
   "nodes": [
     {
       "id": "shared:cw-v07-049",
@@ -55,6 +55,90 @@
     {
       "id": "local:G18-OVERLAP::g18-overlap-002",
       "name": "布新岔路口",
+      "groups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-006",
+      "name": "連理西峰前營地",
+      "groups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-007",
+      "name": "西峰東稜平台",
+      "groups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-008",
+      "name": "飛機殘骸",
+      "groups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-009",
+      "name": "桃源營地",
+      "groups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-010",
+      "name": "連理山",
+      "groups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-011",
+      "name": "鞍部黑水塘",
+      "groups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-012",
+      "name": "新仙山前營地",
+      "groups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-013",
+      "name": "新仙山營地",
+      "groups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-014",
+      "name": "新仙山",
+      "groups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-015",
+      "name": "最低鞍部",
+      "groups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-016",
+      "name": "新康山",
+      "groups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-017",
+      "name": "天宮堡壘",
       "groups": [
         "新康橫斷"
       ]
@@ -251,6 +335,390 @@
       "from": "3058公尺峰",
       "to": "布新岔路口",
       "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-001",
+      "toId": "local:G18-OVERLAP::g18-overlap-006",
+      "from": "3058公尺峰",
+      "to": "連理西峰前營地",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-006",
+      "toId": "local:G18-OVERLAP::g18-overlap-001",
+      "from": "連理西峰前營地",
+      "to": "3058公尺峰",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-006",
+      "toId": "local:G18-OVERLAP::g18-overlap-007",
+      "from": "連理西峰前營地",
+      "to": "西峰東稜平台",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-007",
+      "toId": "local:G18-OVERLAP::g18-overlap-006",
+      "from": "西峰東稜平台",
+      "to": "連理西峰前營地",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-007",
+      "toId": "local:G18-OVERLAP::g18-overlap-008",
+      "from": "西峰東稜平台",
+      "to": "飛機殘骸",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-008",
+      "toId": "local:G18-OVERLAP::g18-overlap-007",
+      "from": "飛機殘骸",
+      "to": "西峰東稜平台",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-008",
+      "toId": "local:G18-OVERLAP::g18-overlap-009",
+      "from": "飛機殘骸",
+      "to": "桃源營地",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-009",
+      "toId": "local:G18-OVERLAP::g18-overlap-008",
+      "from": "桃源營地",
+      "to": "飛機殘骸",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-009",
+      "toId": "local:G18-OVERLAP::g18-overlap-010",
+      "from": "桃源營地",
+      "to": "連理山",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-010",
+      "toId": "local:G18-OVERLAP::g18-overlap-009",
+      "from": "連理山",
+      "to": "桃源營地",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-010",
+      "toId": "local:G18-OVERLAP::g18-overlap-011",
+      "from": "連理山",
+      "to": "鞍部黑水塘",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-011",
+      "toId": "local:G18-OVERLAP::g18-overlap-010",
+      "from": "鞍部黑水塘",
+      "to": "連理山",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-011",
+      "toId": "local:G18-OVERLAP::g18-overlap-012",
+      "from": "鞍部黑水塘",
+      "to": "新仙山前營地",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-012",
+      "toId": "local:G18-OVERLAP::g18-overlap-011",
+      "from": "新仙山前營地",
+      "to": "鞍部黑水塘",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-012",
+      "toId": "local:G18-OVERLAP::g18-overlap-013",
+      "from": "新仙山前營地",
+      "to": "新仙山營地",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-013",
+      "toId": "local:G18-OVERLAP::g18-overlap-012",
+      "from": "新仙山營地",
+      "to": "新仙山前營地",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-013",
+      "toId": "local:G18-OVERLAP::g18-overlap-014",
+      "from": "新仙山營地",
+      "to": "新仙山",
+      "minutes": 1,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-014",
+      "toId": "local:G18-OVERLAP::g18-overlap-013",
+      "from": "新仙山",
+      "to": "新仙山營地",
+      "minutes": 1,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-014",
+      "toId": "local:G18-OVERLAP::g18-overlap-015",
+      "from": "新仙山",
+      "to": "最低鞍部",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-015",
+      "toId": "local:G18-OVERLAP::g18-overlap-014",
+      "from": "最低鞍部",
+      "to": "新仙山",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-015",
+      "toId": "local:G18-OVERLAP::g18-overlap-016",
+      "from": "最低鞍部",
+      "to": "新康山",
+      "minutes": 75,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-016",
+      "toId": "local:G18-OVERLAP::g18-overlap-015",
+      "from": "新康山",
+      "to": "最低鞍部",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-016",
+      "toId": "local:G18-OVERLAP::g18-overlap-017",
+      "from": "新康山",
+      "to": "天宮堡壘",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-017",
+      "toId": "local:G18-OVERLAP::g18-overlap-016",
+      "from": "天宮堡壘",
+      "to": "新康山",
+      "minutes": 25,
       "travelMode": "walking",
       "verificationStatus": "verified",
       "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
