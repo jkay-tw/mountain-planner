@@ -13,7 +13,7 @@
       <div>
         <p class="eyebrow">Mountain Planner</p>
         <h1>登山行程快速規劃器</h1>
-        <p class="sub">選重要節點即可自動補齊最短上河路徑；再依實際需求調整時間、休息與手動節點。</p>
+        <p class="sub">選重要節點，自動補齊最短上河路徑；再依每天速度、休息與手動節點微調。</p>
       </div>
       <a class="source" href="https://www.sunriver.com.tw/step2020.htm" target="_blank" rel="noreferrer">上河來源</a>
     </header>
@@ -23,15 +23,12 @@
         <label for="routeSelect">上河圖群組</label>
         <select id="routeSelect"></select>
       </div>
-      <div class="field small">
-        <label for="coefficient">預設上河係數</label>
-        <input id="coefficient" type="number" value="0.80" min="0.1" max="3" step="0.01" />
-      </div>
-      <div class="field small">
+      <div class="field compact">
         <label for="dayCount">行程天數</label>
         <select id="dayCount"></select>
       </div>
       <div class="top-actions">
+        <button id="copyBtn" class="secondary">複製文字行程</button>
         <button id="exportBtn">匯出 Excel</button>
         <button id="resetBtn" class="secondary">清空</button>
       </div>
