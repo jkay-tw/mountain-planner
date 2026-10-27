@@ -12,5 +12,18 @@
       "verification": "geographic-distinction"
     }
   ],
-  "notes": "此檔案是安全規則，不包含第三方完整路段資料。任何 approvedSharedNodes 都必須附上兩側來源節點ID及可查證證據，並在公開使用前確認授權。"
+  "notes": "所有指定名稱僅按完整名稱精確比對，在不同圖組之間一律不合併；即使鄰接節點與方向時間一致亦排除。群組內同名不同地點另以明確 Node ID 管理。approvedSharedNodes 仍為空，不會自動串聯。",
+  "blockedDisplayNamesAcrossGroups": [
+    "三岔路口",
+    "四岔路口",
+    "水源",
+    "最低鞍部",
+    "岔路",
+    "岔路口",
+    "林道登山口",
+    "登山口",
+    "三叉營地",
+    "主北岔路",
+    "東北鞍營地"
+  ]
 }
