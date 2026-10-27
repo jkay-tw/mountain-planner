@@ -11,7 +11,7 @@ const locs=d=>d.items.filter(x=>x.type!=='rest');
 const first=d=>locs(d)[0]||null;
 const last=d=>{const a=locs(d);return a[a.length-1]||null};
 const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const clampMin=v=>Math.max(0,Math.min(999,Number(v)||0));
+const clampMin=v=>Math.max(0,Number(v)||0);
 
 async function init(){
   manifest=await loadManifest();
