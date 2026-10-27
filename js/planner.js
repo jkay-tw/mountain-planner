@@ -92,7 +92,7 @@ export function recalcConnections(day,route){
       const existing=original.find(x=>x.type!=='rest'&&(identified?x.nodeId===seg.toId:x.name===seg.to)&&x.incoming?.kind==='official'&&(identified?x.incoming.fromNodeId===seg.fromId&&x.incoming.toNodeId===seg.toId:x.incoming.from===seg.from&&x.incoming.to===seg.to));
       const target=isDestination?item:(existing?{...existing}:{id:uid(),type:'location',name:seg.to,...(identified?{nodeId:seg.toId}:{}),auto:true,waypoint:false,note:'',isPeak:false,hasWater:false});
       const old=target.incoming,keep=old?.kind==='official'&&(identified?old.fromNodeId===seg.fromId&&old.toNodeId===seg.toId:old.from===seg.from&&old.to===seg.to);
-      target.incoming={kind:'official',from:seg.from,to:seg.to,...(identified?{fromNodeId:seg.fromId,toNodeId:seg.toId}:{}),officialMinutes:keep?old.officialMinutes:seg.minutes,actualMinutes:keep?old.actualMinutes??null:null,source:route.source?.image_url};
+      target.incoming={kind:'official',from:seg.from,to:seg.to,...(identified?{fromNodeId:seg.fromId,toNodeId:seg.toId}:{}),officialMinutes:keep?old.officialMinutes:seg.minutes,actualMinutes:keep?old.actualMinutes??null:null,source:seg.source||route.source?.image_url};
       result.push(target);
     }
     previous=item;
