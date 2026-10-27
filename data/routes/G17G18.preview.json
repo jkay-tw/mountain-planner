@@ -1,0 +1,265 @@
+{
+  "route_id": "G17G18-PREVIEW",
+  "route_name": "南二段＋新康橫斷（跨圖測試）",
+  "status": "preview-limited-verified-overlap",
+  "source": {
+    "image_url": "https://www.sunriver.com.tw/step2020.htm"
+  },
+  "dataset_version": "v0.7.5-crossmap-staging",
+  "nodes": [
+    {
+      "id": "shared:cw-v07-049",
+      "name": "拉庫音溪山屋",
+      "groups": [
+        "南二段"
+      ]
+    },
+    {
+      "id": "local:G17-OVERLAP::g17-overlap-002",
+      "name": "南雙頭山",
+      "groups": [
+        "南二段"
+      ]
+    },
+    {
+      "id": "shared:cw-v07-050",
+      "name": "新康山岔路口",
+      "groups": [
+        "南二段",
+        "新康橫斷"
+      ]
+    },
+    {
+      "id": "shared:cw-v07-006",
+      "name": "三叉山登山口",
+      "groups": [
+        "南二段",
+        "新康橫斷"
+      ]
+    },
+    {
+      "id": "shared:cw-v07-031",
+      "name": "嘉明湖岔路口",
+      "groups": [
+        "南二段",
+        "新康橫斷"
+      ]
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-001",
+      "name": "3058公尺峰",
+      "groups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-002",
+      "name": "布新岔路口",
+      "groups": [
+        "新康橫斷"
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "fromId": "local:G17-OVERLAP::g17-overlap-002",
+      "toId": "shared:cw-v07-049",
+      "from": "南雙頭山",
+      "to": "拉庫音溪山屋",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-049",
+      "toId": "local:G17-OVERLAP::g17-overlap-002",
+      "from": "拉庫音溪山屋",
+      "to": "南雙頭山",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-049",
+      "toId": "shared:cw-v07-050",
+      "from": "拉庫音溪山屋",
+      "to": "新康山岔路口",
+      "minutes": 220,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-050",
+      "toId": "shared:cw-v07-049",
+      "from": "新康山岔路口",
+      "to": "拉庫音溪山屋",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-006",
+      "toId": "shared:cw-v07-031",
+      "from": "三叉山登山口",
+      "to": "嘉明湖岔路口",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-031",
+      "toId": "shared:cw-v07-006",
+      "from": "嘉明湖岔路口",
+      "to": "三叉山登山口",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-031",
+      "toId": "shared:cw-v07-050",
+      "from": "嘉明湖岔路口",
+      "to": "新康山岔路口",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-050",
+      "toId": "shared:cw-v07-031",
+      "from": "新康山岔路口",
+      "to": "嘉明湖岔路口",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-050",
+      "toId": "local:G18-OVERLAP::g18-overlap-002",
+      "from": "新康山岔路口",
+      "to": "布新岔路口",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-002",
+      "toId": "shared:cw-v07-050",
+      "from": "布新岔路口",
+      "to": "新康山岔路口",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-002",
+      "toId": "local:G18-OVERLAP::g18-overlap-001",
+      "from": "布新岔路口",
+      "to": "3058公尺峰",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-001",
+      "toId": "local:G18-OVERLAP::g18-overlap-002",
+      "from": "3058公尺峰",
+      "to": "布新岔路口",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sources": [
+        "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+      ],
+      "sourceGroups": [
+        "新康橫斷"
+      ]
+    }
+  ]
+}
