@@ -540,14 +540,14 @@ test('v0.7.12 global route browser keeps scopes without clearing itinerary',asyn
  assert.deepEqual(manifest.routes.map(x=>x.id),['G06','G17G18-PREVIEW']);
  const html=readFileSync(new URL('../unified-editor.html',import.meta.url),'utf8');
  const app=readFileSync(new URL('../js/unified-editor.js',import.meta.url),'utf8');
- assert.match(html,/js\\/unified-editor\\.js\\?v=v0712/);
- assert.match(app,/v0\\.7\\.12 Unified Preview/);
+ assert.ok(html.includes('js/unified-editor.js?v=v0712'));
+ assert.ok(app.includes('v0.7.12 Unified Preview'));
  assert.match(app,/mergeReviewedRoutes/);
- assert.match(app,/nodesInScope\\(route,scope\\)/);
+ assert.ok(app.includes('nodesInScope(route,scope)'));
  assert.match(app,/appendDisconnectedNode/);
  assert.doesNotMatch(app,/切換上河圖會清空目前行程/);
  assert.match(app,/未連通・手動估時/);
- assert.match(app,/unified-preview-autosave\\.v0711/);
+ assert.ok(app.includes('unified-preview-autosave.v0711'));
 });
 
 test('v0.7.12 verified global graph does not invent connection between G06 and G17',async()=>{
