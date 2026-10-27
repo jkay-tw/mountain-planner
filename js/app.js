@@ -13,7 +13,7 @@ async function restore(i){if(i<0||i>=snapshots.length)return;const x=JSON.parse(
 const checkMissing=()=>{const n=days.reduce((sum,d)=>sum+missingSegments(d),0);return n===0||confirm('有 '+n+' 個路段未填時間，匯出結果含未完成時間。仍繼續？')};
 
 
-const newDay=i=>({id:uid(),startTime:i?'05:30':'06:00',coefficient:.8,linkedStart:i>0,note:'',items:[]});
+const newDay=i=>({id:uid(),startTime:i?'05:30':'06:00',coefficient:.8,linkedStart:false,note:'',items:[]});
 const locs=d=>d.items.filter(x=>x.type!=='rest');
 const first=d=>locs(d)[0]||null;
 const last=d=>{const a=locs(d);return a[a.length-1]||null};
@@ -125,45 +125,59 @@ function bindGlobal(){
   $('importFile').onchange=importPlan;
 }
 
+function unlinkNextIfEndpointChanges(day){
+  const i=days.indexOf(day),next=days[i+1];
+  if(next?.linkedStart)next.linkedStart=false;
+}
 function addNode(day,name){
   if(!route){alert('請先選擇上河圖');return}
   const p=last(day);
+  if(p)unlinkNextIfEndpointChanges(day);
   if(!p){
-    day.items.push({id:uid(),type:'location',name,auto:false,waypoint:true,note:'',isPeak:false,hasWater:false,incoming:null});
+    day.items.push({id:uid(),type:'location',name,note:'',isPeak:false,hasWater:false,incoming:null});
     return;
   }
   if(p.type==='manual-location'){
     const id=uid();
-    day.items.push({id,type:'location',name,auto:false,waypoint:true,note:'',isPeak:false,hasWater:false,incoming:{kind:'manual',fromId:p.id,toId:id,actualMinutes:null}});
+    day.items.push({id,type:'location',name,note:'',isPeak:false,hasWater:false,incoming:{kind:'manual',fromId:p.id,toId:id,actualMinutes:null}});
     return;
   }
   const path=shortestPath(route,p.name,name);
   if(!path){alert('找不到 '+p.name+' → '+name+' 的上河路徑');return}
   path.segments.forEach((s,i)=>day.items.push({
-    id:uid(),type:'location',name:s.to,auto:i<path.segments.length-1,waypoint:i===path.segments.length-1,
+    id:uid(),type:'location',name:s.to,
     note:'',isPeak:false,hasWater:false,
     incoming:{kind:'official',from:s.from,to:s.to,officialMinutes:s.minutes,actualMinutes:null,source:route.source.image_url}
   }));
 }
 
-function syncStarts(){
-  for(let i=1;i<days.length;i++){
-    const d=days[i],p=last(days[i-1]);if(!d.linkedStart||!p)continue;
-    const f=first(d);
-    if(!f){
-      d.items.unshift({id:uid(),type:p.type,name:p.name,auto:false,waypoint:true,note:'',isPeak:!!p.isPeak,hasWater:!!p.hasWater,incoming:null,_linkedStart:true});
-    }else if(f._linkedStart&&(f.name!==p.name||f.type!==p.type)){
-      f.name=p.name;f.type=p.type;f.incoming=null;f.isPeak=!!p.isPeak;f.hasWater=!!p.hasWater;
-      if(route)recalcConnections(d,route);
-    }
+function connectToPrevious(i){
+  if(i<1)return;
+  const prevEnd=last(days[i-1]),d=days[i];
+  if(!prevEnd){d.linkedStart=false;return}
+  const f=first(d);
+  if(f&&f.name===prevEnd.name&&f.type===prevEnd.type){
+    f.incoming=null;f._linkedStart=true;d.linkedStart=true;
+  }else{
+    d.items.unshift({id:uid(),type:prevEnd.type,name:prevEnd.name,note:'',isPeak:!!prevEnd.isPeak,hasWater:!!prevEnd.hasWater,incoming:null,_linkedStart:true});
+    d.linkedStart=true;
   }
+  if(route)recalcConnections(d,route);
 }
-
-function forceSync(i){
-  const p=last(days[i-1]);if(!p)return;
-  const d=days[i],f=first(d);
-  if(!f)d.items.unshift({id:uid(),type:p.type,name:p.name,auto:false,waypoint:true,note:'',isPeak:!!p.isPeak,hasWater:!!p.hasWater,incoming:null,_linkedStart:true});
-  else{f.name=p.name;f.type=p.type;f._linkedStart=true;f.incoming=null;if(route)recalcConnections(d,route)}
+function addManualStart(d){
+  if(locs(d).length===0){
+    d.items.unshift({id:uid(),type:'manual-location',name:'手動起點',note:'',isPeak:false,hasWater:false,incoming:null});
+  }else{
+    d.items.unshift({id:uid(),type:'manual-location',name:'手動起點',note:'',isPeak:false,hasWater:false,incoming:null});
+    if(route)recalcConnections(d,route);
+  }
+  d.linkedStart=false;render();
+}
+function addManualEnd(d){
+  if(locs(d).length)unlinkNextIfEndpointChanges(d);
+  const p=last(d),id=uid();
+  d.items.push({id,type:'manual-location',name:'手動終點',note:'',isPeak:false,hasWater:false,
+    incoming:p?{kind:'manual',fromId:p.id,toId:id,actualMinutes:null}:null});
   render();
 }
 
