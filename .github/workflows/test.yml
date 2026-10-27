@@ -19,3 +19,6 @@ jobs:
           node --check js/planner.js
           node --check js/node-identity.js
           node --experimental-default-type=module --test tests/*.test.mjs
+
+      - name: Verify batch route-data audit and promotion gates
+        run: python3 -m unittest discover -s tests -p 'test_batch_*.py'
