@@ -23,7 +23,7 @@ export function shortestPath(route,start,end){
     for(const n of unvisited)if(dist.get(n)<best){best=dist.get(n);u=n}
     if(u===null||best===Infinity)break;
     unvisited.delete(u);if(u===end)break;
-    for(const seg of route.segments.filter(s=>s[fromKey]===u)){
+    for(const seg of route.segments.filter(s=>s[fromKey]===u&&!['vehicle','driving','transport'].includes(s.travelMode??s.edgeType??'walking')&&s.verificationStatus!=='unverified')){
       const target=seg[toKey];
       const alt=best+seg.minutes;
       if(alt<(dist.get(target)??Infinity)){dist.set(target,alt);prev.set(target,{node:u,seg})}
