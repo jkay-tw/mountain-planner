@@ -20,7 +20,7 @@ def identity_index(crosswalk):
     denied=[]
     for row in crosswalk['canonicalNodes']:
         cid=row['canonicalId']
-        canonical_names['shared:'+cid]=row['name']
+        canonical_names['shared:'+cid]=row.get('name') or row['members'][0]['name']
         for member in row['members']:
             key=(member['group'],member['name'])
             if key in physical:
