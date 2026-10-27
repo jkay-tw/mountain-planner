@@ -533,3 +533,21 @@ test('v0.7.10 preview exposes optional alternate-time controls while keeping nod
   assert.match(content,/node-picker-controls/);
  }
 });
+
+test('v0.7.11 one editor exposes only G06 and source-reviewed G17/G18 scope',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const manifest=JSON.parse(readFileSync(new URL('../data/unified-editor-manifest.json',import.meta.url),'utf8'));
+ assert.deepEqual(manifest.routes.map(x=>x.id),['G06','G17G18-PREVIEW']);
+ assert.equal(manifest.mode,'unified-editor-preview-only');
+ const html=readFileSync(new URL('../unified-editor.html',import.meta.url),'utf8');
+ const editor=readFileSync(new URL('../js/unified-editor.js',import.meta.url),'utf8');
+ assert.match(html,/js\/unified-editor\.js\?v=v0711/);
+ assert.match(editor,/v0\.7\.11 Unified Preview/);
+ assert.match(editor,/unified-editor-manifest\.json/);
+ assert.match(editor,/unified-preview-autosave\.v0711/);
+ assert.doesNotMatch(editor,/STORAGE_KEY='mountain-planner\.autosave\.v1'/);
+ assert.match(editor,/schemaVersion:1/);
+ assert.match(editor,/filterLocations\(/);
+ assert.match(editor,/node-action-controls/);
+ assert.match(editor,/alternate-time/);
+});
