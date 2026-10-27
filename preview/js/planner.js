@@ -92,6 +92,13 @@ export function recalcConnections(day,route){
 }
 // Deletion is based on the node's role in the current day, never on how it was added.
 // Official nodes are deletable only at day boundaries or immediately beside a manual node.
+export function retargetSplitIncoming(items,oldStartId,newStartId){
+  const firstMoved=items.find(x=>x.type!=='rest');
+  if(firstMoved?.incoming?.kind==='manual'&&firstMoved.incoming.fromId===oldStartId){
+    firstMoved.incoming={...firstMoved.incoming,fromId:newStartId};
+  }
+  return items;
+}
 export function normalizeDay(day,route){
   if(route)recalcConnections(day,route);
   const locs=day.items.filter(x=>x.type!=='rest');
