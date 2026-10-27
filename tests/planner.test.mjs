@@ -577,3 +577,19 @@ test('v0.7.12 verified global graph does not invent connection between G06 and G
  assert.equal(d.items[1].incoming.actualMinutes,240);
  assert.equal(shortestPath(combined,g06.id,g17.id),null);
 });
+
+test('G06 all nine official walking pairs independently match G06 chart review in both directions',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const route=addRouteIdentity(JSON.parse(readFileSync(new URL('../data/routes/G06.json',import.meta.url),'utf8')));
+ const review=JSON.parse(readFileSync(new URL('../data/audits/G06_full_official_directional_review_20261028.json',import.meta.url),'utf8'));
+ assert.equal(review.directedEdges,18);
+ assert.equal(route.segments.length,18);
+ for(const pair of review.pairs){
+   const there=route.segments.find(s=>s.from===pair.from&&s.to===pair.to);
+   const back=route.segments.find(s=>s.from===pair.to&&s.to===pair.from);
+   assert.ok(there, pair.from+'→'+pair.to);
+   assert.ok(back,pair.to+'→'+pair.from);
+   assert.equal(there.minutes,pair.forwardMinutes);
+   assert.equal(back.minutes,pair.reverseMinutes);
+ }
+});
