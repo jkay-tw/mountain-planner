@@ -1,0 +1,70 @@
+{
+  "route_id": "G18-OVERLAP",
+  "route_name": "新康橫斷",
+  "status": "limited-overlap-audit-staging-not-published",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+  },
+  "auditScope": "ONLY listed walking edges individually compared with G17/G18 official chart. Other candidate segments remain pending.",
+  "nodes": [
+    {
+      "id": "g18-overlap-001",
+      "name": "3058公尺峰"
+    },
+    {
+      "id": "g18-overlap-002",
+      "name": "布新岔路口"
+    },
+    {
+      "id": "g18-overlap-003",
+      "name": "新康山岔路口"
+    }
+  ],
+  "segments": [
+    {
+      "from": "新康山岔路口",
+      "to": "布新岔路口",
+      "fromId": "g18-overlap-003",
+      "toId": "g18-overlap-002",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "source-chart-visual-review-2026-10-27"
+    },
+    {
+      "from": "布新岔路口",
+      "to": "新康山岔路口",
+      "fromId": "g18-overlap-002",
+      "toId": "g18-overlap-003",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "source-chart-visual-review-2026-10-27"
+    },
+    {
+      "from": "布新岔路口",
+      "to": "3058公尺峰",
+      "fromId": "g18-overlap-002",
+      "toId": "g18-overlap-001",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "source-chart-visual-review-2026-10-27"
+    },
+    {
+      "from": "3058公尺峰",
+      "to": "布新岔路口",
+      "fromId": "g18-overlap-001",
+      "toId": "g18-overlap-002",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "source-chart-visual-review-2026-10-27"
+    }
+  ]
+}
