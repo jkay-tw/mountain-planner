@@ -178,7 +178,7 @@ button{border:0;border-radius:8px;padding:9px 12px;background:var(--accent);colo
 }
 @media(max-width:700px){
   .day-tools{
-    grid-template-columns:minmax(0,1fr) 76px;
+    grid-template-columns:minmax(0,1fr) 112px;
     grid-template-areas:
       "link link"
       "search search"
@@ -187,6 +187,7 @@ button{border:0;border-radius:8px;padding:9px 12px;background:var(--accent);colo
     gap:8px;
   }
   .day-tools > .node-search-inline{max-width:none}
+  .day-tools > .add-dest{justify-self:end}
   .day-tools > .manual-start,.day-tools > .manual-end{justify-self:start}
   .day-tools > .compact-day-action{font-size:12px;padding:8px 12px}
 }
