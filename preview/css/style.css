@@ -107,3 +107,26 @@ button{border:0;border-radius:8px;padding:9px 12px;background:var(--accent);colo
     padding:6px 6px;
   }
 }
+
+/* v0.6.2: mobile day header uses explicit grid placement, no implicit columns */
+@media(max-width:900px){
+  .day-head{
+    grid-template-columns:26px minmax(0,1fr) auto;
+    grid-template-areas:
+      "toggle title clear"
+      "start start coefficient"
+      "stats stats stats";
+    align-items:center;
+    min-width:0;
+  }
+  .day-head > .day-toggle{grid-area:toggle}
+  .day-head > .day-title{grid-area:title;min-width:0}
+  .day-head > .day-control:not(.coefficient){grid-area:start;min-width:0}
+  .day-head > .day-control.coefficient{grid-area:coefficient;min-width:0}
+  .day-head > .stats{grid-area:stats;min-width:0}
+  .day-head > .clear-day{grid-area:clear}
+  .day-card.collapsed .day-head{
+    grid-template-columns:26px minmax(0,1fr);
+    grid-template-areas:"toggle title";
+  }
+}
