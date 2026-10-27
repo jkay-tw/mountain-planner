@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {edgeActual,buildTimeline,summarizeDay,recalcConnections,canDeleteItem,normalizeDay,retargetSplitIncoming} from '../js/planner.js';
+import {edgeActual,buildTimeline,summarizeDay,recalcConnections,canDeleteItem,normalizeDay,retargetSplitIncoming,shortestPath} from '../js/planner.js';
 import {validatePlan} from '../js/validation.js';
-import {addRouteIdentity,buildNodeRegistry,provisionalNodeId} from '../js/node-identity.js';
+import {addRouteIdentity,buildNodeRegistry,provisionalNodeId,migrateDaysToNodeIds} from '../js/node-identity.js';
 const route={source:{image_url:'official'},segments:[
  {from:'A',to:'B',minutes:30},{from:'B',to:'C',minutes:40},
  {from:'B',to:'A',minutes:35},{from:'C',to:'B',minutes:45}
@@ -99,4 +99,53 @@ test('v0.7 route identity is stable and does not alter old segment names or minu
  assert.equal(raw.segments[0].fromId,undefined);
  assert.equal(provisionalNodeId('G06','司晏池營地'),a.segments[0].fromId);
  assert.equal(buildNodeRegistry(raw).nodes.length,2);
+});
+
+test('v0.7 routing uses IDs, not same-looking display names',()=>{
+ const y=addRouteIdentity({route_id:'Y',nodes:[
+  {id:'y-j',name:'主北岔路'},{id:'y-p',name:'玉山主峰'}],
+  segments:[{from:'主北岔路',to:'玉山主峰',minutes:25}]});
+ const q=addRouteIdentity({route_id:'Q',nodes:[
+  {id:'q-j',name:'主北岔路'},{id:'q-p',name:'奇萊北峰'}],
+  segments:[{from:'主北岔路',to:'奇萊北峰',minutes:35}]});
+ assert.equal(shortestPath(y,'y-j','y-p').minutes,25);
+ assert.equal(shortestPath(y,'q-j','y-p'),null);
+ assert.equal(shortestPath(q,'y-j','q-p'),null);
+});
+test('v0.7 legacy itinerary migration preserves manual times and annotations',()=>{
+ const r=addRouteIdentity({route_id:'G06',source:{image_url:'official'},nodes:[
+   {id:'g06-a',name:'司晏池營地'},{id:'g06-b',name:'白姑大山東南峰'}
+ ],segments:[{from:'司晏池營地',to:'白姑大山東南峰',minutes:60}]});
+ const original={id:'day',startTime:'05:30',coefficient:.8,linkedStart:true,note:'Day note',items:[
+  {id:'x',type:'location',name:'司晏池營地',note:'start',incoming:null},
+  {id:'m',type:'manual-location',name:'手動點',note:'water',incoming:{kind:'manual',fromId:'x',toId:'m',actualMinutes:10}},
+  {id:'z',type:'location',name:'白姑大山東南峰',note:'peak',incoming:{kind:'manual',fromId:'m',toId:'z',actualMinutes:40}}
+ ]};
+ const migrated=migrateDaysToNodeIds([original],r)[0];
+ assert.equal(migrated.items[0].nodeId,'g06-a');
+ assert.equal(migrated.items[2].nodeId,'g06-b');
+ assert.equal(migrated.items[1].incoming.actualMinutes,10);
+ assert.equal(migrated.items[2].incoming.actualMinutes,40);
+ assert.equal(migrated.items[1].note,'water');
+ assert.equal(migrated.linkedStart,true);
+ assert.equal(migrated.note,'Day note');
+ assert.equal(original.items[0].nodeId,undefined);
+ normalizeDay(migrated,r);
+ assert.equal(migrated.items[1].incoming.actualMinutes,10);
+ assert.equal(migrated.items[2].incoming.actualMinutes,40);
+});
+test('v0.7 official paths and edited minutes use edge IDs',()=>{
+ const r=addRouteIdentity({route_id:'G',nodes:[{id:'a',name:'A'},{id:'b',name:'B'},{id:'c',name:'C'}],
+  source:{image_url:'official'},
+  segments:[{from:'A',to:'B',minutes:30},{from:'B',to:'C',minutes:40}]});
+ const day={items:[
+   {...point('p','A'),nodeId:'a'},
+   {...point('q','C',{kind:'official',from:'B',to:'C',fromNodeId:'b',toNodeId:'c',officialMinutes:40,actualMinutes:55}),nodeId:'c'}
+ ]};
+ normalizeDay(day,r);
+ assert.deepEqual(day.items.map(x=>x.nodeId),['a','b','c']);
+ assert.equal(day.items[2].incoming.actualMinutes,55);
+ normalizeDay(day,r);
+ assert.deepEqual(day.items.map(x=>x.nodeId),['a','b','c']);
+ assert.equal(day.items[2].incoming.actualMinutes,55);
 });
