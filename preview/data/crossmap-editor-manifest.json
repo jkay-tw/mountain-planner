@@ -1,10 +1,10 @@
 {
-  "dataset_version": "0.7.5-crossmap-staging",
+  "dataset_version": "0.7.8-crossmap-staging",
   "routes": [
     {
       "id": "G17G18-PREVIEW",
       "name": "南二段＋新康橫斷（僅已核對路段）",
-      "file": "data/routes/G17G18.preview.json",
+      "file": "data/routes/G17G18.preview.json?v=078",
       "status": "preview-only",
       "source_url": "https://www.sunriver.com.tw/step2020.htm"
     }
