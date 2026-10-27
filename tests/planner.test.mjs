@@ -269,3 +269,33 @@ test('G06 plus G11 independently audited graphs remain disconnected',async()=>{
  assert.equal(shortestVerifiedWalkingPath(graph,start,end),null);
  assert.ok(graph.edges.size>0);
 });
+
+
+test('G17→G18 real source-audited overlap uses confirmed junction, not name matching',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const load=file=>JSON.parse(readFileSync(new URL(file,import.meta.url),'utf8'));
+ const g17=load('../data/staging/G17.overlap-verified-subset.json');
+ const g18=load('../data/staging/G18.overlap-verified-subset.json');
+ const crosswalk=load('../data/crosswalk-reviewed.json');
+ const id=(graph,route,name)=>{
+   const node=route.nodes.find(n=>n.name===name);
+   return graph.locationId.get(JSON.stringify([route.route_id,node.id]));
+ };
+ const separate=buildVerifiedWalkingGraph([g17,g18],crosswalk);
+ assert.equal(shortestVerifiedWalkingPath(separate,id(separate,g17,'南雙頭山'),id(separate,g18,'3058公尺峰')),null);
+ const joined=buildVerifiedWalkingGraph([g17,g18],crosswalk,{allowCrossMap:true});
+ const route=shortestVerifiedWalkingPath(joined,id(joined,g17,'南雙頭山'),id(joined,g18,'3058公尺峰'));
+ assert.ok(route,'Source-verified join should traverse 新康山岔路口');
+ assert.deepEqual(route.segments.map(s=>s.routeId),['G17-OVERLAP','G17-OVERLAP','G18-OVERLAP','G18-OVERLAP']);
+ assert.equal(route.minutes,550); // 180 + 220 + 70 + 80
+ const reverse=shortestVerifiedWalkingPath(joined,id(joined,g18,'3058公尺峰'),id(joined,g17,'南雙頭山'));
+ assert.equal(reverse.minutes,410); // 90 + 80 + 130 + 110
+ assert.equal(route.nodes.length,5);
+});
+test('G17 and G18 staged excerpts contain only four audited bidirectional walking pairs',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const read=n=>JSON.parse(readFileSync(new URL('../data/staging/'+n+'.overlap-verified-subset.json',import.meta.url),'utf8'));
+ const a=read('G17'),b=read('G18');
+ assert.equal(a.segments.length,4);assert.equal(b.segments.length,4);
+ assert.ok([...a.segments,...b.segments].every(e=>e.travelMode==='walking'&&e.verificationStatus==='verified'&&e.source.startsWith('https://www.sunriver.com.tw/')));
+});
