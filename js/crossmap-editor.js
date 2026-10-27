@@ -7,7 +7,7 @@ import {filterLocations} from './node-browser.js?v=v074';
 
 const $=id=>document.getElementById(id);
 const STORAGE_KEY='mountain-planner.crossmap-autosave.v075';
-const APP_VERSION='v0.7.8 Crossmap Editor';
+const APP_VERSION='v0.7.9 Crossmap Editor';
 const COLLAPSE_KEY='mountain-planner.crossmap-collapsed-days.v075';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='';
@@ -297,7 +297,7 @@ function renderDay(d,i){
   '<div class="stats"><div class="stat"><span>行進</span><b>'+formatDuration(s.movement)+'</b></div><div class="stat"><span>休息</span><b>'+formatDuration(s.rest)+'</b></div><div class="stat"><span>總計</span><b>'+(s.missing?'未完成':formatDuration(s.total))+'</b></div><div class="stat coef"><span>平均</span><b>'+(s.coefficient??'—')+'</b></div></div>'+
   '<button class="clear-day">清除 Day '+(i+1)+'</button></div>'+
   '<div class="day-tools">'+(i?'<label class="link-wrap"><input class="link-start" type="checkbox" '+(d.linkedStart?'checked':'')+'>銜接前日</label>':'<span class="link-wrap">第一點即起點</span>')+
-  '<input class="node-search-inline" type="search" placeholder="搜尋節點" aria-label="搜尋當日要加入的節點" autocomplete="off" '+(route?'':'disabled')+'>'+selector+'<button class="add-dest" '+(route?'':'disabled')+'>加入</button><button class="manual-start secondary compact-day-action">＋手動起點</button><button class="manual-end secondary compact-day-action">＋手動終點</button></div>'+
+  '<div class="node-picker-controls"><input class="node-search-inline" type="search" placeholder="搜尋節點" aria-label="搜尋當日要加入的節點" autocomplete="off" '+(route?'':'disabled')+'>'+selector+'</div><div class="node-action-controls"><button class="add-dest" '+(route?'':'disabled')+'>加入</button><button class="manual-start secondary compact-day-action">＋手動起點</button><button class="manual-end secondary compact-day-action">＋手動終點</button></div></div>'+
   (s.missing?'<div class="missing-warning">尚有 '+s.missing+' 個手動路段未填時間；後續時間無法計算。</div>':'')+
   '<div class="timeline">'+renderTimeline(d)+'</div>'+
   '<div class="day-footer"><textarea class="day-note" placeholder="Day '+(i+1)+' 備註">'+esc(d.note||'')+'</textarea></div></article>';
