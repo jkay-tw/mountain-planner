@@ -64,7 +64,20 @@ export function recalcConnections(day,route){
     }
     const path=shortestPath(route,previous.name,item.name);
     if(!path){item.incoming=makeManual(previous,item,raw.incoming);result.push(item);previous=item;continue;}
-    if(!path.segments.length){item.incoming=null;result.push(item);previous=item;continue;}
+    if(!path.segments.length){
+      // Adjacent identical official locations represent the same physical point.
+      // Merge them instead of leaving a later item with incoming=null ("起點").
+      const prevOut=[...result].reverse().find(x=>x.type!=='rest');
+      if(prevOut&&prevOut.type==='location'&&item.type==='location'&&prevOut.name===item.name){
+        prevOut.note=prevOut.note||item.note||'';
+        prevOut.isPeak=!!(prevOut.isPeak||item.isPeak);
+        prevOut.hasWater=!!(prevOut.hasWater||item.hasWater);
+        previous=prevOut;
+        continue;
+      }
+      item.incoming={kind:'manual',fromId:previous.id,toId:item.id,actualMinutes:null};
+      result.push(item);previous=item;continue;
+    }
     for(let j=0;j<path.segments.length;j++){
       const seg=path.segments[j],isDestination=j===path.segments.length-1;
       const existing=original.find(x=>x.type!=='rest'&&x.name===seg.to&&x.incoming?.kind==='official'&&x.incoming.from===seg.from&&x.incoming.to===seg.to);
@@ -79,6 +92,20 @@ export function recalcConnections(day,route){
 }
 // Deletion is based on the node's role in the current day, never on how it was added.
 // Official nodes are deletable only at day boundaries or immediately beside a manual node.
+export function normalizeDay(day,route){
+  if(route)recalcConnections(day,route);
+  const locs=day.items.filter(x=>x.type!=='rest');
+  if(locs.length){
+    locs[0].incoming=null;
+    for(let i=1;i<locs.length;i++){
+      if(!locs[i].incoming){
+        const prev=locs[i-1];
+        locs[i].incoming={kind:'manual',fromId:prev.id,toId:locs[i].id,actualMinutes:null};
+      }
+    }
+  }
+  return day;
+}
 export function canDeleteItem(day,index){
   const item=day.items[index];
   if(!item)return false;
