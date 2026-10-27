@@ -49,19 +49,19 @@
       "group": "南二段",
       "officialChart": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
       "jsonCount": 68,
-      "verifiedWalkingEdges": 2,
+      "verifiedWalkingEdges": 4,
       "vehicleEdges": 0,
-      "auditScope": "two selected two-way walking pairs only, not all 68 candidate rows",
-      "notes": "Shared directed comparison G17↔G18: 22 matches, 2 conflicting directions. G17 向陽山→西側登山口 candidate 35/25 reversed versus official 25/35. Pending correction; all other candidate rows remain unverified."
+      "auditScope": "four selected walking pairs checked in both directions against their respective official step chart; other candidate rows remain unverified",
+      "notes": "Shared directed comparison G17↔G18: 22 matches, 2 conflicting directions. G17 向陽山→西側登山口 candidate 35/25 reversed versus official 25/35. Pending correction; all other candidate rows remain unverified. Expanded shared section: 三叉山登山口 ↔ 嘉明湖岔路口 (30/25) and 嘉明湖岔路口 ↔ 新康山岔路口 (40/30) audited; four shared directed times agree."
     },
     {
       "group": "新康橫斷",
       "officialChart": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
       "jsonCount": 50,
-      "verifiedWalkingEdges": 2,
+      "verifiedWalkingEdges": 4,
       "vehicleEdges": 0,
-      "auditScope": "two selected two-way walking pairs only, not all 50 candidate rows",
-      "notes": "Overlapping path at 新康山岔路口 independently staged; all other candidate rows remain unverified."
+      "auditScope": "four selected walking pairs checked in both directions against their respective official step chart; other candidate rows remain unverified",
+      "notes": "Overlapping path at 新康山岔路口 independently staged; all other candidate rows remain unverified. Expanded shared section: 三叉山登山口 ↔ 嘉明湖岔路口 (30/25) and 嘉明湖岔路口 ↔ 新康山岔路口 (40/30) audited; four shared directed times agree."
     }
   ],
   "otherGroups": "remaining groups not yet source-audited",
