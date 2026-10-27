@@ -15,9 +15,9 @@
       "group": "能高越嶺",
       "officialChart": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
       "jsonCount": 19,
-      "verifiedWalkingEdges": null,
+      "verifiedWalkingEdges": 13,
       "vehicleEdges": 6,
-      "notes": "初步辨識車行路段並列入排除名單，其餘13段尚待逐項核時。",
+      "notes": "G11 官方步程示意圖已逐項目視核對：13個步行路段的去回分鐘與候選JSON吻合；6個車行路段僅能核對單一圖示時間，JSON反向時間沒有官方步行證據，需另以交通資料處理。",
       "vehiclePairs": [
         [
           "霧社",
