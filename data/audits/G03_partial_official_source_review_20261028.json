@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "chartId": "G03",
+  "chartURL": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+  "reviewedAt": "2026-10-28",
+  "reviewedBy": "assistant",
+  "reviewMethod": "visual comparison with source diagram, two directed values for each selected path; excluded ambiguous road/travel mode rows",
+  "status": "partial-source-checked",
+  "reviewedPairs": [
+    {
+      "group": "郡大山",
+      "from": "32K登山口",
+      "to": "望鄉山",
+      "forwardMinutes": 40,
+      "reverseMinutes": 25,
+      "travelMode": "walking"
+    },
+    {
+      "group": "郡大山",
+      "from": "望鄉山",
+      "to": "郡大山北峰",
+      "forwardMinutes": 100,
+      "reverseMinutes": 60,
+      "travelMode": "walking"
+    },
+    {
+      "group": "郡大山",
+      "from": "郡大山北峰",
+      "to": "郡大山",
+      "forwardMinutes": 65,
+      "reverseMinutes": 55,
+      "travelMode": "walking"
+    },
+    {
+      "group": "西巒大山",
+      "from": "17.1K柵欄",
+      "to": "人倫工作站",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking"
+    },
+    {
+      "group": "西巒大山",
+      "from": "人倫工作站",
+      "to": "登山口(第二登山口)",
+      "forwardMinutes": 30,
+      "reverseMinutes": 30,
+      "travelMode": "walking"
+    },
+    {
+      "group": "西巒大山",
+      "from": "登山口(第二登山口)",
+      "to": "森林營地",
+      "forwardMinutes": 120,
+      "reverseMinutes": 80,
+      "travelMode": "walking"
+    },
+    {
+      "group": "西巒大山",
+      "from": "森林營地",
+      "to": "瞭望台營地",
+      "forwardMinutes": 60,
+      "reverseMinutes": 45,
+      "travelMode": "walking"
+    },
+    {
+      "group": "西巒大山",
+      "from": "瞭望台營地",
+      "to": "展望點",
+      "forwardMinutes": 160,
+      "reverseMinutes": 100,
+      "travelMode": "walking"
+    },
+    {
+      "group": "西巒大山",
+      "from": "展望點",
+      "to": "西巒大山",
+      "forwardMinutes": 20,
+      "reverseMinutes": 15,
+      "travelMode": "walking"
+    }
+  ],
+  "notApproved": [
+    {
+      "group": "郡大山",
+      "from": "十八重溪橋",
+      "to": "23K望鄉工作站",
+      "reason": "road or vehicle context in source chart; do not classify as walking"
+    },
+    {
+      "group": "郡大山",
+      "from": "23K望鄉工作站",
+      "to": "32K登山口",
+      "reason": "road context; walking-vs-vehicle requires separate source mode evidence"
+    },
+    {
+      "group": "西巒大山",
+      "from": "新山",
+      "to": "17.1K柵欄",
+      "reason": "explicit vehicle pictogram; exclude from verified walking graph"
+    }
+  ],
+  "scope": "9 explicitly selected walking pairs (18 directed values). The other three candidate pairs are withheld from automatic walking routing until mode/connection review."
+}
