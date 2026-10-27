@@ -537,7 +537,7 @@ test('v0.7.10 preview exposes optional alternate-time controls while keeping nod
 test('v0.7.12 global route browser keeps scopes without clearing itinerary',async()=>{
  const {readFileSync}=await import('node:fs');
  const manifest=JSON.parse(readFileSync(new URL('../data/unified-editor-manifest.json',import.meta.url),'utf8'));
- assert.deepEqual(manifest.routes.map(x=>x.id),['G06','G17G18-PREVIEW']);
+ assert.deepEqual(manifest.routes.map(x=>x.id),['G06','G07','G17G18-PREVIEW']);
  const html=readFileSync(new URL('../unified-editor.html',import.meta.url),'utf8');
  const app=readFileSync(new URL('../js/unified-editor.js',import.meta.url),'utf8');
  assert.ok(html.includes('js/unified-editor.js?v=v0713'));
