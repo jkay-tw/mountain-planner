@@ -414,3 +414,55 @@ test('per-day picker explicitly selects node-name-only search mode',async()=>{
  const source=readFileSync(new URL('../js/app.js',import.meta.url),'utf8');
  assert.match(source,/search\.value,100,\{includeRoute:false\}/);
 });
+
+test('v0.7.5 composite graph supports cross-group multi-day planner shortestPath',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const raw=JSON.parse(readFileSync(new URL('../data/routes/G17G18.preview.json',import.meta.url),'utf8'));
+ const route=addRouteIdentity(raw);
+ assert.equal(route.nodes.length,7);
+ assert.equal(route.segments.length,12);
+ assert.ok(route.segments.every(e=>e.travelMode==='walking'&&e.verificationStatus==='verified'));
+ const id=n=>route.nodes.find(x=>x.name===n)?.id;
+ const go=shortestPath(route,id('南雙頭山'),id('3058公尺峰'));
+ const back=shortestPath(route,id('3058公尺峰'),id('南雙頭山'));
+ assert.equal(go.minutes,480);assert.equal(back.minutes,480);
+ assert.deepEqual(go.segments.map(x=>x.minutes),[110,220,70,80]);
+ assert.equal(shortestPath(route,id('三叉山登山口'),id('3058公尺峰')).minutes,220);
+});
+test('v0.7.5 preserves per-direction source and user edits during itinerary normalization',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const route=addRouteIdentity(JSON.parse(readFileSync(new URL('../data/routes/G17G18.preview.json',import.meta.url),'utf8')));
+ const start=route.nodes.find(n=>n.name==='南雙頭山');
+ const end=route.nodes.find(n=>n.name==='3058公尺峰');
+ const d={startTime:'06:00',coefficient:1,note:'',linkedStart:false,items:[
+  {...point('one',start.name),nodeId:start.id},
+  {...point('last',end.name,{kind:'manual',fromId:'one',toId:'last',actualMinutes:480}),nodeId:end.id}
+ ]};
+ normalizeDay(d,route);
+ assert.deepEqual(d.items.map(i=>i.name),['南雙頭山','拉庫音溪山屋','新康山岔路口','布新岔路口','3058公尺峰']);
+ assert.deepEqual(d.items.slice(1).map(i=>i.incoming.officialMinutes),[110,220,70,80]);
+ assert.deepEqual(d.items.slice(1).map(i=>i.incoming.source),[
+  'https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg',
+  'https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg',
+  'https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg',
+  'https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg'
+ ]);
+ d.items[d.items.length-1].incoming.actualMinutes=95;
+ normalizeDay(d,route);
+ assert.equal(d.items[d.items.length-1].incoming.actualMinutes,95);
+ const payload={format:'mountain-planner',schemaVersion:1,routeId:'G17G18-PREVIEW',tripStartDate:'',days:[d]};
+ assert.equal(validatePlan(payload,['G17G18-PREVIEW']),payload);
+});
+test('v0.7.5 crossmap editor never shares main planner autosave key or route manifest',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const app=readFileSync(new URL('../js/crossmap-editor.js',import.meta.url),'utf8');
+ const main=readFileSync(new URL('../js/app.js',import.meta.url),'utf8');
+ const html=readFileSync(new URL('../crossmap-editor.html',import.meta.url),'utf8');
+ const manifest=JSON.parse(readFileSync(new URL('../data/crossmap-editor-manifest.json',import.meta.url),'utf8'));
+ assert.match(app,/crossmap-autosave\.v075/);
+ assert.match(app,/crossmap-editor-manifest\.json/);
+ assert.match(html,/js\/crossmap-editor\.js\?v=v075/);
+ assert.doesNotMatch(main,/crossmap-autosave/);
+ assert.ok(manifest.routes.some(x=>x.id==='G17G18-PREVIEW'));
+ assert.equal(manifest.routes.length,1);
+});
