@@ -1,5 +1,5 @@
-import {buildVerifiedWalkingGraph,shortestVerifiedWalkingPath} from './crossmap-routing.js';
-import {filterLocations,adjacentLocations} from './node-browser.js';
+import {buildVerifiedWalkingGraph,shortestVerifiedWalkingPath} from './crossmap-routing.js?v=20261027b';
+import {filterLocations,adjacentLocations} from './node-browser.js?v=20261027b';
 
 const $=id=>document.getElementById(id);
 const fmt=min=>Math.floor(min/60)+' 小時 '+String(min%60).padStart(2,'0')+' 分鐘';
@@ -49,7 +49,9 @@ function renderSearch(which){
     const identity=o.key;
     if(seen.has(identity))continue;seen.add(identity);
     const btn=document.createElement('button');btn.type='button';
-    btn.textContent=o.name+'｜'+o.route;
+    const title=document.createElement('strong');title.textContent=o.name;
+    const context=document.createElement('small');context.textContent=o.route;
+    btn.append(title,context);
     btn.addEventListener('click',()=>chooseLocation(which,optionValue(o)));
     results.append(btn);
   }
@@ -110,6 +112,9 @@ async function init(){
   const crosswalk=files[2];
   if(crosswalk.schemaVersion!==1||crosswalk.canonicalNodes.some(n=>n.routingEnabled!==false))
     throw Error('跨圖資料檢查失敗');
+  for(const id of ['start','end','startSearch','endSearch','startMatches','endMatches','neighbors','status','result','swap']){
+    if(!$(id))throw Error('介面元件不存在：'+id);
+  }
   graph=buildVerifiedWalkingGraph(routes,crosswalk,{allowCrossMap:true});
   updateOptions();
   for(const which of ['start','end']){
@@ -120,7 +125,7 @@ async function init(){
     const a=$('start').value;$('start').value=$('end').value;$('end').value=a;render();
   });
   const edgeCount=routes.reduce((sum,r)=>sum+r.segments.length,0);
-  $('status').textContent='已載入 G17／G18 部分核對路段（'+edgeCount+' 條方向邊）；僅用於跨圖驗證。';
+  $('status').textContent='v0.7.2 測試版｜搜尋與相鄰節點已啟用｜'+edgeCount+' 條已核對方向邊。';
   render();
 }
 init().catch(e=>{
