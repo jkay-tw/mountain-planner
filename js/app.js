@@ -344,7 +344,10 @@ function bindDays(){
     });
     card.querySelectorAll('.edge-time').forEach(x=>x.onchange=()=>{const it=d.items[+x.dataset.index];if(it?.incoming)it.incoming.actualMinutes=x.value===''?null:clampMin(x.value);render()});
     card.querySelectorAll('.rest-min').forEach(x=>x.onchange=()=>{d.items[+x.dataset.index].minutes=clampMin(x.value);render()});
-    card.querySelectorAll('.manual-name').forEach(x=>x.onchange=()=>{d.items[+x.dataset.index].name=x.value.trim()||'手動節點';render()});
+    card.querySelectorAll('.manual-name').forEach(x=>x.onchange=()=>{
+      const it=d.items[+x.dataset.index];if(last(d)?.id===it.id)unlinkNextIfEndpointChanges(d);
+      it.name=x.value.trim()||'手動節點';render();
+    });
     card.querySelectorAll('.note-input').forEach(x=>x.onchange=()=>{d.items[+x.dataset.index].note=x.value;render()});
     card.querySelectorAll('.peak').forEach(b=>b.onclick=()=>{const it=d.items[+b.dataset.index];it.isPeak=!it.isPeak;render()});
     card.querySelectorAll('.water').forEach(b=>b.onclick=()=>{const it=d.items[+b.dataset.index];it.hasWater=!it.hasWater;render()});
@@ -359,9 +362,11 @@ function bindDays(){
       z.ondrop=e=>{
         e.preventDefault();z.classList.remove('active');if(!drag||drag.day!==i)return;
         const from=drag.index,to=+z.dataset.drop;if(from<0||from>=d.items.length)return;
+        const oldEnd=last(d)?.id;
         const [mv]=d.items.splice(from,1);let insert=to;if(from<to)insert--;
         insert=Math.max(0,Math.min(insert,d.items.length));d.items.splice(insert,0,mv);
         if(route)recalcConnections(d,route);
+        if(oldEnd!==last(d)?.id)unlinkNextIfEndpointChanges(d);
         drag=null;render();
       };
     });
