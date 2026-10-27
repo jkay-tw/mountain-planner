@@ -257,12 +257,13 @@ async function importPlan(e){
  const file=e.target.files?.[0];e.target.value='';if(!file)return;
  try{
   const data=validatePlan(JSON.parse(await file.text()),manifest.routes.map(r=>r.id));
-  let loaded=null;if(data.routeId){const m=manifest.routes.find(r=>r.id===data.routeId);loaded=await loadRoute(m.file)}
+  let loaded=null;if(data.routeId){const m=manifest.routes.find(r=>r.id===data.routeId);loaded=addRouteIdentity(await loadRoute(m.file))}
+  const importedDays=sanitizeDays(migrateDaysToNodeIds(data.days,loaded));
   if(days.some(d=>d.items.length)&&!confirm('匯入將取代目前行程，可以使用復原。確定？'))return;
   if(loaded){route=loaded;nodes=allNodes(route);$('routeMeta').textContent=route.route_id+'｜'+route.route_name+'｜'+route.status;$('routeSelect').value=data.routeId}
   else{setNoRoute();$('routeSelect').value=''}
   tripStartDate=data.tripStartDate||'';$('tripDate').value=tripStartDate;
-  days=sanitizeDays(migrateDaysToNodeIds(data.days,route));$('dayCount').value=String(days.length);
+  days=importedDays;$('dayCount').value=String(days.length);
   render();if(data.datasetVersion&&data.datasetVersion!==manifest.dataset_version)alert('資料庫版本不同；已保留檔案中的官方時間快照，請核對。');else toast('行程已匯入');
  }catch(err){alert('匯入失敗：'+err.message)}
 }
