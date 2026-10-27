@@ -245,16 +245,16 @@ function renderTimeline(d){
     if(r.type==='rest'){
       html+='<div class="it-row rest-row" data-index="'+idx+'">'+
       '<div class="place"><span class="drag-handle" draggable="true" data-index="'+idx+'">⋮⋮</span><span class="place-name">☕ 休息</span></div>'+
-      '<div class="route-info"><input class="rest-min minute-input" data-index="'+idx+'" type="number" min="0" max="999" value="'+r.minutes+'"><span>m</span></div>'+
+      '<div class="route-info"><input class="rest-min minute-input" data-index="'+idx+'" type="number" min="0" value="'+r.minutes+'"><span>m</span></div>'+
       '<div class="arrival">'+r.endTime+'</div><div></div>'+menuHtml(idx,true,false)+'</div>';
     }else{
       const e=r.incoming,a=e?edgeActual(e,d.coefficient):0,manual=r.type==='manual-location';
       let routeInfo='<span class="secondary-info">起點</span>';
       if(e?.kind==='official'){
         const k=e.officialMinutes?round2(a/e.officialMinutes):0;
-        routeInfo='<input class="edge-time minute-input" data-index="'+idx+'" type="number" min="0" max="999" value="'+a+'"><span>m</span><span class="secondary-info">上河'+clockish(e.officialMinutes)+' · ×'+Number(k).toFixed(2)+'</span>';
+        routeInfo='<input class="edge-time minute-input" data-index="'+idx+'" type="number" min="0" value="'+a+'"><span>m</span><span class="secondary-info">上河'+Math.round(Number(e.officialMinutes)||0)+'m · ×'+Number(k).toFixed(2)+'</span>';
       }else if(e?.kind==='manual'){
-        routeInfo='<input class="edge-time minute-input" data-index="'+idx+'" type="number" min="0" max="999" placeholder="0" value="'+(e.actualMinutes??'')+'"><span>m</span><span class="manual-note">手動</span>';
+        routeInfo='<input class="edge-time minute-input" data-index="'+idx+'" type="number" min="0" placeholder="0" value="'+(e.actualMinutes??'')+'"><span>m</span><span class="manual-note">手動</span>';
       }
       const peak='<button class="icon-toggle peak '+(r.isPeak?'active':'')+'" data-index="'+idx+'" title="山頭">⛰</button>';
       const water='<button class="icon-toggle water '+(r.hasWater?'active':'')+'" data-index="'+idx+'" title="水源">💧</button>';
