@@ -1,0 +1,70 @@
+{
+  "route_id": "G17-OVERLAP",
+  "route_name": "南二段",
+  "status": "limited-overlap-audit-staging-not-published",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg"
+  },
+  "auditScope": "ONLY listed walking edges individually compared with G17/G18 official chart. Other candidate segments remain pending.",
+  "nodes": [
+    {
+      "id": "g17-overlap-001",
+      "name": "拉庫音溪山屋"
+    },
+    {
+      "id": "g17-overlap-002",
+      "name": "南雙頭山"
+    },
+    {
+      "id": "g17-overlap-003",
+      "name": "新康山岔路口"
+    }
+  ],
+  "segments": [
+    {
+      "from": "南雙頭山",
+      "to": "拉庫音溪山屋",
+      "fromId": "g17-overlap-002",
+      "toId": "g17-overlap-001",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "verificationMethod": "source-chart-visual-review-2026-10-27"
+    },
+    {
+      "from": "拉庫音溪山屋",
+      "to": "南雙頭山",
+      "fromId": "g17-overlap-001",
+      "toId": "g17-overlap-002",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "verificationMethod": "source-chart-visual-review-2026-10-27"
+    },
+    {
+      "from": "拉庫音溪山屋",
+      "to": "新康山岔路口",
+      "fromId": "g17-overlap-001",
+      "toId": "g17-overlap-003",
+      "minutes": 220,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "verificationMethod": "source-chart-visual-review-2026-10-27"
+    },
+    {
+      "from": "新康山岔路口",
+      "to": "拉庫音溪山屋",
+      "fromId": "g17-overlap-003",
+      "toId": "g17-overlap-001",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "verificationMethod": "source-chart-visual-review-2026-10-27"
+    }
+  ]
+}
