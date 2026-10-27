@@ -11,6 +11,7 @@ from pathlib import Path
 from apply_reviewed_times import apply
 from normalize_candidate_groups import process
 from batch_hiking_pipeline import audit
+from build_source_review_queue import build as build_source_queue
 
 
 def run(input_file, ledger_file, mapping_file, crosswalk_file, staging_dir, output_dir):
@@ -22,13 +23,14 @@ def run(input_file, ledger_file, mapping_file, crosswalk_file, staging_dir, outp
     mapping_result=process(review_dir/'reviewed_candidates.json',mapping_file,mapped_dir)
     audit_result=audit(mapped_dir/'normalized_candidate.json',validation_dir,
                        crosswalk=crosswalk_file,staging=staging_dir)
+    source_review=build_source_queue(mapped_dir/'normalized_candidate.json',mapping_file,out/'04_source_review')
     if audit_result['structuralIssues'] or audit_result['conflictingDirectedKeys']:
         readiness='BLOCKED_DATA_CONFLICTS'
     else:
         readiness='CANDIDATE_ONLY_SOURCE_REVIEW_PENDING'
     summary={'schemaVersion':1,'publicationAllowed':False,'readiness':readiness,
              'timeCorrections':time_result,'groupMapping':mapping_result,
-             'batchValidation':audit_result,
+             'batchValidation':audit_result,'sourceReviewQueue':source_review,
              'nextGate':'independently document source for each published walking direction; confirm rights before release'}
     out.mkdir(parents=True,exist_ok=True)
     (out/'ingest_summary.json').write_text(
