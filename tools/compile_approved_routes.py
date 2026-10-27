@@ -47,7 +47,7 @@ def compile_graph(staging_dir,crosswalk_file,approval_file,group_map_file):
             raise ValueError('Approval is not a valid walking edge')
         if not item.get('reviewedBy') or not item.get('reviewedAt') or not item.get('evidenceNote'):
             raise ValueError('Missing independently checked evidence')
-        if not item.get('publicationPermission'):
+        if item.get('publicationPermission') not in ('written_permission','independently_licensed'):
             raise ValueError('Unapproved distribution rights on '+str(key))
         if not item.get('sourceURL','').startswith('https://www.sunriver.com.tw/'):
             raise ValueError('Missing official source URL')
