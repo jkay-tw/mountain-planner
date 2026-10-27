@@ -1,7 +1,14 @@
 {
-  "dataset_version": "v0.7.13-global-graph-preview",
+  "dataset_version": "v0.7.14-global-graph-preview",
   "mode": "global-verified-graph-scoped-node-browser-preview",
   "routes": [
+    {
+      "id": "G03",
+      "name": "G03｜郡大山・西巒大山（步行核對部分）",
+      "file": "data/routes/G03.preview.json",
+      "status": "partial-source-reviewed-preview",
+      "source_url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg"
+    },
     {
       "id": "G06",
       "name": "G06｜白姑大山",
@@ -15,6 +22,13 @@
       "file": "data/routes/G07.preview.json",
       "status": "source-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg"
+    },
+    {
+      "id": "G11",
+      "name": "G11｜能高越嶺（步行核對部分）",
+      "file": "data/routes/G11.preview.json",
+      "status": "partial-source-reviewed-preview",
+      "source_url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg"
     },
     {
       "id": "G17G18-PREVIEW",
