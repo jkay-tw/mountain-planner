@@ -149,3 +149,14 @@ test('v0.7 official paths and edited minutes use edge IDs',()=>{
  assert.deepEqual(day.items.map(x=>x.nodeId),['a','b','c']);
  assert.equal(day.items[2].incoming.actualMinutes,55);
 });
+
+import {verifyCrosswalk,canonicalIdFor} from '../js/crosswalk.js';
+test('crosswalk validates confirmed identities but never authorizes routing',()=>{
+ const sample={schemaVersion:1,canonicalNodes:[{canonicalId:'cw-v07-007',routingEnabled:false,members:[
+  {group:'南二段',name:'三岔路口'},{group:'馬博拉斯橫斷',name:'三岔路口'}]}]};
+ assert.deepEqual(verifyCrosswalk(sample),{groups:1,members:2});
+ assert.equal(canonicalIdFor(sample,'南二段','三岔路口'),'cw-v07-007');
+ assert.equal(canonicalIdFor(sample,'玉山群峰','三岔路口'),null);
+ assert.throws(()=>verifyCrosswalk({...sample,canonicalNodes:[{...sample.canonicalNodes[0],routingEnabled:true}]}));
+ assert.throws(()=>verifyCrosswalk({...sample,canonicalNodes:[sample.canonicalNodes[0],{canonicalId:'x',routingEnabled:false,members:sample.canonicalNodes[0].members}]}));
+});
