@@ -924,5 +924,6 @@
         "新康橫斷"
       ]
     }
-  ]
+  ],
+  "routingPolicy": "verified-walking-only"
 }
