@@ -255,3 +255,17 @@ test('G11 staging is not present in publicly selectable manifest',async()=>{
  const manifest=JSON.parse(readFileSync(new URL('../data/manifest.json',import.meta.url),'utf8'));
  assert.ok(!manifest.routes.some(r=>r.id==='G11-STAGING'||r.id==='G11'));
 });
+
+test('G06 plus G11 independently audited graphs remain disconnected',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const load=n=>JSON.parse(readFileSync(new URL('../data/staging/'+n+'.verified-walking.json',import.meta.url),'utf8'));
+ const g06=load('G06'),g11=load('G11');
+ const graph=buildVerifiedWalkingGraph([g06,g11],{canonicalNodes:[]},{allowCrossMap:true});
+ assert.equal(g06.segments.length,18);
+ assert.equal(g11.segments.length,26);
+ const nodeId=(routeId,node)=>graph.locationId.get(JSON.stringify([routeId,node.id]));
+ const start=nodeId(g06.route_id,g06.nodes.find(n=>n.name==='白姑大山'));
+ const end=nodeId(g11.route_id,g11.nodes.find(n=>n.name==='天池山莊'));
+ assert.equal(shortestVerifiedWalkingPath(graph,start,end),null);
+ assert.ok(graph.edges.size>0);
+});
