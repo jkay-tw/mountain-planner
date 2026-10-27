@@ -310,3 +310,15 @@ test('G17/G18 overlap audit isolates directional inversion without trusting cand
  assert.equal(review.routingSubset.published,false);
  assert.equal(review.routingSubset.previewIntegrated,false);
 });
+
+test('standalone cross-map preview contains all elements and is not wired into itinerary autosave',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const page=readFileSync(new URL('../crossmap-preview.html',import.meta.url),'utf8');
+ const controller=readFileSync(new URL('../js/crossmap-preview.js',import.meta.url),'utf8');
+ for(const id of ['start','end','swap','status','result'])assert.match(page,new RegExp('id="'+id+'"'));
+ assert.match(page,/js\/crossmap-preview\.js/);
+ assert.match(controller,/buildVerifiedWalkingGraph\(routes,crosswalk,\{allowCrossMap:true\}\)/);
+ assert.doesNotMatch(controller,/localStorage|sessionStorage|mountain-planner\.autosave|saveAutosave/);
+ for(const source of ['G17.overlap-verified-subset.json','G18.overlap-verified-subset.json'])
+   assert.ok(controller.includes(source));
+});
