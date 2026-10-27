@@ -398,3 +398,19 @@ test('integrated preview day selector has scoped search and keeps v1 itinerary s
  assert.match(app,/schemaVersion:1/);
  assert.match(app,/STORAGE_KEY='mountain-planner\.autosave\.v1'/);
 });
+
+test('day picker ignores group name 白姑大山 when matching node labels',()=>{
+ const candidates=[
+  {name:'司晏池營地',route:'白姑大山',id:'a'},
+  {name:'白姑大山東南峰',route:'白姑大山',id:'b'},
+  {name:'白姑大山',route:'白姑大山',id:'c'}];
+ assert.deepEqual(filterLocations(candidates,'白姑',100,{includeRoute:false}).map(n=>n.id),['b','c']);
+ assert.deepEqual(filterLocations(candidates,'大山',100,{includeRoute:false}).map(n=>n.id),['b','c']);
+ assert.deepEqual(filterLocations(candidates,'司晏',100,{includeRoute:false}).map(n=>n.id),['a']);
+ assert.deepEqual(filterLocations(candidates,'白姑').map(n=>n.id),['a','b','c']);
+});
+test('per-day picker explicitly selects node-name-only search mode',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const source=readFileSync(new URL('../js/app.js',import.meta.url),'utf8');
+ assert.match(source,/search\.value,100,\{includeRoute:false\}/);
+});
