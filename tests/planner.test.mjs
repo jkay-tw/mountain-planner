@@ -296,7 +296,7 @@ test('G17 and G18 staged excerpts contain eight audited bidirectional walking pa
  const {readFileSync}=await import('node:fs');
  const read=n=>JSON.parse(readFileSync(new URL('../data/staging/'+n+'.overlap-verified-subset.json',import.meta.url),'utf8'));
  const a=read('G17'),b=read('G18');
- assert.equal(a.segments.length,8);assert.equal(b.segments.length,32);
+ assert.equal(a.segments.length,18);assert.equal(b.segments.length,32);
  assert.ok([...a.segments,...b.segments].every(e=>e.travelMode==='walking'&&e.verificationStatus==='verified'&&e.source.startsWith('https://www.sunriver.com.tw/')));
 });
 
@@ -419,8 +419,8 @@ test('v0.7.5 composite graph supports cross-group multi-day planner shortestPath
  const {readFileSync}=await import('node:fs');
  const raw=JSON.parse(readFileSync(new URL('../data/routes/G17G18.preview.json',import.meta.url),'utf8'));
  const route=addRouteIdentity(raw);
- assert.equal(route.nodes.length,19);
- assert.equal(route.segments.length,36);
+ assert.equal(route.nodes.length,24);
+ assert.equal(route.segments.length,46);
  assert.ok(route.segments.every(e=>e.travelMode==='walking'&&e.verificationStatus==='verified'));
  const id=n=>route.nodes.find(x=>x.name===n)?.id;
  const go=shortestPath(route,id('南雙頭山'),id('3058公尺峰'));
@@ -511,9 +511,32 @@ test('G18 east ridge continuation has every directed walking edge and retains so
 test('composite route never introduces candidate-only vehicle edges or unverifiable sources',async()=>{
  const {readFileSync}=await import('node:fs');
  const raw=JSON.parse(readFileSync(new URL('../data/routes/G17G18.preview.json',import.meta.url),'utf8'));
- assert.equal(raw.nodes.length,19);assert.equal(raw.segments.length,36);
+ assert.equal(raw.nodes.length,24);assert.equal(raw.segments.length,46);
  assert.ok(raw.segments.every(x=>x.minutes>0&&x.travelMode==='walking'&&x.verificationStatus==='verified'));
  assert.ok(raw.segments.every(x=>['https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg','https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg'].includes(x.source)));
  const manifest=JSON.parse(readFileSync(new URL('../data/crossmap-editor-manifest.json',import.meta.url),'utf8'));
  assert.equal(manifest.dataset_version,'0.7.8-crossmap-staging');
+});
+
+test('G17 newly verified approach has directed times, joins through 南雙頭山 without unverified shortcuts',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const route=addRouteIdentity(JSON.parse(readFileSync(new URL('../data/routes/G17G18.preview.json',import.meta.url),'utf8')));
+ const id=name=>route.nodes.find(n=>n.name===name)?.id;
+ const toward=shortestPath(route,id('塔芬池'),id('南雙頭山'));
+ const returnTrip=shortestPath(route,id('南雙頭山'),id('塔芬池'));
+ assert.equal(toward.minutes,735);
+ assert.equal(returnTrip.minutes,675);
+ assert.deepEqual(toward.segments.map(s=>s.minutes),[250,45,240,150,50]);
+ assert.ok(toward.segments.every(s=>s.source==='https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg'));
+ const full=shortestPath(route,id('塔芬池'),id('天宮堡壘'));
+ assert.equal(full.minutes,1876);
+ assert.equal(full.segments.length,21);
+});
+test('reviewed composite node identities stay stable for existing imported plans',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const route=addRouteIdentity(JSON.parse(readFileSync(new URL('../data/routes/G17G18.preview.json',import.meta.url),'utf8')));
+ const old=['南雙頭山','拉庫音溪山屋','新康山岔路口','布新岔路口','3058公尺峰'];
+ for(const name of old)assert.ok(route.nodes.some(n=>n.name===name&&n.id));
+ const ids=new Set(route.nodes.map(n=>n.id));
+ assert.equal(ids.size,route.nodes.length);
 });
