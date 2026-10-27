@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mountain Planner 整合預覽</title>
+  <link rel="stylesheet" href="css/style.css?v=v0711" />
+  <script src="https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <header class="app-header">
+      <div class="title-block">
+        <p class="eyebrow">Mountain Planner <span id="appVersion" class="version-badge"></span></p>
+        <h1>Mountain Planner 整合預覽</h1>
+        <p class="sub">同一編輯器提供 G06 單圖與 G17＋G18 跨圖測試；不同圖組切換會提示清除目前行程。本頁使用獨立暫存。</p>
+      </div>
+
+      <div class="desktop-tools">
+        <div class="toolbar-row">
+          <button id="undoBtn" class="secondary compact-tool" disabled title="復原 Ctrl+Z">↶ 復原</button>
+          <button id="redoBtn" class="secondary compact-tool" disabled title="重做 Ctrl+Y">↷ 重做</button>
+          <button id="saveBtn" class="secondary compact-tool">匯出</button>
+          <button id="importBtn" class="secondary compact-tool">匯入</button>
+          <details class="header-more">
+            <summary aria-label="更多功能">⋯</summary>
+            <div class="header-menu">
+              <button id="exportBtn">匯出 Excel</button>
+              <button id="resetBtn" class="danger-text">全部清除</button>
+            </div>
+          </details>
+          <a class="source compact-source" href="https://www.sunriver.com.tw/step2020.htm" target="_blank" rel="noreferrer">上河來源</a>
+        </div>
+        <div class="copy-row">
+          <button id="copyBtn" class="secondary compact-tool">複製文字</button>
+        </div>
+      </div>
+
+      <details class="global-menu mobile-only">
+        <summary aria-label="功能選單">⋯</summary>
+        <div class="global-menu-box">
+          <button id="mobileUndo">↶ 復原</button>
+          <button id="mobileRedo">↷ 重做</button>
+          <button id="mobileSave">匯出</button>
+          <button id="mobileImport">匯入</button>
+          <button id="mobileCopy">複製文字</button>
+          <button id="mobileExcel">匯出 Excel</button>
+          <a href="https://www.sunriver.com.tw/step2020.htm" target="_blank" rel="noreferrer">上河來源</a>
+          <button id="mobileReset" class="danger-text">全部清除</button>
+        </div>
+      </details>
+      <input id="importFile" type="file" accept=".json,.mplan.json,application/json" hidden />
+    </header>
+
+    <div class="notice"><strong>單一編輯器整合測試</strong><span>G17＋G18 僅收錄 24 個已核對節點與 46 條方向邊；其餘候選圖尚未上線。此頁為測試模式，非現地導航。</span></div>
+    <section class="card controls">
+      <div class="field route-field">
+        <label for="routeSelect">上河圖群組</label>
+        <select id="routeSelect"></select>
+      </div>
+      <div class="field date-field">
+        <label for="tripDate">出發日期</label>
+        <input id="tripDate" type="date" />
+      </div>
+      <div class="field compact">
+        <label for="dayCount">行程天數</label>
+        <select id="dayCount"></select>
+      </div>
+    </section>
+
+    <div class="notice">
+      <strong id="routeMeta"></strong>
+      <span>行程會自動暫存在此瀏覽器；正式行程請以官方原圖再次核對。</span>
+    </div>
+
+    <section id="daysContainer" class="days"></section>
+  </main>
+
+  <div id="floatingHistory" class="floating-history" aria-label="復原與重做">
+    <button id="floatUndoBtn" class="secondary" disabled title="復原">↶</button>
+    <button id="floatRedoBtn" class="secondary" disabled title="重做">↷</button>
+  </div>
+
+  <script type="module" src="js/unified-editor.js?v=v0711"></script>
+</body>
+</html>
