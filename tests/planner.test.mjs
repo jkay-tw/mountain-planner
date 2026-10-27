@@ -461,8 +461,24 @@ test('v0.7.5 crossmap editor never shares main planner autosave key or route man
  const manifest=JSON.parse(readFileSync(new URL('../data/crossmap-editor-manifest.json',import.meta.url),'utf8'));
  assert.match(app,/crossmap-autosave\.v075/);
  assert.match(app,/crossmap-editor-manifest\.json/);
- assert.match(html,/js\/crossmap-editor\.js\?v=v075/);
+ assert.match(html,/js\/crossmap-editor\.js\?v=v076/);
  assert.doesNotMatch(main,/crossmap-autosave/);
  assert.ok(manifest.routes.some(x=>x.id==='G17G18-PREVIEW'));
  assert.equal(manifest.routes.length,1);
+});
+
+test('v0.7.6 day tools use explicit six-element grid placements across breakpoints',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const css=readFileSync(new URL('../css/style.css',import.meta.url),'utf8');
+ const html=readFileSync(new URL('../crossmap-editor.html',import.meta.url),'utf8');
+ const section=css.slice(css.lastIndexOf('/* v0.7.6:'));
+ assert.ok(section.length>0);
+ for(const area of ['link','search','select','add','manual-start','manual-end'])
+   assert.match(section,new RegExp('grid-area:'+area+'(?:;|\\s)'));
+ assert.match(section,/grid-template-areas:"link search select add manual-start manual-end"/);
+ assert.match(section,/@media\(max-width:1050px\)/);
+ assert.match(section,/@media\(max-width:700px\)/);
+ assert.match(section,/grid-template-areas:[\s\S]*"select add"/);
+ assert.match(html,/css\/style\.css\?v=v076/);
+ assert.match(html,/js\/crossmap-editor\.js\?v=v076/);
 });
