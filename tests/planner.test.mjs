@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {edgeActual,buildTimeline,summarizeDay,recalcConnections,canDeleteItem,normalizeDay,retargetSplitIncoming} from '../js/planner.js';
 import {validatePlan} from '../js/validation.js';
+import {addRouteIdentity,buildNodeRegistry,provisionalNodeId} from '../js/node-identity.js';
 const route={source:{image_url:'official'},segments:[
  {from:'A',to:'B',minutes:30},{from:'B',to:'C',minutes:40},
  {from:'B',to:'A',minutes:35},{from:'C',to:'B',minutes:45}
@@ -80,4 +81,22 @@ test('split-day retarget keeps manual minutes when only start id changes',()=>{
  retargetSplitIncoming(moved,'cut','new-cut');
  assert.equal(moved[0].incoming.fromId,'new-cut');
  assert.equal(moved[0].incoming.actualMinutes,10);
+});
+
+test('v0.7 same display name in different groups gets distinct provisional IDs',()=>{
+ const y=addRouteIdentity({route_id:'Yushan',segments:[{from:'主北岔路',to:'玉山主峰',minutes:25}]});
+ const q=addRouteIdentity({route_id:'Qilai',segments:[{from:'主北岔路',to:'奇萊北峰',minutes:35}]});
+ assert.notEqual(y.nodes[0].id,q.nodes[0].id);
+ assert.notEqual(y.segments[0].fromId,q.segments[0].fromId);
+});
+test('v0.7 route identity is stable and does not alter old segment names or minutes',()=>{
+ const raw={route_id:'G06',segments:[{from:'司晏池營地',to:'白姑大山東南峰',minutes:60}]};
+ const a=addRouteIdentity(raw),b=addRouteIdentity(raw);
+ assert.deepEqual(a,b);
+ assert.equal(a.segments[0].from,'司晏池營地');
+ assert.equal(a.segments[0].minutes,60);
+ assert.ok(a.segments[0].fromId.startsWith('G06::'));
+ assert.equal(raw.segments[0].fromId,undefined);
+ assert.equal(provisionalNodeId('G06','司晏池營地'),a.segments[0].fromId);
+ assert.equal(buildNodeRegistry(raw).nodes.length,2);
 });
