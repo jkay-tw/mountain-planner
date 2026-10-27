@@ -296,7 +296,7 @@ test('G17 and G18 staged excerpts contain eight audited bidirectional walking pa
  const {readFileSync}=await import('node:fs');
  const read=n=>JSON.parse(readFileSync(new URL('../data/staging/'+n+'.overlap-verified-subset.json',import.meta.url),'utf8'));
  const a=read('G17'),b=read('G18');
- assert.equal(a.segments.length,8);assert.equal(b.segments.length,8);
+ assert.equal(a.segments.length,8);assert.equal(b.segments.length,32);
  assert.ok([...a.segments,...b.segments].every(e=>e.travelMode==='walking'&&e.verificationStatus==='verified'&&e.source.startsWith('https://www.sunriver.com.tw/')));
 });
 
@@ -419,8 +419,8 @@ test('v0.7.5 composite graph supports cross-group multi-day planner shortestPath
  const {readFileSync}=await import('node:fs');
  const raw=JSON.parse(readFileSync(new URL('../data/routes/G17G18.preview.json',import.meta.url),'utf8'));
  const route=addRouteIdentity(raw);
- assert.equal(route.nodes.length,7);
- assert.equal(route.segments.length,12);
+ assert.equal(route.nodes.length,19);
+ assert.equal(route.segments.length,36);
  assert.ok(route.segments.every(e=>e.travelMode==='walking'&&e.verificationStatus==='verified'));
  const id=n=>route.nodes.find(x=>x.name===n)?.id;
  const go=shortestPath(route,id('南雙頭山'),id('3058公尺峰'));
@@ -492,4 +492,28 @@ test('v0.7.7 mid-width node search starts beside fixed link label and manual but
  assert.match(section,/"link search search search search"/);
  assert.match(section,/"select select select add"/);
  assert.match(section,/"manual-start manual-end \. \."/);
+});
+
+test('G18 east ridge continuation has every directed walking edge and retains source evidence',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const raw=JSON.parse(readFileSync(new URL('../data/routes/G17G18.preview.json',import.meta.url),'utf8'));
+ const route=addRouteIdentity(raw);
+ const id=n=>route.nodes.find(v=>v.name===n)?.id;
+ const outbound=shortestPath(route,id('3058公尺峰'),id('天宮堡壘'));
+ const inbound=shortestPath(route,id('天宮堡壘'),id('3058公尺峰'));
+ assert.ok(outbound);assert.ok(inbound);
+ assert.equal(outbound.segments.length,12);assert.equal(inbound.segments.length,12);
+ assert.equal(outbound.minutes,661);assert.equal(inbound.minutes,686);
+ assert.ok(outbound.segments.every(s=>s.verificationStatus==='verified'&&s.travelMode==='walking'));
+ assert.ok(outbound.segments.every(s=>s.source==='https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg'));
+ assert.equal(shortestPath(route,id('南雙頭山'),id('天宮堡壘')).minutes,1141);
+});
+test('composite route never introduces candidate-only vehicle edges or unverifiable sources',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const raw=JSON.parse(readFileSync(new URL('../data/routes/G17G18.preview.json',import.meta.url),'utf8'));
+ assert.equal(raw.nodes.length,19);assert.equal(raw.segments.length,36);
+ assert.ok(raw.segments.every(x=>x.minutes>0&&x.travelMode==='walking'&&x.verificationStatus==='verified'));
+ assert.ok(raw.segments.every(x=>['https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg','https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg'].includes(x.source)));
+ const manifest=JSON.parse(readFileSync(new URL('../data/crossmap-editor-manifest.json',import.meta.url),'utf8'));
+ assert.equal(manifest.dataset_version,'0.7.8-crossmap-staging');
 });
