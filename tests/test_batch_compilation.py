@@ -73,6 +73,14 @@ class CompiledRouteTests(unittest.TestCase):
         self.assertEqual(graph['segments'],[])
         self.assertFalse(meta['publicationEligible'])
 
+    def test_cross_chart_alias_is_user_reviewed_identity_not_new_physical_node(self):
+        physical,names=mod.identity_index(dict(canonicalNodes=[
+          dict(canonicalId='c1',name='官方名稱',members=[
+            dict(group='南二段',name='局部名稱'),
+            dict(group='新康橫斷',name='另一名稱')])],deniedPairRecords=[]))
+        self.assertEqual(physical[('南二段','局部名稱')],physical[('新康橫斷','另一名稱')])
+        self.assertEqual(names[physical[('南二段','局部名稱')]],'官方名稱')
+
     def test_crosswalk_denied_pair_cannot_share_canonical_id(self):
         self.put('crosswalk.json',dict(canonicalNodes=[
             dict(canonicalId='same',members=[dict(group='南二段',name='A'),dict(group='其他',name='A')])],
