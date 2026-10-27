@@ -49,10 +49,10 @@
       "group": "南二段",
       "officialChart": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
       "jsonCount": 68,
-      "verifiedWalkingEdges": 4,
+      "verifiedWalkingEdges": 9,
       "vehicleEdges": 0,
-      "auditScope": "four selected walking pairs checked in both directions against their respective official step chart; other candidate rows remain unverified",
-      "notes": "Shared directed comparison G17↔G18: 22 matches, 2 conflicting directions. G17 向陽山→西側登山口 candidate 35/25 reversed versus official 25/35. Pending correction; all other candidate rows remain unverified. Expanded shared section: 三叉山登山口 ↔ 嘉明湖岔路口 (30/25) and 嘉明湖岔路口 ↔ 新康山岔路口 (40/30) audited; four shared directed times agree."
+      "auditScope": "9 walking pairs (18 directed walking edges) from selected G17 chart sections source-checked visually; all remaining candidate pairs unverified",
+      "notes": "Shared directed comparison G17↔G18: 22 matches, 2 conflicting directions. G17 向陽山→西側登山口 candidate 35/25 reversed versus official 25/35. Pending correction; all other candidate rows remain unverified. Expanded shared section: 三叉山登山口 ↔ 嘉明湖岔路口 (30/25) and 嘉明湖岔路口 ↔ 新康山岔路口 (40/30) audited; four shared directed times agree. 2026-10-27 added 5 south-approach walking pairs: 塔芬池→轆轆山登山口→轆轆谷山屋→雲峰東峰三岔路口營地→西北鞍南雙池營地→南雙頭山."
     },
     {
       "group": "新康橫斷",
