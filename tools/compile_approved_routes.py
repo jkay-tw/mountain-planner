@@ -16,9 +16,11 @@ def load(path):
 
 def identity_index(crosswalk):
     physical={}
+    canonical_names={}
     denied=[]
     for row in crosswalk['canonicalNodes']:
         cid=row['canonicalId']
+        canonical_names['shared:'+cid]=row['name']
         for member in row['members']:
             key=(member['group'],member['name'])
             if key in physical:
@@ -30,10 +32,10 @@ def identity_index(crosswalk):
         if a and a==b:
             raise ValueError('Crosswalk contradicts explicit exclusion: '+row['name'])
         denied.append(row)
-    return physical
+    return physical,canonical_names
 
 def compile_graph(staging_dir,crosswalk_file,approval_file,group_map_file):
-    physical=identity_index(load(crosswalk_file))
+    physical,canonical_names=identity_index(load(crosswalk_file))
     approval=load(approval_file)
     if approval.get('schemaVersion')!=1:raise ValueError('Unsupported approval format')
     groups=load(group_map_file)
@@ -78,12 +80,13 @@ def compile_graph(staging_dir,crosswalk_file,approval_file,group_map_file):
             for name in (entry['from'],entry['to']):
                 node_id=physical.get((group,name)) or 'local:'+official[group]+'::'+hashlib.sha256((group+'\0'+name).encode()).hexdigest()[:20]
                 old=nodes.get(node_id)
-                if old and old['name']!=name:
-                    raise ValueError('Canonical physical ID has incompatible names '+str((old['name'],name)))
+                canonical=canonical_names.get(node_id,name)
                 if old:
                     if group not in old['groups']:old['groups'].append(group)
+                    if name!=old['name'] and name not in old['aliases']:old['aliases'].append(name)
                 else:
-                    nodes[node_id]=dict(id=node_id,name=name,groups=[group])
+                    nodes[node_id]=dict(id=node_id,name=canonical,groups=[group],
+                                        aliases=([name] if name!=canonical else []))
                 ends.append(node_id)
             pair=tuple(ends)
             if pair[0]==pair[1]:raise ValueError('Self-loop after physical identity merge')
