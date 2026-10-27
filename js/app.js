@@ -116,9 +116,9 @@ function bindGlobal(){
   document.addEventListener('keydown',e=>{if(!(e.ctrlKey||e.metaKey))return;const a=document.activeElement;if(['INPUT','TEXTAREA','SELECT'].includes(a?.tagName))return;const k=e.key.toLowerCase();if(k==='z'||k==='y'){e.preventDefault();restore(at+(k==='y'||e.shiftKey?1:-1))}});
   // Close popovers when interacting elsewhere. Keep the clicked menu open
   // and allow native <details>/<summary> to handle its own toggle.
-  const menus='.row-menu,.header-more,.global-menu';
+  const menus='.row-menu[open],.header-more[open],.global-menu[open]';
   document.addEventListener('click',e=>{
-    document.querySelectorAll(menus+'[open]').forEach(menu=>{
+    document.querySelectorAll(menus).forEach(menu=>{
       if(!menu.contains(e.target))menu.open=false;
     });
   });
