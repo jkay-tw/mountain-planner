@@ -14,11 +14,13 @@ FIELDS=['priority','chartId','chartGroup','from','to','candidateMinutes',
         'sourceChartURL','sourceVerified','reviewedBy','reviewedAt',
         'evidenceNote','travelMode','publicationPermission','issueTags']
 
-def build(candidate,mapping,output):
+def build(candidate,mapping,output,chart_sources=None):
     raw=json.loads(Path(candidate).read_text(encoding='utf-8-sig'))
     conf=json.loads(Path(mapping).read_text(encoding='utf-8-sig'))
     source='https://www.sunriver.com.tw/step2020.htm'
     known={x['candidateGroup']:x for x in conf['mapping']}
+    sources=json.loads(Path(chart_sources).read_text(encoding='utf-8-sig')) if chart_sources else {'charts':[]}
+    chart_urls={entry['id']:entry['chartURL'] for entry in sources['charts']}
     corrections=collections.defaultdict(set)
     for row in raw['segments']:
         group=row['group']
@@ -39,7 +41,7 @@ def build(candidate,mapping,output):
         record=dict(priority=priority,chartId=chart or '',chartGroup=group,**{'from':start,'to':end},
             candidateMinutes=' / '.join(map(str,sorted(times))),
             reverseCandidateMinutes=' / '.join(map(str,sorted(reverse))),
-            candidateGroup=group,sourceIndexURL=source,sourceChartURL='',
+            candidateGroup=group,sourceIndexURL=source,sourceChartURL=chart_urls.get(chart,'') if chart else '',
             sourceVerified='pending',reviewedBy='',reviewedAt='',evidenceNote='',
             travelMode='needs_review',publicationPermission='pending',
             issueTags=' / '.join(issues))
@@ -66,5 +68,6 @@ if __name__=='__main__':
     p.add_argument('private_normalized_json')
     p.add_argument('--mapping',default='data/candidate_group_mapping.json')
     p.add_argument('--out',default='audit/private_source_review')
+    p.add_argument('--chart-sources',default='data/official_chart_sources.json')
     args=p.parse_args()
-    print(json.dumps(build(args.private_normalized_json,args.mapping,args.out),ensure_ascii=False,indent=2))
+    print(json.dumps(build(args.private_normalized_json,args.mapping,args.out,args.chart_sources),ensure_ascii=False,indent=2))
