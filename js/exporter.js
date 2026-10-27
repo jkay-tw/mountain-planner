@@ -1,7 +1,7 @@
 import {buildTimeline,summarizeDay,edgeActual} from './planner.js';
 
 const placeLabel=r=>(r.isPeak?'⛰ ':'')+r.name+(r.hasWater?' 💧':'');
-const excelDuration=min=>Number(min||0)/1440;
+const excelDuration=min=>min===null?'':Number(min||0)/1440;
 const dateForDay=(startDate,index)=>{
   if(!startDate)return '';
   const d=new Date(startDate+'T00:00:00');d.setDate(d.getDate()+index);
@@ -40,7 +40,7 @@ export async function exportExcel({route,days,datasetVersion,tripStartDate}){
       }else{
         const e=r.incoming,actual=e?edgeActual(e,day.coefficient):'';
         const k=e?.kind==='official'?Math.round((actual/e.officialMinutes)*100)/100:'';
-        ws.getRow(rowNo).values=[placeLabel(r),r.arrival,e?Number(actual):'',e?.kind==='official'?Number(e.officialMinutes):'',k,r.note||'',e?.kind==='official'?'上河 '+route.route_id:''];
+        ws.getRow(rowNo).values=[placeLabel(r),r.arrival,e?(actual===null?'':Number(actual)):'',e?.kind==='official'?Number(e.officialMinutes):'',k,r.note||'',e?.kind==='official'?'上河 '+route.route_id:''];
         if(e?.kind==='official'){
           const c=ws.getCell(rowNo,7);c.value={text:'上河 '+route.route_id,hyperlink:route.source.image_url};c.font={name:'Microsoft JhengHei',color:{argb:'FF315D42'},underline:true,size:10};
         }
@@ -51,7 +51,7 @@ export async function exportExcel({route,days,datasetVersion,tripStartDate}){
     }
 
     const sr=ws.getRow(rowNo);
-    sr.values=['每日統計','',excelDuration(sum.total),excelDuration(sum.official),sum.official?Math.round((sum.total/sum.official)*100)/100:'','行進 '+minutesHHMM(sum.movement)+'　休息 '+minutesHHMM(sum.rest),''];
+    sr.values=['每日統計','',excelDuration(sum.total),excelDuration(sum.official),sum.official&&!sum.missing?Math.round((sum.total/sum.official)*100)/100:'',(sum.missing?'未填路段 '+sum.missing+'　':'')+'行進 '+minutesHHMM(sum.movement)+'　休息 '+minutesHHMM(sum.rest),''];
     sr.getCell(3).numFmt='[h]:mm';sr.getCell(4).numFmt='[h]:mm';
     sr.eachCell((c,col)=>{c.font={name:col===3||col===4||col===5?'Calibri':'Microsoft JhengHei',bold:true};c.alignment={horizontal:'center',vertical:'middle'};c.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FFF3F6F3'}}});
     rowNo++;

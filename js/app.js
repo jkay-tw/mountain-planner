@@ -1,12 +1,25 @@
 import {loadManifest,loadRoute} from './data-loader.js';
-import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration} from './planner.js';
+import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming} from './planner.js';
+import {validatePlan} from './validation.js';
 import {exportExcel} from './exporter.js';
 
 const $=id=>document.getElementById(id);
 const STORAGE_KEY='mountain-planner.autosave.v1';
+const APP_VERSION='v0.6.2 Preview';
+const COLLAPSE_KEY='mountain-planner.collapsed-days.v1';
+let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='';
+let snapshots=[],at=-1,restoring=false;
+function checkpoint(){if(restoring)return;const state=JSON.stringify({routeId:route?.route_id||null,tripStartDate,days});if(state===snapshots[at])return;snapshots=snapshots.slice(0,at+1);snapshots.push(state);if(snapshots.length>50)snapshots.shift();at=snapshots.length-1;buttons()}
+function buttons(){
+  ['undoBtn','floatUndoBtn'].forEach(id=>{if($(id))$(id).disabled=at<1});
+  ['redoBtn','floatRedoBtn'].forEach(id=>{if($(id))$(id).disabled=at>=snapshots.length-1});
+}
+async function restore(i){if(i<0||i>=snapshots.length)return;const x=JSON.parse(snapshots[i]);restoring=true;try{if(x.routeId)await loadGroup(x.routeId);else setNoRoute();$('routeSelect').value=x.routeId||'';tripStartDate=x.tripStartDate;$('tripDate').value=tripStartDate;days=x.days;$('dayCount').value=String(days.length);at=i;render();buttons()}finally{restoring=false}}
+const checkMissing=()=>{const n=days.reduce((sum,d)=>sum+missingSegments(d),0);return n===0||confirm('有 '+n+' 個路段未填時間，匯出結果含未完成時間。仍繼續？')};
 
-const newDay=i=>({id:uid(),startTime:i?'05:30':'06:00',coefficient:.8,linkedStart:i>0,note:'',items:[]});
+
+const newDay=i=>({id:uid(),startTime:i?'05:30':'06:00',coefficient:.8,linkedStart:false,note:'',items:[]});
 const locs=d=>d.items.filter(x=>x.type!=='rest');
 const first=d=>locs(d)[0]||null;
 const last=d=>{const a=locs(d);return a[a.length-1]||null};
@@ -15,8 +28,11 @@ const clampMin=v=>Math.max(0,Number(v)||0);
 
 async function init(){
   manifest=await loadManifest();
+  if($('appVersion'))$('appVersion').textContent=APP_VERSION;
   $('routeSelect').innerHTML='<option value="">請選擇上河圖</option>'+manifest.routes.map(r=>'<option value="'+r.id+'">'+r.id+'｜'+r.name+'</option>').join('');
   $('dayCount').innerHTML=Array.from({length:10},(_,i)=>'<option value="'+(i+1)+'">'+(i+1)+' 天</option>').join('');
+
+  try{collapsedDays=new Set(JSON.parse(localStorage.getItem(COLLAPSE_KEY)||'[]'))}catch(e){collapsedDays=new Set()}
 
   const restored=loadAutosave();
   if(restored?.routeId&&manifest.routes.some(r=>r.id===restored.routeId)){
@@ -32,7 +48,7 @@ async function init(){
   days=restored?.days?.length?sanitizeDays(restored.days):[newDay(0)];
   $('dayCount').value=String(days.length);
   bindGlobal();
-  render(false);
+  render(false);checkpoint();
 }
 
 async function loadGroup(id){
@@ -90,8 +106,22 @@ function bindGlobal(){
     days=days.slice(0,n);
     render();
   };
+  $('undoBtn').onclick=()=>restore(at-1);$('redoBtn').onclick=()=>restore(at+1);
+  $('floatUndoBtn').onclick=()=>restore(at-1);$('floatRedoBtn').onclick=()=>restore(at+1);
+  const mobileMap={mobileUndo:'undoBtn',mobileRedo:'redoBtn',mobileSave:'saveBtn',mobileImport:'importBtn',mobileCopy:'copyBtn',mobileExcel:'exportBtn',mobileReset:'resetBtn'};
+  Object.entries(mobileMap).forEach(([from,to])=>{if($(from))$(from).onclick=()=>{$(to).click();document.querySelector('.global-menu')?.removeAttribute('open')}});
+  const floatHistory=$('floatingHistory'),syncFloating=()=>{if(floatHistory)floatHistory.classList.toggle('visible',window.scrollY>240)};
+  window.addEventListener('scroll',syncFloating,{passive:true});syncFloating();
+  document.addEventListener('keydown',e=>{if(!(e.ctrlKey||e.metaKey))return;const a=document.activeElement;if(['INPUT','TEXTAREA','SELECT'].includes(a?.tagName))return;const k=e.key.toLowerCase();if(k==='z'||k==='y'){e.preventDefault();restore(at+(k==='y'||e.shiftKey?1:-1))}});
+  document.addEventListener('click',e=>{
+    if(e.target.closest('.row-menu'))return;
+    document.querySelectorAll('.row-menu[open]').forEach(x=>x.open=false);
+  });
+  document.addEventListener('keydown',e=>{
+    if(e.key==='Escape')document.querySelectorAll('.row-menu[open]').forEach(x=>x.open=false);
+  });
   $('resetBtn').onclick=()=>{
-    if(!confirm('確定清除全部行程？此操作無法復原。'))return;
+    if(!confirm('確定清除全部行程？可使用復原還原。'))return;
     setNoRoute();$('routeSelect').value='';
     tripStartDate='';$('tripDate').value='';
     days=[newDay(0)];$('dayCount').value='1';
@@ -100,6 +130,7 @@ function bindGlobal(){
   $('exportBtn').onclick=async()=>{
     if(!route){alert('請先選擇上河圖');return}
     if(!days.some(d=>locs(d).length)){alert('請先建立行程');return}
+    if(!checkMissing())return;
     await exportExcel({route,days,datasetVersion:manifest.dataset_version,tripStartDate});
   };
   $('copyBtn').onclick=copyTextItinerary;
@@ -108,45 +139,60 @@ function bindGlobal(){
   $('importFile').onchange=importPlan;
 }
 
+function unlinkNextIfEndpointChanges(day){
+  const i=days.indexOf(day),next=days[i+1];
+  if(next?.linkedStart){next.linkedStart=false;const f=first(next);if(f)f._linkedStart=false}
+}
 function addNode(day,name){
   if(!route){alert('請先選擇上河圖');return}
   const p=last(day);
+  if(p)unlinkNextIfEndpointChanges(day);
   if(!p){
-    day.items.push({id:uid(),type:'location',name,auto:false,waypoint:true,note:'',isPeak:false,hasWater:false,incoming:null});
+    day.items.push({id:uid(),type:'location',name,note:'',isPeak:false,hasWater:false,incoming:null});
     return;
   }
   if(p.type==='manual-location'){
     const id=uid();
-    day.items.push({id,type:'location',name,auto:false,waypoint:true,note:'',isPeak:false,hasWater:false,incoming:{kind:'manual',fromId:p.id,toId:id,actualMinutes:null}});
+    day.items.push({id,type:'location',name,note:'',isPeak:false,hasWater:false,incoming:{kind:'manual',fromId:p.id,toId:id,actualMinutes:null}});
     return;
   }
   const path=shortestPath(route,p.name,name);
   if(!path){alert('找不到 '+p.name+' → '+name+' 的上河路徑');return}
   path.segments.forEach((s,i)=>day.items.push({
-    id:uid(),type:'location',name:s.to,auto:i<path.segments.length-1,waypoint:i===path.segments.length-1,
+    id:uid(),type:'location',name:s.to,
     note:'',isPeak:false,hasWater:false,
     incoming:{kind:'official',from:s.from,to:s.to,officialMinutes:s.minutes,actualMinutes:null,source:route.source.image_url}
   }));
 }
 
-function syncStarts(){
-  for(let i=1;i<days.length;i++){
-    const d=days[i],p=last(days[i-1]);if(!d.linkedStart||!p)continue;
-    const f=first(d);
-    if(!f){
-      d.items.unshift({id:uid(),type:p.type,name:p.name,auto:false,waypoint:true,note:'',isPeak:!!p.isPeak,hasWater:!!p.hasWater,incoming:null,_linkedStart:true});
-    }else if(f._linkedStart&&(f.name!==p.name||f.type!==p.type)){
-      f.name=p.name;f.type=p.type;f.incoming=null;f.isPeak=!!p.isPeak;f.hasWater=!!p.hasWater;
-      if(route)recalcConnections(d,route);
-    }
+function connectToPrevious(i){
+  if(i<1)return;
+  const prevEnd=last(days[i-1]),d=days[i];
+  if(!prevEnd){d.linkedStart=false;return}
+  const f=first(d);
+  if(f&&f.name===prevEnd.name&&f.type===prevEnd.type){
+    f.incoming=null;f._linkedStart=true;d.linkedStart=true;
+  }else{
+    d.items.unshift({id:uid(),type:prevEnd.type,name:prevEnd.name,note:'',isPeak:!!prevEnd.isPeak,hasWater:!!prevEnd.hasWater,incoming:null,_linkedStart:true});
+    d.linkedStart=true;
   }
+  normalizeDay(d,route);
 }
-
-function forceSync(i){
-  const p=last(days[i-1]);if(!p)return;
-  const d=days[i],f=first(d);
-  if(!f)d.items.unshift({id:uid(),type:p.type,name:p.name,auto:false,waypoint:true,note:'',isPeak:!!p.isPeak,hasWater:!!p.hasWater,incoming:null,_linkedStart:true});
-  else{f.name=p.name;f.type=p.type;f._linkedStart=true;f.incoming=null;if(route)recalcConnections(d,route)}
+function addManualStart(d){
+  if(d.linkedStart){d.linkedStart=false;const f=first(d);if(f)f._linkedStart=false}
+  if(locs(d).length===0){
+    d.items.unshift({id:uid(),type:'manual-location',name:'手動起點',note:'',isPeak:false,hasWater:false,incoming:null});
+  }else{
+    d.items.unshift({id:uid(),type:'manual-location',name:'手動起點',note:'',isPeak:false,hasWater:false,incoming:null});
+    normalizeDay(d,route);
+  }
+  d.linkedStart=false;render();
+}
+function addManualEnd(d){
+  if(locs(d).length)unlinkNextIfEndpointChanges(d);
+  const p=last(d),id=uid();
+  d.items.push({id,type:'manual-location',name:'手動終點',note:'',isPeak:false,hasWater:false,
+    incoming:p?{kind:'manual',fromId:p.id,toId:id,actualMinutes:null}:null});
   render();
 }
 
@@ -159,11 +205,25 @@ function insertManualBefore(d,destIdx){
   d.items.splice(destIdx,0,m);render();
 }
 function removeItem(d,idx){
+  if(!canDeleteItem(d,idx))return;
+  const target=d.items[idx],wasEnd=target&&target.type!=='rest'&&last(d)?.id===target.id,wasStart=target&&target.type!=='rest'&&first(d)?.id===target.id;
+  if(wasEnd)unlinkNextIfEndpointChanges(d);
+  if(wasStart)d.linkedStart=false;
   d.items.splice(idx,1);
-  if(route)recalcConnections(d,route);
+  normalizeDay(d,route);
   render();
 }
 
+function splitDay(i,idx){
+ if(i>=9){alert('最多 10 天');return}
+ const d=days[i],cut=d.items[idx];if(!cut||cut.type==='rest'||!d.items.slice(0,idx).some(x=>x.type!=='rest')){alert('請選擇起點之後的地點');return}
+ let next=days[i+1];if(next?.items.length&&!confirm('下一天已有行程，移入的路段會排在前面並重算連接。確定？'))return;
+ if(!next){next=newDay(i+1);days.push(next)}
+ const moved=d.items.splice(idx+1);const start={...cut,id:uid(),incoming:null,_linkedStart:true};
+ retargetSplitIncoming(moved,cut.id,start.id);
+ next.items=[start,...moved,...next.items.filter((x,j)=>!(j===0&&x._linkedStart))];next.linkedStart=true;
+ normalizeDay(next,route);$('dayCount').value=String(days.length);render();
+}
 function copyTextItinerary(){
   const blocks=[];
   days.forEach((d,i)=>{
@@ -171,7 +231,7 @@ function copyTextItinerary(){
     if(!rows.length)return;
     blocks.push('D'+(i+1)+'：'+rows.map(r=>r.arrival+' '+r.name+(r.isPeak?'⛰':'')+(r.hasWater?'💧':'')).join('→')+'。');
   });
-  const text=blocks.join('\n\n');
+  const text=blocks.join('\n\n');if(!checkMissing())return;
   if(!text){alert('目前沒有可複製的行程');return}
   const done=()=>toast('已複製文字行程');
   if(navigator.clipboard?.writeText)navigator.clipboard.writeText(text).then(done).catch(()=>fallbackCopy(text,done));else fallbackCopy(text,done);
@@ -180,6 +240,7 @@ function fallbackCopy(text,done){const ta=document.createElement('textarea');ta.
 function toast(msg){const t=document.createElement('div');t.className='toast';t.textContent=msg;document.body.appendChild(t);setTimeout(()=>t.remove(),1800)}
 
 function downloadPlan(){
+  if(!checkMissing())return;
   if(!route&&!days.some(d=>d.items.length)){alert('目前沒有可匯出的行程');return}
   const payload={format:'mountain-planner',schemaVersion:1,savedAt:new Date().toISOString(),routeId:route?.route_id||null,datasetVersion:manifest.dataset_version,tripStartDate,days};
   const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
@@ -189,22 +250,17 @@ function downloadPlan(){
   a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
 }
 async function importPlan(e){
-  const file=e.target.files?.[0];e.target.value='';if(!file)return;
-  try{
-    const data=JSON.parse(await file.text());
-    if(data.format!=='mountain-planner'||!Array.isArray(data.days))throw new Error('不是有效的 Mountain Planner 行程檔');
-    if(data.routeId){
-      if(!manifest.routes.some(r=>r.id===data.routeId))throw new Error('目前資料庫沒有此上河圖：'+data.routeId);
-      await loadGroup(data.routeId);$('routeSelect').value=data.routeId;
-    }else{setNoRoute();$('routeSelect').value=''}
-    tripStartDate=data.tripStartDate||'';$('tripDate').value=tripStartDate;
-    days=sanitizeDays(data.days.length?data.days:[newDay(0)]);
-    $('dayCount').value=String(days.length);
-    const changed=data.datasetVersion&&data.datasetVersion!==manifest.dataset_version;
-    render();
-    if(changed)alert('行程已匯入。\n\n注意：此檔案使用資料版本 '+data.datasetVersion+'，目前版本為 '+manifest.dataset_version+'。已保留行程檔中的官方時間快照與手動修改，建議再與目前上河資料核對。');
-    else toast('行程已匯入');
-  }catch(err){alert('匯入失敗：'+err.message)}
+ const file=e.target.files?.[0];e.target.value='';if(!file)return;
+ try{
+  const data=validatePlan(JSON.parse(await file.text()),manifest.routes.map(r=>r.id));
+  let loaded=null;if(data.routeId){const m=manifest.routes.find(r=>r.id===data.routeId);loaded=await loadRoute(m.file)}
+  if(days.some(d=>d.items.length)&&!confirm('匯入將取代目前行程，可以使用復原。確定？'))return;
+  if(loaded){route=loaded;nodes=allNodes(route);$('routeMeta').textContent=route.route_id+'｜'+route.route_name+'｜'+route.status;$('routeSelect').value=data.routeId}
+  else{setNoRoute();$('routeSelect').value=''}
+  tripStartDate=data.tripStartDate||'';$('tripDate').value=tripStartDate;
+  days=sanitizeDays(data.days);$('dayCount').value=String(days.length);
+  render();if(data.datasetVersion&&data.datasetVersion!==manifest.dataset_version)alert('資料庫版本不同；已保留檔案中的官方時間快照，請核對。');else toast('行程已匯入');
+ }catch(err){alert('匯入失敗：'+err.message)}
 }
 
 function dayDate(index){
@@ -214,24 +270,25 @@ function dayDate(index){
 }
 function opts(){return nodes.map(n=>'<option value="'+esc(n)+'">'+esc(n)+'</option>').join('')}
 function render(persist=true){
-  syncStarts();
   $('daysContainer').innerHTML=days.map(renderDay).join('');
   bindDays();
-  if(persist)saveAutosave();
+  if(persist){saveAutosave();checkpoint()}
 }
 
 function renderDay(d,i){
-  const s=summarizeDay(d),p=i?last(days[i-1]):null,f=first(d),mis=i&&d.linkedStart&&p&&f&&(p.name!==f.name||p.type!==f.type);
+  const s=summarizeDay(d),collapsed=collapsedDays.has(d.id),f=first(d),l=last(d);
   const date=dayDate(i);
   const selector=route?'<select class="add-node"><option value="">選擇下一個行程點</option>'+opts()+'</select>':'<select class="add-node" disabled><option>請先選擇上河圖</option></select>';
-  return '<article class="card day-card" data-day="'+i+'">'+
-  '<div class="day-head"><div class="day-title"><strong>Day '+(i+1)+'</strong>'+(date?'<span class="day-date">'+date+'</span>':'')+'</div>'+
+  const summary=(f&&l?esc(f.name)+' → '+esc(l.name):'尚未建立行程')+' · '+(s.missing?'未完成':formatDuration(s.total));
+  return '<article class="card day-card '+(collapsed?'collapsed':'')+'" data-day="'+i+'">'+
+  '<div class="day-head"><button class="day-toggle" type="button" aria-label="'+(collapsed?'展開':'摺疊')+' Day '+(i+1)+'">'+(collapsed?'▶':'▼')+'</button><div class="day-title"><strong>Day '+(i+1)+'</strong>'+(date?'<span class="day-date">'+date+'</span>':'')+'<span class="collapsed-summary">'+summary+'</span></div>'+
   '<div class="day-control"><label>出發</label><input class="start-time" type="time" value="'+d.startTime+'"></div>'+
   '<div class="day-control coefficient"><label>預設係數</label><input class="day-coef" type="number" min="0.1" max="3" step="0.01" value="'+Number(d.coefficient).toFixed(2)+'"></div>'+
-  '<div class="stats"><div class="stat"><span>行進</span><b>'+formatDuration(s.movement)+'</b></div><div class="stat"><span>休息</span><b>'+formatDuration(s.rest)+'</b></div><div class="stat"><span>總計</span><b>'+formatDuration(s.total)+'</b></div><div class="stat coef"><span>平均</span><b>'+(s.coefficient??'—')+'</b></div></div>'+
+  '<div class="stats"><div class="stat"><span>行進</span><b>'+formatDuration(s.movement)+'</b></div><div class="stat"><span>休息</span><b>'+formatDuration(s.rest)+'</b></div><div class="stat"><span>總計</span><b>'+(s.missing?'未完成':formatDuration(s.total))+'</b></div><div class="stat coef"><span>平均</span><b>'+(s.coefficient??'—')+'</b></div></div>'+
   '<button class="clear-day">清除 Day '+(i+1)+'</button></div>'+
   '<div class="day-tools">'+(i?'<label class="link-wrap"><input class="link-start" type="checkbox" '+(d.linkedStart?'checked':'')+'>銜接前日</label>':'<span class="link-wrap">第一點即起點</span>')+
-  selector+'<button class="add-dest" '+(route?'':'disabled')+'>加入</button>'+(mis?'<button class="sync-start secondary">同步前日終點</button>':'')+'</div>'+
+  selector+'<button class="add-dest" '+(route?'':'disabled')+'>加入</button><button class="manual-start secondary compact-day-action">＋手動起點</button><button class="manual-end secondary compact-day-action">＋手動終點</button></div>'+
+  (s.missing?'<div class="missing-warning">尚有 '+s.missing+' 個手動路段未填時間；後續時間無法計算。</div>':'')+
   '<div class="timeline">'+renderTimeline(d)+'</div>'+
   '<div class="day-footer"><textarea class="day-note" placeholder="Day '+(i+1)+' 備註">'+esc(d.note||'')+'</textarea></div></article>';
 }
@@ -246,7 +303,7 @@ function renderTimeline(d){
       html+='<div class="it-row rest-row" data-index="'+idx+'">'+
       '<div class="place"><span class="drag-handle" draggable="true" data-index="'+idx+'">⋮⋮</span><span class="place-name">☕ 休息</span></div>'+
       '<div class="arrival">'+r.endTime+'</div>'+
-      '<div class="route-info"><input class="rest-min minute-input" data-index="'+idx+'" type="number" min="0" value="'+r.minutes+'"><span>m</span></div><div></div>'+menuHtml(idx,true,false)+'</div>';
+      '<div class="route-info"><input class="rest-min minute-input" data-index="'+idx+'" type="number" min="0" value="'+r.minutes+'"><span>m</span></div><div></div>'+menuHtml(idx,true,false,true)+'</div>';
     }else{
       const e=r.incoming,a=e?edgeActual(e,d.coefficient):0,manual=r.type==='manual-location';
       let routeInfo='<span class="secondary-info">起點</span>';
@@ -260,44 +317,57 @@ function renderTimeline(d){
       const water='<button class="icon-toggle water '+(r.hasWater?'active':'')+'" data-index="'+idx+'" title="水源">💧</button>';
       const placeName=manual
         ?'<span class="drag-handle" draggable="true" data-index="'+idx+'">⋮⋮</span>'+peak+'<input class="manual-name" data-index="'+idx+'" value="'+esc(r.name)+'">'+water
-        :peak+'<span class="place-name '+(r.auto?'auto-node':'')+'">'+esc(r.name)+'</span>'+water;
+        :peak+'<span class="place-name">'+esc(r.name)+'</span>'+water;
       html+='<div class="it-row" data-index="'+idx+'">'+
       '<div class="place">'+placeName+'</div>'+
       '<div class="arrival">'+r.arrival+'</div>'+
       '<div class="route-info">'+routeInfo+'</div>'+
       '<input class="note-input" data-index="'+idx+'" placeholder="備註" value="'+esc(r.note||'')+'">'+
-      menuHtml(idx,false,!!r.incoming)+'</div>';
+      menuHtml(idx,false,!!r.incoming,canDeleteItem(d,idx))+'</div>';
     }
     html+='<div class="drop-zone" data-drop="'+(idx+1)+'"></div>';
   });
   return html;
 }
-function menuHtml(idx,isRest,canManual){
+function menuHtml(idx,isRest,canManual,canDelete){
   if(isRest)return '<details class="row-menu"><summary>⋯</summary><div class="menu-box"><button class="delete" data-action="delete" data-index="'+idx+'">刪除</button></div></details>';
-  return '<details class="row-menu"><summary>⋯</summary><div class="menu-box"><button data-action="rest" data-index="'+idx+'">插入休息</button>'+(canManual?'<button data-action="manual" data-index="'+idx+'">在此段插入手動點</button>':'')+'<button class="delete" data-action="delete" data-index="'+idx+'">刪除節點</button></div></details>';
+  return '<details class="row-menu"><summary>⋯</summary><div class="menu-box"><button data-action="rest" data-index="'+idx+'">插入休息</button>'+(canManual?'<button data-action="manual" data-index="'+idx+'">在此段插入手動點</button>':'')+'<button data-action="split" data-index="'+idx+'">從此點開始下一天</button>'+(canDelete?'<button class="delete" data-action="delete" data-index="'+idx+'">刪除節點</button>':'')+'</div></details>';
 }
 
 function bindDays(){
+  document.querySelectorAll('.row-menu').forEach(menu=>menu.addEventListener('toggle',()=>{
+    if(menu.open)document.querySelectorAll('.row-menu[open]').forEach(other=>{if(other!==menu)other.open=false});
+  }));
   document.querySelectorAll('.day-card').forEach(card=>{
     const i=+card.dataset.day,d=days[i];
+    card.querySelector('.day-toggle').onclick=()=>{if(collapsedDays.has(d.id))collapsedDays.delete(d.id);else collapsedDays.add(d.id);try{localStorage.setItem(COLLAPSE_KEY,JSON.stringify([...collapsedDays]))}catch(e){}render(false)};
     card.querySelector('.start-time').onchange=e=>{d.startTime=e.target.value;render()};
     card.querySelector('.day-coef').onchange=e=>{d.coefficient=Math.max(.1,Number(e.target.value)||.8);render()};
-    card.querySelector('.day-note').onchange=e=>{d.note=e.target.value;saveAutosave()};
-    card.querySelector('.clear-day').onclick=()=>{if(confirm('確定清除 Day '+(i+1)+' 的全部行程？')){d.items=[];d.note='';render()}};
-    const lk=card.querySelector('.link-start');if(lk)lk.onchange=e=>{d.linkedStart=e.target.checked;render()};
+    card.querySelector('.day-note').onchange=e=>{d.note=e.target.value;render()};
+    card.querySelector('.clear-day').onclick=()=>{if(confirm('確定清除 Day '+(i+1)+' 的全部行程？')){if(locs(d).length)unlinkNextIfEndpointChanges(d);d.items=[];d.note='';d.linkedStart=false;render()}};
+    const lk=card.querySelector('.link-start');if(lk)lk.onchange=e=>{
+      if(e.target.checked)connectToPrevious(i);
+      else{d.linkedStart=false;const f=first(d);if(f)f._linkedStart=false}
+      render();
+    };
     const add=card.querySelector('.add-dest');if(add)add.onclick=()=>{const v=card.querySelector('.add-node').value;if(v){addNode(d,v);render()}};
-    const sy=card.querySelector('.sync-start');if(sy)sy.onclick=()=>forceSync(i);
+    card.querySelector('.manual-start').onclick=()=>addManualStart(d);
+    card.querySelector('.manual-end').onclick=()=>addManualEnd(d);
 
     card.querySelectorAll('[data-action]').forEach(b=>b.onclick=e=>{
       e.preventDefault();const idx=+b.dataset.index;
       if(b.dataset.action==='delete')removeItem(d,idx);
+      if(b.dataset.action==='split')splitDay(i,idx);
       if(b.dataset.action==='rest')insertRest(d,idx);
       if(b.dataset.action==='manual')insertManualBefore(d,idx);
     });
     card.querySelectorAll('.edge-time').forEach(x=>x.onchange=()=>{const it=d.items[+x.dataset.index];if(it?.incoming)it.incoming.actualMinutes=x.value===''?null:clampMin(x.value);render()});
     card.querySelectorAll('.rest-min').forEach(x=>x.onchange=()=>{d.items[+x.dataset.index].minutes=clampMin(x.value);render()});
-    card.querySelectorAll('.manual-name').forEach(x=>x.onchange=()=>{d.items[+x.dataset.index].name=x.value.trim()||'手動節點';render()});
-    card.querySelectorAll('.note-input').forEach(x=>x.onchange=()=>{d.items[+x.dataset.index].note=x.value;saveAutosave()});
+    card.querySelectorAll('.manual-name').forEach(x=>x.onchange=()=>{
+      const it=d.items[+x.dataset.index];if(last(d)?.id===it.id)unlinkNextIfEndpointChanges(d);
+      it.name=x.value.trim()||'手動節點';render();
+    });
+    card.querySelectorAll('.note-input').forEach(x=>x.onchange=()=>{d.items[+x.dataset.index].note=x.value;render()});
     card.querySelectorAll('.peak').forEach(b=>b.onclick=()=>{const it=d.items[+b.dataset.index];it.isPeak=!it.isPeak;render()});
     card.querySelectorAll('.water').forEach(b=>b.onclick=()=>{const it=d.items[+b.dataset.index];it.hasWater=!it.hasWater;render()});
 
@@ -311,9 +381,12 @@ function bindDays(){
       z.ondrop=e=>{
         e.preventDefault();z.classList.remove('active');if(!drag||drag.day!==i)return;
         const from=drag.index,to=+z.dataset.drop;if(from<0||from>=d.items.length)return;
+        const oldStart=first(d)?.id,oldEnd=last(d)?.id;
         const [mv]=d.items.splice(from,1);let insert=to;if(from<to)insert--;
         insert=Math.max(0,Math.min(insert,d.items.length));d.items.splice(insert,0,mv);
-        if(route)recalcConnections(d,route);
+        normalizeDay(d,route);
+        if(oldStart!==first(d)?.id)d.linkedStart=false;
+        if(oldEnd!==last(d)?.id)unlinkNextIfEndpointChanges(d);
         drag=null;render();
       };
     });

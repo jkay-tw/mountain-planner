@@ -45,52 +45,109 @@ export function formatDuration(minutes){
 export function edgeActual(edge,defaultCoefficient){
   if(edge.actualMinutes!==null&&edge.actualMinutes!==undefined&&edge.actualMinutes!=='')return Number(edge.actualMinutes);
   if(edge.kind==='official')return round2(edge.officialMinutes*defaultCoefficient);
-  return 0;
+  return null;
 }
+export function missingSegments(day){return day.items.filter(x=>x.type!=='rest'&&x.incoming&&edgeActual(x.incoming,day.coefficient)===null).length;}
 export function recalcConnections(day,route){
-  const out=[];let prev=null;
-  for(const raw of day.items){
-    if(raw.type==='rest'){out.push({...raw});continue}
+  const original=day.items;
+  const result=[];let previous=null;
+  const makeManual=(from,to,old)=>{
+    const keep=old?.kind==='manual'&&old.fromId===from.id&&old.toId===to.id;
+    return keep?{...old}:{kind:'manual',fromId:from.id,toId:to.id,actualMinutes:null};
+  };
+  for(const raw of original){
+    if(raw.type==='rest'){result.push({...raw});continue;}
     const item={...raw};
-    if(!prev)item.incoming=null;
-    else if(item.type==='manual-location'||prev.type==='manual-location'){
-      const old=raw.incoming;
-      const keep=old?.kind==='manual'&&old.fromId===prev.id&&old.toId===item.id;
-      item.incoming=keep?{...old}:{kind:'manual',fromId:prev.id,toId:item.id,actualMinutes:null};
-    }else{
-      const seg=directSegment(route,prev.name,item.name);
-      if(seg){
-        const old=raw.incoming;
-        const keep=old?.kind==='official'&&old.from===seg.from&&old.to===seg.to?old.actualMinutes:null;
-        item.incoming={kind:'official',from:seg.from,to:seg.to,officialMinutes:seg.minutes,actualMinutes:keep??null,source:route.source.image_url};
-      }else item.incoming={kind:'manual',fromId:prev.id,toId:item.id,actualMinutes:null};
+    if(!previous){item.incoming=null;result.push(item);previous=item;continue;}
+    if(previous.type==='manual-location'||item.type==='manual-location'){
+      item.incoming=makeManual(previous,item,raw.incoming);result.push(item);previous=item;continue;
     }
-    out.push(item);prev=item;
+    const path=shortestPath(route,previous.name,item.name);
+    if(!path){item.incoming=makeManual(previous,item,raw.incoming);result.push(item);previous=item;continue;}
+    if(!path.segments.length){
+      // Adjacent identical official locations represent the same physical point.
+      // Merge them instead of leaving a later item with incoming=null ("起點").
+      const prevOut=[...result].reverse().find(x=>x.type!=='rest');
+      if(prevOut&&prevOut.type==='location'&&item.type==='location'&&prevOut.name===item.name){
+        prevOut.note=prevOut.note||item.note||'';
+        prevOut.isPeak=!!(prevOut.isPeak||item.isPeak);
+        prevOut.hasWater=!!(prevOut.hasWater||item.hasWater);
+        previous=prevOut;
+        continue;
+      }
+      item.incoming={kind:'manual',fromId:previous.id,toId:item.id,actualMinutes:null};
+      result.push(item);previous=item;continue;
+    }
+    for(let j=0;j<path.segments.length;j++){
+      const seg=path.segments[j],isDestination=j===path.segments.length-1;
+      const existing=original.find(x=>x.type!=='rest'&&x.name===seg.to&&x.incoming?.kind==='official'&&x.incoming.from===seg.from&&x.incoming.to===seg.to);
+      const target=isDestination?item:(existing?{...existing}:{id:uid(),type:'location',name:seg.to,auto:true,waypoint:false,note:'',isPeak:false,hasWater:false});
+      const old=target.incoming,keep=old?.kind==='official'&&old.from===seg.from&&old.to===seg.to;
+      target.incoming={kind:'official',from:seg.from,to:seg.to,officialMinutes:keep?old.officialMinutes:seg.minutes,actualMinutes:keep?old.actualMinutes??null:null,source:route.source.image_url};
+      result.push(target);
+    }
+    previous=item;
   }
-  day.items=out;
+  day.items=result;
+}
+// Deletion is based on the node's role in the current day, never on how it was added.
+// Official nodes are deletable only at day boundaries or immediately beside a manual node.
+export function retargetSplitIncoming(items,oldStartId,newStartId){
+  const firstMoved=items.find(x=>x.type!=='rest');
+  if(firstMoved?.incoming?.kind==='manual'&&firstMoved.incoming.fromId===oldStartId){
+    firstMoved.incoming={...firstMoved.incoming,fromId:newStartId};
+  }
+  return items;
+}
+export function normalizeDay(day,route){
+  if(route)recalcConnections(day,route);
+  const locs=day.items.filter(x=>x.type!=='rest');
+  if(locs.length){
+    locs[0].incoming=null;
+    for(let i=1;i<locs.length;i++){
+      if(!locs[i].incoming){
+        const prev=locs[i-1];
+        locs[i].incoming={kind:'manual',fromId:prev.id,toId:locs[i].id,actualMinutes:null};
+      }
+    }
+  }
+  return day;
+}
+export function canDeleteItem(day,index){
+  const item=day.items[index];
+  if(!item)return false;
+  if(item.type==='rest'||item.type==='manual-location')return true;
+  const locIndexes=day.items.map((x,i)=>x.type==='rest'?null:i).filter(i=>i!==null);
+  const pos=locIndexes.indexOf(index);
+  if(pos<0)return false;
+  if(pos===0||pos===locIndexes.length-1)return true;
+  const prev=day.items[locIndexes[pos-1]],next=day.items[locIndexes[pos+1]];
+  return prev?.type==='manual-location'||next?.type==='manual-location';
 }
 export function buildTimeline(day){
-  let t=clockToMinutes(day.startTime);const rows=[];
+  let t=clockToMinutes(day.startTime),known=true;const rows=[];
   for(const item of day.items){
     if(item.type==='rest'){
-      t+=Number(item.minutes)||0;
-      rows.push({...item,endTime:minutesToClock(t)});
-      continue;
+      if(known)t+=Number(item.minutes)||0;
+      rows.push({...item,endTime:known?minutesToClock(t):'—'});continue;
     }
-    let incomingActual=0;
-    if(item.incoming){incomingActual=edgeActual(item.incoming,day.coefficient);t+=incomingActual}
-    rows.push({...item,arrival:minutesToClock(t),incomingActual});
+    const incomingActual=item.incoming?edgeActual(item.incoming,day.coefficient):0;
+    if(incomingActual===null)known=false;
+    else if(known)t+=incomingActual;
+    rows.push({...item,arrival:known?minutesToClock(t):'—',incomingActual});
   }
-  return {rows,endTime:minutesToClock(t)};
+  return {rows,endTime:known?minutesToClock(t):'—',complete:known};
 }
 export function summarizeDay(day){
-  let official=0,officialActual=0,movement=0,rest=0,manual=0;
+  let official=0,officialActual=0,movement=0,rest=0,manual=0,missing=0;
   for(const item of day.items){
-    if(item.type==='rest'){rest+=Number(item.minutes)||0;continue}
+    if(item.type==='rest'){rest+=Number(item.minutes)||0;continue;}
     if(!item.incoming)continue;
-    const actual=edgeActual(item.incoming,day.coefficient);movement+=actual;
-    if(item.incoming.kind==='official'){official+=Number(item.incoming.officialMinutes)||0;officialActual+=actual}
+    const actual=edgeActual(item.incoming,day.coefficient);
+    if(actual===null){missing++;continue;}
+    movement+=actual;
+    if(item.incoming.kind==='official'){official+=Number(item.incoming.officialMinutes)||0;officialActual+=actual;}
     else manual+=actual;
   }
-  return {official:round2(official),movement:round2(movement),manual:round2(manual),rest:round2(rest),total:round2(movement+rest),coefficient:official?round2(officialActual/official):null};
+  return {official:round2(official),movement:round2(movement),manual:round2(manual),rest:round2(rest),total:missing?null:round2(movement+rest),missing,coefficient:official?round2(officialActual/official):null};
 }
