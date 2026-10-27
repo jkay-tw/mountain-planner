@@ -375,3 +375,16 @@ test('adjacent node browser shows verified outgoing connections only, collapsed 
  assert.equal(jm.minutes,30);
  assert.equal(jm.edges.length,2);
 });
+
+test('crossmap preview cache bust and browser control bindings are versioned together',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const page=readFileSync(new URL('../crossmap-preview.html',import.meta.url),'utf8');
+ const app=readFileSync(new URL('../js/crossmap-preview.js',import.meta.url),'utf8');
+ assert.match(page,/js\/crossmap-preview\.js\?v=20261027b/);
+ assert.match(app,/node-browser\.js\?v=20261027b/);
+ for(const id of ['startSearch','endSearch','startMatches','endMatches','neighbors'])
+   assert.match(page,new RegExp('id="'+id+'"'));
+ assert.match(app,/renderNeighbors\(\)/);
+ assert.match(app,/addEventListener\('input',\(\)=>renderSearch\(which\)\)/);
+ assert.match(app,/搜尋與相鄰節點已啟用/);
+});
