@@ -70,7 +70,8 @@ export function recalcConnections(day,route){
     if(previous.type==='manual-location'||item.type==='manual-location'){
       item.incoming=makeManual(previous,item,raw.incoming);result.push(item);previous=item;continue;
     }
-    const identified=Array.isArray(route.nodes);\n    const path=shortestPath(route,identified?previous.nodeId:previous.name,identified?item.nodeId:item.name);
+    const identified=Array.isArray(route.nodes);
+    const path=shortestPath(route,identified?previous.nodeId:previous.name,identified?item.nodeId:item.name);
     if(!path){item.incoming=makeManual(previous,item,raw.incoming);result.push(item);previous=item;continue;}
     if(!path.segments.length){
       // Adjacent identical official locations represent the same physical point.
