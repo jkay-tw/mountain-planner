@@ -45,4 +45,22 @@ class SourceQueueTests(unittest.TestCase):
    with self.assertRaises(ValueError):
     mod.build(source,mapping,d/'out')
 
+ def test_official_source_catalog_links_19_chart_families_with_updated_versions(self):
+  catalog=json.loads((ROOT/'data'/'official_chart_sources.json').read_text(encoding='utf-8'))
+  charts={x['id']:x for x in catalog['charts']}
+  self.assertEqual(set(charts),{f'G{x:02d}' for x in range(2,21)})
+  self.assertEqual(charts['G07']['chartURL'],'https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg')
+  self.assertEqual(charts['G09']['chartURL'],'https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg')
+  self.assertTrue(all(not x['perDirectionVerified'] for x in charts.values()))
+  with tempfile.TemporaryDirectory() as tmp:
+   folder=Path(tmp)
+   candidate=folder/'source.json';candidate.write_text(json.dumps({'segments':[
+      {'group':'A','from':'A1','to':'A2','go':20,'back':30}]}),encoding='utf-8')
+   mapping=folder/'groups.json';mapping.write_text(json.dumps({'mapping':[{
+      'candidateGroup':'A','officialChartId':'G07'}]}),encoding='utf-8')
+   mod.build(candidate,mapping,folder/'reports',ROOT/'data'/'official_chart_sources.json')
+   csv=(folder/'reports'/'source_review_queue.csv').read_text(encoding='utf-8-sig')
+   self.assertIn('G07_hiking_new.jpg',csv)
+   self.assertIn('pending',csv)
+
 if __name__=='__main__':unittest.main()
