@@ -461,7 +461,7 @@ test('v0.7.5 crossmap editor never shares main planner autosave key or route man
  const manifest=JSON.parse(readFileSync(new URL('../data/crossmap-editor-manifest.json',import.meta.url),'utf8'));
  assert.match(app,/crossmap-autosave\.v075/);
  assert.match(app,/crossmap-editor-manifest\.json/);
- assert.match(html,/js\/crossmap-editor\.js\?v=v079/);
+ assert.match(html,/js\/crossmap-editor\.js\?v=v0710/);
  assert.doesNotMatch(main,/crossmap-autosave/);
  assert.ok(manifest.routes.some(x=>x.id==='G17G18-PREVIEW'));
  assert.equal(manifest.routes.length,1);
@@ -487,8 +487,8 @@ test('v0.7.9 responsive tools keep exactly two control groups and retain add/sel
  assert.match(style,/@container dayCard \(max-width:780px\)/);
  assert.match(style,/grid-template-areas:"link" "picker" "actions"/);
  assert.match(style,/grid-template-columns:minmax\(0,1fr\) minmax\(0,1fr\)/);
- assert.match(html,/css\/style\.css\?v=v079/);
- assert.match(html,/js\/crossmap-editor\.js\?v=v079/);
+ assert.match(html,/css\/style\.css\?v=v0710/);
+ assert.match(html,/js\/crossmap-editor\.js\?v=v0710/);
 });
 
 test('preview UI build labels and asset cache keys stay synchronized across editors',async()=>{
@@ -502,5 +502,34 @@ test('preview UI build labels and asset cache keys stay synchronized across edit
    const cache='v0'+version[1]+version[2];
    assert.ok(html.includes('js/'+scriptName+'?v='+cache),htmlName+' cache/version mismatch');
    assert.ok(html.includes('css/style.css?v='+cache),htmlName+' CSS cache/version mismatch');
+ }
+});
+
+test('optional condition-specific time hints survive normalization without replacing standard minutes',async()=>{
+ const source=addRouteIdentity({route_id:'TEST',source:{image_url:'https://example.org/route'},
+  segments:[{from:'A',to:'B',minutes:190,travelMode:'walking',verificationStatus:'verified',
+    timeAlternatives:[{kind:'slow',minutes:350}]}]});
+ const day={startTime:'06:00',coefficient:1,items:[
+  {...point('n1','A'),nodeId:source.nodes.find(x=>x.name==='A').id},
+  {...point('n2','B',{kind:'manual',fromId:'n1',toId:'n2',actualMinutes:null}),
+    nodeId:source.nodes.find(x=>x.name==='B').id}
+ ]};
+ normalizeDay(day,source);
+ assert.equal(day.items[1].incoming.officialMinutes,190);
+ assert.deepEqual(day.items[1].incoming.timeAlternatives,[{kind:'slow',minutes:350}]);
+ day.items[1].incoming.actualMinutes=350;
+ normalizeDay(day,source);
+ assert.equal(day.items[1].incoming.officialMinutes,190);
+ assert.equal(day.items[1].incoming.actualMinutes,350);
+ assert.equal(day.items[1].incoming.timeAlternatives[0].minutes,350);
+});
+test('v0.7.10 preview exposes optional alternate-time controls while keeping node search intact',async()=>{
+ const {readFileSync}=await import('node:fs');
+ for(const js of ['app.js','crossmap-editor.js']){
+  const content=readFileSync(new URL('../js/'+js,import.meta.url),'utf8');
+  assert.match(content,/class="alternate-time"/);
+  assert.match(content,/alternate-time'\)\.forEach/);
+  assert.match(content,/timeAlternatives/);
+  assert.match(content,/node-picker-controls/);
  }
 });
