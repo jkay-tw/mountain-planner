@@ -537,11 +537,11 @@ test('v0.7.10 preview exposes optional alternate-time controls while keeping nod
 test('v0.7.12 global route browser keeps scopes without clearing itinerary',async()=>{
  const {readFileSync}=await import('node:fs');
  const manifest=JSON.parse(readFileSync(new URL('../data/unified-editor-manifest.json',import.meta.url),'utf8'));
- assert.deepEqual(manifest.routes.map(x=>x.id),['G06','G07','G17G18-PREVIEW']);
+ assert.deepEqual(manifest.routes.map(x=>x.id),['G03','G06','G07','G11','G17G18-PREVIEW']);
  const html=readFileSync(new URL('../unified-editor.html',import.meta.url),'utf8');
  const app=readFileSync(new URL('../js/unified-editor.js',import.meta.url),'utf8');
- assert.ok(html.includes('js/unified-editor.js?v=v0713'));
- assert.ok(app.includes('v0.7.13 Unified Preview'));
+ assert.ok(html.includes('js/unified-editor.js?v=v0714'));
+ assert.ok(app.includes('v0.7.14 Unified Preview'));
  assert.match(app,/mergeReviewedRoutes/);
  assert.ok(app.includes('nodesInScope(route,scope)'));
  assert.match(app,/appendDisconnectedNode/);
@@ -622,5 +622,27 @@ test('G07 full updated source review matches all 92 preview directions',async()=
 test('v0.7.13 unified manifest adds G07 without changing existing G06/G17G18 IDs',async()=>{
  const {readFileSync}=await import('node:fs');
  const m=JSON.parse(readFileSync(new URL('../data/unified-editor-manifest.json',import.meta.url),'utf8'));
- assert.deepEqual(m.routes.map(x=>x.id),['G06','G07','G17G18-PREVIEW']);
+ assert.deepEqual(m.routes.map(x=>x.id),['G03','G06','G07','G11','G17G18-PREVIEW']);
+});
+
+test('G03 and G11 preview routes include only source-reviewed walking subsets',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const g03=JSON.parse(readFileSync(new URL('../data/routes/G03.preview.json',import.meta.url),'utf8'));
+ const g11=JSON.parse(readFileSync(new URL('../data/routes/G11.preview.json',import.meta.url),'utf8'));
+ assert.equal(g03.segments.length,18);
+ assert.equal(g11.segments.length,26);
+ assert.ok(g03.segments.every(x=>x.travelMode==='walking'&&x.verificationStatus==='verified'));
+ assert.ok(g11.segments.every(x=>x.travelMode==='walking'&&x.verificationStatus==='verified'));
+ assert.ok(!g03.segments.some(x=>x.from==='新山'||x.to==='新山'));
+ assert.ok(!g11.segments.some(x=>['霧社','廬山部落','銅門','仁壽橋','花蓮','鯉魚潭'].includes(x.from)||['霧社','廬山部落','銅門','仁壽橋','花蓮','鯉魚潭'].includes(x.to)));
+});
+test('G11 reviewed overlaps already use canonical cross-chart physical IDs',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const g11=JSON.parse(readFileSync(new URL('../data/routes/G11.preview.json',import.meta.url),'utf8'));
+ const ids=new Map(g11.nodes.map(n=>[n.name,n.id]));
+ assert.equal(ids.get('天池山莊'),'shared:cw-v07-038');
+ assert.equal(ids.get('天池岔路口'),'shared:cw-v07-039');
+ assert.equal(ids.get('奇萊主山南峰'),'shared:cw-v07-042');
+ assert.equal(ids.get('縣界啞口'),'shared:cw-v07-065');
+ assert.equal(ids.get('雲海保線所'),'shared:cw-v07-075');
 });
