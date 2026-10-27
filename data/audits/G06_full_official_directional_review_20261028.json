@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "chartId": "G06",
+  "chartName": "白姑大山",
+  "officialImageURL": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+  "officialIndexURL": "https://www.sunriver.com.tw/step2020.htm",
+  "reviewedAt": "2026-10-28",
+  "reviewMethod": "first-party chart image direct visual arrow/time comparison; candidate values not used as evidence",
+  "reviewedBy": "assistant",
+  "status": "visual-source-checked",
+  "directedEdges": 18,
+  "pairs": [
+    {
+      "from": "白姑大山",
+      "to": "草青池",
+      "forwardMinutes": 45,
+      "reverseMinutes": 55,
+      "travelMode": "walking"
+    },
+    {
+      "from": "草青池",
+      "to": "一線天岩壁",
+      "forwardMinutes": 65,
+      "reverseMinutes": 75,
+      "travelMode": "walking"
+    },
+    {
+      "from": "一線天岩壁",
+      "to": "吉他營地",
+      "forwardMinutes": 70,
+      "reverseMinutes": 85,
+      "travelMode": "walking"
+    },
+    {
+      "from": "吉他營地",
+      "to": "白姑大山東南峰",
+      "forwardMinutes": 80,
+      "reverseMinutes": 60,
+      "travelMode": "walking"
+    },
+    {
+      "from": "白姑大山東南峰",
+      "to": "司晏池營地",
+      "forwardMinutes": 50,
+      "reverseMinutes": 60,
+      "travelMode": "walking"
+    },
+    {
+      "from": "司晏池營地",
+      "to": "三錐山",
+      "forwardMinutes": 110,
+      "reverseMinutes": 130,
+      "travelMode": "walking"
+    },
+    {
+      "from": "三錐山",
+      "to": "水管路岔路口",
+      "forwardMinutes": 110,
+      "reverseMinutes": 160,
+      "travelMode": "walking"
+    },
+    {
+      "from": "水管路岔路口",
+      "to": "白姑大山登山口",
+      "forwardMinutes": 25,
+      "reverseMinutes": 25,
+      "travelMode": "walking"
+    },
+    {
+      "from": "白姑大山登山口",
+      "to": "停車場",
+      "forwardMinutes": 5,
+      "reverseMinutes": 10,
+      "travelMode": "walking"
+    }
+  ],
+  "vehicleExcluded": true,
+  "scopeNote": "G06 only: nine physical edge pairs, all 18 directed walking times compared; this does not certify the remaining charts or current route passability."
+}
