@@ -292,11 +292,11 @@ test('G17→G18 real source-audited overlap uses confirmed junction, not name ma
  assert.equal(reverse.minutes,480); // 90 + 80 + 130 + 180
  assert.equal(route.nodes.length,5);
 });
-test('G17 and G18 staged excerpts contain only four audited bidirectional walking pairs',async()=>{
+test('G17 and G18 staged excerpts contain six audited bidirectional walking pairs',async()=>{
  const {readFileSync}=await import('node:fs');
  const read=n=>JSON.parse(readFileSync(new URL('../data/staging/'+n+'.overlap-verified-subset.json',import.meta.url),'utf8'));
  const a=read('G17'),b=read('G18');
- assert.equal(a.segments.length,4);assert.equal(b.segments.length,4);
+ assert.equal(a.segments.length,8);assert.equal(b.segments.length,4);
  assert.ok([...a.segments,...b.segments].every(e=>e.travelMode==='walking'&&e.verificationStatus==='verified'&&e.source.startsWith('https://www.sunriver.com.tw/')));
 });
 
@@ -321,4 +321,19 @@ test('standalone cross-map preview contains all elements and is not wired into i
  assert.doesNotMatch(controller,/localStorage|sessionStorage|mountain-planner\.autosave|saveAutosave/);
  for(const source of ['G17.overlap-verified-subset.json','G18.overlap-verified-subset.json'])
    assert.ok(controller.includes(source));
+});
+
+test('expanded G17 verified walking path reaches G18 from 三叉山登山口',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const read=file=>JSON.parse(readFileSync(new URL(file,import.meta.url),'utf8'));
+ const a=read('../data/staging/G17.overlap-verified-subset.json');
+ const b=read('../data/staging/G18.overlap-verified-subset.json');
+ const x=read('../data/crosswalk-reviewed.json');
+ const graph=buildVerifiedWalkingGraph([a,b],x,{allowCrossMap:true});
+ const id=(r,name)=>graph.locationId.get(JSON.stringify([r.route_id,r.nodes.find(n=>n.name===name).id]));
+ const found=shortestVerifiedWalkingPath(graph,id(a,'三叉山登山口'),id(b,'3058公尺峰'));
+ assert.ok(found);
+ assert.equal(found.minutes,220);
+ assert.deepEqual(found.segments.map(s=>s.minutes),[30,40,70,80]);
+ assert.equal(shortestVerifiedWalkingPath(graph,id(b,'3058公尺峰'),id(a,'三叉山登山口')).minutes,225);
 });
