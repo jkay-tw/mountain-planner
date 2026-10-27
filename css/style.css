@@ -204,3 +204,12 @@ button{border:0;border-radius:8px;padding:9px 12px;background:var(--accent);colo
   .day-tools > .node-action-controls{justify-content:flex-start;flex-wrap:wrap;min-width:0}
  }
 }
+
+/* v0.7.10 — optional conditional walking-time estimates */
+.route-info:has(.alternate-time){white-space:normal;flex-wrap:wrap;row-gap:3px}
+.alternate-time{
+ padding:3px 6px;font-size:10px;line-height:1.35;
+ border:1px solid #cbdcd0;border-radius:6px;
+ color:#365741;background:#eef5ef;white-space:nowrap;
+}
+.alternate-time:hover{background:#dcebdc}
