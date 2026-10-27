@@ -12,7 +12,7 @@ export async function exportExcel({route,days,datasetVersion,tripStartDate}){
   if(!window.ExcelJS)throw new Error('ExcelJS 尚未載入');
   const wb=new ExcelJS.Workbook();wb.creator='Mountain Planner';wb.created=new Date();
   const ws=wb.addWorksheet('登山行程',{views:[{state:'frozen',ySplit:3}]});
-  ws.columns=[{width:10},{width:27},{width:14},{width:14},{width:10},{width:30},{width:24}];
+  ws.columns=[{width:27},{width:11},{width:14},{width:14},{width:10},{width:30},{width:24}];
 
   ws.mergeCells('A1:G1');ws.getCell('A1').value=route.route_name+'｜登山行程規劃';
   ws.getCell('A1').font={name:'Microsoft JhengHei',bold:true,size:18};ws.getCell('A1').alignment={horizontal:'center',vertical:'middle'};ws.getRow(1).height=28;
@@ -30,28 +30,28 @@ export async function exportExcel({route,days,datasetVersion,tripStartDate}){
     title.font={name:'Microsoft JhengHei',bold:true,size:13};title.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FFDDE9DF'}};title.alignment={horizontal:'left',vertical:'middle'};
     rowNo++;
 
-    const hr=ws.getRow(rowNo);hr.values=['時間','地點 / 事件','規劃時間','上河時間','係數','備註','來源'];
+    const hr=ws.getRow(rowNo);hr.values=['地點 / 事件','抵達時間','規劃時間','上河時間','係數','備註','來源'];
     hr.eachCell(c=>{c.font={name:'Microsoft JhengHei',bold:true};c.alignment={horizontal:'center',vertical:'middle'};c.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FFEAF0EB'}}});
     rowNo++;
 
     for(const r of tl.rows){
       if(r.type==='rest'){
-        ws.getRow(rowNo).values=[r.endTime,'☕ 休息',Number(r.minutes)||0,'','','',''];
+        ws.getRow(rowNo).values=['☕ 休息',r.endTime,Number(r.minutes)||0,'','','',''];
       }else{
         const e=r.incoming,actual=e?edgeActual(e,day.coefficient):'';
         const k=e?.kind==='official'?Math.round((actual/e.officialMinutes)*100)/100:'';
-        ws.getRow(rowNo).values=[r.arrival,placeLabel(r),e?Number(actual):'',e?.kind==='official'?Number(e.officialMinutes):'',k,r.note||'',e?.kind==='official'?'上河 '+route.route_id:''];
+        ws.getRow(rowNo).values=[placeLabel(r),r.arrival,e?Number(actual):'',e?.kind==='official'?Number(e.officialMinutes):'',k,r.note||'',e?.kind==='official'?'上河 '+route.route_id:''];
         if(e?.kind==='official'){
           const c=ws.getCell(rowNo,7);c.value={text:'上河 '+route.route_id,hyperlink:route.source.image_url};c.font={name:'Microsoft JhengHei',color:{argb:'FF315D42'},underline:true,size:10};
         }
       }
       const rr=ws.getRow(rowNo);
-      rr.eachCell((c,col)=>{c.font={...(c.font||{}),name:col===1||col===3||col===4||col===5?'Calibri':'Microsoft JhengHei'};c.alignment={vertical:'middle',horizontal:col<=5?'center':'left',wrapText:true}});
+      rr.eachCell((c,col)=>{c.font={...(c.font||{}),name=col===2||col===3||col===4||col===5?'Calibri':'Microsoft JhengHei'};c.alignment={vertical:'middle',horizontal:col>=2&&col<=5?'center':'left',wrapText:true}});
       rowNo++;
     }
 
     const sr=ws.getRow(rowNo);
-    sr.values=['','每日統計',excelDuration(sum.total),excelDuration(sum.official),sum.official?Math.round((sum.total/sum.official)*100)/100:'','行進 '+minutesHHMM(sum.movement)+'　休息 '+minutesHHMM(sum.rest),''];
+    sr.values=['每日統計','',excelDuration(sum.total),excelDuration(sum.official),sum.official?Math.round((sum.total/sum.official)*100)/100:'','行進 '+minutesHHMM(sum.movement)+'　休息 '+minutesHHMM(sum.rest),''];
     sr.getCell(3).numFmt='[h]:mm';sr.getCell(4).numFmt='[h]:mm';
     sr.eachCell((c,col)=>{c.font={name:col===3||col===4||col===5?'Calibri':'Microsoft JhengHei',bold:true};c.alignment={horizontal:'center',vertical:'middle'};c.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FFF3F6F3'}}});
     rowNo++;
