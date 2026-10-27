@@ -8,12 +8,13 @@
       "name": "主北岔路",
       "groupA": "玉山群峰",
       "groupB": "奇萊",
-      "reason": "不同山域的同名岔路，禁止將字串名稱視為地點身分",
+      "reason": "不同山域的同名岔路，依據山域位置禁止合併",
       "verification": "geographic-distinction"
     }
   ],
-  "notes": "所有指定名稱僅按完整名稱精確比對，在不同圖組之間一律不合併；即使鄰接節點與方向時間一致亦排除。群組內同名不同地點另以明確 Node ID 管理。approvedSharedNodes 仍為空，不會自動串聯。",
-  "blockedDisplayNamesAcrossGroups": [
+  "notes": "11個通用名稱改為『必須比對周邊節點及來源證據』，並非一律不同。只有已證實不同位置的指定配對才封鎖。approvedSharedNodes 仍為空；有相同周邊與時間僅升級為審核候選。",
+  "blockedDisplayNamesAcrossGroups": [],
+  "genericNamesRequireEvidence": [
     "三岔路口",
     "四岔路口",
     "水源",
