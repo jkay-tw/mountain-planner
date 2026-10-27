@@ -7,7 +7,7 @@ import {filterLocations} from './node-browser.js?v=v074';
 
 const $=id=>document.getElementById(id);
 const STORAGE_KEY='mountain-planner.crossmap-autosave.v075';
-const APP_VERSION='v0.7.9 Crossmap Editor';
+const APP_VERSION='v0.7.10 Crossmap Editor';
 const COLLAPSE_KEY='mountain-planner.crossmap-collapsed-days.v075';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='';
@@ -170,7 +170,7 @@ function addNode(day,nodeId){
   path.segments.forEach((s,i)=>day.items.push({
     id:uid(),type:'location',name:s.to,nodeId:s.toId,
     note:'',isPeak:false,hasWater:false,
-    incoming:{kind:'official',from:s.from,to:s.to,fromNodeId:s.fromId,toNodeId:s.toId,officialMinutes:s.minutes,actualMinutes:null,source:s.source||route.source.image_url}
+    incoming:{kind:'official',from:s.from,to:s.to,fromNodeId:s.fromId,toNodeId:s.toId,officialMinutes:s.minutes,actualMinutes:null,source:s.source||route.source.image_url,...(Array.isArray(s.timeAlternatives)&&s.timeAlternatives.length?{timeAlternatives:s.timeAlternatives}:{})}
   }));
 }
 
@@ -319,7 +319,10 @@ function renderTimeline(d){
       let routeInfo='<span class="secondary-info">起點</span>';
       if(e?.kind==='official'){
         const k=e.officialMinutes?round2(a/e.officialMinutes):0;
-        routeInfo='<input class="edge-time minute-input" data-index="'+idx+'" type="number" min="0" value="'+a+'"><span>m</span><span class="secondary-info">上河'+Math.round(Number(e.officialMinutes)||0)+'m · ×'+Number(k).toFixed(2)+'</span>';
+        const alternatives=Array.isArray(e.timeAlternatives)?e.timeAlternatives.filter(t=>Number.isFinite(t.minutes)&&t.minutes>0&&['slow','heavy_pack'].includes(t.kind)):[];
+        const labels={slow:'慢速',heavy_pack:'重裝'};
+        const altHtml=alternatives.map(t=>'<button type="button" class="alternate-time" data-index="'+idx+'" data-minutes="'+t.minutes+'" title="套用'+labels[t.kind]+'條件參考 '+t.minutes+' 分鐘">'+labels[t.kind]+' '+t.minutes+'m</button>').join('');
+        routeInfo='<input class="edge-time minute-input" data-index="'+idx+'" type="number" min="0" value="'+a+'"><span>m</span><span class="secondary-info">上河'+Math.round(Number(e.officialMinutes)||0)+'m · ×'+Number(k).toFixed(2)+'</span>'+altHtml;
       }else if(e?.kind==='manual'){
         routeInfo='<input class="edge-time minute-input" data-index="'+idx+'" type="number" min="0" placeholder="0" value="'+(e.actualMinutes??'')+'"><span>m</span><span class="manual-note">手動</span>';
       }
@@ -388,6 +391,7 @@ function bindDays(){
       if(b.dataset.action==='manual')insertManualBefore(d,idx);
     });
     card.querySelectorAll('.edge-time').forEach(x=>x.onchange=()=>{const it=d.items[+x.dataset.index];if(it?.incoming)it.incoming.actualMinutes=x.value===''?null:clampMin(x.value);render()});
+    card.querySelectorAll('.alternate-time').forEach(btn=>btn.onclick=()=>{const it=d.items[+btn.dataset.index];if(!it?.incoming||it.incoming.kind!=='official')return;const minutes=Number(btn.dataset.minutes);if(!Number.isFinite(minutes)||minutes<=0)return;it.incoming.actualMinutes=minutes;render()});
     card.querySelectorAll('.rest-min').forEach(x=>x.onchange=()=>{d.items[+x.dataset.index].minutes=clampMin(x.value);render()});
     card.querySelectorAll('.manual-name').forEach(x=>x.onchange=()=>{
       const it=d.items[+x.dataset.index];if(last(d)?.id===it.id)unlinkNextIfEndpointChanges(d);
