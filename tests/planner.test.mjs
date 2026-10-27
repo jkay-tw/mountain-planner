@@ -160,3 +160,21 @@ test('crosswalk validates confirmed identities but never authorizes routing',()=
  assert.throws(()=>verifyCrosswalk({...sample,canonicalNodes:[{...sample.canonicalNodes[0],routingEnabled:true}]}));
  assert.throws(()=>verifyCrosswalk({...sample,canonicalNodes:[sample.canonicalNodes[0],{canonicalId:'x',routingEnabled:false,members:sample.canonicalNodes[0].members}]}));
 });
+
+test('reviewed identity map has 81 clusters, all 79 exclusions and no contradictions',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const data=JSON.parse(readFileSync(new URL('../data/crosswalk-reviewed.json',import.meta.url),'utf8'));
+ assert.equal(data.reviewedPairs,202);
+ assert.equal(data.approvedPairs,123);
+ assert.equal(data.deniedPairRecords.length,79);
+ assert.deepEqual(verifyCrosswalk(data),{groups:81,members:180});
+ const accepted=['三岔路口','四岔路口','林道登山口'];
+ for(const name of accepted){
+   const groups=name==='林道登山口'?['南二段','新康橫斷']:['南二段','馬博拉斯橫斷'];
+   assert.equal(canonicalIdFor(data,groups[0],name),canonicalIdFor(data,groups[1],name));
+ }
+ assert.notEqual(canonicalIdFor(data,'奇萊','主北岔路'),canonicalIdFor(data,'玉山群峰','主北岔路'));
+ const changed=structuredClone(data);
+ changed.deniedPairRecords.push({name:'三岔路口',groupA:'南二段',groupB:'馬博拉斯橫斷'});
+ assert.throws(()=>verifyCrosswalk(changed),/Denied pair merged/);
+});
