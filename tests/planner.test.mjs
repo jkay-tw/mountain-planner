@@ -490,3 +490,17 @@ test('v0.7.9 responsive tools keep exactly two control groups and retain add/sel
  assert.match(html,/css\/style\.css\?v=v079/);
  assert.match(html,/js\/crossmap-editor\.js\?v=v079/);
 });
+
+test('preview UI build labels and asset cache keys stay synchronized across editors',async()=>{
+ const {readFileSync}=await import('node:fs');
+ for(const [htmlName,scriptName] of [
+   ['index.html','app.js'],['crossmap-editor.html','crossmap-editor.js']]){
+   const html=readFileSync(new URL('../'+htmlName,import.meta.url),'utf8');
+   const js=readFileSync(new URL('../js/'+scriptName,import.meta.url),'utf8');
+   const version=js.match(/const APP_VERSION='v0\.(\d+)\.(\d+) /);
+   assert.ok(version,scriptName+' must label preview build');
+   const cache='v0'+version[1]+version[2];
+   assert.ok(html.includes('js/'+scriptName+'?v='+cache),htmlName+' cache/version mismatch');
+   assert.ok(html.includes('css/style.css?v='+cache),htmlName+' CSS cache/version mismatch');
+ }
+});
