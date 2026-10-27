@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {edgeActual,buildTimeline,summarizeDay,recalcConnections} from '../js/planner.js';
+import {edgeActual,buildTimeline,summarizeDay,recalcConnections,canDeleteItem} from '../js/planner.js';
 import {validatePlan} from '../js/validation.js';
 const route={source:{image_url:'official'},segments:[
  {from:'A',to:'B',minutes:30},{from:'B',to:'C',minutes:40},
@@ -33,4 +33,18 @@ test('JSON validation rejects corrupt and future formats',()=>{
  assert.throws(()=>validatePlan({...valid,schemaVersion:2},['G06']));
  assert.throws(()=>validatePlan({...valid,days:[{...valid.days[0],coefficient:999}]},['G06']));
  assert.throws(()=>validatePlan({...valid,routeId:'G99'},['G06']));
+});
+
+test('delete is offered only when node will actually disappear',()=>{
+ const d={items:[
+   point('a','A'),
+   point('b','B',{kind:'official',from:'A',to:'B',officialMinutes:30,actualMinutes:null},true),
+   point('c','C',{kind:'official',from:'B',to:'C',officialMinutes:40,actualMinutes:null})
+ ]};
+ assert.equal(canDeleteItem(d,1,route),false);
+ assert.equal(canDeleteItem(d,2,route),true);
+ const m={id:'m',type:'manual-location',name:'捷徑',incoming:{kind:'manual',fromId:'b',toId:'m',actualMinutes:null}};
+ d.items.splice(2,0,m);
+ assert.equal(canDeleteItem(d,1,route),true);
+ assert.equal(canDeleteItem(d,2,route),true);
 });
