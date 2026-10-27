@@ -540,3 +540,20 @@ test('reviewed composite node identities stay stable for existing imported plans
  const ids=new Set(route.nodes.map(n=>n.id));
  assert.equal(ids.size,route.nodes.length);
 });
+
+test('strict cross-group planner refuses unverified shortcut despite plausible candidate minutes',()=>{
+ const route=addRouteIdentity({route_id:'T',routingPolicy:'verified-walking-only',segments:[
+  {from:'甲',to:'乙',minutes:40,travelMode:'walking',verificationStatus:'verified'},
+  {from:'乙',to:'丙',minutes:60,travelMode:'walking',verificationStatus:'verified'},
+  {from:'甲',to:'丙',minutes:1,travelMode:'walking',verificationStatus:'pending'},
+  {from:'丙',to:'甲',minutes:1,travelMode:'vehicle',verificationStatus:'verified'}]});
+ const id=n=>route.nodes.find(x=>x.name===n).id;
+ assert.equal(shortestPath(route,id('甲'),id('丙')).minutes,100);
+ assert.equal(shortestPath(route,id('丙'),id('甲')),null);
+});
+test('crossmap composite has strict routing policy and no candidate-only edges',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const raw=JSON.parse(readFileSync(new URL('../data/routes/G17G18.preview.json',import.meta.url),'utf8'));
+ assert.equal(raw.routingPolicy,'verified-walking-only');
+ assert.ok(raw.segments.every(e=>e.travelMode==='walking'&&e.verificationStatus==='verified'));
+});
