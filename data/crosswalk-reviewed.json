@@ -1454,5 +1454,481 @@
       "sourceVerification": "pending",
       "routingEnabled": false
     }
+  ],
+  "deniedPairRecords": [
+    {
+      "name": "三岔路口",
+      "groupA": "丹大東郡",
+      "groupB": "八通關越嶺",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "丹大東郡",
+      "groupB": "南一段",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "丹大東郡",
+      "groupB": "南二段",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "丹大東郡",
+      "groupB": "新康橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "丹大東郡",
+      "groupB": "玉山群峰",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "丹大東郡",
+      "groupB": "畢祿羊頭連峰縱走",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "丹大東郡",
+      "groupB": "能高安東軍",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "丹大東郡",
+      "groupB": "馬博拉斯橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "八通關越嶺",
+      "groupB": "南一段",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "八通關越嶺",
+      "groupB": "南二段",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "八通關越嶺",
+      "groupB": "新康橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "八通關越嶺",
+      "groupB": "玉山群峰",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "八通關越嶺",
+      "groupB": "畢祿羊頭連峰縱走",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "八通關越嶺",
+      "groupB": "能高安東軍",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "八通關越嶺",
+      "groupB": "馬博拉斯橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "南一段",
+      "groupB": "南二段",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "南一段",
+      "groupB": "新康橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "南一段",
+      "groupB": "玉山群峰",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "南一段",
+      "groupB": "畢祿羊頭連峰縱走",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "南一段",
+      "groupB": "能高安東軍",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "南一段",
+      "groupB": "馬博拉斯橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "南二段",
+      "groupB": "新康橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "南二段",
+      "groupB": "玉山群峰",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "南二段",
+      "groupB": "畢祿羊頭連峰縱走",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "南二段",
+      "groupB": "能高安東軍",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "新康橫斷",
+      "groupB": "玉山群峰",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "新康橫斷",
+      "groupB": "畢祿羊頭連峰縱走",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "新康橫斷",
+      "groupB": "能高安東軍",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "新康橫斷",
+      "groupB": "馬博拉斯橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "玉山群峰",
+      "groupB": "畢祿羊頭連峰縱走",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "玉山群峰",
+      "groupB": "能高安東軍",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "玉山群峰",
+      "groupB": "馬博拉斯橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "畢祿羊頭連峰縱走",
+      "groupB": "能高安東軍",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "畢祿羊頭連峰縱走",
+      "groupB": "馬博拉斯橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "三岔路口",
+      "groupA": "能高安東軍",
+      "groupB": "馬博拉斯橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "四岔路口",
+      "groupA": "北一段",
+      "groupB": "南一段",
+      "decision": "different"
+    },
+    {
+      "name": "四岔路口",
+      "groupA": "北一段",
+      "groupB": "南二段",
+      "decision": "different"
+    },
+    {
+      "name": "四岔路口",
+      "groupA": "北一段",
+      "groupB": "玉山群峰",
+      "decision": "different"
+    },
+    {
+      "name": "四岔路口",
+      "groupA": "北一段",
+      "groupB": "馬博拉斯橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "四岔路口",
+      "groupA": "南一段",
+      "groupB": "南二段",
+      "decision": "different"
+    },
+    {
+      "name": "四岔路口",
+      "groupA": "南一段",
+      "groupB": "玉山群峰",
+      "decision": "different"
+    },
+    {
+      "name": "四岔路口",
+      "groupA": "南一段",
+      "groupB": "馬博拉斯橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "四岔路口",
+      "groupA": "南二段",
+      "groupB": "玉山群峰",
+      "decision": "different"
+    },
+    {
+      "name": "四岔路口",
+      "groupA": "玉山群峰",
+      "groupB": "馬博拉斯橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "岔路",
+      "groupA": "丹大東郡",
+      "groupB": "大霸聖稜武陵四秀",
+      "decision": "different"
+    },
+    {
+      "name": "岔路",
+      "groupA": "丹大東郡",
+      "groupB": "馬博拉斯橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "岔路",
+      "groupA": "大霸聖稜武陵四秀",
+      "groupB": "馬博拉斯橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "岔路口",
+      "groupA": "大霸聖稜武陵四秀",
+      "groupB": "新康橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "岔路口",
+      "groupA": "大霸聖稜武陵四秀",
+      "groupB": "雪山西南稜",
+      "decision": "different"
+    },
+    {
+      "name": "岔路口",
+      "groupA": "新康橫斷",
+      "groupB": "雪山西南稜",
+      "decision": "different"
+    },
+    {
+      "name": "最低鞍部",
+      "groupA": "南一段",
+      "groupB": "合歡群峰",
+      "decision": "different"
+    },
+    {
+      "name": "最低鞍部",
+      "groupA": "南一段",
+      "groupB": "新康橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "最低鞍部",
+      "groupA": "南一段",
+      "groupB": "馬博拉斯橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "最低鞍部",
+      "groupA": "合歡群峰",
+      "groupB": "新康橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "最低鞍部",
+      "groupA": "合歡群峰",
+      "groupB": "馬博拉斯橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "最低鞍部",
+      "groupA": "新康橫斷",
+      "groupB": "馬博拉斯橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "水源",
+      "groupA": "北二段",
+      "groupB": "南一段",
+      "decision": "different"
+    },
+    {
+      "name": "水源",
+      "groupA": "北二段",
+      "groupB": "南二段",
+      "decision": "different"
+    },
+    {
+      "name": "水源",
+      "groupA": "北二段",
+      "groupB": "大霸聖稜武陵四秀",
+      "decision": "different"
+    },
+    {
+      "name": "水源",
+      "groupA": "北二段",
+      "groupB": "雪山西南稜",
+      "decision": "different"
+    },
+    {
+      "name": "水源",
+      "groupA": "南一段",
+      "groupB": "南二段",
+      "decision": "different"
+    },
+    {
+      "name": "水源",
+      "groupA": "南一段",
+      "groupB": "大霸聖稜武陵四秀",
+      "decision": "different"
+    },
+    {
+      "name": "水源",
+      "groupA": "南一段",
+      "groupB": "雪山西南稜",
+      "decision": "different"
+    },
+    {
+      "name": "水源",
+      "groupA": "南二段",
+      "groupB": "大霸聖稜武陵四秀",
+      "decision": "different"
+    },
+    {
+      "name": "水源",
+      "groupA": "南二段",
+      "groupB": "雪山西南稜",
+      "decision": "different"
+    },
+    {
+      "name": "水源",
+      "groupA": "大霸聖稜武陵四秀",
+      "groupB": "雪山西南稜",
+      "decision": "different"
+    },
+    {
+      "name": "林道登山口",
+      "groupA": "南二段",
+      "groupB": "干卓萬群峰",
+      "decision": "different"
+    },
+    {
+      "name": "林道登山口",
+      "groupA": "干卓萬群峰",
+      "groupB": "新康橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "登山口",
+      "groupA": "南一段",
+      "groupB": "干卓萬群峰",
+      "decision": "different"
+    },
+    {
+      "name": "登山口",
+      "groupA": "南一段",
+      "groupB": "雪山西南稜",
+      "decision": "different"
+    },
+    {
+      "name": "登山口",
+      "groupA": "干卓萬群峰",
+      "groupB": "雪山西南稜",
+      "decision": "different"
+    },
+    {
+      "name": "三叉營地",
+      "groupA": "大霸聖稜武陵四秀",
+      "groupB": "新康橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "東北鞍營地",
+      "groupA": "丹大東郡",
+      "groupB": "干卓萬群峰",
+      "decision": "different"
+    },
+    {
+      "name": "主北岔路",
+      "groupA": "奇萊",
+      "groupB": "玉山群峰",
+      "decision": "different"
+    },
+    {
+      "name": "三叉峰下營地",
+      "groupA": "南一段",
+      "groupB": "干卓萬群峰",
+      "decision": "different"
+    },
+    {
+      "name": "廢棄工寮",
+      "groupA": "丹大山列",
+      "groupB": "馬博拉斯橫斷",
+      "decision": "different"
+    },
+    {
+      "name": "杜鵑營地",
+      "groupA": "丹大東郡",
+      "groupB": "南二段",
+      "decision": "different"
+    },
+    {
+      "name": "東鞍營地",
+      "groupA": "丹大東郡",
+      "groupB": "北二段",
+      "decision": "different"
+    },
+    {
+      "name": "獵寮營地",
+      "groupA": "大霸聖稜武陵四秀",
+      "groupB": "干卓萬群峰",
+      "decision": "different"
+    }
   ]
 }
