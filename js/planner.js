@@ -56,7 +56,6 @@ export function recalcConnections(day,route){
     return keep?{...old}:{kind:'manual',fromId:from.id,toId:to.id,actualMinutes:null};
   };
   for(const raw of original){
-    if(raw.auto&&!raw.waypoint&&raw.type==='location'&&!raw.note&&!raw.isPeak&&!raw.hasWater)continue;
     if(raw.type==='rest'){result.push({...raw});continue;}
     const item={...raw};
     if(!previous){item.incoming=null;result.push(item);previous=item;continue;}
