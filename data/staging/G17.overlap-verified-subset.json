@@ -6,7 +6,7 @@
     "publisher": "上河文化",
     "image_url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg"
   },
-  "auditScope": "FOUR directional walking pairs reviewed against G17 official step chart, not all 68 candidate rows.",
+  "auditScope": "9 selected walking pairs (18 directed edges) compared visually with G17 official chart, including 5-pair south-approach continuation; other G17 candidate segments remain pending.",
   "nodes": [
     {
       "id": "g17-overlap-001",
@@ -27,6 +27,26 @@
     {
       "id": "g17-overlap-005",
       "name": "嘉明湖岔路口"
+    },
+    {
+      "id": "g17-overlap-006",
+      "name": "塔芬池"
+    },
+    {
+      "id": "g17-overlap-007",
+      "name": "轆轆山登山口"
+    },
+    {
+      "id": "g17-overlap-008",
+      "name": "轆轆谷山屋"
+    },
+    {
+      "id": "g17-overlap-009",
+      "name": "雲峰東峰三岔路口營地"
+    },
+    {
+      "id": "g17-overlap-010",
+      "name": "西北鞍南雙池營地"
     }
   ],
   "segments": [
@@ -117,6 +137,126 @@
       "verificationStatus": "verified",
       "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
       "verificationMethod": "source-chart-visual-review-2026-10-27"
+    },
+    {
+      "from": "塔芬池",
+      "to": "轆轆山登山口",
+      "fromId": "g17-overlap-006",
+      "toId": "g17-overlap-007",
+      "minutes": 250,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "verificationMethod": "G17-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G17-south-approach-01"
+    },
+    {
+      "from": "轆轆山登山口",
+      "to": "塔芬池",
+      "fromId": "g17-overlap-007",
+      "toId": "g17-overlap-006",
+      "minutes": 210,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "verificationMethod": "G17-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G17-south-approach-01"
+    },
+    {
+      "from": "轆轆山登山口",
+      "to": "轆轆谷山屋",
+      "fromId": "g17-overlap-007",
+      "toId": "g17-overlap-008",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "verificationMethod": "G17-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G17-south-approach-01"
+    },
+    {
+      "from": "轆轆谷山屋",
+      "to": "轆轆山登山口",
+      "fromId": "g17-overlap-008",
+      "toId": "g17-overlap-007",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "verificationMethod": "G17-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G17-south-approach-01"
+    },
+    {
+      "from": "轆轆谷山屋",
+      "to": "雲峰東峰三岔路口營地",
+      "fromId": "g17-overlap-008",
+      "toId": "g17-overlap-009",
+      "minutes": 240,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "verificationMethod": "G17-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G17-south-approach-01"
+    },
+    {
+      "from": "雲峰東峰三岔路口營地",
+      "to": "轆轆谷山屋",
+      "fromId": "g17-overlap-009",
+      "toId": "g17-overlap-008",
+      "minutes": 200,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "verificationMethod": "G17-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G17-south-approach-01"
+    },
+    {
+      "from": "雲峰東峰三岔路口營地",
+      "to": "西北鞍南雙池營地",
+      "fromId": "g17-overlap-009",
+      "toId": "g17-overlap-010",
+      "minutes": 150,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "verificationMethod": "G17-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G17-south-approach-01"
+    },
+    {
+      "from": "西北鞍南雙池營地",
+      "to": "雲峰東峰三岔路口營地",
+      "fromId": "g17-overlap-010",
+      "toId": "g17-overlap-009",
+      "minutes": 170,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "verificationMethod": "G17-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G17-south-approach-01"
+    },
+    {
+      "from": "西北鞍南雙池營地",
+      "to": "南雙頭山",
+      "fromId": "g17-overlap-010",
+      "toId": "g17-overlap-002",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "verificationMethod": "G17-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G17-south-approach-01"
+    },
+    {
+      "from": "南雙頭山",
+      "to": "西北鞍南雙池營地",
+      "fromId": "g17-overlap-002",
+      "toId": "g17-overlap-010",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "verificationMethod": "G17-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G17-south-approach-01"
     }
   ]
 }
