@@ -27,7 +27,7 @@ class CompiledRouteTests(unittest.TestCase):
         self.approval=dict(group='南二段',**{'from':'A','to':'B'},minutes=25,
             travelMode='walking',sourceURL='https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg',
             reviewedBy='reviewer',reviewedAt='2026-10-28',evidenceNote='independent image verification',
-            publicationPermission='licensed',timeAlternatives=[dict(kind='slow',minutes=45)])
+            publicationPermission='written_permission',timeAlternatives=[dict(kind='slow',minutes=45)])
 
     def put(self,where,payload):
         path=self.p/where;path.parent.mkdir(parents=True,exist_ok=True)
