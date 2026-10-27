@@ -3,10 +3,11 @@ import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,r
 import {validatePlan} from './validation.js';
 import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js';
 import {exportExcel} from './exporter.js';
+import {filterLocations} from './node-browser.js';
 
 const $=id=>document.getElementById(id);
 const STORAGE_KEY='mountain-planner.autosave.v1';
-const APP_VERSION='v0.7.1 Preview';
+const APP_VERSION='v0.7.3 Preview';
 const COLLAPSE_KEY='mountain-planner.collapsed-days.v1';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='';
@@ -296,7 +297,7 @@ function renderDay(d,i){
   '<div class="stats"><div class="stat"><span>行進</span><b>'+formatDuration(s.movement)+'</b></div><div class="stat"><span>休息</span><b>'+formatDuration(s.rest)+'</b></div><div class="stat"><span>總計</span><b>'+(s.missing?'未完成':formatDuration(s.total))+'</b></div><div class="stat coef"><span>平均</span><b>'+(s.coefficient??'—')+'</b></div></div>'+
   '<button class="clear-day">清除 Day '+(i+1)+'</button></div>'+
   '<div class="day-tools">'+(i?'<label class="link-wrap"><input class="link-start" type="checkbox" '+(d.linkedStart?'checked':'')+'>銜接前日</label>':'<span class="link-wrap">第一點即起點</span>')+
-  selector+'<button class="add-dest" '+(route?'':'disabled')+'>加入</button><button class="manual-start secondary compact-day-action">＋手動起點</button><button class="manual-end secondary compact-day-action">＋手動終點</button></div>'+
+  '<input class="node-search-inline" type="search" placeholder="搜尋節點" aria-label="搜尋當日要加入的節點" autocomplete="off" '+(route?'':'disabled')+'>'+selector+'<button class="add-dest" '+(route?'':'disabled')+'>加入</button><button class="manual-start secondary compact-day-action">＋手動起點</button><button class="manual-end secondary compact-day-action">＋手動終點</button></div>'+
   (s.missing?'<div class="missing-warning">尚有 '+s.missing+' 個手動路段未填時間；後續時間無法計算。</div>':'')+
   '<div class="timeline">'+renderTimeline(d)+'</div>'+
   '<div class="day-footer"><textarea class="day-note" placeholder="Day '+(i+1)+' 備註">'+esc(d.note||'')+'</textarea></div></article>';
@@ -358,6 +359,22 @@ function bindDays(){
       if(e.target.checked)connectToPrevious(i);
       else{d.linkedStart=false;const f=first(d);if(f)f._linkedStart=false}
       render();
+    };
+    const search=card.querySelector('.node-search-inline');
+    const nodeSelect=card.querySelector('.add-node');
+    if(search&&nodeSelect)search.oninput=()=>{
+      const previouslySelected=nodeSelect.value;
+      const entries=filterLocations((route?.nodes||[]).map(n=>({id:n.id,name:n.name,route:route.route_name})),search.value,100);
+      nodeSelect.replaceChildren();
+      const prompt=document.createElement('option');prompt.value='';
+      prompt.textContent=entries.length?'選擇下一個行程點':'找不到符合的節點';
+      nodeSelect.append(prompt);
+      for(const entry of entries){
+        const option=document.createElement('option');option.value=entry.id;option.textContent=entry.name;
+        nodeSelect.append(option);
+      }
+      if(entries.some(n=>n.id===previouslySelected))nodeSelect.value=previouslySelected;
+      else if(search.value.trim()&&entries.length===1)nodeSelect.value=entries[0].id;
     };
     const add=card.querySelector('.add-dest');if(add)add.onclick=()=>{const v=card.querySelector('.add-node').value;if(v){addNode(d,v);render()}};
     card.querySelector('.manual-start').onclick=()=>addManualStart(d);
