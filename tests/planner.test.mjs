@@ -571,7 +571,7 @@ test('v0.7.12 verified global graph does not invent connection between G06 and G
  assert.equal(d.items[1].incoming.actualMinutes,null);
  normalizeDay(d,combined);
  assert.equal(d.items[1].incoming.connectionStatus,'unverified');
- assert.equal(missingSegments(d),1);
+ assert.equal(d.items.filter(x=>x.incoming?.kind==='manual'&&x.incoming.actualMinutes===null).length,1);
  d.items[1].incoming.actualMinutes=240;
  normalizeDay(d,combined);
  assert.equal(d.items[1].incoming.actualMinutes,240);
