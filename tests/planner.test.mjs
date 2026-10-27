@@ -292,11 +292,11 @@ test('G17→G18 real source-audited overlap uses confirmed junction, not name ma
  assert.equal(reverse.minutes,480); // 90 + 80 + 130 + 180
  assert.equal(route.nodes.length,5);
 });
-test('G17 and G18 staged excerpts contain six audited bidirectional walking pairs',async()=>{
+test('G17 and G18 staged excerpts contain eight audited bidirectional walking pairs',async()=>{
  const {readFileSync}=await import('node:fs');
  const read=n=>JSON.parse(readFileSync(new URL('../data/staging/'+n+'.overlap-verified-subset.json',import.meta.url),'utf8'));
  const a=read('G17'),b=read('G18');
- assert.equal(a.segments.length,8);assert.equal(b.segments.length,4);
+ assert.equal(a.segments.length,8);assert.equal(b.segments.length,8);
  assert.ok([...a.segments,...b.segments].every(e=>e.travelMode==='walking'&&e.verificationStatus==='verified'&&e.source.startsWith('https://www.sunriver.com.tw/')));
 });
 
@@ -336,4 +336,16 @@ test('expanded G17 verified walking path reaches G18 from 三叉山登山口',as
  assert.equal(found.minutes,220);
  assert.deepEqual(found.segments.map(s=>s.minutes),[30,40,70,80]);
  assert.equal(shortestVerifiedWalkingPath(graph,id(b,'3058公尺峰'),id(a,'三叉山登山口')).minutes,225);
+});
+
+test('source-reviewed G17 and G18 overlapping directed minutes agree',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const read=n=>JSON.parse(readFileSync(new URL('../data/staging/'+n+'.overlap-verified-subset.json',import.meta.url),'utf8'));
+ const a=read('G17'),b=read('G18');
+ const k=s=>JSON.stringify([s.from,s.to]);
+ const ea=new Map(a.segments.map(s=>[k(s),s.minutes]));
+ const eb=new Map(b.segments.map(s=>[k(s),s.minutes]));
+ let compared=0;
+ for(const [key,minutes] of ea){if(!eb.has(key))continue;compared++;assert.equal(eb.get(key),minutes);}
+ assert.equal(compared,4);
 });
