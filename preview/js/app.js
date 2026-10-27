@@ -13,7 +13,7 @@ async function restore(i){if(i<0||i>=snapshots.length)return;const x=JSON.parse(
 const checkMissing=()=>{const n=days.reduce((sum,d)=>sum+missingSegments(d),0);return n===0||confirm('有 '+n+' 個路段未填時間，匯出結果含未完成時間。仍繼續？')};
 
 
-const newDay=i=>({id:uid(),startTime:i?'05:30':'06:00',coefficient:.8,linkedStart:i>0,note:'',items:[]});
+const newDay=i=>({id:uid(),startTime:i?'05:30':'06:00',coefficient:.8,linkedStart:false,note:'',items:[]});
 const locs=d=>d.items.filter(x=>x.type!=='rest');
 const first=d=>locs(d)[0]||null;
 const last=d=>{const a=locs(d);return a[a.length-1]||null};
@@ -125,45 +125,59 @@ function bindGlobal(){
   $('importFile').onchange=importPlan;
 }
 
+function unlinkNextIfEndpointChanges(day){
+  const i=days.indexOf(day),next=days[i+1];
+  if(next?.linkedStart)next.linkedStart=false;
+}
 function addNode(day,name){
   if(!route){alert('請先選擇上河圖');return}
   const p=last(day);
+  if(p)unlinkNextIfEndpointChanges(day);
   if(!p){
-    day.items.push({id:uid(),type:'location',name,auto:false,waypoint:true,note:'',isPeak:false,hasWater:false,incoming:null});
+    day.items.push({id:uid(),type:'location',name,note:'',isPeak:false,hasWater:false,incoming:null});
     return;
   }
   if(p.type==='manual-location'){
     const id=uid();
-    day.items.push({id,type:'location',name,auto:false,waypoint:true,note:'',isPeak:false,hasWater:false,incoming:{kind:'manual',fromId:p.id,toId:id,actualMinutes:null}});
+    day.items.push({id,type:'location',name,note:'',isPeak:false,hasWater:false,incoming:{kind:'manual',fromId:p.id,toId:id,actualMinutes:null}});
     return;
   }
   const path=shortestPath(route,p.name,name);
   if(!path){alert('找不到 '+p.name+' → '+name+' 的上河路徑');return}
   path.segments.forEach((s,i)=>day.items.push({
-    id:uid(),type:'location',name:s.to,auto:i<path.segments.length-1,waypoint:i===path.segments.length-1,
+    id:uid(),type:'location',name:s.to,
     note:'',isPeak:false,hasWater:false,
     incoming:{kind:'official',from:s.from,to:s.to,officialMinutes:s.minutes,actualMinutes:null,source:route.source.image_url}
   }));
 }
 
-function syncStarts(){
-  for(let i=1;i<days.length;i++){
-    const d=days[i],p=last(days[i-1]);if(!d.linkedStart||!p)continue;
-    const f=first(d);
-    if(!f){
-      d.items.unshift({id:uid(),type:p.type,name:p.name,auto:false,waypoint:true,note:'',isPeak:!!p.isPeak,hasWater:!!p.hasWater,incoming:null,_linkedStart:true});
-    }else if(f._linkedStart&&(f.name!==p.name||f.type!==p.type)){
-      f.name=p.name;f.type=p.type;f.incoming=null;f.isPeak=!!p.isPeak;f.hasWater=!!p.hasWater;
-      if(route)recalcConnections(d,route);
-    }
+function connectToPrevious(i){
+  if(i<1)return;
+  const prevEnd=last(days[i-1]),d=days[i];
+  if(!prevEnd){d.linkedStart=false;return}
+  const f=first(d);
+  if(f&&f.name===prevEnd.name&&f.type===prevEnd.type){
+    f.incoming=null;f._linkedStart=true;d.linkedStart=true;
+  }else{
+    d.items.unshift({id:uid(),type:prevEnd.type,name:prevEnd.name,note:'',isPeak:!!prevEnd.isPeak,hasWater:!!prevEnd.hasWater,incoming:null,_linkedStart:true});
+    d.linkedStart=true;
   }
+  if(route)recalcConnections(d,route);
 }
-
-function forceSync(i){
-  const p=last(days[i-1]);if(!p)return;
-  const d=days[i],f=first(d);
-  if(!f)d.items.unshift({id:uid(),type:p.type,name:p.name,auto:false,waypoint:true,note:'',isPeak:!!p.isPeak,hasWater:!!p.hasWater,incoming:null,_linkedStart:true});
-  else{f.name=p.name;f.type=p.type;f._linkedStart=true;f.incoming=null;if(route)recalcConnections(d,route)}
+function addManualStart(d){
+  if(locs(d).length===0){
+    d.items.unshift({id:uid(),type:'manual-location',name:'手動起點',note:'',isPeak:false,hasWater:false,incoming:null});
+  }else{
+    d.items.unshift({id:uid(),type:'manual-location',name:'手動起點',note:'',isPeak:false,hasWater:false,incoming:null});
+    if(route)recalcConnections(d,route);
+  }
+  d.linkedStart=false;render();
+}
+function addManualEnd(d){
+  if(locs(d).length)unlinkNextIfEndpointChanges(d);
+  const p=last(d),id=uid();
+  d.items.push({id,type:'manual-location',name:'手動終點',note:'',isPeak:false,hasWater:false,
+    incoming:p?{kind:'manual',fromId:p.id,toId:id,actualMinutes:null}:null});
   render();
 }
 
@@ -176,7 +190,9 @@ function insertManualBefore(d,destIdx){
   d.items.splice(destIdx,0,m);render();
 }
 function removeItem(d,idx){
-  if(!canDeleteItem(d,idx,route))return;
+  if(!canDeleteItem(d,idx))return;
+  const target=d.items[idx],wasEnd=target&&target.type!=='rest'&&last(d)?.id===target.id;
+  if(wasEnd)unlinkNextIfEndpointChanges(d);
   d.items.splice(idx,1);
   if(route)recalcConnections(d,route);
   render();
@@ -237,14 +253,13 @@ function dayDate(index){
 }
 function opts(){return nodes.map(n=>'<option value="'+esc(n)+'">'+esc(n)+'</option>').join('')}
 function render(persist=true){
-  syncStarts();
   $('daysContainer').innerHTML=days.map(renderDay).join('');
   bindDays();
   if(persist){saveAutosave();checkpoint()}
 }
 
 function renderDay(d,i){
-  const s=summarizeDay(d),p=i?last(days[i-1]):null,f=first(d),mis=i&&d.linkedStart&&p&&f&&(p.name!==f.name||p.type!==f.type);
+  const s=summarizeDay(d);
   const date=dayDate(i);
   const selector=route?'<select class="add-node"><option value="">選擇下一個行程點</option>'+opts()+'</select>':'<select class="add-node" disabled><option>請先選擇上河圖</option></select>';
   return '<article class="card day-card" data-day="'+i+'">'+
@@ -254,7 +269,7 @@ function renderDay(d,i){
   '<div class="stats"><div class="stat"><span>行進</span><b>'+formatDuration(s.movement)+'</b></div><div class="stat"><span>休息</span><b>'+formatDuration(s.rest)+'</b></div><div class="stat"><span>總計</span><b>'+(s.missing?'未完成':formatDuration(s.total))+'</b></div><div class="stat coef"><span>平均</span><b>'+(s.coefficient??'—')+'</b></div></div>'+
   '<button class="clear-day">清除 Day '+(i+1)+'</button></div>'+
   '<div class="day-tools">'+(i?'<label class="link-wrap"><input class="link-start" type="checkbox" '+(d.linkedStart?'checked':'')+'>銜接前日</label>':'<span class="link-wrap">第一點即起點</span>')+
-  selector+'<button class="add-dest" '+(route?'':'disabled')+'>加入</button>'+(mis?'<button class="sync-start secondary">同步前日終點</button>':'')+'</div>'+
+  selector+'<button class="add-dest" '+(route?'':'disabled')+'>加入</button><button class="manual-start secondary">新增手動起點</button><button class="manual-end secondary">新增手動終點</button></div>'+
   (s.missing?'<div class="missing-warning">尚有 '+s.missing+' 個手動路段未填時間；後續時間無法計算。</div>':'')+
   '<div class="timeline">'+renderTimeline(d)+'</div>'+
   '<div class="day-footer"><textarea class="day-note" placeholder="Day '+(i+1)+' 備註">'+esc(d.note||'')+'</textarea></div></article>';
@@ -284,13 +299,13 @@ function renderTimeline(d){
       const water='<button class="icon-toggle water '+(r.hasWater?'active':'')+'" data-index="'+idx+'" title="水源">💧</button>';
       const placeName=manual
         ?'<span class="drag-handle" draggable="true" data-index="'+idx+'">⋮⋮</span>'+peak+'<input class="manual-name" data-index="'+idx+'" value="'+esc(r.name)+'">'+water
-        :peak+'<span class="place-name '+(r.auto?'auto-node':'')+'">'+esc(r.name)+'</span>'+water;
+        :peak+'<span class="place-name">'+esc(r.name)+'</span>'+water;
       html+='<div class="it-row" data-index="'+idx+'">'+
       '<div class="place">'+placeName+'</div>'+
       '<div class="arrival">'+r.arrival+'</div>'+
       '<div class="route-info">'+routeInfo+'</div>'+
       '<input class="note-input" data-index="'+idx+'" placeholder="備註" value="'+esc(r.note||'')+'">'+
-      menuHtml(idx,false,!!r.incoming,canDeleteItem(d,idx,route))+'</div>';
+      menuHtml(idx,false,!!r.incoming,canDeleteItem(d,idx))+'</div>';
     }
     html+='<div class="drop-zone" data-drop="'+(idx+1)+'"></div>';
   });
@@ -310,10 +325,15 @@ function bindDays(){
     card.querySelector('.start-time').onchange=e=>{d.startTime=e.target.value;render()};
     card.querySelector('.day-coef').onchange=e=>{d.coefficient=Math.max(.1,Number(e.target.value)||.8);render()};
     card.querySelector('.day-note').onchange=e=>{d.note=e.target.value;render()};
-    card.querySelector('.clear-day').onclick=()=>{if(confirm('確定清除 Day '+(i+1)+' 的全部行程？')){d.items=[];d.note='';render()}};
-    const lk=card.querySelector('.link-start');if(lk)lk.onchange=e=>{d.linkedStart=e.target.checked;render()};
+    card.querySelector('.clear-day').onclick=()=>{if(confirm('確定清除 Day '+(i+1)+' 的全部行程？')){if(locs(d).length)unlinkNextIfEndpointChanges(d);d.items=[];d.note='';d.linkedStart=false;render()}};
+    const lk=card.querySelector('.link-start');if(lk)lk.onchange=e=>{
+      if(e.target.checked)connectToPrevious(i);
+      else{d.linkedStart=false;const f=first(d);if(f)f._linkedStart=false}
+      render();
+    };
     const add=card.querySelector('.add-dest');if(add)add.onclick=()=>{const v=card.querySelector('.add-node').value;if(v){addNode(d,v);render()}};
-    const sy=card.querySelector('.sync-start');if(sy)sy.onclick=()=>forceSync(i);
+    card.querySelector('.manual-start').onclick=()=>addManualStart(d);
+    card.querySelector('.manual-end').onclick=()=>addManualEnd(d);
 
     card.querySelectorAll('[data-action]').forEach(b=>b.onclick=e=>{
       e.preventDefault();const idx=+b.dataset.index;
@@ -324,7 +344,10 @@ function bindDays(){
     });
     card.querySelectorAll('.edge-time').forEach(x=>x.onchange=()=>{const it=d.items[+x.dataset.index];if(it?.incoming)it.incoming.actualMinutes=x.value===''?null:clampMin(x.value);render()});
     card.querySelectorAll('.rest-min').forEach(x=>x.onchange=()=>{d.items[+x.dataset.index].minutes=clampMin(x.value);render()});
-    card.querySelectorAll('.manual-name').forEach(x=>x.onchange=()=>{d.items[+x.dataset.index].name=x.value.trim()||'手動節點';render()});
+    card.querySelectorAll('.manual-name').forEach(x=>x.onchange=()=>{
+      const it=d.items[+x.dataset.index];if(last(d)?.id===it.id)unlinkNextIfEndpointChanges(d);
+      it.name=x.value.trim()||'手動節點';render();
+    });
     card.querySelectorAll('.note-input').forEach(x=>x.onchange=()=>{d.items[+x.dataset.index].note=x.value;render()});
     card.querySelectorAll('.peak').forEach(b=>b.onclick=()=>{const it=d.items[+b.dataset.index];it.isPeak=!it.isPeak;render()});
     card.querySelectorAll('.water').forEach(b=>b.onclick=()=>{const it=d.items[+b.dataset.index];it.hasWater=!it.hasWater;render()});
@@ -339,9 +362,11 @@ function bindDays(){
       z.ondrop=e=>{
         e.preventDefault();z.classList.remove('active');if(!drag||drag.day!==i)return;
         const from=drag.index,to=+z.dataset.drop;if(from<0||from>=d.items.length)return;
+        const oldEnd=last(d)?.id;
         const [mv]=d.items.splice(from,1);let insert=to;if(from<to)insert--;
         insert=Math.max(0,Math.min(insert,d.items.length));d.items.splice(insert,0,mv);
         if(route)recalcConnections(d,route);
+        if(oldEnd!==last(d)?.id)unlinkNextIfEndpointChanges(d);
         drag=null;render();
       };
     });
