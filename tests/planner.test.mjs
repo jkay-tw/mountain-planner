@@ -173,7 +173,9 @@ test('reviewed identity map has 81 clusters, all 79 exclusions and no contradict
    const groups=name==='林道登山口'?['南二段','新康橫斷']:['南二段','馬博拉斯橫斷'];
    assert.equal(canonicalIdFor(data,groups[0],name),canonicalIdFor(data,groups[1],name));
  }
- assert.notEqual(canonicalIdFor(data,'奇萊','主北岔路'),canonicalIdFor(data,'玉山群峰','主北岔路'));
+ assert.equal(canonicalIdFor(data,'奇萊','主北岔路'),null);
+ assert.equal(canonicalIdFor(data,'玉山群峰','主北岔路'),null);
+ assert.ok(data.deniedPairRecords.some(d=>d.name==='主北岔路'&&[d.groupA,d.groupB].includes('奇萊')));
  const changed=structuredClone(data);
  changed.deniedPairRecords.push({name:'三岔路口',groupA:'南二段',groupB:'馬博拉斯橫斷'});
  assert.throws(()=>verifyCrosswalk(changed),/Denied pair merged/);
