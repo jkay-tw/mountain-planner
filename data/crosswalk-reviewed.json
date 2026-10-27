@@ -1,0 +1,1458 @@
+{
+  "schemaVersion": 1,
+  "description": "202 reviewed cross-map pairs: 123 same, 79 different; 81 approved identity clusters. Source edge times NOT verified.",
+  "reviewedPairs": 202,
+  "approvedPairs": 123,
+  "deniedPairs": 79,
+  "canonicalNodes": [
+    {
+      "canonicalId": "cw-v07-001",
+      "name": "16.5K行車終點",
+      "members": [
+        {
+          "group": "丹大東郡",
+          "name": "16.5K行車終點"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "16.5K行車終點"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-002",
+      "name": "23K望鄉工作站",
+      "members": [
+        {
+          "group": "丹大東郡",
+          "name": "23K望鄉工作站"
+        },
+        {
+          "group": "郡大山",
+          "name": "23K望鄉工作站"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-003",
+      "name": "七卡山莊",
+      "members": [
+        {
+          "group": "大霸聖稜武陵四秀",
+          "name": "七卡山莊"
+        },
+        {
+          "group": "雪山西南稜",
+          "name": "七卡山莊"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-004",
+      "name": "三六九山莊",
+      "members": [
+        {
+          "group": "大霸聖稜武陵四秀",
+          "name": "三六九山莊"
+        },
+        {
+          "group": "雪山西南稜",
+          "name": "三六九山莊"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-005",
+      "name": "三叉山",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "三叉山"
+        },
+        {
+          "group": "新康橫斷",
+          "name": "三叉山"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-006",
+      "name": "三叉山登山口",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "三叉山登山口"
+        },
+        {
+          "group": "新康橫斷",
+          "name": "三叉山登山口"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-007",
+      "name": "三岔路口",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "三岔路口"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "三岔路口"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-008",
+      "name": "三聖宮",
+      "members": [
+        {
+          "group": "八通關越嶺",
+          "name": "三聖宮"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "三聖宮"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-009",
+      "name": "中央金礦山屋",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "中央金礦山屋"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "中央金礦山屋"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-010",
+      "name": "中平",
+      "members": [
+        {
+          "group": "丹大東郡",
+          "name": "中平"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "中平"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-011",
+      "name": "丹大山",
+      "members": [
+        {
+          "group": "丹大山列",
+          "name": "丹大山"
+        },
+        {
+          "group": "丹大東郡",
+          "name": "丹大山"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-012",
+      "name": "主北三岔路",
+      "members": [
+        {
+          "group": "太魯閣山列",
+          "name": "主北三岔路"
+        },
+        {
+          "group": "奇萊",
+          "name": "主北三岔路"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-013",
+      "name": "乙女瀑布",
+      "members": [
+        {
+          "group": "八通關越嶺",
+          "name": "乙女瀑布"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "乙女瀑布"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-014",
+      "name": "八通關山",
+      "members": [
+        {
+          "group": "八通關越嶺",
+          "name": "八通關山"
+        },
+        {
+          "group": "南二段",
+          "name": "八通關山"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "八通關山"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-015",
+      "name": "八通關山三岔路口",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "八通關山三岔路口"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "八通關山三岔路口"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-016",
+      "name": "八通關山登山口",
+      "members": [
+        {
+          "group": "八通關越嶺",
+          "name": "八通關山登山口"
+        },
+        {
+          "group": "南二段",
+          "name": "八通關山登山口"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "八通關山登山口"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-017",
+      "name": "八通關山西峰",
+      "members": [
+        {
+          "group": "八通關越嶺",
+          "name": "八通關山西峰"
+        },
+        {
+          "group": "南二段",
+          "name": "八通關山西峰"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "八通關山西峰"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-018",
+      "name": "八通關登山口",
+      "members": [
+        {
+          "group": "八通關越嶺",
+          "name": "八通關登山口"
+        },
+        {
+          "group": "南二段",
+          "name": "八通關登山口"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "八通關登山口"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-019",
+      "name": "八通關草原",
+      "members": [
+        {
+          "group": "八通關越嶺",
+          "name": "八通關草原"
+        },
+        {
+          "group": "南二段",
+          "name": "八通關草原"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "八通關草原"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-020",
+      "name": "北峰下解說牌",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "北峰下解說牌"
+        },
+        {
+          "group": "新康橫斷",
+          "name": "北峰下解說牌"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-021",
+      "name": "十八重溪橋",
+      "members": [
+        {
+          "group": "丹大東郡",
+          "name": "十八重溪橋"
+        },
+        {
+          "group": "郡大山",
+          "name": "十八重溪橋"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-022",
+      "name": "南峰登山口",
+      "members": [
+        {
+          "group": "奇萊",
+          "name": "南峰登山口"
+        },
+        {
+          "group": "能高越嶺",
+          "name": "南峰登山口"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-023",
+      "name": "南營地",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "南營地"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "南營地"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-024",
+      "name": "南華山",
+      "members": [
+        {
+          "group": "奇萊",
+          "name": "南華山"
+        },
+        {
+          "group": "能高越嶺",
+          "name": "南華山"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-025",
+      "name": "卡賀爾山",
+      "members": [
+        {
+          "group": "能高安東軍",
+          "name": "卡賀爾山"
+        },
+        {
+          "group": "能高越嶺",
+          "name": "卡賀爾山"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-026",
+      "name": "古道崩斷岔路",
+      "members": [
+        {
+          "group": "八通關越嶺",
+          "name": "古道崩斷岔路"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "古道崩斷岔路"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-027",
+      "name": "向陽山",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "向陽山"
+        },
+        {
+          "group": "新康橫斷",
+          "name": "向陽山"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-028",
+      "name": "向陽山屋",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "向陽山屋"
+        },
+        {
+          "group": "新康橫斷",
+          "name": "向陽山屋"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-029",
+      "name": "向陽森林遊樂區",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "向陽森林遊樂區"
+        },
+        {
+          "group": "新康橫斷",
+          "name": "向陽森林遊樂區"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-030",
+      "name": "嘉明湖",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "嘉明湖"
+        },
+        {
+          "group": "新康橫斷",
+          "name": "嘉明湖"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-031",
+      "name": "嘉明湖岔路口",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "嘉明湖岔路口"
+        },
+        {
+          "group": "新康橫斷",
+          "name": "嘉明湖岔路口"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-032",
+      "name": "嘉明湖避難山屋",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "嘉明湖避難山屋"
+        },
+        {
+          "group": "新康橫斷",
+          "name": "嘉明湖避難山屋"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-033",
+      "name": "四岔路口",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "四岔路口"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "四岔路口"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-034",
+      "name": "埡口山莊",
+      "members": [
+        {
+          "group": "南一段",
+          "name": "埡口山莊"
+        },
+        {
+          "group": "新康橫斷",
+          "name": "埡口山莊"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-035",
+      "name": "大水窟山",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "大水窟山"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "大水窟山"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-036",
+      "name": "大水窟山屋",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "大水窟山屋"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "大水窟山屋"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-037",
+      "name": "大禹嶺",
+      "members": [
+        {
+          "group": "合歡群峰",
+          "name": "大禹嶺"
+        },
+        {
+          "group": "屏風山",
+          "name": "大禹嶺"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-038",
+      "name": "天池山莊",
+      "members": [
+        {
+          "group": "奇萊",
+          "name": "天池山莊"
+        },
+        {
+          "group": "能高安東軍",
+          "name": "天池山莊"
+        },
+        {
+          "group": "能高越嶺",
+          "name": "天池山莊"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-039",
+      "name": "天池岔路口",
+      "members": [
+        {
+          "group": "奇萊",
+          "name": "天池岔路口"
+        },
+        {
+          "group": "能高越嶺",
+          "name": "天池岔路口"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-040",
+      "name": "太平谷南口",
+      "members": [
+        {
+          "group": "丹大東郡",
+          "name": "太平谷南口"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "太平谷南口"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-041",
+      "name": "奇萊主山北峰",
+      "members": [
+        {
+          "group": "太魯閣山列",
+          "name": "奇萊主山北峰"
+        },
+        {
+          "group": "奇萊",
+          "name": "奇萊主山北峰"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-042",
+      "name": "奇萊主山南峰",
+      "members": [
+        {
+          "group": "奇萊",
+          "name": "奇萊主山南峰"
+        },
+        {
+          "group": "能高越嶺",
+          "name": "奇萊主山南峰"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-043",
+      "name": "奇萊山莊",
+      "members": [
+        {
+          "group": "太魯閣山列",
+          "name": "奇萊山莊"
+        },
+        {
+          "group": "奇萊",
+          "name": "奇萊山莊"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-044",
+      "name": "對觀",
+      "members": [
+        {
+          "group": "八通關越嶺",
+          "name": "對觀"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "對觀"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-045",
+      "name": "屯原登山口",
+      "members": [
+        {
+          "group": "奇萊",
+          "name": "屯原登山口"
+        },
+        {
+          "group": "能高安東軍",
+          "name": "屯原登山口"
+        },
+        {
+          "group": "能高越嶺",
+          "name": "屯原登山口"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-046",
+      "name": "巴奈伊克山屋",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "巴奈伊克山屋"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "巴奈伊克山屋"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-047",
+      "name": "廬山部落",
+      "members": [
+        {
+          "group": "奇萊",
+          "name": "廬山部落"
+        },
+        {
+          "group": "能高安東軍",
+          "name": "廬山部落"
+        },
+        {
+          "group": "能高越嶺",
+          "name": "廬山部落"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-048",
+      "name": "成功山屋",
+      "members": [
+        {
+          "group": "太魯閣山列",
+          "name": "成功山屋"
+        },
+        {
+          "group": "奇萊",
+          "name": "成功山屋"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-049",
+      "name": "拉庫音溪山屋",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "拉庫音溪山屋"
+        },
+        {
+          "group": "新康橫斷",
+          "name": "拉庫音溪山屋"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-050",
+      "name": "新康山岔路口",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "新康山岔路口"
+        },
+        {
+          "group": "新康橫斷",
+          "name": "新康山岔路口"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-051",
+      "name": "東埔溫泉",
+      "members": [
+        {
+          "group": "八通關越嶺",
+          "name": "東埔溫泉"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "東埔溫泉"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-052",
+      "name": "林道登山口",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "林道登山口"
+        },
+        {
+          "group": "新康橫斷",
+          "name": "林道登山口"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-053",
+      "name": "梨山",
+      "members": [
+        {
+          "group": "合歡群峰",
+          "name": "梨山"
+        },
+        {
+          "group": "雪山西南稜",
+          "name": "梨山"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-054",
+      "name": "樂樂山屋",
+      "members": [
+        {
+          "group": "八通關越嶺",
+          "name": "樂樂山屋"
+        },
+        {
+          "group": "南二段",
+          "name": "樂樂山屋"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "樂樂山屋"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-055",
+      "name": "樂樂溫泉岔路",
+      "members": [
+        {
+          "group": "八通關越嶺",
+          "name": "樂樂溫泉岔路"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "樂樂溫泉岔路"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-056",
+      "name": "武陵山莊",
+      "members": [
+        {
+          "group": "大霸聖稜武陵四秀",
+          "name": "武陵山莊"
+        },
+        {
+          "group": "雪山西南稜",
+          "name": "武陵山莊"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-057",
+      "name": "溪水營地",
+      "members": [
+        {
+          "group": "八通關越嶺",
+          "name": "溪水營地"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "溪水營地"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-058",
+      "name": "滑雪山莊奇萊登山口",
+      "members": [
+        {
+          "group": "合歡群峰",
+          "name": "滑雪山莊奇萊登山口"
+        },
+        {
+          "group": "奇萊",
+          "name": "滑雪山莊奇萊登山口"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-059",
+      "name": "白洋金礦山屋",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "白洋金礦山屋"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "白洋金礦山屋"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-060",
+      "name": "秀姑坪岔路",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "秀姑坪岔路"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "秀姑坪岔路"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-061",
+      "name": "秀姑巒山",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "秀姑巒山"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "秀姑巒山"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-062",
+      "name": "秀姑巒山南登山口",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "秀姑巒山南登山口"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "秀姑巒山南登山口"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-063",
+      "name": "秀馬山屋舊址",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "秀馬山屋舊址"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "秀馬山屋舊址"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-064",
+      "name": "稜線岔路",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "稜線岔路"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "稜線岔路"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-065",
+      "name": "縣界啞口",
+      "members": [
+        {
+          "group": "奇萊",
+          "name": "縣界啞口"
+        },
+        {
+          "group": "能高安東軍",
+          "name": "縣界啞口"
+        },
+        {
+          "group": "能高越嶺",
+          "name": "縣界啞口"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-066",
+      "name": "翠池山屋",
+      "members": [
+        {
+          "group": "大霸聖稜武陵四秀",
+          "name": "翠池山屋"
+        },
+        {
+          "group": "雪山西南稜",
+          "name": "翠池山屋"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-067",
+      "name": "能高主峰",
+      "members": [
+        {
+          "group": "能高安東軍",
+          "name": "能高主峰"
+        },
+        {
+          "group": "能高越嶺",
+          "name": "能高主峰"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-068",
+      "name": "荖濃溪",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "荖濃溪"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "荖濃溪"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-069",
+      "name": "荖濃溪營地",
+      "members": [
+        {
+          "group": "八通關越嶺",
+          "name": "荖濃溪營地"
+        },
+        {
+          "group": "玉山群峰",
+          "name": "荖濃溪營地"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-070",
+      "name": "西側登山口",
+      "members": [
+        {
+          "group": "南二段",
+          "name": "西側登山口"
+        },
+        {
+          "group": "新康橫斷",
+          "name": "西側登山口"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-071",
+      "name": "西峰岔路",
+      "members": [
+        {
+          "group": "八通關越嶺",
+          "name": "西峰岔路"
+        },
+        {
+          "group": "南二段",
+          "name": "西峰岔路"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "西峰岔路"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-072",
+      "name": "觀高坪",
+      "members": [
+        {
+          "group": "八通關越嶺",
+          "name": "觀高坪"
+        },
+        {
+          "group": "南二段",
+          "name": "觀高坪"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "觀高坪"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-073",
+      "name": "觀高登山服務處",
+      "members": [
+        {
+          "group": "八通關越嶺",
+          "name": "觀高登山服務處"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "觀高登山服務處"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-074",
+      "name": "雪山主峰",
+      "members": [
+        {
+          "group": "大霸聖稜武陵四秀",
+          "name": "雪山主峰"
+        },
+        {
+          "group": "雪山西南稜",
+          "name": "雪山主峰"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-075",
+      "name": "雲海保線所",
+      "members": [
+        {
+          "group": "奇萊",
+          "name": "雲海保線所"
+        },
+        {
+          "group": "能高安東軍",
+          "name": "雲海保線所"
+        },
+        {
+          "group": "能高越嶺",
+          "name": "雲海保線所"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-076",
+      "name": "雲龍瀑布",
+      "members": [
+        {
+          "group": "八通關越嶺",
+          "name": "雲龍瀑布"
+        },
+        {
+          "group": "南二段",
+          "name": "雲龍瀑布"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "雲龍瀑布"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-077",
+      "name": "霧社",
+      "members": [
+        {
+          "group": "合歡群峰",
+          "name": "霧社"
+        },
+        {
+          "group": "奇萊",
+          "name": "霧社"
+        },
+        {
+          "group": "干卓萬群峰",
+          "name": "霧社"
+        },
+        {
+          "group": "白姑大山",
+          "name": "霧社"
+        },
+        {
+          "group": "能高安東軍",
+          "name": "霧社"
+        },
+        {
+          "group": "能高越嶺",
+          "name": "霧社"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-078",
+      "name": "馬利加南山東峰",
+      "members": [
+        {
+          "group": "丹大東郡",
+          "name": "馬利加南山東峰"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "馬利加南山東峰"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-079",
+      "name": "馬利加南東峰山屋",
+      "members": [
+        {
+          "group": "丹大東郡",
+          "name": "馬利加南東峰山屋"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "馬利加南東峰山屋"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-080",
+      "name": "馬布谷山屋",
+      "members": [
+        {
+          "group": "丹大東郡",
+          "name": "馬布谷山屋"
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "name": "馬布谷山屋"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    },
+    {
+      "canonicalId": "cw-v07-081",
+      "name": "黑水塘山屋",
+      "members": [
+        {
+          "group": "太魯閣山列",
+          "name": "黑水塘山屋"
+        },
+        {
+          "group": "奇萊",
+          "name": "黑水塘山屋"
+        }
+      ],
+      "verifiedBy": "user",
+      "sourceVerification": "pending",
+      "routingEnabled": false
+    }
+  ]
+}
