@@ -7,7 +7,7 @@ import {filterLocations} from './node-browser.js';
 
 const $=id=>document.getElementById(id);
 const STORAGE_KEY='mountain-planner.autosave.v1';
-const APP_VERSION='v0.7.3 Preview';
+const APP_VERSION='v0.7.4 Preview';
 const COLLAPSE_KEY='mountain-planner.collapsed-days.v1';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='';
@@ -364,7 +364,7 @@ function bindDays(){
     const nodeSelect=card.querySelector('.add-node');
     if(search&&nodeSelect)search.oninput=()=>{
       const previouslySelected=nodeSelect.value;
-      const entries=filterLocations((route?.nodes||[]).map(n=>({id:n.id,name:n.name,route:route.route_name})),search.value,100);
+      const entries=filterLocations((route?.nodes||[]).map(n=>({id:n.id,name:n.name,route:route.route_name})),search.value,100,{includeRoute:false});
       nodeSelect.replaceChildren();
       const prompt=document.createElement('option');prompt.value='';
       prompt.textContent=entries.length?'選擇下一個行程點':'找不到符合的節點';
