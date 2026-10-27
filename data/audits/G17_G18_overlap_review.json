@@ -32,11 +32,17 @@
     "status": "source-checked-directional-discrepancy"
   },
   "routingSubset": {
-    "sourceAuditStatus": "limited verified visual subset",
-    "G17WalkingPairs": 2,
-    "G18WalkingPairs": 2,
+    "sourceAuditStatus": "eight individually reviewed walking pairs total; four duplicated directions have consistent official minutes",
+    "G17WalkingPairs": 4,
+    "G18WalkingPairs": 4,
     "published": false,
     "previewIntegrated": false
   },
-  "remaining": "All other 110 candidate pairs across G17 and G18 require independent per-edge source review before publication."
+  "remaining": "All other 110 candidate pairs across G17 and G18 require independent per-edge source review before publication.",
+  "acceptance": {
+    "date": "2026-10-27",
+    "status": "passed",
+    "checks": 5,
+    "scope": "original four-pair route preview only; expanded subset requires regression tests"
+  }
 }
