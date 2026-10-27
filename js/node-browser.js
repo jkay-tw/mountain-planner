@@ -1,7 +1,7 @@
 // UI-only browsing helpers. Routing remains inside crossmap-routing.js.
-export function filterLocations(options,query,limit=60){
+export function filterLocations(options,query,limit=60,{includeRoute=true}={}){
   const needle=String(query||'').trim().toLocaleLowerCase();
-  return options.filter(x=>(x.name+' '+x.route).toLocaleLowerCase().includes(needle)).slice(0,limit);
+  return options.filter(x=>(includeRoute?(x.name+' '+(x.route||'')):x.name).toLocaleLowerCase().includes(needle)).slice(0,limit);
 }
 export function adjacentLocations(graph,nodeId){
   if(!graph?.nodes?.has(nodeId))return [];
