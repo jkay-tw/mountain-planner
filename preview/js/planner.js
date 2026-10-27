@@ -77,6 +77,17 @@ export function recalcConnections(day,route){
   }
   day.items=result;
 }
+// Check the actual result of a deletion, not merely the 'auto' flag.
+// If the official path reconstructs the same place, do not offer a delete action.
+export function canDeleteItem(day,index,route){
+  const target=day.items[index];
+  if(!target)return false;
+  if(target.type==='rest'||target.type==='manual-location')return true;
+  if(!route)return true;
+  const trial={...day,items:day.items.filter((_,i)=>i!==index).map(x=>({...x,incoming:x.incoming?{...x.incoming}:null}))};
+  recalcConnections(trial,route);
+  return !trial.items.some(x=>x.type!=='rest'&&x.name===target.name);
+}
 export function buildTimeline(day){
   let t=clockToMinutes(day.startTime),known=true;const rows=[];
   for(const item of day.items){
