@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "status": "review-only",
+  "defaultRule": "do-not-merge",
+  "approvedSharedNodes": [],
+  "blockedPairs": [
+    {
+      "name": "主北岔路",
+      "groupA": "玉山群峰",
+      "groupB": "奇萊",
+      "reason": "不同山域的同名岔路，禁止將字串名稱視為地點身分",
+      "verification": "geographic-distinction"
+    }
+  ],
+  "notes": "此檔案是安全規則，不包含第三方完整路段資料。任何 approvedSharedNodes 都必須附上兩側來源節點ID及可查證證據，並在公開使用前確認授權。"
+}
