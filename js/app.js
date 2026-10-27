@@ -1,14 +1,18 @@
 import {loadManifest,loadRoute} from './data-loader.js';
-import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem} from './planner.js';
+import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay} from './planner.js';
 import {validatePlan} from './validation.js';
 import {exportExcel} from './exporter.js';
 
 const $=id=>document.getElementById(id);
 const STORAGE_KEY='mountain-planner.autosave.v1';
+const APP_VERSION='v0.6 Preview';
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='';
 let snapshots=[],at=-1,restoring=false;
 function checkpoint(){if(restoring)return;const state=JSON.stringify({routeId:route?.route_id||null,tripStartDate,days});if(state===snapshots[at])return;snapshots=snapshots.slice(0,at+1);snapshots.push(state);if(snapshots.length>50)snapshots.shift();at=snapshots.length-1;buttons()}
-function buttons(){if($('undoBtn')){$('undoBtn').disabled=at<1;$('redoBtn').disabled=at>=snapshots.length-1}}
+function buttons(){
+  ['undoBtn','floatUndoBtn'].forEach(id=>{if($(id))$(id).disabled=at<1});
+  ['redoBtn','floatRedoBtn'].forEach(id=>{if($(id))$(id).disabled=at>=snapshots.length-1});
+}
 async function restore(i){if(i<0||i>=snapshots.length)return;const x=JSON.parse(snapshots[i]);restoring=true;try{if(x.routeId)await loadGroup(x.routeId);else setNoRoute();$('routeSelect').value=x.routeId||'';tripStartDate=x.tripStartDate;$('tripDate').value=tripStartDate;days=x.days;$('dayCount').value=String(days.length);at=i;render();buttons()}finally{restoring=false}}
 const checkMissing=()=>{const n=days.reduce((sum,d)=>sum+missingSegments(d),0);return n===0||confirm('有 '+n+' 個路段未填時間，匯出結果含未完成時間。仍繼續？')};
 
@@ -22,6 +26,7 @@ const clampMin=v=>Math.max(0,Number(v)||0);
 
 async function init(){
   manifest=await loadManifest();
+  if($('appVersion'))$('appVersion').textContent=APP_VERSION;
   $('routeSelect').innerHTML='<option value="">請選擇上河圖</option>'+manifest.routes.map(r=>'<option value="'+r.id+'">'+r.id+'｜'+r.name+'</option>').join('');
   $('dayCount').innerHTML=Array.from({length:10},(_,i)=>'<option value="'+(i+1)+'">'+(i+1)+' 天</option>').join('');
 
@@ -98,6 +103,11 @@ function bindGlobal(){
     render();
   };
   $('undoBtn').onclick=()=>restore(at-1);$('redoBtn').onclick=()=>restore(at+1);
+  $('floatUndoBtn').onclick=()=>restore(at-1);$('floatRedoBtn').onclick=()=>restore(at+1);
+  const mobileMap={mobileUndo:'undoBtn',mobileRedo:'redoBtn',mobileSave:'saveBtn',mobileImport:'importBtn',mobileCopy:'copyBtn',mobileExcel:'exportBtn',mobileReset:'resetBtn'};
+  Object.entries(mobileMap).forEach(([from,to])=>{if($(from))$(from).onclick=()=>{$(to).click();document.querySelector('.global-menu')?.removeAttribute('open')}});
+  const floatHistory=$('floatingHistory'),syncFloating=()=>{if(floatHistory)floatHistory.classList.toggle('visible',window.scrollY>240)};
+  window.addEventListener('scroll',syncFloating,{passive:true});syncFloating();
   document.addEventListener('keydown',e=>{if(!(e.ctrlKey||e.metaKey))return;const a=document.activeElement;if(['INPUT','TEXTAREA','SELECT'].includes(a?.tagName))return;const k=e.key.toLowerCase();if(k==='z'||k==='y'){e.preventDefault();restore(at+(k==='y'||e.shiftKey?1:-1))}});
   document.addEventListener('click',e=>{
     if(e.target.closest('.row-menu'))return;
@@ -127,7 +137,7 @@ function bindGlobal(){
 
 function unlinkNextIfEndpointChanges(day){
   const i=days.indexOf(day),next=days[i+1];
-  if(next?.linkedStart)next.linkedStart=false;
+  if(next?.linkedStart){next.linkedStart=false;const f=first(next);if(f)f._linkedStart=false}
 }
 function addNode(day,name){
   if(!route){alert('請先選擇上河圖');return}
@@ -162,14 +172,14 @@ function connectToPrevious(i){
     d.items.unshift({id:uid(),type:prevEnd.type,name:prevEnd.name,note:'',isPeak:!!prevEnd.isPeak,hasWater:!!prevEnd.hasWater,incoming:null,_linkedStart:true});
     d.linkedStart=true;
   }
-  if(route)recalcConnections(d,route);
+  normalizeDay(d,route);
 }
 function addManualStart(d){
   if(locs(d).length===0){
     d.items.unshift({id:uid(),type:'manual-location',name:'手動起點',note:'',isPeak:false,hasWater:false,incoming:null});
   }else{
     d.items.unshift({id:uid(),type:'manual-location',name:'手動起點',note:'',isPeak:false,hasWater:false,incoming:null});
-    if(route)recalcConnections(d,route);
+    normalizeDay(d,route);
   }
   d.linkedStart=false;render();
 }
@@ -191,10 +201,11 @@ function insertManualBefore(d,destIdx){
 }
 function removeItem(d,idx){
   if(!canDeleteItem(d,idx))return;
-  const target=d.items[idx],wasEnd=target&&target.type!=='rest'&&last(d)?.id===target.id;
+  const target=d.items[idx],wasEnd=target&&target.type!=='rest'&&last(d)?.id===target.id,wasStart=target&&target.type!=='rest'&&first(d)?.id===target.id;
   if(wasEnd)unlinkNextIfEndpointChanges(d);
+  if(wasStart)d.linkedStart=false;
   d.items.splice(idx,1);
-  if(route)recalcConnections(d,route);
+  normalizeDay(d,route);
   render();
 }
 
@@ -205,7 +216,7 @@ function splitDay(i,idx){
  if(!next){next=newDay(i+1);days.push(next)}
  const moved=d.items.splice(idx+1);const start={...cut,id:uid(),incoming:null,_linkedStart:true,auto:false,waypoint:true};
  next.items=[start,...moved,...next.items.filter((x,j)=>!(j===0&&x._linkedStart))];next.linkedStart=true;
- if(route)recalcConnections(next,route);$('dayCount').value=String(days.length);render();
+ normalizeDay(next,route);$('dayCount').value=String(days.length);render();
 }
 function copyTextItinerary(){
   const blocks=[];
@@ -362,10 +373,11 @@ function bindDays(){
       z.ondrop=e=>{
         e.preventDefault();z.classList.remove('active');if(!drag||drag.day!==i)return;
         const from=drag.index,to=+z.dataset.drop;if(from<0||from>=d.items.length)return;
-        const oldEnd=last(d)?.id;
+        const oldStart=first(d)?.id,oldEnd=last(d)?.id;
         const [mv]=d.items.splice(from,1);let insert=to;if(from<to)insert--;
         insert=Math.max(0,Math.min(insert,d.items.length));d.items.splice(insert,0,mv);
-        if(route)recalcConnections(d,route);
+        normalizeDay(d,route);
+        if(oldStart!==first(d)?.id)d.linkedStart=false;
         if(oldEnd!==last(d)?.id)unlinkNextIfEndpointChanges(d);
         drag=null;render();
       };
