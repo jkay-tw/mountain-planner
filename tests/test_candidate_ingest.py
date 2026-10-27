@@ -38,6 +38,9 @@ class CandidateIngestTest(unittest.TestCase):
             self.assertTrue((output/'01_reviewed_times'/'reviewed_directed.csv').is_file())
             self.assertTrue((output/'02_group_normalization'/'mapping_report.json').is_file())
             self.assertTrue((output/'03_batch_validation'/'summary.json').is_file())
+            self.assertTrue((output/'04_source_review'/'source_review_queue.csv').is_file())
+            self.assertEqual(result['sourceReviewQueue']['sourceVerified'],0)
+            self.assertFalse(result['sourceReviewQueue']['publicationEligible'])
             report=json.loads((output/'02_group_normalization'/'normalized_candidate.json').read_text())
             g13=[r for r in report['segments'] if r['group']=='干卓萬群峰' and
                  (r['from']=='火山' or r['to']=='火山')]
