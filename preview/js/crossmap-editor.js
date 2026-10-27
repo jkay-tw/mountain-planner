@@ -7,7 +7,7 @@ import {filterLocations} from './node-browser.js?v=v074';
 
 const $=id=>document.getElementById(id);
 const STORAGE_KEY='mountain-planner.crossmap-autosave.v075';
-const APP_VERSION='v0.7.5 Crossmap Editor';
+const APP_VERSION='v0.7.6 Crossmap Editor';
 const COLLAPSE_KEY='mountain-planner.crossmap-collapsed-days.v075';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='';
