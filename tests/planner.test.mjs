@@ -461,7 +461,7 @@ test('v0.7.5 crossmap editor never shares main planner autosave key or route man
  const manifest=JSON.parse(readFileSync(new URL('../data/crossmap-editor-manifest.json',import.meta.url),'utf8'));
  assert.match(app,/crossmap-autosave\.v075/);
  assert.match(app,/crossmap-editor-manifest\.json/);
- assert.match(html,/js\/crossmap-editor\.js\?v=v077/);
+ assert.match(html,/js\/crossmap-editor\.js\?v=v079/);
  assert.doesNotMatch(main,/crossmap-autosave/);
  assert.ok(manifest.routes.some(x=>x.id==='G17G18-PREVIEW'));
  assert.equal(manifest.routes.length,1);
@@ -480,8 +480,8 @@ test('v0.7.7 day tools use explicit six-element grid placements across breakpoin
  assert.match(section,/@media\(max-width:700px\)/);
  assert.match(section,/"select select select add"/);
  assert.match(section,/"manual-start manual-end \. \."/);
- assert.match(html,/css\/style\.css\?v=v077/);
- assert.match(html,/js\/crossmap-editor\.js\?v=v077/);
+ assert.match(html,/css\/style\.css\?v=v079/);
+ assert.match(html,/js\/crossmap-editor\.js\?v=v079/);
 });
 
 test('v0.7.7 mid-width node search starts beside fixed link label and manual buttons stay adjacent',async()=>{
@@ -569,4 +569,28 @@ test('G16/G17 candidate precheck cannot silently approve ambiguous directed time
    ['大水窟山→大水窟山屋','大水窟山屋→大水窟山'].sort());
  const manifest=JSON.parse(readFileSync(new URL('../data/crossmap-editor-manifest.json',import.meta.url),'utf8'));
  assert.ok(!manifest.routes.some(r=>r.id==='G16'));
+});
+
+test('v0.7.9 responsive tools keep exactly two control groups and retain add/select selectors',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const css=readFileSync(new URL('../css/style.css',import.meta.url),'utf8');
+ const app=readFileSync(new URL('../js/app.js',import.meta.url),'utf8');
+ const crossmap=readFileSync(new URL('../js/crossmap-editor.js',import.meta.url),'utf8');
+ const html=readFileSync(new URL('../crossmap-editor.html',import.meta.url),'utf8');
+ const style=css.slice(css.lastIndexOf('/* v0.7.9'));
+ for(const source of [app,crossmap]){
+   assert.match(source,/node-picker-controls/);
+   assert.match(source,/node-action-controls/);
+   assert.match(source,/class="add-node"/);
+   assert.match(source,/class="add-dest"/);
+   assert.match(source,/class="manual-start/);
+   assert.match(source,/class="manual-end/);
+ }
+ assert.match(style,/grid-template-areas:"link picker actions"/);
+ assert.match(style,/display:flex;align-items:center;justify-content:flex-start;gap:7px/);
+ assert.match(style,/@container dayCard \(max-width:780px\)/);
+ assert.match(style,/grid-template-areas:"link" "picker" "actions"/);
+ assert.match(style,/grid-template-columns:minmax\(0,1fr\) minmax\(0,1fr\)/);
+ assert.match(html,/css\/style\.css\?v=v079/);
+ assert.match(html,/js\/crossmap-editor\.js\?v=v079/);
 });
