@@ -6,7 +6,7 @@
     "publisher": "上河文化",
     "image_url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg"
   },
-  "auditScope": "ONLY listed walking edges individually compared with G17/G18 official chart. Other candidate segments remain pending.",
+  "auditScope": "FOUR directional walking pairs reviewed against G17 official step chart, not all 68 candidate rows.",
   "nodes": [
     {
       "id": "g17-overlap-001",
@@ -19,6 +19,14 @@
     {
       "id": "g17-overlap-003",
       "name": "新康山岔路口"
+    },
+    {
+      "id": "g17-overlap-004",
+      "name": "三叉山登山口"
+    },
+    {
+      "id": "g17-overlap-005",
+      "name": "嘉明湖岔路口"
     }
   ],
   "segments": [
@@ -61,6 +69,50 @@
       "fromId": "g17-overlap-003",
       "toId": "g17-overlap-001",
       "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "verificationMethod": "source-chart-visual-review-2026-10-27"
+    },
+    {
+      "from": "三叉山登山口",
+      "to": "嘉明湖岔路口",
+      "fromId": "g17-overlap-004",
+      "toId": "g17-overlap-005",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "verificationMethod": "source-chart-visual-review-2026-10-27"
+    },
+    {
+      "from": "嘉明湖岔路口",
+      "to": "三叉山登山口",
+      "fromId": "g17-overlap-005",
+      "toId": "g17-overlap-004",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "verificationMethod": "source-chart-visual-review-2026-10-27"
+    },
+    {
+      "from": "嘉明湖岔路口",
+      "to": "新康山岔路口",
+      "fromId": "g17-overlap-005",
+      "toId": "g17-overlap-003",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "verificationMethod": "source-chart-visual-review-2026-10-27"
+    },
+    {
+      "from": "新康山岔路口",
+      "to": "嘉明湖岔路口",
+      "fromId": "g17-overlap-003",
+      "toId": "g17-overlap-005",
+      "minutes": 30,
       "travelMode": "walking",
       "verificationStatus": "verified",
       "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
