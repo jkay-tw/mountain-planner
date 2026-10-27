@@ -245,8 +245,8 @@ function renderTimeline(d){
     if(r.type==='rest'){
       html+='<div class="it-row rest-row" data-index="'+idx+'">'+
       '<div class="place"><span class="drag-handle" draggable="true" data-index="'+idx+'">⋮⋮</span><span class="place-name">☕ 休息</span></div>'+
-      '<div class="route-info"><input class="rest-min minute-input" data-index="'+idx+'" type="number" min="0" value="'+r.minutes+'"><span>m</span></div>'+
-      '<div class="arrival">'+r.endTime+'</div><div></div>'+menuHtml(idx,true,false)+'</div>';
+      '<div class="arrival">'+r.endTime+'</div>'+
+      '<div class="route-info"><input class="rest-min minute-input" data-index="'+idx+'" type="number" min="0" value="'+r.minutes+'"><span>m</span></div><div></div>'+menuHtml(idx,true,false)+'</div>';
     }else{
       const e=r.incoming,a=e?edgeActual(e,d.coefficient):0,manual=r.type==='manual-location';
       let routeInfo='<span class="secondary-info">起點</span>';
@@ -263,19 +263,14 @@ function renderTimeline(d){
         :peak+'<span class="place-name '+(r.auto?'auto-node':'')+'">'+esc(r.name)+'</span>'+water;
       html+='<div class="it-row" data-index="'+idx+'">'+
       '<div class="place">'+placeName+'</div>'+
-      '<div class="route-info">'+routeInfo+'</div>'+
       '<div class="arrival">'+r.arrival+'</div>'+
+      '<div class="route-info">'+routeInfo+'</div>'+
       '<input class="note-input" data-index="'+idx+'" placeholder="備註" value="'+esc(r.note||'')+'">'+
       menuHtml(idx,false,!!r.incoming)+'</div>';
     }
     html+='<div class="drop-zone" data-drop="'+(idx+1)+'"></div>';
   });
   return html;
-}
-function clockish(minutes){
-  const m=Math.round(Number(minutes)||0),h=Math.floor(m/60),r=m%60;
-  if(!h)return m+'m';
-  return h+':'+String(r).padStart(2,'0');
 }
 function menuHtml(idx,isRest,canManual){
   if(isRest)return '<details class="row-menu"><summary>⋯</summary><div class="menu-box"><button class="delete" data-action="delete" data-index="'+idx+'">刪除</button></div></details>';
