@@ -148,3 +148,45 @@ button{border:0;border-radius:8px;padding:9px 12px;background:var(--accent);colo
  .day-tools .add-dest{grid-column:2}
  .day-tools .compact-day-action{grid-column:auto}
 }
+
+/* v0.7.6: explicit named tracks prevent buttons/selects from occupying implicit
+   grid columns or expanding unexpectedly as the viewport changes. */
+.day-tools{
+  display:grid;
+  grid-template-columns:100px minmax(155px,195px) minmax(190px,1fr) 68px max-content max-content;
+  grid-template-areas:"link search select add manual-start manual-end";
+  gap:8px;
+  align-items:center;
+  min-width:0;
+}
+.day-tools > *{min-width:0}
+.day-tools > .link-wrap{grid-area:link;grid-column:auto;white-space:nowrap}
+.day-tools > .node-search-inline{grid-area:search;grid-column:auto;max-width:none}
+.day-tools > .add-node{grid-area:select;grid-column:auto;width:100%;min-width:0;max-width:none;text-overflow:ellipsis}
+.day-tools > .add-dest{grid-area:add;grid-column:auto;min-width:68px;width:68px;padding:7px 9px}
+.day-tools > .manual-start{grid-area:manual-start;grid-column:auto;justify-self:start}
+.day-tools > .manual-end{grid-area:manual-end;grid-column:auto;justify-self:start}
+.day-tools > .compact-day-action{width:auto;white-space:nowrap;padding:7px 10px}
+@media(max-width:1050px){
+  .day-tools{
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr) 72px max-content max-content;
+    grid-template-areas:
+      "link search search search search"
+      "select select add manual-start manual-end";
+  }
+  .day-tools > .node-search-inline{width:100%;max-width:360px}
+}
+@media(max-width:700px){
+  .day-tools{
+    grid-template-columns:minmax(0,1fr) 76px;
+    grid-template-areas:
+      "link link"
+      "search search"
+      "select add"
+      "manual-start manual-end";
+    gap:8px;
+  }
+  .day-tools > .node-search-inline{max-width:none}
+  .day-tools > .manual-start,.day-tools > .manual-end{justify-self:start}
+  .day-tools > .compact-day-action{font-size:12px;padding:8px 12px}
+}
