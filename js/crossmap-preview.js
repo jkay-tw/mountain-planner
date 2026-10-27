@@ -64,7 +64,8 @@ async function init(){
   $('swap').addEventListener('click',()=>{
     const a=$('start').value;$('start').value=$('end').value;$('end').value=a;render();
   });
-  $('status').textContent='已載入 G17／G18 部分核對路段（8 條方向邊）；僅用於跨圖驗證。';
+  const edgeCount=routes.reduce((sum,r)=>sum+r.segments.length,0);
+  $('status').textContent='已載入 G17／G18 部分核對路段（'+edgeCount+' 條方向邊）；僅用於跨圖驗證。';
   render();
 }
 init().catch(e=>{
