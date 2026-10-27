@@ -12,6 +12,8 @@ def build(input_file,out_dir):
         neighbors[a][group].add(b);neighbors[b][group].add(a)
         times[(group,a,b)].add(s['go'])
         times[(group,b,a)].add(s['back'])
+    blocked_names={'三岔路口','四岔路口','水源','最低鞍部','岔路','岔路口',
+                   '林道登山口','登山口','三叉營地','主北岔路','東北鞍營地'}
     rows=[]
     for name,groups in neighbors.items():
         if len(groups)<2:continue
@@ -24,7 +26,7 @@ def build(input_file,out_dir):
                     if ta and tb:
                         if ta&tb:matches+=1
                         else:conflicts+=1
-            if name=='主北岔路' and {ga,gb}=={'玉山群峰','奇萊'}:
+            if name in blocked_names:
                 status='do_not_merge'
             elif len(shared)>=2 and matches>=2:
                 status='high_priority_review'
@@ -34,7 +36,7 @@ def build(input_file,out_dir):
                 neighbor_a=' / '.join(sorted(na)),neighbor_b=' / '.join(sorted(nb)),
                 shared_neighbors=' / '.join(sorted(shared)),shared_count=len(shared),
                 matching_directed_times=matches,conflicting_directed_times=conflicts,
-                status=status,canonical_node_id='',reviewed_by='',evidence_url=''))
+                status=status,user_decision='',user_note='',canonical_node_id='',reviewed_by='',evidence_url=''))
     priority={'do_not_merge':0,'high_priority_review':1,'review':2,'unresolved':3}
     rows.sort(key=lambda r:(priority[r['status']],-r['matching_directed_times'],-r['shared_count'],r['name']))
     out=Path(out_dir);out.mkdir(parents=True,exist_ok=True)
