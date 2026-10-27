@@ -349,3 +349,29 @@ test('source-reviewed G17 and G18 overlapping directed minutes agree',async()=>{
  for(const [key,minutes] of ea){if(!eb.has(key))continue;compared++;assert.equal(eb.get(key),minutes);}
  assert.equal(compared,4);
 });
+
+import {filterLocations,adjacentLocations} from '../js/node-browser.js';
+test('node search matches partial Chinese names or chart and respects result caps',()=>{
+ const opts=[{name:'嘉明湖岔路口',route:'南二段',key:'a'},
+  {name:'新康山岔路口',route:'新康橫斷',key:'b'},
+  {name:'拉庫音溪山屋',route:'南二段',key:'c'}];
+ assert.deepEqual(filterLocations(opts,'岔路').map(x=>x.key),['a','b']);
+ assert.deepEqual(filterLocations(opts,'南二段').map(x=>x.key),['a','c']);
+ assert.equal(filterLocations(opts,'不在圖上').length,0);
+ assert.equal(filterLocations(opts,'',1).length,1);
+});
+test('adjacent node browser shows verified outgoing connections only, collapsed across charts',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const load=n=>JSON.parse(readFileSync(new URL('../data/staging/'+n+'.overlap-verified-subset.json',import.meta.url),'utf8'));
+ const a=load('G17'),b=load('G18');
+ const x=JSON.parse(readFileSync(new URL('../data/crosswalk-reviewed.json',import.meta.url),'utf8'));
+ const g=buildVerifiedWalkingGraph([a,b],x,{allowCrossMap:true});
+ const origin=a.nodes.find(n=>n.name==='新康山岔路口');
+ const nodeId=g.locationId.get(JSON.stringify([a.route_id,origin.id]));
+ const next=adjacentLocations(g,nodeId);
+ assert.deepEqual(next.map(n=>n.name),['嘉明湖岔路口','布新岔路口','拉庫音溪山屋']);
+ assert.ok(next.every(n=>n.minutes>0));
+ const jm=next.find(n=>n.name==='嘉明湖岔路口');
+ assert.equal(jm.minutes,30);
+ assert.equal(jm.edges.length,2);
+});
