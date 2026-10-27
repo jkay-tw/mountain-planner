@@ -557,3 +557,16 @@ test('crossmap composite has strict routing policy and no candidate-only edges',
  assert.equal(raw.routingPolicy,'verified-walking-only');
  assert.ok(raw.segments.every(e=>e.travelMode==='walking'&&e.verificationStatus==='verified'));
 });
+
+test('G16/G17 candidate precheck cannot silently approve ambiguous directed times',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const audit=JSON.parse(readFileSync(new URL('../data/audits/G16_G17_candidate_overlap_precheck.json',import.meta.url),'utf8'));
+ assert.equal(audit.userConfirmedSharedPhysicalNodes,24);
+ assert.equal(audit.directedOverlap.compared,44);
+ assert.equal(audit.directedOverlap.conflictingValues,2);
+ assert.equal(audit.routingEnabled,false);
+ assert.deepEqual(audit.timeConflicts.map(x=>x.from+'→'+x.to).sort(),
+   ['大水窟山→大水窟山屋','大水窟山屋→大水窟山'].sort());
+ const manifest=JSON.parse(readFileSync(new URL('../data/crossmap-editor-manifest.json',import.meta.url),'utf8'));
+ assert.ok(!manifest.routes.some(r=>r.id==='G16'));
+});
