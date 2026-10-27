@@ -190,7 +190,9 @@ function insertManualBefore(d,destIdx){
   d.items.splice(destIdx,0,m);render();
 }
 function removeItem(d,idx){
-  if(!canDeleteItem(d,idx,route))return;
+  if(!canDeleteItem(d,idx))return;
+  const target=d.items[idx],wasEnd=target&&target.type!=='rest'&&last(d)?.id===target.id;
+  if(wasEnd)unlinkNextIfEndpointChanges(d);
   d.items.splice(idx,1);
   if(route)recalcConnections(d,route);
   render();
@@ -251,14 +253,13 @@ function dayDate(index){
 }
 function opts(){return nodes.map(n=>'<option value="'+esc(n)+'">'+esc(n)+'</option>').join('')}
 function render(persist=true){
-  syncStarts();
   $('daysContainer').innerHTML=days.map(renderDay).join('');
   bindDays();
   if(persist){saveAutosave();checkpoint()}
 }
 
 function renderDay(d,i){
-  const s=summarizeDay(d),p=i?last(days[i-1]):null,f=first(d),mis=i&&d.linkedStart&&p&&f&&(p.name!==f.name||p.type!==f.type);
+  const s=summarizeDay(d);
   const date=dayDate(i);
   const selector=route?'<select class="add-node"><option value="">選擇下一個行程點</option>'+opts()+'</select>':'<select class="add-node" disabled><option>請先選擇上河圖</option></select>';
   return '<article class="card day-card" data-day="'+i+'">'+
@@ -268,7 +269,7 @@ function renderDay(d,i){
   '<div class="stats"><div class="stat"><span>行進</span><b>'+formatDuration(s.movement)+'</b></div><div class="stat"><span>休息</span><b>'+formatDuration(s.rest)+'</b></div><div class="stat"><span>總計</span><b>'+(s.missing?'未完成':formatDuration(s.total))+'</b></div><div class="stat coef"><span>平均</span><b>'+(s.coefficient??'—')+'</b></div></div>'+
   '<button class="clear-day">清除 Day '+(i+1)+'</button></div>'+
   '<div class="day-tools">'+(i?'<label class="link-wrap"><input class="link-start" type="checkbox" '+(d.linkedStart?'checked':'')+'>銜接前日</label>':'<span class="link-wrap">第一點即起點</span>')+
-  selector+'<button class="add-dest" '+(route?'':'disabled')+'>加入</button>'+(mis?'<button class="sync-start secondary">同步前日終點</button>':'')+'</div>'+
+  selector+'<button class="add-dest" '+(route?'':'disabled')+'>加入</button><button class="manual-start secondary">新增手動起點</button><button class="manual-end secondary">新增手動終點</button></div>'+
   (s.missing?'<div class="missing-warning">尚有 '+s.missing+' 個手動路段未填時間；後續時間無法計算。</div>':'')+
   '<div class="timeline">'+renderTimeline(d)+'</div>'+
   '<div class="day-footer"><textarea class="day-note" placeholder="Day '+(i+1)+' 備註">'+esc(d.note||'')+'</textarea></div></article>';
@@ -298,13 +299,13 @@ function renderTimeline(d){
       const water='<button class="icon-toggle water '+(r.hasWater?'active':'')+'" data-index="'+idx+'" title="水源">💧</button>';
       const placeName=manual
         ?'<span class="drag-handle" draggable="true" data-index="'+idx+'">⋮⋮</span>'+peak+'<input class="manual-name" data-index="'+idx+'" value="'+esc(r.name)+'">'+water
-        :peak+'<span class="place-name '+(r.auto?'auto-node':'')+'">'+esc(r.name)+'</span>'+water;
+        :peak+'<span class="place-name">'+esc(r.name)+'</span>'+water;
       html+='<div class="it-row" data-index="'+idx+'">'+
       '<div class="place">'+placeName+'</div>'+
       '<div class="arrival">'+r.arrival+'</div>'+
       '<div class="route-info">'+routeInfo+'</div>'+
       '<input class="note-input" data-index="'+idx+'" placeholder="備註" value="'+esc(r.note||'')+'">'+
-      menuHtml(idx,false,!!r.incoming,canDeleteItem(d,idx,route))+'</div>';
+      menuHtml(idx,false,!!r.incoming,canDeleteItem(d,idx))+'</div>';
     }
     html+='<div class="drop-zone" data-drop="'+(idx+1)+'"></div>';
   });
@@ -324,10 +325,15 @@ function bindDays(){
     card.querySelector('.start-time').onchange=e=>{d.startTime=e.target.value;render()};
     card.querySelector('.day-coef').onchange=e=>{d.coefficient=Math.max(.1,Number(e.target.value)||.8);render()};
     card.querySelector('.day-note').onchange=e=>{d.note=e.target.value;render()};
-    card.querySelector('.clear-day').onclick=()=>{if(confirm('確定清除 Day '+(i+1)+' 的全部行程？')){d.items=[];d.note='';render()}};
-    const lk=card.querySelector('.link-start');if(lk)lk.onchange=e=>{d.linkedStart=e.target.checked;render()};
+    card.querySelector('.clear-day').onclick=()=>{if(confirm('確定清除 Day '+(i+1)+' 的全部行程？')){if(locs(d).length)unlinkNextIfEndpointChanges(d);d.items=[];d.note='';d.linkedStart=false;render()}};
+    const lk=card.querySelector('.link-start');if(lk)lk.onchange=e=>{
+      if(e.target.checked)connectToPrevious(i);
+      else{d.linkedStart=false;const f=first(d);if(f)f._linkedStart=false}
+      render();
+    };
     const add=card.querySelector('.add-dest');if(add)add.onclick=()=>{const v=card.querySelector('.add-node').value;if(v){addNode(d,v);render()}};
-    const sy=card.querySelector('.sync-start');if(sy)sy.onclick=()=>forceSync(i);
+    card.querySelector('.manual-start').onclick=()=>addManualStart(d);
+    card.querySelector('.manual-end').onclick=()=>addManualEnd(d);
 
     card.querySelectorAll('[data-action]').forEach(b=>b.onclick=e=>{
       e.preventDefault();const idx=+b.dataset.index;
