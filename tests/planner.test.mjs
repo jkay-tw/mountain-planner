@@ -35,16 +35,18 @@ test('JSON validation rejects corrupt and future formats',()=>{
  assert.throws(()=>validatePlan({...valid,routeId:'G99'},['G06']));
 });
 
-test('delete is offered only when node will actually disappear',()=>{
+test('official-node deletion follows boundary and manual-neighbor rules',()=>{
  const d={items:[
    point('a','A'),
    point('b','B',{kind:'official',from:'A',to:'B',officialMinutes:30,actualMinutes:null},true),
    point('c','C',{kind:'official',from:'B',to:'C',officialMinutes:40,actualMinutes:null})
  ]};
- assert.equal(canDeleteItem(d,1,route),false);
- assert.equal(canDeleteItem(d,2,route),true);
+ assert.equal(canDeleteItem(d,0),true);
+ assert.equal(canDeleteItem(d,1),false);
+ assert.equal(canDeleteItem(d,2),true);
  const m={id:'m',type:'manual-location',name:'捷徑',incoming:{kind:'manual',fromId:'b',toId:'m',actualMinutes:null}};
  d.items.splice(2,0,m);
- assert.equal(canDeleteItem(d,1,route),true);
- assert.equal(canDeleteItem(d,2,route),true);
+ assert.equal(canDeleteItem(d,1),true);
+ assert.equal(canDeleteItem(d,2),true);
+ assert.equal(canDeleteItem(d,3),true);
 });
