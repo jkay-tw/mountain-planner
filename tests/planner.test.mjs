@@ -193,3 +193,45 @@ test('walking routing refuses a vehicle shortcut and unverified edge',()=>{
  assert.deepEqual(shortestPath(r,'a','c').nodes,['a','b','c']);
  assert.equal(shortestPath(r,'a','c').minutes,100);
 });
+
+import {buildVerifiedWalkingGraph,shortestVerifiedWalkingPath} from '../js/crossmap-routing.js';
+test('cross-map routing remains isolated by default even when identity is approved',()=>{
+ const routes=[
+  {route_id:'R1',route_name:'圖甲',nodes:[{id:'a',name:'入口甲'},{id:'j',name:'交會點'}],segments:[
+   {fromId:'a',toId:'j',minutes:30,travelMode:'walking',verificationStatus:'verified'}]},
+  {route_id:'R2',route_name:'圖乙',nodes:[{id:'j',name:'交會點'},{id:'b',name:'出口乙'}],segments:[
+   {fromId:'j',toId:'b',minutes:40,travelMode:'walking',verificationStatus:'verified'}]}
+ ];
+ const crosswalk={canonicalNodes:[{canonicalId:'shared-j',members:[
+  {group:'圖甲',name:'交會點'},{group:'圖乙',name:'交會點'}]}]};
+ const separated=buildVerifiedWalkingGraph(routes,crosswalk);
+ const a=separated.locationId.get(JSON.stringify(['R1','a']));
+ const b=separated.locationId.get(JSON.stringify(['R2','b']));
+ assert.equal(shortestVerifiedWalkingPath(separated,a,b),null);
+ const enabled=buildVerifiedWalkingGraph(routes,crosswalk,{allowCrossMap:true});
+ const joined=shortestVerifiedWalkingPath(enabled,enabled.locationId.get(JSON.stringify(['R1','a'])),enabled.locationId.get(JSON.stringify(['R2','b'])));
+ assert.equal(joined.minutes,70);
+ assert.deepEqual(joined.segments.map(s=>s.routeId),['R1','R2']);
+});
+test('cross-map graph never traverses vehicle/unverified/reverse assumed route',()=>{
+ const route={route_id:'R',route_name:'圖',nodes:[
+  {id:'a',name:'A'},{id:'b',name:'B'},{id:'c',name:'C'}],segments:[
+  {fromId:'a',toId:'b',minutes:30,travelMode:'walking',verificationStatus:'verified'},
+  {fromId:'b',toId:'c',minutes:40,travelMode:'walking',verificationStatus:'verified'},
+  {fromId:'a',toId:'c',minutes:1,travelMode:'vehicle',verificationStatus:'verified'},
+  {fromId:'a',toId:'c',minutes:2,travelMode:'walking',verificationStatus:'pending'},
+  {fromId:'c',toId:'a',minutes:3,travelMode:'walking',verificationStatus:'unverified'}]};
+ const graph=buildVerifiedWalkingGraph([route],{canonicalNodes:[]});
+ const id=n=>graph.locationId.get(JSON.stringify(['R',n]));
+ assert.equal(shortestVerifiedWalkingPath(graph,id('a'),id('c')).minutes,70);
+ assert.equal(shortestVerifiedWalkingPath(graph,id('c'),id('a')),null);
+});
+test('cross-map denies user-excluded membership and does not guess from identical labels',()=>{
+ const base={route_id:'R',route_name:'圖甲',nodes:[{id:'j',name:'岔路'}],segments:[]};
+ const other={route_id:'S',route_name:'圖乙',nodes:[{id:'j',name:'岔路'}],segments:[]};
+ const graph=buildVerifiedWalkingGraph([base,other],{canonicalNodes:[]},{allowCrossMap:true});
+ assert.notEqual(graph.locationId.get(JSON.stringify(['R','j'])),graph.locationId.get(JSON.stringify(['S','j'])));
+ const conflict={canonicalNodes:[{canonicalId:'bad',members:[{group:'圖甲',name:'岔路'},{group:'圖乙',name:'岔路'}]}],
+ deniedPairRecords:[{name:'岔路',groupA:'圖甲',groupB:'圖乙'}]};
+ assert.throws(()=>buildVerifiedWalkingGraph([base,other],conflict,{allowCrossMap:true}),/Denied cross-map/);
+});
