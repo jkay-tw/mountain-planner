@@ -77,16 +77,18 @@ export function recalcConnections(day,route){
   }
   day.items=result;
 }
-// Check the actual result of a deletion, not merely the 'auto' flag.
-// If the official path reconstructs the same place, do not offer a delete action.
-export function canDeleteItem(day,index,route){
-  const target=day.items[index];
-  if(!target)return false;
-  if(target.type==='rest'||target.type==='manual-location')return true;
-  if(!route)return true;
-  const trial={...day,items:day.items.filter((_,i)=>i!==index).map(x=>({...x,incoming:x.incoming?{...x.incoming}:null}))};
-  recalcConnections(trial,route);
-  return !trial.items.some(x=>x.type!=='rest'&&x.name===target.name);
+// Deletion is based on the node's role in the current day, never on how it was added.
+// Official nodes are deletable only at day boundaries or immediately beside a manual node.
+export function canDeleteItem(day,index){
+  const item=day.items[index];
+  if(!item)return false;
+  if(item.type==='rest'||item.type==='manual-location')return true;
+  const locIndexes=day.items.map((x,i)=>x.type==='rest'?null:i).filter(i=>i!==null);
+  const pos=locIndexes.indexOf(index);
+  if(pos<0)return false;
+  if(pos===0||pos===locIndexes.length-1)return true;
+  const prev=day.items[locIndexes[pos-1]],next=day.items[locIndexes[pos+1]];
+  return prev?.type==='manual-location'||next?.type==='manual-location';
 }
 export function buildTimeline(day){
   let t=clockToMinutes(day.startTime),known=true;const rows=[];
