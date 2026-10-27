@@ -1,11 +1,13 @@
 import {loadManifest,loadRoute} from './data-loader.js';
-import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay} from './planner.js';
+import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming} from './planner.js';
 import {validatePlan} from './validation.js';
 import {exportExcel} from './exporter.js';
 
 const $=id=>document.getElementById(id);
 const STORAGE_KEY='mountain-planner.autosave.v1';
 const APP_VERSION='v0.6 Preview';
+const COLLAPSE_KEY='mountain-planner.collapsed-days.v1';
+let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='';
 let snapshots=[],at=-1,restoring=false;
 function checkpoint(){if(restoring)return;const state=JSON.stringify({routeId:route?.route_id||null,tripStartDate,days});if(state===snapshots[at])return;snapshots=snapshots.slice(0,at+1);snapshots.push(state);if(snapshots.length>50)snapshots.shift();at=snapshots.length-1;buttons()}
@@ -29,6 +31,8 @@ async function init(){
   if($('appVersion'))$('appVersion').textContent=APP_VERSION;
   $('routeSelect').innerHTML='<option value="">請選擇上河圖</option>'+manifest.routes.map(r=>'<option value="'+r.id+'">'+r.id+'｜'+r.name+'</option>').join('');
   $('dayCount').innerHTML=Array.from({length:10},(_,i)=>'<option value="'+(i+1)+'">'+(i+1)+' 天</option>').join('');
+
+  try{collapsedDays=new Set(JSON.parse(localStorage.getItem(COLLAPSE_KEY)||'[]'))}catch(e){collapsedDays=new Set()}
 
   const restored=loadAutosave();
   if(restored?.routeId&&manifest.routes.some(r=>r.id===restored.routeId)){
@@ -215,7 +219,8 @@ function splitDay(i,idx){
  const d=days[i],cut=d.items[idx];if(!cut||cut.type==='rest'||!d.items.slice(0,idx).some(x=>x.type!=='rest')){alert('請選擇起點之後的地點');return}
  let next=days[i+1];if(next?.items.length&&!confirm('下一天已有行程，移入的路段會排在前面並重算連接。確定？'))return;
  if(!next){next=newDay(i+1);days.push(next)}
- const moved=d.items.splice(idx+1);const start={...cut,id:uid(),incoming:null,_linkedStart:true,auto:false,waypoint:true};
+ const moved=d.items.splice(idx+1);const start={...cut,id:uid(),incoming:null,_linkedStart:true};
+ retargetSplitIncoming(moved,cut.id,start.id);
  next.items=[start,...moved,...next.items.filter((x,j)=>!(j===0&&x._linkedStart))];next.linkedStart=true;
  normalizeDay(next,route);$('dayCount').value=String(days.length);render();
 }
@@ -271,11 +276,12 @@ function render(persist=true){
 }
 
 function renderDay(d,i){
-  const s=summarizeDay(d);
+  const s=summarizeDay(d),collapsed=collapsedDays.has(d.id),f=first(d),l=last(d);
   const date=dayDate(i);
   const selector=route?'<select class="add-node"><option value="">選擇下一個行程點</option>'+opts()+'</select>':'<select class="add-node" disabled><option>請先選擇上河圖</option></select>';
-  return '<article class="card day-card" data-day="'+i+'">'+
-  '<div class="day-head"><div class="day-title"><strong>Day '+(i+1)+'</strong>'+(date?'<span class="day-date">'+date+'</span>':'')+'</div>'+
+  const summary=(f&&l?esc(f.name)+' → '+esc(l.name):'尚未建立行程')+' · '+(s.missing?'未完成':formatDuration(s.total));
+  return '<article class="card day-card '+(collapsed?'collapsed':'')+'" data-day="'+i+'">'+
+  '<div class="day-head"><button class="day-toggle" type="button" aria-label="'+(collapsed?'展開':'摺疊')+' Day '+(i+1)+'">'+(collapsed?'▶':'▼')+'</button><div class="day-title"><strong>Day '+(i+1)+'</strong>'+(date?'<span class="day-date">'+date+'</span>':'')+'<span class="collapsed-summary">'+summary+'</span></div>'+
   '<div class="day-control"><label>出發</label><input class="start-time" type="time" value="'+d.startTime+'"></div>'+
   '<div class="day-control coefficient"><label>預設係數</label><input class="day-coef" type="number" min="0.1" max="3" step="0.01" value="'+Number(d.coefficient).toFixed(2)+'"></div>'+
   '<div class="stats"><div class="stat"><span>行進</span><b>'+formatDuration(s.movement)+'</b></div><div class="stat"><span>休息</span><b>'+formatDuration(s.rest)+'</b></div><div class="stat"><span>總計</span><b>'+(s.missing?'未完成':formatDuration(s.total))+'</b></div><div class="stat coef"><span>平均</span><b>'+(s.coefficient??'—')+'</b></div></div>'+
@@ -334,6 +340,7 @@ function bindDays(){
   }));
   document.querySelectorAll('.day-card').forEach(card=>{
     const i=+card.dataset.day,d=days[i];
+    card.querySelector('.day-toggle').onclick=()=>{if(collapsedDays.has(d.id))collapsedDays.delete(d.id);else collapsedDays.add(d.id);try{localStorage.setItem(COLLAPSE_KEY,JSON.stringify([...collapsedDays]))}catch(e){}render(false)};
     card.querySelector('.start-time').onchange=e=>{d.startTime=e.target.value;render()};
     card.querySelector('.day-coef').onchange=e=>{d.coefficient=Math.max(.1,Number(e.target.value)||.8);render()};
     card.querySelector('.day-note').onchange=e=>{d.note=e.target.value;render()};
