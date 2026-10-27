@@ -593,3 +593,13 @@ test('G06 all nine official walking pairs independently match G06 chart review i
    assert.equal(back.minutes,pair.reverseMinutes);
  }
 });
+
+test('G03 manual source audit records nine walking pairs and explicitly withholds three road contexts',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const audit=JSON.parse(readFileSync(new URL('../data/audits/G03_partial_official_source_review_20261028.json',import.meta.url),'utf8'));
+ assert.equal(audit.chartId,'G03');
+ assert.equal(audit.reviewedPairs.length,9);
+ assert.equal(audit.notApproved.length,3);
+ assert.ok(audit.reviewedPairs.every(x=>x.forwardMinutes>0&&x.reverseMinutes>0&&x.travelMode==='walking'));
+ assert.ok(audit.notApproved.some(x=>x.from==='新山'&&x.to==='17.1K柵欄'));
+});
