@@ -534,20 +534,46 @@ test('v0.7.10 preview exposes optional alternate-time controls while keeping nod
  }
 });
 
-test('v0.7.11 one editor exposes only G06 and source-reviewed G17/G18 scope',async()=>{
+test('v0.7.12 global route browser keeps scopes without clearing itinerary',async()=>{
  const {readFileSync}=await import('node:fs');
  const manifest=JSON.parse(readFileSync(new URL('../data/unified-editor-manifest.json',import.meta.url),'utf8'));
  assert.deepEqual(manifest.routes.map(x=>x.id),['G06','G17G18-PREVIEW']);
- assert.equal(manifest.mode,'unified-editor-preview-only');
  const html=readFileSync(new URL('../unified-editor.html',import.meta.url),'utf8');
- const editor=readFileSync(new URL('../js/unified-editor.js',import.meta.url),'utf8');
- assert.match(html,/js\/unified-editor\.js\?v=v0711/);
- assert.match(editor,/v0\.7\.11 Unified Preview/);
- assert.match(editor,/unified-editor-manifest\.json/);
- assert.match(editor,/unified-preview-autosave\.v0711/);
- assert.doesNotMatch(editor,/STORAGE_KEY='mountain-planner\.autosave\.v1'/);
- assert.match(editor,/schemaVersion:1/);
- assert.match(editor,/filterLocations\(/);
- assert.match(editor,/node-action-controls/);
- assert.match(editor,/alternate-time/);
+ const app=readFileSync(new URL('../js/unified-editor.js',import.meta.url),'utf8');
+ assert.match(html,/js\\/unified-editor\\.js\\?v=v0712/);
+ assert.match(app,/v0\\.7\\.12 Unified Preview/);
+ assert.match(app,/mergeReviewedRoutes/);
+ assert.match(app,/nodesInScope\\(route,scope\\)/);
+ assert.match(app,/appendDisconnectedNode/);
+ assert.doesNotMatch(app,/切換上河圖會清空目前行程/);
+ assert.match(app,/未連通・手動估時/);
+ assert.match(app,/unified-preview-autosave\\.v0711/);
+});
+
+test('v0.7.12 verified global graph does not invent connection between G06 and G17',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode}=await import('../js/global-route.js');
+ const left=addRouteIdentity(JSON.parse(readFileSync(new URL('../data/routes/G06.json',import.meta.url),'utf8')));
+ const right=addRouteIdentity(JSON.parse(readFileSync(new URL('../data/routes/G17G18.preview.json',import.meta.url),'utf8')));
+ const combined=mergeReviewedRoutes([left,right]);
+ assert.equal(combined.nodes.length,left.nodes.length+right.nodes.length);
+ assert.equal(nodesInScope(combined,'G06').length,left.nodes.length);
+ assert.equal(nodesInScope(combined,'G17G18-PREVIEW').length,right.nodes.length);
+ assert.equal(nodesInScope(combined,'all').length,combined.nodes.length);
+ const g06=combined.nodes.find(x=>x.name==='白姑大山');
+ const g17=combined.nodes.find(x=>x.name==='南雙頭山');
+ assert.equal(shortestPath(combined,g06.id,g17.id),null);
+ const d={startTime:'06:00',coefficient:1,items:[]};
+ appendDisconnectedNode(d,g06,()=> 'a');
+ appendDisconnectedNode(d,g17,()=> 'b');
+ assert.equal(d.items.length,2);
+ assert.equal(d.items[1].incoming.connectionStatus,'unverified');
+ assert.equal(d.items[1].incoming.actualMinutes,null);
+ normalizeDay(d,combined);
+ assert.equal(d.items[1].incoming.connectionStatus,'unverified');
+ assert.equal(missingSegments(d),1);
+ d.items[1].incoming.actualMinutes=240;
+ normalizeDay(d,combined);
+ assert.equal(d.items[1].incoming.actualMinutes,240);
+ assert.equal(shortestPath(combined,g06.id,g17.id),null);
 });
