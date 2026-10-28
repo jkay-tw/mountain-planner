@@ -438,7 +438,7 @@
     {
       "from": "黑水塘",
       "to": "指標1.0K",
-      "forwardMinutes": 55,
+      "forwardMinutes": 35,
       "reverseMinutes": 50,
       "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new3.jpg"
     }
@@ -450,6 +450,6 @@
     "黑水塘": "New G07 local node at the explicitly labeled water pond in the update. No cross-chart identity inferred."
   },
   "heldReason": "Western end of the update is cropped at the 2K/3145m area. Do not equate it to the older 2.2K fork or compose the old 35/50 connector with the new 55/50 pond leg. Full western connection needs more evidence.",
-  "directionNotes": "Patch pond-to-1K arrow points southeast with 55; reverse northwest arrow has 50. 1K-to-summit arrow east has 40, reverse west 20. All other retained full-diagram direction labels independently read.",
+  "directionNotes": "Patch pond-to-1K arrow points southeast with 35; reverse northwest arrow has 50. 1K-to-summit arrow east has 40, reverse west 20. All other retained full-diagram direction labels independently read. Magnified arrow crop used to distinguish the forward 35 label from 55.",
   "itineraryPolicy": "Preserve existing saved officialMinutes/actualMinutes snapshots and all original IDs."
 }

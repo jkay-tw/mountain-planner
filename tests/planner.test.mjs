@@ -832,7 +832,7 @@ test('G07 composite review permits only update-backed pond and summit directions
  const r=addRouteIdentity(JSON.parse(readFileSync(new URL('../data/routes/G07.preview.json',import.meta.url),'utf8')));
  const g=mergeReviewedRoutes([r]);
  assert.equal(g.segments.length,92);
- assert.equal(shortestPath(g,'g07-043','g07-030').minutes,55);
+ assert.equal(shortestPath(g,'g07-043','g07-030').minutes,35);
  assert.equal(shortestPath(g,'g07-030','g07-043').minutes,50);
  assert.equal(shortestPath(g,'g07-030','g07-033').minutes,40);
  assert.equal(shortestPath(g,'g07-033','g07-030').minutes,20);
