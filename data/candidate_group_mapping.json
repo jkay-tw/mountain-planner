@@ -205,6 +205,17 @@
       "sourceVerified": true,
       "retainSearchAlias": true,
       "neverChangeOtherGroups": true
+    },
+    {
+      "group": "大霸聖稜武陵四秀",
+      "officialChartId": "G04",
+      "from": "8.8 K岔路",
+      "to": "8.8K岔路",
+      "kind": "source_verified_format_normalization",
+      "userConfirmed": false,
+      "sourceVerified": true,
+      "retainSearchAlias": true,
+      "neverChangeOtherGroups": true
     }
   ],
   "supplementalGroups": [
