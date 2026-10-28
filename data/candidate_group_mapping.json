@@ -194,6 +194,17 @@
       "sourceVerified": true,
       "retainSearchAlias": true,
       "neverChangeOtherGroups": true
+    },
+    {
+      "group": "玉山群峰",
+      "officialChartId": "G02",
+      "from": "大鐵山",
+      "to": "大鐵杉",
+      "kind": "source_verified_typo_correction",
+      "userConfirmed": false,
+      "sourceVerified": true,
+      "retainSearchAlias": true,
+      "neverChangeOtherGroups": true
     }
   ],
   "supplementalGroups": [
