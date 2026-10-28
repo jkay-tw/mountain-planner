@@ -738,7 +738,10 @@ test('G04 duplicate generic labels stay separate and vehicle-marked farm links s
  const forkDaba=route.nodes.find(n=>n.id==='g04-fork-daba');
  const forkShengleng=route.nodes.find(n=>n.id==='g04-fork-shengleng');
  assert.ok(forkDaba&&forkShengleng);
- assert.equal(shortestPath(route,forkDaba.id,forkShengleng.id),null);
+ const between=shortestPath(route,forkDaba.id,forkShengleng.id);
+ assert.ok(between);
+ assert.ok(between.segments.length>3);
+ assert.ok(!route.segments.some(x=>x.fromId===forkDaba.id&&x.toId===forkShengleng.id));
  assert.ok(!route.segments.some(x=>x.from==='農場岔路'&&['武陵山莊','武陵農場·遊客中心'].includes(x.to)));
  assert.equal(route.nodes.find(x=>x.name==='雪山主峰')?.id,'shared:cw-v07-074');
  assert.equal(route.nodes.find(x=>x.name==='翠池山屋')?.id,'shared:cw-v07-066');
