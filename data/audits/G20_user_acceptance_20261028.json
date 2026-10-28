@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "chartId": "G20",
+  "previewVersion": "v0.7.21",
+  "acceptedAt": "2026-10-28",
+  "acceptedBy": "owner",
+  "userStatement": "已驗收G20 ok",
+  "scope": "G20 newly added timed walking mainline to summit and its displayed routing behavior",
+  "status": "user-accepted",
+  "doesNotAuthorizeProductionRelease": true,
+  "doesNotVerifyOtherCharts": true
+}
