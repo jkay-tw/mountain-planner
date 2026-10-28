@@ -2,13 +2,14 @@ import {loadManifest,loadRoute} from './data-loader.js';
 import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming} from './planner.js';
 import {validatePlan} from './validation.js';
 import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js';
+import {migrateLegacyPlanDays} from './legacy-plan-migration.js?v=v0719';
 import {exportExcel} from './exporter.js';
 import {filterLocations} from './node-browser.js?v=v074';
 import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=v0712';
 
 const $=id=>document.getElementById(id);
 const STORAGE_KEY='mountain-planner.unified-preview-autosave.v0711';
-const APP_VERSION='v0.7.18 Unified Preview';
+const APP_VERSION='v0.7.19 Unified Preview';
 const COLLAPSE_KEY='mountain-planner.unified-preview-collapsed.v0711';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',scope='';
@@ -254,7 +255,12 @@ async function importPlan(e){
  const file=e.target.files?.[0];e.target.value='';if(!file)return;
  try{
   const data=validatePlan(JSON.parse(await file.text()),['GLOBAL-PREVIEW',...manifest.routes.map(r=>r.id)]);
-  const importedDays=sanitizeDays(migrateDaysToNodeIds(data.days,route));
+  const sourceMeta=manifest.routes.find(x=>x.id===data.routeId);
+  const importedRoute=sourceMeta?addRouteIdentity(await loadRoute(sourceMeta.file)):null;
+  const migrated=data.routeId&&data.routeId!=='GLOBAL-PREVIEW'
+    ?migrateLegacyPlanDays(data.days,importedRoute,route)
+    :migrateDaysToNodeIds(data.days,route);
+  const importedDays=sanitizeDays(migrated);
   if(days.some(d=>d.items.length)&&!confirm('匯入將取代目前行程，可以使用復原。確定？'))return;
   scope=data.scope&&['all',...manifest.routes.map(m=>m.id)].includes(data.scope)?data.scope:'all';
   $('routeSelect').value=scope;
