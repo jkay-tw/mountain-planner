@@ -1,15 +1,15 @@
 import {loadManifest,loadRoute} from './data-loader.js';
-import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming} from './planner.js?v=v0722';
+import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming} from './planner.js?v=v0723';
 import {validatePlan} from './validation.js';
-import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js';
-import {migrateLegacyPlanDays} from './legacy-plan-migration.js?v=v0719';
+import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js?v=v0723';
+import {migrateLegacyPlanDays} from './legacy-plan-migration.js?v=v0723';
 import {exportExcel} from './exporter.js';
 import {filterLocations} from './node-browser.js?v=v074';
-import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=v0722';
+import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=v0723';
 
 const $=id=>document.getElementById(id);
 const STORAGE_KEY='mountain-planner.unified-preview-autosave.v0711';
-const APP_VERSION='v0.7.22 Unified Preview';
+const APP_VERSION='v0.7.23 Unified Preview';
 const COLLAPSE_KEY='mountain-planner.unified-preview-collapsed.v0711';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',scope='';

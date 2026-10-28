@@ -1,5 +1,5 @@
 {
-  "dataset_version": "v0.7.22-global-graph-preview",
+  "dataset_version": "v0.7.23-main-schematic-policy-preview",
   "mode": "global-verified-graph-scoped-node-browser-preview",
   "routes": [
     {
@@ -32,12 +32,11 @@
     },
     {
       "id": "G07",
-      "name": "G07｜北一段（已重核，局部連接待核）",
-      "file": "data/routes/G07.preview.json?v=v0722a",
-      "status": "partial-source-reviewed-preview",
+      "name": "G07｜北一段（以步程示意圖為準）",
+      "file": "data/routes/G07.preview.json?v=v0723",
+      "status": "source-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
-      "routingEnabled": true,
-      "update_source_url": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new3.jpg"
+      "routingEnabled": true
     },
     {
       "id": "G08",
