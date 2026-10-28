@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "sourceIndexURL": "https://www.sunriver.com.tw/step2020.htm",
+  "lastIndexChecked": "2026-10-28",
+  "explanation": "Official chart URLs are the href targets of the G02–G20 walking-time diagram links, not copies of chart images. Chart links were read from official index; individual segment values remain UNVERIFIED until direction-level source review.",
+  "charts": [
+    {
+      "id": "G02",
+      "chartURL": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "revision": "2020-index-main-diagram",
+      "retrievalMethod": "official-index-link",
+      "perDirectionVerified": false
+    },
+    {
+      "id": "G03",
+      "chartURL": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "revision": "2020-index-main-diagram",
+      "retrievalMethod": "official-index-link",
+      "perDirectionVerified": false
+    },
+    {
+      "id": "G04",
+      "chartURL": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "revision": "2020-index-main-diagram",
+      "retrievalMethod": "official-index-link",
+      "perDirectionVerified": false
+    },
+    {
+      "id": "G05",
+      "chartURL": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+      "revision": "2020-index-main-diagram",
+      "retrievalMethod": "official-index-link",
+      "perDirectionVerified": false
+    },
+    {
+      "id": "G06",
+      "chartURL": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+      "revision": "2020-index-main-diagram",
+      "retrievalMethod": "official-index-link",
+      "perDirectionVerified": false
+    },
+    {
+      "id": "G07",
+      "chartURL": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new3.jpg",
+      "revision": "updated-diagram-linked-by-official-index",
+      "retrievalMethod": "official-index-link",
+      "perDirectionVerified": false
+    },
+    {
+      "id": "G08",
+      "chartURL": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "revision": "2020-index-main-diagram",
+      "retrievalMethod": "official-index-link",
+      "perDirectionVerified": false
+    },
+    {
+      "id": "G09",
+      "chartURL": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new3.jpg",
+      "revision": "updated-diagram-linked-by-official-index",
+      "retrievalMethod": "official-index-link",
+      "perDirectionVerified": false
+    },
+    {
+      "id": "G10",
+      "chartURL": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "revision": "2020-index-main-diagram",
+      "retrievalMethod": "official-index-link",
+      "perDirectionVerified": false
+    },
+    {
+      "id": "G11",
+      "chartURL": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "revision": "2020-index-main-diagram",
+      "retrievalMethod": "official-index-link",
+      "perDirectionVerified": false
+    },
+    {
+      "id": "G12",
+      "chartURL": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "revision": "2020-index-main-diagram",
+      "retrievalMethod": "official-index-link",
+      "perDirectionVerified": false
+    },
+    {
+      "id": "G13",
+      "chartURL": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "revision": "2020-index-main-diagram",
+      "retrievalMethod": "official-index-link",
+      "perDirectionVerified": false
+    },
+    {
+      "id": "G14",
+      "chartURL": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "revision": "2020-index-main-diagram",
+      "retrievalMethod": "official-index-link",
+      "perDirectionVerified": false
+    },
+    {
+      "id": "G15",
+      "chartURL": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "revision": "2020-index-main-diagram",
+      "retrievalMethod": "official-index-link",
+      "perDirectionVerified": false
+    },
+    {
+      "id": "G16",
+      "chartURL": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+      "revision": "2020-index-main-diagram",
+      "retrievalMethod": "official-index-link",
+      "perDirectionVerified": false
+    },
+    {
+      "id": "G17",
+      "chartURL": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "revision": "2020-index-main-diagram",
+      "retrievalMethod": "official-index-link",
+      "perDirectionVerified": false
+    },
+    {
+      "id": "G18",
+      "chartURL": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "revision": "2020-index-main-diagram",
+      "retrievalMethod": "official-index-link",
+      "perDirectionVerified": false
+    },
+    {
+      "id": "G19",
+      "chartURL": "https://www.sunriver.com.tw/images/hiking/G19_hiking.jpg",
+      "revision": "2020-index-main-diagram",
+      "retrievalMethod": "official-index-link",
+      "perDirectionVerified": false
+    },
+    {
+      "id": "G20",
+      "chartURL": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "revision": "2020-index-main-diagram",
+      "retrievalMethod": "official-index-link",
+      "perDirectionVerified": false
+    }
+  ],
+  "auditPolicy": {
+    "independentDirectionCheckRequired": true,
+    "notEquivalentToNumericalAgreement": true,
+    "separateSlowOrHeavyTime": true,
+    "neverUseCarRoadAsWalkingSegment": true,
+    "unreadableOrConflictingDirections": "needs-manual-source-check",
+    "legalScope": "source links only; no diagram copying in repository"
+  }
+}
