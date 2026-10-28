@@ -43,4 +43,20 @@ class GroupMappingTests(unittest.TestCase):
                 self.mapping)
 
 
+
+    def test_source_verified_typo_and_exact_corrupt_row_exclusion(self):
+        tiny={'schemaVersion':1,'mapping':[dict(candidateGroup='丹大東郡',officialChartId='G15')],
+              'renames':[dict(group='丹大東郡',from='33.5K大崩山',to='33.5K大崩塌',
+                              sourceVerified=True,userConfirmed=False)],
+              'excludedCandidateSegments':[dict(group='丹大東郡',**{'from':'烏利加南東峰山屋','to':'麻利加南東峰山屋'},
+                                                go=30,back=20,sourceVerified=True,reason='corrupt')]}
+        raw={'segments':[
+            {'group':'丹大東郡','from':'33K行車終點','to':'33.5K大崩山','go':30,'back':30},
+            {'group':'丹大東郡','from':'烏利加南東峰山屋','to':'麻利加南東峰山屋','go':30,'back':20}]}
+        normalized,report=module.normalize(raw,tiny)
+        self.assertEqual(len(normalized['segments']),1)
+        self.assertEqual(normalized['segments'][0]['to'],'33.5K大崩塌')
+        self.assertEqual(len(report['displayRenames']),1)
+        self.assertEqual(len(report['excludedCandidateSegments']),1)
+
 if __name__=='__main__':unittest.main()
