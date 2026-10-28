@@ -32,10 +32,10 @@
     },
     {
       "id": "G07",
-      "name": "G07｜北一段（更新版已核對）",
+      "name": "G07｜北一段（需重新核對最新版）",
       "file": "data/routes/G07.preview.json",
-      "status": "source-reviewed-preview",
-      "source_url": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg"
+      "status": "prior-version-source-review-current-recheck-pending",
+      "source_url": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new3.jpg"
     },
     {
       "id": "G08",
