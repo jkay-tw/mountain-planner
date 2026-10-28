@@ -689,3 +689,38 @@ test('G02 source review contains 58 walking directions, excludes vehicle transfe
  assert.ok(!route.segments.some(x=>x.from==='塔塔加遊客中心'||x.to==='塔塔加遊客中心'));
  assert.equal(route.nodes.find(x=>x.name==='荖濃溪營地')?.id,'shared:cw-v07-069');
 });
+
+test('explicit node IDs support duplicate display names without creating phantom cross-links',()=>{
+ const route=addRouteIdentity({
+  route_id:'DUP',
+  nodes:[
+   {id:'fork-a',name:'岔路'},{id:'fork-b',name:'岔路'},
+   {id:'a',name:'A'},{id:'b',name:'B'}
+  ],
+  segments:[
+   {from:'A',to:'岔路',fromId:'a',toId:'fork-a',minutes:10},
+   {from:'岔路',to:'A',fromId:'fork-a',toId:'a',minutes:10},
+   {from:'B',to:'岔路',fromId:'b',toId:'fork-b',minutes:20},
+   {from:'岔路',to:'B',fromId:'fork-b',toId:'b',minutes:20}
+  ]
+ });
+ assert.equal(route.nodes.filter(n=>n.name==='岔路').length,2);
+ assert.equal(shortestPath(route,'a','fork-a').minutes,10);
+ assert.equal(shortestPath(route,'a','fork-b'),null);
+});
+test('legacy name-only plan cannot silently choose between duplicate-name nodes',()=>{
+ const route=addRouteIdentity({
+  route_id:'DUP',
+  nodes:[{id:'fork-a',name:'岔路'},{id:'fork-b',name:'岔路'}],
+  segments:[{from:'岔路',to:'岔路',fromId:'fork-a',toId:'fork-b',minutes:5}]
+ });
+ assert.throws(()=>migrateDaysToNodeIds([{
+  id:'d',startTime:'06:00',coefficient:1,linkedStart:false,note:'',
+  items:[{id:'x',type:'location',name:'岔路',note:'',incoming:null}]
+ }],route),/Ambiguous node name requires nodeId/);
+ const migrated=migrateDaysToNodeIds([{
+  id:'d',startTime:'06:00',coefficient:1,linkedStart:false,note:'',
+  items:[{id:'x',type:'location',name:'岔路',nodeId:'fork-b',note:'',incoming:null}]
+ }],route);
+ assert.equal(migrated[0].items[0].nodeId,'fork-b');
+});
