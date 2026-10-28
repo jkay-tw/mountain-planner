@@ -1,7 +1,14 @@
 {
-  "dataset_version": "v0.7.16-global-graph-preview",
+  "dataset_version": "v0.7.17-global-graph-preview",
   "mode": "global-verified-graph-scoped-node-browser-preview",
   "routes": [
+    {
+      "id": "G02",
+      "name": "G02｜玉山群峰（已核對步行路網）",
+      "file": "data/routes/G02.preview.json",
+      "status": "source-reviewed-preview",
+      "source_url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg"
+    },
     {
       "id": "G03",
       "name": "G03｜郡大山・西巒大山（步行核對部分）",
