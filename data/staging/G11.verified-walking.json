@@ -1,0 +1,351 @@
+{
+  "route_id": "G11-STAGING",
+  "route_name": "能高越嶺",
+  "status": "source-audited-staging-not-published",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg"
+  },
+  "nodes": [
+    {
+      "id": "g11-staging-001",
+      "name": "五甲崩山"
+    },
+    {
+      "id": "g11-staging-002",
+      "name": "天池山莊"
+    },
+    {
+      "id": "g11-staging-003",
+      "name": "天池岔路口"
+    },
+    {
+      "id": "g11-staging-004",
+      "name": "屯原登山口"
+    },
+    {
+      "id": "g11-staging-005",
+      "name": "卡賀爾山"
+    },
+    {
+      "id": "g11-staging-006",
+      "name": "奇萊主山南峰"
+    },
+    {
+      "id": "g11-staging-007",
+      "name": "奇萊保線所"
+    },
+    {
+      "id": "g11-staging-008",
+      "name": "南峰登山口"
+    },
+    {
+      "id": "g11-staging-009",
+      "name": "南華山"
+    },
+    {
+      "id": "g11-staging-010",
+      "name": "能高主峰"
+    },
+    {
+      "id": "g11-staging-011",
+      "name": "雲海保線所"
+    },
+    {
+      "id": "g11-staging-012",
+      "name": "縣界啞口"
+    },
+    {
+      "id": "g11-staging-013",
+      "name": "檜林保線所"
+    }
+  ],
+  "segments": [
+    {
+      "from": "屯原登山口",
+      "to": "雲海保線所",
+      "fromId": "g11-staging-004",
+      "toId": "g11-staging-011",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "雲海保線所",
+      "to": "屯原登山口",
+      "fromId": "g11-staging-011",
+      "toId": "g11-staging-004",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "雲海保線所",
+      "to": "天池山莊",
+      "fromId": "g11-staging-011",
+      "toId": "g11-staging-002",
+      "minutes": 210,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "天池山莊",
+      "to": "雲海保線所",
+      "fromId": "g11-staging-002",
+      "toId": "g11-staging-011",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "天池山莊",
+      "to": "縣界啞口",
+      "fromId": "g11-staging-002",
+      "toId": "g11-staging-012",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "縣界啞口",
+      "to": "天池山莊",
+      "fromId": "g11-staging-012",
+      "toId": "g11-staging-002",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "縣界啞口",
+      "to": "檜林保線所",
+      "fromId": "g11-staging-012",
+      "toId": "g11-staging-013",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "檜林保線所",
+      "to": "縣界啞口",
+      "fromId": "g11-staging-013",
+      "toId": "g11-staging-012",
+      "minutes": 240,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "檜林保線所",
+      "to": "五甲崩山",
+      "fromId": "g11-staging-013",
+      "toId": "g11-staging-001",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "五甲崩山",
+      "to": "檜林保線所",
+      "fromId": "g11-staging-001",
+      "toId": "g11-staging-013",
+      "minutes": 170,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "五甲崩山",
+      "to": "奇萊保線所",
+      "fromId": "g11-staging-001",
+      "toId": "g11-staging-007",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "奇萊保線所",
+      "to": "五甲崩山",
+      "fromId": "g11-staging-007",
+      "toId": "g11-staging-001",
+      "minutes": 260,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "天池山莊",
+      "to": "天池岔路口",
+      "fromId": "g11-staging-002",
+      "toId": "g11-staging-003",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "天池岔路口",
+      "to": "天池山莊",
+      "fromId": "g11-staging-003",
+      "toId": "g11-staging-002",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "天池岔路口",
+      "to": "南峰登山口",
+      "fromId": "g11-staging-003",
+      "toId": "g11-staging-008",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "南峰登山口",
+      "to": "天池岔路口",
+      "fromId": "g11-staging-008",
+      "toId": "g11-staging-003",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "南峰登山口",
+      "to": "奇萊主山南峰",
+      "fromId": "g11-staging-008",
+      "toId": "g11-staging-006",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "奇萊主山南峰",
+      "to": "南峰登山口",
+      "fromId": "g11-staging-006",
+      "toId": "g11-staging-008",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "天池岔路口",
+      "to": "南華山",
+      "fromId": "g11-staging-003",
+      "toId": "g11-staging-009",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "南華山",
+      "to": "天池岔路口",
+      "fromId": "g11-staging-009",
+      "toId": "g11-staging-003",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "南華山",
+      "to": "縣界啞口",
+      "fromId": "g11-staging-009",
+      "toId": "g11-staging-012",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "縣界啞口",
+      "to": "南華山",
+      "fromId": "g11-staging-012",
+      "toId": "g11-staging-009",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "縣界啞口",
+      "to": "卡賀爾山",
+      "fromId": "g11-staging-012",
+      "toId": "g11-staging-005",
+      "minutes": 170,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "卡賀爾山",
+      "to": "縣界啞口",
+      "fromId": "g11-staging-005",
+      "toId": "g11-staging-012",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "卡賀爾山",
+      "to": "能高主峰",
+      "fromId": "g11-staging-005",
+      "toId": "g11-staging-010",
+      "minutes": 160,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    },
+    {
+      "from": "能高主峰",
+      "to": "卡賀爾山",
+      "fromId": "g11-staging-010",
+      "toId": "g11-staging-005",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "audit": "G11_JSON_vs_上河官方圖_核對.csv"
+    }
+  ]
+}

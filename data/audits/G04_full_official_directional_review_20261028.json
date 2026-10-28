@@ -1,0 +1,560 @@
+{
+  "schemaVersion": 1,
+  "chartId": "G04",
+  "chartName": "大霸・聖稜・武陵四秀",
+  "officialImageURL": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+  "officialIndexURL": "https://www.sunriver.com.tw/step2020.htm",
+  "reviewedAt": "2026-10-28",
+  "reviewedBy": "assistant",
+  "reviewMethod": "direct visual comparison with official chart arrows; duplicate generic display names separated by diagram context and explicit Node IDs; vehicle-marked farm-road links excluded",
+  "status": "full-candidate-scope-source-checked",
+  "reviewedWalkingPairs": [
+    {
+      "from": "鎮西堡",
+      "to": "神木區登山口",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking"
+    },
+    {
+      "from": "神木區登山口",
+      "to": "A.B區神木岔路",
+      "forwardMinutes": 40,
+      "reverseMinutes": 35,
+      "travelMode": "walking"
+    },
+    {
+      "from": "A.B區神木岔路",
+      "to": "岔路口",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "travelMode": "walking"
+    },
+    {
+      "from": "岔路口",
+      "to": "往馬洋山岔路口",
+      "forwardMinutes": 130,
+      "reverseMinutes": 70,
+      "travelMode": "walking"
+    },
+    {
+      "from": "往馬洋山岔路口",
+      "to": "獵寮營地",
+      "forwardMinutes": 120,
+      "reverseMinutes": 80,
+      "travelMode": "walking"
+    },
+    {
+      "from": "獵寮營地",
+      "to": "第一營地",
+      "forwardMinutes": 45,
+      "reverseMinutes": 25,
+      "travelMode": "walking"
+    },
+    {
+      "from": "第一營地",
+      "to": "第二營地",
+      "forwardMinutes": 130,
+      "reverseMinutes": 95,
+      "travelMode": "walking"
+    },
+    {
+      "from": "第二營地",
+      "to": "馬洋山",
+      "forwardMinutes": 15,
+      "reverseMinutes": 10,
+      "travelMode": "walking"
+    },
+    {
+      "from": "馬洋山",
+      "to": "馬洋池",
+      "forwardMinutes": 110,
+      "reverseMinutes": 100,
+      "travelMode": "walking"
+    },
+    {
+      "from": "馬洋池",
+      "to": "中霸坪叉路",
+      "forwardMinutes": 180,
+      "reverseMinutes": 100,
+      "travelMode": "walking"
+    },
+    {
+      "from": "觀霧",
+      "to": "0.3K檢查哨",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking"
+    },
+    {
+      "from": "0.3K檢查哨",
+      "to": "大霸尖山登山口",
+      "forwardMinutes": 400,
+      "reverseMinutes": 430,
+      "travelMode": "walking"
+    },
+    {
+      "from": "大霸尖山登山口",
+      "to": "九九山莊",
+      "forwardMinutes": 210,
+      "reverseMinutes": 130,
+      "travelMode": "walking"
+    },
+    {
+      "from": "九九山莊",
+      "to": "加利山登山口",
+      "forwardMinutes": 80,
+      "reverseMinutes": 50,
+      "travelMode": "walking"
+    },
+    {
+      "from": "加利山登山口",
+      "to": "加利山",
+      "forwardMinutes": 30,
+      "reverseMinutes": 30,
+      "travelMode": "walking"
+    },
+    {
+      "from": "加利山登山口",
+      "to": "伊澤山第二登山口",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "travelMode": "walking"
+    },
+    {
+      "from": "伊澤山第二登山口",
+      "to": "伊澤山",
+      "forwardMinutes": 20,
+      "reverseMinutes": 15,
+      "travelMode": "walking"
+    },
+    {
+      "from": "伊澤山第二登山口",
+      "to": "8.8K岔路",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking"
+    },
+    {
+      "from": "8.8K岔路",
+      "to": "中霸坪叉路",
+      "forwardMinutes": 60,
+      "reverseMinutes": 45,
+      "travelMode": "walking"
+    },
+    {
+      "from": "中霸坪叉路",
+      "to": "小霸岔路登山口",
+      "forwardMinutes": 40,
+      "reverseMinutes": 45,
+      "travelMode": "walking"
+    },
+    {
+      "from": "小霸岔路登山口",
+      "to": "小霸尖山",
+      "forwardMinutes": 50,
+      "reverseMinutes": 35,
+      "travelMode": "walking"
+    },
+    {
+      "from": "小霸岔路登山口",
+      "to": "岔路",
+      "forwardMinutes": 15,
+      "reverseMinutes": 15,
+      "travelMode": "walking"
+    },
+    {
+      "from": "岔路",
+      "to": "霸南山屋",
+      "forwardMinutes": 70,
+      "reverseMinutes": 100,
+      "travelMode": "walking"
+    },
+    {
+      "from": "霸南山屋",
+      "to": "巴紗拉雲山屋毀損",
+      "forwardMinutes": 80,
+      "reverseMinutes": 60,
+      "travelMode": "walking"
+    },
+    {
+      "from": "巴紗拉雲山屋毀損",
+      "to": "巴紗拉雲山",
+      "forwardMinutes": 80,
+      "reverseMinutes": 60,
+      "travelMode": "walking"
+    },
+    {
+      "from": "巴紗拉雲山",
+      "to": "布秀蘭山",
+      "forwardMinutes": 140,
+      "reverseMinutes": 110,
+      "travelMode": "walking"
+    },
+    {
+      "from": "布秀蘭山",
+      "to": "素密達山",
+      "forwardMinutes": 140,
+      "reverseMinutes": 130,
+      "travelMode": "walking"
+    },
+    {
+      "from": "素密達山",
+      "to": "素密達山屋",
+      "forwardMinutes": 70,
+      "reverseMinutes": 90,
+      "travelMode": "walking"
+    },
+    {
+      "from": "素密達山屋",
+      "to": "穆特勒布山",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking"
+    },
+    {
+      "from": "穆特勒布山",
+      "to": "岔路",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking"
+    },
+    {
+      "from": "岔路",
+      "to": "穆南鞍部營地",
+      "forwardMinutes": 100,
+      "reverseMinutes": 85,
+      "travelMode": "walking"
+    },
+    {
+      "from": "岔路",
+      "to": "水源",
+      "forwardMinutes": 15,
+      "reverseMinutes": 25,
+      "travelMode": "walking"
+    },
+    {
+      "from": "雪北登山口",
+      "to": "雪山北峰",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking"
+    },
+    {
+      "from": "穆南鞍部營地",
+      "to": "雪北登山口",
+      "forwardMinutes": 95,
+      "reverseMinutes": 65,
+      "travelMode": "walking"
+    },
+    {
+      "from": "雪北登山口",
+      "to": "雪北山屋",
+      "forwardMinutes": 25,
+      "reverseMinutes": 35,
+      "travelMode": "walking"
+    },
+    {
+      "from": "雪北山屋",
+      "to": "凱蘭特崑山北峰",
+      "forwardMinutes": 90,
+      "reverseMinutes": 75,
+      "travelMode": "walking"
+    },
+    {
+      "from": "凱蘭特崑山北峰",
+      "to": "鞍部叉路",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking"
+    },
+    {
+      "from": "鞍部叉路",
+      "to": "凱蘭特崑山",
+      "forwardMinutes": 10,
+      "reverseMinutes": 5,
+      "travelMode": "walking"
+    },
+    {
+      "from": "凱蘭特崑山",
+      "to": "北稜角",
+      "forwardMinutes": 70,
+      "reverseMinutes": 40,
+      "travelMode": "walking"
+    },
+    {
+      "from": "北稜角",
+      "to": "岔路口",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking"
+    },
+    {
+      "from": "岔路口",
+      "to": "雪山主峰",
+      "forwardMinutes": 20,
+      "reverseMinutes": 15,
+      "travelMode": "walking"
+    },
+    {
+      "from": "翠池山屋",
+      "to": "岔路口",
+      "forwardMinutes": 110,
+      "reverseMinutes": 80,
+      "travelMode": "walking"
+    },
+    {
+      "from": "溪源",
+      "to": "三六九山莊",
+      "forwardMinutes": 80,
+      "reverseMinutes": 110,
+      "travelMode": "walking"
+    },
+    {
+      "from": "圈谷底部",
+      "to": "雪山主峰",
+      "forwardMinutes": 60,
+      "reverseMinutes": 40,
+      "travelMode": "walking"
+    },
+    {
+      "from": "圈谷底部",
+      "to": "三六九山莊",
+      "forwardMinutes": 100,
+      "reverseMinutes": 140,
+      "travelMode": "walking"
+    },
+    {
+      "from": "三六九山莊",
+      "to": "雪山東峰",
+      "forwardMinutes": 60,
+      "reverseMinutes": 55,
+      "travelMode": "walking"
+    },
+    {
+      "from": "雪山東峰",
+      "to": "哭坡觀景台",
+      "forwardMinutes": 40,
+      "reverseMinutes": 80,
+      "travelMode": "walking"
+    },
+    {
+      "from": "哭坡觀景台",
+      "to": "七卡山莊",
+      "forwardMinutes": 60,
+      "reverseMinutes": 120,
+      "travelMode": "walking"
+    },
+    {
+      "from": "七卡山莊",
+      "to": "雪山登山口管理站",
+      "forwardMinutes": 55,
+      "reverseMinutes": 70,
+      "travelMode": "walking"
+    },
+    {
+      "from": "雪山登山口管理站",
+      "to": "農場岔路",
+      "forwardMinutes": 20,
+      "reverseMinutes": 20,
+      "travelMode": "walking"
+    },
+    {
+      "from": "武陵山莊",
+      "to": "桃山岔路口",
+      "forwardMinutes": 20,
+      "reverseMinutes": 10,
+      "travelMode": "walking"
+    },
+    {
+      "from": "桃山登山口",
+      "to": "桃山2K",
+      "forwardMinutes": 180,
+      "reverseMinutes": 100,
+      "travelMode": "walking"
+    },
+    {
+      "from": "桃山2K",
+      "to": "停機坪",
+      "forwardMinutes": 50,
+      "reverseMinutes": 30,
+      "travelMode": "walking"
+    },
+    {
+      "from": "停機坪",
+      "to": "桃山",
+      "forwardMinutes": 160,
+      "reverseMinutes": 90,
+      "travelMode": "walking"
+    },
+    {
+      "from": "桃山山屋",
+      "to": "三叉營地",
+      "forwardMinutes": 140,
+      "reverseMinutes": 150,
+      "travelMode": "walking"
+    },
+    {
+      "from": "三叉營地",
+      "to": "池有山登山口",
+      "forwardMinutes": 180,
+      "reverseMinutes": 280,
+      "travelMode": "walking"
+    },
+    {
+      "from": "池有山岔路口",
+      "to": "池有山",
+      "forwardMinutes": 20,
+      "reverseMinutes": 15,
+      "travelMode": "walking"
+    },
+    {
+      "from": "池有山岔路口",
+      "to": "新達山屋(水池)",
+      "forwardMinutes": 50,
+      "reverseMinutes": 60,
+      "travelMode": "walking"
+    },
+    {
+      "from": "新達山屋(水池)",
+      "to": "塔克金溪源頭",
+      "forwardMinutes": 95,
+      "reverseMinutes": 130,
+      "travelMode": "walking"
+    },
+    {
+      "from": "巴紗拉雲山屋毀損",
+      "to": "塔克金溪源頭",
+      "forwardMinutes": 80,
+      "reverseMinutes": 130,
+      "travelMode": "walking"
+    },
+    {
+      "from": "布秀蘭山",
+      "to": "品田山",
+      "forwardMinutes": 240,
+      "reverseMinutes": 200,
+      "travelMode": "walking"
+    },
+    {
+      "from": "品田山",
+      "to": "新達山屋(水池)",
+      "forwardMinutes": 80,
+      "reverseMinutes": 120,
+      "travelMode": "walking"
+    },
+    {
+      "from": "桃山山屋",
+      "to": "桃山",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking"
+    },
+    {
+      "from": "桃山",
+      "to": "詩崙山",
+      "forwardMinutes": 70,
+      "reverseMinutes": 90,
+      "travelMode": "walking"
+    },
+    {
+      "from": "詩崙山",
+      "to": "喀拉業山",
+      "forwardMinutes": 60,
+      "reverseMinutes": 70,
+      "travelMode": "walking"
+    },
+    {
+      "from": "池有山登山口",
+      "to": "煙聲瀑布",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking"
+    },
+    {
+      "from": "池有山登山口",
+      "to": "桃山岔路口",
+      "forwardMinutes": 40,
+      "reverseMinutes": 50,
+      "travelMode": "walking"
+    },
+    {
+      "from": "桃山岔路口",
+      "to": "桃山登山口",
+      "forwardMinutes": 5,
+      "reverseMinutes": 3,
+      "travelMode": "walking"
+    },
+    {
+      "from": "伊澤山",
+      "to": "8.8K岔路",
+      "forwardMinutes": 10,
+      "reverseMinutes": 15,
+      "travelMode": "walking"
+    },
+    {
+      "from": "岔路",
+      "to": "大霸尖山",
+      "forwardMinutes": 70,
+      "reverseMinutes": 50,
+      "travelMode": "walking"
+    },
+    {
+      "from": "素密達山屋",
+      "to": "岔路",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking"
+    },
+    {
+      "from": "鞍部叉路",
+      "to": "溪源",
+      "forwardMinutes": 50,
+      "reverseMinutes": 100,
+      "travelMode": "walking"
+    },
+    {
+      "from": "三叉營地",
+      "to": "池有山岔路口",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking"
+    }
+  ],
+  "excluded": [
+    {
+      "from": "農場岔路",
+      "to": "武陵農場·遊客中心",
+      "candidateForward": 10,
+      "candidateReverse": 10,
+      "reason": "official chart marks this farm-road connection with vehicle pictogram"
+    },
+    {
+      "from": "農場岔路",
+      "to": "武陵山莊",
+      "candidateForward": 10,
+      "candidateReverse": 10,
+      "reason": "official chart marks this farm-road connection with vehicle pictogram"
+    }
+  ],
+  "walkingDirectedEdges": 146,
+  "duplicateDisplayNodeIds": [
+    {
+      "id": "g04-fork-zhenxibao",
+      "name": "岔路口"
+    },
+    {
+      "id": "g04-fork-daba",
+      "name": "岔路"
+    },
+    {
+      "id": "g04-fork-shengleng",
+      "name": "岔路"
+    },
+    {
+      "id": "g04-fork-xueshan",
+      "name": "岔路口"
+    }
+  ],
+  "scopeNote": "73 walking pairs (146 directions) source-checked. Two farm-road vehicle connections excluded. Duplicate generic names are retained as display labels but are distinct physical nodes."
+}

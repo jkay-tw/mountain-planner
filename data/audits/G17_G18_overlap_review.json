@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-27",
+  "scope": "G17 南二段 and G18 新康橫斷 overlap only",
+  "sources": {
+    "G17": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+    "G18": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+  },
+  "candidateSource": "user-provided hiking-segments JSON v1.3",
+  "counts": {
+    "G17CandidatePairs": 68,
+    "G18CandidatePairs": 50,
+    "sharedDirectedEdges": 24,
+    "matchingDirectedValues": 22,
+    "conflictingDirectedValues": 2,
+    "conflictingUndirectedPairs": 1
+  },
+  "confirmedIssue": {
+    "group": "南二段",
+    "from": "向陽山",
+    "to": "西側登山口",
+    "candidateGo": 35,
+    "candidateBack": 25,
+    "officialGo": 25,
+    "officialBack": 35,
+    "otherGroup": "新康橫斷",
+    "otherFrom": "西側登山口",
+    "otherTo": "向陽山",
+    "otherGo": 35,
+    "otherBack": 25,
+    "action": "correct G17 directed travel times only after explicitly recording and rechecking original graphic",
+    "status": "source-checked-directional-discrepancy"
+  },
+  "routingSubset": {
+    "sourceAuditStatus": "eight individually reviewed walking pairs total; four duplicated directions have consistent official minutes",
+    "G17WalkingPairs": 4,
+    "G18WalkingPairs": 4,
+    "published": false,
+    "previewIntegrated": false
+  },
+  "remaining": "All other 110 candidate pairs across G17 and G18 require independent per-edge source review before publication.",
+  "acceptance": {
+    "date": "2026-10-27",
+    "status": "passed",
+    "checks": 5,
+    "scope": "original four-pair route preview only; expanded subset requires regression tests"
+  }
+}

@@ -1,0 +1,367 @@
+{
+  "route_id": "G11",
+  "route_name": "能高越嶺（步行核對部分）",
+  "status": "source-reviewed-preview",
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "page_url": "https://www.sunriver.com.tw/step2020.htm",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg"
+  },
+  "nodes": [
+    {
+      "id": "g11-001",
+      "name": "五甲崩山",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "shared:cw-v07-038",
+      "name": "天池山莊",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "shared:cw-v07-039",
+      "name": "天池岔路口",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "shared:cw-v07-045",
+      "name": "屯原登山口",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "shared:cw-v07-025",
+      "name": "卡賀爾山",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "shared:cw-v07-042",
+      "name": "奇萊主山南峰",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g11-007",
+      "name": "奇萊保線所",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "shared:cw-v07-022",
+      "name": "南峰登山口",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "shared:cw-v07-024",
+      "name": "南華山",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "shared:cw-v07-067",
+      "name": "能高主峰",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "shared:cw-v07-075",
+      "name": "雲海保線所",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "shared:cw-v07-065",
+      "name": "縣界啞口",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g11-013",
+      "name": "檜林保線所",
+      "identityStatus": "route-source-reviewed"
+    }
+  ],
+  "segments": [
+    {
+      "from": "屯原登山口",
+      "to": "雲海保線所",
+      "fromId": "shared:cw-v07-045",
+      "toId": "shared:cw-v07-075",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "雲海保線所",
+      "to": "屯原登山口",
+      "fromId": "shared:cw-v07-075",
+      "toId": "shared:cw-v07-045",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "雲海保線所",
+      "to": "天池山莊",
+      "fromId": "shared:cw-v07-075",
+      "toId": "shared:cw-v07-038",
+      "minutes": 210,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "天池山莊",
+      "to": "雲海保線所",
+      "fromId": "shared:cw-v07-038",
+      "toId": "shared:cw-v07-075",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "天池山莊",
+      "to": "縣界啞口",
+      "fromId": "shared:cw-v07-038",
+      "toId": "shared:cw-v07-065",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "縣界啞口",
+      "to": "天池山莊",
+      "fromId": "shared:cw-v07-065",
+      "toId": "shared:cw-v07-038",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "縣界啞口",
+      "to": "檜林保線所",
+      "fromId": "shared:cw-v07-065",
+      "toId": "g11-013",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "檜林保線所",
+      "to": "縣界啞口",
+      "fromId": "g11-013",
+      "toId": "shared:cw-v07-065",
+      "minutes": 240,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "檜林保線所",
+      "to": "五甲崩山",
+      "fromId": "g11-013",
+      "toId": "g11-001",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "五甲崩山",
+      "to": "檜林保線所",
+      "fromId": "g11-001",
+      "toId": "g11-013",
+      "minutes": 170,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "五甲崩山",
+      "to": "奇萊保線所",
+      "fromId": "g11-001",
+      "toId": "g11-007",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "奇萊保線所",
+      "to": "五甲崩山",
+      "fromId": "g11-007",
+      "toId": "g11-001",
+      "minutes": 260,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "天池山莊",
+      "to": "天池岔路口",
+      "fromId": "shared:cw-v07-038",
+      "toId": "shared:cw-v07-039",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "天池岔路口",
+      "to": "天池山莊",
+      "fromId": "shared:cw-v07-039",
+      "toId": "shared:cw-v07-038",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "天池岔路口",
+      "to": "南峰登山口",
+      "fromId": "shared:cw-v07-039",
+      "toId": "shared:cw-v07-022",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "南峰登山口",
+      "to": "天池岔路口",
+      "fromId": "shared:cw-v07-022",
+      "toId": "shared:cw-v07-039",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "南峰登山口",
+      "to": "奇萊主山南峰",
+      "fromId": "shared:cw-v07-022",
+      "toId": "shared:cw-v07-042",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "奇萊主山南峰",
+      "to": "南峰登山口",
+      "fromId": "shared:cw-v07-042",
+      "toId": "shared:cw-v07-022",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "天池岔路口",
+      "to": "南華山",
+      "fromId": "shared:cw-v07-039",
+      "toId": "shared:cw-v07-024",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "南華山",
+      "to": "天池岔路口",
+      "fromId": "shared:cw-v07-024",
+      "toId": "shared:cw-v07-039",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "南華山",
+      "to": "縣界啞口",
+      "fromId": "shared:cw-v07-024",
+      "toId": "shared:cw-v07-065",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "縣界啞口",
+      "to": "南華山",
+      "fromId": "shared:cw-v07-065",
+      "toId": "shared:cw-v07-024",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "縣界啞口",
+      "to": "卡賀爾山",
+      "fromId": "shared:cw-v07-065",
+      "toId": "shared:cw-v07-025",
+      "minutes": 170,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "卡賀爾山",
+      "to": "縣界啞口",
+      "fromId": "shared:cw-v07-025",
+      "toId": "shared:cw-v07-065",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "卡賀爾山",
+      "to": "能高主峰",
+      "fromId": "shared:cw-v07-025",
+      "toId": "shared:cw-v07-067",
+      "minutes": 160,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "能高主峰",
+      "to": "卡賀爾山",
+      "fromId": "shared:cw-v07-067",
+      "toId": "shared:cw-v07-025",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    }
+  ],
+  "identityPolicy": "use user-reviewed shared physical IDs where available; otherwise route-local ID"
+}

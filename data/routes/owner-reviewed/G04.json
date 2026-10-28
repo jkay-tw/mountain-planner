@@ -1,0 +1,6190 @@
+{
+  "route_id": "G04",
+  "route_name": "大霸/聖稜/四秀",
+  "status": "owner-reviewed-preview",
+  "sourceChartIds": [
+    "G04"
+  ],
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+    "revision": "owner workbook reviewed 2026-10-28; follow-ups recorded separately"
+  },
+  "reviewBasis": "owner_workbook_review",
+  "nodes": [
+    {
+      "id": "g04-001",
+      "name": "0.3K檢查哨",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-002",
+      "name": "8.8K岔路",
+      "aliases": [
+        "8.8 K岔路"
+      ],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-004",
+      "name": "九九山莊",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-005",
+      "name": "三叉營地",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-007",
+      "name": "大霸尖山",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-008",
+      "name": "大霸尖山登山口",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-009",
+      "name": "小霸尖山",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-010",
+      "name": "小霸岔路登山口",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-011",
+      "name": "中霸坪叉路",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-012",
+      "name": "巴紗拉雲山",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-013",
+      "name": "巴紗拉雲山屋毀損",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-014",
+      "name": "水源",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-015",
+      "name": "加利山",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-016",
+      "name": "加利山登山口",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-017",
+      "name": "北稜角",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-018",
+      "name": "布秀蘭山",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-019",
+      "name": "伊澤山",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-020",
+      "name": "伊澤山第二登山口",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-021",
+      "name": "池有山",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-022",
+      "name": "池有山岔路口",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-023",
+      "name": "池有山登山口",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-024",
+      "name": "往馬洋山岔路口",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-026",
+      "name": "品田山",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-027",
+      "name": "哭坡觀景台",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-028",
+      "name": "桃山",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-029",
+      "name": "桃山2K",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-030",
+      "name": "桃山山屋",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-031",
+      "name": "桃山岔路口",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-032",
+      "name": "桃山登山口",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-033",
+      "name": "神木區登山口",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-034",
+      "name": "素密達山",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-035",
+      "name": "素密達山屋",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-036",
+      "name": "馬洋山",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-037",
+      "name": "馬洋池",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-038",
+      "name": "停機坪",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-039",
+      "name": "圈谷底部",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-040",
+      "name": "第一營地",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-041",
+      "name": "第二營地",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-043",
+      "name": "雪山北峰",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-044",
+      "name": "雪山東峰",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-045",
+      "name": "雪山登山口管理站",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-046",
+      "name": "雪北山屋",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-047",
+      "name": "雪北登山口",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-048",
+      "name": "凱蘭特崑山",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-049",
+      "name": "凱蘭特崑山北峰",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-050",
+      "name": "喀拉業山",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-051",
+      "name": "塔克金溪源頭",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-052",
+      "name": "新達山屋(水池)",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-053",
+      "name": "溪源",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-054",
+      "name": "煙聲瀑布",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-055",
+      "name": "詩崙山",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-056",
+      "name": "農場岔路",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-058",
+      "name": "鞍部叉路",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-059",
+      "name": "穆南鞍部營地",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-060",
+      "name": "穆特勒布山",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-061",
+      "name": "獵寮營地",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-062",
+      "name": "鎮西堡",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-063",
+      "name": "霸南山屋",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-064",
+      "name": "觀霧",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-065",
+      "name": "A.B區神木岔路",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-fork-daba",
+      "name": "岔路",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-fork-shengleng",
+      "name": "岔路",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-fork-xueshan",
+      "name": "岔路口",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g04-fork-zhenxibao",
+      "name": "岔路口",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "node:f6f2ba4c01559d0ff632",
+      "name": "武陵農場·遊客中心",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "shared:cw-v07-003",
+      "name": "七卡山莊",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-004",
+      "name": "三六九山莊",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-056",
+      "name": "武陵山莊",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-066",
+      "name": "翠池山屋",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-074",
+      "name": "雪山主峰",
+      "aliases": [],
+      "groups": [
+        "G04"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    }
+  ],
+  "segments": [
+    {
+      "fromId": "g04-033",
+      "toId": "g04-065",
+      "from": "神木區登山口",
+      "to": "A.B區神木岔路",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE59C3E282D"
+      ],
+      "evidenceRows": [
+        64
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RE59C3E282D",
+          "sheetRows": [
+            64
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-065",
+      "toId": "g04-033",
+      "from": "A.B區神木岔路",
+      "to": "神木區登山口",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE59C3E282D"
+      ],
+      "evidenceRows": [
+        64
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RE59C3E282D",
+          "sheetRows": [
+            64
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-065",
+      "toId": "g04-fork-zhenxibao",
+      "from": "A.B區神木岔路",
+      "to": "岔路口",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE2324F3D01"
+      ],
+      "evidenceRows": [
+        65
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RE2324F3D01",
+          "sheetRows": [
+            65
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-fork-zhenxibao",
+      "toId": "g04-065",
+      "from": "岔路口",
+      "to": "A.B區神木岔路",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE2324F3D01"
+      ],
+      "evidenceRows": [
+        65
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RE2324F3D01",
+          "sheetRows": [
+            65
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-fork-zhenxibao",
+      "toId": "g04-024",
+      "from": "岔路口",
+      "to": "往馬洋山岔路口",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA5AC1E5BB8"
+      ],
+      "evidenceRows": [
+        66
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RA5AC1E5BB8",
+          "sheetRows": [
+            66
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-024",
+      "toId": "g04-fork-zhenxibao",
+      "from": "往馬洋山岔路口",
+      "to": "岔路口",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA5AC1E5BB8"
+      ],
+      "evidenceRows": [
+        66
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RA5AC1E5BB8",
+          "sheetRows": [
+            66
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-024",
+      "toId": "g04-061",
+      "from": "往馬洋山岔路口",
+      "to": "獵寮營地",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R03277CB710"
+      ],
+      "evidenceRows": [
+        67
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R03277CB710",
+          "sheetRows": [
+            67
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-061",
+      "toId": "g04-024",
+      "from": "獵寮營地",
+      "to": "往馬洋山岔路口",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R03277CB710"
+      ],
+      "evidenceRows": [
+        67
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R03277CB710",
+          "sheetRows": [
+            67
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-061",
+      "toId": "g04-040",
+      "from": "獵寮營地",
+      "to": "第一營地",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R815F734651"
+      ],
+      "evidenceRows": [
+        68
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R815F734651",
+          "sheetRows": [
+            68
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-040",
+      "toId": "g04-061",
+      "from": "第一營地",
+      "to": "獵寮營地",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R815F734651"
+      ],
+      "evidenceRows": [
+        68
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R815F734651",
+          "sheetRows": [
+            68
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-040",
+      "toId": "g04-041",
+      "from": "第一營地",
+      "to": "第二營地",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R68EF3BD3AC"
+      ],
+      "evidenceRows": [
+        69
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R68EF3BD3AC",
+          "sheetRows": [
+            69
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-041",
+      "toId": "g04-040",
+      "from": "第二營地",
+      "to": "第一營地",
+      "minutes": 95,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R68EF3BD3AC"
+      ],
+      "evidenceRows": [
+        69
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R68EF3BD3AC",
+          "sheetRows": [
+            69
+          ],
+          "minutes": 95
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-041",
+      "toId": "g04-036",
+      "from": "第二營地",
+      "to": "馬洋山",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6B40F55650"
+      ],
+      "evidenceRows": [
+        70
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R6B40F55650",
+          "sheetRows": [
+            70
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-036",
+      "toId": "g04-041",
+      "from": "馬洋山",
+      "to": "第二營地",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6B40F55650"
+      ],
+      "evidenceRows": [
+        70
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R6B40F55650",
+          "sheetRows": [
+            70
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-036",
+      "toId": "g04-037",
+      "from": "馬洋山",
+      "to": "馬洋池",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2676268FCE"
+      ],
+      "evidenceRows": [
+        71
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R2676268FCE",
+          "sheetRows": [
+            71
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-037",
+      "toId": "g04-036",
+      "from": "馬洋池",
+      "to": "馬洋山",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2676268FCE"
+      ],
+      "evidenceRows": [
+        71
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R2676268FCE",
+          "sheetRows": [
+            71
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-037",
+      "toId": "g04-011",
+      "from": "馬洋池",
+      "to": "中霸坪叉路",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE85CE5B8BA"
+      ],
+      "evidenceRows": [
+        72
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RE85CE5B8BA",
+          "sheetRows": [
+            72
+          ],
+          "minutes": 180
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-011",
+      "toId": "g04-037",
+      "from": "中霸坪叉路",
+      "to": "馬洋池",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE85CE5B8BA"
+      ],
+      "evidenceRows": [
+        72
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RE85CE5B8BA",
+          "sheetRows": [
+            72
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-064",
+      "toId": "g04-001",
+      "from": "觀霧",
+      "to": "0.3K檢查哨",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB844FE8B3E"
+      ],
+      "evidenceRows": [
+        73
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RB844FE8B3E",
+          "sheetRows": [
+            73
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-001",
+      "toId": "g04-064",
+      "from": "0.3K檢查哨",
+      "to": "觀霧",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB844FE8B3E"
+      ],
+      "evidenceRows": [
+        73
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RB844FE8B3E",
+          "sheetRows": [
+            73
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-001",
+      "toId": "g04-008",
+      "from": "0.3K檢查哨",
+      "to": "大霸尖山登山口",
+      "minutes": 400,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0C01B84746"
+      ],
+      "evidenceRows": [
+        74
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R0C01B84746",
+          "sheetRows": [
+            74
+          ],
+          "minutes": 400
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-008",
+      "toId": "g04-001",
+      "from": "大霸尖山登山口",
+      "to": "0.3K檢查哨",
+      "minutes": 430,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0C01B84746"
+      ],
+      "evidenceRows": [
+        74
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R0C01B84746",
+          "sheetRows": [
+            74
+          ],
+          "minutes": 430
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-008",
+      "toId": "g04-004",
+      "from": "大霸尖山登山口",
+      "to": "九九山莊",
+      "minutes": 210,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R34918B5649"
+      ],
+      "evidenceRows": [
+        75
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R34918B5649",
+          "sheetRows": [
+            75
+          ],
+          "minutes": 210
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-004",
+      "toId": "g04-008",
+      "from": "九九山莊",
+      "to": "大霸尖山登山口",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R34918B5649"
+      ],
+      "evidenceRows": [
+        75
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R34918B5649",
+          "sheetRows": [
+            75
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-004",
+      "toId": "g04-016",
+      "from": "九九山莊",
+      "to": "加利山登山口",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC28323C0E1"
+      ],
+      "evidenceRows": [
+        76
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RC28323C0E1",
+          "sheetRows": [
+            76
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-016",
+      "toId": "g04-004",
+      "from": "加利山登山口",
+      "to": "九九山莊",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC28323C0E1"
+      ],
+      "evidenceRows": [
+        76
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RC28323C0E1",
+          "sheetRows": [
+            76
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-016",
+      "toId": "g04-015",
+      "from": "加利山登山口",
+      "to": "加利山",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RAAFF36872E"
+      ],
+      "evidenceRows": [
+        77
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RAAFF36872E",
+          "sheetRows": [
+            77
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-015",
+      "toId": "g04-016",
+      "from": "加利山",
+      "to": "加利山登山口",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RAAFF36872E"
+      ],
+      "evidenceRows": [
+        77
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RAAFF36872E",
+          "sheetRows": [
+            77
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-016",
+      "toId": "g04-020",
+      "from": "加利山登山口",
+      "to": "伊澤山第二登山口",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R408C323891"
+      ],
+      "evidenceRows": [
+        78
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R408C323891",
+          "sheetRows": [
+            78
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-020",
+      "toId": "g04-016",
+      "from": "伊澤山第二登山口",
+      "to": "加利山登山口",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R408C323891"
+      ],
+      "evidenceRows": [
+        78
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R408C323891",
+          "sheetRows": [
+            78
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-020",
+      "toId": "g04-019",
+      "from": "伊澤山第二登山口",
+      "to": "伊澤山",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RFE2547B38A"
+      ],
+      "evidenceRows": [
+        79
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RFE2547B38A",
+          "sheetRows": [
+            79
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-019",
+      "toId": "g04-020",
+      "from": "伊澤山",
+      "to": "伊澤山第二登山口",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RFE2547B38A"
+      ],
+      "evidenceRows": [
+        79
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RFE2547B38A",
+          "sheetRows": [
+            79
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-020",
+      "toId": "g04-002",
+      "from": "伊澤山第二登山口",
+      "to": "8.8K岔路",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA3ADF8B01D"
+      ],
+      "evidenceRows": [
+        80
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RA3ADF8B01D",
+          "sheetRows": [
+            80
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-002",
+      "toId": "g04-020",
+      "from": "8.8K岔路",
+      "to": "伊澤山第二登山口",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA3ADF8B01D"
+      ],
+      "evidenceRows": [
+        80
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RA3ADF8B01D",
+          "sheetRows": [
+            80
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-002",
+      "toId": "g04-011",
+      "from": "8.8K岔路",
+      "to": "中霸坪叉路",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0A5826F8EA"
+      ],
+      "evidenceRows": [
+        81
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R0A5826F8EA",
+          "sheetRows": [
+            81
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-011",
+      "toId": "g04-002",
+      "from": "中霸坪叉路",
+      "to": "8.8K岔路",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0A5826F8EA"
+      ],
+      "evidenceRows": [
+        81
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R0A5826F8EA",
+          "sheetRows": [
+            81
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-011",
+      "toId": "g04-010",
+      "from": "中霸坪叉路",
+      "to": "小霸岔路登山口",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA3CCC6C53E"
+      ],
+      "evidenceRows": [
+        82
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RA3CCC6C53E",
+          "sheetRows": [
+            82
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-010",
+      "toId": "g04-011",
+      "from": "小霸岔路登山口",
+      "to": "中霸坪叉路",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA3CCC6C53E"
+      ],
+      "evidenceRows": [
+        82
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RA3CCC6C53E",
+          "sheetRows": [
+            82
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-010",
+      "toId": "g04-009",
+      "from": "小霸岔路登山口",
+      "to": "小霸尖山",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE3AB4F44E1"
+      ],
+      "evidenceRows": [
+        83
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RE3AB4F44E1",
+          "sheetRows": [
+            83
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-009",
+      "toId": "g04-010",
+      "from": "小霸尖山",
+      "to": "小霸岔路登山口",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE3AB4F44E1"
+      ],
+      "evidenceRows": [
+        83
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RE3AB4F44E1",
+          "sheetRows": [
+            83
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-010",
+      "toId": "g04-fork-daba",
+      "from": "小霸岔路登山口",
+      "to": "岔路",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R8CF3B3C7F2"
+      ],
+      "evidenceRows": [
+        84
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R8CF3B3C7F2",
+          "sheetRows": [
+            84
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-fork-daba",
+      "toId": "g04-010",
+      "from": "岔路",
+      "to": "小霸岔路登山口",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R8CF3B3C7F2"
+      ],
+      "evidenceRows": [
+        84
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R8CF3B3C7F2",
+          "sheetRows": [
+            84
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-fork-daba",
+      "toId": "g04-063",
+      "from": "岔路",
+      "to": "霸南山屋",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2F9DFBAEFC"
+      ],
+      "evidenceRows": [
+        85
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R2F9DFBAEFC",
+          "sheetRows": [
+            85
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-063",
+      "toId": "g04-fork-daba",
+      "from": "霸南山屋",
+      "to": "岔路",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2F9DFBAEFC"
+      ],
+      "evidenceRows": [
+        85
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R2F9DFBAEFC",
+          "sheetRows": [
+            85
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-063",
+      "toId": "g04-013",
+      "from": "霸南山屋",
+      "to": "巴紗拉雲山屋毀損",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R07CC599AF1"
+      ],
+      "evidenceRows": [
+        86
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R07CC599AF1",
+          "sheetRows": [
+            86
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-013",
+      "toId": "g04-063",
+      "from": "巴紗拉雲山屋毀損",
+      "to": "霸南山屋",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R07CC599AF1"
+      ],
+      "evidenceRows": [
+        86
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R07CC599AF1",
+          "sheetRows": [
+            86
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-013",
+      "toId": "g04-012",
+      "from": "巴紗拉雲山屋毀損",
+      "to": "巴紗拉雲山",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3F82C40B92"
+      ],
+      "evidenceRows": [
+        87
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R3F82C40B92",
+          "sheetRows": [
+            87
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-012",
+      "toId": "g04-013",
+      "from": "巴紗拉雲山",
+      "to": "巴紗拉雲山屋毀損",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3F82C40B92"
+      ],
+      "evidenceRows": [
+        87
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R3F82C40B92",
+          "sheetRows": [
+            87
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-012",
+      "toId": "g04-018",
+      "from": "巴紗拉雲山",
+      "to": "布秀蘭山",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7CBF35B832"
+      ],
+      "evidenceRows": [
+        88
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R7CBF35B832",
+          "sheetRows": [
+            88
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-018",
+      "toId": "g04-012",
+      "from": "布秀蘭山",
+      "to": "巴紗拉雲山",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7CBF35B832"
+      ],
+      "evidenceRows": [
+        88
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R7CBF35B832",
+          "sheetRows": [
+            88
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-018",
+      "toId": "g04-034",
+      "from": "布秀蘭山",
+      "to": "素密達山",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R14CEDB36B6"
+      ],
+      "evidenceRows": [
+        89
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R14CEDB36B6",
+          "sheetRows": [
+            89
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-034",
+      "toId": "g04-018",
+      "from": "素密達山",
+      "to": "布秀蘭山",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R14CEDB36B6"
+      ],
+      "evidenceRows": [
+        89
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R14CEDB36B6",
+          "sheetRows": [
+            89
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-034",
+      "toId": "g04-035",
+      "from": "素密達山",
+      "to": "素密達山屋",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R07F02FA05F"
+      ],
+      "evidenceRows": [
+        90
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R07F02FA05F",
+          "sheetRows": [
+            90
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-035",
+      "toId": "g04-034",
+      "from": "素密達山屋",
+      "to": "素密達山",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R07F02FA05F"
+      ],
+      "evidenceRows": [
+        90
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R07F02FA05F",
+          "sheetRows": [
+            90
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-035",
+      "toId": "g04-060",
+      "from": "素密達山屋",
+      "to": "穆特勒布山",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBAC363B683"
+      ],
+      "evidenceRows": [
+        91
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RBAC363B683",
+          "sheetRows": [
+            91
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-060",
+      "toId": "g04-035",
+      "from": "穆特勒布山",
+      "to": "素密達山屋",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBAC363B683"
+      ],
+      "evidenceRows": [
+        91
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RBAC363B683",
+          "sheetRows": [
+            91
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-060",
+      "toId": "g04-fork-shengleng",
+      "from": "穆特勒布山",
+      "to": "岔路",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R79124B8CF1"
+      ],
+      "evidenceRows": [
+        92
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R79124B8CF1",
+          "sheetRows": [
+            92
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-fork-shengleng",
+      "toId": "g04-060",
+      "from": "岔路",
+      "to": "穆特勒布山",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R79124B8CF1"
+      ],
+      "evidenceRows": [
+        92
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R79124B8CF1",
+          "sheetRows": [
+            92
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-fork-shengleng",
+      "toId": "g04-059",
+      "from": "岔路",
+      "to": "穆南鞍部營地",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R828336D6F8"
+      ],
+      "evidenceRows": [
+        93
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R828336D6F8",
+          "sheetRows": [
+            93
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-059",
+      "toId": "g04-fork-shengleng",
+      "from": "穆南鞍部營地",
+      "to": "岔路",
+      "minutes": 85,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R828336D6F8"
+      ],
+      "evidenceRows": [
+        93
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R828336D6F8",
+          "sheetRows": [
+            93
+          ],
+          "minutes": 85
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-fork-shengleng",
+      "toId": "g04-014",
+      "from": "岔路",
+      "to": "水源",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5DFE660D57"
+      ],
+      "evidenceRows": [
+        94
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R5DFE660D57",
+          "sheetRows": [
+            94
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-014",
+      "toId": "g04-fork-shengleng",
+      "from": "水源",
+      "to": "岔路",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5DFE660D57"
+      ],
+      "evidenceRows": [
+        94
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R5DFE660D57",
+          "sheetRows": [
+            94
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-047",
+      "toId": "g04-043",
+      "from": "雪北登山口",
+      "to": "雪山北峰",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE2E7B028FF"
+      ],
+      "evidenceRows": [
+        95
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RE2E7B028FF",
+          "sheetRows": [
+            95
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-043",
+      "toId": "g04-047",
+      "from": "雪山北峰",
+      "to": "雪北登山口",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE2E7B028FF"
+      ],
+      "evidenceRows": [
+        95
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RE2E7B028FF",
+          "sheetRows": [
+            95
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-059",
+      "toId": "g04-047",
+      "from": "穆南鞍部營地",
+      "to": "雪北登山口",
+      "minutes": 95,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2F9FFC45C6"
+      ],
+      "evidenceRows": [
+        96
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R2F9FFC45C6",
+          "sheetRows": [
+            96
+          ],
+          "minutes": 95
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-047",
+      "toId": "g04-059",
+      "from": "雪北登山口",
+      "to": "穆南鞍部營地",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2F9FFC45C6"
+      ],
+      "evidenceRows": [
+        96
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R2F9FFC45C6",
+          "sheetRows": [
+            96
+          ],
+          "minutes": 65
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-047",
+      "toId": "g04-046",
+      "from": "雪北登山口",
+      "to": "雪北山屋",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCE506085B9"
+      ],
+      "evidenceRows": [
+        97
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RCE506085B9",
+          "sheetRows": [
+            97
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-046",
+      "toId": "g04-047",
+      "from": "雪北山屋",
+      "to": "雪北登山口",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCE506085B9"
+      ],
+      "evidenceRows": [
+        97
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RCE506085B9",
+          "sheetRows": [
+            97
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-046",
+      "toId": "g04-049",
+      "from": "雪北山屋",
+      "to": "凱蘭特崑山北峰",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R374E67AD3D"
+      ],
+      "evidenceRows": [
+        98
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R374E67AD3D",
+          "sheetRows": [
+            98
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-049",
+      "toId": "g04-046",
+      "from": "凱蘭特崑山北峰",
+      "to": "雪北山屋",
+      "minutes": 75,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R374E67AD3D"
+      ],
+      "evidenceRows": [
+        98
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R374E67AD3D",
+          "sheetRows": [
+            98
+          ],
+          "minutes": 75
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-049",
+      "toId": "g04-058",
+      "from": "凱蘭特崑山北峰",
+      "to": "鞍部叉路",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "REA8F030911"
+      ],
+      "evidenceRows": [
+        99
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "REA8F030911",
+          "sheetRows": [
+            99
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-058",
+      "toId": "g04-049",
+      "from": "鞍部叉路",
+      "to": "凱蘭特崑山北峰",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "REA8F030911"
+      ],
+      "evidenceRows": [
+        99
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "REA8F030911",
+          "sheetRows": [
+            99
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-058",
+      "toId": "g04-048",
+      "from": "鞍部叉路",
+      "to": "凱蘭特崑山",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R06C94FA48F"
+      ],
+      "evidenceRows": [
+        100
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R06C94FA48F",
+          "sheetRows": [
+            100
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-048",
+      "toId": "g04-058",
+      "from": "凱蘭特崑山",
+      "to": "鞍部叉路",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R06C94FA48F"
+      ],
+      "evidenceRows": [
+        100
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R06C94FA48F",
+          "sheetRows": [
+            100
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-048",
+      "toId": "g04-017",
+      "from": "凱蘭特崑山",
+      "to": "北稜角",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6122A3FA68"
+      ],
+      "evidenceRows": [
+        101
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R6122A3FA68",
+          "sheetRows": [
+            101
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-017",
+      "toId": "g04-048",
+      "from": "北稜角",
+      "to": "凱蘭特崑山",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6122A3FA68"
+      ],
+      "evidenceRows": [
+        101
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R6122A3FA68",
+          "sheetRows": [
+            101
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-017",
+      "toId": "g04-fork-xueshan",
+      "from": "北稜角",
+      "to": "岔路口",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE9D61B8EA3"
+      ],
+      "evidenceRows": [
+        102
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RE9D61B8EA3",
+          "sheetRows": [
+            102
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-fork-xueshan",
+      "toId": "g04-017",
+      "from": "岔路口",
+      "to": "北稜角",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE9D61B8EA3"
+      ],
+      "evidenceRows": [
+        102
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RE9D61B8EA3",
+          "sheetRows": [
+            102
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-fork-xueshan",
+      "toId": "shared:cw-v07-074",
+      "from": "岔路口",
+      "to": "雪山主峰",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3D68BB9D2F"
+      ],
+      "evidenceRows": [
+        103
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R3D68BB9D2F",
+          "sheetRows": [
+            103
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-074",
+      "toId": "g04-fork-xueshan",
+      "from": "雪山主峰",
+      "to": "岔路口",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3D68BB9D2F"
+      ],
+      "evidenceRows": [
+        103
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R3D68BB9D2F",
+          "sheetRows": [
+            103
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-066",
+      "toId": "g04-fork-xueshan",
+      "from": "翠池山屋",
+      "to": "岔路口",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R736E554013"
+      ],
+      "evidenceRows": [
+        104
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R736E554013",
+          "sheetRows": [
+            104
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-fork-xueshan",
+      "toId": "shared:cw-v07-066",
+      "from": "岔路口",
+      "to": "翠池山屋",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R736E554013"
+      ],
+      "evidenceRows": [
+        104
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R736E554013",
+          "sheetRows": [
+            104
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-053",
+      "toId": "shared:cw-v07-004",
+      "from": "溪源",
+      "to": "三六九山莊",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA3A32E8D3A"
+      ],
+      "evidenceRows": [
+        105
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RA3A32E8D3A",
+          "sheetRows": [
+            105
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-004",
+      "toId": "g04-053",
+      "from": "三六九山莊",
+      "to": "溪源",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA3A32E8D3A"
+      ],
+      "evidenceRows": [
+        105
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RA3A32E8D3A",
+          "sheetRows": [
+            105
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-039",
+      "toId": "shared:cw-v07-074",
+      "from": "圈谷底部",
+      "to": "雪山主峰",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R74E348FAD5"
+      ],
+      "evidenceRows": [
+        106
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R74E348FAD5",
+          "sheetRows": [
+            106
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-074",
+      "toId": "g04-039",
+      "from": "雪山主峰",
+      "to": "圈谷底部",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R74E348FAD5"
+      ],
+      "evidenceRows": [
+        106
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R74E348FAD5",
+          "sheetRows": [
+            106
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-039",
+      "toId": "shared:cw-v07-004",
+      "from": "圈谷底部",
+      "to": "三六九山莊",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCA25B8AAED"
+      ],
+      "evidenceRows": [
+        107
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RCA25B8AAED",
+          "sheetRows": [
+            107
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-004",
+      "toId": "g04-039",
+      "from": "三六九山莊",
+      "to": "圈谷底部",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCA25B8AAED"
+      ],
+      "evidenceRows": [
+        107
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RCA25B8AAED",
+          "sheetRows": [
+            107
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-004",
+      "toId": "g04-044",
+      "from": "三六九山莊",
+      "to": "雪山東峰",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RDB99F0168C"
+      ],
+      "evidenceRows": [
+        108
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RDB99F0168C",
+          "sheetRows": [
+            108
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-044",
+      "toId": "shared:cw-v07-004",
+      "from": "雪山東峰",
+      "to": "三六九山莊",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RDB99F0168C"
+      ],
+      "evidenceRows": [
+        108
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RDB99F0168C",
+          "sheetRows": [
+            108
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-044",
+      "toId": "g04-027",
+      "from": "雪山東峰",
+      "to": "哭坡觀景台",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE5E51C159A"
+      ],
+      "evidenceRows": [
+        109
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RE5E51C159A",
+          "sheetRows": [
+            109
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-027",
+      "toId": "g04-044",
+      "from": "哭坡觀景台",
+      "to": "雪山東峰",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE5E51C159A"
+      ],
+      "evidenceRows": [
+        109
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RE5E51C159A",
+          "sheetRows": [
+            109
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-027",
+      "toId": "shared:cw-v07-003",
+      "from": "哭坡觀景台",
+      "to": "七卡山莊",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB518D6D0D2"
+      ],
+      "evidenceRows": [
+        110
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RB518D6D0D2",
+          "sheetRows": [
+            110
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-003",
+      "toId": "g04-027",
+      "from": "七卡山莊",
+      "to": "哭坡觀景台",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB518D6D0D2"
+      ],
+      "evidenceRows": [
+        110
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RB518D6D0D2",
+          "sheetRows": [
+            110
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-003",
+      "toId": "g04-045",
+      "from": "七卡山莊",
+      "to": "雪山登山口管理站",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R41CBE6EAA8"
+      ],
+      "evidenceRows": [
+        111
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R41CBE6EAA8",
+          "sheetRows": [
+            111
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-045",
+      "toId": "shared:cw-v07-003",
+      "from": "雪山登山口管理站",
+      "to": "七卡山莊",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R41CBE6EAA8"
+      ],
+      "evidenceRows": [
+        111
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R41CBE6EAA8",
+          "sheetRows": [
+            111
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-056",
+      "toId": "g04-031",
+      "from": "武陵山莊",
+      "to": "桃山岔路口",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R698025B77E"
+      ],
+      "evidenceRows": [
+        115
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R698025B77E",
+          "sheetRows": [
+            115
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-031",
+      "toId": "shared:cw-v07-056",
+      "from": "桃山岔路口",
+      "to": "武陵山莊",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R698025B77E"
+      ],
+      "evidenceRows": [
+        115
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R698025B77E",
+          "sheetRows": [
+            115
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-032",
+      "toId": "g04-029",
+      "from": "桃山登山口",
+      "to": "桃山2K",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9E5D96D103"
+      ],
+      "evidenceRows": [
+        116
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R9E5D96D103",
+          "sheetRows": [
+            116
+          ],
+          "minutes": 180
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-029",
+      "toId": "g04-032",
+      "from": "桃山2K",
+      "to": "桃山登山口",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9E5D96D103"
+      ],
+      "evidenceRows": [
+        116
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R9E5D96D103",
+          "sheetRows": [
+            116
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-029",
+      "toId": "g04-038",
+      "from": "桃山2K",
+      "to": "停機坪",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7EF5262891"
+      ],
+      "evidenceRows": [
+        117
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R7EF5262891",
+          "sheetRows": [
+            117
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-038",
+      "toId": "g04-029",
+      "from": "停機坪",
+      "to": "桃山2K",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7EF5262891"
+      ],
+      "evidenceRows": [
+        117
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R7EF5262891",
+          "sheetRows": [
+            117
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-038",
+      "toId": "g04-028",
+      "from": "停機坪",
+      "to": "桃山",
+      "minutes": 160,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R135546DB56"
+      ],
+      "evidenceRows": [
+        118
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R135546DB56",
+          "sheetRows": [
+            118
+          ],
+          "minutes": 160
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-028",
+      "toId": "g04-038",
+      "from": "桃山",
+      "to": "停機坪",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R135546DB56"
+      ],
+      "evidenceRows": [
+        118
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R135546DB56",
+          "sheetRows": [
+            118
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-030",
+      "toId": "g04-005",
+      "from": "桃山山屋",
+      "to": "三叉營地",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE64555CF11"
+      ],
+      "evidenceRows": [
+        119
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RE64555CF11",
+          "sheetRows": [
+            119
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-005",
+      "toId": "g04-030",
+      "from": "三叉營地",
+      "to": "桃山山屋",
+      "minutes": 150,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE64555CF11"
+      ],
+      "evidenceRows": [
+        119
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RE64555CF11",
+          "sheetRows": [
+            119
+          ],
+          "minutes": 150
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-005",
+      "toId": "g04-023",
+      "from": "三叉營地",
+      "to": "池有山登山口",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2293D9059A"
+      ],
+      "evidenceRows": [
+        120
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R2293D9059A",
+          "sheetRows": [
+            120
+          ],
+          "minutes": 180
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-023",
+      "toId": "g04-005",
+      "from": "池有山登山口",
+      "to": "三叉營地",
+      "minutes": 280,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2293D9059A"
+      ],
+      "evidenceRows": [
+        120
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R2293D9059A",
+          "sheetRows": [
+            120
+          ],
+          "minutes": 280
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-022",
+      "toId": "g04-021",
+      "from": "池有山岔路口",
+      "to": "池有山",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9FC49D1F2F"
+      ],
+      "evidenceRows": [
+        121
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R9FC49D1F2F",
+          "sheetRows": [
+            121
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-021",
+      "toId": "g04-022",
+      "from": "池有山",
+      "to": "池有山岔路口",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9FC49D1F2F"
+      ],
+      "evidenceRows": [
+        121
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R9FC49D1F2F",
+          "sheetRows": [
+            121
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-022",
+      "toId": "g04-052",
+      "from": "池有山岔路口",
+      "to": "新達山屋(水池)",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC71962E8CF"
+      ],
+      "evidenceRows": [
+        122
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RC71962E8CF",
+          "sheetRows": [
+            122
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-052",
+      "toId": "g04-022",
+      "from": "新達山屋(水池)",
+      "to": "池有山岔路口",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC71962E8CF"
+      ],
+      "evidenceRows": [
+        122
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RC71962E8CF",
+          "sheetRows": [
+            122
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-052",
+      "toId": "g04-051",
+      "from": "新達山屋(水池)",
+      "to": "塔克金溪源頭",
+      "minutes": 95,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD7A564ACA0"
+      ],
+      "evidenceRows": [
+        123
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RD7A564ACA0",
+          "sheetRows": [
+            123
+          ],
+          "minutes": 95
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-051",
+      "toId": "g04-052",
+      "from": "塔克金溪源頭",
+      "to": "新達山屋(水池)",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD7A564ACA0"
+      ],
+      "evidenceRows": [
+        123
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RD7A564ACA0",
+          "sheetRows": [
+            123
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-013",
+      "toId": "g04-051",
+      "from": "巴紗拉雲山屋毀損",
+      "to": "塔克金溪源頭",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1C82E1B3BD"
+      ],
+      "evidenceRows": [
+        124
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R1C82E1B3BD",
+          "sheetRows": [
+            124
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-051",
+      "toId": "g04-013",
+      "from": "塔克金溪源頭",
+      "to": "巴紗拉雲山屋毀損",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1C82E1B3BD"
+      ],
+      "evidenceRows": [
+        124
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R1C82E1B3BD",
+          "sheetRows": [
+            124
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-018",
+      "toId": "g04-026",
+      "from": "布秀蘭山",
+      "to": "品田山",
+      "minutes": 240,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD6201AE9AE"
+      ],
+      "evidenceRows": [
+        125
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RD6201AE9AE",
+          "sheetRows": [
+            125
+          ],
+          "minutes": 240
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-026",
+      "toId": "g04-018",
+      "from": "品田山",
+      "to": "布秀蘭山",
+      "minutes": 200,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD6201AE9AE"
+      ],
+      "evidenceRows": [
+        125
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RD6201AE9AE",
+          "sheetRows": [
+            125
+          ],
+          "minutes": 200
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-026",
+      "toId": "g04-052",
+      "from": "品田山",
+      "to": "新達山屋(水池)",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R79EBC85533"
+      ],
+      "evidenceRows": [
+        126
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R79EBC85533",
+          "sheetRows": [
+            126
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-052",
+      "toId": "g04-026",
+      "from": "新達山屋(水池)",
+      "to": "品田山",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R79EBC85533"
+      ],
+      "evidenceRows": [
+        126
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R79EBC85533",
+          "sheetRows": [
+            126
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-030",
+      "toId": "g04-028",
+      "from": "桃山山屋",
+      "to": "桃山",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "REFA0907CF1"
+      ],
+      "evidenceRows": [
+        127
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "REFA0907CF1",
+          "sheetRows": [
+            127
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-028",
+      "toId": "g04-030",
+      "from": "桃山",
+      "to": "桃山山屋",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "REFA0907CF1"
+      ],
+      "evidenceRows": [
+        127
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "REFA0907CF1",
+          "sheetRows": [
+            127
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-028",
+      "toId": "g04-055",
+      "from": "桃山",
+      "to": "詩崙山",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6F1BC717D2"
+      ],
+      "evidenceRows": [
+        128
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R6F1BC717D2",
+          "sheetRows": [
+            128
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-055",
+      "toId": "g04-028",
+      "from": "詩崙山",
+      "to": "桃山",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6F1BC717D2"
+      ],
+      "evidenceRows": [
+        128
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R6F1BC717D2",
+          "sheetRows": [
+            128
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-055",
+      "toId": "g04-050",
+      "from": "詩崙山",
+      "to": "喀拉業山",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R223A51A0D7"
+      ],
+      "evidenceRows": [
+        129
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R223A51A0D7",
+          "sheetRows": [
+            129
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-050",
+      "toId": "g04-055",
+      "from": "喀拉業山",
+      "to": "詩崙山",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R223A51A0D7"
+      ],
+      "evidenceRows": [
+        129
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R223A51A0D7",
+          "sheetRows": [
+            129
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-023",
+      "toId": "g04-054",
+      "from": "池有山登山口",
+      "to": "煙聲瀑布",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R06B3516AC0"
+      ],
+      "evidenceRows": [
+        130
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R06B3516AC0",
+          "sheetRows": [
+            130
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-054",
+      "toId": "g04-023",
+      "from": "煙聲瀑布",
+      "to": "池有山登山口",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R06B3516AC0"
+      ],
+      "evidenceRows": [
+        130
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R06B3516AC0",
+          "sheetRows": [
+            130
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-023",
+      "toId": "g04-031",
+      "from": "池有山登山口",
+      "to": "桃山岔路口",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R69CDA7E6A4"
+      ],
+      "evidenceRows": [
+        131
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R69CDA7E6A4",
+          "sheetRows": [
+            131
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-031",
+      "toId": "g04-023",
+      "from": "桃山岔路口",
+      "to": "池有山登山口",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R69CDA7E6A4"
+      ],
+      "evidenceRows": [
+        131
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R69CDA7E6A4",
+          "sheetRows": [
+            131
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-031",
+      "toId": "g04-032",
+      "from": "桃山岔路口",
+      "to": "桃山登山口",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R89BF324DDC"
+      ],
+      "evidenceRows": [
+        132
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R89BF324DDC",
+          "sheetRows": [
+            132
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-032",
+      "toId": "g04-031",
+      "from": "桃山登山口",
+      "to": "桃山岔路口",
+      "minutes": 3,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R89BF324DDC"
+      ],
+      "evidenceRows": [
+        132
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R89BF324DDC",
+          "sheetRows": [
+            132
+          ],
+          "minutes": 3
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-019",
+      "toId": "g04-002",
+      "from": "伊澤山",
+      "to": "8.8K岔路",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RAFB6E39AF9"
+      ],
+      "evidenceRows": [
+        133
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RAFB6E39AF9",
+          "sheetRows": [
+            133
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-002",
+      "toId": "g04-019",
+      "from": "8.8K岔路",
+      "to": "伊澤山",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RAFB6E39AF9"
+      ],
+      "evidenceRows": [
+        133
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RAFB6E39AF9",
+          "sheetRows": [
+            133
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-fork-daba",
+      "toId": "g04-007",
+      "from": "岔路",
+      "to": "大霸尖山",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4230CFCD8E"
+      ],
+      "evidenceRows": [
+        134
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R4230CFCD8E",
+          "sheetRows": [
+            134
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-007",
+      "toId": "g04-fork-daba",
+      "from": "大霸尖山",
+      "to": "岔路",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4230CFCD8E"
+      ],
+      "evidenceRows": [
+        134
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R4230CFCD8E",
+          "sheetRows": [
+            134
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-035",
+      "toId": "g04-fork-shengleng",
+      "from": "素密達山屋",
+      "to": "岔路",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA6619626B3"
+      ],
+      "evidenceRows": [
+        135
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RA6619626B3",
+          "sheetRows": [
+            135
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-fork-shengleng",
+      "toId": "g04-035",
+      "from": "岔路",
+      "to": "素密達山屋",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA6619626B3"
+      ],
+      "evidenceRows": [
+        135
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RA6619626B3",
+          "sheetRows": [
+            135
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-058",
+      "toId": "g04-053",
+      "from": "鞍部叉路",
+      "to": "溪源",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB326C3D552"
+      ],
+      "evidenceRows": [
+        136
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RB326C3D552",
+          "sheetRows": [
+            136
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-053",
+      "toId": "g04-058",
+      "from": "溪源",
+      "to": "鞍部叉路",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB326C3D552"
+      ],
+      "evidenceRows": [
+        136
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "RB326C3D552",
+          "sheetRows": [
+            136
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-005",
+      "toId": "g04-022",
+      "from": "三叉營地",
+      "to": "池有山岔路口",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R764E3670E0"
+      ],
+      "evidenceRows": [
+        137
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R764E3670E0",
+          "sheetRows": [
+            137
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-022",
+      "toId": "g04-005",
+      "from": "池有山岔路口",
+      "to": "三叉營地",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R764E3670E0"
+      ],
+      "evidenceRows": [
+        137
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "大霸/聖稜/四秀",
+          "chartId": "G04",
+          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "rowId": "R764E3670E0",
+          "sheetRows": [
+            137
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    }
+  ],
+  "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+}

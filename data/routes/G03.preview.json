@@ -1,0 +1,268 @@
+{
+  "route_id": "G03",
+  "route_name": "郡大山・西巒大山（步行核對部分）",
+  "status": "source-reviewed-preview",
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "page_url": "https://www.sunriver.com.tw/step2020.htm",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg"
+  },
+  "nodes": [
+    {
+      "id": "g03-001",
+      "name": "17.1K柵欄",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g03-002",
+      "name": "32K登山口",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g03-003",
+      "name": "人倫工作站",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g03-004",
+      "name": "西巒大山",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g03-005",
+      "name": "展望點",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g03-006",
+      "name": "郡大山",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g03-007",
+      "name": "郡大山北峰",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g03-008",
+      "name": "望鄉山",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g03-009",
+      "name": "森林營地",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g03-010",
+      "name": "登山口(第二登山口)",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g03-011",
+      "name": "瞭望台營地",
+      "identityStatus": "route-source-reviewed"
+    }
+  ],
+  "segments": [
+    {
+      "from": "32K登山口",
+      "to": "望鄉山",
+      "fromId": "g03-002",
+      "toId": "g03-008",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "望鄉山",
+      "to": "32K登山口",
+      "fromId": "g03-008",
+      "toId": "g03-002",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "望鄉山",
+      "to": "郡大山北峰",
+      "fromId": "g03-008",
+      "toId": "g03-007",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "郡大山北峰",
+      "to": "望鄉山",
+      "fromId": "g03-007",
+      "toId": "g03-008",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "郡大山北峰",
+      "to": "郡大山",
+      "fromId": "g03-007",
+      "toId": "g03-006",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "郡大山",
+      "to": "郡大山北峰",
+      "fromId": "g03-006",
+      "toId": "g03-007",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "17.1K柵欄",
+      "to": "人倫工作站",
+      "fromId": "g03-001",
+      "toId": "g03-003",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "人倫工作站",
+      "to": "17.1K柵欄",
+      "fromId": "g03-003",
+      "toId": "g03-001",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "人倫工作站",
+      "to": "登山口(第二登山口)",
+      "fromId": "g03-003",
+      "toId": "g03-010",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "登山口(第二登山口)",
+      "to": "人倫工作站",
+      "fromId": "g03-010",
+      "toId": "g03-003",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "登山口(第二登山口)",
+      "to": "森林營地",
+      "fromId": "g03-010",
+      "toId": "g03-009",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "森林營地",
+      "to": "登山口(第二登山口)",
+      "fromId": "g03-009",
+      "toId": "g03-010",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "森林營地",
+      "to": "瞭望台營地",
+      "fromId": "g03-009",
+      "toId": "g03-011",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "瞭望台營地",
+      "to": "森林營地",
+      "fromId": "g03-011",
+      "toId": "g03-009",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "瞭望台營地",
+      "to": "展望點",
+      "fromId": "g03-011",
+      "toId": "g03-005",
+      "minutes": 160,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "展望點",
+      "to": "瞭望台營地",
+      "fromId": "g03-005",
+      "toId": "g03-011",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "展望點",
+      "to": "西巒大山",
+      "fromId": "g03-005",
+      "toId": "g03-004",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    },
+    {
+      "from": "西巒大山",
+      "to": "展望點",
+      "fromId": "g03-004",
+      "toId": "g03-005",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "verificationMethod": "official-chart-direct-review"
+    }
+  ]
+}

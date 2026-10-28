@@ -1,0 +1,841 @@
+{
+  "route_id": "G06",
+  "route_name": "白姑大山",
+  "status": "owner-reviewed-preview",
+  "sourceChartIds": [
+    "G06"
+  ],
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+    "revision": "owner workbook reviewed 2026-10-28; follow-ups recorded separately"
+  },
+  "reviewBasis": "owner_workbook_review",
+  "nodes": [
+    {
+      "id": "g06-001",
+      "name": "一線天岩壁",
+      "aliases": [],
+      "groups": [
+        "G06"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g06-002",
+      "name": "三錐山",
+      "aliases": [],
+      "groups": [
+        "G06"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g06-003",
+      "name": "水管路岔路口",
+      "aliases": [
+        "水管路岔路"
+      ],
+      "groups": [
+        "G06"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g06-004",
+      "name": "司晏池營地",
+      "aliases": [],
+      "groups": [
+        "G06"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g06-005",
+      "name": "白姑大山",
+      "aliases": [],
+      "groups": [
+        "G06"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g06-006",
+      "name": "白姑大山東南峰",
+      "aliases": [],
+      "groups": [
+        "G06"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g06-007",
+      "name": "白姑大山登山口",
+      "aliases": [],
+      "groups": [
+        "G06"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g06-008",
+      "name": "吉他營地",
+      "aliases": [],
+      "groups": [
+        "G06"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g06-009",
+      "name": "草青池",
+      "aliases": [],
+      "groups": [
+        "G06"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g06-010",
+      "name": "停車場",
+      "aliases": [],
+      "groups": [
+        "G06"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "node:21a5250274d3183a5b33",
+      "name": "紅香溫泉",
+      "aliases": [],
+      "groups": [
+        "G06"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:b7b6bff9d61e63a89c58",
+      "name": "最後農家",
+      "aliases": [],
+      "groups": [
+        "G06"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "shared:cw-v07-077",
+      "name": "霧社",
+      "aliases": [],
+      "groups": [
+        "G06"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    }
+  ],
+  "segments": [
+    {
+      "fromId": "g06-005",
+      "toId": "g06-009",
+      "from": "白姑大山",
+      "to": "草青池",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1803E68D48"
+      ],
+      "evidenceRows": [
+        210
+      ],
+      "sourceGroups": [
+        "白姑大山"
+      ],
+      "sourceChart": "G06",
+      "source": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "白姑大山",
+          "chartId": "G06",
+          "url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+          "rowId": "R1803E68D48",
+          "sheetRows": [
+            210
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "白姑大山"
+      ]
+    },
+    {
+      "fromId": "g06-009",
+      "toId": "g06-005",
+      "from": "草青池",
+      "to": "白姑大山",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1803E68D48"
+      ],
+      "evidenceRows": [
+        210
+      ],
+      "sourceGroups": [
+        "白姑大山"
+      ],
+      "sourceChart": "G06",
+      "source": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "白姑大山",
+          "chartId": "G06",
+          "url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+          "rowId": "R1803E68D48",
+          "sheetRows": [
+            210
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "白姑大山"
+      ]
+    },
+    {
+      "fromId": "g06-009",
+      "toId": "g06-001",
+      "from": "草青池",
+      "to": "一線天岩壁",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCF1AB75676"
+      ],
+      "evidenceRows": [
+        211
+      ],
+      "sourceGroups": [
+        "白姑大山"
+      ],
+      "sourceChart": "G06",
+      "source": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "白姑大山",
+          "chartId": "G06",
+          "url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+          "rowId": "RCF1AB75676",
+          "sheetRows": [
+            211
+          ],
+          "minutes": 65
+        }
+      ],
+      "sourceGroupNames": [
+        "白姑大山"
+      ]
+    },
+    {
+      "fromId": "g06-001",
+      "toId": "g06-009",
+      "from": "一線天岩壁",
+      "to": "草青池",
+      "minutes": 75,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCF1AB75676"
+      ],
+      "evidenceRows": [
+        211
+      ],
+      "sourceGroups": [
+        "白姑大山"
+      ],
+      "sourceChart": "G06",
+      "source": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "白姑大山",
+          "chartId": "G06",
+          "url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+          "rowId": "RCF1AB75676",
+          "sheetRows": [
+            211
+          ],
+          "minutes": 75
+        }
+      ],
+      "sourceGroupNames": [
+        "白姑大山"
+      ]
+    },
+    {
+      "fromId": "g06-001",
+      "toId": "g06-008",
+      "from": "一線天岩壁",
+      "to": "吉他營地",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RDDF5A046A3"
+      ],
+      "evidenceRows": [
+        212
+      ],
+      "sourceGroups": [
+        "白姑大山"
+      ],
+      "sourceChart": "G06",
+      "source": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "白姑大山",
+          "chartId": "G06",
+          "url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+          "rowId": "RDDF5A046A3",
+          "sheetRows": [
+            212
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "白姑大山"
+      ]
+    },
+    {
+      "fromId": "g06-008",
+      "toId": "g06-001",
+      "from": "吉他營地",
+      "to": "一線天岩壁",
+      "minutes": 85,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RDDF5A046A3"
+      ],
+      "evidenceRows": [
+        212
+      ],
+      "sourceGroups": [
+        "白姑大山"
+      ],
+      "sourceChart": "G06",
+      "source": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "白姑大山",
+          "chartId": "G06",
+          "url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+          "rowId": "RDDF5A046A3",
+          "sheetRows": [
+            212
+          ],
+          "minutes": 85
+        }
+      ],
+      "sourceGroupNames": [
+        "白姑大山"
+      ]
+    },
+    {
+      "fromId": "g06-008",
+      "toId": "g06-006",
+      "from": "吉他營地",
+      "to": "白姑大山東南峰",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA5C0858175"
+      ],
+      "evidenceRows": [
+        213
+      ],
+      "sourceGroups": [
+        "白姑大山"
+      ],
+      "sourceChart": "G06",
+      "source": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "白姑大山",
+          "chartId": "G06",
+          "url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+          "rowId": "RA5C0858175",
+          "sheetRows": [
+            213
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "白姑大山"
+      ]
+    },
+    {
+      "fromId": "g06-006",
+      "toId": "g06-008",
+      "from": "白姑大山東南峰",
+      "to": "吉他營地",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA5C0858175"
+      ],
+      "evidenceRows": [
+        213
+      ],
+      "sourceGroups": [
+        "白姑大山"
+      ],
+      "sourceChart": "G06",
+      "source": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "白姑大山",
+          "chartId": "G06",
+          "url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+          "rowId": "RA5C0858175",
+          "sheetRows": [
+            213
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "白姑大山"
+      ]
+    },
+    {
+      "fromId": "g06-006",
+      "toId": "g06-004",
+      "from": "白姑大山東南峰",
+      "to": "司晏池營地",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R53F1039A1B"
+      ],
+      "evidenceRows": [
+        214
+      ],
+      "sourceGroups": [
+        "白姑大山"
+      ],
+      "sourceChart": "G06",
+      "source": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "白姑大山",
+          "chartId": "G06",
+          "url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+          "rowId": "R53F1039A1B",
+          "sheetRows": [
+            214
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "白姑大山"
+      ]
+    },
+    {
+      "fromId": "g06-004",
+      "toId": "g06-006",
+      "from": "司晏池營地",
+      "to": "白姑大山東南峰",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R53F1039A1B"
+      ],
+      "evidenceRows": [
+        214
+      ],
+      "sourceGroups": [
+        "白姑大山"
+      ],
+      "sourceChart": "G06",
+      "source": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "白姑大山",
+          "chartId": "G06",
+          "url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+          "rowId": "R53F1039A1B",
+          "sheetRows": [
+            214
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "白姑大山"
+      ]
+    },
+    {
+      "fromId": "g06-004",
+      "toId": "g06-002",
+      "from": "司晏池營地",
+      "to": "三錐山",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE96AA46195"
+      ],
+      "evidenceRows": [
+        215
+      ],
+      "sourceGroups": [
+        "白姑大山"
+      ],
+      "sourceChart": "G06",
+      "source": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "白姑大山",
+          "chartId": "G06",
+          "url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+          "rowId": "RE96AA46195",
+          "sheetRows": [
+            215
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "白姑大山"
+      ]
+    },
+    {
+      "fromId": "g06-002",
+      "toId": "g06-004",
+      "from": "三錐山",
+      "to": "司晏池營地",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE96AA46195"
+      ],
+      "evidenceRows": [
+        215
+      ],
+      "sourceGroups": [
+        "白姑大山"
+      ],
+      "sourceChart": "G06",
+      "source": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "白姑大山",
+          "chartId": "G06",
+          "url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+          "rowId": "RE96AA46195",
+          "sheetRows": [
+            215
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "白姑大山"
+      ]
+    },
+    {
+      "fromId": "g06-002",
+      "toId": "g06-003",
+      "from": "三錐山",
+      "to": "水管路岔路口",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9343F3C280"
+      ],
+      "evidenceRows": [
+        216
+      ],
+      "sourceGroups": [
+        "白姑大山"
+      ],
+      "sourceChart": "G06",
+      "source": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "白姑大山",
+          "chartId": "G06",
+          "url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+          "rowId": "R9343F3C280",
+          "sheetRows": [
+            216
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "白姑大山"
+      ]
+    },
+    {
+      "fromId": "g06-003",
+      "toId": "g06-002",
+      "from": "水管路岔路口",
+      "to": "三錐山",
+      "minutes": 160,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9343F3C280"
+      ],
+      "evidenceRows": [
+        216
+      ],
+      "sourceGroups": [
+        "白姑大山"
+      ],
+      "sourceChart": "G06",
+      "source": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "白姑大山",
+          "chartId": "G06",
+          "url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+          "rowId": "R9343F3C280",
+          "sheetRows": [
+            216
+          ],
+          "minutes": 160
+        }
+      ],
+      "sourceGroupNames": [
+        "白姑大山"
+      ]
+    },
+    {
+      "fromId": "g06-003",
+      "toId": "g06-007",
+      "from": "水管路岔路口",
+      "to": "白姑大山登山口",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3CC6BA9371"
+      ],
+      "evidenceRows": [
+        217
+      ],
+      "sourceGroups": [
+        "白姑大山"
+      ],
+      "sourceChart": "G06",
+      "source": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "白姑大山",
+          "chartId": "G06",
+          "url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+          "rowId": "R3CC6BA9371",
+          "sheetRows": [
+            217
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "白姑大山"
+      ]
+    },
+    {
+      "fromId": "g06-007",
+      "toId": "g06-003",
+      "from": "白姑大山登山口",
+      "to": "水管路岔路口",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3CC6BA9371"
+      ],
+      "evidenceRows": [
+        217
+      ],
+      "sourceGroups": [
+        "白姑大山"
+      ],
+      "sourceChart": "G06",
+      "source": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "白姑大山",
+          "chartId": "G06",
+          "url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+          "rowId": "R3CC6BA9371",
+          "sheetRows": [
+            217
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "白姑大山"
+      ]
+    },
+    {
+      "fromId": "g06-007",
+      "toId": "g06-010",
+      "from": "白姑大山登山口",
+      "to": "停車場",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R67F64BB4DF"
+      ],
+      "evidenceRows": [
+        218
+      ],
+      "sourceGroups": [
+        "白姑大山"
+      ],
+      "sourceChart": "G06",
+      "source": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "白姑大山",
+          "chartId": "G06",
+          "url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+          "rowId": "R67F64BB4DF",
+          "sheetRows": [
+            218
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "白姑大山"
+      ]
+    },
+    {
+      "fromId": "g06-010",
+      "toId": "g06-007",
+      "from": "停車場",
+      "to": "白姑大山登山口",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R67F64BB4DF"
+      ],
+      "evidenceRows": [
+        218
+      ],
+      "sourceGroups": [
+        "白姑大山"
+      ],
+      "sourceChart": "G06",
+      "source": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "白姑大山",
+          "chartId": "G06",
+          "url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+          "rowId": "R67F64BB4DF",
+          "sheetRows": [
+            218
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "白姑大山"
+      ]
+    }
+  ],
+  "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+}

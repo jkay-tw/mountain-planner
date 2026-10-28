@@ -8,17 +8,25 @@ export function directSegment(route,from,to){
   return route.segments.find(s=>s.from===from&&s.to===to)||null;
 }
 export function shortestPath(route,start,end){
+  const idMode=Array.isArray(route.nodes)&&route.segments.every(s=>s.fromId&&s.toId);
+  if(idMode){
+    const valid=new Set(route.nodes.map(n=>n.id));
+    if(!valid.has(start)||!valid.has(end))return null;
+  }
   if(start===end)return {nodes:[start],segments:[],minutes:0};
-  const ns=allNodes(route),dist=new Map(ns.map(n=>[n,Infinity])),prev=new Map(),unvisited=new Set(ns);
+  const ns=idMode?route.nodes.map(n=>n.id):allNodes(route);
+  const dist=new Map(ns.map(n=>[n,Infinity])),prev=new Map(),unvisited=new Set(ns);
+  const fromKey=idMode?'fromId':'from',toKey=idMode?'toId':'to';
   dist.set(start,0);
   while(unvisited.size){
     let u=null,best=Infinity;
     for(const n of unvisited)if(dist.get(n)<best){best=dist.get(n);u=n}
     if(u===null||best===Infinity)break;
     unvisited.delete(u);if(u===end)break;
-    for(const seg of route.segments.filter(s=>s.from===u)){
+    for(const seg of route.segments.filter(s=>s[fromKey]===u&&route.routingEnabled!==false&&s.routingEnabled!==false&&!['vehicle','driving','transport'].includes(s.travelMode??s.edgeType??'walking')&&s.verificationStatus!=='unverified'&&(route.routingPolicy!=='verified-walking-only'||(s.travelMode==='walking'&&s.verificationStatus==='verified')))){
+      const target=seg[toKey];
       const alt=best+seg.minutes;
-      if(alt<(dist.get(seg.to)??Infinity)){dist.set(seg.to,alt);prev.set(seg.to,{node:u,seg})}
+      if(alt<(dist.get(target)??Infinity)){dist.set(target,alt);prev.set(target,{node:u,seg})}
     }
   }
   if(!prev.has(end))return null;
@@ -59,16 +67,27 @@ export function recalcConnections(day,route){
     if(raw.type==='rest'){result.push({...raw});continue;}
     const item={...raw};
     if(!previous){item.incoming=null;result.push(item);previous=item;continue;}
+    // Dataset updates must not replace a saved connection while its endpoints stay put.
+    // A move/delete changes endpoint identity and still triggers normal reconnection below.
+    const stored=raw.incoming;
+    const stableManual=stored?.kind==='manual'&&stored.connectionStatus==='unverified'&&stored.fromId===previous.id&&stored.toId===item.id;
+    const stableOfficial=Array.isArray(route.nodes)&&stored?.kind==='official'&&
+      stored.fromNodeId===previous.nodeId&&stored.toNodeId===item.nodeId&&
+      previous.nodeId!==item.nodeId;
+    if(stableManual||stableOfficial){
+      item.incoming={...stored};result.push(item);previous=item;continue;
+    }
     if(previous.type==='manual-location'||item.type==='manual-location'){
       item.incoming=makeManual(previous,item,raw.incoming);result.push(item);previous=item;continue;
     }
-    const path=shortestPath(route,previous.name,item.name);
+    const identified=Array.isArray(route.nodes);
+    const path=shortestPath(route,identified?previous.nodeId:previous.name,identified?item.nodeId:item.name);
     if(!path){item.incoming=makeManual(previous,item,raw.incoming);result.push(item);previous=item;continue;}
     if(!path.segments.length){
       // Adjacent identical official locations represent the same physical point.
       // Merge them instead of leaving a later item with incoming=null ("起點").
       const prevOut=[...result].reverse().find(x=>x.type!=='rest');
-      if(prevOut&&prevOut.type==='location'&&item.type==='location'&&prevOut.name===item.name){
+      if(prevOut&&prevOut.type==='location'&&item.type==='location'&&(identified?prevOut.nodeId===item.nodeId:prevOut.name===item.name)){
         prevOut.note=prevOut.note||item.note||'';
         prevOut.isPeak=!!(prevOut.isPeak||item.isPeak);
         prevOut.hasWater=!!(prevOut.hasWater||item.hasWater);
@@ -80,10 +99,10 @@ export function recalcConnections(day,route){
     }
     for(let j=0;j<path.segments.length;j++){
       const seg=path.segments[j],isDestination=j===path.segments.length-1;
-      const existing=original.find(x=>x.type!=='rest'&&x.name===seg.to&&x.incoming?.kind==='official'&&x.incoming.from===seg.from&&x.incoming.to===seg.to);
-      const target=isDestination?item:(existing?{...existing}:{id:uid(),type:'location',name:seg.to,auto:true,waypoint:false,note:'',isPeak:false,hasWater:false});
-      const old=target.incoming,keep=old?.kind==='official'&&old.from===seg.from&&old.to===seg.to;
-      target.incoming={kind:'official',from:seg.from,to:seg.to,officialMinutes:keep?old.officialMinutes:seg.minutes,actualMinutes:keep?old.actualMinutes??null:null,source:route.source.image_url};
+      const existing=original.find(x=>x.type!=='rest'&&(identified?x.nodeId===seg.toId:x.name===seg.to)&&x.incoming?.kind==='official'&&(identified?x.incoming.fromNodeId===seg.fromId&&x.incoming.toNodeId===seg.toId:x.incoming.from===seg.from&&x.incoming.to===seg.to));
+      const target=isDestination?item:(existing?{...existing}:{id:uid(),type:'location',name:seg.to,...(identified?{nodeId:seg.toId}:{}),auto:true,waypoint:false,note:'',isPeak:false,hasWater:false});
+      const old=target.incoming,keep=old?.kind==='official'&&(identified?old.fromNodeId===seg.fromId&&old.toNodeId===seg.toId:old.from===seg.from&&old.to===seg.to);
+      target.incoming={kind:'official',from:seg.from,to:seg.to,...(identified?{fromNodeId:seg.fromId,toNodeId:seg.toId}:{}),officialMinutes:keep?old.officialMinutes:seg.minutes,actualMinutes:keep?old.actualMinutes??null:null,source:seg.source||route.source?.image_url,...(Array.isArray(seg.timeAlternatives)&&seg.timeAlternatives.length?{timeAlternatives:seg.timeAlternatives}:keep&&old.timeAlternatives?{timeAlternatives:old.timeAlternatives}:{})};
       result.push(target);
     }
     previous=item;

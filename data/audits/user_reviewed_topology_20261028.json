@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "reviewId": "owner-topology-20261028-01",
+  "sourceCandidateSHA256": "15f39d17615efcfcdb2e08fa0deee7e714c80fe5e97dd7e636023382a167e595",
+  "scope": "group-and-exact-record-specific candidate corrections; no production or saved-plan edits",
+  "entries": [
+    {
+      "originalRow": 362,
+      "action": "confirm",
+      "match": {
+        "group": "合歡群峰",
+        "from": "合歡山管理站",
+        "to": "北合歡山登山口",
+        "go": 2,
+        "back": 2
+      },
+      "reason": "車行時間2/2；不列入步行圖。",
+      "confirmedBy": "owner",
+      "confirmedAt": "2026-10-28",
+      "travelMode": "vehicle"
+    },
+    {
+      "originalRow": 375,
+      "action": "confirm",
+      "match": {
+        "group": "奇萊",
+        "from": "主北三岔路",
+        "to": "奇萊北峰岔路",
+        "go": 40,
+        "back": 30
+      },
+      "reason": "主北三岔路、奇萊北峰岔路、主北岔路三邊相通，保留40/30。",
+      "confirmedBy": "owner",
+      "confirmedAt": "2026-10-28",
+      "travelMode": "walking"
+    },
+    {
+      "originalRow": 494,
+      "action": "confirm",
+      "match": {
+        "group": "干卓萬群峰",
+        "from": "三叉峰下營地",
+        "to": "牧山",
+        "go": 20,
+        "back": 15
+      },
+      "reason": "牧山池支線方向時間經人工確認，解除箭頭交會待查。",
+      "confirmedBy": "owner",
+      "confirmedAt": "2026-10-28",
+      "travelMode": "walking"
+    },
+    {
+      "originalRow": 495,
+      "action": "confirm",
+      "match": {
+        "group": "干卓萬群峰",
+        "from": "牧山",
+        "to": "牧山池",
+        "go": 10,
+        "back": 10
+      },
+      "reason": "牧山池支線方向時間經人工確認，解除箭頭交會待查。",
+      "confirmedBy": "owner",
+      "confirmedAt": "2026-10-28",
+      "travelMode": "walking"
+    },
+    {
+      "originalRow": 505,
+      "action": "confirm",
+      "match": {
+        "group": "干卓萬群峰",
+        "from": "牧山池",
+        "to": "三叉峰下營地",
+        "go": 15,
+        "back": 15
+      },
+      "reason": "牧山池支線方向時間經人工確認，解除箭頭交會待查。",
+      "confirmedBy": "owner",
+      "confirmedAt": "2026-10-28",
+      "travelMode": "walking"
+    },
+    {
+      "originalRow": 548,
+      "action": "replace",
+      "match": {
+        "group": "丹大東郡",
+        "from": "東郡大山",
+        "to": "岔路",
+        "go": 50,
+        "back": 50
+      },
+      "reason": "此支線是東巒大山，不是東郡大山。",
+      "confirmedBy": "owner",
+      "confirmedAt": "2026-10-28",
+      "replace": {
+        "from": "東巒大山",
+        "to": "岔路",
+        "go": 50,
+        "back": 50
+      },
+      "travelMode": "walking"
+    },
+    {
+      "originalRow": 553,
+      "action": "confirm",
+      "match": {
+        "group": "丹大東郡",
+        "from": "東北鞍營地",
+        "to": "東郡大山",
+        "go": 5,
+        "back": 5
+      },
+      "reason": "東郡大山只連東北鞍營地5/5，與東巒大山分開。",
+      "confirmedBy": "owner",
+      "confirmedAt": "2026-10-28",
+      "travelMode": "walking"
+    },
+    {
+      "originalRow": 556,
+      "action": "replace",
+      "match": {
+        "group": "丹大東郡",
+        "from": "烏達佩山",
+        "to": "東郡大山",
+        "go": 50,
+        "back": 50
+      },
+      "reason": "不存在烏達佩山直連東郡大山；正確端點為岔路5/10。",
+      "confirmedBy": "owner",
+      "confirmedAt": "2026-10-28",
+      "replace": {
+        "from": "烏達佩山",
+        "to": "岔路",
+        "go": 5,
+        "back": 10
+      },
+      "travelMode": "walking"
+    },
+    {
+      "originalRow": 600,
+      "action": "exclude",
+      "match": {
+        "group": "丹大東郡",
+        "from": "烏利加南東峰山屋",
+        "to": "麻利加南東峰山屋",
+        "go": 30,
+        "back": 20
+      },
+      "reason": "烏利加南東峰山屋與麻利加南東峰山屋兩端點皆不存在。",
+      "confirmedBy": "owner",
+      "confirmedAt": "2026-10-28"
+    },
+    {
+      "originalRow": 639,
+      "action": "exclude",
+      "match": {
+        "group": "馬博拉斯橫斷",
+        "from": "馬西山口",
+        "to": "烏哇拉路",
+        "go": 60,
+        "back": 70
+      },
+      "reason": "馬西山口與烏哇拉路皆不存在；不以更名把錯誤接線保留下來。",
+      "confirmedBy": "owner",
+      "confirmedAt": "2026-10-28"
+    },
+    {
+      "originalRow": 640,
+      "action": "exclude",
+      "match": {
+        "group": "馬博拉斯橫斷",
+        "from": "烏哇拉路",
+        "to": "馬西山",
+        "go": 90,
+        "back": 130
+      },
+      "reason": "烏哇拉路不存在，刪除此候選線。",
+      "confirmedBy": "owner",
+      "confirmedAt": "2026-10-28"
+    },
+    {
+      "originalRow": 648,
+      "action": "replace",
+      "match": {
+        "group": "馬博拉斯橫斷",
+        "from": "廢棄工寮",
+        "to": "岔路",
+        "go": 2,
+        "back": 2
+      },
+      "reason": "僅此2/2支線改為35K廢棄工寮；不更動其他圖組同名工寮。",
+      "confirmedBy": "owner",
+      "confirmedAt": "2026-10-28",
+      "replace": {
+        "from": "35K廢棄工寮",
+        "to": "岔路",
+        "go": 2,
+        "back": 2
+      },
+      "travelMode": "walking"
+    },
+    {
+      "originalRow": 766,
+      "action": "exclude",
+      "match": {
+        "group": "新康橫斷",
+        "from": "向陽山",
+        "to": "三叉山",
+        "go": 45,
+        "back": 60
+      },
+      "reason": "沒有向陽山直連三叉山這條線。",
+      "confirmedBy": "owner",
+      "confirmedAt": "2026-10-28"
+    },
+    {
+      "originalRow": 769,
+      "action": "confirm",
+      "match": {
+        "group": "新康橫斷",
+        "from": "三叉山登山口",
+        "to": "三叉山",
+        "go": 25,
+        "back": 15
+      },
+      "reason": "三叉山登山口→三叉山25/15保留。",
+      "confirmedBy": "owner",
+      "confirmedAt": "2026-10-28",
+      "travelMode": "walking"
+    },
+    {
+      "originalRow": 795,
+      "action": "exclude",
+      "match": {
+        "group": "新康橫斷",
+        "from": "三叉營地",
+        "to": "三叉山",
+        "go": 15,
+        "back": 8
+      },
+      "reason": "三叉營地不在該上河步程圖；不能改成三叉稜下營地或創造其他路段。",
+      "confirmedBy": "owner",
+      "confirmedAt": "2026-10-28"
+    },
+    {
+      "originalRow": 830,
+      "action": "replace",
+      "match": {
+        "group": "南一段",
+        "from": "大關山隧道",
+        "to": "關山嶺山",
+        "go": 105,
+        "back": 80
+      },
+      "reason": "南橫公路進入關山嶺山的步行起點，依使用者命名為關山嶺山登山口。",
+      "confirmedBy": "owner",
+      "confirmedAt": "2026-10-28",
+      "replace": {
+        "from": "關山嶺山登山口",
+        "to": "關山嶺山",
+        "go": 105,
+        "back": 80
+      },
+      "travelMode": "walking"
+    },
+    {
+      "originalRow": 831,
+      "action": "exclude",
+      "match": {
+        "group": "南一段",
+        "from": "關山嶺山",
+        "to": "埡口山莊",
+        "go": 80,
+        "back": 105
+      },
+      "reason": "錯誤的關山嶺山→埡口山莊連線移除；正確登山口105/80已由原始830列保留，避免新增重複線。",
+      "confirmedBy": "owner",
+      "confirmedAt": "2026-10-28"
+    }
+  ],
+  "transportUI": "discussion only; no interface or coefficient behavior change authorized in this review",
+  "publicationAllowed": false
+}

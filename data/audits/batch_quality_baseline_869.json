@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "recordedDate": "2026-10-27",
+  "inputSource": "user-uploaded hiking-segments v1.3 (not committed to public GitHub repository)",
+  "inputSHA256": "15f39d17615efcfcdb2e08fa0deee7e714c80fe5e97dd7e636023382a167e595",
+  "status": "candidate_consistency_scan_not_official_verification",
+  "inputRows": 869,
+  "candidateGroups": 24,
+  "directedKeys": 1718,
+  "duplicatedDirectedKeys": 20,
+  "conflictingDirectedKeys": 10,
+  "invalidRows": 0,
+  "crossMapReference": {
+    "confirmedCanonicalClasses": 81,
+    "explicitDeniedPairs": 79,
+    "verifiedEndpointsCompared": 157,
+    "directionalConflicts": 5
+  },
+  "stagedComparison": {
+    "matchesToPreviouslyStagedTime": 94,
+    "stagingMatchesAreIndependentOfficialProof": false,
+    "otherCandidateDirectedKeys": 1614,
+    "candidateConflictKeys": 10
+  },
+  "priorityConflicts": [
+    {
+      "group": "北二段",
+      "from": "東鞍營地",
+      "to": "無明山西峰"
+    },
+    {
+      "group": "北二段",
+      "from": "無明山西峰",
+      "to": "無明山"
+    },
+    {
+      "group": "南二段",
+      "from": "秀姑巒山",
+      "to": "秀姑巒山南登山口"
+    },
+    {
+      "group": "干卓萬群峰",
+      "from": "3198公尺峰",
+      "to": "卓社大山"
+    },
+    {
+      "group": "干卓萬群峰",
+      "from": "卓社大山東峰叉路口",
+      "to": "3198公尺峰"
+    },
+    {
+      "group": "干卓萬群峰",
+      "from": "東北鞍營地",
+      "to": "卓社大山東峰叉路口"
+    },
+    {
+      "group": "雪山西南稜",
+      "from": "登山口",
+      "to": "苗圃工寮舊址"
+    },
+    {
+      "group": "雪山西南稜",
+      "from": "苗圃工寮舊址",
+      "to": "賽良久"
+    },
+    {
+      "group": "雪山西南稜",
+      "from": "鞍部水源岔路",
+      "to": "大劍山"
+    },
+    {
+      "group": "馬博拉斯橫斷",
+      "from": "秀姑巒山",
+      "to": "秀姑巒山南登山口"
+    }
+  ],
+  "reviewRequired": [
+    "10 within-group contradictory directed times",
+    "5 cross-map directed conflicts at both user-confirmed physical endpoints",
+    "candidate source licensing before public redistribution",
+    "per-direction original chart comparison or properly authorized reference"
+  ],
+  "publicationGate": "fail_closed_no_auto_promotion",
+  "note": "Audit counts come from an offline local scan of the supplied file. Source data are deliberately not committed; repository CI tests the validator with synthetic fixtures."
+}

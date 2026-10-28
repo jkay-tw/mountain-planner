@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mountain Planner v0.7 跨圖路網測試</title>
+<style>
+:root{font-family:system-ui,"Noto Sans TC",sans-serif;color:#20352b;background:#f4f7f4}
+*{box-sizing:border-box}body{margin:0}.wrap{width:min(1050px,calc(100% - 28px));margin:30px auto 80px}
+a{color:#276346}header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+h1{font-size:clamp(23px,4vw,34px);margin:10px 0}h2{margin:0 0 8px;font-size:20px}
+.lead{color:#51685c;line-height:1.75}.panel{background:white;border:1px solid #d8e2d9;border-radius:16px;padding:24px;margin-top:20px;box-shadow:0 3px 10px #10251a0a}
+.controls{display:grid;grid-template-columns:1fr auto 1fr;align-items:end;gap:12px}
+.field{display:grid;gap:7px;font-weight:600}select,button{font:inherit;padding:11px 12px;border-radius:9px}
+select{width:100%;min-width:0;background:white;border:1px solid #abbcaf}
+button{border:0;background:#275f44;color:white;cursor:pointer}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #82ab88;outline-offset:2px}
+.note{background:#fff8e6;border:1px solid #ecd99b;border-radius:12px;padding:14px 16px;line-height:1.75}
+.node-search{margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:16px}.search-box{padding:14px;border:1px solid #d7e5d9;border-radius:13px;background:#f8fbf8}
+.search-field{display:grid;gap:7px;font-weight:600}.node-search input{font:inherit;border:1px solid #abbcaf;border-radius:9px;padding:12px 14px;width:100%;min-width:0;background:#fff}.node-search input:focus{outline:2px solid #7cae8a;outline-offset:1px}
+.search-results{max-height:230px;overflow-y:auto;display:grid;gap:5px;margin-top:8px}
+.search-results button,.neighbors button{background:#eef4ee;color:#204b34;border:1px solid #d8e2d9;text-align:left;padding:10px 12px;border-radius:9px;cursor:pointer}.search-results button{width:100%}
+.search-results button:hover,.neighbors button:hover{background:#dcebdc}
+.search-results small,.neighbors small{display:block;color:#5c7162;margin-top:4px}
+.neighbors{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin-top:10px}.neighbor-item{display:flex;flex-direction:column;gap:6px;padding:8px;border:1px solid #deeadf;border-radius:11px;background:#f7faf7}.neighbor-item button{flex:initial}.neighbor-item button:last-child{background:#276346;color:#fff;text-align:center}
+.neighbors button{flex:1 1 170px}
+.search-hint{font-size:13px;color:#52685b;font-weight:400}
+.table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:630px}th,td{border-bottom:1px solid #e0e8e1;text-align:left;padding:11px 9px;vertical-align:top}th{background:#e8f0e9}#status{color:#52685b}
+@media(max-width:650px){.wrap{margin:16px auto 40px}.panel{padding:16px}.controls,.node-search{grid-template-columns:1fr}#swap{justify-self:start}}
+</style></head><body><main class="wrap">
+<header><div><small>Mountain Planner · v0.7 測試功能</small><h1>跨圖步行路網驗證</h1></div><a href="index.html">返回行程規劃器</a></header>
+<p class="lead">這是獨立驗證頁面，不會讀取或修改現有行程與自動儲存。只載入南二段（G17）與新康橫斷（G18）目前已核對的部分路段。</p>
+<div class="note"><strong>注意：</strong>不是完整登山路線資料庫。未核實路段一律排除；資料中的步程時間不代表現場安全、開放或通行狀態。出發前仍須查閱官方圖與最新山區資訊。</div>
+<section class="panel"><h2>選擇起點與終點</h2><p id="status" aria-live="polite">正在讀取測試資料⋯</p>
+<div class="controls">
+<label class="field">起點<select id="start" aria-label="跨圖起點"></select></label>
+<button type="button" id="swap" aria-label="交換起終點">⇄ 交換</button>
+<label class="field">終點<select id="end" aria-label="跨圖終點"></select></label>
+</div>
+<div class="node-search">
+<div class="search-box"><label class="search-field" for="startSearch">搜尋起點 <span class="search-hint">輸入地點／圖組關鍵字</span></label><input type="search" id="startSearch" autocomplete="off" placeholder="例如：嘉明湖、南二段" aria-controls="startMatches"><div id="startMatches" class="search-results" aria-live="polite"></div></div>
+<div class="search-box"><label class="search-field" for="endSearch">搜尋終點 <span class="search-hint">點擊結果立即選取</span></label><input type="search" id="endSearch" autocomplete="off" placeholder="例如：新康、3058" aria-controls="endMatches"><div id="endMatches" class="search-results" aria-live="polite"></div></div>
+</div>
+</section>
+<section class="panel"><h2>沿著路網找下一個節點</h2>
+<p class="lead">以下只顯示從目前起點沿已核實步行路段「直接相鄰」的節點。點擊可將該節點設為終點；如需繼續沿路探索，按「以此為起點」。</p>
+<div id="neighbors" class="neighbors" aria-live="polite"></div>
+</section>
+<section class="panel" id="result" aria-live="polite"><p>路徑計算準備中⋯</p></section>
+</main><script type="module" src="js/crossmap-preview.js?v=20261027b"></script></body></html>

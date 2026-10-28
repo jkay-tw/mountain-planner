@@ -1,0 +1,225 @@
+{
+  "inputRows": 863,
+  "statuses": {
+    "確認": 843,
+    "修正": 17,
+    "排除": 3
+  },
+  "retainedRows": 860,
+  "excludedRows": 3,
+  "walkingRows": 795,
+  "vehicleRows": 65,
+  "distinctRowIds": 853,
+  "repeatedRowIds": {
+    "R14138B5E4F": 2,
+    "R9DCF57DC02": 2,
+    "R5A7681D8ED": 2,
+    "R97DEBA7629": 2,
+    "RA5EE71C8DB": 2,
+    "RF5FFBA6AF4": 2,
+    "R96D6B30960": 2,
+    "RB2DD97ABB6": 2,
+    "RE59172A57C": 2,
+    "R86DBBF2EA4": 2
+  },
+  "groupRenames": {
+    "大霸聖稜武陵四秀": "大霸/聖稜/四秀",
+    "畢祿羊頭連峰縱走": "畢祿羊頭",
+    "奇萊": "奇萊群峰",
+    "太魯閣山列": "奇萊東稜",
+    "丹大山列": "七彩湖/六順山",
+    "新康橫斷": "新康橫斷/戒茂斯"
+  },
+  "conditionalVariants": [
+    {
+      "sourceRowId": "R14138B5E4F",
+      "sheetRows": [
+        170,
+        204
+      ],
+      "times": [
+        [
+          70,
+          160
+        ],
+        [
+          70,
+          90
+        ]
+      ],
+      "reason": "conditional_variants_preserved"
+    },
+    {
+      "sourceRowId": "R9DCF57DC02",
+      "sheetRows": [
+        186,
+        208
+      ],
+      "times": [
+        [
+          100,
+          100
+        ],
+        [
+          100,
+          165
+        ]
+      ],
+      "reason": "conditional_variants_preserved"
+    },
+    {
+      "sourceRowId": "R5A7681D8ED",
+      "sheetRows": [
+        187,
+        207
+      ],
+      "times": [
+        [
+          80,
+          80
+        ],
+        [
+          80,
+          140
+        ]
+      ],
+      "reason": "conditional_variants_preserved"
+    },
+    {
+      "sourceRowId": "R97DEBA7629",
+      "sheetRows": [
+        298,
+        301
+      ],
+      "times": [
+        [
+          290,
+          190
+        ],
+        [
+          290,
+          350
+        ]
+      ],
+      "reason": "conditional_variants_preserved"
+    },
+    {
+      "sourceRowId": "RA5EE71C8DB",
+      "sheetRows": [
+        302,
+        303
+      ],
+      "times": [
+        [
+          160,
+          200
+        ],
+        [
+          260,
+          200
+        ]
+      ],
+      "reason": "conditional_variants_preserved"
+    },
+    {
+      "sourceRowId": "RF5FFBA6AF4",
+      "sheetRows": [
+        498,
+        505
+      ],
+      "times": [
+        [
+          20,
+          15
+        ],
+        [
+          40,
+          15
+        ]
+      ],
+      "reason": "conditional_variants_preserved"
+    },
+    {
+      "sourceRowId": "R96D6B30960",
+      "sheetRows": [
+        501,
+        504
+      ],
+      "times": [
+        [
+          80,
+          100
+        ],
+        [
+          90,
+          100
+        ]
+      ],
+      "reason": "conditional_variants_preserved"
+    },
+    {
+      "sourceRowId": "RB2DD97ABB6",
+      "sheetRows": [
+        502,
+        503
+      ],
+      "times": [
+        [
+          240,
+          240
+        ],
+        [
+          320,
+          240
+        ]
+      ],
+      "reason": "conditional_variants_preserved"
+    },
+    {
+      "sourceRowId": "RE59172A57C",
+      "sheetRows": [
+        634,
+        684
+      ],
+      "times": [
+        [
+          50,
+          30
+        ],
+        [
+          50,
+          60
+        ]
+      ],
+      "reason": "conditional_variants_preserved"
+    }
+  ],
+  "issues": [],
+  "reviewCompletedByOwner": true,
+  "nodeIdentityStatus": "pending_physical_identity_compilation",
+  "routingPublished": false,
+  "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+  "schemaVersion": 1,
+  "recordedDate": "2026-10-28",
+  "confirmedBy": "owner",
+  "sourceSheet": "全部路段",
+  "sourceLibraryFileId": "libfile_fb866bf23e1c819193a02a3c504fe7a4",
+  "scope": "Owner has completed review of all 863 supplied workbook rows. This records owner review, not independent AI chart verification or completeness of every chart.",
+  "blankTravelModeMeaning": "walking",
+  "sourceArtifactStoredPrivately": true,
+  "priorExcludedRows": 6,
+  "supplementalMapping": {
+    "candidateGroup": "八通關越嶺",
+    "reviewedChart": "G02",
+    "rows": 19
+  },
+  "nodeIdentityRule": "No physical node identity is inferred from matching names or duplicate source Row IDs. Identity compilation follows reviewed endpoint context.",
+  "followupResolution": {
+    "sourceRowId": "R86DBBF2EA4",
+    "standardGo": 50,
+    "standardBack": 30,
+    "backHeavyPack": 60,
+    "basis": "Owner follow-up confirmed same times and conditions as G16 Excel rows 634/684"
+  },
+  "note": "Unlabelled G17 condition resolved by owner follow-up. Cross-source compilation may expose independent conflicts."
+}

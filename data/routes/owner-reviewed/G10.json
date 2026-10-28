@@ -1,0 +1,2786 @@
+{
+  "route_id": "G10",
+  "route_name": "奇萊東稜",
+  "status": "owner-reviewed-preview",
+  "sourceChartIds": [
+    "G10"
+  ],
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+    "revision": "owner workbook reviewed 2026-10-28; follow-ups recorded separately"
+  },
+  "reviewBasis": "owner_workbook_review",
+  "nodes": [
+    {
+      "id": "node:0820feba55a08e5dc67e",
+      "name": "江口山",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:0bb05f369d27294e722d",
+      "name": "3.8K流籠頭",
+      "aliases": [
+        "3.8K流龍頭"
+      ],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:13d0fbdc03771c98e07c",
+      "name": "磐石中峰",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:1bafd281610a4bf66a4b",
+      "name": "三叉營地",
+      "aliases": [
+        "三岔營地"
+      ],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:2025da6c6172a947207b",
+      "name": "江口山岔路口",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:20bfa346bded23b4fca9",
+      "name": "12K工寮",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:21e51a6d32e43eaff76d",
+      "name": "大理石營地",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:2e7b338a1e9d1616d0bd",
+      "name": "立霧主山",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:35db518d5bc47d630e39",
+      "name": "鐵線斷崖後營地",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:4856d9ae24dfc6bc20f7",
+      "name": "3077峰",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:4ae50bce2eca5ca06555",
+      "name": "岳王亭",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:56b86ece4f093366a58b",
+      "name": "平安池",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:5d9c97434282e97ee077",
+      "name": "2687鞍三岔口",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:696e889d688de0c7ec8e",
+      "name": "三岔路口營地",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:6e54333cde2175624dd1",
+      "name": "沼澤營地",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:6fe23380c7954e9ef503",
+      "name": "9K水泥工寮",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:85db8eab9af8db71f302",
+      "name": "上下舖營地",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:872c7ddd7adf3672db1f",
+      "name": "帕托魯山",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:87c8b5e14f11ef4a032c",
+      "name": "磐石中峰營地",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:96283ea7f31d0727b692",
+      "name": "合歡山松雪樓",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:c738d809acf3506b0b8f",
+      "name": "1號索道頭",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:d09b577e39f832a3821a",
+      "name": "6K高繞岔路口",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:d49d80e8843b8d96a05a",
+      "name": "太魯閣大山",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:dc09bcaf0d5a942a6792",
+      "name": "驚嘆號水池·西峰",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:e23aec7413bccdafcec8",
+      "name": "磐石山",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:e26d4b155e5a18e5e82b",
+      "name": "月形池",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:fe7f3ab4207baa1fdb11",
+      "name": "鐵線斷崖前營地",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "shared:cw-v07-012",
+      "name": "主北三岔路",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-041",
+      "name": "奇萊主山北峰",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-043",
+      "name": "奇萊山莊",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-048",
+      "name": "成功山屋",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-081",
+      "name": "黑水塘山屋",
+      "aliases": [],
+      "groups": [
+        "G10"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    }
+  ],
+  "segments": [
+    {
+      "fromId": "shared:cw-v07-048",
+      "toId": "shared:cw-v07-081",
+      "from": "成功山屋",
+      "to": "黑水塘山屋",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3B8C279FF3",
+        "RB78969D926"
+      ],
+      "evidenceRows": [
+        350,
+        382
+      ],
+      "sourceGroups": [
+        "奇萊東稜",
+        "奇萊群峰"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RB78969D926",
+          "sheetRows": [
+            350
+          ],
+          "minutes": 50
+        },
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R3B8C279FF3",
+          "sheetRows": [
+            382
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜",
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-081",
+      "toId": "shared:cw-v07-048",
+      "from": "黑水塘山屋",
+      "to": "成功山屋",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3B8C279FF3",
+        "RB78969D926"
+      ],
+      "evidenceRows": [
+        350,
+        382
+      ],
+      "sourceGroups": [
+        "奇萊東稜",
+        "奇萊群峰"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RB78969D926",
+          "sheetRows": [
+            350
+          ],
+          "minutes": 60
+        },
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R3B8C279FF3",
+          "sheetRows": [
+            382
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜",
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-012",
+      "toId": "shared:cw-v07-043",
+      "from": "主北三岔路",
+      "to": "奇萊山莊",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R06D437DEE1",
+        "R6744CEB733"
+      ],
+      "evidenceRows": [
+        377,
+        384
+      ],
+      "sourceGroups": [
+        "奇萊東稜",
+        "奇萊群峰"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R06D437DEE1",
+          "sheetRows": [
+            377
+          ],
+          "minutes": 10
+        },
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R6744CEB733",
+          "sheetRows": [
+            384
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜",
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-043",
+      "toId": "shared:cw-v07-012",
+      "from": "奇萊山莊",
+      "to": "主北三岔路",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R06D437DEE1",
+        "R6744CEB733"
+      ],
+      "evidenceRows": [
+        377,
+        384
+      ],
+      "sourceGroups": [
+        "奇萊東稜",
+        "奇萊群峰"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R06D437DEE1",
+          "sheetRows": [
+            377
+          ],
+          "minutes": 15
+        },
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R6744CEB733",
+          "sheetRows": [
+            384
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜",
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "node:96283ea7f31d0727b692",
+      "toId": "shared:cw-v07-081",
+      "from": "合歡山松雪樓",
+      "to": "黑水塘山屋",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4D83DD912D"
+      ],
+      "evidenceRows": [
+        381
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R4D83DD912D",
+          "sheetRows": [
+            381
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-081",
+      "toId": "node:96283ea7f31d0727b692",
+      "from": "黑水塘山屋",
+      "to": "合歡山松雪樓",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4D83DD912D"
+      ],
+      "evidenceRows": [
+        381
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R4D83DD912D",
+          "sheetRows": [
+            381
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-048",
+      "toId": "shared:cw-v07-012",
+      "from": "成功山屋",
+      "to": "主北三岔路",
+      "minutes": 170,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RFED14B712D"
+      ],
+      "evidenceRows": [
+        383
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "RFED14B712D",
+          "sheetRows": [
+            383
+          ],
+          "minutes": 170
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-012",
+      "toId": "shared:cw-v07-048",
+      "from": "主北三岔路",
+      "to": "成功山屋",
+      "minutes": 125,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RFED14B712D"
+      ],
+      "evidenceRows": [
+        383
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "RFED14B712D",
+          "sheetRows": [
+            383
+          ],
+          "minutes": 125
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-012",
+      "toId": "shared:cw-v07-041",
+      "from": "主北三岔路",
+      "to": "奇萊主山北峰",
+      "minutes": 95,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2871E8025B"
+      ],
+      "evidenceRows": [
+        385
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R2871E8025B",
+          "sheetRows": [
+            385
+          ],
+          "minutes": 95
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-041",
+      "toId": "shared:cw-v07-012",
+      "from": "奇萊主山北峰",
+      "to": "主北三岔路",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2871E8025B"
+      ],
+      "evidenceRows": [
+        385
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R2871E8025B",
+          "sheetRows": [
+            385
+          ],
+          "minutes": 65
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-041",
+      "toId": "node:e26d4b155e5a18e5e82b",
+      "from": "奇萊主山北峰",
+      "to": "月形池",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0F48DC0918"
+      ],
+      "evidenceRows": [
+        386
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R0F48DC0918",
+          "sheetRows": [
+            386
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:e26d4b155e5a18e5e82b",
+      "toId": "shared:cw-v07-041",
+      "from": "月形池",
+      "to": "奇萊主山北峰",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0F48DC0918"
+      ],
+      "evidenceRows": [
+        386
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R0F48DC0918",
+          "sheetRows": [
+            386
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:e26d4b155e5a18e5e82b",
+      "toId": "node:dc09bcaf0d5a942a6792",
+      "from": "月形池",
+      "to": "驚嘆號水池·西峰",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5D8F934E13"
+      ],
+      "evidenceRows": [
+        387
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R5D8F934E13",
+          "sheetRows": [
+            387
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:dc09bcaf0d5a942a6792",
+      "toId": "node:e26d4b155e5a18e5e82b",
+      "from": "驚嘆號水池·西峰",
+      "to": "月形池",
+      "minutes": 160,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5D8F934E13"
+      ],
+      "evidenceRows": [
+        387
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R5D8F934E13",
+          "sheetRows": [
+            387
+          ],
+          "minutes": 160
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:dc09bcaf0d5a942a6792",
+      "toId": "node:13d0fbdc03771c98e07c",
+      "from": "驚嘆號水池·西峰",
+      "to": "磐石中峰",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1914744A37"
+      ],
+      "evidenceRows": [
+        388
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R1914744A37",
+          "sheetRows": [
+            388
+          ],
+          "minutes": 65
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:13d0fbdc03771c98e07c",
+      "toId": "node:dc09bcaf0d5a942a6792",
+      "from": "磐石中峰",
+      "to": "驚嘆號水池·西峰",
+      "minutes": 75,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1914744A37"
+      ],
+      "evidenceRows": [
+        388
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R1914744A37",
+          "sheetRows": [
+            388
+          ],
+          "minutes": 75
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:e23aec7413bccdafcec8",
+      "toId": "node:87c8b5e14f11ef4a032c",
+      "from": "磐石山",
+      "to": "磐石中峰營地",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBC02484509"
+      ],
+      "evidenceRows": [
+        389
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "RBC02484509",
+          "sheetRows": [
+            389
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:87c8b5e14f11ef4a032c",
+      "toId": "node:e23aec7413bccdafcec8",
+      "from": "磐石中峰營地",
+      "to": "磐石山",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBC02484509"
+      ],
+      "evidenceRows": [
+        389
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "RBC02484509",
+          "sheetRows": [
+            389
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:13d0fbdc03771c98e07c",
+      "toId": "node:87c8b5e14f11ef4a032c",
+      "from": "磐石中峰",
+      "to": "磐石中峰營地",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R8B8BEBC433"
+      ],
+      "evidenceRows": [
+        390
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R8B8BEBC433",
+          "sheetRows": [
+            390
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:87c8b5e14f11ef4a032c",
+      "toId": "node:13d0fbdc03771c98e07c",
+      "from": "磐石中峰營地",
+      "to": "磐石中峰",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R8B8BEBC433"
+      ],
+      "evidenceRows": [
+        390
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R8B8BEBC433",
+          "sheetRows": [
+            390
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:e23aec7413bccdafcec8",
+      "toId": "node:fe7f3ab4207baa1fdb11",
+      "from": "磐石山",
+      "to": "鐵線斷崖前營地",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R87A22385B6"
+      ],
+      "evidenceRows": [
+        391
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R87A22385B6",
+          "sheetRows": [
+            391
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:fe7f3ab4207baa1fdb11",
+      "toId": "node:e23aec7413bccdafcec8",
+      "from": "鐵線斷崖前營地",
+      "to": "磐石山",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R87A22385B6"
+      ],
+      "evidenceRows": [
+        391
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R87A22385B6",
+          "sheetRows": [
+            391
+          ],
+          "minutes": 65
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:fe7f3ab4207baa1fdb11",
+      "toId": "node:35db518d5bc47d630e39",
+      "from": "鐵線斷崖前營地",
+      "to": "鐵線斷崖後營地",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5D178A0180"
+      ],
+      "evidenceRows": [
+        392
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R5D178A0180",
+          "sheetRows": [
+            392
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:35db518d5bc47d630e39",
+      "toId": "node:fe7f3ab4207baa1fdb11",
+      "from": "鐵線斷崖後營地",
+      "to": "鐵線斷崖前營地",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5D178A0180"
+      ],
+      "evidenceRows": [
+        392
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R5D178A0180",
+          "sheetRows": [
+            392
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:35db518d5bc47d630e39",
+      "toId": "node:85db8eab9af8db71f302",
+      "from": "鐵線斷崖後營地",
+      "to": "上下舖營地",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC28ECE5B6C"
+      ],
+      "evidenceRows": [
+        393
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "RC28ECE5B6C",
+          "sheetRows": [
+            393
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:85db8eab9af8db71f302",
+      "toId": "node:35db518d5bc47d630e39",
+      "from": "上下舖營地",
+      "to": "鐵線斷崖後營地",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC28ECE5B6C"
+      ],
+      "evidenceRows": [
+        393
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "RC28ECE5B6C",
+          "sheetRows": [
+            393
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:85db8eab9af8db71f302",
+      "toId": "node:4856d9ae24dfc6bc20f7",
+      "from": "上下舖營地",
+      "to": "3077峰",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RDB896359D5"
+      ],
+      "evidenceRows": [
+        394
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "RDB896359D5",
+          "sheetRows": [
+            394
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:4856d9ae24dfc6bc20f7",
+      "toId": "node:85db8eab9af8db71f302",
+      "from": "3077峰",
+      "to": "上下舖營地",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RDB896359D5"
+      ],
+      "evidenceRows": [
+        394
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "RDB896359D5",
+          "sheetRows": [
+            394
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:4856d9ae24dfc6bc20f7",
+      "toId": "node:1bafd281610a4bf66a4b",
+      "from": "3077峰",
+      "to": "三叉營地",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R320EE8B457"
+      ],
+      "evidenceRows": [
+        395
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R320EE8B457",
+          "sheetRows": [
+            395
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:1bafd281610a4bf66a4b",
+      "toId": "node:4856d9ae24dfc6bc20f7",
+      "from": "三叉營地",
+      "to": "3077峰",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R320EE8B457"
+      ],
+      "evidenceRows": [
+        395
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R320EE8B457",
+          "sheetRows": [
+            395
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:1bafd281610a4bf66a4b",
+      "toId": "node:d49d80e8843b8d96a05a",
+      "from": "三叉營地",
+      "to": "太魯閣大山",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RF2C6774B7F"
+      ],
+      "evidenceRows": [
+        396
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "RF2C6774B7F",
+          "sheetRows": [
+            396
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:d49d80e8843b8d96a05a",
+      "toId": "node:1bafd281610a4bf66a4b",
+      "from": "太魯閣大山",
+      "to": "三叉營地",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RF2C6774B7F"
+      ],
+      "evidenceRows": [
+        396
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "RF2C6774B7F",
+          "sheetRows": [
+            396
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:56b86ece4f093366a58b",
+      "toId": "node:1bafd281610a4bf66a4b",
+      "from": "平安池",
+      "to": "三叉營地",
+      "minutes": 260,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R82282101A4"
+      ],
+      "evidenceRows": [
+        397
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R82282101A4",
+          "sheetRows": [
+            397
+          ],
+          "minutes": 260
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:1bafd281610a4bf66a4b",
+      "toId": "node:56b86ece4f093366a58b",
+      "from": "三叉營地",
+      "to": "平安池",
+      "minutes": 200,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R82282101A4"
+      ],
+      "evidenceRows": [
+        397
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R82282101A4",
+          "sheetRows": [
+            397
+          ],
+          "minutes": 200
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:56b86ece4f093366a58b",
+      "toId": "node:5d9c97434282e97ee077",
+      "from": "平安池",
+      "to": "2687鞍三岔口",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RF56E4A1FEF"
+      ],
+      "evidenceRows": [
+        398
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "RF56E4A1FEF",
+          "sheetRows": [
+            398
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:5d9c97434282e97ee077",
+      "toId": "node:56b86ece4f093366a58b",
+      "from": "2687鞍三岔口",
+      "to": "平安池",
+      "minutes": 85,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RF56E4A1FEF"
+      ],
+      "evidenceRows": [
+        398
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "RF56E4A1FEF",
+          "sheetRows": [
+            398
+          ],
+          "minutes": 85
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:5d9c97434282e97ee077",
+      "toId": "node:21e51a6d32e43eaff76d",
+      "from": "2687鞍三岔口",
+      "to": "大理石營地",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7FA3AF539C"
+      ],
+      "evidenceRows": [
+        399
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R7FA3AF539C",
+          "sheetRows": [
+            399
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:21e51a6d32e43eaff76d",
+      "toId": "node:5d9c97434282e97ee077",
+      "from": "大理石營地",
+      "to": "2687鞍三岔口",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7FA3AF539C"
+      ],
+      "evidenceRows": [
+        399
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R7FA3AF539C",
+          "sheetRows": [
+            399
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:21e51a6d32e43eaff76d",
+      "toId": "node:2e7b338a1e9d1616d0bd",
+      "from": "大理石營地",
+      "to": "立霧主山",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R35EA56849C"
+      ],
+      "evidenceRows": [
+        400
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R35EA56849C",
+          "sheetRows": [
+            400
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:2e7b338a1e9d1616d0bd",
+      "toId": "node:21e51a6d32e43eaff76d",
+      "from": "立霧主山",
+      "to": "大理石營地",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R35EA56849C"
+      ],
+      "evidenceRows": [
+        400
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R35EA56849C",
+          "sheetRows": [
+            400
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:20bfa346bded23b4fca9",
+      "toId": "node:696e889d688de0c7ec8e",
+      "from": "12K工寮",
+      "to": "三岔路口營地",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1538B6BDDC"
+      ],
+      "evidenceRows": [
+        401
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R1538B6BDDC",
+          "sheetRows": [
+            401
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:696e889d688de0c7ec8e",
+      "toId": "node:20bfa346bded23b4fca9",
+      "from": "三岔路口營地",
+      "to": "12K工寮",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1538B6BDDC"
+      ],
+      "evidenceRows": [
+        401
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R1538B6BDDC",
+          "sheetRows": [
+            401
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:696e889d688de0c7ec8e",
+      "toId": "node:6e54333cde2175624dd1",
+      "from": "三岔路口營地",
+      "to": "沼澤營地",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R644347DA14"
+      ],
+      "evidenceRows": [
+        402
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R644347DA14",
+          "sheetRows": [
+            402
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:6e54333cde2175624dd1",
+      "toId": "node:696e889d688de0c7ec8e",
+      "from": "沼澤營地",
+      "to": "三岔路口營地",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R644347DA14"
+      ],
+      "evidenceRows": [
+        402
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R644347DA14",
+          "sheetRows": [
+            402
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:696e889d688de0c7ec8e",
+      "toId": "node:872c7ddd7adf3672db1f",
+      "from": "三岔路口營地",
+      "to": "帕托魯山",
+      "minutes": 150,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0F186F5108"
+      ],
+      "evidenceRows": [
+        403
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R0F186F5108",
+          "sheetRows": [
+            403
+          ],
+          "minutes": 150
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:872c7ddd7adf3672db1f",
+      "toId": "node:696e889d688de0c7ec8e",
+      "from": "帕托魯山",
+      "to": "三岔路口營地",
+      "minutes": 105,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0F186F5108"
+      ],
+      "evidenceRows": [
+        403
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R0F186F5108",
+          "sheetRows": [
+            403
+          ],
+          "minutes": 105
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:20bfa346bded23b4fca9",
+      "toId": "node:6fe23380c7954e9ef503",
+      "from": "12K工寮",
+      "to": "9K水泥工寮",
+      "minutes": 75,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R83504D04D7"
+      ],
+      "evidenceRows": [
+        404
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R83504D04D7",
+          "sheetRows": [
+            404
+          ],
+          "minutes": 75
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:6fe23380c7954e9ef503",
+      "toId": "node:20bfa346bded23b4fca9",
+      "from": "9K水泥工寮",
+      "to": "12K工寮",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R83504D04D7"
+      ],
+      "evidenceRows": [
+        404
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R83504D04D7",
+          "sheetRows": [
+            404
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:6fe23380c7954e9ef503",
+      "toId": "node:d09b577e39f832a3821a",
+      "from": "9K水泥工寮",
+      "to": "6K高繞岔路口",
+      "minutes": 75,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R31F34E6624"
+      ],
+      "evidenceRows": [
+        405
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R31F34E6624",
+          "sheetRows": [
+            405
+          ],
+          "minutes": 75
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:d09b577e39f832a3821a",
+      "toId": "node:6fe23380c7954e9ef503",
+      "from": "6K高繞岔路口",
+      "to": "9K水泥工寮",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R31F34E6624"
+      ],
+      "evidenceRows": [
+        405
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R31F34E6624",
+          "sheetRows": [
+            405
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:d09b577e39f832a3821a",
+      "toId": "node:2025da6c6172a947207b",
+      "from": "6K高繞岔路口",
+      "to": "江口山岔路口",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD18507C30B"
+      ],
+      "evidenceRows": [
+        406
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "RD18507C30B",
+          "sheetRows": [
+            406
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:2025da6c6172a947207b",
+      "toId": "node:d09b577e39f832a3821a",
+      "from": "江口山岔路口",
+      "to": "6K高繞岔路口",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD18507C30B"
+      ],
+      "evidenceRows": [
+        406
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "RD18507C30B",
+          "sheetRows": [
+            406
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:2025da6c6172a947207b",
+      "toId": "node:0820feba55a08e5dc67e",
+      "from": "江口山岔路口",
+      "to": "江口山",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R56E3617B41"
+      ],
+      "evidenceRows": [
+        407
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R56E3617B41",
+          "sheetRows": [
+            407
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:0820feba55a08e5dc67e",
+      "toId": "node:2025da6c6172a947207b",
+      "from": "江口山",
+      "to": "江口山岔路口",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R56E3617B41"
+      ],
+      "evidenceRows": [
+        407
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R56E3617B41",
+          "sheetRows": [
+            407
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:0bb05f369d27294e722d",
+      "toId": "node:c738d809acf3506b0b8f",
+      "from": "3.8K流籠頭",
+      "to": "1號索道頭",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R01655FEA31"
+      ],
+      "evidenceRows": [
+        408
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R01655FEA31",
+          "sheetRows": [
+            408
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:c738d809acf3506b0b8f",
+      "toId": "node:0bb05f369d27294e722d",
+      "from": "1號索道頭",
+      "to": "3.8K流籠頭",
+      "minutes": 85,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R01655FEA31"
+      ],
+      "evidenceRows": [
+        408
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R01655FEA31",
+          "sheetRows": [
+            408
+          ],
+          "minutes": 85
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:c738d809acf3506b0b8f",
+      "toId": "node:4ae50bce2eca5ca06555",
+      "from": "1號索道頭",
+      "to": "岳王亭",
+      "minutes": 150,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R16FEAB6D68"
+      ],
+      "evidenceRows": [
+        409
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R16FEAB6D68",
+          "sheetRows": [
+            409
+          ],
+          "minutes": 150
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:4ae50bce2eca5ca06555",
+      "toId": "node:c738d809acf3506b0b8f",
+      "from": "岳王亭",
+      "to": "1號索道頭",
+      "minutes": 280,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R16FEAB6D68"
+      ],
+      "evidenceRows": [
+        409
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R16FEAB6D68",
+          "sheetRows": [
+            409
+          ],
+          "minutes": 280
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:2e7b338a1e9d1616d0bd",
+      "toId": "node:6e54333cde2175624dd1",
+      "from": "立霧主山",
+      "to": "沼澤營地",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R006875ADDA"
+      ],
+      "evidenceRows": [
+        410
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R006875ADDA",
+          "sheetRows": [
+            410
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:6e54333cde2175624dd1",
+      "toId": "node:2e7b338a1e9d1616d0bd",
+      "from": "沼澤營地",
+      "to": "立霧主山",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R006875ADDA"
+      ],
+      "evidenceRows": [
+        410
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R006875ADDA",
+          "sheetRows": [
+            410
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:2025da6c6172a947207b",
+      "toId": "node:0bb05f369d27294e722d",
+      "from": "江口山岔路口",
+      "to": "3.8K流籠頭",
+      "minutes": 135,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4AABB75B64"
+      ],
+      "evidenceRows": [
+        411
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R4AABB75B64",
+          "sheetRows": [
+            411
+          ],
+          "minutes": 135
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    },
+    {
+      "fromId": "node:0bb05f369d27294e722d",
+      "toId": "node:2025da6c6172a947207b",
+      "from": "3.8K流籠頭",
+      "to": "江口山岔路口",
+      "minutes": 210,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4AABB75B64"
+      ],
+      "evidenceRows": [
+        411
+      ],
+      "sourceGroups": [
+        "奇萊東稜"
+      ],
+      "sourceChart": "G10",
+      "source": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R4AABB75B64",
+          "sheetRows": [
+            411
+          ],
+          "minutes": 210
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜"
+      ]
+    }
+  ],
+  "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+}

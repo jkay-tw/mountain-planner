@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "chartId": "G07",
+  "version": "v0.7.23",
+  "reviewedAt": "2026-10-28",
+  "sourceBasis": "main-step-diagram-only",
+  "sourceURL": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+  "userConfirmedPair": {
+    "from": "指標1.0K",
+    "to": "指標2.2K岔路口",
+    "forwardMinutes": 50,
+    "reverseMinutes": 35
+  },
+  "removedPreviewNodeId": "g07-043",
+  "removedPreviewNodeName": "黑水塘",
+  "reason": "Main step schematic does not label this node; introduced from local update-map in v0.7.22, not present in original 869-row G07 candidate subset.",
+  "supersedes": "G07_composite_source_review_20261028.json",
+  "retainedNodes": 42,
+  "directedEdges": 92,
+  "itineraryPolicy": "Keep retired preview ID only in saved-plan migration; do not re-add to node browser or routing graph."
+}

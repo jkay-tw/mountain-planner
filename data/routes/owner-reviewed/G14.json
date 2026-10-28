@@ -1,0 +1,2561 @@
+{
+  "route_id": "G14",
+  "route_name": "七彩湖/六順山",
+  "status": "owner-reviewed-preview",
+  "sourceChartIds": [
+    "G14"
+  ],
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+    "revision": "owner workbook reviewed 2026-10-28; follow-ups recorded separately"
+  },
+  "reviewBasis": "owner_workbook_review",
+  "nodes": [
+    {
+      "id": "g14-001",
+      "name": "2603公尺鞍部",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-002",
+      "name": "2761最低鞍部",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-003",
+      "name": "2780草原黑水塘",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-004",
+      "name": "2813鞍營地",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-005",
+      "name": "2833公尺鞍部",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-006",
+      "name": "2863公尺峰",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-007",
+      "name": "2897公尺峰",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-008",
+      "name": "3255公尺峰",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-009",
+      "name": "36K大崩壁",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-010",
+      "name": "42K阿道別墅",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-011",
+      "name": "46K九族工寮",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-012",
+      "name": "七彩妹池",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-013",
+      "name": "七彩湖",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-014",
+      "name": "大石公山",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-015",
+      "name": "小石公山",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-017",
+      "name": "六順山",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-018",
+      "name": "六順山新登山口",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-019",
+      "name": "天梯頂岔路口",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-020",
+      "name": "台電高登連絡站",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-021",
+      "name": "林道入口",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-022",
+      "name": "林道舊登山口",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-023",
+      "name": "情人吊橋",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-024",
+      "name": "廢棄工寮",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-025",
+      "name": "雙龍瀑布",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-026",
+      "name": "關門山凹",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-027",
+      "name": "關門北山",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-028",
+      "name": "鐵軌岔路",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g14-029",
+      "name": "巖山",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "node:7375c4ae1cea24a3f4dd",
+      "name": "水里",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:b2c4902bc8b8336f3277",
+      "name": "孫海橋",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "shared:cw-v07-011",
+      "name": "丹大山",
+      "aliases": [],
+      "groups": [
+        "G14"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    }
+  ],
+  "segments": [
+    {
+      "fromId": "g14-021",
+      "toId": "g14-013",
+      "from": "林道入口",
+      "to": "七彩湖",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBE4CAFFEAA"
+      ],
+      "evidenceRows": [
+        508
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RBE4CAFFEAA",
+          "sheetRows": [
+            508
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-013",
+      "toId": "g14-021",
+      "from": "七彩湖",
+      "to": "林道入口",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBE4CAFFEAA"
+      ],
+      "evidenceRows": [
+        508
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RBE4CAFFEAA",
+          "sheetRows": [
+            508
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-021",
+      "toId": "g14-022",
+      "from": "林道入口",
+      "to": "林道舊登山口",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA986FFA899"
+      ],
+      "evidenceRows": [
+        509
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RA986FFA899",
+          "sheetRows": [
+            509
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-022",
+      "toId": "g14-021",
+      "from": "林道舊登山口",
+      "to": "林道入口",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA986FFA899"
+      ],
+      "evidenceRows": [
+        509
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RA986FFA899",
+          "sheetRows": [
+            509
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-022",
+      "toId": "g14-007",
+      "from": "林道舊登山口",
+      "to": "2897公尺峰",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5AAED048D2"
+      ],
+      "evidenceRows": [
+        510
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R5AAED048D2",
+          "sheetRows": [
+            510
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-007",
+      "toId": "g14-022",
+      "from": "2897公尺峰",
+      "to": "林道舊登山口",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5AAED048D2"
+      ],
+      "evidenceRows": [
+        510
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R5AAED048D2",
+          "sheetRows": [
+            510
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-007",
+      "toId": "g14-017",
+      "from": "2897公尺峰",
+      "to": "六順山",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RF140B1076E"
+      ],
+      "evidenceRows": [
+        511
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RF140B1076E",
+          "sheetRows": [
+            511
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-017",
+      "toId": "g14-007",
+      "from": "六順山",
+      "to": "2897公尺峰",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RF140B1076E"
+      ],
+      "evidenceRows": [
+        511
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RF140B1076E",
+          "sheetRows": [
+            511
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-017",
+      "toId": "g14-006",
+      "from": "六順山",
+      "to": "2863公尺峰",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3112E68F11"
+      ],
+      "evidenceRows": [
+        512
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R3112E68F11",
+          "sheetRows": [
+            512
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-006",
+      "toId": "g14-017",
+      "from": "2863公尺峰",
+      "to": "六順山",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3112E68F11"
+      ],
+      "evidenceRows": [
+        512
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R3112E68F11",
+          "sheetRows": [
+            512
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-013",
+      "toId": "g14-012",
+      "from": "七彩湖",
+      "to": "七彩妹池",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R45BBF3EA96"
+      ],
+      "evidenceRows": [
+        513
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R45BBF3EA96",
+          "sheetRows": [
+            513
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-012",
+      "toId": "g14-013",
+      "from": "七彩妹池",
+      "to": "七彩湖",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R45BBF3EA96"
+      ],
+      "evidenceRows": [
+        513
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R45BBF3EA96",
+          "sheetRows": [
+            513
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-012",
+      "toId": "g14-025",
+      "from": "七彩妹池",
+      "to": "雙龍瀑布",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD536693174"
+      ],
+      "evidenceRows": [
+        514
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RD536693174",
+          "sheetRows": [
+            514
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-025",
+      "toId": "g14-012",
+      "from": "雙龍瀑布",
+      "to": "七彩妹池",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD536693174"
+      ],
+      "evidenceRows": [
+        514
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RD536693174",
+          "sheetRows": [
+            514
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-025",
+      "toId": "g14-024",
+      "from": "雙龍瀑布",
+      "to": "廢棄工寮",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R377C7434AD"
+      ],
+      "evidenceRows": [
+        515
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R377C7434AD",
+          "sheetRows": [
+            515
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-024",
+      "toId": "g14-025",
+      "from": "廢棄工寮",
+      "to": "雙龍瀑布",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R377C7434AD"
+      ],
+      "evidenceRows": [
+        515
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R377C7434AD",
+          "sheetRows": [
+            515
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-024",
+      "toId": "g14-028",
+      "from": "廢棄工寮",
+      "to": "鐵軌岔路",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9204DA8DE2"
+      ],
+      "evidenceRows": [
+        516
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R9204DA8DE2",
+          "sheetRows": [
+            516
+          ],
+          "minutes": 180
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-028",
+      "toId": "g14-024",
+      "from": "鐵軌岔路",
+      "to": "廢棄工寮",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9204DA8DE2"
+      ],
+      "evidenceRows": [
+        516
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R9204DA8DE2",
+          "sheetRows": [
+            516
+          ],
+          "minutes": 180
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-028",
+      "toId": "g14-020",
+      "from": "鐵軌岔路",
+      "to": "台電高登連絡站",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RDA0C4293DA"
+      ],
+      "evidenceRows": [
+        517
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RDA0C4293DA",
+          "sheetRows": [
+            517
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-020",
+      "toId": "g14-028",
+      "from": "台電高登連絡站",
+      "to": "鐵軌岔路",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RDA0C4293DA"
+      ],
+      "evidenceRows": [
+        517
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RDA0C4293DA",
+          "sheetRows": [
+            517
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-023",
+      "toId": "g14-011",
+      "from": "情人吊橋",
+      "to": "46K九族工寮",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBFC9C1EC5A"
+      ],
+      "evidenceRows": [
+        518
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RBFC9C1EC5A",
+          "sheetRows": [
+            518
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-011",
+      "toId": "g14-023",
+      "from": "46K九族工寮",
+      "to": "情人吊橋",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBFC9C1EC5A"
+      ],
+      "evidenceRows": [
+        518
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RBFC9C1EC5A",
+          "sheetRows": [
+            518
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-011",
+      "toId": "g14-010",
+      "from": "46K九族工寮",
+      "to": "42K阿道別墅",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R19AC11B28C"
+      ],
+      "evidenceRows": [
+        519
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R19AC11B28C",
+          "sheetRows": [
+            519
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-010",
+      "toId": "g14-011",
+      "from": "42K阿道別墅",
+      "to": "46K九族工寮",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R19AC11B28C"
+      ],
+      "evidenceRows": [
+        519
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R19AC11B28C",
+          "sheetRows": [
+            519
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-010",
+      "toId": "g14-009",
+      "from": "42K阿道別墅",
+      "to": "36K大崩壁",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD901759696"
+      ],
+      "evidenceRows": [
+        520
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RD901759696",
+          "sheetRows": [
+            520
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-009",
+      "toId": "g14-010",
+      "from": "36K大崩壁",
+      "to": "42K阿道別墅",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD901759696"
+      ],
+      "evidenceRows": [
+        520
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RD901759696",
+          "sheetRows": [
+            520
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-019",
+      "toId": "g14-028",
+      "from": "天梯頂岔路口",
+      "to": "鐵軌岔路",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2167F02AF7"
+      ],
+      "evidenceRows": [
+        521
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R2167F02AF7",
+          "sheetRows": [
+            521
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-028",
+      "toId": "g14-019",
+      "from": "鐵軌岔路",
+      "to": "天梯頂岔路口",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2167F02AF7"
+      ],
+      "evidenceRows": [
+        521
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R2167F02AF7",
+          "sheetRows": [
+            521
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-019",
+      "toId": "g14-023",
+      "from": "天梯頂岔路口",
+      "to": "情人吊橋",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R82366AB58F"
+      ],
+      "evidenceRows": [
+        522
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R82366AB58F",
+          "sheetRows": [
+            522
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-023",
+      "toId": "g14-019",
+      "from": "情人吊橋",
+      "to": "天梯頂岔路口",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R82366AB58F"
+      ],
+      "evidenceRows": [
+        522
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R82366AB58F",
+          "sheetRows": [
+            522
+          ],
+          "minutes": 180
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-018",
+      "toId": "g14-019",
+      "from": "六順山新登山口",
+      "to": "天梯頂岔路口",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "REE1BEBEFA1"
+      ],
+      "evidenceRows": [
+        523
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "REE1BEBEFA1",
+          "sheetRows": [
+            523
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-019",
+      "toId": "g14-018",
+      "from": "天梯頂岔路口",
+      "to": "六順山新登山口",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "REE1BEBEFA1"
+      ],
+      "evidenceRows": [
+        523
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "REE1BEBEFA1",
+          "sheetRows": [
+            523
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-003",
+      "toId": "g14-018",
+      "from": "2780草原黑水塘",
+      "to": "六順山新登山口",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2C9AF89D5A"
+      ],
+      "evidenceRows": [
+        524
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R2C9AF89D5A",
+          "sheetRows": [
+            524
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-018",
+      "toId": "g14-003",
+      "from": "六順山新登山口",
+      "to": "2780草原黑水塘",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2C9AF89D5A"
+      ],
+      "evidenceRows": [
+        524
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R2C9AF89D5A",
+          "sheetRows": [
+            524
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-006",
+      "toId": "g14-003",
+      "from": "2863公尺峰",
+      "to": "2780草原黑水塘",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1CD321D51D"
+      ],
+      "evidenceRows": [
+        525
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R1CD321D51D",
+          "sheetRows": [
+            525
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-003",
+      "toId": "g14-006",
+      "from": "2780草原黑水塘",
+      "to": "2863公尺峰",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1CD321D51D"
+      ],
+      "evidenceRows": [
+        525
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R1CD321D51D",
+          "sheetRows": [
+            525
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-017",
+      "toId": "g14-004",
+      "from": "六順山",
+      "to": "2813鞍營地",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB653D4AD7A"
+      ],
+      "evidenceRows": [
+        526
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RB653D4AD7A",
+          "sheetRows": [
+            526
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-004",
+      "toId": "g14-017",
+      "from": "2813鞍營地",
+      "to": "六順山",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB653D4AD7A"
+      ],
+      "evidenceRows": [
+        526
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RB653D4AD7A",
+          "sheetRows": [
+            526
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-004",
+      "toId": "g14-002",
+      "from": "2813鞍營地",
+      "to": "2761最低鞍部",
+      "minutes": 75,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA4FAE3CE0A"
+      ],
+      "evidenceRows": [
+        527
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RA4FAE3CE0A",
+          "sheetRows": [
+            527
+          ],
+          "minutes": 75
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-002",
+      "toId": "g14-004",
+      "from": "2761最低鞍部",
+      "to": "2813鞍營地",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA4FAE3CE0A"
+      ],
+      "evidenceRows": [
+        527
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RA4FAE3CE0A",
+          "sheetRows": [
+            527
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-002",
+      "toId": "g14-027",
+      "from": "2761最低鞍部",
+      "to": "關門北山",
+      "minutes": 210,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE15909F3D1"
+      ],
+      "evidenceRows": [
+        528
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RE15909F3D1",
+          "sheetRows": [
+            528
+          ],
+          "minutes": 210
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-027",
+      "toId": "g14-002",
+      "from": "關門北山",
+      "to": "2761最低鞍部",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE15909F3D1"
+      ],
+      "evidenceRows": [
+        528
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RE15909F3D1",
+          "sheetRows": [
+            528
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-027",
+      "toId": "g14-026",
+      "from": "關門北山",
+      "to": "關門山凹",
+      "minutes": 150,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R16E3038C0F"
+      ],
+      "evidenceRows": [
+        529
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R16E3038C0F",
+          "sheetRows": [
+            529
+          ],
+          "minutes": 150
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-026",
+      "toId": "g14-027",
+      "from": "關門山凹",
+      "to": "關門北山",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R16E3038C0F"
+      ],
+      "evidenceRows": [
+        529
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R16E3038C0F",
+          "sheetRows": [
+            529
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-026",
+      "toId": "g14-029",
+      "from": "關門山凹",
+      "to": "巖山",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBA64BAA517"
+      ],
+      "evidenceRows": [
+        530
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RBA64BAA517",
+          "sheetRows": [
+            530
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-029",
+      "toId": "g14-026",
+      "from": "巖山",
+      "to": "關門山凹",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBA64BAA517"
+      ],
+      "evidenceRows": [
+        530
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RBA64BAA517",
+          "sheetRows": [
+            530
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-029",
+      "toId": "g14-001",
+      "from": "巖山",
+      "to": "2603公尺鞍部",
+      "minutes": 250,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE8B44355B1"
+      ],
+      "evidenceRows": [
+        531
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RE8B44355B1",
+          "sheetRows": [
+            531
+          ],
+          "minutes": 250
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-001",
+      "toId": "g14-029",
+      "from": "2603公尺鞍部",
+      "to": "巖山",
+      "minutes": 320,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE8B44355B1"
+      ],
+      "evidenceRows": [
+        531
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RE8B44355B1",
+          "sheetRows": [
+            531
+          ],
+          "minutes": 320
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-001",
+      "toId": "g14-014",
+      "from": "2603公尺鞍部",
+      "to": "大石公山",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R40A8B1B856"
+      ],
+      "evidenceRows": [
+        532
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R40A8B1B856",
+          "sheetRows": [
+            532
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-014",
+      "toId": "g14-001",
+      "from": "大石公山",
+      "to": "2603公尺鞍部",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R40A8B1B856"
+      ],
+      "evidenceRows": [
+        532
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R40A8B1B856",
+          "sheetRows": [
+            532
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-014",
+      "toId": "g14-015",
+      "from": "大石公山",
+      "to": "小石公山",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R390BD4F571"
+      ],
+      "evidenceRows": [
+        533
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R390BD4F571",
+          "sheetRows": [
+            533
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-015",
+      "toId": "g14-014",
+      "from": "小石公山",
+      "to": "大石公山",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R390BD4F571"
+      ],
+      "evidenceRows": [
+        533
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R390BD4F571",
+          "sheetRows": [
+            533
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-015",
+      "toId": "g14-005",
+      "from": "小石公山",
+      "to": "2833公尺鞍部",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCD70A3E67E"
+      ],
+      "evidenceRows": [
+        534
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RCD70A3E67E",
+          "sheetRows": [
+            534
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-005",
+      "toId": "g14-015",
+      "from": "2833公尺鞍部",
+      "to": "小石公山",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCD70A3E67E"
+      ],
+      "evidenceRows": [
+        534
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "RCD70A3E67E",
+          "sheetRows": [
+            534
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-005",
+      "toId": "g14-008",
+      "from": "2833公尺鞍部",
+      "to": "3255公尺峰",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9F69BCE3BB"
+      ],
+      "evidenceRows": [
+        535
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R9F69BCE3BB",
+          "sheetRows": [
+            535
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-008",
+      "toId": "g14-005",
+      "from": "3255公尺峰",
+      "to": "2833公尺鞍部",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9F69BCE3BB"
+      ],
+      "evidenceRows": [
+        535
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R9F69BCE3BB",
+          "sheetRows": [
+            535
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "g14-008",
+      "toId": "shared:cw-v07-011",
+      "from": "3255公尺峰",
+      "to": "丹大山",
+      "minutes": 260,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6BD2651731"
+      ],
+      "evidenceRows": [
+        536
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R6BD2651731",
+          "sheetRows": [
+            536
+          ],
+          "minutes": 260
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-011",
+      "toId": "g14-008",
+      "from": "丹大山",
+      "to": "3255公尺峰",
+      "minutes": 240,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6BD2651731"
+      ],
+      "evidenceRows": [
+        536
+      ],
+      "sourceGroups": [
+        "七彩湖/六順山"
+      ],
+      "sourceChart": "G14",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "七彩湖/六順山",
+          "chartId": "G14",
+          "url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+          "rowId": "R6BD2651731",
+          "sheetRows": [
+            536
+          ],
+          "minutes": 240
+        }
+      ],
+      "sourceGroupNames": [
+        "七彩湖/六順山"
+      ]
+    }
+  ],
+  "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+}

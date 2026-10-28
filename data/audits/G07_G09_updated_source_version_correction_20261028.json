@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "detectedAt": "2026-10-28",
+  "officialIndexURL": "https://www.sunriver.com.tw/step2020.htm",
+  "issue": "Official '更新' image targets use _new3.jpg, while previous internal source registry and G07 reviewed preview cite _new.jpg.",
+  "affected": [
+    {
+      "chartId": "G07",
+      "currentOfficialURL": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new3.jpg",
+      "priorCitedURL": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "impact": "G07 existing 92 preview directional minutes require source-version recheck; do not silently relabel as independently checked against _new3."
+    },
+    {
+      "chartId": "G09",
+      "currentOfficialURL": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new3.jpg",
+      "priorCitedURL": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "impact": "G09 current source review must use _new3."
+    }
+  ],
+  "actions": [
+    "Official catalog corrected",
+    "Manifest current source URL corrected",
+    "G07 prior-review status changed to source-version-recheck-pending",
+    "Existing G07 edge source URLs preserved as historical provenance until independent latest-chart review"
+  ],
+  "status": "source-index-corrected-directional-rereview-outstanding"
+}

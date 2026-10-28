@@ -1,0 +1,18 @@
+{
+  "inputRows": 860,
+  "uniqueSourceRows": 850,
+  "nodes": 731,
+  "walkingDirections": 1426,
+  "vehicleDirections": 130,
+  "issues": [],
+  "routingEnabled": true,
+  "publicationEligible": false,
+  "schemaVersion": 1,
+  "stage": "owner-reviewed-preview-v0.7.24",
+  "reviewedAt": "2026-10-28",
+  "timeConflictResolvedByOwner": true,
+  "previewDatasets": 24,
+  "oldPreviewNodeIDsPreserved": true,
+  "productionVersion": "v0.6.2",
+  "previewAcceptance": "pending"
+}

@@ -1,0 +1,1019 @@
+{
+  "route_id": "G20",
+  "route_name": "北大武山",
+  "status": "owner-reviewed-preview",
+  "sourceChartIds": [
+    "G20"
+  ],
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+    "revision": "owner workbook reviewed 2026-10-28; follow-ups recorded separately"
+  },
+  "reviewBasis": "owner_workbook_review",
+  "nodes": [
+    {
+      "id": "g20-001",
+      "name": "新登山口",
+      "aliases": [],
+      "groups": [
+        "G20"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g20-002",
+      "name": "舊登山口",
+      "aliases": [
+        "舊登登山口"
+      ],
+      "groups": [
+        "G20"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g20-003",
+      "name": "越嶺鞍部",
+      "aliases": [
+        "1.75K越嶺鞍部"
+      ],
+      "groups": [
+        "G20"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g20-004",
+      "name": "3.8K 展望平台",
+      "aliases": [],
+      "groups": [
+        "G20"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g20-005",
+      "name": "4K 三岔路口",
+      "aliases": [],
+      "groups": [
+        "G20"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g20-006",
+      "name": "檜谷山莊",
+      "aliases": [],
+      "groups": [
+        "G20"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g20-007",
+      "name": "南大武山展望點",
+      "aliases": [],
+      "groups": [
+        "G20"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g20-008",
+      "name": "5.5K 大武神木",
+      "aliases": [],
+      "groups": [
+        "G20"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g20-009",
+      "name": "6.3K 最後水源",
+      "aliases": [],
+      "groups": [
+        "G20"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g20-010",
+      "name": "主稜嶺線",
+      "aliases": [
+        "主稜稜線"
+      ],
+      "groups": [
+        "G20"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g20-011",
+      "name": "8K 大武祠",
+      "aliases": [],
+      "groups": [
+        "G20"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g20-012",
+      "name": "9K 北大武山",
+      "aliases": [],
+      "groups": [
+        "G20"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "node:14d5226f1b271fb0e3bd",
+      "name": "萬巒",
+      "aliases": [],
+      "groups": [
+        "G20"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:804d982aec853ca7112a",
+      "name": "泰武",
+      "aliases": [],
+      "groups": [
+        "G20"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:84280ba5b1167373a37e",
+      "name": "潮州",
+      "aliases": [],
+      "groups": [
+        "G20"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    }
+  ],
+  "segments": [
+    {
+      "fromId": "g20-001",
+      "toId": "g20-002",
+      "from": "新登山口",
+      "to": "舊登山口",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA55A090436"
+      ],
+      "evidenceRows": [
+        810
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "RA55A090436",
+          "sheetRows": [
+            810
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    },
+    {
+      "fromId": "g20-002",
+      "toId": "g20-001",
+      "from": "舊登山口",
+      "to": "新登山口",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA55A090436"
+      ],
+      "evidenceRows": [
+        810
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "RA55A090436",
+          "sheetRows": [
+            810
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    },
+    {
+      "fromId": "g20-002",
+      "toId": "g20-003",
+      "from": "舊登山口",
+      "to": "越嶺鞍部",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6E68656E7A"
+      ],
+      "evidenceRows": [
+        811
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "R6E68656E7A",
+          "sheetRows": [
+            811
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    },
+    {
+      "fromId": "g20-003",
+      "toId": "g20-002",
+      "from": "越嶺鞍部",
+      "to": "舊登山口",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6E68656E7A"
+      ],
+      "evidenceRows": [
+        811
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "R6E68656E7A",
+          "sheetRows": [
+            811
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    },
+    {
+      "fromId": "g20-003",
+      "toId": "g20-004",
+      "from": "越嶺鞍部",
+      "to": "3.8K 展望平台",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE8C6AB7F24"
+      ],
+      "evidenceRows": [
+        812
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "RE8C6AB7F24",
+          "sheetRows": [
+            812
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    },
+    {
+      "fromId": "g20-004",
+      "toId": "g20-003",
+      "from": "3.8K 展望平台",
+      "to": "越嶺鞍部",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE8C6AB7F24"
+      ],
+      "evidenceRows": [
+        812
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "RE8C6AB7F24",
+          "sheetRows": [
+            812
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    },
+    {
+      "fromId": "g20-004",
+      "toId": "g20-005",
+      "from": "3.8K 展望平台",
+      "to": "4K 三岔路口",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R18CDFA015B"
+      ],
+      "evidenceRows": [
+        813
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "R18CDFA015B",
+          "sheetRows": [
+            813
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    },
+    {
+      "fromId": "g20-005",
+      "toId": "g20-004",
+      "from": "4K 三岔路口",
+      "to": "3.8K 展望平台",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R18CDFA015B"
+      ],
+      "evidenceRows": [
+        813
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "R18CDFA015B",
+          "sheetRows": [
+            813
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    },
+    {
+      "fromId": "g20-005",
+      "toId": "g20-006",
+      "from": "4K 三岔路口",
+      "to": "檜谷山莊",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4ABE66B94D"
+      ],
+      "evidenceRows": [
+        814
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "R4ABE66B94D",
+          "sheetRows": [
+            814
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    },
+    {
+      "fromId": "g20-006",
+      "toId": "g20-005",
+      "from": "檜谷山莊",
+      "to": "4K 三岔路口",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4ABE66B94D"
+      ],
+      "evidenceRows": [
+        814
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "R4ABE66B94D",
+          "sheetRows": [
+            814
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    },
+    {
+      "fromId": "g20-005",
+      "toId": "g20-007",
+      "from": "4K 三岔路口",
+      "to": "南大武山展望點",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RF2BA6FBF51"
+      ],
+      "evidenceRows": [
+        815
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "RF2BA6FBF51",
+          "sheetRows": [
+            815
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    },
+    {
+      "fromId": "g20-007",
+      "toId": "g20-005",
+      "from": "南大武山展望點",
+      "to": "4K 三岔路口",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RF2BA6FBF51"
+      ],
+      "evidenceRows": [
+        815
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "RF2BA6FBF51",
+          "sheetRows": [
+            815
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    },
+    {
+      "fromId": "g20-007",
+      "toId": "g20-008",
+      "from": "南大武山展望點",
+      "to": "5.5K 大武神木",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4AD34C042C"
+      ],
+      "evidenceRows": [
+        816
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "R4AD34C042C",
+          "sheetRows": [
+            816
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    },
+    {
+      "fromId": "g20-008",
+      "toId": "g20-007",
+      "from": "5.5K 大武神木",
+      "to": "南大武山展望點",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4AD34C042C"
+      ],
+      "evidenceRows": [
+        816
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "R4AD34C042C",
+          "sheetRows": [
+            816
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    },
+    {
+      "fromId": "g20-008",
+      "toId": "g20-009",
+      "from": "5.5K 大武神木",
+      "to": "6.3K 最後水源",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RFB979703A2"
+      ],
+      "evidenceRows": [
+        817
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "RFB979703A2",
+          "sheetRows": [
+            817
+          ],
+          "minutes": 65
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    },
+    {
+      "fromId": "g20-009",
+      "toId": "g20-008",
+      "from": "6.3K 最後水源",
+      "to": "5.5K 大武神木",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RFB979703A2"
+      ],
+      "evidenceRows": [
+        817
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "RFB979703A2",
+          "sheetRows": [
+            817
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    },
+    {
+      "fromId": "g20-009",
+      "toId": "g20-010",
+      "from": "6.3K 最後水源",
+      "to": "主稜嶺線",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6FFEB381FC"
+      ],
+      "evidenceRows": [
+        818
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "R6FFEB381FC",
+          "sheetRows": [
+            818
+          ],
+          "minutes": 65
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    },
+    {
+      "fromId": "g20-010",
+      "toId": "g20-009",
+      "from": "主稜嶺線",
+      "to": "6.3K 最後水源",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6FFEB381FC"
+      ],
+      "evidenceRows": [
+        818
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "R6FFEB381FC",
+          "sheetRows": [
+            818
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    },
+    {
+      "fromId": "g20-011",
+      "toId": "g20-010",
+      "from": "8K 大武祠",
+      "to": "主稜嶺線",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RF492FBBADC"
+      ],
+      "evidenceRows": [
+        819
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "RF492FBBADC",
+          "sheetRows": [
+            819
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    },
+    {
+      "fromId": "g20-010",
+      "toId": "g20-011",
+      "from": "主稜嶺線",
+      "to": "8K 大武祠",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RF492FBBADC"
+      ],
+      "evidenceRows": [
+        819
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "RF492FBBADC",
+          "sheetRows": [
+            819
+          ],
+          "minutes": 65
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    },
+    {
+      "fromId": "g20-012",
+      "toId": "g20-011",
+      "from": "9K 北大武山",
+      "to": "8K 大武祠",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R83A2421C4A"
+      ],
+      "evidenceRows": [
+        820
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "R83A2421C4A",
+          "sheetRows": [
+            820
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    },
+    {
+      "fromId": "g20-011",
+      "toId": "g20-012",
+      "from": "8K 大武祠",
+      "to": "9K 北大武山",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R83A2421C4A"
+      ],
+      "evidenceRows": [
+        820
+      ],
+      "sourceGroups": [
+        "北大武山"
+      ],
+      "sourceChart": "G20",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北大武山",
+          "chartId": "G20",
+          "url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+          "rowId": "R83A2421C4A",
+          "sheetRows": [
+            820
+          ],
+          "minutes": 65
+        }
+      ],
+      "sourceGroupNames": [
+        "北大武山"
+      ]
+    }
+  ],
+  "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+}

@@ -1,0 +1,58 @@
+name: 路網資料／步程時間異常
+description: 追蹤上河圖組的候選路段錯誤、雙向分鐘數或 Node ID 歧義
+title: "[Route Data] "
+labels: ["data-audit"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        請勿貼入未取得公開授權的完整圖面或全量資料。保留官方來源連結及必要範圍的時間資訊即可。
+  - type: input
+    id: dataset_sha
+    attributes:
+      label: 候選資料 SHA256 或資料集版本
+      description: 可由 batch_hiking_pipeline.py 產生的 summary.json 查詢
+      placeholder: 例如 15f39d...
+    validations:
+      required: true
+  - type: input
+    id: directed_edge
+    attributes:
+      label: 圖組／起點 → 終點（方向不可省略）
+      placeholder: G17 南二段｜大水窟山 → 大水窟山屋
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: 候選時間、重複資料或錯誤情況
+      description: 說明去程與回程分別是多少，並附原始候選行號
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 官方來源 URL
+      placeholder: https://www.sunriver.com.tw/step2020.htm
+  - type: textarea
+    id: review
+    attributes:
+      label: 已獨立確認的證據與待核對部分
+      description: 不得把跨圖數字一致當作官方原圖已核實
+  - type: dropdown
+    id: status
+    attributes:
+      label: 目前核對狀態
+      options:
+        - 候選衝突／待查
+        - 結構檢查通過、來源未查
+        - 已比對暫存資料
+        - 官方來源人工核對完成
+        - 排除車行／不可尋路
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: 修正影響與回歸測試
+      description: 列出受影響的 Node ID、方向、圖組、路線與測試

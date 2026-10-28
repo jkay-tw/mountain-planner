@@ -1,0 +1,2398 @@
+{
+  "route_id": "G09-19d020e9",
+  "route_name": "奇萊群峰",
+  "status": "owner-reviewed-preview",
+  "sourceChartIds": [
+    "G09"
+  ],
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+    "revision": "owner workbook reviewed 2026-10-28; follow-ups recorded separately"
+  },
+  "reviewBasis": "owner_workbook_review",
+  "nodes": [
+    {
+      "id": "node:0e7532594da9547fca60",
+      "name": "卡西營地",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:2b986c08a9f8d44153ea",
+      "name": "奇萊主山",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:3fa88984d42156b12904",
+      "name": "卡東營地",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:6d5573eb9babae99663c",
+      "name": "成功一號堡",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:708f66f3eac743cb652e",
+      "name": "主山登山口",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:77bc428ee25c80237c13",
+      "name": "裡山森林入口",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:83a76c46935de2ee6f88",
+      "name": "主北岔路",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:dca389db39359114677f",
+      "name": "奇萊北峰岔路",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "shared:cw-v07-012",
+      "name": "主北三岔路",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-022",
+      "name": "南峰登山口",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-024",
+      "name": "南華山",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-038",
+      "name": "天池山莊",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-039",
+      "name": "天池岔路口",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-041",
+      "name": "奇萊主山北峰",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-042",
+      "name": "奇萊主山南峰",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-043",
+      "name": "奇萊山莊",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-045",
+      "name": "屯原登山口",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-047",
+      "name": "廬山部落",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-048",
+      "name": "成功山屋",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-058",
+      "name": "滑雪山莊奇萊登山口",
+      "aliases": [
+        "奇萊登山口滑雪山莊"
+      ],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-065",
+      "name": "縣界啞口",
+      "aliases": [
+        "縣界埡口"
+      ],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-075",
+      "name": "雲海保線所",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-077",
+      "name": "霧社",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-081",
+      "name": "黑水塘山屋",
+      "aliases": [],
+      "groups": [
+        "G09-19d020e9"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    }
+  ],
+  "segments": [
+    {
+      "fromId": "shared:cw-v07-045",
+      "toId": "shared:cw-v07-075",
+      "from": "屯原登山口",
+      "to": "雲海保線所",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3F311F60BB",
+        "RAE25CC6535",
+        "RC66D1C6531"
+      ],
+      "evidenceRows": [
+        334,
+        414,
+        433
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RAE25CC6535",
+          "sheetRows": [
+            334
+          ],
+          "minutes": 120
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "R3F311F60BB",
+          "sheetRows": [
+            414
+          ],
+          "minutes": 120
+        },
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RC66D1C6531",
+          "sheetRows": [
+            433
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-075",
+      "toId": "shared:cw-v07-045",
+      "from": "雲海保線所",
+      "to": "屯原登山口",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3F311F60BB",
+        "RAE25CC6535",
+        "RC66D1C6531"
+      ],
+      "evidenceRows": [
+        334,
+        414,
+        433
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RAE25CC6535",
+          "sheetRows": [
+            334
+          ],
+          "minutes": 100
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "R3F311F60BB",
+          "sheetRows": [
+            414
+          ],
+          "minutes": 100
+        },
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RC66D1C6531",
+          "sheetRows": [
+            433
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-075",
+      "toId": "shared:cw-v07-038",
+      "from": "雲海保線所",
+      "to": "天池山莊",
+      "minutes": 210,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R67DF23BF8C",
+        "R6F8F31F818",
+        "R7D7BE10338"
+      ],
+      "evidenceRows": [
+        335,
+        415,
+        434
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R7D7BE10338",
+          "sheetRows": [
+            335
+          ],
+          "minutes": 210
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "R6F8F31F818",
+          "sheetRows": [
+            415
+          ],
+          "minutes": 210
+        },
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R67DF23BF8C",
+          "sheetRows": [
+            434
+          ],
+          "minutes": 210
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-038",
+      "toId": "shared:cw-v07-075",
+      "from": "天池山莊",
+      "to": "雲海保線所",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R67DF23BF8C",
+        "R6F8F31F818",
+        "R7D7BE10338"
+      ],
+      "evidenceRows": [
+        335,
+        415,
+        434
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R7D7BE10338",
+          "sheetRows": [
+            335
+          ],
+          "minutes": 180
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "R6F8F31F818",
+          "sheetRows": [
+            415
+          ],
+          "minutes": 180
+        },
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R67DF23BF8C",
+          "sheetRows": [
+            434
+          ],
+          "minutes": 180
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-038",
+      "toId": "shared:cw-v07-065",
+      "from": "天池山莊",
+      "to": "縣界啞口",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R50B9B08245",
+        "R8326A43EB0",
+        "RE58CD3D81A"
+      ],
+      "evidenceRows": [
+        336,
+        416,
+        435
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RE58CD3D81A",
+          "sheetRows": [
+            336
+          ],
+          "minutes": 50
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "R50B9B08245",
+          "sheetRows": [
+            416
+          ],
+          "minutes": 50
+        },
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R8326A43EB0",
+          "sheetRows": [
+            435
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-065",
+      "toId": "shared:cw-v07-038",
+      "from": "縣界啞口",
+      "to": "天池山莊",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R50B9B08245",
+        "R8326A43EB0",
+        "RE58CD3D81A"
+      ],
+      "evidenceRows": [
+        336,
+        416,
+        435
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RE58CD3D81A",
+          "sheetRows": [
+            336
+          ],
+          "minutes": 55
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "R50B9B08245",
+          "sheetRows": [
+            416
+          ],
+          "minutes": 55
+        },
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R8326A43EB0",
+          "sheetRows": [
+            435
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-024",
+      "toId": "shared:cw-v07-065",
+      "from": "南華山",
+      "to": "縣界啞口",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC5FFD291A0",
+        "RD57B3E1413"
+      ],
+      "evidenceRows": [
+        337,
+        428
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高越嶺"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RC5FFD291A0",
+          "sheetRows": [
+            337
+          ],
+          "minutes": 80
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "RD57B3E1413",
+          "sheetRows": [
+            428
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-065",
+      "toId": "shared:cw-v07-024",
+      "from": "縣界啞口",
+      "to": "南華山",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC5FFD291A0",
+        "RD57B3E1413"
+      ],
+      "evidenceRows": [
+        337,
+        428
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高越嶺"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RC5FFD291A0",
+          "sheetRows": [
+            337
+          ],
+          "minutes": 120
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "RD57B3E1413",
+          "sheetRows": [
+            428
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-039",
+      "toId": "shared:cw-v07-038",
+      "from": "天池岔路口",
+      "to": "天池山莊",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R43D22E7D0A",
+        "RA7437986A2"
+      ],
+      "evidenceRows": [
+        338,
+        424
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高越嶺"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R43D22E7D0A",
+          "sheetRows": [
+            338
+          ],
+          "minutes": 40
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "RA7437986A2",
+          "sheetRows": [
+            424
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-038",
+      "toId": "shared:cw-v07-039",
+      "from": "天池山莊",
+      "to": "天池岔路口",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R43D22E7D0A",
+        "RA7437986A2"
+      ],
+      "evidenceRows": [
+        338,
+        424
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高越嶺"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R43D22E7D0A",
+          "sheetRows": [
+            338
+          ],
+          "minutes": 60
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "RA7437986A2",
+          "sheetRows": [
+            424
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-022",
+      "toId": "shared:cw-v07-039",
+      "from": "南峰登山口",
+      "to": "天池岔路口",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R83B0BAAE52",
+        "R9F675B4F96"
+      ],
+      "evidenceRows": [
+        339,
+        425
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高越嶺"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R9F675B4F96",
+          "sheetRows": [
+            339
+          ],
+          "minutes": 15
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "R83B0BAAE52",
+          "sheetRows": [
+            425
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-039",
+      "toId": "shared:cw-v07-022",
+      "from": "天池岔路口",
+      "to": "南峰登山口",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R83B0BAAE52",
+        "R9F675B4F96"
+      ],
+      "evidenceRows": [
+        339,
+        425
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高越嶺"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R9F675B4F96",
+          "sheetRows": [
+            339
+          ],
+          "minutes": 20
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "R83B0BAAE52",
+          "sheetRows": [
+            425
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "node:77bc428ee25c80237c13",
+      "toId": "shared:cw-v07-022",
+      "from": "裡山森林入口",
+      "to": "南峰登山口",
+      "minutes": 150,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBCD33ED0A4"
+      ],
+      "evidenceRows": [
+        340
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RBCD33ED0A4",
+          "sheetRows": [
+            340
+          ],
+          "minutes": 150
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-022",
+      "toId": "node:77bc428ee25c80237c13",
+      "from": "南峰登山口",
+      "to": "裡山森林入口",
+      "minutes": 185,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBCD33ED0A4"
+      ],
+      "evidenceRows": [
+        340
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RBCD33ED0A4",
+          "sheetRows": [
+            340
+          ],
+          "minutes": 185
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "node:3fa88984d42156b12904",
+      "toId": "node:77bc428ee25c80237c13",
+      "from": "卡東營地",
+      "to": "裡山森林入口",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4026F56A0A"
+      ],
+      "evidenceRows": [
+        341
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R4026F56A0A",
+          "sheetRows": [
+            341
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "node:77bc428ee25c80237c13",
+      "toId": "node:3fa88984d42156b12904",
+      "from": "裡山森林入口",
+      "to": "卡東營地",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4026F56A0A"
+      ],
+      "evidenceRows": [
+        341
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R4026F56A0A",
+          "sheetRows": [
+            341
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "node:0e7532594da9547fca60",
+      "toId": "node:3fa88984d42156b12904",
+      "from": "卡西營地",
+      "to": "卡東營地",
+      "minutes": 230,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6D8AAF3D5B"
+      ],
+      "evidenceRows": [
+        342
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R6D8AAF3D5B",
+          "sheetRows": [
+            342
+          ],
+          "minutes": 230
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "node:3fa88984d42156b12904",
+      "toId": "node:0e7532594da9547fca60",
+      "from": "卡東營地",
+      "to": "卡西營地",
+      "minutes": 270,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6D8AAF3D5B"
+      ],
+      "evidenceRows": [
+        342
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R6D8AAF3D5B",
+          "sheetRows": [
+            342
+          ],
+          "minutes": 270
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "node:708f66f3eac743cb652e",
+      "toId": "node:0e7532594da9547fca60",
+      "from": "主山登山口",
+      "to": "卡西營地",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R09BDB219C7"
+      ],
+      "evidenceRows": [
+        343
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R09BDB219C7",
+          "sheetRows": [
+            343
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "node:0e7532594da9547fca60",
+      "toId": "node:708f66f3eac743cb652e",
+      "from": "卡西營地",
+      "to": "主山登山口",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R09BDB219C7"
+      ],
+      "evidenceRows": [
+        343
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R09BDB219C7",
+          "sheetRows": [
+            343
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-043",
+      "toId": "node:708f66f3eac743cb652e",
+      "from": "奇萊山莊",
+      "to": "主山登山口",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R55CB6407C1"
+      ],
+      "evidenceRows": [
+        344
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R55CB6407C1",
+          "sheetRows": [
+            344
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "node:708f66f3eac743cb652e",
+      "toId": "shared:cw-v07-043",
+      "from": "主山登山口",
+      "to": "奇萊山莊",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R55CB6407C1"
+      ],
+      "evidenceRows": [
+        344
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R55CB6407C1",
+          "sheetRows": [
+            344
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "node:83a76c46935de2ee6f88",
+      "toId": "shared:cw-v07-012",
+      "from": "主北岔路",
+      "to": "主北三岔路",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RAB2FC2E40F"
+      ],
+      "evidenceRows": [
+        345
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RAB2FC2E40F",
+          "sheetRows": [
+            345
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-012",
+      "toId": "node:83a76c46935de2ee6f88",
+      "from": "主北三岔路",
+      "to": "主北岔路",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RAB2FC2E40F"
+      ],
+      "evidenceRows": [
+        345
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RAB2FC2E40F",
+          "sheetRows": [
+            345
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "node:dca389db39359114677f",
+      "toId": "node:83a76c46935de2ee6f88",
+      "from": "奇萊北峰岔路",
+      "to": "主北岔路",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE751C5375D"
+      ],
+      "evidenceRows": [
+        346
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RE751C5375D",
+          "sheetRows": [
+            346
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "node:83a76c46935de2ee6f88",
+      "toId": "node:dca389db39359114677f",
+      "from": "主北岔路",
+      "to": "奇萊北峰岔路",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE751C5375D"
+      ],
+      "evidenceRows": [
+        346
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RE751C5375D",
+          "sheetRows": [
+            346
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-041",
+      "toId": "node:dca389db39359114677f",
+      "from": "奇萊主山北峰",
+      "to": "奇萊北峰岔路",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA706492F55"
+      ],
+      "evidenceRows": [
+        347
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RA706492F55",
+          "sheetRows": [
+            347
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "node:dca389db39359114677f",
+      "toId": "shared:cw-v07-041",
+      "from": "奇萊北峰岔路",
+      "to": "奇萊主山北峰",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA706492F55"
+      ],
+      "evidenceRows": [
+        347
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RA706492F55",
+          "sheetRows": [
+            347
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "node:83a76c46935de2ee6f88",
+      "toId": "node:6d5573eb9babae99663c",
+      "from": "主北岔路",
+      "to": "成功一號堡",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4A42D9FAB0"
+      ],
+      "evidenceRows": [
+        348
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R4A42D9FAB0",
+          "sheetRows": [
+            348
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "node:6d5573eb9babae99663c",
+      "toId": "node:83a76c46935de2ee6f88",
+      "from": "成功一號堡",
+      "to": "主北岔路",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4A42D9FAB0"
+      ],
+      "evidenceRows": [
+        348
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R4A42D9FAB0",
+          "sheetRows": [
+            348
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "node:6d5573eb9babae99663c",
+      "toId": "shared:cw-v07-048",
+      "from": "成功一號堡",
+      "to": "成功山屋",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R178FD4E0DD"
+      ],
+      "evidenceRows": [
+        349
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R178FD4E0DD",
+          "sheetRows": [
+            349
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-048",
+      "toId": "node:6d5573eb9babae99663c",
+      "from": "成功山屋",
+      "to": "成功一號堡",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R178FD4E0DD"
+      ],
+      "evidenceRows": [
+        349
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R178FD4E0DD",
+          "sheetRows": [
+            349
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-048",
+      "toId": "shared:cw-v07-081",
+      "from": "成功山屋",
+      "to": "黑水塘山屋",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3B8C279FF3",
+        "RB78969D926"
+      ],
+      "evidenceRows": [
+        350,
+        382
+      ],
+      "sourceGroups": [
+        "奇萊東稜",
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RB78969D926",
+          "sheetRows": [
+            350
+          ],
+          "minutes": 50
+        },
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R3B8C279FF3",
+          "sheetRows": [
+            382
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜",
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-081",
+      "toId": "shared:cw-v07-048",
+      "from": "黑水塘山屋",
+      "to": "成功山屋",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3B8C279FF3",
+        "RB78969D926"
+      ],
+      "evidenceRows": [
+        350,
+        382
+      ],
+      "sourceGroups": [
+        "奇萊東稜",
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RB78969D926",
+          "sheetRows": [
+            350
+          ],
+          "minutes": 60
+        },
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R3B8C279FF3",
+          "sheetRows": [
+            382
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜",
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-058",
+      "toId": "shared:cw-v07-081",
+      "from": "滑雪山莊奇萊登山口",
+      "to": "黑水塘山屋",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R202BD41F71"
+      ],
+      "evidenceRows": [
+        375
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R202BD41F71",
+          "sheetRows": [
+            375
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-081",
+      "toId": "shared:cw-v07-058",
+      "from": "黑水塘山屋",
+      "to": "滑雪山莊奇萊登山口",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R202BD41F71"
+      ],
+      "evidenceRows": [
+        375
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R202BD41F71",
+          "sheetRows": [
+            375
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-012",
+      "toId": "node:dca389db39359114677f",
+      "from": "主北三岔路",
+      "to": "奇萊北峰岔路",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0CE5683C25"
+      ],
+      "evidenceRows": [
+        376
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R0CE5683C25",
+          "sheetRows": [
+            376
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "node:dca389db39359114677f",
+      "toId": "shared:cw-v07-012",
+      "from": "奇萊北峰岔路",
+      "to": "主北三岔路",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0CE5683C25"
+      ],
+      "evidenceRows": [
+        376
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R0CE5683C25",
+          "sheetRows": [
+            376
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-012",
+      "toId": "shared:cw-v07-043",
+      "from": "主北三岔路",
+      "to": "奇萊山莊",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R06D437DEE1",
+        "R6744CEB733"
+      ],
+      "evidenceRows": [
+        377,
+        384
+      ],
+      "sourceGroups": [
+        "奇萊東稜",
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R06D437DEE1",
+          "sheetRows": [
+            377
+          ],
+          "minutes": 10
+        },
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R6744CEB733",
+          "sheetRows": [
+            384
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜",
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-043",
+      "toId": "shared:cw-v07-012",
+      "from": "奇萊山莊",
+      "to": "主北三岔路",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R06D437DEE1",
+        "R6744CEB733"
+      ],
+      "evidenceRows": [
+        377,
+        384
+      ],
+      "sourceGroups": [
+        "奇萊東稜",
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R06D437DEE1",
+          "sheetRows": [
+            377
+          ],
+          "minutes": 15
+        },
+        {
+          "group": "奇萊東稜",
+          "chartId": "G10",
+          "url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg",
+          "rowId": "R6744CEB733",
+          "sheetRows": [
+            384
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊東稜",
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "node:708f66f3eac743cb652e",
+      "toId": "node:2b986c08a9f8d44153ea",
+      "from": "主山登山口",
+      "to": "奇萊主山",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RFD2CBBC2A6"
+      ],
+      "evidenceRows": [
+        378
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RFD2CBBC2A6",
+          "sheetRows": [
+            378
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "node:2b986c08a9f8d44153ea",
+      "toId": "node:708f66f3eac743cb652e",
+      "from": "奇萊主山",
+      "to": "主山登山口",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RFD2CBBC2A6"
+      ],
+      "evidenceRows": [
+        378
+      ],
+      "sourceGroups": [
+        "奇萊群峰"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RFD2CBBC2A6",
+          "sheetRows": [
+            378
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-022",
+      "toId": "shared:cw-v07-042",
+      "from": "南峰登山口",
+      "to": "奇萊主山南峰",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3390A9643A",
+        "R5EF5C60FF9"
+      ],
+      "evidenceRows": [
+        379,
+        426
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高越嶺"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R3390A9643A",
+          "sheetRows": [
+            379
+          ],
+          "minutes": 60
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "R5EF5C60FF9",
+          "sheetRows": [
+            426
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-042",
+      "toId": "shared:cw-v07-022",
+      "from": "奇萊主山南峰",
+      "to": "南峰登山口",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3390A9643A",
+        "R5EF5C60FF9"
+      ],
+      "evidenceRows": [
+        379,
+        426
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高越嶺"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R3390A9643A",
+          "sheetRows": [
+            379
+          ],
+          "minutes": 40
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "R5EF5C60FF9",
+          "sheetRows": [
+            426
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-039",
+      "toId": "shared:cw-v07-024",
+      "from": "天池岔路口",
+      "to": "南華山",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R62B345D97C",
+        "RA14EBFDA1A"
+      ],
+      "evidenceRows": [
+        380,
+        427
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高越嶺"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R62B345D97C",
+          "sheetRows": [
+            380
+          ],
+          "minutes": 40
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "RA14EBFDA1A",
+          "sheetRows": [
+            427
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-024",
+      "toId": "shared:cw-v07-039",
+      "from": "南華山",
+      "to": "天池岔路口",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R62B345D97C",
+        "RA14EBFDA1A"
+      ],
+      "evidenceRows": [
+        380,
+        427
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高越嶺"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R62B345D97C",
+          "sheetRows": [
+            380
+          ],
+          "minutes": 30
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "RA14EBFDA1A",
+          "sheetRows": [
+            427
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高越嶺"
+      ]
+    }
+  ],
+  "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+}
