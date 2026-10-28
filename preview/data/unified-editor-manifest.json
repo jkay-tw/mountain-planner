@@ -1,5 +1,5 @@
 {
-  "dataset_version": "v0.7.18-global-graph-preview",
+  "dataset_version": "v0.7.20-global-graph-preview",
   "mode": "global-verified-graph-scoped-node-browser-preview",
   "routes": [
     {
@@ -64,6 +64,13 @@
       "file": "data/routes/G17G18.preview.json?v=078",
       "status": "preview-only",
       "source_url": "https://www.sunriver.com.tw/step2020.htm"
+    },
+    {
+      "id": "G20",
+      "name": "G20｜北大武山（新登山口至檜谷山莊）",
+      "file": "data/routes/G20.preview.json",
+      "status": "partial-source-reviewed-preview",
+      "source_url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
     }
   ]
 }
