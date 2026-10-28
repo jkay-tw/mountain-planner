@@ -537,11 +537,11 @@ test('v0.7.10 preview exposes optional alternate-time controls while keeping nod
 test('v0.7.12 global route browser keeps scopes without clearing itinerary',async()=>{
  const {readFileSync}=await import('node:fs');
  const manifest=JSON.parse(readFileSync(new URL('../data/unified-editor-manifest.json',import.meta.url),'utf8'));
- assert.deepEqual(manifest.routes.map(x=>x.id),['G02','G03','G06','G07','G08','G11','G14','G17G18-PREVIEW']);
+ assert.deepEqual(manifest.routes.map(x=>x.id),['G02','G03','G04','G06','G07','G08','G11','G14','G17G18-PREVIEW']);
  const html=readFileSync(new URL('../unified-editor.html',import.meta.url),'utf8');
  const app=readFileSync(new URL('../js/unified-editor.js',import.meta.url),'utf8');
- assert.ok(html.includes('js/unified-editor.js?v=v0717'));
- assert.ok(app.includes('v0.7.17 Unified Preview'));
+ assert.ok(html.includes('js/unified-editor.js?v=v0718'));
+ assert.ok(app.includes('v0.7.18 Unified Preview'));
  assert.match(app,/mergeReviewedRoutes/);
  assert.ok(app.includes('nodesInScope(route,scope)'));
  assert.match(app,/appendDisconnectedNode/);
@@ -723,4 +723,23 @@ test('legacy name-only plan cannot silently choose between duplicate-name nodes'
   items:[{id:'x',type:'location',name:'岔路',nodeId:'fork-b',note:'',incoming:null}]
  }],route);
  assert.equal(migrated[0].items[0].nodeId,'fork-b');
+});
+
+test('G04 duplicate generic labels stay separate and vehicle-marked farm links stay excluded',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const route=addRouteIdentity(JSON.parse(readFileSync(new URL('../data/routes/G04.preview.json',import.meta.url),'utf8')));
+ const audit=JSON.parse(readFileSync(new URL('../data/audits/G04_full_official_directional_review_20261028.json',import.meta.url),'utf8'));
+ assert.equal(audit.reviewedWalkingPairs.length,73);
+ assert.equal(audit.walkingDirectedEdges,146);
+ assert.equal(audit.excluded.length,2);
+ assert.equal(route.segments.length,146);
+ assert.equal(route.nodes.filter(n=>n.name==='岔路').length,2);
+ assert.equal(route.nodes.filter(n=>n.name==='岔路口').length,2);
+ const forkDaba=route.nodes.find(n=>n.id==='g04-fork-daba');
+ const forkShengleng=route.nodes.find(n=>n.id==='g04-fork-shengleng');
+ assert.ok(forkDaba&&forkShengleng);
+ assert.equal(shortestPath(route,forkDaba.id,forkShengleng.id),null);
+ assert.ok(!route.segments.some(x=>x.from==='農場岔路'&&['武陵山莊','武陵農場·遊客中心'].includes(x.to)));
+ assert.equal(route.nodes.find(x=>x.name==='雪山主峰')?.id,'shared:cw-v07-074');
+ assert.equal(route.nodes.find(x=>x.name==='翠池山屋')?.id,'shared:cw-v07-066');
 });
