@@ -33,7 +33,7 @@
     {
       "id": "G07",
       "name": "G07｜北一段（需重新核對最新版）",
-      "file": "data/routes/G07.preview.json",
+      "file": "data/routes/G07.preview.json?v=v0721",
       "status": "prior-version-source-review-current-recheck-pending",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new3.jpg",
       "routingEnabled": false
@@ -69,7 +69,7 @@
     {
       "id": "G20",
       "name": "G20｜北大武山（原圖已標時步行路網）",
-      "file": "data/routes/G20.preview.json",
+      "file": "data/routes/G20.preview.json?v=v0721",
       "status": "source-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
     }
