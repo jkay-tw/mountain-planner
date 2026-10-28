@@ -183,6 +183,17 @@
       "userConfirmed": true,
       "retainSearchAlias": true,
       "neverChangeOtherGroups": true
+    },
+    {
+      "group": "丹大東郡",
+      "officialChartId": "G15",
+      "from": "33.5K大崩山",
+      "to": "33.5K大崩塌",
+      "kind": "source_verified_typo_correction",
+      "userConfirmed": false,
+      "sourceVerified": true,
+      "retainSearchAlias": true,
+      "neverChangeOtherGroups": true
     }
   ],
   "supplementalGroups": [
@@ -193,5 +204,16 @@
       "notes": "Related to routes that can overlap several chart families; no invented official G number. Individual segments require source chart mapping."
     }
   ],
-  "publicationGate": "Mapping and aliases alone do not verify walking times or authorize publication."
+  "publicationGate": "Mapping and aliases alone do not verify walking times or authorize publication.",
+  "excludedCandidateSegments": [
+    {
+      "group": "丹大東郡",
+      "from": "烏利加南東峰山屋",
+      "to": "麻利加南東峰山屋",
+      "go": 30,
+      "back": 20,
+      "reason": "corrupt isolated duplicate: source chart contains 馬利加南東峰山屋 ↔ 馬利加南山東峰 30/20 instead; do not create phantom nodes",
+      "sourceVerified": true
+    }
+  ]
 }
