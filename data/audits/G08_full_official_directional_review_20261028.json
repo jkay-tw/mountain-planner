@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "chartId": "G08",
+  "chartName": "畢祿羊頭連峰／北二段",
+  "officialImageURL": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+  "officialIndexURL": "https://www.sunriver.com.tw/step2020.htm",
+  "reviewedAt": "2026-10-28",
+  "reviewedBy": "assistant",
+  "reviewMethod": "direct visual comparison against official walking-time diagram; duplicate candidate rows resolved using user's 2026-10-28 standard-time corrections; explicit vehicle pictogram excluded",
+  "status": "full-candidate-scope-source-checked",
+  "reviewedWalkingPairs": [
+    {
+      "group": "畢祿羊頭連峰縱走",
+      "from": "820林道0K",
+      "to": "8.4k登山口營地",
+      "forwardMinutes": 200,
+      "reverseMinutes": 230,
+      "alternates": []
+    },
+    {
+      "group": "畢祿羊頭連峰縱走",
+      "from": "8.4k登山口營地",
+      "to": "拉繩垂直岩壁",
+      "forwardMinutes": 110,
+      "reverseMinutes": 80,
+      "alternates": []
+    },
+    {
+      "group": "畢祿羊頭連峰縱走",
+      "from": "拉繩垂直岩壁",
+      "to": "主稜三岔路口",
+      "forwardMinutes": 90,
+      "reverseMinutes": 60,
+      "alternates": []
+    },
+    {
+      "group": "畢祿羊頭連峰縱走",
+      "from": "主稜三岔路口",
+      "to": "畢祿山",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "alternates": []
+    },
+    {
+      "group": "畢祿羊頭連峰縱走",
+      "from": "主稜三岔路口",
+      "to": "第一峰(畢祿營地)",
+      "forwardMinutes": 30,
+      "reverseMinutes": 30,
+      "alternates": []
+    },
+    {
+      "group": "畢祿羊頭連峰縱走",
+      "from": "第一峰(畢祿營地)",
+      "to": "鋸山(第四峰)",
+      "forwardMinutes": 105,
+      "reverseMinutes": 120,
+      "alternates": []
+    },
+    {
+      "group": "畢祿羊頭連峰縱走",
+      "from": "鋸山(第四峰)",
+      "to": "東峰前營地",
+      "forwardMinutes": 110,
+      "reverseMinutes": 180,
+      "alternates": []
+    },
+    {
+      "group": "畢祿羊頭連峰縱走",
+      "from": "東峰前營地",
+      "to": "鋸山東峰",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "alternates": []
+    },
+    {
+      "group": "畢祿羊頭連峰縱走",
+      "from": "鋸山東峰",
+      "to": "三岔路口",
+      "forwardMinutes": 25,
+      "reverseMinutes": 30,
+      "alternates": []
+    },
+    {
+      "group": "畢祿羊頭連峰縱走",
+      "from": "三岔路口",
+      "to": "羊頭山",
+      "forwardMinutes": 50,
+      "reverseMinutes": 45,
+      "alternates": []
+    },
+    {
+      "group": "畢祿羊頭連峰縱走",
+      "from": "三岔路口",
+      "to": "羊頭山登山口",
+      "forwardMinutes": 180,
+      "reverseMinutes": 350,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "清泉橋",
+      "to": "檢查哨(廢)",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "檢查哨(廢)",
+      "to": "11.7K行車終點",
+      "forwardMinutes": 40,
+      "reverseMinutes": 40,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "11.7K行車終點",
+      "to": "17.5K登山口",
+      "forwardMinutes": 180,
+      "reverseMinutes": 140,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "17.5K登山口",
+      "to": "23.2K登山口",
+      "forwardMinutes": 140,
+      "reverseMinutes": 120,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "23.2K登山口",
+      "to": "雨量計前岔路口",
+      "forwardMinutes": 20,
+      "reverseMinutes": 15,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "雨量計前岔路口",
+      "to": "閂山",
+      "forwardMinutes": 80,
+      "reverseMinutes": 100,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "閂山",
+      "to": "25K工寮",
+      "forwardMinutes": 80,
+      "reverseMinutes": 100,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "23.2K登山口",
+      "to": "25K工寮",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "25K工寮",
+      "to": "27.5K林道登山口",
+      "forwardMinutes": 110,
+      "reverseMinutes": 110,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "27.5K林道登山口",
+      "to": "人待山稜線岔路",
+      "forwardMinutes": 70,
+      "reverseMinutes": 50,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "17.5K登山口",
+      "to": "耳無溪合流點",
+      "forwardMinutes": 110,
+      "reverseMinutes": 160,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "耳無溪合流點",
+      "to": "遠多志山",
+      "forwardMinutes": 240,
+      "reverseMinutes": 140,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "遠多志山",
+      "to": "甘薯南峰",
+      "forwardMinutes": 90,
+      "reverseMinutes": 50,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "甘薯南峰",
+      "to": "甘薯峰",
+      "forwardMinutes": 140,
+      "reverseMinutes": 140,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "甘薯南峰",
+      "to": "鞍部",
+      "forwardMinutes": 60,
+      "reverseMinutes": 70,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "鞍部",
+      "to": "鬼門關峰",
+      "forwardMinutes": 110,
+      "reverseMinutes": 70,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "鬼門關峰",
+      "to": "無明水池",
+      "forwardMinutes": 15,
+      "reverseMinutes": 20,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "無明水池",
+      "to": "無明山",
+      "forwardMinutes": 70,
+      "reverseMinutes": 45,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "水源",
+      "to": "東鞍營地",
+      "forwardMinutes": 25,
+      "reverseMinutes": 15,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "無明山西峰",
+      "to": "東鞍營地",
+      "forwardMinutes": 290,
+      "reverseMinutes": 190,
+      "alternates": [
+        {
+          "direction": "reverse",
+          "kind": "slow",
+          "minutes": 350
+        }
+      ]
+    },
+    {
+      "group": "北二段",
+      "from": "東鞍營地",
+      "to": "鈴鳴山",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "人待山稜線岔路",
+      "to": "鈴鳴山",
+      "forwardMinutes": 60,
+      "reverseMinutes": 45,
+      "alternates": []
+    },
+    {
+      "group": "北二段",
+      "from": "無明山西峰",
+      "to": "無明山",
+      "forwardMinutes": 160,
+      "reverseMinutes": 200,
+      "alternates": [
+        {
+          "direction": "forward",
+          "kind": "slow",
+          "minutes": 260
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "group": "畢祿羊頭連峰縱走",
+      "from": "820林道0K",
+      "to": "羊頭山登山口",
+      "candidateForward": 40,
+      "candidateReverse": 40,
+      "reason": "official chart marks this connection with a vehicle pictogram; excluded from walking graph"
+    }
+  ],
+  "walkingDirectedEdges": 68,
+  "scopeNote": "34 unique walking pairs (68 directions) source-checked; one vehicle-marked connection excluded from automatic walking routing."
+}
