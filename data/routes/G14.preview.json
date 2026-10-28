@@ -1,0 +1,799 @@
+{
+  "route_id": "G14",
+  "route_name": "丹大山列",
+  "status": "source-reviewed-preview",
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "page_url": "https://www.sunriver.com.tw/step2020.htm",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+    "revision": "official G14 diagram checked 2026-10-28"
+  },
+  "nodes": [
+    {
+      "id": "g14-001",
+      "name": "2603公尺鞍部",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-002",
+      "name": "2761最低鞍部",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-003",
+      "name": "2780草原黑水塘",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-004",
+      "name": "2813鞍營地",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-005",
+      "name": "2833公尺鞍部",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-006",
+      "name": "2863公尺峰",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-007",
+      "name": "2897公尺峰",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-008",
+      "name": "3255公尺峰",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-009",
+      "name": "36K大崩壁",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-010",
+      "name": "42K阿道別墅",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-011",
+      "name": "46K九族工寮",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-012",
+      "name": "七彩妹池",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-013",
+      "name": "七彩湖",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-014",
+      "name": "大石公山",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-015",
+      "name": "小石公山",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-016",
+      "name": "丹大山",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-017",
+      "name": "六順山",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-018",
+      "name": "六順山新登山口",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-019",
+      "name": "天梯頂岔路口",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-020",
+      "name": "台電高登連絡站",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-021",
+      "name": "林道入口",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-022",
+      "name": "林道舊登山口",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-023",
+      "name": "情人吊橋",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-024",
+      "name": "廢棄工寮",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-025",
+      "name": "雙龍瀑布",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-026",
+      "name": "關門山凹",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-027",
+      "name": "關門北山",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-028",
+      "name": "鐵軌岔路",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g14-029",
+      "name": "巖山",
+      "identityStatus": "route-source-reviewed"
+    }
+  ],
+  "segments": [
+    {
+      "from": "林道入口",
+      "to": "七彩湖",
+      "fromId": "g14-021",
+      "toId": "g14-013",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "七彩湖",
+      "to": "林道入口",
+      "fromId": "g14-013",
+      "toId": "g14-021",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "林道入口",
+      "to": "林道舊登山口",
+      "fromId": "g14-021",
+      "toId": "g14-022",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "林道舊登山口",
+      "to": "林道入口",
+      "fromId": "g14-022",
+      "toId": "g14-021",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "林道舊登山口",
+      "to": "2897公尺峰",
+      "fromId": "g14-022",
+      "toId": "g14-007",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "2897公尺峰",
+      "to": "林道舊登山口",
+      "fromId": "g14-007",
+      "toId": "g14-022",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "2897公尺峰",
+      "to": "六順山",
+      "fromId": "g14-007",
+      "toId": "g14-017",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "六順山",
+      "to": "2897公尺峰",
+      "fromId": "g14-017",
+      "toId": "g14-007",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "六順山",
+      "to": "2863公尺峰",
+      "fromId": "g14-017",
+      "toId": "g14-006",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "2863公尺峰",
+      "to": "六順山",
+      "fromId": "g14-006",
+      "toId": "g14-017",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "七彩湖",
+      "to": "七彩妹池",
+      "fromId": "g14-013",
+      "toId": "g14-012",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "七彩妹池",
+      "to": "七彩湖",
+      "fromId": "g14-012",
+      "toId": "g14-013",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "七彩妹池",
+      "to": "雙龍瀑布",
+      "fromId": "g14-012",
+      "toId": "g14-025",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "雙龍瀑布",
+      "to": "七彩妹池",
+      "fromId": "g14-025",
+      "toId": "g14-012",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "雙龍瀑布",
+      "to": "廢棄工寮",
+      "fromId": "g14-025",
+      "toId": "g14-024",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "廢棄工寮",
+      "to": "雙龍瀑布",
+      "fromId": "g14-024",
+      "toId": "g14-025",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "廢棄工寮",
+      "to": "鐵軌岔路",
+      "fromId": "g14-024",
+      "toId": "g14-028",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "鐵軌岔路",
+      "to": "廢棄工寮",
+      "fromId": "g14-028",
+      "toId": "g14-024",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "鐵軌岔路",
+      "to": "台電高登連絡站",
+      "fromId": "g14-028",
+      "toId": "g14-020",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "台電高登連絡站",
+      "to": "鐵軌岔路",
+      "fromId": "g14-020",
+      "toId": "g14-028",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "情人吊橋",
+      "to": "46K九族工寮",
+      "fromId": "g14-023",
+      "toId": "g14-011",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "46K九族工寮",
+      "to": "情人吊橋",
+      "fromId": "g14-011",
+      "toId": "g14-023",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "46K九族工寮",
+      "to": "42K阿道別墅",
+      "fromId": "g14-011",
+      "toId": "g14-010",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "42K阿道別墅",
+      "to": "46K九族工寮",
+      "fromId": "g14-010",
+      "toId": "g14-011",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "42K阿道別墅",
+      "to": "36K大崩壁",
+      "fromId": "g14-010",
+      "toId": "g14-009",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "36K大崩壁",
+      "to": "42K阿道別墅",
+      "fromId": "g14-009",
+      "toId": "g14-010",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "天梯頂岔路口",
+      "to": "鐵軌岔路",
+      "fromId": "g14-019",
+      "toId": "g14-028",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "鐵軌岔路",
+      "to": "天梯頂岔路口",
+      "fromId": "g14-028",
+      "toId": "g14-019",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "天梯頂岔路口",
+      "to": "情人吊橋",
+      "fromId": "g14-019",
+      "toId": "g14-023",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "情人吊橋",
+      "to": "天梯頂岔路口",
+      "fromId": "g14-023",
+      "toId": "g14-019",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "六順山新登山口",
+      "to": "天梯頂岔路口",
+      "fromId": "g14-018",
+      "toId": "g14-019",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "天梯頂岔路口",
+      "to": "六順山新登山口",
+      "fromId": "g14-019",
+      "toId": "g14-018",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "2780草原黑水塘",
+      "to": "六順山新登山口",
+      "fromId": "g14-003",
+      "toId": "g14-018",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "六順山新登山口",
+      "to": "2780草原黑水塘",
+      "fromId": "g14-018",
+      "toId": "g14-003",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "2863公尺峰",
+      "to": "2780草原黑水塘",
+      "fromId": "g14-006",
+      "toId": "g14-003",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "2780草原黑水塘",
+      "to": "2863公尺峰",
+      "fromId": "g14-003",
+      "toId": "g14-006",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "六順山",
+      "to": "2813鞍營地",
+      "fromId": "g14-017",
+      "toId": "g14-004",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "2813鞍營地",
+      "to": "六順山",
+      "fromId": "g14-004",
+      "toId": "g14-017",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "2813鞍營地",
+      "to": "2761最低鞍部",
+      "fromId": "g14-004",
+      "toId": "g14-002",
+      "minutes": 75,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "2761最低鞍部",
+      "to": "2813鞍營地",
+      "fromId": "g14-002",
+      "toId": "g14-004",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "2761最低鞍部",
+      "to": "關門北山",
+      "fromId": "g14-002",
+      "toId": "g14-027",
+      "minutes": 210,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "關門北山",
+      "to": "2761最低鞍部",
+      "fromId": "g14-027",
+      "toId": "g14-002",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "關門北山",
+      "to": "關門山凹",
+      "fromId": "g14-027",
+      "toId": "g14-026",
+      "minutes": 150,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "關門山凹",
+      "to": "關門北山",
+      "fromId": "g14-026",
+      "toId": "g14-027",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "關門山凹",
+      "to": "巖山",
+      "fromId": "g14-026",
+      "toId": "g14-029",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "巖山",
+      "to": "關門山凹",
+      "fromId": "g14-029",
+      "toId": "g14-026",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "巖山",
+      "to": "2603公尺鞍部",
+      "fromId": "g14-029",
+      "toId": "g14-001",
+      "minutes": 250,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "2603公尺鞍部",
+      "to": "巖山",
+      "fromId": "g14-001",
+      "toId": "g14-029",
+      "minutes": 320,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "2603公尺鞍部",
+      "to": "大石公山",
+      "fromId": "g14-001",
+      "toId": "g14-014",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "大石公山",
+      "to": "2603公尺鞍部",
+      "fromId": "g14-014",
+      "toId": "g14-001",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "大石公山",
+      "to": "小石公山",
+      "fromId": "g14-014",
+      "toId": "g14-015",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "小石公山",
+      "to": "大石公山",
+      "fromId": "g14-015",
+      "toId": "g14-014",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "小石公山",
+      "to": "2833公尺鞍部",
+      "fromId": "g14-015",
+      "toId": "g14-005",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "2833公尺鞍部",
+      "to": "小石公山",
+      "fromId": "g14-005",
+      "toId": "g14-015",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "2833公尺鞍部",
+      "to": "3255公尺峰",
+      "fromId": "g14-005",
+      "toId": "g14-008",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "3255公尺峰",
+      "to": "2833公尺鞍部",
+      "fromId": "g14-008",
+      "toId": "g14-005",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "3255公尺峰",
+      "to": "丹大山",
+      "fromId": "g14-008",
+      "toId": "g14-016",
+      "minutes": 260,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "丹大山",
+      "to": "3255公尺峰",
+      "fromId": "g14-016",
+      "toId": "g14-008",
+      "minutes": 240,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    }
+  ]
+}
