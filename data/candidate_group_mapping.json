@@ -216,6 +216,28 @@
       "sourceVerified": true,
       "retainSearchAlias": true,
       "neverChangeOtherGroups": true
+    },
+    {
+      "group": "雪山西南稜",
+      "officialChartId": "G05",
+      "from": "大南山山西鞍營地",
+      "to": "大南山西鞍營地",
+      "kind": "source_verified_typo_correction",
+      "userConfirmed": false,
+      "sourceVerified": true,
+      "retainSearchAlias": true,
+      "neverChangeOtherGroups": true
+    },
+    {
+      "group": "雪山西南稜",
+      "officialChartId": "G05",
+      "from": "大雪北山",
+      "to": "大雪山",
+      "kind": "source_verified_typo_correction",
+      "userConfirmed": false,
+      "sourceVerified": true,
+      "retainSearchAlias": true,
+      "neverChangeOtherGroups": true
     }
   ],
   "supplementalGroups": [
