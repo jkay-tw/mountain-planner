@@ -3,11 +3,7 @@
   "reviewedAt": "2026-10-28",
   "status": "difference-audit-only-not-routing-approval",
   "sourceBasis": "official main step schematics only",
-  "pendingRows": [
-    "G13 三叉峰下營地↔牧山",
-    "G13 牧山↔牧山池",
-    "G13 牧山池↔三叉峰下營地"
-  ],
+  "pendingRows": [],
   "records": [
     {
       "chartId": "G02",
@@ -3530,42 +3526,12 @@
     },
     {
       "chartId": "G13",
-      "from": "三叉峰下營地",
-      "to": "牧山",
-      "forwardMinutes": null,
-      "reverseMinutes": null,
-      "travelMode": "walking",
-      "note": "交會處箭頭歸屬待人工辨識；不採猜測合計。",
-      "status": "junction-arrow-review-pending",
-      "visibleMinuteLabels": [
-        20,
-        10,
-        5
-      ]
-    },
-    {
-      "chartId": "G13",
       "from": "牧山",
       "to": "萬里山西峰",
       "forwardMinutes": 150,
       "reverseMinutes": 140,
       "travelMode": "walking",
       "note": ""
-    },
-    {
-      "chartId": "G13",
-      "from": "三叉峰下營地",
-      "to": "牧山池",
-      "forwardMinutes": null,
-      "reverseMinutes": null,
-      "travelMode": "walking",
-      "note": "交會處箭頭歸屬待人工辨識；不採猜測合計。",
-      "status": "junction-arrow-review-pending",
-      "visibleMinuteLabels": [
-        20,
-        10,
-        5
-      ]
     },
     {
       "chartId": "G13",
@@ -7283,6 +7249,57 @@
       "reverseMinutes": 130,
       "travelMode": "walking",
       "note": "main schematic visual transcription"
+    },
+    {
+      "chartId": "G09",
+      "from": "主北三岔路",
+      "to": "奇萊北峰岔路",
+      "forwardMinutes": 40,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "status": "owner-confirmed",
+      "note": "2026-10-28使用者人工確認；見user_reviewed_topology_20261028.json。"
+    },
+    {
+      "chartId": "G13",
+      "from": "三叉峰下營地",
+      "to": "牧山",
+      "forwardMinutes": 20,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "status": "owner-confirmed",
+      "note": "2026-10-28使用者人工確認；見user_reviewed_topology_20261028.json。"
+    },
+    {
+      "chartId": "G13",
+      "from": "牧山",
+      "to": "牧山池",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "status": "owner-confirmed",
+      "note": "2026-10-28使用者人工確認；見user_reviewed_topology_20261028.json。"
+    },
+    {
+      "chartId": "G13",
+      "from": "牧山池",
+      "to": "三叉峰下營地",
+      "forwardMinutes": 15,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "status": "owner-confirmed",
+      "note": "2026-10-28使用者人工確認；見user_reviewed_topology_20261028.json。"
+    },
+    {
+      "chartId": "G19",
+      "from": "關山嶺山登山口",
+      "to": "關山嶺山",
+      "forwardMinutes": 105,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "status": "owner-confirmed",
+      "note": "2026-10-28使用者人工確認；見user_reviewed_topology_20261028.json。"
     }
-  ]
+  ],
+  "ownerReview": "user_reviewed_topology_20261028.json"
 }

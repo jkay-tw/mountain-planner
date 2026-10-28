@@ -635,7 +635,15 @@
         "十粒溪營地": "十粒溪源營地"
       },
       "unmatchedCandidateLabels": [],
-      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety."
+      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety.",
+      "ownerApprovedDisplayLabels": [
+        {
+          "name": "火山",
+          "confirmedBy": "owner",
+          "confirmedAt": "2026-10-28",
+          "basis": "既有核准顯示別名；來源原名萬里山西峰，不是新增實體地點。"
+        }
+      ]
     },
     {
       "chartId": "G14",
@@ -849,13 +857,13 @@
       ],
       "labelDifferences": {
         "八通關山三岔路口": "三岔路口",
-        "馬西山口": "馬西山登山口",
         "喀西帕南山登山口": "喀西帕南登山口",
         "廢棄工寮": "35K廢棄工寮",
         "杜騰營地": "杜鵑營地"
       },
       "unmatchedCandidateLabels": [
-        "烏哇拉路"
+        "烏哇拉路",
+        "馬西山口"
       ],
       "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety."
     },
@@ -987,10 +995,10 @@
         "鞍部黑水塘",
         "飛機殘骸"
       ],
-      "labelDifferences": {
-        "三叉營地": "三叉稜下營地"
-      },
-      "unmatchedCandidateLabels": [],
+      "labelDifferences": {},
+      "unmatchedCandidateLabels": [
+        "三叉營地"
+      ],
       "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety."
     },
     {
@@ -1053,7 +1061,15 @@
       ],
       "labelDifferences": {},
       "unmatchedCandidateLabels": [],
-      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety."
+      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety.",
+      "ownerApprovedDisplayLabels": [
+        {
+          "name": "關山嶺山登山口",
+          "confirmedBy": "owner",
+          "confirmedAt": "2026-10-28",
+          "basis": "使用者確認自南橫公路登山口進入，105/80。不是由字串推定與公路其他節點同一實體。"
+        }
+      ]
     },
     {
       "chartId": "G20",

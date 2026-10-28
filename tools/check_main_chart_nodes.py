@@ -21,6 +21,8 @@ def check_route(route, inventory):
         # Existing documented display aliases prove label correspondence only, not identity.
         allowed.update(normalized_label(n) for n in source['labels'])
         allowed.update(normalized_label(n) for n in source.get('labelDifferences', {}))
+        allowed.update(normalized_label(n['name']) for n in source.get('ownerApprovedDisplayLabels', [])
+                       if n.get('confirmedBy')=='owner')
     return [dict(routeId=route['route_id'], nodeId=n['id'], name=n['name'])
             for n in route.get('nodes', []) if normalized_label(n['name']) not in allowed]
 

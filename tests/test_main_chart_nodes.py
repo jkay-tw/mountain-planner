@@ -17,6 +17,14 @@ class MainStepNodeTests(unittest.TestCase):
     def test_same_name_is_allowed_where_main_schematic_actually_labels_it(self):
         route={'route_id':'G17','nodes':[{'id':'local','name':'黑水塘'}]}
         self.assertEqual(mod.check_route(route,self.inventory),[])
+    def test_unlisted_g18_camp_is_rejected_without_affecting_g04_camp(self):
+        bad={'route_id':'G18','nodes':[{'id':'x','name':'三叉營地'}]}
+        self.assertTrue(mod.check_route(bad,self.inventory))
+        good={'route_id':'G04','nodes':[{'id':'x','name':'三叉營地'}]}
+        self.assertEqual(mod.check_route(good,self.inventory),[])
+    def test_owner_approved_g19_trailhead_name_is_allowed(self):
+        route={'route_id':'G19','nodes':[{'id':'x','name':'關山嶺山登山口'}]}
+        self.assertEqual(mod.check_route(route,self.inventory),[])
     def test_unreviewed_chart_does_not_silently_pass(self):
         with self.assertRaises(ValueError):mod.check_route({'route_id':'G99','nodes':[]},self.inventory)
 

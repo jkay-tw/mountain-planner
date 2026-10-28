@@ -10,17 +10,24 @@ from pathlib import Path
 
 from apply_reviewed_times import apply
 from normalize_candidate_groups import process
+from apply_reviewed_topology import process as process_topology
 from batch_hiking_pipeline import audit
 from build_source_review_queue import build as build_source_queue
 
 
-def run(input_file, ledger_file, mapping_file, crosswalk_file, staging_dir, output_dir):
+def run(input_file, ledger_file, mapping_file, crosswalk_file, staging_dir, output_dir, topology_file=None):
     out=Path(output_dir)
     review_dir=out/'01_reviewed_times'
     mapped_dir=out/'02_group_normalization'
     validation_dir=out/'03_batch_validation'
     time_result=apply(input_file,ledger_file,review_dir)
-    mapping_result=process(review_dir/'reviewed_candidates.json',mapping_file,mapped_dir)
+    candidate_for_mapping=review_dir/'reviewed_candidates.json'
+    topology_result=None
+    if topology_file is not None:
+        topology_dir=out/'01b_reviewed_topology'
+        topology_result=process_topology(candidate_for_mapping,topology_file,topology_dir)
+        candidate_for_mapping=topology_dir/'topology_reviewed_candidates.json'
+    mapping_result=process(candidate_for_mapping,mapping_file,mapped_dir)
     audit_result=audit(mapped_dir/'normalized_candidate.json',validation_dir,
                        crosswalk=crosswalk_file,staging=staging_dir)
     source_review=build_source_queue(mapped_dir/'normalized_candidate.json',mapping_file,out/'04_source_review',Path(__file__).resolve().parents[1]/'data'/'official_chart_sources.json')
@@ -29,7 +36,7 @@ def run(input_file, ledger_file, mapping_file, crosswalk_file, staging_dir, outp
     else:
         readiness='CANDIDATE_ONLY_SOURCE_REVIEW_PENDING'
     summary={'schemaVersion':1,'publicationAllowed':False,'readiness':readiness,
-             'timeCorrections':time_result,'groupMapping':mapping_result,
+             'timeCorrections':time_result,'topologyCorrections':topology_result,'groupMapping':mapping_result,
              'batchValidation':audit_result,'sourceReviewQueue':source_review,
              'nextGate':'independently document source for each published walking direction; confirm rights before release'}
     out.mkdir(parents=True,exist_ok=True)
@@ -42,12 +49,13 @@ if __name__=='__main__':
     p=argparse.ArgumentParser()
     p.add_argument('source_json')
     p.add_argument('--review',default='data/audits/user_reviewed_time_overrides_20261028.json')
+    p.add_argument('--topology',default='data/audits/user_reviewed_topology_20261028.json')
     p.add_argument('--mapping',default='data/candidate_group_mapping.json')
     p.add_argument('--crosswalk',default='data/crosswalk-reviewed.json')
     p.add_argument('--staging',default='data/staging')
     p.add_argument('--out',default='audit/private_ingest')
     a=p.parse_args()
-    report=run(a.source_json,a.review,a.mapping,a.crosswalk,a.staging,a.out)
+    report=run(a.source_json,a.review,a.mapping,a.crosswalk,a.staging,a.out,a.topology)
     print(json.dumps({'publicationAllowed':report['publicationAllowed'],
                       'readiness':report['readiness'],
                       'candidateRows':report['batchValidation']['candidateRows'],
