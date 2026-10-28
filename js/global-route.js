@@ -15,6 +15,8 @@ export function mergeReviewedRoutes(routes) {
       if(existing)existing.groups=[...new Set([...existing.groups,route.route_id])];
       else nodes.set(n.id,{...n,groups:[route.route_id]});
     }
+    // Keep identities available for saved plans and manual connections while quarantined.
+    if(route.routingEnabled===false)continue;
     for(const s of route.segments||[]) {
       if(!ids.has(s.fromId)||!ids.has(s.toId))throw new Error('Dangling segment identity');
       const existing=segments.find(x=>x.fromId===s.fromId&&x.toId===s.toId);

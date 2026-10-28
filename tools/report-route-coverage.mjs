@@ -16,6 +16,7 @@ export function reportCatalog(manifest,load){
     ids.add(row.id);
     const raw=load(row.file.split('?')[0]);
     const r=addRouteIdentity(raw);
+    if(row.routingEnabled===false)r.routingEnabled=false;
     if(r.route_id!==row.id)throw new Error('Manifest route ID mismatch '+row.id);
     const local=new Set(r.nodes.map(n=>n.id));
     const seen=new Map();
@@ -31,7 +32,7 @@ export function reportCatalog(manifest,load){
       if(!e.from||!e.to)throw new Error('Unlabeled segment '+row.id);
     }
     reports.push({id:row.id,source:row.source_url,nodeCount:r.nodes.length,directedEdges:r.segments.length,
-      verificationScope:row.status});
+      routingEnabled:r.routingEnabled!==false,verificationScope:row.status});
     routes.push(r);
   }
   const combined=mergeReviewedRoutes(routes);

@@ -7,7 +7,7 @@ test('unified-preview catalog has unique directional edges, stable physical IDs 
  const load=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url),'utf8'));
  const summary=reportCatalog(load('data/unified-editor-manifest.json'),load);
  assert.equal(summary.datasetCount,10);
- assert.equal(summary.inputDirectedEdges,540);
+ assert.equal(summary.inputDirectedEdges,552);
  assert.ok(summary.uniqueDirectedEdges<=summary.inputDirectedEdges);
  assert.ok(summary.physicalNodes<=summary.inputNodes);
  assert.ok(summary.charts.some(r=>r.id==='G04'&&r.directedEdges===146));

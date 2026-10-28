@@ -29,6 +29,7 @@ class GroupMappingTests(unittest.TestCase):
             {'group':'白姑大山','from':'萬里山西峰','to':'南峰','go':10,'back':20}]}
         tiny={**self.mapping,'mapping':[x for x in self.mapping['mapping']
               if x['candidateGroup'] in ('干卓萬群峰','白姑大山')]}
+        tiny['renames']=[x for x in self.mapping['renames'] if x['group'] in ('干卓萬群峰','白姑大山')]
         normalized,report=module.normalize(raw,tiny)
         self.assertEqual(normalized['segments'][0]['to'],'火山')
         self.assertEqual(normalized['segments'][1]['from'],'萬里山西峰')
@@ -46,7 +47,7 @@ class GroupMappingTests(unittest.TestCase):
 
     def test_source_verified_typo_and_exact_corrupt_row_exclusion(self):
         tiny={'schemaVersion':1,'mapping':[dict(candidateGroup='丹大東郡',officialChartId='G15')],
-              'renames':[dict(group='丹大東郡',from='33.5K大崩山',to='33.5K大崩塌',
+              'renames':[dict(group='丹大東郡',**{'from':'33.5K大崩山','to':'33.5K大崩塌'},
                               sourceVerified=True,userConfirmed=False)],
               'excludedCandidateSegments':[dict(group='丹大東郡',**{'from':'烏利加南東峰山屋','to':'麻利加南東峰山屋'},
                                                 go=30,back=20,sourceVerified=True,reason='corrupt')]}

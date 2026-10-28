@@ -540,8 +540,8 @@ test('v0.7.12 global route browser keeps scopes without clearing itinerary',asyn
  for(const id of ['G06','G17G18-PREVIEW'])assert.ok(manifest.routes.some(x=>x.id===id),id);
  const html=readFileSync(new URL('../unified-editor.html',import.meta.url),'utf8');
  const app=readFileSync(new URL('../js/unified-editor.js',import.meta.url),'utf8');
- assert.ok(html.includes('js/unified-editor.js?v=v0720'));
- assert.ok(app.includes('v0.7.20 Unified Preview'));
+ assert.ok(html.includes('js/unified-editor.js?v=v0721'));
+ assert.ok(app.includes('v0.7.21 Unified Preview'));
  assert.match(app,/mergeReviewedRoutes/);
  assert.ok(app.includes('nodesInScope(route,scope)'));
  assert.match(app,/appendDisconnectedNode/);
@@ -782,13 +782,13 @@ test('legacy migration rejects unknown original IDs and names, even if global na
  assert.throws(()=>migrateLegacyPlanDays(day({type:'location',name:'不存在',incoming:null}),old,global),/Unknown legacy node name/);
 });
 
-test('G20 official diagram selected subset has exactly 5 bidirectional walking pairs and no road edges',async()=>{
+test('G20 official diagram has 11 timed bidirectional walking pairs and no road edges',async()=>{
  const {readFileSync}=await import('node:fs');
  const route=addRouteIdentity(JSON.parse(readFileSync(new URL('../data/routes/G20.preview.json',import.meta.url),'utf8')));
- const audit=JSON.parse(readFileSync(new URL('../data/audits/G20_partial_official_source_review_20261028.json',import.meta.url),'utf8'));
- assert.equal(route.segments.length,10);
- assert.equal(route.nodes.length,6);
- assert.equal(audit.directionPairs.length,5);
+ const audit=JSON.parse(readFileSync(new URL('../data/audits/G20_full_official_directional_review_20261028.json',import.meta.url),'utf8'));
+ assert.equal(route.segments.length,22);
+ assert.equal(route.nodes.length,12);
+ assert.equal(audit.directionPairs.length,11);
  for(const p of audit.directionPairs){
    assert.equal(route.segments.find(s=>s.from===p.from&&s.to===p.to)?.minutes,p.forwardMinutes);
    assert.equal(route.segments.find(s=>s.from===p.to&&s.to===p.from)?.minutes,p.reverseMinutes);
@@ -797,4 +797,26 @@ test('G20 official diagram selected subset has exactly 5 bidirectional walking p
  for(const n of ['潮州','萬巒','泰武'])assert.ok(!route.nodes.some(x=>x.name===n));
  assert.ok(!route.nodes.some(x=>x.name==='舊登登山口'));
  assert.ok(route.nodes.some(x=>x.name==='舊登山口'));
+});
+
+
+test('source-version quarantine retains G07 identities but excludes its walking edges',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const {mergeReviewedRoutes}=await import('../js/global-route.js');
+ const raw=JSON.parse(readFileSync(new URL('../data/routes/G07.preview.json',import.meta.url),'utf8'));
+ const historical=JSON.stringify(raw.segments);
+ const g=mergeReviewedRoutes([addRouteIdentity(raw)]);
+ assert.equal(raw.routingEnabled,false);
+ assert.equal(g.nodes.length,raw.nodes.length);
+ assert.equal(g.segments.length,0);
+ assert.equal(JSON.stringify(raw.segments),historical);
+});
+test('G20 full timed mainline preserves directional totals and excludes untimed continuation',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const r=addRouteIdentity(JSON.parse(readFileSync(new URL('../data/routes/G20.preview.json',import.meta.url),'utf8')));
+ const up=shortestPath(r,'g20-001','g20-012');
+ const down=shortestPath(r,'g20-012','g20-001');
+ assert.equal(up.minutes,640);
+ assert.equal(down.minutes,445);
+ assert.ok(!r.nodes.some(n=>['霧頭山','南大武山'].includes(n.name)));
 });

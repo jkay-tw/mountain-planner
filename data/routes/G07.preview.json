@@ -1,7 +1,7 @@
 {
   "route_id": "G07",
   "route_name": "北一段",
-  "status": "source-reviewed-preview",
+  "status": "source-version-recheck-pending",
   "routingPolicy": "verified-walking-only",
   "source": {
     "publisher": "上河文化",
@@ -1234,5 +1234,7 @@
       "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
       "verificationMethod": "official-updated-chart-direct-visual-review-2026-10-28"
     }
-  ]
+  ],
+  "routingEnabled": false,
+  "routingDisabledReason": "Official current source is _new3.jpg; retained historical _new.jpg edge snapshots must be rechecked before automatic routing."
 }

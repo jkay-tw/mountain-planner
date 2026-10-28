@@ -5,11 +5,11 @@ import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identit
 import {migrateLegacyPlanDays} from './legacy-plan-migration.js?v=v0719';
 import {exportExcel} from './exporter.js';
 import {filterLocations} from './node-browser.js?v=v074';
-import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=v0712';
+import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=v0721';
 
 const $=id=>document.getElementById(id);
 const STORAGE_KEY='mountain-planner.unified-preview-autosave.v0711';
-const APP_VERSION='v0.7.20 Unified Preview';
+const APP_VERSION='v0.7.21 Unified Preview';
 const COLLAPSE_KEY='mountain-planner.unified-preview-collapsed.v0711';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',scope='';
@@ -53,7 +53,11 @@ async function init(){
 }
 
 async function loadGlobalGraph(){
-  const datasets=await Promise.all(manifest.routes.map(async m=>addRouteIdentity(await loadRoute(m.file))));
+  const datasets=await Promise.all(manifest.routes.map(async m=>{
+    const dataset=addRouteIdentity(await loadRoute(m.file));
+    if(m.routingEnabled===false)dataset.routingEnabled=false;
+    return dataset;
+  }));
   route=mergeReviewedRoutes(datasets);
   nodes=allNodes(route);
   $('routeMeta').textContent='全域路網｜'+datasets.length+' 個路線資料集｜僅已核對的步行路段';
