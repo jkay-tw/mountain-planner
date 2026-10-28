@@ -1,5 +1,5 @@
 {
-  "dataset_version": "v0.7.17-global-graph-preview",
+  "dataset_version": "v0.7.18-global-graph-preview",
   "mode": "global-verified-graph-scoped-node-browser-preview",
   "routes": [
     {
@@ -15,6 +15,13 @@
       "file": "data/routes/G03.preview.json",
       "status": "partial-source-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg"
+    },
+    {
+      "id": "G04",
+      "name": "G04｜大霸・聖稜・武陵四秀（已核對步行路網）",
+      "file": "data/routes/G04.preview.json",
+      "status": "source-reviewed-preview",
+      "source_url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg"
     },
     {
       "id": "G06",
