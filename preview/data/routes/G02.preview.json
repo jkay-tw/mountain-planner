@@ -1,0 +1,805 @@
+{
+  "route_id": "G02",
+  "route_name": "玉山群峰",
+  "status": "source-reviewed-preview",
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "page_url": "https://www.sunriver.com.tw/step2020.htm",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+    "revision": "official G02 diagram checked 2026-10-28"
+  },
+  "identityPolicy": "use user-reviewed shared physical IDs where available; otherwise route-local ID",
+  "nodes": [
+    {
+      "id": "g02-001",
+      "name": "2K三岔路口",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-002",
+      "name": "三叉峰",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-003",
+      "name": "三岔路口",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-004",
+      "name": "上東埔停車場",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-005",
+      "name": "大峭壁",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-006",
+      "name": "大鐵杉",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-007",
+      "name": "主北岔路",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-008",
+      "name": "主南岔路",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-009",
+      "name": "四岔路口",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-010",
+      "name": "玉山小南山",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-011",
+      "name": "玉山主峰",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-012",
+      "name": "玉山北北峰",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-013",
+      "name": "玉山北峰",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-014",
+      "name": "玉山西峰",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-015",
+      "name": "玉山東峰",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-016",
+      "name": "玉山前峰",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-017",
+      "name": "玉山南峰",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-018",
+      "name": "西峰下觀景台",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-019",
+      "name": "孟祿亭",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-020",
+      "name": "東小南山",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-021",
+      "name": "前峰登山口",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-022",
+      "name": "南玉山",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-023",
+      "name": "風口",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "shared:cw-v07-069",
+      "name": "荖濃溪營地",
+      "identityStatus": "user-reviewed-shared"
+    },
+    {
+      "id": "g02-025",
+      "name": "排雲山莊",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-026",
+      "name": "排雲管理站",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-027",
+      "name": "鹿山",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-028",
+      "name": "鹿林山莊",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-029",
+      "name": "圓峰山屋",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g02-030",
+      "name": "塔塔加鞍部",
+      "identityStatus": "route-source-reviewed"
+    }
+  ],
+  "segments": [
+    {
+      "from": "上東埔停車場",
+      "to": "排雲管理站",
+      "fromId": "g02-004",
+      "toId": "g02-026",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "排雲管理站",
+      "to": "上東埔停車場",
+      "fromId": "g02-026",
+      "toId": "g02-004",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "排雲管理站",
+      "to": "大鐵杉",
+      "fromId": "g02-026",
+      "toId": "g02-006",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "大鐵杉",
+      "to": "排雲管理站",
+      "fromId": "g02-006",
+      "toId": "g02-026",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "大鐵杉",
+      "to": "塔塔加鞍部",
+      "fromId": "g02-006",
+      "toId": "g02-030",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "塔塔加鞍部",
+      "to": "大鐵杉",
+      "fromId": "g02-030",
+      "toId": "g02-006",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "塔塔加鞍部",
+      "to": "孟祿亭",
+      "fromId": "g02-030",
+      "toId": "g02-019",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "孟祿亭",
+      "to": "塔塔加鞍部",
+      "fromId": "g02-019",
+      "toId": "g02-030",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "孟祿亭",
+      "to": "前峰登山口",
+      "fromId": "g02-019",
+      "toId": "g02-021",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "前峰登山口",
+      "to": "孟祿亭",
+      "fromId": "g02-021",
+      "toId": "g02-019",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "前峰登山口",
+      "to": "西峰下觀景台",
+      "fromId": "g02-021",
+      "toId": "g02-018",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "西峰下觀景台",
+      "to": "前峰登山口",
+      "fromId": "g02-018",
+      "toId": "g02-021",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "西峰下觀景台",
+      "to": "大峭壁",
+      "fromId": "g02-018",
+      "toId": "g02-005",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "大峭壁",
+      "to": "西峰下觀景台",
+      "fromId": "g02-005",
+      "toId": "g02-018",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "大峭壁",
+      "to": "排雲山莊",
+      "fromId": "g02-005",
+      "toId": "g02-025",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "排雲山莊",
+      "to": "大峭壁",
+      "fromId": "g02-025",
+      "toId": "g02-005",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "大鐵杉",
+      "to": "鹿林山莊",
+      "fromId": "g02-006",
+      "toId": "g02-028",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "鹿林山莊",
+      "to": "大鐵杉",
+      "fromId": "g02-028",
+      "toId": "g02-006",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "前峰登山口",
+      "to": "玉山前峰",
+      "fromId": "g02-021",
+      "toId": "g02-016",
+      "minutes": 75,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "玉山前峰",
+      "to": "前峰登山口",
+      "fromId": "g02-016",
+      "toId": "g02-021",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "排雲山莊",
+      "to": "玉山西峰",
+      "fromId": "g02-025",
+      "toId": "g02-014",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "玉山西峰",
+      "to": "排雲山莊",
+      "fromId": "g02-014",
+      "toId": "g02-025",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "排雲山莊",
+      "to": "主南岔路",
+      "fromId": "g02-025",
+      "toId": "g02-008",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "主南岔路",
+      "to": "排雲山莊",
+      "fromId": "g02-008",
+      "toId": "g02-025",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "主南岔路",
+      "to": "主北岔路",
+      "fromId": "g02-008",
+      "toId": "g02-007",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "主北岔路",
+      "to": "主南岔路",
+      "fromId": "g02-007",
+      "toId": "g02-008",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "主北岔路",
+      "to": "玉山主峰",
+      "fromId": "g02-007",
+      "toId": "g02-011",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "玉山主峰",
+      "to": "主北岔路",
+      "fromId": "g02-011",
+      "toId": "g02-007",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "玉山主峰",
+      "to": "玉山東峰",
+      "fromId": "g02-011",
+      "toId": "g02-015",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "玉山東峰",
+      "to": "玉山主峰",
+      "fromId": "g02-015",
+      "toId": "g02-011",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "主北岔路",
+      "to": "風口",
+      "fromId": "g02-007",
+      "toId": "g02-023",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "風口",
+      "to": "主北岔路",
+      "fromId": "g02-023",
+      "toId": "g02-007",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "風口",
+      "to": "玉山北峰",
+      "fromId": "g02-023",
+      "toId": "g02-013",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "玉山北峰",
+      "to": "風口",
+      "fromId": "g02-013",
+      "toId": "g02-023",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "玉山北峰",
+      "to": "玉山北北峰",
+      "fromId": "g02-013",
+      "toId": "g02-012",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "玉山北北峰",
+      "to": "玉山北峰",
+      "fromId": "g02-012",
+      "toId": "g02-013",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "風口",
+      "to": "荖濃溪營地",
+      "fromId": "g02-023",
+      "toId": "shared:cw-v07-069",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "荖濃溪營地",
+      "to": "風口",
+      "fromId": "shared:cw-v07-069",
+      "toId": "g02-023",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "主南岔路",
+      "to": "圓峰山屋",
+      "fromId": "g02-008",
+      "toId": "g02-029",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "圓峰山屋",
+      "to": "主南岔路",
+      "fromId": "g02-029",
+      "toId": "g02-008",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "圓峰山屋",
+      "to": "三岔路口",
+      "fromId": "g02-029",
+      "toId": "g02-003",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "三岔路口",
+      "to": "圓峰山屋",
+      "fromId": "g02-003",
+      "toId": "g02-029",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "三岔路口",
+      "to": "2K三岔路口",
+      "fromId": "g02-003",
+      "toId": "g02-001",
+      "minutes": 155,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "2K三岔路口",
+      "to": "三岔路口",
+      "fromId": "g02-001",
+      "toId": "g02-003",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "2K三岔路口",
+      "to": "南玉山",
+      "fromId": "g02-001",
+      "toId": "g02-022",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "南玉山",
+      "to": "2K三岔路口",
+      "fromId": "g02-022",
+      "toId": "g02-001",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "2K三岔路口",
+      "to": "玉山小南山",
+      "fromId": "g02-001",
+      "toId": "g02-010",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "玉山小南山",
+      "to": "2K三岔路口",
+      "fromId": "g02-010",
+      "toId": "g02-001",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "三岔路口",
+      "to": "三叉峰",
+      "fromId": "g02-003",
+      "toId": "g02-002",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "三叉峰",
+      "to": "三岔路口",
+      "fromId": "g02-002",
+      "toId": "g02-003",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "三叉峰",
+      "to": "四岔路口",
+      "fromId": "g02-002",
+      "toId": "g02-009",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "四岔路口",
+      "to": "三叉峰",
+      "fromId": "g02-009",
+      "toId": "g02-002",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "四岔路口",
+      "to": "玉山南峰",
+      "fromId": "g02-009",
+      "toId": "g02-017",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "玉山南峰",
+      "to": "四岔路口",
+      "fromId": "g02-017",
+      "toId": "g02-009",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "四岔路口",
+      "to": "東小南山",
+      "fromId": "g02-009",
+      "toId": "g02-020",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "東小南山",
+      "to": "四岔路口",
+      "fromId": "g02-020",
+      "toId": "g02-009",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "四岔路口",
+      "to": "鹿山",
+      "fromId": "g02-009",
+      "toId": "g02-027",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "鹿山",
+      "to": "四岔路口",
+      "fromId": "g02-027",
+      "toId": "g02-009",
+      "minutes": 280,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    }
+  ]
+}
