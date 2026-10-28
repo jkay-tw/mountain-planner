@@ -8,7 +8,7 @@ import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-
 
 const $=id=>document.getElementById(id);
 const STORAGE_KEY='mountain-planner.unified-preview-autosave.v0711';
-const APP_VERSION='v0.7.14 Unified Preview';
+const APP_VERSION='v0.7.15 Unified Preview';
 const COLLAPSE_KEY='mountain-planner.unified-preview-collapsed.v0711';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',scope='';
