@@ -1,5 +1,5 @@
 {
-  "dataset_version": "v0.7.14-global-graph-preview",
+  "dataset_version": "v0.7.15-global-graph-preview",
   "mode": "global-verified-graph-scoped-node-browser-preview",
   "routes": [
     {
@@ -22,6 +22,13 @@
       "file": "data/routes/G07.preview.json",
       "status": "source-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg"
+    },
+    {
+      "id": "G08",
+      "name": "G08｜畢祿羊頭・北二段（已核對步行路網）",
+      "file": "data/routes/G08.preview.json",
+      "status": "source-reviewed-preview",
+      "source_url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg"
     },
     {
       "id": "G11",
