@@ -95,11 +95,11 @@
     "candidate": "舊登登山口",
     "officialDisplay": "舊登山口"
   },
-  "sourceNote": "Source-visible arrows reviewed for these five pairs only; does not establish current trail safety or walkability.",
+  "sourceNote": "Both arrow directions visually reviewed for all 11 explicitly timed walking pairs; does not establish current trail safety or walkability.",
   "evidence": {
     "sha256": "cb11d991bd76dfcbf48a2cc5e975c3c26c0d3fb06ea091bac2a00afe6ee29a08",
-    "imageWidth": 1793,
-    "imageHeight": 1376,
+    "imageWidth": 2136,
+    "imageHeight": 1638,
     "method": "Independent visual reading of both arrowheads and adjacent minute labels; original five pairs rechecked.",
     "directionNotes": "From 4K towards summit, descending-page arrows give 60,30,65; rising/right arrow from last water to ridge gives 65; rising arrows towards shrine and summit give 65,65. Opposite arrows give 40,20,50,40,40,55."
   }
