@@ -537,11 +537,11 @@ test('v0.7.10 preview exposes optional alternate-time controls while keeping nod
 test('v0.7.12 global route browser keeps scopes without clearing itinerary',async()=>{
  const {readFileSync}=await import('node:fs');
  const manifest=JSON.parse(readFileSync(new URL('../data/unified-editor-manifest.json',import.meta.url),'utf8'));
- assert.deepEqual(manifest.routes.map(x=>x.id),['G03','G06','G07','G08','G11','G17G18-PREVIEW']);
+ assert.deepEqual(manifest.routes.map(x=>x.id),['G03','G06','G07','G08','G11','G14','G17G18-PREVIEW']);
  const html=readFileSync(new URL('../unified-editor.html',import.meta.url),'utf8');
  const app=readFileSync(new URL('../js/unified-editor.js',import.meta.url),'utf8');
- assert.ok(html.includes('js/unified-editor.js?v=v0715'));
- assert.ok(app.includes('v0.7.15 Unified Preview'));
+ assert.ok(html.includes('js/unified-editor.js?v=v0716'));
+ assert.ok(app.includes('v0.7.16 Unified Preview'));
  assert.match(app,/mergeReviewedRoutes/);
  assert.ok(app.includes('nodesInScope(route,scope)'));
  assert.match(app,/appendDisconnectedNode/);
@@ -662,4 +662,16 @@ test('G08 source review contains 68 walking directions, excludes vehicle link an
  const slowWestToMain=route.segments.find(x=>x.from==='無明山西峰'&&x.to==='無明山');
  assert.equal(slowWestToMain.minutes,160);
  assert.deepEqual(slowWestToMain.timeAlternatives,[{kind:'slow',minutes:260}]);
+});
+
+test('G14 source review contains 58 walking directions, excludes vehicle access and reuses 丹大山 canonical ID',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const route=addRouteIdentity(JSON.parse(readFileSync(new URL('../data/routes/G14.preview.json',import.meta.url),'utf8')));
+ const audit=JSON.parse(readFileSync(new URL('../data/audits/G14_full_official_directional_review_20261028.json',import.meta.url),'utf8'));
+ assert.equal(audit.reviewedWalkingPairs.length,29);
+ assert.equal(audit.walkingDirectedEdges,58);
+ assert.equal(audit.excluded.length,1);
+ assert.equal(route.segments.length,58);
+ assert.ok(!route.segments.some(x=>x.from==='水里'||x.to==='水里'));
+ assert.equal(route.nodes.find(x=>x.name==='丹大山')?.id,'shared:cw-v07-011');
 });
