@@ -1,0 +1,1150 @@
+{
+  "route_id": "G08",
+  "route_name": "畢祿羊頭連峰／北二段",
+  "status": "source-reviewed-preview",
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "page_url": "https://www.sunriver.com.tw/step2020.htm",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+    "revision": "official G08 walking-time diagram checked 2026-10-28"
+  },
+  "nodes": [
+    {
+      "id": "g08-001",
+      "name": "11.7K行車終點",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-002",
+      "name": "17.5K登山口",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-003",
+      "name": "23.2K登山口",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-004",
+      "name": "25K工寮",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-005",
+      "name": "27.5K林道登山口",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-006",
+      "name": "8.4k登山口營地",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-007",
+      "name": "820林道0K",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-008",
+      "name": "人待山稜線岔路",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-009",
+      "name": "三岔路口",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-010",
+      "name": "水源",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-011",
+      "name": "主稜三岔路口",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-012",
+      "name": "甘薯南峰",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-013",
+      "name": "甘薯峰",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-014",
+      "name": "羊頭山",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-015",
+      "name": "羊頭山登山口",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-016",
+      "name": "耳無溪合流點",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-017",
+      "name": "拉繩垂直岩壁",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-018",
+      "name": "東峰前營地",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-019",
+      "name": "東鞍營地",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-020",
+      "name": "雨量計前岔路口",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-021",
+      "name": "閂山",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-022",
+      "name": "鬼門關峰",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-023",
+      "name": "清泉橋",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-024",
+      "name": "畢祿山",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-025",
+      "name": "第一峰(畢祿營地)",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-026",
+      "name": "無明山",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-027",
+      "name": "無明山西峰",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-028",
+      "name": "無明水池",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-029",
+      "name": "鈴鳴山",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-030",
+      "name": "遠多志山",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-031",
+      "name": "鞍部",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-032",
+      "name": "鋸山(第四峰)",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-033",
+      "name": "鋸山東峰",
+      "identityStatus": "route-source-reviewed"
+    },
+    {
+      "id": "g08-034",
+      "name": "檢查哨(廢)",
+      "identityStatus": "route-source-reviewed"
+    }
+  ],
+  "segments": [
+    {
+      "from": "820林道0K",
+      "to": "8.4k登山口營地",
+      "fromId": "g08-007",
+      "toId": "g08-006",
+      "minutes": 200,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "8.4k登山口營地",
+      "to": "820林道0K",
+      "fromId": "g08-006",
+      "toId": "g08-007",
+      "minutes": 230,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "8.4k登山口營地",
+      "to": "拉繩垂直岩壁",
+      "fromId": "g08-006",
+      "toId": "g08-017",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "拉繩垂直岩壁",
+      "to": "8.4k登山口營地",
+      "fromId": "g08-017",
+      "toId": "g08-006",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "拉繩垂直岩壁",
+      "to": "主稜三岔路口",
+      "fromId": "g08-017",
+      "toId": "g08-011",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "主稜三岔路口",
+      "to": "拉繩垂直岩壁",
+      "fromId": "g08-011",
+      "toId": "g08-017",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "主稜三岔路口",
+      "to": "畢祿山",
+      "fromId": "g08-011",
+      "toId": "g08-024",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "畢祿山",
+      "to": "主稜三岔路口",
+      "fromId": "g08-024",
+      "toId": "g08-011",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "主稜三岔路口",
+      "to": "第一峰(畢祿營地)",
+      "fromId": "g08-011",
+      "toId": "g08-025",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "第一峰(畢祿營地)",
+      "to": "主稜三岔路口",
+      "fromId": "g08-025",
+      "toId": "g08-011",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "第一峰(畢祿營地)",
+      "to": "鋸山(第四峰)",
+      "fromId": "g08-025",
+      "toId": "g08-032",
+      "minutes": 105,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "鋸山(第四峰)",
+      "to": "第一峰(畢祿營地)",
+      "fromId": "g08-032",
+      "toId": "g08-025",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "鋸山(第四峰)",
+      "to": "東峰前營地",
+      "fromId": "g08-032",
+      "toId": "g08-018",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "東峰前營地",
+      "to": "鋸山(第四峰)",
+      "fromId": "g08-018",
+      "toId": "g08-032",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "東峰前營地",
+      "to": "鋸山東峰",
+      "fromId": "g08-018",
+      "toId": "g08-033",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "鋸山東峰",
+      "to": "東峰前營地",
+      "fromId": "g08-033",
+      "toId": "g08-018",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "鋸山東峰",
+      "to": "三岔路口",
+      "fromId": "g08-033",
+      "toId": "g08-009",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "三岔路口",
+      "to": "鋸山東峰",
+      "fromId": "g08-009",
+      "toId": "g08-033",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "三岔路口",
+      "to": "羊頭山",
+      "fromId": "g08-009",
+      "toId": "g08-014",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "羊頭山",
+      "to": "三岔路口",
+      "fromId": "g08-014",
+      "toId": "g08-009",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "三岔路口",
+      "to": "羊頭山登山口",
+      "fromId": "g08-009",
+      "toId": "g08-015",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "羊頭山登山口",
+      "to": "三岔路口",
+      "fromId": "g08-015",
+      "toId": "g08-009",
+      "minutes": 350,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "畢祿羊頭連峰縱走"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "清泉橋",
+      "to": "檢查哨(廢)",
+      "fromId": "g08-023",
+      "toId": "g08-034",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "檢查哨(廢)",
+      "to": "清泉橋",
+      "fromId": "g08-034",
+      "toId": "g08-023",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "檢查哨(廢)",
+      "to": "11.7K行車終點",
+      "fromId": "g08-034",
+      "toId": "g08-001",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "11.7K行車終點",
+      "to": "檢查哨(廢)",
+      "fromId": "g08-001",
+      "toId": "g08-034",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "11.7K行車終點",
+      "to": "17.5K登山口",
+      "fromId": "g08-001",
+      "toId": "g08-002",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "17.5K登山口",
+      "to": "11.7K行車終點",
+      "fromId": "g08-002",
+      "toId": "g08-001",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "17.5K登山口",
+      "to": "23.2K登山口",
+      "fromId": "g08-002",
+      "toId": "g08-003",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "23.2K登山口",
+      "to": "17.5K登山口",
+      "fromId": "g08-003",
+      "toId": "g08-002",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "23.2K登山口",
+      "to": "雨量計前岔路口",
+      "fromId": "g08-003",
+      "toId": "g08-020",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "雨量計前岔路口",
+      "to": "23.2K登山口",
+      "fromId": "g08-020",
+      "toId": "g08-003",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "雨量計前岔路口",
+      "to": "閂山",
+      "fromId": "g08-020",
+      "toId": "g08-021",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "閂山",
+      "to": "雨量計前岔路口",
+      "fromId": "g08-021",
+      "toId": "g08-020",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "閂山",
+      "to": "25K工寮",
+      "fromId": "g08-021",
+      "toId": "g08-004",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "25K工寮",
+      "to": "閂山",
+      "fromId": "g08-004",
+      "toId": "g08-021",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "23.2K登山口",
+      "to": "25K工寮",
+      "fromId": "g08-003",
+      "toId": "g08-004",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "25K工寮",
+      "to": "23.2K登山口",
+      "fromId": "g08-004",
+      "toId": "g08-003",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "25K工寮",
+      "to": "27.5K林道登山口",
+      "fromId": "g08-004",
+      "toId": "g08-005",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "27.5K林道登山口",
+      "to": "25K工寮",
+      "fromId": "g08-005",
+      "toId": "g08-004",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "27.5K林道登山口",
+      "to": "人待山稜線岔路",
+      "fromId": "g08-005",
+      "toId": "g08-008",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "人待山稜線岔路",
+      "to": "27.5K林道登山口",
+      "fromId": "g08-008",
+      "toId": "g08-005",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "17.5K登山口",
+      "to": "耳無溪合流點",
+      "fromId": "g08-002",
+      "toId": "g08-016",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "耳無溪合流點",
+      "to": "17.5K登山口",
+      "fromId": "g08-016",
+      "toId": "g08-002",
+      "minutes": 160,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "耳無溪合流點",
+      "to": "遠多志山",
+      "fromId": "g08-016",
+      "toId": "g08-030",
+      "minutes": 240,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "遠多志山",
+      "to": "耳無溪合流點",
+      "fromId": "g08-030",
+      "toId": "g08-016",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "遠多志山",
+      "to": "甘薯南峰",
+      "fromId": "g08-030",
+      "toId": "g08-012",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "甘薯南峰",
+      "to": "遠多志山",
+      "fromId": "g08-012",
+      "toId": "g08-030",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "甘薯南峰",
+      "to": "甘薯峰",
+      "fromId": "g08-012",
+      "toId": "g08-013",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "甘薯峰",
+      "to": "甘薯南峰",
+      "fromId": "g08-013",
+      "toId": "g08-012",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "甘薯南峰",
+      "to": "鞍部",
+      "fromId": "g08-012",
+      "toId": "g08-031",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "鞍部",
+      "to": "甘薯南峰",
+      "fromId": "g08-031",
+      "toId": "g08-012",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "鞍部",
+      "to": "鬼門關峰",
+      "fromId": "g08-031",
+      "toId": "g08-022",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "鬼門關峰",
+      "to": "鞍部",
+      "fromId": "g08-022",
+      "toId": "g08-031",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "鬼門關峰",
+      "to": "無明水池",
+      "fromId": "g08-022",
+      "toId": "g08-028",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "無明水池",
+      "to": "鬼門關峰",
+      "fromId": "g08-028",
+      "toId": "g08-022",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "無明水池",
+      "to": "無明山",
+      "fromId": "g08-028",
+      "toId": "g08-026",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "無明山",
+      "to": "無明水池",
+      "fromId": "g08-026",
+      "toId": "g08-028",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "水源",
+      "to": "東鞍營地",
+      "fromId": "g08-010",
+      "toId": "g08-019",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "東鞍營地",
+      "to": "水源",
+      "fromId": "g08-019",
+      "toId": "g08-010",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "無明山西峰",
+      "to": "東鞍營地",
+      "fromId": "g08-027",
+      "toId": "g08-019",
+      "minutes": 290,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "東鞍營地",
+      "to": "無明山西峰",
+      "fromId": "g08-019",
+      "toId": "g08-027",
+      "minutes": 190,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28",
+      "timeAlternatives": [
+        {
+          "kind": "slow",
+          "minutes": 350
+        }
+      ]
+    },
+    {
+      "from": "東鞍營地",
+      "to": "鈴鳴山",
+      "fromId": "g08-019",
+      "toId": "g08-029",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "鈴鳴山",
+      "to": "東鞍營地",
+      "fromId": "g08-029",
+      "toId": "g08-019",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "人待山稜線岔路",
+      "to": "鈴鳴山",
+      "fromId": "g08-008",
+      "toId": "g08-029",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "鈴鳴山",
+      "to": "人待山稜線岔路",
+      "fromId": "g08-029",
+      "toId": "g08-008",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    },
+    {
+      "from": "無明山西峰",
+      "to": "無明山",
+      "fromId": "g08-027",
+      "toId": "g08-026",
+      "minutes": 160,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28",
+      "timeAlternatives": [
+        {
+          "kind": "slow",
+          "minutes": 260
+        }
+      ]
+    },
+    {
+      "from": "無明山",
+      "to": "無明山西峰",
+      "fromId": "g08-026",
+      "toId": "g08-027",
+      "minutes": 200,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceGroups": [
+        "北二段"
+      ],
+      "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
+    }
+  ]
+}
