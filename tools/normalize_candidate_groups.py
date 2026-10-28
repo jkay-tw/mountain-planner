@@ -25,14 +25,26 @@ def normalize(raw, mapping):
         key = (row['group'], row['from'])
         if key in rename_map or row['from'] == row['to']:
             raise ValueError('Duplicate or invalid rename: ' + str(key))
-        if row['group'] not in groups or row.get('userConfirmed') is not True:
+        if row['group'] not in groups or not (row.get('userConfirmed') is True or row.get('sourceVerified') is True):
             raise ValueError('Unconfirmed display alias: ' + str(key))
         rename_map[key] = row['to']
+    exclusions={}
+    for row in mapping.get('excludedCandidateSegments',[]):
+        key=(row.get('group'),row.get('from'),row.get('to'),row.get('go'),row.get('back'))
+        if any(v is None for v in key) or row.get('sourceVerified') is not True:
+            raise ValueError('Unsafe candidate exclusion: '+str(key))
+        if key in exclusions:raise ValueError('Duplicate candidate exclusion: '+str(key))
+        exclusions[key]=row
     changed = []
+    excluded = []
     counts = collections.Counter()
     segments = []
     for number, row in enumerate(raw['segments'], 1):
         group = row['group']
+        exact=(group,row.get('from'),row.get('to'),row.get('go'),row.get('back'))
+        if exact in exclusions:
+            excluded.append(dict(row=number,**exclusions[exact]))
+            continue
         if group not in groups:
             raise ValueError('Unmapped candidate group '+group)
         counts[group] += 1
@@ -52,7 +64,7 @@ def normalize(raw, mapping):
         inputSegments=len(segments), candidateGroups=len(counts),
         mappedOfficialCharts=sorted(set(row['officialChartId'] for row in groups.values() if row['officialChartId'])),
         unmappedSupplementalGroups=sorted(row['candidateGroup'] for row in groups.values() if not row['officialChartId']),
-        displayRenames=changed, publicationEligible=False)
+        displayRenames=changed, excludedCandidateSegments=excluded, publicationEligible=False)
 
 
 def process(input_file, map_file, output_dir):
