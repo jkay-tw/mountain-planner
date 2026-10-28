@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "ownerFollowup": {
+    "sourceRowId": "R86DBBF2EA4",
+    "group": "南二段",
+    "from": "秀姑巒山南登山口",
+    "to": "秀姑巒山",
+    "go": 50,
+    "back": 30,
+    "note": "回程 輕裝:30分 重裝:60分",
+    "basis": "Owner confirmed same times and condition labels as G16 workbook rows 634/684."
+  },
+  "displayAliases": [
+    {"group":"干卓萬群峰","from":"萬里山西峰","to":"火山","basis":"owner confirmed display name"}
+  ],
+  "contextNodes": [
+    {"group":"雪山西南稜","name":"水源","neighbors":["鞍部水源岔路"],"context":"大劍鞍部水源"},
+    {"group":"雪山西南稜","name":"水源","neighbors":["匹匹達東鞍營地"],"context":"匹匹達東鞍水源"},
+    {"group":"馬博拉斯橫斷","name":"最低鞍部","neighbors":["馬利亞文路山東峰","馬利加南山"],"context":"馬利亞文路與馬利加南間最低鞍"},
+    {"group":"馬博拉斯橫斷","name":"最低鞍部","neighbors":["馬博前岔路","秀馬山屋舊址"],"context":"秀馬最低鞍"},
+    {"group":"南一段","name":"水源","neighbors":["2920鞍營地"],"context":"2920鞍水源"},
+    {"group":"南一段","name":"水源","neighbors":["雲馬鞍營地"],"context":"雲馬鞍水源"}
+  ],
+  "contextBasis": "Previously identified distinct locations on official main schematics; adjacency scopes identity, never names alone.",
+  "ambiguousLabels": {"大霸聖稜武陵四秀":["岔路","岔路口","池有山登山口"],"雪山西南稜":["水源"],"馬博拉斯橫斷":["最低鞍部"],"南一段":["水源"]},
+  "nameEquivalenceNotAssumed": true
+}
