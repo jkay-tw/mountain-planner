@@ -1,0 +1,455 @@
+{
+  "schemaVersion": 1,
+  "chartId": "G07",
+  "reviewedAt": "2026-10-28",
+  "status": "partial-current-composite-source-checked",
+  "sources": [
+    {
+      "url": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "sha256": "1a6977079d20990f2087643d787504ec1b8bcc48b475d3497877660aad542473",
+      "width": 3384,
+      "height": 1958
+    },
+    {
+      "url": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new3.jpg",
+      "sha256": "baf0cfadebcb0b57aaf6279371f9eb6687dc51d7d0bc344d6490739bda7cbbbd",
+      "width": 640,
+      "height": 640
+    }
+  ],
+  "sourceRelationship": "The official index links a full schematic AND a separate local update; _new3 does not replace the full diagram.",
+  "reviewedPairs": [
+    {
+      "from": "思源埡口",
+      "to": "4.8K岔路口",
+      "forwardMinutes": 145,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "4.8K岔路口",
+      "to": "6.8K登山口",
+      "forwardMinutes": 45,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "6.8K登山口",
+      "to": "多加屯山水利三角點",
+      "forwardMinutes": 100,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "多加屯山水利三角點",
+      "to": "木杆鞍部",
+      "forwardMinutes": 90,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "4.8K岔路口",
+      "to": "大水池登山口",
+      "forwardMinutes": 45,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "大水池登山口",
+      "to": "勝光登山口",
+      "forwardMinutes": 25,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "木杆鞍部",
+      "to": "新雲稜山莊",
+      "forwardMinutes": 40,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "新雲稜山莊",
+      "to": "審馬陣山登山口",
+      "forwardMinutes": 170,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "審馬陣山",
+      "to": "審馬陣山登山口",
+      "forwardMinutes": 3,
+      "reverseMinutes": 3,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "審馬陣山登山口",
+      "to": "審馬陣山莊岔路口",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "審馬陣山莊岔路口",
+      "to": "審馬陣山莊",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "審馬陣山莊岔路口",
+      "to": "北山登山口",
+      "forwardMinutes": 100,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "南湖北山",
+      "to": "北山登山口",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "北山登山口",
+      "to": "南湖大山北峰",
+      "forwardMinutes": 80,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "南湖大山北峰",
+      "to": "南湖圈谷山莊",
+      "forwardMinutes": 35,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "木杆鞍部",
+      "to": "南湖溪山屋",
+      "forwardMinutes": 65,
+      "reverseMinutes": 75,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "南湖溪山屋",
+      "to": "香菇寮營地",
+      "forwardMinutes": 220,
+      "reverseMinutes": 170,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "香菇寮營地",
+      "to": "中央尖溪山屋",
+      "forwardMinutes": 180,
+      "reverseMinutes": 150,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "中央尖溪山屋",
+      "to": "中央尖鞍部",
+      "forwardMinutes": 240,
+      "reverseMinutes": 200,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "中央尖山",
+      "to": "中央尖鞍部",
+      "forwardMinutes": 35,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "中央尖鞍部",
+      "to": "中央尖山東峰",
+      "forwardMinutes": 40,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "南湖圈谷山莊",
+      "to": "上圈谷",
+      "forwardMinutes": 15,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "南湖圈谷山莊",
+      "to": "主東岔路",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "主東岔路",
+      "to": "四岔路口",
+      "forwardMinutes": 30,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "主東岔路",
+      "to": "主峰、南峰三岔路口",
+      "forwardMinutes": 20,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "南湖主峰",
+      "to": "主峰、南峰三岔路口",
+      "forwardMinutes": 30,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "主峰、南峰三岔路口",
+      "to": "南湖池山屋(廢棄)",
+      "forwardMinutes": 35,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "上圈谷",
+      "to": "南湖大山東峰",
+      "forwardMinutes": 60,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "四岔路口",
+      "to": "東峰登山口",
+      "forwardMinutes": 25,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "東峰登山口",
+      "to": "南湖大山東峰",
+      "forwardMinutes": 15,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "東峰登山口",
+      "to": "陶塞峰登山口",
+      "forwardMinutes": 65,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "陶塞峰登山口",
+      "to": "南湖大山東南峰",
+      "forwardMinutes": 75,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "四岔路口",
+      "to": "陶塞山屋遺址",
+      "forwardMinutes": 40,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "陶塞山屋遺址",
+      "to": "大濁水南溪岔路",
+      "forwardMinutes": 40,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "大濁水南溪岔路",
+      "to": "獵寮岔路",
+      "forwardMinutes": 10,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "獵寮岔路",
+      "to": "石洞獵寮",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "南湖大山東南峰",
+      "to": "指標2.2K岔路口",
+      "forwardMinutes": 55,
+      "reverseMinutes": 75,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "獵寮岔路",
+      "to": "指標2.2K岔路口",
+      "forwardMinutes": 50,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "指標2.2K岔路口",
+      "to": "指標1.0K",
+      "forwardMinutes": 35,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "held-update-area"
+    },
+    {
+      "from": "指標1.0K",
+      "to": "馬比杉山",
+      "forwardMinutes": 40,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new3.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "中央尖溪山屋",
+      "to": "南湖大山南峰岔路",
+      "forwardMinutes": 340,
+      "reverseMinutes": 190,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "南湖池山屋(廢棄)",
+      "to": "南湖大山南峰岔路",
+      "forwardMinutes": 95,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "南湖大山南峰岔路",
+      "to": "南湖大山南峰",
+      "forwardMinutes": 15,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "南湖大山南峰",
+      "to": "巴巴山",
+      "forwardMinutes": 55,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "思源埡口",
+      "to": "勝光登山口",
+      "forwardMinutes": 90,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    },
+    {
+      "from": "上圈谷",
+      "to": "四岔路口",
+      "forwardMinutes": 50,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "reviewStatus": "independently-rechecked"
+    }
+  ],
+  "addedPairs": [
+    {
+      "from": "黑水塘",
+      "to": "指標1.0K",
+      "forwardMinutes": 55,
+      "reverseMinutes": 50,
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new3.jpg"
+    }
+  ],
+  "enabledDirections": 92,
+  "retainedDisabledDirections": 2,
+  "identityEvidence": {
+    "指標1.0K": "Matched to 馬比杉山1K roadside marker in the local update by the explicit 1K label and its 40/20-minute connection to 馬比杉山; route-scoped identity only.",
+    "黑水塘": "New G07 local node at the explicitly labeled water pond in the update. No cross-chart identity inferred."
+  },
+  "heldReason": "Western end of the update is cropped at the 2K/3145m area. Do not equate it to the older 2.2K fork or compose the old 35/50 connector with the new 55/50 pond leg. Full western connection needs more evidence.",
+  "directionNotes": "Patch pond-to-1K arrow points southeast with 55; reverse northwest arrow has 50. 1K-to-summit arrow east has 40, reverse west 20. All other retained full-diagram direction labels independently read.",
+  "itineraryPolicy": "Preserve existing saved officialMinutes/actualMinutes snapshots and all original IDs."
+}
