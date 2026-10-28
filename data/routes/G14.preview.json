@@ -86,7 +86,7 @@
       "identityStatus": "route-source-reviewed"
     },
     {
-      "id": "g14-016",
+      "id": "shared:cw-v07-011",
       "name": "丹大山",
       "identityStatus": "route-source-reviewed"
     },
@@ -777,7 +777,7 @@
       "from": "3255公尺峰",
       "to": "丹大山",
       "fromId": "g14-008",
-      "toId": "g14-016",
+      "toId": "shared:cw-v07-011",
       "minutes": 260,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -787,7 +787,7 @@
     {
       "from": "丹大山",
       "to": "3255公尺峰",
-      "fromId": "g14-016",
+      "fromId": "shared:cw-v07-011",
       "toId": "g14-008",
       "minutes": 240,
       "travelMode": "walking",
@@ -795,5 +795,6 @@
       "source": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
       "verificationMethod": "official-chart-direct-visual-review-2026-10-28"
     }
-  ]
+  ],
+  "identityPolicy": "use user-reviewed shared physical IDs where available; otherwise route-local ID"
 }
