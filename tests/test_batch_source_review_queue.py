@@ -49,8 +49,8 @@ class SourceQueueTests(unittest.TestCase):
   catalog=json.loads((ROOT/'data'/'official_chart_sources.json').read_text(encoding='utf-8'))
   charts={x['id']:x for x in catalog['charts']}
   self.assertEqual(set(charts),{f'G{x:02d}' for x in range(2,21)})
-  self.assertEqual(charts['G07']['chartURL'],'https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg')
-  self.assertEqual(charts['G09']['chartURL'],'https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg')
+  self.assertEqual(charts['G07']['chartURL'],'https://www.sunriver.com.tw/images/hiking/G07_hiking_new3.jpg')
+  self.assertEqual(charts['G09']['chartURL'],'https://www.sunriver.com.tw/images/hiking/G09_hiking_new3.jpg')
   self.assertTrue(all(not x['perDirectionVerified'] for x in charts.values()))
   with tempfile.TemporaryDirectory() as tmp:
    folder=Path(tmp)
@@ -60,7 +60,7 @@ class SourceQueueTests(unittest.TestCase):
       'candidateGroup':'A','officialChartId':'G07'}]}),encoding='utf-8')
    mod.build(candidate,mapping,folder/'reports',ROOT/'data'/'official_chart_sources.json')
    csv=(folder/'reports'/'source_review_queue.csv').read_text(encoding='utf-8-sig')
-   self.assertIn('G07_hiking_new.jpg',csv)
+   self.assertIn('G07_hiking_new3.jpg',csv)
    self.assertIn('pending',csv)
 
 if __name__=='__main__':unittest.main()
