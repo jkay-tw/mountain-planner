@@ -1,15 +1,15 @@
 import {loadManifest,loadRoute} from './data-loader.js';
-import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming} from './planner.js?v=v0723';
+import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming} from './planner.js?v=v0724';
 import {validatePlan} from './validation.js';
-import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js?v=v0723';
-import {migrateLegacyPlanDays} from './legacy-plan-migration.js?v=v0723';
+import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js?v=v0724';
+import {migrateLegacyPlanDays} from './legacy-plan-migration.js?v=v0724';
 import {exportExcel} from './exporter.js';
 import {filterLocations} from './node-browser.js?v=v074';
-import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=v0723';
+import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=v0724';
 
 const $=id=>document.getElementById(id);
 const STORAGE_KEY='mountain-planner.unified-preview-autosave.v0711';
-const APP_VERSION='v0.7.23 Unified Preview';
+const APP_VERSION='v0.7.24 Unified Preview';
 const COLLAPSE_KEY='mountain-planner.unified-preview-collapsed.v0711';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',scope='';
@@ -258,8 +258,9 @@ function downloadPlan(){
 async function importPlan(e){
  const file=e.target.files?.[0];e.target.value='';if(!file)return;
  try{
-  const data=validatePlan(JSON.parse(await file.text()),['GLOBAL-PREVIEW',...manifest.routes.map(r=>r.id)]);
-  const sourceMeta=manifest.routes.find(x=>x.id===data.routeId);
+  const importRoutes=[...(manifest.legacyRoutes||[]),...manifest.routes];
+  const data=validatePlan(JSON.parse(await file.text()),['GLOBAL-PREVIEW',...importRoutes.map(r=>r.id)]);
+  const sourceMeta=importRoutes.find(x=>x.id===data.routeId);
   const importedRoute=sourceMeta?addRouteIdentity(await loadRoute(sourceMeta.file)):null;
   const migrated=data.routeId&&data.routeId!=='GLOBAL-PREVIEW'
     ?migrateLegacyPlanDays(data.days,importedRoute,route)

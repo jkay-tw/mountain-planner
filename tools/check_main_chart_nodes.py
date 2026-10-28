@@ -12,7 +12,7 @@ def normalized_label(value):
 
 def check_route(route, inventory):
     charts = {x['chartId']: x for x in inventory['charts']}
-    ids = ['G17', 'G18'] if route['route_id'] == 'G17G18-PREVIEW' else [route['route_id']]
+    ids = route.get('sourceChartIds') or (['G17', 'G18'] if route['route_id'] == 'G17G18-PREVIEW' else [route['route_id']])
     allowed = set()
     for chart in ids:
         if chart not in charts:

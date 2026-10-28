@@ -65,7 +65,15 @@
         "大鐵山": "大鐵杉"
       },
       "unmatchedCandidateLabels": [],
-      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety."
+      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety.",
+      "ownerApprovedDisplayLabels": [
+        {
+          "name": "觀高登山服務處",
+          "confirmedBy": "owner",
+          "basis": "Owner-confirmed endpoint or existing reviewed canonical display alias; not a new claim about literal chart text",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+        }
+      ]
     },
     {
       "chartId": "G03",
@@ -775,7 +783,21 @@
         "烏利加南東峰山屋",
         "麻利加南東峰山屋"
       ],
-      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety."
+      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety.",
+      "ownerApprovedDisplayLabels": [
+        {
+          "name": "東鑾/烏達佩岔路",
+          "confirmedBy": "owner",
+          "basis": "Owner-confirmed endpoint or existing reviewed canonical display alias; not a new claim about literal chart text",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+        },
+        {
+          "name": "郡東營地",
+          "confirmedBy": "owner",
+          "basis": "Owner-confirmed endpoint or existing reviewed canonical display alias; not a new claim about literal chart text",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+        }
+      ]
     },
     {
       "chartId": "G16",
@@ -999,7 +1021,15 @@
       "unmatchedCandidateLabels": [
         "三叉營地"
       ],
-      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety."
+      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety.",
+      "ownerApprovedDisplayLabels": [
+        {
+          "name": "向陽山三岔路口",
+          "confirmedBy": "owner",
+          "basis": "Owner-confirmed endpoint or existing reviewed canonical display alias; not a new claim about literal chart text",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+        }
+      ]
     },
     {
       "chartId": "G19",
@@ -1068,6 +1098,12 @@
           "confirmedBy": "owner",
           "confirmedAt": "2026-10-28",
           "basis": "使用者確認自南橫公路登山口進入，105/80。不是由字串推定與公路其他節點同一實體。"
+        },
+        {
+          "name": "庫哈諾辛山屋",
+          "confirmedBy": "owner",
+          "basis": "Owner-confirmed endpoint or existing reviewed canonical display alias; not a new claim about literal chart text",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
         }
       ]
     },

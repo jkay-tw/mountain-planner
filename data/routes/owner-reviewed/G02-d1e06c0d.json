@@ -1,0 +1,2563 @@
+{
+  "route_id": "G02-d1e06c0d",
+  "route_name": "玉山群峰",
+  "status": "owner-reviewed-preview",
+  "sourceChartIds": [
+    "G02"
+  ],
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+    "revision": "owner workbook reviewed 2026-10-28; follow-ups recorded separately"
+  },
+  "reviewBasis": "owner_workbook_review",
+  "nodes": [
+    {
+      "id": "g02-001",
+      "name": "2K三岔路口",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-002",
+      "name": "三叉峰",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-003",
+      "name": "三岔路口",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-004",
+      "name": "上東埔停車場",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-005",
+      "name": "大峭壁",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-006",
+      "name": "大鐵杉",
+      "aliases": [
+        "大鐵山"
+      ],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-007",
+      "name": "主北岔路",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-008",
+      "name": "主南岔路",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-009",
+      "name": "四岔路口",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-010",
+      "name": "玉山小南山",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-011",
+      "name": "玉山主峰",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-012",
+      "name": "玉山北北峰",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-013",
+      "name": "玉山北峰",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-014",
+      "name": "玉山西峰",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-015",
+      "name": "玉山東峰",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-016",
+      "name": "玉山前峰",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-017",
+      "name": "玉山南峰",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-018",
+      "name": "西峰下觀景台",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-019",
+      "name": "孟祿亭",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-020",
+      "name": "東小南山",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-021",
+      "name": "前峰登山口",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-022",
+      "name": "南玉山",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-023",
+      "name": "風口",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-025",
+      "name": "排雲山莊",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-026",
+      "name": "排雲管理站",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-027",
+      "name": "鹿山",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-028",
+      "name": "鹿林山莊",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-029",
+      "name": "圓峰山屋",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g02-030",
+      "name": "塔塔加鞍部",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "node:f7a486ab8141f5a3ab0f",
+      "name": "塔塔加遊客中心",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "shared:cw-v07-069",
+      "name": "荖濃溪營地",
+      "aliases": [],
+      "groups": [
+        "G02-d1e06c0d"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    }
+  ],
+  "segments": [
+    {
+      "fromId": "g02-004",
+      "toId": "g02-026",
+      "from": "上東埔停車場",
+      "to": "排雲管理站",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1C444CBAEC"
+      ],
+      "evidenceRows": [
+        3
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R1C444CBAEC",
+          "sheetRows": [
+            3
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-026",
+      "toId": "g02-004",
+      "from": "排雲管理站",
+      "to": "上東埔停車場",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1C444CBAEC"
+      ],
+      "evidenceRows": [
+        3
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R1C444CBAEC",
+          "sheetRows": [
+            3
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-026",
+      "toId": "g02-006",
+      "from": "排雲管理站",
+      "to": "大鐵杉",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC1A5E2C502"
+      ],
+      "evidenceRows": [
+        4
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RC1A5E2C502",
+          "sheetRows": [
+            4
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-006",
+      "toId": "g02-026",
+      "from": "大鐵杉",
+      "to": "排雲管理站",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC1A5E2C502"
+      ],
+      "evidenceRows": [
+        4
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RC1A5E2C502",
+          "sheetRows": [
+            4
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-006",
+      "toId": "g02-030",
+      "from": "大鐵杉",
+      "to": "塔塔加鞍部",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "REF16EC83C3"
+      ],
+      "evidenceRows": [
+        5
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "REF16EC83C3",
+          "sheetRows": [
+            5
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-030",
+      "toId": "g02-006",
+      "from": "塔塔加鞍部",
+      "to": "大鐵杉",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "REF16EC83C3"
+      ],
+      "evidenceRows": [
+        5
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "REF16EC83C3",
+          "sheetRows": [
+            5
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-030",
+      "toId": "g02-019",
+      "from": "塔塔加鞍部",
+      "to": "孟祿亭",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R81F8BE0C0E"
+      ],
+      "evidenceRows": [
+        6
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R81F8BE0C0E",
+          "sheetRows": [
+            6
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-019",
+      "toId": "g02-030",
+      "from": "孟祿亭",
+      "to": "塔塔加鞍部",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R81F8BE0C0E"
+      ],
+      "evidenceRows": [
+        6
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R81F8BE0C0E",
+          "sheetRows": [
+            6
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-019",
+      "toId": "g02-021",
+      "from": "孟祿亭",
+      "to": "前峰登山口",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC43A648A17"
+      ],
+      "evidenceRows": [
+        7
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RC43A648A17",
+          "sheetRows": [
+            7
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-021",
+      "toId": "g02-019",
+      "from": "前峰登山口",
+      "to": "孟祿亭",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC43A648A17"
+      ],
+      "evidenceRows": [
+        7
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RC43A648A17",
+          "sheetRows": [
+            7
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-021",
+      "toId": "g02-018",
+      "from": "前峰登山口",
+      "to": "西峰下觀景台",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RFCDD3D3059"
+      ],
+      "evidenceRows": [
+        8
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RFCDD3D3059",
+          "sheetRows": [
+            8
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-018",
+      "toId": "g02-021",
+      "from": "西峰下觀景台",
+      "to": "前峰登山口",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RFCDD3D3059"
+      ],
+      "evidenceRows": [
+        8
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RFCDD3D3059",
+          "sheetRows": [
+            8
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-018",
+      "toId": "g02-005",
+      "from": "西峰下觀景台",
+      "to": "大峭壁",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6CD644F9FA"
+      ],
+      "evidenceRows": [
+        9
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R6CD644F9FA",
+          "sheetRows": [
+            9
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-005",
+      "toId": "g02-018",
+      "from": "大峭壁",
+      "to": "西峰下觀景台",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6CD644F9FA"
+      ],
+      "evidenceRows": [
+        9
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R6CD644F9FA",
+          "sheetRows": [
+            9
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-005",
+      "toId": "g02-025",
+      "from": "大峭壁",
+      "to": "排雲山莊",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA2768813DC"
+      ],
+      "evidenceRows": [
+        10
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RA2768813DC",
+          "sheetRows": [
+            10
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-025",
+      "toId": "g02-005",
+      "from": "排雲山莊",
+      "to": "大峭壁",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA2768813DC"
+      ],
+      "evidenceRows": [
+        10
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RA2768813DC",
+          "sheetRows": [
+            10
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-006",
+      "toId": "g02-028",
+      "from": "大鐵杉",
+      "to": "鹿林山莊",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R77A289554F"
+      ],
+      "evidenceRows": [
+        11
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R77A289554F",
+          "sheetRows": [
+            11
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-028",
+      "toId": "g02-006",
+      "from": "鹿林山莊",
+      "to": "大鐵杉",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R77A289554F"
+      ],
+      "evidenceRows": [
+        11
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R77A289554F",
+          "sheetRows": [
+            11
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-021",
+      "toId": "g02-016",
+      "from": "前峰登山口",
+      "to": "玉山前峰",
+      "minutes": 75,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5104EB9C68"
+      ],
+      "evidenceRows": [
+        12
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R5104EB9C68",
+          "sheetRows": [
+            12
+          ],
+          "minutes": 75
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-016",
+      "toId": "g02-021",
+      "from": "玉山前峰",
+      "to": "前峰登山口",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5104EB9C68"
+      ],
+      "evidenceRows": [
+        12
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R5104EB9C68",
+          "sheetRows": [
+            12
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-025",
+      "toId": "g02-014",
+      "from": "排雲山莊",
+      "to": "玉山西峰",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBB6C906035"
+      ],
+      "evidenceRows": [
+        13
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RBB6C906035",
+          "sheetRows": [
+            13
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-014",
+      "toId": "g02-025",
+      "from": "玉山西峰",
+      "to": "排雲山莊",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBB6C906035"
+      ],
+      "evidenceRows": [
+        13
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RBB6C906035",
+          "sheetRows": [
+            13
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-025",
+      "toId": "g02-008",
+      "from": "排雲山莊",
+      "to": "主南岔路",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R270F7FC171"
+      ],
+      "evidenceRows": [
+        14
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R270F7FC171",
+          "sheetRows": [
+            14
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-008",
+      "toId": "g02-025",
+      "from": "主南岔路",
+      "to": "排雲山莊",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R270F7FC171"
+      ],
+      "evidenceRows": [
+        14
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R270F7FC171",
+          "sheetRows": [
+            14
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-008",
+      "toId": "g02-007",
+      "from": "主南岔路",
+      "to": "主北岔路",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R19D03EAB86"
+      ],
+      "evidenceRows": [
+        15
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R19D03EAB86",
+          "sheetRows": [
+            15
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-007",
+      "toId": "g02-008",
+      "from": "主北岔路",
+      "to": "主南岔路",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R19D03EAB86"
+      ],
+      "evidenceRows": [
+        15
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R19D03EAB86",
+          "sheetRows": [
+            15
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-007",
+      "toId": "g02-011",
+      "from": "主北岔路",
+      "to": "玉山主峰",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "READ73AE781"
+      ],
+      "evidenceRows": [
+        16
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "READ73AE781",
+          "sheetRows": [
+            16
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-011",
+      "toId": "g02-007",
+      "from": "玉山主峰",
+      "to": "主北岔路",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "READ73AE781"
+      ],
+      "evidenceRows": [
+        16
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "READ73AE781",
+          "sheetRows": [
+            16
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-011",
+      "toId": "g02-015",
+      "from": "玉山主峰",
+      "to": "玉山東峰",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R94D1C66816"
+      ],
+      "evidenceRows": [
+        17
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R94D1C66816",
+          "sheetRows": [
+            17
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-015",
+      "toId": "g02-011",
+      "from": "玉山東峰",
+      "to": "玉山主峰",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R94D1C66816"
+      ],
+      "evidenceRows": [
+        17
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R94D1C66816",
+          "sheetRows": [
+            17
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-007",
+      "toId": "g02-023",
+      "from": "主北岔路",
+      "to": "風口",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R666996B0CB"
+      ],
+      "evidenceRows": [
+        18
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R666996B0CB",
+          "sheetRows": [
+            18
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-023",
+      "toId": "g02-007",
+      "from": "風口",
+      "to": "主北岔路",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R666996B0CB"
+      ],
+      "evidenceRows": [
+        18
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R666996B0CB",
+          "sheetRows": [
+            18
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-023",
+      "toId": "g02-013",
+      "from": "風口",
+      "to": "玉山北峰",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5A31138BE2"
+      ],
+      "evidenceRows": [
+        19
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R5A31138BE2",
+          "sheetRows": [
+            19
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-013",
+      "toId": "g02-023",
+      "from": "玉山北峰",
+      "to": "風口",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5A31138BE2"
+      ],
+      "evidenceRows": [
+        19
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R5A31138BE2",
+          "sheetRows": [
+            19
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-013",
+      "toId": "g02-012",
+      "from": "玉山北峰",
+      "to": "玉山北北峰",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R906DA38F45"
+      ],
+      "evidenceRows": [
+        20
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R906DA38F45",
+          "sheetRows": [
+            20
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-012",
+      "toId": "g02-013",
+      "from": "玉山北北峰",
+      "to": "玉山北峰",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R906DA38F45"
+      ],
+      "evidenceRows": [
+        20
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R906DA38F45",
+          "sheetRows": [
+            20
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-023",
+      "toId": "shared:cw-v07-069",
+      "from": "風口",
+      "to": "荖濃溪營地",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3F1314E2D3"
+      ],
+      "evidenceRows": [
+        21
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R3F1314E2D3",
+          "sheetRows": [
+            21
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-069",
+      "toId": "g02-023",
+      "from": "荖濃溪營地",
+      "to": "風口",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3F1314E2D3"
+      ],
+      "evidenceRows": [
+        21
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R3F1314E2D3",
+          "sheetRows": [
+            21
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-008",
+      "toId": "g02-029",
+      "from": "主南岔路",
+      "to": "圓峰山屋",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE4B4C5A27C"
+      ],
+      "evidenceRows": [
+        22
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RE4B4C5A27C",
+          "sheetRows": [
+            22
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-029",
+      "toId": "g02-008",
+      "from": "圓峰山屋",
+      "to": "主南岔路",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE4B4C5A27C"
+      ],
+      "evidenceRows": [
+        22
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RE4B4C5A27C",
+          "sheetRows": [
+            22
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-029",
+      "toId": "g02-003",
+      "from": "圓峰山屋",
+      "to": "三岔路口",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RFCB47B1ACB"
+      ],
+      "evidenceRows": [
+        23
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RFCB47B1ACB",
+          "sheetRows": [
+            23
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-003",
+      "toId": "g02-029",
+      "from": "三岔路口",
+      "to": "圓峰山屋",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RFCB47B1ACB"
+      ],
+      "evidenceRows": [
+        23
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RFCB47B1ACB",
+          "sheetRows": [
+            23
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-003",
+      "toId": "g02-001",
+      "from": "三岔路口",
+      "to": "2K三岔路口",
+      "minutes": 155,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE67C535566"
+      ],
+      "evidenceRows": [
+        24
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RE67C535566",
+          "sheetRows": [
+            24
+          ],
+          "minutes": 155
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-001",
+      "toId": "g02-003",
+      "from": "2K三岔路口",
+      "to": "三岔路口",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE67C535566"
+      ],
+      "evidenceRows": [
+        24
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RE67C535566",
+          "sheetRows": [
+            24
+          ],
+          "minutes": 180
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-001",
+      "toId": "g02-022",
+      "from": "2K三岔路口",
+      "to": "南玉山",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA5DB974C0E"
+      ],
+      "evidenceRows": [
+        25
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RA5DB974C0E",
+          "sheetRows": [
+            25
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-022",
+      "toId": "g02-001",
+      "from": "南玉山",
+      "to": "2K三岔路口",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA5DB974C0E"
+      ],
+      "evidenceRows": [
+        25
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RA5DB974C0E",
+          "sheetRows": [
+            25
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-001",
+      "toId": "g02-010",
+      "from": "2K三岔路口",
+      "to": "玉山小南山",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1F4DB564F0"
+      ],
+      "evidenceRows": [
+        26
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R1F4DB564F0",
+          "sheetRows": [
+            26
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-010",
+      "toId": "g02-001",
+      "from": "玉山小南山",
+      "to": "2K三岔路口",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1F4DB564F0"
+      ],
+      "evidenceRows": [
+        26
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R1F4DB564F0",
+          "sheetRows": [
+            26
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-003",
+      "toId": "g02-002",
+      "from": "三岔路口",
+      "to": "三叉峰",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6274F21B13"
+      ],
+      "evidenceRows": [
+        27
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R6274F21B13",
+          "sheetRows": [
+            27
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-002",
+      "toId": "g02-003",
+      "from": "三叉峰",
+      "to": "三岔路口",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6274F21B13"
+      ],
+      "evidenceRows": [
+        27
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R6274F21B13",
+          "sheetRows": [
+            27
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-002",
+      "toId": "g02-009",
+      "from": "三叉峰",
+      "to": "四岔路口",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD7612B7CAF"
+      ],
+      "evidenceRows": [
+        28
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RD7612B7CAF",
+          "sheetRows": [
+            28
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-009",
+      "toId": "g02-002",
+      "from": "四岔路口",
+      "to": "三叉峰",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD7612B7CAF"
+      ],
+      "evidenceRows": [
+        28
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RD7612B7CAF",
+          "sheetRows": [
+            28
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-009",
+      "toId": "g02-017",
+      "from": "四岔路口",
+      "to": "玉山南峰",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCE18C0D559"
+      ],
+      "evidenceRows": [
+        29
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RCE18C0D559",
+          "sheetRows": [
+            29
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-017",
+      "toId": "g02-009",
+      "from": "玉山南峰",
+      "to": "四岔路口",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCE18C0D559"
+      ],
+      "evidenceRows": [
+        29
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RCE18C0D559",
+          "sheetRows": [
+            29
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-009",
+      "toId": "g02-020",
+      "from": "四岔路口",
+      "to": "東小南山",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD4FFCD41B7"
+      ],
+      "evidenceRows": [
+        30
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RD4FFCD41B7",
+          "sheetRows": [
+            30
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-020",
+      "toId": "g02-009",
+      "from": "東小南山",
+      "to": "四岔路口",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD4FFCD41B7"
+      ],
+      "evidenceRows": [
+        30
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RD4FFCD41B7",
+          "sheetRows": [
+            30
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-009",
+      "toId": "g02-027",
+      "from": "四岔路口",
+      "to": "鹿山",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1C9C4442B8"
+      ],
+      "evidenceRows": [
+        31
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R1C9C4442B8",
+          "sheetRows": [
+            31
+          ],
+          "minutes": 180
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    },
+    {
+      "fromId": "g02-027",
+      "toId": "g02-009",
+      "from": "鹿山",
+      "to": "四岔路口",
+      "minutes": 280,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1C9C4442B8"
+      ],
+      "evidenceRows": [
+        31
+      ],
+      "sourceGroups": [
+        "玉山群峰"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "玉山群峰",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R1C9C4442B8",
+          "sheetRows": [
+            31
+          ],
+          "minutes": 280
+        }
+      ],
+      "sourceGroupNames": [
+        "玉山群峰"
+      ]
+    }
+  ],
+  "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+}

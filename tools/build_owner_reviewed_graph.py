@@ -18,20 +18,26 @@ def compile_rows(data,root=ROOT):
     policy=load(root/'data/audits/owner_full_review_policy_20261028.json')
     inventory=root/'data/audits/main_step_chart_label_inventory_20261028.json'
     source_urls={c['chartId']:c['sourceURL'] for c in load(inventory)['charts']} if inventory.exists() else {}
+    chart_aliases={c['chartId']:{k:v for k,v in c.get('labelDifferences',{}).items()
+                   if v not in {'岔路','岔路口','三岔路口','水源','池有山登山口'}} for c in load(inventory)['charts']} if inventory.exists() else {}
+    mapping=root/'data/candidate_group_mapping.json'
+    group_charts={x['candidateGroup']:x['officialChartId'] for x in load(mapping)['mapping']} if mapping.exists() else {}
+    def chart_name(ch,n):return chart_aliases.get(ch,{}).get(n,n)
     follow=policy['ownerFollowup']; aliases={(x['group'],x['from']):x['to'] for x in policy['displayAliases']}
-    def name(g,n):return aliases.get((g,n),n)
+    def name(g,n):return aliases.get((g,n),chart_name(group_charts.get(g),n))
     cw=load(root/'data/crosswalk-reviewed.json'); shared={};canonical={}
-    for c in cw['canonicalNodes']:
+    for c in cw['canonicalNodes']+policy.get('additionalCanonicalNodes',[]):
         nid='shared:'+c['canonicalId'];canonical[nid]=c['name']
         for m in c['members']:shared[(m['group'],name(m['group'],m['name']))]=nid
-    manifest=load(root/'data/unified-editor-manifest.json')
+    base_catalog=root/'data/owner-review-base-catalog.json'
+    manifest=load(base_catalog if base_catalog.exists() else root/'data/unified-editor-manifest.json')
     catalogNames={};knownEdges=defaultdict(set);knownNames=defaultdict(set)
     for entry in manifest['routes']:
         r=load(root/entry['file'].split('?')[0]);chart=entry['id']
         for n in r['nodes']:catalogNames[n['id']]=n['name']
         for e in r['segments']:
             for ch in (['G17','G18'] if chart=='G17G18-PREVIEW' else [chart]):
-                knownEdges[(ch,e['from'],e['to'])].add((e['fromId'],e['toId']))
+                knownEdges[(ch,chart_name(ch,e['from']),chart_name(ch,e['to']))].add((e['fromId'],e['toId']))
                 knownNames[(ch,e['from'])].add(e['fromId']);knownNames[(ch,e['to'])].add(e['toId'])
     groups=defaultdict(list)
     for original in data['rows']:
@@ -40,6 +46,10 @@ def compile_rows(data,root=ROOT):
         if r['sourceRowId']==follow['sourceRowId']:
             if (r['originalGroup'],r['from'],r['to'])!=(follow['group'],follow['from'],follow['to']):raise ValueError('Follow-up target changed')
             r.update(go=follow['go'],back=follow['back'],note=follow['note'])
+        for override in policy.get('timeOverrides',[]):
+            if r['sourceRowId']==override['sourceRowId']:
+                if (r['originalGroup'],r['from'],r['to'])!=(override['group'],override['from'],override['to']):raise ValueError('Time override target changed')
+                r.update(go=override['go'],back=override['back'])
         r['from']=name(r['originalGroup'],r['from']);r['to']=name(r['originalGroup'],r['to'])
         groups[r['sourceRowId']].append(r)
     rows=[];issues=[]
@@ -103,6 +113,8 @@ def compile_rows(data,root=ROOT):
                'timeAlternatives':r['alternatives'][direction],
                'sourceRows':[r['sourceRowId']],'evidenceRows':r['evidenceRows'],'sourceGroups':[r['group']],
                'sourceChart':r['chartId'],'source':source_urls.get(r['chartId']),'sourceNote':r['note'],'sourceWorkbookSHA256':data['sourceWorkbookSHA256']}
+            e['sources']=[{'group':r['group'],'chartId':r['chartId'],'url':source_urls.get(r['chartId']),
+                           'rowId':r['sourceRowId'],'sheetRows':r['evidenceRows'],'minutes':r[direction]}]
             if r['travelMode']=='vehicle':vehicles.append(e);continue
             key=(x,y)
             if key in edges:
@@ -111,6 +123,7 @@ def compile_rows(data,root=ROOT):
                     issues.append({'kind':'directed_time_conflict','nodes':[x,y],'values':[prev['minutes'],e['minutes']],'sourceRows':prev['sourceRows']+e['sourceRows']})
                     prev['routingEnabled']=False
                     prev.setdefault('conflictingSources',[]).append(e)
+                prev['sources'].extend(e['sources'])
                 prev['sourceRows']=sorted(set(prev['sourceRows']+e['sourceRows']))
                 prev['evidenceRows']=sorted(set(prev['evidenceRows']+e['evidenceRows']))
                 prev['sourceGroups']=sorted(set(prev['sourceGroups']+e['sourceGroups']))

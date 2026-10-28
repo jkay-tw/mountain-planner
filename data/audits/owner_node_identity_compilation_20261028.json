@@ -1,37 +1,18 @@
 {
   "inputRows": 860,
   "uniqueSourceRows": 850,
-  "nodes": 740,
-  "walkingDirections": 1434,
+  "nodes": 731,
+  "walkingDirections": 1426,
   "vehicleDirections": 130,
-  "issues": [
-    {
-      "kind": "directed_time_conflict",
-      "nodes": [
-        "shared:cw-v07-072",
-        "shared:cw-v07-044"
-      ],
-      "values": [
-        110,
-        100
-      ],
-      "sourceRows": [
-        "R2415172D74",
-        "R7E3A7B5638"
-      ]
-    }
-  ],
-  "routingEnabled": false,
+  "issues": [],
+  "routingEnabled": true,
   "publicationEligible": false,
   "schemaVersion": 1,
-  "stage": "private-owner-reviewed-node-registry-draft",
+  "stage": "owner-reviewed-preview-v0.7.24",
   "reviewedAt": "2026-10-28",
-  "manualQuestion": {
-    "direction": "觀高坪 → 對觀",
-    "G02ExcelRow": 39,
-    "G02Minutes": 110,
-    "G16ExcelRow": 619,
-    "G16Minutes": 100,
-    "forwardDirection": "對觀 → 觀高坪 = 150 in both sources"
-  }
+  "timeConflictResolvedByOwner": true,
+  "previewDatasets": 24,
+  "oldPreviewNodeIDsPreserved": true,
+  "productionVersion": "v0.6.2",
+  "previewAcceptance": "pending"
 }

@@ -27,3 +27,11 @@ Node ID 後續依各圖內具體位置、相鄰路段及既有核准 crosswalk �
 編譯：`python3 tools/build_owner_reviewed_graph.py PRIVATE_REVIEW/reviewed_rows.private.json --out PRIVATE_GRAPH`
 
 測試：`python3 -m unittest discover -s tests -p 'test_owner_graph.py'`。完整 Python 與 JavaScript 測試另依 CI 執行。
+
+## v0.7.24 整合
+
+使用者已明確統一觀高坪 → 對觀 110 分，反方向 150 分。新增 Excel 明確「同某路段」的向陽山三岔路口跨圖關係，並套用先前已核對、限定圖組的名稱別名後，編譯為 731 個節點、1,426 個唯一方向步行邊；24 個群組的分頁資料合計 1,560 筆方向紀錄（跨圖有重複）。130 個車行方向另外保存在 `data/transport-owner-reviewed.json`，不參與步行尋路。
+
+所有舊 Preview 節點 ID 均保留。舊的單圖／G17G18 行程可透過 manifest `legacyRoutes` 匯入；`.mplan.json` 維持 schemaVersion 1。原有未連通手動段及已保存官方段，當端點不變時保留規劃時間與來源快照；移動或刪除端點後仍按既有規則重新連線。
+
+新資料來自使用者全表核對，不宣稱 AI 全圖逐方向獨立驗證。已有路網排除的 G04 與 G08 共 8 個舊方向，皆改存為使用者標記的車行；G08 閂山 → 雨量計前岔路口採使用者修正的 60 分。正式版根目錄與 PR #2 合併仍隔離；本版本需要使用者操作驗收。

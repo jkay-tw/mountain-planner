@@ -1,0 +1,1874 @@
+{
+  "route_id": "G08-183e4516",
+  "route_name": "北二段",
+  "status": "owner-reviewed-preview",
+  "sourceChartIds": [
+    "G08"
+  ],
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+    "revision": "owner workbook reviewed 2026-10-28; follow-ups recorded separately"
+  },
+  "reviewBasis": "owner_workbook_review",
+  "nodes": [
+    {
+      "id": "g08-001",
+      "name": "11.7K行車終點",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-002",
+      "name": "17.5K登山口",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-003",
+      "name": "23.2K登山口",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-004",
+      "name": "25K工寮",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-005",
+      "name": "27.5K林道登山口",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-008",
+      "name": "人待山稜線岔路",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-010",
+      "name": "水源",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-012",
+      "name": "甘薯南峰",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-013",
+      "name": "甘薯峰",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-016",
+      "name": "耳無溪合流點",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-019",
+      "name": "東鞍營地",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-020",
+      "name": "雨量計前岔路口",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-021",
+      "name": "閂山",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-022",
+      "name": "鬼門關峰",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-023",
+      "name": "清泉橋",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-026",
+      "name": "無明山",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-027",
+      "name": "無明山西峰",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-028",
+      "name": "無明水池",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-029",
+      "name": "鈴鳴山",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-030",
+      "name": "遠多志山",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-031",
+      "name": "鞍部",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-034",
+      "name": "檢查哨(廢)",
+      "aliases": [],
+      "groups": [
+        "G08-183e4516"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    }
+  ],
+  "segments": [
+    {
+      "fromId": "g08-001",
+      "toId": "g08-002",
+      "from": "11.7K行車終點",
+      "to": "17.5K登山口",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RAD352342DB"
+      ],
+      "evidenceRows": [
+        281
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RAD352342DB",
+          "sheetRows": [
+            281
+          ],
+          "minutes": 180
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-002",
+      "toId": "g08-001",
+      "from": "17.5K登山口",
+      "to": "11.7K行車終點",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RAD352342DB"
+      ],
+      "evidenceRows": [
+        281
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RAD352342DB",
+          "sheetRows": [
+            281
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-002",
+      "toId": "g08-003",
+      "from": "17.5K登山口",
+      "to": "23.2K登山口",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9633E3D568"
+      ],
+      "evidenceRows": [
+        282
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R9633E3D568",
+          "sheetRows": [
+            282
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-003",
+      "toId": "g08-002",
+      "from": "23.2K登山口",
+      "to": "17.5K登山口",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9633E3D568"
+      ],
+      "evidenceRows": [
+        282
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R9633E3D568",
+          "sheetRows": [
+            282
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-003",
+      "toId": "g08-020",
+      "from": "23.2K登山口",
+      "to": "雨量計前岔路口",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7A24C78885"
+      ],
+      "evidenceRows": [
+        283
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R7A24C78885",
+          "sheetRows": [
+            283
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-020",
+      "toId": "g08-003",
+      "from": "雨量計前岔路口",
+      "to": "23.2K登山口",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7A24C78885"
+      ],
+      "evidenceRows": [
+        283
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R7A24C78885",
+          "sheetRows": [
+            283
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-020",
+      "toId": "g08-021",
+      "from": "雨量計前岔路口",
+      "to": "閂山",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB2965488B9"
+      ],
+      "evidenceRows": [
+        284
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RB2965488B9",
+          "sheetRows": [
+            284
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-021",
+      "toId": "g08-020",
+      "from": "閂山",
+      "to": "雨量計前岔路口",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB2965488B9"
+      ],
+      "evidenceRows": [
+        284
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RB2965488B9",
+          "sheetRows": [
+            284
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-021",
+      "toId": "g08-004",
+      "from": "閂山",
+      "to": "25K工寮",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC19709ECF5"
+      ],
+      "evidenceRows": [
+        285
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RC19709ECF5",
+          "sheetRows": [
+            285
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-004",
+      "toId": "g08-021",
+      "from": "25K工寮",
+      "to": "閂山",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC19709ECF5"
+      ],
+      "evidenceRows": [
+        285
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RC19709ECF5",
+          "sheetRows": [
+            285
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-003",
+      "toId": "g08-004",
+      "from": "23.2K登山口",
+      "to": "25K工寮",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD2B7CF203C"
+      ],
+      "evidenceRows": [
+        286
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RD2B7CF203C",
+          "sheetRows": [
+            286
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-004",
+      "toId": "g08-003",
+      "from": "25K工寮",
+      "to": "23.2K登山口",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD2B7CF203C"
+      ],
+      "evidenceRows": [
+        286
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RD2B7CF203C",
+          "sheetRows": [
+            286
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-004",
+      "toId": "g08-005",
+      "from": "25K工寮",
+      "to": "27.5K林道登山口",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R75917D9E8B"
+      ],
+      "evidenceRows": [
+        287
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R75917D9E8B",
+          "sheetRows": [
+            287
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-005",
+      "toId": "g08-004",
+      "from": "27.5K林道登山口",
+      "to": "25K工寮",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R75917D9E8B"
+      ],
+      "evidenceRows": [
+        287
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R75917D9E8B",
+          "sheetRows": [
+            287
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-005",
+      "toId": "g08-008",
+      "from": "27.5K林道登山口",
+      "to": "人待山稜線岔路",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBC6F8C4ACA"
+      ],
+      "evidenceRows": [
+        288
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RBC6F8C4ACA",
+          "sheetRows": [
+            288
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-008",
+      "toId": "g08-005",
+      "from": "人待山稜線岔路",
+      "to": "27.5K林道登山口",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBC6F8C4ACA"
+      ],
+      "evidenceRows": [
+        288
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RBC6F8C4ACA",
+          "sheetRows": [
+            288
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-002",
+      "toId": "g08-016",
+      "from": "17.5K登山口",
+      "to": "耳無溪合流點",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R694E50C454"
+      ],
+      "evidenceRows": [
+        289
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R694E50C454",
+          "sheetRows": [
+            289
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-016",
+      "toId": "g08-002",
+      "from": "耳無溪合流點",
+      "to": "17.5K登山口",
+      "minutes": 160,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R694E50C454"
+      ],
+      "evidenceRows": [
+        289
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R694E50C454",
+          "sheetRows": [
+            289
+          ],
+          "minutes": 160
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-016",
+      "toId": "g08-030",
+      "from": "耳無溪合流點",
+      "to": "遠多志山",
+      "minutes": 240,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RDF383AAFD1"
+      ],
+      "evidenceRows": [
+        290
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RDF383AAFD1",
+          "sheetRows": [
+            290
+          ],
+          "minutes": 240
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-030",
+      "toId": "g08-016",
+      "from": "遠多志山",
+      "to": "耳無溪合流點",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RDF383AAFD1"
+      ],
+      "evidenceRows": [
+        290
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RDF383AAFD1",
+          "sheetRows": [
+            290
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-030",
+      "toId": "g08-012",
+      "from": "遠多志山",
+      "to": "甘薯南峰",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1E00F32668"
+      ],
+      "evidenceRows": [
+        291
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R1E00F32668",
+          "sheetRows": [
+            291
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-012",
+      "toId": "g08-030",
+      "from": "甘薯南峰",
+      "to": "遠多志山",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1E00F32668"
+      ],
+      "evidenceRows": [
+        291
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R1E00F32668",
+          "sheetRows": [
+            291
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-012",
+      "toId": "g08-013",
+      "from": "甘薯南峰",
+      "to": "甘薯峰",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC40E1C67E2"
+      ],
+      "evidenceRows": [
+        292
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RC40E1C67E2",
+          "sheetRows": [
+            292
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-013",
+      "toId": "g08-012",
+      "from": "甘薯峰",
+      "to": "甘薯南峰",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC40E1C67E2"
+      ],
+      "evidenceRows": [
+        292
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RC40E1C67E2",
+          "sheetRows": [
+            292
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-012",
+      "toId": "g08-031",
+      "from": "甘薯南峰",
+      "to": "鞍部",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R57FC0BA037"
+      ],
+      "evidenceRows": [
+        293
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R57FC0BA037",
+          "sheetRows": [
+            293
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-031",
+      "toId": "g08-012",
+      "from": "鞍部",
+      "to": "甘薯南峰",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R57FC0BA037"
+      ],
+      "evidenceRows": [
+        293
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R57FC0BA037",
+          "sheetRows": [
+            293
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-031",
+      "toId": "g08-022",
+      "from": "鞍部",
+      "to": "鬼門關峰",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4F22C3938B"
+      ],
+      "evidenceRows": [
+        294
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R4F22C3938B",
+          "sheetRows": [
+            294
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-022",
+      "toId": "g08-031",
+      "from": "鬼門關峰",
+      "to": "鞍部",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4F22C3938B"
+      ],
+      "evidenceRows": [
+        294
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R4F22C3938B",
+          "sheetRows": [
+            294
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-022",
+      "toId": "g08-028",
+      "from": "鬼門關峰",
+      "to": "無明水池",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RF9044057E9"
+      ],
+      "evidenceRows": [
+        295
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RF9044057E9",
+          "sheetRows": [
+            295
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-028",
+      "toId": "g08-022",
+      "from": "無明水池",
+      "to": "鬼門關峰",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RF9044057E9"
+      ],
+      "evidenceRows": [
+        295
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RF9044057E9",
+          "sheetRows": [
+            295
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-028",
+      "toId": "g08-026",
+      "from": "無明水池",
+      "to": "無明山",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R48E5D0116C"
+      ],
+      "evidenceRows": [
+        296
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R48E5D0116C",
+          "sheetRows": [
+            296
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-026",
+      "toId": "g08-028",
+      "from": "無明山",
+      "to": "無明水池",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R48E5D0116C"
+      ],
+      "evidenceRows": [
+        296
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R48E5D0116C",
+          "sheetRows": [
+            296
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-010",
+      "toId": "g08-019",
+      "from": "水源",
+      "to": "東鞍營地",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB0ACDF99BD"
+      ],
+      "evidenceRows": [
+        297
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RB0ACDF99BD",
+          "sheetRows": [
+            297
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-019",
+      "toId": "g08-010",
+      "from": "東鞍營地",
+      "to": "水源",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB0ACDF99BD"
+      ],
+      "evidenceRows": [
+        297
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RB0ACDF99BD",
+          "sheetRows": [
+            297
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-027",
+      "toId": "g08-019",
+      "from": "無明山西峰",
+      "to": "東鞍營地",
+      "minutes": 290,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R97DEBA7629"
+      ],
+      "evidenceRows": [
+        298,
+        301
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "快:190分 慢:350分",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R97DEBA7629",
+          "sheetRows": [
+            298,
+            301
+          ],
+          "minutes": 290
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-019",
+      "toId": "g08-027",
+      "from": "東鞍營地",
+      "to": "無明山西峰",
+      "minutes": 190,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [
+        {
+          "kind": "slow",
+          "minutes": 350
+        }
+      ],
+      "sourceRows": [
+        "R97DEBA7629"
+      ],
+      "evidenceRows": [
+        298,
+        301
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "快:190分 慢:350分",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R97DEBA7629",
+          "sheetRows": [
+            298,
+            301
+          ],
+          "minutes": 190
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-019",
+      "toId": "g08-029",
+      "from": "東鞍營地",
+      "to": "鈴鳴山",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7416B3226B"
+      ],
+      "evidenceRows": [
+        299
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R7416B3226B",
+          "sheetRows": [
+            299
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-029",
+      "toId": "g08-019",
+      "from": "鈴鳴山",
+      "to": "東鞍營地",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7416B3226B"
+      ],
+      "evidenceRows": [
+        299
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R7416B3226B",
+          "sheetRows": [
+            299
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-008",
+      "toId": "g08-029",
+      "from": "人待山稜線岔路",
+      "to": "鈴鳴山",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R371A3C4378"
+      ],
+      "evidenceRows": [
+        300
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R371A3C4378",
+          "sheetRows": [
+            300
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-029",
+      "toId": "g08-008",
+      "from": "鈴鳴山",
+      "to": "人待山稜線岔路",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R371A3C4378"
+      ],
+      "evidenceRows": [
+        300
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R371A3C4378",
+          "sheetRows": [
+            300
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-027",
+      "toId": "g08-026",
+      "from": "無明山西峰",
+      "to": "無明山",
+      "minutes": 160,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [
+        {
+          "kind": "slow",
+          "minutes": 260
+        }
+      ],
+      "sourceRows": [
+        "RA5EE71C8DB"
+      ],
+      "evidenceRows": [
+        302,
+        303
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "快:160分 慢:260分",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RA5EE71C8DB",
+          "sheetRows": [
+            302,
+            303
+          ],
+          "minutes": 160
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    },
+    {
+      "fromId": "g08-026",
+      "toId": "g08-027",
+      "from": "無明山",
+      "to": "無明山西峰",
+      "minutes": 200,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA5EE71C8DB"
+      ],
+      "evidenceRows": [
+        302,
+        303
+      ],
+      "sourceGroups": [
+        "北二段"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "快:160分 慢:260分",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "北二段",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RA5EE71C8DB",
+          "sheetRows": [
+            302,
+            303
+          ],
+          "minutes": 200
+        }
+      ],
+      "sourceGroupNames": [
+        "北二段"
+      ]
+    }
+  ],
+  "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+}

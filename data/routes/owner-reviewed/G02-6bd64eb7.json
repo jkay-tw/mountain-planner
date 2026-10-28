@@ -1,0 +1,2205 @@
+{
+  "route_id": "G02-6bd64eb7",
+  "route_name": "八通關越嶺",
+  "status": "owner-reviewed-preview",
+  "sourceChartIds": [
+    "G02"
+  ],
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+    "revision": "owner workbook reviewed 2026-10-28; follow-ups recorded separately"
+  },
+  "reviewBasis": "owner_workbook_review",
+  "nodes": [
+    {
+      "id": "node:1e33d65d02cee63e0cd4",
+      "name": "三岔路口",
+      "aliases": [],
+      "groups": [
+        "G02-6bd64eb7"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "shared:cw-v07-008",
+      "name": "三聖宮",
+      "aliases": [],
+      "groups": [
+        "G02-6bd64eb7"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-013",
+      "name": "乙女瀑布",
+      "aliases": [],
+      "groups": [
+        "G02-6bd64eb7"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-014",
+      "name": "八通關山",
+      "aliases": [],
+      "groups": [
+        "G02-6bd64eb7"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-016",
+      "name": "八通關山登山口",
+      "aliases": [],
+      "groups": [
+        "G02-6bd64eb7"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-017",
+      "name": "八通關山西峰",
+      "aliases": [],
+      "groups": [
+        "G02-6bd64eb7"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-018",
+      "name": "八通關登山口",
+      "aliases": [],
+      "groups": [
+        "G02-6bd64eb7"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-019",
+      "name": "八通關草原",
+      "aliases": [],
+      "groups": [
+        "G02-6bd64eb7"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-026",
+      "name": "古道崩斷岔路",
+      "aliases": [],
+      "groups": [
+        "G02-6bd64eb7"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-044",
+      "name": "對觀",
+      "aliases": [],
+      "groups": [
+        "G02-6bd64eb7"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-051",
+      "name": "東埔溫泉",
+      "aliases": [],
+      "groups": [
+        "G02-6bd64eb7"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-054",
+      "name": "樂樂山屋",
+      "aliases": [],
+      "groups": [
+        "G02-6bd64eb7"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-055",
+      "name": "樂樂溫泉岔路",
+      "aliases": [],
+      "groups": [
+        "G02-6bd64eb7"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-057",
+      "name": "溪水營地",
+      "aliases": [],
+      "groups": [
+        "G02-6bd64eb7"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-069",
+      "name": "荖濃溪營地",
+      "aliases": [],
+      "groups": [
+        "G02-6bd64eb7"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-071",
+      "name": "西峰岔路",
+      "aliases": [],
+      "groups": [
+        "G02-6bd64eb7"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-072",
+      "name": "觀高坪",
+      "aliases": [],
+      "groups": [
+        "G02-6bd64eb7"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-073",
+      "name": "觀高登山服務處",
+      "aliases": [],
+      "groups": [
+        "G02-6bd64eb7"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-076",
+      "name": "雲龍瀑布",
+      "aliases": [],
+      "groups": [
+        "G02-6bd64eb7"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    }
+  ],
+  "segments": [
+    {
+      "fromId": "shared:cw-v07-051",
+      "toId": "shared:cw-v07-018",
+      "from": "東埔溫泉",
+      "to": "八通關登山口",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1E90A73EC9",
+        "RE419344543"
+      ],
+      "evidenceRows": [
+        32,
+        612
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RE419344543",
+          "sheetRows": [
+            32
+          ],
+          "minutes": 10
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R1E90A73EC9",
+          "sheetRows": [
+            612
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-018",
+      "toId": "shared:cw-v07-051",
+      "from": "八通關登山口",
+      "to": "東埔溫泉",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1E90A73EC9",
+        "RE419344543"
+      ],
+      "evidenceRows": [
+        32,
+        612
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RE419344543",
+          "sheetRows": [
+            32
+          ],
+          "minutes": 10
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R1E90A73EC9",
+          "sheetRows": [
+            612
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-018",
+      "toId": "shared:cw-v07-008",
+      "from": "八通關登山口",
+      "to": "三聖宮",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6B80EAD3EC",
+        "R7DD068A349"
+      ],
+      "evidenceRows": [
+        33,
+        613
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R7DD068A349",
+          "sheetRows": [
+            33
+          ],
+          "minutes": 25
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R6B80EAD3EC",
+          "sheetRows": [
+            613
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-008",
+      "toId": "shared:cw-v07-018",
+      "from": "三聖宮",
+      "to": "八通關登山口",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6B80EAD3EC",
+        "R7DD068A349"
+      ],
+      "evidenceRows": [
+        33,
+        613
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R7DD068A349",
+          "sheetRows": [
+            33
+          ],
+          "minutes": 15
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R6B80EAD3EC",
+          "sheetRows": [
+            613
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-008",
+      "toId": "shared:cw-v07-055",
+      "from": "三聖宮",
+      "to": "樂樂溫泉岔路",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R88DF92DA1A",
+        "RB7EB3A4B13"
+      ],
+      "evidenceRows": [
+        34,
+        614
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R88DF92DA1A",
+          "sheetRows": [
+            34
+          ],
+          "minutes": 50
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RB7EB3A4B13",
+          "sheetRows": [
+            614
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-055",
+      "toId": "shared:cw-v07-008",
+      "from": "樂樂溫泉岔路",
+      "to": "三聖宮",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R88DF92DA1A",
+        "RB7EB3A4B13"
+      ],
+      "evidenceRows": [
+        34,
+        614
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R88DF92DA1A",
+          "sheetRows": [
+            34
+          ],
+          "minutes": 45
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RB7EB3A4B13",
+          "sheetRows": [
+            614
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-055",
+      "toId": "shared:cw-v07-076",
+      "from": "樂樂溫泉岔路",
+      "to": "雲龍瀑布",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4F059EC638",
+        "R7D24481642"
+      ],
+      "evidenceRows": [
+        35,
+        615
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R4F059EC638",
+          "sheetRows": [
+            35
+          ],
+          "minutes": 45
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R7D24481642",
+          "sheetRows": [
+            615
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-076",
+      "toId": "shared:cw-v07-055",
+      "from": "雲龍瀑布",
+      "to": "樂樂溫泉岔路",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4F059EC638",
+        "R7D24481642"
+      ],
+      "evidenceRows": [
+        35,
+        615
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R4F059EC638",
+          "sheetRows": [
+            35
+          ],
+          "minutes": 45
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R7D24481642",
+          "sheetRows": [
+            615
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-076",
+      "toId": "shared:cw-v07-054",
+      "from": "雲龍瀑布",
+      "to": "樂樂山屋",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R14D629FCD0",
+        "R44A088C427",
+        "RD1B1AD348C"
+      ],
+      "evidenceRows": [
+        36,
+        616,
+        692
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R14D629FCD0",
+          "sheetRows": [
+            36
+          ],
+          "minutes": 60
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RD1B1AD348C",
+          "sheetRows": [
+            616
+          ],
+          "minutes": 60
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R44A088C427",
+          "sheetRows": [
+            692
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-054",
+      "toId": "shared:cw-v07-076",
+      "from": "樂樂山屋",
+      "to": "雲龍瀑布",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R14D629FCD0",
+        "R44A088C427",
+        "RD1B1AD348C"
+      ],
+      "evidenceRows": [
+        36,
+        616,
+        692
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R14D629FCD0",
+          "sheetRows": [
+            36
+          ],
+          "minutes": 55
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RD1B1AD348C",
+          "sheetRows": [
+            616
+          ],
+          "minutes": 55
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R44A088C427",
+          "sheetRows": [
+            692
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-054",
+      "toId": "shared:cw-v07-013",
+      "from": "樂樂山屋",
+      "to": "乙女瀑布",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R68B0806864",
+        "RB9472F2ACB"
+      ],
+      "evidenceRows": [
+        37,
+        617
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RB9472F2ACB",
+          "sheetRows": [
+            37
+          ],
+          "minutes": 25
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R68B0806864",
+          "sheetRows": [
+            617
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-013",
+      "toId": "shared:cw-v07-054",
+      "from": "乙女瀑布",
+      "to": "樂樂山屋",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R68B0806864",
+        "RB9472F2ACB"
+      ],
+      "evidenceRows": [
+        37,
+        617
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RB9472F2ACB",
+          "sheetRows": [
+            37
+          ],
+          "minutes": 25
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R68B0806864",
+          "sheetRows": [
+            617
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-013",
+      "toId": "shared:cw-v07-044",
+      "from": "乙女瀑布",
+      "to": "對觀",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA1BFC4BD9F",
+        "RE20C6C349C"
+      ],
+      "evidenceRows": [
+        38,
+        618
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RE20C6C349C",
+          "sheetRows": [
+            38
+          ],
+          "minutes": 100
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RA1BFC4BD9F",
+          "sheetRows": [
+            618
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-044",
+      "toId": "shared:cw-v07-013",
+      "from": "對觀",
+      "to": "乙女瀑布",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA1BFC4BD9F",
+        "RE20C6C349C"
+      ],
+      "evidenceRows": [
+        38,
+        618
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RE20C6C349C",
+          "sheetRows": [
+            38
+          ],
+          "minutes": 80
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RA1BFC4BD9F",
+          "sheetRows": [
+            618
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-044",
+      "toId": "shared:cw-v07-072",
+      "from": "對觀",
+      "to": "觀高坪",
+      "minutes": 150,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2415172D74",
+        "R7E3A7B5638"
+      ],
+      "evidenceRows": [
+        39,
+        619
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R2415172D74",
+          "sheetRows": [
+            39
+          ],
+          "minutes": 150
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R7E3A7B5638",
+          "sheetRows": [
+            619
+          ],
+          "minutes": 150
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-072",
+      "toId": "shared:cw-v07-044",
+      "from": "觀高坪",
+      "to": "對觀",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2415172D74",
+        "R7E3A7B5638"
+      ],
+      "evidenceRows": [
+        39,
+        619
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R2415172D74",
+          "sheetRows": [
+            39
+          ],
+          "minutes": 110
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R7E3A7B5638",
+          "sheetRows": [
+            619
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-072",
+      "toId": "shared:cw-v07-026",
+      "from": "觀高坪",
+      "to": "古道崩斷岔路",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0C41795B18",
+        "RA934506147"
+      ],
+      "evidenceRows": [
+        40,
+        621
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RA934506147",
+          "sheetRows": [
+            40
+          ],
+          "minutes": 5
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R0C41795B18",
+          "sheetRows": [
+            621
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-026",
+      "toId": "shared:cw-v07-072",
+      "from": "古道崩斷岔路",
+      "to": "觀高坪",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0C41795B18",
+        "RA934506147"
+      ],
+      "evidenceRows": [
+        40,
+        621
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RA934506147",
+          "sheetRows": [
+            40
+          ],
+          "minutes": 5
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R0C41795B18",
+          "sheetRows": [
+            621
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-072",
+      "toId": "shared:cw-v07-073",
+      "from": "觀高坪",
+      "to": "觀高登山服務處",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R75D7FDBC17",
+        "RAA1CE16D9A"
+      ],
+      "evidenceRows": [
+        41,
+        620
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RAA1CE16D9A",
+          "sheetRows": [
+            41
+          ],
+          "minutes": 15
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R75D7FDBC17",
+          "sheetRows": [
+            620
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-073",
+      "toId": "shared:cw-v07-072",
+      "from": "觀高登山服務處",
+      "to": "觀高坪",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R75D7FDBC17",
+        "RAA1CE16D9A"
+      ],
+      "evidenceRows": [
+        41,
+        620
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RAA1CE16D9A",
+          "sheetRows": [
+            41
+          ],
+          "minutes": 15
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R75D7FDBC17",
+          "sheetRows": [
+            620
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-026",
+      "toId": "shared:cw-v07-057",
+      "from": "古道崩斷岔路",
+      "to": "溪水營地",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R22237AD96B",
+        "R42C3108724"
+      ],
+      "evidenceRows": [
+        42,
+        622
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R42C3108724",
+          "sheetRows": [
+            42
+          ],
+          "minutes": 60
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R22237AD96B",
+          "sheetRows": [
+            622
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-057",
+      "toId": "shared:cw-v07-026",
+      "from": "溪水營地",
+      "to": "古道崩斷岔路",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R22237AD96B",
+        "R42C3108724"
+      ],
+      "evidenceRows": [
+        42,
+        622
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R42C3108724",
+          "sheetRows": [
+            42
+          ],
+          "minutes": 40
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R22237AD96B",
+          "sheetRows": [
+            622
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-057",
+      "toId": "shared:cw-v07-071",
+      "from": "溪水營地",
+      "to": "西峰岔路",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0A09C7EBE5",
+        "RB669D2941A"
+      ],
+      "evidenceRows": [
+        43,
+        623
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R0A09C7EBE5",
+          "sheetRows": [
+            43
+          ],
+          "minutes": 40
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RB669D2941A",
+          "sheetRows": [
+            623
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-071",
+      "toId": "shared:cw-v07-057",
+      "from": "西峰岔路",
+      "to": "溪水營地",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0A09C7EBE5",
+        "RB669D2941A"
+      ],
+      "evidenceRows": [
+        43,
+        623
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R0A09C7EBE5",
+          "sheetRows": [
+            43
+          ],
+          "minutes": 35
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RB669D2941A",
+          "sheetRows": [
+            623
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-071",
+      "toId": "shared:cw-v07-019",
+      "from": "西峰岔路",
+      "to": "八通關草原",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R238B55FDDE",
+        "R6AC92ABCFE",
+        "R6AF2DAAE87"
+      ],
+      "evidenceRows": [
+        44,
+        624,
+        697
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R6AC92ABCFE",
+          "sheetRows": [
+            44
+          ],
+          "minutes": 50
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R238B55FDDE",
+          "sheetRows": [
+            624
+          ],
+          "minutes": 50
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R6AF2DAAE87",
+          "sheetRows": [
+            697
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-019",
+      "toId": "shared:cw-v07-071",
+      "from": "八通關草原",
+      "to": "西峰岔路",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R238B55FDDE",
+        "R6AC92ABCFE",
+        "R6AF2DAAE87"
+      ],
+      "evidenceRows": [
+        44,
+        624,
+        697
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R6AC92ABCFE",
+          "sheetRows": [
+            44
+          ],
+          "minutes": 70
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R238B55FDDE",
+          "sheetRows": [
+            624
+          ],
+          "minutes": 70
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R6AF2DAAE87",
+          "sheetRows": [
+            697
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-019",
+      "toId": "shared:cw-v07-016",
+      "from": "八通關草原",
+      "to": "八通關山登山口",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R40654E1D39",
+        "R694591DE03",
+        "R79C2CDC9B7"
+      ],
+      "evidenceRows": [
+        45,
+        628,
+        698
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R40654E1D39",
+          "sheetRows": [
+            45
+          ],
+          "minutes": 80
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R694591DE03",
+          "sheetRows": [
+            628
+          ],
+          "minutes": 80
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R79C2CDC9B7",
+          "sheetRows": [
+            698
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-016",
+      "toId": "shared:cw-v07-019",
+      "from": "八通關山登山口",
+      "to": "八通關草原",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R40654E1D39",
+        "R694591DE03",
+        "R79C2CDC9B7"
+      ],
+      "evidenceRows": [
+        45,
+        628,
+        698
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R40654E1D39",
+          "sheetRows": [
+            45
+          ],
+          "minutes": 80
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R694591DE03",
+          "sheetRows": [
+            628
+          ],
+          "minutes": 80
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R79C2CDC9B7",
+          "sheetRows": [
+            698
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-071",
+      "toId": "shared:cw-v07-017",
+      "from": "西峰岔路",
+      "to": "八通關山西峰",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R32F5AF4D09",
+        "R67E99E35CF",
+        "RD2CB61D229"
+      ],
+      "evidenceRows": [
+        46,
+        625,
+        696
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RD2CB61D229",
+          "sheetRows": [
+            46
+          ],
+          "minutes": 50
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R32F5AF4D09",
+          "sheetRows": [
+            625
+          ],
+          "minutes": 50
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R67E99E35CF",
+          "sheetRows": [
+            696
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-017",
+      "toId": "shared:cw-v07-071",
+      "from": "八通關山西峰",
+      "to": "西峰岔路",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R32F5AF4D09",
+        "R67E99E35CF",
+        "RD2CB61D229"
+      ],
+      "evidenceRows": [
+        46,
+        625,
+        696
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RD2CB61D229",
+          "sheetRows": [
+            46
+          ],
+          "minutes": 30
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R32F5AF4D09",
+          "sheetRows": [
+            625
+          ],
+          "minutes": 30
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R67E99E35CF",
+          "sheetRows": [
+            696
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-017",
+      "toId": "node:1e33d65d02cee63e0cd4",
+      "from": "八通關山西峰",
+      "to": "三岔路口",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R62BB0AD0CC"
+      ],
+      "evidenceRows": [
+        47
+      ],
+      "sourceGroups": [
+        "八通關越嶺"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R62BB0AD0CC",
+          "sheetRows": [
+            47
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺"
+      ]
+    },
+    {
+      "fromId": "node:1e33d65d02cee63e0cd4",
+      "toId": "shared:cw-v07-017",
+      "from": "三岔路口",
+      "to": "八通關山西峰",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R62BB0AD0CC"
+      ],
+      "evidenceRows": [
+        47
+      ],
+      "sourceGroups": [
+        "八通關越嶺"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R62BB0AD0CC",
+          "sheetRows": [
+            47
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺"
+      ]
+    },
+    {
+      "fromId": "node:1e33d65d02cee63e0cd4",
+      "toId": "shared:cw-v07-014",
+      "from": "三岔路口",
+      "to": "八通關山",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBC04035EC0"
+      ],
+      "evidenceRows": [
+        48
+      ],
+      "sourceGroups": [
+        "八通關越嶺"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RBC04035EC0",
+          "sheetRows": [
+            48
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-014",
+      "toId": "node:1e33d65d02cee63e0cd4",
+      "from": "八通關山",
+      "to": "三岔路口",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBC04035EC0"
+      ],
+      "evidenceRows": [
+        48
+      ],
+      "sourceGroups": [
+        "八通關越嶺"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RBC04035EC0",
+          "sheetRows": [
+            48
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-016",
+      "toId": "node:1e33d65d02cee63e0cd4",
+      "from": "八通關山登山口",
+      "to": "三岔路口",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA28AE283FA"
+      ],
+      "evidenceRows": [
+        49
+      ],
+      "sourceGroups": [
+        "八通關越嶺"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RA28AE283FA",
+          "sheetRows": [
+            49
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺"
+      ]
+    },
+    {
+      "fromId": "node:1e33d65d02cee63e0cd4",
+      "toId": "shared:cw-v07-016",
+      "from": "三岔路口",
+      "to": "八通關山登山口",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA28AE283FA"
+      ],
+      "evidenceRows": [
+        49
+      ],
+      "sourceGroups": [
+        "八通關越嶺"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RA28AE283FA",
+          "sheetRows": [
+            49
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-019",
+      "toId": "shared:cw-v07-069",
+      "from": "八通關草原",
+      "to": "荖濃溪營地",
+      "minutes": 200,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA321A0813A"
+      ],
+      "evidenceRows": [
+        50
+      ],
+      "sourceGroups": [
+        "八通關越嶺"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RA321A0813A",
+          "sheetRows": [
+            50
+          ],
+          "minutes": 200
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-069",
+      "toId": "shared:cw-v07-019",
+      "from": "荖濃溪營地",
+      "to": "八通關草原",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA321A0813A"
+      ],
+      "evidenceRows": [
+        50
+      ],
+      "sourceGroups": [
+        "八通關越嶺"
+      ],
+      "sourceChart": "G02",
+      "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RA321A0813A",
+          "sheetRows": [
+            50
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺"
+      ]
+    }
+  ],
+  "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+}

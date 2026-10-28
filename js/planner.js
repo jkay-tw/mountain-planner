@@ -67,6 +67,16 @@ export function recalcConnections(day,route){
     if(raw.type==='rest'){result.push({...raw});continue;}
     const item={...raw};
     if(!previous){item.incoming=null;result.push(item);previous=item;continue;}
+    // Dataset updates must not replace a saved connection while its endpoints stay put.
+    // A move/delete changes endpoint identity and still triggers normal reconnection below.
+    const stored=raw.incoming;
+    const stableManual=stored?.kind==='manual'&&stored.connectionStatus==='unverified'&&stored.fromId===previous.id&&stored.toId===item.id;
+    const stableOfficial=Array.isArray(route.nodes)&&stored?.kind==='official'&&
+      stored.fromNodeId===previous.nodeId&&stored.toNodeId===item.nodeId&&
+      previous.nodeId!==item.nodeId;
+    if(stableManual||stableOfficial){
+      item.incoming={...stored};result.push(item);previous=item;continue;
+    }
     if(previous.type==='manual-location'||item.type==='manual-location'){
       item.incoming=makeManual(previous,item,raw.incoming);result.push(item);previous=item;continue;
     }

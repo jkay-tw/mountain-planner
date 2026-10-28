@@ -1,0 +1,310 @@
+{
+  "route_id": "G03-b3980295",
+  "route_name": "郡大山",
+  "status": "owner-reviewed-preview",
+  "sourceChartIds": [
+    "G03"
+  ],
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+    "revision": "owner workbook reviewed 2026-10-28; follow-ups recorded separately"
+  },
+  "reviewBasis": "owner_workbook_review",
+  "nodes": [
+    {
+      "id": "g03-002",
+      "name": "32K登山口",
+      "aliases": [],
+      "groups": [
+        "G03-b3980295"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g03-006",
+      "name": "郡大山",
+      "aliases": [],
+      "groups": [
+        "G03-b3980295"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g03-007",
+      "name": "郡大山北峰",
+      "aliases": [],
+      "groups": [
+        "G03-b3980295"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g03-008",
+      "name": "望鄉山",
+      "aliases": [],
+      "groups": [
+        "G03-b3980295"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-002",
+      "name": "23K望鄉工作站",
+      "aliases": [],
+      "groups": [
+        "G03-b3980295"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-021",
+      "name": "十八重溪橋",
+      "aliases": [
+        "十八重溪橋檢查哨"
+      ],
+      "groups": [
+        "G03-b3980295"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    }
+  ],
+  "segments": [
+    {
+      "fromId": "g03-002",
+      "toId": "g03-008",
+      "from": "32K登山口",
+      "to": "望鄉山",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1AB79EA789"
+      ],
+      "evidenceRows": [
+        53
+      ],
+      "sourceGroups": [
+        "郡大山"
+      ],
+      "sourceChart": "G03",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "郡大山",
+          "chartId": "G03",
+          "url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+          "rowId": "R1AB79EA789",
+          "sheetRows": [
+            53
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "郡大山"
+      ]
+    },
+    {
+      "fromId": "g03-008",
+      "toId": "g03-002",
+      "from": "望鄉山",
+      "to": "32K登山口",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1AB79EA789"
+      ],
+      "evidenceRows": [
+        53
+      ],
+      "sourceGroups": [
+        "郡大山"
+      ],
+      "sourceChart": "G03",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "郡大山",
+          "chartId": "G03",
+          "url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+          "rowId": "R1AB79EA789",
+          "sheetRows": [
+            53
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "郡大山"
+      ]
+    },
+    {
+      "fromId": "g03-008",
+      "toId": "g03-007",
+      "from": "望鄉山",
+      "to": "郡大山北峰",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD89A59B8D1"
+      ],
+      "evidenceRows": [
+        54
+      ],
+      "sourceGroups": [
+        "郡大山"
+      ],
+      "sourceChart": "G03",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "郡大山",
+          "chartId": "G03",
+          "url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+          "rowId": "RD89A59B8D1",
+          "sheetRows": [
+            54
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "郡大山"
+      ]
+    },
+    {
+      "fromId": "g03-007",
+      "toId": "g03-008",
+      "from": "郡大山北峰",
+      "to": "望鄉山",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD89A59B8D1"
+      ],
+      "evidenceRows": [
+        54
+      ],
+      "sourceGroups": [
+        "郡大山"
+      ],
+      "sourceChart": "G03",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "郡大山",
+          "chartId": "G03",
+          "url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+          "rowId": "RD89A59B8D1",
+          "sheetRows": [
+            54
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "郡大山"
+      ]
+    },
+    {
+      "fromId": "g03-007",
+      "toId": "g03-006",
+      "from": "郡大山北峰",
+      "to": "郡大山",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA06083C794"
+      ],
+      "evidenceRows": [
+        55
+      ],
+      "sourceGroups": [
+        "郡大山"
+      ],
+      "sourceChart": "G03",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "郡大山",
+          "chartId": "G03",
+          "url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+          "rowId": "RA06083C794",
+          "sheetRows": [
+            55
+          ],
+          "minutes": 65
+        }
+      ],
+      "sourceGroupNames": [
+        "郡大山"
+      ]
+    },
+    {
+      "fromId": "g03-006",
+      "toId": "g03-007",
+      "from": "郡大山",
+      "to": "郡大山北峰",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA06083C794"
+      ],
+      "evidenceRows": [
+        55
+      ],
+      "sourceGroups": [
+        "郡大山"
+      ],
+      "sourceChart": "G03",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "郡大山",
+          "chartId": "G03",
+          "url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+          "rowId": "RA06083C794",
+          "sheetRows": [
+            55
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "郡大山"
+      ]
+    }
+  ],
+  "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+}
