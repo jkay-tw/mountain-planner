@@ -33,7 +33,7 @@
     {
       "id": "G07",
       "name": "G07｜北一段（已重核，局部連接待核）",
-      "file": "data/routes/G07.preview.json?v=v0722",
+      "file": "data/routes/G07.preview.json?v=v0722a",
       "status": "partial-source-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
       "routingEnabled": true,
