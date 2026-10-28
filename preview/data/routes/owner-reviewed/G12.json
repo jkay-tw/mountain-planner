@@ -1,0 +1,3483 @@
+{
+  "route_id": "G12",
+  "route_name": "能高安東軍",
+  "status": "owner-reviewed-preview",
+  "sourceChartIds": [
+    "G12"
+  ],
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+    "revision": "owner workbook reviewed 2026-10-28; follow-ups recorded separately"
+  },
+  "reviewBasis": "owner_workbook_review",
+  "nodes": [
+    {
+      "id": "node:030d2b7da25300f1a42f",
+      "name": "垂直岩壁拉繩",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:0d2f371ddfeb119e3693",
+      "name": "白石池",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:11a915b8cc195fd5218c",
+      "name": "第四支流合匯點",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:1b5b86247fee083ab543",
+      "name": "第一次獵寮/第一次過溪",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:1b76d614a79c69a8996d",
+      "name": "萬里池",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:291727aee0cabd58724a",
+      "name": "光頭山",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:2ba3a2e0d002a5ba8526",
+      "name": "南峰岔路口",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:3f743c0af3f084ee1ad5",
+      "name": "三岔路口",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:4885c1be2f9e12cd8d0a",
+      "name": "大陸池營地",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:5211b3f5534cb71b4ab1",
+      "name": "奧萬大吊橋",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:54f2925829d0c1898275",
+      "name": "萬大南溪合匯點",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:5b14299a5943cdec0daf",
+      "name": "第三支流合匯點/鐵皮工寮營地",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:5eb6459390f9db03adc8",
+      "name": "第一越嶺點",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:67f57cbaed69e5e84ce3",
+      "name": "台灣池營地",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:6eb41183957ad2f076a4",
+      "name": "屯鹿池",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:745a16cdc7cc3dfdcdda",
+      "name": "白石山",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:7aabed13190449c71fa4",
+      "name": "能高南峰北嶺",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:7e6d427f1bf037d68dcb",
+      "name": "南峰南鞍營地",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:7f57c578802af8b68adc",
+      "name": "大崩壁",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:8e1135100cb15ee3d126",
+      "name": "安東軍山",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:9212b0026ee8f0b5f8ce",
+      "name": "第二支流合匯點",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:9acfc83380afbd0e25b9",
+      "name": "能高山南峰",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:9dbcf14abece1494a5b6",
+      "name": "金杏真路岔路口",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:a20fa9b4a5899ee82159",
+      "name": "溪床營地",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:a4678a594247d25069b5",
+      "name": "第二越嶺點",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:acdbe0b925a6f0ccb8ba",
+      "name": "3039鞍營地",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:b856b38829fad3ecb7b8",
+      "name": "遊客中心停車場",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:cca6d219fb0533715112",
+      "name": "能高小屋舊址",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:e2370d30048393393fcc",
+      "name": "紅檜巨木",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:f365a90039ff7fe8bafb",
+      "name": "第二獵寮",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:fe4749ed09b4a359026c",
+      "name": "第三越嶺點(松風嶺)",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "shared:cw-v07-025",
+      "name": "卡賀爾山",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-038",
+      "name": "天池山莊",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-045",
+      "name": "屯原登山口",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-047",
+      "name": "廬山部落",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-065",
+      "name": "縣界啞口",
+      "aliases": [
+        "縣界埡口"
+      ],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-067",
+      "name": "能高主峰",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-075",
+      "name": "雲海保線所",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-077",
+      "name": "霧社",
+      "aliases": [],
+      "groups": [
+        "G12"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    }
+  ],
+  "segments": [
+    {
+      "fromId": "shared:cw-v07-045",
+      "toId": "shared:cw-v07-075",
+      "from": "屯原登山口",
+      "to": "雲海保線所",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3F311F60BB",
+        "RAE25CC6535",
+        "RC66D1C6531"
+      ],
+      "evidenceRows": [
+        334,
+        414,
+        433
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RAE25CC6535",
+          "sheetRows": [
+            334
+          ],
+          "minutes": 120
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "R3F311F60BB",
+          "sheetRows": [
+            414
+          ],
+          "minutes": 120
+        },
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RC66D1C6531",
+          "sheetRows": [
+            433
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-075",
+      "toId": "shared:cw-v07-045",
+      "from": "雲海保線所",
+      "to": "屯原登山口",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3F311F60BB",
+        "RAE25CC6535",
+        "RC66D1C6531"
+      ],
+      "evidenceRows": [
+        334,
+        414,
+        433
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RAE25CC6535",
+          "sheetRows": [
+            334
+          ],
+          "minutes": 100
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "R3F311F60BB",
+          "sheetRows": [
+            414
+          ],
+          "minutes": 100
+        },
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RC66D1C6531",
+          "sheetRows": [
+            433
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-075",
+      "toId": "shared:cw-v07-038",
+      "from": "雲海保線所",
+      "to": "天池山莊",
+      "minutes": 210,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R67DF23BF8C",
+        "R6F8F31F818",
+        "R7D7BE10338"
+      ],
+      "evidenceRows": [
+        335,
+        415,
+        434
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R7D7BE10338",
+          "sheetRows": [
+            335
+          ],
+          "minutes": 210
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "R6F8F31F818",
+          "sheetRows": [
+            415
+          ],
+          "minutes": 210
+        },
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R67DF23BF8C",
+          "sheetRows": [
+            434
+          ],
+          "minutes": 210
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-038",
+      "toId": "shared:cw-v07-075",
+      "from": "天池山莊",
+      "to": "雲海保線所",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R67DF23BF8C",
+        "R6F8F31F818",
+        "R7D7BE10338"
+      ],
+      "evidenceRows": [
+        335,
+        415,
+        434
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R7D7BE10338",
+          "sheetRows": [
+            335
+          ],
+          "minutes": 180
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "R6F8F31F818",
+          "sheetRows": [
+            415
+          ],
+          "minutes": 180
+        },
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R67DF23BF8C",
+          "sheetRows": [
+            434
+          ],
+          "minutes": 180
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-038",
+      "toId": "shared:cw-v07-065",
+      "from": "天池山莊",
+      "to": "縣界啞口",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R50B9B08245",
+        "R8326A43EB0",
+        "RE58CD3D81A"
+      ],
+      "evidenceRows": [
+        336,
+        416,
+        435
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RE58CD3D81A",
+          "sheetRows": [
+            336
+          ],
+          "minutes": 50
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "R50B9B08245",
+          "sheetRows": [
+            416
+          ],
+          "minutes": 50
+        },
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R8326A43EB0",
+          "sheetRows": [
+            435
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-065",
+      "toId": "shared:cw-v07-038",
+      "from": "縣界啞口",
+      "to": "天池山莊",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R50B9B08245",
+        "R8326A43EB0",
+        "RE58CD3D81A"
+      ],
+      "evidenceRows": [
+        336,
+        416,
+        435
+      ],
+      "sourceGroups": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "奇萊群峰",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RE58CD3D81A",
+          "sheetRows": [
+            336
+          ],
+          "minutes": 55
+        },
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "R50B9B08245",
+          "sheetRows": [
+            416
+          ],
+          "minutes": 55
+        },
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R8326A43EB0",
+          "sheetRows": [
+            435
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "奇萊群峰",
+        "能高安東軍",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-065",
+      "toId": "shared:cw-v07-025",
+      "from": "縣界啞口",
+      "to": "卡賀爾山",
+      "minutes": 170,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R879C8FE8C3",
+        "REC2CE9DE7F"
+      ],
+      "evidenceRows": [
+        429,
+        436
+      ],
+      "sourceGroups": [
+        "能高安東軍",
+        "能高越嶺"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "R879C8FE8C3",
+          "sheetRows": [
+            429
+          ],
+          "minutes": 170
+        },
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "REC2CE9DE7F",
+          "sheetRows": [
+            436
+          ],
+          "minutes": 170
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-025",
+      "toId": "shared:cw-v07-065",
+      "from": "卡賀爾山",
+      "to": "縣界啞口",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R879C8FE8C3",
+        "REC2CE9DE7F"
+      ],
+      "evidenceRows": [
+        429,
+        436
+      ],
+      "sourceGroups": [
+        "能高安東軍",
+        "能高越嶺"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "R879C8FE8C3",
+          "sheetRows": [
+            429
+          ],
+          "minutes": 140
+        },
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "REC2CE9DE7F",
+          "sheetRows": [
+            436
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-025",
+      "toId": "shared:cw-v07-067",
+      "from": "卡賀爾山",
+      "to": "能高主峰",
+      "minutes": 160,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R13450B4333",
+        "R5C65244A8E"
+      ],
+      "evidenceRows": [
+        430,
+        437
+      ],
+      "sourceGroups": [
+        "能高安東軍",
+        "能高越嶺"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "R5C65244A8E",
+          "sheetRows": [
+            430
+          ],
+          "minutes": 160
+        },
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R13450B4333",
+          "sheetRows": [
+            437
+          ],
+          "minutes": 160
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-067",
+      "toId": "shared:cw-v07-025",
+      "from": "能高主峰",
+      "to": "卡賀爾山",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R13450B4333",
+        "R5C65244A8E"
+      ],
+      "evidenceRows": [
+        430,
+        437
+      ],
+      "sourceGroups": [
+        "能高安東軍",
+        "能高越嶺"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高越嶺",
+          "chartId": "G11",
+          "url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+          "rowId": "R5C65244A8E",
+          "sheetRows": [
+            430
+          ],
+          "minutes": 140
+        },
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R13450B4333",
+          "sheetRows": [
+            437
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍",
+        "能高越嶺"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-067",
+      "toId": "node:cca6d219fb0533715112",
+      "from": "能高主峰",
+      "to": "能高小屋舊址",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R93C525F536"
+      ],
+      "evidenceRows": [
+        438
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R93C525F536",
+          "sheetRows": [
+            438
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:cca6d219fb0533715112",
+      "toId": "shared:cw-v07-067",
+      "from": "能高小屋舊址",
+      "to": "能高主峰",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R93C525F536"
+      ],
+      "evidenceRows": [
+        438
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R93C525F536",
+          "sheetRows": [
+            438
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:cca6d219fb0533715112",
+      "toId": "node:67f57cbaed69e5e84ce3",
+      "from": "能高小屋舊址",
+      "to": "台灣池營地",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4D3B4CA69A"
+      ],
+      "evidenceRows": [
+        439
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R4D3B4CA69A",
+          "sheetRows": [
+            439
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:67f57cbaed69e5e84ce3",
+      "toId": "node:cca6d219fb0533715112",
+      "from": "台灣池營地",
+      "to": "能高小屋舊址",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4D3B4CA69A"
+      ],
+      "evidenceRows": [
+        439
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R4D3B4CA69A",
+          "sheetRows": [
+            439
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:67f57cbaed69e5e84ce3",
+      "toId": "node:4885c1be2f9e12cd8d0a",
+      "from": "台灣池營地",
+      "to": "大陸池營地",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0780E77ECC"
+      ],
+      "evidenceRows": [
+        440
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R0780E77ECC",
+          "sheetRows": [
+            440
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:4885c1be2f9e12cd8d0a",
+      "toId": "node:67f57cbaed69e5e84ce3",
+      "from": "大陸池營地",
+      "to": "台灣池營地",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0780E77ECC"
+      ],
+      "evidenceRows": [
+        440
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R0780E77ECC",
+          "sheetRows": [
+            440
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:4885c1be2f9e12cd8d0a",
+      "toId": "node:030d2b7da25300f1a42f",
+      "from": "大陸池營地",
+      "to": "垂直岩壁拉繩",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9CBFC12435"
+      ],
+      "evidenceRows": [
+        441
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R9CBFC12435",
+          "sheetRows": [
+            441
+          ],
+          "minutes": 65
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:030d2b7da25300f1a42f",
+      "toId": "node:4885c1be2f9e12cd8d0a",
+      "from": "垂直岩壁拉繩",
+      "to": "大陸池營地",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9CBFC12435"
+      ],
+      "evidenceRows": [
+        441
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R9CBFC12435",
+          "sheetRows": [
+            441
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:030d2b7da25300f1a42f",
+      "toId": "node:7aabed13190449c71fa4",
+      "from": "垂直岩壁拉繩",
+      "to": "能高南峰北嶺",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2825FA21E2"
+      ],
+      "evidenceRows": [
+        442
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R2825FA21E2",
+          "sheetRows": [
+            442
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:7aabed13190449c71fa4",
+      "toId": "node:030d2b7da25300f1a42f",
+      "from": "能高南峰北嶺",
+      "to": "垂直岩壁拉繩",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2825FA21E2"
+      ],
+      "evidenceRows": [
+        442
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R2825FA21E2",
+          "sheetRows": [
+            442
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:7aabed13190449c71fa4",
+      "toId": "node:2ba3a2e0d002a5ba8526",
+      "from": "能高南峰北嶺",
+      "to": "南峰岔路口",
+      "minutes": 85,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2D2DF474D0"
+      ],
+      "evidenceRows": [
+        443
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R2D2DF474D0",
+          "sheetRows": [
+            443
+          ],
+          "minutes": 85
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:2ba3a2e0d002a5ba8526",
+      "toId": "node:7aabed13190449c71fa4",
+      "from": "南峰岔路口",
+      "to": "能高南峰北嶺",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2D2DF474D0"
+      ],
+      "evidenceRows": [
+        443
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R2D2DF474D0",
+          "sheetRows": [
+            443
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:9acfc83380afbd0e25b9",
+      "toId": "node:2ba3a2e0d002a5ba8526",
+      "from": "能高山南峰",
+      "to": "南峰岔路口",
+      "minutes": 3,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RFCBA4037A1"
+      ],
+      "evidenceRows": [
+        444
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RFCBA4037A1",
+          "sheetRows": [
+            444
+          ],
+          "minutes": 3
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:2ba3a2e0d002a5ba8526",
+      "toId": "node:9acfc83380afbd0e25b9",
+      "from": "南峰岔路口",
+      "to": "能高山南峰",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RFCBA4037A1"
+      ],
+      "evidenceRows": [
+        444
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RFCBA4037A1",
+          "sheetRows": [
+            444
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:2ba3a2e0d002a5ba8526",
+      "toId": "node:7e6d427f1bf037d68dcb",
+      "from": "南峰岔路口",
+      "to": "南峰南鞍營地",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCEF199FA97"
+      ],
+      "evidenceRows": [
+        445
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RCEF199FA97",
+          "sheetRows": [
+            445
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:7e6d427f1bf037d68dcb",
+      "toId": "node:2ba3a2e0d002a5ba8526",
+      "from": "南峰南鞍營地",
+      "to": "南峰岔路口",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCEF199FA97"
+      ],
+      "evidenceRows": [
+        445
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RCEF199FA97",
+          "sheetRows": [
+            445
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:7e6d427f1bf037d68dcb",
+      "toId": "node:acdbe0b925a6f0ccb8ba",
+      "from": "南峰南鞍營地",
+      "to": "3039鞍營地",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7209A55BF8"
+      ],
+      "evidenceRows": [
+        446
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R7209A55BF8",
+          "sheetRows": [
+            446
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:acdbe0b925a6f0ccb8ba",
+      "toId": "node:7e6d427f1bf037d68dcb",
+      "from": "3039鞍營地",
+      "to": "南峰南鞍營地",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7209A55BF8"
+      ],
+      "evidenceRows": [
+        446
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R7209A55BF8",
+          "sheetRows": [
+            446
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:acdbe0b925a6f0ccb8ba",
+      "toId": "node:291727aee0cabd58724a",
+      "from": "3039鞍營地",
+      "to": "光頭山",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R642EF6EF7F"
+      ],
+      "evidenceRows": [
+        447
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R642EF6EF7F",
+          "sheetRows": [
+            447
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:291727aee0cabd58724a",
+      "toId": "node:acdbe0b925a6f0ccb8ba",
+      "from": "光頭山",
+      "to": "3039鞍營地",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R642EF6EF7F"
+      ],
+      "evidenceRows": [
+        447
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R642EF6EF7F",
+          "sheetRows": [
+            447
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:291727aee0cabd58724a",
+      "toId": "node:0d2f371ddfeb119e3693",
+      "from": "光頭山",
+      "to": "白石池",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5AD579C737"
+      ],
+      "evidenceRows": [
+        448
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R5AD579C737",
+          "sheetRows": [
+            448
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:0d2f371ddfeb119e3693",
+      "toId": "node:291727aee0cabd58724a",
+      "from": "白石池",
+      "to": "光頭山",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5AD579C737"
+      ],
+      "evidenceRows": [
+        448
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R5AD579C737",
+          "sheetRows": [
+            448
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:0d2f371ddfeb119e3693",
+      "toId": "node:745a16cdc7cc3dfdcdda",
+      "from": "白石池",
+      "to": "白石山",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R53A931224D"
+      ],
+      "evidenceRows": [
+        449
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R53A931224D",
+          "sheetRows": [
+            449
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:745a16cdc7cc3dfdcdda",
+      "toId": "node:0d2f371ddfeb119e3693",
+      "from": "白石山",
+      "to": "白石池",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R53A931224D"
+      ],
+      "evidenceRows": [
+        449
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R53A931224D",
+          "sheetRows": [
+            449
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:745a16cdc7cc3dfdcdda",
+      "toId": "node:1b76d614a79c69a8996d",
+      "from": "白石山",
+      "to": "萬里池",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD286EB5ED3"
+      ],
+      "evidenceRows": [
+        450
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RD286EB5ED3",
+          "sheetRows": [
+            450
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:1b76d614a79c69a8996d",
+      "toId": "node:745a16cdc7cc3dfdcdda",
+      "from": "萬里池",
+      "to": "白石山",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD286EB5ED3"
+      ],
+      "evidenceRows": [
+        450
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RD286EB5ED3",
+          "sheetRows": [
+            450
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:1b76d614a79c69a8996d",
+      "toId": "node:6eb41183957ad2f076a4",
+      "from": "萬里池",
+      "to": "屯鹿池",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB67028DC37"
+      ],
+      "evidenceRows": [
+        451
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RB67028DC37",
+          "sheetRows": [
+            451
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:6eb41183957ad2f076a4",
+      "toId": "node:1b76d614a79c69a8996d",
+      "from": "屯鹿池",
+      "to": "萬里池",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB67028DC37"
+      ],
+      "evidenceRows": [
+        451
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RB67028DC37",
+          "sheetRows": [
+            451
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:6eb41183957ad2f076a4",
+      "toId": "node:3f743c0af3f084ee1ad5",
+      "from": "屯鹿池",
+      "to": "三岔路口",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBDE3BDD11E"
+      ],
+      "evidenceRows": [
+        452
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RBDE3BDD11E",
+          "sheetRows": [
+            452
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:3f743c0af3f084ee1ad5",
+      "toId": "node:6eb41183957ad2f076a4",
+      "from": "三岔路口",
+      "to": "屯鹿池",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBDE3BDD11E"
+      ],
+      "evidenceRows": [
+        452
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RBDE3BDD11E",
+          "sheetRows": [
+            452
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:3f743c0af3f084ee1ad5",
+      "toId": "node:8e1135100cb15ee3d126",
+      "from": "三岔路口",
+      "to": "安東軍山",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1F5FC5BF91"
+      ],
+      "evidenceRows": [
+        453
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R1F5FC5BF91",
+          "sheetRows": [
+            453
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:8e1135100cb15ee3d126",
+      "toId": "node:3f743c0af3f084ee1ad5",
+      "from": "安東軍山",
+      "to": "三岔路口",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1F5FC5BF91"
+      ],
+      "evidenceRows": [
+        453
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R1F5FC5BF91",
+          "sheetRows": [
+            453
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:1b5b86247fee083ab543",
+      "toId": "node:3f743c0af3f084ee1ad5",
+      "from": "第一次獵寮/第一次過溪",
+      "to": "三岔路口",
+      "minutes": 150,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE2356E95D6"
+      ],
+      "evidenceRows": [
+        454
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RE2356E95D6",
+          "sheetRows": [
+            454
+          ],
+          "minutes": 150
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:3f743c0af3f084ee1ad5",
+      "toId": "node:1b5b86247fee083ab543",
+      "from": "三岔路口",
+      "to": "第一次獵寮/第一次過溪",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE2356E95D6"
+      ],
+      "evidenceRows": [
+        454
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RE2356E95D6",
+          "sheetRows": [
+            454
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:1b5b86247fee083ab543",
+      "toId": "node:e2370d30048393393fcc",
+      "from": "第一次獵寮/第一次過溪",
+      "to": "紅檜巨木",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R827C926F6A"
+      ],
+      "evidenceRows": [
+        455
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R827C926F6A",
+          "sheetRows": [
+            455
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:e2370d30048393393fcc",
+      "toId": "node:1b5b86247fee083ab543",
+      "from": "紅檜巨木",
+      "to": "第一次獵寮/第一次過溪",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R827C926F6A"
+      ],
+      "evidenceRows": [
+        455
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R827C926F6A",
+          "sheetRows": [
+            455
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:e2370d30048393393fcc",
+      "toId": "node:f365a90039ff7fe8bafb",
+      "from": "紅檜巨木",
+      "to": "第二獵寮",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6A17FF1931"
+      ],
+      "evidenceRows": [
+        456
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R6A17FF1931",
+          "sheetRows": [
+            456
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:f365a90039ff7fe8bafb",
+      "toId": "node:e2370d30048393393fcc",
+      "from": "第二獵寮",
+      "to": "紅檜巨木",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6A17FF1931"
+      ],
+      "evidenceRows": [
+        456
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R6A17FF1931",
+          "sheetRows": [
+            456
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:f365a90039ff7fe8bafb",
+      "toId": "node:7f57c578802af8b68adc",
+      "from": "第二獵寮",
+      "to": "大崩壁",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R52849A350C"
+      ],
+      "evidenceRows": [
+        457
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R52849A350C",
+          "sheetRows": [
+            457
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:7f57c578802af8b68adc",
+      "toId": "node:f365a90039ff7fe8bafb",
+      "from": "大崩壁",
+      "to": "第二獵寮",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R52849A350C"
+      ],
+      "evidenceRows": [
+        457
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R52849A350C",
+          "sheetRows": [
+            457
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:7f57c578802af8b68adc",
+      "toId": "node:a20fa9b4a5899ee82159",
+      "from": "大崩壁",
+      "to": "溪床營地",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3DA45E916D"
+      ],
+      "evidenceRows": [
+        458
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R3DA45E916D",
+          "sheetRows": [
+            458
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:a20fa9b4a5899ee82159",
+      "toId": "node:7f57c578802af8b68adc",
+      "from": "溪床營地",
+      "to": "大崩壁",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3DA45E916D"
+      ],
+      "evidenceRows": [
+        458
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R3DA45E916D",
+          "sheetRows": [
+            458
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:9dbcf14abece1494a5b6",
+      "toId": "node:a20fa9b4a5899ee82159",
+      "from": "金杏真路岔路口",
+      "to": "溪床營地",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE602F2A509"
+      ],
+      "evidenceRows": [
+        459
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RE602F2A509",
+          "sheetRows": [
+            459
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:a20fa9b4a5899ee82159",
+      "toId": "node:9dbcf14abece1494a5b6",
+      "from": "溪床營地",
+      "to": "金杏真路岔路口",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE602F2A509"
+      ],
+      "evidenceRows": [
+        459
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RE602F2A509",
+          "sheetRows": [
+            459
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:54f2925829d0c1898275",
+      "toId": "node:9dbcf14abece1494a5b6",
+      "from": "萬大南溪合匯點",
+      "to": "金杏真路岔路口",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6FA5EE79F0"
+      ],
+      "evidenceRows": [
+        460
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R6FA5EE79F0",
+          "sheetRows": [
+            460
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:9dbcf14abece1494a5b6",
+      "toId": "node:54f2925829d0c1898275",
+      "from": "金杏真路岔路口",
+      "to": "萬大南溪合匯點",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6FA5EE79F0"
+      ],
+      "evidenceRows": [
+        460
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R6FA5EE79F0",
+          "sheetRows": [
+            460
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:9212b0026ee8f0b5f8ce",
+      "toId": "node:54f2925829d0c1898275",
+      "from": "第二支流合匯點",
+      "to": "萬大南溪合匯點",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5CB2D12278"
+      ],
+      "evidenceRows": [
+        461
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R5CB2D12278",
+          "sheetRows": [
+            461
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:54f2925829d0c1898275",
+      "toId": "node:9212b0026ee8f0b5f8ce",
+      "from": "萬大南溪合匯點",
+      "to": "第二支流合匯點",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5CB2D12278"
+      ],
+      "evidenceRows": [
+        461
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R5CB2D12278",
+          "sheetRows": [
+            461
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:9212b0026ee8f0b5f8ce",
+      "toId": "node:9dbcf14abece1494a5b6",
+      "from": "第二支流合匯點",
+      "to": "金杏真路岔路口",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBCB2A1D43A"
+      ],
+      "evidenceRows": [
+        462
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RBCB2A1D43A",
+          "sheetRows": [
+            462
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:9dbcf14abece1494a5b6",
+      "toId": "node:9212b0026ee8f0b5f8ce",
+      "from": "金杏真路岔路口",
+      "to": "第二支流合匯點",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBCB2A1D43A"
+      ],
+      "evidenceRows": [
+        462
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RBCB2A1D43A",
+          "sheetRows": [
+            462
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:5b14299a5943cdec0daf",
+      "toId": "node:9212b0026ee8f0b5f8ce",
+      "from": "第三支流合匯點/鐵皮工寮營地",
+      "to": "第二支流合匯點",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6D3428553E"
+      ],
+      "evidenceRows": [
+        463
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R6D3428553E",
+          "sheetRows": [
+            463
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:9212b0026ee8f0b5f8ce",
+      "toId": "node:5b14299a5943cdec0daf",
+      "from": "第二支流合匯點",
+      "to": "第三支流合匯點/鐵皮工寮營地",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6D3428553E"
+      ],
+      "evidenceRows": [
+        463
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R6D3428553E",
+          "sheetRows": [
+            463
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:11a915b8cc195fd5218c",
+      "toId": "node:5b14299a5943cdec0daf",
+      "from": "第四支流合匯點",
+      "to": "第三支流合匯點/鐵皮工寮營地",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBDD8630797"
+      ],
+      "evidenceRows": [
+        464
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RBDD8630797",
+          "sheetRows": [
+            464
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:5b14299a5943cdec0daf",
+      "toId": "node:11a915b8cc195fd5218c",
+      "from": "第三支流合匯點/鐵皮工寮營地",
+      "to": "第四支流合匯點",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBDD8630797"
+      ],
+      "evidenceRows": [
+        464
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "RBDD8630797",
+          "sheetRows": [
+            464
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:11a915b8cc195fd5218c",
+      "toId": "node:5eb6459390f9db03adc8",
+      "from": "第四支流合匯點",
+      "to": "第一越嶺點",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R32B200AAD8"
+      ],
+      "evidenceRows": [
+        465
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R32B200AAD8",
+          "sheetRows": [
+            465
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:5eb6459390f9db03adc8",
+      "toId": "node:11a915b8cc195fd5218c",
+      "from": "第一越嶺點",
+      "to": "第四支流合匯點",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R32B200AAD8"
+      ],
+      "evidenceRows": [
+        465
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R32B200AAD8",
+          "sheetRows": [
+            465
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:5eb6459390f9db03adc8",
+      "toId": "node:a4678a594247d25069b5",
+      "from": "第一越嶺點",
+      "to": "第二越嶺點",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R09A2A351A6"
+      ],
+      "evidenceRows": [
+        466
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R09A2A351A6",
+          "sheetRows": [
+            466
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:a4678a594247d25069b5",
+      "toId": "node:5eb6459390f9db03adc8",
+      "from": "第二越嶺點",
+      "to": "第一越嶺點",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R09A2A351A6"
+      ],
+      "evidenceRows": [
+        466
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R09A2A351A6",
+          "sheetRows": [
+            466
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:a4678a594247d25069b5",
+      "toId": "node:fe4749ed09b4a359026c",
+      "from": "第二越嶺點",
+      "to": "第三越嶺點(松風嶺)",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R93151EA56E"
+      ],
+      "evidenceRows": [
+        467
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R93151EA56E",
+          "sheetRows": [
+            467
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:fe4749ed09b4a359026c",
+      "toId": "node:a4678a594247d25069b5",
+      "from": "第三越嶺點(松風嶺)",
+      "to": "第二越嶺點",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R93151EA56E"
+      ],
+      "evidenceRows": [
+        467
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R93151EA56E",
+          "sheetRows": [
+            467
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:fe4749ed09b4a359026c",
+      "toId": "node:5211b3f5534cb71b4ab1",
+      "from": "第三越嶺點(松風嶺)",
+      "to": "奧萬大吊橋",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5FEEBED2B9"
+      ],
+      "evidenceRows": [
+        468
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R5FEEBED2B9",
+          "sheetRows": [
+            468
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:5211b3f5534cb71b4ab1",
+      "toId": "node:fe4749ed09b4a359026c",
+      "from": "奧萬大吊橋",
+      "to": "第三越嶺點(松風嶺)",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5FEEBED2B9"
+      ],
+      "evidenceRows": [
+        468
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R5FEEBED2B9",
+          "sheetRows": [
+            468
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:5211b3f5534cb71b4ab1",
+      "toId": "node:b856b38829fad3ecb7b8",
+      "from": "奧萬大吊橋",
+      "to": "遊客中心停車場",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R17751444E4"
+      ],
+      "evidenceRows": [
+        469
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R17751444E4",
+          "sheetRows": [
+            469
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    },
+    {
+      "fromId": "node:b856b38829fad3ecb7b8",
+      "toId": "node:5211b3f5534cb71b4ab1",
+      "from": "遊客中心停車場",
+      "to": "奧萬大吊橋",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R17751444E4"
+      ],
+      "evidenceRows": [
+        469
+      ],
+      "sourceGroups": [
+        "能高安東軍"
+      ],
+      "sourceChart": "G12",
+      "source": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "能高安東軍",
+          "chartId": "G12",
+          "url": "https://www.sunriver.com.tw/images/hiking/G12_hiking.jpg",
+          "rowId": "R17751444E4",
+          "sheetRows": [
+            469
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "能高安東軍"
+      ]
+    }
+  ],
+  "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+}

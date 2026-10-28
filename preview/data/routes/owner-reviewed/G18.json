@@ -1,0 +1,4503 @@
+{
+  "route_id": "G18",
+  "route_name": "新康橫斷/戒茂斯",
+  "status": "owner-reviewed-preview",
+  "sourceChartIds": [
+    "G18"
+  ],
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+    "revision": "owner workbook reviewed 2026-10-28; follow-ups recorded separately"
+  },
+  "reviewBasis": "owner_workbook_review",
+  "nodes": [
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-001",
+      "name": "3058公尺峰",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-002",
+      "name": "布新岔路口",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-006",
+      "name": "連理西峰前營地",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-007",
+      "name": "西峰東稜平台",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-008",
+      "name": "飛機殘骸",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-009",
+      "name": "桃源營地",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-010",
+      "name": "連理山",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-011",
+      "name": "鞍部黑水塘",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-012",
+      "name": "新仙山前營地",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-013",
+      "name": "新仙山營地",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-014",
+      "name": "新仙山",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-015",
+      "name": "最低鞍部",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-016",
+      "name": "新康山",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "local:G18-OVERLAP::g18-overlap-017",
+      "name": "天宮堡壘",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "node:02b462cebcc62c176f8f",
+      "name": "岔路口",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:066a7d99c52d06cb5a71",
+      "name": "2835鞍部",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:08db756369da2cfec394",
+      "name": "草原大窪地",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:0c74693562a93ae6fbfc",
+      "name": "布拉克桑山",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:17949585e4110d530804",
+      "name": "下切點",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:1928bc5790afa933de0c",
+      "name": "戒茂斯山",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:3bfaf81d5330e2cf0423",
+      "name": "新康山登山口",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:4267d7655882e521e61d",
+      "name": "瓦拉米山屋",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:51f93163f5de669420a8",
+      "name": "嘉明妹池",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:5d77241ce703dff670ea",
+      "name": "山壁水源",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:68ed9d0821e485e82f8f",
+      "name": "瓦拉米步道起點",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:7bd73aa7d3d00266d6e5",
+      "name": "156.5K登山口",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:ab32b7cba7fba513f35a",
+      "name": "戒茂斯山前峰",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:bca4509332fbaaf5f94e",
+      "name": "南安遊客中心",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:bebbe9d975cb1991de5d",
+      "name": "抱崖山屋",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:c3903e8a4b1a935739f5",
+      "name": "足球場營地",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:c575dd7fad9439788a33",
+      "name": "松針營地",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:cc46f14c3898e5aedb0d",
+      "name": "三叉稜下營地",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:cc6b151b8c6e1aeccea0",
+      "name": "新武呂溪",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "shared:cw-v07-005",
+      "name": "三叉山",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-006",
+      "name": "三叉山登山口",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-020",
+      "name": "北峰下解說牌",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-027",
+      "name": "向陽山",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-028",
+      "name": "向陽山屋",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-029",
+      "name": "向陽森林遊樂區",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-030",
+      "name": "嘉明湖",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-031",
+      "name": "嘉明湖岔路口",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-032",
+      "name": "嘉明湖避難山屋",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-049",
+      "name": "拉庫音溪山屋",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-050",
+      "name": "新康山岔路口",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-052",
+      "name": "林道登山口",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-070",
+      "name": "西側登山口",
+      "aliases": [],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:owner-v0724-xiangyang-junction",
+      "name": "向陽山三岔路口",
+      "aliases": [
+        "三岔路口"
+      ],
+      "groups": [
+        "G18"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    }
+  ],
+  "segments": [
+    {
+      "fromId": "shared:cw-v07-049",
+      "toId": "shared:cw-v07-050",
+      "from": "拉庫音溪山屋",
+      "to": "新康山岔路口",
+      "minutes": 220,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7CE5A5609E",
+        "RFFF1DEBB04"
+      ],
+      "evidenceRows": [
+        736,
+        799
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R7CE5A5609E",
+          "sheetRows": [
+            736
+          ],
+          "minutes": 220
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RFFF1DEBB04",
+          "sheetRows": [
+            799
+          ],
+          "minutes": 220
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-050",
+      "toId": "shared:cw-v07-049",
+      "from": "新康山岔路口",
+      "to": "拉庫音溪山屋",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7CE5A5609E",
+        "RFFF1DEBB04"
+      ],
+      "evidenceRows": [
+        736,
+        799
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R7CE5A5609E",
+          "sheetRows": [
+            736
+          ],
+          "minutes": 130
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RFFF1DEBB04",
+          "sheetRows": [
+            799
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-005",
+      "toId": "shared:cw-v07-006",
+      "from": "三叉山",
+      "to": "三叉山登山口",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0670B8AE7A",
+        "RD25F52CB44"
+      ],
+      "evidenceRows": [
+        737,
+        766
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R0670B8AE7A",
+          "sheetRows": [
+            737
+          ],
+          "minutes": 15
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RD25F52CB44",
+          "sheetRows": [
+            766
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-006",
+      "toId": "shared:cw-v07-005",
+      "from": "三叉山登山口",
+      "to": "三叉山",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0670B8AE7A",
+        "RD25F52CB44"
+      ],
+      "evidenceRows": [
+        737,
+        766
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R0670B8AE7A",
+          "sheetRows": [
+            737
+          ],
+          "minutes": 25
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RD25F52CB44",
+          "sheetRows": [
+            766
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-006",
+      "toId": "shared:cw-v07-031",
+      "from": "三叉山登山口",
+      "to": "嘉明湖岔路口",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA4E5026DDF",
+        "RBA9E4087FF"
+      ],
+      "evidenceRows": [
+        738,
+        800
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RA4E5026DDF",
+          "sheetRows": [
+            738
+          ],
+          "minutes": 30
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RBA9E4087FF",
+          "sheetRows": [
+            800
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-031",
+      "toId": "shared:cw-v07-006",
+      "from": "嘉明湖岔路口",
+      "to": "三叉山登山口",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA4E5026DDF",
+        "RBA9E4087FF"
+      ],
+      "evidenceRows": [
+        738,
+        800
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RA4E5026DDF",
+          "sheetRows": [
+            738
+          ],
+          "minutes": 25
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RBA9E4087FF",
+          "sheetRows": [
+            800
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-050",
+      "toId": "shared:cw-v07-031",
+      "from": "新康山岔路口",
+      "to": "嘉明湖岔路口",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5FFA55327C",
+        "RC517FB4753"
+      ],
+      "evidenceRows": [
+        739,
+        768
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RC517FB4753",
+          "sheetRows": [
+            739
+          ],
+          "minutes": 30
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R5FFA55327C",
+          "sheetRows": [
+            768
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-031",
+      "toId": "shared:cw-v07-050",
+      "from": "嘉明湖岔路口",
+      "to": "新康山岔路口",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5FFA55327C",
+        "RC517FB4753"
+      ],
+      "evidenceRows": [
+        739,
+        768
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RC517FB4753",
+          "sheetRows": [
+            739
+          ],
+          "minutes": 40
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R5FFA55327C",
+          "sheetRows": [
+            768
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-031",
+      "toId": "shared:cw-v07-030",
+      "from": "嘉明湖岔路口",
+      "to": "嘉明湖",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB90960F621",
+        "RFAAF9726D5"
+      ],
+      "evidenceRows": [
+        740,
+        801
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RFAAF9726D5",
+          "sheetRows": [
+            740
+          ],
+          "minutes": 15
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RB90960F621",
+          "sheetRows": [
+            801
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-030",
+      "toId": "shared:cw-v07-031",
+      "from": "嘉明湖",
+      "to": "嘉明湖岔路口",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB90960F621",
+        "RFAAF9726D5"
+      ],
+      "evidenceRows": [
+        740,
+        801
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RFAAF9726D5",
+          "sheetRows": [
+            740
+          ],
+          "minutes": 20
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RB90960F621",
+          "sheetRows": [
+            801
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-029",
+      "toId": "shared:cw-v07-052",
+      "from": "向陽森林遊樂區",
+      "to": "林道登山口",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1780305046",
+        "R2867B8B0E8"
+      ],
+      "evidenceRows": [
+        741,
+        760
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R1780305046",
+          "sheetRows": [
+            741
+          ],
+          "minutes": 80
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R2867B8B0E8",
+          "sheetRows": [
+            760
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-052",
+      "toId": "shared:cw-v07-029",
+      "from": "林道登山口",
+      "to": "向陽森林遊樂區",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1780305046",
+        "R2867B8B0E8"
+      ],
+      "evidenceRows": [
+        741,
+        760
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R1780305046",
+          "sheetRows": [
+            741
+          ],
+          "minutes": 50
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R2867B8B0E8",
+          "sheetRows": [
+            760
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-052",
+      "toId": "shared:cw-v07-028",
+      "from": "林道登山口",
+      "to": "向陽山屋",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4A02E772F9",
+        "REEC2A5B551"
+      ],
+      "evidenceRows": [
+        742,
+        761
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "REEC2A5B551",
+          "sheetRows": [
+            742
+          ],
+          "minutes": 70
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R4A02E772F9",
+          "sheetRows": [
+            761
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-028",
+      "toId": "shared:cw-v07-052",
+      "from": "向陽山屋",
+      "to": "林道登山口",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4A02E772F9",
+        "REEC2A5B551"
+      ],
+      "evidenceRows": [
+        742,
+        761
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "REEC2A5B551",
+          "sheetRows": [
+            742
+          ],
+          "minutes": 40
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R4A02E772F9",
+          "sheetRows": [
+            761
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-028",
+      "toId": "shared:cw-v07-070",
+      "from": "向陽山屋",
+      "to": "西側登山口",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0E747818A9",
+        "R74C459E4F6"
+      ],
+      "evidenceRows": [
+        743,
+        762
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R0E747818A9",
+          "sheetRows": [
+            743
+          ],
+          "minutes": 180
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R74C459E4F6",
+          "sheetRows": [
+            762
+          ],
+          "minutes": 180
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-070",
+      "toId": "shared:cw-v07-028",
+      "from": "西側登山口",
+      "to": "向陽山屋",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0E747818A9",
+        "R74C459E4F6"
+      ],
+      "evidenceRows": [
+        743,
+        762
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R0E747818A9",
+          "sheetRows": [
+            743
+          ],
+          "minutes": 130
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R74C459E4F6",
+          "sheetRows": [
+            762
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-027",
+      "toId": "shared:cw-v07-070",
+      "from": "向陽山",
+      "to": "西側登山口",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R257D375506",
+        "R7A2A1D341C"
+      ],
+      "evidenceRows": [
+        744,
+        763
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R257D375506",
+          "sheetRows": [
+            744
+          ],
+          "minutes": 25
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R7A2A1D341C",
+          "sheetRows": [
+            763
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-070",
+      "toId": "shared:cw-v07-027",
+      "from": "西側登山口",
+      "to": "向陽山",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R257D375506",
+        "R7A2A1D341C"
+      ],
+      "evidenceRows": [
+        744,
+        763
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R257D375506",
+          "sheetRows": [
+            744
+          ],
+          "minutes": 35
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R7A2A1D341C",
+          "sheetRows": [
+            763
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-070",
+      "toId": "shared:cw-v07-032",
+      "from": "西側登山口",
+      "to": "嘉明湖避難山屋",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6A06152F68",
+        "RAA621D0CEE"
+      ],
+      "evidenceRows": [
+        745,
+        805
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RAA621D0CEE",
+          "sheetRows": [
+            745
+          ],
+          "minutes": 40
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R6A06152F68",
+          "sheetRows": [
+            805
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-032",
+      "toId": "shared:cw-v07-070",
+      "from": "嘉明湖避難山屋",
+      "to": "西側登山口",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6A06152F68",
+        "RAA621D0CEE"
+      ],
+      "evidenceRows": [
+        745,
+        805
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RAA621D0CEE",
+          "sheetRows": [
+            745
+          ],
+          "minutes": 45
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R6A06152F68",
+          "sheetRows": [
+            805
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-032",
+      "toId": "shared:owner-v0724-xiangyang-junction",
+      "from": "嘉明湖避難山屋",
+      "to": "向陽山三岔路口",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RAD6A69E5B2",
+        "RE7A050BF1A"
+      ],
+      "evidenceRows": [
+        746,
+        764
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RE7A050BF1A",
+          "sheetRows": [
+            746
+          ],
+          "minutes": 15
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RAD6A69E5B2",
+          "sheetRows": [
+            764
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:owner-v0724-xiangyang-junction",
+      "toId": "shared:cw-v07-032",
+      "from": "向陽山三岔路口",
+      "to": "嘉明湖避難山屋",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RAD6A69E5B2",
+        "RE7A050BF1A"
+      ],
+      "evidenceRows": [
+        746,
+        764
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RE7A050BF1A",
+          "sheetRows": [
+            746
+          ],
+          "minutes": 15
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RAD6A69E5B2",
+          "sheetRows": [
+            764
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:owner-v0724-xiangyang-junction",
+      "toId": "shared:cw-v07-020",
+      "from": "向陽山三岔路口",
+      "to": "北峰下解說牌",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R49CCD11F1D",
+        "R95CC8FE3A6"
+      ],
+      "evidenceRows": [
+        747,
+        765
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R49CCD11F1D",
+          "sheetRows": [
+            747
+          ],
+          "minutes": 40
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R95CC8FE3A6",
+          "sheetRows": [
+            765
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-020",
+      "toId": "shared:owner-v0724-xiangyang-junction",
+      "from": "北峰下解說牌",
+      "to": "向陽山三岔路口",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R49CCD11F1D",
+        "R95CC8FE3A6"
+      ],
+      "evidenceRows": [
+        747,
+        765
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R49CCD11F1D",
+          "sheetRows": [
+            747
+          ],
+          "minutes": 35
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R95CC8FE3A6",
+          "sheetRows": [
+            765
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-020",
+      "toId": "shared:cw-v07-006",
+      "from": "北峰下解說牌",
+      "to": "三叉山登山口",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3F017A592B",
+        "R4CE5AE7E05"
+      ],
+      "evidenceRows": [
+        748,
+        806
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R3F017A592B",
+          "sheetRows": [
+            748
+          ],
+          "minutes": 80
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R4CE5AE7E05",
+          "sheetRows": [
+            806
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-006",
+      "toId": "shared:cw-v07-020",
+      "from": "三叉山登山口",
+      "to": "北峰下解說牌",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3F017A592B",
+        "R4CE5AE7E05"
+      ],
+      "evidenceRows": [
+        748,
+        806
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R3F017A592B",
+          "sheetRows": [
+            748
+          ],
+          "minutes": 55
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R4CE5AE7E05",
+          "sheetRows": [
+            806
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-031",
+      "toId": "shared:cw-v07-005",
+      "from": "嘉明湖岔路口",
+      "to": "三叉山",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R731148B546",
+        "R8A22D584A3"
+      ],
+      "evidenceRows": [
+        750,
+        767
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R8A22D584A3",
+          "sheetRows": [
+            750
+          ],
+          "minutes": 20
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R731148B546",
+          "sheetRows": [
+            767
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-005",
+      "toId": "shared:cw-v07-031",
+      "from": "三叉山",
+      "to": "嘉明湖岔路口",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R731148B546",
+        "R8A22D584A3"
+      ],
+      "evidenceRows": [
+        750,
+        767
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R8A22D584A3",
+          "sheetRows": [
+            750
+          ],
+          "minutes": 10
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R731148B546",
+          "sheetRows": [
+            767
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-050",
+      "toId": "local:G18-OVERLAP::g18-overlap-002",
+      "from": "新康山岔路口",
+      "to": "布新岔路口",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD9D0156EB5"
+      ],
+      "evidenceRows": [
+        769
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RD9D0156EB5",
+          "sheetRows": [
+            769
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-002",
+      "toId": "shared:cw-v07-050",
+      "from": "布新岔路口",
+      "to": "新康山岔路口",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD9D0156EB5"
+      ],
+      "evidenceRows": [
+        769
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RD9D0156EB5",
+          "sheetRows": [
+            769
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-002",
+      "toId": "local:G18-OVERLAP::g18-overlap-001",
+      "from": "布新岔路口",
+      "to": "3058公尺峰",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0FB5CEA8DC"
+      ],
+      "evidenceRows": [
+        770
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R0FB5CEA8DC",
+          "sheetRows": [
+            770
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-001",
+      "toId": "local:G18-OVERLAP::g18-overlap-002",
+      "from": "3058公尺峰",
+      "to": "布新岔路口",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0FB5CEA8DC"
+      ],
+      "evidenceRows": [
+        770
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R0FB5CEA8DC",
+          "sheetRows": [
+            770
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-001",
+      "toId": "local:G18-OVERLAP::g18-overlap-006",
+      "from": "3058公尺峰",
+      "to": "連理西峰前營地",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6091DEA414"
+      ],
+      "evidenceRows": [
+        771
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R6091DEA414",
+          "sheetRows": [
+            771
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-006",
+      "toId": "local:G18-OVERLAP::g18-overlap-001",
+      "from": "連理西峰前營地",
+      "to": "3058公尺峰",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6091DEA414"
+      ],
+      "evidenceRows": [
+        771
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R6091DEA414",
+          "sheetRows": [
+            771
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-006",
+      "toId": "local:G18-OVERLAP::g18-overlap-007",
+      "from": "連理西峰前營地",
+      "to": "西峰東稜平台",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0BF869AA50"
+      ],
+      "evidenceRows": [
+        772
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R0BF869AA50",
+          "sheetRows": [
+            772
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-007",
+      "toId": "local:G18-OVERLAP::g18-overlap-006",
+      "from": "西峰東稜平台",
+      "to": "連理西峰前營地",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0BF869AA50"
+      ],
+      "evidenceRows": [
+        772
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R0BF869AA50",
+          "sheetRows": [
+            772
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-007",
+      "toId": "local:G18-OVERLAP::g18-overlap-008",
+      "from": "西峰東稜平台",
+      "to": "飛機殘骸",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE4CD571480"
+      ],
+      "evidenceRows": [
+        773
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RE4CD571480",
+          "sheetRows": [
+            773
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-008",
+      "toId": "local:G18-OVERLAP::g18-overlap-007",
+      "from": "飛機殘骸",
+      "to": "西峰東稜平台",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE4CD571480"
+      ],
+      "evidenceRows": [
+        773
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RE4CD571480",
+          "sheetRows": [
+            773
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-008",
+      "toId": "local:G18-OVERLAP::g18-overlap-009",
+      "from": "飛機殘骸",
+      "to": "桃源營地",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1A87260F01"
+      ],
+      "evidenceRows": [
+        774
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R1A87260F01",
+          "sheetRows": [
+            774
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-009",
+      "toId": "local:G18-OVERLAP::g18-overlap-008",
+      "from": "桃源營地",
+      "to": "飛機殘骸",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1A87260F01"
+      ],
+      "evidenceRows": [
+        774
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R1A87260F01",
+          "sheetRows": [
+            774
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-009",
+      "toId": "local:G18-OVERLAP::g18-overlap-010",
+      "from": "桃源營地",
+      "to": "連理山",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4F4771612F"
+      ],
+      "evidenceRows": [
+        775
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R4F4771612F",
+          "sheetRows": [
+            775
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-010",
+      "toId": "local:G18-OVERLAP::g18-overlap-009",
+      "from": "連理山",
+      "to": "桃源營地",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4F4771612F"
+      ],
+      "evidenceRows": [
+        775
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R4F4771612F",
+          "sheetRows": [
+            775
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-011",
+      "toId": "local:G18-OVERLAP::g18-overlap-012",
+      "from": "鞍部黑水塘",
+      "to": "新仙山前營地",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RF6BEE42AFD"
+      ],
+      "evidenceRows": [
+        776
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RF6BEE42AFD",
+          "sheetRows": [
+            776
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-012",
+      "toId": "local:G18-OVERLAP::g18-overlap-011",
+      "from": "新仙山前營地",
+      "to": "鞍部黑水塘",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RF6BEE42AFD"
+      ],
+      "evidenceRows": [
+        776
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RF6BEE42AFD",
+          "sheetRows": [
+            776
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-014",
+      "toId": "local:G18-OVERLAP::g18-overlap-015",
+      "from": "新仙山",
+      "to": "最低鞍部",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC3676FBC8A"
+      ],
+      "evidenceRows": [
+        777
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RC3676FBC8A",
+          "sheetRows": [
+            777
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-015",
+      "toId": "local:G18-OVERLAP::g18-overlap-014",
+      "from": "最低鞍部",
+      "to": "新仙山",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC3676FBC8A"
+      ],
+      "evidenceRows": [
+        777
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RC3676FBC8A",
+          "sheetRows": [
+            777
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-014",
+      "toId": "local:G18-OVERLAP::g18-overlap-013",
+      "from": "新仙山",
+      "to": "新仙山營地",
+      "minutes": 1,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R26101F573B"
+      ],
+      "evidenceRows": [
+        778
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R26101F573B",
+          "sheetRows": [
+            778
+          ],
+          "minutes": 1
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-013",
+      "toId": "local:G18-OVERLAP::g18-overlap-014",
+      "from": "新仙山營地",
+      "to": "新仙山",
+      "minutes": 1,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R26101F573B"
+      ],
+      "evidenceRows": [
+        778
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R26101F573B",
+          "sheetRows": [
+            778
+          ],
+          "minutes": 1
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-013",
+      "toId": "local:G18-OVERLAP::g18-overlap-012",
+      "from": "新仙山營地",
+      "to": "新仙山前營地",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1B5D5454F4"
+      ],
+      "evidenceRows": [
+        779
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R1B5D5454F4",
+          "sheetRows": [
+            779
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-012",
+      "toId": "local:G18-OVERLAP::g18-overlap-013",
+      "from": "新仙山前營地",
+      "to": "新仙山營地",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1B5D5454F4"
+      ],
+      "evidenceRows": [
+        779
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R1B5D5454F4",
+          "sheetRows": [
+            779
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-016",
+      "toId": "local:G18-OVERLAP::g18-overlap-017",
+      "from": "新康山",
+      "to": "天宮堡壘",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1F165F9CD8"
+      ],
+      "evidenceRows": [
+        780
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R1F165F9CD8",
+          "sheetRows": [
+            780
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-017",
+      "toId": "local:G18-OVERLAP::g18-overlap-016",
+      "from": "天宮堡壘",
+      "to": "新康山",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1F165F9CD8"
+      ],
+      "evidenceRows": [
+        780
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R1F165F9CD8",
+          "sheetRows": [
+            780
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-015",
+      "toId": "local:G18-OVERLAP::g18-overlap-016",
+      "from": "最低鞍部",
+      "to": "新康山",
+      "minutes": 75,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R789F5D43AA"
+      ],
+      "evidenceRows": [
+        781
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R789F5D43AA",
+          "sheetRows": [
+            781
+          ],
+          "minutes": 75
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-016",
+      "toId": "local:G18-OVERLAP::g18-overlap-015",
+      "from": "新康山",
+      "to": "最低鞍部",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R789F5D43AA"
+      ],
+      "evidenceRows": [
+        781
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R789F5D43AA",
+          "sheetRows": [
+            781
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:17949585e4110d530804",
+      "toId": "node:c575dd7fad9439788a33",
+      "from": "下切點",
+      "to": "松針營地",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA76AC296E5"
+      ],
+      "evidenceRows": [
+        782
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RA76AC296E5",
+          "sheetRows": [
+            782
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:c575dd7fad9439788a33",
+      "toId": "node:17949585e4110d530804",
+      "from": "松針營地",
+      "to": "下切點",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA76AC296E5"
+      ],
+      "evidenceRows": [
+        782
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RA76AC296E5",
+          "sheetRows": [
+            782
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:17949585e4110d530804",
+      "toId": "node:3bfaf81d5330e2cf0423",
+      "from": "下切點",
+      "to": "新康山登山口",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC783997EC9"
+      ],
+      "evidenceRows": [
+        783
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RC783997EC9",
+          "sheetRows": [
+            783
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:3bfaf81d5330e2cf0423",
+      "toId": "node:17949585e4110d530804",
+      "from": "新康山登山口",
+      "to": "下切點",
+      "minutes": 280,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC783997EC9"
+      ],
+      "evidenceRows": [
+        783
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RC783997EC9",
+          "sheetRows": [
+            783
+          ],
+          "minutes": 280
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:3bfaf81d5330e2cf0423",
+      "toId": "node:bebbe9d975cb1991de5d",
+      "from": "新康山登山口",
+      "to": "抱崖山屋",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9B7267029A"
+      ],
+      "evidenceRows": [
+        784
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R9B7267029A",
+          "sheetRows": [
+            784
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:bebbe9d975cb1991de5d",
+      "toId": "node:3bfaf81d5330e2cf0423",
+      "from": "抱崖山屋",
+      "to": "新康山登山口",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9B7267029A"
+      ],
+      "evidenceRows": [
+        784
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R9B7267029A",
+          "sheetRows": [
+            784
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:bebbe9d975cb1991de5d",
+      "toId": "node:4267d7655882e521e61d",
+      "from": "抱崖山屋",
+      "to": "瓦拉米山屋",
+      "minutes": 305,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB43CF5216A"
+      ],
+      "evidenceRows": [
+        785
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RB43CF5216A",
+          "sheetRows": [
+            785
+          ],
+          "minutes": 305
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:4267d7655882e521e61d",
+      "toId": "node:bebbe9d975cb1991de5d",
+      "from": "瓦拉米山屋",
+      "to": "抱崖山屋",
+      "minutes": 345,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB43CF5216A"
+      ],
+      "evidenceRows": [
+        785
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RB43CF5216A",
+          "sheetRows": [
+            785
+          ],
+          "minutes": 345
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:4267d7655882e521e61d",
+      "toId": "node:68ed9d0821e485e82f8f",
+      "from": "瓦拉米山屋",
+      "to": "瓦拉米步道起點",
+      "minutes": 295,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE750A9146F"
+      ],
+      "evidenceRows": [
+        786
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RE750A9146F",
+          "sheetRows": [
+            786
+          ],
+          "minutes": 295
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:68ed9d0821e485e82f8f",
+      "toId": "node:4267d7655882e521e61d",
+      "from": "瓦拉米步道起點",
+      "to": "瓦拉米山屋",
+      "minutes": 335,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE750A9146F"
+      ],
+      "evidenceRows": [
+        786
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RE750A9146F",
+          "sheetRows": [
+            786
+          ],
+          "minutes": 335
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:68ed9d0821e485e82f8f",
+      "toId": "node:bca4509332fbaaf5f94e",
+      "from": "瓦拉米步道起點",
+      "to": "南安遊客中心",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RDF58359CAC"
+      ],
+      "evidenceRows": [
+        787
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RDF58359CAC",
+          "sheetRows": [
+            787
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:bca4509332fbaaf5f94e",
+      "toId": "node:68ed9d0821e485e82f8f",
+      "from": "南安遊客中心",
+      "to": "瓦拉米步道起點",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RDF58359CAC"
+      ],
+      "evidenceRows": [
+        787
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RDF58359CAC",
+          "sheetRows": [
+            787
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:cc6b151b8c6e1aeccea0",
+      "toId": "node:02b462cebcc62c176f8f",
+      "from": "新武呂溪",
+      "to": "岔路口",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R233CB20B3E"
+      ],
+      "evidenceRows": [
+        788
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R233CB20B3E",
+          "sheetRows": [
+            788
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:02b462cebcc62c176f8f",
+      "toId": "node:cc6b151b8c6e1aeccea0",
+      "from": "岔路口",
+      "to": "新武呂溪",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R233CB20B3E"
+      ],
+      "evidenceRows": [
+        788
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R233CB20B3E",
+          "sheetRows": [
+            788
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:c3903e8a4b1a935739f5",
+      "toId": "node:cc6b151b8c6e1aeccea0",
+      "from": "足球場營地",
+      "to": "新武呂溪",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3701F4BA94"
+      ],
+      "evidenceRows": [
+        789
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R3701F4BA94",
+          "sheetRows": [
+            789
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:cc6b151b8c6e1aeccea0",
+      "toId": "node:c3903e8a4b1a935739f5",
+      "from": "新武呂溪",
+      "to": "足球場營地",
+      "minutes": 210,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3701F4BA94"
+      ],
+      "evidenceRows": [
+        789
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R3701F4BA94",
+          "sheetRows": [
+            789
+          ],
+          "minutes": 210
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:51f93163f5de669420a8",
+      "toId": "node:c3903e8a4b1a935739f5",
+      "from": "嘉明妹池",
+      "to": "足球場營地",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9978693FED"
+      ],
+      "evidenceRows": [
+        790
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R9978693FED",
+          "sheetRows": [
+            790
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:c3903e8a4b1a935739f5",
+      "toId": "node:51f93163f5de669420a8",
+      "from": "足球場營地",
+      "to": "嘉明妹池",
+      "minutes": 190,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9978693FED"
+      ],
+      "evidenceRows": [
+        790
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R9978693FED",
+          "sheetRows": [
+            790
+          ],
+          "minutes": 190
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:51f93163f5de669420a8",
+      "toId": "shared:cw-v07-030",
+      "from": "嘉明妹池",
+      "to": "嘉明湖",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0A601106C3"
+      ],
+      "evidenceRows": [
+        791
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R0A601106C3",
+          "sheetRows": [
+            791
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-030",
+      "toId": "node:51f93163f5de669420a8",
+      "from": "嘉明湖",
+      "to": "嘉明妹池",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0A601106C3"
+      ],
+      "evidenceRows": [
+        791
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R0A601106C3",
+          "sheetRows": [
+            791
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:08db756369da2cfec394",
+      "toId": "node:066a7d99c52d06cb5a71",
+      "from": "草原大窪地",
+      "to": "2835鞍部",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6F71CBA61E"
+      ],
+      "evidenceRows": [
+        792
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R6F71CBA61E",
+          "sheetRows": [
+            792
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:066a7d99c52d06cb5a71",
+      "toId": "node:08db756369da2cfec394",
+      "from": "2835鞍部",
+      "to": "草原大窪地",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6F71CBA61E"
+      ],
+      "evidenceRows": [
+        792
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R6F71CBA61E",
+          "sheetRows": [
+            792
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:066a7d99c52d06cb5a71",
+      "toId": "node:0c74693562a93ae6fbfc",
+      "from": "2835鞍部",
+      "to": "布拉克桑山",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9F585692AF"
+      ],
+      "evidenceRows": [
+        793
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R9F585692AF",
+          "sheetRows": [
+            793
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:0c74693562a93ae6fbfc",
+      "toId": "node:066a7d99c52d06cb5a71",
+      "from": "布拉克桑山",
+      "to": "2835鞍部",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9F585692AF"
+      ],
+      "evidenceRows": [
+        793
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R9F585692AF",
+          "sheetRows": [
+            793
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:c575dd7fad9439788a33",
+      "toId": "local:G18-OVERLAP::g18-overlap-013",
+      "from": "松針營地",
+      "to": "新仙山營地",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3236892873"
+      ],
+      "evidenceRows": [
+        794
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R3236892873",
+          "sheetRows": [
+            794
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-013",
+      "toId": "node:c575dd7fad9439788a33",
+      "from": "新仙山營地",
+      "to": "松針營地",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3236892873"
+      ],
+      "evidenceRows": [
+        794
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R3236892873",
+          "sheetRows": [
+            794
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-010",
+      "toId": "local:G18-OVERLAP::g18-overlap-011",
+      "from": "連理山",
+      "to": "鞍部黑水塘",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RFCBF4A555D"
+      ],
+      "evidenceRows": [
+        795
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RFCBF4A555D",
+          "sheetRows": [
+            795
+          ],
+          "minutes": 65
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-011",
+      "toId": "local:G18-OVERLAP::g18-overlap-010",
+      "from": "鞍部黑水塘",
+      "to": "連理山",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RFCBF4A555D"
+      ],
+      "evidenceRows": [
+        795
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RFCBF4A555D",
+          "sheetRows": [
+            795
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:5d77241ce703dff670ea",
+      "toId": "local:G18-OVERLAP::g18-overlap-009",
+      "from": "山壁水源",
+      "to": "桃源營地",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R41E667F042"
+      ],
+      "evidenceRows": [
+        796
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R41E667F042",
+          "sheetRows": [
+            796
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-009",
+      "toId": "node:5d77241ce703dff670ea",
+      "from": "桃源營地",
+      "to": "山壁水源",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R41E667F042"
+      ],
+      "evidenceRows": [
+        796
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R41E667F042",
+          "sheetRows": [
+            796
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "local:G18-OVERLAP::g18-overlap-002",
+      "toId": "node:cc46f14c3898e5aedb0d",
+      "from": "布新岔路口",
+      "to": "三叉稜下營地",
+      "minutes": 8,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC708088CCF"
+      ],
+      "evidenceRows": [
+        797
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RC708088CCF",
+          "sheetRows": [
+            797
+          ],
+          "minutes": 8
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:cc46f14c3898e5aedb0d",
+      "toId": "local:G18-OVERLAP::g18-overlap-002",
+      "from": "三叉稜下營地",
+      "to": "布新岔路口",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC708088CCF"
+      ],
+      "evidenceRows": [
+        797
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RC708088CCF",
+          "sheetRows": [
+            797
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:cc46f14c3898e5aedb0d",
+      "toId": "node:08db756369da2cfec394",
+      "from": "三叉稜下營地",
+      "to": "草原大窪地",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCC4FB7AF7D"
+      ],
+      "evidenceRows": [
+        798
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RCC4FB7AF7D",
+          "sheetRows": [
+            798
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:08db756369da2cfec394",
+      "toId": "node:cc46f14c3898e5aedb0d",
+      "from": "草原大窪地",
+      "to": "三叉稜下營地",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCC4FB7AF7D"
+      ],
+      "evidenceRows": [
+        798
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RCC4FB7AF7D",
+          "sheetRows": [
+            798
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:02b462cebcc62c176f8f",
+      "toId": "node:1928bc5790afa933de0c",
+      "from": "岔路口",
+      "to": "戒茂斯山",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1ECFBC4653"
+      ],
+      "evidenceRows": [
+        802
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R1ECFBC4653",
+          "sheetRows": [
+            802
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:1928bc5790afa933de0c",
+      "toId": "node:02b462cebcc62c176f8f",
+      "from": "戒茂斯山",
+      "to": "岔路口",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1ECFBC4653"
+      ],
+      "evidenceRows": [
+        802
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R1ECFBC4653",
+          "sheetRows": [
+            802
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:ab32b7cba7fba513f35a",
+      "toId": "node:02b462cebcc62c176f8f",
+      "from": "戒茂斯山前峰",
+      "to": "岔路口",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCC0B5F44E2"
+      ],
+      "evidenceRows": [
+        803
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RCC0B5F44E2",
+          "sheetRows": [
+            803
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:02b462cebcc62c176f8f",
+      "toId": "node:ab32b7cba7fba513f35a",
+      "from": "岔路口",
+      "to": "戒茂斯山前峰",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCC0B5F44E2"
+      ],
+      "evidenceRows": [
+        803
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RCC0B5F44E2",
+          "sheetRows": [
+            803
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:7bd73aa7d3d00266d6e5",
+      "toId": "node:ab32b7cba7fba513f35a",
+      "from": "156.5K登山口",
+      "to": "戒茂斯山前峰",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD75FD8AB09"
+      ],
+      "evidenceRows": [
+        804
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RD75FD8AB09",
+          "sheetRows": [
+            804
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:ab32b7cba7fba513f35a",
+      "toId": "node:7bd73aa7d3d00266d6e5",
+      "from": "戒茂斯山前峰",
+      "to": "156.5K登山口",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD75FD8AB09"
+      ],
+      "evidenceRows": [
+        804
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RD75FD8AB09",
+          "sheetRows": [
+            804
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ]
+    }
+  ],
+  "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+}

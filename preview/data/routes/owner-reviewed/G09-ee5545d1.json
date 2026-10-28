@@ -1,0 +1,1064 @@
+{
+  "route_id": "G09-ee5545d1",
+  "route_name": "屏風山",
+  "status": "owner-reviewed-preview",
+  "sourceChartIds": [
+    "G09"
+  ],
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+    "revision": "owner workbook reviewed 2026-10-28; follow-ups recorded separately"
+  },
+  "reviewBasis": "owner_workbook_review",
+  "nodes": [
+    {
+      "id": "node:36ff3c081e402994db7b",
+      "name": "屏風山屋 松針營地",
+      "aliases": [],
+      "groups": [
+        "G09-ee5545d1"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:61e3a41ddc4421da6c4e",
+      "name": "塔次基里溪",
+      "aliases": [],
+      "groups": [
+        "G09-ee5545d1"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:79b43ef005b9dfe9c481",
+      "name": "3241稜線",
+      "aliases": [],
+      "groups": [
+        "G09-ee5545d1"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:97e309d22937a82f9ade",
+      "name": "鐵線吊橋",
+      "aliases": [],
+      "groups": [
+        "G09-ee5545d1"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:ab005de4feefbd9fe292",
+      "name": "裸岩區",
+      "aliases": [],
+      "groups": [
+        "G09-ee5545d1"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:ac2e2b0473232211e496",
+      "name": "第一次過溪",
+      "aliases": [],
+      "groups": [
+        "G09-ee5545d1"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:c56eb620985668210dd2",
+      "name": "草坡展望台",
+      "aliases": [],
+      "groups": [
+        "G09-ee5545d1"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:ca0f8fd0b791b34455ab",
+      "name": "第四水源",
+      "aliases": [],
+      "groups": [
+        "G09-ee5545d1"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:d69a18f19c7940c3ebf4",
+      "name": "屏風山新登山口",
+      "aliases": [],
+      "groups": [
+        "G09-ee5545d1"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:ea236cac5ebb741c93a7",
+      "name": "合歡金礦營地",
+      "aliases": [],
+      "groups": [
+        "G09-ee5545d1"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:f2ece3876a2d0d5ba88c",
+      "name": "屏風山",
+      "aliases": [],
+      "groups": [
+        "G09-ee5545d1"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "shared:cw-v07-037",
+      "name": "大禹嶺",
+      "aliases": [],
+      "groups": [
+        "G09-ee5545d1"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    }
+  ],
+  "segments": [
+    {
+      "fromId": "shared:cw-v07-037",
+      "toId": "node:d69a18f19c7940c3ebf4",
+      "from": "大禹嶺",
+      "to": "屏風山新登山口",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6595A2C9F5"
+      ],
+      "evidenceRows": [
+        315
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R6595A2C9F5",
+          "sheetRows": [
+            315
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:d69a18f19c7940c3ebf4",
+      "toId": "shared:cw-v07-037",
+      "from": "屏風山新登山口",
+      "to": "大禹嶺",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6595A2C9F5"
+      ],
+      "evidenceRows": [
+        315
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R6595A2C9F5",
+          "sheetRows": [
+            315
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:d69a18f19c7940c3ebf4",
+      "toId": "node:ac2e2b0473232211e496",
+      "from": "屏風山新登山口",
+      "to": "第一次過溪",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9F48068743"
+      ],
+      "evidenceRows": [
+        316
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R9F48068743",
+          "sheetRows": [
+            316
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:ac2e2b0473232211e496",
+      "toId": "node:d69a18f19c7940c3ebf4",
+      "from": "第一次過溪",
+      "to": "屏風山新登山口",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9F48068743"
+      ],
+      "evidenceRows": [
+        316
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R9F48068743",
+          "sheetRows": [
+            316
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:ac2e2b0473232211e496",
+      "toId": "node:97e309d22937a82f9ade",
+      "from": "第一次過溪",
+      "to": "鐵線吊橋",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R187791261A"
+      ],
+      "evidenceRows": [
+        317
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R187791261A",
+          "sheetRows": [
+            317
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:97e309d22937a82f9ade",
+      "toId": "node:ac2e2b0473232211e496",
+      "from": "鐵線吊橋",
+      "to": "第一次過溪",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R187791261A"
+      ],
+      "evidenceRows": [
+        317
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R187791261A",
+          "sheetRows": [
+            317
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:79b43ef005b9dfe9c481",
+      "toId": "node:ca0f8fd0b791b34455ab",
+      "from": "3241稜線",
+      "to": "第四水源",
+      "minutes": 190,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R613E7885A8"
+      ],
+      "evidenceRows": [
+        318
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R613E7885A8",
+          "sheetRows": [
+            318
+          ],
+          "minutes": 190
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:ca0f8fd0b791b34455ab",
+      "toId": "node:79b43ef005b9dfe9c481",
+      "from": "第四水源",
+      "to": "3241稜線",
+      "minutes": 220,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R613E7885A8"
+      ],
+      "evidenceRows": [
+        318
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R613E7885A8",
+          "sheetRows": [
+            318
+          ],
+          "minutes": 220
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:ca0f8fd0b791b34455ab",
+      "toId": "node:ea236cac5ebb741c93a7",
+      "from": "第四水源",
+      "to": "合歡金礦營地",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R536FBD0785"
+      ],
+      "evidenceRows": [
+        319
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R536FBD0785",
+          "sheetRows": [
+            319
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:ea236cac5ebb741c93a7",
+      "toId": "node:ca0f8fd0b791b34455ab",
+      "from": "合歡金礦營地",
+      "to": "第四水源",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R536FBD0785"
+      ],
+      "evidenceRows": [
+        319
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R536FBD0785",
+          "sheetRows": [
+            319
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:c56eb620985668210dd2",
+      "toId": "node:61e3a41ddc4421da6c4e",
+      "from": "草坡展望台",
+      "to": "塔次基里溪",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4EB586154A"
+      ],
+      "evidenceRows": [
+        320
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R4EB586154A",
+          "sheetRows": [
+            320
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:61e3a41ddc4421da6c4e",
+      "toId": "node:c56eb620985668210dd2",
+      "from": "塔次基里溪",
+      "to": "草坡展望台",
+      "minutes": 170,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4EB586154A"
+      ],
+      "evidenceRows": [
+        320
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R4EB586154A",
+          "sheetRows": [
+            320
+          ],
+          "minutes": 170
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:c56eb620985668210dd2",
+      "toId": "node:ab005de4feefbd9fe292",
+      "from": "草坡展望台",
+      "to": "裸岩區",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R52D9274755"
+      ],
+      "evidenceRows": [
+        321
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R52D9274755",
+          "sheetRows": [
+            321
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:ab005de4feefbd9fe292",
+      "toId": "node:c56eb620985668210dd2",
+      "from": "裸岩區",
+      "to": "草坡展望台",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R52D9274755"
+      ],
+      "evidenceRows": [
+        321
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R52D9274755",
+          "sheetRows": [
+            321
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:ab005de4feefbd9fe292",
+      "toId": "node:f2ece3876a2d0d5ba88c",
+      "from": "裸岩區",
+      "to": "屏風山",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R69D474B087"
+      ],
+      "evidenceRows": [
+        322
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R69D474B087",
+          "sheetRows": [
+            322
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:f2ece3876a2d0d5ba88c",
+      "toId": "node:ab005de4feefbd9fe292",
+      "from": "屏風山",
+      "to": "裸岩區",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R69D474B087"
+      ],
+      "evidenceRows": [
+        322
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R69D474B087",
+          "sheetRows": [
+            322
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:36ff3c081e402994db7b",
+      "toId": "node:97e309d22937a82f9ade",
+      "from": "屏風山屋 松針營地",
+      "to": "鐵線吊橋",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R96E3FD1124"
+      ],
+      "evidenceRows": [
+        371
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R96E3FD1124",
+          "sheetRows": [
+            371
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:97e309d22937a82f9ade",
+      "toId": "node:36ff3c081e402994db7b",
+      "from": "鐵線吊橋",
+      "to": "屏風山屋 松針營地",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R96E3FD1124"
+      ],
+      "evidenceRows": [
+        371
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "R96E3FD1124",
+          "sheetRows": [
+            371
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:36ff3c081e402994db7b",
+      "toId": "node:61e3a41ddc4421da6c4e",
+      "from": "屏風山屋 松針營地",
+      "to": "塔次基里溪",
+      "minutes": 8,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD398CB2207"
+      ],
+      "evidenceRows": [
+        372
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RD398CB2207",
+          "sheetRows": [
+            372
+          ],
+          "minutes": 8
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:61e3a41ddc4421da6c4e",
+      "toId": "node:36ff3c081e402994db7b",
+      "from": "塔次基里溪",
+      "to": "屏風山屋 松針營地",
+      "minutes": 8,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD398CB2207"
+      ],
+      "evidenceRows": [
+        372
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RD398CB2207",
+          "sheetRows": [
+            372
+          ],
+          "minutes": 8
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:36ff3c081e402994db7b",
+      "toId": "node:ea236cac5ebb741c93a7",
+      "from": "屏風山屋 松針營地",
+      "to": "合歡金礦營地",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC735BBEC1F"
+      ],
+      "evidenceRows": [
+        373
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RC735BBEC1F",
+          "sheetRows": [
+            373
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:ea236cac5ebb741c93a7",
+      "toId": "node:36ff3c081e402994db7b",
+      "from": "合歡金礦營地",
+      "to": "屏風山屋 松針營地",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC735BBEC1F"
+      ],
+      "evidenceRows": [
+        373
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RC735BBEC1F",
+          "sheetRows": [
+            373
+          ],
+          "minutes": 65
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:79b43ef005b9dfe9c481",
+      "toId": "node:f2ece3876a2d0d5ba88c",
+      "from": "3241稜線",
+      "to": "屏風山",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE0D3F70056"
+      ],
+      "evidenceRows": [
+        374
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RE0D3F70056",
+          "sheetRows": [
+            374
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    },
+    {
+      "fromId": "node:f2ece3876a2d0d5ba88c",
+      "toId": "node:79b43ef005b9dfe9c481",
+      "from": "屏風山",
+      "to": "3241稜線",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE0D3F70056"
+      ],
+      "evidenceRows": [
+        374
+      ],
+      "sourceGroups": [
+        "屏風山"
+      ],
+      "sourceChart": "G09",
+      "source": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "屏風山",
+          "chartId": "G09",
+          "url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+          "rowId": "RE0D3F70056",
+          "sheetRows": [
+            374
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "屏風山"
+      ]
+    }
+  ],
+  "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+}

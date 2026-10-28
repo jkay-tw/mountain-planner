@@ -1,0 +1,6176 @@
+{
+  "route_id": "G15",
+  "route_name": "丹大東郡",
+  "status": "owner-reviewed-preview",
+  "sourceChartIds": [
+    "G15"
+  ],
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+    "revision": "owner workbook reviewed 2026-10-28; follow-ups recorded separately"
+  },
+  "reviewBasis": "owner_workbook_review",
+  "nodes": [
+    {
+      "id": "node:01d1180c464fb08e5191",
+      "name": "可樂可樂安山",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:06b52b0f4a9c5db51f87",
+      "name": "東鑾/烏達佩岔路",
+      "aliases": [
+        "岔路",
+        "東巒/烏達岔路"
+      ],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:0c0dc01565d03fae0e19",
+      "name": "裡門山",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:0c8573830abcc97e1e32",
+      "name": "26K岔路",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:13132e8f44de031186fe",
+      "name": "烏可冬克山",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:21743079f36dd0ee5829",
+      "name": "櫧山北鞍營地",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:29f7b222808645fa53ef",
+      "name": "45.3K登山口",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:2aa469a51f6331227667",
+      "name": "內嶺爾山",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:2d8fc441e99a93bda219",
+      "name": "33.5K大崩塌",
+      "aliases": [
+        "33.5K大崩山"
+      ],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:318b1240b1b28f23c14a",
+      "name": "亞力士營地",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:34b4ec45fd16d72ac1b6",
+      "name": "丹大溪源營地",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:351f4b260c8941f8d7e4",
+      "name": "玉林橋大崩壁",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:37c859d291bd265bd3ce",
+      "name": "方便池",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:3bf4ec2f689a3b5c4930",
+      "name": "烏瓦拉鼻溪",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:4001696b7a0f069ffb0b",
+      "name": "本鄉山",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:4a0b2326333b6cbfd23e",
+      "name": "松林營地",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:4a1ca6c9c8adbf80fba0",
+      "name": "烏達佩山",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:4d88bca8baa6a866c727",
+      "name": "鐵線斷崖東口",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:4fca27364854ea7129d2",
+      "name": "39.6K大崩塌",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:5048fd0d5be7a2b461be",
+      "name": "義西請馬至山",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:5ab8c1b58de6eeb05b5d",
+      "name": "2897草原水池",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:5d3084736e9f8bce6d4a",
+      "name": "19.3K水泥橋",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:66b2dd2d91e301d84c73",
+      "name": "東鞍營地",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:679d7475a6dd59c285e2",
+      "name": "無雙山東峰",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:6976566bc1a316b8e079",
+      "name": "郡東山",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:6b8235223e06105d242a",
+      "name": "28K水泥工寮",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:6c72072c59b2ee211d05",
+      "name": "烏妹浪胖池",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:757cb9b7c126e5300053",
+      "name": "西源營地",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:7b0dae68c98b7de79a40",
+      "name": "太平溪源",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:82e77090c06d1fe2aead",
+      "name": "最高峰",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:891637431112fc5688eb",
+      "name": "34K登山口",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:8d079c5429db81492162",
+      "name": "僕落西擴山",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:927ab4029b6760846cdd",
+      "name": "烏妹浪胖山",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:936c6cffc304b3e72668",
+      "name": "哈伊拉羅溪北源",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:9d5d4d1d5eb72f6f92cb",
+      "name": "2907峰",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:9f59facbac44a2e55ce7",
+      "name": "太平溪源營地",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:a17ec4e667d55d3d99c3",
+      "name": "33K行車終點",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:a4c3afd25386960ea875",
+      "name": "東北鞍營地",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:a884c2a16afbdabf28de",
+      "name": "哈伊拉羅溪南源",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:adc0d7c3c99b1752e68b",
+      "name": "東郡大山",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:aef6e30a59fdc407a2a2",
+      "name": "無雙部落址",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:b68adbc4f51e0a71c87f",
+      "name": "櫧山",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:b865066ee7995702c0d4",
+      "name": "盧利拉駱山",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:bc117dbb33b03fe2cddf",
+      "name": "沙武巒草原",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:bce5fdf63beb2b9d5c29",
+      "name": "無雙山基點峰",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:bd25adc467b72fa6656f",
+      "name": "天南可蘭山",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:c004ec6758328d3ce1cb",
+      "name": "無雙吊橋",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:c25918006df5f04534c8",
+      "name": "馬路巴拉讓山",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:c61990dd30e7cb3d8213",
+      "name": "43K工寮",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:c8870812bd546115bac5",
+      "name": "三岔路口營地",
+      "aliases": [
+        "三岔路營地"
+      ],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:c9115d117bdcc33b8c0b",
+      "name": "東巒大山",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:cb277db7b164105e3c17",
+      "name": "三岔路口",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:d03e5cea91ce41e0ca2a",
+      "name": "鐵線斷崖西口",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:dee598e1b2437f4ec104",
+      "name": "32K水泥工寮",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:e9149e15effc99bc37f7",
+      "name": "郡東營地",
+      "aliases": [
+        "岔路"
+      ],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:eaf2fc50ab8c1afa9051",
+      "name": "紅葉村",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:ed8a1c3cd47fa986d90e",
+      "name": "最後水源",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:ef56761122345906961b",
+      "name": "14.6K水泥路止",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:f0bb47a73379bfdf496a",
+      "name": "天南可蘭/望崖岔路",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:f0e2f3dceb1f3b093fe7",
+      "name": "哈伊拉羅溪中源",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:f33cee319fc38118e03c",
+      "name": "東源營地",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:f3ea090758bb1302bc29",
+      "name": "林道盡頭",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:fac669a79a9a25b63056",
+      "name": "杜鵑營地",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:fda449ba3440ad785b68",
+      "name": "斷稜東山",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:ff06147be71a4346fbfc",
+      "name": "望崖山",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "shared:cw-v07-001",
+      "name": "16.5K行車終點",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-002",
+      "name": "23K望鄉工作站",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-011",
+      "name": "丹大山",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-021",
+      "name": "十八重溪橋",
+      "aliases": [
+        "十八重溪橋檢查哨"
+      ],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-040",
+      "name": "太平谷南口",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-078",
+      "name": "馬利加南山東峰",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-079",
+      "name": "馬利加南東峰山屋",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-080",
+      "name": "馬布谷山屋",
+      "aliases": [],
+      "groups": [
+        "G15"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    }
+  ],
+  "segments": [
+    {
+      "fromId": "node:a17ec4e667d55d3d99c3",
+      "toId": "node:2d8fc441e99a93bda219",
+      "from": "33K行車終點",
+      "to": "33.5K大崩塌",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R64D803E12D"
+      ],
+      "evidenceRows": [
+        539
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R64D803E12D",
+          "sheetRows": [
+            539
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:2d8fc441e99a93bda219",
+      "toId": "node:a17ec4e667d55d3d99c3",
+      "from": "33.5K大崩塌",
+      "to": "33K行車終點",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R64D803E12D"
+      ],
+      "evidenceRows": [
+        539
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R64D803E12D",
+          "sheetRows": [
+            539
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:2d8fc441e99a93bda219",
+      "toId": "node:4fca27364854ea7129d2",
+      "from": "33.5K大崩塌",
+      "to": "39.6K大崩塌",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R27029A9E99"
+      ],
+      "evidenceRows": [
+        540
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R27029A9E99",
+          "sheetRows": [
+            540
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:4fca27364854ea7129d2",
+      "toId": "node:2d8fc441e99a93bda219",
+      "from": "39.6K大崩塌",
+      "to": "33.5K大崩塌",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R27029A9E99"
+      ],
+      "evidenceRows": [
+        540
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R27029A9E99",
+          "sheetRows": [
+            540
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:4fca27364854ea7129d2",
+      "toId": "node:c61990dd30e7cb3d8213",
+      "from": "39.6K大崩塌",
+      "to": "43K工寮",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R63C13038E9"
+      ],
+      "evidenceRows": [
+        541
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R63C13038E9",
+          "sheetRows": [
+            541
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:c61990dd30e7cb3d8213",
+      "toId": "node:4fca27364854ea7129d2",
+      "from": "43K工寮",
+      "to": "39.6K大崩塌",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R63C13038E9"
+      ],
+      "evidenceRows": [
+        541
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R63C13038E9",
+          "sheetRows": [
+            541
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:c61990dd30e7cb3d8213",
+      "toId": "node:29f7b222808645fa53ef",
+      "from": "43K工寮",
+      "to": "45.3K登山口",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R486374792C"
+      ],
+      "evidenceRows": [
+        542
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R486374792C",
+          "sheetRows": [
+            542
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:29f7b222808645fa53ef",
+      "toId": "node:c61990dd30e7cb3d8213",
+      "from": "45.3K登山口",
+      "to": "43K工寮",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R486374792C"
+      ],
+      "evidenceRows": [
+        542
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R486374792C",
+          "sheetRows": [
+            542
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:29f7b222808645fa53ef",
+      "toId": "node:3bf4ec2f689a3b5c4930",
+      "from": "45.3K登山口",
+      "to": "烏瓦拉鼻溪",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R86BF45F0E4"
+      ],
+      "evidenceRows": [
+        543
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R86BF45F0E4",
+          "sheetRows": [
+            543
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:3bf4ec2f689a3b5c4930",
+      "toId": "node:29f7b222808645fa53ef",
+      "from": "烏瓦拉鼻溪",
+      "to": "45.3K登山口",
+      "minutes": 200,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R86BF45F0E4"
+      ],
+      "evidenceRows": [
+        543
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R86BF45F0E4",
+          "sheetRows": [
+            543
+          ],
+          "minutes": 200
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:3bf4ec2f689a3b5c4930",
+      "toId": "node:c004ec6758328d3ce1cb",
+      "from": "烏瓦拉鼻溪",
+      "to": "無雙吊橋",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCC439A836C"
+      ],
+      "evidenceRows": [
+        544
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RCC439A836C",
+          "sheetRows": [
+            544
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:c004ec6758328d3ce1cb",
+      "toId": "node:3bf4ec2f689a3b5c4930",
+      "from": "無雙吊橋",
+      "to": "烏瓦拉鼻溪",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCC439A836C"
+      ],
+      "evidenceRows": [
+        544
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RCC439A836C",
+          "sheetRows": [
+            544
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:c004ec6758328d3ce1cb",
+      "toId": "node:aef6e30a59fdc407a2a2",
+      "from": "無雙吊橋",
+      "to": "無雙部落址",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA85CED3B2E"
+      ],
+      "evidenceRows": [
+        545
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RA85CED3B2E",
+          "sheetRows": [
+            545
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:aef6e30a59fdc407a2a2",
+      "toId": "node:c004ec6758328d3ce1cb",
+      "from": "無雙部落址",
+      "to": "無雙吊橋",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA85CED3B2E"
+      ],
+      "evidenceRows": [
+        545
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RA85CED3B2E",
+          "sheetRows": [
+            545
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:318b1240b1b28f23c14a",
+      "toId": "node:aef6e30a59fdc407a2a2",
+      "from": "亞力士營地",
+      "to": "無雙部落址",
+      "minutes": 220,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA12F778F4D"
+      ],
+      "evidenceRows": [
+        546
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RA12F778F4D",
+          "sheetRows": [
+            546
+          ],
+          "minutes": 220
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:aef6e30a59fdc407a2a2",
+      "toId": "node:318b1240b1b28f23c14a",
+      "from": "無雙部落址",
+      "to": "亞力士營地",
+      "minutes": 300,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA12F778F4D"
+      ],
+      "evidenceRows": [
+        546
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RA12F778F4D",
+          "sheetRows": [
+            546
+          ],
+          "minutes": 300
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:bce5fdf63beb2b9d5c29",
+      "toId": "node:ed8a1c3cd47fa986d90e",
+      "from": "無雙山基點峰",
+      "to": "最後水源",
+      "minutes": 200,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1C3AF62445"
+      ],
+      "evidenceRows": [
+        547
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R1C3AF62445",
+          "sheetRows": [
+            547
+          ],
+          "minutes": 200
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:ed8a1c3cd47fa986d90e",
+      "toId": "node:bce5fdf63beb2b9d5c29",
+      "from": "最後水源",
+      "to": "無雙山基點峰",
+      "minutes": 360,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1C3AF62445"
+      ],
+      "evidenceRows": [
+        547
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R1C3AF62445",
+          "sheetRows": [
+            547
+          ],
+          "minutes": 360
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:ed8a1c3cd47fa986d90e",
+      "toId": "node:318b1240b1b28f23c14a",
+      "from": "最後水源",
+      "to": "亞力士營地",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RAF04C7E3C1"
+      ],
+      "evidenceRows": [
+        548
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RAF04C7E3C1",
+          "sheetRows": [
+            548
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:318b1240b1b28f23c14a",
+      "toId": "node:ed8a1c3cd47fa986d90e",
+      "from": "亞力士營地",
+      "to": "最後水源",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RAF04C7E3C1"
+      ],
+      "evidenceRows": [
+        548
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RAF04C7E3C1",
+          "sheetRows": [
+            548
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:c9115d117bdcc33b8c0b",
+      "toId": "node:06b52b0f4a9c5db51f87",
+      "from": "東巒大山",
+      "to": "東鑾/烏達佩岔路",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R890994C82D"
+      ],
+      "evidenceRows": [
+        549
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "(資料正確，但G15有3個\"岔路\"，改名稱以做區分)",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R890994C82D",
+          "sheetRows": [
+            549
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:06b52b0f4a9c5db51f87",
+      "toId": "node:c9115d117bdcc33b8c0b",
+      "from": "東鑾/烏達佩岔路",
+      "to": "東巒大山",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R890994C82D"
+      ],
+      "evidenceRows": [
+        549
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "(資料正確，但G15有3個\"岔路\"，改名稱以做區分)",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R890994C82D",
+          "sheetRows": [
+            549
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:06b52b0f4a9c5db51f87",
+      "toId": "node:a4c3afd25386960ea875",
+      "from": "東鑾/烏達佩岔路",
+      "to": "東北鞍營地",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6F786B29F4"
+      ],
+      "evidenceRows": [
+        550
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R6F786B29F4",
+          "sheetRows": [
+            550
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:a4c3afd25386960ea875",
+      "toId": "node:06b52b0f4a9c5db51f87",
+      "from": "東北鞍營地",
+      "to": "東鑾/烏達佩岔路",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6F786B29F4"
+      ],
+      "evidenceRows": [
+        550
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R6F786B29F4",
+          "sheetRows": [
+            550
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:a4c3afd25386960ea875",
+      "toId": "node:4001696b7a0f069ffb0b",
+      "from": "東北鞍營地",
+      "to": "本鄉山",
+      "minutes": 160,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R66431C3E22"
+      ],
+      "evidenceRows": [
+        551
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R66431C3E22",
+          "sheetRows": [
+            551
+          ],
+          "minutes": 160
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:4001696b7a0f069ffb0b",
+      "toId": "node:a4c3afd25386960ea875",
+      "from": "本鄉山",
+      "to": "東北鞍營地",
+      "minutes": 210,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R66431C3E22"
+      ],
+      "evidenceRows": [
+        551
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R66431C3E22",
+          "sheetRows": [
+            551
+          ],
+          "minutes": 210
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:4001696b7a0f069ffb0b",
+      "toId": "node:21743079f36dd0ee5829",
+      "from": "本鄉山",
+      "to": "櫧山北鞍營地",
+      "minutes": 75,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "REC8131D9CF"
+      ],
+      "evidenceRows": [
+        552
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "REC8131D9CF",
+          "sheetRows": [
+            552
+          ],
+          "minutes": 75
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:21743079f36dd0ee5829",
+      "toId": "node:4001696b7a0f069ffb0b",
+      "from": "櫧山北鞍營地",
+      "to": "本鄉山",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "REC8131D9CF"
+      ],
+      "evidenceRows": [
+        552
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "REC8131D9CF",
+          "sheetRows": [
+            552
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:21743079f36dd0ee5829",
+      "toId": "node:b68adbc4f51e0a71c87f",
+      "from": "櫧山北鞍營地",
+      "to": "櫧山",
+      "minutes": 95,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R329FCAC476"
+      ],
+      "evidenceRows": [
+        553
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R329FCAC476",
+          "sheetRows": [
+            553
+          ],
+          "minutes": 95
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:b68adbc4f51e0a71c87f",
+      "toId": "node:21743079f36dd0ee5829",
+      "from": "櫧山",
+      "to": "櫧山北鞍營地",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R329FCAC476"
+      ],
+      "evidenceRows": [
+        553
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R329FCAC476",
+          "sheetRows": [
+            553
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:a4c3afd25386960ea875",
+      "toId": "node:adc0d7c3c99b1752e68b",
+      "from": "東北鞍營地",
+      "to": "東郡大山",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R888301C5E9"
+      ],
+      "evidenceRows": [
+        554
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R888301C5E9",
+          "sheetRows": [
+            554
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:adc0d7c3c99b1752e68b",
+      "toId": "node:a4c3afd25386960ea875",
+      "from": "東郡大山",
+      "to": "東北鞍營地",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R888301C5E9"
+      ],
+      "evidenceRows": [
+        554
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R888301C5E9",
+          "sheetRows": [
+            554
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:679d7475a6dd59c285e2",
+      "toId": "node:b68adbc4f51e0a71c87f",
+      "from": "無雙山東峰",
+      "to": "櫧山",
+      "minutes": 190,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD6C84C58E8"
+      ],
+      "evidenceRows": [
+        555
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RD6C84C58E8",
+          "sheetRows": [
+            555
+          ],
+          "minutes": 190
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:b68adbc4f51e0a71c87f",
+      "toId": "node:679d7475a6dd59c285e2",
+      "from": "櫧山",
+      "to": "無雙山東峰",
+      "minutes": 210,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD6C84C58E8"
+      ],
+      "evidenceRows": [
+        555
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RD6C84C58E8",
+          "sheetRows": [
+            555
+          ],
+          "minutes": 210
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:679d7475a6dd59c285e2",
+      "toId": "node:82e77090c06d1fe2aead",
+      "from": "無雙山東峰",
+      "to": "最高峰",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R75469A4D09"
+      ],
+      "evidenceRows": [
+        556
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R75469A4D09",
+          "sheetRows": [
+            556
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:82e77090c06d1fe2aead",
+      "toId": "node:679d7475a6dd59c285e2",
+      "from": "最高峰",
+      "to": "無雙山東峰",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R75469A4D09"
+      ],
+      "evidenceRows": [
+        556
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R75469A4D09",
+          "sheetRows": [
+            556
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:4a1ca6c9c8adbf80fba0",
+      "toId": "node:06b52b0f4a9c5db51f87",
+      "from": "烏達佩山",
+      "to": "東鑾/烏達佩岔路",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4A31A0F04C"
+      ],
+      "evidenceRows": [
+        557
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "(資料正確，但G15有3個\"岔路\"，改名稱以做區分)",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R4A31A0F04C",
+          "sheetRows": [
+            557
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:06b52b0f4a9c5db51f87",
+      "toId": "node:4a1ca6c9c8adbf80fba0",
+      "from": "東鑾/烏達佩岔路",
+      "to": "烏達佩山",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4A31A0F04C"
+      ],
+      "evidenceRows": [
+        557
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "(資料正確，但G15有3個\"岔路\"，改名稱以做區分)",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R4A31A0F04C",
+          "sheetRows": [
+            557
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:6976566bc1a316b8e079",
+      "toId": "node:01d1180c464fb08e5191",
+      "from": "郡東山",
+      "to": "可樂可樂安山",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6C933DF20A"
+      ],
+      "evidenceRows": [
+        559
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R6C933DF20A",
+          "sheetRows": [
+            559
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:01d1180c464fb08e5191",
+      "toId": "node:6976566bc1a316b8e079",
+      "from": "可樂可樂安山",
+      "to": "郡東山",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6C933DF20A"
+      ],
+      "evidenceRows": [
+        559
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R6C933DF20A",
+          "sheetRows": [
+            559
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:01d1180c464fb08e5191",
+      "toId": "node:f0bb47a73379bfdf496a",
+      "from": "可樂可樂安山",
+      "to": "天南可蘭/望崖岔路",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R525C99D812"
+      ],
+      "evidenceRows": [
+        560
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R525C99D812",
+          "sheetRows": [
+            560
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:f0bb47a73379bfdf496a",
+      "toId": "node:01d1180c464fb08e5191",
+      "from": "天南可蘭/望崖岔路",
+      "to": "可樂可樂安山",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R525C99D812"
+      ],
+      "evidenceRows": [
+        560
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R525C99D812",
+          "sheetRows": [
+            560
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:bd25adc467b72fa6656f",
+      "toId": "node:f0bb47a73379bfdf496a",
+      "from": "天南可蘭山",
+      "to": "天南可蘭/望崖岔路",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R234015DB26"
+      ],
+      "evidenceRows": [
+        561
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R234015DB26",
+          "sheetRows": [
+            561
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:f0bb47a73379bfdf496a",
+      "toId": "node:bd25adc467b72fa6656f",
+      "from": "天南可蘭/望崖岔路",
+      "to": "天南可蘭山",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R234015DB26"
+      ],
+      "evidenceRows": [
+        561
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R234015DB26",
+          "sheetRows": [
+            561
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:f0bb47a73379bfdf496a",
+      "toId": "node:ff06147be71a4346fbfc",
+      "from": "天南可蘭/望崖岔路",
+      "to": "望崖山",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R587DC58EA9"
+      ],
+      "evidenceRows": [
+        562
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R587DC58EA9",
+          "sheetRows": [
+            562
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:ff06147be71a4346fbfc",
+      "toId": "node:f0bb47a73379bfdf496a",
+      "from": "望崖山",
+      "to": "天南可蘭/望崖岔路",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R587DC58EA9"
+      ],
+      "evidenceRows": [
+        562
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R587DC58EA9",
+          "sheetRows": [
+            562
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:34b4ec45fd16d72ac1b6",
+      "toId": "node:0c0dc01565d03fae0e19",
+      "from": "丹大溪源營地",
+      "to": "裡門山",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R22F2BCADE1"
+      ],
+      "evidenceRows": [
+        563
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R22F2BCADE1",
+          "sheetRows": [
+            563
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:0c0dc01565d03fae0e19",
+      "toId": "node:34b4ec45fd16d72ac1b6",
+      "from": "裡門山",
+      "to": "丹大溪源營地",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R22F2BCADE1"
+      ],
+      "evidenceRows": [
+        563
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R22F2BCADE1",
+          "sheetRows": [
+            563
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:ff06147be71a4346fbfc",
+      "toId": "node:34b4ec45fd16d72ac1b6",
+      "from": "望崖山",
+      "to": "丹大溪源營地",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE6726265B9"
+      ],
+      "evidenceRows": [
+        564
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RE6726265B9",
+          "sheetRows": [
+            564
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:34b4ec45fd16d72ac1b6",
+      "toId": "node:ff06147be71a4346fbfc",
+      "from": "丹大溪源營地",
+      "to": "望崖山",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE6726265B9"
+      ],
+      "evidenceRows": [
+        564
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RE6726265B9",
+          "sheetRows": [
+            564
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:0c0dc01565d03fae0e19",
+      "toId": "node:fda449ba3440ad785b68",
+      "from": "裡門山",
+      "to": "斷稜東山",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R26BB5C353C"
+      ],
+      "evidenceRows": [
+        565
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R26BB5C353C",
+          "sheetRows": [
+            565
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:fda449ba3440ad785b68",
+      "toId": "node:0c0dc01565d03fae0e19",
+      "from": "斷稜東山",
+      "to": "裡門山",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R26BB5C353C"
+      ],
+      "evidenceRows": [
+        565
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R26BB5C353C",
+          "sheetRows": [
+            565
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:6c72072c59b2ee211d05",
+      "toId": "node:5048fd0d5be7a2b461be",
+      "from": "烏妹浪胖池",
+      "to": "義西請馬至山",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE032AEAABA"
+      ],
+      "evidenceRows": [
+        566
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RE032AEAABA",
+          "sheetRows": [
+            566
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:5048fd0d5be7a2b461be",
+      "toId": "node:6c72072c59b2ee211d05",
+      "from": "義西請馬至山",
+      "to": "烏妹浪胖池",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE032AEAABA"
+      ],
+      "evidenceRows": [
+        566
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RE032AEAABA",
+          "sheetRows": [
+            566
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:6c72072c59b2ee211d05",
+      "toId": "node:927ab4029b6760846cdd",
+      "from": "烏妹浪胖池",
+      "to": "烏妹浪胖山",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R517B5FD0FF"
+      ],
+      "evidenceRows": [
+        567
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R517B5FD0FF",
+          "sheetRows": [
+            567
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:927ab4029b6760846cdd",
+      "toId": "node:6c72072c59b2ee211d05",
+      "from": "烏妹浪胖山",
+      "to": "烏妹浪胖池",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R517B5FD0FF"
+      ],
+      "evidenceRows": [
+        567
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R517B5FD0FF",
+          "sheetRows": [
+            567
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:927ab4029b6760846cdd",
+      "toId": "node:936c6cffc304b3e72668",
+      "from": "烏妹浪胖山",
+      "to": "哈伊拉羅溪北源",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB3CD0C8411"
+      ],
+      "evidenceRows": [
+        568
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RB3CD0C8411",
+          "sheetRows": [
+            568
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:936c6cffc304b3e72668",
+      "toId": "node:927ab4029b6760846cdd",
+      "from": "哈伊拉羅溪北源",
+      "to": "烏妹浪胖山",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB3CD0C8411"
+      ],
+      "evidenceRows": [
+        568
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RB3CD0C8411",
+          "sheetRows": [
+            568
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:936c6cffc304b3e72668",
+      "toId": "node:8d079c5429db81492162",
+      "from": "哈伊拉羅溪北源",
+      "to": "僕落西擴山",
+      "minutes": 170,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC90413884D"
+      ],
+      "evidenceRows": [
+        569
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RC90413884D",
+          "sheetRows": [
+            569
+          ],
+          "minutes": 170
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:8d079c5429db81492162",
+      "toId": "node:936c6cffc304b3e72668",
+      "from": "僕落西擴山",
+      "to": "哈伊拉羅溪北源",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC90413884D"
+      ],
+      "evidenceRows": [
+        569
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RC90413884D",
+          "sheetRows": [
+            569
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:8d079c5429db81492162",
+      "toId": "node:f0e2f3dceb1f3b093fe7",
+      "from": "僕落西擴山",
+      "to": "哈伊拉羅溪中源",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA917A79564"
+      ],
+      "evidenceRows": [
+        570
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RA917A79564",
+          "sheetRows": [
+            570
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:f0e2f3dceb1f3b093fe7",
+      "toId": "node:8d079c5429db81492162",
+      "from": "哈伊拉羅溪中源",
+      "to": "僕落西擴山",
+      "minutes": 210,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA917A79564"
+      ],
+      "evidenceRows": [
+        570
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RA917A79564",
+          "sheetRows": [
+            570
+          ],
+          "minutes": 210
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:f0e2f3dceb1f3b093fe7",
+      "toId": "node:13132e8f44de031186fe",
+      "from": "哈伊拉羅溪中源",
+      "to": "烏可冬克山",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R79E15B5875"
+      ],
+      "evidenceRows": [
+        571
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R79E15B5875",
+          "sheetRows": [
+            571
+          ],
+          "minutes": 180
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:13132e8f44de031186fe",
+      "toId": "node:f0e2f3dceb1f3b093fe7",
+      "from": "烏可冬克山",
+      "to": "哈伊拉羅溪中源",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R79E15B5875"
+      ],
+      "evidenceRows": [
+        571
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R79E15B5875",
+          "sheetRows": [
+            571
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:13132e8f44de031186fe",
+      "toId": "node:a884c2a16afbdabf28de",
+      "from": "烏可冬克山",
+      "to": "哈伊拉羅溪南源",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC6D821767D"
+      ],
+      "evidenceRows": [
+        572
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RC6D821767D",
+          "sheetRows": [
+            572
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:a884c2a16afbdabf28de",
+      "toId": "node:13132e8f44de031186fe",
+      "from": "哈伊拉羅溪南源",
+      "to": "烏可冬克山",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC6D821767D"
+      ],
+      "evidenceRows": [
+        572
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RC6D821767D",
+          "sheetRows": [
+            572
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:a884c2a16afbdabf28de",
+      "toId": "shared:cw-v07-079",
+      "from": "哈伊拉羅溪南源",
+      "to": "馬利加南東峰山屋",
+      "minutes": 210,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R8E662FF76D"
+      ],
+      "evidenceRows": [
+        573
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R8E662FF76D",
+          "sheetRows": [
+            573
+          ],
+          "minutes": 210
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-079",
+      "toId": "node:a884c2a16afbdabf28de",
+      "from": "馬利加南東峰山屋",
+      "to": "哈伊拉羅溪南源",
+      "minutes": 150,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R8E662FF76D"
+      ],
+      "evidenceRows": [
+        573
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R8E662FF76D",
+          "sheetRows": [
+            573
+          ],
+          "minutes": 150
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:fda449ba3440ad785b68",
+      "toId": "node:5048fd0d5be7a2b461be",
+      "from": "斷稜東山",
+      "to": "義西請馬至山",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC01B79E484"
+      ],
+      "evidenceRows": [
+        574
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RC01B79E484",
+          "sheetRows": [
+            574
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:5048fd0d5be7a2b461be",
+      "toId": "node:fda449ba3440ad785b68",
+      "from": "義西請馬至山",
+      "to": "斷稜東山",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC01B79E484"
+      ],
+      "evidenceRows": [
+        574
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RC01B79E484",
+          "sheetRows": [
+            574
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:5048fd0d5be7a2b461be",
+      "toId": "node:66b2dd2d91e301d84c73",
+      "from": "義西請馬至山",
+      "to": "東鞍營地",
+      "minutes": 95,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6D07E0D41C"
+      ],
+      "evidenceRows": [
+        575
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R6D07E0D41C",
+          "sheetRows": [
+            575
+          ],
+          "minutes": 95
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:66b2dd2d91e301d84c73",
+      "toId": "node:5048fd0d5be7a2b461be",
+      "from": "東鞍營地",
+      "to": "義西請馬至山",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6D07E0D41C"
+      ],
+      "evidenceRows": [
+        575
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R6D07E0D41C",
+          "sheetRows": [
+            575
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:66b2dd2d91e301d84c73",
+      "toId": "node:c25918006df5f04534c8",
+      "from": "東鞍營地",
+      "to": "馬路巴拉讓山",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6904662FB0"
+      ],
+      "evidenceRows": [
+        576
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R6904662FB0",
+          "sheetRows": [
+            576
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:c25918006df5f04534c8",
+      "toId": "node:66b2dd2d91e301d84c73",
+      "from": "馬路巴拉讓山",
+      "to": "東鞍營地",
+      "minutes": 150,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6904662FB0"
+      ],
+      "evidenceRows": [
+        576
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R6904662FB0",
+          "sheetRows": [
+            576
+          ],
+          "minutes": 150
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:c25918006df5f04534c8",
+      "toId": "node:c8870812bd546115bac5",
+      "from": "馬路巴拉讓山",
+      "to": "三岔路口營地",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R40B2419F7D"
+      ],
+      "evidenceRows": [
+        577
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R40B2419F7D",
+          "sheetRows": [
+            577
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:c8870812bd546115bac5",
+      "toId": "node:c25918006df5f04534c8",
+      "from": "三岔路口營地",
+      "to": "馬路巴拉讓山",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R40B2419F7D"
+      ],
+      "evidenceRows": [
+        577
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R40B2419F7D",
+          "sheetRows": [
+            577
+          ],
+          "minutes": 65
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:c8870812bd546115bac5",
+      "toId": "node:2aa469a51f6331227667",
+      "from": "三岔路口營地",
+      "to": "內嶺爾山",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7F76DF4AB7"
+      ],
+      "evidenceRows": [
+        578
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R7F76DF4AB7",
+          "sheetRows": [
+            578
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:2aa469a51f6331227667",
+      "toId": "node:c8870812bd546115bac5",
+      "from": "內嶺爾山",
+      "to": "三岔路口營地",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7F76DF4AB7"
+      ],
+      "evidenceRows": [
+        578
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R7F76DF4AB7",
+          "sheetRows": [
+            578
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:7b0dae68c98b7de79a40",
+      "toId": "node:9f59facbac44a2e55ce7",
+      "from": "太平溪源",
+      "to": "太平溪源營地",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0138A6F170"
+      ],
+      "evidenceRows": [
+        579
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R0138A6F170",
+          "sheetRows": [
+            579
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:9f59facbac44a2e55ce7",
+      "toId": "node:7b0dae68c98b7de79a40",
+      "from": "太平溪源營地",
+      "to": "太平溪源",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0138A6F170"
+      ],
+      "evidenceRows": [
+        579
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R0138A6F170",
+          "sheetRows": [
+            579
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-011",
+      "toId": "node:b865066ee7995702c0d4",
+      "from": "丹大山",
+      "to": "盧利拉駱山",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R14BA0F8EBE"
+      ],
+      "evidenceRows": [
+        580
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "輕裝",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R14BA0F8EBE",
+          "sheetRows": [
+            580
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:b865066ee7995702c0d4",
+      "toId": "shared:cw-v07-011",
+      "from": "盧利拉駱山",
+      "to": "丹大山",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R14BA0F8EBE"
+      ],
+      "evidenceRows": [
+        580
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "輕裝",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R14BA0F8EBE",
+          "sheetRows": [
+            580
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:f33cee319fc38118e03c",
+      "toId": "node:cb277db7b164105e3c17",
+      "from": "東源營地",
+      "to": "三岔路口",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R33FA77376D"
+      ],
+      "evidenceRows": [
+        581
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R33FA77376D",
+          "sheetRows": [
+            581
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:cb277db7b164105e3c17",
+      "toId": "node:f33cee319fc38118e03c",
+      "from": "三岔路口",
+      "to": "東源營地",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R33FA77376D"
+      ],
+      "evidenceRows": [
+        581
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R33FA77376D",
+          "sheetRows": [
+            581
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:f33cee319fc38118e03c",
+      "toId": "node:757cb9b7c126e5300053",
+      "from": "東源營地",
+      "to": "西源營地",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R656170ABC9"
+      ],
+      "evidenceRows": [
+        582
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R656170ABC9",
+          "sheetRows": [
+            582
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:757cb9b7c126e5300053",
+      "toId": "node:f33cee319fc38118e03c",
+      "from": "西源營地",
+      "to": "東源營地",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R656170ABC9"
+      ],
+      "evidenceRows": [
+        582
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R656170ABC9",
+          "sheetRows": [
+            582
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:4d88bca8baa6a866c727",
+      "toId": "node:d03e5cea91ce41e0ca2a",
+      "from": "鐵線斷崖東口",
+      "to": "鐵線斷崖西口",
+      "minutes": 350,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB6CB6E1EA7"
+      ],
+      "evidenceRows": [
+        583
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RB6CB6E1EA7",
+          "sheetRows": [
+            583
+          ],
+          "minutes": 350
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:d03e5cea91ce41e0ca2a",
+      "toId": "node:4d88bca8baa6a866c727",
+      "from": "鐵線斷崖西口",
+      "to": "鐵線斷崖東口",
+      "minutes": 330,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB6CB6E1EA7"
+      ],
+      "evidenceRows": [
+        583
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RB6CB6E1EA7",
+          "sheetRows": [
+            583
+          ],
+          "minutes": 330
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:9d5d4d1d5eb72f6f92cb",
+      "toId": "node:757cb9b7c126e5300053",
+      "from": "2907峰",
+      "to": "西源營地",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R53C616E2DA"
+      ],
+      "evidenceRows": [
+        584
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R53C616E2DA",
+          "sheetRows": [
+            584
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:757cb9b7c126e5300053",
+      "toId": "node:9d5d4d1d5eb72f6f92cb",
+      "from": "西源營地",
+      "to": "2907峰",
+      "minutes": 160,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R53C616E2DA"
+      ],
+      "evidenceRows": [
+        584
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R53C616E2DA",
+          "sheetRows": [
+            584
+          ],
+          "minutes": 160
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:fac669a79a9a25b63056",
+      "toId": "node:7b0dae68c98b7de79a40",
+      "from": "杜鵑營地",
+      "to": "太平溪源",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC237B7A1EE"
+      ],
+      "evidenceRows": [
+        585
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RC237B7A1EE",
+          "sheetRows": [
+            585
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:7b0dae68c98b7de79a40",
+      "toId": "node:fac669a79a9a25b63056",
+      "from": "太平溪源",
+      "to": "杜鵑營地",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC237B7A1EE"
+      ],
+      "evidenceRows": [
+        585
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RC237B7A1EE",
+          "sheetRows": [
+            585
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:cb277db7b164105e3c17",
+      "toId": "node:4a0b2326333b6cbfd23e",
+      "from": "三岔路口",
+      "to": "松林營地",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R044BF54CC7"
+      ],
+      "evidenceRows": [
+        586
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R044BF54CC7",
+          "sheetRows": [
+            586
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:4a0b2326333b6cbfd23e",
+      "toId": "node:cb277db7b164105e3c17",
+      "from": "松林營地",
+      "to": "三岔路口",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R044BF54CC7"
+      ],
+      "evidenceRows": [
+        586
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R044BF54CC7",
+          "sheetRows": [
+            586
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:4a0b2326333b6cbfd23e",
+      "toId": "node:5ab8c1b58de6eeb05b5d",
+      "from": "松林營地",
+      "to": "2897草原水池",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3949D20A7D"
+      ],
+      "evidenceRows": [
+        587
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R3949D20A7D",
+          "sheetRows": [
+            587
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:5ab8c1b58de6eeb05b5d",
+      "toId": "node:4a0b2326333b6cbfd23e",
+      "from": "2897草原水池",
+      "to": "松林營地",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3949D20A7D"
+      ],
+      "evidenceRows": [
+        587
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R3949D20A7D",
+          "sheetRows": [
+            587
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:5ab8c1b58de6eeb05b5d",
+      "toId": "node:37c859d291bd265bd3ce",
+      "from": "2897草原水池",
+      "to": "方便池",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RAD2C36EDDA"
+      ],
+      "evidenceRows": [
+        588
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RAD2C36EDDA",
+          "sheetRows": [
+            588
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:37c859d291bd265bd3ce",
+      "toId": "node:5ab8c1b58de6eeb05b5d",
+      "from": "方便池",
+      "to": "2897草原水池",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RAD2C36EDDA"
+      ],
+      "evidenceRows": [
+        588
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RAD2C36EDDA",
+          "sheetRows": [
+            588
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:37c859d291bd265bd3ce",
+      "toId": "node:bc117dbb33b03fe2cddf",
+      "from": "方便池",
+      "to": "沙武巒草原",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RF71E4146DD"
+      ],
+      "evidenceRows": [
+        589
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RF71E4146DD",
+          "sheetRows": [
+            589
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:bc117dbb33b03fe2cddf",
+      "toId": "node:37c859d291bd265bd3ce",
+      "from": "沙武巒草原",
+      "to": "方便池",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RF71E4146DD"
+      ],
+      "evidenceRows": [
+        589
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RF71E4146DD",
+          "sheetRows": [
+            589
+          ],
+          "minutes": 180
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:bc117dbb33b03fe2cddf",
+      "toId": "node:f3ea090758bb1302bc29",
+      "from": "沙武巒草原",
+      "to": "林道盡頭",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6F54179ABE"
+      ],
+      "evidenceRows": [
+        590
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R6F54179ABE",
+          "sheetRows": [
+            590
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:f3ea090758bb1302bc29",
+      "toId": "node:bc117dbb33b03fe2cddf",
+      "from": "林道盡頭",
+      "to": "沙武巒草原",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6F54179ABE"
+      ],
+      "evidenceRows": [
+        590
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R6F54179ABE",
+          "sheetRows": [
+            590
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:f3ea090758bb1302bc29",
+      "toId": "node:891637431112fc5688eb",
+      "from": "林道盡頭",
+      "to": "34K登山口",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBBA55D7A0C"
+      ],
+      "evidenceRows": [
+        591
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RBBA55D7A0C",
+          "sheetRows": [
+            591
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:891637431112fc5688eb",
+      "toId": "node:f3ea090758bb1302bc29",
+      "from": "34K登山口",
+      "to": "林道盡頭",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBBA55D7A0C"
+      ],
+      "evidenceRows": [
+        591
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RBBA55D7A0C",
+          "sheetRows": [
+            591
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:891637431112fc5688eb",
+      "toId": "node:dee598e1b2437f4ec104",
+      "from": "34K登山口",
+      "to": "32K水泥工寮",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA96E4D6E53"
+      ],
+      "evidenceRows": [
+        592
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RA96E4D6E53",
+          "sheetRows": [
+            592
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:dee598e1b2437f4ec104",
+      "toId": "node:891637431112fc5688eb",
+      "from": "32K水泥工寮",
+      "to": "34K登山口",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA96E4D6E53"
+      ],
+      "evidenceRows": [
+        592
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RA96E4D6E53",
+          "sheetRows": [
+            592
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:dee598e1b2437f4ec104",
+      "toId": "node:6b8235223e06105d242a",
+      "from": "32K水泥工寮",
+      "to": "28K水泥工寮",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9C600DF109"
+      ],
+      "evidenceRows": [
+        593
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R9C600DF109",
+          "sheetRows": [
+            593
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:6b8235223e06105d242a",
+      "toId": "node:dee598e1b2437f4ec104",
+      "from": "28K水泥工寮",
+      "to": "32K水泥工寮",
+      "minutes": 150,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9C600DF109"
+      ],
+      "evidenceRows": [
+        593
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R9C600DF109",
+          "sheetRows": [
+            593
+          ],
+          "minutes": 150
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:6b8235223e06105d242a",
+      "toId": "node:0c8573830abcc97e1e32",
+      "from": "28K水泥工寮",
+      "to": "26K岔路",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R05E323BA92"
+      ],
+      "evidenceRows": [
+        594
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R05E323BA92",
+          "sheetRows": [
+            594
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:0c8573830abcc97e1e32",
+      "toId": "node:6b8235223e06105d242a",
+      "from": "26K岔路",
+      "to": "28K水泥工寮",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R05E323BA92"
+      ],
+      "evidenceRows": [
+        594
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R05E323BA92",
+          "sheetRows": [
+            594
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:0c8573830abcc97e1e32",
+      "toId": "node:5d3084736e9f8bce6d4a",
+      "from": "26K岔路",
+      "to": "19.3K水泥橋",
+      "minutes": 150,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6F21B18DB0"
+      ],
+      "evidenceRows": [
+        595
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R6F21B18DB0",
+          "sheetRows": [
+            595
+          ],
+          "minutes": 150
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:5d3084736e9f8bce6d4a",
+      "toId": "node:0c8573830abcc97e1e32",
+      "from": "19.3K水泥橋",
+      "to": "26K岔路",
+      "minutes": 200,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6F21B18DB0"
+      ],
+      "evidenceRows": [
+        595
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R6F21B18DB0",
+          "sheetRows": [
+            595
+          ],
+          "minutes": 200
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:5d3084736e9f8bce6d4a",
+      "toId": "node:ef56761122345906961b",
+      "from": "19.3K水泥橋",
+      "to": "14.6K水泥路止",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R71B6CF31BA"
+      ],
+      "evidenceRows": [
+        596
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R71B6CF31BA",
+          "sheetRows": [
+            596
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:ef56761122345906961b",
+      "toId": "node:5d3084736e9f8bce6d4a",
+      "from": "14.6K水泥路止",
+      "to": "19.3K水泥橋",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R71B6CF31BA"
+      ],
+      "evidenceRows": [
+        596
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R71B6CF31BA",
+          "sheetRows": [
+            596
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:351f4b260c8941f8d7e4",
+      "toId": "shared:cw-v07-001",
+      "from": "玉林橋大崩壁",
+      "to": "16.5K行車終點",
+      "minutes": 225,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6234AD850D"
+      ],
+      "evidenceRows": [
+        599
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R6234AD850D",
+          "sheetRows": [
+            599
+          ],
+          "minutes": 225
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-001",
+      "toId": "node:351f4b260c8941f8d7e4",
+      "from": "16.5K行車終點",
+      "to": "玉林橋大崩壁",
+      "minutes": 255,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6234AD850D"
+      ],
+      "evidenceRows": [
+        599
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R6234AD850D",
+          "sheetRows": [
+            599
+          ],
+          "minutes": 255
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-040",
+      "toId": "node:351f4b260c8941f8d7e4",
+      "from": "太平谷南口",
+      "to": "玉林橋大崩壁",
+      "minutes": 355,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE5AF375D33"
+      ],
+      "evidenceRows": [
+        600
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RE5AF375D33",
+          "sheetRows": [
+            600
+          ],
+          "minutes": 355
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:351f4b260c8941f8d7e4",
+      "toId": "shared:cw-v07-040",
+      "from": "玉林橋大崩壁",
+      "to": "太平谷南口",
+      "minutes": 435,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE5AF375D33"
+      ],
+      "evidenceRows": [
+        600
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RE5AF375D33",
+          "sheetRows": [
+            600
+          ],
+          "minutes": 435
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:82e77090c06d1fe2aead",
+      "toId": "node:bce5fdf63beb2b9d5c29",
+      "from": "最高峰",
+      "to": "無雙山基點峰",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0A3F93C2C7"
+      ],
+      "evidenceRows": [
+        601
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R0A3F93C2C7",
+          "sheetRows": [
+            601
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:bce5fdf63beb2b9d5c29",
+      "toId": "node:82e77090c06d1fe2aead",
+      "from": "無雙山基點峰",
+      "to": "最高峰",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0A3F93C2C7"
+      ],
+      "evidenceRows": [
+        601
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R0A3F93C2C7",
+          "sheetRows": [
+            601
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:a4c3afd25386960ea875",
+      "toId": "node:e9149e15effc99bc37f7",
+      "from": "東北鞍營地",
+      "to": "郡東營地",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5109FDDF3A"
+      ],
+      "evidenceRows": [
+        602
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "(資料正確，但G15有3個\"岔路\"，改名稱以做區分)",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R5109FDDF3A",
+          "sheetRows": [
+            602
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:e9149e15effc99bc37f7",
+      "toId": "node:a4c3afd25386960ea875",
+      "from": "郡東營地",
+      "to": "東北鞍營地",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5109FDDF3A"
+      ],
+      "evidenceRows": [
+        602
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "(資料正確，但G15有3個\"岔路\"，改名稱以做區分)",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R5109FDDF3A",
+          "sheetRows": [
+            602
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:e9149e15effc99bc37f7",
+      "toId": "node:6976566bc1a316b8e079",
+      "from": "郡東營地",
+      "to": "郡東山",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R86D3C46AF2"
+      ],
+      "evidenceRows": [
+        603
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "(資料正確，但G15有3個\"岔路\"，改名稱以做區分)",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R86D3C46AF2",
+          "sheetRows": [
+            603
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:6976566bc1a316b8e079",
+      "toId": "node:e9149e15effc99bc37f7",
+      "from": "郡東山",
+      "to": "郡東營地",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R86D3C46AF2"
+      ],
+      "evidenceRows": [
+        603
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "(資料正確，但G15有3個\"岔路\"，改名稱以做區分)",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R86D3C46AF2",
+          "sheetRows": [
+            603
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-079",
+      "toId": "shared:cw-v07-078",
+      "from": "馬利加南東峰山屋",
+      "to": "馬利加南山東峰",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3D439F2CD0",
+        "R5435200D95"
+      ],
+      "evidenceRows": [
+        604,
+        672
+      ],
+      "sourceGroups": [
+        "丹大東郡",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R5435200D95",
+          "sheetRows": [
+            604
+          ],
+          "minutes": 30
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R3D439F2CD0",
+          "sheetRows": [
+            672
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-078",
+      "toId": "shared:cw-v07-079",
+      "from": "馬利加南山東峰",
+      "to": "馬利加南東峰山屋",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3D439F2CD0",
+        "R5435200D95"
+      ],
+      "evidenceRows": [
+        604,
+        672
+      ],
+      "sourceGroups": [
+        "丹大東郡",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R5435200D95",
+          "sheetRows": [
+            604
+          ],
+          "minutes": 20
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R3D439F2CD0",
+          "sheetRows": [
+            672
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-078",
+      "toId": "shared:cw-v07-080",
+      "from": "馬利加南山東峰",
+      "to": "馬布谷山屋",
+      "minutes": 245,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5EFE015B94"
+      ],
+      "evidenceRows": [
+        605
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R5EFE015B94",
+          "sheetRows": [
+            605
+          ],
+          "minutes": 245
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-080",
+      "toId": "shared:cw-v07-078",
+      "from": "馬布谷山屋",
+      "to": "馬利加南山東峰",
+      "minutes": 310,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5EFE015B94"
+      ],
+      "evidenceRows": [
+        605
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R5EFE015B94",
+          "sheetRows": [
+            605
+          ],
+          "minutes": 310
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-080",
+      "toId": "shared:cw-v07-040",
+      "from": "馬布谷山屋",
+      "to": "太平谷南口",
+      "minutes": 325,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE86C43D59C"
+      ],
+      "evidenceRows": [
+        606
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RE86C43D59C",
+          "sheetRows": [
+            606
+          ],
+          "minutes": 325
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-040",
+      "toId": "shared:cw-v07-080",
+      "from": "太平谷南口",
+      "to": "馬布谷山屋",
+      "minutes": 360,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE86C43D59C"
+      ],
+      "evidenceRows": [
+        606
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RE86C43D59C",
+          "sheetRows": [
+            606
+          ],
+          "minutes": 360
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:4d88bca8baa6a866c727",
+      "toId": "node:891637431112fc5688eb",
+      "from": "鐵線斷崖東口",
+      "to": "34K登山口",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R01ECCA6E6B"
+      ],
+      "evidenceRows": [
+        607
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R01ECCA6E6B",
+          "sheetRows": [
+            607
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:891637431112fc5688eb",
+      "toId": "node:4d88bca8baa6a866c727",
+      "from": "34K登山口",
+      "to": "鐵線斷崖東口",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R01ECCA6E6B"
+      ],
+      "evidenceRows": [
+        607
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R01ECCA6E6B",
+          "sheetRows": [
+            607
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:4a0b2326333b6cbfd23e",
+      "toId": "node:d03e5cea91ce41e0ca2a",
+      "from": "松林營地",
+      "to": "鐵線斷崖西口",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC77978B9E7"
+      ],
+      "evidenceRows": [
+        608
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RC77978B9E7",
+          "sheetRows": [
+            608
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:d03e5cea91ce41e0ca2a",
+      "toId": "node:4a0b2326333b6cbfd23e",
+      "from": "鐵線斷崖西口",
+      "to": "松林營地",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC77978B9E7"
+      ],
+      "evidenceRows": [
+        608
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RC77978B9E7",
+          "sheetRows": [
+            608
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:fac669a79a9a25b63056",
+      "toId": "node:9d5d4d1d5eb72f6f92cb",
+      "from": "杜鵑營地",
+      "to": "2907峰",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R8D634EA3A8"
+      ],
+      "evidenceRows": [
+        609
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R8D634EA3A8",
+          "sheetRows": [
+            609
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:9d5d4d1d5eb72f6f92cb",
+      "toId": "node:fac669a79a9a25b63056",
+      "from": "2907峰",
+      "to": "杜鵑營地",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R8D634EA3A8"
+      ],
+      "evidenceRows": [
+        609
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "R8D634EA3A8",
+          "sheetRows": [
+            609
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:b865066ee7995702c0d4",
+      "toId": "node:9f59facbac44a2e55ce7",
+      "from": "盧利拉駱山",
+      "to": "太平溪源營地",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB3B2D932F8"
+      ],
+      "evidenceRows": [
+        610
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "輕裝",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RB3B2D932F8",
+          "sheetRows": [
+            610
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:9f59facbac44a2e55ce7",
+      "toId": "node:b865066ee7995702c0d4",
+      "from": "太平溪源營地",
+      "to": "盧利拉駱山",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB3B2D932F8"
+      ],
+      "evidenceRows": [
+        610
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "輕裝",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RB3B2D932F8",
+          "sheetRows": [
+            610
+          ],
+          "minutes": 65
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:c8870812bd546115bac5",
+      "toId": "node:9f59facbac44a2e55ce7",
+      "from": "三岔路口營地",
+      "to": "太平溪源營地",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCF9F4A3EA6"
+      ],
+      "evidenceRows": [
+        611
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RCF9F4A3EA6",
+          "sheetRows": [
+            611
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    },
+    {
+      "fromId": "node:9f59facbac44a2e55ce7",
+      "toId": "node:c8870812bd546115bac5",
+      "from": "太平溪源營地",
+      "to": "三岔路口營地",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCF9F4A3EA6"
+      ],
+      "evidenceRows": [
+        611
+      ],
+      "sourceGroups": [
+        "丹大東郡"
+      ],
+      "sourceChart": "G15",
+      "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "丹大東郡",
+          "chartId": "G15",
+          "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "rowId": "RCF9F4A3EA6",
+          "sheetRows": [
+            611
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "丹大東郡"
+      ]
+    }
+  ],
+  "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+}
