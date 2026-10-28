@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "chartId": "G20",
+  "chartURL": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+  "reviewedAt": "2026-10-28",
+  "reviewedBy": "assistant",
+  "status": "partial-source-checked",
+  "reviewScope": "Five pairs from new trailhead to 檜谷山莊, visible on official G20 diagram indexed by the publisher; all remaining candidate edges pending",
+  "directionPairs": [
+    {
+      "from": "新登山口",
+      "to": "舊登山口",
+      "forwardMinutes": 100,
+      "reverseMinutes": 70,
+      "travelMode": "walking"
+    },
+    {
+      "from": "舊登山口",
+      "to": "越嶺鞍部",
+      "forwardMinutes": 90,
+      "reverseMinutes": 60,
+      "travelMode": "walking"
+    },
+    {
+      "from": "越嶺鞍部",
+      "to": "3.8K 展望平台",
+      "forwardMinutes": 90,
+      "reverseMinutes": 60,
+      "travelMode": "walking"
+    },
+    {
+      "from": "3.8K 展望平台",
+      "to": "4K 三岔路口",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking"
+    },
+    {
+      "from": "4K 三岔路口",
+      "to": "檜谷山莊",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking"
+    }
+  ],
+  "excludedFromWalking": [
+    "潮州→萬巒",
+    "萬巒→泰武",
+    "泰武→新登山口"
+  ],
+  "unreviewed": "4K岔路口 onward towards 南大武山展望點, 大武神木, 最後水源, 主稜線, 大武祠, summit",
+  "candidateAlias": {
+    "candidate": "舊登登山口",
+    "officialDisplay": "舊登山口"
+  },
+  "sourceNote": "Source-visible arrows reviewed for these five pairs only; does not establish current trail safety or walkability."
+}
