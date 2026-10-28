@@ -41,10 +41,12 @@
     },
     {
       "id": "G07",
-      "chartURL": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new3.jpg",
-      "revision": "updated-diagram-linked-by-official-index",
+      "chartURL": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "revision": "full-schematic-plus-local-update",
       "retrievalMethod": "official-index-link",
-      "perDirectionVerified": false
+      "perDirectionVerified": false,
+      "updateChartURL": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new3.jpg",
+      "updateScope": "Local correction map; use together with full schematic, not as its replacement."
     },
     {
       "id": "G08",
@@ -55,10 +57,12 @@
     },
     {
       "id": "G09",
-      "chartURL": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new3.jpg",
-      "revision": "updated-diagram-linked-by-official-index",
+      "chartURL": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg",
+      "revision": "full-schematic-plus-local-update",
       "retrievalMethod": "official-index-link",
-      "perDirectionVerified": false
+      "perDirectionVerified": false,
+      "updateChartURL": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new3.jpg",
+      "updateScope": "Local correction map; use together with full schematic, not as its replacement."
     },
     {
       "id": "G10",

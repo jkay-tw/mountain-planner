@@ -540,8 +540,8 @@ test('v0.7.12 global route browser keeps scopes without clearing itinerary',asyn
  for(const id of ['G06','G17G18-PREVIEW'])assert.ok(manifest.routes.some(x=>x.id===id),id);
  const html=readFileSync(new URL('../unified-editor.html',import.meta.url),'utf8');
  const app=readFileSync(new URL('../js/unified-editor.js',import.meta.url),'utf8');
- assert.ok(html.includes('js/unified-editor.js?v=v0721'));
- assert.ok(app.includes('v0.7.21 Unified Preview'));
+ assert.ok(html.includes('js/unified-editor.js?v=v0722'));
+ assert.ok(app.includes('v0.7.22 Unified Preview'));
  assert.match(app,/mergeReviewedRoutes/);
  assert.ok(app.includes('nodesInScope(route,scope)'));
  assert.match(app,/appendDisconnectedNode/);
@@ -610,14 +610,17 @@ test('G07 full updated source review matches all 92 preview directions',async()=
  const audit=JSON.parse(readFileSync(new URL('../data/audits/G07_full_official_directional_review_20261028.json',import.meta.url),'utf8'));
  assert.equal(audit.reviewedPairs.length,46);
  assert.equal(audit.directedEdges,92);
- assert.equal(route.segments.length,92);
+ assert.equal(route.segments.length,94);
  for(const p of audit.reviewedPairs){
   const a=route.segments.find(x=>x.from===p.from&&x.to===p.to);
   const b=route.segments.find(x=>x.from===p.to&&x.to===p.from);
   assert.equal(a?.minutes,p.forwardMinutes,p.from+'→'+p.to);
   assert.equal(b?.minutes,p.reverseMinutes,p.to+'→'+p.from);
  }
- assert.ok(route.segments.every(x=>x.source==='https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg'));
+ assert.ok(route.segments.every(x=>[
+  'https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg',
+  'https://www.sunriver.com.tw/images/hiking/G07_hiking_new3.jpg'].includes(x.source)));
+ assert.equal(route.segments.filter(e=>e.routingEnabled===false).length,2);
 });
 test('v0.7.13 unified manifest adds G07 without changing existing G06/G17G18 IDs',async()=>{
  const {readFileSync}=await import('node:fs');
@@ -804,6 +807,7 @@ test('source-version quarantine retains G07 identities but excludes its walking 
  const {readFileSync}=await import('node:fs');
  const {mergeReviewedRoutes}=await import('../js/global-route.js');
  const raw=JSON.parse(readFileSync(new URL('../data/routes/G07.preview.json',import.meta.url),'utf8'));
+ raw.routingEnabled=false;
  const historical=JSON.stringify(raw.segments);
  const g=mergeReviewedRoutes([addRouteIdentity(raw)]);
  assert.equal(raw.routingEnabled,false);
@@ -819,4 +823,20 @@ test('G20 full timed mainline preserves directional totals and excludes untimed 
  assert.equal(up.minutes,640);
  assert.equal(down.minutes,445);
  assert.ok(!r.nodes.some(n=>['霧頭山','南大武山'].includes(n.name)));
+});
+
+
+test('G07 composite review permits only update-backed pond and summit directions',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const {mergeReviewedRoutes}=await import('../js/global-route.js');
+ const r=addRouteIdentity(JSON.parse(readFileSync(new URL('../data/routes/G07.preview.json',import.meta.url),'utf8')));
+ const g=mergeReviewedRoutes([r]);
+ assert.equal(g.segments.length,92);
+ assert.equal(shortestPath(g,'g07-043','g07-030').minutes,55);
+ assert.equal(shortestPath(g,'g07-030','g07-043').minutes,50);
+ assert.equal(shortestPath(g,'g07-030','g07-033').minutes,40);
+ assert.equal(shortestPath(g,'g07-033','g07-030').minutes,20);
+ assert.ok(!g.segments.some(s=>new Set([s.fromId,s.toId]).has('g07-030')&&new Set([s.fromId,s.toId]).has('g07-031')));
+ assert.equal(shortestPath(r,'g07-031','g07-030'),null);
+ assert.equal(shortestPath(g,'g07-031','g07-030'),null);
 });

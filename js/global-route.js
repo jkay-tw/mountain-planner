@@ -18,6 +18,7 @@ export function mergeReviewedRoutes(routes) {
     // Keep identities available for saved plans and manual connections while quarantined.
     if(route.routingEnabled===false)continue;
     for(const s of route.segments||[]) {
+      if(s.routingEnabled===false)continue;
       if(!ids.has(s.fromId)||!ids.has(s.toId))throw new Error('Dangling segment identity');
       const existing=segments.find(x=>x.fromId===s.fromId&&x.toId===s.toId);
       if(existing) {

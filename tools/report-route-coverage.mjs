@@ -26,13 +26,14 @@ export function reportCatalog(manifest,load){
       const k=e.fromId+'\0'+e.toId;
       if(seen.has(k))throw new Error('Duplicate directed walking edge '+row.id);
       seen.set(k,e.minutes);
+      if(e.routingEnabled===false)continue;
       if(e.travelMode&&e.travelMode!=='walking')throw new Error('Vehicle edge in published preview '+row.id);
       if(e.verificationStatus&&e.verificationStatus!=='verified')throw new Error('Candidate edge in verified preview '+row.id);
       if(e.status&&e.status!=='checked')throw new Error('Unapproved edge in G06 '+row.id);
       if(!e.from||!e.to)throw new Error('Unlabeled segment '+row.id);
     }
     reports.push({id:row.id,source:row.source_url,nodeCount:r.nodes.length,directedEdges:r.segments.length,
-      routingEnabled:r.routingEnabled!==false,verificationScope:row.status});
+      routingEnabled:r.routingEnabled!==false,disabledDirections:r.segments.filter(e=>e.routingEnabled===false).length,verificationScope:row.status});
     routes.push(r);
   }
   const combined=mergeReviewedRoutes(routes);

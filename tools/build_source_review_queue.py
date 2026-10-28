@@ -11,7 +11,7 @@ from pathlib import Path
 
 FIELDS=['priority','chartId','chartGroup','from','to','candidateMinutes',
         'reverseCandidateMinutes','candidateGroup','sourceIndexURL',
-        'sourceChartURL','sourceVerified','reviewedBy','reviewedAt',
+        'sourceChartURL','sourceUpdateChartURL','sourceVerified','reviewedBy','reviewedAt',
         'evidenceNote','travelMode','publicationPermission','issueTags']
 
 def build(candidate,mapping,output,chart_sources=None):
@@ -21,6 +21,7 @@ def build(candidate,mapping,output,chart_sources=None):
     known={x['candidateGroup']:x for x in conf['mapping']}
     sources=json.loads(Path(chart_sources).read_text(encoding='utf-8-sig')) if chart_sources else {'charts':[]}
     chart_urls={entry['id']:entry['chartURL'] for entry in sources['charts']}
+    update_urls={entry['id']:entry.get('updateChartURL','') for entry in sources['charts']}
     corrections=collections.defaultdict(set)
     for row in raw['segments']:
         group=row['group']
@@ -42,6 +43,7 @@ def build(candidate,mapping,output,chart_sources=None):
             candidateMinutes=' / '.join(map(str,sorted(times))),
             reverseCandidateMinutes=' / '.join(map(str,sorted(reverse))),
             candidateGroup=group,sourceIndexURL=source,sourceChartURL=chart_urls.get(chart,'') if chart else '',
+            sourceUpdateChartURL=update_urls.get(chart,'') if chart else '',
             sourceVerified='pending',reviewedBy='',reviewedAt='',evidenceNote='',
             travelMode='needs_review',publicationPermission='pending',
             issueTags=' / '.join(issues))
