@@ -9,18 +9,25 @@ export function buildNodeRegistry(route){
   const defined=route.nodes||[];
   const byName=new Map();
   const byId=new Map();
+  const ambiguousNames=new Set();
+  const definedNodes=[];
   for(const node of defined){
-    if(!node?.id||!node?.name||byId.has(node.id)||byName.has(node.name))throw new Error('Duplicate or invalid node identity');
-    byName.set(node.name,{...node,routeId:route.route_id});
-    byId.set(node.id,byName.get(node.name));
+    if(!node?.id||!node?.name||byId.has(node.id))throw new Error('Duplicate or invalid node identity');
+    const normalized={...node,routeId:route.route_id};
+    definedNodes.push(normalized);byId.set(node.id,normalized);
+    if(ambiguousNames.has(node.name))continue;
+    if(byName.has(node.name)){
+      byName.delete(node.name);
+      ambiguousNames.add(node.name);
+    }else byName.set(node.name,normalized);
   }
   for(const name of names){
-    if(byName.has(name))continue;
+    if(byName.has(name)||ambiguousNames.has(name))continue;
     const node={id:provisionalNodeId(route.route_id,name),name,routeId:route.route_id,identityStatus:'provisional'};
     if(byId.has(node.id))throw new Error('Node ID collision');
-    byName.set(name,node);byId.set(node.id,node);
+    definedNodes.push(node);byName.set(name,node);byId.set(node.id,node);
   }
-  return {nodes:[...byName.values()],byName,byId};
+  return {nodes:definedNodes,byName,byId,ambiguousNames};
 }
 export function addRouteIdentity(route){
   const registry=buildNodeRegistry(route);
@@ -37,6 +44,7 @@ export function migrateDaysToNodeIds(rawDays,route){
   return rawDays.map(day=>({...day,items:day.items.map(item=>{
     if(item.type!=='location')return {...item};
     const byId=registry?.byId.get(item.nodeId);
+    if(!item.nodeId&&registry?.ambiguousNames?.has(item.name))throw new Error('Ambiguous node name requires nodeId: '+item.name);
     const node=byId||registry?.byName.get(item.name);
     // Do not silently map an unrecognized name or an existing ID to a different place.
     if(item.nodeId&&!byId)throw new Error('Unknown node ID: '+item.nodeId);
