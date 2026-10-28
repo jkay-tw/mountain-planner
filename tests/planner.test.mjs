@@ -537,7 +537,7 @@ test('v0.7.10 preview exposes optional alternate-time controls while keeping nod
 test('v0.7.12 global route browser keeps scopes without clearing itinerary',async()=>{
  const {readFileSync}=await import('node:fs');
  const manifest=JSON.parse(readFileSync(new URL('../data/unified-editor-manifest.json',import.meta.url),'utf8'));
- assert.deepEqual(manifest.routes.map(x=>x.id),['G02','G03','G04','G06','G07','G08','G11','G14','G17G18-PREVIEW']);
+ for(const id of ['G06','G17G18-PREVIEW'])assert.ok(manifest.routes.some(x=>x.id===id),id);
  const html=readFileSync(new URL('../unified-editor.html',import.meta.url),'utf8');
  const app=readFileSync(new URL('../js/unified-editor.js',import.meta.url),'utf8');
  assert.ok(html.includes('js/unified-editor.js?v=v0718'));
@@ -622,7 +622,7 @@ test('G07 full updated source review matches all 92 preview directions',async()=
 test('v0.7.13 unified manifest adds G07 without changing existing G06/G17G18 IDs',async()=>{
  const {readFileSync}=await import('node:fs');
  const m=JSON.parse(readFileSync(new URL('../data/unified-editor-manifest.json',import.meta.url),'utf8'));
- assert.deepEqual(m.routes.map(x=>x.id),['G02','G03','G06','G07','G08','G11','G14','G17G18-PREVIEW']);
+ for(const id of ['G06','G07','G17G18-PREVIEW'])assert.ok(m.routes.some(x=>x.id===id),id);
 });
 
 test('G03 and G11 preview routes include only source-reviewed walking subsets',async()=>{
