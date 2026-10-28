@@ -1,0 +1,975 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-28",
+  "basis": "G02–G20官方主要步程示意圖；局部地形更新圖不自動產生新節點",
+  "inputRows": 869,
+  "inputSHA256": "15f39d17615efcfcdb2e08fa0deee7e714c80fe5e97dd7e636023382a167e595",
+  "groupCount": 24,
+  "chartCount": 19,
+  "statusCounts": {
+    "車行／交通資料": 64,
+    "一致": 766,
+    "時間差異": 16,
+    "條件時間混入標準／重複列": 9,
+    "接線或端點差異": 11,
+    "箭頭交會待確認": 3
+  },
+  "note": "一致表示本表端點名稱（含明列別名）與去回分鐘吻合；不是實體節點ID或現地可通行性驗證。G13三列箭頭仍待人工辨識，未標通過。",
+  "groups": [
+    {
+      "group": "丹大山列",
+      "chart": "G14",
+      "rows": 30,
+      "statuses": {
+        "車行／交通資料": 1,
+        "一致": 29
+      }
+    },
+    {
+      "group": "丹大東郡",
+      "chart": "G15",
+      "rows": 76,
+      "statuses": {
+        "車行／交通資料": 4,
+        "一致": 67,
+        "時間差異": 2,
+        "接線或端點差異": 3
+      }
+    },
+    {
+      "group": "八通關越嶺",
+      "chart": "逐段對照G02側線",
+      "rows": 19,
+      "statuses": {
+        "一致": 19
+      }
+    },
+    {
+      "group": "北一段",
+      "chart": "G07",
+      "rows": 46,
+      "statuses": {
+        "一致": 46
+      }
+    },
+    {
+      "group": "北二段",
+      "chart": "G08",
+      "rows": 25,
+      "statuses": {
+        "一致": 23,
+        "條件時間混入標準／重複列": 2
+      }
+    },
+    {
+      "group": "北大武山",
+      "chart": "G20",
+      "rows": 14,
+      "statuses": {
+        "車行／交通資料": 3,
+        "一致": 11
+      }
+    },
+    {
+      "group": "南一段",
+      "chart": "G19",
+      "rows": 45,
+      "statuses": {
+        "一致": 41,
+        "車行／交通資料": 2,
+        "接線或端點差異": 1,
+        "時間差異": 1
+      }
+    },
+    {
+      "group": "南二段",
+      "chart": "G17",
+      "rows": 68,
+      "statuses": {
+        "一致": 64,
+        "時間差異": 3,
+        "條件時間混入標準／重複列": 1
+      }
+    },
+    {
+      "group": "合歡群峰",
+      "chart": "G09",
+      "rows": 40,
+      "statuses": {
+        "車行／交通資料": 16,
+        "一致": 21,
+        "時間差異": 2,
+        "接線或端點差異": 1
+      }
+    },
+    {
+      "group": "大霸聖稜武陵四秀",
+      "chart": "G04",
+      "rows": 75,
+      "statuses": {
+        "一致": 73,
+        "車行／交通資料": 2
+      }
+    },
+    {
+      "group": "太魯閣山列",
+      "chart": "G10",
+      "rows": 31,
+      "statuses": {
+        "一致": 30,
+        "時間差異": 1
+      }
+    },
+    {
+      "group": "奇萊",
+      "chart": "G09",
+      "rows": 25,
+      "statuses": {
+        "車行／交通資料": 2,
+        "一致": 22,
+        "接線或端點差異": 1
+      }
+    },
+    {
+      "group": "屏風山",
+      "chart": "G09",
+      "rows": 12,
+      "statuses": {
+        "車行／交通資料": 1,
+        "一致": 10,
+        "時間差異": 1
+      }
+    },
+    {
+      "group": "干卓萬群峰",
+      "chart": "G13",
+      "rows": 36,
+      "statuses": {
+        "車行／交通資料": 5,
+        "一致": 25,
+        "箭頭交會待確認": 3,
+        "條件時間混入標準／重複列": 2,
+        "時間差異": 1
+      }
+    },
+    {
+      "group": "新康橫斷",
+      "chart": "G18",
+      "rows": 50,
+      "statuses": {
+        "車行／交通資料": 1,
+        "一致": 46,
+        "接線或端點差異": 2,
+        "時間差異": 1
+      }
+    },
+    {
+      "group": "玉山群峰",
+      "chart": "G02",
+      "rows": 30,
+      "statuses": {
+        "車行／交通資料": 1,
+        "一致": 29
+      }
+    },
+    {
+      "group": "畢祿羊頭連峰縱走",
+      "chart": "G08",
+      "rows": 12,
+      "statuses": {
+        "一致": 11,
+        "車行／交通資料": 1
+      }
+    },
+    {
+      "group": "白姑大山",
+      "chart": "G06",
+      "rows": 11,
+      "statuses": {
+        "一致": 9,
+        "車行／交通資料": 2
+      }
+    },
+    {
+      "group": "能高安東軍",
+      "chart": "G12",
+      "rows": 40,
+      "statuses": {
+        "車行／交通資料": 3,
+        "一致": 37
+      }
+    },
+    {
+      "group": "能高越嶺",
+      "chart": "G11",
+      "rows": 19,
+      "statuses": {
+        "車行／交通資料": 6,
+        "一致": 13
+      }
+    },
+    {
+      "group": "西巒大山",
+      "chart": "G03",
+      "rows": 7,
+      "statuses": {
+        "車行／交通資料": 1,
+        "一致": 6
+      }
+    },
+    {
+      "group": "郡大山",
+      "chart": "G03",
+      "rows": 5,
+      "statuses": {
+        "車行／交通資料": 2,
+        "一致": 3
+      }
+    },
+    {
+      "group": "雪山西南稜",
+      "chart": "G05",
+      "rows": 72,
+      "statuses": {
+        "一致": 59,
+        "時間差異": 2,
+        "車行／交通資料": 8,
+        "條件時間混入標準／重複列": 3
+      }
+    },
+    {
+      "group": "馬博拉斯橫斷",
+      "chart": "G16",
+      "rows": 81,
+      "statuses": {
+        "一致": 72,
+        "時間差異": 2,
+        "接線或端點差異": 3,
+        "車行／交通資料": 3,
+        "條件時間混入標準／重複列": 1
+      }
+    }
+  ],
+  "nameDifferences": [
+    {
+      "chart": "G02",
+      "jsonName": "大鐵山",
+      "officialName": "大鐵杉",
+      "rows": [
+        10
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G03",
+      "jsonName": "十八重溪橋",
+      "officialName": "十八重溪橋檢查哨",
+      "rows": [
+        50
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G04",
+      "jsonName": "8.8 K岔路",
+      "officialName": "8.8K岔路",
+      "rows": [
+        79,
+        80,
+        132
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G04",
+      "jsonName": "池有山岔路口",
+      "officialName": "池有山登山口",
+      "rows": [
+        120,
+        121,
+        136
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G05",
+      "jsonName": "大南山山西鞍營地",
+      "officialName": "大南山西鞍營地",
+      "rows": [
+        142,
+        143
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G05",
+      "jsonName": "大雪北山",
+      "officialName": "大雪山",
+      "rows": [
+        150
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G06",
+      "jsonName": "水管路岔路口",
+      "officialName": "水管路岔路",
+      "rows": [
+        215,
+        216
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G08",
+      "jsonName": "8.4k登山口營地",
+      "officialName": "8.4K登山口營地",
+      "rows": [
+        266,
+        267
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G09",
+      "jsonName": "果原登山口",
+      "officialName": "果園登山口",
+      "rows": [
+        368
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G09",
+      "jsonName": "華崗",
+      "officialName": "華岡",
+      "rows": [
+        327,
+        351,
+        352
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G09",
+      "jsonName": "華崗岔路口",
+      "officialName": "華岡岔路口",
+      "rows": [
+        329
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G09",
+      "jsonName": "華崗登山口",
+      "officialName": "華岡登山口",
+      "rows": [
+        329
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G09",
+      "jsonName": "滑訓中心",
+      "officialName": "舊滑訓中心",
+      "rows": [
+        323
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G09",
+      "jsonName": "滑雪山莊奇萊登山口",
+      "officialName": "奇萊登山口滑雪山莊",
+      "rows": [
+        350,
+        374
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G09",
+      "jsonName": "縣界啞口",
+      "officialName": "縣界埡口",
+      "rows": [
+        335,
+        336
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G10",
+      "jsonName": "3.8K流龍頭",
+      "officialName": "3.8K流籠頭",
+      "rows": [
+        407,
+        410
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G10",
+      "jsonName": "三岔營地",
+      "officialName": "三叉營地",
+      "rows": [
+        394,
+        395,
+        396
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G11",
+      "jsonName": "縣界啞口",
+      "officialName": "縣界埡口",
+      "rows": [
+        415,
+        416,
+        427,
+        428
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G12",
+      "jsonName": "縣界啞口",
+      "officialName": "縣界埡口",
+      "rows": [
+        434,
+        435
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G13",
+      "jsonName": "十粒溪營地",
+      "officialName": "十粒溪源營地",
+      "rows": [
+        489,
+        490
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G15",
+      "jsonName": "33.5K大崩山",
+      "officialName": "33.5K大崩塌",
+      "rows": [
+        539
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G15",
+      "jsonName": "東巒/烏達岔路",
+      "officialName": "岔路",
+      "rows": [
+        549
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G15",
+      "jsonName": "天南可蘭/望崖岔路",
+      "officialName": "岔路",
+      "rows": [
+        559,
+        560,
+        561
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G15",
+      "jsonName": "三岔路營地",
+      "officialName": "三岔路口營地",
+      "rows": [
+        576,
+        577,
+        611
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G15",
+      "jsonName": "烏利加南東峰山屋",
+      "officialName": "",
+      "rows": [
+        600
+      ],
+      "category": "主步程圖未見此名稱",
+      "note": "不得作為已核實的新節點；需刪除候選或提供對應證據。"
+    },
+    {
+      "chart": "G15",
+      "jsonName": "麻利加南東峰山屋",
+      "officialName": "",
+      "rows": [
+        600
+      ],
+      "category": "主步程圖未見此名稱",
+      "note": "不得作為已核實的新節點；需刪除候選或提供對應證據。"
+    },
+    {
+      "chart": "G16",
+      "jsonName": "八通關山三岔路口",
+      "officialName": "三岔路口",
+      "rows": [
+        626,
+        627,
+        692
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G16",
+      "jsonName": "馬西山口",
+      "officialName": "馬西山登山口",
+      "rows": [
+        639
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G16",
+      "jsonName": "喀西帕南山登山口",
+      "officialName": "喀西帕南登山口",
+      "rows": [
+        641,
+        642,
+        668
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G16",
+      "jsonName": "廢棄工寮",
+      "officialName": "35K廢棄工寮",
+      "rows": [
+        648
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G16",
+      "jsonName": "杜騰營地",
+      "officialName": "杜鵑營地",
+      "rows": [
+        664,
+        665
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G16",
+      "jsonName": "烏哇拉路",
+      "officialName": "",
+      "rows": [
+        639,
+        640
+      ],
+      "category": "主步程圖未見此名稱",
+      "note": "不得作為已核實的新節點；需刪除候選或提供對應證據。"
+    },
+    {
+      "chart": "G17",
+      "jsonName": "八通關山三岔路口",
+      "officialName": "三岔路口",
+      "rows": [
+        702,
+        703,
+        704
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G17",
+      "jsonName": "向陽山三岔路口",
+      "officialName": "三岔路口",
+      "rows": [
+        748,
+        749,
+        751
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G17",
+      "jsonName": "大水窟山三岔路",
+      "officialName": "三岔路口",
+      "rows": [
+        756
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G17",
+      "jsonName": "大水窟山三岔路口",
+      "officialName": "三岔路口",
+      "rows": [
+        723,
+        724,
+        755
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G17",
+      "jsonName": "秀姑巒山舊址",
+      "officialName": "秀馬山屋舊址",
+      "rows": [
+        715
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G17",
+      "jsonName": "老濃溪營地",
+      "officialName": "荖濃溪底營地",
+      "rows": [
+        723
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G18",
+      "jsonName": "三叉營地",
+      "officialName": "三叉稜下營地",
+      "rows": [
+        795
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G20",
+      "jsonName": "舊登登山口",
+      "officialName": "舊登山口",
+      "rows": [
+        814,
+        815
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G20",
+      "jsonName": "主稜稜線",
+      "officialName": "主稜嶺線",
+      "rows": [
+        822,
+        823
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G20",
+      "jsonName": "越嶺鞍部",
+      "officialName": "1.75K越嶺鞍部",
+      "rows": [
+        815,
+        816
+      ],
+      "category": "名稱／別名差異",
+      "note": "只列原圖標籤差異，不據此自動合併實體ID。"
+    },
+    {
+      "chart": "G07",
+      "jsonName": "黑水塘（g07-043）",
+      "officialName": "無",
+      "rows": [],
+      "category": "Preview額外節點",
+      "note": "原始869筆北一段JSON沒有此節點；為v0.7.22從局部更新圖額外加入，本次已從路網移除。G17的同名黑水塘確實有主圖標示，不受影響。"
+    },
+    {
+      "chart": "G13",
+      "jsonName": "火山",
+      "officialName": "萬里山西峰",
+      "rows": [],
+      "category": "既有使用者核准顯示別名",
+      "note": "使用者已明確要求顯示火山；保留原圖名稱為來源標籤，不是新增實體節點。"
+    }
+  ],
+  "missingNames": [
+    {
+      "chart": "G02",
+      "officialName": "三聖宮",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G02",
+      "officialName": "乙女瀑布",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G02",
+      "officialName": "八通關山",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G02",
+      "officialName": "八通關山登山口",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G02",
+      "officialName": "八通關山西峰",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G02",
+      "officialName": "八通關登山口",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G02",
+      "officialName": "八通關草原",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G02",
+      "officialName": "古道崩斷岔路",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G02",
+      "officialName": "和社",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G02",
+      "officialName": "對觀",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G02",
+      "officialName": "東埔溫泉",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G02",
+      "officialName": "樂樂山屋",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G02",
+      "officialName": "樂樂溫泉岔路",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G02",
+      "officialName": "水里",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G02",
+      "officialName": "溪水營地",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G02",
+      "officialName": "西峰岔路",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G02",
+      "officialName": "觀高坪",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G02",
+      "officialName": "觀高登山服務站",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G02",
+      "officialName": "阿里山",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G02",
+      "officialName": "雲龍瀑布",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G10",
+      "officialName": "3K苗圃工寮",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G10",
+      "officialName": "大禹嶺",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G10",
+      "officialName": "天祥",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G10",
+      "officialName": "豬股山",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G15",
+      "officialName": "東巒大山",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G17",
+      "officialName": "埡口山莊",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G18",
+      "officialName": "利稻",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G19",
+      "officialName": "7K特生中心",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G19",
+      "officialName": "寶來檢查哨",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G19",
+      "officialName": "梅山",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G19",
+      "officialName": "禮觀",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G19",
+      "officialName": "第一水源",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    },
+    {
+      "chart": "G19",
+      "officialName": "美壠山砲台",
+      "status": "主圖有標示、該圖候選群組未收錄（局部資料不等於錯誤）"
+    }
+  ],
+  "runtimeDifferences": [],
+  "privateReport": "Full 869-row comparison is delivered privately; no original candidate file committed.",
+  "graphFilesChecked": [
+    {
+      "file": "data/routes/G02.preview.json",
+      "nodes": 30,
+      "directions": 58
+    },
+    {
+      "file": "data/routes/G03.preview.json",
+      "nodes": 11,
+      "directions": 18
+    },
+    {
+      "file": "data/routes/G04.preview.json",
+      "nodes": 69,
+      "directions": 146
+    },
+    {
+      "file": "data/routes/G06.json",
+      "nodes": 10,
+      "directions": 18
+    },
+    {
+      "file": "data/routes/G07.preview.json",
+      "nodes": 42,
+      "directions": 92
+    },
+    {
+      "file": "data/routes/G08.preview.json",
+      "nodes": 34,
+      "directions": 68
+    },
+    {
+      "file": "data/routes/G11.preview.json",
+      "nodes": 13,
+      "directions": 26
+    },
+    {
+      "file": "data/routes/G14.preview.json",
+      "nodes": 29,
+      "directions": 58
+    },
+    {
+      "file": "data/routes/G17G18.preview.json",
+      "nodes": 24,
+      "directions": 46
+    },
+    {
+      "file": "data/routes/G20.preview.json",
+      "nodes": 12,
+      "directions": 22
+    },
+    {
+      "file": "data/staging/G06.verified-walking.json",
+      "nodes": 10,
+      "directions": 18
+    },
+    {
+      "file": "data/staging/G11.verified-walking.json",
+      "nodes": 13,
+      "directions": 26
+    },
+    {
+      "file": "data/staging/G17.overlap-verified-subset.json",
+      "nodes": 10,
+      "directions": 18
+    },
+    {
+      "file": "data/staging/G18.overlap-verified-subset.json",
+      "nodes": 17,
+      "directions": 32
+    },
+    {
+      "file": "preview/data/routes/G06.json",
+      "nodes": 0,
+      "directions": 18
+    }
+  ]
+}

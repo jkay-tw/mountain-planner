@@ -1,14 +1,13 @@
 {
   "route_id": "G07",
   "route_name": "北一段",
-  "status": "partial-source-reviewed-preview",
+  "status": "source-reviewed-preview",
   "routingPolicy": "verified-walking-only",
   "source": {
     "publisher": "上河文化",
     "page_url": "https://www.sunriver.com.tw/step2020.htm",
     "image_url": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
-    "revision": "full schematic plus local update independently rechecked 2026-10-28",
-    "update_image_url": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new3.jpg"
+    "revision": "official main step schematic; owner confirmed 1K-to-2.2K 50/35 on 2026-10-28"
   },
   "nodes": [
     {
@@ -220,13 +219,6 @@
       "id": "g07-042",
       "name": "獵寮岔路",
       "identityStatus": "route-source-reviewed"
-    },
-    {
-      "id": "g07-043",
-      "name": "黑水塘",
-      "identityStatus": "source-labeled",
-      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new3.jpg",
-      "aliases": []
     }
   ],
   "segments": [
@@ -1073,12 +1065,9 @@
       "toId": "g07-030",
       "minutes": 35,
       "travelMode": "walking",
-      "verificationStatus": "unverified",
+      "verificationStatus": "verified",
       "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
-      "verificationMethod": "official-updated-chart-direct-visual-review-2026-10-28",
-      "routingEnabled": false,
-      "reviewStatus": "superseded-area-requires-complete-update-coverage",
-      "sourceReviewNote": "The local update depicts the western approach via 黑水塘 and 最低鞍; old aggregate connector is retained only as history, not automatic routing."
+      "verificationMethod": "official-updated-chart-direct-visual-review-2026-10-28"
     },
     {
       "from": "指標1.0K",
@@ -1087,12 +1076,9 @@
       "toId": "g07-031",
       "minutes": 50,
       "travelMode": "walking",
-      "verificationStatus": "unverified",
+      "verificationStatus": "verified",
       "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
-      "verificationMethod": "official-updated-chart-direct-visual-review-2026-10-28",
-      "routingEnabled": false,
-      "reviewStatus": "superseded-area-requires-complete-update-coverage",
-      "sourceReviewNote": "The local update depicts the western approach via 黑水塘 and 最低鞍; old aggregate connector is retained only as history, not automatic routing."
+      "verificationMethod": "official-updated-chart-direct-visual-review-2026-10-28"
     },
     {
       "from": "指標1.0K",
@@ -1102,7 +1088,7 @@
       "minutes": 40,
       "travelMode": "walking",
       "verificationStatus": "verified",
-      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new3.jpg",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
       "verificationMethod": "official-updated-chart-direct-visual-review-2026-10-28"
     },
     {
@@ -1113,7 +1099,7 @@
       "minutes": 20,
       "travelMode": "walking",
       "verificationStatus": "verified",
-      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new3.jpg",
+      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
       "verificationMethod": "official-updated-chart-direct-visual-review-2026-10-28"
     },
     {
@@ -1247,27 +1233,8 @@
       "verificationStatus": "verified",
       "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
       "verificationMethod": "official-updated-chart-direct-visual-review-2026-10-28"
-    },
-    {
-      "from": "黑水塘",
-      "to": "指標1.0K",
-      "fromId": "g07-043",
-      "toId": "g07-030",
-      "minutes": 35,
-      "travelMode": "walking",
-      "verificationStatus": "verified",
-      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new3.jpg"
-    },
-    {
-      "from": "指標1.0K",
-      "to": "黑水塘",
-      "fromId": "g07-030",
-      "toId": "g07-043",
-      "minutes": 50,
-      "travelMode": "walking",
-      "verificationStatus": "verified",
-      "source": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new3.jpg"
     }
   ],
-  "routingEnabled": true
+  "routingEnabled": true,
+  "nodePolicy": "main-step-diagram-labels-only"
 }

@@ -1,0 +1,7288 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-28",
+  "status": "difference-audit-only-not-routing-approval",
+  "sourceBasis": "official main step schematics only",
+  "pendingRows": [
+    "G13 三叉峰下營地↔牧山",
+    "G13 牧山↔牧山池",
+    "G13 牧山池↔三叉峰下營地"
+  ],
+  "records": [
+    {
+      "chartId": "G02",
+      "from": "上東埔停車場",
+      "to": "排雲管理站",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "排雲管理站",
+      "to": "大鐵杉",
+      "forwardMinutes": 25,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "大鐵杉",
+      "to": "塔塔加鞍部",
+      "forwardMinutes": 25,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "塔塔加鞍部",
+      "to": "孟祿亭",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "孟祿亭",
+      "to": "前峰登山口",
+      "forwardMinutes": 40,
+      "reverseMinutes": 35,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "前峰登山口",
+      "to": "西峰下觀景台",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "西峰下觀景台",
+      "to": "大峭壁",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "大峭壁",
+      "to": "排雲山莊",
+      "forwardMinutes": 70,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "大鐵杉",
+      "to": "鹿林山莊",
+      "forwardMinutes": 35,
+      "reverseMinutes": 35,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "前峰登山口",
+      "to": "玉山前峰",
+      "forwardMinutes": 75,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "排雲山莊",
+      "to": "玉山西峰",
+      "forwardMinutes": 90,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "排雲山莊",
+      "to": "主南岔路",
+      "forwardMinutes": 45,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "主南岔路",
+      "to": "主北岔路",
+      "forwardMinutes": 90,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "主北岔路",
+      "to": "玉山主峰",
+      "forwardMinutes": 25,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "玉山主峰",
+      "to": "玉山東峰",
+      "forwardMinutes": 80,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "主北岔路",
+      "to": "風口",
+      "forwardMinutes": 10,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "風口",
+      "to": "玉山北峰",
+      "forwardMinutes": 70,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "玉山北峰",
+      "to": "玉山北北峰",
+      "forwardMinutes": 25,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "風口",
+      "to": "荖濃溪營地",
+      "forwardMinutes": 80,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "主南岔路",
+      "to": "圓峰山屋",
+      "forwardMinutes": 90,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "圓峰山屋",
+      "to": "三岔路口",
+      "forwardMinutes": 30,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "三岔路口",
+      "to": "2K三岔路口",
+      "forwardMinutes": 155,
+      "reverseMinutes": 180,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "2K三岔路口",
+      "to": "南玉山",
+      "forwardMinutes": 70,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "2K三岔路口",
+      "to": "玉山小南山",
+      "forwardMinutes": 10,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "三岔路口",
+      "to": "三叉峰",
+      "forwardMinutes": 20,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "三叉峰",
+      "to": "四岔路口",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "四岔路口",
+      "to": "玉山南峰",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "四岔路口",
+      "to": "東小南山",
+      "forwardMinutes": 40,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G02",
+      "from": "四岔路口",
+      "to": "鹿山",
+      "forwardMinutes": 180,
+      "reverseMinutes": 280,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G03",
+      "from": "32K登山口",
+      "to": "望鄉山",
+      "forwardMinutes": 40,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G03",
+      "from": "望鄉山",
+      "to": "郡大山北峰",
+      "forwardMinutes": 100,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G03",
+      "from": "郡大山北峰",
+      "to": "郡大山",
+      "forwardMinutes": 65,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G03",
+      "from": "17.1K柵欄",
+      "to": "人倫工作站",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G03",
+      "from": "人倫工作站",
+      "to": "登山口(第二登山口)",
+      "forwardMinutes": 30,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G03",
+      "from": "登山口(第二登山口)",
+      "to": "森林營地",
+      "forwardMinutes": 120,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G03",
+      "from": "森林營地",
+      "to": "瞭望台營地",
+      "forwardMinutes": 60,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G03",
+      "from": "瞭望台營地",
+      "to": "展望點",
+      "forwardMinutes": 160,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G03",
+      "from": "展望點",
+      "to": "西巒大山",
+      "forwardMinutes": 20,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "鎮西堡",
+      "to": "神木區登山口",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "神木區登山口",
+      "to": "A.B區神木岔路",
+      "forwardMinutes": 40,
+      "reverseMinutes": 35,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "A.B區神木岔路",
+      "to": "岔路口",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "岔路口",
+      "to": "往馬洋山岔路口",
+      "forwardMinutes": 130,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "往馬洋山岔路口",
+      "to": "獵寮營地",
+      "forwardMinutes": 120,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "獵寮營地",
+      "to": "第一營地",
+      "forwardMinutes": 45,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "第一營地",
+      "to": "第二營地",
+      "forwardMinutes": 130,
+      "reverseMinutes": 95,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "第二營地",
+      "to": "馬洋山",
+      "forwardMinutes": 15,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "馬洋山",
+      "to": "馬洋池",
+      "forwardMinutes": 110,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "馬洋池",
+      "to": "中霸坪叉路",
+      "forwardMinutes": 180,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "觀霧",
+      "to": "0.3K檢查哨",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "0.3K檢查哨",
+      "to": "大霸尖山登山口",
+      "forwardMinutes": 400,
+      "reverseMinutes": 430,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "大霸尖山登山口",
+      "to": "九九山莊",
+      "forwardMinutes": 210,
+      "reverseMinutes": 130,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "九九山莊",
+      "to": "加利山登山口",
+      "forwardMinutes": 80,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "加利山登山口",
+      "to": "加利山",
+      "forwardMinutes": 30,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "加利山登山口",
+      "to": "伊澤山第二登山口",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "伊澤山第二登山口",
+      "to": "伊澤山",
+      "forwardMinutes": 20,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "伊澤山第二登山口",
+      "to": "8.8K岔路",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "8.8K岔路",
+      "to": "中霸坪叉路",
+      "forwardMinutes": 60,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "中霸坪叉路",
+      "to": "小霸岔路登山口",
+      "forwardMinutes": 40,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "小霸岔路登山口",
+      "to": "小霸尖山",
+      "forwardMinutes": 50,
+      "reverseMinutes": 35,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "小霸岔路登山口",
+      "to": "岔路",
+      "forwardMinutes": 15,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "岔路",
+      "to": "霸南山屋",
+      "forwardMinutes": 70,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "霸南山屋",
+      "to": "巴紗拉雲山屋毀損",
+      "forwardMinutes": 80,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "巴紗拉雲山屋毀損",
+      "to": "巴紗拉雲山",
+      "forwardMinutes": 80,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "巴紗拉雲山",
+      "to": "布秀蘭山",
+      "forwardMinutes": 140,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "布秀蘭山",
+      "to": "素密達山",
+      "forwardMinutes": 140,
+      "reverseMinutes": 130,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "素密達山",
+      "to": "素密達山屋",
+      "forwardMinutes": 70,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "素密達山屋",
+      "to": "穆特勒布山",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "穆特勒布山",
+      "to": "岔路",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "岔路",
+      "to": "穆南鞍部營地",
+      "forwardMinutes": 100,
+      "reverseMinutes": 85,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "岔路",
+      "to": "水源",
+      "forwardMinutes": 15,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "雪北登山口",
+      "to": "雪山北峰",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "穆南鞍部營地",
+      "to": "雪北登山口",
+      "forwardMinutes": 95,
+      "reverseMinutes": 65,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "雪北登山口",
+      "to": "雪北山屋",
+      "forwardMinutes": 25,
+      "reverseMinutes": 35,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "雪北山屋",
+      "to": "凱蘭特崑山北峰",
+      "forwardMinutes": 90,
+      "reverseMinutes": 75,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "凱蘭特崑山北峰",
+      "to": "鞍部叉路",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "鞍部叉路",
+      "to": "凱蘭特崑山",
+      "forwardMinutes": 10,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "凱蘭特崑山",
+      "to": "北稜角",
+      "forwardMinutes": 70,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "北稜角",
+      "to": "岔路口",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "岔路口",
+      "to": "雪山主峰",
+      "forwardMinutes": 20,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "翠池山屋",
+      "to": "岔路口",
+      "forwardMinutes": 110,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "溪源",
+      "to": "三六九山莊",
+      "forwardMinutes": 80,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "圈谷底部",
+      "to": "雪山主峰",
+      "forwardMinutes": 60,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "圈谷底部",
+      "to": "三六九山莊",
+      "forwardMinutes": 100,
+      "reverseMinutes": 140,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "三六九山莊",
+      "to": "雪山東峰",
+      "forwardMinutes": 60,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "雪山東峰",
+      "to": "哭坡觀景台",
+      "forwardMinutes": 40,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "哭坡觀景台",
+      "to": "七卡山莊",
+      "forwardMinutes": 60,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "七卡山莊",
+      "to": "雪山登山口管理站",
+      "forwardMinutes": 55,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "雪山登山口管理站",
+      "to": "農場岔路",
+      "forwardMinutes": 20,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "武陵山莊",
+      "to": "桃山岔路口",
+      "forwardMinutes": 20,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "桃山登山口",
+      "to": "桃山2K",
+      "forwardMinutes": 180,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "桃山2K",
+      "to": "停機坪",
+      "forwardMinutes": 50,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "停機坪",
+      "to": "桃山",
+      "forwardMinutes": 160,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "桃山山屋",
+      "to": "三叉營地",
+      "forwardMinutes": 140,
+      "reverseMinutes": 150,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "三叉營地",
+      "to": "池有山登山口",
+      "forwardMinutes": 180,
+      "reverseMinutes": 280,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "池有山岔路口",
+      "to": "池有山",
+      "forwardMinutes": 20,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "池有山岔路口",
+      "to": "新達山屋(水池)",
+      "forwardMinutes": 50,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "新達山屋(水池)",
+      "to": "塔克金溪源頭",
+      "forwardMinutes": 95,
+      "reverseMinutes": 130,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "巴紗拉雲山屋毀損",
+      "to": "塔克金溪源頭",
+      "forwardMinutes": 80,
+      "reverseMinutes": 130,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "布秀蘭山",
+      "to": "品田山",
+      "forwardMinutes": 240,
+      "reverseMinutes": 200,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "品田山",
+      "to": "新達山屋(水池)",
+      "forwardMinutes": 80,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "桃山山屋",
+      "to": "桃山",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "桃山",
+      "to": "詩崙山",
+      "forwardMinutes": 70,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "詩崙山",
+      "to": "喀拉業山",
+      "forwardMinutes": 60,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "池有山登山口",
+      "to": "煙聲瀑布",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "池有山登山口",
+      "to": "桃山岔路口",
+      "forwardMinutes": 40,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "桃山岔路口",
+      "to": "桃山登山口",
+      "forwardMinutes": 5,
+      "reverseMinutes": 3,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "伊澤山",
+      "to": "8.8K岔路",
+      "forwardMinutes": 10,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "岔路",
+      "to": "大霸尖山",
+      "forwardMinutes": 70,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "素密達山屋",
+      "to": "岔路",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "鞍部叉路",
+      "to": "溪源",
+      "forwardMinutes": 50,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G04",
+      "from": "三叉營地",
+      "to": "池有山岔路口",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "思源埡口",
+      "to": "4.8K岔路口",
+      "forwardMinutes": 145,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "4.8K岔路口",
+      "to": "6.8K登山口",
+      "forwardMinutes": 45,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "6.8K登山口",
+      "to": "多加屯山水利三角點",
+      "forwardMinutes": 100,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "多加屯山水利三角點",
+      "to": "木杆鞍部",
+      "forwardMinutes": 90,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "4.8K岔路口",
+      "to": "大水池登山口",
+      "forwardMinutes": 45,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "大水池登山口",
+      "to": "勝光登山口",
+      "forwardMinutes": 25,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "木杆鞍部",
+      "to": "新雲稜山莊",
+      "forwardMinutes": 40,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "新雲稜山莊",
+      "to": "審馬陣山登山口",
+      "forwardMinutes": 170,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "審馬陣山",
+      "to": "審馬陣山登山口",
+      "forwardMinutes": 3,
+      "reverseMinutes": 3,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "審馬陣山登山口",
+      "to": "審馬陣山莊岔路口",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "審馬陣山莊岔路口",
+      "to": "審馬陣山莊",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "審馬陣山莊岔路口",
+      "to": "北山登山口",
+      "forwardMinutes": 100,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "南湖北山",
+      "to": "北山登山口",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "北山登山口",
+      "to": "南湖大山北峰",
+      "forwardMinutes": 80,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "南湖大山北峰",
+      "to": "南湖圈谷山莊",
+      "forwardMinutes": 35,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "木杆鞍部",
+      "to": "南湖溪山屋",
+      "forwardMinutes": 65,
+      "reverseMinutes": 75,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "南湖溪山屋",
+      "to": "香菇寮營地",
+      "forwardMinutes": 220,
+      "reverseMinutes": 170,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "香菇寮營地",
+      "to": "中央尖溪山屋",
+      "forwardMinutes": 180,
+      "reverseMinutes": 150,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "中央尖溪山屋",
+      "to": "中央尖鞍部",
+      "forwardMinutes": 240,
+      "reverseMinutes": 200,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "中央尖山",
+      "to": "中央尖鞍部",
+      "forwardMinutes": 35,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "中央尖鞍部",
+      "to": "中央尖山東峰",
+      "forwardMinutes": 40,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "南湖圈谷山莊",
+      "to": "上圈谷",
+      "forwardMinutes": 15,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "南湖圈谷山莊",
+      "to": "主東岔路",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "主東岔路",
+      "to": "四岔路口",
+      "forwardMinutes": 30,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "主東岔路",
+      "to": "主峰、南峰三岔路口",
+      "forwardMinutes": 20,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "南湖主峰",
+      "to": "主峰、南峰三岔路口",
+      "forwardMinutes": 30,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "主峰、南峰三岔路口",
+      "to": "南湖池山屋(廢棄)",
+      "forwardMinutes": 35,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "上圈谷",
+      "to": "南湖大山東峰",
+      "forwardMinutes": 60,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "四岔路口",
+      "to": "東峰登山口",
+      "forwardMinutes": 25,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "東峰登山口",
+      "to": "南湖大山東峰",
+      "forwardMinutes": 15,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "東峰登山口",
+      "to": "陶塞峰登山口",
+      "forwardMinutes": 65,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "陶塞峰登山口",
+      "to": "南湖大山東南峰",
+      "forwardMinutes": 75,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "四岔路口",
+      "to": "陶塞山屋遺址",
+      "forwardMinutes": 40,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "陶塞山屋遺址",
+      "to": "大濁水南溪岔路",
+      "forwardMinutes": 40,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "大濁水南溪岔路",
+      "to": "獵寮岔路",
+      "forwardMinutes": 10,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "獵寮岔路",
+      "to": "石洞獵寮",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "南湖大山東南峰",
+      "to": "指標2.2K岔路口",
+      "forwardMinutes": 55,
+      "reverseMinutes": 75,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "獵寮岔路",
+      "to": "指標2.2K岔路口",
+      "forwardMinutes": 50,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "指標2.2K岔路口",
+      "to": "指標1.0K",
+      "forwardMinutes": 35,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "指標1.0K",
+      "to": "馬比杉山",
+      "forwardMinutes": 40,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "中央尖溪山屋",
+      "to": "南湖大山南峰岔路",
+      "forwardMinutes": 340,
+      "reverseMinutes": 190,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "南湖池山屋(廢棄)",
+      "to": "南湖大山南峰岔路",
+      "forwardMinutes": 95,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "南湖大山南峰岔路",
+      "to": "南湖大山南峰",
+      "forwardMinutes": 15,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "南湖大山南峰",
+      "to": "巴巴山",
+      "forwardMinutes": 55,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "思源埡口",
+      "to": "勝光登山口",
+      "forwardMinutes": 90,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G07",
+      "from": "上圈谷",
+      "to": "四岔路口",
+      "forwardMinutes": 50,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "820林道0K",
+      "to": "8.4k登山口營地",
+      "forwardMinutes": 200,
+      "reverseMinutes": 230,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "8.4k登山口營地",
+      "to": "拉繩垂直岩壁",
+      "forwardMinutes": 110,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "拉繩垂直岩壁",
+      "to": "主稜三岔路口",
+      "forwardMinutes": 90,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "主稜三岔路口",
+      "to": "畢祿山",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "主稜三岔路口",
+      "to": "第一峰(畢祿營地)",
+      "forwardMinutes": 30,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "第一峰(畢祿營地)",
+      "to": "鋸山(第四峰)",
+      "forwardMinutes": 105,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "鋸山(第四峰)",
+      "to": "東峰前營地",
+      "forwardMinutes": 110,
+      "reverseMinutes": 180,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "東峰前營地",
+      "to": "鋸山東峰",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "鋸山東峰",
+      "to": "三岔路口",
+      "forwardMinutes": 25,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "三岔路口",
+      "to": "羊頭山",
+      "forwardMinutes": 50,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "三岔路口",
+      "to": "羊頭山登山口",
+      "forwardMinutes": 180,
+      "reverseMinutes": 350,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "清泉橋",
+      "to": "檢查哨(廢)",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "檢查哨(廢)",
+      "to": "11.7K行車終點",
+      "forwardMinutes": 40,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "11.7K行車終點",
+      "to": "17.5K登山口",
+      "forwardMinutes": 180,
+      "reverseMinutes": 140,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "17.5K登山口",
+      "to": "23.2K登山口",
+      "forwardMinutes": 140,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "23.2K登山口",
+      "to": "雨量計前岔路口",
+      "forwardMinutes": 20,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "雨量計前岔路口",
+      "to": "閂山",
+      "forwardMinutes": 80,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "閂山",
+      "to": "25K工寮",
+      "forwardMinutes": 80,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "23.2K登山口",
+      "to": "25K工寮",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "25K工寮",
+      "to": "27.5K林道登山口",
+      "forwardMinutes": 110,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "27.5K林道登山口",
+      "to": "人待山稜線岔路",
+      "forwardMinutes": 70,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "17.5K登山口",
+      "to": "耳無溪合流點",
+      "forwardMinutes": 110,
+      "reverseMinutes": 160,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "耳無溪合流點",
+      "to": "遠多志山",
+      "forwardMinutes": 240,
+      "reverseMinutes": 140,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "遠多志山",
+      "to": "甘薯南峰",
+      "forwardMinutes": 90,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "甘薯南峰",
+      "to": "甘薯峰",
+      "forwardMinutes": 140,
+      "reverseMinutes": 140,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "甘薯南峰",
+      "to": "鞍部",
+      "forwardMinutes": 60,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "鞍部",
+      "to": "鬼門關峰",
+      "forwardMinutes": 110,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "鬼門關峰",
+      "to": "無明水池",
+      "forwardMinutes": 15,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "無明水池",
+      "to": "無明山",
+      "forwardMinutes": 70,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "水源",
+      "to": "東鞍營地",
+      "forwardMinutes": 25,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "無明山西峰",
+      "to": "東鞍營地",
+      "forwardMinutes": 290,
+      "reverseMinutes": 190,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "東鞍營地",
+      "to": "鈴鳴山",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "人待山稜線岔路",
+      "to": "鈴鳴山",
+      "forwardMinutes": 60,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G08",
+      "from": "無明山西峰",
+      "to": "無明山",
+      "forwardMinutes": 160,
+      "reverseMinutes": 200,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "林道入口",
+      "to": "七彩湖",
+      "forwardMinutes": 10,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "林道入口",
+      "to": "林道舊登山口",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "林道舊登山口",
+      "to": "2897公尺峰",
+      "forwardMinutes": 70,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "2897公尺峰",
+      "to": "六順山",
+      "forwardMinutes": 120,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "六順山",
+      "to": "2863公尺峰",
+      "forwardMinutes": 50,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "七彩湖",
+      "to": "七彩妹池",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "七彩妹池",
+      "to": "雙龍瀑布",
+      "forwardMinutes": 60,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "雙龍瀑布",
+      "to": "廢棄工寮",
+      "forwardMinutes": 90,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "廢棄工寮",
+      "to": "鐵軌岔路",
+      "forwardMinutes": 180,
+      "reverseMinutes": 180,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "鐵軌岔路",
+      "to": "台電高登連絡站",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "情人吊橋",
+      "to": "46K九族工寮",
+      "forwardMinutes": 20,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "46K九族工寮",
+      "to": "42K阿道別墅",
+      "forwardMinutes": 70,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "42K阿道別墅",
+      "to": "36K大崩壁",
+      "forwardMinutes": 110,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "天梯頂岔路口",
+      "to": "鐵軌岔路",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "天梯頂岔路口",
+      "to": "情人吊橋",
+      "forwardMinutes": 100,
+      "reverseMinutes": 180,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "六順山新登山口",
+      "to": "天梯頂岔路口",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "2780草原黑水塘",
+      "to": "六順山新登山口",
+      "forwardMinutes": 40,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "2863公尺峰",
+      "to": "2780草原黑水塘",
+      "forwardMinutes": 70,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "六順山",
+      "to": "2813鞍營地",
+      "forwardMinutes": 60,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "2813鞍營地",
+      "to": "2761最低鞍部",
+      "forwardMinutes": 75,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "2761最低鞍部",
+      "to": "關門北山",
+      "forwardMinutes": 210,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "關門北山",
+      "to": "關門山凹",
+      "forwardMinutes": 150,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "關門山凹",
+      "to": "巖山",
+      "forwardMinutes": 40,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "巖山",
+      "to": "2603公尺鞍部",
+      "forwardMinutes": 250,
+      "reverseMinutes": 320,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "2603公尺鞍部",
+      "to": "大石公山",
+      "forwardMinutes": 90,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "大石公山",
+      "to": "小石公山",
+      "forwardMinutes": 15,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "小石公山",
+      "to": "2833公尺鞍部",
+      "forwardMinutes": 50,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "2833公尺鞍部",
+      "to": "3255公尺峰",
+      "forwardMinutes": 140,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G14",
+      "from": "3255公尺峰",
+      "to": "丹大山",
+      "forwardMinutes": 260,
+      "reverseMinutes": 240,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G20",
+      "from": "新登山口",
+      "to": "舊登山口",
+      "forwardMinutes": 100,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G20",
+      "from": "舊登山口",
+      "to": "越嶺鞍部",
+      "forwardMinutes": 90,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G20",
+      "from": "越嶺鞍部",
+      "to": "3.8K 展望平台",
+      "forwardMinutes": 90,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G20",
+      "from": "3.8K 展望平台",
+      "to": "4K 三岔路口",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G20",
+      "from": "4K 三岔路口",
+      "to": "檜谷山莊",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G20",
+      "from": "4K 三岔路口",
+      "to": "南大武山展望點",
+      "forwardMinutes": 60,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G20",
+      "from": "南大武山展望點",
+      "to": "5.5K 大武神木",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G20",
+      "from": "5.5K 大武神木",
+      "to": "6.3K 最後水源",
+      "forwardMinutes": 65,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G20",
+      "from": "6.3K 最後水源",
+      "to": "主稜嶺線",
+      "forwardMinutes": 65,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G20",
+      "from": "主稜嶺線",
+      "to": "8K 大武祠",
+      "forwardMinutes": 65,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G20",
+      "from": "8K 大武祠",
+      "to": "9K 北大武山",
+      "forwardMinutes": 65,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": "existing audit table visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "屯原登山口",
+      "to": "雲海保線所",
+      "forwardMinutes": 120,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "雲海保線所",
+      "to": "屯原登山口",
+      "forwardMinutes": 100,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "雲海保線所",
+      "to": "天池山莊",
+      "forwardMinutes": 210,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "天池山莊",
+      "to": "雲海保線所",
+      "forwardMinutes": 180,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "天池山莊",
+      "to": "縣界啞口",
+      "forwardMinutes": 50,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "縣界啞口",
+      "to": "天池山莊",
+      "forwardMinutes": 55,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "縣界啞口",
+      "to": "檜林保線所",
+      "forwardMinutes": 120,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "檜林保線所",
+      "to": "縣界啞口",
+      "forwardMinutes": 240,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "檜林保線所",
+      "to": "五甲崩山",
+      "forwardMinutes": 140,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "五甲崩山",
+      "to": "檜林保線所",
+      "forwardMinutes": 170,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "五甲崩山",
+      "to": "奇萊保線所",
+      "forwardMinutes": 180,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "奇萊保線所",
+      "to": "五甲崩山",
+      "forwardMinutes": 260,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "天池山莊",
+      "to": "天池岔路口",
+      "forwardMinutes": 60,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "天池岔路口",
+      "to": "天池山莊",
+      "forwardMinutes": 40,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "天池岔路口",
+      "to": "南峰登山口",
+      "forwardMinutes": 20,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "南峰登山口",
+      "to": "天池岔路口",
+      "forwardMinutes": 15,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "南峰登山口",
+      "to": "奇萊主山南峰",
+      "forwardMinutes": 60,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "奇萊主山南峰",
+      "to": "南峰登山口",
+      "forwardMinutes": 40,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "天池岔路口",
+      "to": "南華山",
+      "forwardMinutes": 40,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "南華山",
+      "to": "天池岔路口",
+      "forwardMinutes": 30,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "南華山",
+      "to": "縣界啞口",
+      "forwardMinutes": 80,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "縣界啞口",
+      "to": "南華山",
+      "forwardMinutes": 120,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "縣界啞口",
+      "to": "卡賀爾山",
+      "forwardMinutes": 170,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "卡賀爾山",
+      "to": "縣界啞口",
+      "forwardMinutes": 140,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "卡賀爾山",
+      "to": "能高主峰",
+      "forwardMinutes": 160,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G11",
+      "from": "能高主峰",
+      "to": "卡賀爾山",
+      "forwardMinutes": 140,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "existing staged direction visually checked against main schematic"
+    },
+    {
+      "chartId": "G05",
+      "from": "0K·49K岔路",
+      "to": "4K國家公園碑",
+      "forwardMinutes": 110,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "4K國家公園碑",
+      "to": "11.5K雙流水營地",
+      "forwardMinutes": 220,
+      "reverseMinutes": 200,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "11.5K雙流水營地",
+      "to": "26K登山口",
+      "forwardMinutes": 390,
+      "reverseMinutes": 350,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "26K登山口",
+      "to": "28K工寮",
+      "forwardMinutes": 60,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "28K工寮",
+      "to": "28.5K登山口",
+      "forwardMinutes": 20,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "28.5K登山口",
+      "to": "主稜鞍部",
+      "forwardMinutes": 210,
+      "reverseMinutes": 145,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "主稜鞍部",
+      "to": "匹匹達山",
+      "forwardMinutes": 120,
+      "reverseMinutes": 85,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "匹匹達山",
+      "to": "匹匹達東鞍營地",
+      "forwardMinutes": 5,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "匹匹達東鞍營地",
+      "to": "岔路口",
+      "forwardMinutes": 35,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "岔路口",
+      "to": "大雪山北峰",
+      "forwardMinutes": 50,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "大雪山北峰",
+      "to": "奇峻水池",
+      "forwardMinutes": 80,
+      "reverseMinutes": 75,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "奇峻水池",
+      "to": "奇峻山",
+      "forwardMinutes": 50,
+      "reverseMinutes": 35,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "奇峻山",
+      "to": "頭鷹山",
+      "forwardMinutes": 45,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "頭鷹山",
+      "to": "弓水營地",
+      "forwardMinutes": 120,
+      "reverseMinutes": 180,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "弓水營地",
+      "to": "大南山西鞍營地",
+      "forwardMinutes": 40,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "大南山西鞍營地",
+      "to": "大南山登山口",
+      "forwardMinutes": 15,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "大南山登山口",
+      "to": "火石山下營地",
+      "forwardMinutes": 220,
+      "reverseMinutes": 220,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "火石山下營地",
+      "to": "博可爾草原",
+      "forwardMinutes": 210,
+      "reverseMinutes": 160,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "博可爾草原",
+      "to": "博可爾山",
+      "forwardMinutes": 40,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "火石山",
+      "to": "火石山下營地",
+      "forwardMinutes": 30,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "大南山登山口",
+      "to": "大南山",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "弓水營地",
+      "to": "弓水山",
+      "forwardMinutes": 25,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "岔路口",
+      "to": "大雪山",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "匹匹達東鞍營地",
+      "to": "水源",
+      "forwardMinutes": 20,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "26K登山口",
+      "to": "中雪山",
+      "forwardMinutes": 150,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "中雪山",
+      "to": "林文安紀念碑",
+      "forwardMinutes": 15,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "博可爾草原",
+      "to": "下翠池",
+      "forwardMinutes": 80,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "下翠池",
+      "to": "翠池山屋",
+      "forwardMinutes": 70,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "翠池山屋",
+      "to": "雪山主峰",
+      "forwardMinutes": 130,
+      "reverseMinutes": 95,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "雪山主峰",
+      "to": "三六九山莊",
+      "forwardMinutes": 140,
+      "reverseMinutes": 200,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "三六九山莊",
+      "to": "七卡山莊",
+      "forwardMinutes": 160,
+      "reverseMinutes": 255,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "七卡山莊",
+      "to": "雪山登山口",
+      "forwardMinutes": 55,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "翠池山屋",
+      "to": "完美谷營地",
+      "forwardMinutes": 240,
+      "reverseMinutes": 280,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "完美谷營地",
+      "to": "雪山西南峰",
+      "forwardMinutes": 85,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "雪山西南峰",
+      "to": "大劍山",
+      "forwardMinutes": 185,
+      "reverseMinutes": 160,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "大劍山",
+      "to": "鞍部水源岔路",
+      "forwardMinutes": 70,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "鞍部水源岔路",
+      "to": "油婆蘭營地",
+      "forwardMinutes": 30,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "油婆蘭營地",
+      "to": "油婆蘭山",
+      "forwardMinutes": 10,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "油婆蘭山",
+      "to": "布伕奇寒山",
+      "forwardMinutes": 70,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "布伕奇寒山",
+      "to": "老伍營地",
+      "forwardMinutes": 60,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "老伍營地",
+      "to": "佳陽山",
+      "forwardMinutes": 90,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "佳陽山",
+      "to": "劍山",
+      "forwardMinutes": 160,
+      "reverseMinutes": 180,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "鞍部水源岔路",
+      "to": "水源",
+      "forwardMinutes": 20,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "油婆蘭山",
+      "to": "推論山",
+      "forwardMinutes": 75,
+      "reverseMinutes": 150,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "推論山",
+      "to": "帆布獵寮(2082公尺)",
+      "forwardMinutes": 100,
+      "reverseMinutes": 150,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "帆布獵寮(2082公尺)",
+      "to": "防火巷登山口",
+      "forwardMinutes": 120,
+      "reverseMinutes": 180,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "防火巷登山口",
+      "to": "樂山橋",
+      "forwardMinutes": 30,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "樂山橋",
+      "to": "松茂水文站",
+      "forwardMinutes": 15,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "松茂水文站",
+      "to": "仁壽橋檢查哨",
+      "forwardMinutes": 60,
+      "reverseMinutes": 65,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "仁壽橋檢查哨",
+      "to": "中興路口(66.55K)",
+      "forwardMinutes": 20,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "雪山主峰",
+      "to": "雪山山莊舊址",
+      "forwardMinutes": 180,
+      "reverseMinutes": 210,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "雪山山莊舊址",
+      "to": "雪山南峰",
+      "forwardMinutes": 40,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "雪山山莊舊址",
+      "to": "志佳陽大山",
+      "forwardMinutes": 140,
+      "reverseMinutes": 200,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "志佳陽基點峰",
+      "to": "瓢簞山莊",
+      "forwardMinutes": 20,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "瓢簞山莊",
+      "to": "賽良久",
+      "forwardMinutes": 50,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "賽良久",
+      "to": "苗圃工寮舊址",
+      "forwardMinutes": 100,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "苗圃工寮舊址",
+      "to": "登山口",
+      "forwardMinutes": 80,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "登山口",
+      "to": "松柏農場",
+      "forwardMinutes": 60,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "松柏農場",
+      "to": "環山部落",
+      "forwardMinutes": 45,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "合歡山松雪樓",
+      "to": "黑水塘山屋",
+      "forwardMinutes": 110,
+      "reverseMinutes": 130,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "黑水塘山屋",
+      "to": "成功山屋",
+      "forwardMinutes": 60,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "成功山屋",
+      "to": "主北三岔路",
+      "forwardMinutes": 170,
+      "reverseMinutes": 125,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "主北三岔路",
+      "to": "奇萊主山北峰",
+      "forwardMinutes": 95,
+      "reverseMinutes": 65,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "奇萊主山北峰",
+      "to": "月形池",
+      "forwardMinutes": 80,
+      "reverseMinutes": 140,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "月形池",
+      "to": "驚嘆號水池·西峰",
+      "forwardMinutes": 110,
+      "reverseMinutes": 160,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "驚嘆號水池·西峰",
+      "to": "磐石中峰",
+      "forwardMinutes": 65,
+      "reverseMinutes": 75,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "磐石中峰",
+      "to": "磐石中峰營地",
+      "forwardMinutes": 5,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "磐石中峰營地",
+      "to": "鐵線斷崖前營地",
+      "forwardMinutes": 120,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "鐵線斷崖前營地",
+      "to": "鐵線斷崖後營地",
+      "forwardMinutes": 100,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "鐵線斷崖後營地",
+      "to": "上下舖營地",
+      "forwardMinutes": 60,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "上下舖營地",
+      "to": "3077峰",
+      "forwardMinutes": 100,
+      "reverseMinutes": 130,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "3077峰",
+      "to": "三叉營地",
+      "forwardMinutes": 100,
+      "reverseMinutes": 130,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "大理石營地",
+      "to": "立霧主山",
+      "forwardMinutes": 25,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "立霧主山",
+      "to": "沼澤營地",
+      "forwardMinutes": 90,
+      "reverseMinutes": 130,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "沼澤營地",
+      "to": "三岔路口營地",
+      "forwardMinutes": 120,
+      "reverseMinutes": 140,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "三岔路口營地",
+      "to": "12K工寮",
+      "forwardMinutes": 100,
+      "reverseMinutes": 140,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "12K工寮",
+      "to": "9K水泥工寮",
+      "forwardMinutes": 75,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "6K高繞岔路口",
+      "to": "江口山岔路口",
+      "forwardMinutes": 70,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "1號索道頭",
+      "to": "岳王亭",
+      "forwardMinutes": 150,
+      "reverseMinutes": 280,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "主北三岔路",
+      "to": "奇萊山莊",
+      "forwardMinutes": 10,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "磐石山",
+      "to": "鐵線斷崖前營地",
+      "forwardMinutes": 55,
+      "reverseMinutes": 65,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "三叉營地",
+      "to": "太魯閣大山",
+      "forwardMinutes": 100,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G10",
+      "from": "三岔路口營地",
+      "to": "帕托魯山",
+      "forwardMinutes": 150,
+      "reverseMinutes": 105,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "屯原登山口",
+      "to": "雲海保線所",
+      "forwardMinutes": 120,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "雲海保線所",
+      "to": "天池山莊",
+      "forwardMinutes": 210,
+      "reverseMinutes": 180,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "天池山莊",
+      "to": "縣界啞口",
+      "forwardMinutes": 50,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "縣界啞口",
+      "to": "卡賀爾山",
+      "forwardMinutes": 170,
+      "reverseMinutes": 140,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "卡賀爾山",
+      "to": "能高主峰",
+      "forwardMinutes": 160,
+      "reverseMinutes": 140,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "能高主峰",
+      "to": "能高小屋舊址",
+      "forwardMinutes": 20,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "能高小屋舊址",
+      "to": "台灣池營地",
+      "forwardMinutes": 15,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "台灣池營地",
+      "to": "大陸池營地",
+      "forwardMinutes": 30,
+      "reverseMinutes": 35,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "大陸池營地",
+      "to": "垂直岩壁拉繩",
+      "forwardMinutes": 65,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "垂直岩壁拉繩",
+      "to": "能高南峰北嶺",
+      "forwardMinutes": 100,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "能高南峰北嶺",
+      "to": "南峰岔路口",
+      "forwardMinutes": 85,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "南峰岔路口",
+      "to": "南峰南鞍營地",
+      "forwardMinutes": 70,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "南峰南鞍營地",
+      "to": "3039鞍營地",
+      "forwardMinutes": 90,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "3039鞍營地",
+      "to": "光頭山",
+      "forwardMinutes": 60,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "光頭山",
+      "to": "白石池",
+      "forwardMinutes": 100,
+      "reverseMinutes": 140,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "白石池",
+      "to": "白石山",
+      "forwardMinutes": 130,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "白石山",
+      "to": "萬里池",
+      "forwardMinutes": 60,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "萬里池",
+      "to": "屯鹿池",
+      "forwardMinutes": 120,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "屯鹿池",
+      "to": "三岔路口",
+      "forwardMinutes": 45,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "三岔路口",
+      "to": "安東軍山",
+      "forwardMinutes": 50,
+      "reverseMinutes": 35,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "南峰岔路口",
+      "to": "能高山南峰",
+      "forwardMinutes": 5,
+      "reverseMinutes": 3,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "三岔路口",
+      "to": "第一次獵寮/第一次過溪",
+      "forwardMinutes": 80,
+      "reverseMinutes": 150,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "第一次獵寮/第一次過溪",
+      "to": "紅檜巨木",
+      "forwardMinutes": 50,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "紅檜巨木",
+      "to": "第二獵寮",
+      "forwardMinutes": 70,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "第二獵寮",
+      "to": "大崩壁",
+      "forwardMinutes": 50,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "大崩壁",
+      "to": "溪床營地",
+      "forwardMinutes": 60,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "溪床營地",
+      "to": "金杏真路岔路口",
+      "forwardMinutes": 10,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "金杏真路岔路口",
+      "to": "萬大南溪合匯點",
+      "forwardMinutes": 25,
+      "reverseMinutes": 35,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "萬大南溪合匯點",
+      "to": "第二支流合匯點",
+      "forwardMinutes": 35,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "第二支流合匯點",
+      "to": "第三支流合匯點/鐵皮工寮營地",
+      "forwardMinutes": 35,
+      "reverseMinutes": 35,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "第三支流合匯點/鐵皮工寮營地",
+      "to": "第四支流合匯點",
+      "forwardMinutes": 45,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G12",
+      "from": "第二支流合匯點",
+      "to": "金杏真路岔路口",
+      "forwardMinutes": 120,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "7.8K停車處",
+      "to": "登山口",
+      "forwardMinutes": 180,
+      "reverseMinutes": 140,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "登山口",
+      "to": "環形營地",
+      "forwardMinutes": 70,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "環形營地",
+      "to": "獵寮營地",
+      "forwardMinutes": 65,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "獵寮營地",
+      "to": "十粒溪源營地",
+      "forwardMinutes": 120,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "十粒溪源營地",
+      "to": "乳形峰東鞍營地",
+      "forwardMinutes": 220,
+      "reverseMinutes": 150,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "乳形峰東鞍營地",
+      "to": "干卓萬山",
+      "forwardMinutes": 120,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "干卓萬山",
+      "to": "三叉峰下營地",
+      "forwardMinutes": 210,
+      "reverseMinutes": 220,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "三叉峰下營地",
+      "to": "東北鞍營地",
+      "forwardMinutes": 130,
+      "reverseMinutes": 150,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "卓社大山東峰叉路口",
+      "to": "3198公尺峰",
+      "forwardMinutes": 80,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "3198公尺峰",
+      "to": "卓社大山",
+      "forwardMinutes": 240,
+      "reverseMinutes": 240,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "卓社大山",
+      "to": "2899鞍部營地",
+      "forwardMinutes": 130,
+      "reverseMinutes": 200,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "2899鞍部營地",
+      "to": "武界林道",
+      "forwardMinutes": 30,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "武界林道",
+      "to": "53K廢工寮",
+      "forwardMinutes": 45,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "53K廢工寮",
+      "to": "V型崩壁",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "V型崩壁",
+      "to": "48K紅磚屋",
+      "forwardMinutes": 150,
+      "reverseMinutes": 210,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "48K紅磚屋",
+      "to": "林道登山口",
+      "forwardMinutes": 80,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "林道登山口",
+      "to": "造林大鐵牌",
+      "forwardMinutes": 50,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "造林大鐵牌",
+      "to": "林道小溪水源",
+      "forwardMinutes": 180,
+      "reverseMinutes": 350,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "林道小溪水源",
+      "to": "栗栖溪",
+      "forwardMinutes": 100,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "三叉峰下營地",
+      "to": "牧山",
+      "forwardMinutes": null,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "交會處箭頭歸屬待人工辨識；不採猜測合計。",
+      "status": "junction-arrow-review-pending",
+      "visibleMinuteLabels": [
+        20,
+        10,
+        5
+      ]
+    },
+    {
+      "chartId": "G13",
+      "from": "牧山",
+      "to": "萬里山西峰",
+      "forwardMinutes": 150,
+      "reverseMinutes": 140,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "三叉峰下營地",
+      "to": "牧山池",
+      "forwardMinutes": null,
+      "reverseMinutes": null,
+      "travelMode": "walking",
+      "note": "交會處箭頭歸屬待人工辨識；不採猜測合計。",
+      "status": "junction-arrow-review-pending",
+      "visibleMinuteLabels": [
+        20,
+        10,
+        5
+      ]
+    },
+    {
+      "chartId": "G13",
+      "from": "牧山池",
+      "to": "東峰下營地",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "東峰下營地",
+      "to": "東南鞍營地",
+      "forwardMinutes": 35,
+      "reverseMinutes": 35,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "林道登山口",
+      "to": "卓社山",
+      "forwardMinutes": 120,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G13",
+      "from": "卓社山",
+      "to": "2899鞍部營地",
+      "forwardMinutes": 180,
+      "reverseMinutes": 140,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "中之關步道口",
+      "to": "中之關",
+      "forwardMinutes": 20,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "中之關",
+      "to": "古道口",
+      "forwardMinutes": 90,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "古道口",
+      "to": "天池",
+      "forwardMinutes": 25,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "塔關山登山口",
+      "to": "塔關山",
+      "forwardMinutes": 110,
+      "reverseMinutes": 85,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "大關山隧道",
+      "to": "關山嶺山",
+      "forwardMinutes": 105,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "進涇橋",
+      "to": "3026山屋",
+      "forwardMinutes": 135,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "3026山屋",
+      "to": "3444主稜",
+      "forwardMinutes": 150,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "3444主稜",
+      "to": "關山",
+      "forwardMinutes": 130,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "關山",
+      "to": "2920鞍營地",
+      "forwardMinutes": 180,
+      "reverseMinutes": 320,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "2920鞍營地",
+      "to": "海諾南山",
+      "forwardMinutes": 130,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "海諾南山",
+      "to": "小關山北峰",
+      "forwardMinutes": 170,
+      "reverseMinutes": 150,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "小關山北峰",
+      "to": "四岔路口",
+      "forwardMinutes": 160,
+      "reverseMinutes": 160,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "四岔路口",
+      "to": "最低鞍部",
+      "forwardMinutes": 70,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "最低鞍部",
+      "to": "雲水山",
+      "forwardMinutes": 60,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "雲水山",
+      "to": "雲馬鞍營地",
+      "forwardMinutes": 90,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "雲馬鞍營地",
+      "to": "馬西巴秀山",
+      "forwardMinutes": 70,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "馬西巴秀山",
+      "to": "馬西巴秀石洞營地",
+      "forwardMinutes": 35,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "馬西巴秀石洞營地",
+      "to": "3237公尺峰",
+      "forwardMinutes": 330,
+      "reverseMinutes": 300,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "三叉峰下營地",
+      "to": "三岔路口",
+      "forwardMinutes": 5,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "三岔路口",
+      "to": "卑南主山",
+      "forwardMinutes": 30,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "卑南主山",
+      "to": "人間天堂",
+      "forwardMinutes": 50,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "3026山屋",
+      "to": "庫哈諾辛山",
+      "forwardMinutes": 80,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "2920鞍營地",
+      "to": "水源",
+      "forwardMinutes": 10,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "雲馬鞍營地",
+      "to": "水源",
+      "forwardMinutes": 15,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "四岔路口",
+      "to": "小關山",
+      "forwardMinutes": 1,
+      "reverseMinutes": 1,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "四岔路口",
+      "to": "凹谷營地",
+      "forwardMinutes": 40,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "凹谷營地",
+      "to": "登山口",
+      "forwardMinutes": 70,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "登山口",
+      "to": "鐵杉營地",
+      "forwardMinutes": 20,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "三岔路口",
+      "to": "新舊路岔路",
+      "forwardMinutes": 145,
+      "reverseMinutes": 190,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "石山西鞍",
+      "to": "溪南山登山口",
+      "forwardMinutes": 15,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "溪南山登山口",
+      "to": "溪南山",
+      "forwardMinutes": 60,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "溪南山",
+      "to": "貨櫃屋",
+      "forwardMinutes": 50,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "貨櫃屋",
+      "to": "石山林道登山口",
+      "forwardMinutes": 100,
+      "reverseMinutes": 200,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "石山林道登山口",
+      "to": "出雲山檢查哨",
+      "forwardMinutes": 110,
+      "reverseMinutes": 115,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "出雲山檢查哨",
+      "to": "18K行車終點",
+      "forwardMinutes": 50,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "石山岔路口",
+      "to": "石山",
+      "forwardMinutes": 2,
+      "reverseMinutes": 2,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G19",
+      "from": "溪南山登山口",
+      "to": "石山秀湖",
+      "forwardMinutes": 40,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "天鑾池",
+      "to": "叉路",
+      "forwardMinutes": 210,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "叉路",
+      "to": "小溪營地",
+      "forwardMinutes": 5,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "叉路",
+      "to": "北合歡山",
+      "forwardMinutes": 30,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "華岡岔路口",
+      "to": "水池營地",
+      "forwardMinutes": 30,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "水池營地",
+      "to": "最低鞍部",
+      "forwardMinutes": 20,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "最低鞍部",
+      "to": "北合歡山",
+      "forwardMinutes": 110,
+      "reverseMinutes": 75,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "北合歡山",
+      "to": "反射板",
+      "forwardMinutes": 15,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "華岡岔路口",
+      "to": "華岡登山口",
+      "forwardMinutes": 80,
+      "reverseMinutes": 140,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "華岡登山口",
+      "to": "圓環",
+      "forwardMinutes": 70,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "克難關",
+      "to": "石門山北峰",
+      "forwardMinutes": 30,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "舊滑訓中心",
+      "to": "石門山",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "合歡山莊",
+      "to": "合歡尖山",
+      "forwardMinutes": 10,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "合歡尖山",
+      "to": "舊滑訓中心",
+      "forwardMinutes": 15,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "武嶺",
+      "to": "合歡山",
+      "forwardMinutes": 60,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "奇萊登山口滑雪山莊",
+      "to": "合歡山東峰",
+      "forwardMinutes": 80,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "奇萊登山口滑雪山莊",
+      "to": "黑水塘山屋",
+      "forwardMinutes": 110,
+      "reverseMinutes": 130,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "黑水塘山屋",
+      "to": "成功山屋",
+      "forwardMinutes": 60,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "成功山屋",
+      "to": "成功一號堡",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "成功一號堡",
+      "to": "主北岔路",
+      "forwardMinutes": 30,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "主北岔路",
+      "to": "奇萊北峰岔路",
+      "forwardMinutes": 100,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "奇萊北峰岔路",
+      "to": "奇萊主山北峰",
+      "forwardMinutes": 55,
+      "reverseMinutes": 35,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "主北岔路",
+      "to": "主北三岔路",
+      "forwardMinutes": 90,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "主北三岔路",
+      "to": "奇萊山莊",
+      "forwardMinutes": 10,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "奇萊山莊",
+      "to": "主山登山口",
+      "forwardMinutes": 90,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "主山登山口",
+      "to": "卡西營地",
+      "forwardMinutes": 90,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "卡西營地",
+      "to": "卡東營地",
+      "forwardMinutes": 230,
+      "reverseMinutes": 270,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "卡東營地",
+      "to": "裡山森林入口",
+      "forwardMinutes": 30,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "裡山森林入口",
+      "to": "南峰登山口",
+      "forwardMinutes": 150,
+      "reverseMinutes": 185,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "南峰登山口",
+      "to": "天池岔路口",
+      "forwardMinutes": 15,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "天池岔路口",
+      "to": "天池山莊",
+      "forwardMinutes": 40,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "天池山莊",
+      "to": "縣界啞口",
+      "forwardMinutes": 50,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "縣界啞口",
+      "to": "南華山",
+      "forwardMinutes": 120,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "主山登山口",
+      "to": "奇萊主山",
+      "forwardMinutes": 25,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "南峰登山口",
+      "to": "奇萊主山南峰",
+      "forwardMinutes": 60,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "天池岔路口",
+      "to": "南華山",
+      "forwardMinutes": 40,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "屯原登山口",
+      "to": "雲海保線所",
+      "forwardMinutes": 120,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "雲海保線所",
+      "to": "天池山莊",
+      "forwardMinutes": 210,
+      "reverseMinutes": 180,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "111.2K屏風山新登山口",
+      "to": "第一次過溪",
+      "forwardMinutes": 80,
+      "reverseMinutes": 130,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "第一次過溪",
+      "to": "鐵線吊橋",
+      "forwardMinutes": 40,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "鐵線吊橋",
+      "to": "屏風山屋 松針營地",
+      "forwardMinutes": 40,
+      "reverseMinutes": 35,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "屏風山屋 松針營地",
+      "to": "塔次基里溪",
+      "forwardMinutes": 8,
+      "reverseMinutes": 8,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "塔次基里溪",
+      "to": "草坡展望台",
+      "forwardMinutes": 170,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "草坡展望台",
+      "to": "裸岩區",
+      "forwardMinutes": 70,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "裸岩區",
+      "to": "屏風山",
+      "forwardMinutes": 60,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "屏風山",
+      "to": "3241稜線",
+      "forwardMinutes": 25,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "3241稜線",
+      "to": "第四水源",
+      "forwardMinutes": 190,
+      "reverseMinutes": 220,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "第四水源",
+      "to": "合歡金礦營地",
+      "forwardMinutes": 70,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G09",
+      "from": "合歡金礦營地",
+      "to": "屏風山屋 松針營地",
+      "forwardMinutes": 65,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "33K行車終點",
+      "to": "33.5K大崩塌",
+      "forwardMinutes": 30,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "33.5K大崩塌",
+      "to": "39.6K大崩塌",
+      "forwardMinutes": 130,
+      "reverseMinutes": 130,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "39.6K大崩塌",
+      "to": "43K工寮",
+      "forwardMinutes": 90,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "43K工寮",
+      "to": "45.3K登山口",
+      "forwardMinutes": 100,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "45.3K登山口",
+      "to": "烏瓦拉鼻溪",
+      "forwardMinutes": 130,
+      "reverseMinutes": 200,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "烏瓦拉鼻溪",
+      "to": "無雙吊橋",
+      "forwardMinutes": 60,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "無雙吊橋",
+      "to": "無雙部落址",
+      "forwardMinutes": 40,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "無雙部落址",
+      "to": "亞力士營地",
+      "forwardMinutes": 220,
+      "reverseMinutes": 300,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "亞力士營地",
+      "to": "最後水源",
+      "forwardMinutes": 15,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "最高峰",
+      "to": "無雙山東峰",
+      "forwardMinutes": 35,
+      "reverseMinutes": 35,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "無雙山東峰",
+      "to": "櫧山",
+      "forwardMinutes": 190,
+      "reverseMinutes": 210,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "櫧山",
+      "to": "櫧山北鞍營地",
+      "forwardMinutes": 60,
+      "reverseMinutes": 95,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "櫧山北鞍營地",
+      "to": "本鄉山",
+      "forwardMinutes": 100,
+      "reverseMinutes": 75,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "本鄉山",
+      "to": "東北鞍營地",
+      "forwardMinutes": 210,
+      "reverseMinutes": 160,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "東巒/烏達岔路",
+      "to": "東巒大山",
+      "forwardMinutes": 50,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "東巒/烏達岔路",
+      "to": "烏達佩山",
+      "forwardMinutes": 5,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "東北鞍營地",
+      "to": "東郡大山",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "東北鞍營地",
+      "to": "岔路",
+      "forwardMinutes": 90,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "岔路",
+      "to": "郡東山",
+      "forwardMinutes": 50,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "郡東山",
+      "to": "可樂可樂安山",
+      "forwardMinutes": 80,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "可樂可樂安山",
+      "to": "天南可蘭/望崖岔路",
+      "forwardMinutes": 140,
+      "reverseMinutes": 140,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "天南可蘭/望崖岔路",
+      "to": "望崖山",
+      "forwardMinutes": 80,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "望崖山",
+      "to": "丹大溪源營地",
+      "forwardMinutes": 60,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "丹大溪源營地",
+      "to": "裡門山",
+      "forwardMinutes": 60,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "裡門山",
+      "to": "斷稜東山",
+      "forwardMinutes": 130,
+      "reverseMinutes": 130,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "斷稜東山",
+      "to": "義西請馬至山",
+      "forwardMinutes": 80,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "義西請馬至山",
+      "to": "東鞍營地",
+      "forwardMinutes": 95,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "東鞍營地",
+      "to": "馬路巴拉讓山",
+      "forwardMinutes": 130,
+      "reverseMinutes": 150,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "馬路巴拉讓山",
+      "to": "三岔路口營地",
+      "forwardMinutes": 60,
+      "reverseMinutes": 65,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "太平溪源營地",
+      "to": "盧利拉駱山",
+      "forwardMinutes": 65,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "盧利拉駱山",
+      "to": "丹大山",
+      "forwardMinutes": 100,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "岔路",
+      "to": "營地",
+      "forwardMinutes": 3,
+      "reverseMinutes": 3,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "天南可蘭/望崖岔路",
+      "to": "天南可蘭山",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "烏妹浪胖池",
+      "to": "義西請馬至山",
+      "forwardMinutes": 80,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "烏妹浪胖池",
+      "to": "烏妹浪胖山",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "烏妹浪胖山",
+      "to": "哈伊拉羅溪北源",
+      "forwardMinutes": 100,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "哈伊拉羅溪北源",
+      "to": "僕落西擴山",
+      "forwardMinutes": 170,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "僕落西擴山",
+      "to": "哈伊拉羅溪中源",
+      "forwardMinutes": 130,
+      "reverseMinutes": 210,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "烏可冬克山",
+      "to": "哈伊拉羅溪南源",
+      "forwardMinutes": 40,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "哈伊拉羅溪南源",
+      "to": "馬利加南東峰山屋",
+      "forwardMinutes": 210,
+      "reverseMinutes": 150,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "馬利加南東峰山屋",
+      "to": "馬利加南山東峰",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "馬利加南山東峰",
+      "to": "馬布谷山屋",
+      "forwardMinutes": 245,
+      "reverseMinutes": 310,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "馬布谷山屋",
+      "to": "太平谷南口",
+      "forwardMinutes": 325,
+      "reverseMinutes": 360,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "太平谷南口",
+      "to": "玉林橋大崩壁",
+      "forwardMinutes": 355,
+      "reverseMinutes": 435,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "玉林橋大崩壁",
+      "to": "16.5K行車終點",
+      "forwardMinutes": 225,
+      "reverseMinutes": 255,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "三岔路口營地",
+      "to": "內嶺爾山",
+      "forwardMinutes": 30,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "太平溪源營地",
+      "to": "太平溪源",
+      "forwardMinutes": 35,
+      "reverseMinutes": 35,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "太平溪源",
+      "to": "杜鵑營地",
+      "forwardMinutes": 100,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "杜鵑營地",
+      "to": "2907峰",
+      "forwardMinutes": 120,
+      "reverseMinutes": 140,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "東源營地",
+      "to": "三岔路口",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "三岔路口",
+      "to": "松林營地",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "松林營地",
+      "to": "鐵線斷崖西口",
+      "forwardMinutes": 20,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "鐵線斷崖西口",
+      "to": "鐵線斷崖東口",
+      "forwardMinutes": 330,
+      "reverseMinutes": 350,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "鐵線斷崖東口",
+      "to": "34K登山口",
+      "forwardMinutes": 20,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "2897草原水池",
+      "to": "松林營地",
+      "forwardMinutes": 130,
+      "reverseMinutes": 140,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "34K登山口",
+      "to": "32K水泥工寮",
+      "forwardMinutes": 45,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "32K水泥工寮",
+      "to": "28K水泥工寮",
+      "forwardMinutes": 130,
+      "reverseMinutes": 150,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "28K水泥工寮",
+      "to": "26K岔路",
+      "forwardMinutes": 60,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "26K岔路",
+      "to": "19.3K水泥橋",
+      "forwardMinutes": 150,
+      "reverseMinutes": 200,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G15",
+      "from": "19.3K水泥橋",
+      "to": "14.6K水泥路止",
+      "forwardMinutes": 90,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "東埔溫泉",
+      "to": "八通關登山口",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "八通關登山口",
+      "to": "三聖宮",
+      "forwardMinutes": 25,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "三聖宮",
+      "to": "樂樂溫泉岔路",
+      "forwardMinutes": 50,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "樂樂溫泉岔路",
+      "to": "雲龍瀑布",
+      "forwardMinutes": 45,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "樂樂山屋",
+      "to": "乙女瀑布",
+      "forwardMinutes": 25,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "觀高坪",
+      "to": "古道崩斷岔路",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "西峰岔路",
+      "to": "八通關山登山口",
+      "forwardMinutes": 30,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "三岔路口",
+      "to": "中央金礦山屋",
+      "forwardMinutes": 35,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "中央金礦山屋",
+      "to": "白洋金礦山屋",
+      "forwardMinutes": 190,
+      "reverseMinutes": 160,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "白洋金礦山屋",
+      "to": "秀姑坪岔路",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "秀姑巒山南登山口",
+      "to": "秀馬山屋舊址",
+      "forwardMinutes": 60,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "馬博前岔路",
+      "to": "馬博拉斯山",
+      "forwardMinutes": 10,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "馬博拉斯山",
+      "to": "盆駒山南峰",
+      "forwardMinutes": 90,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "盆駒山南峰",
+      "to": "2950鞍岔路",
+      "forwardMinutes": 90,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "2950鞍岔路",
+      "to": "盆駒山",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "馬博前岔路",
+      "to": "馬博拉斯山屋",
+      "forwardMinutes": 30,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "馬博拉斯山屋",
+      "to": "馬利亞文路山",
+      "forwardMinutes": 150,
+      "reverseMinutes": 135,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "馬利亞文路山",
+      "to": "馬利亞文路山東峰",
+      "forwardMinutes": 45,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "馬利亞文路山東峰",
+      "to": "最低鞍部",
+      "forwardMinutes": 50,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "最低鞍部",
+      "to": "馬利加南山",
+      "forwardMinutes": 150,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "馬利加南山",
+      "to": "馬利加南東峰山屋",
+      "forwardMinutes": 80,
+      "reverseMinutes": 130,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "馬利加南東峰山屋",
+      "to": "馬利加南山東峰",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "馬利加南山東峰",
+      "to": "3191公尺峰",
+      "forwardMinutes": 185,
+      "reverseMinutes": 220,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "3191公尺峰",
+      "to": "馬布谷山屋",
+      "forwardMinutes": 60,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "馬布谷山屋",
+      "to": "馬西山登山口",
+      "forwardMinutes": 100,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "馬西山登山口",
+      "to": "岔路登山口",
+      "forwardMinutes": 130,
+      "reverseMinutes": 165,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "岔路登山口",
+      "to": "太平谷南口",
+      "forwardMinutes": 70,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "太平谷南口",
+      "to": "太平谷東北口",
+      "forwardMinutes": 30,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "太平谷東北口",
+      "to": "44K林道盡頭",
+      "forwardMinutes": 65,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "44K林道盡頭",
+      "to": "43K廢棄工寮",
+      "forwardMinutes": 20,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "43K廢棄工寮",
+      "to": "捷徑下切點",
+      "forwardMinutes": 70,
+      "reverseMinutes": 85,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "捷徑下切點",
+      "to": "廢棄發電機",
+      "forwardMinutes": 40,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "廢棄發電機",
+      "to": "岔路",
+      "forwardMinutes": 20,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "岔路",
+      "to": "林道玉林橋下切點",
+      "forwardMinutes": 25,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "林道玉林橋下切點",
+      "to": "下切溪床點",
+      "forwardMinutes": 85,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "下切溪床點",
+      "to": "大石帆布營地",
+      "forwardMinutes": 45,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "大石帆布營地",
+      "to": "溪谷上切處",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "溪谷上切處",
+      "to": "林道崩毀處",
+      "forwardMinutes": 15,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "林道崩毀處",
+      "to": "林道石壁營地",
+      "forwardMinutes": 70,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "17K水泥橋",
+      "to": "16.5K行車終點",
+      "forwardMinutes": 20,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "岔路登山口",
+      "to": "喀西帕南山",
+      "forwardMinutes": 25,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "太平谷南口",
+      "to": "喀西帕南登山口",
+      "forwardMinutes": 15,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "喀西帕南登山口",
+      "to": "喀西帕南山",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "馬西山登山口",
+      "to": "馬西山",
+      "forwardMinutes": 20,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "馬布谷山屋",
+      "to": "布干山",
+      "forwardMinutes": 70,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "秀姑巒山南登山口",
+      "to": "秀姑巒山",
+      "forwardMinutes": 50,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "三岔路口",
+      "to": "老濃溪",
+      "forwardMinutes": 20,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "老濃溪",
+      "to": "稜線岔路",
+      "forwardMinutes": 55,
+      "reverseMinutes": 105,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "稜線岔路",
+      "to": "杜鵑營地",
+      "forwardMinutes": 45,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "杜鵑營地",
+      "to": "四岔路口",
+      "forwardMinutes": 70,
+      "reverseMinutes": 65,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "四岔路口",
+      "to": "大水窟山",
+      "forwardMinutes": 140,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "大水窟山",
+      "to": "大水窟山屋",
+      "forwardMinutes": 100,
+      "reverseMinutes": 140,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "大水窟山屋",
+      "to": "南營地",
+      "forwardMinutes": 70,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "南營地",
+      "to": "四岔路口",
+      "forwardMinutes": 55,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "八通關山登山口",
+      "to": "巴奈伊克山屋",
+      "forwardMinutes": 30,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "八通關山登山口",
+      "to": "八通關草原",
+      "forwardMinutes": 80,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "八通關草原",
+      "to": "古道崩斷岔路",
+      "forwardMinutes": 70,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "觀高坪",
+      "to": "觀高登山服務處",
+      "forwardMinutes": 15,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "八通關山三岔路口",
+      "to": "八通關山",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G16",
+      "from": "八通關山三岔路口",
+      "to": "八通關山西峰",
+      "forwardMinutes": 50,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "八通關登山口",
+      "to": "雲龍瀑布",
+      "forwardMinutes": 120,
+      "reverseMinutes": 105,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "雲龍瀑布",
+      "to": "樂樂山屋",
+      "forwardMinutes": 60,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "樂樂山屋",
+      "to": "觀高坪",
+      "forwardMinutes": 275,
+      "reverseMinutes": 215,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "觀高坪",
+      "to": "西峰岔路",
+      "forwardMinutes": 105,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "西峰岔路",
+      "to": "八通關山西峰",
+      "forwardMinutes": 50,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "八通關山西峰",
+      "to": "八通關山三岔路口",
+      "forwardMinutes": 50,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "三岔路口",
+      "to": "八通關山登山口",
+      "forwardMinutes": 45,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "八通關山登山口",
+      "to": "巴奈伊克山屋",
+      "forwardMinutes": 30,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "觀高坪",
+      "to": "觀高登山服務站",
+      "forwardMinutes": 15,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "觀高坪",
+      "to": "八通關草原",
+      "forwardMinutes": 65,
+      "reverseMinutes": 75,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "八通關草原",
+      "to": "八通關山登山口",
+      "forwardMinutes": 80,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "八通關草原",
+      "to": "西峰岔路",
+      "forwardMinutes": 70,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "八通關山三岔路口",
+      "to": "八通關山",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "中央金礦山屋",
+      "to": "白洋金礦山屋",
+      "forwardMinutes": 190,
+      "reverseMinutes": 160,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "白洋金礦山屋",
+      "to": "秀姑坪岔路",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "秀姑巒山南登山口",
+      "to": "秀馬山屋舊址",
+      "forwardMinutes": 60,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "秀馬山屋舊址",
+      "to": "秀姑巒山",
+      "forwardMinutes": 25,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "秀姑巒山南登山口",
+      "to": "秀姑巒山",
+      "forwardMinutes": 50,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "稜線岔路",
+      "to": "杜鵑營地",
+      "forwardMinutes": 45,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "杜鵑營地",
+      "to": "四岔路口",
+      "forwardMinutes": 70,
+      "reverseMinutes": 65,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "四岔路口",
+      "to": "大水窟山",
+      "forwardMinutes": 140,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "大水窟山",
+      "to": "大水窟山屋",
+      "forwardMinutes": 100,
+      "reverseMinutes": 140,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "大水窟山屋",
+      "to": "南大水窟山",
+      "forwardMinutes": 95,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "南大水窟山",
+      "to": "三岔路口",
+      "forwardMinutes": 95,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "三岔路口",
+      "to": "黑水塘",
+      "forwardMinutes": 5,
+      "reverseMinutes": 7,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "黑水塘",
+      "to": "達芬尖山登山口",
+      "forwardMinutes": 135,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "達芬尖山登山口",
+      "to": "塔芬谷山屋",
+      "forwardMinutes": 90,
+      "reverseMinutes": 150,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "塔芬谷山屋",
+      "to": "塔芬山",
+      "forwardMinutes": 160,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "塔芬山",
+      "to": "塔芬池",
+      "forwardMinutes": 20,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "塔芬池",
+      "to": "轆轆山登山口",
+      "forwardMinutes": 250,
+      "reverseMinutes": 210,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "轆轆山登山口",
+      "to": "轆轆谷山屋",
+      "forwardMinutes": 45,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "轆轆谷山屋",
+      "to": "雲峰東峰三岔路口營地",
+      "forwardMinutes": 240,
+      "reverseMinutes": 200,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "雲峰東峰三岔路口營地",
+      "to": "西北鞍南雙池營地",
+      "forwardMinutes": 150,
+      "reverseMinutes": 170,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "西北鞍南雙池營地",
+      "to": "南雙頭山",
+      "forwardMinutes": 50,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "南雙頭山",
+      "to": "拉庫音溪山屋",
+      "forwardMinutes": 110,
+      "reverseMinutes": 180,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "拉庫音溪山屋",
+      "to": "新康山岔路口",
+      "forwardMinutes": 220,
+      "reverseMinutes": 130,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "新康山岔路口",
+      "to": "嘉明湖岔路口",
+      "forwardMinutes": 30,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "嘉明湖岔路口",
+      "to": "三叉山登山口",
+      "forwardMinutes": 25,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "三叉山登山口",
+      "to": "北峰下解說牌",
+      "forwardMinutes": 55,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "北峰下解說牌",
+      "to": "三岔路口",
+      "forwardMinutes": 35,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "三岔路口",
+      "to": "嘉明湖避難山屋",
+      "forwardMinutes": 15,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "嘉明湖避難山屋",
+      "to": "西側登山口",
+      "forwardMinutes": 45,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "西側登山口",
+      "to": "向陽山屋",
+      "forwardMinutes": 130,
+      "reverseMinutes": 180,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "向陽山屋",
+      "to": "林道登山口",
+      "forwardMinutes": 40,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "林道登山口",
+      "to": "向陽森林遊樂區",
+      "forwardMinutes": 50,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "轆轆山登山口",
+      "to": "轆轆東峰",
+      "forwardMinutes": 5,
+      "reverseMinutes": 3,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "轆轆東峰",
+      "to": "轆轆山",
+      "forwardMinutes": 25,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "雲峰東峰三岔路口營地",
+      "to": "雲峰",
+      "forwardMinutes": 120,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "雲峰東峰三岔路口營地",
+      "to": "水源",
+      "forwardMinutes": 15,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "四岔路口",
+      "to": "荖濃溪底營地",
+      "forwardMinutes": 90,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "荖濃溪底營地",
+      "to": "三岔路口",
+      "forwardMinutes": 130,
+      "reverseMinutes": 95,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "達芬尖山登山口",
+      "to": "達芬尖山",
+      "forwardMinutes": 20,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "嘉明湖岔路口",
+      "to": "嘉明湖",
+      "forwardMinutes": 15,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "三叉山登山口",
+      "to": "三叉山",
+      "forwardMinutes": 25,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "嘉明湖岔路口",
+      "to": "三叉山",
+      "forwardMinutes": 20,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "三岔路口",
+      "to": "向陽山",
+      "forwardMinutes": 60,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G17",
+      "from": "西側登山口",
+      "to": "向陽山",
+      "forwardMinutes": 35,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "向陽森林遊樂區",
+      "to": "林道登山口",
+      "forwardMinutes": 80,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "林道登山口",
+      "to": "向陽山屋",
+      "forwardMinutes": 70,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "向陽山屋",
+      "to": "西側登山口",
+      "forwardMinutes": 180,
+      "reverseMinutes": 130,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "西側登山口",
+      "to": "嘉明湖避難山屋",
+      "forwardMinutes": 40,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "嘉明湖避難山屋",
+      "to": "三岔路口",
+      "forwardMinutes": 15,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "三岔路口",
+      "to": "北峰下解說牌",
+      "forwardMinutes": 40,
+      "reverseMinutes": 35,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "北峰下解說牌",
+      "to": "三叉山登山口",
+      "forwardMinutes": 80,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "三叉山登山口",
+      "to": "嘉明湖岔路口",
+      "forwardMinutes": 30,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "嘉明湖岔路口",
+      "to": "新康山岔路口",
+      "forwardMinutes": 40,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "新康山岔路口",
+      "to": "布新岔路口",
+      "forwardMinutes": 70,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "布新岔路口",
+      "to": "3058公尺峰",
+      "forwardMinutes": 80,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "3058公尺峰",
+      "to": "連理西峰前營地",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "連理西峰前營地",
+      "to": "西峰東稜平台",
+      "forwardMinutes": 40,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "西峰東稜平台",
+      "to": "飛機殘骸",
+      "forwardMinutes": 80,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "飛機殘骸",
+      "to": "桃源營地",
+      "forwardMinutes": 60,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "桃源營地",
+      "to": "連理山",
+      "forwardMinutes": 130,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "鞍部黑水塘",
+      "to": "新仙山前營地",
+      "forwardMinutes": 45,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "新仙山前營地",
+      "to": "新仙山營地",
+      "forwardMinutes": 20,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "新仙山營地",
+      "to": "三岔路口",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "三岔路口",
+      "to": "新仙山",
+      "forwardMinutes": 1,
+      "reverseMinutes": 1,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "新仙山",
+      "to": "最低鞍部",
+      "forwardMinutes": 70,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "最低鞍部",
+      "to": "新康山",
+      "forwardMinutes": 75,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "新康山",
+      "to": "天宮堡壘",
+      "forwardMinutes": 25,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "西側登山口",
+      "to": "向陽山",
+      "forwardMinutes": 35,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "向陽山",
+      "to": "三岔路口",
+      "forwardMinutes": 45,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "三叉山登山口",
+      "to": "三叉山",
+      "forwardMinutes": 25,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "三叉山",
+      "to": "嘉明湖岔路口",
+      "forwardMinutes": 10,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "新康山岔路口",
+      "to": "拉庫音溪山屋",
+      "forwardMinutes": 130,
+      "reverseMinutes": 220,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "嘉明湖岔路口",
+      "to": "嘉明湖",
+      "forwardMinutes": 15,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "嘉明湖",
+      "to": "嘉明妹池",
+      "forwardMinutes": 70,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "嘉明妹池",
+      "to": "足球場營地",
+      "forwardMinutes": 120,
+      "reverseMinutes": 190,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "足球場營地",
+      "to": "新武呂溪",
+      "forwardMinutes": 120,
+      "reverseMinutes": 210,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "新武呂溪",
+      "to": "岔路口",
+      "forwardMinutes": 100,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "岔路口",
+      "to": "戒茂斯山前峰",
+      "forwardMinutes": 80,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "戒茂斯山前峰",
+      "to": "156.5K登山口",
+      "forwardMinutes": 25,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "布新岔路口",
+      "to": "三叉稜下營地",
+      "forwardMinutes": 8,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "三叉稜下營地",
+      "to": "草原大窪地",
+      "forwardMinutes": 110,
+      "reverseMinutes": 140,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "草原大窪地",
+      "to": "2835鞍部",
+      "forwardMinutes": 90,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "2835鞍部",
+      "to": "布拉克桑山",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "桃源營地",
+      "to": "山壁水源",
+      "forwardMinutes": 20,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "岔路口",
+      "to": "戒茂斯山",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "新仙山營地",
+      "to": "松針營地",
+      "forwardMinutes": 70,
+      "reverseMinutes": 120,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "松針營地",
+      "to": "下切點",
+      "forwardMinutes": 40,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "下切點",
+      "to": "新康山登山口",
+      "forwardMinutes": 140,
+      "reverseMinutes": 280,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "新康山登山口",
+      "to": "抱崖山屋",
+      "forwardMinutes": 50,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "抱崖山屋",
+      "to": "瓦拉米山屋",
+      "forwardMinutes": 305,
+      "reverseMinutes": 345,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "瓦拉米山屋",
+      "to": "瓦拉米步道起點",
+      "forwardMinutes": 25,
+      "reverseMinutes": 35,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G18",
+      "from": "瓦拉米步道起點",
+      "to": "南安遊客中心",
+      "forwardMinutes": 20,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G06",
+      "from": "白姑大山",
+      "to": "草青池",
+      "forwardMinutes": 45,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G06",
+      "from": "草青池",
+      "to": "一線天岩壁",
+      "forwardMinutes": 65,
+      "reverseMinutes": 75,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G06",
+      "from": "一線天岩壁",
+      "to": "吉他營地",
+      "forwardMinutes": 70,
+      "reverseMinutes": 85,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G06",
+      "from": "吉他營地",
+      "to": "白姑大山東南峰",
+      "forwardMinutes": 80,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G06",
+      "from": "白姑大山東南峰",
+      "to": "司晏池營地",
+      "forwardMinutes": 50,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G06",
+      "from": "司晏池營地",
+      "to": "三錐山",
+      "forwardMinutes": 110,
+      "reverseMinutes": 130,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G06",
+      "from": "三錐山",
+      "to": "水管路岔路口",
+      "forwardMinutes": 110,
+      "reverseMinutes": 160,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G06",
+      "from": "水管路岔路口",
+      "to": "白姑大山登山口",
+      "forwardMinutes": 25,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G06",
+      "from": "白姑大山登山口",
+      "to": "停車場",
+      "forwardMinutes": 5,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": ""
+    },
+    {
+      "chartId": "G05",
+      "from": "志佳陽大山",
+      "to": "志佳陽基點峰",
+      "forwardMinutes": 15,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G09",
+      "from": "天鑾池",
+      "to": "武法奈尾山",
+      "forwardMinutes": 20,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G09",
+      "from": "反射板",
+      "to": "北合歡山登山口",
+      "forwardMinutes": 45,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G09",
+      "from": "反射板",
+      "to": "碧池",
+      "forwardMinutes": 5,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G09",
+      "from": "西合歡山",
+      "to": "華岡岔路口",
+      "forwardMinutes": 45,
+      "reverseMinutes": 35,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G09",
+      "from": "天鑾池",
+      "to": "果園登山口",
+      "forwardMinutes": 60,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G09",
+      "from": "松泉崗/天池登山口",
+      "to": "果園登山口",
+      "forwardMinutes": 45,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G10",
+      "from": "磐石山",
+      "to": "磐石中峰營地",
+      "forwardMinutes": 100,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G10",
+      "from": "平安池",
+      "to": "三叉營地",
+      "forwardMinutes": 260,
+      "reverseMinutes": 200,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G10",
+      "from": "平安池",
+      "to": "2687鞍三岔口",
+      "forwardMinutes": 70,
+      "reverseMinutes": 85,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G10",
+      "from": "2687鞍三岔口",
+      "to": "大理石營地",
+      "forwardMinutes": 130,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G10",
+      "from": "9K水泥工寮",
+      "to": "6K高繞岔路口",
+      "forwardMinutes": 75,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G10",
+      "from": "江口山岔路口",
+      "to": "江口山",
+      "forwardMinutes": 10,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G10",
+      "from": "3.8K流籠頭",
+      "to": "1號索道頭",
+      "forwardMinutes": 80,
+      "reverseMinutes": 85,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G10",
+      "from": "江口山岔路口",
+      "to": "3.8K流籠頭",
+      "forwardMinutes": 135,
+      "reverseMinutes": 210,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G12",
+      "from": "第四支流合匯點",
+      "to": "第一越嶺點",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G12",
+      "from": "第一越嶺點",
+      "to": "第二越嶺點",
+      "forwardMinutes": 50,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G12",
+      "from": "第二越嶺點",
+      "to": "第三越嶺點(松風嶺)",
+      "forwardMinutes": 40,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G12",
+      "from": "第三越嶺點(松風嶺)",
+      "to": "奧萬大吊橋",
+      "forwardMinutes": 35,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G12",
+      "from": "奧萬大吊橋",
+      "to": "遊客中心停車場",
+      "forwardMinutes": 70,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G13",
+      "from": "東北鞍營地",
+      "to": "卓社大山東峰叉路口",
+      "forwardMinutes": 20,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G13",
+      "from": "東北鞍營地",
+      "to": "東峰下營地",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G15",
+      "from": "無雙山基點峰",
+      "to": "最後水源",
+      "forwardMinutes": 200,
+      "reverseMinutes": 360,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G15",
+      "from": "最高峰",
+      "to": "無雙山基點峰",
+      "forwardMinutes": 25,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G15",
+      "from": "哈伊拉羅溪中源",
+      "to": "烏可冬克山",
+      "forwardMinutes": 180,
+      "reverseMinutes": 130,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G15",
+      "from": "東巒/烏達岔路",
+      "to": "東北鞍營地",
+      "forwardMinutes": 80,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G15",
+      "from": "東源營地",
+      "to": "西源營地",
+      "forwardMinutes": 15,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G15",
+      "from": "2907峰",
+      "to": "西源營地",
+      "forwardMinutes": 100,
+      "reverseMinutes": 160,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G15",
+      "from": "2897草原水池",
+      "to": "方便池",
+      "forwardMinutes": 40,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G15",
+      "from": "方便池",
+      "to": "沙武巒草原",
+      "forwardMinutes": 130,
+      "reverseMinutes": 180,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G15",
+      "from": "沙武巒草原",
+      "to": "林道盡頭",
+      "forwardMinutes": 15,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G15",
+      "from": "林道盡頭",
+      "to": "34K登山口",
+      "forwardMinutes": 35,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G15",
+      "from": "三岔路口營地",
+      "to": "太平溪源營地",
+      "forwardMinutes": 80,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G16",
+      "from": "雲龍瀑布",
+      "to": "樂樂山屋",
+      "forwardMinutes": 60,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G16",
+      "from": "乙女瀑布",
+      "to": "對觀",
+      "forwardMinutes": 100,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G16",
+      "from": "對觀",
+      "to": "觀高坪",
+      "forwardMinutes": 150,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G16",
+      "from": "古道崩斷岔路",
+      "to": "溪水營地",
+      "forwardMinutes": 60,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G16",
+      "from": "溪水營地",
+      "to": "西峰岔路",
+      "forwardMinutes": 40,
+      "reverseMinutes": 35,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G16",
+      "from": "西峰岔路",
+      "to": "八通關草原",
+      "forwardMinutes": 50,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G16",
+      "from": "西峰岔路",
+      "to": "八通關山西峰",
+      "forwardMinutes": 50,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G16",
+      "from": "巴奈伊克山屋",
+      "to": "三岔路口",
+      "forwardMinutes": 15,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G16",
+      "from": "秀姑坪岔路",
+      "to": "秀姑巒山南登山口",
+      "forwardMinutes": 60,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G16",
+      "from": "喀西帕南山登山口",
+      "to": "太平谷南口",
+      "forwardMinutes": 80,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G16",
+      "from": "岔路登山口",
+      "to": "喀西帕南山登山口",
+      "forwardMinutes": 15,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G16",
+      "from": "岔路",
+      "to": "35K廢棄工寮",
+      "forwardMinutes": 2,
+      "reverseMinutes": 2,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G16",
+      "from": "林道石壁營地",
+      "to": "19K廢工寮",
+      "forwardMinutes": 25,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G16",
+      "from": "19K廢工寮",
+      "to": "17K水泥橋",
+      "forwardMinutes": 40,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G16",
+      "from": "馬博前岔路",
+      "to": "最低鞍部",
+      "forwardMinutes": 40,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G16",
+      "from": "最低鞍部",
+      "to": "秀馬山屋舊址",
+      "forwardMinutes": 180,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G16",
+      "from": "秀姑巒山",
+      "to": "秀馬山屋舊址",
+      "forwardMinutes": 20,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G16",
+      "from": "荖濃溪",
+      "to": "稜線岔路",
+      "forwardMinutes": 105,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G16",
+      "from": "三岔路口",
+      "to": "荖濃溪",
+      "forwardMinutes": 15,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G16",
+      "from": "八通關山三岔路口",
+      "to": "八通關山登山口",
+      "forwardMinutes": 45,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G16",
+      "from": "稜線岔路",
+      "to": "中央金礦山屋",
+      "forwardMinutes": 110,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G17",
+      "from": "巴奈伊克山屋",
+      "to": "三岔路口",
+      "forwardMinutes": 15,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G17",
+      "from": "三岔路口",
+      "to": "中央金礦山屋",
+      "forwardMinutes": 35,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G17",
+      "from": "三岔路口",
+      "to": "荖濃溪",
+      "forwardMinutes": 15,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G17",
+      "from": "秀姑坪岔路",
+      "to": "大水窟山",
+      "forwardMinutes": 140,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G17",
+      "from": "秀姑坪岔路",
+      "to": "秀姑巒山南登山口",
+      "forwardMinutes": 60,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G17",
+      "from": "四岔路口",
+      "to": "南營地",
+      "forwardMinutes": 55,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G17",
+      "from": "南營地",
+      "to": "大水窟山屋",
+      "forwardMinutes": 70,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G17",
+      "from": "荖濃溪",
+      "to": "稜線岔路",
+      "forwardMinutes": 105,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G17",
+      "from": "稜線岔路",
+      "to": "中央金礦山屋",
+      "forwardMinutes": 110,
+      "reverseMinutes": 90,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G17",
+      "from": "八通關山三岔路口",
+      "to": "八通關山登山口",
+      "forwardMinutes": 45,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G18",
+      "from": "連理山",
+      "to": "鞍部黑水塘",
+      "forwardMinutes": 65,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G18",
+      "from": "新仙山",
+      "to": "新仙山營地",
+      "forwardMinutes": 1,
+      "reverseMinutes": 1,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G19",
+      "from": "3237公尺峰",
+      "to": "三叉峰下營地",
+      "forwardMinutes": 65,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G19",
+      "from": "林道鞍部",
+      "to": "新舊路岔路",
+      "forwardMinutes": 180,
+      "reverseMinutes": 130,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G19",
+      "from": "石瀑區",
+      "to": "林道鞍部",
+      "forwardMinutes": 70,
+      "reverseMinutes": 100,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G19",
+      "from": "石山岔路口",
+      "to": "石瀑區",
+      "forwardMinutes": 30,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G19",
+      "from": "石山西鞍",
+      "to": "石山岔路口",
+      "forwardMinutes": 110,
+      "reverseMinutes": 75,
+      "travelMode": "walking",
+      "note": "arrowheads re-read in enlarged main schematic crop"
+    },
+    {
+      "chartId": "G02",
+      "from": "東埔溫泉",
+      "to": "八通關登山口",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking",
+      "note": "main schematic visual transcription"
+    },
+    {
+      "chartId": "G02",
+      "from": "八通關登山口",
+      "to": "三聖宮",
+      "forwardMinutes": 25,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": "main schematic visual transcription"
+    },
+    {
+      "chartId": "G02",
+      "from": "三聖宮",
+      "to": "樂樂溫泉岔路",
+      "forwardMinutes": 50,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": "main schematic visual transcription"
+    },
+    {
+      "chartId": "G02",
+      "from": "樂樂溫泉岔路",
+      "to": "雲龍瀑布",
+      "forwardMinutes": 45,
+      "reverseMinutes": 45,
+      "travelMode": "walking",
+      "note": "main schematic visual transcription"
+    },
+    {
+      "chartId": "G02",
+      "from": "雲龍瀑布",
+      "to": "樂樂山屋",
+      "forwardMinutes": 60,
+      "reverseMinutes": 55,
+      "travelMode": "walking",
+      "note": "main schematic visual transcription"
+    },
+    {
+      "chartId": "G02",
+      "from": "樂樂山屋",
+      "to": "乙女瀑布",
+      "forwardMinutes": 25,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "note": "main schematic visual transcription"
+    },
+    {
+      "chartId": "G02",
+      "from": "乙女瀑布",
+      "to": "對觀",
+      "forwardMinutes": 100,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": "main schematic visual transcription"
+    },
+    {
+      "chartId": "G02",
+      "from": "對觀",
+      "to": "觀高坪",
+      "forwardMinutes": 150,
+      "reverseMinutes": 110,
+      "travelMode": "walking",
+      "note": "main schematic visual transcription"
+    },
+    {
+      "chartId": "G02",
+      "from": "觀高坪",
+      "to": "古道崩斷岔路",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking",
+      "note": "main schematic visual transcription"
+    },
+    {
+      "chartId": "G02",
+      "from": "古道崩斷岔路",
+      "to": "溪水營地",
+      "forwardMinutes": 60,
+      "reverseMinutes": 40,
+      "travelMode": "walking",
+      "note": "main schematic visual transcription"
+    },
+    {
+      "chartId": "G02",
+      "from": "溪水營地",
+      "to": "西峰岔路",
+      "forwardMinutes": 40,
+      "reverseMinutes": 35,
+      "travelMode": "walking",
+      "note": "main schematic visual transcription"
+    },
+    {
+      "chartId": "G02",
+      "from": "西峰岔路",
+      "to": "八通關草原",
+      "forwardMinutes": 50,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "note": "main schematic visual transcription"
+    },
+    {
+      "chartId": "G02",
+      "from": "西峰岔路",
+      "to": "八通關山西峰",
+      "forwardMinutes": 50,
+      "reverseMinutes": 30,
+      "travelMode": "walking",
+      "note": "main schematic visual transcription"
+    },
+    {
+      "chartId": "G02",
+      "from": "八通關山西峰",
+      "to": "八通關山三岔路口",
+      "forwardMinutes": 50,
+      "reverseMinutes": 50,
+      "travelMode": "walking",
+      "note": "main schematic visual transcription"
+    },
+    {
+      "chartId": "G02",
+      "from": "八通關山三岔路口",
+      "to": "八通關山",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking",
+      "note": "main schematic visual transcription"
+    },
+    {
+      "chartId": "G02",
+      "from": "八通關山三岔路口",
+      "to": "八通關山登山口",
+      "forwardMinutes": 45,
+      "reverseMinutes": 60,
+      "travelMode": "walking",
+      "note": "main schematic visual transcription"
+    },
+    {
+      "chartId": "G02",
+      "from": "八通關山登山口",
+      "to": "八通關草原",
+      "forwardMinutes": 80,
+      "reverseMinutes": 80,
+      "travelMode": "walking",
+      "note": "main schematic visual transcription"
+    },
+    {
+      "chartId": "G02",
+      "from": "觀高坪",
+      "to": "觀高登山服務站",
+      "forwardMinutes": 15,
+      "reverseMinutes": 15,
+      "travelMode": "walking",
+      "note": "main schematic visual transcription"
+    },
+    {
+      "chartId": "G02",
+      "from": "八通關草原",
+      "to": "荖濃溪營地",
+      "forwardMinutes": 200,
+      "reverseMinutes": 130,
+      "travelMode": "walking",
+      "note": "main schematic visual transcription"
+    }
+  ]
+}
