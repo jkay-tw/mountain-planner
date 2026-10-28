@@ -622,7 +622,7 @@ test('G07 full updated source review matches all 92 preview directions',async()=
 test('v0.7.13 unified manifest adds G07 without changing existing G06/G17G18 IDs',async()=>{
  const {readFileSync}=await import('node:fs');
  const m=JSON.parse(readFileSync(new URL('../data/unified-editor-manifest.json',import.meta.url),'utf8'));
- assert.deepEqual(m.routes.map(x=>x.id),['G03','G06','G07','G08','G11','G14','G17G18-PREVIEW']);
+ assert.deepEqual(m.routes.map(x=>x.id),['G02','G03','G06','G07','G08','G11','G14','G17G18-PREVIEW']);
 });
 
 test('G03 and G11 preview routes include only source-reviewed walking subsets',async()=>{
