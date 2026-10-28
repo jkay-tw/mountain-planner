@@ -746,3 +746,38 @@ test('G04 duplicate generic labels stay separate and vehicle-marked farm links s
  assert.equal(route.nodes.find(x=>x.name==='雪山主峰')?.id,'shared:cw-v07-074');
  assert.equal(route.nodes.find(x=>x.name==='翠池山屋')?.id,'shared:cw-v07-066');
 });
+
+test('v0.7.19 legacy G06 itinerary migrates to global graph without losing planning time and notes',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const {mergeReviewedRoutes}=await import('../js/global-route.js');
+ const {migrateLegacyPlanDays}=await import('../js/legacy-plan-migration.js');
+ const g06=addRouteIdentity(JSON.parse(readFileSync(new URL('../data/routes/G06.json',import.meta.url),'utf8')));
+ const g04=addRouteIdentity(JSON.parse(readFileSync(new URL('../data/routes/G04.preview.json',import.meta.url),'utf8')));
+ const global=mergeReviewedRoutes([g06,g04]);
+ const days=[{id:'day-old',startTime:'05:15',coefficient:.75,note:'legacy memo',linkedStart:false,items:[
+  {id:'old1',type:'location',name:'白姑大山',note:'at summit',incoming:null},
+  {id:'old2',type:'location',name:'草青池',note:'water',incoming:{
+   kind:'official',from:'白姑大山',to:'草青池',officialMinutes:45,actualMinutes:58,source:'historical-chart'
+  }}
+ ]}];
+ const saved=JSON.stringify(days);
+ const migrated=migrateLegacyPlanDays(days,g06,global);
+ assert.equal(JSON.stringify(days),saved);
+ assert.equal(migrated[0].items[0].nodeId,'g06-005');
+ assert.equal(migrated[0].items[1].nodeId,'g06-009');
+ assert.equal(migrated[0].items[1].incoming.officialMinutes,45);
+ assert.equal(migrated[0].items[1].incoming.actualMinutes,58);
+ assert.equal(migrated[0].note,'legacy memo');
+ assert.equal(migrated[0].startTime,'05:15');
+ assert.equal(migrated[0].coefficient,.75);
+});
+test('legacy migration rejects unknown original IDs and names, even if global names look plausible',async()=>{
+ const {mergeReviewedRoutes}=await import('../js/global-route.js');
+ const {migrateLegacyPlanDays}=await import('../js/legacy-plan-migration.js');
+ const old=addRouteIdentity({route_id:'OLD',nodes:[{id:'old-a',name:'岔路'}],
+  segments:[{from:'岔路',to:'岔路',fromId:'old-a',toId:'old-a',minutes:1}]});
+ const global=mergeReviewedRoutes([old]);
+ const day=item=>[{id:'d',startTime:'06:00',coefficient:1,note:'',linkedStart:false,items:[item]}];
+ assert.throws(()=>migrateLegacyPlanDays(day({type:'location',name:'岔路',nodeId:'other',incoming:null}),old,global),/Unknown legacy node ID/);
+ assert.throws(()=>migrateLegacyPlanDays(day({type:'location',name:'不存在',incoming:null}),old,global),/Unknown legacy node name/);
+});
