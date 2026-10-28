@@ -1,5 +1,5 @@
 {
-  "dataset_version": "v0.7.20-global-graph-preview",
+  "dataset_version": "v0.7.21-global-graph-preview",
   "mode": "global-verified-graph-scoped-node-browser-preview",
   "routes": [
     {
@@ -35,7 +35,8 @@
       "name": "G07｜北一段（需重新核對最新版）",
       "file": "data/routes/G07.preview.json",
       "status": "prior-version-source-review-current-recheck-pending",
-      "source_url": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new3.jpg"
+      "source_url": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new3.jpg",
+      "routingEnabled": false
     },
     {
       "id": "G08",
@@ -67,9 +68,9 @@
     },
     {
       "id": "G20",
-      "name": "G20｜北大武山（新登山口至檜谷山莊）",
+      "name": "G20｜北大武山（原圖已標時步行路網）",
       "file": "data/routes/G20.preview.json",
-      "status": "partial-source-reviewed-preview",
+      "status": "source-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
     }
   ]
