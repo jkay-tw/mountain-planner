@@ -540,8 +540,8 @@ test('v0.7.12 global route browser keeps scopes without clearing itinerary',asyn
  for(const id of ['G06','G17G18-PREVIEW'])assert.ok(manifest.routes.some(x=>x.id===id),id);
  const html=readFileSync(new URL('../unified-editor.html',import.meta.url),'utf8');
  const app=readFileSync(new URL('../js/unified-editor.js',import.meta.url),'utf8');
- assert.ok(html.includes('js/unified-editor.js?v=v0719'));
- assert.ok(app.includes('v0.7.19 Unified Preview'));
+ assert.ok(html.includes('js/unified-editor.js?v=v0720'));
+ assert.ok(app.includes('v0.7.20 Unified Preview'));
  assert.match(app,/mergeReviewedRoutes/);
  assert.ok(app.includes('nodesInScope(route,scope)'));
  assert.match(app,/appendDisconnectedNode/);
@@ -780,4 +780,21 @@ test('legacy migration rejects unknown original IDs and names, even if global na
  const day=item=>[{id:'d',startTime:'06:00',coefficient:1,note:'',linkedStart:false,items:[item]}];
  assert.throws(()=>migrateLegacyPlanDays(day({type:'location',name:'岔路',nodeId:'other',incoming:null}),old,global),/Unknown legacy node ID/);
  assert.throws(()=>migrateLegacyPlanDays(day({type:'location',name:'不存在',incoming:null}),old,global),/Unknown legacy node name/);
+});
+
+test('G20 official diagram selected subset has exactly 5 bidirectional walking pairs and no road edges',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const route=addRouteIdentity(JSON.parse(readFileSync(new URL('../data/routes/G20.preview.json',import.meta.url),'utf8')));
+ const audit=JSON.parse(readFileSync(new URL('../data/audits/G20_partial_official_source_review_20261028.json',import.meta.url),'utf8'));
+ assert.equal(route.segments.length,10);
+ assert.equal(route.nodes.length,6);
+ assert.equal(audit.directionPairs.length,5);
+ for(const p of audit.directionPairs){
+   assert.equal(route.segments.find(s=>s.from===p.from&&s.to===p.to)?.minutes,p.forwardMinutes);
+   assert.equal(route.segments.find(s=>s.from===p.to&&s.to===p.from)?.minutes,p.reverseMinutes);
+ }
+ assert.ok(route.segments.every(e=>e.travelMode==='walking'&&e.verificationStatus==='verified'));
+ for(const n of ['潮州','萬巒','泰武'])assert.ok(!route.nodes.some(x=>x.name===n));
+ assert.ok(!route.nodes.some(x=>x.name==='舊登登山口'));
+ assert.ok(route.nodes.some(x=>x.name==='舊登山口'));
 });
