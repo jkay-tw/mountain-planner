@@ -269,7 +269,18 @@ function dayDate(index){
   const d=new Date(tripStartDate+'T00:00:00');d.setDate(d.getDate()+index);
   return String(d.getMonth()+1).padStart(2,'0')+'/'+String(d.getDate()).padStart(2,'0');
 }
-function opts(){return nodesInScope(route,scope).slice().sort((a,b)=>a.name.localeCompare(b.name,'zh-Hant')).map(n=>'<option value="'+esc(n.id)+'">'+esc(n.name)+'</option>').join('')}
+function scopedNodes(){return nodesInScope(route,scope)}
+function nodeOptionLabel(n,list){
+  const duplicates=list.filter(x=>x.name===n.name);
+  if(duplicates.length<2)return n.name;
+  const groups=(n.groups||[]).join(' / ');
+  const shortId=String(n.id).split(':').pop().slice(-12);
+  return n.name+'｜'+(groups||'同名節點')+' · '+shortId;
+}
+function opts(){
+  const list=scopedNodes().slice().sort((a,b)=>a.name.localeCompare(b.name,'zh-Hant')||String(a.id).localeCompare(String(b.id)));
+  return list.map(n=>'<option value="'+esc(n.id)+'">'+esc(nodeOptionLabel(n,list))+'</option>').join('')
+}
 function render(persist=true){
   $('daysContainer').innerHTML=days.map(renderDay).join('');
   bindDays();
@@ -358,7 +369,7 @@ function bindDays(){
     const nodeSelect=card.querySelector('.add-node');
     if(search&&nodeSelect)search.oninput=()=>{
       const previouslySelected=nodeSelect.value;
-      const entries=filterLocations(nodesInScope(route,scope).map(n=>({id:n.id,name:n.name,route:route.route_name})),search.value,100,{includeRoute:false});
+      const entries=filterLocations(scopedNodes().map(n=>({id:n.id,name:n.name,route:(n.groups||[]).join(' / ')})),search.value,100,{includeRoute:false});
       nodeSelect.replaceChildren();
       const prompt=document.createElement('option');prompt.value='';
       prompt.textContent=entries.length?'選擇下一個行程點':'找不到符合的節點';
