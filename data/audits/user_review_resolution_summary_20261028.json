@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "recordedDate": "2026-10-28",
+  "reviewLedger": "data/audits/user_reviewed_time_overrides_20261028.json",
+  "candidateSourceSHA256": "15f39d17615efcfcdb2e08fa0deee7e714c80fe5e97dd7e636023382a167e595",
+  "processingStatus": "user_reviewed_candidate_only_not_official_source_verified",
+  "reviewedGroupSpecificPairs": 16,
+  "reviewedDirectedKeys": 32,
+  "changedCandidateMinuteCells": 15,
+  "conditionalReferenceTimes": 4,
+  "intraGroupDirectedTimeConflictsBefore": 10,
+  "intraGroupDirectedTimeConflictsAfter": 0,
+  "crossGroupReviewedSharedNodeTimeConflictsAfter": 0,
+  "crossGroupReviewedSharedNodeMatchingDirectionalComparisonsAfter": 158,
+  "unmappedCandidateGroup": "八通關越嶺",
+  "releasedToPublicRouting": false,
+  "notes": [
+    "All user-directed times are authoritative for candidate correction, while official chart evidence remains separately pending.",
+    "Conditional slow/heavy times do not override baseline walking minutes.",
+    "Existing G17/G18 limited source-checked preview routes were not overwritten with pending candidate corrections.",
+    "Graph membership does not imply mapping to official G01–G20 chart numbering."
+  ]
+}

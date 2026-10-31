@@ -1,0 +1,560 @@
+{
+  "route_id": "G03-ca0bd50b",
+  "route_name": "西巒大山",
+  "status": "owner-reviewed-preview",
+  "sourceChartIds": [
+    "G03"
+  ],
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+    "revision": "owner workbook reviewed 2026-10-28; follow-ups recorded separately"
+  },
+  "reviewBasis": "owner_workbook_review",
+  "nodes": [
+    {
+      "id": "g03-001",
+      "name": "17.1K柵欄",
+      "aliases": [],
+      "groups": [
+        "G03-ca0bd50b"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g03-003",
+      "name": "人倫工作站",
+      "aliases": [],
+      "groups": [
+        "G03-ca0bd50b"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g03-004",
+      "name": "西巒大山",
+      "aliases": [],
+      "groups": [
+        "G03-ca0bd50b"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g03-005",
+      "name": "展望點",
+      "aliases": [],
+      "groups": [
+        "G03-ca0bd50b"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g03-009",
+      "name": "森林營地",
+      "aliases": [],
+      "groups": [
+        "G03-ca0bd50b"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g03-010",
+      "name": "登山口(第二登山口)",
+      "aliases": [],
+      "groups": [
+        "G03-ca0bd50b"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g03-011",
+      "name": "瞭望台營地",
+      "aliases": [],
+      "groups": [
+        "G03-ca0bd50b"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "node:795466ba9a66aa59f6e9",
+      "name": "新山",
+      "aliases": [],
+      "groups": [
+        "G03-ca0bd50b"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    }
+  ],
+  "segments": [
+    {
+      "fromId": "g03-001",
+      "toId": "g03-003",
+      "from": "17.1K柵欄",
+      "to": "人倫工作站",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBC8B4DCF61"
+      ],
+      "evidenceRows": [
+        57
+      ],
+      "sourceGroups": [
+        "西巒大山"
+      ],
+      "sourceChart": "G03",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "西巒大山",
+          "chartId": "G03",
+          "url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+          "rowId": "RBC8B4DCF61",
+          "sheetRows": [
+            57
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "西巒大山"
+      ]
+    },
+    {
+      "fromId": "g03-003",
+      "toId": "g03-001",
+      "from": "人倫工作站",
+      "to": "17.1K柵欄",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RBC8B4DCF61"
+      ],
+      "evidenceRows": [
+        57
+      ],
+      "sourceGroups": [
+        "西巒大山"
+      ],
+      "sourceChart": "G03",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "西巒大山",
+          "chartId": "G03",
+          "url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+          "rowId": "RBC8B4DCF61",
+          "sheetRows": [
+            57
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "西巒大山"
+      ]
+    },
+    {
+      "fromId": "g03-003",
+      "toId": "g03-010",
+      "from": "人倫工作站",
+      "to": "登山口(第二登山口)",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RFE8CADF978"
+      ],
+      "evidenceRows": [
+        58
+      ],
+      "sourceGroups": [
+        "西巒大山"
+      ],
+      "sourceChart": "G03",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "西巒大山",
+          "chartId": "G03",
+          "url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+          "rowId": "RFE8CADF978",
+          "sheetRows": [
+            58
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "西巒大山"
+      ]
+    },
+    {
+      "fromId": "g03-010",
+      "toId": "g03-003",
+      "from": "登山口(第二登山口)",
+      "to": "人倫工作站",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RFE8CADF978"
+      ],
+      "evidenceRows": [
+        58
+      ],
+      "sourceGroups": [
+        "西巒大山"
+      ],
+      "sourceChart": "G03",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "西巒大山",
+          "chartId": "G03",
+          "url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+          "rowId": "RFE8CADF978",
+          "sheetRows": [
+            58
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "西巒大山"
+      ]
+    },
+    {
+      "fromId": "g03-010",
+      "toId": "g03-009",
+      "from": "登山口(第二登山口)",
+      "to": "森林營地",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA5665FC796"
+      ],
+      "evidenceRows": [
+        59
+      ],
+      "sourceGroups": [
+        "西巒大山"
+      ],
+      "sourceChart": "G03",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "西巒大山",
+          "chartId": "G03",
+          "url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+          "rowId": "RA5665FC796",
+          "sheetRows": [
+            59
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "西巒大山"
+      ]
+    },
+    {
+      "fromId": "g03-009",
+      "toId": "g03-010",
+      "from": "森林營地",
+      "to": "登山口(第二登山口)",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA5665FC796"
+      ],
+      "evidenceRows": [
+        59
+      ],
+      "sourceGroups": [
+        "西巒大山"
+      ],
+      "sourceChart": "G03",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "西巒大山",
+          "chartId": "G03",
+          "url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+          "rowId": "RA5665FC796",
+          "sheetRows": [
+            59
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "西巒大山"
+      ]
+    },
+    {
+      "fromId": "g03-009",
+      "toId": "g03-011",
+      "from": "森林營地",
+      "to": "瞭望台營地",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RDFBE8F4A5E"
+      ],
+      "evidenceRows": [
+        60
+      ],
+      "sourceGroups": [
+        "西巒大山"
+      ],
+      "sourceChart": "G03",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "西巒大山",
+          "chartId": "G03",
+          "url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+          "rowId": "RDFBE8F4A5E",
+          "sheetRows": [
+            60
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "西巒大山"
+      ]
+    },
+    {
+      "fromId": "g03-011",
+      "toId": "g03-009",
+      "from": "瞭望台營地",
+      "to": "森林營地",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RDFBE8F4A5E"
+      ],
+      "evidenceRows": [
+        60
+      ],
+      "sourceGroups": [
+        "西巒大山"
+      ],
+      "sourceChart": "G03",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "西巒大山",
+          "chartId": "G03",
+          "url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+          "rowId": "RDFBE8F4A5E",
+          "sheetRows": [
+            60
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "西巒大山"
+      ]
+    },
+    {
+      "fromId": "g03-011",
+      "toId": "g03-005",
+      "from": "瞭望台營地",
+      "to": "展望點",
+      "minutes": 160,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC985F240CF"
+      ],
+      "evidenceRows": [
+        61
+      ],
+      "sourceGroups": [
+        "西巒大山"
+      ],
+      "sourceChart": "G03",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "西巒大山",
+          "chartId": "G03",
+          "url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+          "rowId": "RC985F240CF",
+          "sheetRows": [
+            61
+          ],
+          "minutes": 160
+        }
+      ],
+      "sourceGroupNames": [
+        "西巒大山"
+      ]
+    },
+    {
+      "fromId": "g03-005",
+      "toId": "g03-011",
+      "from": "展望點",
+      "to": "瞭望台營地",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC985F240CF"
+      ],
+      "evidenceRows": [
+        61
+      ],
+      "sourceGroups": [
+        "西巒大山"
+      ],
+      "sourceChart": "G03",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "西巒大山",
+          "chartId": "G03",
+          "url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+          "rowId": "RC985F240CF",
+          "sheetRows": [
+            61
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "西巒大山"
+      ]
+    },
+    {
+      "fromId": "g03-005",
+      "toId": "g03-004",
+      "from": "展望點",
+      "to": "西巒大山",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE442592BD5"
+      ],
+      "evidenceRows": [
+        62
+      ],
+      "sourceGroups": [
+        "西巒大山"
+      ],
+      "sourceChart": "G03",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "西巒大山",
+          "chartId": "G03",
+          "url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+          "rowId": "RE442592BD5",
+          "sheetRows": [
+            62
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "西巒大山"
+      ]
+    },
+    {
+      "fromId": "g03-004",
+      "toId": "g03-005",
+      "from": "西巒大山",
+      "to": "展望點",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE442592BD5"
+      ],
+      "evidenceRows": [
+        62
+      ],
+      "sourceGroups": [
+        "西巒大山"
+      ],
+      "sourceChart": "G03",
+      "source": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "西巒大山",
+          "chartId": "G03",
+          "url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg",
+          "rowId": "RE442592BD5",
+          "sheetRows": [
+            62
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "西巒大山"
+      ]
+    }
+  ],
+  "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+}

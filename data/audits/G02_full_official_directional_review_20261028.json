@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "chartId": "G02",
+  "chartName": "玉山群峰",
+  "officialImageURL": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+  "officialIndexURL": "https://www.sunriver.com.tw/step2020.htm",
+  "reviewedAt": "2026-10-28",
+  "reviewedBy": "assistant",
+  "reviewMethod": "direct visual comparison with official chart arrows; source typo 大鐵山 normalized to 大鐵杉; vehicle pictogram excluded",
+  "status": "full-candidate-scope-source-checked",
+  "reviewedWalkingPairs": [
+    {
+      "from": "上東埔停車場",
+      "to": "排雲管理站",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking"
+    },
+    {
+      "from": "排雲管理站",
+      "to": "大鐵杉",
+      "forwardMinutes": 25,
+      "reverseMinutes": 20,
+      "travelMode": "walking"
+    },
+    {
+      "from": "大鐵杉",
+      "to": "塔塔加鞍部",
+      "forwardMinutes": 25,
+      "reverseMinutes": 30,
+      "travelMode": "walking"
+    },
+    {
+      "from": "塔塔加鞍部",
+      "to": "孟祿亭",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "travelMode": "walking"
+    },
+    {
+      "from": "孟祿亭",
+      "to": "前峰登山口",
+      "forwardMinutes": 40,
+      "reverseMinutes": 35,
+      "travelMode": "walking"
+    },
+    {
+      "from": "前峰登山口",
+      "to": "西峰下觀景台",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "travelMode": "walking"
+    },
+    {
+      "from": "西峰下觀景台",
+      "to": "大峭壁",
+      "forwardMinutes": 50,
+      "reverseMinutes": 40,
+      "travelMode": "walking"
+    },
+    {
+      "from": "大峭壁",
+      "to": "排雲山莊",
+      "forwardMinutes": 70,
+      "reverseMinutes": 50,
+      "travelMode": "walking"
+    },
+    {
+      "from": "大鐵杉",
+      "to": "鹿林山莊",
+      "forwardMinutes": 35,
+      "reverseMinutes": 35,
+      "travelMode": "walking"
+    },
+    {
+      "from": "前峰登山口",
+      "to": "玉山前峰",
+      "forwardMinutes": 75,
+      "reverseMinutes": 45,
+      "travelMode": "walking"
+    },
+    {
+      "from": "排雲山莊",
+      "to": "玉山西峰",
+      "forwardMinutes": 90,
+      "reverseMinutes": 70,
+      "travelMode": "walking"
+    },
+    {
+      "from": "排雲山莊",
+      "to": "主南岔路",
+      "forwardMinutes": 45,
+      "reverseMinutes": 30,
+      "travelMode": "walking"
+    },
+    {
+      "from": "主南岔路",
+      "to": "主北岔路",
+      "forwardMinutes": 90,
+      "reverseMinutes": 50,
+      "travelMode": "walking"
+    },
+    {
+      "from": "主北岔路",
+      "to": "玉山主峰",
+      "forwardMinutes": 25,
+      "reverseMinutes": 15,
+      "travelMode": "walking"
+    },
+    {
+      "from": "玉山主峰",
+      "to": "玉山東峰",
+      "forwardMinutes": 80,
+      "reverseMinutes": 90,
+      "travelMode": "walking"
+    },
+    {
+      "from": "主北岔路",
+      "to": "風口",
+      "forwardMinutes": 10,
+      "reverseMinutes": 20,
+      "travelMode": "walking"
+    },
+    {
+      "from": "風口",
+      "to": "玉山北峰",
+      "forwardMinutes": 70,
+      "reverseMinutes": 45,
+      "travelMode": "walking"
+    },
+    {
+      "from": "玉山北峰",
+      "to": "玉山北北峰",
+      "forwardMinutes": 25,
+      "reverseMinutes": 25,
+      "travelMode": "walking"
+    },
+    {
+      "from": "風口",
+      "to": "荖濃溪營地",
+      "forwardMinutes": 80,
+      "reverseMinutes": 120,
+      "travelMode": "walking"
+    },
+    {
+      "from": "主南岔路",
+      "to": "圓峰山屋",
+      "forwardMinutes": 90,
+      "reverseMinutes": 70,
+      "travelMode": "walking"
+    },
+    {
+      "from": "圓峰山屋",
+      "to": "三岔路口",
+      "forwardMinutes": 30,
+      "reverseMinutes": 25,
+      "travelMode": "walking"
+    },
+    {
+      "from": "三岔路口",
+      "to": "2K三岔路口",
+      "forwardMinutes": 155,
+      "reverseMinutes": 180,
+      "travelMode": "walking"
+    },
+    {
+      "from": "2K三岔路口",
+      "to": "南玉山",
+      "forwardMinutes": 70,
+      "reverseMinutes": 80,
+      "travelMode": "walking"
+    },
+    {
+      "from": "2K三岔路口",
+      "to": "玉山小南山",
+      "forwardMinutes": 10,
+      "reverseMinutes": 5,
+      "travelMode": "walking"
+    },
+    {
+      "from": "三岔路口",
+      "to": "三叉峰",
+      "forwardMinutes": 20,
+      "reverseMinutes": 15,
+      "travelMode": "walking"
+    },
+    {
+      "from": "三叉峰",
+      "to": "四岔路口",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking"
+    },
+    {
+      "from": "四岔路口",
+      "to": "玉山南峰",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking"
+    },
+    {
+      "from": "四岔路口",
+      "to": "東小南山",
+      "forwardMinutes": 40,
+      "reverseMinutes": 60,
+      "travelMode": "walking"
+    },
+    {
+      "from": "四岔路口",
+      "to": "鹿山",
+      "forwardMinutes": 180,
+      "reverseMinutes": 280,
+      "travelMode": "walking"
+    }
+  ],
+  "excluded": [
+    {
+      "from": "塔塔加遊客中心",
+      "to": "上東埔停車場",
+      "candidateForward": 3,
+      "candidateReverse": 3,
+      "reason": "official chart marks connection with vehicle pictograms; exclude from walking graph"
+    }
+  ],
+  "walkingDirectedEdges": 58,
+  "scopeNote": "29 unique walking pairs (58 directions) source-checked; vehicle transfer excluded."
+}

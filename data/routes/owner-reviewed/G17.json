@@ -1,0 +1,6862 @@
+{
+  "route_id": "G17",
+  "route_name": "南二段",
+  "status": "owner-reviewed-preview",
+  "sourceChartIds": [
+    "G17"
+  ],
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+    "revision": "owner workbook reviewed 2026-10-28; follow-ups recorded separately"
+  },
+  "reviewBasis": "owner_workbook_review",
+  "nodes": [
+    {
+      "id": "local:G17-OVERLAP::g17-overlap-002",
+      "name": "南雙頭山",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "local:G17-OVERLAP::g17-overlap-006",
+      "name": "塔芬池",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "local:G17-OVERLAP::g17-overlap-007",
+      "name": "轆轆山登山口",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "local:G17-OVERLAP::g17-overlap-008",
+      "name": "轆轆谷山屋",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "local:G17-OVERLAP::g17-overlap-009",
+      "name": "雲峰東峰三岔路口營地",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "local:G17-OVERLAP::g17-overlap-010",
+      "name": "西北鞍南雙池營地",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "node:115544371295fbcbf3db",
+      "name": "觀高登山服務站",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:1916736d90dd9626ece3",
+      "name": "塔芬谷山屋",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:48968d2ec01d938dc670",
+      "name": "荖濃溪底營地",
+      "aliases": [
+        "老濃溪營地"
+      ],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:4b535e7d68c379a6c905",
+      "name": "轆轆東峰",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:4e7ab2e2b7798527927f",
+      "name": "達芬尖山登山口",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:502ad7507575bb341a28",
+      "name": "大水窟山三岔路",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:5bd0e4cd667031e35fc1",
+      "name": "達芬尖山",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:6fbfce66af193ba46514",
+      "name": "大水窟山三岔路口",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:8426704609cea5d43db4",
+      "name": "杜鵑營地",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:85bb625c5f4bcbcf9abe",
+      "name": "雲峰",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:8897886192ce4320aec3",
+      "name": "黑水塘",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:95bb6c335556ae3a2cd6",
+      "name": "南大水窟山",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:9af65faed0dfd594da63",
+      "name": "轆轆山",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:b3c1f683294e1bc1252b",
+      "name": "塔芬山",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:bfffd1c12932fc2cd1e8",
+      "name": "水源",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "shared:cw-v07-005",
+      "name": "三叉山",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-006",
+      "name": "三叉山登山口",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-007",
+      "name": "三岔路口",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-009",
+      "name": "中央金礦山屋",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-014",
+      "name": "八通關山",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-015",
+      "name": "八通關山三岔路口",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-016",
+      "name": "八通關山登山口",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-017",
+      "name": "八通關山西峰",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-018",
+      "name": "八通關登山口",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-019",
+      "name": "八通關草原",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-020",
+      "name": "北峰下解說牌",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-023",
+      "name": "南營地",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-027",
+      "name": "向陽山",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-028",
+      "name": "向陽山屋",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-029",
+      "name": "向陽森林遊樂區",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-030",
+      "name": "嘉明湖",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-031",
+      "name": "嘉明湖岔路口",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-032",
+      "name": "嘉明湖避難山屋",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-033",
+      "name": "四岔路口",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-035",
+      "name": "大水窟山",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-036",
+      "name": "大水窟山屋",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-046",
+      "name": "巴奈伊克山屋",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-049",
+      "name": "拉庫音溪山屋",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-050",
+      "name": "新康山岔路口",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "shared:cw-v07-052",
+      "name": "林道登山口",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-054",
+      "name": "樂樂山屋",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-059",
+      "name": "白洋金礦山屋",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-060",
+      "name": "秀姑坪岔路",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-061",
+      "name": "秀姑巒山",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-062",
+      "name": "秀姑巒山南登山口",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-063",
+      "name": "秀馬山屋舊址",
+      "aliases": [
+        "秀姑巒山舊址"
+      ],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-064",
+      "name": "稜線岔路",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-068",
+      "name": "荖濃溪",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-070",
+      "name": "西側登山口",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-071",
+      "name": "西峰岔路",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-072",
+      "name": "觀高坪",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:cw-v07-076",
+      "name": "雲龍瀑布",
+      "aliases": [],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    },
+    {
+      "id": "shared:owner-v0724-xiangyang-junction",
+      "name": "向陽山三岔路口",
+      "aliases": [
+        "三岔路口"
+      ],
+      "groups": [
+        "G17"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    }
+  ],
+  "segments": [
+    {
+      "fromId": "shared:cw-v07-076",
+      "toId": "shared:cw-v07-054",
+      "from": "雲龍瀑布",
+      "to": "樂樂山屋",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R14D629FCD0",
+        "R44A088C427",
+        "RD1B1AD348C"
+      ],
+      "evidenceRows": [
+        36,
+        616,
+        692
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R14D629FCD0",
+          "sheetRows": [
+            36
+          ],
+          "minutes": 60
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RD1B1AD348C",
+          "sheetRows": [
+            616
+          ],
+          "minutes": 60
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R44A088C427",
+          "sheetRows": [
+            692
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-054",
+      "toId": "shared:cw-v07-076",
+      "from": "樂樂山屋",
+      "to": "雲龍瀑布",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R14D629FCD0",
+        "R44A088C427",
+        "RD1B1AD348C"
+      ],
+      "evidenceRows": [
+        36,
+        616,
+        692
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R14D629FCD0",
+          "sheetRows": [
+            36
+          ],
+          "minutes": 55
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RD1B1AD348C",
+          "sheetRows": [
+            616
+          ],
+          "minutes": 55
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R44A088C427",
+          "sheetRows": [
+            692
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-071",
+      "toId": "shared:cw-v07-019",
+      "from": "西峰岔路",
+      "to": "八通關草原",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R238B55FDDE",
+        "R6AC92ABCFE",
+        "R6AF2DAAE87"
+      ],
+      "evidenceRows": [
+        44,
+        624,
+        697
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R6AC92ABCFE",
+          "sheetRows": [
+            44
+          ],
+          "minutes": 50
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R238B55FDDE",
+          "sheetRows": [
+            624
+          ],
+          "minutes": 50
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R6AF2DAAE87",
+          "sheetRows": [
+            697
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-019",
+      "toId": "shared:cw-v07-071",
+      "from": "八通關草原",
+      "to": "西峰岔路",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R238B55FDDE",
+        "R6AC92ABCFE",
+        "R6AF2DAAE87"
+      ],
+      "evidenceRows": [
+        44,
+        624,
+        697
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R6AC92ABCFE",
+          "sheetRows": [
+            44
+          ],
+          "minutes": 70
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R238B55FDDE",
+          "sheetRows": [
+            624
+          ],
+          "minutes": 70
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R6AF2DAAE87",
+          "sheetRows": [
+            697
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-019",
+      "toId": "shared:cw-v07-016",
+      "from": "八通關草原",
+      "to": "八通關山登山口",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R40654E1D39",
+        "R694591DE03",
+        "R79C2CDC9B7"
+      ],
+      "evidenceRows": [
+        45,
+        628,
+        698
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R40654E1D39",
+          "sheetRows": [
+            45
+          ],
+          "minutes": 80
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R694591DE03",
+          "sheetRows": [
+            628
+          ],
+          "minutes": 80
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R79C2CDC9B7",
+          "sheetRows": [
+            698
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-016",
+      "toId": "shared:cw-v07-019",
+      "from": "八通關山登山口",
+      "to": "八通關草原",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R40654E1D39",
+        "R694591DE03",
+        "R79C2CDC9B7"
+      ],
+      "evidenceRows": [
+        45,
+        628,
+        698
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "R40654E1D39",
+          "sheetRows": [
+            45
+          ],
+          "minutes": 80
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R694591DE03",
+          "sheetRows": [
+            628
+          ],
+          "minutes": 80
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R79C2CDC9B7",
+          "sheetRows": [
+            698
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-071",
+      "toId": "shared:cw-v07-017",
+      "from": "西峰岔路",
+      "to": "八通關山西峰",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R32F5AF4D09",
+        "R67E99E35CF",
+        "RD2CB61D229"
+      ],
+      "evidenceRows": [
+        46,
+        625,
+        696
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RD2CB61D229",
+          "sheetRows": [
+            46
+          ],
+          "minutes": 50
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R32F5AF4D09",
+          "sheetRows": [
+            625
+          ],
+          "minutes": 50
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R67E99E35CF",
+          "sheetRows": [
+            696
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-017",
+      "toId": "shared:cw-v07-071",
+      "from": "八通關山西峰",
+      "to": "西峰岔路",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R32F5AF4D09",
+        "R67E99E35CF",
+        "RD2CB61D229"
+      ],
+      "evidenceRows": [
+        46,
+        625,
+        696
+      ],
+      "sourceGroups": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "八通關越嶺",
+          "chartId": "G02",
+          "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "rowId": "RD2CB61D229",
+          "sheetRows": [
+            46
+          ],
+          "minutes": 30
+        },
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R32F5AF4D09",
+          "sheetRows": [
+            625
+          ],
+          "minutes": 30
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R67E99E35CF",
+          "sheetRows": [
+            696
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "八通關越嶺",
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-017",
+      "toId": "shared:cw-v07-015",
+      "from": "八通關山西峰",
+      "to": "八通關山三岔路口",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R53E7757955",
+        "R872AD13248"
+      ],
+      "evidenceRows": [
+        626,
+        700
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R53E7757955",
+          "sheetRows": [
+            626
+          ],
+          "minutes": 50
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R872AD13248",
+          "sheetRows": [
+            700
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-015",
+      "toId": "shared:cw-v07-017",
+      "from": "八通關山三岔路口",
+      "to": "八通關山西峰",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R53E7757955",
+        "R872AD13248"
+      ],
+      "evidenceRows": [
+        626,
+        700
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R53E7757955",
+          "sheetRows": [
+            626
+          ],
+          "minutes": 50
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R872AD13248",
+          "sheetRows": [
+            700
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-015",
+      "toId": "shared:cw-v07-014",
+      "from": "八通關山三岔路口",
+      "to": "八通關山",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0784BB1A07",
+        "R93A48C3D6A"
+      ],
+      "evidenceRows": [
+        627,
+        701
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R93A48C3D6A",
+          "sheetRows": [
+            627
+          ],
+          "minutes": 30
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R0784BB1A07",
+          "sheetRows": [
+            701
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-014",
+      "toId": "shared:cw-v07-015",
+      "from": "八通關山",
+      "to": "八通關山三岔路口",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0784BB1A07",
+        "R93A48C3D6A"
+      ],
+      "evidenceRows": [
+        627,
+        701
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R93A48C3D6A",
+          "sheetRows": [
+            627
+          ],
+          "minutes": 20
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R0784BB1A07",
+          "sheetRows": [
+            701
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-046",
+      "toId": "shared:cw-v07-007",
+      "from": "巴奈伊克山屋",
+      "to": "三岔路口",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R145C2FDADD",
+        "R7D3D5A5A1A"
+      ],
+      "evidenceRows": [
+        630,
+        704
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R7D3D5A5A1A",
+          "sheetRows": [
+            630
+          ],
+          "minutes": 15
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R145C2FDADD",
+          "sheetRows": [
+            704
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-007",
+      "toId": "shared:cw-v07-046",
+      "from": "三岔路口",
+      "to": "巴奈伊克山屋",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R145C2FDADD",
+        "R7D3D5A5A1A"
+      ],
+      "evidenceRows": [
+        630,
+        704
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R7D3D5A5A1A",
+          "sheetRows": [
+            630
+          ],
+          "minutes": 15
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R145C2FDADD",
+          "sheetRows": [
+            704
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-059",
+      "toId": "shared:cw-v07-060",
+      "from": "白洋金礦山屋",
+      "to": "秀姑坪岔路",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R589CE33D97",
+        "RA4DA4B2ACF"
+      ],
+      "evidenceRows": [
+        631,
+        708
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R589CE33D97",
+          "sheetRows": [
+            631
+          ],
+          "minutes": 30
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RA4DA4B2ACF",
+          "sheetRows": [
+            708
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-060",
+      "toId": "shared:cw-v07-059",
+      "from": "秀姑坪岔路",
+      "to": "白洋金礦山屋",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R589CE33D97",
+        "RA4DA4B2ACF"
+      ],
+      "evidenceRows": [
+        631,
+        708
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R589CE33D97",
+          "sheetRows": [
+            631
+          ],
+          "minutes": 20
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RA4DA4B2ACF",
+          "sheetRows": [
+            708
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-009",
+      "toId": "shared:cw-v07-059",
+      "from": "中央金礦山屋",
+      "to": "白洋金礦山屋",
+      "minutes": 190,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R92760246BA",
+        "R956FA9A238"
+      ],
+      "evidenceRows": [
+        632,
+        707
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R92760246BA",
+          "sheetRows": [
+            632
+          ],
+          "minutes": 190
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R956FA9A238",
+          "sheetRows": [
+            707
+          ],
+          "minutes": 190
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-059",
+      "toId": "shared:cw-v07-009",
+      "from": "白洋金礦山屋",
+      "to": "中央金礦山屋",
+      "minutes": 160,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R92760246BA",
+        "R956FA9A238"
+      ],
+      "evidenceRows": [
+        632,
+        707
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R92760246BA",
+          "sheetRows": [
+            632
+          ],
+          "minutes": 160
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R956FA9A238",
+          "sheetRows": [
+            707
+          ],
+          "minutes": 160
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-060",
+      "toId": "shared:cw-v07-062",
+      "from": "秀姑坪岔路",
+      "to": "秀姑巒山南登山口",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4EB7CD4F73",
+        "RB91C507C51"
+      ],
+      "evidenceRows": [
+        633,
+        711
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R4EB7CD4F73",
+          "sheetRows": [
+            633
+          ],
+          "minutes": 60
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RB91C507C51",
+          "sheetRows": [
+            711
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-062",
+      "toId": "shared:cw-v07-060",
+      "from": "秀姑巒山南登山口",
+      "to": "秀姑坪岔路",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4EB7CD4F73",
+        "RB91C507C51"
+      ],
+      "evidenceRows": [
+        633,
+        711
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R4EB7CD4F73",
+          "sheetRows": [
+            633
+          ],
+          "minutes": 40
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RB91C507C51",
+          "sheetRows": [
+            711
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-062",
+      "toId": "shared:cw-v07-061",
+      "from": "秀姑巒山南登山口",
+      "to": "秀姑巒山",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R86DBBF2EA4",
+        "RE59172A57C"
+      ],
+      "evidenceRows": [
+        634,
+        684,
+        712,
+        757
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "回程 輕裝:30分 重裝:60分",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RE59172A57C",
+          "sheetRows": [
+            634,
+            684
+          ],
+          "minutes": 50
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R86DBBF2EA4",
+          "sheetRows": [
+            712,
+            757
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-061",
+      "toId": "shared:cw-v07-062",
+      "from": "秀姑巒山",
+      "to": "秀姑巒山南登山口",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [
+        {
+          "kind": "heavy_pack",
+          "minutes": 60
+        }
+      ],
+      "sourceRows": [
+        "R86DBBF2EA4",
+        "RE59172A57C"
+      ],
+      "evidenceRows": [
+        634,
+        684,
+        712,
+        757
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "回程 輕裝:30分 重裝:60分",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RE59172A57C",
+          "sheetRows": [
+            634,
+            684
+          ],
+          "minutes": 30
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R86DBBF2EA4",
+          "sheetRows": [
+            712,
+            757
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-036",
+      "toId": "shared:cw-v07-035",
+      "from": "大水窟山屋",
+      "to": "大水窟山",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA43F1F76B6",
+        "RFCF04ABC27"
+      ],
+      "evidenceRows": [
+        659,
+        719
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RFCF04ABC27",
+          "sheetRows": [
+            659
+          ],
+          "minutes": 140
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RA43F1F76B6",
+          "sheetRows": [
+            719
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-035",
+      "toId": "shared:cw-v07-036",
+      "from": "大水窟山",
+      "to": "大水窟山屋",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA43F1F76B6",
+        "RFCF04ABC27"
+      ],
+      "evidenceRows": [
+        659,
+        719
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RFCF04ABC27",
+          "sheetRows": [
+            659
+          ],
+          "minutes": 100
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RA43F1F76B6",
+          "sheetRows": [
+            719
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-023",
+      "toId": "shared:cw-v07-033",
+      "from": "南營地",
+      "to": "四岔路口",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R433A25B3CF",
+        "R73FAE10BE4"
+      ],
+      "evidenceRows": [
+        660,
+        716
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R433A25B3CF",
+          "sheetRows": [
+            660
+          ],
+          "minutes": 55
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R73FAE10BE4",
+          "sheetRows": [
+            716
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-033",
+      "toId": "shared:cw-v07-023",
+      "from": "四岔路口",
+      "to": "南營地",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R433A25B3CF",
+        "R73FAE10BE4"
+      ],
+      "evidenceRows": [
+        660,
+        716
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R433A25B3CF",
+          "sheetRows": [
+            660
+          ],
+          "minutes": 55
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R73FAE10BE4",
+          "sheetRows": [
+            716
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-036",
+      "toId": "shared:cw-v07-023",
+      "from": "大水窟山屋",
+      "to": "南營地",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R403FCFAE02",
+        "RE59D049EC2"
+      ],
+      "evidenceRows": [
+        661,
+        718
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RE59D049EC2",
+          "sheetRows": [
+            661
+          ],
+          "minutes": 70
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R403FCFAE02",
+          "sheetRows": [
+            718
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-023",
+      "toId": "shared:cw-v07-036",
+      "from": "南營地",
+      "to": "大水窟山屋",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R403FCFAE02",
+        "RE59D049EC2"
+      ],
+      "evidenceRows": [
+        661,
+        718
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RE59D049EC2",
+          "sheetRows": [
+            661
+          ],
+          "minutes": 70
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R403FCFAE02",
+          "sheetRows": [
+            718
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-063",
+      "toId": "shared:cw-v07-062",
+      "from": "秀馬山屋舊址",
+      "to": "秀姑巒山南登山口",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCD9DEBBCEA",
+        "RDA7B9AF53E"
+      ],
+      "evidenceRows": [
+        682,
+        709
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RCD9DEBBCEA",
+          "sheetRows": [
+            682
+          ],
+          "minutes": 50
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RDA7B9AF53E",
+          "sheetRows": [
+            709
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-062",
+      "toId": "shared:cw-v07-063",
+      "from": "秀姑巒山南登山口",
+      "to": "秀馬山屋舊址",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCD9DEBBCEA",
+        "RDA7B9AF53E"
+      ],
+      "evidenceRows": [
+        682,
+        709
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RCD9DEBBCEA",
+          "sheetRows": [
+            682
+          ],
+          "minutes": 60
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RDA7B9AF53E",
+          "sheetRows": [
+            709
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-061",
+      "toId": "shared:cw-v07-063",
+      "from": "秀姑巒山",
+      "to": "秀馬山屋舊址",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1DD7565620",
+        "R3368761242",
+        "RBB81D44C31"
+      ],
+      "evidenceRows": [
+        683,
+        713,
+        758
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RBB81D44C31",
+          "sheetRows": [
+            683
+          ],
+          "minutes": 20
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R1DD7565620",
+          "sheetRows": [
+            713
+          ],
+          "minutes": 20
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R3368761242",
+          "sheetRows": [
+            758
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-063",
+      "toId": "shared:cw-v07-061",
+      "from": "秀馬山屋舊址",
+      "to": "秀姑巒山",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1DD7565620",
+        "R3368761242",
+        "RBB81D44C31"
+      ],
+      "evidenceRows": [
+        683,
+        713,
+        758
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RBB81D44C31",
+          "sheetRows": [
+            683
+          ],
+          "minutes": 25
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R1DD7565620",
+          "sheetRows": [
+            713
+          ],
+          "minutes": 25
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R3368761242",
+          "sheetRows": [
+            758
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-035",
+      "toId": "shared:cw-v07-033",
+      "from": "大水窟山",
+      "to": "四岔路口",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R8BA31D1BB3",
+        "RD5CED8E4E3"
+      ],
+      "evidenceRows": [
+        685,
+        717
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R8BA31D1BB3",
+          "sheetRows": [
+            685
+          ],
+          "minutes": 110
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RD5CED8E4E3",
+          "sheetRows": [
+            717
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-033",
+      "toId": "shared:cw-v07-035",
+      "from": "四岔路口",
+      "to": "大水窟山",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R8BA31D1BB3",
+        "RD5CED8E4E3"
+      ],
+      "evidenceRows": [
+        685,
+        717
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R8BA31D1BB3",
+          "sheetRows": [
+            685
+          ],
+          "minutes": 140
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RD5CED8E4E3",
+          "sheetRows": [
+            717
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-068",
+      "toId": "shared:cw-v07-064",
+      "from": "荖濃溪",
+      "to": "稜線岔路",
+      "minutes": 105,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1B56436576",
+        "R24E6CC9E0A"
+      ],
+      "evidenceRows": [
+        686,
+        755
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R24E6CC9E0A",
+          "sheetRows": [
+            686
+          ],
+          "minutes": 105
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R1B56436576",
+          "sheetRows": [
+            755
+          ],
+          "minutes": 105
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-064",
+      "toId": "shared:cw-v07-068",
+      "from": "稜線岔路",
+      "to": "荖濃溪",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1B56436576",
+        "R24E6CC9E0A"
+      ],
+      "evidenceRows": [
+        686,
+        755
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R24E6CC9E0A",
+          "sheetRows": [
+            686
+          ],
+          "minutes": 55
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R1B56436576",
+          "sheetRows": [
+            755
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-007",
+      "toId": "shared:cw-v07-068",
+      "from": "三岔路口",
+      "to": "荖濃溪",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2EB71BEB4C",
+        "REB27FCEFA9"
+      ],
+      "evidenceRows": [
+        687,
+        706
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R2EB71BEB4C",
+          "sheetRows": [
+            687
+          ],
+          "minutes": 15
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "REB27FCEFA9",
+          "sheetRows": [
+            706
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-068",
+      "toId": "shared:cw-v07-007",
+      "from": "荖濃溪",
+      "to": "三岔路口",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2EB71BEB4C",
+        "REB27FCEFA9"
+      ],
+      "evidenceRows": [
+        687,
+        706
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R2EB71BEB4C",
+          "sheetRows": [
+            687
+          ],
+          "minutes": 20
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "REB27FCEFA9",
+          "sheetRows": [
+            706
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-007",
+      "toId": "shared:cw-v07-009",
+      "from": "三岔路口",
+      "to": "中央金礦山屋",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD58D5E5BF2",
+        "RF9584620D0"
+      ],
+      "evidenceRows": [
+        688,
+        705
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RF9584620D0",
+          "sheetRows": [
+            688
+          ],
+          "minutes": 35
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RD58D5E5BF2",
+          "sheetRows": [
+            705
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-009",
+      "toId": "shared:cw-v07-007",
+      "from": "中央金礦山屋",
+      "to": "三岔路口",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD58D5E5BF2",
+        "RF9584620D0"
+      ],
+      "evidenceRows": [
+        688,
+        705
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RF9584620D0",
+          "sheetRows": [
+            688
+          ],
+          "minutes": 30
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RD58D5E5BF2",
+          "sheetRows": [
+            705
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-016",
+      "toId": "shared:cw-v07-046",
+      "from": "八通關山登山口",
+      "to": "巴奈伊克山屋",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R049FD5B9F7",
+        "R477E51302B"
+      ],
+      "evidenceRows": [
+        689,
+        703
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R477E51302B",
+          "sheetRows": [
+            689
+          ],
+          "minutes": 30
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R049FD5B9F7",
+          "sheetRows": [
+            703
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-046",
+      "toId": "shared:cw-v07-016",
+      "from": "巴奈伊克山屋",
+      "to": "八通關山登山口",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R049FD5B9F7",
+        "R477E51302B"
+      ],
+      "evidenceRows": [
+        689,
+        703
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "R477E51302B",
+          "sheetRows": [
+            689
+          ],
+          "minutes": 30
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R049FD5B9F7",
+          "sheetRows": [
+            703
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-015",
+      "toId": "shared:cw-v07-016",
+      "from": "八通關山三岔路口",
+      "to": "八通關山登山口",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RAC5C04C895",
+        "REE11E3F199"
+      ],
+      "evidenceRows": [
+        690,
+        702
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RAC5C04C895",
+          "sheetRows": [
+            690
+          ],
+          "minutes": 45
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "REE11E3F199",
+          "sheetRows": [
+            702
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-016",
+      "toId": "shared:cw-v07-015",
+      "from": "八通關山登山口",
+      "to": "八通關山三岔路口",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RAC5C04C895",
+        "REE11E3F199"
+      ],
+      "evidenceRows": [
+        690,
+        702
+      ],
+      "sourceGroups": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "馬博拉斯橫斷",
+          "chartId": "G16",
+          "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "rowId": "RAC5C04C895",
+          "sheetRows": [
+            690
+          ],
+          "minutes": 60
+        },
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "REE11E3F199",
+          "sheetRows": [
+            702
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "馬博拉斯橫斷"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-018",
+      "toId": "shared:cw-v07-076",
+      "from": "八通關登山口",
+      "to": "雲龍瀑布",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCC60696995"
+      ],
+      "evidenceRows": [
+        691
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RCC60696995",
+          "sheetRows": [
+            691
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-076",
+      "toId": "shared:cw-v07-018",
+      "from": "雲龍瀑布",
+      "to": "八通關登山口",
+      "minutes": 105,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCC60696995"
+      ],
+      "evidenceRows": [
+        691
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RCC60696995",
+          "sheetRows": [
+            691
+          ],
+          "minutes": 105
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-054",
+      "toId": "shared:cw-v07-072",
+      "from": "樂樂山屋",
+      "to": "觀高坪",
+      "minutes": 275,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0D87C9F263"
+      ],
+      "evidenceRows": [
+        693
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R0D87C9F263",
+          "sheetRows": [
+            693
+          ],
+          "minutes": 275
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-072",
+      "toId": "shared:cw-v07-054",
+      "from": "觀高坪",
+      "to": "樂樂山屋",
+      "minutes": 215,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0D87C9F263"
+      ],
+      "evidenceRows": [
+        693
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R0D87C9F263",
+          "sheetRows": [
+            693
+          ],
+          "minutes": 215
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-072",
+      "toId": "node:115544371295fbcbf3db",
+      "from": "觀高坪",
+      "to": "觀高登山服務站",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD40BA84BEA"
+      ],
+      "evidenceRows": [
+        694
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RD40BA84BEA",
+          "sheetRows": [
+            694
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:115544371295fbcbf3db",
+      "toId": "shared:cw-v07-072",
+      "from": "觀高登山服務站",
+      "to": "觀高坪",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD40BA84BEA"
+      ],
+      "evidenceRows": [
+        694
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RD40BA84BEA",
+          "sheetRows": [
+            694
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-072",
+      "toId": "shared:cw-v07-071",
+      "from": "觀高坪",
+      "to": "西峰岔路",
+      "minutes": 105,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R33647C7229"
+      ],
+      "evidenceRows": [
+        695
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R33647C7229",
+          "sheetRows": [
+            695
+          ],
+          "minutes": 105
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-071",
+      "toId": "shared:cw-v07-072",
+      "from": "西峰岔路",
+      "to": "觀高坪",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R33647C7229"
+      ],
+      "evidenceRows": [
+        695
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R33647C7229",
+          "sheetRows": [
+            695
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-072",
+      "toId": "shared:cw-v07-019",
+      "from": "觀高坪",
+      "to": "八通關草原",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5E15441081"
+      ],
+      "evidenceRows": [
+        699
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R5E15441081",
+          "sheetRows": [
+            699
+          ],
+          "minutes": 65
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-019",
+      "toId": "shared:cw-v07-072",
+      "from": "八通關草原",
+      "to": "觀高坪",
+      "minutes": 75,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5E15441081"
+      ],
+      "evidenceRows": [
+        699
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R5E15441081",
+          "sheetRows": [
+            699
+          ],
+          "minutes": 75
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-060",
+      "toId": "shared:cw-v07-035",
+      "from": "秀姑坪岔路",
+      "to": "大水窟山",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R028454CEB3"
+      ],
+      "evidenceRows": [
+        710
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R028454CEB3",
+          "sheetRows": [
+            710
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-035",
+      "toId": "shared:cw-v07-060",
+      "from": "大水窟山",
+      "to": "秀姑坪岔路",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R028454CEB3"
+      ],
+      "evidenceRows": [
+        710
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R028454CEB3",
+          "sheetRows": [
+            710
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:8426704609cea5d43db4",
+      "toId": "shared:cw-v07-064",
+      "from": "杜鵑營地",
+      "to": "稜線岔路",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC5261BA0E0"
+      ],
+      "evidenceRows": [
+        714
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RC5261BA0E0",
+          "sheetRows": [
+            714
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-064",
+      "toId": "node:8426704609cea5d43db4",
+      "from": "稜線岔路",
+      "to": "杜鵑營地",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC5261BA0E0"
+      ],
+      "evidenceRows": [
+        714
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RC5261BA0E0",
+          "sheetRows": [
+            714
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:8426704609cea5d43db4",
+      "toId": "shared:cw-v07-033",
+      "from": "杜鵑營地",
+      "to": "四岔路口",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC69F9DE384"
+      ],
+      "evidenceRows": [
+        715
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RC69F9DE384",
+          "sheetRows": [
+            715
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-033",
+      "toId": "node:8426704609cea5d43db4",
+      "from": "四岔路口",
+      "to": "杜鵑營地",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC69F9DE384"
+      ],
+      "evidenceRows": [
+        715
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RC69F9DE384",
+          "sheetRows": [
+            715
+          ],
+          "minutes": 65
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-036",
+      "toId": "node:95bb6c335556ae3a2cd6",
+      "from": "大水窟山屋",
+      "to": "南大水窟山",
+      "minutes": 95,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7FEBF18589"
+      ],
+      "evidenceRows": [
+        720
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R7FEBF18589",
+          "sheetRows": [
+            720
+          ],
+          "minutes": 95
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:95bb6c335556ae3a2cd6",
+      "toId": "shared:cw-v07-036",
+      "from": "南大水窟山",
+      "to": "大水窟山屋",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7FEBF18589"
+      ],
+      "evidenceRows": [
+        720
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R7FEBF18589",
+          "sheetRows": [
+            720
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:6fbfce66af193ba46514",
+      "toId": "node:48968d2ec01d938dc670",
+      "from": "大水窟山三岔路口",
+      "to": "荖濃溪底營地",
+      "minutes": 95,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC4C18FD15C"
+      ],
+      "evidenceRows": [
+        721
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RC4C18FD15C",
+          "sheetRows": [
+            721
+          ],
+          "minutes": 95
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:48968d2ec01d938dc670",
+      "toId": "node:6fbfce66af193ba46514",
+      "from": "荖濃溪底營地",
+      "to": "大水窟山三岔路口",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC4C18FD15C"
+      ],
+      "evidenceRows": [
+        721
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RC4C18FD15C",
+          "sheetRows": [
+            721
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:6fbfce66af193ba46514",
+      "toId": "node:8897886192ce4320aec3",
+      "from": "大水窟山三岔路口",
+      "to": "黑水塘",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R128AA266E0"
+      ],
+      "evidenceRows": [
+        722
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R128AA266E0",
+          "sheetRows": [
+            722
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:8897886192ce4320aec3",
+      "toId": "node:6fbfce66af193ba46514",
+      "from": "黑水塘",
+      "to": "大水窟山三岔路口",
+      "minutes": 7,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R128AA266E0"
+      ],
+      "evidenceRows": [
+        722
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R128AA266E0",
+          "sheetRows": [
+            722
+          ],
+          "minutes": 7
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:8897886192ce4320aec3",
+      "toId": "node:4e7ab2e2b7798527927f",
+      "from": "黑水塘",
+      "to": "達芬尖山登山口",
+      "minutes": 135,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5DB751C31B"
+      ],
+      "evidenceRows": [
+        723
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R5DB751C31B",
+          "sheetRows": [
+            723
+          ],
+          "minutes": 135
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:4e7ab2e2b7798527927f",
+      "toId": "node:8897886192ce4320aec3",
+      "from": "達芬尖山登山口",
+      "to": "黑水塘",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5DB751C31B"
+      ],
+      "evidenceRows": [
+        723
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R5DB751C31B",
+          "sheetRows": [
+            723
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:4e7ab2e2b7798527927f",
+      "toId": "node:1916736d90dd9626ece3",
+      "from": "達芬尖山登山口",
+      "to": "塔芬谷山屋",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE33D4C5DE4"
+      ],
+      "evidenceRows": [
+        724
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RE33D4C5DE4",
+          "sheetRows": [
+            724
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:1916736d90dd9626ece3",
+      "toId": "node:4e7ab2e2b7798527927f",
+      "from": "塔芬谷山屋",
+      "to": "達芬尖山登山口",
+      "minutes": 150,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE33D4C5DE4"
+      ],
+      "evidenceRows": [
+        724
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RE33D4C5DE4",
+          "sheetRows": [
+            724
+          ],
+          "minutes": 150
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:1916736d90dd9626ece3",
+      "toId": "node:b3c1f683294e1bc1252b",
+      "from": "塔芬谷山屋",
+      "to": "塔芬山",
+      "minutes": 160,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0839B20F4C"
+      ],
+      "evidenceRows": [
+        725
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R0839B20F4C",
+          "sheetRows": [
+            725
+          ],
+          "minutes": 160
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:b3c1f683294e1bc1252b",
+      "toId": "node:1916736d90dd9626ece3",
+      "from": "塔芬山",
+      "to": "塔芬谷山屋",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0839B20F4C"
+      ],
+      "evidenceRows": [
+        725
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R0839B20F4C",
+          "sheetRows": [
+            725
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:b3c1f683294e1bc1252b",
+      "toId": "local:G17-OVERLAP::g17-overlap-006",
+      "from": "塔芬山",
+      "to": "塔芬池",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RABDA3879D5"
+      ],
+      "evidenceRows": [
+        726
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RABDA3879D5",
+          "sheetRows": [
+            726
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "local:G17-OVERLAP::g17-overlap-006",
+      "toId": "node:b3c1f683294e1bc1252b",
+      "from": "塔芬池",
+      "to": "塔芬山",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RABDA3879D5"
+      ],
+      "evidenceRows": [
+        726
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RABDA3879D5",
+          "sheetRows": [
+            726
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "local:G17-OVERLAP::g17-overlap-006",
+      "toId": "local:G17-OVERLAP::g17-overlap-007",
+      "from": "塔芬池",
+      "to": "轆轆山登山口",
+      "minutes": 250,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R8563268CF4"
+      ],
+      "evidenceRows": [
+        727
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R8563268CF4",
+          "sheetRows": [
+            727
+          ],
+          "minutes": 250
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "local:G17-OVERLAP::g17-overlap-007",
+      "toId": "local:G17-OVERLAP::g17-overlap-006",
+      "from": "轆轆山登山口",
+      "to": "塔芬池",
+      "minutes": 210,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R8563268CF4"
+      ],
+      "evidenceRows": [
+        727
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R8563268CF4",
+          "sheetRows": [
+            727
+          ],
+          "minutes": 210
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:4b535e7d68c379a6c905",
+      "toId": "local:G17-OVERLAP::g17-overlap-007",
+      "from": "轆轆東峰",
+      "to": "轆轆山登山口",
+      "minutes": 3,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R72CF13ED66"
+      ],
+      "evidenceRows": [
+        728
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R72CF13ED66",
+          "sheetRows": [
+            728
+          ],
+          "minutes": 3
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "local:G17-OVERLAP::g17-overlap-007",
+      "toId": "node:4b535e7d68c379a6c905",
+      "from": "轆轆山登山口",
+      "to": "轆轆東峰",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R72CF13ED66"
+      ],
+      "evidenceRows": [
+        728
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R72CF13ED66",
+          "sheetRows": [
+            728
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "local:G17-OVERLAP::g17-overlap-007",
+      "toId": "local:G17-OVERLAP::g17-overlap-008",
+      "from": "轆轆山登山口",
+      "to": "轆轆谷山屋",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R48E3AA859F"
+      ],
+      "evidenceRows": [
+        729
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R48E3AA859F",
+          "sheetRows": [
+            729
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "local:G17-OVERLAP::g17-overlap-008",
+      "toId": "local:G17-OVERLAP::g17-overlap-007",
+      "from": "轆轆谷山屋",
+      "to": "轆轆山登山口",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R48E3AA859F"
+      ],
+      "evidenceRows": [
+        729
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R48E3AA859F",
+          "sheetRows": [
+            729
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "local:G17-OVERLAP::g17-overlap-008",
+      "toId": "local:G17-OVERLAP::g17-overlap-009",
+      "from": "轆轆谷山屋",
+      "to": "雲峰東峰三岔路口營地",
+      "minutes": 240,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R309702698C"
+      ],
+      "evidenceRows": [
+        730
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R309702698C",
+          "sheetRows": [
+            730
+          ],
+          "minutes": 240
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "local:G17-OVERLAP::g17-overlap-009",
+      "toId": "local:G17-OVERLAP::g17-overlap-008",
+      "from": "雲峰東峰三岔路口營地",
+      "to": "轆轆谷山屋",
+      "minutes": 200,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R309702698C"
+      ],
+      "evidenceRows": [
+        730
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R309702698C",
+          "sheetRows": [
+            730
+          ],
+          "minutes": 200
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:85bb625c5f4bcbcf9abe",
+      "toId": "local:G17-OVERLAP::g17-overlap-009",
+      "from": "雲峰",
+      "to": "雲峰東峰三岔路口營地",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4B75FA49B6"
+      ],
+      "evidenceRows": [
+        731
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R4B75FA49B6",
+          "sheetRows": [
+            731
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "local:G17-OVERLAP::g17-overlap-009",
+      "toId": "node:85bb625c5f4bcbcf9abe",
+      "from": "雲峰東峰三岔路口營地",
+      "to": "雲峰",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4B75FA49B6"
+      ],
+      "evidenceRows": [
+        731
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R4B75FA49B6",
+          "sheetRows": [
+            731
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "local:G17-OVERLAP::g17-overlap-009",
+      "toId": "node:bfffd1c12932fc2cd1e8",
+      "from": "雲峰東峰三岔路口營地",
+      "to": "水源",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RFB1C073DE5"
+      ],
+      "evidenceRows": [
+        732
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RFB1C073DE5",
+          "sheetRows": [
+            732
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:bfffd1c12932fc2cd1e8",
+      "toId": "local:G17-OVERLAP::g17-overlap-009",
+      "from": "水源",
+      "to": "雲峰東峰三岔路口營地",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RFB1C073DE5"
+      ],
+      "evidenceRows": [
+        732
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RFB1C073DE5",
+          "sheetRows": [
+            732
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "local:G17-OVERLAP::g17-overlap-009",
+      "toId": "local:G17-OVERLAP::g17-overlap-010",
+      "from": "雲峰東峰三岔路口營地",
+      "to": "西北鞍南雙池營地",
+      "minutes": 150,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0DA5E853A3"
+      ],
+      "evidenceRows": [
+        733
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R0DA5E853A3",
+          "sheetRows": [
+            733
+          ],
+          "minutes": 150
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "local:G17-OVERLAP::g17-overlap-010",
+      "toId": "local:G17-OVERLAP::g17-overlap-009",
+      "from": "西北鞍南雙池營地",
+      "to": "雲峰東峰三岔路口營地",
+      "minutes": 170,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0DA5E853A3"
+      ],
+      "evidenceRows": [
+        733
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R0DA5E853A3",
+          "sheetRows": [
+            733
+          ],
+          "minutes": 170
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "local:G17-OVERLAP::g17-overlap-010",
+      "toId": "local:G17-OVERLAP::g17-overlap-002",
+      "from": "西北鞍南雙池營地",
+      "to": "南雙頭山",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R61FED0D3F9"
+      ],
+      "evidenceRows": [
+        734
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R61FED0D3F9",
+          "sheetRows": [
+            734
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "local:G17-OVERLAP::g17-overlap-002",
+      "toId": "local:G17-OVERLAP::g17-overlap-010",
+      "from": "南雙頭山",
+      "to": "西北鞍南雙池營地",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R61FED0D3F9"
+      ],
+      "evidenceRows": [
+        734
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R61FED0D3F9",
+          "sheetRows": [
+            734
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "local:G17-OVERLAP::g17-overlap-002",
+      "toId": "shared:cw-v07-049",
+      "from": "南雙頭山",
+      "to": "拉庫音溪山屋",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R17BACEAC73"
+      ],
+      "evidenceRows": [
+        735
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R17BACEAC73",
+          "sheetRows": [
+            735
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-049",
+      "toId": "local:G17-OVERLAP::g17-overlap-002",
+      "from": "拉庫音溪山屋",
+      "to": "南雙頭山",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R17BACEAC73"
+      ],
+      "evidenceRows": [
+        735
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R17BACEAC73",
+          "sheetRows": [
+            735
+          ],
+          "minutes": 180
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-049",
+      "toId": "shared:cw-v07-050",
+      "from": "拉庫音溪山屋",
+      "to": "新康山岔路口",
+      "minutes": 220,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7CE5A5609E",
+        "RFFF1DEBB04"
+      ],
+      "evidenceRows": [
+        736,
+        799
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R7CE5A5609E",
+          "sheetRows": [
+            736
+          ],
+          "minutes": 220
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RFFF1DEBB04",
+          "sheetRows": [
+            799
+          ],
+          "minutes": 220
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-050",
+      "toId": "shared:cw-v07-049",
+      "from": "新康山岔路口",
+      "to": "拉庫音溪山屋",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7CE5A5609E",
+        "RFFF1DEBB04"
+      ],
+      "evidenceRows": [
+        736,
+        799
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R7CE5A5609E",
+          "sheetRows": [
+            736
+          ],
+          "minutes": 130
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RFFF1DEBB04",
+          "sheetRows": [
+            799
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-005",
+      "toId": "shared:cw-v07-006",
+      "from": "三叉山",
+      "to": "三叉山登山口",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0670B8AE7A",
+        "RD25F52CB44"
+      ],
+      "evidenceRows": [
+        737,
+        766
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R0670B8AE7A",
+          "sheetRows": [
+            737
+          ],
+          "minutes": 15
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RD25F52CB44",
+          "sheetRows": [
+            766
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-006",
+      "toId": "shared:cw-v07-005",
+      "from": "三叉山登山口",
+      "to": "三叉山",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0670B8AE7A",
+        "RD25F52CB44"
+      ],
+      "evidenceRows": [
+        737,
+        766
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R0670B8AE7A",
+          "sheetRows": [
+            737
+          ],
+          "minutes": 25
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RD25F52CB44",
+          "sheetRows": [
+            766
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-006",
+      "toId": "shared:cw-v07-031",
+      "from": "三叉山登山口",
+      "to": "嘉明湖岔路口",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA4E5026DDF",
+        "RBA9E4087FF"
+      ],
+      "evidenceRows": [
+        738,
+        800
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RA4E5026DDF",
+          "sheetRows": [
+            738
+          ],
+          "minutes": 30
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RBA9E4087FF",
+          "sheetRows": [
+            800
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-031",
+      "toId": "shared:cw-v07-006",
+      "from": "嘉明湖岔路口",
+      "to": "三叉山登山口",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA4E5026DDF",
+        "RBA9E4087FF"
+      ],
+      "evidenceRows": [
+        738,
+        800
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RA4E5026DDF",
+          "sheetRows": [
+            738
+          ],
+          "minutes": 25
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RBA9E4087FF",
+          "sheetRows": [
+            800
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-050",
+      "toId": "shared:cw-v07-031",
+      "from": "新康山岔路口",
+      "to": "嘉明湖岔路口",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5FFA55327C",
+        "RC517FB4753"
+      ],
+      "evidenceRows": [
+        739,
+        768
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RC517FB4753",
+          "sheetRows": [
+            739
+          ],
+          "minutes": 30
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R5FFA55327C",
+          "sheetRows": [
+            768
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-031",
+      "toId": "shared:cw-v07-050",
+      "from": "嘉明湖岔路口",
+      "to": "新康山岔路口",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5FFA55327C",
+        "RC517FB4753"
+      ],
+      "evidenceRows": [
+        739,
+        768
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RC517FB4753",
+          "sheetRows": [
+            739
+          ],
+          "minutes": 40
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R5FFA55327C",
+          "sheetRows": [
+            768
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-031",
+      "toId": "shared:cw-v07-030",
+      "from": "嘉明湖岔路口",
+      "to": "嘉明湖",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB90960F621",
+        "RFAAF9726D5"
+      ],
+      "evidenceRows": [
+        740,
+        801
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RFAAF9726D5",
+          "sheetRows": [
+            740
+          ],
+          "minutes": 15
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RB90960F621",
+          "sheetRows": [
+            801
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-030",
+      "toId": "shared:cw-v07-031",
+      "from": "嘉明湖",
+      "to": "嘉明湖岔路口",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB90960F621",
+        "RFAAF9726D5"
+      ],
+      "evidenceRows": [
+        740,
+        801
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RFAAF9726D5",
+          "sheetRows": [
+            740
+          ],
+          "minutes": 20
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RB90960F621",
+          "sheetRows": [
+            801
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-029",
+      "toId": "shared:cw-v07-052",
+      "from": "向陽森林遊樂區",
+      "to": "林道登山口",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1780305046",
+        "R2867B8B0E8"
+      ],
+      "evidenceRows": [
+        741,
+        760
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R1780305046",
+          "sheetRows": [
+            741
+          ],
+          "minutes": 80
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R2867B8B0E8",
+          "sheetRows": [
+            760
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-052",
+      "toId": "shared:cw-v07-029",
+      "from": "林道登山口",
+      "to": "向陽森林遊樂區",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R1780305046",
+        "R2867B8B0E8"
+      ],
+      "evidenceRows": [
+        741,
+        760
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R1780305046",
+          "sheetRows": [
+            741
+          ],
+          "minutes": 50
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R2867B8B0E8",
+          "sheetRows": [
+            760
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-052",
+      "toId": "shared:cw-v07-028",
+      "from": "林道登山口",
+      "to": "向陽山屋",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4A02E772F9",
+        "REEC2A5B551"
+      ],
+      "evidenceRows": [
+        742,
+        761
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "REEC2A5B551",
+          "sheetRows": [
+            742
+          ],
+          "minutes": 70
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R4A02E772F9",
+          "sheetRows": [
+            761
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-028",
+      "toId": "shared:cw-v07-052",
+      "from": "向陽山屋",
+      "to": "林道登山口",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4A02E772F9",
+        "REEC2A5B551"
+      ],
+      "evidenceRows": [
+        742,
+        761
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "REEC2A5B551",
+          "sheetRows": [
+            742
+          ],
+          "minutes": 40
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R4A02E772F9",
+          "sheetRows": [
+            761
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-028",
+      "toId": "shared:cw-v07-070",
+      "from": "向陽山屋",
+      "to": "西側登山口",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0E747818A9",
+        "R74C459E4F6"
+      ],
+      "evidenceRows": [
+        743,
+        762
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R0E747818A9",
+          "sheetRows": [
+            743
+          ],
+          "minutes": 180
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R74C459E4F6",
+          "sheetRows": [
+            762
+          ],
+          "minutes": 180
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-070",
+      "toId": "shared:cw-v07-028",
+      "from": "西側登山口",
+      "to": "向陽山屋",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R0E747818A9",
+        "R74C459E4F6"
+      ],
+      "evidenceRows": [
+        743,
+        762
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R0E747818A9",
+          "sheetRows": [
+            743
+          ],
+          "minutes": 130
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R74C459E4F6",
+          "sheetRows": [
+            762
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-027",
+      "toId": "shared:cw-v07-070",
+      "from": "向陽山",
+      "to": "西側登山口",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R257D375506",
+        "R7A2A1D341C"
+      ],
+      "evidenceRows": [
+        744,
+        763
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R257D375506",
+          "sheetRows": [
+            744
+          ],
+          "minutes": 25
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R7A2A1D341C",
+          "sheetRows": [
+            763
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-070",
+      "toId": "shared:cw-v07-027",
+      "from": "西側登山口",
+      "to": "向陽山",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R257D375506",
+        "R7A2A1D341C"
+      ],
+      "evidenceRows": [
+        744,
+        763
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R257D375506",
+          "sheetRows": [
+            744
+          ],
+          "minutes": 35
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R7A2A1D341C",
+          "sheetRows": [
+            763
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-070",
+      "toId": "shared:cw-v07-032",
+      "from": "西側登山口",
+      "to": "嘉明湖避難山屋",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6A06152F68",
+        "RAA621D0CEE"
+      ],
+      "evidenceRows": [
+        745,
+        805
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RAA621D0CEE",
+          "sheetRows": [
+            745
+          ],
+          "minutes": 40
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R6A06152F68",
+          "sheetRows": [
+            805
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-032",
+      "toId": "shared:cw-v07-070",
+      "from": "嘉明湖避難山屋",
+      "to": "西側登山口",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6A06152F68",
+        "RAA621D0CEE"
+      ],
+      "evidenceRows": [
+        745,
+        805
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RAA621D0CEE",
+          "sheetRows": [
+            745
+          ],
+          "minutes": 45
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R6A06152F68",
+          "sheetRows": [
+            805
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-032",
+      "toId": "shared:owner-v0724-xiangyang-junction",
+      "from": "嘉明湖避難山屋",
+      "to": "向陽山三岔路口",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RAD6A69E5B2",
+        "RE7A050BF1A"
+      ],
+      "evidenceRows": [
+        746,
+        764
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RE7A050BF1A",
+          "sheetRows": [
+            746
+          ],
+          "minutes": 15
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RAD6A69E5B2",
+          "sheetRows": [
+            764
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:owner-v0724-xiangyang-junction",
+      "toId": "shared:cw-v07-032",
+      "from": "向陽山三岔路口",
+      "to": "嘉明湖避難山屋",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RAD6A69E5B2",
+        "RE7A050BF1A"
+      ],
+      "evidenceRows": [
+        746,
+        764
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RE7A050BF1A",
+          "sheetRows": [
+            746
+          ],
+          "minutes": 15
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RAD6A69E5B2",
+          "sheetRows": [
+            764
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:owner-v0724-xiangyang-junction",
+      "toId": "shared:cw-v07-020",
+      "from": "向陽山三岔路口",
+      "to": "北峰下解說牌",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R49CCD11F1D",
+        "R95CC8FE3A6"
+      ],
+      "evidenceRows": [
+        747,
+        765
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R49CCD11F1D",
+          "sheetRows": [
+            747
+          ],
+          "minutes": 40
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R95CC8FE3A6",
+          "sheetRows": [
+            765
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-020",
+      "toId": "shared:owner-v0724-xiangyang-junction",
+      "from": "北峰下解說牌",
+      "to": "向陽山三岔路口",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R49CCD11F1D",
+        "R95CC8FE3A6"
+      ],
+      "evidenceRows": [
+        747,
+        765
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R49CCD11F1D",
+          "sheetRows": [
+            747
+          ],
+          "minutes": 35
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R95CC8FE3A6",
+          "sheetRows": [
+            765
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-020",
+      "toId": "shared:cw-v07-006",
+      "from": "北峰下解說牌",
+      "to": "三叉山登山口",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3F017A592B",
+        "R4CE5AE7E05"
+      ],
+      "evidenceRows": [
+        748,
+        806
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R3F017A592B",
+          "sheetRows": [
+            748
+          ],
+          "minutes": 80
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R4CE5AE7E05",
+          "sheetRows": [
+            806
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-006",
+      "toId": "shared:cw-v07-020",
+      "from": "三叉山登山口",
+      "to": "北峰下解說牌",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3F017A592B",
+        "R4CE5AE7E05"
+      ],
+      "evidenceRows": [
+        748,
+        806
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R3F017A592B",
+          "sheetRows": [
+            748
+          ],
+          "minutes": 55
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R4CE5AE7E05",
+          "sheetRows": [
+            806
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-027",
+      "toId": "shared:owner-v0724-xiangyang-junction",
+      "from": "向陽山",
+      "to": "向陽山三岔路口",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R97B8581C94"
+      ],
+      "evidenceRows": [
+        749
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R97B8581C94",
+          "sheetRows": [
+            749
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:owner-v0724-xiangyang-junction",
+      "toId": "shared:cw-v07-027",
+      "from": "向陽山三岔路口",
+      "to": "向陽山",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R97B8581C94"
+      ],
+      "evidenceRows": [
+        749
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R97B8581C94",
+          "sheetRows": [
+            749
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-031",
+      "toId": "shared:cw-v07-005",
+      "from": "嘉明湖岔路口",
+      "to": "三叉山",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R731148B546",
+        "R8A22D584A3"
+      ],
+      "evidenceRows": [
+        750,
+        767
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R8A22D584A3",
+          "sheetRows": [
+            750
+          ],
+          "minutes": 20
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R731148B546",
+          "sheetRows": [
+            767
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-005",
+      "toId": "shared:cw-v07-031",
+      "from": "三叉山",
+      "to": "嘉明湖岔路口",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R731148B546",
+        "R8A22D584A3"
+      ],
+      "evidenceRows": [
+        750,
+        767
+      ],
+      "sourceGroups": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R8A22D584A3",
+          "sheetRows": [
+            750
+          ],
+          "minutes": 10
+        },
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "R731148B546",
+          "sheetRows": [
+            767
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段",
+        "新康橫斷/戒茂斯"
+      ]
+    },
+    {
+      "fromId": "node:9af65faed0dfd594da63",
+      "toId": "node:4b535e7d68c379a6c905",
+      "from": "轆轆山",
+      "to": "轆轆東峰",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB32AE77A62"
+      ],
+      "evidenceRows": [
+        751
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RB32AE77A62",
+          "sheetRows": [
+            751
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:4b535e7d68c379a6c905",
+      "toId": "node:9af65faed0dfd594da63",
+      "from": "轆轆東峰",
+      "to": "轆轆山",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB32AE77A62"
+      ],
+      "evidenceRows": [
+        751
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RB32AE77A62",
+          "sheetRows": [
+            751
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:5bd0e4cd667031e35fc1",
+      "toId": "node:4e7ab2e2b7798527927f",
+      "from": "達芬尖山",
+      "to": "達芬尖山登山口",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD3515D5C05"
+      ],
+      "evidenceRows": [
+        752
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RD3515D5C05",
+          "sheetRows": [
+            752
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:4e7ab2e2b7798527927f",
+      "toId": "node:5bd0e4cd667031e35fc1",
+      "from": "達芬尖山登山口",
+      "to": "達芬尖山",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD3515D5C05"
+      ],
+      "evidenceRows": [
+        752
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RD3515D5C05",
+          "sheetRows": [
+            752
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:95bb6c335556ae3a2cd6",
+      "toId": "node:6fbfce66af193ba46514",
+      "from": "南大水窟山",
+      "to": "大水窟山三岔路口",
+      "minutes": 95,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD5501E761C"
+      ],
+      "evidenceRows": [
+        753
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RD5501E761C",
+          "sheetRows": [
+            753
+          ],
+          "minutes": 95
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:6fbfce66af193ba46514",
+      "toId": "node:95bb6c335556ae3a2cd6",
+      "from": "大水窟山三岔路口",
+      "to": "南大水窟山",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD5501E761C"
+      ],
+      "evidenceRows": [
+        753
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "RD5501E761C",
+          "sheetRows": [
+            753
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:48968d2ec01d938dc670",
+      "toId": "node:502ad7507575bb341a28",
+      "from": "荖濃溪底營地",
+      "to": "大水窟山三岔路",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R105B323798"
+      ],
+      "evidenceRows": [
+        754
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R105B323798",
+          "sheetRows": [
+            754
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "node:502ad7507575bb341a28",
+      "toId": "node:48968d2ec01d938dc670",
+      "from": "大水窟山三岔路",
+      "to": "荖濃溪底營地",
+      "minutes": 95,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R105B323798"
+      ],
+      "evidenceRows": [
+        754
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "R105B323798",
+          "sheetRows": [
+            754
+          ],
+          "minutes": 95
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-009",
+      "toId": "shared:cw-v07-064",
+      "from": "中央金礦山屋",
+      "to": "稜線岔路",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "REFC0FB2196"
+      ],
+      "evidenceRows": [
+        756
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "REFC0FB2196",
+          "sheetRows": [
+            756
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    },
+    {
+      "fromId": "shared:cw-v07-064",
+      "toId": "shared:cw-v07-009",
+      "from": "稜線岔路",
+      "to": "中央金礦山屋",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "REFC0FB2196"
+      ],
+      "evidenceRows": [
+        756
+      ],
+      "sourceGroups": [
+        "南二段"
+      ],
+      "sourceChart": "G17",
+      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南二段",
+          "chartId": "G17",
+          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+          "rowId": "REFC0FB2196",
+          "sheetRows": [
+            756
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "南二段"
+      ]
+    }
+  ],
+  "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+}

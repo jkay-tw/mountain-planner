@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "chartId": "G20",
+  "chartURL": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+  "reviewedAt": "2026-10-28",
+  "reviewedBy": "assistant",
+  "status": "source-checked-timed-walking-scope",
+  "reviewScope": "All 11 explicitly timed walking pairs in the official G20 schematic; untimed continuation arrows and vehicle links excluded.",
+  "directionPairs": [
+    {
+      "from": "新登山口",
+      "to": "舊登山口",
+      "forwardMinutes": 100,
+      "reverseMinutes": 70,
+      "travelMode": "walking"
+    },
+    {
+      "from": "舊登山口",
+      "to": "越嶺鞍部",
+      "forwardMinutes": 90,
+      "reverseMinutes": 60,
+      "travelMode": "walking"
+    },
+    {
+      "from": "越嶺鞍部",
+      "to": "3.8K 展望平台",
+      "forwardMinutes": 90,
+      "reverseMinutes": 60,
+      "travelMode": "walking"
+    },
+    {
+      "from": "3.8K 展望平台",
+      "to": "4K 三岔路口",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking"
+    },
+    {
+      "from": "4K 三岔路口",
+      "to": "檜谷山莊",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking"
+    },
+    {
+      "from": "4K 三岔路口",
+      "to": "南大武山展望點",
+      "forwardMinutes": 60,
+      "reverseMinutes": 40,
+      "travelMode": "walking"
+    },
+    {
+      "from": "南大武山展望點",
+      "to": "5.5K 大武神木",
+      "forwardMinutes": 30,
+      "reverseMinutes": 20,
+      "travelMode": "walking"
+    },
+    {
+      "from": "5.5K 大武神木",
+      "to": "6.3K 最後水源",
+      "forwardMinutes": 65,
+      "reverseMinutes": 50,
+      "travelMode": "walking"
+    },
+    {
+      "from": "6.3K 最後水源",
+      "to": "主稜嶺線",
+      "forwardMinutes": 65,
+      "reverseMinutes": 40,
+      "travelMode": "walking"
+    },
+    {
+      "from": "主稜嶺線",
+      "to": "8K 大武祠",
+      "forwardMinutes": 65,
+      "reverseMinutes": 40,
+      "travelMode": "walking"
+    },
+    {
+      "from": "8K 大武祠",
+      "to": "9K 北大武山",
+      "forwardMinutes": 65,
+      "reverseMinutes": 55,
+      "travelMode": "walking"
+    }
+  ],
+  "excludedFromWalking": [
+    "潮州→萬巒",
+    "萬巒→泰武",
+    "泰武→新登山口"
+  ],
+  "unreviewed": "Untimed continuation arrows towards 霧頭山 and 南大武山 are not routable.",
+  "candidateAlias": {
+    "candidate": "舊登登山口",
+    "officialDisplay": "舊登山口"
+  },
+  "sourceNote": "Both arrow directions visually reviewed for all 11 explicitly timed walking pairs; does not establish current trail safety or walkability.",
+  "evidence": {
+    "sha256": "cb11d991bd76dfcbf48a2cc5e975c3c26c0d3fb06ea091bac2a00afe6ee29a08",
+    "imageWidth": 2136,
+    "imageHeight": 1638,
+    "method": "Independent visual reading of both arrowheads and adjacent minute labels; original five pairs rechecked.",
+    "directionNotes": "From 4K towards summit, descending-page arrows give 60,30,65; rising/right arrow from last water to ridge gives 65; rising arrows towards shrine and summit give 65,65. Opposite arrows give 40,20,50,40,40,55."
+  }
+}

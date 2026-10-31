@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>登山行程快速規劃器</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Mountain Planner 登山行程規劃器</title>
+  <link rel="stylesheet" href="css/style.css?v=v0724" />
   <script src="https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"></script>
 </head>
-<body>
+<body data-mode="production">
   <main class="wrap">
     <header class="app-header">
       <div class="title-block">
         <p class="eyebrow">Mountain Planner <span id="appVersion" class="version-badge"></span></p>
-        <h1>登山行程快速規劃器</h1>
-        <p class="sub">選擇地點，自動補齊最短上河路徑；再依每天速度、休息與手動節點微調。</p>
+        <h1>Mountain Planner 登山行程規劃器</h1>
+        <p class="sub">同一編輯器整合 G02～G20 已收錄的 24 個群組；切換圖組僅變更節點瀏覽範圍，不清除行程。行程會自動暫存，亦可匯出備份。</p>
       </div>
 
       <div class="desktop-tools">
@@ -52,6 +52,7 @@
       <input id="importFile" type="file" accept=".json,.mplan.json,application/json" hidden />
     </header>
 
+    <div class="notice"><strong>上河步程規劃</strong><span>已收錄路段經人工核對；車行不參與步行尋路，未連通處可手動估時。行程規劃供參考，非現地導航。</span></div>
     <section class="card controls">
       <div class="field route-field">
         <label for="routeSelect">上河圖群組</label>
@@ -80,6 +81,6 @@
     <button id="floatRedoBtn" class="secondary" disabled title="重做">↷</button>
   </div>
 
-  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/unified-editor.js?v=v0724"></script>
 </body>
 </html>

@@ -1,9 +1,10 @@
-name: v0.6 JavaScript tests
+name: Planner JavaScript tests
 on:
   pull_request:
   push:
     branches:
       - feature/v0.6-reliability
+      - feature/v0.7-node-identity
 jobs:
   planner-tests:
     runs-on: ubuntu-latest
@@ -16,4 +17,8 @@ jobs:
         run: |
           node --check js/app.js
           node --check js/planner.js
+          node --check js/node-identity.js
           node --experimental-default-type=module --test tests/*.test.mjs
+
+      - name: Verify batch route-data audit and promotion gates
+        run: python3 -m unittest discover -s tests -p 'test_*.py'

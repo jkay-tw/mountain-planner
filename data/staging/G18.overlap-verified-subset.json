@@ -1,0 +1,458 @@
+{
+  "route_id": "G18-OVERLAP",
+  "route_name": "新康橫斷",
+  "status": "limited-source-audited-staging-not-published",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg"
+  },
+  "auditScope": "16 selected walking pairs (32 directed edges) compared to G18 official chart, including 12-pair east ridge continuation. Remaining candidate routes not published.",
+  "nodes": [
+    {
+      "id": "g18-overlap-001",
+      "name": "3058公尺峰"
+    },
+    {
+      "id": "g18-overlap-002",
+      "name": "布新岔路口"
+    },
+    {
+      "id": "g18-overlap-003",
+      "name": "新康山岔路口"
+    },
+    {
+      "id": "g18-overlap-004",
+      "name": "嘉明湖岔路口"
+    },
+    {
+      "id": "g18-overlap-005",
+      "name": "三叉山登山口"
+    },
+    {
+      "id": "g18-overlap-006",
+      "name": "連理西峰前營地"
+    },
+    {
+      "id": "g18-overlap-007",
+      "name": "西峰東稜平台"
+    },
+    {
+      "id": "g18-overlap-008",
+      "name": "飛機殘骸"
+    },
+    {
+      "id": "g18-overlap-009",
+      "name": "桃源營地"
+    },
+    {
+      "id": "g18-overlap-010",
+      "name": "連理山"
+    },
+    {
+      "id": "g18-overlap-011",
+      "name": "鞍部黑水塘"
+    },
+    {
+      "id": "g18-overlap-012",
+      "name": "新仙山前營地"
+    },
+    {
+      "id": "g18-overlap-013",
+      "name": "新仙山營地"
+    },
+    {
+      "id": "g18-overlap-014",
+      "name": "新仙山"
+    },
+    {
+      "id": "g18-overlap-015",
+      "name": "最低鞍部"
+    },
+    {
+      "id": "g18-overlap-016",
+      "name": "新康山"
+    },
+    {
+      "id": "g18-overlap-017",
+      "name": "天宮堡壘"
+    }
+  ],
+  "segments": [
+    {
+      "from": "新康山岔路口",
+      "to": "布新岔路口",
+      "fromId": "g18-overlap-003",
+      "toId": "g18-overlap-002",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "source-chart-visual-review-2026-10-27"
+    },
+    {
+      "from": "布新岔路口",
+      "to": "新康山岔路口",
+      "fromId": "g18-overlap-002",
+      "toId": "g18-overlap-003",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "source-chart-visual-review-2026-10-27"
+    },
+    {
+      "from": "布新岔路口",
+      "to": "3058公尺峰",
+      "fromId": "g18-overlap-002",
+      "toId": "g18-overlap-001",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "source-chart-visual-review-2026-10-27"
+    },
+    {
+      "from": "3058公尺峰",
+      "to": "布新岔路口",
+      "fromId": "g18-overlap-001",
+      "toId": "g18-overlap-002",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "source-chart-visual-review-2026-10-27"
+    },
+    {
+      "from": "嘉明湖岔路口",
+      "to": "新康山岔路口",
+      "fromId": "g18-overlap-004",
+      "toId": "g18-overlap-003",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "source-chart-visual-review-2026-10-27"
+    },
+    {
+      "from": "新康山岔路口",
+      "to": "嘉明湖岔路口",
+      "fromId": "g18-overlap-003",
+      "toId": "g18-overlap-004",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "source-chart-visual-review-2026-10-27"
+    },
+    {
+      "from": "三叉山登山口",
+      "to": "嘉明湖岔路口",
+      "fromId": "g18-overlap-005",
+      "toId": "g18-overlap-004",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "source-chart-visual-review-2026-10-27"
+    },
+    {
+      "from": "嘉明湖岔路口",
+      "to": "三叉山登山口",
+      "fromId": "g18-overlap-004",
+      "toId": "g18-overlap-005",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "source-chart-visual-review-2026-10-27"
+    },
+    {
+      "from": "3058公尺峰",
+      "to": "連理西峰前營地",
+      "fromId": "g18-overlap-001",
+      "toId": "g18-overlap-006",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "連理西峰前營地",
+      "to": "3058公尺峰",
+      "fromId": "g18-overlap-006",
+      "toId": "g18-overlap-001",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "連理西峰前營地",
+      "to": "西峰東稜平台",
+      "fromId": "g18-overlap-006",
+      "toId": "g18-overlap-007",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "西峰東稜平台",
+      "to": "連理西峰前營地",
+      "fromId": "g18-overlap-007",
+      "toId": "g18-overlap-006",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "西峰東稜平台",
+      "to": "飛機殘骸",
+      "fromId": "g18-overlap-007",
+      "toId": "g18-overlap-008",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "飛機殘骸",
+      "to": "西峰東稜平台",
+      "fromId": "g18-overlap-008",
+      "toId": "g18-overlap-007",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "飛機殘骸",
+      "to": "桃源營地",
+      "fromId": "g18-overlap-008",
+      "toId": "g18-overlap-009",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "桃源營地",
+      "to": "飛機殘骸",
+      "fromId": "g18-overlap-009",
+      "toId": "g18-overlap-008",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "桃源營地",
+      "to": "連理山",
+      "fromId": "g18-overlap-009",
+      "toId": "g18-overlap-010",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "連理山",
+      "to": "桃源營地",
+      "fromId": "g18-overlap-010",
+      "toId": "g18-overlap-009",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "連理山",
+      "to": "鞍部黑水塘",
+      "fromId": "g18-overlap-010",
+      "toId": "g18-overlap-011",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "鞍部黑水塘",
+      "to": "連理山",
+      "fromId": "g18-overlap-011",
+      "toId": "g18-overlap-010",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "鞍部黑水塘",
+      "to": "新仙山前營地",
+      "fromId": "g18-overlap-011",
+      "toId": "g18-overlap-012",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "新仙山前營地",
+      "to": "鞍部黑水塘",
+      "fromId": "g18-overlap-012",
+      "toId": "g18-overlap-011",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "新仙山前營地",
+      "to": "新仙山營地",
+      "fromId": "g18-overlap-012",
+      "toId": "g18-overlap-013",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "新仙山營地",
+      "to": "新仙山前營地",
+      "fromId": "g18-overlap-013",
+      "toId": "g18-overlap-012",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "新仙山營地",
+      "to": "新仙山",
+      "fromId": "g18-overlap-013",
+      "toId": "g18-overlap-014",
+      "minutes": 1,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "新仙山",
+      "to": "新仙山營地",
+      "fromId": "g18-overlap-014",
+      "toId": "g18-overlap-013",
+      "minutes": 1,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "新仙山",
+      "to": "最低鞍部",
+      "fromId": "g18-overlap-014",
+      "toId": "g18-overlap-015",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "最低鞍部",
+      "to": "新仙山",
+      "fromId": "g18-overlap-015",
+      "toId": "g18-overlap-014",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "最低鞍部",
+      "to": "新康山",
+      "fromId": "g18-overlap-015",
+      "toId": "g18-overlap-016",
+      "minutes": 75,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "新康山",
+      "to": "最低鞍部",
+      "fromId": "g18-overlap-016",
+      "toId": "g18-overlap-015",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "新康山",
+      "to": "天宮堡壘",
+      "fromId": "g18-overlap-016",
+      "toId": "g18-overlap-017",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    },
+    {
+      "from": "天宮堡壘",
+      "to": "新康山",
+      "fromId": "g18-overlap-017",
+      "toId": "g18-overlap-016",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "verificationMethod": "G18-official-chart-visual-comparison-2026-10-27",
+      "auditBatch": "G18-east-ridge-01"
+    }
+  ]
+}

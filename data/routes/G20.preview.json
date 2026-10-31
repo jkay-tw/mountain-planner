@@ -1,0 +1,295 @@
+{
+  "route_id": "G20",
+  "route_name": "北大武山（原圖已標時步行路網）",
+  "routingPolicy": "verified-walking-only",
+  "status": "source-reviewed-preview",
+  "source": {
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg",
+    "page_url": "https://www.sunriver.com.tw/step2020.htm"
+  },
+  "notes": "官方示意圖11組已標時步行路段；不包含潮州、萬巒、泰武車行段，亦不推定往霧頭山、南大武山的無標時箭頭。原有節點ID及分鐘數保留。",
+  "nodes": [
+    {
+      "id": "g20-001",
+      "name": "新登山口",
+      "identityStatus": "source-labeled"
+    },
+    {
+      "id": "g20-002",
+      "name": "舊登山口",
+      "identityStatus": "source-labeled"
+    },
+    {
+      "id": "g20-003",
+      "name": "越嶺鞍部",
+      "identityStatus": "source-labeled"
+    },
+    {
+      "id": "g20-004",
+      "name": "3.8K 展望平台",
+      "identityStatus": "source-labeled"
+    },
+    {
+      "id": "g20-005",
+      "name": "4K 三岔路口",
+      "identityStatus": "source-labeled"
+    },
+    {
+      "id": "g20-006",
+      "name": "檜谷山莊",
+      "identityStatus": "source-labeled"
+    },
+    {
+      "id": "g20-007",
+      "name": "南大武山展望點",
+      "identityStatus": "source-labeled"
+    },
+    {
+      "id": "g20-008",
+      "name": "5.5K 大武神木",
+      "identityStatus": "source-labeled"
+    },
+    {
+      "id": "g20-009",
+      "name": "6.3K 最後水源",
+      "identityStatus": "source-labeled"
+    },
+    {
+      "id": "g20-010",
+      "name": "主稜嶺線",
+      "identityStatus": "source-labeled"
+    },
+    {
+      "id": "g20-011",
+      "name": "8K 大武祠",
+      "identityStatus": "source-labeled"
+    },
+    {
+      "id": "g20-012",
+      "name": "9K 北大武山",
+      "identityStatus": "source-labeled"
+    }
+  ],
+  "segments": [
+    {
+      "from": "新登山口",
+      "to": "舊登山口",
+      "fromId": "g20-001",
+      "toId": "g20-002",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    },
+    {
+      "from": "舊登山口",
+      "to": "新登山口",
+      "fromId": "g20-002",
+      "toId": "g20-001",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    },
+    {
+      "from": "舊登山口",
+      "to": "越嶺鞍部",
+      "fromId": "g20-002",
+      "toId": "g20-003",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    },
+    {
+      "from": "越嶺鞍部",
+      "to": "舊登山口",
+      "fromId": "g20-003",
+      "toId": "g20-002",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    },
+    {
+      "from": "越嶺鞍部",
+      "to": "3.8K 展望平台",
+      "fromId": "g20-003",
+      "toId": "g20-004",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    },
+    {
+      "from": "3.8K 展望平台",
+      "to": "越嶺鞍部",
+      "fromId": "g20-004",
+      "toId": "g20-003",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    },
+    {
+      "from": "3.8K 展望平台",
+      "to": "4K 三岔路口",
+      "fromId": "g20-004",
+      "toId": "g20-005",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    },
+    {
+      "from": "4K 三岔路口",
+      "to": "3.8K 展望平台",
+      "fromId": "g20-005",
+      "toId": "g20-004",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    },
+    {
+      "from": "4K 三岔路口",
+      "to": "檜谷山莊",
+      "fromId": "g20-005",
+      "toId": "g20-006",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    },
+    {
+      "from": "檜谷山莊",
+      "to": "4K 三岔路口",
+      "fromId": "g20-006",
+      "toId": "g20-005",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    },
+    {
+      "fromId": "g20-005",
+      "toId": "g20-007",
+      "from": "4K 三岔路口",
+      "to": "南大武山展望點",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    },
+    {
+      "fromId": "g20-007",
+      "toId": "g20-005",
+      "from": "南大武山展望點",
+      "to": "4K 三岔路口",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    },
+    {
+      "fromId": "g20-007",
+      "toId": "g20-008",
+      "from": "南大武山展望點",
+      "to": "5.5K 大武神木",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    },
+    {
+      "fromId": "g20-008",
+      "toId": "g20-007",
+      "from": "5.5K 大武神木",
+      "to": "南大武山展望點",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    },
+    {
+      "fromId": "g20-008",
+      "toId": "g20-009",
+      "from": "5.5K 大武神木",
+      "to": "6.3K 最後水源",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    },
+    {
+      "fromId": "g20-009",
+      "toId": "g20-008",
+      "from": "6.3K 最後水源",
+      "to": "5.5K 大武神木",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    },
+    {
+      "fromId": "g20-009",
+      "toId": "g20-010",
+      "from": "6.3K 最後水源",
+      "to": "主稜嶺線",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    },
+    {
+      "fromId": "g20-010",
+      "toId": "g20-009",
+      "from": "主稜嶺線",
+      "to": "6.3K 最後水源",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    },
+    {
+      "fromId": "g20-010",
+      "toId": "g20-011",
+      "from": "主稜嶺線",
+      "to": "8K 大武祠",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    },
+    {
+      "fromId": "g20-011",
+      "toId": "g20-010",
+      "from": "8K 大武祠",
+      "to": "主稜嶺線",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    },
+    {
+      "fromId": "g20-011",
+      "toId": "g20-012",
+      "from": "8K 大武祠",
+      "to": "9K 北大武山",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    },
+    {
+      "fromId": "g20-012",
+      "toId": "g20-011",
+      "from": "9K 北大武山",
+      "to": "8K 大武祠",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "source": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    }
+  ]
+}

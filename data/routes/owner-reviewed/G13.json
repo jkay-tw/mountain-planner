@@ -1,0 +1,2514 @@
+{
+  "route_id": "G13",
+  "route_name": "干卓萬群峰",
+  "status": "owner-reviewed-preview",
+  "sourceChartIds": [
+    "G13"
+  ],
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+    "revision": "owner workbook reviewed 2026-10-28; follow-ups recorded separately"
+  },
+  "reviewBasis": "owner_workbook_review",
+  "nodes": [
+    {
+      "id": "node:09f6213ee3eda95ab440",
+      "name": "武界林道",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:161914ad6f376947f71b",
+      "name": "武界攔沙壩",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:2311c3215cc1187516a9",
+      "name": "林道小溪水源",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:23ebe8ded814ea3344f3",
+      "name": "V型崩壁",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:281de4ba120480f0978f",
+      "name": "牧山",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:2e635ae9938cef65b1ac",
+      "name": "火山",
+      "aliases": [
+        "萬里山西峰"
+      ],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:3de040fb1f380ce36cf5",
+      "name": "53K廢工寮",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:413453c06804769a3470",
+      "name": "東南鞍營地",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:47e2c171ae6079bdeb59",
+      "name": "十粒溪源營地",
+      "aliases": [
+        "十粒溪營地"
+      ],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:4ba798293fb8d81ef646",
+      "name": "埔里",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:563107f945f9221a7a1d",
+      "name": "3198公尺峰",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:60c927553c1d6db6b6f8",
+      "name": "干卓萬山",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:6545513cdcba43ffb16b",
+      "name": "7.8K停車處",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:67e8e5242ce4f463de38",
+      "name": "48K紅磚屋",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:6935de6625ad298341bc",
+      "name": "造林大鐵牌",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:7869a5d00346b8528d5b",
+      "name": "卓社山",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:787927eba34d44c6e9f2",
+      "name": "卓社大山東峰叉路口",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:7e97b6948ea54cd82c9b",
+      "name": "萬大·親愛國小",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:83f1e5fb979c1b87885c",
+      "name": "林道登山口",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:867f766f3fc1349f52a0",
+      "name": "栗栖溪",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:a2324b75d4528a8442af",
+      "name": "牧山池",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:a78dde46e2ca739d4ac9",
+      "name": "東峰下營地",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:ae40e158fa9b8b18410a",
+      "name": "三叉峰下營地",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:afa9a8c85b77128ce54b",
+      "name": "東北鞍營地",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:cd378ec41f040d34a2dc",
+      "name": "獵寮營地",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:d1600d992e14668a055b",
+      "name": "環形營地",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:d4120c513c6a98e711e3",
+      "name": "卓社大山",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:e6ce8494d0eb9e3dd5c4",
+      "name": "登山口",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:fc10c329662adbb634fb",
+      "name": "乳形峰東鞍營地",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:ffcaad29f65b55db9e47",
+      "name": "2899鞍部營地",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "shared:cw-v07-077",
+      "name": "霧社",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "reviewed-crosswalk"
+    }
+  ],
+  "segments": [
+    {
+      "fromId": "node:867f766f3fc1349f52a0",
+      "toId": "node:2311c3215cc1187516a9",
+      "from": "栗栖溪",
+      "to": "林道小溪水源",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB01C2FFC2C"
+      ],
+      "evidenceRows": [
+        473
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "RB01C2FFC2C",
+          "sheetRows": [
+            473
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:2311c3215cc1187516a9",
+      "toId": "node:867f766f3fc1349f52a0",
+      "from": "林道小溪水源",
+      "to": "栗栖溪",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB01C2FFC2C"
+      ],
+      "evidenceRows": [
+        473
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "RB01C2FFC2C",
+          "sheetRows": [
+            473
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:2311c3215cc1187516a9",
+      "toId": "node:6935de6625ad298341bc",
+      "from": "林道小溪水源",
+      "to": "造林大鐵牌",
+      "minutes": 350,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9DF9EC6DA9"
+      ],
+      "evidenceRows": [
+        474
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R9DF9EC6DA9",
+          "sheetRows": [
+            474
+          ],
+          "minutes": 350
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:6935de6625ad298341bc",
+      "toId": "node:2311c3215cc1187516a9",
+      "from": "造林大鐵牌",
+      "to": "林道小溪水源",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R9DF9EC6DA9"
+      ],
+      "evidenceRows": [
+        474
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R9DF9EC6DA9",
+          "sheetRows": [
+            474
+          ],
+          "minutes": 180
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:6935de6625ad298341bc",
+      "toId": "node:83f1e5fb979c1b87885c",
+      "from": "造林大鐵牌",
+      "to": "林道登山口",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7EC298C45D"
+      ],
+      "evidenceRows": [
+        475
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R7EC298C45D",
+          "sheetRows": [
+            475
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:83f1e5fb979c1b87885c",
+      "toId": "node:6935de6625ad298341bc",
+      "from": "林道登山口",
+      "to": "造林大鐵牌",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7EC298C45D"
+      ],
+      "evidenceRows": [
+        475
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R7EC298C45D",
+          "sheetRows": [
+            475
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:83f1e5fb979c1b87885c",
+      "toId": "node:7869a5d00346b8528d5b",
+      "from": "林道登山口",
+      "to": "卓社山",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RF85E916671"
+      ],
+      "evidenceRows": [
+        476
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "RF85E916671",
+          "sheetRows": [
+            476
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:7869a5d00346b8528d5b",
+      "toId": "node:83f1e5fb979c1b87885c",
+      "from": "卓社山",
+      "to": "林道登山口",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RF85E916671"
+      ],
+      "evidenceRows": [
+        476
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "RF85E916671",
+          "sheetRows": [
+            476
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:6545513cdcba43ffb16b",
+      "toId": "node:e6ce8494d0eb9e3dd5c4",
+      "from": "7.8K停車處",
+      "to": "登山口",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R046FBC8236"
+      ],
+      "evidenceRows": [
+        480
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R046FBC8236",
+          "sheetRows": [
+            480
+          ],
+          "minutes": 180
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:e6ce8494d0eb9e3dd5c4",
+      "toId": "node:6545513cdcba43ffb16b",
+      "from": "登山口",
+      "to": "7.8K停車處",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R046FBC8236"
+      ],
+      "evidenceRows": [
+        480
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R046FBC8236",
+          "sheetRows": [
+            480
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:e6ce8494d0eb9e3dd5c4",
+      "toId": "node:d1600d992e14668a055b",
+      "from": "登山口",
+      "to": "環形營地",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD290952964"
+      ],
+      "evidenceRows": [
+        481
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "RD290952964",
+          "sheetRows": [
+            481
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:d1600d992e14668a055b",
+      "toId": "node:e6ce8494d0eb9e3dd5c4",
+      "from": "環形營地",
+      "to": "登山口",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD290952964"
+      ],
+      "evidenceRows": [
+        481
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "RD290952964",
+          "sheetRows": [
+            481
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:83f1e5fb979c1b87885c",
+      "toId": "node:67e8e5242ce4f463de38",
+      "from": "林道登山口",
+      "to": "48K紅磚屋",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R15880A570A"
+      ],
+      "evidenceRows": [
+        482
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R15880A570A",
+          "sheetRows": [
+            482
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:67e8e5242ce4f463de38",
+      "toId": "node:83f1e5fb979c1b87885c",
+      "from": "48K紅磚屋",
+      "to": "林道登山口",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R15880A570A"
+      ],
+      "evidenceRows": [
+        482
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R15880A570A",
+          "sheetRows": [
+            482
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:7869a5d00346b8528d5b",
+      "toId": "node:ffcaad29f65b55db9e47",
+      "from": "卓社山",
+      "to": "2899鞍部營地",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "REB3DFAB1DF"
+      ],
+      "evidenceRows": [
+        483
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "REB3DFAB1DF",
+          "sheetRows": [
+            483
+          ],
+          "minutes": 180
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:ffcaad29f65b55db9e47",
+      "toId": "node:7869a5d00346b8528d5b",
+      "from": "2899鞍部營地",
+      "to": "卓社山",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "REB3DFAB1DF"
+      ],
+      "evidenceRows": [
+        483
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "REB3DFAB1DF",
+          "sheetRows": [
+            483
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:67e8e5242ce4f463de38",
+      "toId": "node:23ebe8ded814ea3344f3",
+      "from": "48K紅磚屋",
+      "to": "V型崩壁",
+      "minutes": 210,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R65889E03AF"
+      ],
+      "evidenceRows": [
+        484
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R65889E03AF",
+          "sheetRows": [
+            484
+          ],
+          "minutes": 210
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:23ebe8ded814ea3344f3",
+      "toId": "node:67e8e5242ce4f463de38",
+      "from": "V型崩壁",
+      "to": "48K紅磚屋",
+      "minutes": 150,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R65889E03AF"
+      ],
+      "evidenceRows": [
+        484
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R65889E03AF",
+          "sheetRows": [
+            484
+          ],
+          "minutes": 150
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:23ebe8ded814ea3344f3",
+      "toId": "node:3de040fb1f380ce36cf5",
+      "from": "V型崩壁",
+      "to": "53K廢工寮",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R31AD6B68A7"
+      ],
+      "evidenceRows": [
+        485
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R31AD6B68A7",
+          "sheetRows": [
+            485
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:3de040fb1f380ce36cf5",
+      "toId": "node:23ebe8ded814ea3344f3",
+      "from": "53K廢工寮",
+      "to": "V型崩壁",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R31AD6B68A7"
+      ],
+      "evidenceRows": [
+        485
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R31AD6B68A7",
+          "sheetRows": [
+            485
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:3de040fb1f380ce36cf5",
+      "toId": "node:09f6213ee3eda95ab440",
+      "from": "53K廢工寮",
+      "to": "武界林道",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R832FBB2277"
+      ],
+      "evidenceRows": [
+        486
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R832FBB2277",
+          "sheetRows": [
+            486
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:09f6213ee3eda95ab440",
+      "toId": "node:3de040fb1f380ce36cf5",
+      "from": "武界林道",
+      "to": "53K廢工寮",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R832FBB2277"
+      ],
+      "evidenceRows": [
+        486
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R832FBB2277",
+          "sheetRows": [
+            486
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:09f6213ee3eda95ab440",
+      "toId": "node:ffcaad29f65b55db9e47",
+      "from": "武界林道",
+      "to": "2899鞍部營地",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R566EEBCE2B"
+      ],
+      "evidenceRows": [
+        487
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R566EEBCE2B",
+          "sheetRows": [
+            487
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:ffcaad29f65b55db9e47",
+      "toId": "node:09f6213ee3eda95ab440",
+      "from": "2899鞍部營地",
+      "to": "武界林道",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R566EEBCE2B"
+      ],
+      "evidenceRows": [
+        487
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R566EEBCE2B",
+          "sheetRows": [
+            487
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:ffcaad29f65b55db9e47",
+      "toId": "node:d4120c513c6a98e711e3",
+      "from": "2899鞍部營地",
+      "to": "卓社大山",
+      "minutes": 200,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC15570DEED"
+      ],
+      "evidenceRows": [
+        488
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "RC15570DEED",
+          "sheetRows": [
+            488
+          ],
+          "minutes": 200
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:d4120c513c6a98e711e3",
+      "toId": "node:ffcaad29f65b55db9e47",
+      "from": "卓社大山",
+      "to": "2899鞍部營地",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC15570DEED"
+      ],
+      "evidenceRows": [
+        488
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "RC15570DEED",
+          "sheetRows": [
+            488
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:d1600d992e14668a055b",
+      "toId": "node:cd378ec41f040d34a2dc",
+      "from": "環形營地",
+      "to": "獵寮營地",
+      "minutes": 65,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RED34FC5E38"
+      ],
+      "evidenceRows": [
+        489
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "RED34FC5E38",
+          "sheetRows": [
+            489
+          ],
+          "minutes": 65
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:cd378ec41f040d34a2dc",
+      "toId": "node:d1600d992e14668a055b",
+      "from": "獵寮營地",
+      "to": "環形營地",
+      "minutes": 55,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RED34FC5E38"
+      ],
+      "evidenceRows": [
+        489
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "RED34FC5E38",
+          "sheetRows": [
+            489
+          ],
+          "minutes": 55
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:cd378ec41f040d34a2dc",
+      "toId": "node:47e2c171ae6079bdeb59",
+      "from": "獵寮營地",
+      "to": "十粒溪源營地",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R8447D87C88"
+      ],
+      "evidenceRows": [
+        490
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R8447D87C88",
+          "sheetRows": [
+            490
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:47e2c171ae6079bdeb59",
+      "toId": "node:cd378ec41f040d34a2dc",
+      "from": "十粒溪源營地",
+      "to": "獵寮營地",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R8447D87C88"
+      ],
+      "evidenceRows": [
+        490
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R8447D87C88",
+          "sheetRows": [
+            490
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:47e2c171ae6079bdeb59",
+      "toId": "node:fc10c329662adbb634fb",
+      "from": "十粒溪源營地",
+      "to": "乳形峰東鞍營地",
+      "minutes": 220,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R902034D661"
+      ],
+      "evidenceRows": [
+        491
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R902034D661",
+          "sheetRows": [
+            491
+          ],
+          "minutes": 220
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:fc10c329662adbb634fb",
+      "toId": "node:47e2c171ae6079bdeb59",
+      "from": "乳形峰東鞍營地",
+      "to": "十粒溪源營地",
+      "minutes": 150,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R902034D661"
+      ],
+      "evidenceRows": [
+        491
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R902034D661",
+          "sheetRows": [
+            491
+          ],
+          "minutes": 150
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:fc10c329662adbb634fb",
+      "toId": "node:60c927553c1d6db6b6f8",
+      "from": "乳形峰東鞍營地",
+      "to": "干卓萬山",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6FD3892881"
+      ],
+      "evidenceRows": [
+        492
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R6FD3892881",
+          "sheetRows": [
+            492
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:60c927553c1d6db6b6f8",
+      "toId": "node:fc10c329662adbb634fb",
+      "from": "干卓萬山",
+      "to": "乳形峰東鞍營地",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6FD3892881"
+      ],
+      "evidenceRows": [
+        492
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R6FD3892881",
+          "sheetRows": [
+            492
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:60c927553c1d6db6b6f8",
+      "toId": "node:ae40e158fa9b8b18410a",
+      "from": "干卓萬山",
+      "to": "三叉峰下營地",
+      "minutes": 210,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2D8656E4A6"
+      ],
+      "evidenceRows": [
+        493
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R2D8656E4A6",
+          "sheetRows": [
+            493
+          ],
+          "minutes": 210
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:ae40e158fa9b8b18410a",
+      "toId": "node:60c927553c1d6db6b6f8",
+      "from": "三叉峰下營地",
+      "to": "干卓萬山",
+      "minutes": 220,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R2D8656E4A6"
+      ],
+      "evidenceRows": [
+        493
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R2D8656E4A6",
+          "sheetRows": [
+            493
+          ],
+          "minutes": 220
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:ae40e158fa9b8b18410a",
+      "toId": "node:afa9a8c85b77128ce54b",
+      "from": "三叉峰下營地",
+      "to": "東北鞍營地",
+      "minutes": 130,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7B2F0FE874"
+      ],
+      "evidenceRows": [
+        494
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R7B2F0FE874",
+          "sheetRows": [
+            494
+          ],
+          "minutes": 130
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:afa9a8c85b77128ce54b",
+      "toId": "node:ae40e158fa9b8b18410a",
+      "from": "東北鞍營地",
+      "to": "三叉峰下營地",
+      "minutes": 150,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R7B2F0FE874"
+      ],
+      "evidenceRows": [
+        494
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R7B2F0FE874",
+          "sheetRows": [
+            494
+          ],
+          "minutes": 150
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:ae40e158fa9b8b18410a",
+      "toId": "node:281de4ba120480f0978f",
+      "from": "三叉峰下營地",
+      "to": "牧山",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD13BD7DD14"
+      ],
+      "evidenceRows": [
+        495
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "RD13BD7DD14",
+          "sheetRows": [
+            495
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:281de4ba120480f0978f",
+      "toId": "node:ae40e158fa9b8b18410a",
+      "from": "牧山",
+      "to": "三叉峰下營地",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD13BD7DD14"
+      ],
+      "evidenceRows": [
+        495
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "RD13BD7DD14",
+          "sheetRows": [
+            495
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:281de4ba120480f0978f",
+      "toId": "node:a2324b75d4528a8442af",
+      "from": "牧山",
+      "to": "牧山池",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RF9AD68DC2A"
+      ],
+      "evidenceRows": [
+        496
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "RF9AD68DC2A",
+          "sheetRows": [
+            496
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:a2324b75d4528a8442af",
+      "toId": "node:281de4ba120480f0978f",
+      "from": "牧山池",
+      "to": "牧山",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RF9AD68DC2A"
+      ],
+      "evidenceRows": [
+        496
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "RF9AD68DC2A",
+          "sheetRows": [
+            496
+          ],
+          "minutes": 10
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:281de4ba120480f0978f",
+      "toId": "node:2e635ae9938cef65b1ac",
+      "from": "牧山",
+      "to": "火山",
+      "minutes": 150,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6876F8580E"
+      ],
+      "evidenceRows": [
+        497
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "萬里山西峰顯示名稱改\"火山\"",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R6876F8580E",
+          "sheetRows": [
+            497
+          ],
+          "minutes": 150
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:2e635ae9938cef65b1ac",
+      "toId": "node:281de4ba120480f0978f",
+      "from": "火山",
+      "to": "牧山",
+      "minutes": 140,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6876F8580E"
+      ],
+      "evidenceRows": [
+        497
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "萬里山西峰顯示名稱改\"火山\"",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R6876F8580E",
+          "sheetRows": [
+            497
+          ],
+          "minutes": 140
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:afa9a8c85b77128ce54b",
+      "toId": "node:787927eba34d44c6e9f2",
+      "from": "東北鞍營地",
+      "to": "卓社大山東峰叉路口",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [
+        {
+          "kind": "heavy_pack",
+          "minutes": 40
+        }
+      ],
+      "sourceRows": [
+        "RF5FFBA6AF4"
+      ],
+      "evidenceRows": [
+        498,
+        505
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "去程 輕裝:20分 重裝:40分",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "RF5FFBA6AF4",
+          "sheetRows": [
+            498,
+            505
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:787927eba34d44c6e9f2",
+      "toId": "node:afa9a8c85b77128ce54b",
+      "from": "卓社大山東峰叉路口",
+      "to": "東北鞍營地",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RF5FFBA6AF4"
+      ],
+      "evidenceRows": [
+        498,
+        505
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "去程 輕裝:20分 重裝:40分",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "RF5FFBA6AF4",
+          "sheetRows": [
+            498,
+            505
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:afa9a8c85b77128ce54b",
+      "toId": "node:a78dde46e2ca739d4ac9",
+      "from": "東北鞍營地",
+      "to": "東峰下營地",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4EE96289EC"
+      ],
+      "evidenceRows": [
+        499
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R4EE96289EC",
+          "sheetRows": [
+            499
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:a78dde46e2ca739d4ac9",
+      "toId": "node:afa9a8c85b77128ce54b",
+      "from": "東峰下營地",
+      "to": "東北鞍營地",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R4EE96289EC"
+      ],
+      "evidenceRows": [
+        499
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R4EE96289EC",
+          "sheetRows": [
+            499
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:a78dde46e2ca739d4ac9",
+      "toId": "node:413453c06804769a3470",
+      "from": "東峰下營地",
+      "to": "東南鞍營地",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA4147BA4FE"
+      ],
+      "evidenceRows": [
+        500
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "RA4147BA4FE",
+          "sheetRows": [
+            500
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:413453c06804769a3470",
+      "toId": "node:a78dde46e2ca739d4ac9",
+      "from": "東南鞍營地",
+      "to": "東峰下營地",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA4147BA4FE"
+      ],
+      "evidenceRows": [
+        500
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "RA4147BA4FE",
+          "sheetRows": [
+            500
+          ],
+          "minutes": 35
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:787927eba34d44c6e9f2",
+      "toId": "node:563107f945f9221a7a1d",
+      "from": "卓社大山東峰叉路口",
+      "to": "3198公尺峰",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [
+        {
+          "kind": "heavy_pack",
+          "minutes": 90
+        }
+      ],
+      "sourceRows": [
+        "R96D6B30960"
+      ],
+      "evidenceRows": [
+        501,
+        504
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "去程 輕裝:80分 重裝:90分",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R96D6B30960",
+          "sheetRows": [
+            501,
+            504
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:563107f945f9221a7a1d",
+      "toId": "node:787927eba34d44c6e9f2",
+      "from": "3198公尺峰",
+      "to": "卓社大山東峰叉路口",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R96D6B30960"
+      ],
+      "evidenceRows": [
+        501,
+        504
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "去程 輕裝:80分 重裝:90分",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R96D6B30960",
+          "sheetRows": [
+            501,
+            504
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:563107f945f9221a7a1d",
+      "toId": "node:d4120c513c6a98e711e3",
+      "from": "3198公尺峰",
+      "to": "卓社大山",
+      "minutes": 240,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [
+        {
+          "kind": "heavy_pack",
+          "minutes": 320
+        }
+      ],
+      "sourceRows": [
+        "RB2DD97ABB6"
+      ],
+      "evidenceRows": [
+        502,
+        503
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "去程 輕裝:240分 重裝:320分",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "RB2DD97ABB6",
+          "sheetRows": [
+            502,
+            503
+          ],
+          "minutes": 240
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:d4120c513c6a98e711e3",
+      "toId": "node:563107f945f9221a7a1d",
+      "from": "卓社大山",
+      "to": "3198公尺峰",
+      "minutes": 240,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RB2DD97ABB6"
+      ],
+      "evidenceRows": [
+        502,
+        503
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "去程 輕裝:240分 重裝:320分",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "RB2DD97ABB6",
+          "sheetRows": [
+            502,
+            503
+          ],
+          "minutes": 240
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:a2324b75d4528a8442af",
+      "toId": "node:ae40e158fa9b8b18410a",
+      "from": "牧山池",
+      "to": "三叉峰下營地",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3D76533F4D"
+      ],
+      "evidenceRows": [
+        506
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R3D76533F4D",
+          "sheetRows": [
+            506
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    },
+    {
+      "fromId": "node:ae40e158fa9b8b18410a",
+      "toId": "node:a2324b75d4528a8442af",
+      "from": "三叉峰下營地",
+      "to": "牧山池",
+      "minutes": 15,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R3D76533F4D"
+      ],
+      "evidenceRows": [
+        506
+      ],
+      "sourceGroups": [
+        "干卓萬群峰"
+      ],
+      "sourceChart": "G13",
+      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "干卓萬群峰",
+          "chartId": "G13",
+          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+          "rowId": "R3D76533F4D",
+          "sheetRows": [
+            506
+          ],
+          "minutes": 15
+        }
+      ],
+      "sourceGroupNames": [
+        "干卓萬群峰"
+      ]
+    }
+  ],
+  "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+}

@@ -10,23 +10,201 @@
   "status": "checked",
   "notes": "Prototype 僅收錄官方步程圖中的步行時間段；停車場以下車行/距離段未納入。正式資料庫仍需人工逐筆最終驗證。",
   "segments": [
-    {"from":"白姑大山","to":"草青池","minutes":45,"status":"checked"},
-    {"from":"草青池","to":"白姑大山","minutes":55,"status":"checked"},
-    {"from":"草青池","to":"一線天岩壁","minutes":65,"status":"checked"},
-    {"from":"一線天岩壁","to":"草青池","minutes":75,"status":"checked"},
-    {"from":"一線天岩壁","to":"吉他營地","minutes":70,"status":"checked"},
-    {"from":"吉他營地","to":"一線天岩壁","minutes":85,"status":"checked"},
-    {"from":"吉他營地","to":"白姑大山東南峰","minutes":80,"status":"checked"},
-    {"from":"白姑大山東南峰","to":"吉他營地","minutes":60,"status":"checked"},
-    {"from":"白姑大山東南峰","to":"司晏池營地","minutes":50,"status":"checked"},
-    {"from":"司晏池營地","to":"白姑大山東南峰","minutes":60,"status":"checked"},
-    {"from":"司晏池營地","to":"三錐山","minutes":110,"status":"checked"},
-    {"from":"三錐山","to":"司晏池營地","minutes":130,"status":"checked"},
-    {"from":"三錐山","to":"水管路岔路口","minutes":110,"status":"checked"},
-    {"from":"水管路岔路口","to":"三錐山","minutes":160,"status":"checked"},
-    {"from":"水管路岔路口","to":"白姑大山登山口","minutes":25,"status":"checked"},
-    {"from":"白姑大山登山口","to":"水管路岔路口","minutes":25,"status":"checked"},
-    {"from":"白姑大山登山口","to":"停車場","minutes":5,"status":"checked"},
-    {"from":"停車場","to":"白姑大山登山口","minutes":10,"status":"checked"}
+    {
+      "from": "白姑大山",
+      "to": "草青池",
+      "minutes": 45,
+      "status": "checked",
+      "fromId": "g06-005",
+      "toId": "g06-009"
+    },
+    {
+      "from": "草青池",
+      "to": "白姑大山",
+      "minutes": 55,
+      "status": "checked",
+      "fromId": "g06-009",
+      "toId": "g06-005"
+    },
+    {
+      "from": "草青池",
+      "to": "一線天岩壁",
+      "minutes": 65,
+      "status": "checked",
+      "fromId": "g06-009",
+      "toId": "g06-001"
+    },
+    {
+      "from": "一線天岩壁",
+      "to": "草青池",
+      "minutes": 75,
+      "status": "checked",
+      "fromId": "g06-001",
+      "toId": "g06-009"
+    },
+    {
+      "from": "一線天岩壁",
+      "to": "吉他營地",
+      "minutes": 70,
+      "status": "checked",
+      "fromId": "g06-001",
+      "toId": "g06-008"
+    },
+    {
+      "from": "吉他營地",
+      "to": "一線天岩壁",
+      "minutes": 85,
+      "status": "checked",
+      "fromId": "g06-008",
+      "toId": "g06-001"
+    },
+    {
+      "from": "吉他營地",
+      "to": "白姑大山東南峰",
+      "minutes": 80,
+      "status": "checked",
+      "fromId": "g06-008",
+      "toId": "g06-006"
+    },
+    {
+      "from": "白姑大山東南峰",
+      "to": "吉他營地",
+      "minutes": 60,
+      "status": "checked",
+      "fromId": "g06-006",
+      "toId": "g06-008"
+    },
+    {
+      "from": "白姑大山東南峰",
+      "to": "司晏池營地",
+      "minutes": 50,
+      "status": "checked",
+      "fromId": "g06-006",
+      "toId": "g06-004"
+    },
+    {
+      "from": "司晏池營地",
+      "to": "白姑大山東南峰",
+      "minutes": 60,
+      "status": "checked",
+      "fromId": "g06-004",
+      "toId": "g06-006"
+    },
+    {
+      "from": "司晏池營地",
+      "to": "三錐山",
+      "minutes": 110,
+      "status": "checked",
+      "fromId": "g06-004",
+      "toId": "g06-002"
+    },
+    {
+      "from": "三錐山",
+      "to": "司晏池營地",
+      "minutes": 130,
+      "status": "checked",
+      "fromId": "g06-002",
+      "toId": "g06-004"
+    },
+    {
+      "from": "三錐山",
+      "to": "水管路岔路口",
+      "minutes": 110,
+      "status": "checked",
+      "fromId": "g06-002",
+      "toId": "g06-003"
+    },
+    {
+      "from": "水管路岔路口",
+      "to": "三錐山",
+      "minutes": 160,
+      "status": "checked",
+      "fromId": "g06-003",
+      "toId": "g06-002"
+    },
+    {
+      "from": "水管路岔路口",
+      "to": "白姑大山登山口",
+      "minutes": 25,
+      "status": "checked",
+      "fromId": "g06-003",
+      "toId": "g06-007"
+    },
+    {
+      "from": "白姑大山登山口",
+      "to": "水管路岔路口",
+      "minutes": 25,
+      "status": "checked",
+      "fromId": "g06-007",
+      "toId": "g06-003"
+    },
+    {
+      "from": "白姑大山登山口",
+      "to": "停車場",
+      "minutes": 5,
+      "status": "checked",
+      "fromId": "g06-007",
+      "toId": "g06-010"
+    },
+    {
+      "from": "停車場",
+      "to": "白姑大山登山口",
+      "minutes": 10,
+      "status": "checked",
+      "fromId": "g06-010",
+      "toId": "g06-007"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "g06-001",
+      "name": "一線天岩壁",
+      "identityStatus": "route-verified"
+    },
+    {
+      "id": "g06-002",
+      "name": "三錐山",
+      "identityStatus": "route-verified"
+    },
+    {
+      "id": "g06-003",
+      "name": "水管路岔路口",
+      "identityStatus": "route-verified"
+    },
+    {
+      "id": "g06-004",
+      "name": "司晏池營地",
+      "identityStatus": "route-verified"
+    },
+    {
+      "id": "g06-005",
+      "name": "白姑大山",
+      "identityStatus": "route-verified"
+    },
+    {
+      "id": "g06-006",
+      "name": "白姑大山東南峰",
+      "identityStatus": "route-verified"
+    },
+    {
+      "id": "g06-007",
+      "name": "白姑大山登山口",
+      "identityStatus": "route-verified"
+    },
+    {
+      "id": "g06-008",
+      "name": "吉他營地",
+      "identityStatus": "route-verified"
+    },
+    {
+      "id": "g06-009",
+      "name": "草青池",
+      "identityStatus": "route-verified"
+    },
+    {
+      "id": "g06-010",
+      "name": "停車場",
+      "identityStatus": "route-verified"
+    }
   ]
 }

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "reviewStage": "candidate-cross-comparison-only",
+  "reviewDate": "2026-10-27",
+  "groups": [
+    "南二段",
+    "馬博拉斯橫斷"
+  ],
+  "sourceCharts": [
+    "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+    "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg"
+  ],
+  "sourceDataset": "user-provided hiking-segments JSON",
+  "candidateCounts": {
+    "南二段": 68,
+    "馬博拉斯橫斷": 81
+  },
+  "userConfirmedSharedPhysicalNodes": 24,
+  "directedOverlap": {
+    "compared": 44,
+    "matchingValues": 42,
+    "conflictingValues": 2
+  },
+  "timeConflicts": [
+    {
+      "from": "大水窟山屋",
+      "to": "大水窟山",
+      "minutesByGroup": {
+        "南二段": 140,
+        "馬博拉斯橫斷": 100
+      },
+      "status": "requires-independent-official-chart-verification"
+    },
+    {
+      "from": "大水窟山",
+      "to": "大水窟山屋",
+      "minutesByGroup": {
+        "南二段": 100,
+        "馬博拉斯橫斷": 140
+      },
+      "status": "requires-independent-official-chart-verification"
+    }
+  ],
+  "routingEnabled": false,
+  "criticalNotes": [
+    "Same numeric candidate values do NOT imply official source verification.",
+    "Do not publish G16 route segments until independently checked by direction against G16 chart.",
+    "Preserve duplicate-name ambiguity and user-approved physical Node ID equivalence separately from walking connectivity.",
+    "Do not change the published G17/G18 preview dataset based only on this candidate comparison."
+  ],
+  "nextSourceAuditPriority": [
+    "G16 八通關山周邊與 G17 重疊步程",
+    "G16 大水窟山與大水窟山屋方向差異",
+    "G16 特有路段延伸至馬博拉斯山"
+  ]
+}

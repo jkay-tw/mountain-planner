@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "status": "review-only",
+  "defaultRule": "do-not-merge",
+  "approvedSharedNodes": [],
+  "blockedPairs": [
+    {
+      "name": "主北岔路",
+      "groupA": "玉山群峰",
+      "groupB": "奇萊",
+      "reason": "不同山域的同名岔路，依據山域位置禁止合併",
+      "verification": "geographic-distinction"
+    }
+  ],
+  "notes": "11個通用名稱改為『必須比對周邊節點及來源證據』，並非一律不同。只有已證實不同位置的指定配對才封鎖。approvedSharedNodes 仍為空；有相同周邊與時間僅升級為審核候選。",
+  "blockedDisplayNamesAcrossGroups": [],
+  "genericNamesRequireEvidence": [
+    "三岔路口",
+    "四岔路口",
+    "水源",
+    "最低鞍部",
+    "岔路",
+    "岔路口",
+    "林道登山口",
+    "登山口",
+    "三叉營地",
+    "主北岔路",
+    "東北鞍營地"
+  ]
+}

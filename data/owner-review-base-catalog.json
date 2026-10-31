@@ -1,0 +1,77 @@
+{
+  "dataset_version": "v0.7.23-main-schematic-policy-preview",
+  "mode": "global-verified-graph-scoped-node-browser-preview",
+  "routes": [
+    {
+      "id": "G02",
+      "name": "G02｜玉山群峰（已核對步行路網）",
+      "file": "data/routes/G02.preview.json",
+      "status": "source-reviewed-preview",
+      "source_url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg"
+    },
+    {
+      "id": "G03",
+      "name": "G03｜郡大山・西巒大山（步行核對部分）",
+      "file": "data/routes/G03.preview.json",
+      "status": "partial-source-reviewed-preview",
+      "source_url": "https://www.sunriver.com.tw/images/hiking/G03_hiking.jpg"
+    },
+    {
+      "id": "G04",
+      "name": "G04｜大霸・聖稜・武陵四秀（已核對步行路網）",
+      "file": "data/routes/G04.preview.json",
+      "status": "source-reviewed-preview",
+      "source_url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg"
+    },
+    {
+      "id": "G06",
+      "name": "G06｜白姑大山",
+      "file": "data/routes/G06.json",
+      "status": "checked",
+      "source_url": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg"
+    },
+    {
+      "id": "G07",
+      "name": "G07｜北一段（以步程示意圖為準）",
+      "file": "data/routes/G07.preview.json?v=v0723",
+      "status": "source-reviewed-preview",
+      "source_url": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg",
+      "routingEnabled": true
+    },
+    {
+      "id": "G08",
+      "name": "G08｜畢祿羊頭・北二段（已核對步行路網）",
+      "file": "data/routes/G08.preview.json",
+      "status": "source-reviewed-preview",
+      "source_url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg"
+    },
+    {
+      "id": "G11",
+      "name": "G11｜能高越嶺（步行核對部分）",
+      "file": "data/routes/G11.preview.json",
+      "status": "partial-source-reviewed-preview",
+      "source_url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg"
+    },
+    {
+      "id": "G14",
+      "name": "G14｜丹大山列（已核對步行路網）",
+      "file": "data/routes/G14.preview.json",
+      "status": "source-reviewed-preview",
+      "source_url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg"
+    },
+    {
+      "id": "G17G18-PREVIEW",
+      "name": "G17＋G18｜南二段／新康橫斷（已核對路段）",
+      "file": "data/routes/G17G18.preview.json?v=078",
+      "status": "preview-only",
+      "source_url": "https://www.sunriver.com.tw/step2020.htm"
+    },
+    {
+      "id": "G20",
+      "name": "G20｜北大武山（原圖已標時步行路網）",
+      "file": "data/routes/G20.preview.json?v=v0721",
+      "status": "source-reviewed-preview",
+      "source_url": "https://www.sunriver.com.tw/images/hiking/G20_hiking.jpg"
+    }
+  ]
+}

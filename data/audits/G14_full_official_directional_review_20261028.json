@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "chartId": "G14",
+  "chartName": "丹大山列",
+  "officialImageURL": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg",
+  "officialIndexURL": "https://www.sunriver.com.tw/step2020.htm",
+  "reviewedAt": "2026-10-28",
+  "reviewedBy": "assistant",
+  "reviewMethod": "direct visual comparison with official chart arrows; explicit vehicle pictogram excluded",
+  "status": "full-candidate-scope-source-checked",
+  "reviewedWalkingPairs": [
+    {
+      "from": "林道入口",
+      "to": "七彩湖",
+      "forwardMinutes": 10,
+      "reverseMinutes": 20,
+      "travelMode": "walking"
+    },
+    {
+      "from": "林道入口",
+      "to": "林道舊登山口",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking"
+    },
+    {
+      "from": "林道舊登山口",
+      "to": "2897公尺峰",
+      "forwardMinutes": 70,
+      "reverseMinutes": 70,
+      "travelMode": "walking"
+    },
+    {
+      "from": "2897公尺峰",
+      "to": "六順山",
+      "forwardMinutes": 120,
+      "reverseMinutes": 100,
+      "travelMode": "walking"
+    },
+    {
+      "from": "六順山",
+      "to": "2863公尺峰",
+      "forwardMinutes": 50,
+      "reverseMinutes": 60,
+      "travelMode": "walking"
+    },
+    {
+      "from": "七彩湖",
+      "to": "七彩妹池",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking"
+    },
+    {
+      "from": "七彩妹池",
+      "to": "雙龍瀑布",
+      "forwardMinutes": 60,
+      "reverseMinutes": 80,
+      "travelMode": "walking"
+    },
+    {
+      "from": "雙龍瀑布",
+      "to": "廢棄工寮",
+      "forwardMinutes": 90,
+      "reverseMinutes": 90,
+      "travelMode": "walking"
+    },
+    {
+      "from": "廢棄工寮",
+      "to": "鐵軌岔路",
+      "forwardMinutes": 180,
+      "reverseMinutes": 180,
+      "travelMode": "walking"
+    },
+    {
+      "from": "鐵軌岔路",
+      "to": "台電高登連絡站",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking"
+    },
+    {
+      "from": "情人吊橋",
+      "to": "46K九族工寮",
+      "forwardMinutes": 20,
+      "reverseMinutes": 20,
+      "travelMode": "walking"
+    },
+    {
+      "from": "46K九族工寮",
+      "to": "42K阿道別墅",
+      "forwardMinutes": 70,
+      "reverseMinutes": 60,
+      "travelMode": "walking"
+    },
+    {
+      "from": "42K阿道別墅",
+      "to": "36K大崩壁",
+      "forwardMinutes": 110,
+      "reverseMinutes": 120,
+      "travelMode": "walking"
+    },
+    {
+      "from": "天梯頂岔路口",
+      "to": "鐵軌岔路",
+      "forwardMinutes": 10,
+      "reverseMinutes": 10,
+      "travelMode": "walking"
+    },
+    {
+      "from": "天梯頂岔路口",
+      "to": "情人吊橋",
+      "forwardMinutes": 100,
+      "reverseMinutes": 180,
+      "travelMode": "walking"
+    },
+    {
+      "from": "六順山新登山口",
+      "to": "天梯頂岔路口",
+      "forwardMinutes": 5,
+      "reverseMinutes": 5,
+      "travelMode": "walking"
+    },
+    {
+      "from": "2780草原黑水塘",
+      "to": "六順山新登山口",
+      "forwardMinutes": 40,
+      "reverseMinutes": 50,
+      "travelMode": "walking"
+    },
+    {
+      "from": "2863公尺峰",
+      "to": "2780草原黑水塘",
+      "forwardMinutes": 70,
+      "reverseMinutes": 90,
+      "travelMode": "walking"
+    },
+    {
+      "from": "六順山",
+      "to": "2813鞍營地",
+      "forwardMinutes": 60,
+      "reverseMinutes": 100,
+      "travelMode": "walking"
+    },
+    {
+      "from": "2813鞍營地",
+      "to": "2761最低鞍部",
+      "forwardMinutes": 75,
+      "reverseMinutes": 100,
+      "travelMode": "walking"
+    },
+    {
+      "from": "2761最低鞍部",
+      "to": "關門北山",
+      "forwardMinutes": 210,
+      "reverseMinutes": 100,
+      "travelMode": "walking"
+    },
+    {
+      "from": "關門北山",
+      "to": "關門山凹",
+      "forwardMinutes": 150,
+      "reverseMinutes": 100,
+      "travelMode": "walking"
+    },
+    {
+      "from": "關門山凹",
+      "to": "巖山",
+      "forwardMinutes": 40,
+      "reverseMinutes": 55,
+      "travelMode": "walking"
+    },
+    {
+      "from": "巖山",
+      "to": "2603公尺鞍部",
+      "forwardMinutes": 250,
+      "reverseMinutes": 320,
+      "travelMode": "walking"
+    },
+    {
+      "from": "2603公尺鞍部",
+      "to": "大石公山",
+      "forwardMinutes": 90,
+      "reverseMinutes": 60,
+      "travelMode": "walking"
+    },
+    {
+      "from": "大石公山",
+      "to": "小石公山",
+      "forwardMinutes": 15,
+      "reverseMinutes": 20,
+      "travelMode": "walking"
+    },
+    {
+      "from": "小石公山",
+      "to": "2833公尺鞍部",
+      "forwardMinutes": 50,
+      "reverseMinutes": 80,
+      "travelMode": "walking"
+    },
+    {
+      "from": "2833公尺鞍部",
+      "to": "3255公尺峰",
+      "forwardMinutes": 140,
+      "reverseMinutes": 80,
+      "travelMode": "walking"
+    },
+    {
+      "from": "3255公尺峰",
+      "to": "丹大山",
+      "forwardMinutes": 260,
+      "reverseMinutes": 240,
+      "travelMode": "walking"
+    }
+  ],
+  "excluded": [
+    {
+      "from": "水里",
+      "to": "孫海橋",
+      "candidateForward": 60,
+      "candidateReverse": 60,
+      "reason": "official chart uses vehicle pictogram; not approved as walking route"
+    }
+  ],
+  "walkingDirectedEdges": 58,
+  "scopeNote": "29 unique walking pairs (58 directions) source-checked; 水里↔孫海橋 excluded as vehicle connection."
+}

@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "recordedDate": "2026-10-28",
+  "sourceType": "user_directed_review_15_items",
+  "sourceCandidateSHA256": "15f39d17615efcfcdb2e08fa0deee7e714c80fe5e97dd7e636023382a167e595",
+  "meaning": "go means from → to; back means to → from; alternates are situational estimates, not official standard values",
+  "groupNameCaution": "八通關越嶺 exists as a candidate group label, but is not assigned to any official G01–G20 map without evidence.",
+  "entries": [
+    {
+      "group": "八通關越嶺",
+      "from": "觀高坪",
+      "to": "對觀",
+      "go": 110,
+      "back": 150,
+      "alternates": {},
+      "officialChartMapping": "unmapped_candidate_group",
+      "reviewStatus": "user_confirmed_standard_minutes",
+      "sourceReviewStatus": "pending_independent_chart_evidence"
+    },
+    {
+      "group": "馬博拉斯橫斷",
+      "from": "觀高坪",
+      "to": "對觀",
+      "go": 110,
+      "back": 150,
+      "alternates": {},
+      "officialChartMapping": "pending_source_check",
+      "reviewStatus": "user_confirmed_standard_minutes",
+      "sourceReviewStatus": "pending_independent_chart_evidence"
+    },
+    {
+      "group": "南二段",
+      "from": "向陽山",
+      "to": "西側登山口",
+      "go": 25,
+      "back": 35,
+      "alternates": {},
+      "officialChartMapping": "pending_source_check",
+      "reviewStatus": "user_confirmed_standard_minutes",
+      "sourceReviewStatus": "pending_independent_chart_evidence"
+    },
+    {
+      "group": "新康橫斷",
+      "from": "向陽山",
+      "to": "西側登山口",
+      "go": 25,
+      "back": 35,
+      "alternates": {},
+      "officialChartMapping": "pending_source_check",
+      "reviewStatus": "user_confirmed_standard_minutes",
+      "sourceReviewStatus": "pending_independent_chart_evidence"
+    },
+    {
+      "group": "南二段",
+      "from": "大水窟山",
+      "to": "大水窟山屋",
+      "go": 100,
+      "back": 140,
+      "alternates": {},
+      "officialChartMapping": "pending_source_check",
+      "reviewStatus": "user_confirmed_standard_minutes",
+      "sourceReviewStatus": "pending_independent_chart_evidence"
+    },
+    {
+      "group": "馬博拉斯橫斷",
+      "from": "大水窟山",
+      "to": "大水窟山屋",
+      "go": 100,
+      "back": 140,
+      "alternates": {},
+      "officialChartMapping": "pending_source_check",
+      "reviewStatus": "user_confirmed_standard_minutes",
+      "sourceReviewStatus": "pending_independent_chart_evidence"
+    },
+    {
+      "group": "北二段",
+      "from": "東鞍營地",
+      "to": "無明山西峰",
+      "go": 190,
+      "back": 290,
+      "alternates": {
+        "forward": {
+          "kind": "slow",
+          "minutes": 350
+        }
+      },
+      "officialChartMapping": "pending_source_check",
+      "reviewStatus": "user_confirmed_standard_minutes",
+      "sourceReviewStatus": "pending_independent_chart_evidence"
+    },
+    {
+      "group": "北二段",
+      "from": "無明山西峰",
+      "to": "無明山",
+      "go": 160,
+      "back": 200,
+      "alternates": {
+        "forward": {
+          "kind": "slow",
+          "minutes": 260
+        }
+      },
+      "officialChartMapping": "pending_source_check",
+      "reviewStatus": "user_confirmed_standard_minutes",
+      "sourceReviewStatus": "pending_independent_chart_evidence"
+    },
+    {
+      "group": "南二段",
+      "from": "秀姑巒山",
+      "to": "秀姑巒山南登山口",
+      "go": 30,
+      "back": 50,
+      "alternates": {},
+      "officialChartMapping": "pending_source_check",
+      "reviewStatus": "user_confirmed_standard_minutes",
+      "sourceReviewStatus": "pending_independent_chart_evidence"
+    },
+    {
+      "group": "馬博拉斯橫斷",
+      "from": "秀姑巒山",
+      "to": "秀姑巒山南登山口",
+      "go": 30,
+      "back": 50,
+      "alternates": {
+        "forward": {
+          "kind": "heavy_pack",
+          "minutes": 60
+        }
+      },
+      "officialChartMapping": "pending_source_check",
+      "reviewStatus": "user_confirmed_standard_minutes",
+      "sourceReviewStatus": "pending_independent_chart_evidence"
+    },
+    {
+      "group": "干卓萬群峰",
+      "from": "3198公尺峰",
+      "to": "卓社大山",
+      "go": 240,
+      "back": 240,
+      "alternates": {},
+      "officialChartMapping": "pending_source_check",
+      "reviewStatus": "user_confirmed_standard_minutes",
+      "sourceReviewStatus": "pending_independent_chart_evidence"
+    },
+    {
+      "group": "干卓萬群峰",
+      "from": "卓社大山東峰叉路口",
+      "to": "3198公尺峰",
+      "go": 80,
+      "back": 100,
+      "alternates": {},
+      "officialChartMapping": "pending_source_check",
+      "reviewStatus": "user_confirmed_standard_minutes",
+      "sourceReviewStatus": "pending_independent_chart_evidence"
+    },
+    {
+      "group": "干卓萬群峰",
+      "from": "東北鞍營地",
+      "to": "卓社大山東峰叉路口",
+      "go": 20,
+      "back": 15,
+      "alternates": {},
+      "officialChartMapping": "pending_source_check",
+      "reviewStatus": "user_confirmed_standard_minutes",
+      "sourceReviewStatus": "pending_independent_chart_evidence"
+    },
+    {
+      "group": "雪山西南稜",
+      "from": "登山口",
+      "to": "苗圃工寮舊址",
+      "go": 80,
+      "back": 80,
+      "alternates": {},
+      "officialChartMapping": "pending_source_check",
+      "reviewStatus": "user_confirmed_standard_minutes",
+      "sourceReviewStatus": "pending_independent_chart_evidence"
+    },
+    {
+      "group": "雪山西南稜",
+      "from": "苗圃工寮舊址",
+      "to": "賽良久",
+      "go": 100,
+      "back": 100,
+      "alternates": {},
+      "officialChartMapping": "pending_source_check",
+      "reviewStatus": "user_confirmed_standard_minutes",
+      "sourceReviewStatus": "pending_independent_chart_evidence"
+    },
+    {
+      "group": "雪山西南稜",
+      "from": "鞍部水源岔路",
+      "to": "大劍山",
+      "go": 90,
+      "back": 70,
+      "alternates": {
+        "forward": {
+          "kind": "heavy_pack",
+          "minutes": 160
+        }
+      },
+      "officialChartMapping": "pending_source_check",
+      "reviewStatus": "user_confirmed_standard_minutes",
+      "sourceReviewStatus": "pending_independent_chart_evidence"
+    }
+  ]
+}

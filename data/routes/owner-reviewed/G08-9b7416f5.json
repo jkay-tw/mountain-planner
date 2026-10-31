@@ -1,0 +1,988 @@
+{
+  "route_id": "G08-9b7416f5",
+  "route_name": "畢祿羊頭",
+  "status": "owner-reviewed-preview",
+  "sourceChartIds": [
+    "G08"
+  ],
+  "routingPolicy": "verified-walking-only",
+  "source": {
+    "publisher": "上河文化",
+    "image_url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+    "revision": "owner workbook reviewed 2026-10-28; follow-ups recorded separately"
+  },
+  "reviewBasis": "owner_workbook_review",
+  "nodes": [
+    {
+      "id": "g08-006",
+      "name": "8.4k登山口營地",
+      "aliases": [
+        "8.4K登山口營地"
+      ],
+      "groups": [
+        "G08-9b7416f5"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-007",
+      "name": "820林道0K",
+      "aliases": [],
+      "groups": [
+        "G08-9b7416f5"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-009",
+      "name": "三岔路口",
+      "aliases": [],
+      "groups": [
+        "G08-9b7416f5"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-011",
+      "name": "主稜三岔路口",
+      "aliases": [],
+      "groups": [
+        "G08-9b7416f5"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-014",
+      "name": "羊頭山",
+      "aliases": [],
+      "groups": [
+        "G08-9b7416f5"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-015",
+      "name": "羊頭山登山口",
+      "aliases": [],
+      "groups": [
+        "G08-9b7416f5"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-017",
+      "name": "拉繩垂直岩壁",
+      "aliases": [],
+      "groups": [
+        "G08-9b7416f5"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-018",
+      "name": "東峰前營地",
+      "aliases": [],
+      "groups": [
+        "G08-9b7416f5"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-024",
+      "name": "畢祿山",
+      "aliases": [],
+      "groups": [
+        "G08-9b7416f5"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-025",
+      "name": "第一峰(畢祿營地)",
+      "aliases": [],
+      "groups": [
+        "G08-9b7416f5"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-032",
+      "name": "鋸山(第四峰)",
+      "aliases": [],
+      "groups": [
+        "G08-9b7416f5"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    },
+    {
+      "id": "g08-033",
+      "name": "鋸山東峰",
+      "aliases": [],
+      "groups": [
+        "G08-9b7416f5"
+      ],
+      "identityBasis": "existing-reviewed-identity"
+    }
+  ],
+  "segments": [
+    {
+      "fromId": "g08-007",
+      "toId": "g08-006",
+      "from": "820林道0K",
+      "to": "8.4k登山口營地",
+      "minutes": 200,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R77A034C6E1"
+      ],
+      "evidenceRows": [
+        267
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R77A034C6E1",
+          "sheetRows": [
+            267
+          ],
+          "minutes": 200
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    },
+    {
+      "fromId": "g08-006",
+      "toId": "g08-007",
+      "from": "8.4k登山口營地",
+      "to": "820林道0K",
+      "minutes": 230,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R77A034C6E1"
+      ],
+      "evidenceRows": [
+        267
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R77A034C6E1",
+          "sheetRows": [
+            267
+          ],
+          "minutes": 230
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    },
+    {
+      "fromId": "g08-006",
+      "toId": "g08-017",
+      "from": "8.4k登山口營地",
+      "to": "拉繩垂直岩壁",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCE1A9101A0"
+      ],
+      "evidenceRows": [
+        268
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RCE1A9101A0",
+          "sheetRows": [
+            268
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    },
+    {
+      "fromId": "g08-017",
+      "toId": "g08-006",
+      "from": "拉繩垂直岩壁",
+      "to": "8.4k登山口營地",
+      "minutes": 80,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RCE1A9101A0"
+      ],
+      "evidenceRows": [
+        268
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RCE1A9101A0",
+          "sheetRows": [
+            268
+          ],
+          "minutes": 80
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    },
+    {
+      "fromId": "g08-017",
+      "toId": "g08-011",
+      "from": "拉繩垂直岩壁",
+      "to": "主稜三岔路口",
+      "minutes": 90,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R25B4B145B8"
+      ],
+      "evidenceRows": [
+        269
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R25B4B145B8",
+          "sheetRows": [
+            269
+          ],
+          "minutes": 90
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    },
+    {
+      "fromId": "g08-011",
+      "toId": "g08-017",
+      "from": "主稜三岔路口",
+      "to": "拉繩垂直岩壁",
+      "minutes": 60,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R25B4B145B8"
+      ],
+      "evidenceRows": [
+        269
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R25B4B145B8",
+          "sheetRows": [
+            269
+          ],
+          "minutes": 60
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    },
+    {
+      "fromId": "g08-011",
+      "toId": "g08-024",
+      "from": "主稜三岔路口",
+      "to": "畢祿山",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RDCD1E45E16"
+      ],
+      "evidenceRows": [
+        270
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RDCD1E45E16",
+          "sheetRows": [
+            270
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    },
+    {
+      "fromId": "g08-024",
+      "toId": "g08-011",
+      "from": "畢祿山",
+      "to": "主稜三岔路口",
+      "minutes": 5,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RDCD1E45E16"
+      ],
+      "evidenceRows": [
+        270
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RDCD1E45E16",
+          "sheetRows": [
+            270
+          ],
+          "minutes": 5
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    },
+    {
+      "fromId": "g08-011",
+      "toId": "g08-025",
+      "from": "主稜三岔路口",
+      "to": "第一峰(畢祿營地)",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6E21646412"
+      ],
+      "evidenceRows": [
+        271
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R6E21646412",
+          "sheetRows": [
+            271
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    },
+    {
+      "fromId": "g08-025",
+      "toId": "g08-011",
+      "from": "第一峰(畢祿營地)",
+      "to": "主稜三岔路口",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6E21646412"
+      ],
+      "evidenceRows": [
+        271
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R6E21646412",
+          "sheetRows": [
+            271
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    },
+    {
+      "fromId": "g08-025",
+      "toId": "g08-032",
+      "from": "第一峰(畢祿營地)",
+      "to": "鋸山(第四峰)",
+      "minutes": 105,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC1CE77C5FB"
+      ],
+      "evidenceRows": [
+        272
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RC1CE77C5FB",
+          "sheetRows": [
+            272
+          ],
+          "minutes": 105
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    },
+    {
+      "fromId": "g08-032",
+      "toId": "g08-025",
+      "from": "鋸山(第四峰)",
+      "to": "第一峰(畢祿營地)",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RC1CE77C5FB"
+      ],
+      "evidenceRows": [
+        272
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RC1CE77C5FB",
+          "sheetRows": [
+            272
+          ],
+          "minutes": 120
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    },
+    {
+      "fromId": "g08-032",
+      "toId": "g08-018",
+      "from": "鋸山(第四峰)",
+      "to": "東峰前營地",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD686246BD1"
+      ],
+      "evidenceRows": [
+        273
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RD686246BD1",
+          "sheetRows": [
+            273
+          ],
+          "minutes": 110
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    },
+    {
+      "fromId": "g08-018",
+      "toId": "g08-032",
+      "from": "東峰前營地",
+      "to": "鋸山(第四峰)",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RD686246BD1"
+      ],
+      "evidenceRows": [
+        273
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RD686246BD1",
+          "sheetRows": [
+            273
+          ],
+          "minutes": 180
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    },
+    {
+      "fromId": "g08-018",
+      "toId": "g08-033",
+      "from": "東峰前營地",
+      "to": "鋸山東峰",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6AEC4A3C25"
+      ],
+      "evidenceRows": [
+        274
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R6AEC4A3C25",
+          "sheetRows": [
+            274
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    },
+    {
+      "fromId": "g08-033",
+      "toId": "g08-018",
+      "from": "鋸山東峰",
+      "to": "東峰前營地",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6AEC4A3C25"
+      ],
+      "evidenceRows": [
+        274
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R6AEC4A3C25",
+          "sheetRows": [
+            274
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    },
+    {
+      "fromId": "g08-033",
+      "toId": "g08-009",
+      "from": "鋸山東峰",
+      "to": "三岔路口",
+      "minutes": 25,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5882B2714B"
+      ],
+      "evidenceRows": [
+        275
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R5882B2714B",
+          "sheetRows": [
+            275
+          ],
+          "minutes": 25
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    },
+    {
+      "fromId": "g08-009",
+      "toId": "g08-033",
+      "from": "三岔路口",
+      "to": "鋸山東峰",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R5882B2714B"
+      ],
+      "evidenceRows": [
+        275
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "R5882B2714B",
+          "sheetRows": [
+            275
+          ],
+          "minutes": 30
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    },
+    {
+      "fromId": "g08-009",
+      "toId": "g08-014",
+      "from": "三岔路口",
+      "to": "羊頭山",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RDD626AF8C7"
+      ],
+      "evidenceRows": [
+        276
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RDD626AF8C7",
+          "sheetRows": [
+            276
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    },
+    {
+      "fromId": "g08-014",
+      "toId": "g08-009",
+      "from": "羊頭山",
+      "to": "三岔路口",
+      "minutes": 45,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RDD626AF8C7"
+      ],
+      "evidenceRows": [
+        276
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RDD626AF8C7",
+          "sheetRows": [
+            276
+          ],
+          "minutes": 45
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    },
+    {
+      "fromId": "g08-009",
+      "toId": "g08-015",
+      "from": "三岔路口",
+      "to": "羊頭山登山口",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE5B5BDA4C1"
+      ],
+      "evidenceRows": [
+        277
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RE5B5BDA4C1",
+          "sheetRows": [
+            277
+          ],
+          "minutes": 180
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    },
+    {
+      "fromId": "g08-015",
+      "toId": "g08-009",
+      "from": "羊頭山登山口",
+      "to": "三岔路口",
+      "minutes": 350,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE5B5BDA4C1"
+      ],
+      "evidenceRows": [
+        277
+      ],
+      "sourceGroups": [
+        "畢祿羊頭"
+      ],
+      "sourceChart": "G08",
+      "source": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "畢祿羊頭",
+          "chartId": "G08",
+          "url": "https://www.sunriver.com.tw/images/hiking/G08_hiking.jpg",
+          "rowId": "RE5B5BDA4C1",
+          "sheetRows": [
+            277
+          ],
+          "minutes": 350
+        }
+      ],
+      "sourceGroupNames": [
+        "畢祿羊頭"
+      ]
+    }
+  ],
+  "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+}

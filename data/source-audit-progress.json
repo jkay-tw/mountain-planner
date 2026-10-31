@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "scope": "Owner workbook review of all supplied candidate rows; not proof every official chart line was supplied or independent AI full verification",
+  "sourceURL": "https://www.sunriver.com.tw/step2020.htm",
+  "otherGroups": "24 supplied JSON groups reviewed by owner and represented in v0.7.24 preview; further source additions remain separate work",
+  "routingRule": "Only owner/source reviewed walking edges; transport remains separate",
+  "historicalItems": [
+    {
+      "group": "白姑大山",
+      "officialChart": "https://www.sunriver.com.tw/images/hiking/G06_hiking.jpg",
+      "jsonCount": 11,
+      "verifiedWalkingEdges": 9,
+      "vehicleEdges": 2,
+      "notes": "9步行路段去回時間及名稱與官方圖吻合；最後農家→紅香溫泉、紅香溫泉→霧社為車程，官方未給反向時間。"
+    },
+    {
+      "group": "能高越嶺",
+      "officialChart": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg",
+      "jsonCount": 19,
+      "verifiedWalkingEdges": 13,
+      "vehicleEdges": 6,
+      "notes": "G11 官方步程示意圖已逐項目視核對：13個步行路段的去回分鐘與候選JSON吻合；6個車行路段僅能核對單一圖示時間，JSON反向時間沒有官方步行證據，需另以交通資料處理。",
+      "vehiclePairs": [
+        [
+          "霧社",
+          "廬山部落"
+        ],
+        [
+          "廬山部落",
+          "屯原登山口"
+        ],
+        [
+          "奇萊保線所",
+          "銅門"
+        ],
+        [
+          "銅門",
+          "仁壽橋"
+        ],
+        [
+          "仁壽橋",
+          "花蓮"
+        ],
+        [
+          "仁壽橋",
+          "鯉魚潭"
+        ]
+      ]
+    },
+    {
+      "group": "南二段",
+      "officialChart": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+      "jsonCount": 68,
+      "verifiedWalkingEdges": 9,
+      "vehicleEdges": 0,
+      "auditScope": "9 walking pairs (18 directed walking edges) from selected G17 chart sections source-checked visually; all remaining candidate pairs unverified",
+      "notes": "Shared directed comparison G17↔G18: 22 matches, 2 conflicting directions. G17 向陽山→西側登山口 candidate 35/25 reversed versus official 25/35. Pending correction; all other candidate rows remain unverified. Expanded shared section: 三叉山登山口 ↔ 嘉明湖岔路口 (30/25) and 嘉明湖岔路口 ↔ 新康山岔路口 (40/30) audited; four shared directed times agree. 2026-10-27 added 5 south-approach walking pairs: 塔芬池→轆轆山登山口→轆轆谷山屋→雲峰東峰三岔路口營地→西北鞍南雙池營地→南雙頭山."
+    },
+    {
+      "group": "新康橫斷",
+      "officialChart": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "jsonCount": 50,
+      "verifiedWalkingEdges": 16,
+      "vehicleEdges": 0,
+      "auditScope": "16 undirected walking pairs verified visually on G18 chart in two directions (32 directed edges), including 12 new consecutive east-ridge pairs through 新康山 and 天宮堡壘",
+      "notes": "Overlapping path at 新康山岔路口 independently staged; all other candidate rows remain unverified. Expanded shared section: 三叉山登山口 ↔ 嘉明湖岔路口 (30/25) and 嘉明湖岔路口 ↔ 新康山岔路口 (40/30) audited; four shared directed times agree. 2026-10-27 continuation: 3058公尺峰→連理西峰前營地→西峰東稜平台→飛機殘骸→桃源營地→連理山→鞍部黑水塘→新仙山前營地→新仙山營地→新仙山→最低鞍部→新康山→天宮堡壘; twelve source-reviewed bidirectional pairs. Other rows pending."
+    }
+  ],
+  "items": [
+    {
+      "group": "八通關越嶺",
+      "chartId": "G02",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 19,
+      "walkingDirections": 38,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "玉山群峰",
+      "chartId": "G02",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 31,
+      "walkingDirections": 58,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "西巒大山",
+      "chartId": "G03",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 8,
+      "walkingDirections": 12,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "郡大山",
+      "chartId": "G03",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 6,
+      "walkingDirections": 6,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "大霸/聖稜/四秀",
+      "chartId": "G04",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 70,
+      "walkingDirections": 142,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "雪山西南稜",
+      "chartId": "G05",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 67,
+      "walkingDirections": 120,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "白姑大山",
+      "chartId": "G06",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 13,
+      "walkingDirections": 18,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "北一段",
+      "chartId": "G07",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 42,
+      "walkingDirections": 92,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "北二段",
+      "chartId": "G08",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 22,
+      "walkingDirections": 42,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "畢祿羊頭",
+      "chartId": "G08",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 12,
+      "walkingDirections": 22,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "合歡群峰",
+      "chartId": "G09",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 36,
+      "walkingDirections": 44,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "奇萊群峰",
+      "chartId": "G09",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 24,
+      "walkingDirections": 46,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "屏風山",
+      "chartId": "G09",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 12,
+      "walkingDirections": 24,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "奇萊東稜",
+      "chartId": "G10",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 32,
+      "walkingDirections": 62,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "能高越嶺",
+      "chartId": "G11",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 19,
+      "walkingDirections": 26,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "能高安東軍",
+      "chartId": "G12",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 39,
+      "walkingDirections": 74,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "干卓萬群峰",
+      "chartId": "G13",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 31,
+      "walkingDirections": 56,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "七彩湖/六順山",
+      "chartId": "G14",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 31,
+      "walkingDirections": 58,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "丹大東郡",
+      "chartId": "G15",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 73,
+      "walkingDirections": 140,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "馬博拉斯橫斷",
+      "chartId": "G16",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 74,
+      "walkingDirections": 148,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "南二段",
+      "chartId": "G17",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 59,
+      "walkingDirections": 132,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "新康橫斷/戒茂斯",
+      "chartId": "G18",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 47,
+      "walkingDirections": 94,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "南一段",
+      "chartId": "G19",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 47,
+      "walkingDirections": 84,
+      "status": "owner-reviewed-preview"
+    },
+    {
+      "group": "北大武山",
+      "chartId": "G20",
+      "reviewBasis": "owner_workbook_review",
+      "nodeCount": 15,
+      "walkingDirections": 22,
+      "status": "owner-reviewed-preview"
+    }
+  ]
+}

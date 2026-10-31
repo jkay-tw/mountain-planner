@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "batch": "G17-south-approach-01",
+  "recordedDate": "2026-10-27",
+  "scope": "G17 approach from 塔芬池 via 雲峰東峰三岔路口營地 to 南雙頭山",
+  "chartURL": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
+  "candidateSource": "user-uploaded hiking-segments JSON",
+  "reviewMethod": "visual comparison with the G17 official step-time chart, each directed edge",
+  "status": "source-checked-preview-only",
+  "pairs": [
+    {
+      "from": "塔芬池",
+      "to": "轆轆山登山口",
+      "forwardMinutes": 250,
+      "reverseMinutes": 210,
+      "travelMode": "walking",
+      "status": "visually-checked"
+    },
+    {
+      "from": "轆轆山登山口",
+      "to": "轆轆谷山屋",
+      "forwardMinutes": 45,
+      "reverseMinutes": 70,
+      "travelMode": "walking",
+      "status": "visually-checked"
+    },
+    {
+      "from": "轆轆谷山屋",
+      "to": "雲峰東峰三岔路口營地",
+      "forwardMinutes": 240,
+      "reverseMinutes": 200,
+      "travelMode": "walking",
+      "status": "visually-checked"
+    },
+    {
+      "from": "雲峰東峰三岔路口營地",
+      "to": "西北鞍南雙池營地",
+      "forwardMinutes": 150,
+      "reverseMinutes": 170,
+      "travelMode": "walking",
+      "status": "visually-checked"
+    },
+    {
+      "from": "西北鞍南雙池營地",
+      "to": "南雙頭山",
+      "forwardMinutes": 50,
+      "reverseMinutes": 25,
+      "travelMode": "walking",
+      "status": "visually-checked"
+    }
+  ],
+  "remainingUnverified": "G17 candidates not present in independently audited staging files are excluded from routing",
+  "releaseGate": "Preview-only until reviewed; charts give estimated travel time, not current trail condition"
+}
