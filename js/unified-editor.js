@@ -8,9 +8,10 @@ import {filterLocations} from './node-browser.js?v=v074';
 import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=v0724';
 
 const $=id=>document.getElementById(id);
-const STORAGE_KEY='mountain-planner.unified-preview-autosave.v0711';
-const APP_VERSION='v0.7.24 Unified Preview';
-const COLLAPSE_KEY='mountain-planner.unified-preview-collapsed.v0711';
+const IS_PRODUCTION=document.body.dataset.mode==='production';
+const STORAGE_KEY=IS_PRODUCTION?'mountain-planner.global-autosave.v1':'mountain-planner.unified-preview-autosave.v0711';
+const APP_VERSION=IS_PRODUCTION?'v0.7.24':'v0.7.24 Unified Preview';
+const COLLAPSE_KEY=IS_PRODUCTION?'mountain-planner.collapsed-days.v1':'mountain-planner.unified-preview-collapsed.v0711';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',scope='';
 let snapshots=[],at=-1,restoring=false;
@@ -46,7 +47,13 @@ async function init(){
 
   tripStartDate=restored?.tripStartDate||'';
   $('tripDate').value=tripStartDate;
-  days=restored?.days?.length?sanitizeDays(migrateDaysToNodeIds(restored.days,route)):[newDay(0)];
+  let restoredDays=restored?.days;
+  if(restoredDays?.length&&restored.routeId&&restored.routeId!=='GLOBAL-PREVIEW'){
+    const sourceMeta=[...(manifest.legacyRoutes||[]),...manifest.routes].find(m=>m.id===restored.routeId);
+    if(!sourceMeta)throw new Error('找不到舊行程來源；原始暫存未更動');
+    restoredDays=migrateLegacyPlanDays(restoredDays,addRouteIdentity(await loadRoute(sourceMeta.file)),route);
+  }
+  days=restoredDays?.length?sanitizeDays(migrateDaysToNodeIds(restoredDays,route)):[newDay(0)];
   $('dayCount').value=String(days.length);
   bindGlobal();
   render(false);checkpoint();
@@ -90,7 +97,7 @@ function saveAutosave(){
   }catch(e){}
 }
 function loadAutosave(){
-  try{const x=JSON.parse(localStorage.getItem(STORAGE_KEY)||'null');return x?.format==='mountain-planner'?x:null}catch(e){return null}
+  try{const raw=localStorage.getItem(STORAGE_KEY)||(IS_PRODUCTION?localStorage.getItem('mountain-planner.autosave.v1'):null);const x=JSON.parse(raw||'null');return x?.format==='mountain-planner'?x:null}catch(e){return null}
 }
 function clearAutosave(){try{localStorage.removeItem(STORAGE_KEY)}catch(e){}}
 

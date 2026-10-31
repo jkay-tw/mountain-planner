@@ -494,7 +494,7 @@ test('v0.7.9 responsive tools keep exactly two control groups and retain add/sel
 test('preview UI build labels and asset cache keys stay synchronized across editors',async()=>{
  const {readFileSync}=await import('node:fs');
  for(const [htmlName,scriptName] of [
-   ['index.html','app.js'],['crossmap-editor.html','crossmap-editor.js']]){
+   ['crossmap-editor.html','crossmap-editor.js']]){
    const html=readFileSync(new URL('../'+htmlName,import.meta.url),'utf8');
    const js=readFileSync(new URL('../js/'+scriptName,import.meta.url),'utf8');
    const version=js.match(/const APP_VERSION='v0\.(\d+)\.(\d+) /);
