@@ -540,8 +540,8 @@ test('v0.7.12 global route browser keeps scopes without clearing itinerary',asyn
  for(const id of ['G06','G17G18-PREVIEW'])assert.ok([...manifest.routes,...(manifest.legacyRoutes||[])].some(x=>x.id===id),id);
  const html=readFileSync(new URL('../unified-editor.html',import.meta.url),'utf8');
  const app=readFileSync(new URL('../js/unified-editor.js',import.meta.url),'utf8');
- assert.ok(html.includes('js/unified-editor.js?v=v0724'));
- assert.ok(app.includes('v0.7.24 Unified Preview'));
+ assert.ok(html.includes('js/unified-editor.js?v=v0725'));
+ assert.ok(app.includes('v0.7.25 Unified Preview'));
  assert.match(app,/mergeReviewedRoutes/);
  assert.ok(app.includes('nodesInScope(route,scope)'));
  assert.match(app,/appendDisconnectedNode/);

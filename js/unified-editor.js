@@ -1,3 +1,4 @@
+import {createTabAutosave} from './tab-autosave.js?v=v0725';
 import {loadManifest,loadRoute} from './data-loader.js';
 import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming} from './planner.js?v=v0724';
 import {validatePlan} from './validation.js';
@@ -10,7 +11,7 @@ import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-
 const $=id=>document.getElementById(id);
 const IS_PRODUCTION=document.body.dataset.mode==='production';
 const STORAGE_KEY=IS_PRODUCTION?'mountain-planner.global-autosave.v1':'mountain-planner.unified-preview-autosave.v0711';
-const APP_VERSION=IS_PRODUCTION?'v0.7.24':'v0.7.24 Unified Preview';
+const APP_VERSION=IS_PRODUCTION?'v0.7.25':'v0.7.25 Unified Preview';
 const COLLAPSE_KEY=IS_PRODUCTION?'mountain-planner.collapsed-days.v1':'mountain-planner.unified-preview-collapsed.v0711';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',scope='';
@@ -56,7 +57,7 @@ async function init(){
   days=restoredDays?.length?sanitizeDays(migrateDaysToNodeIds(restoredDays,route)):[newDay(0)];
   $('dayCount').value=String(days.length);
   bindGlobal();
-  render(false);checkpoint();
+  render(false);saveAutosave(false);checkpoint();
 }
 
 async function loadGlobalGraph(){
@@ -85,21 +86,16 @@ function sanitizeDays(rawDays){
   }));
 }
 
-function saveAutosave(){
-  try{
-    localStorage.setItem(STORAGE_KEY,JSON.stringify({
-      format:'mountain-planner',schemaVersion:1,
-      routeId:route?.route_id||null,
-      scope,
-      datasetVersion:manifest.dataset_version,
-      tripStartDate,days
-    }));
-  }catch(e){}
+const tabAutosave=createTabAutosave({
+  local:{getItem:k=>localStorage.getItem(k),setItem:(k,v)=>localStorage.setItem(k,v)},
+  session:{getItem:k=>sessionStorage.getItem(k),setItem:(k,v)=>sessionStorage.setItem(k,v)},
+  key:STORAGE_KEY,legacyKey:IS_PRODUCTION?'mountain-planner.autosave.v1':null
+});
+function saveAutosave(shared=true){
+  tabAutosave.save({format:'mountain-planner',schemaVersion:1,routeId:route?.route_id||null,
+    scope,datasetVersion:manifest.dataset_version,tripStartDate,days},{shared});
 }
-function loadAutosave(){
-  try{const raw=localStorage.getItem(STORAGE_KEY)||(IS_PRODUCTION?localStorage.getItem('mountain-planner.autosave.v1'):null);const x=JSON.parse(raw||'null');return x?.format==='mountain-planner'?x:null}catch(e){return null}
-}
-function clearAutosave(){try{localStorage.removeItem(STORAGE_KEY)}catch(e){}}
+function loadAutosave(){return tabAutosave.load()}
 
 function bindGlobal(){
   $('routeSelect').onchange=e=>{
@@ -136,7 +132,7 @@ function bindGlobal(){
     setNoRoute();
     tripStartDate='';$('tripDate').value='';
     days=[newDay(0)];$('dayCount').value='1';
-    clearAutosave();render();
+    render();
   };
   $('exportBtn').onclick=async()=>{
     if(!days.some(d=>locs(d).length)){alert('請先建立行程');return}
