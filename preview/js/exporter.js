@@ -36,7 +36,7 @@ export async function exportExcel({route,days,datasetVersion,tripStartDate}){
 
     for(const r of tl.rows){
       if(r.type==='rest'){
-        ws.getRow(rowNo).values=['☕ 休息',r.endTime,Number(r.minutes)||0,'','','',''];
+        ws.getRow(rowNo).values=['☕ 休息',r.endTime,Number(r.minutes)||0,'','',r.note||'',''];
       }else{
         const e=r.incoming,actual=e?edgeActual(e,day.coefficient):'';
         const k=e?.kind==='official'?Math.round((actual/e.officialMinutes)*100)/100:'';

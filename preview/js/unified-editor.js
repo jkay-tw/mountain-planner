@@ -1,16 +1,18 @@
+import {createTabAutosave} from './tab-autosave.js?v=v0725';
 import {loadManifest,loadRoute} from './data-loader.js';
-import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming} from './planner.js?v=v0724';
-import {validatePlan} from './validation.js';
-import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js?v=v0724';
-import {migrateLegacyPlanDays} from './legacy-plan-migration.js?v=v0724';
-import {exportExcel} from './exporter.js';
+import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming} from './planner.js?v=v0726';
+import {validatePlan} from './validation.js?v=v0726';
+import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js?v=v0726';
+import {migrateLegacyPlanDays} from './legacy-plan-migration.js?v=v0726';
+import {exportExcel} from './exporter.js?v=v0726';
 import {filterLocations} from './node-browser.js?v=v074';
 import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=v0724';
 
 const $=id=>document.getElementById(id);
-const STORAGE_KEY='mountain-planner.unified-preview-autosave.v0711';
-const APP_VERSION='v0.7.24 Unified Preview';
-const COLLAPSE_KEY='mountain-planner.unified-preview-collapsed.v0711';
+const IS_PRODUCTION=document.body.dataset.mode==='production';
+const STORAGE_KEY=IS_PRODUCTION?'mountain-planner.global-autosave.v1':'mountain-planner.unified-preview-autosave.v0711';
+const APP_VERSION=IS_PRODUCTION?'v0.7.25':'v0.7.26 Unified Preview';
+const COLLAPSE_KEY=IS_PRODUCTION?'mountain-planner.collapsed-days.v1':'mountain-planner.unified-preview-collapsed.v0711';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',scope='';
 let snapshots=[],at=-1,restoring=false;
@@ -46,10 +48,16 @@ async function init(){
 
   tripStartDate=restored?.tripStartDate||'';
   $('tripDate').value=tripStartDate;
-  days=restored?.days?.length?sanitizeDays(migrateDaysToNodeIds(restored.days,route)):[newDay(0)];
+  let restoredDays=restored?.days;
+  if(restoredDays?.length&&restored.routeId&&restored.routeId!=='GLOBAL-PREVIEW'){
+    const sourceMeta=[...(manifest.legacyRoutes||[]),...manifest.routes].find(m=>m.id===restored.routeId);
+    if(!sourceMeta)throw new Error('找不到舊行程來源；原始暫存未更動');
+    restoredDays=migrateLegacyPlanDays(restoredDays,addRouteIdentity(await loadRoute(sourceMeta.file)),route);
+  }
+  days=restoredDays?.length?sanitizeDays(migrateDaysToNodeIds(restoredDays,route)):[newDay(0)];
   $('dayCount').value=String(days.length);
   bindGlobal();
-  render(false);checkpoint();
+  render(false);saveAutosave(false);checkpoint();
 }
 
 async function loadGlobalGraph(){
@@ -78,21 +86,16 @@ function sanitizeDays(rawDays){
   }));
 }
 
-function saveAutosave(){
-  try{
-    localStorage.setItem(STORAGE_KEY,JSON.stringify({
-      format:'mountain-planner',schemaVersion:1,
-      routeId:route?.route_id||null,
-      scope,
-      datasetVersion:manifest.dataset_version,
-      tripStartDate,days
-    }));
-  }catch(e){}
+const tabAutosave=createTabAutosave({
+  local:{getItem:k=>localStorage.getItem(k),setItem:(k,v)=>localStorage.setItem(k,v)},
+  session:{getItem:k=>sessionStorage.getItem(k),setItem:(k,v)=>sessionStorage.setItem(k,v)},
+  key:STORAGE_KEY,legacyKey:IS_PRODUCTION?'mountain-planner.autosave.v1':null
+});
+function saveAutosave(shared=true){
+  tabAutosave.save({format:'mountain-planner',schemaVersion:1,routeId:route?.route_id||null,
+    scope,datasetVersion:manifest.dataset_version,tripStartDate,days},{shared});
 }
-function loadAutosave(){
-  try{const x=JSON.parse(localStorage.getItem(STORAGE_KEY)||'null');return x?.format==='mountain-planner'?x:null}catch(e){return null}
-}
-function clearAutosave(){try{localStorage.removeItem(STORAGE_KEY)}catch(e){}}
+function loadAutosave(){return tabAutosave.load()}
 
 function bindGlobal(){
   $('routeSelect').onchange=e=>{
@@ -129,7 +132,7 @@ function bindGlobal(){
     setNoRoute();
     tripStartDate='';$('tripDate').value='';
     days=[newDay(0)];$('dayCount').value='1';
-    clearAutosave();render();
+    render();
   };
   $('exportBtn').onclick=async()=>{
     if(!days.some(d=>locs(d).length)){alert('請先建立行程');return}
@@ -202,7 +205,7 @@ function addManualEnd(d){
   render();
 }
 
-function insertRest(d,afterIdx){d.items.splice(afterIdx+1,0,{id:uid(),type:'rest',minutes:15});render()}
+function insertRest(d,afterIdx){d.items.splice(afterIdx+1,0,{id:uid(),type:'rest',minutes:15,note:''});render()}
 function insertManualBefore(d,destIdx){
   const dest=d.items[destIdx],prev=[...d.items.slice(0,destIdx)].reverse().find(x=>x.type!=='rest');if(!dest||!prev)return;
   const m={id:uid(),type:'manual-location',name:'手動節點',auto:false,waypoint:true,note:'',isPeak:false,hasWater:false,incoming:{kind:'manual',fromId:prev.id,toId:null,actualMinutes:null}};
@@ -326,7 +329,7 @@ function renderTimeline(d){
       html+='<div class="it-row rest-row" data-index="'+idx+'">'+
       '<div class="place"><span class="drag-handle" draggable="true" data-index="'+idx+'">⋮⋮</span><span class="place-name">☕ 休息</span></div>'+
       '<div class="arrival">'+r.endTime+'</div>'+
-      '<div class="route-info"><input class="rest-min minute-input" data-index="'+idx+'" type="number" min="0" value="'+r.minutes+'"><span>m</span></div><div></div>'+menuHtml(idx,true,false,true)+'</div>';
+      '<div class="route-info"><input class="rest-min minute-input" data-index="'+idx+'" type="number" min="0" value="'+r.minutes+'"><span>m</span></div><input class="note-input" data-index="'+idx+'" placeholder="備註" value="'+esc(r.note||'')+'">'+menuHtml(idx,true,false,true)+'</div>';
     }else{
       const e=r.incoming,a=e?edgeActual(e,d.coefficient):0,manual=r.type==='manual-location';
       let routeInfo='<span class="secondary-info">起點</span>';

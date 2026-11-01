@@ -7,6 +7,31 @@ export function allNodes(route){
 export function directSegment(route,from,to){
   return route.segments.find(s=>s.from===from&&s.to===to)||null;
 }
+// Owner-confirmed physical overlaps. IDs are explicit: labels alone never establish
+// identity. Each direction must still match the verified edges and minute total.
+const reviewedOverlaps=[
+  ['shared:cw-v07-066','g04-fork-xueshan','shared:cw-v07-074'],
+  ['shared:cw-v07-003','g04-027','g04-044','shared:cw-v07-004'],
+  ['shared:cw-v07-004','g04-039','shared:cw-v07-074'],
+  ['shared:cw-v07-012','node:83a76c46935de2ee6f88','node:6d5573eb9babae99663c','shared:cw-v07-048'],
+  ['shared:cw-v07-012','node:dca389db39359114677f','shared:cw-v07-041'],
+  ['shared:cw-v07-078','node:e9cc87a6032a69ff2163','shared:cw-v07-080'],
+  ['shared:cw-v07-040','node:2f804109a33585abde92','node:47059555f89c94f5c563','node:70418012ecbda7a8add8','shared:cw-v07-080'],
+  ['shared:cw-v07-018','shared:cw-v07-008','shared:cw-v07-055','shared:cw-v07-076'],
+  ['shared:cw-v07-054','shared:cw-v07-013','shared:cw-v07-044','shared:cw-v07-072'],
+  ['shared:cw-v07-071','shared:cw-v07-057','shared:cw-v07-026','shared:cw-v07-072'],
+  ['shared:cw-v07-019','shared:cw-v07-026','shared:cw-v07-072']
+];
+function expandReviewedOverlaps(route,segments){
+  return segments.flatMap(segment=>{
+    const match=reviewedOverlaps.find(ids=>(ids[0]===segment.fromId&&ids.at(-1)===segment.toId)||(ids[0]===segment.toId&&ids.at(-1)===segment.fromId));
+    if(!match)return [segment];
+    const ids=match[0]===segment.fromId?match:[...match].reverse();
+    const parts=ids.slice(1).map((id,i)=>route.segments.find(s=>s.fromId===ids[i]&&s.toId===id&&s.routingEnabled!==false&&s.travelMode==='walking'&&s.verificationStatus==='verified'));
+    // A partial dataset or changed source must never invent a route or time.
+    return parts.every(Boolean)&&parts.reduce((sum,s)=>sum+s.minutes,0)===segment.minutes?parts:[segment];
+  });
+}
 export function shortestPath(route,start,end){
   const idMode=Array.isArray(route.nodes)&&route.segments.every(s=>s.fromId&&s.toId);
   if(idMode){
@@ -34,6 +59,10 @@ export function shortestPath(route,start,end){
   while(cur!==start){
     const p=prev.get(cur);if(!p)return null;
     segments.unshift(p.seg);path.unshift(p.node);cur=p.node;
+  }
+  if(idMode){
+    const expanded=expandReviewedOverlaps(route,segments);
+    return {nodes:[start,...expanded.map(s=>s.toId)],segments:expanded,minutes:dist.get(end)};
   }
   return {nodes:path,segments,minutes:dist.get(end)};
 }
