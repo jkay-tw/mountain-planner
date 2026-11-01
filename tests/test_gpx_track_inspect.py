@@ -28,4 +28,11 @@ class GpxTrackTests(unittest.TestCase):
             p=Path(folder)/'bad.gpx';p.write_text('<gpx xmlns="http://www.topografix.com/GPX/1/1"><trk><trkseg><trkpt lat="999" lon="121"/></trkseg></trk></gpx>')
             with self.assertRaises(ValueError):gpx.parse_gpx(p)
 
+    def test_compare_uses_nearest_line_not_only_recorded_vertices(self):
+        reference=[{'lat':24.,'lon':121.},{'lat':24.002,'lon':121.}]
+        sample=[{'lat':24.001,'lon':121.}]
+        result=gpx.compare_tracks(sample,reference)
+        self.assertAlmostEqual(result['max_m'],0,places=1)
+        with self.assertRaises(ValueError):gpx.compare_tracks(sample,reference[:1])
+
 if __name__=='__main__': unittest.main()
