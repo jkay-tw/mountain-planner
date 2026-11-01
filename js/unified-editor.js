@@ -205,7 +205,7 @@ function addManualEnd(d){
   render();
 }
 
-function insertRest(d,afterIdx){d.items.splice(afterIdx+1,0,{id:uid(),type:'rest',minutes:15});render()}
+function insertRest(d,afterIdx){d.items.splice(afterIdx+1,0,{id:uid(),type:'rest',minutes:15,note:''});render()}
 function insertManualBefore(d,destIdx){
   const dest=d.items[destIdx],prev=[...d.items.slice(0,destIdx)].reverse().find(x=>x.type!=='rest');if(!dest||!prev)return;
   const m={id:uid(),type:'manual-location',name:'手動節點',auto:false,waypoint:true,note:'',isPeak:false,hasWater:false,incoming:{kind:'manual',fromId:prev.id,toId:null,actualMinutes:null}};
@@ -329,7 +329,7 @@ function renderTimeline(d){
       html+='<div class="it-row rest-row" data-index="'+idx+'">'+
       '<div class="place"><span class="drag-handle" draggable="true" data-index="'+idx+'">⋮⋮</span><span class="place-name">☕ 休息</span></div>'+
       '<div class="arrival">'+r.endTime+'</div>'+
-      '<div class="route-info"><input class="rest-min minute-input" data-index="'+idx+'" type="number" min="0" value="'+r.minutes+'"><span>m</span></div><div></div>'+menuHtml(idx,true,false,true)+'</div>';
+      '<div class="route-info"><input class="rest-min minute-input" data-index="'+idx+'" type="number" min="0" value="'+r.minutes+'"><span>m</span></div><input class="note-input" data-index="'+idx+'" placeholder="備註" value="'+esc(r.note||'')+'">'+menuHtml(idx,true,false,true)+'</div>';
     }else{
       const e=r.incoming,a=e?edgeActual(e,d.coefficient):0,manual=r.type==='manual-location';
       let routeInfo='<span class="secondary-info">起點</span>';
