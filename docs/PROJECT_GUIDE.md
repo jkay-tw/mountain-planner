@@ -5,11 +5,11 @@
 ## 主要入口與目錄
 
 - `unified-editor.html`：目前統一編輯器 Preview 頁面入口，載入 `js/unified-editor.js`。
-- `index.html`、`js/app.js`：正式版頁面與應用程式入口；修改前確認任務目標是否包含正式版。
+- `index.html`：正式版入口，載入 `js/unified-editor.js`；`js/app.js` 是舊版編輯器入口，仍需保留相容與歷史用途。
 - `js/`：規劃、全域路網、Node ID、驗證、匯入匯出與 UI 模組。
 - `css/`：正式版樣式；Preview 相關樣式另在 `preview/css/`。
 - `data/manifest.json`、`data/unified-editor-manifest.json`：資料集清單及統一編輯器載入設定。
-- `data/routes/`：路線節點與有方向路段資料。檔名含 `.preview` 的資料只供 Preview 使用；依各檔 `status`、來源與審核紀錄判斷核實程度。
+- `data/routes/`：路線節點與有方向路段資料。`data/routes/owner-reviewed/` 是目前正式版與統一編輯器使用的人工核對資料；舊版 `.preview.json` 可能仍用於舊行程匯入，依 manifest 與來源紀錄確認用途。
 - `data/staging/`、`data/audits/`：待整合路網及來源、差異、人工審核紀錄；不是可直接發布的路網。
 - `tools/`：候選資料稽核、正規化、審核套用及核准路段編譯工具。
 - `tests/`：JavaScript 規劃邏輯測試與 Python 資料工具測試。
@@ -26,6 +26,7 @@
 - `js/planner.js`：路徑搜尋、路段時間、每日時間軸與行程統計。
 - `js/crossmap-routing.js`、`js/global-route.js`：跨資料集已核實步行圖與全域路網操作。
 - `js/unified-editor.js`：統一編輯器初始化、事件及畫面更新；通常先讀取其呼叫的計算模組，再判斷是否需要改 UI。
+- `js/tab-autosave.js`：每分頁暫存與最後修改的共用備份；正式版與 Preview 的儲存鍵分開。
 - `js/validation.js`、`js/legacy-plan-migration.js`、`js/exporter.js`：計畫驗證、舊行程遷移及匯出。
 
 ## 測試分層
@@ -33,7 +34,7 @@
 在專案根目錄執行：
 
 - 局部 JavaScript 邏輯：`node --experimental-default-type=module --test tests/planner.test.mjs`；依改動模組再搭配 `tests/route-coverage.test.mjs` 或其他必要測試。
-- 局部 Python 工具：`python3 -m unittest tests.test_reviewed_topology`（將模組名換成對應 `tests/test_*.py` 檔案）。
+- 局部 Python 工具：`python3 -m unittest discover -s tests -p 'test_reviewed_topology.py'`（將檔名換成對應 `tests/test_*.py` 檔案）。
 - 完整 CI 等效測試：
   - `node --check js/app.js && node --check js/planner.js && node --check js/node-identity.js`
   - `node --experimental-default-type=module --test tests/*.test.mjs`

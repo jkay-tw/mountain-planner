@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "scope": "Owner workbook review of all supplied candidate rows; not proof every official chart line was supplied or independent AI full verification",
   "sourceURL": "https://www.sunriver.com.tw/step2020.htm",
-  "otherGroups": "24 supplied JSON groups reviewed by owner and represented in v0.7.24 preview; further source additions remain separate work",
+  "otherGroups": "24 supplied JSON groups reviewed by owner and integrated into the v0.7.25 production release; further source additions remain separate work",
   "routingRule": "Only owner/source reviewed walking edges; transport remains separate",
   "historicalItems": [
     {
@@ -259,5 +259,7 @@
       "walkingDirections": 22,
       "status": "owner-reviewed-preview"
     }
-  ]
+  ],
+  "currentRelease": "v0.7.25",
+  "currentReleaseBasis": "Owner-reviewed candidate rows; not an assertion that every official chart line is included"
 }
