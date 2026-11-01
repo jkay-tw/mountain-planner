@@ -3,16 +3,17 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {addRouteIdentity,migrateDaysToNodeIds} from '../js/node-identity.js';
 import {mergeReviewedRoutes,nodesInScope} from '../js/global-route.js';
+import {migrateLegacyPlanDays} from '../js/legacy-plan-migration.js';
 import {shortestPath,normalizeDay} from '../js/planner.js';
 const load=p=>JSON.parse(readFileSync(new URL('../'+p.split('?')[0],import.meta.url),'utf8'));
 const manifest=load('data/unified-editor-manifest.json');
 const routes=manifest.routes.map(m=>addRouteIdentity(load(m.file)));
 const graph=mergeReviewedRoutes(routes);
 test('owner full preview shares reviewed physical nodes and keeps original chart IDs for imported plans',()=>{
- assert.equal(routes.length,24);assert.equal(graph.nodes.length,731);assert.equal(graph.segments.length,1426);
+ assert.equal(routes.length,24);assert.equal(graph.nodes.length,729);assert.equal(graph.segments.length,1424);
  assert.equal(new Set(routes.flatMap(r=>r.sourceChartIds)).size,19);
  for(const r of load('data/owner-review-base-catalog.json').routes){
-  for(const n of load(r.file).nodes){const current=graph.nodes.find(x=>x.id===n.id);assert.ok(current,n.id);assert.equal(current.name,n.name);}
+  for(const n of load(r.file).nodes){const current=graph.nodes.find(x=>x.id===n.id);assert.ok(current,n.id);assert.ok(current.name===n.name||current.aliases.includes(n.name));}
   assert.ok(manifest.legacyRoutes.some(m=>m.id===r.id));
  }
  const n=graph.nodes.find(n=>n.id==='shared:owner-v0724-xiangyang-junction');
@@ -53,4 +54,34 @@ test('known v1 global itinerary preserves identity, notes and actual-minute over
  const days=[{id:'d',startTime:'05:00',coefficient:.7,note:'day note',items:[{id:'i1',type:'location',nodeId:a.id,name:a.name,incoming:null},
  {id:'i2',type:'location',nodeId:b.id,name:b.name,note:'keep me',incoming:{kind:'official',from:a.name,to:b.name,fromNodeId:a.id,toNodeId:b.id,officialMinutes:999,actualMinutes:73}}]}];
  const old=structuredClone(days);const migrated=migrateDaysToNodeIds(days,graph);normalizeDay(migrated[0],graph);assert.deepEqual(migrated,old);
+});
+test('snow identities are shared across G04 and G05, road references stay out of walking',()=>{
+ const g04=routes.find(r=>r.route_id==='G04'),g05=routes.find(r=>r.route_id==='G05');
+ for(const [name,id] of [['雪山登山口','g04-045'],['武陵農場·遊客中心','node:f6f2ba4c01559d0ff632']]){
+  for(const r of [g04,g05])assert.equal(r.nodes.find(n=>n.name===name)?.id,id);
+ }
+ const trail=shortestPath(graph,'g04-045','shared:cw-v07-003');
+ assert.equal(trail.minutes,70);
+ assert.equal(shortestPath(graph,'node:f6f2ba4c01559d0ff632','g04-056'),null);
+ const t=load('data/transport-owner-reviewed.json');
+ for(const [a,b,n] of [['node:f6f2ba4c01559d0ff632','g04-056',10],['g04-056','shared:cw-v07-056',10],['g04-056','g04-045',20]])for(const [x,y] of [[a,b],[b,a]])assert.ok(t.segments.some(e=>e.fromId===x&&e.toId===y&&e.minutes===n&&e.travelMode==='vehicle'));
+});
+test('old global snow node IDs and saved edge snapshots migrate without losing names or minutes',()=>{
+ const days=[{items:[{id:'a',type:'location',name:'雪山登山口',nodeId:'node:1c91e71b467300e90b6c',note:'old'},
+ {id:'b',type:'location',name:'七卡山莊',nodeId:'shared:cw-v07-003',incoming:{kind:'official',from:'雪山登山口',to:'七卡山莊',fromNodeId:'node:1c91e71b467300e90b6c',toNodeId:'shared:cw-v07-003',officialMinutes:70,actualMinutes:88}}]}];
+ const migrated=migrateDaysToNodeIds(days,graph);normalizeDay(migrated[0],graph);
+ assert.equal(migrated[0].items[0].nodeId,'g04-045');assert.equal(migrated[0].items[0].note,'old');
+ assert.equal(migrated[0].items[1].incoming.actualMinutes,88);assert.equal(migrated[0].items[1].incoming.officialMinutes,70);
+ assert.throws(()=>migrateDaysToNodeIds([{items:[{type:'location',name:'錯誤',nodeId:'node:1c91e71b467300e90b6c'}]}],graph));
+});
+
+test('old G05 scoped plans migrate retired IDs and retain user data',()=>{
+ const source=routes.find(r=>r.route_id==='G05');
+ const old=[{items:[{type:'location',id:'a',name:'武陵農場',nodeId:'node:fba428b6693c1f3ff1b9',note:'停車'},
+ {type:'location',id:'b',name:'雪山登山口',nodeId:'node:1c91e71b467300e90b6c',incoming:{kind:'manual',fromId:'a',toId:'b',actualMinutes:25}}]}];
+ const result=migrateLegacyPlanDays(old,source,graph);
+ assert.equal(result[0].items[0].nodeId,'node:f6f2ba4c01559d0ff632');
+ assert.equal(result[0].items[1].nodeId,'g04-045');
+ assert.equal(result[0].items[1].incoming.actualMinutes,25);
+ assert.equal(result[0].items[0].note,'停車');
 });

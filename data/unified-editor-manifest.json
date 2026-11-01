@@ -33,14 +33,14 @@
     {
       "id": "G04",
       "name": "G04｜大霸/聖稜/四秀",
-      "file": "data/routes/owner-reviewed/G04.json?v=v0724",
+      "file": "data/routes/owner-reviewed/G04.json?v=v0726",
       "status": "owner-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg"
     },
     {
       "id": "G05",
       "name": "G05｜雪山西南稜",
-      "file": "data/routes/owner-reviewed/G05.json?v=v0724",
+      "file": "data/routes/owner-reviewed/G05.json?v=v0726",
       "status": "owner-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg"
     },

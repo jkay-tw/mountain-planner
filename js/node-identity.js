@@ -39,6 +39,16 @@ export function addRouteIdentity(route){
   return {...route,nodes:registry.nodes,segments};
 }
 export function findNodeById(route,nodeId){return route?.nodes?.find(n=>n.id===nodeId)||null;}
+// Explicit owner-confirmed 2026-11-01 identities, scoped by old ID and label.
+const snowLegacyIds={
+  'node:1c91e71b467300e90b6c':['雪山登山口','g04-045'],
+  'node:fba428b6693c1f3ff1b9':['武陵農場','node:f6f2ba4c01559d0ff632']
+};
+export function canonicalReviewedId(id,name){
+  const record=snowLegacyIds[id];
+  return record&&record[0]===name?record[1]:id;
+}
+export const acceptsReviewedName=(node,name)=>node?.name===name||(node?.aliases||[]).includes(name);
 // Retired preview-only catalog entry: retain user itinerary snapshots without reintroducing a selectable graph node.
 export const isRetiredPreviewNode=item=>item?.nodeId==='g07-043'&&item?.name==='黑水塘';
 export function migrateDaysToNodeIds(rawDays,route){
@@ -46,15 +56,16 @@ export function migrateDaysToNodeIds(rawDays,route){
   return rawDays.map(day=>({...day,items:day.items.map(item=>{
     if(item.type!=='location')return {...item};
     if(['GLOBAL-PREVIEW','G07'].includes(route?.route_id)&&isRetiredPreviewNode(item))return {...item,catalogStatus:'retired'};
-    const byId=registry?.byId.get(item.nodeId);
+    const mappedId=canonicalReviewedId(item.nodeId,item.name);
+    const byId=registry?.byId.get(mappedId);
     if(!item.nodeId&&registry?.ambiguousNames?.has(item.name))throw new Error('Ambiguous node name requires nodeId: '+item.name);
     const node=byId||registry?.byName.get(item.name);
     // Do not silently map an unrecognized name or an existing ID to a different place.
     if(item.nodeId&&!byId)throw new Error('Unknown node ID: '+item.nodeId);
-    if(node&&item.name!==node.name)throw new Error('Node identity and name disagree: '+item.name);
+    if(node&&!acceptsReviewedName(node,item.name))throw new Error('Node identity and name disagree: '+item.name);
     const incoming=item.incoming?.kind==='official'?{...item.incoming,
-      ...(registry?.byName.get(item.incoming.from)?{fromNodeId:registry.byName.get(item.incoming.from).id}:{}),
-      ...(registry?.byName.get(item.incoming.to)?{toNodeId:registry.byName.get(item.incoming.to).id}:{})
+      ...(item.incoming.fromNodeId?{fromNodeId:canonicalReviewedId(item.incoming.fromNodeId,item.incoming.from)}:registry?.byName.get(item.incoming.from)?{fromNodeId:registry.byName.get(item.incoming.from).id}:{}),
+      ...(item.incoming.toNodeId?{toNodeId:canonicalReviewedId(item.incoming.toNodeId,item.incoming.to)}:registry?.byName.get(item.incoming.to)?{toNodeId:registry.byName.get(item.incoming.to).id}:{})
     }:item.incoming?{...item.incoming}:item.incoming;
     return {...item,...(node?{nodeId:node.id}:{}),incoming};
   })}));

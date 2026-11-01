@@ -179,7 +179,14 @@
         "池有山岔路口": "池有山登山口"
       },
       "unmatchedCandidateLabels": [],
-      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety."
+      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety.",
+      "ownerApprovedDisplayLabels": [
+        {
+          "name": "雪山登山口",
+          "confirmedBy": "owner",
+          "note": "2026-11-01 確認 G04/G05 同一實體地點並統一顯示名稱；保留原圖名稱為別名。"
+        }
+      ]
     },
     {
       "chartId": "G05",
@@ -258,7 +265,14 @@
         "大雪北山": "大雪山"
       },
       "unmatchedCandidateLabels": [],
-      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety."
+      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety.",
+      "ownerApprovedDisplayLabels": [
+        {
+          "name": "武陵農場·遊客中心",
+          "confirmedBy": "owner",
+          "note": "2026-11-01 確認 G04/G05 同一實體地點並統一顯示名稱；保留原圖名稱為別名。"
+        }
+      ]
     },
     {
       "chartId": "G06",

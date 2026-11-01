@@ -1,17 +1,17 @@
 import {createTabAutosave} from './tab-autosave.js?v=v0725';
 import {loadManifest,loadRoute} from './data-loader.js';
-import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming} from './planner.js?v=v0724';
-import {validatePlan} from './validation.js';
-import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js?v=v0724';
-import {migrateLegacyPlanDays} from './legacy-plan-migration.js?v=v0724';
-import {exportExcel} from './exporter.js';
+import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming} from './planner.js?v=v0726';
+import {validatePlan} from './validation.js?v=v0726';
+import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js?v=v0726';
+import {migrateLegacyPlanDays} from './legacy-plan-migration.js?v=v0726';
+import {exportExcel} from './exporter.js?v=v0726';
 import {filterLocations} from './node-browser.js?v=v074';
 import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=v0724';
 
 const $=id=>document.getElementById(id);
 const IS_PRODUCTION=document.body.dataset.mode==='production';
 const STORAGE_KEY=IS_PRODUCTION?'mountain-planner.global-autosave.v1':'mountain-planner.unified-preview-autosave.v0711';
-const APP_VERSION=IS_PRODUCTION?'v0.7.25':'v0.7.25 Unified Preview';
+const APP_VERSION=IS_PRODUCTION?'v0.7.25':'v0.7.26 Unified Preview';
 const COLLAPSE_KEY=IS_PRODUCTION?'mountain-planner.collapsed-days.v1':'mountain-planner.unified-preview-collapsed.v0711';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',scope='';
