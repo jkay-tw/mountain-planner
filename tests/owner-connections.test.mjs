@@ -48,7 +48,7 @@ test('active geometry loads all selected active labels and keeps pilot geometry 
  const full=load('data/geometry/planner-terrain-v1.json'),pilot=load('data/geometry/xueshan-terrain-v1.json');
  assert.deepEqual(full.counts,{activeNodes:727,located:559,unlocated:168});
  assert.deepEqual(new Set(full.nodes.map(n=>n.nodeId)),new Set(graph.nodes.map(n=>n.id)));
- assert.deepEqual(full.spans,pilot.spans);
+ for(const s of pilot.spans)assert.deepEqual(full.spans.find(x=>x.id===s.id),s);
  for(const n of pilot.nodes)assert.deepEqual(full.nodes.find(x=>x.nodeId===n.nodeId),n);
  const d={items:[{id:'a',type:'location',nodeId:camp,name:'神池營地',incoming:null},{id:'b',type:'location',nodeId:summit,name:'小關山',incoming:incomingForSegment(ownerTimedConnection(graph,camp,summit),'a','b')}]};
  const result=resolveItineraryGeometry([d],full);assert.equal(result.waypoints.length,1);assert.equal(result.unlocated.length,1);assert.equal(result.gaps.length,1);assert.equal(result.days[0].features.length,0);

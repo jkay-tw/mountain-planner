@@ -1,4 +1,4 @@
-import {expandReviewedOverlaps,isOwnerTimedConnection,incomingForSegment} from './planner.js?v=v0733';
+import {expandReviewedOverlaps,isOwnerTimedConnection,incomingForSegment} from './planner.js?v=v080rc1';
 export function quickAddCandidates(route,startId){
  if(!route||route.routingEnabled===false||!route.nodes?.some(n=>n.id===startId))return [];
  const eligible=[...route.segments.filter(s=>s.routingEnabled!==false&&s.travelMode==='walking'&&s.verificationStatus==='verified'),...(route.manualConnections||[]).filter(isOwnerTimedConnection)];

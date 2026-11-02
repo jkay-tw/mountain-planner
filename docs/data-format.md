@@ -49,3 +49,11 @@ location / manual-location 可保存：
 
 ## 純文字分享
 僅輸出所有地理節點與抵達時間；休息不獨立列出，但會影響後續節點時間。山頭與水源 icon 會保留。
+
+## v0.8 幾何與高程
+
+`planner-terrain-v1.json` 的 `nodes` 保留標示座標與 DEM 海拔；每個 `span` 使用自己的 `fromAnchor`／`toAnchor` 驗證真實線形端點，標示點與步道投影之間不補離徑直線。`profile` 為沿線累計公尺及 DEM 海拔，正反方向的距離一致、累積升降互換。
+
+`coverage.routeDataGaps` 逐組記錄缺端點座標等原因；不將缺值當作0。`historical-track-planning-reference` 線形另存來源名稱、網址、原檔雜湊，與 OSM 來源分開歸屬。GPX 保留每一來源路段為獨立 `trkseg`，包含推算高程；僅有定位節點時需明確選擇節點匯出，不生成路徑。
+
+Excel 的規劃／上河時間以天數數值配合 `[h]:mm` 儲存，123分鐘顯示 `2:03`；未知分鐘維持空白。距離、上升、下降各自獨立一欄。

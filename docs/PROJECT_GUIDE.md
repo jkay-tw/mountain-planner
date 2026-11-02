@@ -41,3 +41,14 @@
   - `python3 -m unittest discover -s tests -p 'test_*.py'`
 
 資料工具、schema、跨圖身分、路徑或時間計算的變更，依影響範圍執行相關測試；發布或跨模組變更前執行完整 CI。CI 通過不等於瀏覽器視覺或操作驗收。
+
+## v0.8 地形與參考線形
+
+- `data/geometry/planner-terrain-v1.json`：完整執行期資料，727 個現行節點；559 個定位點均有海拔；452 組已有端點座標的路段均有線形與沿線高程。
+- `data/geometry/sources/coordinate-corrections-v08.json`：6 個來源實體／標示角色誤配修正，保留原座標、來源及修正理由，不修改 Node ID 或上河時間。歷史729點核對表不被覆寫。
+- `data/geometry/sources/full-route-osm-used-20261103.json`：全臺 OSM PBF 雜湊及實際使用的 way 版本與標籤。
+- `data/geometry/sources/reference-route-clips-v08.json`：4 個連續歷史行跡片段，附原檔雜湊、來源網址與剪取索引／來源片段證據。
+- `tools/build_full_terrain.py`、`tools/full_dem.py`：OSM 真實連通拓樸、沿線約30m採樣與DEM；`tools/apply_reference_routes.py` 補入具來源紀錄的少數缺線。
+- `tools/build_planner_geometry.py` 僅產生雪山種子，CLI要求另指定輸出路徑，不能覆寫完整執行期資料。
+
+重建指令與來源範圍見 [v0.8 說明](v0.8_RELEASE.md)。所有計算仍須區分資料缺口與程式錯誤；來源一致或測試通過不代表即時開放、官方實測或現地驗證。

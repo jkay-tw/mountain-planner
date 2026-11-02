@@ -26,4 +26,9 @@ def build(root=ROOT):
  return result
 
 if __name__=='__main__':
- d=build();(ROOT/'data/geometry/planner-terrain-v1.json').write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n');print(d['counts'])
+ import argparse
+ p=argparse.ArgumentParser(description='Build a pilot-only seed, not the full runtime dataset. Use build_full_terrain.py and apply_reference_routes.py for v0.8.')
+ p.add_argument('--seed-output',type=Path,required=True)
+ a=p.parse_args()
+ if a.seed_output.resolve()==(ROOT/'data/geometry/planner-terrain-v1.json').resolve():p.error('Refusing to replace full-route runtime data with a pilot-only seed')
+ d=build();a.seed_output.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n');print(d['counts'])
