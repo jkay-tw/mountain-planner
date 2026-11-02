@@ -15,4 +15,10 @@
 
 @media(max-width:900px){.it-row>.arrival{text-align:right}.it-row>.terrain-cell{text-align:right}}
 
+/* Medium windows keep the itinerary's key information on one row. */
+@media(min-width:601px) and (max-width:900px){
+ .it-row{grid-template-columns:minmax(110px,.9fr) 48px minmax(130px,1.1fr) minmax(110px,1fr) 28px;grid-template-areas:"place arrival time terrain terrain" "note note note note menu";column-gap:7px;align-items:center}
+ .it-row>.arrival{text-align:center}.it-row>.terrain-cell{text-align:left}
+}
+
 .profile-grid text{stroke:none}.profile-chart-scroll{max-width:100%;overflow-x:auto}.profile-chart-scroll svg{display:block;width:100%;min-width:720px;max-height:none}.profile-node-label text{stroke:none}
