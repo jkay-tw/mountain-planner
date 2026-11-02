@@ -22,7 +22,7 @@ const reviewedOverlaps=[
   ['shared:cw-v07-071','shared:cw-v07-057','shared:cw-v07-026','shared:cw-v07-072'],
   ['shared:cw-v07-019','shared:cw-v07-026','shared:cw-v07-072']
 ];
-function expandReviewedOverlaps(route,segments){
+export function expandReviewedOverlaps(route,segments){
   return segments.flatMap(segment=>{
     const match=reviewedOverlaps.find(ids=>(ids[0]===segment.fromId&&ids.at(-1)===segment.toId)||(ids[0]===segment.toId&&ids.at(-1)===segment.fromId));
     if(!match)return [segment];

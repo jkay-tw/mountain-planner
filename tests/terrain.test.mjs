@@ -33,11 +33,12 @@ test('Excel export includes per-leg metrics and daily totals without rewriting u
  const Workbook=class{constructor(){this.xlsx={writeBuffer:async()=>new ArrayBuffer(0)}}addWorksheet(){return sheet}};
  const oldWindow=globalThis.window,oldDocument=globalThis.document;
  globalThis.window={ExcelJS:{Workbook}};globalThis.ExcelJS={Workbook};globalThis.document={createElement:()=>({click(){}})};
- const d=day(),before=JSON.stringify(d);
+ const d=day();d.items.splice(2,0,{id:'rest',type:'rest',minutes:12,note:'休息備註保留'});const before=JSON.stringify(d);
  try{await exportExcel({route:{route_name:'測試',route_id:'TEST',source:{publisher:'上河',image_url:'https://example.com'}},days:[d],datasetVersion:'test',terrainData:data});
  const values=[...rows.values()].map(r=>r.values);
- assert.ok(values.some(r=>String(r[5]).includes('原始備註\n約 1.80 km')));
- const summary=values.find(r=>r[0]==='每日統計');assert.match(summary[5],/10.10 km.*1874 m.*143 m/);
+ assert.ok(values.some(r=>r[8]==='原始備註'&&r[5]>1.8&&r[5]<1.81&&r[6]>360));
+ assert.equal(values.find(r=>r[0]==='☕ 休息')[8],'休息備註保留');
+ const summary=values.find(r=>r[0]==='每日統計');assert.ok(summary[5]>10.1&&summary[5]<10.11);assert.equal(Math.round(summary[6]),1874);assert.equal(Math.round(summary[7]),143);
  assert.equal(JSON.stringify(d),before);
  }finally{globalThis.window=oldWindow;globalThis.document=oldDocument;delete globalThis.ExcelJS}
 });

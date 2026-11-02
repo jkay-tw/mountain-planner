@@ -14,5 +14,5 @@ test('rest notes survive timeline, JSON validation and normalization while old p
 test('rest input and Excel output expose the note',()=>{
  const app=readFileSync(new URL('../js/unified-editor.js',import.meta.url),'utf8');const rest=app.slice(app.indexOf("if(r.type==='rest')"),app.indexOf('}else{',app.indexOf("if(r.type==='rest')")));
  assert.match(rest,/note-input/);assert.match(rest,/esc\(r.note/);
- const exporter=readFileSync(new URL('../js/exporter.js',import.meta.url),'utf8');assert.match(exporter,/r\.endTime,Number\(r\.minutes\)\|\|0,'','',r\.note\|\|''/);
+ const exporter=readFileSync(new URL('../js/exporter.js',import.meta.url),'utf8');assert.match(exporter,/r\.endTime,Number\(r\.minutes\)\|\|0,(?:'',){5}r\.note\|\|''/);
 });
