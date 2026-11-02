@@ -126,12 +126,15 @@ def refine_candidates(records):
     return records
 
 
-def extract(pbf, nodes):
+def extract(pbf, nodes, partial=False):
     import osmium
     requested = {normalize(name) for n in nodes.values() for names in search_names(n) for name in names}
+    generic={'水源','營地','風口','鞍部','工寮','木屋','溪源','瀑布','新山','展望點','停車場','岔路','叉路','岔路口','叉路口','登山口'}
+    pattern=re.compile('|'.join(re.escape(s) for s in sorted(requested,key=len,reverse=True) if len(s)>=2 and s not in generic)) if partial else None
     objects, ways, needed = [], [], set()
     def relevant(tags):
-        return any(normalize(name) in requested for k in NAME_KEYS for name in tags.get(k,'').split(';') if name)
+        names=[normalize(name) for k in NAME_KEYS for name in tags.get(k,'').split(';') if name]
+        return any(name in requested or (pattern and pattern.search(name)) for name in names)
     class Names(osmium.SimpleHandler):
         def node(self,n):
             if not len(n.tags):
