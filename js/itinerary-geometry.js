@@ -105,11 +105,28 @@ export function formatTerrain(value,{partial=false}={}){
   return `${partial?'已知部分':'約'} ${(m.distanceMeters/1000).toFixed(2)} km · 上升 ${m.ascentMeters===null?'未取得':Math.round(m.ascentMeters)+' m'} · 下降 ${m.descentMeters===null?'未取得':Math.round(m.descentMeters)+' m'}`;
 }
 export function dayTerrain(day,data){return data?resolveItineraryGeometry([day],data).days[0]:null}
+export function profileNodeRows(day){
+ let offset=0,rows=[];
+ for(const f of day.features){
+  if(f.profile?.length){
+   const start={name:f.from,distanceMeters:offset,elevationMeters:f.profile[0][1]};
+   if(!rows.length||rows.at(-1).name!==start.name||Math.abs(rows.at(-1).distanceMeters-offset)>.01)rows.push(start);
+   rows.push({name:f.to,distanceMeters:offset+f.distanceMeters,elevationMeters:f.profile.at(-1)[1]});
+  }
+  offset+=f.distanceMeters;
+ }
+ return rows;
+}
 export function renderTerrainProfile(day){
-  const features=day.features.filter(f=>f.profile?.length);
-  if(!features.length)return '<p>沒有可繪製的高度資料。</p>';
-  const zs=features.flatMap(f=>f.profile.map(p=>p[1])),lo=Math.floor(Math.min(...zs)/100)*100,hi=Math.max(lo+100,Math.ceil(Math.max(...zs)/100)*100),total=day.distanceMeters||1;
-  let offset=0,paths='',labels='';
-  for(const f of day.features){if(f.profile){const points=f.profile.map(([d,z])=>`${(60+700*(offset+d)/total).toFixed(1)},${(190-160*(z-lo)/(hi-lo)).toFixed(1)}`).join(' ');paths+=`<polyline points="${points}" fill="none" stroke="#246447" stroke-width="2"><title>${xml(f.from)} → ${xml(f.to)}</title></polyline>`}offset+=f.distanceMeters;if(f.profile){const x=(60+700*offset/total).toFixed(1);labels+=`<text x="${x}" y="235" transform="rotate(-30 ${x} 235)" font-size="11" text-anchor="end" fill="#344b3d">${xml(f.to)}</text>`}}
-  return `<svg viewBox="0 0 800 290" role="img" aria-label="Day ${day.dayIndex+1} 高度剖面圖"><path d="M60 30V190H760" fill="none" stroke="#89988c"/><g font-size="13" fill="#344b3d"><text x="5" y="35">${hi} m</text><text x="5" y="195">${lo} m</text><text x="60" y="218">0 km</text><text x="660" y="218">${(total/1000).toFixed(2)} km</text></g>${paths}${labels}</svg><p>${day.gaps.length?'橫軸為已知路徑累計距離；缺漏未計入，各段分開繪製。':'橫軸：沿山徑距離；縱軸：DEM 估算海拔。'}</p>`;
+ const features=day.features.filter(f=>f.profile?.length);if(!features.length)return '<p>沒有可繪製的高度資料。</p>';
+ const zs=features.flatMap(f=>f.profile.map(p=>p[1])),lo=Math.floor(Math.min(...zs)/100)*100,hi=Math.max(lo+100,Math.ceil(Math.max(...zs)/100)*100),total=day.distanceMeters||1;
+ const X=d=>60+700*d/total,Y=z=>190-160*(z-lo)/(hi-lo),nodes=profileNodeRows(day);
+ let offset=0,paths='',grid='',labels='',marks='';
+ const heightStep=Math.max(100,Math.ceil((hi-lo)/500)*100),distanceStep=Math.max(.2,Math.ceil(total/1000/6*5)/5);
+ for(let z=lo;z<=hi;z+=heightStep){const y=Y(z).toFixed(1);grid+=`<path d="M60 ${y}H760"/><text x="4" y="${Number(y)+4}">${z} m</text>`}
+ for(let km=0;km<=total/1000;km+=distanceStep){const x=X(km*1000).toFixed(1);grid+=`<path d="M${x} 30V190"/><text x="${x}" y="210" text-anchor="middle">${km.toFixed(1)}</text>`}
+ for(const f of day.features){if(f.profile)paths+=`<polyline points="${f.profile.map(([d,z])=>`${X(offset+d).toFixed(1)},${Y(z).toFixed(1)}`).join(' ')}" fill="none" stroke="#246447" stroke-width="2"><title>${xml(f.from)} → ${xml(f.to)}</title></polyline>`;offset+=f.distanceMeters}
+ for(const n of nodes){const x=X(n.distanceMeters).toFixed(1),y=Y(n.elevationMeters).toFixed(1);labels+=`<text x="${x}" y="235" transform="rotate(-30 ${x} 235)" font-size="11" text-anchor="end" fill="#344b3d">${xml(n.name)}</text>`;marks+=`<path d="M${x} ${y}V190" stroke="#93a69b" stroke-dasharray="3 3"/><circle cx="${x}" cy="${y}" r="3" fill="#246447"><title>${xml(n.name)}：${(n.distanceMeters/1000).toFixed(2)} km，約 ${Math.round(n.elevationMeters)} m</title></circle>`}
+ const table='<div class="profile-node-table"><table><thead><tr><th>節點</th><th>累計距離 km</th><th>海拔 m（DEM估算）</th></tr></thead><tbody>'+nodes.map(n=>`<tr><td>${xml(n.name)}</td><td>${(n.distanceMeters/1000).toFixed(2)}</td><td>約 ${Math.round(n.elevationMeters)}</td></tr>`).join('')+'</tbody></table></div>';
+ return `<svg viewBox="0 0 800 290" role="img" aria-label="Day ${day.dayIndex+1} 高度剖面圖"><g class="profile-grid" stroke="#dae3dc" stroke-width="1" fill="#53665a" font-size="12">${grid}</g><path d="M60 30V190H760" fill="none" stroke="#89988c"/>${paths}${marks}${labels}<text x="750" y="216" text-anchor="end" font-size="11">km</text></svg><p>${day.gaps.length?'橫軸為已知路徑累計距離；缺漏未計入，各段分開繪製。':'橫軸：沿山徑距離；縱軸：DEM 估算海拔。'}</p>${table}`;
 }

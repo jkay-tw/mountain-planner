@@ -1,5 +1,5 @@
-import {twd97Label} from './twd97.js?v=v0729';
-import {resolveItineraryGeometry,geometryToGpx,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=v0729';
+import {twd97Label} from './twd97.js?v=v0730';
+import {resolveItineraryGeometry,geometryToGpx,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=v0730';
 
 // No plan mutations or persistent state. Failure here must not block the editor.
 export function createItineraryMap({host,getDays}){
@@ -44,7 +44,7 @@ export function createItineraryMap({host,getDays}){
     for(const n of latest.waypoints){
       const label=document.createElement('div'),name=document.createElement('strong'),elevation=document.createElement('div'),coordinate=document.createElement('small');
       name.textContent=n.name;elevation.textContent=Number.isFinite(n.elevationMeters)?`約 ${Math.round(n.elevationMeters)} m`:'海拔未取得';coordinate.textContent=twd97Label(n.coordinate);coordinate.className='node-coordinate';label.append(name,elevation,coordinate);
-      const popup=label.cloneNode(true),note=document.createElement('div');note.textContent=n.note||'候選位置';popup.append(note);
+      const popup=label.cloneNode(true);
       if(!detailedNodes)coordinate.hidden=true;
       L.circleMarker([n.coordinate[1],n.coordinate[0]],{radius:5,color:'#254936',fillOpacity:.9}).bindPopup(popup).bindTooltip(label,{permanent:true,direction:'right',className:'geometry-node-label',offset:[6,0]}).addTo(group);
     }
@@ -52,7 +52,7 @@ export function createItineraryMap({host,getDays}){
   }
   async function initialize(){
     status.textContent='正在載入雪山線形與地圖…';
-    if(!data){const response=await fetch('data/geometry/xueshan-terrain-v1.json?v=v0729');if(!response.ok)throw Error('候選線形載入失敗');data=await response.json()}
+    if(!data){const response=await fetch('data/geometry/xueshan-terrain-v1.json?v=v0730');if(!response.ok)throw Error('候選線形載入失敗');data=await response.json()}
     if(!window.L)throw Error('地圖元件無法載入，請檢查網路後重試。');
     if(!map){
       map=L.map(host.querySelector('[data-map]')).setView([24.388,121.266],13);

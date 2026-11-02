@@ -19,3 +19,9 @@ test('owner-confirmed long overlaps do not become false immediate neighbours',()
 test('TWD97 display matches the confirmed zone121 coordinate to the metre',()=>{
  assert.deepEqual(toTwd97([121.23638022672083,24.388491806668416]),[273977,2698069]);assert.equal(twd97Label([121.23638022672083,24.388491806668416]),'TWD97 (273977, 2698069)');assert.equal(toTwd97([NaN,24]),null);
 });
+test('signed one/two-hop choices use the previous point and are all available without expansion',async()=>{
+ const {directionalQuickAdd}=await import('../js/quick-add.js');const graph={...route,segments:[edge('a','b'),edge('b','a'),edge('b','c'),edge('c','b'),edge('a','e'),edge('c','d')]};
+ const choices=directionalQuickAdd(graph,{items:[{type:'location',nodeId:'a'},{type:'rest'},{type:'location',nodeId:'b'}]});
+ assert.deepEqual(choices.map(c=>c.direction*c.steps),[1,2,-1,-2]);assert.deepEqual(choices.map(c=>c.nodeId),['c','d','a','e']);
+ assert.ok(directionalQuickAdd(graph,{items:[{type:'location',nodeId:'b'}]}).every(c=>c.direction===0));
+});

@@ -42,3 +42,8 @@ test('Excel export includes per-leg metrics and daily totals without rewriting u
  assert.equal(JSON.stringify(d),before);
  }finally{globalThis.window=oldWindow;globalThis.document=oldDocument;delete globalThis.ExcelJS}
 });
+test('profile has gridlines and node distance/elevation lookup, including origin',async()=>{
+ const {profileNodeRows}=await import('../js/itinerary-geometry.js');const d=resolveItineraryGeometry([day()],data).days[0],nodes=profileNodeRows(d),html=renderTerrainProfile(d);
+ assert.equal(nodes.length,7);assert.equal(nodes[0].distanceMeters,0);assert.equal(nodes.at(-1).name,'雪山主峰');assert.ok(nodes.at(-1).distanceMeters>10100);
+ assert.match(html,/profile-grid/);assert.match(html,/累計距離 km/);assert.match(html,/海拔 m/);assert.match(html,/10\.10/);
+});
