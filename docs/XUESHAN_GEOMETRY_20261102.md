@@ -69,5 +69,14 @@
 - 新增 JS 測試涵蓋實際已核對路網順序、反向、多日、圈谷端點缺漏、手動／車行排除、未知中間點、計畫不可變與 GPX 轉義。
 - Python 測試涵蓋固定快照精確重建、每條幾何邊皆出自連續 OSM nd，以及禁入／斷線時拒絕建圖。
 - 本機完整驗證：91 個 JavaScript 測試、53 個 Python 測試通過。本機 Node v24 已不接受 `--experimental-default-type=module`，使用 `node --test`；遠端 CI 仍依專案 Node 22 流程。
-- 預計只更新 `main/preview/`，正式版根目錄不動、不合併 PR。CI 與瀏覽器結果以後續部署紀錄為準。
+- 已僅更新 `main/preview/`，正式版根目錄不動、不合併 PR。部署及瀏覽器結果見下方。
 - 尚未完成：圈谷底部明確定位、Happyman 實際解析、官方 SHP 比對、現況／施工動線精度驗證、可追溯的連續海拔、其他圖組擴充。候選線形可操作不等於上述事項已完成。
+
+## 部署與瀏覽器檢查紀錄
+
+- 開發程式 commit：`e1b4b990e60dbf187e554f4eb0a57c6000e6886f`；[Planner JavaScript tests](https://github.com/jkay-tw/mountain-planner/actions/runs/41370285478) 成功。
+- Preview commit：`3369497df0fed394b4e982a0ff489cfac1b2cf81`；[Pages 部署](https://github.com/jkay-tw/mountain-planner/actions/runs/41370335962) 成功。相較前版只變更 8 個 `preview/` 下檔案，正式版根目錄無差異。
+- [統一編輯器](https://jkay-tw.github.io/mountain-planner/preview/unified-editor.html?v=v0727) 已實際載入 v0.7.27，展開地圖區塊並載入成功；現有非雪山行程顯示 18 段缺漏、0 km，沒有補線或更動行程。
+- [獨立範例](https://jkay-tw.github.io/mountain-planner/preview/xueshan-geometry-demo.html?v=v0727)：去程／回程各 10.10 km；兩日往返 20.21 km；以圈谷為端點顯示 0 km、1 缺漏且禁止匯出；手動七卡—哭坡顯示 8.49 km、1 缺漏。OSM／魯地圖選項與魯地圖畫面已檢查。向量覆蓋層實際有 5 條路徑及 6 個路點。
+- GPX 產生器通過自動測試；實際產生的檔案由獨立 XML parser 成功解析（6 waypoints、5 trkseg）。瀏覽器點選匯出按鈕無本網站錯誤；下載事件追蹤逾時，**沒有取得瀏覽器儲存檔的完成證據，下載及外部 GPX 軟體顯示仍待使用者操作驗收**。
+- 這些是開發檢查，未代替使用者的視覺／操作或地點驗收。
