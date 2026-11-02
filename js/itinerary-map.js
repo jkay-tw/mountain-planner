@@ -1,5 +1,5 @@
-import {twd97Label} from './twd97.js?v=v0730';
-import {resolveItineraryGeometry,geometryToGpx,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=v0730';
+import {twd97Label} from './twd97.js?v=v0731';
+import {resolveItineraryGeometry,geometryToGpx,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=v0731';
 
 // No plan mutations or persistent state. Failure here must not block the editor.
 export function createItineraryMap({host,getDays}){
@@ -52,7 +52,7 @@ export function createItineraryMap({host,getDays}){
   }
   async function initialize(){
     status.textContent='正在載入雪山線形與地圖…';
-    if(!data){const response=await fetch('data/geometry/xueshan-terrain-v1.json?v=v0730');if(!response.ok)throw Error('候選線形載入失敗');data=await response.json()}
+    if(!data){const response=await fetch('data/geometry/xueshan-terrain-v1.json?v=v0731');if(!response.ok)throw Error('候選線形載入失敗');data=await response.json()}
     if(!window.L)throw Error('地圖元件無法載入，請檢查網路後重試。');
     if(!map){
       map=L.map(host.querySelector('[data-map]')).setView([24.388,121.266],13);

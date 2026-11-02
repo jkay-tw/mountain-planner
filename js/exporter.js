@@ -1,7 +1,7 @@
-import {dayTerrain,terrainMetrics} from './itinerary-geometry.js?v=v0730';
+import {dayTerrain,terrainMetrics} from './itinerary-geometry.js?v=v0731';
 import {buildTimeline,summarizeDay,edgeActual} from './planner.js';
 const placeLabel=r=>(r.isPeak?'⛰ ':'')+r.name+(r.hasWater?' 💧':'');
-const excelDuration=min=>min===null?'':Number(min||0)/1440;
+const excelDuration=min=>min==null||min===''?'':Number(min)/1440;
 const font='Microsoft JhengHei';
 const dateForDay=(startDate,index)=>{if(!startDate)return '';const d=new Date(startDate+'T00:00:00');d.setDate(d.getDate()+index);return d.getFullYear()+'/'+String(d.getMonth()+1).padStart(2,'0')+'/'+String(d.getDate()).padStart(2,'0')};
 export async function exportExcel({route,days,datasetVersion,tripStartDate,terrainData=null}){
@@ -24,10 +24,10 @@ export async function exportExcel({route,days,datasetVersion,tripStartDate,terra
    const e=r.incoming,actual=e?edgeActual(e,day.coefficient):'',f=byItem.get(r.id),m=f?terrainMetrics([f]):null;
    const note=[r.note||'',r.type!=='rest'&&e&&!f?'地形資料未收錄':''].filter(Boolean).join('；');
    const k=e?.kind==='official'&&actual!==null&&e.officialMinutes?Math.round((actual/e.officialMinutes)*100)/100:'';
-   const values=r.type==='rest'?['☕ 休息',r.endTime,Number(r.minutes)||0,'','','','','',r.note||'']:[placeLabel(r),r.arrival,e?(actual===null?'':Number(actual)):'',e?.kind==='official'?Number(e.officialMinutes):'',k,f?f.distanceMeters/1000:'',m?.ascentMeters??'',m?.descentMeters??'',note];
+   const values=r.type==='rest'?['☕ 休息',r.endTime,excelDuration(Number(r.minutes)||0),'','','','','',r.note||'']:[placeLabel(r),r.arrival,e?excelDuration(actual):'',e?.kind==='official'?excelDuration(e.officialMinutes):'',k,f?f.distanceMeters/1000:'',m?.ascentMeters??'',m?.descentMeters??'',note];
    const rr=ws.getRow(rowNo);rr.values=values;rr.height=15.75;
    rr.eachCell((c,col)=>{c.font={name:col>=2&&col<=8?'Calibri':font,size:10};c.alignment={vertical:'middle',horizontal:col>=2&&col<=8?'center':'left',wrapText:false};c.border=border;if(col===1||col===2){c.font={...c.font,bold:true,color:{argb:'FF234936'}};c.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FFEAF2EC'}}}else if(col===3){c.font={...c.font,bold:true,color:{argb:'FF304F76'}};c.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FFEDF3F9'}}}else if(col>=6&&col<=8){c.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FFF2F6FA'}}}else if(col===4||col===5)c.font={...c.font,color:{argb:'FF77837B'}}});
-   rr.getCell(6).numFmt='0.00';rr.getCell(7).numFmt='0';rr.getCell(8).numFmt='0';
+   rr.getCell(3).numFmt='[h]:mm';rr.getCell(4).numFmt='[h]:mm';rr.getCell(6).numFmt='0.00';rr.getCell(7).numFmt='0';rr.getCell(8).numFmt='0';
 
    rowNo++;
   }

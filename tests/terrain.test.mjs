@@ -33,17 +33,21 @@ test('Excel export includes per-leg metrics and daily totals without rewriting u
  const Workbook=class{constructor(){this.xlsx={writeBuffer:async()=>new ArrayBuffer(0)}}addWorksheet(){return sheet}};
  const oldWindow=globalThis.window,oldDocument=globalThis.document;
  globalThis.window={ExcelJS:{Workbook}};globalThis.ExcelJS={Workbook};globalThis.document={createElement:()=>({click(){}})};
- const d=day();d.items.splice(2,0,{id:'rest',type:'rest',minutes:12,note:'休息備註保留'});const before=JSON.stringify(d);
+ const d=day();d.items.splice(2,0,{id:'rest',type:'rest',minutes:12,note:'休息備註保留'});d.items[1].incoming.actualMinutes=123;d.items[1].incoming.officialMinutes=70;d.items[3].incoming={kind:'manual',fromNodeId:ids[1],toNodeId:ids[2],actualMinutes:null};d.items[4].incoming.actualMinutes=0;const before=JSON.stringify(d);
  try{await exportExcel({route:{route_name:'測試',route_id:'TEST',source:{publisher:'上河',image_url:'https://example.com'}},days:[d],datasetVersion:'test',terrainData:data});
  const values=[...rows.values()].map(r=>r.values);
  assert.ok(values.some(r=>r[8]==='原始備註'&&r[5]>1.8&&r[5]<1.81&&r[6]>360));
  assert.equal(values.find(r=>r[0]==='☕ 休息')[8],'休息備註保留');
- const summary=values.find(r=>r[0]==='每日統計');assert.ok(summary[5]>10.1&&summary[5]<10.11);assert.equal(Math.round(summary[6]),1874);assert.equal(Math.round(summary[7]),143);
+ assert.equal(values.find(r=>r[0]==='☕ 休息')[2],12/1440);
+ const timed=values.find(r=>r[0]==='七卡山莊');assert.equal(timed[2],123/1440);assert.equal(timed[3],70/1440);
+ assert.equal(values.find(r=>r[0]==='哭坡觀景台')[2],'');assert.equal(values.find(r=>r[0]==='雪山東峰')[2],0);
+ for(const [n,r] of rows)if(r.values[0]==='七卡山莊'){assert.equal(cell(n+',3').numFmt,'[h]:mm');assert.equal(cell(n+',4').numFmt,'[h]:mm');}
+ const summary=values.find(r=>r[0]==='每日統計（部分）');const known=resolveItineraryGeometry([d],data).days[0];assert.equal(summary[5],known.distanceMeters/1000);assert.equal(summary[6],known.ascentMeters);assert.equal(summary[7],known.descentMeters);
  assert.equal(JSON.stringify(d),before);
  }finally{globalThis.window=oldWindow;globalThis.document=oldDocument;delete globalThis.ExcelJS}
 });
 test('profile has gridlines and node distance/elevation lookup, including origin',async()=>{
  const {profileNodeRows}=await import('../js/itinerary-geometry.js');const d=resolveItineraryGeometry([day()],data).days[0],nodes=profileNodeRows(d),html=renderTerrainProfile(d);
  assert.equal(nodes.length,7);assert.equal(nodes[0].distanceMeters,0);assert.equal(nodes.at(-1).name,'雪山主峰');assert.ok(nodes.at(-1).distanceMeters>10100);
- assert.match(html,/profile-grid/);assert.match(html,/累計距離 km/);assert.match(html,/海拔 m/);assert.match(html,/10\.10/);
+ assert.match(html,/profile-grid/);assert.match(html,/profile-node-label/);assert.doesNotMatch(html,/<table/);assert.match(html,/約 3,878 m/);assert.match(html,/10\.10/);
 });
