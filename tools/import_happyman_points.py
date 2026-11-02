@@ -10,8 +10,8 @@ def labels(raw):
  value=raw.strip()
  value=re.sub(r'^\d{1,2}[:：]\d{2}\s*','',value)
  value=re.sub(r'^(?:編號|WPT?|wpt?)[-_\s]*\d+[._\-\s]*','',value)
- value=re.sub(r'^\d{2,}[._\-\s]+(?=\D)','',value)
- value=re.sub(r'^\d{3,}(?=[^\d.kKmM])','',value)
+ value=re.sub(r'^\d{1,3}(?:[_\-\s]+|\.(?!\d))(?=\S)','',value)
+ value=re.sub(r'^\d{3}(?=[^\d.kKmM峰營鞍])','',value)
  # Preserve numbered camps and kilometre prefixes; remove only metadata tails.
  bare=re.sub(r'[,，\s（(]+[Hh]?\s*\d{3,4}\s*(?:[mM]|公尺)[）)]?\s*$','',value).strip()
  bare=re.sub(r'(?<=[^\d.])\d{3,4}\s*(?:[mM]|公尺)$','',bare).rstrip(' ,，（(')

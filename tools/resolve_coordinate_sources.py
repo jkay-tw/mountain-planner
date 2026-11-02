@@ -213,12 +213,13 @@ def write_report(data,path):
  reasons={'no-compatible-source':'尚缺相容的具名來源','generic-name-needs-neighbor-evidence':'泛稱地點，支路證據不足','separated-source-clusters-or-route-conflict':'來源分離或相鄰路線不一致','conflicting-neighbor-locations':'與已定位的相鄰路段距離不符','unconnected-single-source-needs-route-evidence':'無步行鄰點且僅單一來源，需核對接駁位置'}
  for n in unresolved:lines.append('|'+ '|'.join(map(safe,['、'.join(n['groups']),n['nodeId'],n['name'],'、'.join(x['name'] for x in n['neighbors']),reasons.get(n['reason'],n['reason'])]))+'|')
  lines+=['','## 已選定點位','','|圖組|Node ID|地點|WGS84 緯度,經度|採用來源|選定方式|同組來源最大差距 m|','|---|---|---|---|---|---|---:|']
- methods={'existing-user-reviewed-pilot':'既有雪山已確認點','nearby-source-cluster':'近距離來源群代表點','named-source-with-route-context':'具名來源及圖組位置','source-agreement-and-neighbor-context':'來源相符及相鄰節點比對','physical-landform-source-priority':'較可靠的峰頂／鞍部地物來源','happyman-explicit-peak-role-review':'Happyman 最高峰／基點峰分別核對','named-feature-supported-by-osm-walking-topology':'具名地物較符合 OSM 步道','unique-osm-junction-of-three-reviewed-branches':'三支路唯一交會點（推定）','sole-compatible-osm-poi-between-reviewed-neighbors':'鄰點間唯一相容地物（推定）'}
+ methods={'existing-user-reviewed-pilot':'既有雪山已確認點','nearby-source-cluster':'近距離來源群代表點','named-source-with-route-context':'具名來源及圖組位置','source-agreement-and-neighbor-context':'來源相符及相鄰節點比對','physical-landform-source-priority':'較可靠的峰頂／鞍部地物來源','happyman-similar-name-with-reviewed-route-context':'Happyman 相似原名及步行鄰點逐筆核對','happyman-explicit-peak-role-review':'Happyman 最高峰／基點峰分別核對','named-feature-supported-by-osm-walking-topology':'具名地物較符合 OSM 步道','unique-osm-junction-of-three-reviewed-branches':'三支路唯一交會點（推定）','sole-compatible-osm-poi-between-reviewed-neighbors':'鄰點間唯一相容地物（推定）'}
  for n in chosen:
   c=refs.get(n.get('selectedSource'));src='既有雪山已確認點' if not c else f"[{c['source']}：{c['name']}]({c['url']})"
   lines.append('|'+ '|'.join(map(safe,['、'.join(n['groups']),n['nodeId'],n['name'],f"{n['coordinate'][1]:.7f}, {n['coordinate'][0]:.7f}",src,methods.get(n['selectionMethod'],n['selectionMethod']),n.get('spreadMeters',0)]))+'|')
  lines+=['','## 來源','','']
  for s in data['sourceCatalog']:lines.append(f"- [{s['title']}]({s['url']})；取得日期 {s['retrievedDate']}。")
+ if data.get('nearbyRecheck'):lines[4:4]=['[Happyman 鄰近路線與相似名稱複核](HAPPYMAN_NEARBY_RECHECK_20261102.md)。','']
  if data.get('recheck'):lines[4:4]=['[Happyman 複核結果及志佳陽兩峰修正](HAPPYMAN_COORDINATE_RECHECK_20261102.md)。','']
  path.write_text('\n'.join(lines)+'\n')
 

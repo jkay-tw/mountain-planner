@@ -13,6 +13,9 @@ class HappymanTests(unittest.TestCase):
   self.assertIn('4.8K岔路口',labels('4.8K岔路口'))
   self.assertIn('32K登山口',labels('32K登山口'))
   self.assertIn('12營地',labels('12營地'))
+  self.assertIn('3199峰',labels('3199峰'))
+  self.assertIn('3199峰',labels('042-3199峰'))
+  self.assertIn('2920營地',labels('024- 2920營地'))
  def test_lowest_saddle_requires_multiple_neighbors(self):
   self.assertTrue(GENERIC.fullmatch('最低鞍部'))
  def test_two_peak_roles_are_distinct_and_use_actual_source_points(self):
@@ -31,7 +34,7 @@ class HappymanTests(unittest.TestCase):
  def test_source_snapshot_and_count_reconciliation(self):
   d=json.loads((ROOT/'data/geometry/all-route-coordinates-v1.json').read_text());s=json.loads((ROOT/'data/geometry/sources/happyman-coordinate-reference-20240813.json').read_text())
   self.assertEqual(s['source']['md5'],'8262e5acb7650ed064c8a3499fc39091');self.assertEqual(s['source']['rawNamedPoiCount'],207518)
-  self.assertEqual(d['counts']['selected-planning-coordinate'],366+d['recheck']['addedCount']);self.assertEqual(sum(d['counts'].values()),729)
+  self.assertEqual(d['counts']['selected-planning-coordinate'],366+d['recheck']['addedCount']+d.get('nearbyRecheck',{}).get('addedCount',0));self.assertEqual(sum(d['counts'].values()),729)
   high,base,_=peak_roles(s['points']);self.assertTrue(high);self.assertTrue(base)
   self.assertEqual(len(s['points']),len({p['id'] for p in s['points']}))
   for p in s['points']:self.assertEqual(p['sourceFileSha256'],s['source']['sha256'])
