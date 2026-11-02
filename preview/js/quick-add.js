@@ -1,4 +1,4 @@
-import {expandReviewedOverlaps} from './planner.js?v=v0729';
+import {expandReviewedOverlaps} from './planner.js?v=v0730';
 export function quickAddCandidates(route,startId){
  if(!route||route.routingEnabled===false||!route.nodes?.some(n=>n.id===startId))return [];
  const eligible=route.segments.filter(s=>s.routingEnabled!==false&&s.travelMode==='walking'&&s.verificationStatus==='verified');
@@ -16,4 +16,12 @@ export function appendQuickPath(day,route,key,uid){
  const candidate=quickAddCandidates(route,last.nodeId).find(c=>c.key===key);if(!candidate)return false;
  for(const s of candidate.segments)day.items.push({id:uid(),type:'location',nodeId:s.toId,name:s.to,note:'',isPeak:false,hasWater:false,incoming:{kind:'official',from:s.from,to:s.to,fromNodeId:s.fromId,toNodeId:s.toId,officialMinutes:s.minutes,actualMinutes:null,source:s.source||route.source?.image_url,...(s.timeAlternatives?{timeAlternatives:s.timeAlternatives}:{})}});
  return true;
+}
+// Direction is relative to the actual previous itinerary point, not map north
+// or dataset order. Other branches remain available as forward choices.
+export function directionalQuickAdd(route,day,previousNodeId=null){
+ const locations=day.items.filter(x=>x.type!=='rest'),last=locations.at(-1);
+ if(last?.type!=='location')return [];
+ const previous=locations.at(-2)?.nodeId||previousNodeId;
+ return quickAddCandidates(route,last.nodeId).map(c=>({...c,steps:c.segments.length,direction:previous?(c.segments[0].toId===previous?-1:1):0})).sort((a,b)=>(a.direction<0?2:0)+a.steps-((b.direction<0?2:0)+b.steps)||a.name.localeCompare(b.name,'zh-Hant'));
 }

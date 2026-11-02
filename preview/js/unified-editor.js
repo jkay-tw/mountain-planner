@@ -1,13 +1,13 @@
-import {makeDemoDays} from './demo-itinerary.js?v=v0729';
-import {quickAddCandidates,appendQuickPath} from './quick-add.js?v=v0729';
-import {dayTerrain,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=v0729';
+import {makeDemoDays} from './demo-itinerary.js?v=v0730';
+import {directionalQuickAdd,appendQuickPath} from './quick-add.js?v=v0730';
+import {dayTerrain,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=v0730';
 import {createTabAutosave} from './tab-autosave.js?v=v0725';
 import {loadManifest,loadRoute} from './data-loader.js';
 import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming} from './planner.js?v=v0726';
 import {validatePlan} from './validation.js?v=v0726';
 import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js?v=v0726';
 import {migrateLegacyPlanDays} from './legacy-plan-migration.js?v=v0726';
-import {exportExcel} from './exporter.js?v=v0729';
+import {exportExcel} from './exporter.js?v=v0730';
 import {filterLocations} from './node-browser.js?v=v074';
 import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=v0724';
 
@@ -15,7 +15,7 @@ const $=id=>document.getElementById(id);
 const IS_PRODUCTION=document.body.dataset.mode==='production';
 const IS_DEMO=!IS_PRODUCTION&&new URLSearchParams(location.search).get('demo')==='xueshan';
 const STORAGE_KEY=IS_PRODUCTION?'mountain-planner.global-autosave.v1':'mountain-planner.unified-preview-autosave.v0711';
-const APP_VERSION=IS_PRODUCTION?'v0.7.25':'v0.7.29 Unified Preview';
+const APP_VERSION=IS_PRODUCTION?'v0.7.25':'v0.7.30 Unified Preview';
 const COLLAPSE_KEY=IS_PRODUCTION?'mountain-planner.collapsed-days.v1':'mountain-planner.unified-preview-collapsed.v0711';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',scope='';
@@ -63,10 +63,10 @@ async function init(){
   days=restoredDays?.length?sanitizeDays(migrateDaysToNodeIds(restoredDays,route)):[newDay(0)];
   if(IS_DEMO){days=makeDemoDays(route,uid);scope='G04';$('routeSelect').value=scope;const banner=document.createElement('div');banner.className='notice';banner.textContent='範例模式：可以試用快速加入與編輯，這個頁面不讀寫原行程暫存。';$('daysContainer').before(banner)}
   $('dayCount').value=String(days.length);
-  if(!IS_PRODUCTION)try{const response=await fetch('data/geometry/xueshan-terrain-v1.json?v=v0729');if(!response.ok)throw Error();terrainData=await response.json()}catch(error){console.warn('雪山地形資料未載入')}
+  if(!IS_PRODUCTION)try{const response=await fetch('data/geometry/xueshan-terrain-v1.json?v=v0730');if(!response.ok)throw Error();terrainData=await response.json()}catch(error){console.warn('雪山地形資料未載入')}
   bindGlobal();
   render(false);saveAutosave(false);checkpoint();
-  if(!IS_PRODUCTION&&$('itineraryGeometry'))import('./itinerary-map.js?v=v0729')
+  if(!IS_PRODUCTION&&$('itineraryGeometry'))import('./itinerary-map.js?v=v0730')
     .then(({createItineraryMap})=>{itineraryMap=createItineraryMap({host:$('itineraryGeometry'),getDays:()=>days})})
     .catch(error=>{$('itineraryGeometry').textContent='地圖載入失敗：'+error.message});
 }
@@ -316,10 +316,10 @@ function render(persist=true){
 
 function renderQuickAdd(d){
  const p=last(d);if(p?.type!=='location')return '<div class="quick-add empty">選擇起點後顯示快速加入；手動點請用節點選單銜接。</div>';
- const candidates=quickAddCandidates(route,p.nodeId);
- const button=c=>{const target=route.nodes.find(n=>n.id===c.nodeId),duplicate=route.nodes.filter(n=>n.name===c.name).length>1;return '<button type="button" class="quick-node secondary" data-quick-key="'+esc(c.key)+'">＋ '+esc(c.name)+(duplicate?' <small>'+esc((target.groups||[]).join(' / '))+'</small>':'')+(c.via?'<small>經 '+esc(c.via)+'</small>':'')+'</button>'};
- const direct=candidates.filter(c=>!c.via),second=candidates.filter(c=>c.via);
- return '<div class="quick-add"><strong>⚡ 快速加入</strong><div class="quick-chips">'+(direct.map(button).join('')||'<span>沒有已收錄的相鄰步行節點</span>')+'</div>'+(second.length?'<details><summary>更多鄰近節點（兩段內）</summary><div class="quick-chips">'+second.map(button).join('')+'</div></details>':'')+'</div>';
+ const dayIndex=days.indexOf(d),prior=dayIndex>0&&d.linkedStart?locs(days[dayIndex-1]).at(-2)?.nodeId:null;
+ const candidates=directionalQuickAdd(route,d,prior);
+ const button=c=>{const target=route.nodes.find(n=>n.id===c.nodeId),duplicate=route.nodes.filter(n=>n.name===c.name).length>1;const step=(c.direction>0?'+':c.direction<0?'−':'')+c.steps+(c.direction?'':'段');return '<button type="button" class="quick-node secondary" data-quick-key="'+esc(c.key)+'"><b>'+step+'</b> '+esc(c.name)+(duplicate?' <small>'+esc((target.groups||[]).join(' / ')+' · '+String(target.id).slice(-10))+'</small>':'')+(c.via?'<small>經 '+esc(c.via)+'</small>':'')+'</button>'};
+ return '<div class="quick-add"><strong>⚡ 快速加入</strong><small class="quick-direction-help">'+(candidates.some(c=>c.direction)?'＋往其他方向／−往上一個行程點；數字為經過路段數':'尚無來向：顯示相鄰一段、兩段節點')+'</small><div class="quick-chips">'+(candidates.map(button).join('')||'<span>沒有已收錄的相鄰步行節點</span>')+'</div></div>';
 }
 function renderDay(d,i){
   const s=summarizeDay(d),collapsed=collapsedDays.has(d.id),f=first(d),l=last(d);

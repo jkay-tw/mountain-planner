@@ -14,3 +14,5 @@
 .itinerary-head{display:grid;grid-template-columns:minmax(115px,.9fr) 64px minmax(150px,1fr) minmax(120px,.8fr) minmax(110px,.9fr) 28px;gap:7px;font-size:11px;font-weight:650;color:#53665a;padding:7px 0;border-bottom:1px solid #dce6dc}@media(max-width:900px){.itinerary-head{display:none}}
 
 @media(max-width:900px){.it-row>.arrival{text-align:right}.it-row>.terrain-cell{text-align:right}}
+
+.quick-direction-help{display:block;color:#637969;margin-top:4px}.quick-node b{color:#315e43}.profile-grid text{stroke:none}.profile-node-table{overflow:auto;max-width:100%;margin:10px 0}.profile-node-table table{width:100%;border-collapse:collapse;font-size:12px}.profile-node-table th,.profile-node-table td{padding:6px 8px;border:1px solid #dce6dc;text-align:left}.profile-node-table th{background:#eef4ed}.profile-node-table td:not(:first-child){text-align:right}
