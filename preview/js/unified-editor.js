@@ -1,21 +1,22 @@
+import {dayTerrain,formatTerrain} from './itinerary-geometry.js?v=v0728';
 import {createTabAutosave} from './tab-autosave.js?v=v0725';
 import {loadManifest,loadRoute} from './data-loader.js';
 import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming} from './planner.js?v=v0726';
 import {validatePlan} from './validation.js?v=v0726';
 import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js?v=v0726';
 import {migrateLegacyPlanDays} from './legacy-plan-migration.js?v=v0726';
-import {exportExcel} from './exporter.js?v=v0726';
+import {exportExcel} from './exporter.js?v=v0728';
 import {filterLocations} from './node-browser.js?v=v074';
 import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=v0724';
 
 const $=id=>document.getElementById(id);
 const IS_PRODUCTION=document.body.dataset.mode==='production';
 const STORAGE_KEY=IS_PRODUCTION?'mountain-planner.global-autosave.v1':'mountain-planner.unified-preview-autosave.v0711';
-const APP_VERSION=IS_PRODUCTION?'v0.7.25':'v0.7.27 Unified Preview';
+const APP_VERSION=IS_PRODUCTION?'v0.7.25':'v0.7.28 Unified Preview';
 const COLLAPSE_KEY=IS_PRODUCTION?'mountain-planner.collapsed-days.v1':'mountain-planner.unified-preview-collapsed.v0711';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',scope='';
-let itineraryMap=null;
+let itineraryMap=null,terrainData=null;
 let snapshots=[],at=-1,restoring=false;
 function checkpoint(){if(restoring)return;const state=JSON.stringify({routeId:route?.route_id||null,scope,tripStartDate,days});if(state===snapshots[at])return;snapshots=snapshots.slice(0,at+1);snapshots.push(state);if(snapshots.length>50)snapshots.shift();at=snapshots.length-1;buttons()}
 function buttons(){
@@ -57,9 +58,10 @@ async function init(){
   }
   days=restoredDays?.length?sanitizeDays(migrateDaysToNodeIds(restoredDays,route)):[newDay(0)];
   $('dayCount').value=String(days.length);
+  if(!IS_PRODUCTION)try{const response=await fetch('data/geometry/xueshan-terrain-v1.json?v=v0728');if(!response.ok)throw Error();terrainData=await response.json()}catch(error){console.warn('雪山地形資料未載入')}
   bindGlobal();
   render(false);saveAutosave(false);checkpoint();
-  if(!IS_PRODUCTION&&$('itineraryGeometry'))import('./itinerary-map.js?v=v0727a')
+  if(!IS_PRODUCTION&&$('itineraryGeometry'))import('./itinerary-map.js?v=v0728')
     .then(({createItineraryMap})=>{itineraryMap=createItineraryMap({host:$('itineraryGeometry'),getDays:()=>days})})
     .catch(error=>{$('itineraryGeometry').textContent='地圖載入失敗：'+error.message});
 }
@@ -141,7 +143,7 @@ function bindGlobal(){
   $('exportBtn').onclick=async()=>{
     if(!days.some(d=>locs(d).length)){alert('請先建立行程');return}
     if(!checkMissing())return;
-    await exportExcel({route,days,datasetVersion:manifest.dataset_version,tripStartDate});
+    await exportExcel({route,days,datasetVersion:manifest.dataset_version,tripStartDate,terrainData});
   };
   $('copyBtn').onclick=copyTextItinerary;
   $('saveBtn').onclick=downloadPlan;
@@ -321,11 +323,12 @@ function renderDay(d,i){
   '<div class="node-picker-controls"><input class="node-search-inline" type="search" placeholder="搜尋節點" aria-label="搜尋當日要加入的節點" autocomplete="off" '+(route?'':'disabled')+'>'+selector+'</div><div class="node-action-controls"><button class="add-dest" '+(route?'':'disabled')+'>加入</button><button class="manual-start secondary compact-day-action">＋手動起點</button><button class="manual-end secondary compact-day-action">＋手動終點</button></div></div>'+
   (s.missing?'<div class="missing-warning">尚有 '+s.missing+' 個手動路段未填時間；後續時間無法計算。</div>':'')+
   '<div class="timeline">'+renderTimeline(d)+'</div>'+
-  '<div class="day-footer"><textarea class="day-note" placeholder="Day '+(i+1)+' 備註">'+esc(d.note||'')+'</textarea></div></article>';
+  '<div class="day-footer">'+(!IS_PRODUCTION?'<p class="terrain-summary">'+esc(formatTerrain(dayTerrain(d,terrainData),{partial:!!dayTerrain(d,terrainData)?.gaps.length}))+'</p>':'')+'<textarea class="day-note" placeholder="Day '+(i+1)+' 備註">'+esc(d.note||'')+'</textarea></div></article>';
 }
 
 function renderTimeline(d){
   const rows=buildTimeline(d).rows;
+  const terrain=dayTerrain(d,terrainData),terrainByItem=new Map((terrain?.features||[]).map(f=>[f.toItemId,f]));
   if(!rows.length)return '<div class="empty">'+(route?'直接選擇第一個行程點；它就是當日的起點。':'請先選擇上河圖群組。')+'</div>';
   let html='<div class="drop-zone" data-drop="0"></div>';
   rows.forEach(r=>{
@@ -356,7 +359,7 @@ function renderTimeline(d){
       '<div class="place">'+placeName+'</div>'+
       '<div class="arrival">'+r.arrival+'</div>'+
       '<div class="route-info">'+routeInfo+'</div>'+
-      '<input class="note-input" data-index="'+idx+'" placeholder="備註" value="'+esc(r.note||'')+'">'+
+      '<div class="terrain-note"><input class="note-input" data-index="'+idx+'" placeholder="備註" value="'+esc(r.note||'')+'">'+(!IS_PRODUCTION&&e?'<small>'+esc(formatTerrain(terrainByItem.get(r.id)))+'</small>':'')+'</div>'+
       menuHtml(idx,false,!!r.incoming,canDeleteItem(d,idx))+'</div>';
     }
     html+='<div class="drop-zone" data-drop="'+(idx+1)+'"></div>';

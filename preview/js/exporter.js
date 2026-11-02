@@ -1,3 +1,4 @@
+import {dayTerrain,formatTerrain} from './itinerary-geometry.js?v=v0728';
 import {buildTimeline,summarizeDay,edgeActual} from './planner.js';
 
 const placeLabel=r=>(r.isPeak?'⛰ ':'')+r.name+(r.hasWater?' 💧':'');
@@ -8,7 +9,7 @@ const dateForDay=(startDate,index)=>{
   return d.getFullYear()+'/'+String(d.getMonth()+1).padStart(2,'0')+'/'+String(d.getDate()).padStart(2,'0');
 };
 
-export async function exportExcel({route,days,datasetVersion,tripStartDate}){
+export async function exportExcel({route,days,datasetVersion,tripStartDate,terrainData=null}){
   if(!window.ExcelJS)throw new Error('ExcelJS 尚未載入');
   const wb=new ExcelJS.Workbook();wb.creator='Mountain Planner';wb.created=new Date();
   const ws=wb.addWorksheet('登山行程',{views:[{state:'frozen',ySplit:3}]});
@@ -16,12 +17,13 @@ export async function exportExcel({route,days,datasetVersion,tripStartDate}){
 
   ws.mergeCells('A1:G1');ws.getCell('A1').value=route.route_name+'｜登山行程規劃';
   ws.getCell('A1').font={name:'Microsoft JhengHei',bold:true,size:18};ws.getCell('A1').alignment={horizontal:'center',vertical:'middle'};ws.getRow(1).height=28;
-  ws.mergeCells('A2:G2');ws.getCell('A2').value='資料版本 '+datasetVersion+'｜來源：'+route.source.publisher;
+  ws.mergeCells('A2:G2');ws.getCell('A2').value='資料版本 '+datasetVersion+'｜來源：'+route.source.publisher+(terrainData?'｜地形：OSM／魯地圖 DEM 30m（估算） https://rudymap.tw/':'');
   ws.getCell('A2').font={name:'Microsoft JhengHei',size:10,color:{argb:'FF6C756E'}};ws.getCell('A2').alignment={horizontal:'center'};
 
   let rowNo=4;
   for(let i=0;i<days.length;i++){
     const day=days[i];if(!day.items.length)continue;
+    const terrain=dayTerrain(day,terrainData),terrainByItem=new Map((terrain?.features||[]).map(f=>[f.toItemId,f]));
     const tl=buildTimeline(day),sum=summarizeDay(day),date=dateForDay(tripStartDate,i);
 
     ws.mergeCells(rowNo,1,rowNo,7);
@@ -40,20 +42,21 @@ export async function exportExcel({route,days,datasetVersion,tripStartDate}){
       }else{
         const e=r.incoming,actual=e?edgeActual(e,day.coefficient):'';
         const k=e?.kind==='official'?Math.round((actual/e.officialMinutes)*100)/100:'';
-        ws.getRow(rowNo).values=[placeLabel(r),r.arrival,e?(actual===null?'':Number(actual)):'',e?.kind==='official'?Number(e.officialMinutes):'',k,r.note||'',e?.kind==='official'?'上河 '+route.route_id:''];
+        ws.getRow(rowNo).values=[placeLabel(r),r.arrival,e?(actual===null?'':Number(actual)):'',e?.kind==='official'?Number(e.officialMinutes):'',k,[r.note||'',terrainData&&e?formatTerrain(terrainByItem.get(r.id)):''].filter(Boolean).join('\n'),e?.kind==='official'?'上河 '+route.route_id:''];
         if(e?.kind==='official'){
           const c=ws.getCell(rowNo,7);c.value={text:'上河 '+route.route_id,hyperlink:route.source.image_url};c.font={name:'Microsoft JhengHei',color:{argb:'FF315D42'},underline:true,size:10};
         }
       }
-      const rr=ws.getRow(rowNo);
+      const rr=ws.getRow(rowNo);if(terrainData)rr.height=Math.max(42,16*String(rr.getCell(6).value||'').split('\n').reduce((n,line)=>n+Math.max(1,Math.ceil([...line].reduce((w,c)=>w+(c.charCodeAt(0)>255?2:1),0)/28)),0)+8);
       rr.eachCell((c,col)=>{c.font={...(c.font||{}),name:col===2||col===3||col===4||col===5?'Calibri':'Microsoft JhengHei'};c.alignment={vertical:'middle',horizontal:col>=2&&col<=5?'center':'left',wrapText:true}});
       rowNo++;
     }
 
     const sr=ws.getRow(rowNo);
-    sr.values=['每日統計','',excelDuration(sum.total),excelDuration(sum.official),sum.official&&!sum.missing?Math.round((sum.total/sum.official)*100)/100:'',(sum.missing?'未填路段 '+sum.missing+'　':'')+'行進 '+minutesHHMM(sum.movement)+'　休息 '+minutesHHMM(sum.rest),''];
+    sr.values=['每日統計','',excelDuration(sum.total),excelDuration(sum.official),sum.official&&!sum.missing?Math.round((sum.total/sum.official)*100)/100:'',(sum.missing?'未填路段 '+sum.missing+'　':'')+'行進 '+minutesHHMM(sum.movement)+'　休息 '+minutesHHMM(sum.rest)+(terrainData?'\n'+formatTerrain(terrain,{partial:!!terrain?.gaps.length}):''),''];
+    if(terrainData)sr.height=45;
     sr.getCell(3).numFmt='[h]:mm';sr.getCell(4).numFmt='[h]:mm';
-    sr.eachCell((c,col)=>{c.font={name:col===3||col===4||col===5?'Calibri':'Microsoft JhengHei',bold:true};c.alignment={horizontal:'center',vertical:'middle'};c.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FFF3F6F3'}}});
+    sr.eachCell((c,col)=>{c.font={name:col===3||col===4||col===5?'Calibri':'Microsoft JhengHei',bold:true};c.alignment={horizontal:'center',vertical:'middle',wrapText:true};c.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FFF3F6F3'}}});
     rowNo++;
 
     if(day.note){

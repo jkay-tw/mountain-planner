@@ -59,7 +59,8 @@ export function resolveItineraryGeometry(days,data){
       if(match){
         const {span,reverse,count}=match;
         const coordinates=reverse?[...span.coordinates].reverse():span.coordinates.map(p=>[...p]);
-        features.push({spanId:span.id,dayIndex,from:items[i].name,to:items[i+count-1].name,coordinates,distanceMeters:length(coordinates),reverse});
+        const profile=span.profile?(reverse?span.profile.map(([d,z])=>[span.distanceMeters-d,z]).reverse():span.profile.map(p=>[...p])):null;
+        features.push({profile,fromItemId:items[i].id,toItemId:items[i+count-1].id,spanId:span.id,dayIndex,from:items[i].name,to:items[i+count-1].name,coordinates,distanceMeters:length(coordinates),reverse});
         i+=count-1;
       }else{
         const a=items[i],b=items[i+1];
@@ -68,7 +69,8 @@ export function resolveItineraryGeometry(days,data){
       }
     }
     const distance=features.reduce((n,f)=>n+f.distanceMeters,0);
-    result.days.push({dayIndex,features,gaps,distanceMeters:distance});result.distanceMeters+=distance;
+    const metrics=terrainMetrics(features);
+    result.days.push({dayIndex,features,gaps,distanceMeters:distance,...metrics});result.distanceMeters+=distance;
   });
   return result;
 }
@@ -80,7 +82,7 @@ export function geometryToGpx(resolved,data,{allowPartial=false}={}){
   const desc=`${data.source.attribution}; ${data.source.license}; ${data.source.copyrightUrl}; 資料擷取 ${data.source.retrievedDate}。${warnings.join(' ')}`;
   let out='<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="Mountain Planner" xmlns="http://www.topografix.com/GPX/1/1">\n';
   out+=`<metadata><name>雪山行程 OSM 候選${resolved.gaps.length?'（部分路徑）':''}</name><desc>${xml(desc)}</desc><link href="${xml(data.source.copyrightUrl)}"><text>OpenStreetMap contributors — ODbL 1.0</text></link></metadata>\n`;
-  for(const n of resolved.waypoints)out+=`<wpt lat="${n.coordinate[1]}" lon="${n.coordinate[0]}"><name>${xml(n.name)}（候選）</name><desc>${xml(`${n.osmRef}；${n.coordinateMethod}；${n.note}`)}</desc></wpt>\n`;
+  for(const n of resolved.waypoints)out+=`<wpt lat="${n.coordinate[1]}" lon="${n.coordinate[0]}"><name>${xml(n.name)}（候選）</name><desc>${xml(`${n.osmRef||'使用者指定位置'}；${n.coordinateMethod}；${n.note}`)}</desc></wpt>\n`;
   for(const day of resolved.days){
     if(!day.features.length)continue;
     out+=`<trk><name>Day ${day.dayIndex+1}${day.gaps.length?'（部分路徑）':''}</name><desc>${xml(desc)}</desc>\n`;
@@ -89,4 +91,25 @@ export function geometryToGpx(resolved,data,{allowPartial=false}={}){
     out+='</trk>\n';
   }
   return out+'</gpx>\n';
+}
+
+export function terrainMetrics(features){
+  if(!features.length||features.some(f=>!f.profile||f.profile.some(p=>!Number.isFinite(p[1]))))return {ascentMeters:null,descentMeters:null};
+  let ascentMeters=0,descentMeters=0;
+  for(const f of features)for(let i=1;i<f.profile.length;i++){const dz=f.profile[i][1]-f.profile[i-1][1];ascentMeters+=Math.max(0,dz);descentMeters+=Math.max(0,-dz)}
+  return {ascentMeters,descentMeters};
+}
+export function formatTerrain(value,{partial=false}={}){
+  if(!value)return '地形資料未收錄';
+  const m=value.features?value: {...value,...terrainMetrics([value])};
+  return `${partial?'已知部分':'約'} ${(m.distanceMeters/1000).toFixed(2)} km · 上升 ${m.ascentMeters===null?'未取得':Math.round(m.ascentMeters)+' m'} · 下降 ${m.descentMeters===null?'未取得':Math.round(m.descentMeters)+' m'}`;
+}
+export function dayTerrain(day,data){return data?resolveItineraryGeometry([day],data).days[0]:null}
+export function renderTerrainProfile(day){
+  const features=day.features.filter(f=>f.profile?.length);
+  if(!features.length)return '<p>沒有可繪製的高度資料。</p>';
+  const zs=features.flatMap(f=>f.profile.map(p=>p[1])),lo=Math.floor(Math.min(...zs)/100)*100,hi=Math.max(lo+100,Math.ceil(Math.max(...zs)/100)*100),total=day.distanceMeters||1;
+  let offset=0,paths='';
+  for(const f of day.features){if(f.profile){const points=f.profile.map(([d,z])=>`${(60+700*(offset+d)/total).toFixed(1)},${(190-160*(z-lo)/(hi-lo)).toFixed(1)}`).join(' ');paths+=`<polyline points="${points}" fill="none" stroke="#246447" stroke-width="2"><title>${xml(f.from)} → ${xml(f.to)}</title></polyline>`}offset+=f.distanceMeters}
+  return `<svg viewBox="0 0 800 235" role="img" aria-label="Day ${day.dayIndex+1} 高度剖面圖"><path d="M60 30V190H760" fill="none" stroke="#89988c"/><g font-size="13" fill="#344b3d"><text x="5" y="35">${hi} m</text><text x="5" y="195">${lo} m</text><text x="60" y="218">0 km</text><text x="660" y="218">${(total/1000).toFixed(2)} km</text></g>${paths}</svg><p>${day.gaps.length?'橫軸為已知路徑累計距離；缺漏未計入，各段分開繪製。':'橫軸：沿山徑距離；縱軸：DEM 估算海拔。'}</p>`;
 }

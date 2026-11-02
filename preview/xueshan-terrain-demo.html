@@ -1,0 +1,20 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>雪山地形統計範例</title>
+<link rel="stylesheet" href="css/itinerary-map.css?v=v0728"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
+<style>body{font-family:system-ui,sans-serif;color:#253b31;background:#f5f7f3;margin:0}main{max-width:1050px;margin:auto;padding:20px}table{width:100%;border-collapse:collapse;background:white;margin:15px 0}td,th{padding:10px;border-bottom:1px solid #dce6dc;text-align:left}button,select{font:inherit;padding:8px;border:1px solid #b5c9b9;border-radius:7px;background:white}small{display:block;color:#53665a}h1{font-size:1.5rem}a{color:#246447}.scroll{overflow:auto}</style>
+<script src="https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"></script></head><body><main><a href="unified-editor.html?v=v0728">回行程編輯器</a><h1>雪山距離與高度統計範例</h1><p>固定範例不讀寫你的行程；數值為 OSM 與魯地圖 DEM 地形估算。</p><label for="scenario">行程方向 </label><select id="scenario"><option value="up">登山口至主峰</option><option value="down">主峰至登山口</option><option value="days">兩日往返</option></select> <button id="excel" disabled>匯出範例 Excel</button><div id="tables"></div><details id="mapPanel" class="geometry-panel" open></details></main>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
+<script type="module">
+import {resolveItineraryGeometry,formatTerrain} from './js/itinerary-geometry.js?v=v0728';
+import {createItineraryMap} from './js/itinerary-map.js?v=v0728';
+import {exportExcel} from './js/exporter.js?v=v0728';
+import {shortestPath} from './js/planner.js?v=v0726';
+import {addRouteIdentity} from './js/node-identity.js?v=v0726';
+const data=await (await fetch('data/geometry/xueshan-terrain-v1.json?v=v0728')).json();
+const route=addRouteIdentity(await (await fetch('data/routes/owner-reviewed/G04.json')).json());
+let days=[];const ids=['g04-045','shared:cw-v07-004','shared:cw-v07-074'];
+function make(a,b){const p=shortestPath(route,a,b);return {id:crypto.randomUUID(),startTime:'06:00',coefficient:1,note:'固定範例',items:[{id:crypto.randomUUID(),type:'location',nodeId:a,name:route.nodes.find(n=>n.id===a).name,note:'範例起點',incoming:null},...p.segments.map(s=>({id:crypto.randomUUID(),type:'location',nodeId:s.toId,name:s.to,note:'保留原有備註',incoming:{kind:'official',fromNodeId:s.fromId,toNodeId:s.toId,officialMinutes:s.minutes,actualMinutes:null}}))]}}
+const view=createItineraryMap({host:document.getElementById('mapPanel'),getDays:()=>days});
+function change(){const mode=document.getElementById('scenario').value;days=mode==='days'?[make(ids[0],ids[1]),make(ids[1],ids[2])]:[make(mode==='down'?ids[2]:ids[0],mode==='down'?ids[0]:ids[2])];if(mode==='days'){const back=make(ids[2],ids[0]);days[1].items.push(...back.items.slice(1))}const resolved=resolveItineraryGeometry(days,data);const host=document.getElementById('tables');host.replaceChildren();for(const d of resolved.days){const title=document.createElement('h2');title.textContent=`Day ${d.dayIndex+1}：${formatTerrain(d,{partial:!!d.gaps.length})}`;const div=document.createElement('div');div.className='scroll';const table=document.createElement('table');const head=table.insertRow();for(const s of ['路段','距離／上升／下降（估算）','備註']){const th=document.createElement('th');th.textContent=s;head.append(th)}for(const f of d.features){const r=table.insertRow();r.insertCell().textContent=f.from+' → '+f.to;r.insertCell().textContent=formatTerrain(f);r.insertCell().textContent='保留原有備註'}div.append(table);host.append(title,div)}view.update()}
+document.getElementById('scenario').onchange=change;change();document.getElementById('excel').disabled=false;
+document.getElementById('excel').onclick=()=>exportExcel({route,days,datasetVersion:data.id,terrainData:data});
+</script></body></html>
