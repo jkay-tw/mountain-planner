@@ -1,0 +1,523 @@
+{
+  "date": "2026-11-03",
+  "corrections": [
+    {
+      "nodeId": "g07-004",
+      "name": "大水池登山口",
+      "previousCoordinate": [
+        121.2988459,
+        24.3857286
+      ],
+      "previousSource": {
+        "id": "osm:node/1525419883",
+        "source": "osm",
+        "url": "https://www.openstreetmap.org/node/1525419883"
+      },
+      "coordinate": [
+        121.3446318125,
+        24.37262432460449
+      ],
+      "source": {
+        "id": "happyman-v08:g07-004",
+        "source": "happyman",
+        "url": "https://tile.happyman.idv.tw/~happyman/gpx_map/20240813_155542/Happyman.map",
+        "rawName": "028大水池登山口",
+        "fileSha256": "2fd98c7a9de74afafe628c08f5a59ba3a027b995f05a3fa2394a0d59cd425de5"
+      },
+      "reason": "原候選位於雪山登山口；北一段相鄰4.8K、勝光農家大水池群及具名028大水池登山口位於另一谷線。保留原ID，修正來源實體誤配。",
+      "evidence": [
+        {
+          "coordinate": [
+            121.3446318125,
+            24.37262432460449
+          ],
+          "tags": {
+            "ele": "2045",
+            "gpx": "wpt",
+            "name": "028大水池登山口",
+            "sym": "TrailHead"
+          }
+        },
+        {
+          "coordinate": [
+            121.3445518125,
+            24.37270732460449
+          ],
+          "tags": {
+            "ele": "2065",
+            "gpx": "wpt",
+            "name": "大水池",
+            "sym": "CitySmall"
+          }
+        },
+        {
+          "coordinate": [
+            121.3445518125,
+            24.37270732460449
+          ],
+          "tags": {
+            "ele": "2065",
+            "gpx": "wpt",
+            "name": "大水池",
+            "sym": "FlagBlue"
+          }
+        },
+        {
+          "coordinate": [
+            121.3445518125,
+            24.37270732460449
+          ],
+          "tags": {
+            "ele": "2066",
+            "gpx": "wpt",
+            "name": "大水池",
+            "sym": "WeedBed"
+          }
+        },
+        {
+          "coordinate": [
+            121.3445518125,
+            24.37270732460449
+          ],
+          "tags": {
+            "ele": "2065",
+            "gpx": "wpt",
+            "name": "大水池",
+            "sym": "FlagBlue"
+          }
+        },
+        {
+          "coordinate": [
+            121.3446108125,
+            24.372768324604493
+          ],
+          "tags": {
+            "gpx": "wpt",
+            "name": "大水池",
+            "sym": "CitySmall"
+          }
+        },
+        {
+          "coordinate": [
+            121.3445518125,
+            24.37270732460449
+          ],
+          "tags": {
+            "ele": "2066",
+            "gpx": "wpt",
+            "name": "大水池",
+            "sym": "NavaidGreen"
+          }
+        },
+        {
+          "coordinate": [
+            121.3445518125,
+            24.37270732460449
+          ],
+          "tags": {
+            "ele": "2066",
+            "gpx": "wpt",
+            "name": "大水池",
+            "sym": "WeedBed"
+          }
+        },
+        {
+          "coordinate": [
+            121.3445518125,
+            24.37270732460449
+          ],
+          "tags": {
+            "ele": "2066",
+            "gpx": "wpt",
+            "name": "大水池",
+            "sym": "WeedBed"
+          }
+        },
+        {
+          "coordinate": [
+            121.3445518125,
+            24.37270732460449
+          ],
+          "tags": {
+            "ele": "2032",
+            "gpx": "wpt",
+            "name": "勝光農家大水池",
+            "sym": "FlagBlue"
+          }
+        },
+        {
+          "coordinate": [
+            121.3445518125,
+            24.37270732460449
+          ],
+          "tags": {
+            "ele": "2066",
+            "gpx": "wpt",
+            "name": "002大水池",
+            "sym": "WaterSource"
+          }
+        },
+        {
+          "coordinate": [
+            121.3445518125,
+            24.37270732460449
+          ],
+          "tags": {
+            "ele": "2032",
+            "gpx": "wpt",
+            "name": "大水池",
+            "sym": "WeedBed"
+          }
+        },
+        {
+          "coordinate": [
+            121.3445518125,
+            24.372708324604492
+          ],
+          "tags": {
+            "ele": "2066",
+            "gpx": "wpt",
+            "name": "大水池",
+            "sym": "CitySmall"
+          }
+        },
+        {
+          "coordinate": [
+            121.3446108125,
+            24.372768324604493
+          ],
+          "tags": {
+            "gpx": "wpt",
+            "name": "大水池",
+            "sym": "CitySmall"
+          }
+        },
+        {
+          "coordinate": [
+            121.3445518125,
+            24.37270732460449
+          ],
+          "tags": {
+            "ele": "2066",
+            "gpx": "wpt",
+            "name": "大水池",
+            "sym": "WeedBed"
+          }
+        },
+        {
+          "coordinate": [
+            121.3445518125,
+            24.37270732460449
+          ],
+          "tags": {
+            "ele": "2066",
+            "gpx": "wpt",
+            "name": "大水池",
+            "sym": "CitySmall"
+          }
+        },
+        {
+          "coordinate": [
+            121.3445518125,
+            24.37270732460449
+          ],
+          "tags": {
+            "ele": "2066",
+            "gpx": "wpt",
+            "name": "大水池1",
+            "sym": "WaterSource"
+          }
+        }
+      ],
+      "verificationStatus": "source-role-planning-correction-not-field-survey"
+    },
+    {
+      "nodeId": "shared:cw-v07-031",
+      "name": "嘉明湖岔路口",
+      "previousCoordinate": [
+        121.05468328125,
+        23.297035124188888
+      ],
+      "previousSource": {
+        "id": "happyman:d9e9ef742adddb963575",
+        "source": "happyman",
+        "url": "https://tile.happyman.idv.tw/~happyman/gpx_map/20240813_155542/Happyman.map"
+      },
+      "coordinate": [
+        121.032419625,
+        23.296294124188886
+      ],
+      "source": {
+        "id": "happyman-v08:shared:cw-v07-031",
+        "source": "happyman",
+        "url": "https://tile.happyman.idv.tw/~happyman/gpx_map/20240813_155542/Happyman.map",
+        "rawName": "新嘉四叉路",
+        "fileSha256": "2fd98c7a9de74afafe628c08f5a59ba3a027b995f05a3fa2394a0d59cd425de5"
+      },
+      "reason": "原布新嘉明湖岔在新康線東側；嘉明湖岔路口相鄰三叉山、三叉山登山口與嘉明湖，對應新嘉四叉路/四叉路群，不是布新岔。",
+      "evidence": [
+        {
+          "coordinate": [
+            121.032400625,
+            23.29628312418889
+          ],
+          "tags": {
+            "ele": "3398",
+            "gpx": "wpt",
+            "name": "018-四叉路",
+            "sym": "Crossing"
+          }
+        },
+        {
+          "coordinate": [
+            121.032455625,
+            23.296311124188886
+          ],
+          "tags": {
+            "ele": "3408",
+            "gpx": "wpt",
+            "name": "新康岔路",
+            "sym": "FlagGreen"
+          }
+        },
+        {
+          "coordinate": [
+            121.032417625,
+            23.296364124188887
+          ],
+          "tags": {
+            "ele": "3390",
+            "gpx": "wpt",
+            "name": "013新嘉四叉路",
+            "sym": "Crossing"
+          }
+        },
+        {
+          "coordinate": [
+            121.032419625,
+            23.296294124188886
+          ],
+          "tags": {
+            "ele": "3394",
+            "gpx": "wpt",
+            "name": "017 新嘉四叉路",
+            "sym": "Crossing"
+          }
+        },
+        {
+          "coordinate": [
+            121.032162625,
+            23.296434124188888
+          ],
+          "tags": {
+            "ele": "3407",
+            "gpx": "wpt",
+            "name": "新康山 叉",
+            "sym": "FishingArea"
+          }
+        },
+        {
+          "coordinate": [
+            121.032419625,
+            23.296294124188886
+          ],
+          "tags": {
+            "ele": "3394",
+            "gpx": "wpt",
+            "name": "新嘉四叉路",
+            "sym": "Crossing"
+          }
+        },
+        {
+          "coordinate": [
+            121.032429625,
+            23.29626912418889
+          ],
+          "tags": {
+            "ele": "3395",
+            "gpx": "wpt",
+            "name": "四叉路",
+            "sym": "CitySmall"
+          }
+        },
+        {
+          "coordinate": [
+            121.032400625,
+            23.29628312418889
+          ],
+          "tags": {
+            "ele": "3398",
+            "gpx": "wpt",
+            "name": "064 四叉路",
+            "sym": "Crossing"
+          }
+        },
+        {
+          "coordinate": [
+            121.032437625,
+            23.296271124188888
+          ],
+          "tags": {
+            "ele": "3403",
+            "gpx": "wpt",
+            "name": "四叉口",
+            "sym": "FlagRed"
+          }
+        }
+      ],
+      "verificationStatus": "source-role-planning-correction-not-field-survey"
+    },
+    {
+      "nodeId": "node:3bf4ec2f689a3b5c4930",
+      "name": "烏瓦拉鼻溪",
+      "previousCoordinate": [
+        120.99246209638554,
+        23.579178746987953
+      ],
+      "previousSource": {
+        "id": "osm:way/528607741",
+        "source": "osm",
+        "url": "https://www.openstreetmap.org/way/528607741"
+      },
+      "coordinate": [
+        121.0017813125,
+        23.580904032644106
+      ],
+      "source": {
+        "id": "happyman-v08:node:3bf4ec2f689a3b5c4930",
+        "source": "happyman",
+        "url": "https://tile.happyman.idv.tw/~happyman/gpx_map/20240813_155542/Happyman.map",
+        "rawName": "烏瓦拉鼻溪 午餐",
+        "fileSha256": "2fd98c7a9de74afafe628c08f5a59ba3a027b995f05a3fa2394a0d59cd425de5"
+      },
+      "reason": "原位置為整條溪流OSM way各頂點平均，並非越溪點。採用溪流實地行跡中的具名休息/越溪航點，鄰近多筆同溪營地標記；不改動溪流名稱或步行時間。",
+      "evidence": [
+        {
+          "coordinate": [
+            121.0017813125,
+            23.580904032644106
+          ],
+          "tags": {
+            "ele": "1631",
+            "gpx": "wpt",
+            "name": "烏瓦拉鼻溪 午餐",
+            "sym": "Waypoint"
+          }
+        }
+      ],
+      "verificationStatus": "source-role-planning-correction-not-field-survey"
+    },
+    {
+      "nodeId": "node:351f4b260c8941f8d7e4",
+      "name": "玉林橋大崩壁",
+      "previousCoordinate": [
+        121.22280986923077,
+        23.433125303846154
+      ],
+      "previousSource": {
+        "id": "osm:way/939052597",
+        "source": "osm",
+        "url": "https://www.openstreetmap.org/way/939052597"
+      },
+      "coordinate": [
+        121.22854253125,
+        23.433420931121763
+      ],
+      "source": {
+        "id": "happyman-v08:node:351f4b260c8941f8d7e4",
+        "source": "happyman",
+        "url": "https://tile.happyman.idv.tw/~happyman/gpx_map/20240813_155542/Happyman.map",
+        "rawName": "玉林橋崩壁頂",
+        "fileSha256": "2fd98c7a9de74afafe628c08f5a59ba3a027b995f05a3fa2394a0d59cd425de5"
+      },
+      "reason": "原位置為整片OSM崩壁多邊形頂點平均，並非行程可達點。採用Happyman具名崩壁頂航點作為該崩壁行程節點的規劃標示；不代表崩壁整體幾何中心。",
+      "evidence": [
+        {
+          "coordinate": [
+            121.22854253125,
+            23.433420931121763
+          ],
+          "tags": {
+            "ele": "1470",
+            "gpx": "wpt",
+            "name": "玉林橋崩壁頂",
+            "sym": "DangerArea"
+          }
+        }
+      ],
+      "verificationStatus": "source-role-planning-correction-not-field-survey"
+    },
+    {
+      "nodeId": "node:d69a18f19c7940c3ebf4",
+      "name": "屏風山新登山口",
+      "previousCoordinate": [
+        121.2994225,
+        24.174112428521234
+      ],
+      "previousSource": {
+        "id": "happyman:1388cdbc561ba39671b1",
+        "source": "happyman",
+        "url": "https://tile.happyman.idv.tw/~happyman/gpx_map/20240813_155542/Happyman.map"
+      },
+      "coordinate": [
+        121.31771913729608,
+        24.179507000371814
+      ],
+      "source": {
+        "id": "gpx-v08:node:d69a18f19c7940c3ebf4",
+        "source": "community-gpx",
+        "url": "https://hiking.biji.co/index.php?act=gpx_detail&id=443659&q=trail",
+        "rawName": "111.2K",
+        "fileSha256": "17adb9b27179a528e8f6e0caa6305f226f400bf77ecb6c5e15c76b6dc728809f"
+      },
+      "reason": "原Happyman「屏風新路登」位於石門山側，與台8線111.2K新登山口不同。改採具名111.2K航點，來源有從大禹嶺到新登山口的連續道路行跡；排除舊大禹嶺登山口。",
+      "evidence": [
+        {
+          "coordinate": [
+            121.31771913729608,
+            24.179507000371814
+          ],
+          "rawName": "111.2K",
+          "url": "https://hiking.biji.co/index.php?act=gpx_detail&id=443659&q=trail"
+        }
+      ],
+      "verificationStatus": "source-role-planning-correction-not-field-survey"
+    },
+    {
+      "nodeId": "node:1c8dd60e5be898d71627",
+      "name": "果園登山口",
+      "previousCoordinate": [
+        121.27963384375,
+        24.226256664976354
+      ],
+      "previousSource": {
+        "id": "happyman:b1e18a9c67b414c196c3",
+        "source": "happyman",
+        "url": "https://tile.happyman.idv.tw/~happyman/gpx_map/20240813_155542/Happyman.map"
+      },
+      "coordinate": [
+        121.299965,
+        24.21259
+      ],
+      "source": {
+        "id": "gpx-v08:node:1c8dd60e5be898d71627",
+        "source": "community-gpx",
+        "url": "https://hiking.biji.co/index.php?act=gpx_detail&id=1934710&q=trail",
+        "rawName": "001 武法奈尾山天巒池登山口",
+        "fileSha256": "5004e689d81722bb2821b4f197227f048247dbc14d46be50c451561c5fe0042a"
+      },
+      "reason": "原果園登山口位於東閂岡/97.5K一側，同名誤配。依松泉崗與天巒池相鄰路線、GPX具名登山口及Happyman「果園道路口」一致位置，更正為武法奈尾山/天巒池的果園入口。",
+      "evidence": [
+        {
+          "coordinate": [
+            121.299965,
+            24.21259
+          ],
+          "rawName": "001 武法奈尾山天巒池登山口",
+          "url": "https://hiking.biji.co/index.php?act=gpx_detail&id=1934710&q=trail"
+        }
+      ],
+      "verificationStatus": "source-role-planning-correction-not-field-survey"
+    }
+  ]
+}

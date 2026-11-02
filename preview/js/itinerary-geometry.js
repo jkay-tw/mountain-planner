@@ -14,7 +14,7 @@ export function validateGeometry(data){
   for(const n of data.nodes)if(n.coordinate&&!valid(n.coordinate))throw Error('節點座標無效。');
   for(const s of data.spans){
     const a=data.nodes.find(n=>n.nodeId===s.fromId),b=data.nodes.find(n=>n.nodeId===s.toId);
-    if(!a||!b||s.coordinates?.length<2||!s.coordinates?.every(valid)||!same(a.anchor,s.coordinates[0])||!same(b.anchor,s.coordinates.at(-1))||(s.viaNodeIds||[]).some(id=>!ids.has(id)))throw Error('路段線形或錨點無效。');
+    if(!a||!b||s.coordinates?.length<2||!s.coordinates?.every(valid)||!same(s.fromAnchor||a.anchor,s.coordinates[0])||!same(s.toAnchor||b.anchor,s.coordinates.at(-1))||(s.viaNodeIds||[]).some(id=>!ids.has(id)))throw Error('路段線形或錨點無效。');
   }
   return data;
 }
@@ -48,7 +48,8 @@ export function resolveItineraryGeometry(days,data){
           const sequences=full.length>2?[full,[full[0],full.at(-1)]]:[full];
           for(const sequence of sequences){
             const slice=items.slice(i,i+sequence.length);
-            if(slice.length===sequence.length&&slice.every((x,j)=>x.nodeId===sequence[j])&&officialChain(slice)){
+            const ownerChain=span.ownerConfirmed&&slice.length===2&&slice[1].incoming?.kind==='manual'&&slice[1].incoming.connectionStatus==='owner-confirmed'&&slice[1].incoming.fromNodeId===slice[0].nodeId&&slice[1].incoming.toNodeId===slice[1].nodeId;
+            if(slice.length===sequence.length&&slice.every((x,j)=>x.nodeId===sequence[j])&&(officialChain(slice)||ownerChain)){
               match={span,reverse,count:sequence.length};break;
             }
           }
@@ -60,11 +61,13 @@ export function resolveItineraryGeometry(days,data){
         const {span,reverse,count}=match;
         const coordinates=reverse?[...span.coordinates].reverse():span.coordinates.map(p=>[...p]);
         const profile=span.profile?(reverse?span.profile.map(([d,z])=>[span.distanceMeters-d,z]).reverse():span.profile.map(p=>[...p])):null;
-        features.push({profile,fromItemId:items[i].id,toItemId:items[i+count-1].id,spanId:span.id,dayIndex,from:items[i].name,to:items[i+count-1].name,coordinates,distanceMeters:length(coordinates),reverse});
+        features.push({profile,sourceName:span.sourceName||'OpenStreetMap',sourceUrl:span.sourceUrl||data.source.url,fromItemId:items[i].id,toItemId:items[i+count-1].id,spanId:span.id,dayIndex,from:items[i].name,to:items[i+count-1].name,coordinates,distanceMeters:length(coordinates),reverse});
         i+=count-1;
       }else{
         const a=items[i],b=items[i+1];
-        const gap={dayIndex,from:a.name,to:b.name,reason:!officialChain([a,b])?'手動、車行或非已連通步行路段':'缺少可對應的線形／端點位置未確認'};
+        const pair=(data.coverage?.routeDataGaps||[]).find(g=>(g.fromId===a.nodeId&&g.toId===b.nodeId)||(g.toId===a.nodeId&&g.fromId===b.nodeId));
+        const labels={'missing-coordinate':'端點座標待補','no-OSM-anchor-within-120m':'附近尚無可對應步道','disconnected-OSM-topology':'步道圖資未連通','OSM-route-detour-needs-review':'來源路徑繞行過遠，待核對','different-nodes-share-one-anchor-needs-review':'不同節點對應同一錨點，待核對','route-DEM-unavailable':'沿線高程資料缺失'};
+        const gap={dayIndex,from:a.name,to:b.name,reason:labels[pair?.reason]||(!officialChain([a,b])?'手動、車行或非已連通步行路段':'缺少可對應的線形／端點位置未確認')};
         gaps.push(gap);result.gaps.push(gap);i++;
       }
     }
@@ -75,19 +78,32 @@ export function resolveItineraryGeometry(days,data){
   return result;
 }
 
-export function geometryToGpx(resolved,data,{allowPartial=false}={}){
+export function geometryToGpx(resolved,data,{allowPartial=false,allowWaypointsOnly=false}={}){
   if(resolved.gaps.length&&!allowPartial)throw Error('行程含線形缺漏，請明確選擇匯出部分路徑。');
-  if(!resolved.days.some(d=>d.features.length))throw Error('目前沒有可匯出的候選路徑。');
-  const warnings=[...data.notes,...resolved.unlocated.map(n=>`${n.name}：未定位，未輸出該路點。`),...resolved.gaps.map(g=>`Day ${g.dayIndex+1} 缺漏 ${g.from} → ${g.to}：${g.reason}`)];
+  if(!resolved.days.some(d=>d.features.length)&&!(allowWaypointsOnly&&resolved.waypoints.length))throw Error('目前沒有可匯出的候選路徑。');
+  const warnings=[...(data.notes||[]),...resolved.unlocated.map(n=>`${n.name}：未定位，未輸出該路點。`),...resolved.gaps.map(g=>`Day ${g.dayIndex+1} 缺漏 ${g.from} → ${g.to}：${g.reason}`)];
   const desc=`${data.source.attribution}; ${data.source.license}; ${data.source.copyrightUrl}; 資料擷取 ${data.source.retrievedDate}。${warnings.join(' ')}`;
+  const extra=(data.additionalSources||[]).map(s=>`${s.name}；${s.url}；${s.notice}`).join(' ');
   let out='<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="Mountain Planner" xmlns="http://www.topografix.com/GPX/1/1">\n';
-  out+=`<metadata><name>登山行程 OSM 候選${resolved.gaps.length?'（部分路徑）':''}</name><desc>${xml(desc)}</desc><link href="${xml(data.source.copyrightUrl)}"><text>OpenStreetMap contributors — ODbL 1.0</text></link></metadata>\n`;
-  for(const n of resolved.waypoints)out+=`<wpt lat="${n.coordinate[1]}" lon="${n.coordinate[0]}"><name>${xml(n.name)}（候選）</name><desc>${xml([n.coordinateSource?.url||n.osmRef||'使用者指定位置',n.coordinateMethod,n.note].filter(Boolean).join('；'))}</desc></wpt>\n`;
+  out+=`<metadata><name>登山行程參考路徑${resolved.gaps.length?'（部分資料）':''}</name><desc>${xml(desc+extra)}</desc><link href="${xml(data.source.copyrightUrl)}"><text>OpenStreetMap contributors — ODbL 1.0</text></link></metadata>\n`;
+  for(const n of resolved.waypoints)out+=`<wpt lat="${n.coordinate[1]}" lon="${n.coordinate[0]}">${Number.isFinite(n.elevationMeters)?`<ele>${n.elevationMeters}</ele>`:''}<name>${xml(n.name)}（候選）</name><desc>${xml([n.coordinateSource?.url||n.osmRef||'使用者指定位置',n.coordinateMethod,n.note].filter(Boolean).join('；'))}</desc></wpt>\n`;
   for(const day of resolved.days){
     if(!day.features.length)continue;
-    out+=`<trk><name>Day ${day.dayIndex+1}${day.gaps.length?'（部分路徑）':''}</name><desc>${xml(desc)}</desc>\n`;
+    out+=`<trk><name>Day ${day.dayIndex+1}${day.gaps.length?'（部分路徑）':''}</name><desc>${xml(desc+' 路段來源：'+[...new Set(day.features.map(f=>f.sourceName+' '+(f.sourceUrl||'')))].join('；'))}</desc>\n`;
     // Each source span is a separate segment. Gaps and days never gain bridges.
-    for(const f of day.features)out+='<trkseg>\n'+f.coordinates.map(p=>`<trkpt lat="${p[1]}" lon="${p[0]}"/>`).join('\n')+'\n</trkseg>\n';
+    for(const f of day.features){
+      let walked=0,pi=0;
+      out+='<trkseg>\n'+f.coordinates.map((p,i)=>{
+        if(i)walked+=distanceMeters(f.coordinates[i-1],p);
+        let z=null;
+        if(f.profile?.length){
+          while(pi<f.profile.length-2&&f.profile[pi+1][0]<walked)pi++;
+          const [da,za]=f.profile[pi],[db,zb]=f.profile[Math.min(pi+1,f.profile.length-1)];
+          z=za+(zb-za)*(db===da?0:Math.max(0,Math.min(1,(walked-da)/(db-da))));
+        }
+        return `<trkpt lat="${p[1]}" lon="${p[0]}">${Number.isFinite(z)?`<ele>${z.toFixed(1)}</ele>`:''}</trkpt>`;
+      }).join('\n')+'\n</trkseg>\n';
+    }
     out+='</trk>\n';
   }
   return out+'</gpx>\n';
