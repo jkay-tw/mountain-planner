@@ -50,12 +50,13 @@ export function canonicalReviewedId(id,name){
 }
 export const acceptsReviewedName=(node,name)=>node?.name===name||(node?.aliases||[]).includes(name);
 // Retired preview-only catalog entry: retain user itinerary snapshots without reintroducing a selectable graph node.
-export const isRetiredPreviewNode=item=>item?.nodeId==='g07-043'&&item?.name==='黑水塘';
+const retiredPreviewNames={'g07-043':'黑水塘','node:5432a0accfa0ca8738af':'鐵杉營地','node:c286f1b8b14919f6bc37':'登山口','node:2073e5ef3ab7ef6fb2f1':'凹谷營地'};
+export const isRetiredPreviewNode=item=>!!item&&retiredPreviewNames[item.nodeId]===item.name;
 export function migrateDaysToNodeIds(rawDays,route){
   const registry=route?buildNodeRegistry(route):null;
   return rawDays.map(day=>({...day,items:day.items.map(item=>{
     if(item.type!=='location')return {...item};
-    if(['GLOBAL-PREVIEW','G07'].includes(route?.route_id)&&isRetiredPreviewNode(item))return {...item,catalogStatus:'retired'};
+    if(['GLOBAL-PREVIEW','G07','G19'].includes(route?.route_id)&&isRetiredPreviewNode(item))return {...item,catalogStatus:'retired'};
     const mappedId=canonicalReviewedId(item.nodeId,item.name);
     const byId=registry?.byId.get(mappedId);
     if(!item.nodeId&&registry?.ambiguousNames?.has(item.name))throw new Error('Ambiguous node name requires nodeId: '+item.name);
