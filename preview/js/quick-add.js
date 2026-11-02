@@ -1,4 +1,4 @@
-import {expandReviewedOverlaps} from './planner.js?v=v0730';
+import {expandReviewedOverlaps} from './planner.js?v=v0731';
 export function quickAddCandidates(route,startId){
  if(!route||route.routingEnabled===false||!route.nodes?.some(n=>n.id===startId))return [];
  const eligible=route.segments.filter(s=>s.routingEnabled!==false&&s.travelMode==='walking'&&s.verificationStatus==='verified');

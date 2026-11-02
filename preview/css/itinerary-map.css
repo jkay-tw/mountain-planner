@@ -15,4 +15,4 @@
 
 @media(max-width:900px){.it-row>.arrival{text-align:right}.it-row>.terrain-cell{text-align:right}}
 
-.quick-direction-help{display:block;color:#637969;margin-top:4px}.quick-node b{color:#315e43}.profile-grid text{stroke:none}.profile-node-table{overflow:auto;max-width:100%;margin:10px 0}.profile-node-table table{width:100%;border-collapse:collapse;font-size:12px}.profile-node-table th,.profile-node-table td{padding:6px 8px;border:1px solid #dce6dc;text-align:left}.profile-node-table th{background:#eef4ed}.profile-node-table td:not(:first-child){text-align:right}
+.profile-grid text{stroke:none}.profile-chart-scroll{max-width:100%;overflow-x:auto}.profile-chart-scroll svg{display:block;width:100%;min-width:720px;max-height:none}.profile-node-label text{stroke:none}
