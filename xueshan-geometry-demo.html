@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>雪山行程線形範例｜Mountain Planner</title>
-<link rel="stylesheet" href="css/itinerary-map.css?v=v0727">
+<link rel="stylesheet" href="css/itinerary-map.css?v=v0727a">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
 <style>body{font-family:system-ui,sans-serif;background:#f5f7f3;color:#253b31;margin:0}main{max-width:1050px;margin:auto;padding:20px}h1{font-size:1.5rem}button,select{font:inherit;padding:8px 12px;border:1px solid #b5c9b9;border-radius:7px;background:white;color:#254936}a{color:#246447}p{line-height:1.6}</style>
 </head><body><main>
@@ -14,7 +14,7 @@
 </main>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
 <script type="module">
-import {createItineraryMap} from './js/itinerary-map.js?v=v0727';
+import {createItineraryMap} from './js/itinerary-map.js?v=v0727a';
 const ids=['g04-045','shared:cw-v07-003','g04-027','g04-044','shared:cw-v07-004','g04-039','shared:cw-v07-074'];
 const names=['雪山登山口','七卡山莊','哭坡觀景台','雪山東峰','三六九山莊','圈谷底部','雪山主峰'];
 const make=indices=>({items:indices.map((n,i)=>({type:'location',name:names[n],nodeId:ids[n],incoming:i?{kind:'official',fromNodeId:ids[indices[i-1]],toNodeId:ids[n]}:null}))});
