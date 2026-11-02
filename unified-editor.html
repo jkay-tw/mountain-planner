@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mountain Planner 整合預覽</title>
   <link rel="stylesheet" href="css/style.css?v=v0724" />
+  <link rel="stylesheet" href="css/itinerary-map.css?v=v0727" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"></script>
 </head>
 <body>
@@ -73,6 +75,8 @@
       <span>行程會自動暫存在此瀏覽器；正式行程請以官方原圖再次核對。</span>
     </div>
 
+    <details id="itineraryGeometry" class="geometry-panel"></details>
+
     <section id="daysContainer" class="days"></section>
   </main>
 
@@ -81,6 +85,7 @@
     <button id="floatRedoBtn" class="secondary" disabled title="重做">↷</button>
   </div>
 
-  <script type="module" src="js/unified-editor.js?v=v0726"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
+  <script type="module" src="js/unified-editor.js?v=v0727"></script>
 </body>
 </html>

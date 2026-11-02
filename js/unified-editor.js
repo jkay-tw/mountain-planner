@@ -11,10 +11,11 @@ import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-
 const $=id=>document.getElementById(id);
 const IS_PRODUCTION=document.body.dataset.mode==='production';
 const STORAGE_KEY=IS_PRODUCTION?'mountain-planner.global-autosave.v1':'mountain-planner.unified-preview-autosave.v0711';
-const APP_VERSION=IS_PRODUCTION?'v0.7.25':'v0.7.26 Unified Preview';
+const APP_VERSION=IS_PRODUCTION?'v0.7.25':'v0.7.27 Unified Preview';
 const COLLAPSE_KEY=IS_PRODUCTION?'mountain-planner.collapsed-days.v1':'mountain-planner.unified-preview-collapsed.v0711';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',scope='';
+let itineraryMap=null;
 let snapshots=[],at=-1,restoring=false;
 function checkpoint(){if(restoring)return;const state=JSON.stringify({routeId:route?.route_id||null,scope,tripStartDate,days});if(state===snapshots[at])return;snapshots=snapshots.slice(0,at+1);snapshots.push(state);if(snapshots.length>50)snapshots.shift();at=snapshots.length-1;buttons()}
 function buttons(){
@@ -58,6 +59,9 @@ async function init(){
   $('dayCount').value=String(days.length);
   bindGlobal();
   render(false);saveAutosave(false);checkpoint();
+  if(!IS_PRODUCTION&&$('itineraryGeometry'))import('./itinerary-map.js?v=v0727')
+    .then(({createItineraryMap})=>{itineraryMap=createItineraryMap({host:$('itineraryGeometry'),getDays:()=>days})})
+    .catch(error=>{$('itineraryGeometry').textContent='地圖載入失敗：'+error.message});
 }
 
 async function loadGlobalGraph(){
@@ -298,6 +302,7 @@ function opts(){
 function render(persist=true){
   $('daysContainer').innerHTML=days.map(renderDay).join('');
   bindDays();
+  itineraryMap?.update();
   if(persist){saveAutosave();checkpoint()}
 }
 
