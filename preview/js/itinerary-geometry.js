@@ -109,7 +109,7 @@ export function renderTerrainProfile(day){
   const features=day.features.filter(f=>f.profile?.length);
   if(!features.length)return '<p>沒有可繪製的高度資料。</p>';
   const zs=features.flatMap(f=>f.profile.map(p=>p[1])),lo=Math.floor(Math.min(...zs)/100)*100,hi=Math.max(lo+100,Math.ceil(Math.max(...zs)/100)*100),total=day.distanceMeters||1;
-  let offset=0,paths='';
-  for(const f of day.features){if(f.profile){const points=f.profile.map(([d,z])=>`${(60+700*(offset+d)/total).toFixed(1)},${(190-160*(z-lo)/(hi-lo)).toFixed(1)}`).join(' ');paths+=`<polyline points="${points}" fill="none" stroke="#246447" stroke-width="2"><title>${xml(f.from)} → ${xml(f.to)}</title></polyline>`}offset+=f.distanceMeters}
-  return `<svg viewBox="0 0 800 235" role="img" aria-label="Day ${day.dayIndex+1} 高度剖面圖"><path d="M60 30V190H760" fill="none" stroke="#89988c"/><g font-size="13" fill="#344b3d"><text x="5" y="35">${hi} m</text><text x="5" y="195">${lo} m</text><text x="60" y="218">0 km</text><text x="660" y="218">${(total/1000).toFixed(2)} km</text></g>${paths}</svg><p>${day.gaps.length?'橫軸為已知路徑累計距離；缺漏未計入，各段分開繪製。':'橫軸：沿山徑距離；縱軸：DEM 估算海拔。'}</p>`;
+  let offset=0,paths='',labels='';
+  for(const f of day.features){if(f.profile){const points=f.profile.map(([d,z])=>`${(60+700*(offset+d)/total).toFixed(1)},${(190-160*(z-lo)/(hi-lo)).toFixed(1)}`).join(' ');paths+=`<polyline points="${points}" fill="none" stroke="#246447" stroke-width="2"><title>${xml(f.from)} → ${xml(f.to)}</title></polyline>`}offset+=f.distanceMeters;if(f.profile){const x=(60+700*offset/total).toFixed(1);labels+=`<text x="${x}" y="235" transform="rotate(-30 ${x} 235)" font-size="11" text-anchor="end" fill="#344b3d">${xml(f.to)}</text>`}}
+  return `<svg viewBox="0 0 800 290" role="img" aria-label="Day ${day.dayIndex+1} 高度剖面圖"><path d="M60 30V190H760" fill="none" stroke="#89988c"/><g font-size="13" fill="#344b3d"><text x="5" y="35">${hi} m</text><text x="5" y="195">${lo} m</text><text x="60" y="218">0 km</text><text x="660" y="218">${(total/1000).toFixed(2)} km</text></g>${paths}${labels}</svg><p>${day.gaps.length?'橫軸為已知路徑累計距離；缺漏未計入，各段分開繪製。':'橫軸：沿山徑距離；縱軸：DEM 估算海拔。'}</p>`;
 }
