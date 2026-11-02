@@ -1118,6 +1118,11 @@
           "confirmedBy": "owner",
           "basis": "Owner-confirmed endpoint or existing reviewed canonical display alias; not a new claim about literal chart text",
           "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+        },
+        {
+          "name": "神池營地",
+          "confirmedBy": "owner",
+          "basis": "2026-11-03 explicit instruction: display chart 第一水源 as 神池營地; catalog did not previously contain 第一水源. Other 水源 identities unchanged."
         }
       ]
     },

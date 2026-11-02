@@ -81,8 +81,8 @@ export function geometryToGpx(resolved,data,{allowPartial=false}={}){
   const warnings=[...data.notes,...resolved.unlocated.map(n=>`${n.name}：未定位，未輸出該路點。`),...resolved.gaps.map(g=>`Day ${g.dayIndex+1} 缺漏 ${g.from} → ${g.to}：${g.reason}`)];
   const desc=`${data.source.attribution}; ${data.source.license}; ${data.source.copyrightUrl}; 資料擷取 ${data.source.retrievedDate}。${warnings.join(' ')}`;
   let out='<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="Mountain Planner" xmlns="http://www.topografix.com/GPX/1/1">\n';
-  out+=`<metadata><name>雪山行程 OSM 候選${resolved.gaps.length?'（部分路徑）':''}</name><desc>${xml(desc)}</desc><link href="${xml(data.source.copyrightUrl)}"><text>OpenStreetMap contributors — ODbL 1.0</text></link></metadata>\n`;
-  for(const n of resolved.waypoints)out+=`<wpt lat="${n.coordinate[1]}" lon="${n.coordinate[0]}"><name>${xml(n.name)}（候選）</name><desc>${xml(`${n.osmRef||'使用者指定位置'}；${n.coordinateMethod}；${n.note}`)}</desc></wpt>\n`;
+  out+=`<metadata><name>登山行程 OSM 候選${resolved.gaps.length?'（部分路徑）':''}</name><desc>${xml(desc)}</desc><link href="${xml(data.source.copyrightUrl)}"><text>OpenStreetMap contributors — ODbL 1.0</text></link></metadata>\n`;
+  for(const n of resolved.waypoints)out+=`<wpt lat="${n.coordinate[1]}" lon="${n.coordinate[0]}"><name>${xml(n.name)}（候選）</name><desc>${xml([n.coordinateSource?.url||n.osmRef||'使用者指定位置',n.coordinateMethod,n.note].filter(Boolean).join('；'))}</desc></wpt>\n`;
   for(const day of resolved.days){
     if(!day.features.length)continue;
     out+=`<trk><name>Day ${day.dayIndex+1}${day.gaps.length?'（部分路徑）':''}</name><desc>${xml(desc)}</desc>\n`;

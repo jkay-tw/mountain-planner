@@ -1,21 +1,21 @@
 import {makeDemoDays} from './demo-itinerary.js?v=v0731';
-import {directionalQuickAdd,appendQuickPath} from './quick-add.js?v=v0731';
-import {dayTerrain,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=v0731';
+import {directionalQuickAdd,appendQuickPath} from './quick-add.js?v=v0733';
+import {dayTerrain,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=v0733';
 import {createTabAutosave} from './tab-autosave.js?v=v0725';
 import {loadManifest,loadRoute} from './data-loader.js';
-import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming} from './planner.js?v=v0726';
+import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming,ownerTimedConnection,incomingForSegment} from './planner.js?v=v0733';
 import {validatePlan} from './validation.js?v=v0726';
-import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js?v=v0726';
-import {migrateLegacyPlanDays} from './legacy-plan-migration.js?v=v0726';
+import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js?v=v0733';
+import {migrateLegacyPlanDays} from './legacy-plan-migration.js?v=v0733';
 import {exportExcel} from './exporter.js?v=v0731';
 import {filterLocations} from './node-browser.js?v=v074';
-import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=v0724';
+import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=v0733';
 
 const $=id=>document.getElementById(id);
 const IS_PRODUCTION=document.body.dataset.mode==='production';
 const IS_DEMO=!IS_PRODUCTION&&new URLSearchParams(location.search).get('demo')==='xueshan';
 const STORAGE_KEY=IS_PRODUCTION?'mountain-planner.global-autosave.v1':'mountain-planner.unified-preview-autosave.v0711';
-const APP_VERSION=IS_PRODUCTION?'v0.7.25':'v0.7.32 Unified Preview';
+const APP_VERSION=IS_PRODUCTION?'v0.7.25':'v0.7.33 Unified Preview';
 const COLLAPSE_KEY=IS_PRODUCTION?'mountain-planner.collapsed-days.v1':'mountain-planner.unified-preview-collapsed.v0711';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',scope='';
@@ -63,11 +63,11 @@ async function init(){
   days=restoredDays?.length?sanitizeDays(migrateDaysToNodeIds(restoredDays,route)):[newDay(0)];
   if(IS_DEMO){days=makeDemoDays(route,uid);scope='G04';$('routeSelect').value=scope;const banner=document.createElement('div');banner.className='notice';banner.textContent='範例模式：可以試用快速加入與編輯，這個頁面不讀寫原行程暫存。';$('daysContainer').before(banner)}
   $('dayCount').value=String(days.length);
-  if(!IS_PRODUCTION)try{const response=await fetch('data/geometry/xueshan-terrain-v1.json?v=v0731');if(!response.ok)throw Error();terrainData=await response.json()}catch(error){console.warn('雪山地形資料未載入')}
+  if(!IS_PRODUCTION)try{const response=await fetch('data/geometry/planner-terrain-v1.json?v=v0733');if(!response.ok)throw Error();terrainData=await response.json()}catch(error){console.warn('節點座標與地形資料未載入')}
   bindGlobal();
   render(false);saveAutosave(false);checkpoint();
-  if(!IS_PRODUCTION&&$('itineraryGeometry'))import('./itinerary-map.js?v=v0731')
-    .then(({createItineraryMap})=>{itineraryMap=createItineraryMap({host:$('itineraryGeometry'),getDays:()=>days})})
+  if(!IS_PRODUCTION&&$('itineraryGeometry'))import('./itinerary-map.js?v=v0733')
+    .then(({createItineraryMap})=>{itineraryMap=createItineraryMap({host:$('itineraryGeometry'),getDays:()=>days,initialData:terrainData})})
     .catch(error=>{$('itineraryGeometry').textContent='地圖載入失敗：'+error.message});
 }
 
@@ -177,13 +177,13 @@ function addNode(day,nodeId){
     day.items.push({id,type:'location',name,nodeId,note:'',isPeak:false,hasWater:false,incoming:{kind:'manual',fromId:p.id,toId:id,actualMinutes:null}});
     return;
   }
-  const path=shortestPath(route,p.nodeId,nodeId);
+  const manual=ownerTimedConnection(route,p.nodeId,nodeId);
+  const path=manual?{segments:[manual]}:shortestPath(route,p.nodeId,nodeId);
   if(!path){appendDisconnectedNode(day,selected,uid);toast('已加入節點；前一段尚未連通，請手動填入時間');return}
-  path.segments.forEach((s,i)=>day.items.push({
-    id:uid(),type:'location',name:s.to,nodeId:s.toId,
-    note:'',isPeak:false,hasWater:false,
-    incoming:{kind:'official',from:s.from,to:s.to,fromNodeId:s.fromId,toNodeId:s.toId,officialMinutes:s.minutes,actualMinutes:null,source:s.source||route.source.image_url,...(Array.isArray(s.timeAlternatives)&&s.timeAlternatives.length?{timeAlternatives:s.timeAlternatives}:{})}
-  }));
+  path.segments.forEach(s=>{const previous=last(day),id=uid();day.items.push({
+    id,type:'location',name:s.to,nodeId:s.toId,note:'',isPeak:false,hasWater:false,
+    incoming:incomingForSegment(s,previous.id,id,route.source.image_url)
+  })});
 }
 
 function connectToPrevious(i){
@@ -363,7 +363,7 @@ function renderTimeline(d){
         const altHtml=alternatives.map(t=>'<button type="button" class="alternate-time" data-index="'+idx+'" data-minutes="'+t.minutes+'" title="套用'+labels[t.kind]+'條件參考 '+t.minutes+' 分鐘">'+labels[t.kind]+' '+t.minutes+'m</button>').join('');
         routeInfo='<input class="edge-time minute-input" data-index="'+idx+'" type="number" min="0" value="'+a+'"><span>m</span><span class="secondary-info">上河'+Math.round(Number(e.officialMinutes)||0)+'m · ×'+Number(k).toFixed(2)+'</span>'+altHtml;
       }else if(e?.kind==='manual'){
-        routeInfo='<input class="edge-time minute-input" data-index="'+idx+'" type="number" min="0" placeholder="時間未填" value="'+(e.actualMinutes??'')+'"><span>m</span><span class="manual-note">'+(e.connectionStatus==='unverified'?'未連通・手動估時':'手動')+'</span>';
+        routeInfo='<input class="edge-time minute-input" data-index="'+idx+'" type="number" min="0" placeholder="時間未填" value="'+(e.actualMinutes??'')+'"><span>m</span><span class="manual-note">'+(e.connectionStatus==='owner-confirmed'?'上河時間未提供・自行填時間':e.connectionStatus==='unverified'?'未連通・手動估時':'手動')+'</span>';
       }
       const peak='<button class="icon-toggle peak '+(r.isPeak?'active':'')+'" data-index="'+idx+'" title="山頭">⛰</button>';
       const water='<button class="icon-toggle water '+(r.hasWater?'active':'')+'" data-index="'+idx+'" title="水源">💧</button>';

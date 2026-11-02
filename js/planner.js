@@ -1,5 +1,11 @@
 export const round2=n=>Math.round((Number(n)+Number.EPSILON)*100)/100;
 export const uid=()=>Math.random().toString(36).slice(2,9);
+export const isOwnerTimedConnection=s=>s?.manualTimeRequired===true&&s.minutes===null&&s.travelMode==='walking'&&s.verificationStatus==='owner-confirmed-connection'&&s.routingEnabled!==false;
+export const ownerTimedConnection=(route,from,to)=>route.routingEnabled===false?null:(route.manualConnections||[]).find(s=>s.fromId===from&&s.toId===to&&isOwnerTimedConnection(s));
+export function incomingForSegment(s,previousId,itemId,source){
+ if(isOwnerTimedConnection(s))return {kind:'manual',connectionStatus:'owner-confirmed',fromId:previousId,toId:itemId,fromNodeId:s.fromId,toNodeId:s.toId,actualMinutes:null,source:s.source};
+ return {kind:'official',from:s.from,to:s.to,fromNodeId:s.fromId,toNodeId:s.toId,officialMinutes:s.minutes,actualMinutes:null,source:s.source||source,...(s.timeAlternatives?.length?{timeAlternatives:s.timeAlternatives}:{})};
+}
 
 export function allNodes(route){
   return [...new Set(route.segments.flatMap(s=>[s.from,s.to]))].sort((a,b)=>a.localeCompare(b,'zh-Hant'));
@@ -50,6 +56,7 @@ export function shortestPath(route,start,end){
     unvisited.delete(u);if(u===end)break;
     for(const seg of route.segments.filter(s=>s[fromKey]===u&&route.routingEnabled!==false&&s.routingEnabled!==false&&!['vehicle','driving','transport'].includes(s.travelMode??s.edgeType??'walking')&&s.verificationStatus!=='unverified'&&(route.routingPolicy!=='verified-walking-only'||(s.travelMode==='walking'&&s.verificationStatus==='verified')))){
       const target=seg[toKey];
+      if(!Number.isFinite(seg.minutes))continue;
       const alt=best+seg.minutes;
       if(alt<(dist.get(target)??Infinity)){dist.set(target,alt);prev.set(target,{node:u,seg})}
     }
@@ -99,7 +106,7 @@ export function recalcConnections(day,route){
     // Dataset updates must not replace a saved connection while its endpoints stay put.
     // A move/delete changes endpoint identity and still triggers normal reconnection below.
     const stored=raw.incoming;
-    const stableManual=stored?.kind==='manual'&&stored.connectionStatus==='unverified'&&stored.fromId===previous.id&&stored.toId===item.id;
+    const stableManual=stored?.kind==='manual'&&['unverified','owner-confirmed'].includes(stored.connectionStatus)&&stored.fromId===previous.id&&stored.toId===item.id;
     const stableOfficial=Array.isArray(route.nodes)&&stored?.kind==='official'&&
       stored.fromNodeId===previous.nodeId&&stored.toNodeId===item.nodeId&&
       previous.nodeId!==item.nodeId;
@@ -110,6 +117,8 @@ export function recalcConnections(day,route){
       item.incoming=makeManual(previous,item,raw.incoming);result.push(item);previous=item;continue;
     }
     const identified=Array.isArray(route.nodes);
+    const manual=identified?ownerTimedConnection(route,previous.nodeId,item.nodeId):null;
+    if(manual){item.incoming=incomingForSegment(manual,previous.id,item.id);result.push(item);previous=item;continue;}
     const path=shortestPath(route,identified?previous.nodeId:previous.name,identified?item.nodeId:item.name);
     if(!path){item.incoming=makeManual(previous,item,raw.incoming);result.push(item);previous=item;continue;}
     if(!path.segments.length){

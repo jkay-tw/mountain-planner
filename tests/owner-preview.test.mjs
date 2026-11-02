@@ -10,7 +10,7 @@ const manifest=load('data/unified-editor-manifest.json');
 const routes=manifest.routes.map(m=>addRouteIdentity(load(m.file)));
 const graph=mergeReviewedRoutes(routes);
 test('owner full preview shares reviewed physical nodes and keeps original chart IDs for imported plans',()=>{
- assert.equal(routes.length,24);assert.equal(graph.nodes.length,729);assert.equal(graph.segments.length,1424);
+ assert.equal(routes.length,24);assert.equal(graph.nodes.length,727);assert.equal(graph.segments.length,1418);
  assert.equal(new Set(routes.flatMap(r=>r.sourceChartIds)).size,19);
  for(const r of load('data/owner-review-base-catalog.json').routes){
   for(const n of load(r.file).nodes){const current=graph.nodes.find(x=>x.id===n.id);assert.ok(current,n.id);assert.ok(current.name===n.name||current.aliases.includes(n.name));}

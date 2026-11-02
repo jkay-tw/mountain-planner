@@ -1,18 +1,18 @@
 import {twd97Label} from './twd97.js?v=v0731';
-import {resolveItineraryGeometry,geometryToGpx,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=v0731';
+import {resolveItineraryGeometry,geometryToGpx,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=v0733';
 
 // No plan mutations or persistent state. Failure here must not block the editor.
-export function createItineraryMap({host,getDays}){
-  let data=null,map=null,group=null,latest=null,ready=null;
+export function createItineraryMap({host,getDays,initialData=null}){
+  let data=initialData,map=null,group=null,latest=null,ready=null;
   let detailedNodes=false;
   const hiddenDays=new Set();
   const colors=['#b54b22','#146e91','#7955a5','#318354','#9b326c','#806000','#3455b0','#a43b3b','#007970','#62533c'];
-  host.innerHTML='<summary>行程地圖與 GPX｜雪山試點</summary><div class="geometry-body"><p>依目前行程顯示 OSM 候選步道。底圖可切換；座標、距離及線形尚未現地核實。</p><div class="geometry-actions"><button type="button" data-action="load">載入行程地圖</button><button type="button" data-action="fit" disabled>縮放至行程</button><button type="button" data-action="export" disabled>匯出候選 GPX</button></div><label class="node-label-control">節點標籤 <select data-node-labels><option value="name">名稱與海拔</option><option value="detail">詳細資訊（含 TWD97）</option></select></label><p data-status role="status">地圖尚未載入。</p><ul data-warnings></ul><div data-legend class="geometry-legend" aria-label="每日路線圖例"></div><div data-profile class="terrain-profiles"></div><div data-map class="itinerary-map" aria-label="行程候選路徑地圖"></div><p class="geometry-source">© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a>，ODbL 1.0。圈谷底部依使用者指定 TWD97 定位；三六九線形僅經附近步道，不代表山屋可入內或住宿。OSM 擷取日：2026-11-02。高度來源：<a href="https://rudymap.tw/">魯地圖 DEM mix v2026</a>，約30m格網估算。</p></div>';
+  host.innerHTML='<summary>行程地圖與 GPX</summary><div class="geometry-body"><p>顯示已定位行程節點；雪山試點提供 OSM 候選步道。底圖可切換；座標、距離及線形尚未現地核實。</p><div class="geometry-actions"><button type="button" data-action="load">載入行程地圖</button><button type="button" data-action="fit" disabled>縮放至行程</button><button type="button" data-action="export" disabled>匯出候選 GPX</button></div><label class="node-label-control">節點標籤 <select data-node-labels><option value="name">名稱與海拔</option><option value="detail">詳細資訊（含 TWD97）</option></select></label><p data-status role="status">地圖尚未載入。</p><ul data-warnings></ul><div data-legend class="geometry-legend" aria-label="每日路線圖例"></div><div data-profile class="terrain-profiles"></div><div data-map class="itinerary-map" aria-label="行程候選路徑地圖"></div><p class="geometry-source">© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a>，ODbL 1.0。全圖規劃座標另參考 TWMap、Happyman 與具來源記錄點；座標可用不代表已取得步道線形。圈谷底部依使用者指定 TWD97 定位；三六九線形僅經附近步道，不代表山屋可入內或住宿。OSM 擷取日：2026-11-02。高度來源：<a href="https://rudymap.tw/">魯地圖 DEM mix v2026</a>，約30m格網估算。</p></div>';
   const status=host.querySelector('[data-status]'),warnings=host.querySelector('[data-warnings]'),load=host.querySelector('[data-action="load"]'),exp=host.querySelector('[data-action="export"]'),fit=host.querySelector('[data-action="fit"]');
   function refresh(){
     if(!data)return;
     latest=resolveItineraryGeometry(getDays(),data);
-    status.textContent=`已取得線形約 ${(latest.distanceMeters/1000).toFixed(2)} 公里｜${latest.gaps.length} 段缺漏｜${latest.unlocated.length} 個試點地點未定位`;
+    status.textContent=`已取得線形約 ${(latest.distanceMeters/1000).toFixed(2)} 公里｜${latest.gaps.length} 段缺漏｜${latest.unlocated.length} 個地點未定位`;
     warnings.replaceChildren();
     const notes=[...latest.unlocated.map(n=>`${n.name}：${n.note}`),...latest.gaps.map(g=>`Day ${g.dayIndex+1} ${g.from} → ${g.to}：${g.reason}`)];
     for(const message of notes){const li=document.createElement('li');li.textContent=message;warnings.append(li)}
@@ -51,8 +51,8 @@ export function createItineraryMap({host,getDays}){
     fit.disabled=!group.getBounds().isValid();
   }
   async function initialize(){
-    status.textContent='正在載入雪山線形與地圖…';
-    if(!data){const response=await fetch('data/geometry/xueshan-terrain-v1.json?v=v0731');if(!response.ok)throw Error('候選線形載入失敗');data=await response.json()}
+    status.textContent='正在載入節點座標與地圖…';
+    if(!data){const response=await fetch('data/geometry/planner-terrain-v1.json?v=v0733');if(!response.ok)throw Error('候選線形載入失敗');data=await response.json()}
     if(!window.L)throw Error('地圖元件無法載入，請檢查網路後重試。');
     if(!map){
       map=L.map(host.querySelector('[data-map]')).setView([24.388,121.266],13);
@@ -75,7 +75,7 @@ export function createItineraryMap({host,getDays}){
     refresh();
     if(latest.gaps.length&&!confirm(`有 ${latest.gaps.length} 段缺少線形。僅匯出已取得部分，各段分開且不補直線，是否繼續？`))return;
     const blob=new Blob([geometryToGpx(latest,data,{allowPartial:latest.gaps.length>0})],{type:'application/gpx+xml'}),url=URL.createObjectURL(blob),a=document.createElement('a');
-    a.href=url;a.download=`mountain-planner-xueshan-candidate${latest.gaps.length?'-partial':''}.gpx`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+    a.href=url;a.download=`mountain-planner-candidate${latest.gaps.length?'-partial':''}.gpx`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
   };
   return {update:()=>{try{refresh()}catch(error){status.textContent=error.message;exp.disabled=true}}};
 }
