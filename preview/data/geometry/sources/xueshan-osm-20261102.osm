@@ -1,0 +1,1647 @@
+<?xml version='1.0' encoding='utf-8'?>
+<osm version="0.6" generator="Mountain Planner OSM subset; original cgimap snapshot" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+  <bounds minlat="24.3800000" minlon="121.2250000" maxlat="24.4000000" maxlon="121.3020000" />
+  <node id="1518875809" visible="true" version="3" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3937143" lon="121.2486307" />
+  <node id="1518875810" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3852583" lon="121.2969772" />
+  <node id="1518875812" visible="true" version="5" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3933430" lon="121.2514073" />
+  <node id="1518875813" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:10Z" lat="24.3867609" lon="121.2848969" />
+  <node id="1518875814" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:10Z" lat="24.3854468" lon="121.2967550" />
+  <node id="1518875819" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3913546" lon="121.2552424" />
+  <node id="1518875821" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:11Z" lat="24.3853782" lon="121.2941291" />
+  <node id="1518875823" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3875271" lon="121.2841221" />
+  <node id="1518875824" visible="true" version="5" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3935999" lon="121.2510888" />
+  <node id="1518875826" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3893213" lon="121.2803293" />
+  <node id="1518875828" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3856853" lon="121.2965891" />
+  <node id="1518875833" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3858192" lon="121.2979930" />
+  <node id="1518875841" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3888825" lon="121.2371231" />
+  <node id="1518875843" visible="true" version="4" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3888871" lon="121.2814741" />
+  <node id="1518875844" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3885271" lon="121.2814184" />
+  <node id="1518875845" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3926359" lon="121.2420567" />
+  <node id="1518875846" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3895274" lon="121.2393020" />
+  <node id="1518875848" visible="true" version="3" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3937517" lon="121.2492944" />
+  <node id="1518875849" visible="true" version="3" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3941899" lon="121.2468569" />
+  <node id="1518875850" visible="true" version="2" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3898926" lon="121.2567177" />
+  <node id="1518875854" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:12Z" lat="24.3909382" lon="121.2401201" />
+  <node id="1518875856" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3888684" lon="121.2715972" />
+  <node id="1518875858" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3929485" lon="121.2424952" />
+  <node id="1518875860" visible="true" version="5" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3930297" lon="121.2523591" />
+  <node id="1518875866" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:12Z" lat="24.3902395" lon="121.2769415" />
+  <node id="1518875868" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3886637" lon="121.2367867" />
+  <node id="1518875876" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3848187" lon="121.2883687" />
+  <node id="1518875877" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3884262" lon="121.2823519" />
+  <node id="1518875878" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3838960" lon="121.2339326" />
+  <node id="1518875879" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3904398" lon="121.2397191" />
+  <node id="1518875880" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3927202" lon="121.2421050" />
+  <node id="1518875881" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3905898" lon="121.2775331" />
+  <node id="1518875883" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3893039" lon="121.2381608" />
+  <node id="1518875884" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3842673" lon="121.2346592" />
+  <node id="1518875885" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:13Z" lat="24.3894187" lon="121.2757828" />
+  <node id="1518875892" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3893723" lon="121.2385131" />
+  <node id="1518875894" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3893686" lon="121.2387134" />
+  <node id="1518875896" visible="true" version="3" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3943203" lon="121.2460713" />
+  <node id="1518875898" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3936834" lon="121.2434724" />
+  <node id="1518875900" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:13Z" lat="24.3871371" lon="121.2848111" />
+  <node id="1518875902" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3858827" lon="121.2360006" />
+  <node id="1518875904" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:13Z" lat="24.3911922" lon="121.2402704" />
+  <node id="1518875907" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:13Z" lat="24.3842007" lon="121.2875577" />
+  <node id="1518875909" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3890611" lon="121.2692492" />
+  <node id="1518875911" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3928546" lon="121.2422686" />
+  <node id="1518875912" visible="true" version="2" changeset="143821684" timestamp="2023-11-09T13:09:59Z" lat="24.3915528" lon="121.2407334" />
+  <node id="1518875914" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3832926" lon="121.2325647" />
+  <node id="1518875915" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:14Z" lat="24.3893503" lon="121.2756541" />
+  <node id="1518875916" visible="true" version="3" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3903995" lon="121.2561439" />
+  <node id="1518875917" visible="true" version="3" changeset="143821684" timestamp="2023-11-09T13:09:59Z" lat="24.3919199" lon="121.2411781" />
+  <node id="1518875919" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3873642" lon="121.2361497" />
+  <node id="1518875928" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3855382" lon="121.2360540" />
+  <node id="1518875931" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3934590" lon="121.2516583" />
+  <node id="1518875933" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3888953" lon="121.2707154" />
+  <node id="1518875935" visible="true" version="5" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3867226" lon="121.2360417" />
+  <node id="1518875937" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:14Z" lat="24.3883683" lon="121.2364187" />
+  <node id="1518875939" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:14Z" lat="24.3851976" lon="121.2916859" />
+  <node id="1518875940" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3885498" lon="121.2366236" />
+  <node id="1518875941" visible="true" version="3" changeset="143821684" timestamp="2023-11-09T13:09:59Z" lat="24.3923008" lon="121.2418466" />
+  <node id="1518875942" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3843666" lon="121.2863566" />
+  <node id="1518875944" visible="true" version="3" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3940289" lon="121.2471846" />
+  <node id="1518875945" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3933895" lon="121.2431457" />
+  <node id="1518875946" visible="true" version="3" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3939526" lon="121.2474223" />
+  <node id="1518875948" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:15Z" lat="24.3862041" lon="121.2853290" />
+  <node id="1518875951" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3898633" lon="121.2391938" />
+  <node id="1518875953" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3897842" lon="121.2760461" />
+  <node id="1518875954" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3888617" lon="121.2745228" />
+  <node id="1518875963" visible="true" version="2" changeset="17950815" timestamp="2013-09-21T06:32:22Z" lat="24.3904036" lon="121.2772092" />
+  <node id="1518875966" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3861896" lon="121.2355660" />
+  <node id="1518875968" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3863378" lon="121.2356242" />
+  <node id="1518875970" visible="true" version="4" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3833350" lon="121.2330126" />
+  <node id="1518875973" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3942868" lon="121.2444602" />
+  <node id="1518875974" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3905812" lon="121.2789347" />
+  <node id="1518875977" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:15Z" lat="24.3853733" lon="121.2859269" />
+  <node id="1518875978" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3888961" lon="121.2812904" />
+  <node id="1518875979" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3889998" lon="121.2731187" />
+  <node id="1518875981" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:16Z" lat="24.3891695" lon="121.2650969" />
+  <node id="1518875982" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3888367" lon="121.2698155" />
+  <node id="1518875984" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3902150" lon="121.2394711" />
+  <node id="1518875986" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3894432" lon="121.2638604" />
+  <node id="1518875987" visible="true" version="6" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3864253" lon="121.2357194" />
+  <node id="1518875989" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3876866" lon="121.2840058" />
+  <node id="1518875991" visible="true" version="2" changeset="143821684" timestamp="2023-11-09T13:09:59Z" lat="24.3913828" lon="121.2404838" />
+  <node id="1518876002" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3937649" lon="121.2435969" />
+  <node id="1518876004" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3849903" lon="121.2357006" />
+  <node id="1518876006" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3846539" lon="121.2857205" />
+  <node id="1518876007" visible="true" version="3" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3943210" lon="121.2465430" />
+  <node id="1518876011" visible="true" version="3" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3945425" lon="121.2453949" />
+  <node id="1518876014" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3907959" lon="121.2785636" />
+  <node id="1518876015" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3917919" lon="121.2411797" />
+  <node id="1518876016" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:17Z" lat="24.3848310" lon="121.2880083" />
+  <node id="1518876017" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3889894" lon="121.2747757" />
+  <node id="1518876018" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3900923" lon="121.2768028" />
+  <node id="1518876019" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3907195" lon="121.2399700" />
+  <node id="1518876021" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3891463" lon="121.2378591" />
+  <node id="1518876025" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:17Z" lat="24.3888422" lon="121.2717058" />
+  <node id="1518876034" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3895226" lon="121.2631523" />
+  <node id="1518876036" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3933314" lon="121.2534312" />
+  <node id="1518876039" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3898962" lon="121.2622181" />
+  <node id="1518876042" visible="true" version="3" changeset="143821684" timestamp="2023-11-09T13:09:59Z" lat="24.3916383" lon="121.2408447" />
+  <node id="1518876043" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3881739" lon="121.2837251" />
+  <node id="1518876045" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3877938" lon="121.2833312" />
+  <node id="1518876046" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3832325" lon="121.2328038" />
+  <node id="1518876047" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3891561" lon="121.2751266" />
+  <node id="1518876048" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3905772" lon="121.2774593" />
+  <node id="1518876049" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3896368" lon="121.2393684" />
+  <node id="1518876052" visible="true" version="3" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3936023" lon="121.2506835" />
+  <node id="1518876054" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3906029" lon="121.2559378" />
+  <node id="1518876055" visible="true" version="6" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3858199" lon="121.2988296" />
+  <node id="1518876057" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3891108" lon="121.2813955" />
+  <node id="1518876059" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3889755" lon="121.2689148" />
+  <node id="1518876070" visible="true" version="3" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3937089" lon="121.2490437" />
+  <node id="1518876072" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3853171" lon="121.2359397" />
+  <node id="1518876074" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3914591" lon="121.2549763" />
+  <node id="1518876075" visible="true" version="4" changeset="160456042" timestamp="2024-12-21T02:12:13Z" lat="24.3887478" lon="121.2718217" />
+  <node id="1518876076" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3836078" lon="121.2334667" />
+  <node id="1518876077" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:18Z" lat="24.3903372" lon="121.2771132" />
+  <node id="1518876078" visible="true" version="2" changeset="72736167" timestamp="2019-07-28T11:52:10Z" lat="24.3833967" lon="121.2320901" />
+  <node id="1518876080" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3889909" lon="121.2729092" />
+  <node id="1518876082" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3933647" lon="121.2529786" />
+  <node id="1518876084" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3888842" lon="121.2658609" />
+  <node id="1518876085" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3888943" lon="121.2697009" />
+  <node id="1518876087" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3922072" lon="121.2413352" />
+  <node id="1518876089" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3902505" lon="121.2396977" />
+  <node id="1518876091" visible="true" version="3" changeset="17950815" timestamp="2013-09-21T06:32:22Z" lat="24.3886463" lon="121.2814421" />
+  <node id="1518876093" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3888250" lon="121.2812025" />
+  <node id="1518876095" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:19Z" lat="24.3854515" lon="121.2857713" />
+  <node id="1518876097" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3893296" lon="121.2383150" />
+  <node id="1518876106" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3888047" lon="121.2742558" />
+  <node id="1518876107" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3881373" lon="121.2363896" />
+  <node id="1518876108" visible="true" version="2" changeset="143821684" timestamp="2023-11-09T13:09:59Z" lat="24.3914450" lon="121.2406200" />
+  <node id="1518876109" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3834523" lon="121.2332210" />
+  <node id="1518876111" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3900319" lon="121.2766287" />
+  <node id="1518876112" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3849757" lon="121.2879288" />
+  <node id="1518876113" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3861370" lon="121.2985393" />
+  <node id="1518876114" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3877851" lon="121.2839052" />
+  <node id="1518876117" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3888282" lon="121.2703507" />
+  <node id="1518876118" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3932808" lon="121.2429096" />
+  <node id="1518876120" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:20Z" lat="24.3872494" lon="121.2849184" />
+  <node id="1518876122" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3889015" lon="121.2721853" />
+  <node id="1518876124" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3860756" lon="121.2986428" />
+  <node id="1518876126" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3905180" lon="121.2790644" />
+  <node id="1518876128" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3905083" lon="121.2773557" />
+  <node id="1518876130" visible="true" version="2" changeset="17950815" timestamp="2013-09-21T06:32:22Z" lat="24.3880030" lon="121.2832504" />
+  <node id="1518876131" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3935495" lon="121.2432879" />
+  <node id="1518876140" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3900001" lon="121.2393786" />
+  <node id="1518876141" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3897564" lon="121.2588561" />
+  <node id="1518876143" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3907964" lon="121.2784735" />
+  <node id="1518876145" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3941143" lon="121.2470509" />
+  <node id="1518876146" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3883362" lon="121.2837303" />
+  <node id="1518876147" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3893364" lon="121.2754339" />
+  <node id="1518876148" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3898327" lon="121.2798453" />
+  <node id="1518876149" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:21Z" lat="24.3864826" lon="121.2851735" />
+  <node id="1518876151" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3844373" lon="121.2862302" />
+  <node id="1518876153" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3888520" lon="121.2713041" />
+  <node id="1518876155" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3889435" lon="121.2728400" />
+  <node id="1518876158" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3889501" lon="121.2686165" />
+  <node id="1518876160" visible="true" version="5" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3869219" lon="121.2361290" />
+  <node id="1518876162" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3905668" lon="121.2398640" />
+  <node id="1518876164" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:21Z" lat="24.3889497" lon="121.2746700" />
+  <node id="1518876166" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3840078" lon="121.2873711" />
+  <node id="1518876174" visible="true" version="3" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3943256" lon="121.2464396" />
+  <node id="1518876175" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3893784" lon="121.2389346" />
+  <node id="1518876176" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3857252" lon="121.2362517" />
+  <node id="1518876177" visible="true" version="5" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3930458" lon="121.2540483" />
+  <node id="1518876178" visible="true" version="5" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3933195" lon="121.2519674" />
+  <node id="1518876180" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3847125" lon="121.2858577" />
+  <node id="1518876181" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:22Z" lat="24.3902835" lon="121.2770542" />
+  <node id="1518876182" visible="true" version="5" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3848085" lon="121.2355380" />
+  <node id="1518876183" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3894453" lon="121.2391067" />
+  <node id="1518876188" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3887090" lon="121.2810000" />
+  <node id="1518876190" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3833675" lon="121.2322796" />
+  <node id="1518876193" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:22Z" lat="24.3890523" lon="121.2749030" />
+  <node id="1518876196" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3908417" lon="121.2557487" />
+  <node id="1518876198" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:22Z" lat="24.3899024" lon="121.2764909" />
+  <node id="1518876200" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3889727" lon="121.2694788" />
+  <node id="1518876202" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:22Z" lat="24.3855590" lon="121.2858357" />
+  <node id="1518876209" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:22Z" lat="24.3852511" lon="121.2915381" />
+  <node id="1518876210" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3899130" lon="121.2618106" />
+  <node id="1518876212" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3890229" lon="121.2376128" />
+  <node id="1518876214" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3891830" lon="121.2379716" />
+  <node id="1518876215" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3897241" lon="121.2626205" />
+  <node id="1518876216" visible="true" version="3" changeset="143821684" timestamp="2023-11-09T13:09:59Z" lat="24.3922799" lon="121.2417252" />
+  <node id="1518876217" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3878984" lon="121.2838575" />
+  <node id="1518876218" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3840900" lon="121.2342674" />
+  <node id="1518876225" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3915600" lon="121.2548770" />
+  <node id="1518876227" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3851600" lon="121.2359082" />
+  <node id="1518876229" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3902615" lon="121.2395676" />
+  <node id="1518876231" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3904610" lon="121.2772833" />
+  <node id="1518876233" visible="true" version="3" changeset="143787550" timestamp="2023-11-08T15:58:31Z" lat="24.3876767" lon="121.2360282" />
+  <node id="1518876237" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3848088" lon="121.2877822" />
+  <node id="1518876239" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3890649" lon="121.2652001" />
+  <node id="1518876241" visible="true" version="3" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3944460" lon="121.2457369" />
+  <node id="1518876244" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3931806" lon="121.2427500" />
+  <node id="1518876245" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3884882" lon="121.2821721" />
+  <node id="1518876247" visible="true" version="3" changeset="143787550" timestamp="2023-11-08T15:58:31Z" lat="24.3865759" lon="121.2359833" />
+  <node id="1518876248" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3888544" lon="121.2741409" />
+  <node id="1518876251" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3902432" lon="121.2792674" />
+  <node id="1518876252" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3889654" lon="121.2813620" />
+  <node id="1518876257" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:24Z" lat="24.3882071" lon="121.2835988" />
+  <node id="1518876259" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3895079" lon="121.2634252" />
+  <node id="1518876261" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3887860" lon="121.2699356" />
+  <node id="1518876262" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3900284" lon="121.2391773" />
+  <node id="1518876264" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3837866" lon="121.2870709" />
+  <node id="1518876266" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:25Z" lat="24.3896581" lon="121.2760242" />
+  <node id="1518876268" visible="true" version="2" changeset="17950815" timestamp="2013-09-21T06:32:22Z" lat="24.3860103" lon="121.2983616" />
+  <node id="1518876270" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3853607" lon="121.2898495" />
+  <node id="1518876271" visible="true" version="4" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3930798" lon="121.2529466" />
+  <node id="1518876278" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:25Z" lat="24.3855739" lon="121.2965082" />
+  <node id="1518876279" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3853871" lon="121.2906913" />
+  <node id="1518876280" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3885818" lon="121.2807157" />
+  <node id="1518876281" visible="true" version="3" changeset="143821684" timestamp="2023-11-09T13:09:59Z" lat="24.3922824" lon="121.2416337" />
+  <node id="1518876282" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3852480" lon="121.2904925" />
+  <node id="1518876283" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3899354" lon="121.2763022" />
+  <node id="1518876284" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3895597" lon="121.2759719" />
+  <node id="1518876289" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:25Z" lat="24.3863407" lon="121.2853476" />
+  <node id="1518876291" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3848491" lon="121.2893223" />
+  <node id="1518876293" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3836422" lon="121.2865383" />
+  <node id="1518876296" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3907619" lon="121.2783276" />
+  <node id="1518876297" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3889337" lon="121.2723118" />
+  <node id="1518876301" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3858106" lon="121.2983027" />
+  <node id="1518876303" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3891853" lon="121.2668140" />
+  <node id="1518876305" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3858750" lon="121.2982178" />
+  <node id="1518876312" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3931039" lon="121.2533551" />
+  <node id="1518876313" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3940123" lon="121.2440282" />
+  <node id="1518876314" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3853926" lon="121.2963926" />
+  <node id="1518876315" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:26Z" lat="24.3852707" lon="121.2930401" />
+  <node id="1518876316" visible="true" version="3" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3937256" lon="121.2488553" />
+  <node id="1518876317" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3899073" lon="121.2607426" />
+  <node id="1518876318" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3846206" lon="121.2352550" />
+  <node id="1518876320" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3853026" lon="121.2932868" />
+  <node id="1518876321" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3889741" lon="121.2679937" />
+  <node id="1518876329" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3851092" lon="121.2963729" />
+  <node id="1518876331" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:27Z" lat="24.3844254" lon="121.2876221" />
+  <node id="1518876333" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3902840" lon="121.2792473" />
+  <node id="1518876335" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3944203" lon="121.2447847" />
+  <node id="1518876338" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:27Z" lat="24.3851683" lon="121.2927695" />
+  <node id="1518876340" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3860003" lon="121.2357402" />
+  <node id="1518876342" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3890078" lon="121.2806689" />
+  <node id="1518876344" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3853200" lon="121.2934676" />
+  <node id="1518876346" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:27Z" lat="24.3844596" lon="121.2861254" />
+  <node id="1518876347" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:27Z" lat="24.3848114" lon="121.2857928" />
+  <node id="1518876348" visible="true" version="3" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3937732" lon="121.2484621" />
+  <node id="1518876349" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:27Z" lat="24.3851730" lon="121.2926324" />
+  <node id="1518876350" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3850385" lon="121.2856475" />
+  <node id="1518876352" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3892925" lon="121.2752656" />
+  <node id="1518876354" visible="true" version="5" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3876012" lon="121.2362372" />
+  <node id="1518876356" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:27Z" lat="24.3856423" lon="121.2857207" />
+  <node id="1518876358" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:27Z" lat="24.3842009" lon="121.2860801" />
+  <node id="1518876368" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3873349" lon="121.2848783" />
+  <node id="1518876370" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3853372" lon="121.2897084" />
+  <node id="1518876372" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3847849" lon="121.2875770" />
+  <node id="1518876374" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:28Z" lat="24.3941431" lon="121.2442186" />
+  <node id="1518876375" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:28Z" lat="24.3851730" lon="121.2924715" />
+  <node id="1518876376" visible="true" version="5" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3837549" lon="121.2336216" />
+  <node id="1518876377" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3837092" lon="121.2868889" />
+  <node id="1518876378" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:28Z" lat="24.3842791" lon="121.2864127" />
+  <node id="1518876379" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3856766" lon="121.2979408" />
+  <node id="1518876381" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3890020" lon="121.2661659" />
+  <node id="1518876382" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3849949" lon="121.2963881" />
+  <node id="1518876385" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:28Z" lat="24.3899317" lon="121.2571468" />
+  <node id="1518876387" visible="true" version="4" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3887104" lon="121.2817929" />
+  <node id="1518876389" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:28Z" lat="24.3852169" lon="121.2923106" />
+  <node id="1518876391" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3909912" lon="121.2554745" />
+  <node id="1518876393" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3888452" lon="121.2737457" />
+  <node id="1518876395" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3856364" lon="121.2978870" />
+  <node id="1518876405" visible="true" version="3" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3945122" lon="121.2450152" />
+  <node id="1518876406" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3877310" lon="121.2834148" />
+  <node id="1518876407" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3853535" lon="121.2912728" />
+  <node id="1518876408" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3853056" lon="121.2960306" />
+  <node id="1518876409" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3894035" lon="121.2643941" />
+  <node id="1518876411" visible="true" version="3" changeset="143821684" timestamp="2023-11-09T13:09:59Z" lat="24.3923803" lon="121.2419675" />
+  <node id="1518876412" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:29Z" lat="24.3855687" lon="121.2959530" />
+  <node id="1518876413" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:29Z" lat="24.3847479" lon="121.2891187" />
+  <node id="1518876414" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3888622" lon="121.2740554" />
+  <node id="1518876418" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:29Z" lat="24.3868881" lon="121.2849321" />
+  <node id="1518876420" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3890773" lon="121.2677141" />
+  <node id="1518876422" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:30Z" lat="24.3852560" lon="121.2921711" />
+  <node id="1518876424" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3906103" lon="121.2778201" />
+  <node id="1518876426" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:30Z" lat="24.3866876" lon="121.2849828" />
+  <node id="1518876428" visible="true" version="4" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3936685" lon="121.2498899" />
+  <node id="1518876434" visible="true" version="5" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3889847" lon="121.2805068" />
+  <node id="1518876440" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:30Z" lat="24.3856274" lon="121.2958457" />
+  <node id="1518876441" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3898847" lon="121.2614444" />
+  <node id="1518876442" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:30Z" lat="24.3910652" lon="121.2402489" />
+  <node id="1518876444" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:30Z" lat="24.3852365" lon="121.2920263" />
+  <node id="1518876445" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:30Z" lat="24.3893259" lon="121.2648072" />
+  <node id="1518876446" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:30Z" lat="24.3899512" lon="121.2577476" />
+  <node id="1518876447" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3883445" lon="121.2825601" />
+  <node id="1518876448" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:30Z" lat="24.3856590" lon="121.2978330" />
+  <node id="1518876455" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3893784" lon="121.2753942" />
+  <node id="1518876458" visible="true" version="4" changeset="143821684" timestamp="2023-11-09T13:09:59Z" lat="24.3902139" lon="121.2562770" />
+  <node id="1518876460" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:31Z" lat="24.3852023" lon="121.2919404" />
+  <node id="1518876462" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3861033" lon="121.2856719" />
+  <node id="1518876464" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3898737" lon="121.2605426" />
+  <node id="1518876467" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3857350" lon="121.2977650" />
+  <node id="1518876469" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3889622" lon="121.2374163" />
+  <node id="1518876471" visible="true" version="6" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3925375" lon="121.2545164" />
+  <node id="1518876473" visible="true" version="5" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3885808" lon="121.2806234" />
+  <node id="1518876475" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:31Z" lat="24.3866341" lon="121.2851788" />
+  <node id="1518876476" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:31Z" lat="24.3856664" lon="121.2957277" />
+  <node id="1518876478" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:31Z" lat="24.3858130" lon="121.2977125" />
+  <node id="1518876479" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3943887" lon="121.2458409" />
+  <node id="1518876480" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3850851" lon="121.2961893" />
+  <node id="1518876482" visible="true" version="3" changeset="127874949" timestamp="2022-10-21T10:20:06Z" lat="24.3933937" lon="121.2536680" />
+  <node id="1518876484" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3888874" lon="121.2711520" />
+  <node id="1518876495" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:32Z" lat="24.3855638" lon="121.2957009" />
+  <node id="1518876497" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3860099" lon="121.2855908" />
+  <node id="1518876500" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3918565" lon="121.2548688" />
+  <node id="1518876502" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3878968" lon="121.2832622" />
+  <node id="1518876504" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:32Z" lat="24.3857397" lon="121.2857231" />
+  <node id="1518876505" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:32Z" lat="24.3851827" lon="121.2919082" />
+  <node id="1518876506" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:32Z" lat="24.3852221" lon="121.2854685" />
+  <node id="1518876507" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:32Z" lat="24.3859159" lon="121.2976187" />
+  <node id="1518876508" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:32Z" lat="24.3873816" lon="121.2844117" />
+  <node id="1518876510" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3845527" lon="121.2876633" />
+  <node id="1518876512" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:33Z" lat="24.3852218" lon="121.2857177" />
+  <node id="1518876513" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:33Z" lat="24.3855445" lon="121.2956016" />
+  <node id="1518876514" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3880493" lon="121.2837528" />
+  <node id="1518876516" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3906837" lon="121.2782212" />
+  <node id="1518876518" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3899375" lon="121.2797477" />
+  <node id="1518876520" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3899044" lon="121.2576394" />
+  <node id="1518876522" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3897739" lon="121.2596660" />
+  <node id="1518876524" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:33Z" lat="24.3851437" lon="121.2917688" />
+  <node id="1518876535" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3891359" lon="121.2675329" />
+  <node id="1518876537" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:33Z" lat="24.3858377" lon="121.2975543" />
+  <node id="1518876539" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3889466" lon="121.2660372" />
+  <node id="1518876540" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:33Z" lat="24.3854759" lon="121.2955185" />
+  <node id="1518876541" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3850927" lon="121.2895990" />
+  <node id="1518876542" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3836834" lon="121.2861778" />
+  <node id="1518876543" visible="true" version="3" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3936181" lon="121.2503396" />
+  <node id="1518876546" visible="true" version="2" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3936288" lon="121.2500943" />
+  <node id="1518876547" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3836609" lon="121.2867650" />
+  <node id="1518876549" visible="true" version="3" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3939694" lon="121.2481249" />
+  <node id="1518876551" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3921733" lon="121.2547722" />
+  <node id="1518876553" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:34Z" lat="24.3854612" lon="121.2954434" />
+  <node id="1518876556" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3888330" lon="121.2736558" />
+  <node id="1518876558" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:34Z" lat="24.3853244" lon="121.2908836" />
+  <node id="1518876560" visible="true" version="5" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3888020" lon="121.2807122" />
+  <node id="1518876562" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3936385" lon="121.2509180" />
+  <node id="1518876571" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3898477" lon="121.2613834" />
+  <node id="1518876572" visible="true" version="2" changeset="17950815" timestamp="2013-09-21T06:32:23Z" lat="24.3836489" lon="121.2862988" />
+  <node id="1518876573" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3889112" lon="121.2708824" />
+  <node id="1518876574" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:34Z" lat="24.3844303" lon="121.2350132" />
+  <node id="1518876575" visible="true" version="5" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3886397" lon="121.2815989" />
+  <node id="1518876576" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:34Z" lat="24.3847332" lon="121.2888612" />
+  <node id="1518876577" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3898623" lon="121.2569361" />
+  <node id="1518876578" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3889484" lon="121.2723894" />
+  <node id="1518876580" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:34Z" lat="24.3873032" lon="121.2845053" />
+  <node id="1518876583" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3858548" lon="121.2972082" />
+  <node id="1518876585" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3877662" lon="121.2834745" />
+  <node id="1518876586" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3854997" lon="121.2974910" />
+  <node id="1518876588" visible="true" version="5" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3928433" lon="121.2525281" />
+  <node id="1518876590" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3889222" lon="121.2655716" />
+  <node id="1518876592" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3856864" lon="121.2972408" />
+  <node id="1518876594" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3897998" lon="121.2602260" />
+  <node id="1518876596" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3888263" lon="121.2739898" />
+  <node id="1518876605" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:35Z" lat="24.3899024" lon="121.2581768" />
+  <node id="1518876606" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3890480" lon="121.2804720" />
+  <node id="1518876607" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3849345" lon="121.2856886" />
+  <node id="1518876608" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3843802" lon="121.2864932" />
+  <node id="1518876609" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3895100" lon="121.2802345" />
+  <node id="1518876610" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:35Z" lat="24.3854517" lon="121.2953227" />
+  <node id="1518876613" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3874162" lon="121.2847264" />
+  <node id="1518876617" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3905812" lon="121.2776146" />
+  <node id="1518876619" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3850820" lon="121.2855013" />
+  <node id="1518876621" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3900766" lon="121.2795640" />
+  <node id="1518876622" visible="true" version="5" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3885951" lon="121.2821237" />
+  <node id="1518876624" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:36Z" lat="24.3857446" lon="121.2975141" />
+  <node id="1518876626" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:36Z" lat="24.3853635" lon="121.2953307" />
+  <node id="1518876630" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3897827" lon="121.2592122" />
+  <node id="1518876637" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:36Z" lat="24.3840883" lon="121.2874611" />
+  <node id="1518876639" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3889570" lon="121.2725117" />
+  <node id="1518876640" visible="true" version="3" changeset="127874949" timestamp="2022-10-21T10:20:06Z" lat="24.3931950" lon="121.2539106" />
+  <node id="1518876641" visible="true" version="2" changeset="16112276" timestamp="2013-05-13T16:04:48Z" lat="24.3874791" lon="121.2843414" />
+  <node id="1518876642" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:36Z" lat="24.3845085" lon="121.2858894" />
+  <node id="1518876643" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3938521" lon="121.2438918" />
+  <node id="1518876644" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3891964" lon="121.2670361" />
+  <node id="1518876645" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:36Z" lat="24.3894920" lon="121.2759062" />
+  <node id="1518876646" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3852232" lon="121.2963565" />
+  <node id="1518876651" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:37Z" lat="24.3930390" lon="121.2426522" />
+  <node id="1518876653" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3934708" lon="121.2533669" />
+  <node id="1518876654" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:37Z" lat="24.3847335" lon="121.2886121" />
+  <node id="1518876657" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3852900" lon="121.2900610" />
+  <node id="1518876659" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3896175" lon="121.2800855" />
+  <node id="1518876661" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:37Z" lat="24.3857400" lon="121.2970339" />
+  <node id="1518876663" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3850097" lon="121.2894549" />
+  <node id="1518876665" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3839327" lon="121.2861470" />
+  <node id="1518876673" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:37Z" lat="24.3840785" lon="121.2860181" />
+  <node id="1518876674" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3899045" lon="121.2761527" />
+  <node id="1518876675" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3857317" lon="121.2981567" />
+  <node id="1518876676" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:38Z" lat="24.3858668" lon="121.2856211" />
+  <node id="1518876677" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3859081" lon="121.2971583" />
+  <node id="1518876678" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:38Z" lat="24.3899512" lon="121.2579622" />
+  <node id="1518876680" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:38Z" lat="24.3853684" lon="121.2952181" />
+  <node id="1518876681" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3935045" lon="121.2514092" />
+  <node id="1518876688" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3892031" lon="121.2751475" />
+  <node id="1518876690" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:38Z" lat="24.3859938" lon="121.2857874" />
+  <node id="1518876692" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3853177" lon="121.2949285" />
+  <node id="1518876694" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3852862" lon="121.2951787" />
+  <node id="1518876696" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3853366" lon="121.2911165" />
+  <node id="1518876698" visible="true" version="5" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3929372" lon="121.2529518" />
+  <node id="1518876702" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3842055" lon="121.2862349" />
+  <node id="1518876705" visible="true" version="2" changeset="17950815" timestamp="2013-09-21T06:32:23Z" lat="24.3881337" lon="121.2830913" />
+  <node id="1518876707" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:39Z" lat="24.3855543" lon="121.2970178" />
+  <node id="1518876708" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3904788" lon="121.2791604" />
+  <node id="1518876709" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:39Z" lat="24.3869807" lon="121.2847682" />
+  <node id="1518876710" visible="true" version="2" changeset="55622183" timestamp="2018-01-21T09:08:33Z" lat="24.3898852" lon="121.2609235" />
+  <node id="1518876711" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3881702" lon="121.2827823" />
+  <node id="1518876713" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:39Z" lat="24.3854075" lon="121.2969830" />
+  <node id="1518876714" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3906083" lon="121.2779322" />
+  <node id="1518876715" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3933221" lon="121.2531076" />
+  <node id="1518876716" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3887943" lon="121.2734613" />
+  <node id="1518876726" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:39Z" lat="24.3899708" lon="121.2573614" />
+  <node id="1518876728" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3911732" lon="121.2553350" />
+  <node id="1518876731" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3853403" lon="121.2943230" />
+  <node id="1518876733" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3898480" lon="121.2599537" />
+  <node id="1518876735" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:39Z" lat="24.3852267" lon="121.2853690" />
+  <node id="1518876737" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3891213" lon="121.2804662" />
+  <node id="1518876739" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3873420" lon="121.2847032" />
+  <node id="1518876740" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3836496" lon="121.2866337" />
+  <node id="1518876742" visible="true" version="2" changeset="17908364" timestamp="2013-09-18T15:53:55Z" lat="24.3923360" lon="121.2547261" />
+  <node id="1518876743" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3853919" lon="121.2937702" />
+  <node id="1518876744" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3897864" lon="121.2584712" />
+  <node id="1518876745" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3929926" lon="121.2423638" />
+  <node id="1518876746" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:40Z" lat="24.3852023" lon="121.2903472" />
+  <node id="1518876748" visible="true" version="4" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3931843" lon="121.2525848" />
+  <node id="1518876749" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3853087" lon="121.2947070" />
+  <node id="1518876751" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3887848" lon="121.2739019" />
+  <node id="1518876753" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3860410" lon="121.2987637" />
+  <node id="1518876766" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:40Z" lat="24.3853440" lon="121.2856533" />
+  <node id="1518876768" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:40Z" lat="24.3853391" lon="121.2858411" />
+  <node id="1518876769" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3853449" lon="121.2936440" />
+  <node id="1518876770" visible="true" version="1" changeset="9962628" timestamp="2011-11-27T00:54:40Z" lat="24.3864677" lon="121.2852725" />
+  <node id="1525419883" visible="true" version="6" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3857286" lon="121.2988459">
+    <tag k="alt_name" v="大水池登山口" />
+    <tag k="highway" v="trailhead" />
+    <tag k="name" v="雪山登山口" />
+    <tag k="name:en" v="Xueshan Trailhead" />
+    <tag k="name:zh" v="雪山登山口" />
+  </node>
+  <node id="2101224904" visible="true" version="4" changeset="191127549" timestamp="2026-10-28T02:09:23Z" lat="24.3834040" lon="121.2317965">
+    <tag k="alt_name" v="雪主" />
+    <tag k="alt_name:en" v="Xueshan Main Peak" />
+    <tag k="ele" v="3886" />
+    <tag k="name" v="雪山主峰" />
+    <tag k="name:en" v="Xueshan" />
+    <tag k="name:en1" v="Snow Mountain Main Peak" />
+    <tag k="name:es" v="Xueshan" />
+    <tag k="name:zh" v="雪山主峰" />
+    <tag k="natural" v="peak" />
+    <tag k="prominence" v="1938" />
+    <tag k="ref" v="百岳#2;五嶽-2" />
+    <tag k="source" v="NLSC" />
+    <tag k="source:prominence" v="3886-1948 (思源埡口)" />
+    <tag k="wikidata" v="Q707720" />
+    <tag k="wikipedia" v="zh:雪山 (台灣)" />
+  </node>
+  <node id="2268473334" visible="true" version="12" changeset="175829497" timestamp="2025-12-12T05:20:11Z" lat="24.3887322" lon="121.2719622">
+    <tag k="ele" v="3199.0" />
+    <tag k="name" v="雪山東峰" />
+    <tag k="name:en" v="Xueshan East Peak" />
+    <tag k="name:zh" v="雪山東峰" />
+    <tag k="natural" v="peak" />
+    <tag k="ref" v="百岳#75;八小巒-3" />
+    <tag k="source" v="NLSC" />
+  </node>
+  <node id="2302571425" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3861073" lon="121.2985906" />
+  <node id="2302571427" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3886230" lon="121.2819981" />
+  <node id="2302571429" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3891080" lon="121.2813651" />
+  <node id="2302571430" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3892086" lon="121.2804052" />
+  <node id="2302571433" visible="true" version="5" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3895192" lon="121.2802894">
+    <tag k="name" v="哭坡觀景台" />
+    <tag k="name:en" v="Kupo Viewing Platform" />
+    <tag k="name:zh" v="哭坡觀景台" />
+    <tag k="tourism" v="viewpoint" />
+  </node>
+  <node id="2463034373" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:03Z" lat="24.3920328" lon="121.2548271" />
+  <node id="2463034374" visible="true" version="2" changeset="47124408" timestamp="2017-03-24T13:08:42Z" lat="24.3921015" lon="121.2548259" />
+  <node id="2463034375" visible="true" version="2" changeset="47124408" timestamp="2017-03-24T13:08:42Z" lat="24.3921797" lon="121.2547225" />
+  <node id="2463034385" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3922288" lon="121.2548233" />
+  <node id="2463034387" visible="true" version="2" changeset="47124408" timestamp="2017-03-24T13:08:42Z" lat="24.3923042" lon="121.2550140" />
+  <node id="2463034388" visible="true" version="2" changeset="47124408" timestamp="2017-03-24T13:08:42Z" lat="24.3924127" lon="121.2545288" />
+  <node id="2463034400" visible="true" version="1" changeset="17908364" timestamp="2013-09-18T15:53:53Z" lat="24.3924630" lon="121.2546085" />
+  <node id="2463034402" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3925105" lon="121.2545527" />
+  <node id="2463034403" visible="true" version="2" changeset="47124408" timestamp="2017-03-24T13:08:42Z" lat="24.3925919" lon="121.2547403" />
+  <node id="2466185244" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3833945" lon="121.2860827" />
+  <node id="2466185246" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3834185" lon="121.2862306" />
+  <node id="2466185247" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3834358" lon="121.2862659" />
+  <node id="2466185248" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3834456" lon="121.2862180" />
+  <node id="2466185250" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3834583" lon="121.2862572" />
+  <node id="2466185251" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3835102" lon="121.2863887" />
+  <node id="2466185253" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3835188" lon="121.2860254" />
+  <node id="2466185254" visible="true" version="1" changeset="17950815" timestamp="2013-09-21T06:32:15Z" lat="24.3835701" lon="121.2864262" />
+  <node id="2466185255" visible="true" version="1" changeset="17950815" timestamp="2013-09-21T06:32:15Z" lat="24.3835812" lon="121.2863943" />
+  <node id="2466185257" visible="true" version="1" changeset="17950815" timestamp="2013-09-21T06:32:15Z" lat="24.3836015" lon="121.2864593" />
+  <node id="2466185258" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3836298" lon="121.2863403" />
+  <node id="2466185259" visible="true" version="1" changeset="17950815" timestamp="2013-09-21T06:32:16Z" lat="24.3836342" lon="121.2863643" />
+  <node id="2466185260" visible="true" version="1" changeset="17950815" timestamp="2013-09-21T06:32:16Z" lat="24.3839579" lon="121.2860601" />
+  <node id="2466185261" visible="true" version="1" changeset="17950815" timestamp="2013-09-21T06:32:16Z" lat="24.3839780" lon="121.2859987" />
+  <node id="2466185262" visible="true" version="1" changeset="17950815" timestamp="2013-09-21T06:32:16Z" lat="24.3840297" lon="121.2859941" />
+  <node id="2466185303" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3859907" lon="121.2987941" />
+  <node id="2466185306" visible="true" version="1" changeset="17950815" timestamp="2013-09-21T06:32:17Z" lat="24.3860908" lon="121.2984029" />
+  <node id="2466185307" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3861338" lon="121.2984666" />
+  <node id="2466185308" visible="true" version="1" changeset="17950815" timestamp="2013-09-21T06:32:17Z" lat="24.3880696" lon="121.2831892" />
+  <node id="2466185309" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3881691" lon="121.2829138" />
+  <node id="2466185310" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3882502" lon="121.2826503" />
+  <node id="2466185311" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3883713" lon="121.2824887" />
+  <node id="2466185312" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3885973" lon="121.2805792" />
+  <node id="2466185313" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3886568" lon="121.2818607" />
+  <node id="2466185314" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3888036" lon="121.2814783" />
+  <node id="2466185315" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3887094" lon="121.2817524" />
+  <node id="2466185316" visible="true" version="3" changeset="160456042" timestamp="2024-12-21T02:12:14Z" lat="24.3887423" lon="121.2719993" />
+  <node id="2466185317" visible="true" version="3" changeset="160456042" timestamp="2024-12-21T02:12:14Z" lat="24.3887019" lon="121.2720826" />
+  <node id="2466185318" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3888870" lon="121.2733418" />
+  <node id="2466185319" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3888133" lon="121.2805660" />
+  <node id="2466185320" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3888530" lon="121.2807238" />
+  <node id="2466185321" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3889839" lon="121.2814503" />
+  <node id="2466185322" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3889333" lon="121.2733163" />
+  <node id="2466185323" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3889483" lon="121.2727634" />
+  <node id="2466185324" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3889681" lon="121.2726268" />
+  <node id="2466185327" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3890698" lon="121.2814274" />
+  <node id="2466185335" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3894243" lon="121.2802630" />
+  <node id="2466185336" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3897504" lon="121.2799099" />
+  <node id="2466185337" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3900276" lon="121.2796094" />
+  <node id="2466185338" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3902183" lon="121.2793338" />
+  <node id="2466185339" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3902822" lon="121.2792136" />
+  <node id="2466185340" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3903396" lon="121.2792417" />
+  <node id="2466185341" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3904195" lon="121.2792160" />
+  <node id="2466185342" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3904343" lon="121.2791733" />
+  <node id="2466185343" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3905754" lon="121.2779959" />
+  <node id="2466185344" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3906441" lon="121.2788623" />
+  <node id="2466185345" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3906885" lon="121.2787502" />
+  <node id="2466185346" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:04Z" lat="24.3907745" lon="121.2786455" />
+  <node id="2870453013" visible="true" version="1" changeset="22446908" timestamp="2014-05-20T14:08:37Z" lat="24.3836364" lon="121.2863543" />
+  <node id="4135125323" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3877037" lon="121.2359991" />
+  <node id="4169041909" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3884828" lon="121.2364324" />
+  <node id="4592425592" visible="true" version="4" changeset="160456042" timestamp="2024-12-21T02:12:14Z" lat="24.3834016" lon="121.2317861" />
+  <node id="4605619179" visible="true" version="3" changeset="143787550" timestamp="2023-11-08T15:58:31Z" lat="24.3865441" lon="121.2359884" />
+  <node id="4605619180" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3864573" lon="121.2358306" />
+  <node id="4605619181" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3864699" lon="121.2359419" />
+  <node id="4605619182" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:05Z" lat="24.3862553" lon="121.2355663" />
+  <node id="4605619183" visible="true" version="3" changeset="143787550" timestamp="2023-11-08T15:58:31Z" lat="24.3864897" lon="121.2359852" />
+  <node id="4605619184" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3860654" lon="121.2356401" />
+  <node id="4605619185" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3861250" lon="121.2355810" />
+  <node id="4605619186" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:05Z" lat="24.3859153" lon="121.2358543" />
+  <node id="4605619187" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3857535" lon="121.2359279" />
+  <node id="4605619188" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3855327" lon="121.2361249" />
+  <node id="4605619489" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3853345" lon="121.2360704" />
+  <node id="4605619490" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3852768" lon="121.2360184" />
+  <node id="4605619492" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3850461" lon="121.2357448" />
+  <node id="4605619493" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3839829" lon="121.2340973" />
+  <node id="4605619494" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3838322" lon="121.2337995" />
+  <node id="4605619495" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3836902" lon="121.2335512" />
+  <node id="4605619496" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3835220" lon="121.2333322" />
+  <node id="4605619497" visible="true" version="4" changeset="142356429" timestamp="2023-10-09T16:04:05Z" lat="24.3834186" lon="121.2331633" />
+  <node id="4605619499" visible="true" version="3" changeset="142356429" timestamp="2023-10-09T16:04:05Z" lat="24.3833777" lon="121.2330695" />
+  <node id="4605619500" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3833521" lon="121.2330308" />
+  <node id="4605619501" visible="true" version="3" changeset="160456042" timestamp="2024-12-21T02:12:14Z" lat="24.3833093" lon="121.2329772" />
+  <node id="4605619502" visible="true" version="6" changeset="160456042" timestamp="2024-12-21T02:12:14Z" lat="24.3832457" lon="121.2329532" />
+  <node id="4605619503" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3833789" lon="121.2323480" />
+  <node id="4605619504" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3833851" lon="121.2324043" />
+  <node id="4605619505" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3833789" lon="121.2324594" />
+  <node id="4605619506" visible="true" version="3" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3833421" lon="121.2325246" />
+  <node id="4605619526" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3930368" lon="121.2534462" />
+  <node id="4605619528" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3930519" lon="121.2529804" />
+  <node id="4605619529" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:05Z" lat="24.3932769" lon="121.2531579" />
+  <node id="4605619530" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3930908" lon="121.2526004" />
+  <node id="4605619531" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3932111" lon="121.2522035" />
+  <node id="4605619532" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3932711" lon="121.2521098" />
+  <node id="4605619533" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3933650" lon="121.2518316" />
+  <node id="4605619534" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3926782" lon="121.2543489" />
+  <node id="5352258264" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:06Z" lat="24.3857503" lon="121.2988414" />
+  <node id="5352258270" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:06Z" lat="24.3898091" lon="121.2603989" />
+  <node id="6059639088" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3852275" lon="121.2359694" />
+  <node id="6059639089" visible="true" version="4" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3935945" lon="121.2533389" />
+  <node id="6654653753" visible="true" version="1" changeset="72732980" timestamp="2019-07-28T09:09:21Z" lat="24.3923253" lon="121.2547346" />
+  <node id="6654678334" visible="true" version="2" changeset="184468196" timestamp="2026-06-23T09:47:50Z" lat="24.3885693" lon="121.2363622">
+    <tag k="man_made" v="monitoring_station" />
+    <tag k="monitoring:weather" v="yes" />
+    <tag k="name" v="雪山圈谷氣象站" />
+    <tag k="operator" v="交通部中央氣象署" />
+    <tag k="operator:wikidata" v="Q257136" />
+  </node>
+  <node id="6654783663" visible="true" version="1" changeset="72736167" timestamp="2019-07-28T11:52:10Z" lat="24.3833802" lon="121.2321941" />
+  <node id="6654783664" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3834009" lon="121.2319967" />
+  <node id="6654783665" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3833916" lon="121.2320449" />
+  <node id="6654783666" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3833838" lon="121.2319390" />
+  <node id="6654783667" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3832520" lon="121.2326014" />
+  <node id="6654783668" visible="true" version="2" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3832372" lon="121.2326428" />
+  <node id="6654783669" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3832302" lon="121.2327290" />
+  <node id="8120062437" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:06Z" lat="24.3860515" lon="121.2986976" />
+  <node id="9558378601" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3870523" lon="121.2360705" />
+  <node id="9558389529" visible="true" version="2" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3940479" lon="121.2479805" />
+  <node id="10118969095" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:06Z" lat="24.3858316" lon="121.2982636" />
+  <node id="10118969096" visible="true" version="1" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3854733" lon="121.2959539" />
+  <node id="10118969097" visible="true" version="1" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3852386" lon="121.2896273" />
+  <node id="10118969098" visible="true" version="1" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3847855" lon="121.2881487" />
+  <node id="10118969099" visible="true" version="1" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3841947" lon="121.2863382" />
+  <node id="10118969100" visible="true" version="1" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3861278" lon="121.2855005" />
+  <node id="10118969101" visible="true" version="1" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3873482" lon="121.2846038" />
+  <node id="10118969102" visible="true" version="1" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3893193" lon="121.2755242" />
+  <node id="10118969103" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:06Z" lat="24.3889133" lon="121.2746481" />
+  <node id="10118969104" visible="true" version="1" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3891087" lon="121.2665839" />
+  <node id="10118969105" visible="true" version="2" changeset="142356429" timestamp="2023-10-09T16:04:06Z" lat="24.3890266" lon="121.2664424" />
+  <node id="10118969106" visible="true" version="2" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3936803" lon="121.2496507" />
+  <node id="10118969107" visible="true" version="2" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3937425" lon="121.2494750" />
+  <node id="10118969108" visible="true" version="2" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3937297" lon="121.2485248" />
+  <node id="10118969109" visible="true" version="2" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3940004" lon="121.2477933" />
+  <node id="10118969110" visible="true" version="2" changeset="143821684" timestamp="2023-11-09T13:09:59Z" lat="24.3922646" lon="121.2414910" />
+  <node id="10118969111" visible="true" version="1" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3921596" lon="121.2412339" />
+  <node id="10118969112" visible="true" version="1" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3901577" lon="121.2394354" />
+  <node id="10118969113" visible="true" version="1" changeset="127889316" timestamp="2022-10-21T14:58:54Z" lat="24.3890692" lon="121.2377152" />
+  <node id="10118969114" visible="true" version="3" changeset="143787550" timestamp="2023-11-08T15:58:31Z" lat="24.3876415" lon="121.2360834" />
+  <node id="10118969115" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3868361" lon="121.2360781" />
+  <node id="11251302688" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3871606" lon="121.2360810" />
+  <node id="11251302689" visible="true" version="3" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3930630" lon="121.2528021" />
+  <node id="11251302690" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3913864" lon="121.2550930" />
+  <node id="11251302691" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3912704" lon="121.2553129" />
+  <node id="11251302692" visible="true" version="2" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3904932" lon="121.2560521" />
+  <node id="11251302693" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3897748" lon="121.2589976" />
+  <node id="11251302694" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3897638" lon="121.2591150" />
+  <node id="11251302695" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3897760" lon="121.2593202" />
+  <node id="11251302696" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3897687" lon="121.2595260" />
+  <node id="11251302697" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3897907" lon="121.2594596" />
+  <node id="11251302698" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3898188" lon="121.2624335" />
+  <node id="11251302699" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3894884" lon="121.2633555" />
+  <node id="11251302700" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3894010" lon="121.2641300" />
+  <node id="11251302701" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3891567" lon="121.2671857" />
+  <node id="11251302702" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3888270" lon="121.2701804" />
+  <node id="11251302703" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3888459" lon="121.2705868" />
+  <node id="11251302704" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3888929" lon="121.2707886" />
+  <node id="11251302705" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3889570" lon="121.2709281" />
+  <node id="11251302707" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3889576" lon="121.2710193" />
+  <node id="11251302708" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3889234" lon="121.2710468" />
+  <node id="11251302709" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3889216" lon="121.2711179" />
+  <node id="11251302710" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3888031" lon="121.2720600" />
+  <node id="11251302711" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3888587" lon="121.2733877" />
+  <node id="11251302712" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3888270" lon="121.2738229" />
+  <node id="11251302713" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3887915" lon="121.2738544" />
+  <node id="11251302714" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3888679" lon="121.2744371" />
+  <node id="11251302715" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3889607" lon="121.2747375" />
+  <node id="11251302716" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3890932" lon="121.2750312" />
+  <node id="11251302717" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3905205" lon="121.2790089" />
+  <node id="11251302718" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3903269" lon="121.2792148" />
+  <node id="11251302719" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3901131" lon="121.2794863" />
+  <node id="11251302720" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3900856" lon="121.2794904" />
+  <node id="11251302721" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3901437" lon="121.2794213" />
+  <node id="11251302722" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3901699" lon="121.2794146" />
+  <node id="11251302723" visible="true" version="1" changeset="142356429" timestamp="2023-10-09T16:04:02Z" lat="24.3887317" lon="121.2810615" />
+  <node id="11333313921" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3900379" lon="121.2565016" />
+  <node id="11333313922" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3901050" lon="121.2564456" />
+  <node id="11333313924" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3902746" lon="121.2561302" />
+  <node id="11333313925" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3903284" lon="121.2560461" />
+  <node id="11333313926" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3903512" lon="121.2559458" />
+  <node id="11333313927" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3903822" lon="121.2558384" />
+  <node id="11333313928" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3904311" lon="121.2557740" />
+  <node id="11333313929" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3904930" lon="121.2556988" />
+  <node id="11333313930" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3905713" lon="121.2556165" />
+  <node id="11333313931" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3906267" lon="121.2555395" />
+  <node id="11333313932" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3906672" lon="121.2554759" />
+  <node id="11333313933" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3906900" lon="121.2554256" />
+  <node id="11333313934" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3907319" lon="121.2553543" />
+  <node id="11333313935" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3907559" lon="121.2552791" />
+  <node id="11333313936" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3908980" lon="121.2551298" />
+  <node id="11333313937" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3909361" lon="121.2550813" />
+  <node id="11333313938" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3909794" lon="121.2550575" />
+  <node id="11333313939" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3910894" lon="121.2550280" />
+  <node id="11333313940" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3911968" lon="121.2549833" />
+  <node id="11333313941" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3912480" lon="121.2548467" />
+  <node id="11333313942" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3912544" lon="121.2548002" />
+  <node id="11333313943" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3912682" lon="121.2547390" />
+  <node id="11333313944" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3912940" lon="121.2546920" />
+  <node id="11333313945" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3913203" lon="121.2546450" />
+  <node id="11333313946" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3913341" lon="121.2546040" />
+  <node id="11333313947" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3913594" lon="121.2544994" />
+  <node id="11333313948" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3913718" lon="121.2544165" />
+  <node id="11333313949" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3913953" lon="121.2543639" />
+  <node id="11333313950" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3914137" lon="121.2543194" />
+  <node id="11333313951" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3914842" lon="121.2543027" />
+  <node id="11333313952" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3915477" lon="121.2542941" />
+  <node id="11333313953" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3916393" lon="121.2542916" />
+  <node id="11333313954" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3916863" lon="121.2543048" />
+  <node id="11333313955" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3917406" lon="121.2543164" />
+  <node id="11333313956" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3917844" lon="121.2543078" />
+  <node id="11333313957" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3918124" lon="121.2542891" />
+  <node id="11333313958" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3918474" lon="121.2542679" />
+  <node id="11333313959" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3918930" lon="121.2542436" />
+  <node id="11333313960" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3919648" lon="121.2541885" />
+  <node id="11333313961" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3919846" lon="121.2541718" />
+  <node id="11333313962" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3920615" lon="121.2541137" />
+  <node id="11333313963" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3920924" lon="121.2540707" />
+  <node id="11333313964" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3921200" lon="121.2540434" />
+  <node id="11333313965" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3921619" lon="121.2540095" />
+  <node id="11333313966" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3922338" lon="121.2539452" />
+  <node id="11333313967" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3922745" lon="121.2538977" />
+  <node id="11333313968" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3923551" lon="121.2538482" />
+  <node id="11333319469" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3924114" lon="121.2538244" />
+  <node id="11333319470" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3924590" lon="121.2538292" />
+  <node id="11333319471" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3925760" lon="121.2538244" />
+  <node id="11333319472" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3927360" lon="121.2538392" />
+  <node id="11333319473" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3932715" lon="121.2525879" />
+  <node id="11333319474" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3929003" lon="121.2525522" />
+  <node id="11333319475" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3929449" lon="121.2524260" />
+  <node id="11333319476" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3936892" lon="121.2513755" />
+  <node id="11333319477" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3933991" lon="121.2514118" />
+  <node id="11333319479" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3929759" lon="121.2529694" />
+  <node id="11333319481" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3929831" lon="121.2530678" />
+  <node id="11333319483" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3929329" lon="121.2531489" />
+  <node id="11333319484" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3928908" lon="121.2532137" />
+  <node id="11333319485" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3928405" lon="121.2532997" />
+  <node id="11333319488" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3928215" lon="121.2534157" />
+  <node id="11333319489" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3927923" lon="121.2535048" />
+  <node id="11333319490" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3927973" lon="121.2536056" />
+  <node id="11333319493" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3927056" lon="121.2539257" />
+  <node id="11333319494" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3926670" lon="121.2540729" />
+  <node id="11333319497" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3925800" lon="121.2543494" />
+  <node id="11333319505" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3936906" lon="121.2487028" />
+  <node id="11333319506" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3937179" lon="121.2487635" />
+  <node id="11333319507" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3940180" lon="121.2479443" />
+  <node id="11333319508" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3940029" lon="121.2479114" />
+  <node id="11333319509" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3940447" lon="121.2480049" />
+  <node id="11333319510" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3940167" lon="121.2478362" />
+  <node id="11333319511" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3940123" lon="121.2478699" />
+  <node id="11333319512" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3940021" lon="121.2478907" />
+  <node id="11333319513" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3940057" lon="121.2476951" />
+  <node id="11333319514" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3939989" lon="121.2475612" />
+  <node id="11333319515" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3939609" lon="121.2474919" />
+  <node id="11333319516" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3940143" lon="121.2476199" />
+  <node id="11333319517" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3939911" lon="121.2473608" />
+  <node id="11333319518" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3939904" lon="121.2473071" />
+  <node id="11333319519" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3940987" lon="121.2471380" />
+  <node id="11333319520" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3941122" lon="121.2471258" />
+  <node id="11333319521" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3941655" lon="121.2469435" />
+  <node id="11333319522" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3942558" lon="121.2466904" />
+  <node id="11333319523" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3942317" lon="121.2467767" />
+  <node id="11333319524" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3943001" lon="121.2466359" />
+  <node id="11333319525" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3942974" lon="121.2462806" />
+  <node id="11333319526" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3943199" lon="121.2461886" />
+  <node id="11333319527" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3943786" lon="121.2459140" />
+  <node id="11333319528" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3944923" lon="121.2455750" />
+  <node id="11333319529" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3945306" lon="121.2452003" />
+  <node id="11333319530" visible="true" version="1" changeset="143787101" timestamp="2023-11-08T15:49:31Z" lat="24.3945199" lon="121.2450817" />
+  <node id="11333345346" visible="true" version="1" changeset="143787550" timestamp="2023-11-08T15:58:31Z" lat="24.3879460" lon="121.2363246" />
+  <node id="11333345353" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3875184" lon="121.2362425" />
+  <node id="11333345354" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3874640" lon="121.2361871" />
+  <node id="11333345360" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3877313" lon="121.2360543" />
+  <node id="11333345363" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3877966" lon="121.2361586" />
+  <node id="11333345364" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z" lat="24.3878652" lon="121.2362519" />
+  <node id="11333345365" visible="true" version="1" changeset="143787550" timestamp="2023-11-08T15:58:31Z" lat="24.3865049" lon="121.2359916" />
+  <node id="11335768543" visible="true" version="1" changeset="143821684" timestamp="2023-11-09T13:09:59Z" lat="24.3901900" lon="121.2563037" />
+  <node id="11335768544" visible="true" version="1" changeset="143821684" timestamp="2023-11-09T13:09:59Z" lat="24.3901652" lon="121.2563348" />
+  <node id="11335768545" visible="true" version="1" changeset="143821684" timestamp="2023-11-09T13:09:59Z" lat="24.3901413" lon="121.2563880" />
+  <node id="11335768546" visible="true" version="1" changeset="143821684" timestamp="2023-11-09T13:09:59Z" lat="24.3901276" lon="121.2564166" />
+  <node id="11335800480" visible="true" version="1" changeset="143821684" timestamp="2023-11-09T13:09:59Z" lat="24.3920371" lon="121.2412013" />
+  <node id="11335800481" visible="true" version="1" changeset="143821684" timestamp="2023-11-09T13:09:59Z" lat="24.3916739" lon="121.2409393" />
+  <node id="11959281725" visible="true" version="1" changeset="152307350" timestamp="2024-06-05T23:01:02Z" lat="24.3888367" lon="121.2720861" />
+  <node id="12118303385" visible="true" version="1" changeset="155409855" timestamp="2024-08-18T11:29:13Z" lat="24.3853146" lon="121.2948519" />
+  <node id="12118303386" visible="true" version="1" changeset="155409855" timestamp="2024-08-18T11:29:13Z" lat="24.3853116" lon="121.2947795" />
+  <node id="12272876676" visible="true" version="1" changeset="158156543" timestamp="2024-10-21T07:21:56Z" lat="24.3853406" lon="121.2857828" />
+  <node id="12436385692" visible="true" version="1" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3932574" lon="121.2526106" />
+  <node id="12436385693" visible="true" version="1" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3889386" lon="121.2372603" />
+  <node id="12436385695" visible="true" version="1" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3875753" lon="121.2362991" />
+  <node id="12436385696" visible="true" version="1" changeset="160433138" timestamp="2024-12-20T13:15:53Z" lat="24.3832502" lon="121.2328411" />
+  <node id="12438056305" visible="true" version="1" changeset="160456042" timestamp="2024-12-21T02:12:13Z" lat="24.3832492" lon="121.2329105" />
+  <node id="12438056306" visible="true" version="1" changeset="160456042" timestamp="2024-12-21T02:12:13Z" lat="24.3832321" lon="121.2328836" />
+  <node id="12468291933" visible="true" version="2" changeset="175829497" timestamp="2025-12-12T05:20:11Z" lat="24.3886957" lon="121.2720841">
+    <tag k="ele" v="3201" />
+    <tag k="man_made" v="summit_board" />
+    <tag k="name" v="雪山東峰" />
+    <tag k="name:en" v="Snow Mountain East Peak" />
+    <tag k="name:zh" v="雪山東峰" />
+    <tag k="ref" v="百岳#75;八小巒-3" />
+  </node>
+  <node id="12468295331" visible="true" version="2" changeset="175829497" timestamp="2025-12-12T05:20:11Z" lat="24.3834046" lon="121.2317798">
+    <tag k="alt_name" v="雪主" />
+    <tag k="alt_name:en" v="Xueshan" />
+    <tag k="ele" v="3886" />
+    <tag k="man_made" v="summit_board" />
+    <tag k="name" v="雪山主峰" />
+    <tag k="name:en" v="Xueshan Main Peak" />
+    <tag k="name:en1" v="Snow Mountain Main Peak" />
+    <tag k="name:zh" v="雪山主峰" />
+    <tag k="ref" v="百岳#2;五嶽-2" />
+    <tag k="wikidata" v="Q707720" />
+    <tag k="wikipedia" v="zh:雪山 (台灣)" />
+  </node>
+  <way id="138516545" visible="true" version="27" changeset="155409855" timestamp="2024-08-18T11:29:13Z">
+    <nd ref="12118303386" />
+    <nd ref="1518876749" />
+    <nd ref="1518876731" />
+    <nd ref="1518875821" />
+    <nd ref="1518876743" />
+    <nd ref="1518876769" />
+    <nd ref="1518876344" />
+    <nd ref="1518876320" />
+    <nd ref="1518876315" />
+    <nd ref="1518876338" />
+    <nd ref="1518876349" />
+    <nd ref="1518876375" />
+    <nd ref="1518876389" />
+    <nd ref="1518876422" />
+    <nd ref="1518876444" />
+    <nd ref="1518876460" />
+    <nd ref="1518876505" />
+    <nd ref="1518876524" />
+    <nd ref="1518875939" />
+    <nd ref="1518876209" />
+    <nd ref="1518876407" />
+    <nd ref="1518876696" />
+    <nd ref="1518876558" />
+    <nd ref="1518876279" />
+    <nd ref="1518876282" />
+    <nd ref="1518876746" />
+    <nd ref="1518876657" />
+    <nd ref="1518876270" />
+    <nd ref="1518876370" />
+    <nd ref="10118969097" />
+    <nd ref="1518876541" />
+    <nd ref="1518876663" />
+    <nd ref="1518876291" />
+    <nd ref="1518876413" />
+    <nd ref="1518876576" />
+    <nd ref="1518876654" />
+    <nd ref="1518875876" />
+    <nd ref="10118969098" />
+    <nd ref="1518876016" />
+    <nd ref="1518876112" />
+    <nd ref="1518876237" />
+    <nd ref="1518876372" />
+    <nd ref="1518876510" />
+    <nd ref="1518876331" />
+    <nd ref="1518875907" />
+    <nd ref="1518876637" />
+    <nd ref="1518876166" />
+    <nd ref="1518876264" />
+    <nd ref="1518876377" />
+    <nd ref="1518876547" />
+    <nd ref="1518876740" />
+    <nd ref="1518876293" />
+    <nd ref="2466185257" />
+    <nd ref="2466185254" />
+    <tag k="bicycle" v="no" />
+    <tag k="highway" v="footway" />
+    <tag k="name" v="雪山主峰步道" />
+    <tag k="name:en" v="Xueshan Main Peak Trail" />
+    <tag k="name:zh" v="雪山主峰步道" />
+    <tag k="sac_scale" v="mountain_hiking" />
+    <tag k="surface" v="unpaved" />
+    <tag k="trail_visibility" v="excellent" />
+  </way>
+  <way id="238470041" visible="true" version="4" changeset="185189102" timestamp="2026-07-06T10:36:39Z">
+    <nd ref="2463034388" />
+    <nd ref="2463034375" />
+    <nd ref="2463034374" />
+    <nd ref="2463034387" />
+    <nd ref="2463034403" />
+    <nd ref="2463034388" />
+    <tag k="access" v="no" />
+    <tag k="alt_name" v="雪山三六九山莊" />
+    <tag k="contact:facebook" v="https://www.facebook.com/166592773398043" />
+    <tag k="ele" v="3100" />
+    <tag k="name" v="三六九山莊 (施工中)" />
+    <tag k="tourism" v="alpine_hut" />
+    <tag k="website" v="https://www.taiwan-adventures.com/trips-and-tours/high-mountain-hikes/snow-mountain" />
+    <tag k="wikidata" v="Q115908859" />
+    <tag k="wikipedia" v="zh:三六九山莊" />
+  </way>
+  <way id="238820083" visible="true" version="5" changeset="152823065" timestamp="2024-06-17T23:16:23Z">
+    <nd ref="2466185253" />
+    <nd ref="2466185244" />
+    <nd ref="2466185248" />
+    <nd ref="2466185246" />
+    <nd ref="2466185247" />
+    <nd ref="2466185250" />
+    <nd ref="2466185251" />
+    <nd ref="2466185258" />
+    <nd ref="2466185253" />
+    <tag k="building" v="yes" />
+    <tag k="capacity" v="132" />
+    <tag k="check_date" v="2024-06-17" />
+    <tag k="ele" v="2510" />
+    <tag k="electricity" v="no" />
+    <tag k="name" v="七卡山莊" />
+    <tag k="name:en" v="Qika Cabin" />
+    <tag k="reservation" v="required" />
+    <tag k="shower" v="no" />
+    <tag k="tourism" v="alpine_hut" />
+  </way>
+  <way id="464085679" visible="true" version="10" changeset="160433138" timestamp="2024-12-20T13:15:54Z">
+    <nd ref="1518876469" />
+    <nd ref="12436385693" />
+    <nd ref="1518875841" />
+    <nd ref="1518875868" />
+    <nd ref="1518875940" />
+    <nd ref="4169041909" />
+    <nd ref="1518875937" />
+    <nd ref="1518876107" />
+    <nd ref="11333345346" />
+    <nd ref="11333345364" />
+    <nd ref="11333345363" />
+    <nd ref="11333345360" />
+    <nd ref="4135125323" />
+    <tag k="bicycle" v="no" />
+    <tag k="highway" v="footway" />
+    <tag k="name" v="雪山主峰步道" />
+    <tag k="name:en" v="Xueshan Main Peak Trail" />
+    <tag k="name:zh" v="雪山主峰步道" />
+    <tag k="sac_scale" v="mountain_hiking" />
+    <tag k="surface" v="unpaved" />
+  </way>
+  <way id="464085687" visible="true" version="11" changeset="152836983" timestamp="2024-06-18T08:41:58Z">
+    <nd ref="1518875824" />
+    <nd ref="1518876562" />
+    <nd ref="1518876052" />
+    <nd ref="1518876543" />
+    <nd ref="1518876546" />
+    <nd ref="1518876428" />
+    <nd ref="10118969106" />
+    <nd ref="10118969107" />
+    <nd ref="1518875848" />
+    <nd ref="1518876070" />
+    <nd ref="1518876316" />
+    <nd ref="11333319506" />
+    <nd ref="11333319505" />
+    <nd ref="1518875809" />
+    <nd ref="10118969108" />
+    <nd ref="1518876348" />
+    <nd ref="1518876549" />
+    <nd ref="11333319509" />
+    <nd ref="9558389529" />
+    <nd ref="11333319507" />
+    <nd ref="11333319508" />
+    <nd ref="11333319512" />
+    <nd ref="11333319511" />
+    <nd ref="11333319510" />
+    <nd ref="10118969109" />
+    <nd ref="11333319513" />
+    <nd ref="11333319516" />
+    <nd ref="11333319514" />
+    <nd ref="11333319515" />
+    <nd ref="1518875946" />
+    <nd ref="11333319517" />
+    <nd ref="11333319518" />
+    <nd ref="1518875944" />
+    <nd ref="11333319519" />
+    <nd ref="11333319520" />
+    <nd ref="1518876145" />
+    <nd ref="11333319521" />
+    <nd ref="1518875849" />
+    <nd ref="11333319523" />
+    <nd ref="11333319522" />
+    <nd ref="11333319524" />
+    <nd ref="1518876007" />
+    <nd ref="1518876174" />
+    <nd ref="11333319525" />
+    <nd ref="11333319526" />
+    <nd ref="1518875896" />
+    <nd ref="11333319527" />
+    <nd ref="1518876479" />
+    <nd ref="1518876241" />
+    <nd ref="11333319528" />
+    <nd ref="1518876011" />
+    <nd ref="11333319529" />
+    <nd ref="11333319530" />
+    <nd ref="1518876405" />
+    <nd ref="1518876335" />
+    <nd ref="1518875973" />
+    <nd ref="1518876374" />
+    <nd ref="1518876313" />
+    <nd ref="1518876643" />
+    <nd ref="1518876002" />
+    <nd ref="1518875898" />
+    <nd ref="1518876131" />
+    <nd ref="1518875945" />
+    <nd ref="1518876118" />
+    <nd ref="1518876244" />
+    <nd ref="1518876651" />
+    <nd ref="1518875858" />
+    <nd ref="1518876745" />
+    <nd ref="1518875911" />
+    <nd ref="1518875880" />
+    <nd ref="1518875845" />
+    <nd ref="1518876411" />
+    <nd ref="1518875941" />
+    <nd ref="1518876216" />
+    <nd ref="1518876281" />
+    <nd ref="10118969110" />
+    <nd ref="1518876087" />
+    <nd ref="10118969111" />
+    <nd ref="11335800480" />
+    <nd ref="1518875917" />
+    <nd ref="1518876015" />
+    <nd ref="11335800481" />
+    <nd ref="1518876042" />
+    <nd ref="1518875912" />
+    <nd ref="1518876108" />
+    <nd ref="1518875991" />
+    <nd ref="1518875904" />
+    <nd ref="1518876442" />
+    <nd ref="1518875854" />
+    <nd ref="1518876019" />
+    <nd ref="1518876162" />
+    <nd ref="1518875879" />
+    <nd ref="1518876089" />
+    <nd ref="1518876229" />
+    <nd ref="1518875984" />
+    <nd ref="10118969112" />
+    <nd ref="1518876140" />
+    <nd ref="1518876262" />
+    <nd ref="1518875951" />
+    <nd ref="1518876049" />
+    <nd ref="1518875846" />
+    <nd ref="1518876183" />
+    <nd ref="1518876175" />
+    <nd ref="1518875894" />
+    <nd ref="1518875892" />
+    <nd ref="1518876097" />
+    <nd ref="1518875883" />
+    <nd ref="1518876214" />
+    <nd ref="1518876021" />
+    <nd ref="10118969113" />
+    <nd ref="1518876212" />
+    <nd ref="1518876469" />
+    <tag k="bicycle" v="no" />
+    <tag k="highway" v="path" />
+    <tag k="name" v="雪山主峰步道----黑森林路段" />
+    <tag k="name:en" v="Xueshan Main Peak Trail - Black Forest Section" />
+    <tag k="name:zh" v="雪山主峰步道----黑森林路段" />
+    <tag k="sac_scale" v="mountain_hiking" />
+    <tag k="surface" v="unpaved" />
+    <tag k="trail_visibility" v="good" />
+  </way>
+  <way id="464086142" visible="true" version="13" changeset="160433138" timestamp="2024-12-20T13:15:54Z">
+    <nd ref="1518876551" />
+    <nd ref="2463034385" />
+    <nd ref="6654653753" />
+    <nd ref="1518876742" />
+    <nd ref="2463034400" />
+    <nd ref="2463034402" />
+    <nd ref="1518876471" />
+    <nd ref="4605619534" />
+    <nd ref="1518876177" />
+    <nd ref="1518876640" />
+    <nd ref="1518876482" />
+    <nd ref="6059639089" />
+    <nd ref="1518876653" />
+    <nd ref="1518876036" />
+    <nd ref="4605619526" />
+    <nd ref="1518876312" />
+    <nd ref="4605619529" />
+    <nd ref="1518876715" />
+    <nd ref="1518876082" />
+    <nd ref="1518876271" />
+    <nd ref="4605619528" />
+    <nd ref="11333319479" />
+    <nd ref="1518876698" />
+    <nd ref="11251302689" />
+    <nd ref="12436385692" />
+    <nd ref="11333319473" />
+    <nd ref="1518876748" />
+    <nd ref="4605619530" />
+    <nd ref="11333319474" />
+    <nd ref="1518876588" />
+    <nd ref="11333319475" />
+    <nd ref="1518875860" />
+    <nd ref="4605619531" />
+    <nd ref="4605619532" />
+    <nd ref="1518876178" />
+    <nd ref="4605619533" />
+    <nd ref="1518875931" />
+    <nd ref="11333319476" />
+    <nd ref="1518876681" />
+    <nd ref="11333319477" />
+    <nd ref="1518875812" />
+    <nd ref="1518875824" />
+    <tag k="bicycle" v="no" />
+    <tag k="highway" v="footway" />
+    <tag k="name" v="雪山主峰步道----草原路段" />
+    <tag k="name:en" v="Xueshan Main Peak Trail - Prairie Section" />
+    <tag k="name:zh" v="雪山主峰步道----草原路段" />
+    <tag k="sac_scale" v="mountain_hiking" />
+    <tag k="surface" v="unpaved" />
+    <tag k="trail_visibility" v="excellent" />
+  </way>
+  <way id="464086143" visible="true" version="16" changeset="160456042" timestamp="2024-12-21T02:12:14Z">
+    <nd ref="4135125323" />
+    <nd ref="1518876233" />
+    <nd ref="10118969114" />
+    <nd ref="1518876354" />
+    <nd ref="12436385695" />
+    <nd ref="11333345353" />
+    <nd ref="11333345354" />
+    <nd ref="1518875919" />
+    <nd ref="11251302688" />
+    <nd ref="9558378601" />
+    <nd ref="1518876160" />
+    <nd ref="10118969115" />
+    <nd ref="1518875935" />
+    <nd ref="1518876247" />
+    <nd ref="4605619179" />
+    <nd ref="11333345365" />
+    <nd ref="4605619183" />
+    <nd ref="4605619181" />
+    <nd ref="4605619180" />
+    <nd ref="1518875987" />
+    <nd ref="1518875968" />
+    <nd ref="4605619182" />
+    <nd ref="1518875966" />
+    <nd ref="4605619185" />
+    <nd ref="4605619184" />
+    <nd ref="1518876340" />
+    <nd ref="4605619186" />
+    <nd ref="1518875902" />
+    <nd ref="4605619187" />
+    <nd ref="1518876176" />
+    <nd ref="1518875928" />
+    <nd ref="4605619188" />
+    <nd ref="1518876072" />
+    <nd ref="4605619489" />
+    <nd ref="4605619490" />
+    <nd ref="6059639088" />
+    <nd ref="1518876227" />
+    <nd ref="4605619492" />
+    <nd ref="1518876004" />
+    <nd ref="1518876182" />
+    <nd ref="1518876318" />
+    <nd ref="1518876574" />
+    <nd ref="1518875884" />
+    <nd ref="1518876218" />
+    <nd ref="4605619493" />
+    <nd ref="1518875878" />
+    <nd ref="4605619494" />
+    <nd ref="1518876376" />
+    <nd ref="4605619495" />
+    <nd ref="1518876076" />
+    <nd ref="4605619496" />
+    <nd ref="1518876109" />
+    <nd ref="4605619497" />
+    <nd ref="4605619499" />
+    <nd ref="4605619500" />
+    <nd ref="1518875970" />
+    <nd ref="4605619501" />
+    <nd ref="4605619502" />
+    <nd ref="12438056305" />
+    <nd ref="12438056306" />
+    <nd ref="12436385696" />
+    <nd ref="1518876046" />
+    <nd ref="6654783669" />
+    <nd ref="6654783668" />
+    <nd ref="6654783667" />
+    <nd ref="1518875914" />
+    <nd ref="4605619506" />
+    <nd ref="4605619505" />
+    <nd ref="4605619504" />
+    <nd ref="4605619503" />
+    <nd ref="1518876190" />
+    <nd ref="6654783663" />
+    <nd ref="1518876078" />
+    <nd ref="6654783665" />
+    <nd ref="6654783664" />
+    <nd ref="6654783666" />
+    <nd ref="4592425592" />
+    <tag k="bicycle" v="no" />
+    <tag k="highway" v="footway" />
+    <tag k="name" v="雪山主峰步道---圈谷路段" />
+    <tag k="name:en" v="Xueshan Main Peak Trail - Circle Valley Section" />
+    <tag k="name:zh" v="雪山主峰步道---圈谷路段" />
+    <tag k="sac_scale" v="mountain_hiking" />
+    <tag k="surface" v="unpaved" />
+    <tag k="trail_visibility" v="excellent" />
+  </way>
+  <way id="1222030823" visible="true" version="4" changeset="152822532" timestamp="2024-06-17T22:44:21Z">
+    <nd ref="1518876458" />
+    <nd ref="1518875916" />
+    <nd ref="11251302692" />
+    <nd ref="1518876054" />
+    <nd ref="1518876196" />
+    <nd ref="1518876391" />
+    <nd ref="1518876728" />
+    <nd ref="11251302691" />
+    <nd ref="1518875819" />
+    <nd ref="11251302690" />
+    <nd ref="1518876074" />
+    <nd ref="1518876225" />
+    <nd ref="1518876500" />
+    <nd ref="2463034373" />
+    <nd ref="1518876551" />
+    <tag k="access" v="no" />
+    <tag k="bicycle" v="no" />
+    <tag k="highway" v="footway" />
+    <tag k="name" v="雪山主峰步道----草原路段 (施工中禁入)" />
+    <tag k="name:en" v="Xueshan Main Peak Trail - Prairie Section" />
+    <tag k="name:zh" v="雪山主峰步道----草原路段" />
+    <tag k="sac_scale" v="mountain_hiking" />
+    <tag k="surface" v="unpaved" />
+    <tag k="trail_visibility" v="excellent" />
+  </way>
+  <way id="1222030824" visible="true" version="2" changeset="143821684" timestamp="2023-11-09T13:09:59Z">
+    <nd ref="1518876458" />
+    <nd ref="11333313924" />
+    <nd ref="11333313925" />
+    <nd ref="11333313926" />
+    <nd ref="11333313927" />
+    <nd ref="11333313928" />
+    <nd ref="11333313929" />
+    <nd ref="11333313930" />
+    <nd ref="11333313931" />
+    <nd ref="11333313932" />
+    <nd ref="11333313933" />
+    <nd ref="11333313934" />
+    <nd ref="11333313935" />
+    <nd ref="11333313936" />
+    <nd ref="11333313937" />
+    <nd ref="11333313938" />
+    <nd ref="11333313939" />
+    <nd ref="11333313940" />
+    <nd ref="11333313941" />
+    <nd ref="11333313942" />
+    <nd ref="11333313943" />
+    <nd ref="11333313944" />
+    <nd ref="11333313945" />
+    <nd ref="11333313946" />
+    <nd ref="11333313947" />
+    <nd ref="11333313948" />
+    <nd ref="11333313949" />
+    <nd ref="11333313950" />
+    <nd ref="11333313951" />
+    <nd ref="11333313952" />
+    <nd ref="11333313953" />
+    <nd ref="11333313954" />
+    <nd ref="11333313955" />
+    <nd ref="11333313956" />
+    <nd ref="11333313957" />
+    <nd ref="11333313958" />
+    <nd ref="11333313959" />
+    <nd ref="11333313960" />
+    <nd ref="11333313961" />
+    <nd ref="11333313962" />
+    <nd ref="11333313963" />
+    <nd ref="11333313964" />
+    <nd ref="11333313965" />
+    <nd ref="11333313966" />
+    <nd ref="11333313967" />
+    <nd ref="11333313968" />
+    <nd ref="11333319469" />
+    <nd ref="11333319470" />
+    <nd ref="11333319471" />
+    <nd ref="11333319472" />
+    <tag k="highway" v="footway" />
+    <tag k="name" v="臨時步道" />
+  </way>
+  <way id="1222030825" visible="true" version="2" changeset="160433138" timestamp="2024-12-20T13:15:54Z">
+    <nd ref="11333319479" />
+    <nd ref="11333319481" />
+    <nd ref="11333319483" />
+    <nd ref="11333319484" />
+    <nd ref="11333319485" />
+    <nd ref="11333319488" />
+    <nd ref="11333319489" />
+    <nd ref="11333319490" />
+    <nd ref="11333319472" />
+    <nd ref="11333319493" />
+    <nd ref="11333319494" />
+    <nd ref="11333319497" />
+    <nd ref="1518876471" />
+    <tag k="highway" v="footway" />
+    <tag k="name" v="臨時步道" />
+  </way>
+  <way id="1293296092" visible="true" version="2" changeset="158156543" timestamp="2024-10-21T07:21:56Z">
+    <nd ref="2466185254" />
+    <nd ref="2466185255" />
+    <nd ref="2466185259" />
+    <nd ref="2870453013" />
+    <nd ref="1518876572" />
+    <nd ref="1518876542" />
+    <nd ref="1518876665" />
+    <nd ref="2466185260" />
+    <nd ref="2466185261" />
+    <nd ref="2466185262" />
+    <nd ref="1518876673" />
+    <nd ref="1518876358" />
+    <nd ref="1518876702" />
+    <nd ref="10118969099" />
+    <nd ref="1518876378" />
+    <nd ref="1518876608" />
+    <nd ref="1518875942" />
+    <nd ref="1518876151" />
+    <nd ref="1518876346" />
+    <nd ref="1518876642" />
+    <nd ref="1518876006" />
+    <nd ref="1518876180" />
+    <nd ref="1518876347" />
+    <nd ref="1518876607" />
+    <nd ref="1518876350" />
+    <nd ref="1518876619" />
+    <nd ref="1518876735" />
+    <nd ref="1518876506" />
+    <nd ref="1518876512" />
+    <nd ref="1518876766" />
+    <nd ref="12272876676" />
+    <nd ref="1518876768" />
+    <nd ref="1518875977" />
+    <nd ref="1518876095" />
+    <nd ref="1518876202" />
+    <nd ref="1518876356" />
+    <nd ref="1518876504" />
+    <nd ref="1518876676" />
+    <nd ref="1518876690" />
+    <nd ref="1518876497" />
+    <nd ref="1518876462" />
+    <nd ref="10118969100" />
+    <nd ref="1518875948" />
+    <nd ref="1518876289" />
+    <nd ref="1518876770" />
+    <nd ref="1518876149" />
+    <nd ref="1518876475" />
+    <nd ref="1518876426" />
+    <nd ref="1518875813" />
+    <nd ref="1518876418" />
+    <nd ref="1518876709" />
+    <nd ref="1518875900" />
+    <nd ref="1518876120" />
+    <nd ref="1518876368" />
+    <nd ref="1518876613" />
+    <nd ref="1518876739" />
+    <nd ref="10118969101" />
+    <nd ref="1518876580" />
+    <nd ref="1518876508" />
+    <nd ref="1518876641" />
+    <nd ref="1518875823" />
+    <nd ref="1518875989" />
+    <nd ref="1518876114" />
+    <nd ref="1518876217" />
+    <nd ref="1518876514" />
+    <nd ref="1518876043" />
+    <nd ref="1518876146" />
+    <nd ref="1518876257" />
+    <nd ref="1518876585" />
+    <nd ref="1518876406" />
+    <nd ref="1518876045" />
+    <nd ref="1518876502" />
+    <nd ref="1518876130" />
+    <nd ref="2466185308" />
+    <nd ref="1518876705" />
+    <nd ref="2466185309" />
+    <nd ref="1518876711" />
+    <nd ref="2466185310" />
+    <nd ref="1518876447" />
+    <nd ref="2466185311" />
+    <nd ref="1518875877" />
+    <nd ref="1518876245" />
+    <nd ref="1518876622" />
+    <nd ref="2302571427" />
+    <nd ref="2466185313" />
+    <nd ref="1518876387" />
+    <nd ref="2466185315" />
+    <nd ref="1518876575" />
+    <nd ref="1518875844" />
+    <nd ref="1518876091" />
+    <nd ref="2466185314" />
+    <nd ref="1518875843" />
+    <nd ref="2466185321" />
+    <nd ref="2466185327" />
+    <nd ref="1518876057" />
+    <nd ref="2302571429" />
+    <nd ref="1518876252" />
+    <nd ref="1518875978" />
+    <nd ref="1518876093" />
+    <nd ref="11251302723" />
+    <nd ref="1518876188" />
+    <nd ref="1518876280" />
+    <nd ref="1518876473" />
+    <nd ref="2466185312" />
+    <nd ref="1518876560" />
+    <nd ref="2466185320" />
+    <nd ref="2466185319" />
+    <nd ref="1518876342" />
+    <nd ref="1518876434" />
+    <nd ref="1518876606" />
+    <nd ref="1518876737" />
+    <nd ref="2302571430" />
+    <nd ref="1518875826" />
+    <nd ref="2466185335" />
+    <nd ref="1518876609" />
+    <nd ref="1518876659" />
+    <nd ref="2466185336" />
+    <nd ref="1518876148" />
+    <nd ref="1518876518" />
+    <nd ref="2466185337" />
+    <nd ref="1518876621" />
+    <nd ref="11251302720" />
+    <nd ref="11251302719" />
+    <nd ref="11251302721" />
+    <nd ref="11251302722" />
+    <nd ref="2466185338" />
+    <nd ref="1518876251" />
+    <nd ref="1518876333" />
+    <nd ref="2466185339" />
+    <nd ref="11251302718" />
+    <nd ref="2466185340" />
+    <nd ref="2466185341" />
+    <nd ref="2466185342" />
+    <nd ref="1518876708" />
+    <nd ref="1518876126" />
+    <nd ref="11251302717" />
+    <nd ref="1518875974" />
+    <nd ref="2466185344" />
+    <nd ref="2466185345" />
+    <nd ref="2466185346" />
+    <nd ref="1518876014" />
+    <nd ref="1518876143" />
+    <nd ref="1518876296" />
+    <nd ref="1518876516" />
+    <nd ref="2466185343" />
+    <nd ref="1518876714" />
+    <nd ref="1518876424" />
+    <nd ref="1518876617" />
+    <nd ref="1518875881" />
+    <nd ref="1518876048" />
+    <nd ref="1518876128" />
+    <nd ref="1518876231" />
+    <nd ref="1518875963" />
+    <nd ref="1518876077" />
+    <nd ref="1518876181" />
+    <nd ref="1518875866" />
+    <nd ref="1518876018" />
+    <nd ref="1518876111" />
+    <nd ref="1518876198" />
+    <nd ref="1518876283" />
+    <nd ref="1518876674" />
+    <nd ref="1518875953" />
+    <nd ref="1518876266" />
+    <nd ref="1518876284" />
+    <nd ref="1518876645" />
+    <nd ref="1518875885" />
+    <nd ref="1518875915" />
+    <nd ref="10118969102" />
+    <nd ref="1518876147" />
+    <nd ref="1518876455" />
+    <nd ref="1518876352" />
+    <nd ref="1518876688" />
+    <nd ref="1518876047" />
+    <nd ref="11251302716" />
+    <nd ref="1518876193" />
+    <nd ref="1518876017" />
+    <nd ref="11251302715" />
+    <nd ref="1518876164" />
+    <nd ref="10118969103" />
+    <nd ref="1518875954" />
+    <nd ref="11251302714" />
+    <nd ref="1518876106" />
+    <nd ref="1518876248" />
+    <nd ref="1518876414" />
+    <nd ref="1518876596" />
+    <nd ref="1518876751" />
+    <nd ref="11251302713" />
+    <nd ref="11251302712" />
+    <nd ref="1518876393" />
+    <nd ref="1518876556" />
+    <nd ref="1518876716" />
+    <nd ref="11251302711" />
+    <nd ref="2466185318" />
+    <nd ref="2466185322" />
+    <nd ref="1518875979" />
+    <nd ref="1518876080" />
+    <nd ref="1518876155" />
+    <nd ref="2466185323" />
+    <nd ref="2466185324" />
+    <nd ref="1518876639" />
+    <nd ref="1518876578" />
+    <nd ref="1518876297" />
+    <nd ref="1518876122" />
+    <nd ref="11959281725" />
+    <nd ref="11251302710" />
+    <nd ref="2466185317" />
+    <nd ref="2466185316" />
+    <nd ref="1518876075" />
+    <nd ref="1518876025" />
+    <nd ref="1518875856" />
+    <nd ref="1518876153" />
+    <nd ref="1518876484" />
+    <nd ref="11251302709" />
+    <nd ref="11251302708" />
+    <nd ref="11251302707" />
+    <nd ref="11251302705" />
+    <nd ref="1518876573" />
+    <nd ref="11251302704" />
+    <nd ref="1518875933" />
+    <nd ref="11251302703" />
+    <nd ref="1518876117" />
+    <nd ref="11251302702" />
+    <nd ref="1518876261" />
+    <nd ref="1518875982" />
+    <nd ref="1518876085" />
+    <nd ref="1518876200" />
+    <nd ref="1518875909" />
+    <nd ref="1518876059" />
+    <nd ref="1518876158" />
+    <nd ref="1518876321" />
+    <nd ref="1518876420" />
+    <nd ref="1518876535" />
+    <nd ref="11251302701" />
+    <nd ref="1518876644" />
+    <nd ref="1518876303" />
+    <nd ref="10118969104" />
+    <nd ref="10118969105" />
+    <nd ref="1518876381" />
+    <nd ref="1518876539" />
+    <nd ref="1518876084" />
+    <nd ref="1518876590" />
+    <nd ref="1518876239" />
+    <nd ref="1518875981" />
+    <nd ref="1518876445" />
+    <nd ref="1518876409" />
+    <nd ref="11251302700" />
+    <nd ref="1518875986" />
+    <nd ref="1518876259" />
+    <nd ref="11251302699" />
+    <nd ref="1518876034" />
+    <nd ref="1518876215" />
+    <nd ref="11251302698" />
+    <nd ref="1518876039" />
+    <nd ref="1518876210" />
+    <nd ref="1518876441" />
+    <nd ref="1518876571" />
+    <nd ref="1518876710" />
+    <nd ref="1518876317" />
+    <nd ref="1518876464" />
+    <nd ref="5352258270" />
+    <nd ref="1518876594" />
+    <nd ref="1518876733" />
+    <nd ref="1518876522" />
+    <nd ref="11251302696" />
+    <nd ref="11251302697" />
+    <nd ref="11251302695" />
+    <nd ref="1518876630" />
+    <nd ref="11251302694" />
+    <nd ref="11251302693" />
+    <nd ref="1518876141" />
+    <nd ref="1518876744" />
+    <nd ref="1518876605" />
+    <nd ref="1518876678" />
+    <nd ref="1518876446" />
+    <nd ref="1518876520" />
+    <nd ref="1518876726" />
+    <nd ref="1518876385" />
+    <nd ref="1518876577" />
+    <nd ref="1518875850" />
+    <nd ref="11333313921" />
+    <nd ref="11333313922" />
+    <nd ref="11335768546" />
+    <nd ref="11335768545" />
+    <nd ref="11335768544" />
+    <nd ref="11335768543" />
+    <nd ref="1518876458" />
+    <tag k="bicycle" v="no" />
+    <tag k="highway" v="footway" />
+    <tag k="name" v="雪山主峰步道" />
+    <tag k="name:en" v="Xueshan Main Peak Trail" />
+    <tag k="name:zh" v="雪山主峰步道" />
+    <tag k="sac_scale" v="mountain_hiking" />
+    <tag k="surface" v="unpaved" />
+    <tag k="trail_visibility" v="excellent" />
+  </way>
+  <way id="1308583311" visible="true" version="1" changeset="155409855" timestamp="2024-08-18T11:29:13Z">
+    <nd ref="1525419883" />
+    <nd ref="5352258264" />
+    <nd ref="1518876055" />
+    <nd ref="2466185303" />
+    <nd ref="1518876753" />
+    <nd ref="8120062437" />
+    <nd ref="1518876124" />
+    <nd ref="2302571425" />
+    <nd ref="1518876113" />
+    <nd ref="2466185307" />
+    <nd ref="2466185306" />
+    <nd ref="1518876268" />
+    <nd ref="1518876301" />
+    <nd ref="10118969095" />
+    <nd ref="1518876305" />
+    <nd ref="1518876675" />
+    <nd ref="1518875833" />
+    <nd ref="1518876379" />
+    <nd ref="1518876395" />
+    <nd ref="1518876448" />
+    <nd ref="1518876467" />
+    <nd ref="1518876478" />
+    <nd ref="1518876507" />
+    <nd ref="1518876537" />
+    <nd ref="1518876624" />
+    <nd ref="1518876586" />
+    <nd ref="1518876592" />
+    <nd ref="1518876583" />
+    <nd ref="1518876677" />
+    <nd ref="1518876661" />
+    <nd ref="1518876707" />
+    <nd ref="1518876713" />
+    <nd ref="1518875810" />
+    <nd ref="1518875814" />
+    <nd ref="1518875828" />
+    <nd ref="1518876278" />
+    <nd ref="1518876314" />
+    <nd ref="1518876646" />
+    <nd ref="1518876329" />
+    <nd ref="1518876382" />
+    <nd ref="1518876480" />
+    <nd ref="1518876408" />
+    <nd ref="10118969096" />
+    <nd ref="1518876412" />
+    <nd ref="1518876440" />
+    <nd ref="1518876476" />
+    <nd ref="1518876495" />
+    <nd ref="1518876513" />
+    <nd ref="1518876540" />
+    <nd ref="1518876553" />
+    <nd ref="1518876610" />
+    <nd ref="1518876626" />
+    <nd ref="1518876680" />
+    <nd ref="1518876694" />
+    <nd ref="1518876692" />
+    <nd ref="12118303385" />
+    <tag k="bicycle" v="no" />
+    <tag k="highway" v="footway" />
+    <tag k="name" v="雪山主峰步道" />
+    <tag k="name:en" v="Xueshan Main Peak Trail" />
+    <tag k="name:zh" v="雪山主峰步道" />
+    <tag k="sac_scale" v="mountain_hiking" />
+    <tag k="surface" v="unpaved" />
+    <tag k="trail_visibility" v="excellent" />
+  </way>
+  <way id="1308583312" visible="true" version="1" changeset="155409855" timestamp="2024-08-18T11:29:13Z">
+    <nd ref="12118303385" />
+    <nd ref="12118303386" />
+    <tag k="bicycle" v="no" />
+    <tag k="bridge" v="yes" />
+    <tag k="highway" v="footway" />
+    <tag k="layer" v="1" />
+    <tag k="name" v="富日橋" />
+    <tag k="sac_scale" v="mountain_hiking" />
+    <tag k="surface" v="unpaved" />
+    <tag k="trail_visibility" v="excellent" />
+  </way>
+</osm>
