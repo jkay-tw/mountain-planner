@@ -54,7 +54,7 @@ export async function exportExcel({route,days,datasetVersion,tripStartDate,terra
 
     const sr=ws.getRow(rowNo);
     sr.values=['每日統計','',excelDuration(sum.total),excelDuration(sum.official),sum.official&&!sum.missing?Math.round((sum.total/sum.official)*100)/100:'',(sum.missing?'未填路段 '+sum.missing+'　':'')+'行進 '+minutesHHMM(sum.movement)+'　休息 '+minutesHHMM(sum.rest)+(terrainData?'\n'+formatTerrain(terrain,{partial:!!terrain?.gaps.length}):''),''];
-    if(terrainData)sr.height=45;
+    if(terrainData)sr.height=64;
     sr.getCell(3).numFmt='[h]:mm';sr.getCell(4).numFmt='[h]:mm';
     sr.eachCell((c,col)=>{c.font={name:col===3||col===4||col===5?'Calibri':'Microsoft JhengHei',bold:true};c.alignment={horizontal:'center',vertical:'middle',wrapText:true};c.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FFF3F6F3'}}});
     rowNo++;
