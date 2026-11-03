@@ -7,8 +7,8 @@ test('label lanes are bounded and cannot collide; dense clusters use a numbered 
   const layout=layoutProfileLabels(nodes,10210);
   if(layout.numbered)assert.deepEqual(layout.boxes,[]);
   else for(const [i,b] of layout.boxes.entries()){
-   assert.ok([-8,34,336,378].includes(b.y));assert.ok(b.x>=60&&b.x+b.w<=760);
-   assert.ok(!layout.boxes.slice(0,i).some(a=>a.y===b.y&&a.x<b.x+b.w+6&&a.x+a.w+6>b.x));
+   assert.ok(b.y>=-8&&b.y+b.h<=414);assert.ok(b.x>=60&&b.x+b.w<=760);
+   assert.ok(!layout.boxes.slice(0,i).some(a=>a.y<b.y+b.h+6&&a.y+a.h+6>b.y&&a.x<b.x+b.w+6&&a.x+a.w+6>b.x));
   }
  }
  assert.equal(layoutProfileLabels(Array.from({length:25},(_,i)=>({name:'點'+i,distanceMeters:i})),10000).numbered,true);

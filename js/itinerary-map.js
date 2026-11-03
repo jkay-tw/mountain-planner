@@ -1,5 +1,5 @@
 import {twd97Label} from './twd97.js?v=v0731';
-import {resolveItineraryGeometry,geometryToGpx,formatTerrain,renderTerrainProfile,terrainDayColor} from './itinerary-geometry.js?v=v082';
+import {resolveItineraryGeometry,geometryToGpx,formatTerrain,renderTerrainProfile,terrainDayColor} from './itinerary-geometry.js?v=v083';
 
 // No plan mutations or persistent state. Failure here must not block the editor.
 export function createItineraryMap({host,getDays,initialData=null}){
@@ -45,21 +45,31 @@ export function createItineraryMap({host,getDays,initialData=null}){
       const p=longest.coordinates[Math.floor(longest.coordinates.length/2)];
       L.circleMarker([p[1],p[0]],{radius:0,interactive:false}).bindTooltip(`Day ${day.dayIndex+1}`,{permanent:true,direction:'top',offset:[0,-16*(day.dayIndex%10)],className:'geometry-day-label'}).addTo(group);
     }
-    for(const n of latest.waypoints){
-      const label=document.createElement('div'),name=document.createElement('strong'),elevation=document.createElement('div'),coordinate=document.createElement('small');
-      name.textContent=n.name;elevation.textContent=Number.isFinite(n.elevationMeters)?`約 ${Math.round(n.elevationMeters)} m`:'海拔未取得';coordinate.textContent=twd97Label(n.coordinate);coordinate.className='node-coordinate';label.append(name,elevation,coordinate);
-      const popup=label.cloneNode(true);
-      if(!detailedNodes)coordinate.hidden=true;
-      L.circleMarker([n.coordinate[1],n.coordinate[0]],{radius:5,color:'#254936',fillOpacity:.9}).bindPopup(popup).bindTooltip(label,{permanent:true,direction:'right',className:'geometry-node-label',offset:[6,0]}).addTo(group);
+    const visibleIds=new Set(getDays().flatMap((d,i)=>hiddenDays.has(i)?[]:(d.items||[]).filter(x=>x.type==='location').map(x=>x.nodeId)));
+    const visible=latest.waypoints.filter(n=>visibleIds.has(n.nodeId)),occupied=[];
+    const routePoints=latest.days.filter(d=>!hiddenDays.has(d.dayIndex)).flatMap(d=>d.features.flatMap(f=>f.coordinates.filter((_,i)=>i%5===0).map(p=>map.latLngToContainerPoint([p[1],p[0]]))));
+    for(const n of visible){
+      const name=document.createElement('strong'),elevation=document.createElement('div'),coordinate=document.createElement('small'),popup=document.createElement('div');
+      name.textContent=n.name;elevation.textContent=Number.isFinite(n.elevationMeters)?`約 ${Math.round(n.elevationMeters)} m`:'海拔未取得';coordinate.textContent=twd97Label(n.coordinate);coordinate.hidden=!detailedNodes;popup.append(name,elevation,coordinate);
+      const marker=L.circleMarker([n.coordinate[1],n.coordinate[0]],{radius:5,color:'#254936',fillOpacity:.9}).bindPopup(popup).addTo(group);
+      const point=map.latLngToContainerPoint([n.coordinate[1],n.coordinate[0]]),w=Math.min(190,Math.max(42,[...n.name].length*12+12)),h=24;
+      for(const [dx,dy,direction] of [[8,-12,'right'],[-w-8,-12,'left'],[-w/2,-h-9,'top'],[-w/2,9,'bottom']]){
+        const box={x:point.x+dx,y:point.y+dy,w,h};
+        if(occupied.some(b=>box.x<b.x+b.w+4&&box.x+box.w+4>b.x&&box.y<b.y+b.h+4&&box.y+box.h+4>b.y))continue;
+        if(routePoints.some(p=>p.x>box.x&&p.x<box.x+w&&p.y>box.y&&p.y<box.y+h))continue;
+        occupied.push(box);const label=document.createElement('span');label.textContent=n.name;
+        marker.bindTooltip(label,{permanent:true,direction,offset:[0,0],className:'geometry-node-label'});break;
+      }
     }
     fit.disabled=!group.getBounds().isValid();
   }
   async function initialize(){
     status.textContent='正在載入節點座標與地圖…';
-    if(!data){const response=await fetch('data/geometry/planner-terrain-v1.json?v=v082');if(!response.ok)throw Error('候選線形載入失敗');data=await response.json()}
+    if(!data){const response=await fetch('data/geometry/planner-terrain-v1.json?v=v083');if(!response.ok)throw Error('候選線形載入失敗');data=await response.json()}
     if(!window.L)throw Error('地圖元件無法載入，請檢查網路後重試。');
     if(!map){
       map=L.map(host.querySelector('[data-map]')).setView([24.388,121.266],13);
+      map.on('zoomend moveend',()=>{if(group)refresh()});
       const osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'}).addTo(map);
       const corridor=L.featureGroup(data.spans.filter(s=>!s.aggregate).map(s=>L.polyline(s.coordinates.map(p=>[p[1],p[0]]),{color:'#7a827a',weight:3,opacity:.55})));
       const layers=L.control.layers({'OpenStreetMap':osm},{'已收錄參考路徑（全路網）':corridor}).addTo(map);
