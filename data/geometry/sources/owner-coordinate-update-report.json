@@ -1,0 +1,29 @@
+{
+  "changedNodeIds": [
+    "node:6238ba80f71b4e9faace",
+    "node:b7b6bff9d61e63a89c58",
+    "node:f6f2ba4c01559d0ff632",
+    "shared:cw-v07-002",
+    "shared:cw-v07-021"
+  ],
+  "removedNodeIds": [],
+  "preservedSpans": 653,
+  "generatedSpans": 0,
+  "bridgeSpans": 42,
+  "failedRoutes": [
+    {
+      "nodeIds": [
+        "node:4833a5913699184b5b35",
+        "node:7e834e3946d8006bb547"
+      ],
+      "reason": "no-source-anchor-within-policy"
+    }
+  ],
+  "counts": {
+    "activeNodes": 724,
+    "located": 622,
+    "unlocated": 102,
+    "ignored": 20,
+    "vehicleOnly": 26
+  }
+}

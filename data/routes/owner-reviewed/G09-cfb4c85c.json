@@ -304,8 +304,10 @@
     },
     {
       "id": "node:ff6ed5559a33fffbf64f",
-      "name": "松泉崗/天池登山口",
-      "aliases": [],
+      "name": "松泉崗/天巒池登山口",
+      "aliases": [
+        "松泉崗/天池登山口"
+      ],
       "groups": [
         "G09-cfb4c85c"
       ],
@@ -2040,7 +2042,7 @@
     {
       "fromId": "node:ff6ed5559a33fffbf64f",
       "toId": "node:1c8dd60e5be898d71627",
-      "from": "松泉崗/天池登山口",
+      "from": "松泉崗/天巒池登山口",
       "to": "果園登山口",
       "minutes": 45,
       "travelMode": "walking",
@@ -2080,7 +2082,7 @@
       "fromId": "node:1c8dd60e5be898d71627",
       "toId": "node:ff6ed5559a33fffbf64f",
       "from": "果園登山口",
-      "to": "松泉崗/天池登山口",
+      "to": "松泉崗/天巒池登山口",
       "minutes": 30,
       "travelMode": "walking",
       "verificationStatus": "verified",

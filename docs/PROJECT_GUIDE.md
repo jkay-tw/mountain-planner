@@ -52,3 +52,7 @@
 - `tools/build_planner_geometry.py` 僅產生雪山種子，CLI要求另指定輸出路徑，不能覆寫完整執行期資料。
 
 重建指令與來源範圍見 [v0.8 說明](v0.8_RELEASE.md)。所有計算仍須區分資料缺口與程式錯誤；來源一致或測試通過不代表即時開放、官方實測或現地驗證。
+
+## 日常座標更新入口
+
+後續先讀 [COORDINATE_UPDATE_WORKFLOW.md](COORDINATE_UPDATE_WORKFLOW.md)，依指令匯入覆寫資料、局部重算及驗證。不需要重讀整個專案。現況與未完成資料見 [v0.8.1 更新](v0.8.1_COORDINATE_UPDATE_20261104.md)。

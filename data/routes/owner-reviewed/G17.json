@@ -86,17 +86,6 @@
       "identityBasis": "group-scoped-owner-reviewed-label"
     },
     {
-      "id": "node:48968d2ec01d938dc670",
-      "name": "荖濃溪底營地",
-      "aliases": [
-        "老濃溪營地"
-      ],
-      "groups": [
-        "G17"
-      ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
-    },
-    {
       "id": "node:4b535e7d68c379a6c905",
       "name": "轆轆東峰",
       "aliases": [],
@@ -108,15 +97,6 @@
     {
       "id": "node:4e7ab2e2b7798527927f",
       "name": "達芬尖山登山口",
-      "aliases": [],
-      "groups": [
-        "G17"
-      ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
-    },
-    {
-      "id": "node:502ad7507575bb341a28",
-      "name": "大水窟山三岔路",
       "aliases": [],
       "groups": [
         "G17"
@@ -189,15 +169,6 @@
     {
       "id": "node:b3c1f683294e1bc1252b",
       "name": "塔芬山",
-      "aliases": [],
-      "groups": [
-        "G17"
-      ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
-    },
-    {
-      "id": "node:bfffd1c12932fc2cd1e8",
-      "name": "水源",
       "aliases": [],
       "groups": [
         "G17"
@@ -3737,84 +3708,6 @@
     },
     {
       "fromId": "node:6fbfce66af193ba46514",
-      "toId": "node:48968d2ec01d938dc670",
-      "from": "大水窟山三岔路口",
-      "to": "荖濃溪底營地",
-      "minutes": 95,
-      "travelMode": "walking",
-      "verificationStatus": "verified",
-      "verificationBasis": "owner_workbook_review",
-      "timeAlternatives": [],
-      "sourceRows": [
-        "RC4C18FD15C"
-      ],
-      "evidenceRows": [
-        721
-      ],
-      "sourceGroups": [
-        "南二段"
-      ],
-      "sourceChart": "G17",
-      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
-      "sourceNote": "",
-      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
-      "sources": [
-        {
-          "group": "南二段",
-          "chartId": "G17",
-          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
-          "rowId": "RC4C18FD15C",
-          "sheetRows": [
-            721
-          ],
-          "minutes": 95
-        }
-      ],
-      "sourceGroupNames": [
-        "南二段"
-      ]
-    },
-    {
-      "fromId": "node:48968d2ec01d938dc670",
-      "toId": "node:6fbfce66af193ba46514",
-      "from": "荖濃溪底營地",
-      "to": "大水窟山三岔路口",
-      "minutes": 130,
-      "travelMode": "walking",
-      "verificationStatus": "verified",
-      "verificationBasis": "owner_workbook_review",
-      "timeAlternatives": [],
-      "sourceRows": [
-        "RC4C18FD15C"
-      ],
-      "evidenceRows": [
-        721
-      ],
-      "sourceGroups": [
-        "南二段"
-      ],
-      "sourceChart": "G17",
-      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
-      "sourceNote": "",
-      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
-      "sources": [
-        {
-          "group": "南二段",
-          "chartId": "G17",
-          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
-          "rowId": "RC4C18FD15C",
-          "sheetRows": [
-            721
-          ],
-          "minutes": 130
-        }
-      ],
-      "sourceGroupNames": [
-        "南二段"
-      ]
-    },
-    {
-      "fromId": "node:6fbfce66af193ba46514",
       "toId": "node:8897886192ce4320aec3",
       "from": "大水窟山三岔路口",
       "to": "黑水塘",
@@ -4587,84 +4480,6 @@
             731
           ],
           "minutes": 120
-        }
-      ],
-      "sourceGroupNames": [
-        "南二段"
-      ]
-    },
-    {
-      "fromId": "local:G17-OVERLAP::g17-overlap-009",
-      "toId": "node:bfffd1c12932fc2cd1e8",
-      "from": "雲峰東峰三岔路口營地",
-      "to": "水源",
-      "minutes": 15,
-      "travelMode": "walking",
-      "verificationStatus": "verified",
-      "verificationBasis": "owner_workbook_review",
-      "timeAlternatives": [],
-      "sourceRows": [
-        "RFB1C073DE5"
-      ],
-      "evidenceRows": [
-        732
-      ],
-      "sourceGroups": [
-        "南二段"
-      ],
-      "sourceChart": "G17",
-      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
-      "sourceNote": "",
-      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
-      "sources": [
-        {
-          "group": "南二段",
-          "chartId": "G17",
-          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
-          "rowId": "RFB1C073DE5",
-          "sheetRows": [
-            732
-          ],
-          "minutes": 15
-        }
-      ],
-      "sourceGroupNames": [
-        "南二段"
-      ]
-    },
-    {
-      "fromId": "node:bfffd1c12932fc2cd1e8",
-      "toId": "local:G17-OVERLAP::g17-overlap-009",
-      "from": "水源",
-      "to": "雲峰東峰三岔路口營地",
-      "minutes": 20,
-      "travelMode": "walking",
-      "verificationStatus": "verified",
-      "verificationBasis": "owner_workbook_review",
-      "timeAlternatives": [],
-      "sourceRows": [
-        "RFB1C073DE5"
-      ],
-      "evidenceRows": [
-        732
-      ],
-      "sourceGroups": [
-        "南二段"
-      ],
-      "sourceChart": "G17",
-      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
-      "sourceNote": "",
-      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
-      "sources": [
-        {
-          "group": "南二段",
-          "chartId": "G17",
-          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
-          "rowId": "RFB1C073DE5",
-          "sheetRows": [
-            732
-          ],
-          "minutes": 20
         }
       ],
       "sourceGroupNames": [
@@ -6695,84 +6510,6 @@
             753
           ],
           "minutes": 120
-        }
-      ],
-      "sourceGroupNames": [
-        "南二段"
-      ]
-    },
-    {
-      "fromId": "node:48968d2ec01d938dc670",
-      "toId": "node:502ad7507575bb341a28",
-      "from": "荖濃溪底營地",
-      "to": "大水窟山三岔路",
-      "minutes": 130,
-      "travelMode": "walking",
-      "verificationStatus": "verified",
-      "verificationBasis": "owner_workbook_review",
-      "timeAlternatives": [],
-      "sourceRows": [
-        "R105B323798"
-      ],
-      "evidenceRows": [
-        754
-      ],
-      "sourceGroups": [
-        "南二段"
-      ],
-      "sourceChart": "G17",
-      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
-      "sourceNote": "",
-      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
-      "sources": [
-        {
-          "group": "南二段",
-          "chartId": "G17",
-          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
-          "rowId": "R105B323798",
-          "sheetRows": [
-            754
-          ],
-          "minutes": 130
-        }
-      ],
-      "sourceGroupNames": [
-        "南二段"
-      ]
-    },
-    {
-      "fromId": "node:502ad7507575bb341a28",
-      "toId": "node:48968d2ec01d938dc670",
-      "from": "大水窟山三岔路",
-      "to": "荖濃溪底營地",
-      "minutes": 95,
-      "travelMode": "walking",
-      "verificationStatus": "verified",
-      "verificationBasis": "owner_workbook_review",
-      "timeAlternatives": [],
-      "sourceRows": [
-        "R105B323798"
-      ],
-      "evidenceRows": [
-        754
-      ],
-      "sourceGroups": [
-        "南二段"
-      ],
-      "sourceChart": "G17",
-      "source": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
-      "sourceNote": "",
-      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
-      "sources": [
-        {
-          "group": "南二段",
-          "chartId": "G17",
-          "url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg",
-          "rowId": "R105B323798",
-          "sheetRows": [
-            754
-          ],
-          "minutes": 95
         }
       ],
       "sourceGroupNames": [

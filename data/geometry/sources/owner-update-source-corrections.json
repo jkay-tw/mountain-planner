@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "nodeId": "node:16d0ce554a26b76bdaa8",
+      "coordinate": [
+        120.8151660625,
+        23.087050212531384
+      ],
+      "rawName": "094-林道鞍部(四叉路口)",
+      "previousCoordinate": [
+        120.8127750625,
+        23.334623835130515
+      ],
+      "reason": "原採梅蘭林道鞍部位於不同山區，與南一段石瀑區、石山岔路口及卑南主山相距約30公里；改採石山秀湖牌旁林道鞍部四叉路口航點群，保留原Node ID。",
+      "sourceUrl": "https://tile.happyman.idv.tw/~happyman/gpx_map/20240813_155542/Happyman.map",
+      "fileSha256": "2fd98c7a9de74afafe628c08f5a59ba3a027b995f05a3fa2394a0d59cd425de5"
+    },
+    {
+      "nodeId": "node:f3ea090758bb1302bc29",
+      "coordinate": null,
+      "previousCoordinate": [
+        120.9500990062952,
+        23.731390004977584
+      ],
+      "reason": "原林道盡頭位於西巒山區，與本點丹大路線32K/34K、方便池、沙武巒草原相距約35公里；撤銷誤配，中間節點依前後已知錨點建立連續線形，不猜點位。"
+    }
+  ]
+}

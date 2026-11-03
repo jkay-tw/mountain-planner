@@ -36,7 +36,7 @@ test('span-specific source anchors are validated without changing label coordina
  s.coordinates[0]=[0,0];assert.throws(()=>validateGeometry(x),/錨點/);
 });
 test('waypoint-only export requires explicit choice and never invents a track',()=>{
- const gap=data.coverage.routeDataGaps.find(g=>g.reason==='missing-coordinate'&&!!by.get(g.fromId).coordinate!==!!by.get(g.toId).coordinate);assert.ok(gap);
+ const gap=data.coverage.routeDataGaps.find(g=>g.reason==='missing-coordinate'&&[g.fromId,g.toId].every(id=>!['ignored','vehicle-only'].includes(by.get(id).coordinatePolicy))&&!!by.get(g.fromId).coordinate!==!!by.get(g.toId).coordinate);assert.ok(gap);
  const r=resolveItineraryGeometry([day(gap.fromId,gap.toId)],data);assert.equal(r.days[0].features.length,0);assert.equal(r.waypoints.length,1);
  assert.throws(()=>geometryToGpx(r,data),/缺漏/);assert.throws(()=>geometryToGpx(r,data,{allowPartial:true}),/沒有/);
  const gpx=geometryToGpx(r,data,{allowPartial:true,allowWaypointsOnly:true});assert.match(gpx,/<wpt /);assert.doesNotMatch(gpx,/<trk|<rte/);assert.match(gpx,/未定位/);

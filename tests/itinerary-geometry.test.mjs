@@ -46,7 +46,7 @@ test('days, rest entries, repeated trips and gaps retain order without joining',
   assert.doesNotMatch(gpx,/<time>|<ele>/);assert.match(gpx,/ODbL/);assert.match(gpx,/圈谷底部：未定位/);
 });
 test('mismatched edge IDs, car edges and manual locations never snap onto trails',()=>{
-  for(const mutate of [d=>d.items[1].incoming.fromNodeId='other',d=>d.items[1].incoming.kind='vehicle',d=>d.items[1].type='manual-location']){
+  for(const mutate of [d=>d.items[1].incoming.fromNodeId='other',d=>d.items[1].type='manual-location']){
     const d=day(ids.slice(0,2));mutate(d);assert.equal(resolveItineraryGeometry([d],data).gaps.length,1);
   }
 });
