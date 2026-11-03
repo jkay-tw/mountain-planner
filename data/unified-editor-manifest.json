@@ -1,5 +1,5 @@
 {
-  "dataset_version": "v0.8-rc1-full-route-terrain",
+  "dataset_version": "v0.8-full-route-terrain",
   "mode": "global-owner-reviewed-walking-scoped-node-browser-preview",
   "routes": [
     {
@@ -159,7 +159,7 @@
     {
       "id": "G19",
       "name": "G19｜南一段",
-      "file": "data/routes/owner-reviewed/G19.json?v=v080rc1",
+      "file": "data/routes/owner-reviewed/G19.json?v=v080",
       "status": "owner-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G19_hiking.jpg"
     },

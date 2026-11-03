@@ -3,7 +3,7 @@
 以台灣上河步程資料為基礎的靜態網頁行程規劃工具。
 
 - [開啟正式版 v0.7.25](https://jkay-tw.github.io/mountain-planner/)
-- [開啟 v0.8 驗收預覽](https://jkay-tw.github.io/mountain-planner/preview/unified-editor.html?v=v080rc1)
+- [開啟 v0.8 完整功能預覽](https://jkay-tw.github.io/mountain-planner/preview/unified-editor.html?v=v080)
 - [v0.8 功能、資料範圍與驗收](docs/v0.8_RELEASE.md)
 - 開發分支：`feature/v0.7-node-identity`
 - [專案導覽與測試指令](docs/PROJECT_GUIDE.md)
