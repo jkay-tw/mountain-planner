@@ -1,5 +1,5 @@
-import {dayTerrain,terrainMetrics} from './itinerary-geometry.js?v=v080rc1';
-import {buildTimeline,summarizeDay,edgeActual} from './planner.js?v=v080rc1';
+import {dayTerrain,terrainMetrics} from './itinerary-geometry.js?v=v081';
+import {buildTimeline,summarizeDay,edgeActual} from './planner.js?v=v081';
 const placeLabel=r=>(r.isPeak?'⛰ ':'')+r.name+(r.hasWater?' 💧':'');
 const excelDuration=min=>min==null||min===''?'':Number(min)/1440;
 const font='Microsoft JhengHei';
@@ -22,7 +22,8 @@ export async function exportExcel({route,days,datasetVersion,tripStartDate,terra
   ws.mergeCells(rowNo,1,rowNo,9);const title=ws.getCell(rowNo,1);title.value='Day '+(i+1)+(date?'｜'+date:'')+'｜'+day.startTime+' 出發 → '+tl.endTime+' 結束';title.font={name:font,bold:true,size:11};title.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FFDDE9DF'}};title.alignment={vertical:'middle',wrapText:true};ws.getRow(rowNo).height=24;rowNo++;addHeader();
   for(const r of tl.rows){
    const e=r.incoming,actual=e?edgeActual(e,day.coefficient):'',f=byItem.get(r.id),m=f?terrainMetrics([f]):null;
-   const note=[r.note||'',r.type!=='rest'&&e&&!f?'地形資料未收錄':''].filter(Boolean).join('；');
+   const isBridge=(terrain?.features||[]).some(x=>x.intermediateCoordinatesUnknown&&x.viaItemIds.includes(r.id));
+   const note=[r.note||'',isBridge?'路徑連續・分段待定位':f?.intermediateCoordinatesUnknown?'跨未定位點合計':r.type!=='rest'&&e&&!f?'地形資料未收錄':''].filter(Boolean).join('；');
    const k=e?.kind==='official'&&actual!==null&&e.officialMinutes?Math.round((actual/e.officialMinutes)*100)/100:'';
    const values=r.type==='rest'?['☕ 休息',r.endTime,excelDuration(Number(r.minutes)||0),'','','','','',r.note||'']:[placeLabel(r),r.arrival,e?excelDuration(actual):'',e?.kind==='official'?excelDuration(e.officialMinutes):'',k,f?f.distanceMeters/1000:'',m?.ascentMeters??'',m?.descentMeters??'',note];
    const rr=ws.getRow(rowNo);rr.values=values;rr.height=15.75;

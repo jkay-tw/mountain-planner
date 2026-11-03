@@ -1,12 +1,12 @@
 import {twd97Label} from './twd97.js?v=v0731';
-import {resolveItineraryGeometry,geometryToGpx,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=v080rc1';
+import {resolveItineraryGeometry,geometryToGpx,formatTerrain,renderTerrainProfile,terrainDayColor} from './itinerary-geometry.js?v=v081';
 
 // No plan mutations or persistent state. Failure here must not block the editor.
 export function createItineraryMap({host,getDays,initialData=null}){
   let data=initialData,map=null,group=null,latest=null,ready=null;
   let detailedNodes=false;
   const hiddenDays=new Set();
-  const colors=['#b54b22','#146e91','#7955a5','#318354','#9b326c','#806000','#3455b0','#a43b3b','#007970','#62533c'];
+  const colors=Array.from({length:10},(_,i)=>terrainDayColor(i));
   host.innerHTML='<summary>行程地圖與 GPX</summary><div class="geometry-body"><p>顯示全路網已定位節點與可對應的參考路徑。每日高度剖面可在下方展開；距離與升降以沿線 DEM 估算。</p><div class="geometry-actions"><button type="button" data-action="load">載入行程地圖</button><button type="button" data-action="fit" disabled>縮放至行程</button><button type="button" data-action="export" disabled>匯出候選 GPX</button></div><label class="node-label-control">節點標籤 <select data-node-labels><option value="name">名稱與海拔</option><option value="detail">詳細資訊（含 TWD97）</option></select></label><p data-status role="status">地圖尚未載入。</p><ul data-warnings></ul><div data-legend class="geometry-legend" aria-label="每日路線圖例"></div><div data-profile class="terrain-profiles"></div><div data-map class="itinerary-map" aria-label="行程候選路徑地圖"></div><p class="geometry-source">© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a>，ODbL 1.0。規劃座標另參考 TWMap、Happyman 與具來源記錄點。參考線形包含 OSM 步行路網與另有標示的山友歷史行跡；不代表即時通行狀態。缺座標或缺線形會逐段提示，統計只計已知部分。OSM 全臺快照：2026-11-03。高度來源：<a href="https://rudymap.tw/">魯地圖 DEM mix v2026</a>，約30m格網估算。</p></div>';
   const status=host.querySelector('[data-status]'),warnings=host.querySelector('[data-warnings]'),load=host.querySelector('[data-action="load"]'),exp=host.querySelector('[data-action="export"]'),fit=host.querySelector('[data-action="fit"]');
   function refresh(){
@@ -14,7 +14,7 @@ export function createItineraryMap({host,getDays,initialData=null}){
     latest=resolveItineraryGeometry(getDays(),data);
     status.textContent=`已取得線形約 ${(latest.distanceMeters/1000).toFixed(2)} 公里｜${latest.gaps.length} 段缺漏｜${latest.unlocated.length} 個地點未定位`;
     warnings.replaceChildren();
-    const notes=[...latest.unlocated.map(n=>`${n.name}：${n.note}`),...latest.gaps.map(g=>`Day ${g.dayIndex+1} ${g.from} → ${g.to}：${g.reason}`)];
+    const notes=[...latest.unlocated.map(n=>`${n.name}：${n.note}`),...latest.days.flatMap(d=>d.features.filter(f=>f.routingAmbiguity).map(f=>`Day ${d.dayIndex+1} ${f.from} → ${f.to}：${f.routingAmbiguity}`)),...latest.gaps.map(g=>`Day ${g.dayIndex+1} ${g.from} → ${g.to}：${g.reason}`)];
     for(const message of notes){const li=document.createElement('li');li.textContent=message;warnings.append(li)}
     const hasTracks=latest.days.some(d=>d.features.length);
     exp.disabled=!hasTracks&&!latest.waypoints.length;exp.textContent=!hasTracks?'匯出節點 GPX':latest.gaps.length?'匯出部分參考 GPX':'匯出參考 GPX';
@@ -54,7 +54,7 @@ export function createItineraryMap({host,getDays,initialData=null}){
   }
   async function initialize(){
     status.textContent='正在載入節點座標與地圖…';
-    if(!data){const response=await fetch('data/geometry/planner-terrain-v1.json?v=v080rc1');if(!response.ok)throw Error('候選線形載入失敗');data=await response.json()}
+    if(!data){const response=await fetch('data/geometry/planner-terrain-v1.json?v=v081');if(!response.ok)throw Error('候選線形載入失敗');data=await response.json()}
     if(!window.L)throw Error('地圖元件無法載入，請檢查網路後重試。');
     if(!map){
       map=L.map(host.querySelector('[data-map]')).setView([24.388,121.266],13);
