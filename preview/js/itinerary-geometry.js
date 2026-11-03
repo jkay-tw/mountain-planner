@@ -139,16 +139,17 @@ export function profileNodeRows(day){
 }
 export const terrainDayColor=index=>['#b54b22','#146e91','#7955a5','#318354','#9b326c','#806000','#3455b0','#a43b3b','#007970','#62533c'][(index||0)%10];
 // Four bounded lanes; dense clusters use a compact numbered key instead.
-export function layoutProfileLabels(nodes,total){
- const boxes=[],lanes=[34,-8,336,378];
+export function layoutProfileLabels(nodes,total,curve=[]){
+ const boxes=[];
  for(const node of nodes){
   const x=60+700*node.distanceMeters/(total||1),w=Math.min(190,Math.max(124,[...node.name].reduce((v,c)=>v+(c.charCodeAt(0)>255?12:7),0)+16));
   const choices=[];
+  const lanes=[(node.plotY??200)-60,(node.plotY??200)+24,34,-8,336,378].filter(y=>y<70||y>320||(y>=105&&y<=255));
   for(const y of lanes)for(const dx of [0,-16,16,-32,32,-48,48,-64,64,-80,80]){
    const left=Math.max(60,Math.min(760-w,x-w/2+dx));
    if(Math.abs(left+w/2-x)>100)continue;
    const box={x:left,y,w,h:36};
-   if(!boxes.some(b=>b.y===y&&left<b.x+b.w+6&&left+w+6>b.x))choices.push({...box,score:Math.abs(left+w/2-x)+Math.abs(y+18-(node.plotY??200))*.18});
+   if(!boxes.some(b=>y<b.y+b.h+6&&y+36+6>b.y&&left<b.x+b.w+6&&left+w+6>b.x)&&!nodes.some(n=>{const nx=60+700*n.distanceMeters/(total||1),ny=n.plotY??200;return nx>=left-5&&nx<=left+w+5&&ny>=y-5&&ny<=y+41})&&!curve.some(p=>p.x>=left-3&&p.x<=left+w+3&&p.y>=y-3&&p.y<=y+39))choices.push({...box,score:Math.abs(left+w/2-x)+Math.abs(y+18-(node.plotY??200))*.18});
   }
   if(!choices.length)return {numbered:true,boxes:[]};
   choices.sort((a,b)=>a.score-b.score);boxes.push(choices[0]);
@@ -159,7 +160,8 @@ export function renderTerrainProfile(day){
  const features=day.features.filter(f=>f.profile?.length);if(!features.length)return '<p>沒有可繪製的高度資料。</p>';
  const zs=features.flatMap(f=>f.profile.map(p=>p[1])),lo=Math.floor(Math.min(...zs)/100)*100,hi=Math.max(lo+100,Math.ceil(Math.max(...zs)/100)*100),total=day.distanceMeters||1;
  const X=d=>60+700*d/total,Y=z=>300-200*(z-lo)/(hi-lo),nodes=profileNodeRows(day);
- const color=terrainDayColor(day.dayIndex),layout=layoutProfileLabels(nodes.map(n=>({...n,plotY:Y(n.elevationMeters)})),total);
+ let curveOffset=0;const curve=[];for(const f of day.features){if(f.profile)for(const [d,z] of f.profile)curve.push({x:X(curveOffset+d),y:Y(z)});curveOffset+=f.distanceMeters}
+ const color=terrainDayColor(day.dayIndex),layout=layoutProfileLabels(nodes.map(n=>({...n,plotY:Y(n.elevationMeters)})),total,curve);
  let offset=0,paths='',grid='',labels='',marks='';const boxes=layout.boxes;
  const heightStep=Math.max(100,Math.ceil((hi-lo)/500)*100),distanceStep=Math.max(.2,Math.ceil(total/1000/6*5)/5);
  for(let z=lo;z<=hi;z+=heightStep){const y=Y(z).toFixed(1);grid+=`<path d="M60 ${y}H760"/><text stroke="none" x="4" y="${Number(y)+4}">${z} m</text>`}
@@ -173,7 +175,7 @@ export function renderTerrainProfile(day){
    labels+=`<g class="profile-node-label"><text x="${lx}" y="${ly}" font-size="12" fill="#344b3d"><tspan font-weight="650">${i+1}. ${xml(n.name)}</tspan><tspan x="${lx}" dy="15" font-size="11">${distance} km · 約 ${height} m</tspan></text></g>`;
    marks+=`<text x="${x.toFixed(1)}" y="${(y-12-(i%3)*15).toFixed(1)}" text-anchor="middle" font-size="10" font-weight="700" fill="${color}" stroke="#fff" stroke-width="3" paint-order="stroke">${i+1}</text>`;
   }else{
-   const box=boxes[i],above=box.y<100,tx=(box.x+8).toFixed(1),ty=(box.y+13).toFixed(1);
+   const box=boxes[i],above=box.y+box.h<y,tx=(box.x+8).toFixed(1),ty=(box.y+13).toFixed(1);
    labels+=`<g class="profile-node-label"><path d="M${x.toFixed(1)} ${y.toFixed(1)}L${Math.max(box.x,Math.min(box.x+box.w,x)).toFixed(1)} ${(above?box.y+box.h:box.y).toFixed(1)}" stroke="#a6b7af" fill="none"/><rect x="${box.x.toFixed(1)}" y="${box.y}" width="${box.w}" height="36" rx="5" fill="#fff" fill-opacity=".96" stroke="#dce6dc"/><text x="${tx}" y="${ty}" fill="#344b3d" font-size="12"><tspan x="${tx}" font-weight="650">${xml(n.name)}</tspan><tspan x="${tx}" dy="16" font-size="10.5">${distance} km · 約 ${height} m</tspan></text></g>`;
   }
  }
