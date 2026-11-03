@@ -1,13 +1,14 @@
+import {placeMapLabels} from './map-label-layout.js?v=v084';
 import {twd97Label} from './twd97.js?v=v0731';
-import {resolveItineraryGeometry,geometryToGpx,formatTerrain,renderTerrainProfile,terrainDayColor} from './itinerary-geometry.js?v=v083';
+import {resolveItineraryGeometry,geometryToGpx,formatTerrain,renderTerrainProfile,terrainDayColor} from './itinerary-geometry.js?v=v084';
 
 // No plan mutations or persistent state. Failure here must not block the editor.
 export function createItineraryMap({host,getDays,initialData=null}){
-  let data=initialData,map=null,group=null,latest=null,ready=null;
+  let data=initialData,map=null,group=null,labelGroup=null,latest=null,ready=null,selectedNode=null;
   let detailedNodes=false;
   const hiddenDays=new Set();
   const colors=Array.from({length:10},(_,i)=>terrainDayColor(i));
-  host.innerHTML='<summary>行程地圖與 GPX</summary><div class="geometry-body"><div class="geometry-actions"><button type="button" data-action="load">載入行程地圖</button><button type="button" data-action="fit" disabled>縮放至行程</button><button type="button" data-action="export" disabled>匯出候選 GPX</button><label class="node-label-control"><select data-node-labels aria-label="節點標籤"><option value="name">名稱與海拔</option><option value="detail">詳細資訊（含 TWD97）</option></select></label><button type="button" data-toggle-profiles aria-expanded="false">每日剖面</button></div><div class="geometry-summary"><p data-status role="status">地圖尚未載入。</p><div data-legend class="geometry-legend" aria-label="每日路線圖例"></div></div><ul data-warnings></ul><div data-profile class="terrain-profiles" hidden></div><div data-map class="itinerary-map" aria-label="行程候選路徑地圖"></div><div class="geometry-source"><span>地圖 © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a> · 高程：<a href="https://rudymap.tw/">魯地圖 DEM</a></span><details><summary>資料來源與說明</summary><p>© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a>，ODbL 1.0。規劃座標另參考 TWMap、Happyman 與具來源記錄點。參考線形包含 OSM 步行路網與另有標示的山友歷史行跡；不代表即時通行狀態。缺座標或缺線形會逐段提示，統計只計已知部分。OSM 全臺快照：2026-11-03。高度來源：<a href="https://rudymap.tw/">魯地圖 DEM mix v2026</a>，約30m格網估算。</p></details></div></div>';
+  host.innerHTML='<summary>行程地圖與 GPX</summary><div class="geometry-body"><div class="geometry-actions"><button type="button" data-action="load">載入行程地圖</button><button type="button" data-action="fit" disabled>縮放至行程</button><button type="button" data-action="export" disabled>匯出候選 GPX</button><label class="node-label-control"><select data-node-labels aria-label="節點標籤"><option value="name">節點名稱</option><option value="detail">展開時顯示座標</option></select></label><button type="button" data-toggle-profiles aria-expanded="false">每日剖面</button></div><div class="geometry-summary"><p data-status role="status">地圖尚未載入。</p><div data-legend class="geometry-legend" aria-label="每日路線圖例"></div></div><ul data-warnings></ul><div data-profile class="terrain-profiles" hidden></div><div data-map class="itinerary-map" aria-label="行程候選路徑地圖"></div><div class="geometry-source"><span>地圖 © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a> · 高程：<a href="https://rudymap.tw/">魯地圖 DEM</a></span><details><summary>資料來源與說明</summary><p>© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a>，ODbL 1.0。規劃座標另參考 TWMap、Happyman 與具來源記錄點。參考線形包含 OSM 步行路網與另有標示的山友歷史行跡；不代表即時通行狀態。缺座標或缺線形會逐段提示，統計只計已知部分。OSM 全臺快照：2026-11-03。高度來源：<a href="https://rudymap.tw/">魯地圖 DEM mix v2026</a>，約30m格網估算。</p></details></div></div>';
   const status=host.querySelector('[data-status]'),warnings=host.querySelector('[data-warnings]'),load=host.querySelector('[data-action="load"]'),exp=host.querySelector('[data-action="export"]'),fit=host.querySelector('[data-action="fit"]');
   const profiles=host.querySelector('[data-profile]'),profileToggle=host.querySelector('[data-toggle-profiles]');
   profileToggle.onclick=()=>{profiles.hidden=!profiles.hidden;profileToggle.setAttribute('aria-expanded',String(!profiles.hidden))};
@@ -39,37 +40,63 @@ export function createItineraryMap({host,getDays,initialData=null}){
       if(f.sourceUrl){const a=document.createElement('a');a.href=f.sourceUrl;a.target='_blank';a.rel='noreferrer';a.textContent=' 查看來源';label.append(a)}
       L.polyline(f.coordinates.map(p=>[p[1],p[0]]),{weight:5,color:colors[day.dayIndex%colors.length]}).bindPopup(label).addTo(group);
     }
-    for(const day of latest.days){
-      if(hiddenDays.has(day.dayIndex)||!day.features.length)continue;
-      const longest=day.features.reduce((a,b)=>a.distanceMeters>=b.distanceMeters?a:b);
-      const p=longest.coordinates[Math.floor(longest.coordinates.length/2)];
-      L.circleMarker([p[1],p[0]],{radius:0,interactive:false}).bindTooltip(`Day ${day.dayIndex+1}`,{permanent:true,direction:'top',offset:[0,-16*(day.dayIndex%10)],className:'geometry-day-label'}).addTo(group);
-    }
     const visibleIds=new Set(getDays().flatMap((d,i)=>hiddenDays.has(i)?[]:(d.items||[]).filter(x=>x.type==='location').map(x=>x.nodeId)));
-    const visible=latest.waypoints.filter(n=>visibleIds.has(n.nodeId)),occupied=[];
-    const routePoints=latest.days.filter(d=>!hiddenDays.has(d.dayIndex)).flatMap(d=>d.features.flatMap(f=>f.coordinates.filter((_,i)=>i%5===0).map(p=>map.latLngToContainerPoint([p[1],p[0]]))));
+    const visible=latest.waypoints.filter(n=>visibleIds.has(n.nodeId));
+    if(selectedNode&&!visible.some(n=>n.nodeId===selectedNode))selectedNode=null;
     for(const n of visible){
-      const name=document.createElement('strong'),elevation=document.createElement('div'),coordinate=document.createElement('small'),popup=document.createElement('div');
-      name.textContent=n.name;elevation.textContent=Number.isFinite(n.elevationMeters)?`約 ${Math.round(n.elevationMeters)} m`:'海拔未取得';coordinate.textContent=twd97Label(n.coordinate);coordinate.hidden=!detailedNodes;popup.append(name,elevation,coordinate);
-      const marker=L.circleMarker([n.coordinate[1],n.coordinate[0]],{radius:5,color:'#254936',fillOpacity:.9}).bindPopup(popup).addTo(group);
-      const point=map.latLngToContainerPoint([n.coordinate[1],n.coordinate[0]]),w=Math.min(190,Math.max(42,[...n.name].length*12+12)),h=24;
-      for(const [dx,dy,direction] of [[8,-12,'right'],[-w-8,-12,'left'],[-w/2,-h-9,'top'],[-w/2,9,'bottom']]){
-        const box={x:point.x+dx,y:point.y+dy,w,h};
-        if(occupied.some(b=>box.x<b.x+b.w+4&&box.x+box.w+4>b.x&&box.y<b.y+b.h+4&&box.y+box.h+4>b.y))continue;
-        if(routePoints.some(p=>p.x>box.x&&p.x<box.x+w&&p.y>box.y&&p.y<box.y+h))continue;
-        occupied.push(box);const label=document.createElement('span');label.textContent=n.name;
-        marker.bindTooltip(label,{permanent:true,direction,offset:[0,0],className:'geometry-node-label'});break;
-      }
+      const marker=L.circleMarker([n.coordinate[1],n.coordinate[0]],{radius:5,color:'#254936',fillOpacity:.9}).addTo(group);
+      marker.on('click',()=>{selectedNode=selectedNode===n.nodeId?null:n.nodeId;drawLabels()});
     }
+    drawLabels();
     fit.disabled=!group.getBounds().isValid();
+  }
+  function drawLabels(){
+    if(!map||!latest||!labelGroup)return;
+    labelGroup.clearLayers();
+    const visibleIds=new Set(getDays().flatMap((d,i)=>hiddenDays.has(i)?[]:(d.items||[]).filter(x=>x.type==='location').map(x=>x.nodeId)));
+    const nodes=latest.waypoints.filter(n=>visibleIds.has(n.nodeId));
+    const point=n=>map.latLngToContainerPoint([n.coordinate[1],n.coordinate[0]]);
+    const points=nodes.map(point),segments=[];
+    for(const day of latest.days)if(!hiddenDays.has(day.dayIndex))for(const f of day.features){
+      const coords=f.coordinates.map(p=>map.latLngToContainerPoint([p[1],p[0]]));
+      for(let i=1;i<coords.length;i++)segments.push([coords[i-1],coords[i]]);
+    }
+    function measure(element){
+      element.classList.add('geometry-label-measure');host.append(element);
+      const rect=element.getBoundingClientRect();element.remove();element.classList.remove('geometry-label-measure');
+      return {w:Math.ceil(rect.width),h:Math.ceil(rect.height)};
+    }
+    function nodeLabel(n){
+      const button=document.createElement('button');button.type='button';button.className='geometry-map-label geometry-map-node';
+      const title=document.createElement('span');title.textContent=n.name;button.append(title);
+      const selected=n.nodeId===selectedNode;button.setAttribute('aria-expanded',String(selected));
+      if(selected){const height=document.createElement('span');height.className='geometry-label-height';height.textContent=Number.isFinite(n.elevationMeters)?`約 ${Math.round(n.elevationMeters).toLocaleString('en-US')} m`:'高度未取得';button.append(height);
+        if(detailedNodes){const coord=document.createElement('span');coord.className='geometry-label-coordinate';coord.textContent=twd97Label(n.coordinate);button.append(coord)}
+      }
+      button.onclick=e=>{e.stopPropagation();selectedNode=selected?null:n.nodeId;drawLabels()};
+      return {element:button,point:point(n),selected,...measure(button)};
+    }
+    const selected=nodes.filter(n=>n.nodeId===selectedNode).map(nodeLabel);
+    const dayLabels=latest.days.filter(d=>!hiddenDays.has(d.dayIndex)&&d.features.length).map(day=>{
+      const longest=day.features.reduce((a,b)=>a.distanceMeters>=b.distanceMeters?a:b),p=longest.coordinates[Math.floor(longest.coordinates.length/2)];
+      const element=document.createElement('span');element.className='geometry-map-label geometry-map-day';element.textContent=`Day ${day.dayIndex+1}`;element.style.borderColor=colors[day.dayIndex%colors.length];
+      return {element,point:map.latLngToContainerPoint([p[1],p[0]]),...measure(element)};
+    });
+    const labels=[...selected,...dayLabels,...nodes.filter(n=>n.nodeId!==selectedNode).map(nodeLabel)];
+    for(const item of placeMapLabels(labels,points,segments,map.getSize())){
+      const {box,point:p,element}=item,edge={x:Math.max(box.x,Math.min(box.x+box.w,p.x)),y:Math.max(box.y,Math.min(box.y+box.h,p.y))};
+      L.polyline([map.containerPointToLatLng(p),map.containerPointToLatLng(edge)],{color:'#344f41',weight:1.5,opacity:.85,interactive:false}).addTo(labelGroup);
+      const icon=L.divIcon({className:'geometry-label-icon',html:element,iconSize:[box.w,box.h],iconAnchor:[0,0]});
+      L.marker(map.containerPointToLatLng([box.x,box.y]),{icon,keyboard:false}).addTo(labelGroup);
+    }
   }
   async function initialize(){
     status.textContent='正在載入節點座標與地圖…';
-    if(!data){const response=await fetch('data/geometry/planner-terrain-v1.json?v=v083');if(!response.ok)throw Error('候選線形載入失敗');data=await response.json()}
+    if(!data){const response=await fetch('data/geometry/planner-terrain-v1.json?v=v084');if(!response.ok)throw Error('候選線形載入失敗');data=await response.json()}
     if(!window.L)throw Error('地圖元件無法載入，請檢查網路後重試。');
     if(!map){
       map=L.map(host.querySelector('[data-map]')).setView([24.388,121.266],13);
-      map.on('zoomend moveend',()=>{if(group)refresh()});
+      map.on('zoomend moveend',drawLabels);
       const osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'}).addTo(map);
       const corridor=L.featureGroup(data.spans.filter(s=>!s.aggregate).map(s=>L.polyline(s.coordinates.map(p=>[p[1],p[0]]),{color:'#7a827a',weight:3,opacity:.55})));
       const layers=L.control.layers({'OpenStreetMap':osm},{'已收錄參考路徑（全路網）':corridor}).addTo(map);
@@ -77,7 +104,7 @@ export function createItineraryMap({host,getDays,initialData=null}){
         if(!Array.isArray(t.tiles)||typeof t.tiles[0]!=='string'||typeof t.attribution!=='string')throw Error();
         layers.addBaseLayer(L.tileLayer(t.tiles[0],{maxZoom:t.maxzoom||18,minZoom:t.minzoom||7,attribution:t.attribution}),'魯地圖');
       }).catch(()=>{const p=document.createElement('li');p.textContent='魯地圖目前無法載入，可先使用 OpenStreetMap。';warnings.append(p)});
-      group=L.featureGroup().addTo(map);
+      group=L.featureGroup().addTo(map);labelGroup=L.layerGroup().addTo(map);
     }
     refresh();load.hidden=true;map.invalidateSize();if(group.getBounds().isValid())map.fitBounds(group.getBounds(),{padding:[25,25],maxZoom:16});
   }

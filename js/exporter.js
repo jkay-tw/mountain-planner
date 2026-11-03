@@ -1,5 +1,5 @@
-import {dayTerrain,terrainMetrics} from './itinerary-geometry.js?v=v083';
-import {buildTimeline,summarizeDay,edgeActual} from './planner.js?v=v083';
+import {dayTerrain,terrainMetrics} from './itinerary-geometry.js?v=v084';
+import {buildTimeline,summarizeDay,edgeActual} from './planner.js?v=v084';
 const placeLabel=r=>(r.isPeak?'⛰ ':'')+r.name+(r.hasWater?' 💧':'');
 const excelDuration=min=>min==null||min===''?'':Number(min)/1440;
 const font='Microsoft JhengHei';
