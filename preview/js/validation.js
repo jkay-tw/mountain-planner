@@ -28,6 +28,8 @@ export function validatePlan(data,routeIds){
         const e=item.incoming;
         if(!plain(e)||!['official','manual'].includes(e.kind))fail(where+' 路段資料錯誤');
         if(e.actualMinutes!==null&&e.actualMinutes!==undefined&&!finite(e.actualMinutes,0,10080))fail(where+' 規劃時間錯誤');
+        if(e.coefficient!==undefined&&(!finite(e.coefficient,.1,3)||e.kind!=='official'))fail(where+' 路段係數錯誤');
+        if(e.referenceKind!==undefined&&(!['regular','slow','heavy_pack'].includes(e.referenceKind)||e.kind!=='official'||(e.referenceKind!=='regular'&&!e.timeAlternatives?.some(t=>t.kind===e.referenceKind&&finite(t.minutes,0.01,10080)))))fail(where+' 參考條件錯誤');
         if(e.kind==='official'&&(!finite(e.officialMinutes,0,10080)||typeof e.from!=='string'||typeof e.to!=='string'))fail(where+' 上河時間錯誤');
         if(e.kind==='manual'&&(typeof e.fromId!=='string'||typeof e.toId!=='string'))fail(where+' 手動路段連接錯誤');
       }

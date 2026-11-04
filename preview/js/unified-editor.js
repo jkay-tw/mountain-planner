@@ -1,17 +1,18 @@
 import {captureScrollAnchor,restoreScrollAnchor} from './scroll-anchor.js?v=v088';
 import {normalizeTimeInput} from './time-input.js?v=mobile1';
+import {syncLinkedDays} from './day-link.js?v=segments1';
 import {chooseSaveTarget,writeDownload,reportSaveError} from './save-file.js?v=v086';
 import {bindProfileExports} from './profile-export.js?v=v084';
-import {makeDemoDays} from './demo-itinerary.js?v=v0731';
-import {directionalQuickAdd,appendQuickPath} from './quick-add.js?v=v084';
+import {makeDemoDays} from './demo-itinerary.js?v=segments1';
+import {directionalQuickAdd,appendQuickPath} from './quick-add.js?v=segments1';
 import {dayTerrain,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=v084';
 import {createTabAutosave} from './tab-autosave.js?v=v0725';
 import {loadManifest,loadRoute} from './data-loader.js';
-import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming,ownerTimedConnection,incomingForSegment} from './planner.js?v=v084';
-import {validatePlan} from './validation.js?v=v0726';
+import {allNodes,shortestPath,uid,round2,edgeActual,referenceMinutes,setEdgeCoefficient,selectEdgeReference,adoptLegacyCoefficients,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming,ownerTimedConnection,incomingForSegment} from './planner.js?v=segments1';
+import {validatePlan} from './validation.js?v=segments1';
 import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js?v=v084';
 import {migrateLegacyPlanDays} from './legacy-plan-migration.js?v=v084';
-import {exportExcel} from './exporter.js?v=v086';
+import {exportExcel} from './exporter.js?v=segments1';
 import {filterLocations} from './node-browser.js?v=v074';
 import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=v084';
 
@@ -19,7 +20,7 @@ const $=id=>document.getElementById(id);
 const IS_PRODUCTION=document.body.dataset.mode==='production';
 const IS_DEMO=!IS_PRODUCTION&&new URLSearchParams(location.search).get('demo')==='xueshan';
 const STORAGE_KEY=IS_PRODUCTION?'mountain-planner.global-autosave.v1':'mountain-planner.unified-preview-autosave.v0711';
-const APP_VERSION=IS_PRODUCTION?'v0.7.25':'v0.8.2 Mobile Input Preview';
+const APP_VERSION=IS_PRODUCTION?'v0.7.25':'v0.8.3 Segment + iPhone Preview';
 const COLLAPSE_KEY=IS_PRODUCTION?'mountain-planner.collapsed-days.v1':'mountain-planner.unified-preview-collapsed.v0711';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',scope='';
@@ -35,7 +36,7 @@ async function restore(i){if(i<0||i>=snapshots.length)return;const x=JSON.parse(
 const checkMissing=()=>{const n=days.reduce((sum,d)=>sum+missingSegments(d),0);return n===0||confirm('有 '+n+' 個路段未填時間，匯出結果含未完成時間。仍繼續？')};
 
 
-const newDay=i=>({id:uid(),startTime:i?'05:30':'06:00',coefficient:.8,linkedStart:false,note:'',items:[]});
+const newDay=i=>({id:uid(),startTime:i?'05:30':'06:00',coefficient:.8,linkedStart:i>0,note:'',items:[]});
 const locs=d=>d.items.filter(x=>x.type!=='rest');
 const first=d=>locs(d)[0]||null;
 const last=d=>{const a=locs(d);return a[a.length-1]||null};
@@ -91,14 +92,14 @@ function setNoRoute(){
 }
 
 function sanitizeDays(rawDays){
-  return rawDays.slice(0,10).map((d,i)=>({
+  return rawDays.slice(0,10).map((original,i)=>{const d=adoptLegacyCoefficients(original);return ({
     id:d.id||uid(),
     startTime:d.startTime||(i?'05:30':'06:00'),
     coefficient:Number(d.coefficient)||.8,
     linkedStart:i>0?!!d.linkedStart:false,
     note:d.note||'',
     items:Array.isArray(d.items)?d.items.map(x=>({...x,id:x.id||uid()})):[]
-  }));
+  })});
 }
 
 const tabAutosave=createTabAutosave({
@@ -167,8 +168,7 @@ function bindGlobal(){
 }
 
 function unlinkNextIfEndpointChanges(day){
-  const i=days.indexOf(day),next=days[i+1];
-  if(next?.linkedStart){next.linkedStart=false;const f=first(next);if(f)f._linkedStart=false}
+  // The next linked day follows the endpoint when render() synchronizes it.
 }
 function addNode(day,nodeId){
   if(!route){alert('請先選擇上河圖');return}
@@ -191,22 +191,14 @@ function addNode(day,nodeId){
   if(!path){appendDisconnectedNode(day,selected,uid);toast('已加入節點；前一段尚未連通，請手動填入時間');return}
   path.segments.forEach(s=>{const previous=last(day),id=uid();day.items.push({
     id,type:'location',name:s.to,nodeId:s.toId,note:'',isPeak:false,hasWater:false,
-    incoming:incomingForSegment(s,previous.id,id,route.source.image_url)
+    incoming:incomingForSegment(s,previous.id,id,route.source.image_url,day.coefficient)
   })});
 }
 
 function connectToPrevious(i){
-  if(i<1)return;
-  const prevEnd=last(days[i-1]),d=days[i];
-  if(!prevEnd){d.linkedStart=false;return}
-  const f=first(d);
-  if(f&&f.type===prevEnd.type&&(f.type==='location'?f.nodeId&&f.nodeId===prevEnd.nodeId:f.name===prevEnd.name)){
-    f.incoming=null;f._linkedStart=true;d.linkedStart=true;
-  }else{
-    d.items.unshift({id:uid(),type:prevEnd.type,name:prevEnd.name,...(prevEnd.nodeId?{nodeId:prevEnd.nodeId}:{}),note:'',isPeak:!!prevEnd.isPeak,hasWater:!!prevEnd.hasWater,incoming:null,_linkedStart:true});
-    d.linkedStart=true;
-  }
-  normalizeDay(d,route);
+ if(i<1)return;
+ days[i].linkedStart=true;
+ syncLinkedDays(days,route,uid);
 }
 function addManualStart(d){
   if(d.linkedStart){d.linkedStart=false;const f=first(d);if(f)f._linkedStart=false}
@@ -316,6 +308,7 @@ function opts(){
 }
 let scrollRestoreToken=0;
 function render(persist=true){
+  syncLinkedDays(days,route,uid);
   const container=$('daysContainer');
   const anchor=container.querySelector('.day-card')?captureScrollAnchor(container):null;
   const token=++scrollRestoreToken;
@@ -374,11 +367,11 @@ function renderTimeline(d){
       const e=r.incoming,a=e?edgeActual(e,d.coefficient):0,manual=r.type==='manual-location';
       let routeInfo='<span class="secondary-info">起點</span>';
       if(e?.kind==='official'){
-        const k=e.officialMinutes?round2(a/e.officialMinutes):0;
+        const k=e.coefficient??(referenceMinutes(e)?round2(a/referenceMinutes(e)):d.coefficient);
         const alternatives=Array.isArray(e.timeAlternatives)?e.timeAlternatives.filter(t=>Number.isFinite(t.minutes)&&t.minutes>0&&['slow','heavy_pack'].includes(t.kind)):[];
         const labels={slow:'慢速',heavy_pack:'重裝'};
-        const altHtml=alternatives.map(t=>'<button type="button" class="alternate-time" data-index="'+idx+'" data-minutes="'+t.minutes+'" title="套用'+labels[t.kind]+'條件參考 '+t.minutes+' 分鐘">'+labels[t.kind]+' '+t.minutes+'m</button>').join('');
-        routeInfo='<input class="edge-time minute-input" data-index="'+idx+'" type="number" min="0" value="'+a+'"><span>m</span><span class="secondary-info">上河'+Math.round(Number(e.officialMinutes)||0)+'m · ×'+Number(k).toFixed(2)+'</span>'+altHtml;
+        const altHtml=alternatives.length?'<span class="reference-options">'+[{kind:'regular',minutes:e.officialMinutes,label:'一般'},...alternatives.map(t=>({...t,label:labels[t.kind]}))].map(t=>'<button type="button" class="alternate-time '+((e.referenceKind||'regular')===t.kind?'selected':'')+'" data-index="'+idx+'" data-kind="'+t.kind+'" title="切換至'+t.label+'參考時間 '+t.minutes+' 分鐘">'+t.label+' '+t.minutes+'m</button>').join('')+'</span>':'';
+        routeInfo='<span class="calculated-time">'+a+'m</span><span class="secondary-info">上河'+Math.round(Number(referenceMinutes(e))||0)+'m</span><label class="edge-coef-label">×<input class="edge-coef" aria-label="'+esc(r.name)+' 路段上河係數" data-index="'+idx+'" type="number" min="0.1" max="3" step="0.1" value="'+Number(k).toFixed(2)+'"></label>'+altHtml;
       }else if(e?.kind==='manual'){
         routeInfo='<input class="edge-time minute-input" data-index="'+idx+'" type="number" min="0" placeholder="時間未填" value="'+(e.actualMinutes??'')+'"><span>m</span><span class="manual-note">'+(e.connectionStatus==='owner-confirmed'?'上河時間未提供・自行填時間':e.connectionStatus==='unverified'?'未連通・手動估時':'手動')+'</span>';
       }
@@ -494,7 +487,12 @@ function bindDays(){
       if(b.dataset.action==='manual')insertManualBefore(d,idx);
     });
     card.querySelectorAll('.edge-time').forEach(x=>x.onchange=()=>{const it=d.items[+x.dataset.index];if(it?.incoming)it.incoming.actualMinutes=x.value===''?null:clampMin(x.value);render()});
-    card.querySelectorAll('.alternate-time').forEach(btn=>btn.onclick=()=>{const it=d.items[+btn.dataset.index];if(!it?.incoming||it.incoming.kind!=='official')return;const minutes=Number(btn.dataset.minutes);if(!Number.isFinite(minutes)||minutes<=0)return;it.incoming.actualMinutes=minutes;render()});
+    card.querySelectorAll('.edge-coef').forEach(x=>{
+      const commit=value=>{const it=d.items[+x.dataset.index];if(!it?.incoming||!setEdgeCoefficient(it.incoming,value)){x.value=Number(it?.incoming?.coefficient??d.coefficient).toFixed(2);return}const index=x.dataset.index;render();const replacement=document.querySelector('.day-card[data-day="'+i+'"] .edge-coef[data-index="'+index+'"]');replacement?.focus()};
+      x.onchange=()=>commit(Number(x.value));
+      x.onkeydown=e=>{if(e.key!=='ArrowUp'&&e.key!=='ArrowDown')return;e.preventDefault();const value=Number(x.value);if(Number.isFinite(value))commit(round2(value+(e.key==='ArrowUp'?.1:-.1)))};
+    });
+    card.querySelectorAll('.alternate-time').forEach(btn=>btn.onclick=()=>{const it=d.items[+btn.dataset.index];if(it?.incoming&&selectEdgeReference(it.incoming,btn.dataset.kind))render()});
     card.querySelectorAll('.rest-min').forEach(x=>x.onchange=()=>{d.items[+x.dataset.index].minutes=clampMin(x.value);render()});
     card.querySelectorAll('.manual-name').forEach(x=>x.onchange=()=>{
       const it=d.items[+x.dataset.index];if(last(d)?.id===it.id)unlinkNextIfEndpointChanges(d);

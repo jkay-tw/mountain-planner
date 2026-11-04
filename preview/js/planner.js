@@ -2,9 +2,9 @@ export const round2=n=>Math.round((Number(n)+Number.EPSILON)*100)/100;
 export const uid=()=>Math.random().toString(36).slice(2,9);
 export const isOwnerTimedConnection=s=>s?.manualTimeRequired===true&&s.minutes===null&&s.travelMode==='walking'&&s.verificationStatus==='owner-confirmed-connection'&&s.routingEnabled!==false;
 export const ownerTimedConnection=(route,from,to)=>route.routingEnabled===false?null:(route.manualConnections||[]).find(s=>s.fromId===from&&s.toId===to&&isOwnerTimedConnection(s));
-export function incomingForSegment(s,previousId,itemId,source){
+export function incomingForSegment(s,previousId,itemId,source,coefficient){
  if(isOwnerTimedConnection(s))return {kind:'manual',connectionStatus:'owner-confirmed',fromId:previousId,toId:itemId,fromNodeId:s.fromId,toNodeId:s.toId,actualMinutes:null,source:s.source};
- return {kind:'official',from:s.from,to:s.to,fromNodeId:s.fromId,toNodeId:s.toId,officialMinutes:s.minutes,actualMinutes:null,source:s.source||source,...(s.timeAlternatives?.length?{timeAlternatives:s.timeAlternatives}:{})};
+ return {kind:'official',from:s.from,to:s.to,fromNodeId:s.fromId,toNodeId:s.toId,officialMinutes:s.minutes,actualMinutes:null,...(coefficient===undefined?{}:{coefficient}),source:s.source||source,...(s.timeAlternatives?.length?{timeAlternatives:s.timeAlternatives}:{})};
 }
 
 export function allNodes(route){
@@ -88,8 +88,29 @@ export function formatDuration(minutes){
 }
 export function edgeActual(edge,defaultCoefficient){
   if(edge.actualMinutes!==null&&edge.actualMinutes!==undefined&&edge.actualMinutes!=='')return Number(edge.actualMinutes);
-  if(edge.kind==='official')return round2(edge.officialMinutes*defaultCoefficient);
+  if(edge.kind==='official')return round2(referenceMinutes(edge)*(edge.coefficient??defaultCoefficient));
   return null;
+}
+export function referenceMinutes(edge){
+ const alternative=edge.timeAlternatives?.find(t=>t.kind===edge.referenceKind&&Number.isFinite(t.minutes)&&t.minutes>0);
+ return alternative?.minutes??edge.officialMinutes;
+}
+export function setEdgeCoefficient(edge,value){
+ if(edge.kind!=='official'||!Number.isFinite(value)||value<.1||value>3)return false;
+ edge.coefficient=round2(value);edge.actualMinutes=null;return true;
+}
+export function selectEdgeReference(edge,kind){
+ if(edge.kind!=='official'||(kind!=='regular'&&!edge.timeAlternatives?.some(t=>t.kind===kind&&Number.isFinite(t.minutes)&&t.minutes>0)))return false;
+ edge.referenceKind=kind;edge.actualMinutes=null;return true;
+}
+export function adoptLegacyCoefficients(day){
+ return {...day,items:day.items.map(item=>{
+  const edge=item.incoming;
+  if(edge?.kind!=='official'||edge.coefficient!==undefined)return item;
+  const actual=edgeActual(edge,day.coefficient);
+  const reference=referenceMinutes(edge);
+  return {...item,incoming:{...edge,actualMinutes:actual,coefficient:round2(reference?actual/reference:day.coefficient)}};
+ })};
 }
 export function missingSegments(day){return day.items.filter(x=>x.type!=='rest'&&x.incoming&&edgeActual(x.incoming,day.coefficient)===null).length;}
 export function recalcConnections(day,route){
@@ -140,7 +161,7 @@ export function recalcConnections(day,route){
       const existing=original.find(x=>x.type!=='rest'&&(identified?x.nodeId===seg.toId:x.name===seg.to)&&x.incoming?.kind==='official'&&(identified?x.incoming.fromNodeId===seg.fromId&&x.incoming.toNodeId===seg.toId:x.incoming.from===seg.from&&x.incoming.to===seg.to));
       const target=isDestination?item:(existing?{...existing}:{id:uid(),type:'location',name:seg.to,...(identified?{nodeId:seg.toId}:{}),auto:true,waypoint:false,note:'',isPeak:false,hasWater:false});
       const old=target.incoming,keep=old?.kind==='official'&&(identified?old.fromNodeId===seg.fromId&&old.toNodeId===seg.toId:old.from===seg.from&&old.to===seg.to);
-      target.incoming={kind:'official',from:seg.from,to:seg.to,...(identified?{fromNodeId:seg.fromId,toNodeId:seg.toId}:{}),officialMinutes:keep?old.officialMinutes:seg.minutes,actualMinutes:keep?old.actualMinutes??null:null,source:seg.source||route.source?.image_url,...(Array.isArray(seg.timeAlternatives)&&seg.timeAlternatives.length?{timeAlternatives:seg.timeAlternatives}:keep&&old.timeAlternatives?{timeAlternatives:old.timeAlternatives}:{})};
+      target.incoming={kind:'official',from:seg.from,to:seg.to,...(identified?{fromNodeId:seg.fromId,toNodeId:seg.toId}:{}),officialMinutes:keep?old.officialMinutes:seg.minutes,actualMinutes:keep?old.actualMinutes??null:null,coefficient:keep?old.coefficient??day.coefficient:day.coefficient,...(keep&&old.referenceKind?{referenceKind:old.referenceKind}:{}),source:seg.source||route.source?.image_url,...(Array.isArray(seg.timeAlternatives)&&seg.timeAlternatives.length?{timeAlternatives:seg.timeAlternatives}:keep&&old.timeAlternatives?{timeAlternatives:old.timeAlternatives}:{})};
       result.push(target);
     }
     previous=item;

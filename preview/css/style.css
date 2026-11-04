@@ -213,6 +213,11 @@ button{border:0;border-radius:8px;padding:9px 12px;background:var(--accent);colo
  color:#365741;background:#eef5ef;white-space:nowrap;
 }
 .alternate-time:hover{background:#dcebdc}
+.alternate-time.selected{background:#365741;color:#fff;border-color:#365741}
+.calculated-time{font-weight:700;color:#304f76}
+.edge-coef-label{display:inline-flex;align-items:center;gap:2px;font-size:11px}
+.edge-coef{width:56px;min-width:0;box-sizing:border-box}
+.reference-options{display:inline-flex;flex-wrap:wrap;gap:3px}
 
 /* Mobile input: iOS WebKit zooms the whole page when a focused field is <16px. */
 .mobile-time-controls{display:none}

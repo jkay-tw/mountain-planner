@@ -1,4 +1,4 @@
-import {expandReviewedOverlaps,isOwnerTimedConnection,incomingForSegment} from './planner.js?v=v080rc1';
+import {expandReviewedOverlaps,isOwnerTimedConnection,incomingForSegment} from './planner.js?v=segments1';
 export function quickAddCandidates(route,startId){
  if(!route||route.routingEnabled===false||!route.nodes?.some(n=>n.id===startId))return [];
  const eligible=[...route.segments.filter(s=>s.routingEnabled!==false&&s.travelMode==='walking'&&s.verificationStatus==='verified'),...(route.manualConnections||[]).filter(isOwnerTimedConnection)];
@@ -14,7 +14,7 @@ export function appendQuickPath(day,route,key,uid){
  const last=[...day.items].reverse().find(x=>x.type!=='rest');
  if(last?.type!=='location')return false;
  const candidate=quickAddCandidates(route,last.nodeId).find(c=>c.key===key);if(!candidate)return false;
- for(const s of candidate.segments){const previous=[...day.items].reverse().find(x=>x.type!=='rest'),id=uid();day.items.push({id,type:'location',nodeId:s.toId,name:s.to,note:'',isPeak:false,hasWater:false,incoming:incomingForSegment(s,previous.id,id,route.source?.image_url)});}
+ for(const s of candidate.segments){const previous=[...day.items].reverse().find(x=>x.type!=='rest'),id=uid();day.items.push({id,type:'location',nodeId:s.toId,name:s.to,note:'',isPeak:false,hasWater:false,incoming:incomingForSegment(s,previous.id,id,route.source?.image_url,day.coefficient)});}
  return true;
 }
 // Direction is relative to the actual previous itinerary point, not map north
