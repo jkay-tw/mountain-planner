@@ -1,10 +1,11 @@
+import {writeDownload} from './save-file.js?v=v086';
 import {dayTerrain,terrainMetrics} from './itinerary-geometry.js?v=v084';
 import {buildTimeline,summarizeDay,edgeActual} from './planner.js?v=v084';
 const placeLabel=r=>(r.isPeak?'⛰ ':'')+r.name+(r.hasWater?' 💧':'');
 const excelDuration=min=>min==null||min===''?'':Number(min)/1440;
 const font='Microsoft JhengHei';
 const dateForDay=(startDate,index)=>{if(!startDate)return '';const d=new Date(startDate+'T00:00:00');d.setDate(d.getDate()+index);return d.getFullYear()+'/'+String(d.getMonth()+1).padStart(2,'0')+'/'+String(d.getDate()).padStart(2,'0')};
-export async function exportExcel({route,days,datasetVersion,tripStartDate,terrainData=null}){
+export async function exportExcel({route,days,datasetVersion,tripStartDate,terrainData=null,handle=null}){
  if(!window.ExcelJS)throw new Error('ExcelJS 尚未載入');
  const wb=new ExcelJS.Workbook();wb.creator='Mountain Planner';wb.created=new Date();
  const ws=wb.addWorksheet('登山行程',{views:[{state:'normal',showGridLines:true}]});
@@ -37,6 +38,6 @@ export async function exportExcel({route,days,datasetVersion,tripStartDate,terra
   if(day.note){ws.mergeCells(rowNo,1,rowNo,9);const c=ws.getCell(rowNo,1);c.value='Day '+(i+1)+' 備註：'+day.note;c.font={name:font,size:10};c.alignment={vertical:'middle',wrapText:true};ws.getRow(rowNo).height=15.75;rowNo++}rowNo++;
  }
  ws.pageSetup.printArea='A1:I'+Math.max(3,rowNo-1);
- const buf=await wb.xlsx.writeBuffer(),blob=new Blob([buf],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=route.route_id+'_'+route.route_name+'_行程.xlsx';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+ const buf=await wb.xlsx.writeBuffer(),blob=new Blob([buf],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});await writeDownload(blob,route.route_id+'_'+route.route_name+'_行程.xlsx',handle);
 }
 function minutesHHMM(min){const m=Math.max(0,Math.round(Number(min)||0));return Math.floor(m/60)+':'+String(m%60).padStart(2,'0')}
