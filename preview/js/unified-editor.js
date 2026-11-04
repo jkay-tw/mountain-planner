@@ -1,3 +1,4 @@
+import {captureScrollAnchor,restoreScrollAnchor} from './scroll-anchor.js?v=v088';
 import {chooseSaveTarget,writeDownload,reportSaveError} from './save-file.js?v=v086';
 import {bindProfileExports} from './profile-export.js?v=v084';
 import {makeDemoDays} from './demo-itinerary.js?v=v0731';
@@ -312,10 +313,19 @@ function opts(){
   const list=scopedNodes().slice().sort((a,b)=>a.name.localeCompare(b.name,'zh-Hant')||String(a.id).localeCompare(String(b.id)));
   return list.map(n=>'<option value="'+esc(n.id)+'">'+esc(nodeOptionLabel(n,list))+'</option>').join('')
 }
+let scrollRestoreToken=0;
 function render(persist=true){
-  $('daysContainer').innerHTML=days.map(renderDay).join('');
+  const container=$('daysContainer');
+  const anchor=container.querySelector('.day-card')?captureScrollAnchor(container):null;
+  const token=++scrollRestoreToken;
+  container.innerHTML=days.map(renderDay).join('');
   bindDays();
   itineraryMap?.update();
+  if(anchor){
+    restoreScrollAnchor(anchor,container);
+    // iOS WebKit can adjust scrolling again after layout/focus settles.
+    requestAnimationFrame(()=>{if(token===scrollRestoreToken)restoreScrollAnchor(anchor,container)});
+  }
   if(persist){saveAutosave();checkpoint()}
 }
 
@@ -332,7 +342,7 @@ function renderDay(d,i){
   const terrain=dayTerrain(d,terrainData);if(terrain)terrain.dayIndex=i;
   const selector=route?'<select class="add-node"><option value="">選擇下一個行程點</option>'+opts()+'</select>':'<select class="add-node" disabled><option>請先選擇上河圖</option></select>';
   const summary=(f&&l?esc(f.name)+' → '+esc(l.name):'尚未建立行程')+' · '+(s.missing?'未完成':formatDuration(s.total));
-  return '<article class="card day-card '+(collapsed?'collapsed':'')+'" data-day="'+i+'">'+
+  return '<article class="card day-card '+(collapsed?'collapsed':'')+'" data-day="'+i+'" data-day-id="'+esc(d.id)+'">'+
   '<div class="day-head"><button class="day-toggle" type="button" aria-label="'+(collapsed?'展開':'摺疊')+' Day '+(i+1)+'">'+(collapsed?'▶':'▼')+'</button><div class="day-title"><strong>Day '+(i+1)+'</strong>'+(date?'<span class="day-date">'+date+'</span>':'')+'<span class="collapsed-summary">'+summary+'</span></div>'+
   '<div class="day-control"><label>出發</label><input class="start-time" type="time" value="'+d.startTime+'"></div>'+
   '<div class="day-control coefficient"><label>預設係數</label><input class="day-coef" type="number" min="0.1" max="3" step="0.01" value="'+Number(d.coefficient).toFixed(2)+'"></div>'+
