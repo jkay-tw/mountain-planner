@@ -415,12 +415,15 @@ function syncArrivalTimes(){
     });
   });
 }
-function commitStartTime(day,card,value){
+function commitStartTime(day,card,value,source=null){
   const time=normalizeTimeInput(value);
   if(!time)return false;
   const changed=day.startTime!==time;
   day.startTime=time;
-  for(const input of card.querySelectorAll('.start-time, .start-time-text, .start-time-picker'))input.value=time;
+  // Assigning the active native input's value can dismiss the iOS picker.
+  for(const input of card.querySelectorAll('.start-time, .start-time-text, .start-time-picker')){
+    if(input!==source||source?.type!=='time')input.value=time;
+  }
   if(changed){
     // Keep the native iOS picker / mobile keyboard mounted and focused.
     // Only the arrival labels change when the departure time changes.
@@ -441,7 +444,7 @@ function bindDays(){
     const mobileTime=card.querySelector('.start-time-text');
     const nativePicker=card.querySelector('.start-time-picker');
     const acceptTime=input=>{
-      if(!commitStartTime(d,card,input.value)){
+      if(!commitStartTime(d,card,input.value,input)){
         input.value=d.startTime;
         if(input===mobileTime)toast('請輸入有效的 24 小時時間，例如 0630 或 06:30');
       }
