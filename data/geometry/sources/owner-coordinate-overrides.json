@@ -1,0 +1,2210 @@
+{
+  "schemaVersion": 1,
+  "sourceUrl": "https://drive.google.com/file/d/1bfrGAJmiayJmqG600tlq93ld8slUqPRP/view",
+  "sourceFileSha256": "7f90c190ad41a5745e02ad8ed1050d31a317abc0dbe733af78e9d36713bad12b",
+  "reviewDate": "2026-11-04",
+  "nodes": [
+    {
+      "reviewId": "Q001",
+      "nodeId": "g02-001",
+      "name": "2K三岔路口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        120.9414334,
+        23.4435381
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 244016.0,
+        "y": 2593400.0
+      }
+    },
+    {
+      "reviewId": "Q002",
+      "nodeId": "g02-023",
+      "name": "風口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        120.9561046,
+        23.4726202
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 245516.0,
+        "y": 2596620.0
+      }
+    },
+    {
+      "reviewId": "Q003",
+      "nodeId": "g03-001",
+      "name": "17.1K柵欄",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        120.9082047,
+        23.7130153
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 240640.0,
+        "y": 2623244.0
+      }
+    },
+    {
+      "reviewId": "Q004",
+      "nodeId": "g03-005",
+      "name": "展望點",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        120.9454797,
+        23.6943952
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 244440.0,
+        "y": 2621180.0
+      }
+    },
+    {
+      "reviewId": "Q005",
+      "nodeId": "shared:cw-v07-002",
+      "name": "23K望鄉工作站",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        120.9280568,
+        23.619051
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 242659.0,
+        "y": 2612837.0
+      }
+    },
+    {
+      "reviewId": "Q006",
+      "nodeId": "shared:cw-v07-021",
+      "name": "十八重溪橋",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        120.8819606,
+        23.658529
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 237959.0,
+        "y": 2617212.0
+      }
+    },
+    {
+      "reviewId": "Q007",
+      "nodeId": "g04-001",
+      "name": "0.3K檢查哨",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.1190141,
+        24.5046706
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 262061.0,
+        "y": 2710921.0
+      }
+    },
+    {
+      "reviewId": "Q008",
+      "nodeId": "g04-010",
+      "name": "小霸岔路登山口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2569557,
+        24.4569705
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 276050.0,
+        "y": 2705657.0
+      }
+    },
+    {
+      "reviewId": "Q009",
+      "nodeId": "g04-011",
+      "name": "中霸坪叉路",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2578764,
+        24.4634698
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 276142.0,
+        "y": 2706377.0
+      }
+    },
+    {
+      "reviewId": "Q010",
+      "nodeId": "g04-014",
+      "name": "水源",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2502657,
+        24.4208206
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 275379.0,
+        "y": 2701652.0
+      }
+    },
+    {
+      "reviewId": "Q011",
+      "nodeId": "g04-022",
+      "name": "池有山岔路口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2882902,
+        24.4295742
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 279233.0,
+        "y": 2702629.0
+      }
+    },
+    {
+      "reviewId": "Q012",
+      "nodeId": "g04-058",
+      "name": "鞍部叉路",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2339225,
+        24.3975879
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 273726.0,
+        "y": 2699076.0
+      }
+    },
+    {
+      "reviewId": "Q013",
+      "nodeId": "g04-061",
+      "name": "獵寮營地",
+      "choice": "全部不符",
+      "note": "",
+      "coordinate": [
+        121.2881395,
+        24.5366847
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 279193.0,
+        "y": 2714492.0
+      },
+      "resolution": "Owner confirmed filled coordinates override rejection of original candidates."
+    },
+    {
+      "reviewId": "Q014",
+      "nodeId": "g04-fork-shengleng",
+      "name": "岔路",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2497972,
+        24.4232682
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 275331.0,
+        "y": 2701923.0
+      }
+    },
+    {
+      "reviewId": "Q015",
+      "nodeId": "g04-fork-zhenxibao",
+      "name": "岔路口",
+      "choice": "全部不符",
+      "note": "忽略",
+      "coordinate": null,
+      "action": "ignore"
+    },
+    {
+      "reviewId": "Q016",
+      "nodeId": "node:f6f2ba4c01559d0ff632",
+      "name": "武陵農場·遊客中心",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.3102636,
+        24.3534612
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 281480.0,
+        "y": 2694204.0
+      }
+    },
+    {
+      "reviewId": "Q017",
+      "nodeId": "node:3f716b6b10260005c012",
+      "name": "推論山",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.217869,
+        24.3097224
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 272113.0,
+        "y": 2689342.0
+      }
+    },
+    {
+      "reviewId": "Q018",
+      "nodeId": "node:43c9393ad0d04c1318ea",
+      "name": "登山口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2688389,
+        24.329857
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 277282.0,
+        "y": 2691581.0
+      }
+    },
+    {
+      "reviewId": "Q019",
+      "nodeId": "node:6238ba80f71b4e9faace",
+      "name": "武陵路口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.3221179,
+        24.3486601
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 282684.0,
+        "y": 2693675.0
+      }
+    },
+    {
+      "reviewId": "Q020",
+      "nodeId": "node:67f469173d3d382ca79c",
+      "name": "松柏農場",
+      "choice": "全部不符",
+      "note": "忽略",
+      "coordinate": null,
+      "action": "ignore"
+    },
+    {
+      "reviewId": "Q021",
+      "nodeId": "node:7b6b39564c1c4e24a3e0",
+      "name": "28.5K登山口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.0905623,
+        24.3342124
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 259190.0,
+        "y": 2692040.0
+      }
+    },
+    {
+      "reviewId": "Q022",
+      "nodeId": "node:7e834e3946d8006bb547",
+      "name": "大南山登山口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.172549,
+        24.3691022
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 267505.0,
+        "y": 2695912.0
+      }
+    },
+    {
+      "reviewId": "Q023",
+      "nodeId": "node:85687363d4e92172c5af",
+      "name": "0K·49K岔路",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.0255514,
+        24.2792945
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 252594.0,
+        "y": 2685955.0
+      }
+    },
+    {
+      "reviewId": "Q024",
+      "nodeId": "node:b212de5b9591198dc7d2",
+      "name": "防火巷登山口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2473989,
+        24.2802782
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 275116.0,
+        "y": 2686086.0
+      }
+    },
+    {
+      "reviewId": "Q025",
+      "nodeId": "node:b2c4a7b2602fdc5ffabb",
+      "name": "環山路口",
+      "choice": "",
+      "note": "忽略",
+      "coordinate": null,
+      "action": "ignore"
+    },
+    {
+      "reviewId": "Q026",
+      "nodeId": "node:bb909b8922168303b56d",
+      "name": "主稜鞍部",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.1020156,
+        24.3249954
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 260353.0,
+        "y": 2691020.0
+      }
+    },
+    {
+      "reviewId": "Q027",
+      "nodeId": "node:bf7a9688d88faaf0650f",
+      "name": "水源",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.1195868,
+        24.3272038
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 262136.0,
+        "y": 2691266.0
+      }
+    },
+    {
+      "reviewId": "Q028",
+      "nodeId": "node:bf944315a8814addbcd8",
+      "name": "4K國家公園碑",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.0246308,
+        24.3070144
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 252500.0,
+        "y": 2689025.0
+      }
+    },
+    {
+      "reviewId": "Q029",
+      "nodeId": "node:c22c38c643bcf3d95588",
+      "name": "樂山橋",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.249821,
+        24.2898181
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 275360.0,
+        "y": 2687143.0
+      }
+    },
+    {
+      "reviewId": "Q030",
+      "nodeId": "node:e776e9d18056cbe071d6",
+      "name": "岔路口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.1208126,
+        24.331293
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 262260.0,
+        "y": 2691719.0
+      }
+    },
+    {
+      "reviewId": "Q031",
+      "nodeId": "node:f01032429f39b8aa3c65",
+      "name": "東勢",
+      "choice": "全部不符",
+      "note": "忽略",
+      "coordinate": null,
+      "action": "ignore"
+    },
+    {
+      "reviewId": "Q032",
+      "nodeId": "node:b7b6bff9d61e63a89c58",
+      "name": "最後農家",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.1691859,
+        24.1817134
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 267189.0,
+        "y": 2675158.0
+      }
+    },
+    {
+      "reviewId": "Q033",
+      "nodeId": "g07-012",
+      "name": "主東岔路",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.4429581,
+        24.3608786
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 294941.0,
+        "y": 2695062.0
+      }
+    },
+    {
+      "reviewId": "Q034",
+      "nodeId": "g07-018",
+      "name": "東峰登山口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.4517154,
+        24.3650422
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 295828.0,
+        "y": 2695526.0
+      }
+    },
+    {
+      "reviewId": "Q035",
+      "nodeId": "g07-031",
+      "name": "指標2.2K岔路口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.4723392,
+        24.3527812
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 297925.0,
+        "y": 2694175.0
+      }
+    },
+    {
+      "reviewId": "Q036",
+      "nodeId": "g07-035",
+      "name": "陶塞峰登山口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.4597057,
+        24.3586347
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 296641.0,
+        "y": 2694819.0
+      }
+    },
+    {
+      "reviewId": "Q037",
+      "nodeId": "g07-036",
+      "name": "勝光登山口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.3406831,
+        24.3698469
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 284562.0,
+        "y": 2696026.0
+      }
+    },
+    {
+      "reviewId": "Q038",
+      "nodeId": "g07-040",
+      "name": "審馬陣山莊岔路口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.4226929,
+        24.3814412
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 292878.0,
+        "y": 2697333.0
+      }
+    },
+    {
+      "reviewId": "Q039",
+      "nodeId": "g08-005",
+      "name": "27.5K林道登山口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.3418293,
+        24.2458837
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 284712.0,
+        "y": 2682297.0
+      }
+    },
+    {
+      "reviewId": "Q040",
+      "nodeId": "g08-010",
+      "name": "水源",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.3537942,
+        24.2459647
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 285927.0,
+        "y": 2682309.0
+      }
+    },
+    {
+      "reviewId": "Q041",
+      "nodeId": "g08-016",
+      "name": "耳無溪合流點",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.3461564,
+        24.2946584
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 285138.0,
+        "y": 2687700.0
+      }
+    },
+    {
+      "reviewId": "Q042",
+      "nodeId": "g08-031",
+      "name": "鞍部",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.3821734,
+        24.2751595
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 288800.0,
+        "y": 2685550.0
+      }
+    },
+    {
+      "reviewId": "Q043",
+      "nodeId": "g08-034",
+      "name": "檢查哨(廢)",
+      "choice": "全部不符",
+      "note": "忽略",
+      "coordinate": null,
+      "action": "ignore"
+    },
+    {
+      "reviewId": "Q044",
+      "nodeId": "g08-006",
+      "name": "8.4k登山口營地",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.3403403,
+        24.2043617
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 284572.0,
+        "y": 2677698.0
+      }
+    },
+    {
+      "reviewId": "Q045",
+      "nodeId": "g08-017",
+      "name": "拉繩垂直岩壁",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.3450236,
+        24.2107348
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 285046.0,
+        "y": 2678405.0
+      }
+    },
+    {
+      "reviewId": "Q046",
+      "nodeId": "g08-025",
+      "name": "第一峰(畢祿營地)",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.3482065,
+        24.2118472
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 285369.0,
+        "y": 2678529.0
+      }
+    },
+    {
+      "reviewId": "Q047",
+      "nodeId": "node:086f40f752459108ea15",
+      "name": "力行",
+      "choice": "全部不符",
+      "note": "忽略",
+      "coordinate": null,
+      "action": "ignore"
+    },
+    {
+      "reviewId": "Q048",
+      "nodeId": "node:361b16415de0e733ccab",
+      "name": "最低鞍部",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2676636,
+        24.1780148
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 277195.0,
+        "y": 2674764.0
+      }
+    },
+    {
+      "reviewId": "Q049",
+      "nodeId": "node:41b89d8a56a193aacfca",
+      "name": "合歡山莊",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2845329,
+        24.1422643
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 278917.0,
+        "y": 2670808.0
+      }
+    },
+    {
+      "reviewId": "Q050",
+      "nodeId": "node:7ac8a3389a7896957791",
+      "name": "舊滑訓中心",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2874596,
+        24.1398028
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 279215.0,
+        "y": 2670536.0
+      }
+    },
+    {
+      "reviewId": "Q051",
+      "nodeId": "node:935896ac5e7428235534",
+      "name": "華岡登山口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2543862,
+        24.1630398
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 275849.0,
+        "y": 2673103.0
+      }
+    },
+    {
+      "reviewId": "Q052",
+      "nodeId": "node:e53efaf65558c7992841",
+      "name": "力行產業道路岔路",
+      "choice": "全部不符",
+      "note": "忽略",
+      "coordinate": null,
+      "action": "ignore"
+    },
+    {
+      "reviewId": "Q053",
+      "nodeId": "node:ff6ed5559a33fffbf64f",
+      "name": "松泉崗/天池登山口",
+      "choice": "自行補座標",
+      "note": "松泉崗/天巒池池登山口",
+      "coordinate": [
+        121.3048616,
+        24.2169062
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 280965.0,
+        "y": 2679079.0
+      },
+      "displayName": "松泉崗/天巒池登山口"
+    },
+    {
+      "reviewId": "Q054",
+      "nodeId": "shared:cw-v07-047",
+      "name": "廬山部落",
+      "choice": "暫不確定",
+      "note": "忽略",
+      "coordinate": null,
+      "action": "ignore"
+    },
+    {
+      "reviewId": "Q055",
+      "nodeId": "node:36ff3c081e402994db7b",
+      "name": "屏風山屋 松針營地",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.3249647,
+        24.1621022
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 283021.0,
+        "y": 2673014.0
+      }
+    },
+    {
+      "reviewId": "Q056",
+      "nodeId": "node:79b43ef005b9dfe9c481",
+      "name": "3241稜線",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.3391247,
+        24.1429564
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 284465.0,
+        "y": 2670897.0
+      }
+    },
+    {
+      "reviewId": "Q057",
+      "nodeId": "node:ac2e2b0473232211e496",
+      "name": "第一次過溪",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.3119183,
+        24.1754567
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 281692.0,
+        "y": 2674490.0
+      }
+    },
+    {
+      "reviewId": "Q058",
+      "nodeId": "node:4856d9ae24dfc6bc20f7",
+      "name": "3077峰",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.4129947,
+        24.0952623
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 291988.0,
+        "y": 2665635.0
+      }
+    },
+    {
+      "reviewId": "Q059",
+      "nodeId": "node:5d9c97434282e97ee077",
+      "name": "2687鞍三岔口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.4372615,
+        24.1102286
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 294450.0,
+        "y": 2667300.0
+      }
+    },
+    {
+      "reviewId": "Q060",
+      "nodeId": "node:96283ea7f31d0727b692",
+      "name": "合歡山松雪樓",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2858191,
+        24.1410158
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 279048.0,
+        "y": 2670670.0
+      }
+    },
+    {
+      "reviewId": "Q061",
+      "nodeId": "node:dc09bcaf0d5a942a6792",
+      "name": "驚嘆號水池·西峰",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.356891,
+        24.1096158
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 286280.0,
+        "y": 2667209.0
+      }
+    },
+    {
+      "reviewId": "Q062",
+      "nodeId": "node:91f523dd9600ecf46123",
+      "name": "仁壽橋",
+      "choice": "暫不確定",
+      "note": "忽略",
+      "coordinate": null,
+      "action": "ignore"
+    },
+    {
+      "reviewId": "Q063",
+      "nodeId": "node:a9029870ef8042ba86f4",
+      "name": "花蓮",
+      "choice": "暫不確定",
+      "note": "忽略",
+      "coordinate": null,
+      "action": "ignore"
+    },
+    {
+      "reviewId": "Q064",
+      "nodeId": "node:bddbd00b5a0ab63bf4ec",
+      "name": "鯉魚潭",
+      "choice": "暫不確定",
+      "note": "忽略",
+      "coordinate": null,
+      "action": "ignore"
+    },
+    {
+      "reviewId": "Q065",
+      "nodeId": "node:d541f6eb575fb74211e9",
+      "name": "銅門",
+      "choice": "暫不確定",
+      "note": "忽略",
+      "coordinate": null,
+      "action": "ignore"
+    },
+    {
+      "reviewId": "Q066",
+      "nodeId": "node:11a915b8cc195fd5218c",
+      "name": "第四支流合匯點",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2122898,
+        23.9204006
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 271612.0,
+        "y": 2646224.0
+      }
+    },
+    {
+      "reviewId": "Q067",
+      "nodeId": "node:1b5b86247fee083ab543",
+      "name": "第一次獵寮/第一次過溪",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2524515,
+        23.8832462
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 275708.0,
+        "y": 2642116.0
+      }
+    },
+    {
+      "reviewId": "Q068",
+      "nodeId": "node:3f743c0af3f084ee1ad5",
+      "name": "三岔路口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2631226,
+        23.8816752
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 276795.0,
+        "y": 2641944.0
+      }
+    },
+    {
+      "reviewId": "Q069",
+      "nodeId": "node:5b14299a5943cdec0daf",
+      "name": "第三支流合匯點/鐵皮工寮營地",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2165264,
+        23.910426
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 272045.0,
+        "y": 2645120.0
+      }
+    },
+    {
+      "reviewId": "Q070",
+      "nodeId": "node:5eb6459390f9db03adc8",
+      "name": "第一越嶺點",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2053638,
+        23.9260174
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 270906.0,
+        "y": 2646845.0
+      }
+    },
+    {
+      "reviewId": "Q071",
+      "nodeId": "node:7aabed13190449c71fa4",
+      "name": "能高南峰北嶺",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2746867,
+        23.9728449
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 277953.0,
+        "y": 2652043.0
+      }
+    },
+    {
+      "reviewId": "Q072",
+      "nodeId": "node:a20fa9b4a5899ee82159",
+      "name": "溪床營地",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2228213,
+        23.8926737
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 272689.0,
+        "y": 2643155.0
+      }
+    },
+    {
+      "reviewId": "Q073",
+      "nodeId": "node:acdbe0b925a6f0ccb8ba",
+      "name": "3039鞍營地",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.271941,
+        23.9474767
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 277679.0,
+        "y": 2649233.0
+      }
+    },
+    {
+      "reviewId": "Q074",
+      "nodeId": "node:b856b38829fad3ecb7b8",
+      "name": "遊客中心停車場",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.1753121,
+        23.9531706
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 267843.0,
+        "y": 2649848.0
+      }
+    },
+    {
+      "reviewId": "Q075",
+      "nodeId": "node:e2370d30048393393fcc",
+      "name": "紅檜巨木",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2469284,
+        23.8861266
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 275145.0,
+        "y": 2642434.0
+      }
+    },
+    {
+      "reviewId": "Q076",
+      "nodeId": "node:f365a90039ff7fe8bafb",
+      "name": "第二獵寮",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2412448,
+        23.8873546
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 274566.0,
+        "y": 2642569.0
+      }
+    },
+    {
+      "reviewId": "Q077",
+      "nodeId": "node:09f6213ee3eda95ab440",
+      "name": "武界林道",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.1058294,
+        23.8464311
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 260780.0,
+        "y": 2638020.0
+      }
+    },
+    {
+      "reviewId": "Q078",
+      "nodeId": "node:161914ad6f376947f71b",
+      "name": "武界攔沙壩",
+      "choice": "暫不確定",
+      "note": "忽略",
+      "coordinate": null,
+      "action": "ignore"
+    },
+    {
+      "reviewId": "Q079",
+      "nodeId": "node:413453c06804769a3470",
+      "name": "東南鞍營地",
+      "choice": "暫不確定",
+      "note": "忽略",
+      "coordinate": null,
+      "action": "ignore"
+    },
+    {
+      "reviewId": "Q080",
+      "nodeId": "node:787927eba34d44c6e9f2",
+      "name": "卓社大山東峰叉路口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.1466114,
+        23.8476438
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 264934.0,
+        "y": 2638158.0
+      }
+    },
+    {
+      "reviewId": "Q081",
+      "nodeId": "node:7e97b6948ea54cd82c9b",
+      "name": "萬大·親愛國小",
+      "choice": "暫不確定",
+      "note": "忽略",
+      "coordinate": null,
+      "action": "ignore"
+    },
+    {
+      "reviewId": "Q082",
+      "nodeId": "node:a78dde46e2ca739d4ac9",
+      "name": "東峰下營地",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.1499308,
+        23.8486609
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 265272.0,
+        "y": 2638271.0
+      }
+    },
+    {
+      "reviewId": "Q083",
+      "nodeId": "node:fc10c329662adbb634fb",
+      "name": "乳形峰東鞍營地",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.1283407,
+        23.8767358
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 263070.0,
+        "y": 2641378.0
+      }
+    },
+    {
+      "reviewId": "Q084",
+      "nodeId": "g14-001",
+      "name": "2603公尺鞍部",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q085",
+      "nodeId": "g14-002",
+      "name": "2761最低鞍部",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q086",
+      "nodeId": "g14-003",
+      "name": "2780草原黑水塘",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q087",
+      "nodeId": "g14-004",
+      "name": "2813鞍營地",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q088",
+      "nodeId": "g14-005",
+      "name": "2833公尺鞍部",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q089",
+      "nodeId": "g14-008",
+      "name": "3255公尺峰",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q090",
+      "nodeId": "g14-021",
+      "name": "林道入口",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q091",
+      "nodeId": "g14-022",
+      "name": "林道舊登山口",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q092",
+      "nodeId": "g14-024",
+      "name": "廢棄工寮",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q093",
+      "nodeId": "g14-026",
+      "name": "關門山凹",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q094",
+      "nodeId": "g14-028",
+      "name": "鐵軌岔路",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q095",
+      "nodeId": "g14-029",
+      "name": "巖山",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q096",
+      "nodeId": "node:7375c4ae1cea24a3f4dd",
+      "name": "水里",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q097",
+      "nodeId": "node:b2c4902bc8b8336f3277",
+      "name": "孫海橋",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q098",
+      "nodeId": "node:2d8fc441e99a93bda219",
+      "name": "33.5K大崩塌",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q099",
+      "nodeId": "node:4a0b2326333b6cbfd23e",
+      "name": "松林營地",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q100",
+      "nodeId": "node:4d88bca8baa6a866c727",
+      "name": "鐵線斷崖東口",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q101",
+      "nodeId": "node:4fca27364854ea7129d2",
+      "name": "39.6K大崩塌",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q102",
+      "nodeId": "node:5ab8c1b58de6eeb05b5d",
+      "name": "2897草原水池",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q103",
+      "nodeId": "node:5d3084736e9f8bce6d4a",
+      "name": "19.3K水泥橋",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q104",
+      "nodeId": "node:66b2dd2d91e301d84c73",
+      "name": "東鞍營地",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q105",
+      "nodeId": "node:6b8235223e06105d242a",
+      "name": "28K水泥工寮",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q106",
+      "nodeId": "node:891637431112fc5688eb",
+      "name": "34K登山口",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q107",
+      "nodeId": "node:a4c3afd25386960ea875",
+      "name": "東北鞍營地",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q108",
+      "nodeId": "node:aef6e30a59fdc407a2a2",
+      "name": "無雙部落址",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q109",
+      "nodeId": "node:bc117dbb33b03fe2cddf",
+      "name": "沙武巒草原",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q110",
+      "nodeId": "node:c8870812bd546115bac5",
+      "name": "三岔路口營地",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q111",
+      "nodeId": "node:cb277db7b164105e3c17",
+      "name": "三岔路口",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q112",
+      "nodeId": "node:d03e5cea91ce41e0ca2a",
+      "name": "鐵線斷崖西口",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q113",
+      "nodeId": "node:e9149e15effc99bc37f7",
+      "name": "郡東營地",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q114",
+      "nodeId": "node:eaf2fc50ab8c1afa9051",
+      "name": "紅葉村",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q115",
+      "nodeId": "node:ef56761122345906961b",
+      "name": "14.6K水泥路止",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q116",
+      "nodeId": "shared:cw-v07-001",
+      "name": "16.5K行車終點",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q117",
+      "nodeId": "node:1670c3f1247b747ba02a",
+      "name": "下切溪床點",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q118",
+      "nodeId": "node:2858041ca3317f204e6e",
+      "name": "2950鞍岔路",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q119",
+      "nodeId": "node:43363368b3898fae5690",
+      "name": "林道石壁營地",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q120",
+      "nodeId": "node:456202f4ff7dedc2df5e",
+      "name": "捷徑下切點",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q121",
+      "nodeId": "node:47059555f89c94f5c563",
+      "name": "岔路登山口",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q122",
+      "nodeId": "node:5d54c5b04ab2f748dfbf",
+      "name": "13K苗圃工寮",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q123",
+      "nodeId": "node:5fbb6bf151a762e5e1e0",
+      "name": "林道崩毀處",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q124",
+      "nodeId": "node:640f925a7809ca032704",
+      "name": "44K林道盡頭",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q125",
+      "nodeId": "node:95694ade39282d11e01e",
+      "name": "大石帆布營地",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q126",
+      "nodeId": "node:9849f71ae901b542f183",
+      "name": "廢棄發電機",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q127",
+      "nodeId": "node:9e9822f8d527f3ba8f6a",
+      "name": "最低鞍部",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q128",
+      "nodeId": "node:c89901cb97ccbe4d145a",
+      "name": "林道玉林橋下切點",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q129",
+      "nodeId": "node:cc65a12ba6bd7fa8e91b",
+      "name": "17K水泥橋",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q130",
+      "nodeId": "node:ea1afe9db60667f52737",
+      "name": "岔路",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q131",
+      "nodeId": "node:ea752355c7e8a54337b4",
+      "name": "19K廢工寮",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q132",
+      "nodeId": "node:fc6d7b252e462c969f91",
+      "name": "溪谷上切處",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q133",
+      "nodeId": "shared:cw-v07-033",
+      "name": "四岔路口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.0307956,
+        23.4654714
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 253146.0,
+        "y": 2595828.0
+      }
+    },
+    {
+      "reviewId": "Q134",
+      "nodeId": "shared:cw-v07-060",
+      "name": "秀姑坪岔路",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.0506364,
+        23.4882133
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 255172.0,
+        "y": 2598347.0
+      }
+    },
+    {
+      "reviewId": "Q135",
+      "nodeId": "shared:cw-v07-062",
+      "name": "秀姑巒山南登山口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.0570413,
+        23.4925004
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 255826.0,
+        "y": 2598822.0
+      }
+    },
+    {
+      "reviewId": "Q136",
+      "nodeId": "shared:cw-v07-064",
+      "name": "稜線岔路",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.018816,
+        23.478522
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 251922.0,
+        "y": 2597273.0
+      }
+    },
+    {
+      "reviewId": "Q137",
+      "nodeId": "local:G17-OVERLAP::g17-overlap-010",
+      "name": "西北鞍南雙池營地",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.0080493,
+        23.3515845
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 250823.0,
+        "y": 2583216.0
+      }
+    },
+    {
+      "reviewId": "Q138",
+      "nodeId": "node:48968d2ec01d938dc670",
+      "name": "荖濃溪底營地",
+      "choice": "全部不符",
+      "note": "刪除節點",
+      "coordinate": null,
+      "action": "delete"
+    },
+    {
+      "reviewId": "Q139",
+      "nodeId": "node:4e7ab2e2b7798527927f",
+      "name": "達芬尖山登山口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.0144644,
+        23.4333443
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 251478.0,
+        "y": 2592270.0
+      }
+    },
+    {
+      "reviewId": "Q140",
+      "nodeId": "node:502ad7507575bb341a28",
+      "name": "大水窟山三岔路",
+      "choice": "全部不符",
+      "note": "刪除節點",
+      "coordinate": null,
+      "action": "delete"
+    },
+    {
+      "reviewId": "Q141",
+      "nodeId": "node:6fbfce66af193ba46514",
+      "name": "大水窟山三岔路口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.0336289,
+        23.4437441
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 253436.0,
+        "y": 2593422.0
+      }
+    },
+    {
+      "reviewId": "Q142",
+      "nodeId": "node:bfffd1c12932fc2cd1e8",
+      "name": "水源",
+      "choice": "全部不符",
+      "note": "刪除節點",
+      "coordinate": null,
+      "action": "delete"
+    },
+    {
+      "reviewId": "Q143",
+      "nodeId": "shared:cw-v07-020",
+      "name": "北峰下解說牌",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.0089647,
+        23.2918034
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 250917.0,
+        "y": 2576596.0
+      }
+    },
+    {
+      "reviewId": "Q144",
+      "nodeId": "shared:cw-v07-070",
+      "name": "西側登山口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        120.9889539,
+        23.2817073
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 248870.0,
+        "y": 2575478.0
+      }
+    },
+    {
+      "reviewId": "Q145",
+      "nodeId": "local:G18-OVERLAP::g18-overlap-007",
+      "name": "西峰東稜平台",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.0770049,
+        23.3068204
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 257876.0,
+        "y": 2578261.0
+      }
+    },
+    {
+      "reviewId": "Q146",
+      "nodeId": "local:G18-OVERLAP::g18-overlap-011",
+      "name": "鞍部黑水塘",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.1103353,
+        23.3186573
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 261284.0,
+        "y": 2579574.0
+      }
+    },
+    {
+      "reviewId": "Q147",
+      "nodeId": "node:08db756369da2cfec394",
+      "name": "草原大窪地",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.0667037,
+        23.2557039
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 256825.0,
+        "y": 2572600.0
+      }
+    },
+    {
+      "reviewId": "Q148",
+      "nodeId": "node:17949585e4110d530804",
+      "name": "下切點",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.1187522,
+        23.3384999
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 262143.0,
+        "y": 2581772.0
+      }
+    },
+    {
+      "reviewId": "Q149",
+      "nodeId": "node:68ed9d0821e485e82f8f",
+      "name": "瓦拉米步道起點",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.2353652,
+        23.3289946
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 274069.0,
+        "y": 2580734.0
+      }
+    },
+    {
+      "reviewId": "Q150",
+      "nodeId": "node:c575dd7fad9439788a33",
+      "name": "松針營地",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        121.1165049,
+        23.3294893
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 261914.0,
+        "y": 2580774.0
+      }
+    },
+    {
+      "reviewId": "Q151",
+      "nodeId": "node:13b306cbee631bb2e339",
+      "name": "古道口",
+      "choice": "暫不確定",
+      "note": "忽視",
+      "coordinate": null,
+      "action": "ignore"
+    },
+    {
+      "reviewId": "Q152",
+      "nodeId": "node:2262a9d2e8c96b37a520",
+      "name": "3444主稜",
+      "choice": "暫不確定",
+      "note": "忽視",
+      "coordinate": null,
+      "action": "ignore"
+    },
+    {
+      "reviewId": "Q153",
+      "nodeId": "node:26df992c63cbe82936fa",
+      "name": "中之關步道口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        120.8991338,
+        23.2874728
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 239682.0,
+        "y": 2576120.0
+      }
+    },
+    {
+      "reviewId": "Q154",
+      "nodeId": "node:4176c7ef6b3820715529",
+      "name": "石山西鞍",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q155",
+      "nodeId": "node:8359e8efe649ea561e1d",
+      "name": "三岔路口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q156",
+      "nodeId": "node:9a67a747c35d44edc6e7",
+      "name": "石山林道登山口",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q157",
+      "nodeId": "node:9fbc58a0476bc3ea4f8f",
+      "name": "大關山隧道",
+      "choice": "暫不確定",
+      "note": "忽視",
+      "coordinate": null,
+      "action": "ignore"
+    },
+    {
+      "reviewId": "Q158",
+      "nodeId": "node:b46a34c41185b2670cbd",
+      "name": "出雲山檢查哨",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q159",
+      "nodeId": "node:bb83bae652d8bbcc5f86",
+      "name": "18K行車終點",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q160",
+      "nodeId": "node:bf84cd65b08abfe71cdd",
+      "name": "三叉峰下營地",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q161",
+      "nodeId": "node:c286f1b8b14919f6bc37",
+      "name": "登山口",
+      "choice": "暫不確定",
+      "note": "忽略",
+      "coordinate": null,
+      "action": "ignore"
+    },
+    {
+      "reviewId": "Q162",
+      "nodeId": "node:d2f31085a66df8fb4a30",
+      "name": "3237公尺峰",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q163",
+      "nodeId": "node:db9d30cb40a2d5347caa",
+      "name": "新舊路岔路",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q164",
+      "nodeId": "node:de958fbbd68222537e18",
+      "name": "石瀑區",
+      "choice": "",
+      "note": "",
+      "coordinate": null,
+      "action": "pending"
+    },
+    {
+      "reviewId": "Q165",
+      "nodeId": "g20-003",
+      "name": "越嶺鞍部",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        120.7248956,
+        22.6150354
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 221719.0,
+        "y": 2501682.0
+      }
+    },
+    {
+      "reviewId": "Q166",
+      "nodeId": "g20-010",
+      "name": "主稜嶺線",
+      "choice": "自行補座標",
+      "note": "",
+      "coordinate": [
+        120.7543094,
+        22.616221
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 224743.0,
+        "y": 2501808.0
+      }
+    },
+    {
+      "reviewId": "Q167",
+      "nodeId": "node:804d982aec853ca7112a",
+      "name": "泰武",
+      "choice": "全部不符",
+      "note": "忽略",
+      "coordinate": null,
+      "action": "ignore"
+    },
+    {
+      "reviewId": "Q168",
+      "nodeId": "node:84280ba5b1167373a37e",
+      "name": "潮州",
+      "choice": "全部不符",
+      "note": "忽略",
+      "coordinate": null,
+      "action": "ignore"
+    }
+  ]
+}

@@ -20,6 +20,7 @@ export function validatePlan(data,routeIds){
       if(!plain(item)||!['location','manual-location','rest'].includes(item.type))fail(where+' 節點類型錯誤');
       if(item.type==='rest'){
         if(!finite(item.minutes,0,10080))fail(where+' 休息時間錯誤');
+        if(item.note!==undefined&&(typeof item.note!=='string'||item.note.length>10000))fail(where+' 休息備註錯誤');
         return;
       }
       if(typeof item.name!=='string'||!item.name.trim()||item.name.length>250||typeof item.note!=='string')fail(where+' 名稱或備註錯誤');

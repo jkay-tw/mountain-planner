@@ -179,7 +179,14 @@
         "池有山岔路口": "池有山登山口"
       },
       "unmatchedCandidateLabels": [],
-      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety."
+      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety.",
+      "ownerApprovedDisplayLabels": [
+        {
+          "name": "雪山登山口",
+          "confirmedBy": "owner",
+          "note": "2026-11-01 確認 G04/G05 同一實體地點並統一顯示名稱；保留原圖名稱為別名。"
+        }
+      ]
     },
     {
       "chartId": "G05",
@@ -258,7 +265,14 @@
         "大雪北山": "大雪山"
       },
       "unmatchedCandidateLabels": [],
-      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety."
+      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety.",
+      "ownerApprovedDisplayLabels": [
+        {
+          "name": "武陵農場·遊客中心",
+          "confirmedBy": "owner",
+          "note": "2026-11-01 確認 G04/G05 同一實體地點並統一顯示名稱；保留原圖名稱為別名。"
+        }
+      ]
     },
     {
       "chartId": "G06",
@@ -469,7 +483,15 @@
         "縣界啞口": "縣界埡口"
       },
       "unmatchedCandidateLabels": [],
-      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety."
+      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety.",
+      "ownerApprovedDisplayLabels": [
+        {
+          "name": "松泉崗/天巒池登山口",
+          "nodeId": "node:ff6ed5559a33fffbf64f",
+          "confirmedBy": "owner",
+          "basis": "2026-11-04 coordinate review Q053 note; normalize duplicated 池 in display spelling only"
+        }
+      ]
     },
     {
       "chartId": "G10",
@@ -1104,6 +1126,11 @@
           "confirmedBy": "owner",
           "basis": "Owner-confirmed endpoint or existing reviewed canonical display alias; not a new claim about literal chart text",
           "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+        },
+        {
+          "name": "神池營地",
+          "confirmedBy": "owner",
+          "basis": "2026-11-03 explicit instruction: display chart 第一水源 as 神池營地; catalog did not previously contain 第一水源. Other 水源 identities unchanged."
         }
       ]
     },

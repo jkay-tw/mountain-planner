@@ -20,5 +20,8 @@ jobs:
           node --check js/node-identity.js
           node --experimental-default-type=module --test tests/*.test.mjs
 
+      - name: Install offline terrain-build test dependencies
+        run: python3 -m pip install numpy==2.3.5 scipy==1.17.0
+
       - name: Verify batch route-data audit and promotion gates
         run: python3 -m unittest discover -s tests -p 'test_*.py'

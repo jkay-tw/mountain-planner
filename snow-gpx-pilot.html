@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>雪山 GPX 地圖試點｜Mountain Planner</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
+<style>
+body{font-family:system-ui,sans-serif;background:#f5f7f3;color:#253b31;margin:0}main{max-width:1050px;margin:auto;padding:20px}h1{font-size:1.5rem;margin:.4rem 0}.card{background:white;border:1px solid #dce6dc;border-radius:12px;padding:16px;margin:12px 0}#map{height: min(60vh,600px);min-height:360px;border-radius:10px;background:#e8eee6}input{max-width:100%;margin:.5rem 0}.small{font-size:.9rem;color:#53665a;line-height:1.6}.alert{background:#fff5df;color:#704e10}.stats{font-weight:600}a{color:#246447}
+</style>
+</head>
+<body><main>
+<a href="unified-editor.html">← 回行程規劃</a>
+<h1>雪山 GPX 地圖試點</h1>
+<p class="small">匯入 GPX 以檢視實際軌跡與檔案內路點。資料只在目前瀏覽器處理；底圖由地圖服務提供。</p>
+<section class="card"><label for="file">選擇 GPX 檔案</label><br><input id="file" type="file" accept=".gpx,application/gpx+xml,application/xml,text/xml"><div id="status" role="status" class="small">選擇 GPX 後，地圖會顯示軌跡及路點。</div><p class="small">可從地圖右上角切換 OpenStreetMap 與魯地圖。距離沿記錄點估算，可能包含繞行；路點、GPS 海拔與軌跡不代表官方核實。</p></section>
+<div class="card alert small">這是獨立試點，目前不會讀取或改變規劃器行程，也不會依行程自動產生 GPX。請以最新路況及合適的離線地圖交叉確認。</div>
+<section class="card"><div id="map" aria-label="GPX 地圖"></div></section>
+</main>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
+<script type="module" src="js/snow-gpx-pilot.js?v=1"></script>
+</body></html>

@@ -2,7 +2,7 @@
 // Scoped selector affects node discovery only, never the walking connectivity.
 export function mergeReviewedRoutes(routes) {
   if(!Array.isArray(routes)||!routes.length)throw new Error('At least one reviewed route required');
-  const nodes=new Map(),segments=[],sourceIds=new Set();
+  const nodes=new Map(),segments=[],manualConnections=[],sourceIds=new Set();
   for(const route of routes) {
     if(!route?.route_id||sourceIds.has(route.route_id))throw new Error('Duplicate or missing route ID');
     sourceIds.add(route.route_id);
@@ -17,6 +17,10 @@ export function mergeReviewedRoutes(routes) {
     }
     // Keep identities available for saved plans and manual connections while quarantined.
     if(route.routingEnabled===false)continue;
+    for(const s of route.manualConnections||[]){
+      if(!ids.has(s.fromId)||!ids.has(s.toId)||s.minutes!==null||s.manualTimeRequired!==true||s.travelMode!=='walking'||s.verificationStatus!=='owner-confirmed-connection')throw new Error('Invalid owner-timed connection');
+      if(!manualConnections.some(e=>e.fromId===s.fromId&&e.toId===s.toId))manualConnections.push({...s});
+    }
     for(const s of route.segments||[]) {
       if(s.routingEnabled===false)continue;
       if(!ids.has(s.fromId)||!ids.has(s.toId))throw new Error('Dangling segment identity');
@@ -32,7 +36,7 @@ export function mergeReviewedRoutes(routes) {
   }
   return {route_id:'GLOBAL-PREVIEW',route_name:'已收錄圖組的共同路網',
     routingPolicy:'verified-walking-only',status:'preview-only',
-    nodes:[...nodes.values()],segments,source:{image_url:'https://www.sunriver.com.tw/step2020.htm'},
+    nodes:[...nodes.values()],segments,manualConnections,source:{image_url:'https://www.sunriver.com.tw/step2020.htm'},
     includedRoutes:[...sourceIds]};
 }
 export function nodesInScope(route,scope){

@@ -1,0 +1,309 @@
+{
+  "date": "2026-11-03",
+  "basis": "Explicit owner instruction in conversation",
+  "retiredNodes": [
+    {
+      "id": "node:2073e5ef3ab7ef6fb2f1",
+      "name": "凹谷營地",
+      "aliases": [],
+      "groups": [
+        "G19"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:5432a0accfa0ca8738af",
+      "name": "鐵杉營地",
+      "aliases": [],
+      "groups": [
+        "G19"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    {
+      "id": "node:c286f1b8b14919f6bc37",
+      "name": "登山口",
+      "aliases": [],
+      "groups": [
+        "G19"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    }
+  ],
+  "removedSegments": [
+    {
+      "fromId": "node:f1a56c966825aab02800",
+      "toId": "node:2073e5ef3ab7ef6fb2f1",
+      "from": "四岔路口",
+      "to": "凹谷營地",
+      "minutes": 40,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R23E534D47B"
+      ],
+      "evidenceRows": [
+        860
+      ],
+      "sourceGroups": [
+        "南一段"
+      ],
+      "sourceChart": "G19",
+      "source": "https://www.sunriver.com.tw/images/hiking/G19_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南一段",
+          "chartId": "G19",
+          "url": "https://www.sunriver.com.tw/images/hiking/G19_hiking.jpg",
+          "rowId": "R23E534D47B",
+          "sheetRows": [
+            860
+          ],
+          "minutes": 40
+        }
+      ],
+      "sourceGroupNames": [
+        "南一段"
+      ]
+    },
+    {
+      "fromId": "node:2073e5ef3ab7ef6fb2f1",
+      "toId": "node:f1a56c966825aab02800",
+      "from": "凹谷營地",
+      "to": "四岔路口",
+      "minutes": 50,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R23E534D47B"
+      ],
+      "evidenceRows": [
+        860
+      ],
+      "sourceGroups": [
+        "南一段"
+      ],
+      "sourceChart": "G19",
+      "source": "https://www.sunriver.com.tw/images/hiking/G19_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南一段",
+          "chartId": "G19",
+          "url": "https://www.sunriver.com.tw/images/hiking/G19_hiking.jpg",
+          "rowId": "R23E534D47B",
+          "sheetRows": [
+            860
+          ],
+          "minutes": 50
+        }
+      ],
+      "sourceGroupNames": [
+        "南一段"
+      ]
+    },
+    {
+      "fromId": "node:c286f1b8b14919f6bc37",
+      "toId": "node:2073e5ef3ab7ef6fb2f1",
+      "from": "登山口",
+      "to": "凹谷營地",
+      "minutes": 100,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6D1E3541D7"
+      ],
+      "evidenceRows": [
+        861
+      ],
+      "sourceGroups": [
+        "南一段"
+      ],
+      "sourceChart": "G19",
+      "source": "https://www.sunriver.com.tw/images/hiking/G19_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南一段",
+          "chartId": "G19",
+          "url": "https://www.sunriver.com.tw/images/hiking/G19_hiking.jpg",
+          "rowId": "R6D1E3541D7",
+          "sheetRows": [
+            861
+          ],
+          "minutes": 100
+        }
+      ],
+      "sourceGroupNames": [
+        "南一段"
+      ]
+    },
+    {
+      "fromId": "node:2073e5ef3ab7ef6fb2f1",
+      "toId": "node:c286f1b8b14919f6bc37",
+      "from": "凹谷營地",
+      "to": "登山口",
+      "minutes": 70,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R6D1E3541D7"
+      ],
+      "evidenceRows": [
+        861
+      ],
+      "sourceGroups": [
+        "南一段"
+      ],
+      "sourceChart": "G19",
+      "source": "https://www.sunriver.com.tw/images/hiking/G19_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南一段",
+          "chartId": "G19",
+          "url": "https://www.sunriver.com.tw/images/hiking/G19_hiking.jpg",
+          "rowId": "R6D1E3541D7",
+          "sheetRows": [
+            861
+          ],
+          "minutes": 70
+        }
+      ],
+      "sourceGroupNames": [
+        "南一段"
+      ]
+    },
+    {
+      "fromId": "node:c286f1b8b14919f6bc37",
+      "toId": "node:5432a0accfa0ca8738af",
+      "from": "登山口",
+      "to": "鐵杉營地",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R878848E256"
+      ],
+      "evidenceRows": [
+        862
+      ],
+      "sourceGroups": [
+        "南一段"
+      ],
+      "sourceChart": "G19",
+      "source": "https://www.sunriver.com.tw/images/hiking/G19_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南一段",
+          "chartId": "G19",
+          "url": "https://www.sunriver.com.tw/images/hiking/G19_hiking.jpg",
+          "rowId": "R878848E256",
+          "sheetRows": [
+            862
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "南一段"
+      ]
+    },
+    {
+      "fromId": "node:5432a0accfa0ca8738af",
+      "toId": "node:c286f1b8b14919f6bc37",
+      "from": "鐵杉營地",
+      "to": "登山口",
+      "minutes": 20,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R878848E256"
+      ],
+      "evidenceRows": [
+        862
+      ],
+      "sourceGroups": [
+        "南一段"
+      ],
+      "sourceChart": "G19",
+      "source": "https://www.sunriver.com.tw/images/hiking/G19_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "南一段",
+          "chartId": "G19",
+          "url": "https://www.sunriver.com.tw/images/hiking/G19_hiking.jpg",
+          "rowId": "R878848E256",
+          "sheetRows": [
+            862
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "南一段"
+      ]
+    }
+  ],
+  "newNode": {
+    "id": "local:G19::shenchi-camp",
+    "name": "神池營地",
+    "aliases": [
+      "第一水源"
+    ],
+    "groups": [
+      "G19"
+    ],
+    "identityBasis": "owner-request-2026-11-03",
+    "sourceLabel": "第一水源",
+    "coordinateStatus": "pending-owner-coordinate"
+  },
+  "manualConnections": [
+    {
+      "fromId": "local:G19::shenchi-camp",
+      "toId": "node:d93ab765aeb31141e24c",
+      "from": "神池營地",
+      "to": "小關山",
+      "minutes": null,
+      "travelMode": "walking",
+      "manualTimeRequired": true,
+      "verificationStatus": "owner-confirmed-connection",
+      "source": "使用者指定 2026-11-03",
+      "sourceNote": "使用者指定雙向連接；無上河時間，規劃時間自行輸入。"
+    },
+    {
+      "fromId": "node:d93ab765aeb31141e24c",
+      "toId": "local:G19::shenchi-camp",
+      "from": "小關山",
+      "to": "神池營地",
+      "minutes": null,
+      "travelMode": "walking",
+      "manualTimeRequired": true,
+      "verificationStatus": "owner-confirmed-connection",
+      "source": "使用者指定 2026-11-03",
+      "sourceNote": "使用者指定雙向連接；無上河時間，規劃時間自行輸入。"
+    }
+  ],
+  "note": "第一水源 appears in chart inventory, not active node catalog. Added 神池營地 as a scoped identity; other 水源 IDs and coordinates unchanged. Historical coordinate review and Excel IDs retained."
+}

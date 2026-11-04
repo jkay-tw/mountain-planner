@@ -32,13 +32,15 @@
       "identityBasis": "group-scoped-owner-reviewed-label"
     },
     {
-      "id": "node:1c91e71b467300e90b6c",
+      "id": "g04-045",
       "name": "雪山登山口",
-      "aliases": [],
+      "aliases": [
+        "雪山登山口管理站"
+      ],
       "groups": [
         "G05"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "owner-confirmed-G04-G05-20261101"
     },
     {
       "id": "node:1c9c90016a1db23f233e",
@@ -549,13 +551,15 @@
       "identityBasis": "group-scoped-owner-reviewed-label"
     },
     {
-      "id": "node:fba428b6693c1f3ff1b9",
-      "name": "武陵農場",
-      "aliases": [],
+      "id": "node:f6f2ba4c01559d0ff632",
+      "name": "武陵農場·遊客中心",
+      "aliases": [
+        "武陵農場"
+      ],
       "groups": [
         "G05"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "owner-confirmed-G04-G05-20261101"
     },
     {
       "id": "node:fe67bc0edd485e795809",
@@ -4657,7 +4661,7 @@
       ]
     },
     {
-      "fromId": "node:1c91e71b467300e90b6c",
+      "fromId": "g04-045",
       "toId": "shared:cw-v07-003",
       "from": "雪山登山口",
       "to": "七卡山莊",
@@ -4697,7 +4701,7 @@
     },
     {
       "fromId": "shared:cw-v07-003",
-      "toId": "node:1c91e71b467300e90b6c",
+      "toId": "g04-045",
       "from": "七卡山莊",
       "to": "雪山登山口",
       "minutes": 55,

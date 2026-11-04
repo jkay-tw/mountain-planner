@@ -94,7 +94,17 @@ def compile_rows(data,root=ROOT):
             issues.append({'kind':'unresolved_physical_identity','group':g,'name':n,'other':other,'sheetRows':r['evidenceRows']})
             nid='unresolved:'+stable(g+'|'+r['sourceRowId']+'|'+side)
         if not nid:nid='node:'+stable(g+'|'+(context or n))
+        # Explicit physical identities confirmed by the owner on 2026-11-01.
+        # Restrict each mapping to both original group and prior physical ID.
+        reviewed_snow_ids={
+            ('雪山西南稜','node:1c91e71b467300e90b6c'):('g04-045','雪山登山口'),
+            ('雪山西南稜','node:fba428b6693c1f3ff1b9'):('node:f6f2ba4c01559d0ff632','武陵農場·遊客中心'),
+            ('大霸/聖稜/四秀','g04-045'):('g04-045','雪山登山口'),
+        }
+        snow=reviewed_snow_ids.get((g,nid))
+        if snow:nid=snow[0]
         display=catalogNames.get(nid,canonical.get(nid,n))
+        if snow:display=snow[1]
         old=nodes.setdefault(nid,{'id':nid,'name':display,'aliases':[],'groups':[],
             'identityBasis':'existing-reviewed-identity' if nid in catalogNames else ('reviewed-crosswalk' if nid in canonical else ('adjacency-context' if context else 'group-scoped-owner-reviewed-label'))})
         if n!=display and n not in old['aliases']:old['aliases'].append(n)

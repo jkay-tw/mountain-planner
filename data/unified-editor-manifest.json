@@ -1,5 +1,5 @@
 {
-  "dataset_version": "v0.7.24-owner-reviewed-all-groups",
+  "dataset_version": "v0.8.1-owner-coordinates-continuous-terrain",
   "mode": "global-owner-reviewed-walking-scoped-node-browser-preview",
   "routes": [
     {
@@ -33,14 +33,14 @@
     {
       "id": "G04",
       "name": "G04｜大霸/聖稜/四秀",
-      "file": "data/routes/owner-reviewed/G04.json?v=v0724",
+      "file": "data/routes/owner-reviewed/G04.json?v=v0726",
       "status": "owner-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg"
     },
     {
       "id": "G05",
       "name": "G05｜雪山西南稜",
-      "file": "data/routes/owner-reviewed/G05.json?v=v0724",
+      "file": "data/routes/owner-reviewed/G05.json?v=v0726",
       "status": "owner-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg"
     },
@@ -75,7 +75,7 @@
     {
       "id": "G09-cfb4c85c",
       "name": "G09｜合歡群峰",
-      "file": "data/routes/owner-reviewed/G09-cfb4c85c.json?v=v0724",
+      "file": "data/routes/owner-reviewed/G09-cfb4c85c.json?v=v081",
       "status": "owner-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg"
     },
@@ -145,7 +145,7 @@
     {
       "id": "G17",
       "name": "G17｜南二段",
-      "file": "data/routes/owner-reviewed/G17.json?v=v0724",
+      "file": "data/routes/owner-reviewed/G17.json?v=v081",
       "status": "owner-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg"
     },
@@ -159,7 +159,7 @@
     {
       "id": "G19",
       "name": "G19｜南一段",
-      "file": "data/routes/owner-reviewed/G19.json?v=v0724",
+      "file": "data/routes/owner-reviewed/G19.json?v=v080",
       "status": "owner-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G19_hiking.jpg"
     },

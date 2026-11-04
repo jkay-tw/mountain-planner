@@ -1,11 +1,42 @@
 export const round2=n=>Math.round((Number(n)+Number.EPSILON)*100)/100;
 export const uid=()=>Math.random().toString(36).slice(2,9);
+export const isOwnerTimedConnection=s=>s?.manualTimeRequired===true&&s.minutes===null&&s.travelMode==='walking'&&s.verificationStatus==='owner-confirmed-connection'&&s.routingEnabled!==false;
+export const ownerTimedConnection=(route,from,to)=>route.routingEnabled===false?null:(route.manualConnections||[]).find(s=>s.fromId===from&&s.toId===to&&isOwnerTimedConnection(s));
+export function incomingForSegment(s,previousId,itemId,source){
+ if(isOwnerTimedConnection(s))return {kind:'manual',connectionStatus:'owner-confirmed',fromId:previousId,toId:itemId,fromNodeId:s.fromId,toNodeId:s.toId,actualMinutes:null,source:s.source};
+ return {kind:'official',from:s.from,to:s.to,fromNodeId:s.fromId,toNodeId:s.toId,officialMinutes:s.minutes,actualMinutes:null,source:s.source||source,...(s.timeAlternatives?.length?{timeAlternatives:s.timeAlternatives}:{})};
+}
 
 export function allNodes(route){
   return [...new Set(route.segments.flatMap(s=>[s.from,s.to]))].sort((a,b)=>a.localeCompare(b,'zh-Hant'));
 }
 export function directSegment(route,from,to){
   return route.segments.find(s=>s.from===from&&s.to===to)||null;
+}
+// Owner-confirmed physical overlaps. IDs are explicit: labels alone never establish
+// identity. Each direction must still match the verified edges and minute total.
+const reviewedOverlaps=[
+  ['shared:cw-v07-066','g04-fork-xueshan','shared:cw-v07-074'],
+  ['shared:cw-v07-003','g04-027','g04-044','shared:cw-v07-004'],
+  ['shared:cw-v07-004','g04-039','shared:cw-v07-074'],
+  ['shared:cw-v07-012','node:83a76c46935de2ee6f88','node:6d5573eb9babae99663c','shared:cw-v07-048'],
+  ['shared:cw-v07-012','node:dca389db39359114677f','shared:cw-v07-041'],
+  ['shared:cw-v07-078','node:e9cc87a6032a69ff2163','shared:cw-v07-080'],
+  ['shared:cw-v07-040','node:2f804109a33585abde92','node:47059555f89c94f5c563','node:70418012ecbda7a8add8','shared:cw-v07-080'],
+  ['shared:cw-v07-018','shared:cw-v07-008','shared:cw-v07-055','shared:cw-v07-076'],
+  ['shared:cw-v07-054','shared:cw-v07-013','shared:cw-v07-044','shared:cw-v07-072'],
+  ['shared:cw-v07-071','shared:cw-v07-057','shared:cw-v07-026','shared:cw-v07-072'],
+  ['shared:cw-v07-019','shared:cw-v07-026','shared:cw-v07-072']
+];
+export function expandReviewedOverlaps(route,segments){
+  return segments.flatMap(segment=>{
+    const match=reviewedOverlaps.find(ids=>(ids[0]===segment.fromId&&ids.at(-1)===segment.toId)||(ids[0]===segment.toId&&ids.at(-1)===segment.fromId));
+    if(!match)return [segment];
+    const ids=match[0]===segment.fromId?match:[...match].reverse();
+    const parts=ids.slice(1).map((id,i)=>route.segments.find(s=>s.fromId===ids[i]&&s.toId===id&&s.routingEnabled!==false&&s.travelMode==='walking'&&s.verificationStatus==='verified'));
+    // A partial dataset or changed source must never invent a route or time.
+    return parts.every(Boolean)&&parts.reduce((sum,s)=>sum+s.minutes,0)===segment.minutes?parts:[segment];
+  });
 }
 export function shortestPath(route,start,end){
   const idMode=Array.isArray(route.nodes)&&route.segments.every(s=>s.fromId&&s.toId);
@@ -25,6 +56,7 @@ export function shortestPath(route,start,end){
     unvisited.delete(u);if(u===end)break;
     for(const seg of route.segments.filter(s=>s[fromKey]===u&&route.routingEnabled!==false&&s.routingEnabled!==false&&!['vehicle','driving','transport'].includes(s.travelMode??s.edgeType??'walking')&&s.verificationStatus!=='unverified'&&(route.routingPolicy!=='verified-walking-only'||(s.travelMode==='walking'&&s.verificationStatus==='verified')))){
       const target=seg[toKey];
+      if(!Number.isFinite(seg.minutes))continue;
       const alt=best+seg.minutes;
       if(alt<(dist.get(target)??Infinity)){dist.set(target,alt);prev.set(target,{node:u,seg})}
     }
@@ -34,6 +66,10 @@ export function shortestPath(route,start,end){
   while(cur!==start){
     const p=prev.get(cur);if(!p)return null;
     segments.unshift(p.seg);path.unshift(p.node);cur=p.node;
+  }
+  if(idMode){
+    const expanded=expandReviewedOverlaps(route,segments);
+    return {nodes:[start,...expanded.map(s=>s.toId)],segments:expanded,minutes:dist.get(end)};
   }
   return {nodes:path,segments,minutes:dist.get(end)};
 }
@@ -70,7 +106,7 @@ export function recalcConnections(day,route){
     // Dataset updates must not replace a saved connection while its endpoints stay put.
     // A move/delete changes endpoint identity and still triggers normal reconnection below.
     const stored=raw.incoming;
-    const stableManual=stored?.kind==='manual'&&stored.connectionStatus==='unverified'&&stored.fromId===previous.id&&stored.toId===item.id;
+    const stableManual=stored?.kind==='manual'&&['unverified','owner-confirmed'].includes(stored.connectionStatus)&&stored.fromId===previous.id&&stored.toId===item.id;
     const stableOfficial=Array.isArray(route.nodes)&&stored?.kind==='official'&&
       stored.fromNodeId===previous.nodeId&&stored.toNodeId===item.nodeId&&
       previous.nodeId!==item.nodeId;
@@ -81,6 +117,8 @@ export function recalcConnections(day,route){
       item.incoming=makeManual(previous,item,raw.incoming);result.push(item);previous=item;continue;
     }
     const identified=Array.isArray(route.nodes);
+    const manual=identified?ownerTimedConnection(route,previous.nodeId,item.nodeId):null;
+    if(manual){item.incoming=incomingForSegment(manual,previous.id,item.id);result.push(item);previous=item;continue;}
     const path=shortestPath(route,identified?previous.nodeId:previous.name,identified?item.nodeId:item.name);
     if(!path){item.incoming=makeManual(previous,item,raw.incoming);result.push(item);previous=item;continue;}
     if(!path.segments.length){

@@ -366,7 +366,7 @@
     {
       "fromId": "g04-045",
       "toId": "g04-056",
-      "from": "雪山登山口管理站",
+      "from": "雪山登山口",
       "to": "農場岔路",
       "minutes": 20,
       "travelMode": "vehicle",
@@ -403,7 +403,7 @@
       "fromId": "g04-056",
       "toId": "g04-045",
       "from": "農場岔路",
-      "to": "雪山登山口管理站",
+      "to": "雪山登山口",
       "minutes": 20,
       "travelMode": "vehicle",
       "verificationStatus": "verified",
@@ -725,7 +725,7 @@
     },
     {
       "fromId": "shared:cw-v07-056",
-      "toId": "node:1c91e71b467300e90b6c",
+      "toId": "g04-045",
       "from": "武陵山莊",
       "to": "雪山登山口",
       "minutes": 15,
@@ -760,7 +760,7 @@
       ]
     },
     {
-      "fromId": "node:1c91e71b467300e90b6c",
+      "fromId": "g04-045",
       "toId": "shared:cw-v07-056",
       "from": "雪山登山口",
       "to": "武陵山莊",
@@ -797,9 +797,9 @@
     },
     {
       "fromId": "shared:cw-v07-056",
-      "toId": "node:fba428b6693c1f3ff1b9",
+      "toId": "node:f6f2ba4c01559d0ff632",
       "from": "武陵山莊",
-      "to": "武陵農場",
+      "to": "武陵農場·遊客中心",
       "minutes": 5,
       "travelMode": "vehicle",
       "verificationStatus": "verified",
@@ -832,9 +832,9 @@
       ]
     },
     {
-      "fromId": "node:fba428b6693c1f3ff1b9",
+      "fromId": "node:f6f2ba4c01559d0ff632",
       "toId": "shared:cw-v07-056",
-      "from": "武陵農場",
+      "from": "武陵農場·遊客中心",
       "to": "武陵山莊",
       "minutes": 5,
       "travelMode": "vehicle",
@@ -868,9 +868,9 @@
       ]
     },
     {
-      "fromId": "node:fba428b6693c1f3ff1b9",
+      "fromId": "node:f6f2ba4c01559d0ff632",
       "toId": "node:6238ba80f71b4e9faace",
-      "from": "武陵農場",
+      "from": "武陵農場·遊客中心",
       "to": "武陵路口",
       "minutes": 5,
       "travelMode": "vehicle",
@@ -905,9 +905,9 @@
     },
     {
       "fromId": "node:6238ba80f71b4e9faace",
-      "toId": "node:fba428b6693c1f3ff1b9",
+      "toId": "node:f6f2ba4c01559d0ff632",
       "from": "武陵路口",
-      "to": "武陵農場",
+      "to": "武陵農場·遊客中心",
       "minutes": 5,
       "travelMode": "vehicle",
       "verificationStatus": "verified",
