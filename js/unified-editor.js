@@ -68,7 +68,7 @@ async function init(){
   if(!IS_PRODUCTION)try{const response=await fetch('data/geometry/planner-terrain-v1.json?v=v084');if(!response.ok)throw Error();terrainData=await response.json()}catch(error){console.warn('節點座標與地形資料未載入')}
   bindGlobal();
   render(false);saveAutosave(false);checkpoint();
-  if(!IS_PRODUCTION&&$('itineraryGeometry'))import('./itinerary-map.js?v=v086')
+  if(!IS_PRODUCTION&&$('itineraryGeometry'))import('./itinerary-map.js?v=v087')
     .then(({createItineraryMap})=>{itineraryMap=createItineraryMap({host:$('itineraryGeometry'),getDays:()=>days,initialData:terrainData})})
     .catch(error=>{$('itineraryGeometry').textContent='地圖載入失敗：'+error.message});
 }
@@ -128,19 +128,22 @@ function bindGlobal(){
   $('floatUndoBtn').onclick=()=>restore(at-1);$('floatRedoBtn').onclick=()=>restore(at+1);
   const mobileMap={mobileUndo:'undoBtn',mobileRedo:'redoBtn',mobileSave:'saveBtn',mobileImport:'importBtn',mobileCopy:'copyBtn',mobileExcel:'exportBtn',mobileReset:'resetBtn'};
   Object.entries(mobileMap).forEach(([from,to])=>{if($(from))$(from).onclick=()=>{$(to).click();document.querySelector('.global-menu')?.removeAttribute('open')}});
-  const floatHistory=$('floatingHistory'),syncFloating=()=>{if(floatHistory)floatHistory.classList.toggle('visible',window.scrollY>240)};
+  const floatMenu=document.querySelector('.float-more');
+  for(const [from,to] of Object.entries({floatCopy:'copyBtn',floatExcel:'exportBtn',floatSave:'saveBtn',floatImport:'importBtn'}))$(from).onclick=()=>{floatMenu.open=false;$(to).click()};
+  $('floatTop').onclick=()=>{floatMenu.open=false;window.scrollTo({top:0,behavior:'smooth'})};
+  const floatHistory=$('floatingHistory'),syncFloating=()=>{if(floatHistory){const visible=window.scrollY>240;floatHistory.classList.toggle('visible',visible);if(!visible)floatMenu.open=false}};
   window.addEventListener('scroll',syncFloating,{passive:true});syncFloating();
   document.addEventListener('keydown',e=>{if(!(e.ctrlKey||e.metaKey))return;const a=document.activeElement;if(['INPUT','TEXTAREA','SELECT'].includes(a?.tagName))return;const k=e.key.toLowerCase();if(k==='z'||k==='y'){e.preventDefault();restore(at+(k==='y'||e.shiftKey?1:-1))}});
   // Close popovers when interacting elsewhere. Keep the clicked menu open
   // and allow native <details>/<summary> to handle its own toggle.
-  const menus='.row-menu[open],.header-more[open],.global-menu[open]';
+  const menus='.row-menu[open],.header-more[open],.global-menu[open],.float-more[open]';
   document.addEventListener('click',e=>{
     document.querySelectorAll(menus).forEach(menu=>{
       if(!menu.contains(e.target))menu.open=false;
     });
   });
   document.addEventListener('keydown',e=>{
-    if(e.key==='Escape')document.querySelectorAll(menus+'[open]').forEach(menu=>menu.open=false);
+    if(e.key==='Escape')document.querySelectorAll(menus).forEach(menu=>menu.open=false);
   });
   $('resetBtn').onclick=()=>{
     if(!confirm('確定清除全部行程？可使用復原還原。'))return;
