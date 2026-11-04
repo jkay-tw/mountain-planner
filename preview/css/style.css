@@ -216,7 +216,7 @@ button{border:0;border-radius:8px;padding:9px 12px;background:var(--accent);colo
 .alternate-time.selected{background:#365741;color:#fff;border-color:#365741}
 .calculated-time{font-weight:700;color:#304f76}
 .edge-coef-label{display:inline-flex;align-items:center;gap:2px;font-size:11px}
-.edge-coef{width:82px;min-width:82px;box-sizing:border-box;padding:0 6px}
+.edge-coef{width:68px;min-width:68px;box-sizing:border-box;padding:0 4px}
 .route-info:has(.edge-coef){white-space:normal;flex-wrap:wrap;row-gap:3px}
 .reference-options{display:inline-flex;flex-wrap:wrap;gap:3px}
 
