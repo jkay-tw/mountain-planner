@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mountain Planner 整合預覽</title>
   <link rel="stylesheet" href="css/style.css?v=v0724" />
-  <link rel="stylesheet" href="css/itinerary-map.css?v=v085" />
+  <link rel="stylesheet" href="css/itinerary-map.css?v=v087" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"></script>
 </head>
@@ -80,12 +80,22 @@
     <section id="daysContainer" class="days"></section>
   </main>
 
-  <div id="floatingHistory" class="floating-history" aria-label="復原與重做">
+  <div id="floatingHistory" class="floating-history" aria-label="浮動工具列">
     <button id="floatUndoBtn" class="secondary" disabled title="復原">↶</button>
     <button id="floatRedoBtn" class="secondary" disabled title="重做">↷</button>
+    <details class="float-more">
+      <summary aria-label="更多行程功能">⋯</summary>
+      <div class="float-menu">
+        <button id="floatCopy" type="button">複製行程文字</button>
+        <button id="floatExcel" type="button">匯出 Excel</button>
+        <button id="floatSave" type="button">匯出行程備份</button>
+        <button id="floatImport" type="button">匯入行程備份</button>
+        <button id="floatTop" type="button">回到頁首</button>
+      </div>
+    </details>
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
-  <script type="module" src="js/unified-editor.js?v=v086"></script>
+  <script type="module" src="js/unified-editor.js?v=v087"></script>
 </body>
 </html>
