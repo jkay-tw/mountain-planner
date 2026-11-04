@@ -1,4 +1,5 @@
 import {captureScrollAnchor,restoreScrollAnchor} from './scroll-anchor.js?v=v088';
+import {normalizeTimeInput} from './time-input.js?v=mobile1';
 import {chooseSaveTarget,writeDownload,reportSaveError} from './save-file.js?v=v086';
 import {bindProfileExports} from './profile-export.js?v=v084';
 import {makeDemoDays} from './demo-itinerary.js?v=v0731';
@@ -18,7 +19,7 @@ const $=id=>document.getElementById(id);
 const IS_PRODUCTION=document.body.dataset.mode==='production';
 const IS_DEMO=!IS_PRODUCTION&&new URLSearchParams(location.search).get('demo')==='xueshan';
 const STORAGE_KEY=IS_PRODUCTION?'mountain-planner.global-autosave.v1':'mountain-planner.unified-preview-autosave.v0711';
-const APP_VERSION=IS_PRODUCTION?'v0.7.25':'v0.8.2 Unified Preview';
+const APP_VERSION=IS_PRODUCTION?'v0.7.25':'v0.8.2 Mobile Input Preview';
 const COLLAPSE_KEY=IS_PRODUCTION?'mountain-planner.collapsed-days.v1':'mountain-planner.unified-preview-collapsed.v0711';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',scope='';
@@ -344,7 +345,7 @@ function renderDay(d,i){
   const summary=(f&&l?esc(f.name)+' → '+esc(l.name):'尚未建立行程')+' · '+(s.missing?'未完成':formatDuration(s.total));
   return '<article class="card day-card '+(collapsed?'collapsed':'')+'" data-day="'+i+'" data-day-id="'+esc(d.id)+'">'+
   '<div class="day-head"><button class="day-toggle" type="button" aria-label="'+(collapsed?'展開':'摺疊')+' Day '+(i+1)+'">'+(collapsed?'▶':'▼')+'</button><div class="day-title"><strong>Day '+(i+1)+'</strong>'+(date?'<span class="day-date">'+date+'</span>':'')+'<span class="collapsed-summary">'+summary+'</span></div>'+
-  '<div class="day-control"><label>出發</label><input class="start-time" type="time" value="'+d.startTime+'"></div>'+
+  '<div class="day-control start-control"><label>出發</label><input class="start-time" type="time" value="'+esc(d.startTime)+'"><span class="mobile-time-controls"><input class="start-time-text" type="text" inputmode="numeric" maxlength="5" autocomplete="off" spellcheck="false" aria-label="出發時間，可輸入 0630 或 06:30" value="'+esc(d.startTime)+'"><span class="time-picker-trigger" title="使用手機系統時間選擇器"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><input class="start-time-picker" type="time" aria-label="開啟系統時間選擇器" value="'+esc(d.startTime)+'"></span></span></div>'+
   '<div class="day-control coefficient"><label>預設係數</label><input class="day-coef" type="number" min="0.1" max="3" step="0.01" value="'+Number(d.coefficient).toFixed(2)+'"></div>'+
   '<div class="stats"><div class="stat"><span>行進</span><b>'+formatDuration(s.movement)+'</b></div><div class="stat"><span>休息</span><b>'+formatDuration(s.rest)+'</b></div><div class="stat"><span>總計</span><b>'+(s.missing?'未完成':formatDuration(s.total))+'</b></div><div class="stat coef"><span>平均</span><b>'+(s.coefficient??'—')+'</b></div></div>'+
   '<button class="clear-day">清除 Day '+(i+1)+'</button></div>'+
@@ -403,6 +404,32 @@ function menuHtml(idx,isRest,canManual,canDelete){
   return '<details class="row-menu"><summary>⋯</summary><div class="menu-box"><button data-action="rest" data-index="'+idx+'">插入休息</button>'+(canManual?'<button data-action="manual" data-index="'+idx+'">在此段插入手動點</button>':'')+'<button data-action="split" data-index="'+idx+'">從此點開始下一天</button>'+(canDelete?'<button class="delete" data-action="delete" data-index="'+idx+'">刪除節點</button>':'')+'</div></details>';
 }
 
+function syncArrivalTimes(){
+  document.querySelectorAll('.day-card').forEach((card,index)=>{
+    const day=days[index];
+    if(!day)return;
+    const rows=buildTimeline(day).rows;
+    card.querySelectorAll('.it-row .arrival').forEach((cell,rowIndex)=>{
+      const row=rows[rowIndex];
+      if(row)cell.textContent=row.type==='rest'?row.endTime:row.arrival;
+    });
+  });
+}
+function commitStartTime(day,card,value){
+  const time=normalizeTimeInput(value);
+  if(!time)return false;
+  const changed=day.startTime!==time;
+  day.startTime=time;
+  for(const input of card.querySelectorAll('.start-time, .start-time-text, .start-time-picker'))input.value=time;
+  if(changed){
+    // Keep the native iOS picker / mobile keyboard mounted and focused.
+    // Only the arrival labels change when the departure time changes.
+    syncArrivalTimes();
+    saveAutosave();
+    checkpoint();
+  }
+  return true;
+}
 function bindDays(){
   document.querySelectorAll('.row-menu').forEach(menu=>menu.addEventListener('toggle',()=>{
     if(menu.open)document.querySelectorAll('.row-menu[open]').forEach(other=>{if(other!==menu)other.open=false});
@@ -410,7 +437,22 @@ function bindDays(){
   document.querySelectorAll('.day-card').forEach(card=>{
     const i=+card.dataset.day,d=days[i];
     card.querySelector('.day-toggle').onclick=()=>{if(collapsedDays.has(d.id))collapsedDays.delete(d.id);else collapsedDays.add(d.id);try{if(!IS_DEMO)localStorage.setItem(COLLAPSE_KEY,JSON.stringify([...collapsedDays]))}catch(e){}render(false)};
-    card.querySelector('.start-time').onchange=e=>{d.startTime=e.target.value;render()};
+    const desktopTime=card.querySelector('.start-time');
+    const mobileTime=card.querySelector('.start-time-text');
+    const nativePicker=card.querySelector('.start-time-picker');
+    const acceptTime=input=>{
+      if(!commitStartTime(d,card,input.value)){
+        input.value=d.startTime;
+        if(input===mobileTime)toast('請輸入有效的 24 小時時間，例如 0630 或 06:30');
+      }
+    };
+    desktopTime.onchange=()=>acceptTime(desktopTime);
+    mobileTime.onfocus=()=>mobileTime.select();
+    mobileTime.onchange=()=>acceptTime(mobileTime);
+    mobileTime.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();mobileTime.blur()}};
+    // iOS can emit "change" before the user taps Done.
+    // Never call render() here: it would remove the still-open native picker.
+    nativePicker.onchange=()=>acceptTime(nativePicker);
     card.querySelector('.day-coef').onchange=e=>{d.coefficient=Math.max(.1,Number(e.target.value)||.8);render()};
     card.querySelector('.day-note').onchange=e=>{d.note=e.target.value;render()};
     card.querySelector('.clear-day').onclick=()=>{if(confirm('確定清除 Day '+(i+1)+' 的全部行程？')){if(locs(d).length)unlinkNextIfEndpointChanges(d);d.items=[];d.note='';d.linkedStart=false;render()}};
