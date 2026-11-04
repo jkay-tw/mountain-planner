@@ -5,7 +5,7 @@ import {chooseSaveTarget,writeDownload,reportSaveError} from './save-file.js?v=v
 import {bindProfileExports} from './profile-export.js?v=v084';
 import {makeDemoDays} from './demo-itinerary.js?v=segments1';
 import {directionalQuickAdd,appendQuickPath} from './quick-add.js?v=segments1';
-import {dayTerrain,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=v084';
+import {dayTerrain,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=layout2';
 import {createTabAutosave} from './tab-autosave.js?v=v0725';
 import {loadManifest,loadRoute} from './data-loader.js';
 import {allNodes,shortestPath,uid,round2,edgeActual,referenceMinutes,setEdgeCoefficient,selectEdgeReference,adoptLegacyCoefficients,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming,ownerTimedConnection,incomingForSegment} from './planner.js?v=segments1';
@@ -339,7 +339,7 @@ function renderDay(d,i){
   return '<article class="card day-card '+(collapsed?'collapsed':'')+'" data-day="'+i+'" data-day-id="'+esc(d.id)+'">'+
   '<div class="day-head"><button class="day-toggle" type="button" aria-label="'+(collapsed?'展開':'摺疊')+' Day '+(i+1)+'">'+(collapsed?'▶':'▼')+'</button><div class="day-title"><strong>Day '+(i+1)+'</strong>'+(date?'<span class="day-date">'+date+'</span>':'')+'<span class="collapsed-summary">'+summary+'</span></div>'+
   '<div class="day-control start-control"><label>出發</label><input class="start-time" type="time" value="'+esc(d.startTime)+'"><span class="mobile-time-controls"><input class="start-time-text" type="text" inputmode="numeric" maxlength="5" autocomplete="off" spellcheck="false" aria-label="出發時間，可輸入 0630 或 06:30" value="'+esc(d.startTime)+'"><span class="time-picker-trigger" title="使用手機系統時間選擇器"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><input class="start-time-picker" type="time" aria-label="開啟系統時間選擇器" value="'+esc(d.startTime)+'"></span></span></div>'+
-  '<div class="day-control coefficient"><label>預設係數</label><input class="day-coef" type="number" min="0.1" max="3" step="0.01" value="'+Number(d.coefficient).toFixed(2)+'"></div>'+
+  '<div class="day-control coefficient"><label>預設係數</label><input class="day-coef" type="number" min="0.1" max="3" step="0.1" value="'+Number(d.coefficient).toFixed(2)+'"></div>'+
   '<div class="stats"><div class="stat"><span>行進</span><b>'+formatDuration(s.movement)+'</b></div><div class="stat"><span>休息</span><b>'+formatDuration(s.rest)+'</b></div><div class="stat"><span>總計</span><b>'+(s.missing?'未完成':formatDuration(s.total))+'</b></div><div class="stat coef"><span>平均</span><b>'+(s.coefficient??'—')+'</b></div></div>'+
   '<button class="clear-day">清除 Day '+(i+1)+'</button></div>'+
   '<div class="day-tools">'+(i?'<label class="link-wrap"><input class="link-start" type="checkbox" '+(d.linkedStart?'checked':'')+'>銜接前日</label>':'<span class="link-wrap">第一點即起點</span>')+
@@ -449,7 +449,14 @@ function bindDays(){
     // iOS can emit "change" before the user taps Done.
     // Never call render() here: it would remove the still-open native picker.
     nativePicker.onchange=()=>acceptTime(nativePicker);
-    card.querySelector('.day-coef').onchange=e=>{d.coefficient=Math.max(.1,Number(e.target.value)||.8);render()};
+    const dayCoef=card.querySelector('.day-coef');
+    const updateDayCoef=value=>{
+      if(!Number.isFinite(value)||value<.1||value>3){dayCoef.value=d.coefficient.toFixed(2);return}
+      const next=round2(value);dayCoef.value=next.toFixed(2);
+      if(d.coefficient!==next){d.coefficient=next;saveAutosave();checkpoint()}
+    };
+    dayCoef.onchange=()=>updateDayCoef(Number(dayCoef.value));
+    dayCoef.onkeydown=e=>{if(e.key!=='ArrowUp'&&e.key!=='ArrowDown')return;e.preventDefault();updateDayCoef(round2(Number(dayCoef.value)+(e.key==='ArrowUp'?.1:-.1)))};
     card.querySelector('.day-note').onchange=e=>{d.note=e.target.value;render()};
     card.querySelector('.clear-day').onclick=()=>{if(confirm('確定清除 Day '+(i+1)+' 的全部行程？')){if(locs(d).length)unlinkNextIfEndpointChanges(d);d.items=[];d.note='';d.linkedStart=false;render()}};
     const lk=card.querySelector('.link-start');if(lk)lk.onchange=e=>{

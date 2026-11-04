@@ -5,6 +5,7 @@ import {edgeActual,incomingForSegment,adoptLegacyCoefficients,setEdgeCoefficient
 import {appendQuickPath} from '../preview/js/quick-add.js';
 import {syncLinkedDays} from '../preview/js/day-link.js';
 import {validatePlan} from '../preview/js/validation.js';
+import {renderTerrainProfile} from '../preview/js/itinerary-geometry.js';
 
 const edge=(minutes=60)=>({kind:'official',from:'A',to:'B',officialMinutes:minutes,actualMinutes:null,timeAlternatives:[{kind:'slow',minutes:90},{kind:'heavy_pack',minutes:120}]});
 const point=(id,name,nodeId,incoming=null)=>({id,type:'location',name,nodeId,note:'',incoming});
@@ -71,4 +72,16 @@ test('preview contains iPhone scroll protection and focused coefficient keyboard
  assert.match(content,/requestAnimationFrame\(\(\)=>\{if\(token===scrollRestoreToken\)restoreScrollAnchor/);
  assert.match(content,/e\.preventDefault\(\);const value=Number\(x\.value\)/);
  assert.match(content,/replacement\?\.focus\(\)/);
+});
+
+test('short daily profile uses a smaller SVG and keeps node labels and export controls',()=>{
+ const feature=(i)=>({from:'點'+i,to:'點'+(i+1),distanceMeters:100,profile:[[0,2100],[100,2200]]});
+ const day=features=>({dayIndex:0,features,distanceMeters:features.length*100,ascentMeters:100,descentMeters:0,gaps:[]});
+ const short=renderTerrainProfile(day([feature(0)]));
+ const dense=renderTerrainProfile(day(Array.from({length:24},(_,i)=>feature(i))));
+ const height=html=>Number(html.match(/viewBox="0 -80 800 (\d+)"/)?.[1]);
+ assert.ok(height(short)<height(dense));
+ assert.match(short,/translate\(0,-45\)/);
+ assert.match(short,/點0/);assert.match(short,/點1/);
+ assert.match(short,/data-profile-export="download"/);
 });
