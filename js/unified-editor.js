@@ -1,3 +1,4 @@
+import {chooseSaveTarget,writeDownload,reportSaveError} from './save-file.js?v=v086';
 import {bindProfileExports} from './profile-export.js?v=v084';
 import {makeDemoDays} from './demo-itinerary.js?v=v0731';
 import {directionalQuickAdd,appendQuickPath} from './quick-add.js?v=v084';
@@ -8,7 +9,7 @@ import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,r
 import {validatePlan} from './validation.js?v=v0726';
 import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js?v=v084';
 import {migrateLegacyPlanDays} from './legacy-plan-migration.js?v=v084';
-import {exportExcel} from './exporter.js?v=v084';
+import {exportExcel} from './exporter.js?v=v086';
 import {filterLocations} from './node-browser.js?v=v074';
 import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=v084';
 
@@ -67,7 +68,7 @@ async function init(){
   if(!IS_PRODUCTION)try{const response=await fetch('data/geometry/planner-terrain-v1.json?v=v084');if(!response.ok)throw Error();terrainData=await response.json()}catch(error){console.warn('節點座標與地形資料未載入')}
   bindGlobal();
   render(false);saveAutosave(false);checkpoint();
-  if(!IS_PRODUCTION&&$('itineraryGeometry'))import('./itinerary-map.js?v=v085')
+  if(!IS_PRODUCTION&&$('itineraryGeometry'))import('./itinerary-map.js?v=v086')
     .then(({createItineraryMap})=>{itineraryMap=createItineraryMap({host:$('itineraryGeometry'),getDays:()=>days,initialData:terrainData})})
     .catch(error=>{$('itineraryGeometry').textContent='地圖載入失敗：'+error.message});
 }
@@ -151,7 +152,8 @@ function bindGlobal(){
   $('exportBtn').onclick=async()=>{
     if(!days.some(d=>locs(d).length)){alert('請先建立行程');return}
     if(!checkMissing())return;
-    await exportExcel({route,days,datasetVersion:manifest.dataset_version,tripStartDate,terrainData});
+    const name=route.route_id+'_'+route.route_name+'_行程.xlsx';
+    try{const handle=await chooseSaveTarget(name,'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet','xlsx');await exportExcel({route,days,datasetVersion:manifest.dataset_version,tripStartDate,terrainData,handle})}catch(error){reportSaveError(error)}
   };
   $('copyBtn').onclick=copyTextItinerary;
   $('saveBtn').onclick=downloadPlan;
@@ -252,7 +254,7 @@ function copyTextItinerary(){
   days.forEach((d,i)=>{
     const rows=buildTimeline(d).rows.filter(r=>r.type!=='rest');
     if(!rows.length)return;
-    blocks.push('D'+(i+1)+'：'+rows.map(r=>r.arrival+' '+r.name+(r.isPeak?'⛰':'')+(r.hasWater?'💧':'')).join('→')+'。');
+    blocks.push('D'+(i+1)+'：'+rows.map(r=>(r.arrival&&r.arrival!=='—'?r.arrival+' ':'')+r.name+(r.isPeak?'⛰':'')+(r.hasWater?'💧':'')).join('→')+'。');
   });
   const text=blocks.join('\n\n');if(!checkMissing())return;
   if(!text){alert('目前沒有可複製的行程');return}
@@ -262,15 +264,13 @@ function copyTextItinerary(){
 function fallbackCopy(text,done){const ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();done()}
 function toast(msg){const t=document.createElement('div');t.className='toast';t.textContent=msg;document.body.appendChild(t);setTimeout(()=>t.remove(),1800)}
 
-function downloadPlan(){
+async function downloadPlan(){
   if(!checkMissing())return;
   if(!route&&!days.some(d=>d.items.length)){alert('目前沒有可匯出的行程');return}
   const payload={format:'mountain-planner',schemaVersion:1,savedAt:new Date().toISOString(),routeId:route?.route_id||null,scope,datasetVersion:manifest.dataset_version,tripStartDate,days};
   const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
-  const a=document.createElement('a');
-  a.href=URL.createObjectURL(blob);
-  a.download=(route?route.route_id+'_'+route.route_name:'mountain-planner')+'.mplan.json';
-  a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+  const name=(route?route.route_id+'_'+route.route_name:'mountain-planner')+'.mplan.json';
+  try{const handle=await chooseSaveTarget(name,'application/json','json');await writeDownload(blob,name,handle)}catch(error){reportSaveError(error)}
 }
 async function importPlan(e){
  const file=e.target.files?.[0];e.target.value='';if(!file)return;
