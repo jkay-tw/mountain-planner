@@ -1,4 +1,4 @@
-import {placeMapLabels} from './map-label-layout.js?v=v084';
+import {placeMapLabels} from './map-label-layout.js?v=v085';
 import {twd97Label} from './twd97.js?v=v0731';
 import {resolveItineraryGeometry,geometryToGpx,formatTerrain,renderTerrainProfile,terrainDayColor} from './itinerary-geometry.js?v=v084';
 
@@ -80,12 +80,11 @@ export function createItineraryMap({host,getDays,initialData=null}){
     const dayLabels=latest.days.filter(d=>!hiddenDays.has(d.dayIndex)&&d.features.length).map(day=>{
       const longest=day.features.reduce((a,b)=>a.distanceMeters>=b.distanceMeters?a:b),p=longest.coordinates[Math.floor(longest.coordinates.length/2)];
       const element=document.createElement('span');element.className='geometry-map-label geometry-map-day';element.textContent=`Day ${day.dayIndex+1}`;element.style.borderColor=colors[day.dayIndex%colors.length];
-      return {element,point:map.latLngToContainerPoint([p[1],p[0]]),...measure(element)};
+      return {element,point:map.latLngToContainerPoint([p[1],p[0]]),dayOffset:day.dayIndex*25,...measure(element)};
     });
     const labels=[...selected,...dayLabels,...nodes.filter(n=>n.nodeId!==selectedNode).map(nodeLabel)];
     for(const item of placeMapLabels(labels,points,segments,map.getSize())){
-      const {box,point:p,element}=item,edge={x:Math.max(box.x,Math.min(box.x+box.w,p.x)),y:Math.max(box.y,Math.min(box.y+box.h,p.y))};
-      L.polyline([map.containerPointToLatLng(p),map.containerPointToLatLng(edge)],{color:'#344f41',weight:1.5,opacity:.85,interactive:false}).addTo(labelGroup);
+      const {box,element}=item;
       const icon=L.divIcon({className:'geometry-label-icon',html:element,iconSize:[box.w,box.h],iconAnchor:[0,0]});
       L.marker(map.containerPointToLatLng([box.x,box.y]),{icon,keyboard:false}).addTo(labelGroup);
     }
