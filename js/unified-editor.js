@@ -1,15 +1,18 @@
+import {captureScrollAnchor,restoreScrollAnchor} from './scroll-anchor.js?v=v088';
+import {normalizeTimeInput} from './time-input.js?v=mobile1';
+import {syncLinkedDays} from './day-link.js?v=segments1';
 import {chooseSaveTarget,writeDownload,reportSaveError} from './save-file.js?v=v086';
 import {bindProfileExports} from './profile-export.js?v=v084';
-import {makeDemoDays} from './demo-itinerary.js?v=v0731';
-import {directionalQuickAdd,appendQuickPath} from './quick-add.js?v=v084';
-import {dayTerrain,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=v084';
+import {makeDemoDays} from './demo-itinerary.js?v=segments1';
+import {directionalQuickAdd,appendQuickPath} from './quick-add.js?v=segments1';
+import {dayTerrain,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=layout2';
 import {createTabAutosave} from './tab-autosave.js?v=v0725';
 import {loadManifest,loadRoute} from './data-loader.js';
-import {allNodes,shortestPath,uid,round2,edgeActual,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming,ownerTimedConnection,incomingForSegment} from './planner.js?v=v084';
-import {validatePlan} from './validation.js?v=v0726';
+import {allNodes,shortestPath,uid,round2,edgeActual,referenceMinutes,setEdgeCoefficient,selectEdgeReference,adoptLegacyCoefficients,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming,ownerTimedConnection,incomingForSegment} from './planner.js?v=segments1';
+import {validatePlan} from './validation.js?v=segments1';
 import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js?v=v084';
 import {migrateLegacyPlanDays} from './legacy-plan-migration.js?v=v084';
-import {exportExcel} from './exporter.js?v=v086';
+import {exportExcel} from './exporter.js?v=segments1';
 import {filterLocations} from './node-browser.js?v=v074';
 import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=v084';
 
@@ -17,7 +20,7 @@ const $=id=>document.getElementById(id);
 const IS_PRODUCTION=document.body.dataset.mode==='production';
 const IS_DEMO=!IS_PRODUCTION&&new URLSearchParams(location.search).get('demo')==='xueshan';
 const STORAGE_KEY=IS_PRODUCTION?'mountain-planner.global-autosave.v1':'mountain-planner.unified-preview-autosave.v0711';
-const APP_VERSION=IS_PRODUCTION?'v0.8.7':'v0.8.2 Unified Preview';
+const APP_VERSION=IS_PRODUCTION?'v0.8.8':'v0.8.8 Segment + iPhone Preview';
 const COLLAPSE_KEY=IS_PRODUCTION?'mountain-planner.collapsed-days.v1':'mountain-planner.unified-preview-collapsed.v0711';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',scope='';
@@ -33,7 +36,7 @@ async function restore(i){if(i<0||i>=snapshots.length)return;const x=JSON.parse(
 const checkMissing=()=>{const n=days.reduce((sum,d)=>sum+missingSegments(d),0);return n===0||confirm('有 '+n+' 個路段未填時間，匯出結果含未完成時間。仍繼續？')};
 
 
-const newDay=i=>({id:uid(),startTime:i?'05:30':'06:00',coefficient:.8,linkedStart:false,note:'',items:[]});
+const newDay=i=>({id:uid(),startTime:i?'05:30':'06:00',coefficient:.8,linkedStart:i>0,note:'',items:[]});
 const locs=d=>d.items.filter(x=>x.type!=='rest');
 const first=d=>locs(d)[0]||null;
 const last=d=>{const a=locs(d);return a[a.length-1]||null};
@@ -89,14 +92,14 @@ function setNoRoute(){
 }
 
 function sanitizeDays(rawDays){
-  return rawDays.slice(0,10).map((d,i)=>({
+  return rawDays.slice(0,10).map((original,i)=>{const d=adoptLegacyCoefficients(original);return ({
     id:d.id||uid(),
     startTime:d.startTime||(i?'05:30':'06:00'),
     coefficient:Number(d.coefficient)||.8,
     linkedStart:i>0?!!d.linkedStart:false,
     note:d.note||'',
     items:Array.isArray(d.items)?d.items.map(x=>({...x,id:x.id||uid()})):[]
-  }));
+  })});
 }
 
 const tabAutosave=createTabAutosave({
@@ -165,8 +168,7 @@ function bindGlobal(){
 }
 
 function unlinkNextIfEndpointChanges(day){
-  const i=days.indexOf(day),next=days[i+1];
-  if(next?.linkedStart){next.linkedStart=false;const f=first(next);if(f)f._linkedStart=false}
+  // The next linked day follows the endpoint when render() synchronizes it.
 }
 function addNode(day,nodeId){
   if(!route){alert('請先選擇上河圖');return}
@@ -189,22 +191,14 @@ function addNode(day,nodeId){
   if(!path){appendDisconnectedNode(day,selected,uid);toast('已加入節點；前一段尚未連通，請手動填入時間');return}
   path.segments.forEach(s=>{const previous=last(day),id=uid();day.items.push({
     id,type:'location',name:s.to,nodeId:s.toId,note:'',isPeak:false,hasWater:false,
-    incoming:incomingForSegment(s,previous.id,id,route.source.image_url)
+    incoming:incomingForSegment(s,previous.id,id,route.source.image_url,day.coefficient)
   })});
 }
 
 function connectToPrevious(i){
-  if(i<1)return;
-  const prevEnd=last(days[i-1]),d=days[i];
-  if(!prevEnd){d.linkedStart=false;return}
-  const f=first(d);
-  if(f&&f.type===prevEnd.type&&(f.type==='location'?f.nodeId&&f.nodeId===prevEnd.nodeId:f.name===prevEnd.name)){
-    f.incoming=null;f._linkedStart=true;d.linkedStart=true;
-  }else{
-    d.items.unshift({id:uid(),type:prevEnd.type,name:prevEnd.name,...(prevEnd.nodeId?{nodeId:prevEnd.nodeId}:{}),note:'',isPeak:!!prevEnd.isPeak,hasWater:!!prevEnd.hasWater,incoming:null,_linkedStart:true});
-    d.linkedStart=true;
-  }
-  normalizeDay(d,route);
+ if(i<1)return;
+ days[i].linkedStart=true;
+ syncLinkedDays(days,route,uid);
 }
 function addManualStart(d){
   if(d.linkedStart){d.linkedStart=false;const f=first(d);if(f)f._linkedStart=false}
@@ -312,10 +306,20 @@ function opts(){
   const list=scopedNodes().slice().sort((a,b)=>a.name.localeCompare(b.name,'zh-Hant')||String(a.id).localeCompare(String(b.id)));
   return list.map(n=>'<option value="'+esc(n.id)+'">'+esc(nodeOptionLabel(n,list))+'</option>').join('')
 }
+let scrollRestoreToken=0;
 function render(persist=true){
-  $('daysContainer').innerHTML=days.map(renderDay).join('');
+  syncLinkedDays(days,route,uid);
+  const container=$('daysContainer');
+  const anchor=container.querySelector('.day-card')?captureScrollAnchor(container):null;
+  const token=++scrollRestoreToken;
+  container.innerHTML=days.map(renderDay).join('');
   bindDays();
   itineraryMap?.update();
+  if(anchor){
+    restoreScrollAnchor(anchor,container);
+    // iOS WebKit can adjust scrolling again after layout/focus settles.
+    requestAnimationFrame(()=>{if(token===scrollRestoreToken)restoreScrollAnchor(anchor,container)});
+  }
   if(persist){saveAutosave();checkpoint()}
 }
 
@@ -332,15 +336,15 @@ function renderDay(d,i){
   const terrain=dayTerrain(d,terrainData);if(terrain)terrain.dayIndex=i;
   const selector=route?'<select class="add-node"><option value="">選擇下一個行程點</option>'+opts()+'</select>':'<select class="add-node" disabled><option>請先選擇上河圖</option></select>';
   const summary=(f&&l?esc(f.name)+' → '+esc(l.name):'尚未建立行程')+' · '+(s.missing?'未完成':formatDuration(s.total));
-  return '<article class="card day-card '+(collapsed?'collapsed':'')+'" data-day="'+i+'">'+
+  return '<article class="card day-card '+(collapsed?'collapsed':'')+'" data-day="'+i+'" data-day-id="'+esc(d.id)+'">'+
   '<div class="day-head"><button class="day-toggle" type="button" aria-label="'+(collapsed?'展開':'摺疊')+' Day '+(i+1)+'">'+(collapsed?'▶':'▼')+'</button><div class="day-title"><strong>Day '+(i+1)+'</strong>'+(date?'<span class="day-date">'+date+'</span>':'')+'<span class="collapsed-summary">'+summary+'</span></div>'+
-  '<div class="day-control"><label>出發</label><input class="start-time" type="time" value="'+d.startTime+'"></div>'+
-  '<div class="day-control coefficient"><label>預設係數</label><input class="day-coef" type="number" min="0.1" max="3" step="0.01" value="'+Number(d.coefficient).toFixed(2)+'"></div>'+
+  '<div class="day-control start-control"><label>出發</label><input class="start-time" type="time" value="'+esc(d.startTime)+'"><span class="mobile-time-controls"><input class="start-time-text" type="text" inputmode="numeric" maxlength="5" autocomplete="off" spellcheck="false" aria-label="出發時間，可輸入 0630 或 06:30" value="'+esc(d.startTime)+'"><span class="time-picker-trigger" title="使用手機系統時間選擇器"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><input class="start-time-picker" type="time" aria-label="開啟系統時間選擇器" value="'+esc(d.startTime)+'"></span></span></div>'+
+  '<div class="day-control coefficient"><label>預設係數</label><input class="day-coef" type="number" min="0.1" max="3" step="0.1" value="'+Number(d.coefficient).toFixed(2)+'"></div>'+
   '<div class="stats"><div class="stat"><span>行進</span><b>'+formatDuration(s.movement)+'</b></div><div class="stat"><span>休息</span><b>'+formatDuration(s.rest)+'</b></div><div class="stat"><span>總計</span><b>'+(s.missing?'未完成':formatDuration(s.total))+'</b></div><div class="stat coef"><span>平均</span><b>'+(s.coefficient??'—')+'</b></div></div>'+
   '<button class="clear-day">清除 Day '+(i+1)+'</button></div>'+
   '<div class="day-tools">'+(i?'<label class="link-wrap"><input class="link-start" type="checkbox" '+(d.linkedStart?'checked':'')+'>銜接前日</label>':'<span class="link-wrap">第一點即起點</span>')+
   '<div class="node-picker-controls"><input class="node-search-inline" type="search" placeholder="搜尋節點" aria-label="搜尋當日要加入的節點" autocomplete="off" '+(route?'':'disabled')+'>'+selector+'</div><div class="node-action-controls"><button class="add-dest" '+(route?'':'disabled')+'>加入</button><button class="manual-start secondary compact-day-action">＋手動起點</button><button class="manual-end secondary compact-day-action">＋手動終點</button></div></div>'+
-  renderQuickAdd(d)+
+  (true?renderQuickAdd(d):'')+
   (s.missing?'<div class="missing-warning">尚有 '+s.missing+' 個手動路段未填時間；後續時間無法計算。</div>':'')+
   '<div class="timeline">'+renderTimeline(d)+'</div>'+
   '<div class="day-footer">'+(true?'<div class="terrain-daily"><p class="terrain-summary">'+esc(formatTerrain(terrain,{partial:!!terrain?.gaps.length}))+'</p><button class="show-profile secondary" type="button" aria-expanded="'+openProfiles.has(d.id)+'">'+(openProfiles.has(d.id)?'收合高度剖面':'查看高度剖面')+'</button></div>'+(openProfiles.has(d.id)?'<div class="day-profile">'+(terrain?renderTerrainProfile(terrain):'<p>地形資料未載入。</p>')+'</div>':''):'')+'<textarea class="day-note" placeholder="Day '+(i+1)+' 備註">'+esc(d.note||'')+'</textarea></div></article>';
@@ -363,11 +367,11 @@ function renderTimeline(d){
       const e=r.incoming,a=e?edgeActual(e,d.coefficient):0,manual=r.type==='manual-location';
       let routeInfo='<span class="secondary-info">起點</span>';
       if(e?.kind==='official'){
-        const k=e.officialMinutes?round2(a/e.officialMinutes):0;
+        const k=e.coefficient??(referenceMinutes(e)?round2(a/referenceMinutes(e)):d.coefficient);
         const alternatives=Array.isArray(e.timeAlternatives)?e.timeAlternatives.filter(t=>Number.isFinite(t.minutes)&&t.minutes>0&&['slow','heavy_pack'].includes(t.kind)):[];
         const labels={slow:'慢速',heavy_pack:'重裝'};
-        const altHtml=alternatives.map(t=>'<button type="button" class="alternate-time" data-index="'+idx+'" data-minutes="'+t.minutes+'" title="套用'+labels[t.kind]+'條件參考 '+t.minutes+' 分鐘">'+labels[t.kind]+' '+t.minutes+'m</button>').join('');
-        routeInfo='<input class="edge-time minute-input" data-index="'+idx+'" type="number" min="0" value="'+a+'"><span>m</span><span class="secondary-info">上河'+Math.round(Number(e.officialMinutes)||0)+'m · ×'+Number(k).toFixed(2)+'</span>'+altHtml;
+        const altHtml=alternatives.length?'<span class="reference-options">'+[{kind:'regular',minutes:e.officialMinutes,label:'一般'},...alternatives.map(t=>({...t,label:labels[t.kind]}))].map(t=>'<button type="button" class="alternate-time '+((e.referenceKind||'regular')===t.kind?'selected':'')+'" data-index="'+idx+'" data-kind="'+t.kind+'" title="切換至'+t.label+'參考時間 '+t.minutes+' 分鐘">'+t.label+' '+t.minutes+'m</button>').join('')+'</span>':'';
+        routeInfo='<span class="calculated-time">'+a+'m</span><span class="secondary-info">上河'+Math.round(Number(referenceMinutes(e))||0)+'m</span><label class="edge-coef-label">×<input class="edge-coef" aria-label="'+esc(r.name)+' 路段上河係數" data-index="'+idx+'" type="number" min="0.1" max="3" step="0.1" value="'+Number(k).toFixed(2)+'"></label>'+altHtml;
       }else if(e?.kind==='manual'){
         routeInfo='<input class="edge-time minute-input" data-index="'+idx+'" type="number" min="0" placeholder="時間未填" value="'+(e.actualMinutes??'')+'"><span>m</span><span class="manual-note">'+(e.connectionStatus==='owner-confirmed'?'上河時間未提供・自行填時間':e.connectionStatus==='unverified'?'未連通・手動估時':'手動')+'</span>';
       }
@@ -393,6 +397,35 @@ function menuHtml(idx,isRest,canManual,canDelete){
   return '<details class="row-menu"><summary>⋯</summary><div class="menu-box"><button data-action="rest" data-index="'+idx+'">插入休息</button>'+(canManual?'<button data-action="manual" data-index="'+idx+'">在此段插入手動點</button>':'')+'<button data-action="split" data-index="'+idx+'">從此點開始下一天</button>'+(canDelete?'<button class="delete" data-action="delete" data-index="'+idx+'">刪除節點</button>':'')+'</div></details>';
 }
 
+function syncArrivalTimes(){
+  document.querySelectorAll('.day-card').forEach((card,index)=>{
+    const day=days[index];
+    if(!day)return;
+    const rows=buildTimeline(day).rows;
+    card.querySelectorAll('.it-row .arrival').forEach((cell,rowIndex)=>{
+      const row=rows[rowIndex];
+      if(row)cell.textContent=row.type==='rest'?row.endTime:row.arrival;
+    });
+  });
+}
+function commitStartTime(day,card,value,source=null){
+  const time=normalizeTimeInput(value);
+  if(!time)return false;
+  const changed=day.startTime!==time;
+  day.startTime=time;
+  // Assigning the active native input's value can dismiss the iOS picker.
+  for(const input of card.querySelectorAll('.start-time, .start-time-text, .start-time-picker')){
+    if(input!==source||source?.type!=='time')input.value=time;
+  }
+  if(changed){
+    // Keep the native iOS picker / mobile keyboard mounted and focused.
+    // Only the arrival labels change when the departure time changes.
+    syncArrivalTimes();
+    saveAutosave();
+    checkpoint();
+  }
+  return true;
+}
 function bindDays(){
   document.querySelectorAll('.row-menu').forEach(menu=>menu.addEventListener('toggle',()=>{
     if(menu.open)document.querySelectorAll('.row-menu[open]').forEach(other=>{if(other!==menu)other.open=false});
@@ -400,8 +433,30 @@ function bindDays(){
   document.querySelectorAll('.day-card').forEach(card=>{
     const i=+card.dataset.day,d=days[i];
     card.querySelector('.day-toggle').onclick=()=>{if(collapsedDays.has(d.id))collapsedDays.delete(d.id);else collapsedDays.add(d.id);try{if(!IS_DEMO)localStorage.setItem(COLLAPSE_KEY,JSON.stringify([...collapsedDays]))}catch(e){}render(false)};
-    card.querySelector('.start-time').onchange=e=>{d.startTime=e.target.value;render()};
-    card.querySelector('.day-coef').onchange=e=>{d.coefficient=Math.max(.1,Number(e.target.value)||.8);render()};
+    const desktopTime=card.querySelector('.start-time');
+    const mobileTime=card.querySelector('.start-time-text');
+    const nativePicker=card.querySelector('.start-time-picker');
+    const acceptTime=input=>{
+      if(!commitStartTime(d,card,input.value,input)){
+        input.value=d.startTime;
+        if(input===mobileTime)toast('請輸入有效的 24 小時時間，例如 0630 或 06:30');
+      }
+    };
+    desktopTime.onchange=()=>acceptTime(desktopTime);
+    mobileTime.onfocus=()=>mobileTime.select();
+    mobileTime.onchange=()=>acceptTime(mobileTime);
+    mobileTime.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();mobileTime.blur()}};
+    // iOS can emit "change" before the user taps Done.
+    // Never call render() here: it would remove the still-open native picker.
+    nativePicker.onchange=()=>acceptTime(nativePicker);
+    const dayCoef=card.querySelector('.day-coef');
+    const updateDayCoef=value=>{
+      if(!Number.isFinite(value)||value<.1||value>3){dayCoef.value=d.coefficient.toFixed(2);return}
+      const next=round2(value);dayCoef.value=next.toFixed(2);
+      if(d.coefficient!==next){d.coefficient=next;saveAutosave();checkpoint()}
+    };
+    dayCoef.onchange=()=>updateDayCoef(Number(dayCoef.value));
+    dayCoef.onkeydown=e=>{if(e.key!=='ArrowUp'&&e.key!=='ArrowDown')return;e.preventDefault();updateDayCoef(round2(Number(dayCoef.value)+(e.key==='ArrowUp'?.1:-.1)))};
     card.querySelector('.day-note').onchange=e=>{d.note=e.target.value;render()};
     card.querySelector('.clear-day').onclick=()=>{if(confirm('確定清除 Day '+(i+1)+' 的全部行程？')){if(locs(d).length)unlinkNextIfEndpointChanges(d);d.items=[];d.note='';d.linkedStart=false;render()}};
     const lk=card.querySelector('.link-start');if(lk)lk.onchange=e=>{
@@ -439,7 +494,12 @@ function bindDays(){
       if(b.dataset.action==='manual')insertManualBefore(d,idx);
     });
     card.querySelectorAll('.edge-time').forEach(x=>x.onchange=()=>{const it=d.items[+x.dataset.index];if(it?.incoming)it.incoming.actualMinutes=x.value===''?null:clampMin(x.value);render()});
-    card.querySelectorAll('.alternate-time').forEach(btn=>btn.onclick=()=>{const it=d.items[+btn.dataset.index];if(!it?.incoming||it.incoming.kind!=='official')return;const minutes=Number(btn.dataset.minutes);if(!Number.isFinite(minutes)||minutes<=0)return;it.incoming.actualMinutes=minutes;render()});
+    card.querySelectorAll('.edge-coef').forEach(x=>{
+      const commit=value=>{const it=d.items[+x.dataset.index];if(!it?.incoming||!setEdgeCoefficient(it.incoming,value)){x.value=Number(it?.incoming?.coefficient??d.coefficient).toFixed(2);return}const index=x.dataset.index;render();const replacement=document.querySelector('.day-card[data-day="'+i+'"] .edge-coef[data-index="'+index+'"]');replacement?.focus()};
+      x.onchange=()=>commit(Number(x.value));
+      x.onkeydown=e=>{if(e.key!=='ArrowUp'&&e.key!=='ArrowDown')return;e.preventDefault();const value=Number(x.value);if(Number.isFinite(value))commit(round2(value+(e.key==='ArrowUp'?.1:-.1)))};
+    });
+    card.querySelectorAll('.alternate-time').forEach(btn=>btn.onclick=()=>{const it=d.items[+btn.dataset.index];if(it?.incoming&&selectEdgeReference(it.incoming,btn.dataset.kind))render()});
     card.querySelectorAll('.rest-min').forEach(x=>x.onchange=()=>{d.items[+x.dataset.index].minutes=clampMin(x.value);render()});
     card.querySelectorAll('.manual-name').forEach(x=>x.onchange=()=>{
       const it=d.items[+x.dataset.index];if(last(d)?.id===it.id)unlinkNextIfEndpointChanges(d);
