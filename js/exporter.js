@@ -1,6 +1,6 @@
 import {writeDownload} from './save-file.js?v=v086';
 import {dayTerrain,terrainMetrics} from './itinerary-geometry.js?v=v084';
-import {buildTimeline,summarizeDay,edgeActual} from './planner.js?v=v084';
+import {buildTimeline,summarizeDay,edgeActual,referenceMinutes,round2} from './planner.js?v=segments1';
 const placeLabel=r=>(r.isPeak?'⛰ ':'')+r.name+(r.hasWater?' 💧':'');
 const excelDuration=min=>min==null||min===''?'':Number(min)/1440;
 const font='Microsoft JhengHei';
@@ -25,8 +25,9 @@ export async function exportExcel({route,days,datasetVersion,tripStartDate,terra
    const e=r.incoming,actual=e?edgeActual(e,day.coefficient):'',f=byItem.get(r.id),m=f?terrainMetrics([f]):null;
    const isBridge=(terrain?.features||[]).some(x=>x.intermediateCoordinatesUnknown&&x.viaItemIds.includes(r.id));
    const note=[r.note||'',isBridge?'路徑連續・分段待定位':f?.intermediateCoordinatesUnknown?'跨未定位點合計':r.type!=='rest'&&e&&!f?'地形資料未收錄':''].filter(Boolean).join('；');
-   const k=e?.kind==='official'&&actual!==null&&e.officialMinutes?Math.round((actual/e.officialMinutes)*100)/100:'';
-   const values=r.type==='rest'?['☕ 休息',r.endTime,excelDuration(Number(r.minutes)||0),'','','','','',r.note||'']:[placeLabel(r),r.arrival,e?excelDuration(actual):'',e?.kind==='official'?excelDuration(e.officialMinutes):'',k,f?f.distanceMeters/1000:'',m?.ascentMeters??'',m?.descentMeters??'',note];
+   const reference=e?.kind==='official'?referenceMinutes(e):null;
+   const k=e?.kind==='official'&&actual!==null&&reference?(e.coefficient??round2(actual/reference)):'';
+   const values=r.type==='rest'?['☕ 休息',r.endTime,excelDuration(Number(r.minutes)||0),'','','','','',r.note||'']:[placeLabel(r),r.arrival,e?excelDuration(actual):'',reference!==null?excelDuration(reference):'',k,f?f.distanceMeters/1000:'',m?.ascentMeters??'',m?.descentMeters??'',note];
    const rr=ws.getRow(rowNo);rr.values=values;rr.height=15.75;
    rr.eachCell((c,col)=>{c.font={name:col>=2&&col<=8?'Calibri':font,size:10};c.alignment={vertical:'middle',horizontal:col>=2&&col<=8?'center':'left',wrapText:false};c.border=border;if(col===1||col===2){c.font={...c.font,bold:true,color:{argb:'FF234936'}};c.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FFEAF2EC'}}}else if(col===3){c.font={...c.font,bold:true,color:{argb:'FF304F76'}};c.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FFEDF3F9'}}}else if(col>=6&&col<=8){c.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FFF2F6FA'}}}else if(col===4||col===5)c.font={...c.font,color:{argb:'FF77837B'}}});
    rr.getCell(3).numFmt='[h]:mm';rr.getCell(4).numFmt='[h]:mm';rr.getCell(6).numFmt='0.00';rr.getCell(7).numFmt='0';rr.getCell(8).numFmt='0';

@@ -541,7 +541,7 @@ test('v0.7.12 global route browser keeps scopes without clearing itinerary',asyn
  const html=readFileSync(new URL('../unified-editor.html',import.meta.url),'utf8');
  const app=readFileSync(new URL('../js/unified-editor.js',import.meta.url),'utf8');
  assert.match(html,/js\/unified-editor\.js\?v=v\d+/);
- assert.ok(app.includes('v0.8.2 Unified Preview'));
+ assert.ok(app.includes('v0.8.8 Segment + iPhone Preview'));
  assert.match(app,/mergeReviewedRoutes/);
  assert.ok(app.includes('nodesInScope(route,scope)'));
  assert.match(app,/appendDisconnectedNode/);
