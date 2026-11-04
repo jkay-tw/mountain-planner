@@ -67,7 +67,7 @@ async function init(){
   if(!IS_PRODUCTION)try{const response=await fetch('data/geometry/planner-terrain-v1.json?v=v084');if(!response.ok)throw Error();terrainData=await response.json()}catch(error){console.warn('節點座標與地形資料未載入')}
   bindGlobal();
   render(false);saveAutosave(false);checkpoint();
-  if(!IS_PRODUCTION&&$('itineraryGeometry'))import('./itinerary-map.js?v=v084')
+  if(!IS_PRODUCTION&&$('itineraryGeometry'))import('./itinerary-map.js?v=v085')
     .then(({createItineraryMap})=>{itineraryMap=createItineraryMap({host:$('itineraryGeometry'),getDays:()=>days,initialData:terrainData})})
     .catch(error=>{$('itineraryGeometry').textContent='地圖載入失敗：'+error.message});
 }
