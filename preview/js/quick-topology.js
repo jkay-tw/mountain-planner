@@ -212,8 +212,8 @@ export function layoutQuickTopologyLabels(topology,layout){
    const y=clamp(wantedY,6,layout.height-h-5);
    const b=rect(x,y,w,h),dist=distanceToRect(p,b);
    if(!current&&(dist>48||Math.abs(x-wantedX)>60||Math.abs(y-wantedY)>42))continue;
-   if(!current&&used.some(u=>Math.min(b.r,u.r)>Math.max(b.l,u.l)+2&&
-                                  Math.min(b.b,u.b)>Math.max(b.t,u.t)+2))continue;
+   if(!current&&used.some(u=>Math.min(b.r,u.r)>Math.max(b.l,u.l)&&
+                                  Math.min(b.b,u.b)>Math.max(b.t,u.t)))continue;
    if(!current&&topology.nodes.some(other=>{
     if(other.id===n.id)return false;
     const point=layout.positions.get(other.id);
