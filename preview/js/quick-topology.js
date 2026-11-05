@@ -218,7 +218,7 @@ export function renderQuickTopologySvg(candidates,startId,startName,coefficient,
   const path='M '+a.x+' '+a.y+' L '+b.x+' '+b.y;
   const tone=e.returning?'#A37D52':'#8EA59A';
   const title=topology.nodes.find(n=>n.id===e.from)?.name+' → '+topology.nodes.find(n=>n.id===e.to)?.name;
-  return '<path d="'+path+'" stroke="'+tone+'" stroke-width="2.5" '+(e.returning?'stroke-dasharray="4 4" ':'')+'fill="none"><title>'+xml(title)+'</title></path>';
+  return '<path class="topo-route-edge" d="'+path+'" stroke="'+tone+'" stroke-width="2.5" '+(e.returning?'stroke-dasharray="4 4" ':'')+'fill="none"><title>'+xml(title)+'</title></path>';
  }).join('');
  const nodeHtml=topology.nodes.map(n=>{
   const p=positions.get(n.id);if(!p)return '';
