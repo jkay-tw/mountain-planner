@@ -6,7 +6,7 @@ import {chooseSaveTarget,writeDownload,reportSaveError} from './save-file.js?v=v
 import {bindProfileExports} from './profile-export.js?v=v084';
 import {makeDemoDays} from './demo-itinerary.js?v=segments1';
 import {directionalQuickAdd,appendQuickPath,quickAddEstimatedMinutes} from './quick-add.js?v=relations1';
-import {renderQuickTopologySvg} from './quick-topology.js?v=quickmapux1';
+import {renderQuickTopologySvg} from './quick-topology.js?v=labelsclose1';
 import {dayTerrain,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=layout2';
 import {createTabAutosave} from './tab-autosave.js?v=v0725';
 import {loadManifest,loadRoute} from './data-loader.js';
@@ -72,7 +72,7 @@ async function init(){
   days=restoredDays?.length?sanitizeDays(migrateDaysToNodeIds(restoredDays,route)):[newDay(0)];
   if(IS_DEMO){days=makeDemoDays(route,uid);scope='G04';$('routeSelect').value=scope;const banner=document.createElement('div');banner.className='notice';banner.textContent='範例模式：可以試用快速加入與編輯，這個頁面不讀寫原行程暫存。';$('daysContainer').before(banner)}
   $('dayCount').value=String(days.length);
-  if(!IS_PRODUCTION)try{const response=await fetch('data/geometry/planner-terrain-v1.json?v=v084');if(!response.ok)throw Error();terrainData=await response.json()}catch(error){console.warn('節點座標與地形資料未載入')}
+  if(!IS_PRODUCTION)try{const response=await fetch('data/geometry/planner-terrain-v1.json?v=geo61aeb0f82567',{cache:'no-store'});if(!response.ok)throw Error();terrainData=await response.json()}catch(error){console.warn('節點座標與地形資料未載入')}
   bindGlobal();
   render(false);saveAutosave(false);checkpoint();
   if(!IS_PRODUCTION&&$('itineraryGeometry'))import('./itinerary-map.js?v=v087')
