@@ -330,3 +330,16 @@ button{border:0;border-radius:8px;padding:9px 12px;background:var(--accent);colo
 @media(max-width:600px){
   .it-row .manual-name{font-size:16px}
 }
+
+
+/* Preview typography audit: medium and high priority readability improvements.
+   Scope to the itinerary editor. Map CSS loads after this stylesheet, so
+   timeline selectors intentionally have higher specificity. */
+.timeline .itinerary-head{font-size:12px}
+.timeline .it-row>.terrain-cell{font-size:12px}
+.it-row .note-input,.day-footer .day-note{font-size:13px}
+.it-row .edge-coef-label{font-size:12px}
+.day-head .stat span{font-size:11px}
+.day-tools .node-action-controls>.compact-day-action{font-size:12px}
+.it-row .row-menu .menu-box button{font-size:13px}
+/* Existing <=600px input/textarea 16px !important remains in force for iOS. */
