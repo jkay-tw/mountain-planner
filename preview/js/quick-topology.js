@@ -136,67 +136,66 @@ export function layoutQuickTopology(topology,geometryData=null){
   raw.set(node.id,{x:.55*Math.cos(angle),y:.55*Math.sin(angle)});
  }
  const width=390,n=topology.nodes.length;
- const height=clamp(295+Math.max(0,n-5)*48,295,1000);
+ const height=clamp(295+Math.max(0,n-5)*54,295,1100);
  const center={x:width/2,y:height/2};
- const positions=new Map(),anchors=new Map();
- for(const node of topology.nodes){
-  const p=raw.get(node.id);
-  let next;
-  if(node.id===topology.startId)next={...center};
-  else{
-   const distance=Math.hypot(p.x,p.y);
-   const r=distance<.0001?42:clamp(45+60*Math.log1p(distance),48,200);
-   const a=Math.atan2(p.y,p.x);
-   next={x:center.x+clamp(Math.cos(a)*r,-134,134),
-         y:center.y-clamp(Math.sin(a)*r,-height*.43,height*.43)};
-  }
-  positions.set(node.id,next);anchors.set(node.id,{...next});
- }
- // Resolve near-overlapping node labels, with the current point anchored and
- // a spring keeping each other node near its source-bearing position.
- const nodes=topology.nodes.map(n=>({...n,box:labelBounds(n)}));
- for(let iteration=0;iteration<120;iteration++){
-  for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){
-   const a=nodes[i],b=nodes[j],pa=positions.get(a.id),pb=positions.get(b.id);
-   const minX=(a.box.w+b.box.w)/2+9;
-   const minY=(a.box.h+b.box.h)/2+13;
-   const dx=pb.x-pa.x,dy=pb.y-pa.y;
-   if(Math.abs(dx)>=minX||Math.abs(dy)>=minY)continue;
-   const xGap=minX-Math.abs(dx),yGap=minY-Math.abs(dy);
-   // Prefer the smaller push, but switch axes when a clamped border
-   // makes that push impossible. Otherwise several west/east labels pile up.
-   const aFixed=a.id===topology.startId,bFixed=b.id===topology.startId;
-   const room=(axis,sign,min,max)=>{
-    const av=axis==='x'?pa.x:pa.y,bv=axis==='x'?pb.x:pb.y;
-    return (aFixed?0:sign>0?av-min:max-av)+
-           (bFixed?0:sign>0?max-bv:bv-min);
-   };
-   const xRoom=room('x',dx>=0?1:-1,67,width-67);
-   const yRoom=room('y',dy>=0?1:-1,31,height-69);
-   let onX=xGap/minX<=yGap/minY;
-   if(onX&&xRoom<xGap*.9&&yRoom>1)onX=false;
-   else if(!onX&&yRoom<yGap*.9&&xRoom>1)onX=true;
-   const push=clamp((onX?xGap:yGap)*.55,0,9);
-   const delta=onX?(dx>=0?push:-push):(dy>=0?push:-push);
-   const aFactor=aFixed?0:bFixed?2:1;
-   const bFactor=bFixed?0:aFixed?2:1;
-   if(onX){pa.x-=delta*aFactor;pb.x+=delta*bFactor}
-   else{pa.y-=delta*aFactor;pb.y+=delta*bFactor}
-  }
-  for(const node of nodes){
-   if(node.id===topology.startId)continue;
-   const p=positions.get(node.id),a=anchors.get(node.id);
-   p.x+=(a.x-p.x)*.016;p.y+=(a.y-p.y)*.016;
-   p.x=clamp(p.x,67,width-67);
-   p.y=clamp(p.y,31,height-69);
-   // Maintain the broad east/west and north/south quadrant when known.
-   if(!estimatedIds.has(node.id)&&known.has(topology.startId)){
-    if(a.x>center.x+24)p.x=Math.max(p.x,center.x+7);
-    if(a.x<center.x-24)p.x=Math.min(p.x,center.x-7);
-    if(a.y>center.y+24)p.y=Math.max(p.y,center.y+7);
-    if(a.y<center.y-24)p.y=Math.min(p.y,center.y-7);
+ const positions=new Map([[topology.startId,{...center}]]);
+ // A compact compass-sector placement is more readable than pixel-perfect
+ // scaling: keep each bearing within about 55 degrees but distribute nearby
+ // labels into free radial slots. This never represents actual map distance.
+ const nodes=topology.nodes.filter(n=>n.id!==topology.startId);
+ const boxes=new Map(topology.nodes.map(n=>[n.id,labelBounds(n)]));
+ const offsets=[0,.20,-.20,.40,-.40,.64,-.64,.88,-.88,1.05,-1.05];
+ const radii=[110,148,186,224,262,300,338,380];
+ const proposals=new Map();
+ for(const node of nodes){
+  const p=raw.get(node.id),distance=Math.hypot(p.x,p.y);
+  const angle=distance>.001?Math.atan2(p.y,p.x):
+   -Math.PI/2+topology.nodes.findIndex(n=>n.id===node.id)*2.39996323;
+  const idealR=clamp(90+50*Math.log1p(distance),110,230);
+  const candidates=[],seen=new Set();
+  for(const offset of offsets)for(const r of radii){
+   const theta=angle+offset;
+   const x=clamp(center.x+Math.cos(theta)*r,67,width-67);
+   const y=clamp(center.y-Math.sin(theta)*r,31,height-69);
+   if(known.has(topology.startId)&&!estimatedIds.has(node.id)){
+    const x0=Math.cos(angle),y0=Math.sin(angle);
+    if(Math.abs(x0)>.65&&Math.sign(x-center.x)!==Math.sign(x0))continue;
+    if(Math.abs(y0)>.65&&Math.sign(center.y-y)!==Math.sign(y0))continue;
    }
+   const key=Math.round(x)+','+Math.round(y);
+   if(seen.has(key))continue;seen.add(key);
+   candidates.push({x,y,offset,r,idealR});
   }
+  proposals.set(node.id,candidates);
+ }
+ const score=(node,proposal)=>{
+  let cost=Math.abs(proposal.offset)*65+Math.abs(proposal.r-proposal.idealR)*.4;
+  if(proposal.x>300&&proposal.y<68)cost+=250;
+  const box=boxes.get(node.id);
+  for(const [otherId,p] of positions){
+   if(node.id===otherId)continue;
+   const b=boxes.get(otherId);
+   const minX=(box.w+b.w)/2+12,minY=(box.h+b.h)/2+15;
+   const overlapX=Math.max(0,minX-Math.abs(proposal.x-p.x));
+   const overlapY=Math.max(0,minY-Math.abs(proposal.y-p.y));
+   if(overlapX&&overlapY)cost+=overlapX*overlapY*100;
+  }
+  return cost;
+ };
+ const select=(node)=>{
+  const options=proposals.get(node.id)||[];
+  let best=null,bestScore=Infinity;
+  for(const candidate of options){
+   const value=score(node,candidate);
+   if(value<bestScore){bestScore=value;best=candidate}
+  }
+  if(best)positions.set(node.id,{x:best.x,y:best.y});
+ };
+ for(const node of nodes)select(node);
+ // Recheck after every node has been placed; this resolves conflicts caused
+ // by the initial ordering without changing geographical data or route edges.
+ for(let pass=0;pass<3;pass++)for(const node of nodes){
+  positions.delete(node.id);select(node);
  }
  return {width,height,positions,mode:'geographic',estimatedIds,
          knownCount:known.size};
