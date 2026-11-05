@@ -36,7 +36,7 @@ test('SVG has graph edges, return styling, ambiguity and the current node',()=>{
  const svg=renderQuickTopologySvg(candidates,'center','目前位置',day.coefficient,quickAddEstimatedMinutes);
  const g=buildQuickTopology(candidates,'center','目前位置');
  assert.equal((svg.match(/<circle /g)||[]).length,g.nodes.length);
- assert.equal((svg.match(/<path /g)||[]).length,g.edges.length);
+ assert.equal((svg.match(/<path class="topo-route-edge"/g)||[]).length,g.edges.length);
  assert.match(svg,/stroke-dasharray="4 4"/);
  assert.match(svg,/多條路線/);
  assert.match(svg,/↩/);
