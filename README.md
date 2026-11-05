@@ -8,6 +8,7 @@
 - [v0.8 功能、資料範圍與驗收](docs/v0.8_RELEASE.md)
 - [v0.8.1 座標、連續路徑與剩餘資料缺口](docs/v0.8.1_COORDINATE_UPDATE_20261104.md)
 - [補座標的局部更新流程](docs/COORDINATE_UPDATE_WORKFLOW.md)
+- [快速加入路網小地圖／座標同步交接（2026-11-05）](docs/QUICK_MAP_COORDINATE_SYNC_20261105.md)
 - 開發分支：`feature/segment-coefficients-ios-integration`
 - [專案導覽與測試指令](docs/PROJECT_GUIDE.md)
 
