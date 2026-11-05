@@ -48,21 +48,97 @@
 .it-row .terrain-cell>.terrain-context,
 .it-row .terrain-cell>.terrain-status{white-space:normal;overflow-wrap:anywhere}
 
-/* Preview: switch to the already established medium-width two-row layout
-   before the wide layout squeezes the terrain column to fragmented text. */
-@media(min-width:601px) and (max-width:1120px){
-  .itinerary-head{display:none}
-  .it-row{
-    grid-template-columns:minmax(0,.9fr) 48px minmax(120px,1.1fr) minmax(100px,1fr) 28px;
-    grid-template-areas:"place arrival time terrain terrain" "note note note note menu";
-    column-gap:7px;align-items:center;
+/* Preview #10: content-led itinerary layout (rather than fixed viewport
+   thresholds).  Keep the most closely related information together:
+   location + arrival, planned + reference time, coefficient + its input. */
+.timeline{container-name:itinerary;container-type:inline-size}
+
+.timeline .it-row{
+  display:grid;
+  grid-template-columns:fit-content(265px) fit-content(255px) minmax(165px,1fr) minmax(115px,1fr) 28px;
+  grid-template-areas:"identity time terrain note menu";
+  gap:6px 10px;
+  align-items:center;
+  min-width:0;
+}
+.timeline .it-row>.row-identity{
+  grid-area:identity;display:flex;align-items:center;gap:12px;
+  min-width:0;max-width:100%;justify-self:start;
+}
+.timeline .it-row .row-identity>.place{
+  flex:0 1 auto;min-width:0;max-width:100%;
+}
+.timeline .it-row .row-identity>.arrival{
+  flex:0 0 auto;min-width:0;text-align:left;
+}
+.timeline .it-row>.route-info{
+  grid-area:time;display:flex;align-items:center;
+  column-gap:9px;row-gap:4px;
+  flex-wrap:wrap;white-space:normal;min-width:0;
+}
+.timeline .it-row .time-pair{
+  display:inline-flex;align-items:baseline;gap:6px;
+  white-space:nowrap;flex:0 0 auto;
+}
+.timeline .it-row .time-pair>.secondary-info{white-space:nowrap}
+.timeline .it-row .edge-coef-label{
+  display:inline-flex;align-items:center;gap:4px;
+  flex:0 0 auto;white-space:nowrap;
+}
+.timeline .it-row .edge-coef{
+  box-sizing:border-box;width:64px;min-width:64px;
+  height:32px;padding:0 5px;font-size:13px;
+}
+.timeline .it-row>.terrain-cell{grid-area:terrain;text-align:left}
+.timeline .it-row>.terrain-note,
+.timeline .it-row>.note-input{grid-area:note;min-width:0}
+.timeline .it-row>.row-menu{grid-area:menu;justify-self:end}
+
+.timeline .itinerary-head{
+  display:grid;
+  grid-template-columns:fit-content(265px) fit-content(255px) minmax(165px,1fr) minmax(115px,1fr) 28px;
+  gap:10px;
+}
+/* Medium: note on a separate line, but keep time groups together. */
+@container itinerary (max-width:930px){
+  .timeline .itinerary-head{display:none}
+  .timeline .it-row{
+    grid-template-columns:fit-content(260px) fit-content(250px) minmax(145px,1fr) 28px;
+    grid-template-areas:"identity time terrain terrain" "note note note menu";
+    gap:5px 10px;
   }
-  .it-row>.place{grid-area:place}
-  .it-row>.arrival{grid-area:arrival;text-align:center}
-  .it-row>.route-info{grid-area:time;flex-wrap:wrap;white-space:normal;min-width:0}
-  .it-row>.terrain-cell{grid-area:terrain;text-align:left}
-  .it-row>.terrain-note,.it-row>.note-input{grid-area:note}
-  .it-row>.row-menu{grid-area:menu;justify-self:end}
-  .it-row .place-name{white-space:normal;overflow-wrap:anywhere}
-  .it-row .note-input{width:100%;box-sizing:border-box;min-width:0}
+  .timeline .it-row .place-name{white-space:normal;overflow-wrap:anywhere}
+  .timeline .it-row>.terrain-note,
+  .timeline .it-row>.note-input{width:100%;box-sizing:border-box}
+}
+/* Narrow: place arrival next to each other, not at opposite ends of the row. */
+@container itinerary (max-width:700px){
+  .timeline .it-row{
+    grid-template-columns:repeat(3,minmax(0,1fr)) 28px;
+    grid-template-areas:"identity identity identity identity"
+                        "time time terrain terrain"
+                        "note note note menu";
+    gap:5px 9px;
+  }
+  .timeline .it-row>.row-identity{gap:14px}
+  .timeline .it-row .row-identity>.place{max-width:calc(100% - 75px)}
+  .timeline .it-row>.route-info{align-self:start}
+  .timeline .it-row>.terrain-cell{align-self:start}
+}
+/* Very narrow: each information group gets a full line if needed. */
+@container itinerary (max-width:480px){
+  .timeline .it-row{
+    grid-template-columns:minmax(0,1fr) 28px;
+    grid-template-areas:"identity identity"
+                        "time time"
+                        "terrain terrain"
+                        "note menu";
+    gap:4px 8px;
+  }
+}
+/* Keep iOS input focus from triggering page zoom without oversized boxes. */
+@media(max-width:600px){
+  .timeline .it-row .edge-coef{
+    font-size:16px!important;width:68px;min-width:68px;height:34px;padding:0 5px;
+  }
 }
