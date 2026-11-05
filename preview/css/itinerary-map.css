@@ -213,6 +213,7 @@
   overflow-wrap:anywhere;
   line-height:1.4;
 }
+.timeline .it-row .place-inline .place-tail{white-space:nowrap}
 .timeline .it-row .place-inline .place-name>.icon-toggle.water{
   display:inline-block;
   position:static;
