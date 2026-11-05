@@ -33,7 +33,8 @@ def load(path):
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
-def manifest_catalog(root=ROOT):
+def manifest_catalog(root=None):
+    root = Path(root) if root is not None else ROOT
     manifest = load(root / "data/unified-editor-manifest.json")
     nodes, edges, manual = {}, {}, {}
     for entry in manifest["routes"]:
