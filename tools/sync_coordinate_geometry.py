@@ -111,7 +111,7 @@ def refresh_cache(js_path, html_path, geometry_path):
     """Data SHA drives the fetch query; app SHA drives the HTML module query."""
     digest = hashlib.sha256(geometry_path.read_bytes()).hexdigest()[:12]
     js = js_path.read_text(encoding="utf-8")
-    find = r"data/geometry/planner-terrain-v1\\.json\\?v=[A-Za-z0-9_.-]+"
+    find = r"data/geometry/planner-terrain-v1\.json\?v=[A-Za-z0-9_.-]+"
     ref = "data/geometry/planner-terrain-v1.json?v=geo" + digest
     updated, count = re.subn(find, ref, js)
     if count != 1:
@@ -119,7 +119,7 @@ def refresh_cache(js_path, html_path, geometry_path):
     # Never allow an intermediary cache to persist stale coordinates after refresh.
     # Change only the geometry request; manifest requests already use no-store.
     updated = re.sub(
-        r"fetch\\('data/geometry/planner-terrain-v1\\.json\\?v=[^']+'\\)",
+        r"fetch\('data/geometry/planner-terrain-v1\.json\?v=[^']+'\)",
         lambda match: match.group(0)[:-1] + ",{cache:'no-store'})",
         updated,
     )
@@ -129,7 +129,7 @@ def refresh_cache(js_path, html_path, geometry_path):
     html = html_path.read_text(encoding="utf-8")
     # Root production uses js/, Preview uses js/ relative to its own HTML.
     updated_html, count = re.subn(
-        r"js/unified-editor\\.js\\?v=[A-Za-z0-9_.-]+",
+        r"js/unified-editor\.js\?v=[A-Za-z0-9_.-]+",
         "js/unified-editor.js?v=geo" + script_sha, html,
     )
     if count != 1:
