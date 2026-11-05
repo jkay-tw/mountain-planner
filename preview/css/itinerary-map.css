@@ -71,7 +71,7 @@
 .timeline .it-row .row-identity>.arrival{
   flex:0 0 auto;min-width:0;text-align:left;
 }
-.timeline .it-row>.route-info{
+.timeline .it-row .row-metrics>.route-info{
   grid-area:time;display:flex;align-items:center;
   column-gap:9px;row-gap:4px;
   flex-wrap:wrap;white-space:normal;min-width:0;
@@ -89,10 +89,11 @@
   box-sizing:border-box;width:64px;min-width:64px;
   height:32px;padding:0 5px;font-size:13px;
 }
-.timeline .it-row>.terrain-cell{grid-area:terrain;text-align:left}
+.timeline .it-row .row-metrics>.terrain-cell{grid-area:terrain;text-align:left;display:flex;flex-wrap:wrap;align-items:center;column-gap:8px;row-gap:2px;overflow-wrap:normal;font-size:12px}
 .timeline .it-row>.terrain-note,
 .timeline .it-row>.note-input{grid-area:note;min-width:0}
 .timeline .it-row>.row-menu{grid-area:menu;justify-self:end}
+.timeline .it-row>.row-metrics{display:contents;grid-area:metrics;min-width:0}
 
 .timeline .itinerary-head{
   display:grid;
@@ -116,22 +117,26 @@
   .timeline .it-row{
     grid-template-columns:repeat(3,minmax(0,1fr)) 28px;
     grid-template-areas:"identity identity identity identity"
-                        "time time terrain terrain"
+                        "metrics metrics metrics metrics"
                         "note note note menu";
     gap:5px 9px;
   }
   .timeline .it-row>.row-identity{gap:14px}
   .timeline .it-row .row-identity>.place{max-width:calc(100% - 75px)}
-  .timeline .it-row>.route-info{align-self:start}
-  .timeline .it-row>.terrain-cell{align-self:start}
+  .timeline .it-row>.row-metrics{
+    display:flex;flex-wrap:wrap;gap:6px 14px;
+    align-items:center;justify-content:flex-start;
+    min-width:0;max-width:100%;
+  }
+  .timeline .it-row .row-metrics>.route-info{flex:0 1 auto;max-width:100%;align-self:center}
+  .timeline .it-row .row-metrics>.terrain-cell{flex:0 1 auto;max-width:100%;align-self:center}
 }
 /* Very narrow: each information group gets a full line if needed. */
 @container itinerary (max-width:480px){
   .timeline .it-row{
     grid-template-columns:minmax(0,1fr) 28px;
     grid-template-areas:"identity identity"
-                        "time time"
-                        "terrain terrain"
+                        "metrics metrics"
                         "note menu";
     gap:4px 8px;
   }
