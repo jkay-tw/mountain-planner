@@ -232,7 +232,8 @@
   color:#65756d;
   white-space:nowrap;
 }
-.quick-add .quick-relations{position:relative;align-self:center;flex:0 0 auto}
+.quick-add .quick-chips{position:relative}
+.quick-add .quick-relations{position:static;align-self:center;flex:0 0 auto}
 .quick-add .quick-relations>summary{
   display:inline-flex;align-items:center;gap:5px;
   list-style:none;cursor:pointer;
