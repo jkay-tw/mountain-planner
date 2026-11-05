@@ -1,4 +1,5 @@
 import {captureScrollAnchor,restoreScrollAnchor} from './scroll-anchor.js?v=v088';
+import {bindMobileTouchSort,insertionIndex} from './mobile-touch-sort.js?v=issue10a';
 import {normalizeTimeInput} from './time-input.js?v=mobile1';
 import {syncLinkedDays} from './day-link.js?v=segments1';
 import {chooseSaveTarget,writeDownload,reportSaveError} from './save-file.js?v=v086';
@@ -20,7 +21,7 @@ const $=id=>document.getElementById(id);
 const IS_PRODUCTION=document.body.dataset.mode==='production';
 const IS_DEMO=!IS_PRODUCTION&&new URLSearchParams(location.search).get('demo')==='xueshan';
 const STORAGE_KEY=IS_PRODUCTION?'mountain-planner.global-autosave.v1':'mountain-planner.unified-preview-autosave.v0711';
-const APP_VERSION=IS_PRODUCTION?'v0.7.25':'v0.8.8 Segment + iPhone Preview';
+const APP_VERSION=IS_PRODUCTION?'v0.7.25':'v0.8.8 Mobile Drag Preview #10';
 const COLLAPSE_KEY=IS_PRODUCTION?'mountain-planner.collapsed-days.v1':'mountain-planner.unified-preview-collapsed.v0711';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',scope='';
@@ -350,6 +351,20 @@ function renderDay(d,i){
   '<div class="day-footer">'+(!IS_PRODUCTION?'<div class="terrain-daily"><p class="terrain-summary">'+esc(formatTerrain(terrain,{partial:!!terrain?.gaps.length}))+'</p><button class="show-profile secondary" type="button" aria-expanded="'+openProfiles.has(d.id)+'">'+(openProfiles.has(d.id)?'收合高度剖面':'查看高度剖面')+'</button></div>'+(openProfiles.has(d.id)?'<div class="day-profile">'+(terrain?renderTerrainProfile(terrain):'<p>地形資料未載入。</p>')+'</div>':''):'')+'<textarea class="day-note" placeholder="Day '+(i+1)+' 備註">'+esc(d.note||'')+'</textarea></div></article>';
 }
 
+// Both native desktop drag/drop and touch gestures use the same safe reorder.
+function moveTimelineItem(d, from, slot) {
+  const insert = insertionIndex(from, slot, d.items.length);
+  if (insert === null || insert === from) return false;
+  const oldStart = first(d)?.id, oldEnd = last(d)?.id;
+  const [item] = d.items.splice(from, 1);
+  d.items.splice(insert, 0, item);
+  normalizeDay(d, route);
+  if (oldStart !== first(d)?.id) d.linkedStart = false;
+  if (oldEnd !== last(d)?.id) unlinkNextIfEndpointChanges(d);
+  render();
+  return true;
+}
+
 function renderTimeline(d){
   const rows=buildTimeline(d).rows;
   const terrain=dayTerrain(d,terrainData),terrainByItem=new Map((terrain?.features||[]).map(f=>[f.toItemId,f]));
@@ -518,15 +533,12 @@ function bindDays(){
       z.ondragleave=()=>z.classList.remove('active');
       z.ondrop=e=>{
         e.preventDefault();z.classList.remove('active');if(!drag||drag.day!==i)return;
-        const from=drag.index,to=+z.dataset.drop;if(from<0||from>=d.items.length)return;
-        const oldStart=first(d)?.id,oldEnd=last(d)?.id;
-        const [mv]=d.items.splice(from,1);let insert=to;if(from<to)insert--;
-        insert=Math.max(0,Math.min(insert,d.items.length));d.items.splice(insert,0,mv);
-        normalizeDay(d,route);
-        if(oldStart!==first(d)?.id)d.linkedStart=false;
-        if(oldEnd!==last(d)?.id)unlinkNextIfEndpointChanges(d);
-        drag=null;render();
+        const {index:from}=drag;drag=null;
+        moveTimelineItem(d,from,+z.dataset.drop);
       };
+    });
+    bindMobileTouchSort(card,i,(dayIndex,from,slot)=>{
+      if (days[dayIndex]) moveTimelineItem(days[dayIndex],from,slot);
     });
   });
 }
