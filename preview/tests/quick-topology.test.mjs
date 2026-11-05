@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {mergeReviewedRoutes} from '../js/global-route.js';
 import {directionalQuickAdd,quickAddEstimatedMinutes} from '../js/quick-add.js';
-import {buildQuickTopology,layoutQuickTopology,layoutQuickTopologyLabels,layoutQuickTopologyCallouts,renderQuickTopologySvg} from '../js/quick-topology.js';
+import {buildQuickTopology,layoutQuickTopology,layoutQuickTopologyLabels,layoutQuickTopologyCallouts,quickLabelInkBounds,quickLabelLeader,renderQuickTopologySvg} from '../js/quick-topology.js';
 
 const walking=(fromId,toId,minutes)=>({
  fromId,toId,from:fromId,to:toId,minutes,travelMode:'walking',verificationStatus:'verified'
@@ -23,6 +23,18 @@ const route={
 const day={items:[{type:'location',nodeId:'previous'},{type:'rest',minutes:5},{type:'location',nodeId:'center'}],coefficient:1.25};
 const candidates=directionalQuickAdd(route,day);
 
+test('leader reaches visible ink instead of the empty edge of a wide label box',()=>{
+ const node={id:'n'},point={x:100,y:200};
+ const label={x:140,y:100,l:80,r:200,t:100,b:140,w:120,h:40};
+ const ink=quickLabelInkBounds(label,['岔路口'],'約 14 分',false);
+ const layout={positions:new Map([['n',point]])};
+ const route=quickLabelLeader(node,point,ink,layout,new Map([['n',label]]),{edges:[]});
+ const end=route.at(-1);
+ const distance=b=>Math.hypot(Math.max(b.l-end.x,0,end.x-b.r),Math.max(b.t-end.y,0,end.y-b.b));
+ assert.ok(Math.min(...ink.map(distance))<=3.01);
+ assert.ok(end.x>label.l+10,'leader should not end at invisible left edge');
+});
+
 test('reviewed mountain junctions keep readable, locally placed labels',()=>{
  const root=new URL('../../',import.meta.url);
  const read=path=>JSON.parse(readFileSync(new URL(path,root),'utf8'));
@@ -41,6 +53,8 @@ test('reviewed mountain junctions keep readable, locally placed labels',()=>{
    assert.ok(Math.hypot(dots[i].x-dots[j].x,dots[i].y-dots[j].y)>24,name+' separates dots');
   for(const label of labels.values())for(const dot of dots)
    assert.ok(dot.x<=label.l-7||dot.x>=label.r+7||dot.y<=label.t-7||dot.y>=label.b+7,name+' avoids covering dots');
+  const svg=renderQuickTopologySvg(choices,node.id,name,.8,quickAddEstimatedMinutes,geometry);
+  assert.equal((svg.match(/class="topo-label-leader"/g)||[]).length,graph.nodes.length,name+' has a leader for each label');
  }
 });
 
