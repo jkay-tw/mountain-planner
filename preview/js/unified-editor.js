@@ -375,10 +375,9 @@ function terrainSegmentHtml(feature,bridged=false){
 // Keep the water toggle immediately after the location's last characters,
 // including when the location wraps to a second line.
 function renderPlaceLabel(name,waterButton){
-  const chars=Array.from(String(name??''));
-  const prefix=chars.slice(0,-2).join('');
-  const suffix=chars.slice(-2).join('');
-  return '<span class="place-name">'+esc(prefix)+'<span class="place-tail">'+esc(suffix)+waterButton+'</span></span>';
+  // Keep water after the complete location label, without forcing trailing
+  // characters onto a second line. CSS aligns wrapped text after the peak icon.
+  return '<span class="place-name">'+esc(name)+waterButton+'</span>';
 }
 function renderTimeline(d){
   const rows=buildTimeline(d).rows;
