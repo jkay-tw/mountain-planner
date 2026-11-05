@@ -55,7 +55,7 @@
 
 .timeline .it-row{
   display:grid;
-  grid-template-columns:fit-content(265px) fit-content(255px) minmax(165px,1fr) minmax(115px,1fr) 28px;
+  grid-template-columns:225px 220px minmax(165px,1fr) minmax(115px,1fr) 28px;
   grid-template-areas:"identity time terrain note menu";
   gap:6px 10px;
   align-items:center;
@@ -96,7 +96,7 @@
 
 .timeline .itinerary-head{
   display:grid;
-  grid-template-columns:fit-content(265px) fit-content(255px) minmax(165px,1fr) minmax(115px,1fr) 28px;
+  grid-template-columns:225px 220px minmax(165px,1fr) minmax(115px,1fr) 28px;
   gap:10px;
 }
 /* Medium: note on a separate line, but keep time groups together. */
