@@ -1,5 +1,5 @@
 import {captureScrollAnchor,restoreScrollAnchor} from './scroll-anchor.js?v=v088';
-import {bindMobileTouchSort,insertionIndex} from './mobile-touch-sort.js?v=issue10a';
+import {bindMobileTouchSort,insertionIndex} from './mobile-touch-sort.js?v=issue10b';
 import {normalizeTimeInput} from './time-input.js?v=mobile1';
 import {syncLinkedDays} from './day-link.js?v=segments1';
 import {chooseSaveTarget,writeDownload,reportSaveError} from './save-file.js?v=v086';
