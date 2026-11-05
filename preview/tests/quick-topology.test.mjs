@@ -141,3 +141,36 @@ test('nearby dots can overlap, but their text labels avoid one another',()=>{
   assert.ok(width*height<1,'Visible text labels should not overlap');
  }
 });
+
+
+test('current point badge stays beside the geographic dot and is clearly marked',()=>{
+ const graph=buildQuickTopology(compassCandidates,'center','目前節點');
+ const layout=layoutQuickTopology(graph,compassGeometry);
+ const labels=layoutQuickTopologyLabels(graph,layout);
+ const p=layout.positions.get('center'),label=labels.get('center');
+ assert.ok(Math.abs(label.y+label.h/2-p.y)<25,'Current callout should stay vertically beside its dot');
+ assert.ok(Math.abs(label.x-p.x)<100,'Current callout must not float far away');
+ const svg=renderQuickTopologySvg(compassCandidates,'center','目前節點',1,quickAddEstimatedMinutes,compassGeometry);
+ assert.match(svg,/class="topo-current-badge"/);
+ assert.match(svg,/class="topo-current-badge-text"/);
+ assert.match(svg,/class="topo-current-halo"/);
+ assert.match(svg,/目前位置/);
+});
+test('direction-based labels do not move geographic dots',()=>{
+ const nodes=['center','north','south','east','west'].map(id=>({nodeId:id,
+  coordinate:compassGeometry.nodes.find(n=>n.nodeId===id).coordinate,
+  coordinatePolicy:'active'}));
+ const g=buildQuickTopology(compassCandidates.filter(c=>c.nodeId!=='unknown'),'center','中心');
+ const layout=layoutQuickTopology(g,{nodes}),before=JSON.stringify([...layout.positions]);
+ const labels=layoutQuickTopologyLabels(g,layout);
+ assert.deepEqual(JSON.stringify([...layout.positions]),before);
+ for(const id of ['north','south','east','west']){
+  assert.ok(labels.has(id),'Every compass node should have a label');
+ }
+ const box=[...labels.values()];
+ for(let i=0;i<box.length;i++)for(let j=i+1;j<box.length;j++){
+  const width=Math.max(0,Math.min(box[i].r,box[j].r)-Math.max(box[i].l,box[j].l));
+  const height=Math.max(0,Math.min(box[i].b,box[j].b)-Math.max(box[i].t,box[j].t));
+  assert.ok(width*height<1,'Label boxes must not overlap');
+ }
+});
