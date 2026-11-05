@@ -237,54 +237,70 @@ export function layoutQuickTopologyLabels(topology,layout){
  return labels;
 }
 
-// When nearby placement runs out of space, reserve two ordered callout
-// columns and reduce the entire graph uniformly. Never hide a node name.
+// Expand crowded dots in the available map area; place each label near its
+// own final dot in any direction. Coordinates are never written back to data.
 export function layoutQuickTopologyCallouts(topology,layout){
- const groups=[[],[]],center=layout.positions.get(topology.startId);
- for(const node of [...topology.nodes].sort((a,b)=>layout.positions.get(a.id).y-layout.positions.get(b.id).y)){
-  const p=layout.positions.get(node.id);
-  let side=p.x<(center?.x??layout.width/2)?0:1;
-  if(Math.abs(p.x-(center?.x??layout.width/2))<10)side=groups[0].length<=groups[1].length?0:1;
-  groups[side].push(node);
- }
- const size=node=>{
+ const width=390, nodes=topology.nodes;
+ const initialHeight=Math.max(400,Math.ceil(nodes.length*26));
+ const ordered=[...nodes].sort((a,b)=>Number(b.id===topology.startId)-Number(a.id===topology.startId)||a.level-b.level||a.id.localeCompare(b.id));
+ const box=node=>{
   const back=topology.first.some(b=>b.id===node.id&&b.returning);
-  const name=(back?'↩ ':'')+(layout.estimatedIds.has(node.id)?'◌ ':'')+node.name;
-  return 40+(textLines(name).length-1)*13;
+  const lines=textLines((back?'↩ ':'')+(layout.estimatedIds.has(node.id)?'◌ ':'')+node.name);
+  return {w:clamp(Math.max(...lines.map(t=>Array.from(t).length))*12+16,86,116),h:40+(lines.length-1)*13};
  };
- const heights=groups.map(g=>g.reduce((sum,n)=>sum+size(n)+8,0));
- const width=390,height=Math.max(360,topology.nodes.length*25,...heights.map(h=>h+30));
- const scale=Math.min(160/layout.width,(height-90)/layout.height);
- const positions=new Map([...layout.positions].map(([id,p])=>[id,{x:width/2+(p.x-layout.width/2)*scale,y:height/2+(p.y-layout.height/2)*scale}]));
- // Screen-only spacing when real positions are too close to distinguish.
- // Prefer a nearby position and keep all circles inside the central map area.
- const placed=[];
- const order=[...topology.nodes].sort((a,b)=>Number(b.id===topology.startId)-Number(a.id===topology.startId)||a.id.localeCompare(b.id));
- let displaced=false;
- for(const node of order){
-  const original=positions.get(node.id);
-  let chosen=null;
-  for(let radius=0;radius<=height&&!chosen;radius+=4){
-   const count=radius?Math.max(12,Math.ceil(2*Math.PI*radius/6)):1;
-   for(let i=0;i<count;i++){
-    const angle=2*Math.PI*i/count;
-    const p={x:original.x+radius*Math.cos(angle),y:original.y+radius*Math.sin(angle)};
-    if(p.x<130||p.x>260||p.y<45||p.y>height-20)continue;
-    if(placed.every(q=>Math.hypot(q.x-p.x,q.y-p.y)>=24)){chosen=p;break;}
+ for(let extra=0;extra<=1200;extra+=120){
+  const height=initialHeight+extra;
+  // Keep the original geographic scale as large as practical. Additional
+  // height increases the space around the graph, rather than shrinking it.
+  const scale=Math.min(270/layout.width,300/layout.height);
+  const anchors=new Map([...layout.positions].map(([id,p])=>[id,{x:width/2+(p.x-layout.width/2)*scale,y:height/2+(p.y-layout.height/2)*scale}]));
+  const positions=new Map([...anchors].map(([id,p])=>[id,{...p}]));
+  // Relax overlapping dots with a weak pull to their original bearing.
+  for(let pass=0;pass<160;pass++){
+   for(const n of nodes){const p=positions.get(n.id),a=anchors.get(n.id);p.x+=(a.x-p.x)*.025;p.y+=(a.y-p.y)*.025;}
+   for(let i=0;i<ordered.length;i++)for(let j=i+1;j<ordered.length;j++){
+    const a=positions.get(ordered[i].id),b=positions.get(ordered[j].id);
+    let dx=b.x-a.x,dy=b.y-a.y,d=Math.hypot(dx,dy);
+    if(d<.01){const angle=(i*13+j*7)*2.399963;dx=Math.cos(angle);dy=Math.sin(angle);d=1;}
+    if(d<32){const move=(32-d)*.51;dx/=d;dy/=d;a.x-=dx*move;a.y-=dy*move;b.x+=dx*move;b.y+=dy*move;}
    }
+   for(const p of positions.values()){p.x=clamp(p.x,24,width-24);p.y=clamp(p.y,55,height-24);}
   }
-  if(chosen){positions.set(node.id,chosen);placed.push(chosen);if(Math.hypot(chosen.x-original.x,chosen.y-original.y)>.1)displaced=true;}
+  const labels=new Map(), placed=[];
+  const overlap=(a,b)=>a.l<b.r+3&&a.r>b.l-3&&a.t<b.b+3&&a.b>b.t-3;
+  const distance=(p,b)=>Math.hypot(Math.max(b.l-p.x,0,p.x-b.r),Math.max(b.t-p.y,0,p.y-b.b));
+  for(const n of ordered){
+   const p=positions.get(n.id),{w,h}=box(n);let best=null,bestCost=Infinity;
+   // Fine grid includes all four sides and diagonals, not fixed columns.
+   for(let y=38;y<=height-h-5;y+=8)for(let x=w/2+5;x<=width-w/2-5;x+=8){
+    const b={x,y,l:x-w/2,r:x+w/2,t:y,b:y+h,w,h,hidden:false};
+    if(placed.some(other=>overlap(b,other)))continue;
+    if([...positions.values()].some(q=>q.x>b.l-12&&q.x<b.r+12&&q.y>b.t-12&&q.y<b.b+12))continue;
+    const d=distance(p,b);
+    let cost=d+Math.hypot(x-p.x,y+h/2-p.y)*.12;
+    // Prefer outward or nearby placement and avoid covering route edges.
+    const center=positions.get(topology.startId),vx=p.x-center.x,vy=p.y-center.y;
+    if(n.id!==topology.startId&&((x-p.x)*vx+(y+h/2-p.y)*vy)<0)cost+=18;
+    for(const [otherId,other] of labels){
+     const q=positions.get(otherId);
+     if((x-p.x)*(other.x-q.x)>0&&Math.abs(p.y-q.y)>8&&
+        (p.y-q.y)*(y+h/2-(other.y+other.h/2))<0)cost+=80;
+    }
+    if(cost>=bestCost)continue;
+    for(const edge of topology.edges){const a=positions.get(edge.from),c=positions.get(edge.to);if(!a||!c)continue;
+     for(let k=1;k<10;k++){const t=k/10,ex=a.x+(c.x-a.x)*t,ey=a.y+(c.y-a.y)*t;if(ex>b.l&&ex<b.r&&ey>b.t&&ey<b.b){cost+=90;break;}}
+    }
+    if(cost<bestCost){best=b;bestCost=cost;}
+   }
+   if(!best)break;
+   labels.set(n.id,best);placed.push(best);
+  }
+  if(labels.size===nodes.length){
+   const displaced=[...positions].some(([id,p])=>Math.hypot(p.x-anchors.get(id).x,p.y-anchors.get(id).y)>1);
+   return {layout:{...layout,width,height,positions,displaced,scale:layout.scale?layout.scale*scale:layout.scale},labels};
+  }
  }
- const labels=new Map();
- groups.forEach((group,side)=>{
-  let y=(height-heights[side])/2;
-  for(const node of group){
-   const h=size(node),x=side?330:60,w=116;
-   labels.set(node.id,{x,y,l:x-w/2,r:x+w/2,t:y,b:y+h,w,h,hidden:false});
-   y+=h+8;
-  }
- });
- return {layout:{...layout,width,height,positions,displaced,scale:layout.scale?layout.scale*scale:layout.scale},labels};
+ throw new Error('Unable to lay out quick topology labels');
 }
 
 export function renderQuickTopologySvg(candidates,startId,startName,coefficient,estimate,geometryData=null){
@@ -333,7 +349,7 @@ export function renderQuickTopologySvg(candidates,startId,startName,coefficient,
  }).join('');
  const omitted=[...labels.values()].filter(l=>l?.hidden).length;
  const hiddenHint=omitted?'<text class="topo-fallback-label" x="10" y="'+(layout.height-5)+'">部分密集節點名稱請參考快速加入按鈕</text>':'';
- const compassX=callouts?195:355;
+ const compassX=355;
  const compass=layout.mode==='geographic'
   ?'<g class="topo-compass" transform="translate('+(compassX-355)+' 0)"><path d="M 355 39 V 18 M 355 18 L 351 24 M 355 18 L 359 24" stroke="#587263" stroke-width="1.5" fill="none"/><text x="355" y="13" text-anchor="middle">北</text></g>'
   :'<text class="topo-fallback-label" x="10" y="15">座標不足，採純拓樸示意</text>';
