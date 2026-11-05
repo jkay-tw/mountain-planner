@@ -281,3 +281,33 @@
     box-shadow:none;
   }
 }
+
+
+/* Compact SVG schematic replacing the text-only quick-route popover.
+   The existing route relationship details stays collapsed by default. */
+.quick-add .quick-route-panel{width:min(390px,calc(100vw - 32px));}
+.quick-add .quick-topology-canvas{
+  margin-top:7px;
+  padding:6px 3px;
+  border:1px solid #e3eae4;
+  background:#f8fbf8;
+  border-radius:8px;
+  overflow:hidden;
+}
+.quick-add .quick-topology-svg{
+  display:block;
+  width:100%;
+  height:auto;
+  overflow:visible;
+  font-family:Inter,"Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
+}
+.quick-add .topo-node-name{font-size:12px;font-weight:650;fill:#2f4639}
+.quick-add .topo-current .topo-node-name{font-weight:750;fill:#234b34}
+.quick-add .topo-back .topo-node-name{fill:#7a5b31}
+.quick-add .topo-node-meta{font-size:10.5px;fill:#607265}
+.quick-add .topo-back .topo-node-meta{fill:#8a714c}
+.quick-add .quick-route-hint{font-size:11px;line-height:1.5}
+@media(max-width:600px){
+ .quick-add .quick-route-panel{width:100%}
+ .quick-add .quick-topology-canvas{margin-top:7px;padding:3px 0}
+}
