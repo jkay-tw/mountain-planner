@@ -175,3 +175,20 @@
     font-size:16px!important;width:68px;min-width:68px;height:34px;padding:0 5px;
   }
 }
+
+
+/* Preview: location labels flow inline so the water marker follows the last
+   word, rather than the right edge of the fixed place column. */
+.timeline .it-row .row-identity>.place.place-inline{display:block;line-height:1.4}
+.timeline .it-row .row-identity>.place.place-inline>.icon-toggle.peak{
+  display:inline-block;vertical-align:middle;margin-right:3px;
+}
+.timeline .it-row .row-identity>.place.place-inline>.place-name{
+  display:inline;flex:none;width:auto;
+  white-space:normal;overflow:visible;text-overflow:clip;
+  overflow-wrap:anywhere;
+}
+.timeline .it-row .place-inline .place-tail{white-space:nowrap}
+.timeline .it-row .place-inline .place-tail>.icon-toggle.water{
+  display:inline-block;vertical-align:middle;margin-left:2px;
+}
