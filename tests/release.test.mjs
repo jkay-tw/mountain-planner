@@ -13,9 +13,13 @@ test('production entry uses reviewed global editor while preview remains separat
  assert.match(source,/migrateLegacyPlanDays\(restoredDays/);
 });
 test('v0.8.8 promotes the tested planning modules and retains production storage',()=>{
- for(const name of ['planner.js','quick-add.js','day-link.js','scroll-anchor.js','time-input.js','exporter.js','itinerary-geometry.js','validation.js']){
+ for(const name of ['planner.js','day-link.js','scroll-anchor.js','time-input.js','exporter.js','itinerary-geometry.js','validation.js']){
   assert.equal(readFileSync(new URL('../js/'+name,import.meta.url),'utf8'),readFileSync(new URL('../preview/js/'+name,import.meta.url),'utf8'),name);
  }
+ // Preview adds presentation helpers after the unchanged production module.
+ const productionQuick=readFileSync(new URL('../js/quick-add.js',import.meta.url),'utf8');
+ const previewQuick=readFileSync(new URL('../preview/js/quick-add.js',import.meta.url),'utf8');
+ assert.ok(previewQuick.startsWith(productionQuick),'Production quick-add logic must stay intact in Preview');
  assert.match(source,/IS_PRODUCTION\?'v0\.8\.8'/);
  assert.match(source,/mountain-planner\.global-autosave\.v1/);
  assert.doesNotMatch(source,/\(!IS_PRODUCTION\?/);

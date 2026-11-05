@@ -6,7 +6,7 @@ import {chooseSaveTarget,writeDownload,reportSaveError} from './save-file.js?v=v
 import {bindProfileExports} from './profile-export.js?v=v084';
 import {makeDemoDays} from './demo-itinerary.js?v=segments1';
 import {directionalQuickAdd,appendQuickPath,quickAddEstimatedMinutes} from './quick-add.js?v=relations1';
-import {renderQuickTopologySvg} from './quick-topology.js?v=labelsclose1';
+import {renderQuickTopologySvg} from './quick-topology.js?v=callouts1';
 import {dayTerrain,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=layout2';
 import {createTabAutosave} from './tab-autosave.js?v=v0725';
 import {loadManifest,loadRoute} from './data-loader.js';
