@@ -252,3 +252,32 @@ button{border:0;border-radius:8px;padding:9px 12px;background:var(--accent);colo
   .day-head{grid-template-areas:"toggle title clear" "start start start"
     "coefficient coefficient coefficient" "stats stats stats"}
 }
+
+/* Issue #10 Preview: mobile drag/drop without changing timeline row heights. */
+.it-row.touch-sortable{position:relative}
+.it-row.touch-dragging{opacity:.45;background:#eaf4ec;outline:1px dashed #5e8c69}
+.it-row.touch-drop-before::before,
+.it-row.touch-drop-after::after{
+  content:"";position:absolute;left:0;right:0;height:4px;
+  border-radius:4px;background:#25804d;z-index:8;pointer-events:none;
+  box-shadow:0 0 0 1px #fff;
+}
+.it-row.touch-drop-before::before{top:-3px}
+.it-row.touch-drop-after::after{bottom:-3px}
+.mobile-drag-ghost{
+  position:fixed;z-index:9999;pointer-events:none;box-sizing:border-box;
+  padding:11px 14px;border:1px solid #6c9b76;border-radius:10px;
+  background:#fff;color:#244932;box-shadow:0 8px 22px rgba(0,0,0,.18);
+  font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;
+  text-overflow:ellipsis;opacity:.95;
+}
+@media (pointer:coarse){
+  .touch-sortable .drag-handle{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:36px;min-height:38px;padding:0 7px;margin-left:-4px;
+    touch-action:none;-webkit-user-drag:none;
+  }
+  .touch-sortable .place-name,.touch-sortable .arrival{
+    -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;
+  }
+}
