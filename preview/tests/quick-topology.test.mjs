@@ -1,5 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {mergeReviewedRoutes} from '../js/global-route.js';
 import {directionalQuickAdd,quickAddEstimatedMinutes} from '../js/quick-add.js';
 import {buildQuickTopology,layoutQuickTopology,layoutQuickTopologyLabels,layoutQuickTopologyCallouts,renderQuickTopologySvg} from '../js/quick-topology.js';
 
@@ -20,6 +22,27 @@ const route={
 };
 const day={items:[{type:'location',nodeId:'previous'},{type:'rest',minutes:5},{type:'location',nodeId:'center'}],coefficient:1.25};
 const candidates=directionalQuickAdd(route,day);
+
+test('reviewed mountain junctions keep readable, locally placed labels',()=>{
+ const root=new URL('../../',import.meta.url);
+ const read=path=>JSON.parse(readFileSync(new URL(path,root),'utf8'));
+ const manifest=read('data/unified-editor-manifest.json');
+ const full=mergeReviewedRoutes(manifest.routes.map(m=>read(m.file.split('?')[0])));
+ const geometry=read('preview/data/geometry/planner-terrain-v1.json');
+ for(const name of ['雪山主峰','小霸岔路登山口','喀西帕南登山口','鞍部叉路']){
+  const node=full.nodes.find(n=>n.name===name);assert.ok(node,name);
+  const choices=directionalQuickAdd(full,{items:[{type:'location',nodeId:node.id}],coefficient:.8});
+  const graph=buildQuickTopology(choices,node.id,name);
+  const {layout,labels}=layoutQuickTopologyCallouts(graph,layoutQuickTopology(graph,geometry));
+  assert.equal(labels.size,graph.nodes.length,name);
+  assert.ok(new Set([...labels.values()].map(l=>Math.round(l.x))).size>2,name+' uses available space');
+  const dots=[...layout.positions.values()];
+  for(let i=0;i<dots.length;i++)for(let j=i+1;j<dots.length;j++)
+   assert.ok(Math.hypot(dots[i].x-dots[j].x,dots[i].y-dots[j].y)>24,name+' separates dots');
+  for(const label of labels.values())for(const dot of dots)
+   assert.ok(dot.x<=label.l-7||dot.x>=label.r+7||dot.y<=label.t-7||dot.y>=label.b+7,name+' avoids covering dots');
+ }
+});
 
 test('dense callouts keep every full name and separate displayed dots',()=>{
  const choices=Array.from({length:16},(_,i)=>({key:'root>'+i,nodeId:'n'+i,direction:0,
