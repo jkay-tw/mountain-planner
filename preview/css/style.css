@@ -303,3 +303,22 @@ button{border:0;border-radius:8px;padding:9px 12px;background:var(--accent);colo
 @media(max-width:600px){
   .minute-input{font-size:16px!important}
 }
+
+/* Issue #10 typography review v2: the arrival clock is primary.
+   Shared numerals ensure size comparisons are not skewed by Calibri vs system fonts.
+   Keep existing minute inputs at 14px desktop and 16px mobile. */
+.it-row .arrival,
+.it-row .calculated-time{
+  font-family:Arial,"Noto Sans TC",sans-serif;
+  font-variant-numeric:tabular-nums;
+}
+.it-row .arrival{
+  font-size:15px;
+  font-weight:750;
+  color:#263B32;
+}
+.it-row .calculated-time{
+  font-size:14px;
+  font-weight:600;
+  color:#536B7A;
+}
