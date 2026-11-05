@@ -213,16 +213,22 @@ export function layoutQuickTopologyLabels(topology,layout){
    // Only dense label clusters may use a slightly more distant position.
    proposals=[...proposals,[p.x,p.y-h-51],[p.x,p.y+51],
      [p.x+sx*(w/2+42),p.y-h/2],[p.x-sx*(w/2+42),p.y-h/2]];
+   // In dense junctions, use a label-only free slot before allowing texts
+   // to overlap. Geographic dots always remain at their original positions.
+   for(const rowY of [7,58,110,162,214,266,310])
+    for(const colX of [w/2+6,120,195,270,layout.width-w/2-6])
+     proposals.push([colX,rowY]);
   }
   let best=null,bestScore=Infinity;
-  for(const [wantedX,wantedY] of proposals){
+  for(let k=0;k<proposals.length;k++){
+   const [wantedX,wantedY]=proposals[k];
    const x=clamp(wantedX,w/2+5,layout.width-w/2-5);
    const y=clamp(wantedY,7,layout.height-h-5);
    const rect=rectFor(x,y,w,h);
    const shifted=Math.hypot(x-wantedX,y-wantedY);
    let score=shifted*8+Math.hypot(x-p.x,(y+h/2)-p.y)*.10;
    if(isCurrent)score+=Math.abs(x-right[0])*.035;
-   else score+=proposals.indexOf(proposals.find(q=>q[0]===wantedX&&q[1]===wantedY))*24;
+   else score+=k<12?k*24:310+(k-12)*.3;
    for(const usedBox of used){
     const overX=Math.max(0,Math.min(rect.r,usedBox.r)-Math.max(rect.l,usedBox.l));
     const overY=Math.max(0,Math.min(rect.b,usedBox.b)-Math.max(rect.t,usedBox.t));
