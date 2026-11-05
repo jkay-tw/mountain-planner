@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {directionalQuickAdd,quickAddEstimatedMinutes} from '../js/quick-add.js';
-import {buildQuickTopology,layoutQuickTopology,renderQuickTopologySvg} from '../js/quick-topology.js';
+import {buildQuickTopology,layoutQuickTopology,layoutQuickTopologyLabels,renderQuickTopologySvg} from '../js/quick-topology.js';
 
 const walking=(fromId,toId,minutes)=>({
  fromId,toId,from:fromId,to:toId,minutes,travelMode:'walking',verificationStatus:'verified'
@@ -101,16 +101,43 @@ test('ignored or vehicle-only coordinates never become location anchors',()=>{
  const onlyIgnored={nodes:compassGeometry.nodes.map(n=>({...n,coordinatePolicy:'ignored'}))};
  assert.equal(layoutQuickTopology(g,onlyIgnored).mode,'topology');
 });
-test('nodes near one another are separated for legible diagram labels',()=>{
+test('geographic points maintain one scale and labels move independently',()=>{
+ const choices=[
+  {key:'origin>near',nodeId:'near',direction:0,segments:[walking('origin','near',4)]},
+  {key:'origin>far',nodeId:'far',direction:0,segments:[walking('origin','far',40)]},
+  {key:'origin>north',nodeId:'north',direction:0,segments:[walking('origin','north',20)]}
+ ];
+ const geo={nodes:[
+  {nodeId:'origin',coordinate:[121,24],coordinatePolicy:'active'},
+  {nodeId:'near',coordinate:[121.001,24],coordinatePolicy:'active'},
+  {nodeId:'far',coordinate:[121.010,24],coordinatePolicy:'active'},
+  {nodeId:'north',coordinate:[121,24.005],coordinatePolicy:'active'}
+ ]};
+ const g=buildQuickTopology(choices,'origin','起點');
+ const layout=layoutQuickTopology(g,geo),a=layout.positions;
+ assert.equal(layout.mode,'geographic');
+ const p=a.get('origin'),near=a.get('near'),far=a.get('far');
+ const ratio=Math.abs(far.x-p.x)/Math.abs(near.x-p.x);
+ assert.ok(Math.abs(ratio-10)<.00001,'Real 10:1 separation must remain 10:1');
+ assert.ok(a.get('north').y<p.y,'True north remains above');
+ const positionsBefore=JSON.stringify([...a]);
+ const labels=layoutQuickTopologyLabels(g,layout);
+ assert.equal(JSON.stringify([...a]),positionsBefore,'Label placement must not move nodes');
+ assert.equal(labels.size,g.nodes.length);
+ const svg=renderQuickTopologySvg(choices,'origin','起點',1,quickAddEstimatedMinutes,geo);
+ assert.match(svg,/ L /,'Connections are straight schematic links');
+});
+test('nearby dots can overlap, but their text labels avoid one another',()=>{
  const g=buildQuickTopology(compassCandidates,'center','起點');
  const geo={nodes:compassGeometry.nodes.map(n=>n.nodeId==='unknown'
   ?{...n,coordinate:[121.0105,24.002]}:n)};
- const a=layoutQuickTopology(g,geo),b=layoutQuickTopology(g,geo);
- assert.deepEqual([...a.positions],[...b.positions]);
- const ids=g.nodes.map(n=>n.id);
- for(let i=0;i<ids.length;i++)for(let j=i+1;j<ids.length;j++){
-  const p=a.positions.get(ids[i]),q=a.positions.get(ids[j]);
-  assert.ok(Math.abs(p.x-q.x)>=74||Math.abs(p.y-q.y)>=48,
-   'Schematic labels should not occupy virtually the same screen position');
+ const l=layoutQuickTopology(g,geo);
+ const labels=layoutQuickTopologyLabels(g,l);
+ const nodes=g.nodes.map(n=>n.id);
+ for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){
+  const a=labels.get(nodes[i]),b=labels.get(nodes[j]);
+  const width=Math.max(0,Math.min(a.r,b.r)-Math.max(a.l,b.l));
+  const height=Math.max(0,Math.min(a.b,b.b)-Math.max(a.t,b.t));
+  assert.ok(width*height<1,'Visible text labels should not overlap');
  }
 });
