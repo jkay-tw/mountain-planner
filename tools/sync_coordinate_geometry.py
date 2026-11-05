@@ -51,6 +51,19 @@ def manifest_catalog(root=ROOT):
 def input_fingerprint():
     review = load(OVERRIDES)
     nodes, edges, manual = manifest_catalog()
+    # Route JSON defines topology/identity, but coordinates are reviewed
+    # through the canonical overrides. Do not silently accept a direct
+    # route-node coordinate that the existing geometry updater would ignore.
+    reviews_by_id = {r["nodeId"]: r for r in review.get("nodes", [])}
+    for node in nodes.values():
+        direct = node.get("coordinate")
+        if direct is not None:
+            approved = reviews_by_id.get(node["id"], {})
+            if approved.get("action") != "coordinate" or approved.get("coordinate") != direct:
+                raise ValueError(
+                    "Direct route-node coordinate is not in owner-coordinate-overrides.json: "
+                    + node["id"]
+                )
     corrections = load(CORRECTIONS) if CORRECTIONS.exists() else {"nodes": []}
     clips = load(CLIPS) if CLIPS.exists() else {"routes": []}
     # Identical ordering, separators, and content to update_planner_terrain.py.
