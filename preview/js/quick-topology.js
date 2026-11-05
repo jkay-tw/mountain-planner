@@ -166,42 +166,76 @@ export function layoutQuickTopology(topology,geometryData=null){
 
 // Label layout never mutates geographic point coordinates. Greedy placement
 // uses text-only offsets and leader lines when the label is displaced.
+// Only LABELS move. Actual coordinate dots and straight route edges are
+// immutable. The current position gets a stable, close side label; all other
+// labels prefer the geographic side outward from the current route point.
 export function layoutQuickTopologyLabels(topology,layout){
  const used=[],labels=new Map();
- const box=n=>{
-  const lines=textLines((topology.first.some(b=>b.id===n.id&&b.returning)?'↩ ':'')+
-    (layout.estimatedIds.has(n.id)?'◌ ':'')+n.name);
-  return {w:clamp(Math.max(...lines.map(l=>Array.from(l).length))*12+12,72,144),
-          h:30+(lines.length-1)*13};
+ const currentPoint=layout.positions.get(topology.startId);
+ const rectFor=(x,y,w,h)=>({x,y,l:x-w/2,r:x+w/2,t:y,b:y+h,w,h});
+ const box=node=>{
+  const back=topology.first.some(b=>b.id===node.id&&b.returning);
+  const name=(back?'↩ ':'')+(layout.estimatedIds.has(node.id)?'◌ ':'')+node.name;
+  const lines=textLines(name);
+  const width=clamp(Math.max(...lines.map(line=>Array.from(line).length))*12+16,90,146);
+  return {w:width,h:40+(lines.length-1)*13};
  };
- const points=[...topology.nodes].sort((a,b)=>Number(b.id===topology.startId)-Number(a.id===topology.startId)||a.name.localeCompare(b.name,'zh-Hant'));
- for(const node of points){
-  const p=layout.positions.get(node.id),size=box(node);
+ const nodes=[...topology.nodes].sort((a,b)=>{
+  if(a.id===topology.startId)return -1;
+  if(b.id===topology.startId)return 1;
+  return a.level-b.level||a.name.localeCompare(b.name,'zh-Hant')||a.id.localeCompare(b.id);
+ });
+ for(const node of nodes){
+  const p=layout.positions.get(node.id);
   if(!p)continue;
-  const offsets=[[0,33],[0,-26],[size.w/2+14,0],[-size.w/2-14,0],
-   [size.w/2+9,28],[-size.w/2-9,28],[size.w/2+9,-24],[-size.w/2-9,-24],
-   [0,65],[0,-56],[size.w/2+18,63],[-size.w/2-18,63],
-   [size.w/2+18,-58],[-size.w/2-18,-58],[0,96],[0,-88]];
-  let best=null,bestCost=Infinity;
-  for(const [ox,oy] of offsets){
-   const x=clamp(p.x+ox,size.w/2+5,layout.width-size.w/2-5);
-   const y=clamp(p.y+oy,16,layout.height-size.h-5);
-   const rect={l:x-size.w/2,r:x+size.w/2,t:y,b:y+size.h};
-   let cost=Math.hypot(x-p.x,y-p.y)*.12;
-   for(const u of used){
-    const overlapX=Math.max(0,Math.min(rect.r,u.r)-Math.max(rect.l,u.l));
-    const overlapY=Math.max(0,Math.min(rect.b,u.b)-Math.max(rect.t,u.t));
-    cost+=overlapX*overlapY*10;
+  const {w,h}=box(node);
+  const isCurrent=node.id===topology.startId;
+  // Current position: ALWAYS near the right side of its own dot (or left if
+  // there isn't room). It is never sent to a distant free label slot.
+  const right=[p.x+15+w/2,p.y-h/2];
+  const left=[p.x-15-w/2,p.y-h/2];
+  const currentOptions=p.x+15+w<=layout.width-6?[right,left]:[left,right];
+  let proposals;
+  if(isCurrent)proposals=currentOptions;
+  else{
+   const dx=p.x-(currentPoint?.x??layout.width/2),dy=p.y-(currentPoint?.y??layout.height/2);
+   const sx=dx>=0?1:-1,sy=dy>=0?1:-1;
+   const R=[p.x+14+w/2,p.y-h/2],L=[p.x-14-w/2,p.y-h/2];
+   const U=[p.x,p.y-h-12],D=[p.x,p.y+12];
+   const UR=[p.x+12+w/2,p.y-h-8],UL=[p.x-12-w/2,p.y-h-8];
+   const DR=[p.x+12+w/2,p.y+8],DL=[p.x-12-w/2,p.y+8];
+   const outwardHoriz=sx>0?[R,UR,DR,U,D,L,UL,DL]:[L,UL,DL,U,D,R,UR,DR];
+   const outwardVert=sy>0?[D,DR,DL,R,L,U,UR,UL]:[U,UR,UL,R,L,D,DR,DL];
+   const diagonal=sx>0?(sy>0?[DR,R,D,UR,U,L,DL,UL]:[UR,R,U,DR,D,L,UL,DL])
+                        :(sy>0?[DL,L,D,UL,U,R,DR,UR]:[UL,L,U,DL,D,R,UR,DR]);
+   proposals=Math.abs(dx)>Math.abs(dy)*1.4?outwardHoriz:
+             Math.abs(dy)>Math.abs(dx)*1.4?outwardVert:diagonal;
+   // Only dense label clusters may use a slightly more distant position.
+   proposals=[...proposals,[p.x,p.y-h-51],[p.x,p.y+51],
+     [p.x+sx*(w/2+42),p.y-h/2],[p.x-sx*(w/2+42),p.y-h/2]];
+  }
+  let best=null,bestScore=Infinity;
+  for(const [wantedX,wantedY] of proposals){
+   const x=clamp(wantedX,w/2+5,layout.width-w/2-5);
+   const y=clamp(wantedY,7,layout.height-h-5);
+   const rect=rectFor(x,y,w,h);
+   const shifted=Math.hypot(x-wantedX,y-wantedY);
+   let score=shifted*8+Math.hypot(x-p.x,(y+h/2)-p.y)*.10;
+   if(isCurrent)score+=Math.abs(x-right[0])*.035;
+   else score+=proposals.indexOf(proposals.find(q=>q[0]===wantedX&&q[1]===wantedY))*24;
+   for(const usedBox of used){
+    const overX=Math.max(0,Math.min(rect.r,usedBox.r)-Math.max(rect.l,usedBox.l));
+    const overY=Math.max(0,Math.min(rect.b,usedBox.b)-Math.max(rect.t,usedBox.t));
+    score+=overX*overY*40;
    }
    for(const other of topology.nodes){
     if(other.id===node.id)continue;
-    const dot=layout.positions.get(other.id);if(!dot)continue;
-    if(dot.x>rect.l-7&&dot.x<rect.r+7&&dot.y>rect.t-7&&dot.y<rect.b+7)cost+=550;
+    const dot=layout.positions.get(other.id);
+    if(dot&&dot.x>rect.l-8&&dot.x<rect.r+8&&dot.y>rect.t-8&&dot.y<rect.b+8)score+=12000;
    }
-   if(cost<bestCost){bestCost=cost;best={x,y,...rect}}
+   if(score<bestScore){bestScore=score;best=rect}
   }
-  labels.set(node.id,best);
-  used.push(best);
+  labels.set(node.id,best);used.push(best);
  }
  return labels;
 }
@@ -233,10 +267,15 @@ export function renderQuickTopologySvg(candidates,startId,startName,coefficient,
   const nameY=label.y+12;
   const nameSvg='<text class="topo-node-name" text-anchor="middle" x="'+label.x+'" y="'+nameY+'">'+text.map((line,i)=>'<tspan x="'+label.x+'" dy="'+(i?13:0)+'">'+xml(line)+'</tspan>').join('')+'</text>';
   const metaY=nameY+(text.length-1)*13+14;
-  const metaSvg='<text class="topo-node-meta'+(routeKey?' quick-route-duration':'')+'" text-anchor="middle" x="'+label.x+'" y="'+metaY+'"'+(routeKey?' data-route-key="'+xml(routeKey)+'"':'')+'>'+xml(meta)+'</text>';
-  const displaced=Math.hypot(label.x-p.x,label.y+14-p.y)>42;
-  const leader=displaced?'<path class="topo-label-leader" d="M '+p.x+' '+p.y+' L '+label.x+' '+(label.y+12)+'" fill="none" stroke="#9aaa9f" stroke-width="1" stroke-dasharray="2 3"/>':'';
-  return '<g class="topo-node'+(current?' topo-current':back?' topo-back':'')+(estimated?' topo-estimated':'')+'"><title>'+xml(n.name+(current?'（目前位置）':back?'（原路返回）':'')+(estimated?'，座標未取得，位置為示意':''))+'</title><circle cx="'+p.x+'" cy="'+p.y+'" r="'+(current?10:7)+'" fill="'+(current?'#315d42':back?'#ead9bd':'#e4efe9')+'" stroke="'+(current?'#315d42':back?'#947041':'#557464')+'" stroke-width="2"'+(estimated?' stroke-dasharray="3 2"':'')+'/>'+leader+nameSvg+metaSvg+'</g>';
+  const metaSvg=current
+    ?'<g class="topo-current-badge"><rect x="'+(label.x-38)+'" y="'+(metaY-12)+'" width="76" height="18" rx="8" fill="#315d42"/><text class="topo-current-badge-text" x="'+label.x+'" y="'+(metaY+1)+'" text-anchor="middle" fill="#fff">目前位置</text></g>'
+    :'<text class="topo-node-meta'+(routeKey?' quick-route-duration':'')+'" text-anchor="middle" x="'+label.x+'" y="'+metaY+'"'+(routeKey?' data-route-key="'+xml(routeKey)+'"':'')+'>'+xml(meta)+'</text>';
+  // Leader lines connect the label's nearest boundary to the unchanged dot.
+  const targetX=clamp(p.x,label.l,label.r),targetY=clamp(p.y,label.t,label.b);
+  const distance=Math.hypot(targetX-p.x,targetY-p.y);
+  const leader=distance>(current?8:16)?'<path class="topo-label-leader" d="M '+p.x+' '+p.y+' L '+targetX+' '+targetY+'" fill="none" stroke="'+(current?'#315d42':'#9aaa9f')+'" stroke-width="'+(current?'1.5':'1')+'" stroke-dasharray="'+(current?'none':'2 3')+'"/>':'';
+  const halo=current?'<circle class="topo-current-halo" cx="'+p.x+'" cy="'+p.y+'" r="13" fill="#d5ece0" opacity=".82"/>':'';
+  return '<g class="topo-node'+(current?' topo-current':back?' topo-back':'')+(estimated?' topo-estimated':'')+'"><title>'+xml(n.name+(current?'（目前位置）':back?'（原路返回）':'')+(estimated?'，座標未取得，位置為示意':''))+'</title>'+leader+halo+'<circle cx="'+p.x+'" cy="'+p.y+'" r="'+(current?10:7)+'" fill="'+(current?'#315d42':back?'#ead9bd':'#e4efe9')+'" stroke="'+(current?'#315d42':back?'#947041':'#557464')+'" stroke-width="2"'+(estimated?' stroke-dasharray="3 2"':'')+'/>'+nameSvg+metaSvg+'</g>';
  }).join('');
  const compass=layout.mode==='geographic'
   ?'<g class="topo-compass"><path d="M 355 39 V 18 M 355 18 L 351 24 M 355 18 L 359 24" stroke="#587263" stroke-width="1.5" fill="none"/><text x="355" y="13" text-anchor="middle">北</text></g>'
