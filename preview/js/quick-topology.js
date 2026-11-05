@@ -3,10 +3,10 @@
 const xml=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const textLines=(name,limit=8)=>{
  const cps=Array.from(String(name??''));
- if(cps.length<=limit)return [cps.join('')];
- const a=cps.slice(0,limit).join('');
- const rest=cps.slice(limit);
- return [a,rest.length<=limit?rest.join(''):rest.slice(0,limit-1).join('')+'…'];
+ if(!cps.length)return [''];
+ const lines=[];
+ for(let i=0;i<cps.length;i+=limit)lines.push(cps.slice(i,i+limit).join(''));
+ return lines;
 };
 const fmt=m=>m===null?'時間待填':'約 '+m+' 分';
 export function buildQuickTopology(candidates,startId,startName){
@@ -237,11 +237,44 @@ export function layoutQuickTopologyLabels(topology,layout){
  return labels;
 }
 
+// When nearby placement runs out of space, reserve two ordered callout
+// columns and reduce the entire graph uniformly. Never hide a node name.
+export function layoutQuickTopologyCallouts(topology,layout){
+ const groups=[[],[]],center=layout.positions.get(topology.startId);
+ for(const node of [...topology.nodes].sort((a,b)=>layout.positions.get(a.id).y-layout.positions.get(b.id).y)){
+  const p=layout.positions.get(node.id);
+  let side=p.x<(center?.x??layout.width/2)?0:1;
+  if(Math.abs(p.x-(center?.x??layout.width/2))<10)side=groups[0].length<=groups[1].length?0:1;
+  groups[side].push(node);
+ }
+ const size=node=>{
+  const back=topology.first.some(b=>b.id===node.id&&b.returning);
+  const name=(back?'↩ ':'')+(layout.estimatedIds.has(node.id)?'◌ ':'')+node.name;
+  return 40+(textLines(name).length-1)*13;
+ };
+ const heights=groups.map(g=>g.reduce((sum,n)=>sum+size(n)+8,0));
+ const width=390,height=Math.max(360,...heights.map(h=>h+30));
+ const scale=Math.min(130/layout.width,(height-50)/layout.height);
+ const positions=new Map([...layout.positions].map(([id,p])=>[id,{x:width/2+(p.x-layout.width/2)*scale,y:height/2+(p.y-layout.height/2)*scale}]));
+ const labels=new Map();
+ groups.forEach((group,side)=>{
+  let y=(height-heights[side])/2;
+  for(const node of group){
+   const h=size(node),x=side?330:60,w=116;
+   labels.set(node.id,{x,y,l:x-w/2,r:x+w/2,t:y,b:y+h,w,h,hidden:false});
+   y+=h+8;
+  }
+ });
+ return {layout:{...layout,width,height,positions,scale:layout.scale?layout.scale*scale:layout.scale},labels};
+}
+
 export function renderQuickTopologySvg(candidates,startId,startName,coefficient,estimate,geometryData=null){
  const topology=buildQuickTopology(candidates,startId,startName);
- const layout=layoutQuickTopology(topology,geometryData);
+ let layout=layoutQuickTopology(topology,geometryData);
+ let labels=layoutQuickTopologyLabels(topology,layout);
+ const callouts=[...labels.values()].some(label=>label.hidden);
+ if(callouts)({layout,labels}=layoutQuickTopologyCallouts(topology,layout));
  const {positions}=layout;
- const labels=layoutQuickTopologyLabels(topology,layout);
  const edgeHtml=topology.edges.map(e=>{
   const a=positions.get(e.from),b=positions.get(e.to);if(!a||!b)return '';
   // A straight schematic connection preserves the actual two-endpoint
@@ -279,8 +312,9 @@ export function renderQuickTopologySvg(candidates,startId,startName,coefficient,
  }).join('');
  const omitted=[...labels.values()].filter(l=>l?.hidden).length;
  const hiddenHint=omitted?'<text class="topo-fallback-label" x="10" y="'+(layout.height-5)+'">部分密集節點名稱請參考快速加入按鈕</text>':'';
+ const compassX=callouts?195:355;
  const compass=layout.mode==='geographic'
-  ?'<g class="topo-compass"><path d="M 355 39 V 18 M 355 18 L 351 24 M 355 18 L 359 24" stroke="#587263" stroke-width="1.5" fill="none"/><text x="355" y="13" text-anchor="middle">北</text></g>'
+  ?'<g class="topo-compass" transform="translate('+(compassX-355)+' 0)"><path d="M 355 39 V 18 M 355 18 L 351 24 M 355 18 L 359 24" stroke="#587263" stroke-width="1.5" fill="none"/><text x="355" y="13" text-anchor="middle">北</text></g>'
   :'<text class="topo-fallback-label" x="10" y="15">座標不足，採純拓樸示意</text>';
  return '<svg class="quick-topology-svg" xmlns="http://www.w3.org/2000/svg" data-layout-mode="'+layout.mode+'" data-known-nodes="'+layout.knownCount+'" viewBox="0 0 '+layout.width+' '+layout.height+'" role="img" aria-label="'+xml('從'+startName+'出發的局部路網示意圖')+'">'+edgeHtml+nodeHtml+compass+hiddenHint+'</svg>';
 }
