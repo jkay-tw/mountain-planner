@@ -55,3 +55,62 @@ test('one confirmed segment with unknown minutes stays unknown',()=>{
  const confirmed={...walking('center','branch-a',null),verificationStatus:'owner-confirmed-connection',manualTimeRequired:true};
  assert.equal(quickAddEstimatedMinutes({segments:[confirmed]},1.25),null);
 });
+
+
+const compassCandidates=['north','south','east','west','unknown'].map(id=>({
+ key:'center>'+id,nodeId:id,direction:0,
+ segments:[walking('center',id,20)]
+}));
+const compassGeometry={nodes:[
+ {nodeId:'center',coordinate:[121,24],coordinatePolicy:'active'},
+ {nodeId:'north',coordinate:[121,24.01],coordinatePolicy:'active'},
+ {nodeId:'south',coordinate:[121,23.99],coordinatePolicy:'active'},
+ {nodeId:'east',coordinate:[121.01,24],coordinatePolicy:'active'},
+ {nodeId:'west',coordinate:[120.99,24],coordinatePolicy:'active'},
+ {nodeId:'unknown',coordinate:null,coordinatePolicy:'active'}
+]};
+test('coordinate-bearing local layout preserves the four rough compass directions',()=>{
+ const graph=buildQuickTopology(compassCandidates,'center','起點');
+ const l=layoutQuickTopology(graph,compassGeometry),c=l.positions.get('center');
+ assert.equal(l.mode,'geographic');
+ assert.ok(l.positions.get('north').y<c.y);
+ assert.ok(l.positions.get('south').y>c.y);
+ assert.ok(l.positions.get('east').x>c.x);
+ assert.ok(l.positions.get('west').x<c.x);
+ assert.ok(l.estimatedIds.has('unknown'));
+ const svg=renderQuickTopologySvg(compassCandidates,'center','起點',1,quickAddEstimatedMinutes,compassGeometry);
+ assert.match(svg,/data-layout-mode="geographic"/);
+ assert.match(svg,/topo-compass/);
+ assert.match(svg,/topo-estimated/);
+ assert.match(svg,/stroke-dasharray="3 2"/);
+ assert.match(svg,/◌/);
+});
+test('the old abstract topology is retained if there is insufficient coordinate coverage',()=>{
+ const graph=buildQuickTopology(compassCandidates,'center','起點');
+ for(const data of [null,{nodes:[]},{nodes:[{nodeId:'center',coordinate:[121,24]}]}]){
+  const l=layoutQuickTopology(graph,data);
+  assert.equal(l.mode,'topology');
+  assert.equal(l.positions.size,graph.nodes.length);
+ }
+ const svg=renderQuickTopologySvg(compassCandidates,'center','起點',1,quickAddEstimatedMinutes);
+ assert.match(svg,/座標不足，採純拓樸示意/);
+ assert.doesNotMatch(svg,/topo-compass/);
+});
+test('ignored or vehicle-only coordinates never become location anchors',()=>{
+ const g=buildQuickTopology(compassCandidates,'center','起點');
+ const onlyIgnored={nodes:compassGeometry.nodes.map(n=>({...n,coordinatePolicy:'ignored'}))};
+ assert.equal(layoutQuickTopology(g,onlyIgnored).mode,'topology');
+});
+test('nodes near one another are separated for legible diagram labels',()=>{
+ const g=buildQuickTopology(compassCandidates,'center','起點');
+ const geo={nodes:compassGeometry.nodes.map(n=>n.nodeId==='unknown'
+  ?{...n,coordinate:[121.0105,24.002]}:n)};
+ const a=layoutQuickTopology(g,geo),b=layoutQuickTopology(g,geo);
+ assert.deepEqual([...a.positions],[...b.positions]);
+ const ids=g.nodes.map(n=>n.id);
+ for(let i=0;i<ids.length;i++)for(let j=i+1;j<ids.length;j++){
+  const p=a.positions.get(ids[i]),q=a.positions.get(ids[j]);
+  assert.ok(Math.abs(p.x-q.x)>=74||Math.abs(p.y-q.y)>=48,
+   'Schematic labels should not occupy virtually the same screen position');
+ }
+});
