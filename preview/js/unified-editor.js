@@ -331,10 +331,21 @@ function renderQuickAdd(d){
  const button=c=>'<button type="button" class="quick-node secondary" data-quick-key="'+esc(c.key)+'" title="'+esc(c.direction<0?'先返回上一點的方向':c.via?'經 '+c.via:'直接相鄰')+'">'+(c.direction<0?'↩ ':'＋ ')+esc(c.name)+(c.via?'<small class="quick-via">經 '+esc(c.via)+'</small>':'')+'</button>';
  if(!candidates.length)return '<div class="quick-add"><strong>⚡ 快速加入</strong><div class="quick-chips"><span>沒有已收錄的相鄰步行節點</span></div></div>';
  const estimate=c=>{const minutes=quickAddEstimatedMinutes(c,d.coefficient);return minutes===null?'時間待填':'約 '+minutes+' 分'};
- const choice=c=>'<div class="quick-route-line '+(c.steps===2?'quick-route-via':'')+'"><span class="quick-route-name">'+(c.steps===2?'↳ ':'')+esc(c.name)+'</span><span class="quick-route-meta">'+(c.steps===2?'經 '+esc(c.via)+' · ':'直接相鄰 · ')+esc(estimate(c))+'</span></div>';
+ const choice=c=>'<div class="quick-route-line '+(c.steps===2?'quick-route-via':'')+'"><span class="quick-route-name">'+(c.steps===2?'↳ ':'')+esc(c.name)+'</span><span class="quick-route-meta">'+(c.steps===2?'經 '+esc(c.via)+' · ':'直接相鄰 · ')+'<span class="quick-route-duration" data-route-key="'+esc(c.key)+'">'+esc(estimate(c))+'</span></span></div>';
  const branch=b=>'<section class="quick-route-branch"><div class="quick-route-branch-title">'+(b.returning?'↩ 原路返回：':'經由 ')+esc(b.name)+'</div>'+b.choices.map(choice).join('')+'</section>';
  const panel='<details class="quick-relations"><summary aria-label="查看從'+esc(p.name)+'出發的路線關係">路線關係</summary><div class="quick-route-panel"><div class="quick-route-current">目前位置：'+esc(p.name)+'</div>'+quickAddBranches(candidates).map(branch).join('')+'<p class="quick-route-hint">時間依當日預設係數估算，未計休息與條件式時間；僅列已核實或已確認連通的步行路段，不代表實際地圖方位。</p></div></details>';
  return '<div class="quick-add"><strong>⚡ 快速加入</strong><div class="quick-chips">'+candidates.map(button).join('')+panel+'</div></div>';
+}
+// The day coefficient can change without a full render (for a stable input
+// focus). Update any existing relationship-panel estimates in place.
+function refreshQuickRelationTimes(card,d){
+ const dayIndex=days.indexOf(d),prior=dayIndex>0&&d.linkedStart?locs(days[dayIndex-1]).at(-2)?.nodeId:null;
+ const choices=new Map(directionalQuickAdd(route,d,prior).map(c=>[c.key,c]));
+ card.querySelectorAll('.quick-route-duration[data-route-key]').forEach(label=>{
+  const candidate=choices.get(label.dataset.routeKey);
+  const m=candidate?quickAddEstimatedMinutes(candidate,d.coefficient):null;
+  label.textContent=m===null?'時間待填':'約 '+m+' 分';
+ });
 }
 function renderDay(d,i){
   const s=summarizeDay(d),collapsed=collapsedDays.has(d.id),f=first(d),l=last(d);
@@ -487,7 +498,7 @@ function bindDays(){
     const updateDayCoef=value=>{
       if(!Number.isFinite(value)||value<.1||value>3){dayCoef.value=d.coefficient.toFixed(2);return}
       const next=round2(value);dayCoef.value=next.toFixed(2);
-      if(d.coefficient!==next){d.coefficient=next;saveAutosave();checkpoint()}
+      if(d.coefficient!==next){d.coefficient=next;refreshQuickRelationTimes(card,d);saveAutosave();checkpoint()}
     };
     dayCoef.onchange=()=>updateDayCoef(Number(dayCoef.value));
     dayCoef.onkeydown=e=>{if(e.key!=='ArrowUp'&&e.key!=='ArrowDown')return;e.preventDefault();updateDayCoef(round2(Number(dayCoef.value)+(e.key==='ArrowUp'?.1:-.1)))};
