@@ -374,13 +374,10 @@ function terrainSegmentHtml(feature,bridged=false){
 }
 // Keep the water toggle immediately after the location's last characters,
 // including when the location wraps to a second line.
-function renderPlaceLabel(name,waterButton){
-  // Only the final character stays with water, to avoid a stranded icon
-  // without unnecessarily moving two or more name characters to the next line.
-  const chars=Array.from(String(name??''));
-  const tail=chars.pop()||'';
-  return '<span class="place-name">'+esc(chars.join(''))+
-    '<span class="place-tail">'+esc(tail)+waterButton+'</span></span>';
+function renderPlaceLabel(name){
+  // The adjacent water button is a separate flex item; both icons center
+  // beside the full, naturally wrapping location-name block.
+  return '<span class="place-name">'+esc(name)+'</span>';
 }
 function renderTimeline(d){
   const rows=buildTimeline(d).rows;
@@ -411,7 +408,7 @@ function renderTimeline(d){
       const water='<button class="icon-toggle water '+(r.hasWater?'active':'')+'" data-index="'+idx+'" title="水源">💧</button>';
       const placeName=manual
         ?'<span class="drag-handle" draggable="true" data-index="'+idx+'">⋮⋮</span>'+peak+'<input class="manual-name" data-index="'+idx+'" value="'+esc(r.name)+'">'+water
-        :peak+renderPlaceLabel(r.name,water);
+        :peak+renderPlaceLabel(r.name)+water;
       html+='<div class="it-row" data-index="'+idx+'">'+
       '<div class="row-identity"><div class="place '+(manual?'':'place-inline')+'">'+placeName+'</div>'+
       '<div class="arrival">'+r.arrival+'</div></div>'+
