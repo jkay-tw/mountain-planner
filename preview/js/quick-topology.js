@@ -269,6 +269,9 @@ export function layoutQuickTopologyCallouts(topology,layout){
   const labels=new Map(), placed=[];
   const overlap=(a,b)=>a.l<b.r+3&&a.r>b.l-3&&a.t<b.b+3&&a.b>b.t-3;
   const distance=(p,b)=>Math.hypot(Math.max(b.l-p.x,0,p.x-b.r),Math.max(b.t-p.y,0,p.y-b.b));
+  const target=(p,b)=>({x:clamp(p.x,b.l,b.r),y:clamp(p.y,b.t,b.b)});
+  const cross=(a,b,c)=>(b.x-a.x)*(c.y-a.y)-(b.y-a.y)*(c.x-a.x);
+  const intersects=(a,b,c,d)=>cross(a,b,c)*cross(a,b,d)<0&&cross(c,d,a)*cross(c,d,b)<0;
   for(const n of ordered){
    const p=positions.get(n.id),{w,h}=box(n);let best=null,bestCost=Infinity;
    // Fine grid includes all four sides and diagonals, not fixed columns.
@@ -285,6 +288,7 @@ export function layoutQuickTopologyCallouts(topology,layout){
      const q=positions.get(otherId);
      if((x-p.x)*(other.x-q.x)>0&&Math.abs(p.y-q.y)>8&&
         (p.y-q.y)*(y+h/2-(other.y+other.h/2))<0)cost+=80;
+     if(intersects(p,target(p,b),q,target(q,other)))cost+=70;
     }
     if(cost>=bestCost)continue;
     for(const edge of topology.edges){const a=positions.get(edge.from),c=positions.get(edge.to);if(!a||!c)continue;
