@@ -5,7 +5,7 @@ import {syncLinkedDays} from './day-link.js?v=segments1';
 import {chooseSaveTarget,writeDownload,reportSaveError} from './save-file.js?v=v086';
 import {bindProfileExports} from './profile-export.js?v=v084';
 import {makeDemoDays} from './demo-itinerary.js?v=segments1';
-import {directionalQuickAdd,appendQuickPath} from './quick-add.js?v=segments1';
+import {directionalQuickAdd,appendQuickPath,quickAddBranches,quickAddEstimatedMinutes} from './quick-add.js?v=relations1';
 import {dayTerrain,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=layout2';
 import {createTabAutosave} from './tab-autosave.js?v=v0725';
 import {loadManifest,loadRoute} from './data-loader.js';
@@ -328,8 +328,13 @@ function renderQuickAdd(d){
  const p=last(d);if(p?.type!=='location')return '<div class="quick-add empty">選擇起點後顯示快速加入；手動點請用節點選單銜接。</div>';
  const dayIndex=days.indexOf(d),prior=dayIndex>0&&d.linkedStart?locs(days[dayIndex-1]).at(-2)?.nodeId:null;
  const candidates=directionalQuickAdd(route,d,prior);
- const button=c=>'<button type="button" class="quick-node secondary" data-quick-key="'+esc(c.key)+'">＋ '+esc(c.name)+'</button>';
- return '<div class="quick-add"><strong>⚡ 快速加入</strong><div class="quick-chips">'+(candidates.map(button).join('')||'<span>沒有已收錄的相鄰步行節點</span>')+'</div></div>';
+ const button=c=>'<button type="button" class="quick-node secondary" data-quick-key="'+esc(c.key)+'" title="'+esc(c.direction<0?'先返回上一點的方向':c.via?'經 '+c.via:'直接相鄰')+'">'+(c.direction<0?'↩ ':'＋ ')+esc(c.name)+(c.via?'<small class="quick-via">經 '+esc(c.via)+'</small>':'')+'</button>';
+ if(!candidates.length)return '<div class="quick-add"><strong>⚡ 快速加入</strong><div class="quick-chips"><span>沒有已收錄的相鄰步行節點</span></div></div>';
+ const estimate=c=>{const minutes=quickAddEstimatedMinutes(c,d.coefficient);return minutes===null?'時間待填':'約 '+minutes+' 分'};
+ const choice=c=>'<div class="quick-route-line '+(c.steps===2?'quick-route-via':'')+'"><span class="quick-route-name">'+(c.steps===2?'↳ ':'')+esc(c.name)+'</span><span class="quick-route-meta">'+(c.steps===2?'經 '+esc(c.via)+' · ':'直接相鄰 · ')+esc(estimate(c))+'</span></div>';
+ const branch=b=>'<section class="quick-route-branch"><div class="quick-route-branch-title">'+(b.returning?'↩ 原路返回：':'經由 ')+esc(b.name)+'</div>'+b.choices.map(choice).join('')+'</section>';
+ const panel='<details class="quick-relations"><summary aria-label="查看從'+esc(p.name)+'出發的路線關係">路線關係</summary><div class="quick-route-panel"><div class="quick-route-current">目前位置：'+esc(p.name)+'</div>'+quickAddBranches(candidates).map(branch).join('')+'<p class="quick-route-hint">時間依當日預設係數估算，未計休息與條件式時間；僅列已核實或已確認連通的步行路段，不代表實際地圖方位。</p></div></details>';
+ return '<div class="quick-add"><strong>⚡ 快速加入</strong><div class="quick-chips">'+candidates.map(button).join('')+panel+'</div></div>';
 }
 function renderDay(d,i){
   const s=summarizeDay(d),collapsed=collapsedDays.has(d.id),f=first(d),l=last(d);
