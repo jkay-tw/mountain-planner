@@ -1,0 +1,35 @@
+name: Coordinate and geometry consistency gate
+
+on:
+  pull_request:
+    paths:
+      - 'data/geometry/**'
+      - 'data/routes/owner-reviewed/**'
+      - 'data/unified-editor-manifest.json'
+      - 'preview/data/geometry/**'
+      - 'preview/data/routes/owner-reviewed/**'
+      - 'preview/data/unified-editor-manifest.json'
+      - 'preview/js/unified-editor.js'
+      - 'tools/sync_coordinate_geometry.py'
+      - 'tests/test_sync_coordinate_geometry.py'
+  workflow_dispatch:
+
+jobs:
+  coordinate-consistency:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate coordinate and geometry synchronization
+        run: python3 tools/sync_coordinate_geometry.py --check
+      - name: Test offline synchronization and cache protections
+        run: python3 -m unittest discover -s tests -p 'test_sync_coordinate_geometry.py'
+      - name: Document rebuild prerequisites on failed sync
+        if: failure()
+        run: |
+          echo 'Coordinate input or topology changed without matching geometry.'
+          echo 'See docs/QUICK_MAP_COORDINATE_SYNC_20261105.md'
+          echo 'Recompute with tools/sync_coordinate_geometry.py --build-preview OSM_JSON_GZ DEM_ZIP.'
+          echo 'Never patch coordinate dots without matching GPX/DEM geometry.'
