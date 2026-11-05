@@ -275,9 +275,21 @@ button{border:0;border-radius:8px;padding:9px 12px;background:var(--accent);colo
   .touch-sortable .drag-handle{
     display:inline-flex;align-items:center;justify-content:center;
     min-width:36px;min-height:36px;padding:0 7px;margin-left:-4px;
-    touch-action:none;-webkit-user-drag:none;
+    touch-action:pan-y;-webkit-user-drag:none;
   }
   .touch-sortable .place-name,.touch-sortable .arrival{
     -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;
   }
+}
+
+/* Fixed drop marker avoids stacking/overflow bugs in responsive grid rows. */
+.mobile-drop-indicator {
+  position:fixed;z-index:10001;height:5px;border-radius:5px;
+  background:#167b46;box-shadow:0 0 0 1px white,0 2px 6px rgba(0,0,0,.25);
+  pointer-events:none;
+}
+.mobile-drop-indicator::after {
+  content:"放在這裡";position:absolute;right:0;top:-12px;
+  padding:3px 6px;border-radius:5px;background:#167b46;
+  color:white;font-size:11px;font-weight:700;line-height:1.3;white-space:nowrap;
 }
