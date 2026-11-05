@@ -192,3 +192,24 @@
 .timeline .it-row .place-inline .place-tail>.icon-toggle.water{
   display:inline-block;vertical-align:middle;margin-left:2px;
 }
+
+
+/* Narrow itinerary: preserve the former two-sided layout within the place cell.
+   The water toggle stays on the first line at the right edge, independent of
+   the full name wrapping. Wide/medium screens retain the inline placement. */
+@container itinerary (max-width:700px){
+  .timeline .it-row .row-identity>.place.place-inline{
+    position:relative;
+    padding-right:23px;
+    min-height:24px;
+  }
+  .timeline .it-row .place-inline .place-tail{
+    white-space:normal;
+  }
+  .timeline .it-row .place-inline .place-tail>.icon-toggle.water{
+    position:absolute;
+    right:0;
+    top:0;
+    margin:0;
+  }
+}
