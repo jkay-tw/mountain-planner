@@ -322,3 +322,11 @@ button{border:0;border-radius:8px;padding:9px 12px;background:var(--accent);colo
   font-weight:600;
   color:#536B7A;
 }
+
+/* Preview typography audit: location labels are primary itinerary information.
+   Manual location remains an editable input; preserve >=16px on mobile to avoid iOS zoom. */
+.it-row .place-name{font-size:15px;line-height:1.4}
+.it-row .manual-name{font-size:15px}
+@media(max-width:600px){
+  .it-row .manual-name{font-size:16px}
+}
