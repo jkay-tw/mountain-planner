@@ -22,6 +22,11 @@ export function bindMobileTouchSort(card, dayIndex, onDrop) {
   let holdTimer = null;
   let autoFrame = null;
   let ghost = null;
+  let indicator = null;
+  // On touch-first devices native HTML drag can steal touch events (notably WebKit).
+  if (window.matchMedia?.('(pointer: coarse)').matches) {
+    for (const row of sources) row.querySelector('.drag-handle').draggable = false;
+  }
 
   const findTouch = (list, id) => [...list].find(t => t.identifier === id);
   const clearMarkers = () => rows.forEach(row =>
@@ -35,7 +40,9 @@ export function bindMobileTouchSort(card, dayIndex, onDrop) {
     clearMarkers();
     if (gesture) gesture.row.classList.remove('touch-dragging');
     if (ghost) ghost.remove();
+    if (indicator) indicator.remove();
     ghost = null;
+    indicator = null;
     gesture = null;
   }
 
@@ -50,8 +57,23 @@ export function bindMobileTouchSort(card, dayIndex, onDrop) {
   function mark(slot) {
     clearMarkers();
     const next = rows.find(row => Number(row.dataset.index) === slot);
+    const last = rows[rows.length - 1];
+    const anchor = next || last;
+    if (!anchor) return;
     if (next) next.classList.add('touch-drop-before');
-    else rows[rows.length - 1]?.classList.add('touch-drop-after');
+    else last.classList.add('touch-drop-after');
+    // Body-level fixed marker: avoids clipped/hidden row pseudo-elements on iOS.
+    if (!indicator) {
+      indicator = document.createElement('div');
+      indicator.className = 'mobile-drop-indicator';
+      indicator.setAttribute('aria-hidden','true');
+      document.body.appendChild(indicator);
+    }
+    const rect = anchor.getBoundingClientRect();
+    const markerY = next ? rect.top : rect.bottom;
+    indicator.style.left = Math.max(0, rect.left) + 'px';
+    indicator.style.width = rect.width + 'px';
+    indicator.style.top = Math.max(5, Math.min(window.innerHeight - 10, markerY)) + 'px';
   }
 
   function update(y) {
@@ -74,7 +96,7 @@ export function bindMobileTouchSort(card, dayIndex, onDrop) {
     autoFrame = null;
     if (!gesture?.active) return;
     const speed = edgeSpeed(gesture.lastY);
-    if (speed) {
+    if (speed && gesture.moved) {
       window.scrollBy(0, speed);
       update(gesture.lastY);
     }
@@ -91,7 +113,7 @@ export function bindMobileTouchSort(card, dayIndex, onDrop) {
                   '行程項目';
     ghost = document.createElement('div');
     ghost.className = 'mobile-drag-ghost';
-    ghost.textContent = '⋮⋮ ' + label;
+    ghost.textContent = '拖曳中 · ' + label;
     ghost.style.left = Math.max(8, Math.min(rect.left, window.innerWidth - 190)) + 'px';
     ghost.style.width = Math.min(250, window.innerWidth - 20) + 'px';
     document.body.appendChild(ghost);
@@ -111,15 +133,11 @@ export function bindMobileTouchSort(card, dayIndex, onDrop) {
       gesture = {
         row, from: Number(row.dataset.index), id: touch.identifier,
         startX: touch.clientX, startY: touch.clientY, lastY: touch.clientY,
-        active: false, slot: null
+        active: false, moved: false, slot: null
       };
-      if (handle) {
-        // Suppress native drag/selection only on the handle, not on the row.
-        event.preventDefault();
-        activate();
-      } else {
-        holdTimer = setTimeout(activate, 380);
-      }
+      // A brief handle hold prevents normal page swipes from grabbing a row.
+      // Do not preventDefault here: until activation, the browser must be able to scroll.
+      holdTimer = setTimeout(activate, handle ? 220 : 380);
     }, {passive: false});
 
     row.addEventListener('touchmove', event => {
@@ -132,6 +150,7 @@ export function bindMobileTouchSort(card, dayIndex, onDrop) {
         return; // Ordinary vertical scrolling remains browser-controlled.
       }
       if (event.cancelable) event.preventDefault();
+      if (Math.hypot(touch.clientX - gesture.startX, touch.clientY - gesture.startY) > 5) gesture.moved = true;
       update(touch.clientY);
     }, {passive: false});
 
