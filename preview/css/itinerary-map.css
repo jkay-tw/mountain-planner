@@ -35,3 +35,34 @@
 
 .geometry-body>.geometry-label-hint{font-size:11px;color:#718078;line-height:1.4;margin:2px 0 4px}
 .floating-history .float-more{position:relative}.floating-history .float-more>summary{list-style:none;display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:#edf1ed;color:#455048;font-size:18px;font-weight:700;cursor:pointer;box-shadow:0 7px 20px #0002}.floating-history .float-more>summary::-webkit-details-marker{display:none}.floating-history .float-menu{position:absolute;right:0;bottom:46px;width:170px;max-width:calc(100vw - 24px);background:#fff;border:1px solid #dce6dc;border-radius:9px;padding:5px;box-shadow:0 10px 24px #0002}.floating-history .float-menu button{display:block;width:100%;height:auto;min-height:36px;padding:8px;text-align:left;border:0;border-radius:6px;background:transparent;color:#334137;box-shadow:none;font-size:12px;white-space:normal}.floating-history .float-menu button:hover{background:#f2f5f2}@media(max-width:600px){.floating-history .float-more>summary{width:36px;height:36px}}
+
+
+/* Preview: make time estimates legible and keep each terrain measurement intact. */
+.it-row .calculated-time{font-size:15px}
+.it-row .route-info .secondary-info{font-size:12px;color:#65756d}
+.timeline .it-row>.terrain-cell{
+  display:flex;flex-wrap:wrap;align-items:center;
+  column-gap:8px;row-gap:2px;overflow-wrap:normal;
+}
+.it-row .terrain-cell>.terrain-metric{flex:0 0 auto;white-space:nowrap}
+.it-row .terrain-cell>.terrain-context,
+.it-row .terrain-cell>.terrain-status{white-space:normal;overflow-wrap:anywhere}
+
+/* Preview: switch to the already established medium-width two-row layout
+   before the wide layout squeezes the terrain column to fragmented text. */
+@media(min-width:601px) and (max-width:1120px){
+  .itinerary-head{display:none}
+  .it-row{
+    grid-template-columns:minmax(0,.9fr) 48px minmax(120px,1.1fr) minmax(100px,1fr) 28px;
+    grid-template-areas:"place arrival time terrain terrain" "note note note note menu";
+    column-gap:7px;align-items:center;
+  }
+  .it-row>.place{grid-area:place}
+  .it-row>.arrival{grid-area:arrival;text-align:center}
+  .it-row>.route-info{grid-area:time;flex-wrap:wrap;white-space:normal;min-width:0}
+  .it-row>.terrain-cell{grid-area:terrain;text-align:left}
+  .it-row>.terrain-note,.it-row>.note-input{grid-area:note}
+  .it-row>.row-menu{grid-area:menu;justify-self:end}
+  .it-row .place-name{white-space:normal;overflow-wrap:anywhere}
+  .it-row .note-input{width:100%;box-sizing:border-box;min-width:0}
+}
