@@ -6,7 +6,7 @@ import {chooseSaveTarget,writeDownload,reportSaveError} from './save-file.js?v=v
 import {bindProfileExports} from './profile-export.js?v=v084';
 import {makeDemoDays} from './demo-itinerary.js?v=segments1';
 import {directionalQuickAdd,appendQuickPath,quickAddEstimatedMinutes} from './quick-add.js?v=relations1';
-import {renderQuickTopologySvg} from './quick-topology.js?v=callouts1';
+import {renderQuickTopologySvg} from './quick-topology.js?v=spacing1';
 import {dayTerrain,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=layout2';
 import {createTabAutosave} from './tab-autosave.js?v=v0725';
 import {loadManifest,loadRoute} from './data-loader.js';
@@ -342,7 +342,8 @@ function renderQuickAdd(d){
  const button=c=>'<button type="button" class="quick-node secondary" data-quick-key="'+esc(c.key)+'" title="'+esc(c.direction<0?'先返回上一點的方向':c.via?'經 '+c.via:'直接相鄰')+'">'+(c.direction<0?'↩ ':'＋ ')+esc(c.name)+(c.via?'<small class="quick-via">經 '+esc(c.via)+'</small>':'')+'</button>';
 
  const svg=renderQuickTopologySvg(candidates,p.nodeId,p.name,d.coefficient,quickAddEstimatedMinutes,terrainData);
- const panel='<details class="quick-relations"'+(openQuickMaps.has(d.id)?' open':'')+'><summary aria-label="查看從'+esc(p.name)+'出發的路網拓樸示意圖">路網小地圖</summary><div class="quick-route-panel"><div class="quick-route-current">目前位置：'+esc(p.name)+'</div><div class="quick-topology-canvas">'+svg+'</div><p class="quick-route-hint">已定位節點依座標等比例繪製；直線僅代表路網連通，不是實際步道線形。名稱可能移動並用細線指向節點；虛線圓點為缺座標示意位置。座標不足則顯示純拓樸圖。</p><p class="quick-route-hint">時間依當日預設係數估算，不含休息與條件式時間；「多條路線」請依上方快速加入的經由節點辨別。</p></div></details>';
+ const positionHint=svg.includes('data-displaced="true"')?'節點密集，圓點已局部錯開以利辨識，位置與距離並非精確比例。':'已定位節點依座標等比例繪製。';
+ const panel='<details class="quick-relations"'+(openQuickMaps.has(d.id)?' open':'')+'><summary aria-label="查看從'+esc(p.name)+'出發的路網拓樸示意圖">路網小地圖</summary><div class="quick-route-panel"><div class="quick-route-current">目前位置：'+esc(p.name)+'</div><div class="quick-topology-canvas">'+svg+'</div><p class="quick-route-hint">'+positionHint+'直線僅代表路網連通，不是實際步道線形。名稱可能移動並用細線指向節點；虛線圓點為缺座標示意位置。座標不足則顯示純拓樸圖。</p><p class="quick-route-hint">時間依當日預設係數估算，不含休息與條件式時間；「多條路線」請依上方快速加入的經由節點辨別。</p></div></details>';
  return '<div class="quick-add"><strong>⚡ 快速加入</strong><div class="quick-chips">'+(candidates.length?candidates.map(button).join(''):'<span>沒有已收錄的相鄰步行節點</span>')+panel+'</div></div>';
 }
 // The day coefficient can change without a full render (for a stable input
