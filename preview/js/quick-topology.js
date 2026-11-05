@@ -253,9 +253,28 @@ export function layoutQuickTopologyCallouts(topology,layout){
   return 40+(textLines(name).length-1)*13;
  };
  const heights=groups.map(g=>g.reduce((sum,n)=>sum+size(n)+8,0));
- const width=390,height=Math.max(360,...heights.map(h=>h+30));
- const scale=Math.min(130/layout.width,(height-50)/layout.height);
+ const width=390,height=Math.max(360,topology.nodes.length*25,...heights.map(h=>h+30));
+ const scale=Math.min(160/layout.width,(height-90)/layout.height);
  const positions=new Map([...layout.positions].map(([id,p])=>[id,{x:width/2+(p.x-layout.width/2)*scale,y:height/2+(p.y-layout.height/2)*scale}]));
+ // Screen-only spacing when real positions are too close to distinguish.
+ // Prefer a nearby position and keep all circles inside the central map area.
+ const placed=[];
+ const order=[...topology.nodes].sort((a,b)=>Number(b.id===topology.startId)-Number(a.id===topology.startId)||a.id.localeCompare(b.id));
+ let displaced=false;
+ for(const node of order){
+  const original=positions.get(node.id);
+  let chosen=null;
+  for(let radius=0;radius<=height&&!chosen;radius+=4){
+   const count=radius?Math.max(12,Math.ceil(2*Math.PI*radius/6)):1;
+   for(let i=0;i<count;i++){
+    const angle=2*Math.PI*i/count;
+    const p={x:original.x+radius*Math.cos(angle),y:original.y+radius*Math.sin(angle)};
+    if(p.x<130||p.x>260||p.y<45||p.y>height-20)continue;
+    if(placed.every(q=>Math.hypot(q.x-p.x,q.y-p.y)>=24)){chosen=p;break;}
+   }
+  }
+  if(chosen){positions.set(node.id,chosen);placed.push(chosen);if(Math.hypot(chosen.x-original.x,chosen.y-original.y)>.1)displaced=true;}
+ }
  const labels=new Map();
  groups.forEach((group,side)=>{
   let y=(height-heights[side])/2;
@@ -265,14 +284,16 @@ export function layoutQuickTopologyCallouts(topology,layout){
    y+=h+8;
   }
  });
- return {layout:{...layout,width,height,positions,scale:layout.scale?layout.scale*scale:layout.scale},labels};
+ return {layout:{...layout,width,height,positions,displaced,scale:layout.scale?layout.scale*scale:layout.scale},labels};
 }
 
 export function renderQuickTopologySvg(candidates,startId,startName,coefficient,estimate,geometryData=null){
  const topology=buildQuickTopology(candidates,startId,startName);
  let layout=layoutQuickTopology(topology,geometryData);
  let labels=layoutQuickTopologyLabels(topology,layout);
- const callouts=[...labels.values()].some(label=>label.hidden);
+ const points=[...layout.positions.values()];
+ const crowded=points.some((p,i)=>points.slice(i+1).some(q=>Math.hypot(p.x-q.x,p.y-q.y)<24));
+ const callouts=crowded||[...labels.values()].some(label=>label.hidden);
  if(callouts)({layout,labels}=layoutQuickTopologyCallouts(topology,layout));
  const {positions}=layout;
  const edgeHtml=topology.edges.map(e=>{
@@ -316,5 +337,5 @@ export function renderQuickTopologySvg(candidates,startId,startName,coefficient,
  const compass=layout.mode==='geographic'
   ?'<g class="topo-compass" transform="translate('+(compassX-355)+' 0)"><path d="M 355 39 V 18 M 355 18 L 351 24 M 355 18 L 359 24" stroke="#587263" stroke-width="1.5" fill="none"/><text x="355" y="13" text-anchor="middle">北</text></g>'
   :'<text class="topo-fallback-label" x="10" y="15">座標不足，採純拓樸示意</text>';
- return '<svg class="quick-topology-svg" xmlns="http://www.w3.org/2000/svg" data-layout-mode="'+layout.mode+'" data-known-nodes="'+layout.knownCount+'" viewBox="0 0 '+layout.width+' '+layout.height+'" role="img" aria-label="'+xml('從'+startName+'出發的局部路網示意圖')+'">'+edgeHtml+nodeHtml+compass+hiddenHint+'</svg>';
+ return '<svg class="quick-topology-svg" xmlns="http://www.w3.org/2000/svg" data-layout-mode="'+layout.mode+'" data-displaced="'+Boolean(layout.displaced)+'" data-known-nodes="'+layout.knownCount+'" viewBox="0 0 '+layout.width+' '+layout.height+'" role="img" aria-label="'+xml('從'+startName+'出發的局部路網示意圖')+'">'+edgeHtml+nodeHtml+compass+hiddenHint+'</svg>';
 }
