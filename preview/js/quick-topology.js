@@ -135,76 +135,82 @@ export function layoutQuickTopology(topology,geometryData=null){
   const angle=-Math.PI/2+index*2.39996323;
   raw.set(node.id,{x:.55*Math.cos(angle),y:.55*Math.sin(angle)});
  }
- const width=390,n=topology.nodes.length;
- const height=clamp(295+Math.max(0,n-5)*54,295,1100);
- const center={x:width/2,y:height/2};
- const positions=new Map([[topology.startId,{...center}]]);
- // A compact compass-sector placement is more readable than pixel-perfect
- // scaling: keep each bearing within about 55 degrees but distribute nearby
- // labels into free radial slots. This never represents actual map distance.
- const nodes=topology.nodes.filter(n=>n.id!==topology.startId);
- const boxes=new Map(topology.nodes.map(n=>[n.id,labelBounds(n)]));
- const offsets=[0,.20,-.20,.40,-.40,.64,-.64,.88,-.88,1.05,-1.05];
- const radii=[110,148,186,224,262,300,338,380];
- const proposals=new Map();
- for(const node of nodes){
-  const p=raw.get(node.id),distance=Math.hypot(p.x,p.y);
-  const angle=distance>.001?Math.atan2(p.y,p.x):
-   -Math.PI/2+topology.nodes.findIndex(n=>n.id===node.id)*2.39996323;
-  const idealR=clamp(90+50*Math.log1p(distance),110,230);
-  const candidates=[],seen=new Set();
-  for(const offset of offsets)for(const r of radii){
-   const theta=angle+offset;
-   const x=clamp(center.x+Math.cos(theta)*r,67,width-67);
-   const y=clamp(center.y-Math.sin(theta)*r,31,height-69);
-   if(known.has(topology.startId)&&!estimatedIds.has(node.id)){
-    const x0=Math.cos(angle),y0=Math.sin(angle);
-    if(Math.abs(x0)>.65&&Math.sign(x-center.x)!==Math.sign(x0))continue;
-    if(Math.abs(y0)>.65&&Math.sign(center.y-y)!==Math.sign(y0))continue;
-   }
-   const key=Math.round(x)+','+Math.round(y);
-   if(seen.has(key))continue;seen.add(key);
-   candidates.push({x,y,offset,r,idealR});
-  }
-  proposals.set(node.id,candidates);
- }
- const score=(node,proposal)=>{
-  let cost=Math.abs(proposal.offset)*65+Math.abs(proposal.r-proposal.idealR)*.4;
-  if(proposal.x>300&&proposal.y<68)cost+=250;
-  const box=boxes.get(node.id);
-  for(const [otherId,p] of positions){
-   if(node.id===otherId)continue;
-   const b=boxes.get(otherId);
-   const minX=(box.w+b.w)/2+12,minY=(box.h+b.h)/2+15;
-   const overlapX=Math.max(0,minX-Math.abs(proposal.x-p.x));
-   const overlapY=Math.max(0,minY-Math.abs(proposal.y-p.y));
-   if(overlapX&&overlapY)cost+=overlapX*overlapY*100;
-  }
-  return cost;
- };
- const select=(node)=>{
-  const options=proposals.get(node.id)||[];
-  let best=null,bestScore=Infinity;
-  for(const candidate of options){
-   const value=score(node,candidate);
-   if(value<bestScore){bestScore=value;best=candidate}
-  }
-  if(best)positions.set(node.id,{x:best.x,y:best.y});
- };
- for(const node of nodes)select(node);
- // Recheck after every node has been placed; this resolves conflicts caused
- // by the initial ordering without changing geographical data or route edges.
- for(let pass=0;pass<3;pass++)for(const node of nodes){
-  positions.delete(node.id);select(node);
+ // All located points use one constant planar scale: their relative x/y,
+ // bearings and distance ratios remain intact. Only text labels may move.
+ const width=390,height=360;
+ const pad={left:35,right:35,top:45,bottom:43};
+ const knownPoints=topology.nodes.filter(n=>known.has(n.id)).map(n=>raw.get(n.id));
+ const xs=knownPoints.map(p=>p.x),ys=knownPoints.map(p=>p.y);
+ const minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys);
+ const dx=maxX-minX,dy=maxY-minY;
+ const availableX=width-pad.left-pad.right,availableY=height-pad.top-pad.bottom;
+ const scale=Math.min(dx>0?availableX/dx:Infinity,dy>0?availableY/dy:Infinity);
+ if(!Number.isFinite(scale)||scale<=0)return fallback();
+ const midX=(maxX+minX)/2,midY=(maxY+minY)/2;
+ const centerX=(pad.left+width-pad.right)/2,centerY=(pad.top+height-pad.bottom)/2;
+ const positions=new Map();
+ for(const node of topology.nodes){
+  const p=raw.get(node.id);
+  const x=centerX+(p.x-midX)*scale;
+  const y=centerY-(p.y-midY)*scale;
+  // Missing coordinates are schematic only and must not alter the scale or
+  // coordinates of real positions.
+  positions.set(node.id,known.has(node.id)?{x,y}:{
+   x:clamp(x,pad.left,width-pad.right),
+   y:clamp(y,pad.top,height-pad.bottom)
+  });
  }
  return {width,height,positions,mode:'geographic',estimatedIds,
-         knownCount:known.size};
+         knownCount:known.size,scale};
+}
+
+// Label layout never mutates geographic point coordinates. Greedy placement
+// uses text-only offsets and leader lines when the label is displaced.
+export function layoutQuickTopologyLabels(topology,layout){
+ const used=[],labels=new Map();
+ const box=n=>{
+  const lines=textLines((topology.first.some(b=>b.id===n.id&&b.returning)?'↩ ':'')+
+    (layout.estimatedIds.has(n.id)?'◌ ':'')+n.name);
+  return {w:clamp(Math.max(...lines.map(l=>Array.from(l).length))*12+12,72,144),
+          h:30+(lines.length-1)*13};
+ };
+ const points=[...topology.nodes].sort((a,b)=>Number(b.id===topology.startId)-Number(a.id===topology.startId)||a.name.localeCompare(b.name,'zh-Hant'));
+ for(const node of points){
+  const p=layout.positions.get(node.id),size=box(node);
+  if(!p)continue;
+  const offsets=[[0,33],[0,-26],[size.w/2+14,0],[-size.w/2-14,0],
+   [size.w/2+9,28],[-size.w/2-9,28],[size.w/2+9,-24],[-size.w/2-9,-24],
+   [0,65],[0,-56],[size.w/2+18,63],[-size.w/2-18,63],
+   [size.w/2+18,-58],[-size.w/2-18,-58],[0,96],[0,-88]];
+  let best=null,bestCost=Infinity;
+  for(const [ox,oy] of offsets){
+   const x=clamp(p.x+ox,size.w/2+5,layout.width-size.w/2-5);
+   const y=clamp(p.y+oy,16,layout.height-size.h-5);
+   const rect={l:x-size.w/2,r:x+size.w/2,t:y,b:y+size.h};
+   let cost=Math.hypot(x-p.x,y-p.y)*.12;
+   for(const u of used){
+    const overlapX=Math.max(0,Math.min(rect.r,u.r)-Math.max(rect.l,u.l));
+    const overlapY=Math.max(0,Math.min(rect.b,u.b)-Math.max(rect.t,u.t));
+    cost+=overlapX*overlapY*10;
+   }
+   for(const other of topology.nodes){
+    if(other.id===node.id)continue;
+    const dot=layout.positions.get(other.id);if(!dot)continue;
+    if(dot.x>rect.l-7&&dot.x<rect.r+7&&dot.y>rect.t-7&&dot.y<rect.b+7)cost+=550;
+   }
+   if(cost<bestCost){bestCost=cost;best={x,y,...rect}}
+  }
+  labels.set(node.id,best);
+  used.push(best);
+ }
+ return labels;
 }
 
 export function renderQuickTopologySvg(candidates,startId,startName,coefficient,estimate,geometryData=null){
  const topology=buildQuickTopology(candidates,startId,startName);
  const layout=layoutQuickTopology(topology,geometryData);
  const {positions}=layout;
+ const labels=layoutQuickTopologyLabels(topology,layout);
  const edgeHtml=topology.edges.map(e=>{
   const a=positions.get(e.from),b=positions.get(e.to);if(!a||!b)return '';
   const radius=8;
@@ -228,11 +234,14 @@ export function renderQuickTopologySvg(candidates,startId,startName,coefficient,
   const meta=current?'目前位置':nodePaths.length>1?'多條路線':fmt(minutes);
   const routeKey=nodePaths.length===1?nodePaths[0].key:null;
   const text=textLines((back?'↩ ':'')+(estimated?'◌ ':'')+n.name);
-  const nameY=p.y+23;
-  const nameSvg='<text class="topo-node-name" text-anchor="middle" x="'+p.x+'" y="'+nameY+'">'+text.map((line,i)=>'<tspan x="'+p.x+'" dy="'+(i?13:0)+'">'+xml(line)+'</tspan>').join('')+'</text>';
+  const label=labels.get(n.id)||{x:p.x,y:p.y+20};
+  const nameY=label.y+12;
+  const nameSvg='<text class="topo-node-name" text-anchor="middle" x="'+label.x+'" y="'+nameY+'">'+text.map((line,i)=>'<tspan x="'+label.x+'" dy="'+(i?13:0)+'">'+xml(line)+'</tspan>').join('')+'</text>';
   const metaY=nameY+(text.length-1)*13+14;
-  const metaSvg='<text class="topo-node-meta'+(routeKey?' quick-route-duration':'')+'" text-anchor="middle" x="'+p.x+'" y="'+metaY+'"'+(routeKey?' data-route-key="'+xml(routeKey)+'"':'')+'>'+xml(meta)+'</text>';
-  return '<g class="topo-node'+(current?' topo-current':back?' topo-back':'')+(estimated?' topo-estimated':'')+'"><title>'+xml(n.name+(current?'（目前位置）':back?'（原路返回）':'')+(estimated?'，座標未取得，位置為示意':''))+'</title><circle cx="'+p.x+'" cy="'+p.y+'" r="'+(current?10:7)+'" fill="'+(current?'#315d42':back?'#ead9bd':'#e4efe9')+'" stroke="'+(current?'#315d42':back?'#947041':'#557464')+'" stroke-width="2"'+(estimated?' stroke-dasharray="3 2"':'')+'/>'+nameSvg+metaSvg+'</g>';
+  const metaSvg='<text class="topo-node-meta'+(routeKey?' quick-route-duration':'')+'" text-anchor="middle" x="'+label.x+'" y="'+metaY+'"'+(routeKey?' data-route-key="'+xml(routeKey)+'"':'')+'>'+xml(meta)+'</text>';
+  const displaced=Math.hypot(label.x-p.x,label.y+14-p.y)>42;
+  const leader=displaced?'<path class="topo-label-leader" d="M '+p.x+' '+p.y+' L '+label.x+' '+(label.y+12)+'" fill="none" stroke="#9aaa9f" stroke-width="1" stroke-dasharray="2 3"/>':'';
+  return '<g class="topo-node'+(current?' topo-current':back?' topo-back':'')+(estimated?' topo-estimated':'')+'"><title>'+xml(n.name+(current?'（目前位置）':back?'（原路返回）':'')+(estimated?'，座標未取得，位置為示意':''))+'</title><circle cx="'+p.x+'" cy="'+p.y+'" r="'+(current?10:7)+'" fill="'+(current?'#315d42':back?'#ead9bd':'#e4efe9')+'" stroke="'+(current?'#315d42':back?'#947041':'#557464')+'" stroke-width="2"'+(estimated?' stroke-dasharray="3 2"':'')+'/>'+leader+nameSvg+metaSvg+'</g>';
  }).join('');
  const compass=layout.mode==='geographic'
   ?'<g class="topo-compass"><path d="M 355 39 V 18 M 355 18 L 351 24 M 355 18 L 359 24" stroke="#587263" stroke-width="1.5" fill="none"/><text x="355" y="13" text-anchor="middle">北</text></g>'
