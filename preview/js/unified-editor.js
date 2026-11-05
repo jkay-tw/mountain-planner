@@ -377,13 +377,13 @@ function renderTimeline(d){
   const terrain=dayTerrain(d,terrainData),terrainByItem=new Map((terrain?.features||[]).map(f=>[f.toItemId,f]));
   const bridgedItems=new Set((terrain?.features||[]).filter(f=>f.intermediateCoordinatesUnknown).flatMap(f=>f.viaItemIds));
   if(!rows.length)return '<div class="empty">'+(route?'直接選擇第一個行程點；它就是當日的起點。':'請先選擇上河圖群組。')+'</div>';
-  let html=(!IS_PRODUCTION?'<div class="itinerary-head"><span>地點</span><span>抵達</span><span>規劃時間</span><span>距離／升降</span><span>備註</span><span></span></div>':'')+'<div class="drop-zone" data-drop="0"></div>';
+  let html=(!IS_PRODUCTION?'<div class="itinerary-head"><span>地點／抵達</span><span>規劃時間</span><span>距離／升降</span><span>備註</span><span></span></div>':'')+'<div class="drop-zone" data-drop="0"></div>';
   rows.forEach(r=>{
     const idx=d.items.findIndex(x=>x.id===r.id);
     if(r.type==='rest'){
       html+='<div class="it-row rest-row" data-index="'+idx+'">'+
-      '<div class="place"><span class="drag-handle" draggable="true" data-index="'+idx+'">⋮⋮</span><span class="place-name">☕ 休息</span></div>'+
-      '<div class="arrival">'+r.endTime+'</div>'+
+      '<div class="row-identity"><div class="place"><span class="drag-handle" draggable="true" data-index="'+idx+'">⋮⋮</span><span class="place-name">☕ 休息</span></div>'+
+      '<div class="arrival">'+r.endTime+'</div></div>'+
       '<div class="route-info"><input class="rest-min minute-input" data-index="'+idx+'" type="number" min="0" value="'+r.minutes+'"><span>m</span></div>'+(!IS_PRODUCTION?'<div class="terrain-cell">—</div>':'')+'<input class="note-input" data-index="'+idx+'" placeholder="備註" value="'+esc(r.note||'')+'">'+menuHtml(idx,true,false,true)+'</div>';
     }else{
       const e=r.incoming,a=e?edgeActual(e,d.coefficient):0,manual=r.type==='manual-location';
@@ -393,7 +393,7 @@ function renderTimeline(d){
         const alternatives=Array.isArray(e.timeAlternatives)?e.timeAlternatives.filter(t=>Number.isFinite(t.minutes)&&t.minutes>0&&['slow','heavy_pack'].includes(t.kind)):[];
         const labels={slow:'慢速',heavy_pack:'重裝'};
         const altHtml=alternatives.length?'<span class="reference-options">'+[{kind:'regular',minutes:e.officialMinutes,label:'一般'},...alternatives.map(t=>({...t,label:labels[t.kind]}))].map(t=>'<button type="button" class="alternate-time '+((e.referenceKind||'regular')===t.kind?'selected':'')+'" data-index="'+idx+'" data-kind="'+t.kind+'" title="切換至'+t.label+'參考時間 '+t.minutes+' 分鐘">'+t.label+' '+t.minutes+'m</button>').join('')+'</span>':'';
-        routeInfo='<span class="calculated-time">'+a+'m</span><span class="secondary-info">上河'+Math.round(Number(referenceMinutes(e))||0)+'m</span><label class="edge-coef-label">×<input class="edge-coef" aria-label="'+esc(r.name)+' 路段上河係數" data-index="'+idx+'" type="number" min="0.1" max="3" step="0.1" value="'+Number(k).toFixed(2)+'"></label>'+altHtml;
+        routeInfo='<span class="time-pair"><span class="calculated-time">'+a+'m</span><span class="secondary-info">上河'+Math.round(Number(referenceMinutes(e))||0)+'m</span></span><label class="edge-coef-label">×<input class="edge-coef" aria-label="'+esc(r.name)+' 路段上河係數" data-index="'+idx+'" type="number" min="0.1" max="3" step="0.1" value="'+Number(k).toFixed(2)+'"></label>'+altHtml;
       }else if(e?.kind==='manual'){
         routeInfo='<input class="edge-time minute-input" data-index="'+idx+'" type="number" min="0" placeholder="時間未填" value="'+(e.actualMinutes??'')+'"><span>m</span><span class="manual-note">'+(e.connectionStatus==='owner-confirmed'?'上河時間未提供・自行填時間':e.connectionStatus==='unverified'?'未連通・手動估時':'手動')+'</span>';
       }
@@ -403,8 +403,8 @@ function renderTimeline(d){
         ?'<span class="drag-handle" draggable="true" data-index="'+idx+'">⋮⋮</span>'+peak+'<input class="manual-name" data-index="'+idx+'" value="'+esc(r.name)+'">'+water
         :peak+'<span class="place-name">'+esc(r.name)+'</span>'+water;
       html+='<div class="it-row" data-index="'+idx+'">'+
-      '<div class="place">'+placeName+'</div>'+
-      '<div class="arrival">'+r.arrival+'</div>'+
+      '<div class="row-identity"><div class="place">'+placeName+'</div>'+
+      '<div class="arrival">'+r.arrival+'</div></div>'+
       '<div class="route-info">'+routeInfo+'</div>'+
       (!IS_PRODUCTION?'<div class="terrain-cell" title="沿山徑距離、累積上升與累積下降（估算）">'+(e?terrainSegmentHtml(terrainByItem.get(r.id),bridgedItems.has(r.id)):'—')+'</div>':'')+
       '<div class="terrain-note"><input class="note-input" data-index="'+idx+'" placeholder="備註" value="'+esc(r.note||'')+'">'+'</div>'+
