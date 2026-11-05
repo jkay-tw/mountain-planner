@@ -213,14 +213,9 @@ export function renderQuickTopologySvg(candidates,startId,startName,coefficient,
  const labels=layoutQuickTopologyLabels(topology,layout);
  const edgeHtml=topology.edges.map(e=>{
   const a=positions.get(e.from),b=positions.get(e.to);if(!a||!b)return '';
-  const radius=8;
-  let path;
-  if(Math.abs(b.x-a.x)<2){
-   const x=a.x+9;path='M '+x+' '+a.y+' C '+(x+48)+' '+a.y+' '+(x+48)+' '+b.y+' '+x+' '+b.y;
-  }else{
-   const sign=Math.sign(b.x-a.x),sx=a.x+sign*radius,ex=b.x-sign*radius,dx=(ex-sx)*.47;
-   path='M '+sx+' '+a.y+' C '+(sx+dx)+' '+a.y+' '+(ex-dx)+' '+b.y+' '+ex+' '+b.y;
-  }
+  // A straight schematic connection preserves the actual two-endpoint
+  // bearing; it does not claim to reproduce a hiking trail.
+  const path='M '+a.x+' '+a.y+' L '+b.x+' '+b.y;
   const tone=e.returning?'#A37D52':'#8EA59A';
   const title=topology.nodes.find(n=>n.id===e.from)?.name+' → '+topology.nodes.find(n=>n.id===e.to)?.name;
   return '<path d="'+path+'" stroke="'+tone+'" stroke-width="2.5" '+(e.returning?'stroke-dasharray="4 4" ':'')+'fill="none"><title>'+xml(title)+'</title></path>';
