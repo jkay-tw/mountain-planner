@@ -213,16 +213,20 @@ export function renderQuickTopologySvg(candidates,startId,startName,coefficient,
  const nodeHtml=topology.nodes.map(n=>{
   const p=positions.get(n.id);if(!p)return '';
   const current=n.id===startId,back=topology.first.some(b=>b.id===n.id&&b.returning);
+  const estimated=layout.estimatedIds.has(n.id);
   const nodePaths=topology.pathsById.get(n.id)||[];
   const minutes=nodePaths.length===1?estimate(nodePaths[0],coefficient):null;
   const meta=current?'目前位置':nodePaths.length>1?'多條路線':fmt(minutes);
   const routeKey=nodePaths.length===1?nodePaths[0].key:null;
-  const text=textLines((back?'↩ ':'')+n.name);
+  const text=textLines((back?'↩ ':'')+(estimated?'◌ ':'')+n.name);
   const nameY=p.y+23;
   const nameSvg='<text class="topo-node-name" text-anchor="middle" x="'+p.x+'" y="'+nameY+'">'+text.map((line,i)=>'<tspan x="'+p.x+'" dy="'+(i?13:0)+'">'+xml(line)+'</tspan>').join('')+'</text>';
   const metaY=nameY+(text.length-1)*13+14;
   const metaSvg='<text class="topo-node-meta'+(routeKey?' quick-route-duration':'')+'" text-anchor="middle" x="'+p.x+'" y="'+metaY+'"'+(routeKey?' data-route-key="'+xml(routeKey)+'"':'')+'>'+xml(meta)+'</text>';
-  return '<g class="topo-node'+(current?' topo-current':back?' topo-back':'')+'"><title>'+xml(n.name+(current?'（目前位置）':back?'（原路返回）':''))+'</title><circle cx="'+p.x+'" cy="'+p.y+'" r="'+(current?10:7)+'" fill="'+(current?'#315d42':back?'#ead9bd':'#e4efe9')+'" stroke="'+(current?'#315d42':back?'#947041':'#557464')+'" stroke-width="2"/>'+nameSvg+metaSvg+'</g>';
+  return '<g class="topo-node'+(current?' topo-current':back?' topo-back':'')+(estimated?' topo-estimated':'')+'"><title>'+xml(n.name+(current?'（目前位置）':back?'（原路返回）':'')+(estimated?'，座標未取得，位置為示意':''))+'</title><circle cx="'+p.x+'" cy="'+p.y+'" r="'+(current?10:7)+'" fill="'+(current?'#315d42':back?'#ead9bd':'#e4efe9')+'" stroke="'+(current?'#315d42':back?'#947041':'#557464')+'" stroke-width="2"'+(estimated?' stroke-dasharray="3 2"':'')+'/>'+nameSvg+metaSvg+'</g>';
  }).join('');
- return '<svg class="quick-topology-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 '+layout.width+' '+layout.height+'" role="img" aria-label="'+xml('從'+startName+'出發的兩段內路網拓樸示意圖')+'">'+edgeHtml+nodeHtml+'</svg>';
+ const compass=layout.mode==='geographic'
+  ?'<g class="topo-compass"><path d="M 355 39 V 18 M 355 18 L 351 24 M 355 18 L 359 24" stroke="#587263" stroke-width="1.5" fill="none"/><text x="355" y="13" text-anchor="middle">北</text></g>'
+  :'<text class="topo-fallback-label" x="10" y="15">座標不足，採純拓樸示意</text>';
+ return '<svg class="quick-topology-svg" xmlns="http://www.w3.org/2000/svg" data-layout-mode="'+layout.mode+'" data-known-nodes="'+layout.knownCount+'" viewBox="0 0 '+layout.width+' '+layout.height+'" role="img" aria-label="'+xml('從'+startName+'出發的局部路網示意圖')+'">'+edgeHtml+nodeHtml+compass+'</svg>';
 }
