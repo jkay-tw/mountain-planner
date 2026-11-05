@@ -32,7 +32,7 @@ export function buildQuickTopology(candidates,startId,startName){
  }
  return {startId,startName,nodes:[...nodes.values()],first,edges:[...edges.values()],pathsById};
 }
-export function layoutQuickTopology(topology){
+function layoutAbstractTopology(topology){
  const width=340,positions=new Map(),step=90;
  const first=topology.first;
  const firstY=first.map((_,i)=>44+i*step);
@@ -54,9 +54,147 @@ export function layoutQuickTopology(topology){
  const maxY=Math.max(rootY,...firstY,...second.map(i=>positions.get(i.node.id).y),44);
  return {width,height:Math.max(132,maxY+69),positions};
 }
-export function renderQuickTopologySvg(candidates,startId,startName,coefficient,estimate){
+// Screen positions reflect broad coordinate bearings, not a to-scale map.
+// A missing coordinate is estimated only in this transient view, never saved.
+const validCoordinate=p=>Array.isArray(p)&&p.length>=2&&
+ Number.isFinite(p[0])&&Number.isFinite(p[1])&&
+ Math.abs(p[0])<=180&&Math.abs(p[1])<=90;
+const clamp=(n,low,high)=>Math.max(low,Math.min(high,n));
+const labelBounds=node=>{
+ const lines=textLines(node.name);
+ return {w:clamp(Math.max(...lines.map(line=>Array.from(line).length))*12+18,86,125),
+         h:60+(lines.length-1)*13};
+};
+export function layoutQuickTopology(topology,geometryData=null){
+ const fallback=()=>{
+  const result=layoutAbstractTopology(topology);
+  return {...result,mode:'topology',estimatedIds:new Set(),knownCount:0};
+ };
+ if(!Array.isArray(geometryData?.nodes)||!topology.nodes.length)return fallback();
+ const allowed=new Set(topology.nodes.map(n=>n.id));
+ const known=new Map();
+ for(const node of geometryData.nodes){
+  if(allowed.has(node.nodeId)&&validCoordinate(node.coordinate)&&
+     !['ignored','vehicle-only'].includes(node.coordinatePolicy)){
+   known.set(node.nodeId,node.coordinate);
+  }
+ }
+ if(known.size<2)return fallback();
+ const unique=new Set([...known.values()].map(p=>p.join(',')));
+ if(unique.size<2)return fallback();
+ const adjacent=new Map(topology.nodes.map(n=>[n.id,new Set()]));
+ for(const edge of topology.edges){
+  adjacent.get(edge.from)?.add(edge.to);
+  adjacent.get(edge.to)?.add(edge.from);
+ }
+ // If the itinerary point itself has no coordinate, the nearest known
+ // neighbours define a schematic centre, clearly marked as estimated.
+ const origin=known.get(topology.startId)||(()=>{
+  const local=[...(adjacent.get(topology.startId)||[])].map(id=>known.get(id)).filter(Boolean);
+  const selected=local.length?local:[...known.values()];
+  return [selected.reduce((n,p)=>n+p[0],0)/selected.length,
+          selected.reduce((n,p)=>n+p[1],0)/selected.length];
+ })();
+ const cos=Math.max(.1,Math.cos(origin[1]*Math.PI/180));
+ const kilometres=p=>({x:(p[0]-origin[0])*111.32*cos,y:(p[1]-origin[1])*111.32});
+ const raw=new Map([...known].map(([id,p])=>[id,kilometres(p)]));
+ raw.set(topology.startId,{x:0,y:0});
+ const estimatedIds=new Set(topology.nodes.filter(n=>!known.has(n.id)).map(n=>n.id));
+ // Interpolate isolated missing midpoints from real adjacent coordinates.
+ // Otherwise extend a known neighbour's local vector or use an arbitrary
+ // schematic direction. All such locations keep an estimated marker.
+ for(let pass=0;pass<3;pass++){
+  let advanced=false;
+  for(const node of topology.nodes){
+   if(raw.has(node.id))continue;
+   const neighbours=[...(adjacent.get(node.id)||[])].filter(id=>raw.has(id));
+   if(!neighbours.length)continue;
+   if(neighbours.length>=2){
+    const a=neighbours.map(id=>raw.get(id));
+    raw.set(node.id,{x:a.reduce((sum,p)=>sum+p.x,0)/a.length,
+                     y:a.reduce((sum,p)=>sum+p.y,0)/a.length});
+   }else{
+    const first=raw.get(neighbours[0]);
+    const others=[...(adjacent.get(neighbours[0])||[])].filter(id=>id!==node.id&&raw.has(id));
+    const parent=others.map(id=>raw.get(id)).find(p=>Math.hypot(first.x-p.x,first.y-p.y)>.02);
+    let dx=parent?first.x-parent.x:first.x;
+    let dy=parent?first.y-parent.y:first.y;
+    if(Math.hypot(dx,dy)<.02){
+     const idx=topology.nodes.findIndex(n=>n.id===node.id);
+     const angle=-Math.PI/2+(idx*2.39996323);
+     dx=Math.cos(angle);dy=Math.sin(angle);
+    }
+    const length=Math.hypot(dx,dy);
+    raw.set(node.id,{x:first.x+.45*dx/length,y:first.y+.45*dy/length});
+   }
+   advanced=true;
+  }
+  if(!advanced)break;
+ }
+ for(const [index,node] of topology.nodes.entries())if(!raw.has(node.id)){
+  const angle=-Math.PI/2+index*2.39996323;
+  raw.set(node.id,{x:.55*Math.cos(angle),y:.55*Math.sin(angle)});
+ }
+ const width=390,n=topology.nodes.length;
+ const height=clamp(295+Math.max(0,n-5)*48,295,1000);
+ const center={x:width/2,y:height/2};
+ const positions=new Map(),anchors=new Map();
+ for(const node of topology.nodes){
+  const p=raw.get(node.id);
+  let next;
+  if(node.id===topology.startId)next={...center};
+  else{
+   const distance=Math.hypot(p.x,p.y);
+   const r=distance<.0001?42:clamp(45+60*Math.log1p(distance),48,200);
+   const a=Math.atan2(p.y,p.x);
+   next={x:center.x+clamp(Math.cos(a)*r,-134,134),
+         y:center.y-clamp(Math.sin(a)*r,-height*.43,height*.43)};
+  }
+  positions.set(node.id,next);anchors.set(node.id,{...next});
+ }
+ // Resolve near-overlapping node labels, with the current point anchored and
+ // a spring keeping each other node near its source-bearing position.
+ const nodes=topology.nodes.map(n=>({...n,box:labelBounds(n)}));
+ for(let iteration=0;iteration<120;iteration++){
+  for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){
+   const a=nodes[i],b=nodes[j],pa=positions.get(a.id),pb=positions.get(b.id);
+   const minX=(a.box.w+b.box.w)/2+9;
+   const minY=(a.box.h+b.box.h)/2+13;
+   const dx=pb.x-pa.x,dy=pb.y-pa.y;
+   if(Math.abs(dx)>=minX||Math.abs(dy)>=minY)continue;
+   const xGap=minX-Math.abs(dx),yGap=minY-Math.abs(dy);
+   // Push along the less expensive axis; equal points get a stable tie-break.
+   const onX=xGap/minX<=yGap/minY;
+   const push=clamp((onX?xGap:yGap)*.55,0,9);
+   const delta=onX?(dx>=0?push:-push):(dy>=0?push:-push);
+   const aFixed=a.id===topology.startId,bFixed=b.id===topology.startId;
+   const aFactor=aFixed?0:bFixed?2:1;
+   const bFactor=bFixed?0:aFixed?2:1;
+   if(onX){pa.x-=delta*aFactor;pb.x+=delta*bFactor}
+   else{pa.y-=delta*aFactor;pb.y+=delta*bFactor}
+  }
+  for(const node of nodes){
+   if(node.id===topology.startId)continue;
+   const p=positions.get(node.id),a=anchors.get(node.id);
+   p.x+=(a.x-p.x)*.016;p.y+=(a.y-p.y)*.016;
+   p.x=clamp(p.x,67,width-67);
+   p.y=clamp(p.y,31,height-69);
+   // Maintain the broad east/west and north/south quadrant when known.
+   if(!estimatedIds.has(node.id)&&known.has(topology.startId)){
+    if(a.x>center.x+24)p.x=Math.max(p.x,center.x+7);
+    if(a.x<center.x-24)p.x=Math.min(p.x,center.x-7);
+    if(a.y>center.y+24)p.y=Math.max(p.y,center.y+7);
+    if(a.y<center.y-24)p.y=Math.min(p.y,center.y-7);
+   }
+  }
+ }
+ return {width,height,positions,mode:'geographic',estimatedIds,
+         knownCount:known.size};
+}
+
+export function renderQuickTopologySvg(candidates,startId,startName,coefficient,estimate,geometryData=null){
  const topology=buildQuickTopology(candidates,startId,startName);
- const layout=layoutQuickTopology(topology);
+ const layout=layoutQuickTopology(topology,geometryData);
  const {positions}=layout;
  const edgeHtml=topology.edges.map(e=>{
   const a=positions.get(e.from),b=positions.get(e.to);if(!a||!b)return '';
