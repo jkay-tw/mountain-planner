@@ -77,9 +77,9 @@ export function renderQuickTopologySvg(candidates,startId,startName,coefficient,
   const current=n.id===startId,back=topology.first.some(b=>b.id===n.id&&b.returning);
   const nodePaths=topology.pathsById.get(n.id)||[];
   const minutes=nodePaths.length===1?estimate(nodePaths[0],coefficient):null;
-  const meta=current?'目前位置':back?'↩ '+(nodePaths.length>1?'多條路線':fmt(minutes)):(nodePaths.length>1?'多條路線':fmt(minutes));
+  const meta=current?'目前位置':nodePaths.length>1?'多條路線':fmt(minutes);
   const routeKey=nodePaths.length===1?nodePaths[0].key:null;
-  const text=textLines(n.name);
+  const text=textLines((back?'↩ ':'')+n.name);
   const nameY=p.y+23;
   const nameSvg='<text class="topo-node-name" text-anchor="middle" x="'+p.x+'" y="'+nameY+'">'+text.map((line,i)=>'<tspan x="'+p.x+'" dy="'+(i?13:0)+'">'+xml(line)+'</tspan>').join('')+'</text>';
   const metaY=nameY+(text.length-1)*13+14;
