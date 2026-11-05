@@ -169,79 +169,70 @@ export function layoutQuickTopology(topology,geometryData=null){
 // Only LABELS move. Actual coordinate dots and straight route edges are
 // immutable. The current position gets a stable, close side label; all other
 // labels prefer the geographic side outward from the current route point.
+// Geographic dots are immutable. Keep every visible label close to its own
+// dot; omit a crowded secondary label rather than move it to a distant slot.
+// Names of omitted nodes remain available in the quick-add chips and SVG title.
 export function layoutQuickTopologyLabels(topology,layout){
- const used=[],labels=new Map();
- const currentPoint=layout.positions.get(topology.startId);
- const rectFor=(x,y,w,h)=>({x,y,l:x-w/2,r:x+w/2,t:y,b:y+h,w,h});
+ const labels=new Map(),used=[],center=layout.positions.get(topology.startId);
  const box=node=>{
   const back=topology.first.some(b=>b.id===node.id&&b.returning);
   const name=(back?'↩ ':'')+(layout.estimatedIds.has(node.id)?'◌ ':'')+node.name;
   const lines=textLines(name);
-  const width=clamp(Math.max(...lines.map(line=>Array.from(line).length))*12+16,90,146);
-  return {w:width,h:40+(lines.length-1)*13};
+  return {w:clamp(Math.max(...lines.map(t=>Array.from(t).length))*12+16,90,146),
+          h:40+(lines.length-1)*13};
  };
- const nodes=[...topology.nodes].sort((a,b)=>{
-  if(a.id===topology.startId)return -1;
-  if(b.id===topology.startId)return 1;
-  return a.level-b.level||a.name.localeCompare(b.name,'zh-Hant')||a.id.localeCompare(b.id);
- });
- for(const node of nodes){
-  const p=layout.positions.get(node.id);
-  if(!p)continue;
-  const {w,h}=box(node);
-  const isCurrent=node.id===topology.startId;
-  // Current position: ALWAYS near the right side of its own dot (or left if
-  // there isn't room). It is never sent to a distant free label slot.
-  const right=[p.x+15+w/2,p.y-h/2];
-  const left=[p.x-15-w/2,p.y-h/2];
-  const currentOptions=p.x+15+w<=layout.width-6?[right,left]:[left,right];
-  let proposals;
-  if(isCurrent)proposals=currentOptions;
-  else{
-   const dx=p.x-(currentPoint?.x??layout.width/2),dy=p.y-(currentPoint?.y??layout.height/2);
-   const sx=dx>=0?1:-1,sy=dy>=0?1:-1;
-   const R=[p.x+14+w/2,p.y-h/2],L=[p.x-14-w/2,p.y-h/2];
-   const U=[p.x,p.y-h-12],D=[p.x,p.y+12];
-   const UR=[p.x+12+w/2,p.y-h-8],UL=[p.x-12-w/2,p.y-h-8];
-   const DR=[p.x+12+w/2,p.y+8],DL=[p.x-12-w/2,p.y+8];
-   const outwardHoriz=sx>0?[R,UR,DR,U,D,L,UL,DL]:[L,UL,DL,U,D,R,UR,DR];
-   const outwardVert=sy>0?[D,DR,DL,R,L,U,UR,UL]:[U,UR,UL,R,L,D,DR,DL];
-   const diagonal=sx>0?(sy>0?[DR,R,D,UR,U,L,DL,UL]:[UR,R,U,DR,D,L,UL,DL])
+ const rect=(x,y,w,h)=>({x,y,l:x-w/2,r:x+w/2,t:y,b:y+h,w,h,hidden:false});
+ const distanceToRect=(p,b)=>Math.hypot(Math.max(b.l-p.x,0,p.x-b.r),
+                                       Math.max(b.t-p.y,0,p.y-b.b));
+ const nodes=[...topology.nodes].sort((a,b)=>Number(b.id===topology.startId)-Number(a.id===topology.startId)||
+  a.level-b.level||a.name.localeCompare(b.name,'zh-Hant')||a.id.localeCompare(b.id));
+ for(const n of nodes){
+  const p=layout.positions.get(n.id);if(!p)continue;
+  const {w,h}=box(n),current=n.id===topology.startId;
+  const right=[p.x+15+w/2,p.y-h/2],left=[p.x-15-w/2,p.y-h/2];
+  const dx=p.x-(center?.x??layout.width/2),dy=p.y-(center?.y??layout.height/2);
+  const sx=dx>=0?1:-1,sy=dy>=0?1:-1;
+  const R=[p.x+13+w/2,p.y-h/2],L=[p.x-13-w/2,p.y-h/2];
+  const U=[p.x,p.y-h-10],D=[p.x,p.y+10];
+  const UR=[p.x+10+w/2,p.y-h-7],UL=[p.x-10-w/2,p.y-h-7];
+  const DR=[p.x+10+w/2,p.y+7],DL=[p.x-10-w/2,p.y+7];
+  const outwardH=sx>0?[R,UR,DR,U,D,L,UL,DL]:[L,UL,DL,U,D,R,UR,DR];
+  const outwardV=sy>0?[D,DR,DL,R,L,U,UR,UL]:[U,UR,UL,R,L,D,DR,DL];
+  const diagonal=sx>0?(sy>0?[DR,R,D,UR,U,L,DL,UL]:[UR,R,U,DR,D,L,UL,DL])
                         :(sy>0?[DL,L,D,UL,U,R,DR,UR]:[UL,L,U,DL,D,R,UR,DR]);
-   proposals=Math.abs(dx)>Math.abs(dy)*1.4?outwardHoriz:
-             Math.abs(dy)>Math.abs(dx)*1.4?outwardVert:diagonal;
-   // Only dense label clusters may use a slightly more distant position.
-   proposals=[...proposals,[p.x,p.y-h-51],[p.x,p.y+51],
-     [p.x+sx*(w/2+42),p.y-h/2],[p.x-sx*(w/2+42),p.y-h/2]];
-   // In dense junctions, use a label-only free slot before allowing texts
-   // to overlap. Geographic dots always remain at their original positions.
-   for(const rowY of [7,58,110,162,214,266,310])
-    for(const colX of [w/2+6,120,195,270,layout.width-w/2-6])
-     proposals.push([colX,rowY]);
-  }
-  let best=null,bestScore=Infinity;
-  for(let k=0;k<proposals.length;k++){
-   const [wantedX,wantedY]=proposals[k];
+  const standard=current?(right[0]+w/2<=layout.width-5?[right,left]:[left,right]):
+    Math.abs(dx)>Math.abs(dy)*1.4?outwardH:
+    Math.abs(dy)>Math.abs(dx)*1.4?outwardV:diagonal;
+  // Small shifts are fine for label readability, but never move far away.
+  const choices=current?standard:standard.flatMap(([x,y])=>[[x,y],[x,y-12],[x,y+12]]);
+  let best=null,bestCost=Infinity;
+  for(let idx=0;idx<choices.length;idx++){
+   const [wantedX,wantedY]=choices[idx];
    const x=clamp(wantedX,w/2+5,layout.width-w/2-5);
-   const y=clamp(wantedY,7,layout.height-h-5);
-   const rect=rectFor(x,y,w,h);
-   const shifted=Math.hypot(x-wantedX,y-wantedY);
-   let score=shifted*8+Math.hypot(x-p.x,(y+h/2)-p.y)*.10;
-   if(isCurrent)score+=Math.abs(x-right[0])*.035;
-   else score+=k<12?k*24:310+(k-12)*.3;
-   for(const usedBox of used){
-    const overX=Math.max(0,Math.min(rect.r,usedBox.r)-Math.max(rect.l,usedBox.l));
-    const overY=Math.max(0,Math.min(rect.b,usedBox.b)-Math.max(rect.t,usedBox.t));
-    score+=overX*overY*40;
+   const y=clamp(wantedY,6,layout.height-h-5);
+   const b=rect(x,y,w,h),dist=distanceToRect(p,b);
+   if(!current&&(dist>48||Math.abs(x-wantedX)>60||Math.abs(y-wantedY)>42))continue;
+   if(!current&&used.some(u=>Math.min(b.r,u.r)>Math.max(b.l,u.l)+2&&
+                                  Math.min(b.b,u.b)>Math.max(b.t,u.t)+2))continue;
+   if(!current&&topology.nodes.some(other=>{
+    if(other.id===n.id)return false;
+    const point=layout.positions.get(other.id);
+    return point&&point.x>b.l-8&&point.x<b.r+8&&point.y>b.t-8&&point.y<b.b+8;
+   }))continue;
+   let cost=idx*(current?.05:1.8)+dist*.55+
+     Math.hypot(x-wantedX,y-wantedY)*2;
+   if(current){
+    for(const u of used){
+     const overlapX=Math.max(0,Math.min(b.r,u.r)-Math.max(b.l,u.l));
+     const overlapY=Math.max(0,Math.min(b.b,u.b)-Math.max(b.t,u.t));
+     cost+=overlapX*overlapY*20;
+    }
    }
-   for(const other of topology.nodes){
-    if(other.id===node.id)continue;
-    const dot=layout.positions.get(other.id);
-    if(dot&&dot.x>rect.l-8&&dot.x<rect.r+8&&dot.y>rect.t-8&&dot.y<rect.b+8)score+=12000;
-   }
-   if(score<bestScore){bestScore=score;best=rect}
+   if(cost<bestCost){best=b;bestCost=cost}
   }
-  labels.set(node.id,best);used.push(best);
+  if(!best)best={...rect(p.x,p.y,w,h),hidden:true};
+  labels.set(n.id,best);
+  if(!best.hidden)used.push(best);
  }
  return labels;
 }
@@ -269,7 +260,10 @@ export function renderQuickTopologySvg(candidates,startId,startName,coefficient,
   const meta=current?'目前位置':nodePaths.length>1?'多條路線':fmt(minutes);
   const routeKey=nodePaths.length===1?nodePaths[0].key:null;
   const text=textLines((back?'↩ ':'')+(estimated?'◌ ':'')+n.name);
-  const label=labels.get(n.id)||{x:p.x,y:p.y+20};
+  const label=labels.get(n.id)||{x:p.x,y:p.y+20,hidden:false};
+  if(label.hidden){
+   return '<g class="topo-node topo-label-omitted" data-node-id="'+xml(n.id)+'"><title>'+xml(n.name+'（名稱因位置密集暫不顯示，請參考快速加入按鈕）')+'</title><circle cx="'+p.x+'" cy="'+p.y+'" r="7" fill="'+(back?'#ead9bd':'#e4efe9')+'" stroke="'+(back?'#947041':'#557464')+'" stroke-width="2"'+(estimated?' stroke-dasharray="3 2"':'')+'/></g>';
+  }
   const nameY=label.y+12;
   const nameSvg='<text class="topo-node-name" text-anchor="middle" x="'+label.x+'" y="'+nameY+'">'+text.map((line,i)=>'<tspan x="'+label.x+'" dy="'+(i?13:0)+'">'+xml(line)+'</tspan>').join('')+'</text>';
   const metaY=nameY+(text.length-1)*13+14;
@@ -283,8 +277,10 @@ export function renderQuickTopologySvg(candidates,startId,startName,coefficient,
   const halo=current?'<circle class="topo-current-halo" cx="'+p.x+'" cy="'+p.y+'" r="13" fill="#d5ece0" opacity=".82"/>':'';
   return '<g class="topo-node'+(current?' topo-current':back?' topo-back':'')+(estimated?' topo-estimated':'')+'"><title>'+xml(n.name+(current?'（目前位置）':back?'（原路返回）':'')+(estimated?'，座標未取得，位置為示意':''))+'</title>'+leader+halo+'<circle cx="'+p.x+'" cy="'+p.y+'" r="'+(current?10:7)+'" fill="'+(current?'#315d42':back?'#ead9bd':'#e4efe9')+'" stroke="'+(current?'#315d42':back?'#947041':'#557464')+'" stroke-width="2"'+(estimated?' stroke-dasharray="3 2"':'')+'/>'+nameSvg+metaSvg+'</g>';
  }).join('');
+ const omitted=[...labels.values()].filter(l=>l?.hidden).length;
+ const hiddenHint=omitted?'<text class="topo-fallback-label" x="10" y="'+(layout.height-5)+'">部分密集節點名稱請參考快速加入按鈕</text>':'';
  const compass=layout.mode==='geographic'
   ?'<g class="topo-compass"><path d="M 355 39 V 18 M 355 18 L 351 24 M 355 18 L 359 24" stroke="#587263" stroke-width="1.5" fill="none"/><text x="355" y="13" text-anchor="middle">北</text></g>'
   :'<text class="topo-fallback-label" x="10" y="15">座標不足，採純拓樸示意</text>';
- return '<svg class="quick-topology-svg" xmlns="http://www.w3.org/2000/svg" data-layout-mode="'+layout.mode+'" data-known-nodes="'+layout.knownCount+'" viewBox="0 0 '+layout.width+' '+layout.height+'" role="img" aria-label="'+xml('從'+startName+'出發的局部路網示意圖')+'">'+edgeHtml+nodeHtml+compass+'</svg>';
+ return '<svg class="quick-topology-svg" xmlns="http://www.w3.org/2000/svg" data-layout-mode="'+layout.mode+'" data-known-nodes="'+layout.knownCount+'" viewBox="0 0 '+layout.width+' '+layout.height+'" role="img" aria-label="'+xml('從'+startName+'出發的局部路網示意圖')+'">'+edgeHtml+nodeHtml+compass+hiddenHint+'</svg>';
 }
