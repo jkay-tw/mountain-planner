@@ -220,3 +220,63 @@
   overflow-wrap:anywhere;
   line-height:1.4;
 }
+
+
+/* Compact, opt-in route relationships for quick-add. The chip list stays
+   horizontal; details do not reserve panel height until intentionally opened. */
+.quick-add .quick-node .quick-via{
+  display:inline;
+  margin-left:5px;
+  font-size:10px;
+  font-weight:500;
+  color:#65756d;
+  white-space:nowrap;
+}
+.quick-add .quick-relations{position:relative;align-self:center;flex:0 0 auto}
+.quick-add .quick-relations>summary{
+  display:inline-flex;align-items:center;gap:5px;
+  list-style:none;cursor:pointer;
+  padding:7px 10px;
+  border:1px solid #d5ded7;
+  border-radius:18px;
+  background:#f8faf8;
+  color:#365741;
+  font-size:12px;font-weight:700;line-height:1.5;
+  white-space:nowrap;
+}
+.quick-add .quick-relations>summary::-webkit-details-marker{display:none}
+.quick-add .quick-relations>summary::after{content:"⌄";font-size:13px}
+.quick-add .quick-relations[open]>summary::after{content:"⌃"}
+.quick-add .quick-relations>summary:focus-visible{outline:2px solid #7eaa8c;outline-offset:2px}
+.quick-add .quick-route-panel{
+  position:absolute;right:0;top:calc(100% + 6px);z-index:45;
+  box-sizing:border-box;
+  width:min(360px,calc(100vw - 36px));
+  max-height:min(380px,65vh);
+  overflow-y:auto;overscroll-behavior:contain;
+  border:1px solid #d5e0d7;border-radius:10px;
+  padding:10px 12px;
+  background:#fff;color:#243229;
+  box-shadow:0 12px 26px #173b2626;
+  font-size:12px;line-height:1.5;
+}
+.quick-route-current{font-size:12px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #e5ebe6}
+.quick-route-branch{padding:7px 0 4px;border-bottom:1px dashed #e6ebe7}
+.quick-route-branch-title{font-size:12px;font-weight:700;color:#365741}
+.quick-route-line{
+  display:flex;align-items:baseline;justify-content:space-between;
+  flex-wrap:wrap;gap:2px 9px;
+  padding:4px 0 2px 7px;
+}
+.quick-route-line.quick-route-via{padding-left:17px}
+.quick-route-name{font-weight:600;overflow-wrap:anywhere}
+.quick-route-meta{font-size:11px;color:#647569;white-space:normal}
+.quick-route-hint{margin:9px 0 0;color:#67756c;font-size:11px;line-height:1.5}
+@media(max-width:600px){
+  .quick-add .quick-relations[open]{flex:1 0 100%;max-width:100%}
+  .quick-add .quick-route-panel{
+    position:static;margin-top:6px;right:auto;top:auto;
+    width:100%;max-height:260px;
+    box-shadow:none;
+  }
+}
