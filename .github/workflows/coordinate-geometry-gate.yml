@@ -1,6 +1,20 @@
 name: Coordinate and geometry consistency gate
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/coordinate-geometry-gate.yml'
+      - 'tools/sync_coordinate_geometry.py'
+      - 'tests/test_sync_coordinate_geometry.py'
+      - 'data/geometry/**'
+      - 'data/routes/owner-reviewed/**'
+      - 'data/unified-editor-manifest.json'
+      - 'preview/data/geometry/**'
+      - 'preview/data/routes/owner-reviewed/**'
+      - 'preview/js/unified-editor.js'
+      - 'docs/QUICK_MAP_COORDINATE_SYNC_20261105.md'
   pull_request:
     paths:
       - 'data/geometry/**'
