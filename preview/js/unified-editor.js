@@ -28,6 +28,8 @@ let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',scope='';
 let itineraryMap=null,terrainData=null;
 const openProfiles=new Set();
+// Ephemeral UI state: the quick map stays open while a day is re-rendered.
+const openQuickMaps=new Set();
 let snapshots=[],at=-1,restoring=false;
 function checkpoint(){if(restoring)return;const state=JSON.stringify({routeId:route?.route_id||null,scope,tripStartDate,days});if(state===snapshots[at])return;snapshots=snapshots.slice(0,at+1);snapshots.push(state);if(snapshots.length>50)snapshots.shift();at=snapshots.length-1;buttons()}
 function buttons(){
@@ -314,6 +316,14 @@ function render(persist=true){
   const container=$('daysContainer');
   const anchor=container.querySelector('.day-card')?captureScrollAnchor(container):null;
   const token=++scrollRestoreToken;
+  // Capture the native <details> state synchronously before replacing cards.
+  // This also covers a fast tap on a quick-add chip after opening the map.
+  container.querySelectorAll('.day-card').forEach(card=>{
+    const map=card.querySelector('.quick-relations');
+    if(!map)return;
+    if(map.open)openQuickMaps.add(card.dataset.dayId);
+    else openQuickMaps.delete(card.dataset.dayId);
+  });
   container.innerHTML=days.map(renderDay).join('');
   bindDays();
   itineraryMap?.update();
@@ -330,10 +340,10 @@ function renderQuickAdd(d){
  const dayIndex=days.indexOf(d),prior=dayIndex>0&&d.linkedStart?locs(days[dayIndex-1]).at(-2)?.nodeId:null;
  const candidates=directionalQuickAdd(route,d,prior);
  const button=c=>'<button type="button" class="quick-node secondary" data-quick-key="'+esc(c.key)+'" title="'+esc(c.direction<0?'先返回上一點的方向':c.via?'經 '+c.via:'直接相鄰')+'">'+(c.direction<0?'↩ ':'＋ ')+esc(c.name)+(c.via?'<small class="quick-via">經 '+esc(c.via)+'</small>':'')+'</button>';
- if(!candidates.length)return '<div class="quick-add"><strong>⚡ 快速加入</strong><div class="quick-chips"><span>沒有已收錄的相鄰步行節點</span></div></div>';
+
  const svg=renderQuickTopologySvg(candidates,p.nodeId,p.name,d.coefficient,quickAddEstimatedMinutes,terrainData);
- const panel='<details class="quick-relations"><summary aria-label="查看從'+esc(p.name)+'出發的路網拓樸示意圖">路網小地圖</summary><div class="quick-route-panel"><div class="quick-route-current">目前位置：'+esc(p.name)+'</div><div class="quick-topology-canvas">'+svg+'</div><p class="quick-route-hint">已定位節點依座標等比例繪製；直線僅代表路網連通，不是實際步道線形。名稱可能移動並用細線指向節點；虛線圓點為缺座標示意位置。座標不足則顯示純拓樸圖。</p><p class="quick-route-hint">時間依當日預設係數估算，不含休息與條件式時間；「多條路線」請依上方快速加入的經由節點辨別。</p></div></details>';
- return '<div class="quick-add"><strong>⚡ 快速加入</strong><div class="quick-chips">'+candidates.map(button).join('')+panel+'</div></div>';
+ const panel='<details class="quick-relations"'+(openQuickMaps.has(d.id)?' open':'')+'><summary aria-label="查看從'+esc(p.name)+'出發的路網拓樸示意圖">路網小地圖</summary><div class="quick-route-panel"><div class="quick-route-current">目前位置：'+esc(p.name)+'</div><div class="quick-topology-canvas">'+svg+'</div><p class="quick-route-hint">已定位節點依座標等比例繪製；直線僅代表路網連通，不是實際步道線形。名稱可能移動並用細線指向節點；虛線圓點為缺座標示意位置。座標不足則顯示純拓樸圖。</p><p class="quick-route-hint">時間依當日預設係數估算，不含休息與條件式時間；「多條路線」請依上方快速加入的經由節點辨別。</p></div></details>';
+ return '<div class="quick-add"><strong>⚡ 快速加入</strong><div class="quick-chips">'+(candidates.length?candidates.map(button).join(''):'<span>沒有已收錄的相鄰步行節點</span>')+panel+'</div></div>';
 }
 // The day coefficient can change without a full render (for a stable input
 // focus). Update any existing relationship-panel estimates in place.
@@ -509,7 +519,16 @@ function bindDays(){
       render();
     };
     const profileButton=card.querySelector('.show-profile');if(profileButton)profileButton.onclick=()=>{if(openProfiles.has(d.id))openProfiles.delete(d.id);else openProfiles.add(d.id);render(false)};
-    card.querySelectorAll('[data-quick-key]').forEach(button=>button.onclick=()=>{if(appendQuickPath(d,route,button.dataset.quickKey,uid)){unlinkNextIfEndpointChanges(d);render()}});
+    const quickMap=card.querySelector('.quick-relations');
+    if(quickMap)quickMap.addEventListener('toggle',()=>{
+      if(quickMap.open)openQuickMaps.add(d.id);
+      else openQuickMaps.delete(d.id);
+    });
+    card.querySelectorAll('[data-quick-key]').forEach(button=>button.onclick=()=>{
+      // Append/re-render updates the map and current position without closing it.
+      if(quickMap?.open)openQuickMaps.add(d.id);
+      if(appendQuickPath(d,route,button.dataset.quickKey,uid)){unlinkNextIfEndpointChanges(d);render()}
+    });
     const search=card.querySelector('.node-search-inline');
     const nodeSelect=card.querySelector('.add-node');
     if(search&&nodeSelect)search.oninput=()=>{
