@@ -384,7 +384,7 @@ function renderTimeline(d){
       html+='<div class="it-row rest-row" data-index="'+idx+'">'+
       '<div class="row-identity"><div class="place"><span class="drag-handle" draggable="true" data-index="'+idx+'">⋮⋮</span><span class="place-name">☕ 休息</span></div>'+
       '<div class="arrival">'+r.endTime+'</div></div>'+
-      '<div class="route-info"><input class="rest-min minute-input" data-index="'+idx+'" type="number" min="0" value="'+r.minutes+'"><span>m</span></div>'+(!IS_PRODUCTION?'<div class="terrain-cell">—</div>':'')+'<input class="note-input" data-index="'+idx+'" placeholder="備註" value="'+esc(r.note||'')+'">'+menuHtml(idx,true,false,true)+'</div>';
+      '<div class="row-metrics"><div class="route-info"><input class="rest-min minute-input" data-index="'+idx+'" type="number" min="0" value="'+r.minutes+'"><span>m</span></div>'+(!IS_PRODUCTION?'<div class="terrain-cell">—</div>':'')+'</div><input class="note-input" data-index="'+idx+'" placeholder="備註" value="'+esc(r.note||'')+'">'+menuHtml(idx,true,false,true)+'</div>';
     }else{
       const e=r.incoming,a=e?edgeActual(e,d.coefficient):0,manual=r.type==='manual-location';
       let routeInfo='<span class="secondary-info">起點</span>';
@@ -405,8 +405,8 @@ function renderTimeline(d){
       html+='<div class="it-row" data-index="'+idx+'">'+
       '<div class="row-identity"><div class="place">'+placeName+'</div>'+
       '<div class="arrival">'+r.arrival+'</div></div>'+
-      '<div class="route-info">'+routeInfo+'</div>'+
-      (!IS_PRODUCTION?'<div class="terrain-cell" title="沿山徑距離、累積上升與累積下降（估算）">'+(e?terrainSegmentHtml(terrainByItem.get(r.id),bridgedItems.has(r.id)):'—')+'</div>':'')+
+      '<div class="row-metrics"><div class="route-info">'+routeInfo+'</div>'+
+      (!IS_PRODUCTION?'<div class="terrain-cell" title="沿山徑距離、累積上升與累積下降（估算）">'+(e?terrainSegmentHtml(terrainByItem.get(r.id),bridgedItems.has(r.id)):'—')+'</div>':'')+'</div>'+
       '<div class="terrain-note"><input class="note-input" data-index="'+idx+'" placeholder="備註" value="'+esc(r.note||'')+'">'+'</div>'+
       menuHtml(idx,false,!!r.incoming,canDeleteItem(d,idx))+'</div>';
     }
