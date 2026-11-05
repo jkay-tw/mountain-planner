@@ -274,7 +274,7 @@ button{border:0;border-radius:8px;padding:9px 12px;background:var(--accent);colo
 @media (pointer:coarse){
   .touch-sortable .drag-handle{
     display:inline-flex;align-items:center;justify-content:center;
-    min-width:36px;min-height:38px;padding:0 7px;margin-left:-4px;
+    min-width:36px;min-height:36px;padding:0 7px;margin-left:-4px;
     touch-action:none;-webkit-user-drag:none;
   }
   .touch-sortable .place-name,.touch-sortable .arrival{
