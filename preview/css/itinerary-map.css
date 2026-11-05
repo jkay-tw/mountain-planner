@@ -121,8 +121,10 @@
                         "note note note menu";
     gap:5px 9px;
   }
-  .timeline .it-row>.row-identity{gap:14px}
-  .timeline .it-row .row-identity>.place{max-width:calc(100% - 75px)}
+  .timeline .it-row>.row-identity{gap:14px;width:100%;justify-self:stretch}
+  .timeline .it-row .row-identity>.place{
+    flex:0 1 max-content;width:max-content;max-width:calc(100% - 75px);
+  }
   .timeline .it-row>.row-metrics{
     display:flex;flex-wrap:wrap;gap:6px 14px;
     align-items:center;justify-content:flex-start;
