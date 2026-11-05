@@ -1,5 +1,13 @@
 # 補座標的局部更新流程
 
+## 2026-11-05：Preview／正式版同步與新驗證入口
+
+本文件原本的 `tools/update_planner_terrain.py` 仍是唯一具來源拓樸與 DEM 能力的增量重算器；請勿為小地圖或 GPX 另做直接改 JSON 的簡化更新。
+
+跨 Preview／正式版的發布與座標一致性守門，新增 **[`QUICK_MAP_COORDINATE_SYNC_20261105.md`](QUICK_MAP_COORDINATE_SYNC_20261105.md)** 以及 `tools/sync_coordinate_geometry.py`。先執行 `python3 tools/sync_coordinate_geometry.py --check`，若因新座標或路網修改導致資料過期，用 `--build-preview <walking-network-roads.json.gz> <hgtmix.zip>` 重算且只更新 Preview；只有取得明確正式版發布同意後才能推送正式資料。
+
+本文件保留的 feature 分支作業提示屬早期工作流程；實際執行前仍須確認當前分支及正式版隔離界線。
+
 ## 日常任務只讀這份入口
 
 目標分支 `feature/v0.7-node-identity`。先確認分支與乾淨工作目錄；正式站根目錄及main/preview不在一般資料更新授權內。既有車行邊不參與步行線形。
