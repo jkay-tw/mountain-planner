@@ -317,3 +317,36 @@
  .quick-add .quick-route-panel{width:100%}
  .quick-add .quick-topology-canvas{margin-top:7px;padding:3px 0}
 }
+
+
+/* Preview: make the opt-in route map discoverable without enlarging its row. */
+.quick-add .quick-relations>summary{
+  background:#315d42;
+  color:#fff;
+  border:1px solid #284c36;
+  box-shadow:0 1px 3px #173b2624;
+  font-weight:750;
+  transition:background-color .15s ease,box-shadow .15s ease;
+}
+.quick-add .quick-relations>summary:hover,
+.quick-add .quick-relations[open]>summary{
+  background:#234a34;
+  border-color:#1e3d2c;
+  box-shadow:0 2px 6px #173b2630;
+}
+.quick-add .quick-relations>summary:focus-visible{
+  outline:2px solid #9bc2a5;
+  outline-offset:2px;
+}
+.quick-add .topo-current .topo-node-name{
+  font-weight:800;
+  fill:#224b35;
+}
+.quick-add .topo-current-badge-text{
+  font-size:10.5px;
+  font-weight:800;
+  fill:#fff;
+}
+.quick-add .topo-current-halo{
+  pointer-events:none;
+}
