@@ -163,11 +163,21 @@ export function layoutQuickTopology(topology,geometryData=null){
    const dx=pb.x-pa.x,dy=pb.y-pa.y;
    if(Math.abs(dx)>=minX||Math.abs(dy)>=minY)continue;
    const xGap=minX-Math.abs(dx),yGap=minY-Math.abs(dy);
-   // Push along the less expensive axis; equal points get a stable tie-break.
-   const onX=xGap/minX<=yGap/minY;
+   // Prefer the smaller push, but switch axes when a clamped border
+   // makes that push impossible. Otherwise several west/east labels pile up.
+   const aFixed=a.id===topology.startId,bFixed=b.id===topology.startId;
+   const room=(axis,sign,min,max)=>{
+    const av=axis==='x'?pa.x:pa.y,bv=axis==='x'?pb.x:pb.y;
+    return (aFixed?0:sign>0?av-min:max-av)+
+           (bFixed?0:sign>0?max-bv:bv-min);
+   };
+   const xRoom=room('x',dx>=0?1:-1,67,width-67);
+   const yRoom=room('y',dy>=0?1:-1,31,height-69);
+   let onX=xGap/minX<=yGap/minY;
+   if(onX&&xRoom<xGap*.9&&yRoom>1)onX=false;
+   else if(!onX&&yRoom<yGap*.9&&xRoom>1)onX=true;
    const push=clamp((onX?xGap:yGap)*.55,0,9);
    const delta=onX?(dx>=0?push:-push):(dy>=0?push:-push);
-   const aFixed=a.id===topology.startId,bFixed=b.id===topology.startId;
    const aFactor=aFixed?0:bFixed?2:1;
    const bFactor=bFixed?0:aFixed?2:1;
    if(onX){pa.x-=delta*aFactor;pb.x+=delta*bFactor}
