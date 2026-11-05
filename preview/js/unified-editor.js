@@ -365,6 +365,13 @@ function moveTimelineItem(d, from, slot) {
   return true;
 }
 
+// Keep distance/ascent/descent intact when a narrow screen needs to wrap.
+function terrainSegmentHtml(feature,bridged=false){
+  if(bridged)return '<span class="terrain-status">路徑連續・分段待定位</span>';
+  const context=feature?.intermediateCoordinatesUnknown?'<span class="terrain-context">跨未定位點合計：</span>':'';
+  const parts=formatTerrain(feature).replace('上升 ','↗ ').replace('下降 ','↘ ').split(' · ');
+  return context+parts.map(part=>'<span class="terrain-metric">'+esc(part)+'</span>').join(' ');
+}
 function renderTimeline(d){
   const rows=buildTimeline(d).rows;
   const terrain=dayTerrain(d,terrainData),terrainByItem=new Map((terrain?.features||[]).map(f=>[f.toItemId,f]));
@@ -399,7 +406,7 @@ function renderTimeline(d){
       '<div class="place">'+placeName+'</div>'+
       '<div class="arrival">'+r.arrival+'</div>'+
       '<div class="route-info">'+routeInfo+'</div>'+
-      (!IS_PRODUCTION?'<div class="terrain-cell" title="沿山徑距離、累積上升與累積下降（估算）">'+(e?esc(bridgedItems.has(r.id)?'路徑連續・分段待定位':(terrainByItem.get(r.id)?.intermediateCoordinatesUnknown?'跨未定位點合計：':'')+formatTerrain(terrainByItem.get(r.id))).replace('上升 ','↗ ').replace('下降 ','↘ '):'—')+'</div>':'')+
+      (!IS_PRODUCTION?'<div class="terrain-cell" title="沿山徑距離、累積上升與累積下降（估算）">'+(e?terrainSegmentHtml(terrainByItem.get(r.id),bridgedItems.has(r.id)):'—')+'</div>':'')+
       '<div class="terrain-note"><input class="note-input" data-index="'+idx+'" placeholder="備註" value="'+esc(r.note||'')+'">'+'</div>'+
       menuHtml(idx,false,!!r.incoming,canDeleteItem(d,idx))+'</div>';
     }
