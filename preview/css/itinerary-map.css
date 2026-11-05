@@ -305,6 +305,12 @@
 .quick-add .topo-current .topo-node-name{font-weight:750;fill:#234b34}
 .quick-add .topo-back .topo-node-name{fill:#7a5b31}
 .quick-add .topo-node-meta{font-size:10.5px;fill:#607265}
+
+.quick-add .topo-estimated .topo-node-name{fill:#756851}
+.quick-add .topo-compass text{font-size:12px;font-weight:700;fill:#486b57}
+.quick-add .topo-fallback-label{font-size:10px;fill:#8a7560}
+.quick-add .quick-route-panel .quick-route-hint{margin-top:7px}
+
 .quick-add .topo-back .topo-node-meta{fill:#8a714c}
 .quick-add .quick-route-hint{font-size:11px;line-height:1.5}
 @media(max-width:600px){
