@@ -62,14 +62,16 @@
   min-width:0;
 }
 .timeline .it-row>.row-identity{
-  grid-area:identity;display:flex;align-items:center;gap:12px;
-  min-width:0;max-width:100%;justify-self:start;
+  grid-area:identity;display:grid;
+  grid-template-columns:145px 64px;
+  align-items:center;column-gap:12px;
+  width:225px;min-width:0;max-width:100%;justify-self:start;
 }
 .timeline .it-row .row-identity>.place{
-  flex:0 1 auto;min-width:0;max-width:100%;
+  min-width:0;width:100%;
 }
 .timeline .it-row .row-identity>.arrival{
-  flex:0 0 auto;min-width:0;text-align:left;
+  min-width:0;white-space:nowrap;text-align:left;
 }
 .timeline .it-row .row-metrics>.route-info{
   grid-area:time;display:flex;align-items:center;
@@ -104,7 +106,7 @@
 @container itinerary (max-width:930px){
   .timeline .itinerary-head{display:none}
   .timeline .it-row{
-    grid-template-columns:fit-content(260px) fit-content(250px) minmax(145px,1fr) 28px;
+    grid-template-columns:225px 220px minmax(145px,1fr) 28px;
     grid-template-areas:"identity time terrain terrain" "note note note menu";
     gap:5px 10px;
   }
@@ -121,17 +123,22 @@
                         "note note note menu";
     gap:5px 9px;
   }
-  .timeline .it-row>.row-identity{gap:14px;width:100%;justify-self:stretch}
-  .timeline .it-row .row-identity>.place{
-    flex:0 1 max-content;width:max-content;max-width:calc(100% - 75px);
+  .timeline .it-row>.row-identity{
+    grid-template-columns:140px 64px;column-gap:12px;
+    width:216px;max-width:100%;justify-self:start;
   }
   .timeline .it-row>.row-metrics{
-    display:flex;flex-wrap:wrap;gap:6px 14px;
-    align-items:center;justify-content:flex-start;
-    min-width:0;max-width:100%;
+    display:grid;
+    grid-template-columns:235px minmax(0,1fr);
+    align-items:start;column-gap:12px;row-gap:4px;
+    width:100%;min-width:0;
   }
-  .timeline .it-row .row-metrics>.route-info{flex:0 1 auto;max-width:100%;align-self:center}
-  .timeline .it-row .row-metrics>.terrain-cell{flex:0 1 auto;max-width:100%;align-self:center}
+  .timeline .it-row .row-metrics>.route-info{
+    grid-area:auto;min-width:0;max-width:100%;align-self:start;
+  }
+  .timeline .it-row .row-metrics>.terrain-cell{
+    grid-area:auto;min-width:0;max-width:100%;align-self:start;
+  }
 }
 /* Very narrow: each information group gets a full line if needed. */
 @container itinerary (max-width:480px){
@@ -141,6 +148,9 @@
                         "metrics metrics"
                         "note menu";
     gap:4px 8px;
+  }
+  .timeline .it-row>.row-metrics{
+    grid-template-columns:minmax(0,1fr);
   }
 }
 /* Keep iOS input focus from triggering page zoom without oversized boxes. */
