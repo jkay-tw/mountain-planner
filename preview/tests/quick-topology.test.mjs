@@ -21,7 +21,7 @@ const route={
 const day={items:[{type:'location',nodeId:'previous'},{type:'rest',minutes:5},{type:'location',nodeId:'center'}],coefficient:1.25};
 const candidates=directionalQuickAdd(route,day);
 
-test('dense callouts keep every full name and preserve geometric ratios',()=>{
+test('dense callouts keep every full name and separate displayed dots',()=>{
  const choices=Array.from({length:16},(_,i)=>({key:'root>'+i,nodeId:'n'+i,direction:0,
   segments:[{...walking('root','n'+i,10),to:'很長的節點名稱測試'+i+'還有更多文字'}]}));
  const geo={nodes:[{nodeId:'root',coordinate:[121,24]},...choices.map((c,i)=>({nodeId:c.nodeId,coordinate:[121+i*.00001,24+i*.00002]}))]};
@@ -32,14 +32,16 @@ test('dense callouts keep every full name and preserve geometric ratios',()=>{
  assert.ok([...labels.values()].every(l=>!l.hidden));
  for(const a of labels.values())for(const b of labels.values())if(a!==b)
   assert.ok(a.r<=b.l||b.r<=a.l||a.b<=b.t||b.b<=a.t);
- const before=original.positions.get('n15').x-original.positions.get('root').x;
- const after=layout.positions.get('n15').x-layout.positions.get('root').x;
- assert.ok(Math.abs(after/before-layout.scale/original.scale)<1e-9);
+ assert.equal(layout.displaced,true);
+ const dots=[...layout.positions.values()];
+ for(let i=0;i<dots.length;i++)for(let j=i+1;j<dots.length;j++)
+  assert.ok(Math.hypot(dots[i].x-dots[j].x,dots[i].y-dots[j].y)>=23.99);
  const svg=renderQuickTopologySvg(choices,'root','起點',1,quickAddEstimatedMinutes,geo);
  assert.doesNotMatch(svg,/topo-label-omitted/);
  assert.equal((svg.match(/class="topo-node-name"/g)||[]).length,graph.nodes.length);
  assert.match(svg,/還有更多文字/);
  assert.match(svg,/topo-label-leader/);
+ assert.match(svg,/data-displaced="true"/);
 });
 
 test('one node per ID even when a destination has multiple possible routes',()=>{
