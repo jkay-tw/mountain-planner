@@ -307,6 +307,46 @@ export function layoutQuickTopologyCallouts(topology,layout){
  throw new Error('Unable to lay out quick topology labels');
 }
 
+// Text is centred inside a wider collision box. Anchor leaders to the visible
+// text or current-position badge instead of that invisible box's edge.
+export function quickLabelInkBounds(label,lines,meta,current){
+ const textWidth=(text,size)=>Array.from(text).reduce((sum,c)=>sum+(/[\x00-\xff]/.test(c)?size*.6:size),0);
+ const bounds=lines.map((line,i)=>{const w=Math.max(4,textWidth(line,12));
+  return {l:label.x-w/2,r:label.x+w/2,t:label.y+1+i*13,b:label.y+14+i*13};});
+ const metaY=label.y+12+(lines.length-1)*13+14;
+ const w=current?76:Math.max(4,textWidth(meta,10.5));
+ bounds.push({l:label.x-w/2,r:label.x+w/2,t:metaY-12,b:metaY+(current?6:3)});
+ return bounds;
+}
+
+export function quickLabelLeader(node,point,ink,layout,labels,topology){
+ const nearest=box=>({x:clamp(point.x,box.l,box.r),y:clamp(point.y,box.t,box.b)});
+ const anchor=ink.map(nearest).sort((a,b)=>Math.hypot(a.x-point.x,a.y-point.y)-Math.hypot(b.x-point.x,b.y-point.y))[0];
+ const dx=point.x-anchor.x,dy=point.y-anchor.y,len=Math.hypot(dx,dy)||1;
+ const end={x:anchor.x+dx/len*3,y:anchor.y+dy/len*3};
+ const routes=[[point,end],[point,{x:point.x,y:end.y},end],[point,{x:end.x,y:point.y},end]];
+ const boxes=[...labels.entries()].filter(([id])=>id!==node.id).map(([,b])=>b);
+ const others=[...layout.positions.entries()].filter(([id])=>id!==node.id).map(([,p])=>p);
+ const edges=topology.edges.map(e=>[layout.positions.get(e.from),layout.positions.get(e.to)]).filter(([a,b])=>a&&b);
+ const cross=(a,b,c)=>(b.x-a.x)*(c.y-a.y)-(b.y-a.y)*(c.x-a.x);
+ const intersects=(a,b,c,d)=>cross(a,b,c)*cross(a,b,d)<0&&cross(c,d,a)*cross(c,d,b)<0;
+ const score=route=>{
+  let cost=(route.length-2)*9;
+  for(let i=1;i<route.length;i++){
+   const a=route[i-1],b=route[i],length=Math.hypot(a.x-b.x,a.y-b.y);cost+=length;
+   const steps=Math.max(1,Math.ceil(length/4));
+   for(let j=1;j<=steps;j++){
+    const t=j/steps,x=a.x+(b.x-a.x)*t,y=a.y+(b.y-a.y)*t;
+    if(others.some(p=>Math.hypot(p.x-x,p.y-y)<11))cost+=200;
+    if(boxes.some(r=>x>r.l-3&&x<r.r+3&&y>r.t-3&&y<r.b+3))cost+=200;
+   }
+   for(const [c,d] of edges)if(intersects(a,b,c,d))cost+=45;
+  }
+  return cost;
+ };
+ return routes.sort((a,b)=>score(a)-score(b))[0];
+}
+
 export function renderQuickTopologySvg(candidates,startId,startName,coefficient,estimate,geometryData=null){
  const topology=buildQuickTopology(candidates,startId,startName);
  let layout=layoutQuickTopology(topology,geometryData);
@@ -344,10 +384,10 @@ export function renderQuickTopologySvg(candidates,startId,startName,coefficient,
   const metaSvg=current
     ?'<g class="topo-current-badge"><rect x="'+(label.x-38)+'" y="'+(metaY-12)+'" width="76" height="18" rx="8" fill="#315d42"/><text class="topo-current-badge-text" x="'+label.x+'" y="'+(metaY+1)+'" text-anchor="middle" fill="#fff">目前位置</text></g>'
     :'<text class="topo-node-meta'+(routeKey?' quick-route-duration':'')+'" text-anchor="middle" x="'+label.x+'" y="'+metaY+'"'+(routeKey?' data-route-key="'+xml(routeKey)+'"':'')+'>'+xml(meta)+'</text>';
-  // Leader lines connect the label's nearest boundary to the unchanged dot.
-  const targetX=clamp(p.x,label.l,label.r),targetY=clamp(p.y,label.t,label.b);
-  const distance=Math.hypot(targetX-p.x,targetY-p.y);
-  const leader=distance>(current?8:16)?'<path class="topo-label-leader" d="M '+p.x+' '+p.y+' L '+targetX+' '+targetY+'" fill="none" stroke="'+(current?'#315d42':'#9aaa9f')+'" stroke-width="'+(current?'1.5':'1')+'" stroke-dasharray="'+(current?'none':'2 3')+'"/>':'';
+  const ink=quickLabelInkBounds(label,text,meta,current);
+  const line=quickLabelLeader(n,p,ink,layout,labels,topology);
+  const linePath=line.map((v,i)=>(i?'L ':'M ')+v.x+' '+v.y).join(' ');
+  const leader='<path class="topo-label-leader" data-node-id="'+xml(n.id)+'" d="'+linePath+'" fill="none" stroke="'+(current?'#315d42':'#82988a')+'" stroke-width="'+(current?'1.5':'1.2')+'" stroke-dasharray="'+(current?'none':'3 2')+'"/>';
   const halo=current?'<circle class="topo-current-halo" cx="'+p.x+'" cy="'+p.y+'" r="13" fill="#d5ece0" opacity=".82"/>':'';
   return '<g class="topo-node'+(current?' topo-current':back?' topo-back':'')+(estimated?' topo-estimated':'')+'"><title>'+xml(n.name+(current?'（目前位置）':back?'（原路返回）':'')+(estimated?'，座標未取得，位置為示意':''))+'</title>'+leader+halo+'<circle cx="'+p.x+'" cy="'+p.y+'" r="'+(current?10:7)+'" fill="'+(current?'#315d42':back?'#ead9bd':'#e4efe9')+'" stroke="'+(current?'#315d42':back?'#947041':'#557464')+'" stroke-width="2"'+(estimated?' stroke-dasharray="3 2"':'')+'/>'+nameSvg+metaSvg+'</g>';
  }).join('');
