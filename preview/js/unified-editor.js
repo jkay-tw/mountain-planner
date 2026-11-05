@@ -372,6 +372,14 @@ function terrainSegmentHtml(feature,bridged=false){
   const parts=formatTerrain(feature).replace('上升 ','↗ ').replace('下降 ','↘ ').split(' · ');
   return context+parts.map(part=>'<span class="terrain-metric">'+esc(part)+'</span>').join(' ');
 }
+// Keep the water toggle immediately after the location's last characters,
+// including when the location wraps to a second line.
+function renderPlaceLabel(name,waterButton){
+  const chars=Array.from(String(name??''));
+  const prefix=chars.slice(0,-2).join('');
+  const suffix=chars.slice(-2).join('');
+  return '<span class="place-name">'+esc(prefix)+'<span class="place-tail">'+esc(suffix)+waterButton+'</span></span>';
+}
 function renderTimeline(d){
   const rows=buildTimeline(d).rows;
   const terrain=dayTerrain(d,terrainData),terrainByItem=new Map((terrain?.features||[]).map(f=>[f.toItemId,f]));
@@ -401,9 +409,9 @@ function renderTimeline(d){
       const water='<button class="icon-toggle water '+(r.hasWater?'active':'')+'" data-index="'+idx+'" title="水源">💧</button>';
       const placeName=manual
         ?'<span class="drag-handle" draggable="true" data-index="'+idx+'">⋮⋮</span>'+peak+'<input class="manual-name" data-index="'+idx+'" value="'+esc(r.name)+'">'+water
-        :peak+'<span class="place-name">'+esc(r.name)+'</span>'+water;
+        :peak+renderPlaceLabel(r.name,water);
       html+='<div class="it-row" data-index="'+idx+'">'+
-      '<div class="row-identity"><div class="place">'+placeName+'</div>'+
+      '<div class="row-identity"><div class="place '+(manual?'':'place-inline')+'">'+placeName+'</div>'+
       '<div class="arrival">'+r.arrival+'</div></div>'+
       '<div class="row-metrics"><div class="route-info">'+routeInfo+'</div>'+
       (!IS_PRODUCTION?'<div class="terrain-cell" title="沿山徑距離、累積上升與累積下降（估算）">'+(e?terrainSegmentHtml(terrainByItem.get(r.id),bridgedItems.has(r.id)):'—')+'</div>':'')+'</div>'+
