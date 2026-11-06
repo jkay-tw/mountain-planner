@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: ['data/g04-daba-coordinate-sync-20261106']
-    paths: ['.github/workflows/archive-terrain-sources.yml']
+    paths: ['.github/workflows/archive-terrain-sources.yml', 'tools/archive_terrain_sources.py']
 
 permissions:
   contents: write
