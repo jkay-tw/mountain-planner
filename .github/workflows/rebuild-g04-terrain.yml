@@ -98,7 +98,15 @@ jobs:
               'shared:cw-v07-002',
               'shared:cw-v07-021',
           }
-          assert set(report['changedNodeIds'])==extras|{target},report['changedNodeIds']
+          recorded=set(report['changedNodeIds'])
+          # A fresh run changes G04 + 5 vehicle-only bookkeeping nodes.
+          # A rerun on already generated G04 geometry changes only its input
+          # fingerprint; the three original G04 spans must be preserved.
+          assert recorded in (extras, extras|{target}),report['changedNodeIds']
+          if target not in recorded:
+              prior={s['id']:s for s in old['spans'] if target in [s['fromId'],*s.get('viaNodeIds',[]),s['toId']]}
+              current={s['id']:s for s in new['spans'] if target in [s['fromId'],*s.get('viaNodeIds',[]),s['toId']]}
+              assert prior and current==prior,'Previously verified G04 spans changed on fingerprint-only rerun'
           before={n['nodeId']:n for n in old['nodes']}
           after={n['nodeId']:n for n in new['nodes']}
           for node_id in extras:
