@@ -1,0 +1,152 @@
+name: Rebuild verified G04 coordinate geometry
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ['data/g04-daba-coordinate-sync-20261106']
+    paths: ['.github/workflows/rebuild-g04-terrain.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rebuild-g04-terrain-20261106
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Wait for verified and complete source archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          for i in $(seq 1 80); do
+            if gh release view terrain-sources-20261106 --json assets --jq '.assets | map(.name) | sort | join(",")' 2>/dev/null | grep -q 'terrain-sources-manifest.json'; then
+              names=$(gh release view terrain-sources-20261106 --json assets --jq '.assets | map(.name) | join(" ")')
+              if [[ "$names" == *"walking-network-roads.json.gz"* && "$names" == *"hgtmix.zip"* && "$names" == *"terrain-sources-manifest.json"* ]]; then
+                echo "Verified source archive is ready"; exit 0
+              fi
+            fi
+            status=$(gh api repos/${GITHUB_REPOSITORY}/actions/runs/42157345318 --jq '.status + ":" + (.conclusion // "")' 2>/dev/null || true)
+            if [[ "$status" == "completed:failure" || "$status" == "completed:cancelled" ]]; then
+              echo "Source recovery failed: $status"; exit 1
+            fi
+            sleep 20
+          done
+          echo "Verified source archive unavailable; refusing to rebuild"; exit 1
+      - name: Download and authenticate pinned OSM/DEM source assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/terrain-source"
+          gh release download terrain-sources-20261106 --dir "$RUNNER_TEMP/terrain-source" --pattern 'walking-network-roads.json.gz' --pattern 'hgtmix.zip' --pattern 'terrain-sources-manifest.json'
+          python3 - "$RUNNER_TEMP/terrain-source" <<'PY'
+          import gzip,hashlib,json,sys
+          from pathlib import Path
+          folder=Path(sys.argv[1]);manifest=json.loads((folder/'terrain-sources-manifest.json').read_text())
+          expected='72e6ec59e0b015aa52fd26b0240dc4155beca04a3071b0d07878eef6f02ba2b6'
+          assert manifest['pbf']['sha256']==expected
+          for entry in manifest['assets']:
+              path=folder/entry['name']
+              assert path.is_file(),entry['name']
+              assert path.stat().st_size==entry['bytes'],entry['name']
+              with path.open('rb') as f: actual=hashlib.file_digest(f,'sha256').hexdigest()
+              assert actual==entry['sha256'],entry['name']
+          with gzip.open(folder/'walking-network-roads.json.gz','rt') as f: raw=json.load(f)
+          assert raw['source']['sha256']==expected
+          print('Archive checksums and OSM provenance verified:',manifest['pbf']['url'])
+          PY
+      - name: Install existing terrain dependencies
+        run: python3 -m pip install numpy==2.3.5 scipy==1.17.0
+      - name: Recompute changed Preview spans and retain source report
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp data/geometry/planner-terrain-v1.json "$RUNNER_TEMP/original-terrain.json"
+          python3 tools/update_planner_terrain.py "$RUNNER_TEMP/terrain-source/walking-network-roads.json.gz" "$RUNNER_TEMP/terrain-source/hgtmix.zip" --output preview/data/geometry/planner-terrain-v1.json --report data/geometry/sources/owner-coordinate-update-report.json
+          python3 tools/sync_coordinate_geometry.py --build-preview "$RUNNER_TEMP/terrain-source/walking-network-roads.json.gz" "$RUNNER_TEMP/terrain-source/hgtmix.zip"
+          python3 tools/sync_coordinate_geometry.py --check
+      - name: Gate G04 source geometry and preserved data
+        shell: bash
+        run: |
+          python3 - "$RUNNER_TEMP/original-terrain.json" <<'PY'
+          import json,sys
+          from pathlib import Path
+          old=json.loads(Path(sys.argv[1]).read_text())
+          new=json.loads(Path('preview/data/geometry/planner-terrain-v1.json').read_text())
+          report=json.loads(Path('data/geometry/sources/owner-coordinate-update-report.json').read_text())
+          target='g04-fork-daba'
+          assert report['changedNodeIds']==[target],report['changedNodeIds']
+          assert not report['removedNodeIds'],report['removedNodeIds']
+          assert not [x for x in report['failedRoutes'] if target in x.get('nodeIds',[])],report['failedRoutes']
+          node=next(n for n in new['nodes'] if n['nodeId']==target)
+          assert node['coordinate']==[121.2588183,24.4561637],node
+          assert isinstance(node['elevationMeters'],(int,float)),node
+          oldsp={s['id']:s for s in old['spans']}
+          newsp={s['id']:s for s in new['spans']}
+          for span in old['spans']:
+              nodes=[span['fromId'],*span.get('viaNodeIds',[]),span['toId']]
+              if target not in nodes: assert newsp[span['id']]==span,span['id']
+          updated=[s for s in new['spans'] if target in [s['fromId'],*s.get('viaNodeIds',[]),s['toId']]]
+          assert updated,'No G04 walking path reconstructed; do not publish unlinked coordinate'
+          for span in updated:
+              assert len(span.get('coordinates',[]))>=2 and span.get('distanceMeters',0)>0,span['id']
+              assert span.get('profile') and span.get('sourceWayIds'),span['id']
+          assert new['spanDependencies'].get(target),'Missing G04 dependency index'
+          assert not [x for x in new['coverage']['unrepresentedPairs'] if target in (x['fromId'],x['toId'])], 'G04 remains unrepresented'
+          print('G04 verified:',len(updated),'source paths; non-G04 spans unchanged')
+          PY
+      - name: Promote accepted geometry and run full automated tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/sync_coordinate_geometry.py --promote-production --approve-production
+          node --check js/app.js
+          node --check js/planner.js
+          node --check js/node-identity.js
+          node --experimental-default-type=module --test tests/*.test.mjs
+          python3 -m unittest discover -s tests -p 'test_*.py'
+          python3 tools/sync_coordinate_geometry.py --check
+          cmp data/geometry/planner-terrain-v1.json preview/data/geometry/planner-terrain-v1.json
+          git diff --check
+      - name: Commit only validated data and cache-version changes to existing PR branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import subprocess
+          paths=set(subprocess.check_output(['git','diff','--name-only'],text=True).splitlines())
+          allowed={
+              'data/geometry/planner-terrain-v1.json',
+              'preview/data/geometry/planner-terrain-v1.json',
+              'data/geometry/sources/owner-update-osm-ways.json',
+              'data/geometry/sources/owner-coordinate-update-report.json',
+              'preview/js/unified-editor.js','preview/unified-editor.html',
+              'js/unified-editor.js','index.html',
+          }
+          assert paths and paths <= allowed,(paths,paths-allowed)
+          print('Validated output filenames:',sorted(paths))
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/geometry/planner-terrain-v1.json preview/data/geometry/planner-terrain-v1.json
+          git add data/geometry/sources/owner-update-osm-ways.json data/geometry/sources/owner-coordinate-update-report.json
+          git add preview/js/unified-editor.js preview/unified-editor.html js/unified-editor.js index.html
+          git commit -m "data: recalculate G04 fork source geometry and sync Preview and production inputs"
+          git push origin HEAD:data/g04-daba-coordinate-sync-20261106
+      - name: Refresh release's source notice without changing application release
+        shell: bash
+        run: |
+          gh release edit terrain-sources-20261106 --notes-file docs/TERRAIN_SOURCE_NOTICES.md
+          gh release upload terrain-sources-20261106 docs/TERRAIN_SOURCE_NOTICES.md --clobber
