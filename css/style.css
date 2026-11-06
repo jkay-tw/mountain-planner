@@ -252,3 +252,100 @@ button{border:0;border-radius:8px;padding:9px 12px;background:var(--accent);colo
   .day-head{grid-template-areas:"toggle title clear" "start start start"
     "coefficient coefficient coefficient" "stats stats stats"}
 }
+
+/* Issue #10 Preview: mobile drag/drop without changing timeline row heights. */
+.it-row.touch-sortable{position:relative}
+.it-row.touch-dragging{opacity:.45;background:#eaf4ec;outline:1px dashed #5e8c69}
+.it-row.touch-drop-before::before,
+.it-row.touch-drop-after::after{
+  content:"";position:absolute;left:0;right:0;height:4px;
+  border-radius:4px;background:#25804d;z-index:8;pointer-events:none;
+  box-shadow:0 0 0 1px #fff;
+}
+.it-row.touch-drop-before::before{top:-3px}
+.it-row.touch-drop-after::after{bottom:-3px}
+.mobile-drag-ghost{
+  position:fixed;z-index:9999;pointer-events:none;box-sizing:border-box;
+  padding:11px 14px;border:1px solid #6c9b76;border-radius:10px;
+  background:#fff;color:#244932;box-shadow:0 8px 22px rgba(0,0,0,.18);
+  font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;
+  text-overflow:ellipsis;opacity:.95;
+}
+@media (pointer:coarse){
+  .touch-sortable .drag-handle{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:36px;min-height:36px;padding:0 7px;margin-left:-4px;
+    touch-action:pan-y;-webkit-user-drag:none;
+  }
+  .touch-sortable .place-name,.touch-sortable .arrival{
+    -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;
+  }
+}
+
+/* Fixed drop marker avoids stacking/overflow bugs in responsive grid rows. */
+.mobile-drop-indicator {
+  position:fixed;z-index:10001;height:5px;border-radius:5px;
+  background:#167b46;box-shadow:0 0 0 1px white,0 2px 6px rgba(0,0,0,.25);
+  pointer-events:none;
+}
+.mobile-drop-indicator::after {
+  content:"放在這裡";position:absolute;right:0;top:-12px;
+  padding:3px 6px;border-radius:5px;background:#167b46;
+  color:white;font-size:11px;font-weight:700;line-height:1.3;white-space:nowrap;
+}
+
+
+/* Issue #10 follow-up: itinerary time typography Preview only.
+   Arrival remains 15px desktop / 14px at <=900px; reference times remain 10px.
+   Do not lower mobile editable inputs below 16px (iOS focus zoom protection). */
+.calculated-time{font-size:14px}
+.minute-input{font-size:14px!important}
+@media(max-width:600px){
+  .minute-input{font-size:16px!important}
+}
+
+/* Issue #10 typography review v2: the arrival clock is primary.
+   Shared numerals ensure size comparisons are not skewed by Calibri vs system fonts.
+   Keep existing minute inputs at 14px desktop and 16px mobile. */
+.it-row .arrival,
+.it-row .calculated-time{
+  font-family:Arial,"Noto Sans TC",sans-serif;
+  font-variant-numeric:tabular-nums;
+}
+.it-row .arrival{
+  font-size:15px;
+  font-weight:750;
+  color:#263B32;
+}
+.it-row .calculated-time{
+  font-size:14px;
+  font-weight:600;
+  color:#536B7A;
+}
+
+/* Preview typography audit: location labels are primary itinerary information.
+   Manual location remains an editable input; preserve >=16px on mobile to avoid iOS zoom. */
+.it-row .place-name{font-size:15px;line-height:1.4}
+.it-row .manual-name{font-size:15px}
+@media(max-width:600px){
+  .it-row .manual-name{font-size:16px}
+}
+
+
+/* Preview typography audit: medium and high priority readability improvements.
+   Scope to the itinerary editor. Map CSS loads after this stylesheet, so
+   timeline selectors intentionally have higher specificity. */
+.timeline .itinerary-head{font-size:12px}
+.timeline .it-row>.terrain-cell{font-size:12px}
+.it-row .note-input,.day-footer .day-note{font-size:13px}
+.it-row .edge-coef-label{font-size:12px}
+.day-head .stat span{font-size:11px}
+.day-tools .node-action-controls>.compact-day-action{font-size:12px}
+.it-row .row-menu .menu-box button{font-size:13px}
+/* Existing <=600px input/textarea 16px !important remains in force for iOS. */
+
+
+/* Help entry remains prominent in desktop and collapsed tool menus. */
+a.guide-link{background:#28583d!important;color:#fff!important;font-weight:700;border-radius:7px;padding:7px 11px;text-decoration:none}
+a.guide-link:hover{background:#193e2c!important}
+a.guide-link:focus-visible{outline:3px solid #d88840;outline-offset:3px}

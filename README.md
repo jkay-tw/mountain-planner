@@ -2,14 +2,15 @@
 
 以台灣上河步程資料為基礎的靜態網頁行程規劃工具。
 
-- [開啟正式版 v0.8.8](https://jkay-tw.github.io/mountain-planner/)
-- [開啟 功能預覽](https://jkay-tw.github.io/mountain-planner/preview/unified-editor.html?v=coefwidth3)
-- [v0.8.8 更新與使用說明](docs/v0.8.8_RELEASE.md)
+- [開啟正式版 v0.9.0](https://jkay-tw.github.io/mountain-planner/)
+- [開啟 功能預覽](https://jkay-tw.github.io/mountain-planner/preview/unified-editor.html?v=v090)
+- [v0.9.0 發布說明](docs/v0.9.0_RELEASE.md)
+- [圖文使用說明](https://jkay-tw.github.io/mountain-planner/guide.html?v=v090)
 - [v0.8 功能、資料範圍與驗收](docs/v0.8_RELEASE.md)
 - [v0.8.1 座標、連續路徑與剩餘資料缺口](docs/v0.8.1_COORDINATE_UPDATE_20261104.md)
 - [補座標的局部更新流程](docs/COORDINATE_UPDATE_WORKFLOW.md)
 - [快速加入路網小地圖／座標同步交接（2026-11-05）](docs/QUICK_MAP_COORDINATE_SYNC_20261105.md)
-- 開發分支：`feature/segment-coefficients-ios-integration`
+- 本次發布：`v0.9.0`；後續改動先於 Preview 驗收。
 - [專案導覽與測試指令](docs/PROJECT_GUIDE.md)
 
 ## 主要功能
@@ -22,12 +23,13 @@
 - 前後兩段快速加入，只顯示「＋ 名稱」；手機備註換行；Excel 採 A4 直向、獨立距離／升降欄與時:分格式。
 - 各瀏覽器分頁獨立暫存行程；一般新分頁載入最後修改的共用備份。重要行程仍可匯出檔案備份。
 
-## v0.8.8 更新
+## v0.9.0 更新
 
-- 路段係數顯示兩位小數，鍵盤上下鍵每次 ±0.10；修改每日預設不影響既有路段。
-- 舊行程保留原規劃分鐘數；新 Day 2 起預設銜接前日，支援前日尚無終點時的待銜接。
-- 手機出發時間支援直接輸入與系統選擇器；改善 iPhone 重繪捲動與輸入放大情形。
-- 調整係數欄寬、中寬 Day 標頭與少量節點剖面留白。
+- 路網小地圖支援附近節點名稱、引線與目前位置；密集處採示意避讓，連續快速加入保持展開。
+- 快速加入顯示經由節點與返回方向，手機休息／手動點支援觸控拖曳。
+- 調整桌面工具列與窄視窗選單，使用說明以醒目底色及白字呈現。
+- 重製圖文說明，依建立行程流程解說，提供局部截圖、功能框線、係數範例與可放大圖片。
+- 座標同步守門、來源檢查與快取更新工具已收錄；資料更新仍須通過重算及驗證。
 
 ## 資料範圍
 

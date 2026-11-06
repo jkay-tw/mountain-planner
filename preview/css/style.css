@@ -343,3 +343,9 @@ button{border:0;border-radius:8px;padding:9px 12px;background:var(--accent);colo
 .day-tools .node-action-controls>.compact-day-action{font-size:12px}
 .it-row .row-menu .menu-box button{font-size:13px}
 /* Existing <=600px input/textarea 16px !important remains in force for iOS. */
+
+
+/* Help entry remains prominent in desktop and collapsed tool menus. */
+a.guide-link{background:#28583d!important;color:#fff!important;font-weight:700;border-radius:7px;padding:7px 11px;text-decoration:none}
+a.guide-link:hover{background:#193e2c!important}
+a.guide-link:focus-visible{outline:3px solid #d88840;outline-offset:3px}
