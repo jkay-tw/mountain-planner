@@ -1,0 +1,58 @@
+name: Publish approved G04 data-only release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/geometry/planner-terrain-v1.json'
+      - 'docs/G04_COORDINATE_SYNC_20261106.md'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    if: github.repository == 'jkay-tw/mountain-planner'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify source agreement and synced cache URLs
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/sync_coordinate_geometry.py --check
+          cmp data/geometry/planner-terrain-v1.json preview/data/geometry/planner-terrain-v1.json
+          python3 - <<'PY'
+          import hashlib,json,re
+          from pathlib import Path
+          data=Path('data/geometry/planner-terrain-v1.json').read_bytes()
+          expected='geo'+hashlib.sha256(data).hexdigest()[:12]
+          runtime=json.loads(data)
+          assert next(n for n in runtime['nodes'] if n['nodeId']=='g04-fork-daba')['coordinate']==[121.2588183,24.4561637]
+          for file in ['js/unified-editor.js','preview/js/unified-editor.js']:
+              content=Path(file).read_text()
+              assert f'data/geometry/planner-terrain-v1.json?v={expected}' in content,file
+          for file,script in [('index.html','js/unified-editor.js'),('preview/unified-editor.html','preview/js/unified-editor.js')]:
+              content=Path(file).read_text()
+              sha='geo'+hashlib.sha256(Path(script).read_bytes()).hexdigest()[:12]
+              assert f'js/unified-editor.js?v={sha}' in content,file
+          print('Production and Preview data/cache fingerprints verified:',expected)
+          PY
+      - name: Create documented data-only release without changing v0.9.0 latest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view data-g04-20261106 >/dev/null 2>&1; then
+            echo "Data patch release already exists; not republishing"
+          else
+            gh release create data-g04-20261106 --target "$GITHUB_SHA" \
+              --title 'G04 岔路座標及地形資料同步（2026-11-06）' \
+              --notes-file docs/G04_COORDINATE_SYNC_20261106.md \
+              --latest=false
+          fi
