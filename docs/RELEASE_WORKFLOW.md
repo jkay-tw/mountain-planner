@@ -37,3 +37,8 @@ Git tracks source code, NOT browser localStorage. Before deploying incompatible 
 
 ## Preview deployment
 A feature branch alone does NOT create a second GitHub Pages URL. Preview hosting requires a separately configured deployment (e.g., Actions to a preview path or external preview hosting). Until it is verified, do not claim the development branch is publicly previewable.
+
+
+## Current release
+
+v0.9.0 (2026-11-06): production `index.html`, guide `guide.html`; accepted Preview UI promoted with existing production storage keys. Pre-release rollback SHA: `ffee1091adc4532149061b3c1ec5bc3cbfb72c91`. See `docs/v0.9.0_RELEASE.md`.

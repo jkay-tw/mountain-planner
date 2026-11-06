@@ -1,10 +1,12 @@
 import {captureScrollAnchor,restoreScrollAnchor} from './scroll-anchor.js?v=v088';
+import {bindMobileTouchSort,insertionIndex} from './mobile-touch-sort.js?v=v090';
 import {normalizeTimeInput} from './time-input.js?v=mobile1';
 import {syncLinkedDays} from './day-link.js?v=segments1';
 import {chooseSaveTarget,writeDownload,reportSaveError} from './save-file.js?v=v086';
 import {bindProfileExports} from './profile-export.js?v=v084';
 import {makeDemoDays} from './demo-itinerary.js?v=segments1';
-import {directionalQuickAdd,appendQuickPath} from './quick-add.js?v=segments1';
+import {directionalQuickAdd,appendQuickPath,quickAddEstimatedMinutes} from './quick-add.js?v=v090';
+import {renderQuickTopologySvg} from './quick-topology.js?v=v090';
 import {dayTerrain,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=layout2';
 import {createTabAutosave} from './tab-autosave.js?v=v0725';
 import {loadManifest,loadRoute} from './data-loader.js';
@@ -20,12 +22,14 @@ const $=id=>document.getElementById(id);
 const IS_PRODUCTION=document.body.dataset.mode==='production';
 const IS_DEMO=!IS_PRODUCTION&&new URLSearchParams(location.search).get('demo')==='xueshan';
 const STORAGE_KEY=IS_PRODUCTION?'mountain-planner.global-autosave.v1':'mountain-planner.unified-preview-autosave.v0711';
-const APP_VERSION=IS_PRODUCTION?'v0.8.8':'v0.8.8 Segment + iPhone Preview';
+const APP_VERSION=IS_PRODUCTION?'v0.9.0':'v0.9.0 Preview';
 const COLLAPSE_KEY=IS_PRODUCTION?'mountain-planner.collapsed-days.v1':'mountain-planner.unified-preview-collapsed.v0711';
 let collapsedDays=new Set();
 let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',scope='';
 let itineraryMap=null,terrainData=null;
 const openProfiles=new Set();
+// Ephemeral UI state: the quick map stays open while a day is re-rendered.
+const openQuickMaps=new Set();
 let snapshots=[],at=-1,restoring=false;
 function checkpoint(){if(restoring)return;const state=JSON.stringify({routeId:route?.route_id||null,scope,tripStartDate,days});if(state===snapshots[at])return;snapshots=snapshots.slice(0,at+1);snapshots.push(state);if(snapshots.length>50)snapshots.shift();at=snapshots.length-1;buttons()}
 function buttons(){
@@ -68,7 +72,7 @@ async function init(){
   days=restoredDays?.length?sanitizeDays(migrateDaysToNodeIds(restoredDays,route)):[newDay(0)];
   if(IS_DEMO){days=makeDemoDays(route,uid);scope='G04';$('routeSelect').value=scope;const banner=document.createElement('div');banner.className='notice';banner.textContent='範例模式：可以試用快速加入與編輯，這個頁面不讀寫原行程暫存。';$('daysContainer').before(banner)}
   $('dayCount').value=String(days.length);
-  try{const response=await fetch('data/geometry/planner-terrain-v1.json?v=v084');if(!response.ok)throw Error();terrainData=await response.json()}catch(error){console.warn('節點座標與地形資料未載入')}
+  try{const response=await fetch('data/geometry/planner-terrain-v1.json?v=geo61aeb0f82567',{cache:'no-store'});if(!response.ok)throw Error();terrainData=await response.json()}catch(error){console.warn('節點座標與地形資料未載入')}
   bindGlobal();
   render(false);saveAutosave(false);checkpoint();
   if($('itineraryGeometry'))import('./itinerary-map.js?v=v087')
@@ -312,6 +316,14 @@ function render(persist=true){
   const container=$('daysContainer');
   const anchor=container.querySelector('.day-card')?captureScrollAnchor(container):null;
   const token=++scrollRestoreToken;
+  // Capture the native <details> state synchronously before replacing cards.
+  // This also covers a fast tap on a quick-add chip after opening the map.
+  container.querySelectorAll('.day-card').forEach(card=>{
+    const map=card.querySelector('.quick-relations');
+    if(!map)return;
+    if(map.open)openQuickMaps.add(card.dataset.dayId);
+    else openQuickMaps.delete(card.dataset.dayId);
+  });
   container.innerHTML=days.map(renderDay).join('');
   bindDays();
   itineraryMap?.update();
@@ -327,8 +339,23 @@ function renderQuickAdd(d){
  const p=last(d);if(p?.type!=='location')return '<div class="quick-add empty">選擇起點後顯示快速加入；手動點請用節點選單銜接。</div>';
  const dayIndex=days.indexOf(d),prior=dayIndex>0&&d.linkedStart?locs(days[dayIndex-1]).at(-2)?.nodeId:null;
  const candidates=directionalQuickAdd(route,d,prior);
- const button=c=>'<button type="button" class="quick-node secondary" data-quick-key="'+esc(c.key)+'">＋ '+esc(c.name)+'</button>';
- return '<div class="quick-add"><strong>⚡ 快速加入</strong><div class="quick-chips">'+(candidates.map(button).join('')||'<span>沒有已收錄的相鄰步行節點</span>')+'</div></div>';
+ const button=c=>'<button type="button" class="quick-node secondary" data-quick-key="'+esc(c.key)+'" title="'+esc(c.direction<0?'先返回上一點的方向':c.via?'經 '+c.via:'直接相鄰')+'">'+(c.direction<0?'↩ ':'＋ ')+esc(c.name)+(c.via?'<small class="quick-via">經 '+esc(c.via)+'</small>':'')+'</button>';
+
+ const svg=renderQuickTopologySvg(candidates,p.nodeId,p.name,d.coefficient,quickAddEstimatedMinutes,terrainData);
+ const positionHint='路網為便於辨識的示意圖，方位與距離僅供參考。';
+ const panel='<details class="quick-relations"'+(openQuickMaps.has(d.id)?' open':'')+'><summary aria-label="查看從'+esc(p.name)+'出發的路網拓樸示意圖">路網小地圖</summary><div class="quick-route-panel"><div class="quick-route-current">目前位置：'+esc(p.name)+'</div><div class="quick-topology-canvas">'+svg+'</div><p class="quick-route-hint">'+positionHint+'直線僅代表路網連通，不是實際步道線形。名稱可能移動並用細線指向節點；虛線圓點為缺座標示意位置。座標不足則顯示純拓樸圖。</p><p class="quick-route-hint">時間依當日預設係數估算，不含休息與條件式時間；「多條路線」請依上方快速加入的經由節點辨別。</p></div></details>';
+ return '<div class="quick-add"><strong>⚡ 快速加入</strong><div class="quick-chips">'+(candidates.length?candidates.map(button).join(''):'<span>沒有已收錄的相鄰步行節點</span>')+panel+'</div></div>';
+}
+// The day coefficient can change without a full render (for a stable input
+// focus). Update any existing relationship-panel estimates in place.
+function refreshQuickRelationTimes(card,d){
+ const dayIndex=days.indexOf(d),prior=dayIndex>0&&d.linkedStart?locs(days[dayIndex-1]).at(-2)?.nodeId:null;
+ const choices=new Map(directionalQuickAdd(route,d,prior).map(c=>[c.key,c]));
+ card.querySelectorAll('.quick-route-duration[data-route-key]').forEach(label=>{
+  const candidate=choices.get(label.dataset.routeKey);
+  const m=candidate?quickAddEstimatedMinutes(candidate,d.coefficient):null;
+  label.textContent=m===null?'時間待填':'約 '+m+' 分';
+ });
 }
 function renderDay(d,i){
   const s=summarizeDay(d),collapsed=collapsedDays.has(d.id),f=first(d),l=last(d);
@@ -350,19 +377,47 @@ function renderDay(d,i){
   '<div class="day-footer">'+(true?'<div class="terrain-daily"><p class="terrain-summary">'+esc(formatTerrain(terrain,{partial:!!terrain?.gaps.length}))+'</p><button class="show-profile secondary" type="button" aria-expanded="'+openProfiles.has(d.id)+'">'+(openProfiles.has(d.id)?'收合高度剖面':'查看高度剖面')+'</button></div>'+(openProfiles.has(d.id)?'<div class="day-profile">'+(terrain?renderTerrainProfile(terrain):'<p>地形資料未載入。</p>')+'</div>':''):'')+'<textarea class="day-note" placeholder="Day '+(i+1)+' 備註">'+esc(d.note||'')+'</textarea></div></article>';
 }
 
+// Both native desktop drag/drop and touch gestures use the same safe reorder.
+function moveTimelineItem(d, from, slot) {
+  const insert = insertionIndex(from, slot, d.items.length);
+  if (insert === null || insert === from) return false;
+  const oldStart = first(d)?.id, oldEnd = last(d)?.id;
+  const [item] = d.items.splice(from, 1);
+  d.items.splice(insert, 0, item);
+  normalizeDay(d, route);
+  if (oldStart !== first(d)?.id) d.linkedStart = false;
+  if (oldEnd !== last(d)?.id) unlinkNextIfEndpointChanges(d);
+  render();
+  return true;
+}
+
+// Keep distance/ascent/descent intact when a narrow screen needs to wrap.
+function terrainSegmentHtml(feature,bridged=false){
+  if(bridged)return '<span class="terrain-status">路徑連續・分段待定位</span>';
+  const context=feature?.intermediateCoordinatesUnknown?'<span class="terrain-context">跨未定位點合計：</span>':'';
+  const parts=formatTerrain(feature).replace('上升 ','↗ ').replace('下降 ','↘ ').split(' · ');
+  return context+parts.map(part=>'<span class="terrain-metric">'+esc(part)+'</span>').join(' ');
+}
+// Keep the water toggle immediately after the location's last characters,
+// including when the location wraps to a second line.
+function renderPlaceLabel(name){
+  // The adjacent water button is a separate flex item; both icons center
+  // beside the full, naturally wrapping location-name block.
+  return '<span class="place-name">'+esc(name)+'</span>';
+}
 function renderTimeline(d){
   const rows=buildTimeline(d).rows;
   const terrain=dayTerrain(d,terrainData),terrainByItem=new Map((terrain?.features||[]).map(f=>[f.toItemId,f]));
   const bridgedItems=new Set((terrain?.features||[]).filter(f=>f.intermediateCoordinatesUnknown).flatMap(f=>f.viaItemIds));
   if(!rows.length)return '<div class="empty">'+(route?'直接選擇第一個行程點；它就是當日的起點。':'請先選擇上河圖群組。')+'</div>';
-  let html=(true?'<div class="itinerary-head"><span>地點</span><span>抵達</span><span>規劃時間</span><span>距離／升降</span><span>備註</span><span></span></div>':'')+'<div class="drop-zone" data-drop="0"></div>';
+  let html=(true?'<div class="itinerary-head"><span class="head-identity"><span>地點</span><span>抵達</span></span><span>規劃時間</span><span>距離／升降</span><span>備註</span><span></span></div>':'')+'<div class="drop-zone" data-drop="0"></div>';
   rows.forEach(r=>{
     const idx=d.items.findIndex(x=>x.id===r.id);
     if(r.type==='rest'){
       html+='<div class="it-row rest-row" data-index="'+idx+'">'+
-      '<div class="place"><span class="drag-handle" draggable="true" data-index="'+idx+'">⋮⋮</span><span class="place-name">☕ 休息</span></div>'+
-      '<div class="arrival">'+r.endTime+'</div>'+
-      '<div class="route-info"><input class="rest-min minute-input" data-index="'+idx+'" type="number" min="0" value="'+r.minutes+'"><span>m</span></div>'+(true?'<div class="terrain-cell">—</div>':'')+'<input class="note-input" data-index="'+idx+'" placeholder="備註" value="'+esc(r.note||'')+'">'+menuHtml(idx,true,false,true)+'</div>';
+      '<div class="row-identity"><div class="place"><span class="drag-handle" draggable="true" data-index="'+idx+'">⋮⋮</span><span class="place-name">☕ 休息</span></div>'+
+      '<div class="arrival">'+r.endTime+'</div></div>'+
+      '<div class="row-metrics"><div class="route-info"><input class="rest-min minute-input" data-index="'+idx+'" type="number" min="0" value="'+r.minutes+'"><span>m</span></div>'+(true?'<div class="terrain-cell">—</div>':'')+'</div><input class="note-input" data-index="'+idx+'" placeholder="備註" value="'+esc(r.note||'')+'">'+menuHtml(idx,true,false,true)+'</div>';
     }else{
       const e=r.incoming,a=e?edgeActual(e,d.coefficient):0,manual=r.type==='manual-location';
       let routeInfo='<span class="secondary-info">起點</span>';
@@ -371,7 +426,7 @@ function renderTimeline(d){
         const alternatives=Array.isArray(e.timeAlternatives)?e.timeAlternatives.filter(t=>Number.isFinite(t.minutes)&&t.minutes>0&&['slow','heavy_pack'].includes(t.kind)):[];
         const labels={slow:'慢速',heavy_pack:'重裝'};
         const altHtml=alternatives.length?'<span class="reference-options">'+[{kind:'regular',minutes:e.officialMinutes,label:'一般'},...alternatives.map(t=>({...t,label:labels[t.kind]}))].map(t=>'<button type="button" class="alternate-time '+((e.referenceKind||'regular')===t.kind?'selected':'')+'" data-index="'+idx+'" data-kind="'+t.kind+'" title="切換至'+t.label+'參考時間 '+t.minutes+' 分鐘">'+t.label+' '+t.minutes+'m</button>').join('')+'</span>':'';
-        routeInfo='<span class="calculated-time">'+a+'m</span><span class="secondary-info">上河'+Math.round(Number(referenceMinutes(e))||0)+'m</span><label class="edge-coef-label">×<input class="edge-coef" aria-label="'+esc(r.name)+' 路段上河係數" data-index="'+idx+'" type="number" min="0.1" max="3" step="0.1" value="'+Number(k).toFixed(2)+'"></label>'+altHtml;
+        routeInfo='<span class="time-pair"><span class="calculated-time">'+a+'m</span><span class="secondary-info">上河'+Math.round(Number(referenceMinutes(e))||0)+'m</span></span><label class="edge-coef-label">×<input class="edge-coef" aria-label="'+esc(r.name)+' 路段上河係數" data-index="'+idx+'" type="number" min="0.1" max="3" step="0.1" value="'+Number(k).toFixed(2)+'"></label>'+altHtml;
       }else if(e?.kind==='manual'){
         routeInfo='<input class="edge-time minute-input" data-index="'+idx+'" type="number" min="0" placeholder="時間未填" value="'+(e.actualMinutes??'')+'"><span>m</span><span class="manual-note">'+(e.connectionStatus==='owner-confirmed'?'上河時間未提供・自行填時間':e.connectionStatus==='unverified'?'未連通・手動估時':'手動')+'</span>';
       }
@@ -379,12 +434,12 @@ function renderTimeline(d){
       const water='<button class="icon-toggle water '+(r.hasWater?'active':'')+'" data-index="'+idx+'" title="水源">💧</button>';
       const placeName=manual
         ?'<span class="drag-handle" draggable="true" data-index="'+idx+'">⋮⋮</span>'+peak+'<input class="manual-name" data-index="'+idx+'" value="'+esc(r.name)+'">'+water
-        :peak+'<span class="place-name">'+esc(r.name)+'</span>'+water;
+        :peak+renderPlaceLabel(r.name)+water;
       html+='<div class="it-row" data-index="'+idx+'">'+
-      '<div class="place">'+placeName+'</div>'+
-      '<div class="arrival">'+r.arrival+'</div>'+
-      '<div class="route-info">'+routeInfo+'</div>'+
-      (true?'<div class="terrain-cell" title="沿山徑距離、累積上升與累積下降（估算）">'+(e?esc(bridgedItems.has(r.id)?'路徑連續・分段待定位':(terrainByItem.get(r.id)?.intermediateCoordinatesUnknown?'跨未定位點合計：':'')+formatTerrain(terrainByItem.get(r.id))).replace('上升 ','↗ ').replace('下降 ','↘ '):'—')+'</div>':'')+
+      '<div class="row-identity"><div class="place '+(manual?'':'place-inline')+'">'+placeName+'</div>'+
+      '<div class="arrival">'+r.arrival+'</div></div>'+
+      '<div class="row-metrics"><div class="route-info">'+routeInfo+'</div>'+
+      (true?'<div class="terrain-cell" title="沿山徑距離、累積上升與累積下降（估算）">'+(e?terrainSegmentHtml(terrainByItem.get(r.id),bridgedItems.has(r.id)):'—')+'</div>':'')+'</div>'+
       '<div class="terrain-note"><input class="note-input" data-index="'+idx+'" placeholder="備註" value="'+esc(r.note||'')+'">'+'</div>'+
       menuHtml(idx,false,!!r.incoming,canDeleteItem(d,idx))+'</div>';
     }
@@ -453,7 +508,7 @@ function bindDays(){
     const updateDayCoef=value=>{
       if(!Number.isFinite(value)||value<.1||value>3){dayCoef.value=d.coefficient.toFixed(2);return}
       const next=round2(value);dayCoef.value=next.toFixed(2);
-      if(d.coefficient!==next){d.coefficient=next;saveAutosave();checkpoint()}
+      if(d.coefficient!==next){d.coefficient=next;refreshQuickRelationTimes(card,d);saveAutosave();checkpoint()}
     };
     dayCoef.onchange=()=>updateDayCoef(Number(dayCoef.value));
     dayCoef.onkeydown=e=>{if(e.key!=='ArrowUp'&&e.key!=='ArrowDown')return;e.preventDefault();updateDayCoef(round2(Number(dayCoef.value)+(e.key==='ArrowUp'?.1:-.1)))};
@@ -465,7 +520,16 @@ function bindDays(){
       render();
     };
     const profileButton=card.querySelector('.show-profile');if(profileButton)profileButton.onclick=()=>{if(openProfiles.has(d.id))openProfiles.delete(d.id);else openProfiles.add(d.id);render(false)};
-    card.querySelectorAll('[data-quick-key]').forEach(button=>button.onclick=()=>{if(appendQuickPath(d,route,button.dataset.quickKey,uid)){unlinkNextIfEndpointChanges(d);render()}});
+    const quickMap=card.querySelector('.quick-relations');
+    if(quickMap)quickMap.addEventListener('toggle',()=>{
+      if(quickMap.open)openQuickMaps.add(d.id);
+      else openQuickMaps.delete(d.id);
+    });
+    card.querySelectorAll('[data-quick-key]').forEach(button=>button.onclick=()=>{
+      // Append/re-render updates the map and current position without closing it.
+      if(quickMap?.open)openQuickMaps.add(d.id);
+      if(appendQuickPath(d,route,button.dataset.quickKey,uid)){unlinkNextIfEndpointChanges(d);render()}
+    });
     const search=card.querySelector('.node-search-inline');
     const nodeSelect=card.querySelector('.add-node');
     if(search&&nodeSelect)search.oninput=()=>{
@@ -518,15 +582,12 @@ function bindDays(){
       z.ondragleave=()=>z.classList.remove('active');
       z.ondrop=e=>{
         e.preventDefault();z.classList.remove('active');if(!drag||drag.day!==i)return;
-        const from=drag.index,to=+z.dataset.drop;if(from<0||from>=d.items.length)return;
-        const oldStart=first(d)?.id,oldEnd=last(d)?.id;
-        const [mv]=d.items.splice(from,1);let insert=to;if(from<to)insert--;
-        insert=Math.max(0,Math.min(insert,d.items.length));d.items.splice(insert,0,mv);
-        normalizeDay(d,route);
-        if(oldStart!==first(d)?.id)d.linkedStart=false;
-        if(oldEnd!==last(d)?.id)unlinkNextIfEndpointChanges(d);
-        drag=null;render();
+        const {index:from}=drag;drag=null;
+        moveTimelineItem(d,from,+z.dataset.drop);
       };
+    });
+    bindMobileTouchSort(card,i,(dayIndex,from,slot)=>{
+      if (days[dayIndex]) moveTimelineItem(days[dayIndex],from,slot);
     });
   });
 }

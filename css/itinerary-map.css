@@ -35,3 +35,318 @@
 
 .geometry-body>.geometry-label-hint{font-size:11px;color:#718078;line-height:1.4;margin:2px 0 4px}
 .floating-history .float-more{position:relative}.floating-history .float-more>summary{list-style:none;display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:#edf1ed;color:#455048;font-size:18px;font-weight:700;cursor:pointer;box-shadow:0 7px 20px #0002}.floating-history .float-more>summary::-webkit-details-marker{display:none}.floating-history .float-menu{position:absolute;right:0;bottom:46px;width:170px;max-width:calc(100vw - 24px);background:#fff;border:1px solid #dce6dc;border-radius:9px;padding:5px;box-shadow:0 10px 24px #0002}.floating-history .float-menu button{display:block;width:100%;height:auto;min-height:36px;padding:8px;text-align:left;border:0;border-radius:6px;background:transparent;color:#334137;box-shadow:none;font-size:12px;white-space:normal}.floating-history .float-menu button:hover{background:#f2f5f2}@media(max-width:600px){.floating-history .float-more>summary{width:36px;height:36px}}
+
+
+/* Preview: make time estimates legible and keep each terrain measurement intact. */
+.it-row .calculated-time{font-size:15px}
+.it-row .route-info .secondary-info{font-size:12px;color:#65756d}
+.timeline .it-row>.terrain-cell{
+  display:flex;flex-wrap:wrap;align-items:center;
+  column-gap:8px;row-gap:2px;overflow-wrap:normal;
+}
+.it-row .terrain-cell>.terrain-metric{flex:0 0 auto;white-space:nowrap}
+.it-row .terrain-cell>.terrain-context,
+.it-row .terrain-cell>.terrain-status{white-space:normal;overflow-wrap:anywhere}
+
+/* Preview #10: content-led itinerary layout (rather than fixed viewport
+   thresholds).  Keep the most closely related information together:
+   location + arrival, planned + reference time, coefficient + its input. */
+.timeline{container-name:itinerary;container-type:inline-size}
+
+.timeline .it-row{
+  display:grid;
+  grid-template-columns:276px 220px minmax(165px,1fr) minmax(115px,1fr) 28px;
+  grid-template-areas:"identity time terrain note menu";
+  gap:6px 10px;
+  align-items:center;
+  min-width:0;
+}
+.timeline .it-row>.row-identity{
+  grid-area:identity;display:grid;
+  grid-template-columns:200px 64px;
+  align-items:center;column-gap:12px;
+  width:276px;min-width:0;max-width:100%;justify-self:start;
+}
+.timeline .it-row .row-identity>.place{
+  min-width:0;width:100%;
+}
+/* Keep long location names fully visible on wide screens as well. */
+.timeline .it-row .row-identity .place-name{
+  flex:1 1 auto;
+  white-space:normal;
+  overflow:visible;
+  text-overflow:clip;
+  overflow-wrap:anywhere;
+  line-height:1.4;
+}
+.timeline .it-row .row-identity>.arrival{
+  min-width:0;white-space:nowrap;text-align:left;
+}
+.timeline .it-row .row-metrics>.route-info{
+  grid-area:time;display:flex;align-items:center;
+  column-gap:9px;row-gap:4px;
+  flex-wrap:wrap;white-space:normal;min-width:0;
+}
+.timeline .it-row .time-pair{
+  display:inline-flex;align-items:baseline;gap:6px;
+  white-space:nowrap;flex:0 0 auto;
+}
+.timeline .it-row .time-pair>.secondary-info{white-space:nowrap}
+.timeline .it-row .edge-coef-label{
+  display:inline-flex;align-items:center;gap:4px;
+  flex:0 0 auto;white-space:nowrap;
+}
+.timeline .it-row .edge-coef{
+  box-sizing:border-box;width:64px;min-width:64px;
+  height:32px;padding:0 5px;font-size:13px;
+}
+.timeline .it-row .row-metrics>.terrain-cell{grid-area:terrain;text-align:left;display:flex;flex-wrap:wrap;align-items:center;column-gap:8px;row-gap:2px;overflow-wrap:normal;font-size:12px}
+.timeline .it-row>.terrain-note,
+.timeline .it-row>.note-input{grid-area:note;min-width:0}
+.timeline .it-row>.row-menu{grid-area:menu;justify-self:end}
+.timeline .it-row>.row-metrics{display:contents;grid-area:metrics;min-width:0}
+
+.timeline .itinerary-head{
+  display:grid;
+  grid-template-columns:276px 220px minmax(165px,1fr) minmax(115px,1fr) 28px;
+  gap:10px;
+}
+/* Distinct '地點' and '抵達' labels align with the matching row subcolumns. */
+.timeline .itinerary-head>.head-identity{
+  display:grid;
+  grid-template-columns:200px 64px;
+  column-gap:12px;
+  min-width:0;
+}
+/* Medium: note on a separate line, but keep time groups together. */
+@container itinerary (max-width:930px){
+  .timeline .itinerary-head{display:none}
+  .timeline .it-row{
+    grid-template-columns:276px 220px minmax(145px,1fr) 28px;
+    grid-template-areas:"identity time terrain terrain" "note note note menu";
+    gap:5px 10px;
+  }
+  .timeline .it-row .place-name{white-space:normal;overflow-wrap:anywhere}
+  .timeline .it-row>.terrain-note,
+  .timeline .it-row>.note-input{width:100%;box-sizing:border-box}
+}
+/* Narrow: place arrival next to each other, not at opposite ends of the row. */
+@container itinerary (max-width:700px){
+  .timeline .it-row{
+    grid-template-columns:repeat(3,minmax(0,1fr)) 28px;
+    grid-template-areas:"identity identity identity identity"
+                        "metrics metrics metrics metrics"
+                        "note note note menu";
+    gap:5px 9px;
+  }
+  .timeline .it-row>.row-identity{
+    grid-template-columns:140px 64px;column-gap:12px;
+    width:216px;max-width:100%;justify-self:start;
+  }
+  .timeline .it-row>.row-metrics{
+    display:grid;
+    grid-template-columns:235px minmax(0,1fr);
+    align-items:start;column-gap:12px;row-gap:4px;
+    width:100%;min-width:0;
+  }
+  .timeline .it-row .row-metrics>.route-info{
+    grid-area:auto;min-width:0;max-width:100%;align-self:start;
+  }
+  .timeline .it-row .row-metrics>.terrain-cell{
+    grid-area:auto;min-width:0;max-width:100%;align-self:start;
+  }
+}
+/* Very narrow: each information group gets a full line if needed. */
+@container itinerary (max-width:480px){
+  .timeline .it-row{
+    grid-template-columns:minmax(0,1fr) 28px;
+    grid-template-areas:"identity identity"
+                        "metrics metrics"
+                        "note menu";
+    gap:4px 8px;
+  }
+  .timeline .it-row>.row-metrics{
+    grid-template-columns:minmax(0,1fr);
+  }
+}
+/* Keep iOS input focus from triggering page zoom without oversized boxes. */
+@media(max-width:600px){
+  .timeline .it-row .edge-coef{
+    font-size:16px!important;width:68px;min-width:68px;height:34px;padding:0 5px;
+  }
+}
+
+
+/* Preview: mountain, location name and water are three sibling flex items.
+   Icons center vertically around the full name block (even when it wraps).
+   The fit-content width keeps water beside each name, not against a fixed edge. */
+.timeline .it-row .row-identity>.place.place-inline{
+  display:inline-flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:flex-start;
+  gap:3px;
+  width:fit-content;
+  max-width:100%;
+  min-width:0;
+  padding:0;
+  line-height:1.4;
+}
+.timeline .it-row .row-identity>.place.place-inline>.icon-toggle.peak,
+.timeline .it-row .row-identity>.place.place-inline>.icon-toggle.water{
+  display:inline-flex;
+  flex:0 0 auto;
+  align-items:center;
+  justify-content:center;
+  align-self:center;
+  position:static;
+  float:none;
+  margin:0;
+  padding:2px 1px;
+  width:20px;
+  min-width:20px;
+  height:24px;
+  vertical-align:middle;
+}
+.timeline .it-row .row-identity>.place.place-inline>.place-name{
+  display:block;
+  flex:0 1 auto;
+  width:auto;
+  min-width:0;
+  max-width:100%;
+  white-space:normal;
+  overflow:visible;
+  text-overflow:clip;
+  overflow-wrap:anywhere;
+  line-height:1.4;
+}
+
+
+/* Compact, opt-in route relationships for quick-add. The chip list stays
+   horizontal; details do not reserve panel height until intentionally opened. */
+.quick-add .quick-node .quick-via{
+  display:inline;
+  margin-left:5px;
+  font-size:10px;
+  font-weight:500;
+  color:#65756d;
+  white-space:nowrap;
+}
+.quick-add .quick-chips{position:relative}
+.quick-add .quick-relations{position:static;align-self:center;flex:0 0 auto}
+.quick-add .quick-relations>summary{
+  display:inline-flex;align-items:center;gap:5px;
+  list-style:none;cursor:pointer;
+  padding:7px 10px;
+  border:1px solid #d5ded7;
+  border-radius:18px;
+  background:#f8faf8;
+  color:#365741;
+  font-size:12px;font-weight:700;line-height:1.5;
+  white-space:nowrap;
+}
+.quick-add .quick-relations>summary::-webkit-details-marker{display:none}
+.quick-add .quick-relations>summary::after{content:"⌄";font-size:13px}
+.quick-add .quick-relations[open]>summary::after{content:"⌃"}
+.quick-add .quick-relations>summary:focus-visible{outline:2px solid #7eaa8c;outline-offset:2px}
+.quick-add .quick-route-panel{
+  position:absolute;right:0;top:calc(100% + 6px);z-index:45;
+  box-sizing:border-box;
+  width:min(360px,calc(100vw - 36px));
+  max-height:min(380px,65vh);
+  overflow-y:auto;overscroll-behavior:contain;
+  border:1px solid #d5e0d7;border-radius:10px;
+  padding:10px 12px;
+  background:#fff;color:#243229;
+  box-shadow:0 12px 26px #173b2626;
+  font-size:12px;line-height:1.5;
+}
+.quick-route-current{font-size:12px;font-weight:700;padding-bottom:6px;border-bottom:1px solid #e5ebe6}
+.quick-route-branch{padding:7px 0 4px;border-bottom:1px dashed #e6ebe7}
+.quick-route-branch-title{font-size:12px;font-weight:700;color:#365741}
+.quick-route-line{
+  display:flex;align-items:baseline;justify-content:space-between;
+  flex-wrap:wrap;gap:2px 9px;
+  padding:4px 0 2px 7px;
+}
+.quick-route-line.quick-route-via{padding-left:17px}
+.quick-route-name{font-weight:600;overflow-wrap:anywhere}
+.quick-route-meta{font-size:11px;color:#647569;white-space:normal}
+.quick-route-hint{margin:9px 0 0;color:#67756c;font-size:11px;line-height:1.5}
+@media(max-width:600px){
+  .quick-add .quick-relations[open]{flex:1 0 100%;max-width:100%}
+  .quick-add .quick-route-panel{
+    position:static;margin-top:6px;right:auto;top:auto;
+    width:100%;max-height:260px;
+    box-shadow:none;
+  }
+}
+
+
+/* Compact SVG schematic replacing the text-only quick-route popover.
+   The existing route relationship details stays collapsed by default. */
+.quick-add .quick-route-panel{width:min(390px,calc(100vw - 32px));}
+.quick-add .quick-topology-canvas{
+  margin-top:7px;
+  padding:6px 3px;
+  border:1px solid #e3eae4;
+  background:#f8fbf8;
+  border-radius:8px;
+  overflow:hidden;
+}
+.quick-add .quick-topology-svg{
+  display:block;
+  width:100%;
+  height:auto;
+  overflow:visible;
+  font-family:Inter,"Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
+}
+.quick-add .topo-node-name{font-size:12px;font-weight:650;fill:#2f4639}
+.quick-add .topo-current .topo-node-name{font-weight:750;fill:#234b34}
+.quick-add .topo-back .topo-node-name{fill:#7a5b31}
+.quick-add .topo-node-meta{font-size:10.5px;fill:#607265}
+
+.quick-add .topo-estimated .topo-node-name{fill:#756851}
+.quick-add .topo-compass text{font-size:12px;font-weight:700;fill:#486b57}
+.quick-add .topo-fallback-label{font-size:10px;fill:#8a7560}
+.quick-add .quick-route-panel .quick-route-hint{margin-top:7px}
+
+.quick-add .topo-back .topo-node-meta{fill:#8a714c}
+.quick-add .quick-route-hint{font-size:11px;line-height:1.5}
+@media(max-width:600px){
+ .quick-add .quick-route-panel{width:100%}
+ .quick-add .quick-topology-canvas{margin-top:7px;padding:3px 0}
+}
+
+
+/* Preview: make the opt-in route map discoverable without enlarging its row. */
+.quick-add .quick-relations>summary{
+  background:#315d42;
+  color:#fff;
+  border:1px solid #284c36;
+  box-shadow:0 1px 3px #173b2624;
+  font-weight:750;
+  transition:background-color .15s ease,box-shadow .15s ease;
+}
+.quick-add .quick-relations>summary:hover,
+.quick-add .quick-relations[open]>summary{
+  background:#234a34;
+  border-color:#1e3d2c;
+  box-shadow:0 2px 6px #173b2630;
+}
+.quick-add .quick-relations>summary:focus-visible{
+  outline:2px solid #9bc2a5;
+  outline-offset:2px;
+}
+.quick-add .topo-current .topo-node-name{
+  font-weight:800;
+  fill:#224b35;
+}
+.quick-add .topo-current-badge-text{
+  font-size:12px;
+  font-weight:800;
+  fill:#fff;
+}
+.quick-add .topo-current-halo{
+  pointer-events:none;
+}

@@ -5,7 +5,7 @@
 ## 主要入口與目錄
 
 - `unified-editor.html`：目前統一編輯器 Preview 頁面入口，載入 `js/unified-editor.js`。
-- `index.html`：v0.8.8 正式版入口，載入 `js/unified-editor.js`；`js/app.js` 是舊版編輯器入口，仍需保留相容與歷史用途。
+- `index.html`：v0.9.0 正式版入口，載入 `js/unified-editor.js`；`js/app.js` 是舊版編輯器入口，仍需保留相容與歷史用途。
 - `js/`：規劃、全域路網、Node ID、驗證、匯入匯出與 UI 模組。
 - `css/`：正式版樣式；Preview 相關樣式另在 `preview/css/`。
 - `data/manifest.json`、`data/unified-editor-manifest.json`：資料集清單及統一編輯器載入設定。
@@ -64,3 +64,8 @@
 ## v0.8.8 正式版
 
 分段係數、手機輸入與捲動保護已發布；使用方法與回復點見 [v0.8.8 發布說明](v0.8.8_RELEASE.md)。正式版暫存鍵維持不變。
+
+
+## v0.9.0 正式版
+
+已發布小地圖、引線排版、手機拖曳、工具列及圖文說明。正式入口 `index.html`，說明頁 `guide.html`；Preview 入口 `preview/unified-editor.html`。正式版暫存鍵維持不變，發布與回復點見 [v0.9.0](v0.9.0_RELEASE.md)。
