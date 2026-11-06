@@ -8,14 +8,28 @@ const data=load('data/geometry/planner-terrain-v1.json'),review=load('data/geome
 const known=new Map(data.nodes.map(n=>[n.nodeId,n]));
 const plan=ids=>({coefficient:.8,items:ids.map((id,i)=>({id:'i'+i,nodeId:id,name:known.get(id).name,type:'location',note:'keep '+i,incoming:i?{kind:'official',fromNodeId:ids[i-1],toNodeId:id,officialMinutes:123,actualMinutes:77}:null}))});
 test('owner coordinates round-trip independently to source TWD97 and retain review identity',()=>{
- assert.equal(review.nodes.filter(n=>n.action==='coordinate').length,86);
+ assert.equal(review.nodes.filter(n=>n.action==='coordinate').length,87);
  for(const n of review.nodes.filter(n=>n.action==='coordinate')){
   const xy=toTwd97(n.coordinate);assert.ok(Math.abs(xy[0]-n.originalCoordinate.x)<=1,n.reviewId);assert.ok(Math.abs(xy[1]-n.originalCoordinate.y)<=1,n.reviewId);
   const active=known.get(n.nodeId);
   if(active?.coordinatePolicy==='active')assert.deepEqual(active.coordinate,n.coordinate);
  }
  assert.equal(review.nodes.find(n=>n.reviewId==='Q013').action,'coordinate');
+ const fork=review.nodes.find(n=>n.nodeId==='g04-fork-daba');
+ assert.ok(fork && fork.action==='coordinate');
+ assert.deepEqual(fork.originalCoordinate,{format:'TWD97',x:276239,y:2705568});
+ assert.equal(fork.source.name,'I Love You平台');
  for(const n of review.nodes.filter(n=>n.action==='delete'))assert.ok(!known.has(n.nodeId));
+});
+test('G04 fork six official directional times stay unchanged',()=>{
+ const route=load('data/routes/owner-reviewed/G04.json');
+ const target=new Map([
+  ['g04-010>g04-fork-daba',15],['g04-fork-daba>g04-010',15],
+  ['g04-fork-daba>g04-007',70],['g04-007>g04-fork-daba',50],
+  ['g04-fork-daba>g04-063',70],['g04-063>g04-fork-daba',100],
+ ]);
+ const actual=new Map(route.segments.filter(s=>s.fromId==='g04-fork-daba'||s.toId==='g04-fork-daba').map(s=>[s.fromId+'>'+s.toId,s.minutes]));
+ assert.deepEqual(actual,target);
 });
 test('all explicit missing-label bridges resolve in order, retain times and reverse without guessing waypoints',()=>{
  const bridges=data.spans.filter(s=>s.intermediateCoordinatesUnknown);assert.ok(bridges.length>40);

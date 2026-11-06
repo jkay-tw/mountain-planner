@@ -1,5 +1,17 @@
 # 補座標的局部更新流程
 
+## 2026-11-06：相容原始來源已封存
+
+G04 岔路更新時，已找到與 v0.9.0 `routingSource` 完全相同 SHA-256 的 Geofabrik Taiwan **2026-11-01** PBF，並重新擷取可重現的 `walking-network-roads.json.gz`。Rudy DEM 原始 `hgtmix.zip` 亦逐位元核對一致。兩者與 SHA manifest 存在 [GitHub Release: terrain-sources-20261106](https://github.com/jkay-tw/mountain-planner/releases/tag/terrain-sources-20261106)。**請勿為單點座標更新再使用 `taiwan-latest` 或隨意改用 11/02 快照**。
+
+```sh
+gh release download terrain-sources-20261106 -R jkay-tw/mountain-planner -D /path/to/source --pattern 'walking-network-roads.json.gz' --pattern 'hgtmix.zip' --pattern 'terrain-sources-manifest.json'
+python3 tools/sync_coordinate_geometry.py --build-preview /path/to/source/walking-network-roads.json.gz /path/to/source/hgtmix.zip
+python3 tools/sync_coordinate_geometry.py --check
+```
+
+先依 manifest 核對下載檔案大小與 SHA-256，再執行重算；對受影響節點檢查 `changedNodeIds`、`failedRoutes`、`spanDependencies`、`unrepresentedPairs` 以及不可改變的路段時間。這批檔案已封存，可重複使用，不需使用者每次重新提供。2026-11-06 發布紀錄見 [G04 座標更新報告](G04_COORDINATE_SYNC_20261106.md)。
+
 ## 2026-11-05：Preview／正式版同步與新驗證入口
 
 本文件原本的 `tools/update_planner_terrain.py` 仍是唯一具來源拓樸與 DEM 能力的增量重算器；請勿為小地圖或 GPX 另做直接改 JSON 的簡化更新。

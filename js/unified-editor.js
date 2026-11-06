@@ -72,7 +72,7 @@ async function init(){
   days=restoredDays?.length?sanitizeDays(migrateDaysToNodeIds(restoredDays,route)):[newDay(0)];
   if(IS_DEMO){days=makeDemoDays(route,uid);scope='G04';$('routeSelect').value=scope;const banner=document.createElement('div');banner.className='notice';banner.textContent='範例模式：可以試用快速加入與編輯，這個頁面不讀寫原行程暫存。';$('daysContainer').before(banner)}
   $('dayCount').value=String(days.length);
-  try{const response=await fetch('data/geometry/planner-terrain-v1.json?v=geo61aeb0f82567',{cache:'no-store'});if(!response.ok)throw Error();terrainData=await response.json()}catch(error){console.warn('節點座標與地形資料未載入')}
+  try{const response=await fetch('data/geometry/planner-terrain-v1.json?v=geo0fd38a37d68b',{cache:'no-store'});if(!response.ok)throw Error();terrainData=await response.json()}catch(error){console.warn('節點座標與地形資料未載入')}
   bindGlobal();
   render(false);saveAutosave(false);checkpoint();
   if($('itineraryGeometry'))import('./itinerary-map.js?v=v087')

@@ -2205,6 +2205,27 @@
       "note": "忽略",
       "coordinate": null,
       "action": "ignore"
+    },
+    {
+      "nodeId": "g04-fork-daba",
+      "name": "岔路",
+      "choice": "使用者指定座標",
+      "note": "I Love You平台；鄰近霸南山屋、小霸岔路登山口、大霸尖山。2026-11-05 使用者提供。",
+      "coordinate": [
+        121.2588183,
+        24.4561637
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 276239,
+        "y": 2705568
+      },
+      "source": {
+        "name": "I Love You平台",
+        "verification": "user-supplied"
+      },
+      "reviewId": "USER-G04-20261105"
     }
   ]
 }
