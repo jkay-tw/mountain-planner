@@ -2,14 +2,14 @@
 
 這是建置資料封存，不是新的應用程式版本。正式應用程式版本維持 v0.9.0。
 
-- `walking-network-roads.json.gz`：以本庫 `tools/extract_walking_network.py` 從 Geofabrik Taiwan 2026-11-02 PBF 重新擷取，PBF SHA-256 必須與 v0.9.0 記錄一致。並非找回當時壓縮檔的逐位元副本；gzip 時間戳固定為零，來源與擷取程式可重現。
+- `walking-network-roads.json.gz`：以本庫 `tools/extract_walking_network.py` 從 Geofabrik Taiwan 歷史版本 PBF（以 manifest 的 URL 與雜湊為準） 重新擷取，PBF SHA-256 必須與 v0.9.0 記錄一致。並非找回當時壓縮檔的逐位元副本；gzip 時間戳固定為零，來源與擷取程式可重現。
 - `hgtmix.zip`：魯地圖 DEM mix v2026 原始壓縮檔，SHA-256 與正式版 provenance 相同，未修改。
 - `terrain-sources-manifest.json`：檔案大小、來源與 SHA-256。下載後應驗證，不要信任同名但不同內容的檔案。
 - 原始全臺 PBF 不重複上傳；版本下載網址及 SHA-256 見 manifest。
 
 ## OpenStreetMap
 
-© OpenStreetMap contributors. Walking network data is provided under the Open Database License (ODbL 1.0): https://www.openstreetmap.org/copyright . Extract source: https://download.geofabrik.de/asia/taiwan-261102.osm.pbf . The derived walking network is distributed under the same database license. This data license is separate from the application code license.
+© OpenStreetMap contributors. Walking network data is provided under the Open Database License (ODbL 1.0): https://www.openstreetmap.org/copyright . Extract source: the verified, dated Taiwan PBF URL recorded in terrain-sources-manifest.json . The derived walking network is distributed under the same database license. This data license is separate from the application code license.
 
 ## Rudy DEM
 
