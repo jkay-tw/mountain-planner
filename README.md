@@ -5,12 +5,13 @@
 - [開啟正式版 v0.9.0](https://jkay-tw.github.io/mountain-planner/)
 - [開啟 功能預覽](https://jkay-tw.github.io/mountain-planner/preview/unified-editor.html?v=v090)
 - [v0.9.0 發布說明](docs/v0.9.0_RELEASE.md)
+- [2026-11-06 G04 岔路資料更新：座標、OSM 路徑與 DEM 同步](docs/G04_COORDINATE_SYNC_20261106.md)
 - [圖文使用說明](https://jkay-tw.github.io/mountain-planner/guide.html?v=v090)
 - [v0.8 功能、資料範圍與驗收](docs/v0.8_RELEASE.md)
 - [v0.8.1 座標、連續路徑與剩餘資料缺口](docs/v0.8.1_COORDINATE_UPDATE_20261104.md)
 - [補座標的局部更新流程](docs/COORDINATE_UPDATE_WORKFLOW.md)
 - [快速加入路網小地圖／座標同步交接（2026-11-05）](docs/QUICK_MAP_COORDINATE_SYNC_20261105.md)
-- 本次發布：`v0.9.0`；後續改動先於 Preview 驗收。
+- 應用程式版本：`v0.9.0`；G04 座標與圖資資料補丁於 2026-11-06 完成來源重算及驗證，更新詳見上方紀錄。
 - [專案導覽與測試指令](docs/PROJECT_GUIDE.md)
 
 ## 主要功能
