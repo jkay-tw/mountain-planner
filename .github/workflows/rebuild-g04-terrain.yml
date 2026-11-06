@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: ['data/g04-daba-coordinate-sync-20261106']
-    paths: ['.github/workflows/rebuild-g04-terrain.yml']
+    paths: ['.github/workflows/rebuild-g04-terrain.yml', 'tests/release.test.mjs']
 
 permissions:
   contents: write
