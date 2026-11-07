@@ -46,7 +46,7 @@ test('deleted catalog nodes in saved plans retain identity, notes and time snaps
 });
 test('active geometry loads all selected active labels and keeps pilot geometry unchanged',()=>{
  const full=load('data/geometry/planner-terrain-v1.json'),pilot=load('data/geometry/xueshan-terrain-v1.json');
- assert.equal(full.counts.activeNodes,724);assert.equal(full.counts.located,622);assert.equal(full.counts.unlocated,102);
+ assert.equal(full.counts.activeNodes,724);assert.equal(full.counts.located,636);assert.equal(full.counts.unlocated,88);
  assert.deepEqual(new Set(full.nodes.map(n=>n.nodeId)),new Set(graph.nodes.map(n=>n.id)));
  for(const s of pilot.spans)assert.deepEqual(full.spans.find(x=>x.id===s.id),s);
  for(const n of pilot.nodes)assert.deepEqual(Object.fromEntries(Object.keys(n).map(k=>[k,full.nodes.find(x=>x.nodeId===n.nodeId)[k]])),n);

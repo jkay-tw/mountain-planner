@@ -68,7 +68,10 @@ def update(network_path,dem_path,overrides=OVERRIDES,runtime=RUNTIME,retry_missi
    if not item['coordinate']:item['elevationMeters']=None
   if r and r['action']=='coordinate':
    if item.get('coordinate')!=r['coordinate']:changed.add(nid)
-   item.update(coordinate=r['coordinate'],coordinateMethod='owner-workbook-coordinate',coordinateSource={'source':'owner-review','url':review['sourceUrl'],'reviewId':r['reviewId'],'fileSha256':review['sourceFileSha256']},note='')
+   source=r.get('source',{})
+   provenance={'source':'owner-review','url':review['sourceUrl'],'reviewId':r['reviewId'],'fileSha256':review['sourceFileSha256']}
+   if source.get('url'):provenance={'source':'owner-review','reviewId':r['reviewId'],**source}
+   item.update(coordinate=r['coordinate'],coordinateMethod='owner-sheet-coordinate' if source.get('url') else 'owner-workbook-coordinate',coordinateSource=provenance,note=r.get('note','') if source.get('url') else '')
   item['coordinatePolicy']='ignored' if r and r['action']=='ignore' else 'vehicle-only' if nid not in walking else 'active'
   if item['coordinatePolicy']!='active':
    if item.get('coordinate'):changed.add(nid)
