@@ -1625,19 +1625,49 @@
       "reviewId": "Q120",
       "nodeId": "node:456202f4ff7dedc2df5e",
       "name": "捷徑下切點",
-      "choice": "",
+      "choice": "自行補座標",
       "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "coordinate": [
+        121.2257164,
+        23.4461582
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 273062,
+        "y": 2593707
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1jW3YN5F_A6x6KT_3PevoV4iIhuTYFlicdkNgiXJ8G3s/edit?gid=1955437410",
+        "sheetId": 1955437410,
+        "row": 43,
+        "snapshotSha256": "e97a019cf686673fc808c2b1c086385e3641a4a6716e4c9f7947fc1f5aa3de11",
+        "verification": "user-supplied"
+      }
     },
     {
       "reviewId": "Q121",
       "nodeId": "node:47059555f89c94f5c563",
       "name": "岔路登山口",
-      "choice": "",
+      "choice": "自行補座標",
       "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "coordinate": [
+        121.1887953,
+        23.4645204
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 269287,
+        "y": 2595735
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1jW3YN5F_A6x6KT_3PevoV4iIhuTYFlicdkNgiXJ8G3s/edit?gid=1955437410",
+        "sheetId": 1955437410,
+        "row": 44,
+        "snapshotSha256": "e97a019cf686673fc808c2b1c086385e3641a4a6716e4c9f7947fc1f5aa3de11",
+        "verification": "user-supplied"
+      }
     },
     {
       "reviewId": "Q122",
@@ -1661,10 +1691,25 @@
       "reviewId": "Q124",
       "nodeId": "node:640f925a7809ca032704",
       "name": "44K林道盡頭",
-      "choice": "",
+      "choice": "自行補座標",
       "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "coordinate": [
+        121.2141027,
+        23.460695
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 271873,
+        "y": 2595315
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1jW3YN5F_A6x6KT_3PevoV4iIhuTYFlicdkNgiXJ8G3s/edit?gid=1955437410",
+        "sheetId": 1955437410,
+        "row": 47,
+        "snapshotSha256": "e97a019cf686673fc808c2b1c086385e3641a4a6716e4c9f7947fc1f5aa3de11",
+        "verification": "user-supplied"
+      }
     },
     {
       "reviewId": "Q125",
@@ -1697,10 +1742,25 @@
       "reviewId": "Q128",
       "nodeId": "node:c89901cb97ccbe4d145a",
       "name": "林道玉林橋下切點",
-      "choice": "",
+      "choice": "自行補座標",
       "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "coordinate": [
+        121.2224438,
+        23.438117
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 272729,
+        "y": 2592816
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1jW3YN5F_A6x6KT_3PevoV4iIhuTYFlicdkNgiXJ8G3s/edit?gid=1955437410",
+        "sheetId": 1955437410,
+        "row": 51,
+        "snapshotSha256": "e97a019cf686673fc808c2b1c086385e3641a4a6716e4c9f7947fc1f5aa3de11",
+        "verification": "user-supplied"
+      }
     },
     {
       "reviewId": "Q129",
@@ -1715,10 +1775,25 @@
       "reviewId": "Q130",
       "nodeId": "node:ea1afe9db60667f52737",
       "name": "岔路",
-      "choice": "",
+      "choice": "自行補座標",
       "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "coordinate": [
+        121.2250047,
+        23.4420234
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 272990,
+        "y": 2593249
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1jW3YN5F_A6x6KT_3PevoV4iIhuTYFlicdkNgiXJ8G3s/edit?gid=1955437410",
+        "sheetId": 1955437410,
+        "row": 53,
+        "snapshotSha256": "e97a019cf686673fc808c2b1c086385e3641a4a6716e4c9f7947fc1f5aa3de11",
+        "verification": "user-supplied"
+      }
     },
     {
       "reviewId": "Q131",
@@ -2061,8 +2136,23 @@
       "name": "石山西鞍",
       "choice": "自行補座標",
       "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "coordinate": [
+        120.8213146,
+        23.0848766
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 231694,
+        "y": 2553693
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1jW3YN5F_A6x6KT_3PevoV4iIhuTYFlicdkNgiXJ8G3s/edit?gid=1955437410",
+        "sheetId": 1955437410,
+        "row": 59,
+        "snapshotSha256": "e97a019cf686673fc808c2b1c086385e3641a4a6716e4c9f7947fc1f5aa3de11",
+        "verification": "user-supplied"
+      }
     },
     {
       "reviewId": "Q155",
@@ -2070,17 +2160,48 @@
       "name": "三岔路口",
       "choice": "自行補座標",
       "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "coordinate": [
+        120.8703404,
+        23.0582931
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 236714,
+        "y": 2550744
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1jW3YN5F_A6x6KT_3PevoV4iIhuTYFlicdkNgiXJ8G3s/edit?gid=1955437410",
+        "sheetId": 1955437410,
+        "row": 60,
+        "snapshotSha256": "e97a019cf686673fc808c2b1c086385e3641a4a6716e4c9f7947fc1f5aa3de11",
+        "verification": "user-supplied"
+      }
     },
     {
       "reviewId": "Q156",
       "nodeId": "node:9a67a747c35d44edc6e7",
       "name": "石山林道登山口",
       "choice": "自行補座標",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "note": "改名稱為\"特生中心\"",
+      "coordinate": [
+        120.7891139,
+        23.0843131
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 228395,
+        "y": 2553635
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1jW3YN5F_A6x6KT_3PevoV4iIhuTYFlicdkNgiXJ8G3s/edit?gid=1955437410",
+        "sheetId": 1955437410,
+        "row": 61,
+        "snapshotSha256": "e97a019cf686673fc808c2b1c086385e3641a4a6716e4c9f7947fc1f5aa3de11",
+        "verification": "user-supplied"
+      },
+      "displayName": "特生中心"
     },
     {
       "reviewId": "Q157",
@@ -2097,8 +2218,23 @@
       "name": "出雲山檢查哨",
       "choice": "自行補座標",
       "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "coordinate": [
+        120.7599526,
+        23.0653162
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 225404,
+        "y": 2551536
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1jW3YN5F_A6x6KT_3PevoV4iIhuTYFlicdkNgiXJ8G3s/edit?gid=1955437410",
+        "sheetId": 1955437410,
+        "row": 63,
+        "snapshotSha256": "e97a019cf686673fc808c2b1c086385e3641a4a6716e4c9f7947fc1f5aa3de11",
+        "verification": "user-supplied"
+      }
     },
     {
       "reviewId": "Q159",
@@ -2106,8 +2242,23 @@
       "name": "18K行車終點",
       "choice": "自行補座標",
       "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "coordinate": [
+        120.7452857,
+        23.0643993
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 223901,
+        "y": 2551437
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1jW3YN5F_A6x6KT_3PevoV4iIhuTYFlicdkNgiXJ8G3s/edit?gid=1955437410",
+        "sheetId": 1955437410,
+        "row": 64,
+        "snapshotSha256": "e97a019cf686673fc808c2b1c086385e3641a4a6716e4c9f7947fc1f5aa3de11",
+        "verification": "user-supplied"
+      }
     },
     {
       "reviewId": "Q160",
@@ -2115,8 +2266,23 @@
       "name": "三叉峰下營地",
       "choice": "自行補座標",
       "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "coordinate": [
+        120.8708479,
+        23.0582212
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 236766,
+        "y": 2550736
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1jW3YN5F_A6x6KT_3PevoV4iIhuTYFlicdkNgiXJ8G3s/edit?gid=1955437410",
+        "sheetId": 1955437410,
+        "row": 65,
+        "snapshotSha256": "e97a019cf686673fc808c2b1c086385e3641a4a6716e4c9f7947fc1f5aa3de11",
+        "verification": "user-supplied"
+      }
     },
     {
       "reviewId": "Q161",
@@ -2131,28 +2297,73 @@
       "reviewId": "Q162",
       "nodeId": "node:d2f31085a66df8fb4a30",
       "name": "3237公尺峰",
-      "choice": "",
+      "choice": "自行補座標",
       "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "coordinate": [
+        120.875279,
+        23.0683301
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 237221,
+        "y": 2551855
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1jW3YN5F_A6x6KT_3PevoV4iIhuTYFlicdkNgiXJ8G3s/edit?gid=1955437410",
+        "sheetId": 1955437410,
+        "row": 67,
+        "snapshotSha256": "e97a019cf686673fc808c2b1c086385e3641a4a6716e4c9f7947fc1f5aa3de11",
+        "verification": "user-supplied"
+      }
     },
     {
       "reviewId": "Q163",
       "nodeId": "node:db9d30cb40a2d5347caa",
       "name": "新舊路岔路",
-      "choice": "",
+      "choice": "自行補座標",
       "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "coordinate": [
+        120.8587394,
+        23.0744841
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 235527,
+        "y": 2552538
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1jW3YN5F_A6x6KT_3PevoV4iIhuTYFlicdkNgiXJ8G3s/edit?gid=1955437410",
+        "sheetId": 1955437410,
+        "row": 68,
+        "snapshotSha256": "e97a019cf686673fc808c2b1c086385e3641a4a6716e4c9f7947fc1f5aa3de11",
+        "verification": "user-supplied"
+      }
     },
     {
       "reviewId": "Q164",
       "nodeId": "node:de958fbbd68222537e18",
       "name": "石瀑區",
-      "choice": "",
+      "choice": "自行補座標",
       "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "coordinate": [
+        120.8388022,
+        23.0801001
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 233485,
+        "y": 2553162
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1jW3YN5F_A6x6KT_3PevoV4iIhuTYFlicdkNgiXJ8G3s/edit?gid=1955437410",
+        "sheetId": 1955437410,
+        "row": 69,
+        "snapshotSha256": "e97a019cf686673fc808c2b1c086385e3641a4a6716e4c9f7947fc1f5aa3de11",
+        "verification": "user-supplied"
+      }
     },
     {
       "reviewId": "Q165",
@@ -2226,6 +2437,54 @@
         "verification": "user-supplied"
       },
       "reviewId": "USER-G04-20261105"
+    },
+    {
+      "reviewId": "SHEET-20261107-R70",
+      "nodeId": "node:2fc23a0b794f59ec7196",
+      "name": "溪南山登山口",
+      "choice": "自行補座標",
+      "note": "",
+      "action": "coordinate",
+      "coordinate": [
+        120.8151232,
+        23.0870187
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 231060,
+        "y": 2553931
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1jW3YN5F_A6x6KT_3PevoV4iIhuTYFlicdkNgiXJ8G3s/edit?gid=1955437410",
+        "sheetId": 1955437410,
+        "row": 70,
+        "snapshotSha256": "e97a019cf686673fc808c2b1c086385e3641a4a6716e4c9f7947fc1f5aa3de11",
+        "verification": "user-supplied"
+      }
+    },
+    {
+      "reviewId": "SHEET-20261107-R71",
+      "nodeId": "node:16d0ce554a26b76bdaa8",
+      "name": "林道鞍部",
+      "choice": "自行補座標",
+      "note": "",
+      "action": "coordinate",
+      "coordinate": [
+        120.8424647,
+        23.0782255
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 233860,
+        "y": 2552954
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1jW3YN5F_A6x6KT_3PevoV4iIhuTYFlicdkNgiXJ8G3s/edit?gid=1955437410",
+        "sheetId": 1955437410,
+        "row": 71,
+        "snapshotSha256": "e97a019cf686673fc808c2b1c086385e3641a4a6716e4c9f7947fc1f5aa3de11",
+        "verification": "user-supplied"
+      }
     }
   ]
 }

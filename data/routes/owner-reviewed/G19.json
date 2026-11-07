@@ -233,8 +233,10 @@
     },
     {
       "id": "node:9a67a747c35d44edc6e7",
-      "name": "石山林道登山口",
-      "aliases": [],
+      "name": "特生中心",
+      "aliases": [
+        "石山林道登山口"
+      ],
       "groups": [
         "G19"
       ],
@@ -3082,7 +3084,7 @@
       "fromId": "node:0e842d96324c02f98e0e",
       "toId": "node:9a67a747c35d44edc6e7",
       "from": "貨櫃屋",
-      "to": "石山林道登山口",
+      "to": "特生中心",
       "minutes": 100,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -3120,7 +3122,7 @@
     {
       "fromId": "node:9a67a747c35d44edc6e7",
       "toId": "node:0e842d96324c02f98e0e",
-      "from": "石山林道登山口",
+      "from": "特生中心",
       "to": "貨櫃屋",
       "minutes": 200,
       "travelMode": "walking",
@@ -3159,7 +3161,7 @@
     {
       "fromId": "node:9a67a747c35d44edc6e7",
       "toId": "node:b46a34c41185b2670cbd",
-      "from": "石山林道登山口",
+      "from": "特生中心",
       "to": "出雲山檢查哨",
       "minutes": 110,
       "travelMode": "walking",
@@ -3199,7 +3201,7 @@
       "fromId": "node:b46a34c41185b2670cbd",
       "toId": "node:9a67a747c35d44edc6e7",
       "from": "出雲山檢查哨",
-      "to": "石山林道登山口",
+      "to": "特生中心",
       "minutes": 115,
       "travelMode": "walking",
       "verificationStatus": "verified",

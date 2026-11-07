@@ -1,0 +1,196 @@
+{
+  "sourceUrl": "https://docs.google.com/spreadsheets/d/1jW3YN5F_A6x6KT_3PevoV4iIhuTYFlicdkNgiXJ8G3s/edit?gid=1955437410",
+  "snapshotSha256": "e97a019cf686673fc808c2b1c086385e3641a4a6716e4c9f7947fc1f5aa3de11",
+  "decisions": [
+    {
+      "row": 43,
+      "reviewId": "Q120",
+      "nodeId": "node:456202f4ff7dedc2df5e",
+      "name": "捷徑下切點",
+      "coordinate": [
+        121.2257164,
+        23.4461582
+      ],
+      "changed": true
+    },
+    {
+      "row": 44,
+      "reviewId": "Q121",
+      "nodeId": "node:47059555f89c94f5c563",
+      "name": "岔路登山口",
+      "coordinate": [
+        121.1887953,
+        23.4645204
+      ],
+      "changed": true
+    },
+    {
+      "row": 47,
+      "reviewId": "Q124",
+      "nodeId": "node:640f925a7809ca032704",
+      "name": "44K林道盡頭",
+      "coordinate": [
+        121.2141027,
+        23.460695
+      ],
+      "changed": true
+    },
+    {
+      "row": 51,
+      "reviewId": "Q128",
+      "nodeId": "node:c89901cb97ccbe4d145a",
+      "name": "林道玉林橋下切點",
+      "coordinate": [
+        121.2224438,
+        23.438117
+      ],
+      "changed": true
+    },
+    {
+      "row": 53,
+      "reviewId": "Q130",
+      "nodeId": "node:ea1afe9db60667f52737",
+      "name": "岔路",
+      "coordinate": [
+        121.2250047,
+        23.4420234
+      ],
+      "changed": true
+    },
+    {
+      "row": 58,
+      "reviewId": "Q153",
+      "nodeId": "node:26df992c63cbe82936fa",
+      "name": "中之關步道口",
+      "coordinate": [
+        120.8991338,
+        23.2874728
+      ],
+      "changed": false
+    },
+    {
+      "row": 59,
+      "reviewId": "Q154",
+      "nodeId": "node:4176c7ef6b3820715529",
+      "name": "石山西鞍",
+      "coordinate": [
+        120.8213146,
+        23.0848766
+      ],
+      "changed": true
+    },
+    {
+      "row": 60,
+      "reviewId": "Q155",
+      "nodeId": "node:8359e8efe649ea561e1d",
+      "name": "三岔路口",
+      "coordinate": [
+        120.8703404,
+        23.0582931
+      ],
+      "changed": true
+    },
+    {
+      "row": 61,
+      "reviewId": "Q156",
+      "nodeId": "node:9a67a747c35d44edc6e7",
+      "name": "石山林道登山口",
+      "coordinate": [
+        120.7891139,
+        23.0843131
+      ],
+      "changed": true
+    },
+    {
+      "row": 63,
+      "reviewId": "Q158",
+      "nodeId": "node:b46a34c41185b2670cbd",
+      "name": "出雲山檢查哨",
+      "coordinate": [
+        120.7599526,
+        23.0653162
+      ],
+      "changed": true
+    },
+    {
+      "row": 64,
+      "reviewId": "Q159",
+      "nodeId": "node:bb83bae652d8bbcc5f86",
+      "name": "18K行車終點",
+      "coordinate": [
+        120.7452857,
+        23.0643993
+      ],
+      "changed": true
+    },
+    {
+      "row": 65,
+      "reviewId": "Q160",
+      "nodeId": "node:bf84cd65b08abfe71cdd",
+      "name": "三叉峰下營地",
+      "coordinate": [
+        120.8708479,
+        23.0582212
+      ],
+      "changed": true
+    },
+    {
+      "row": 67,
+      "reviewId": "Q162",
+      "nodeId": "node:d2f31085a66df8fb4a30",
+      "name": "3237公尺峰",
+      "coordinate": [
+        120.875279,
+        23.0683301
+      ],
+      "changed": true
+    },
+    {
+      "row": 68,
+      "reviewId": "Q163",
+      "nodeId": "node:db9d30cb40a2d5347caa",
+      "name": "新舊路岔路",
+      "coordinate": [
+        120.8587394,
+        23.0744841
+      ],
+      "changed": true
+    },
+    {
+      "row": 69,
+      "reviewId": "Q164",
+      "nodeId": "node:de958fbbd68222537e18",
+      "name": "石瀑區",
+      "coordinate": [
+        120.8388022,
+        23.0801001
+      ],
+      "changed": true
+    },
+    {
+      "row": 70,
+      "reviewId": "SHEET-20261107-R70",
+      "nodeId": "node:2fc23a0b794f59ec7196",
+      "name": "溪南山登山口",
+      "coordinate": [
+        120.8151232,
+        23.0870187
+      ],
+      "changed": true
+    },
+    {
+      "row": 71,
+      "reviewId": "SHEET-20261107-R71",
+      "nodeId": "node:16d0ce554a26b76bdaa8",
+      "name": "林道鞍部",
+      "coordinate": [
+        120.8424647,
+        23.0782255
+      ],
+      "changed": true
+    }
+  ],
+  "baseCommit": "c4f9e2cb99f51f6cd6e30469607e55bd39c989e1",
+  "topologyTimeSha256": "0f37816b3ac44626fe33e34f4d3f69233f92c6d9813effcceffeb3ee2e994006",
+  "note": "Blank/pending rows preserve existing decisions. Existing ignored/deleted nodes are not restored."
+}
