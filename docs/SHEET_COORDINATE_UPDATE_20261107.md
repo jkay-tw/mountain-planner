@@ -45,7 +45,8 @@
 ## 驗證與發布
 
 - 132 項 JavaScript、99 項 Python、14 項路網小地圖測試通過；來源／圖資一致性守門與 git diff --check 通過。
-- GitHub 重建 workflow 會重新下載、核驗、重算與測試，再提交產生檔；PR CI 通過後才合併 main。
+- GitHub [來源重建與完整驗證](https://github.com/jkay-tw/mountain-planner/actions/runs/42326462131) 已成功，再次獨立核驗、重算與測試後提交產生檔；本機及 GitHub 產生圖資摘要相同。
+- 透過 [PR #24](https://github.com/jkay-tw/mountain-planner/pull/24) 合併；等候該 head 的 CI 通過後才發布。
 - main 合併後由資料發布 workflow 建立資料 Release；保留 v0.9.0 應用程式 Release 的 Latest 標記。
 - 正式驗收：[登山行程規劃器](https://jkay-tw.github.io/mountain-planner/?v=coords20261107)。
 - 回復基底：`615e0270003039009ba4c0cce5242a320551fc10`。若回復，應將來源、圖資與快取字串一併回復。
