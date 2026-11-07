@@ -1131,6 +1131,15 @@
           "name": "神池營地",
           "confirmedBy": "owner",
           "basis": "2026-11-03 explicit instruction: display chart 第一水源 as 神池營地; catalog did not previously contain 第一水源. Other 水源 identities unchanged."
+        },
+        {
+          "name": "特生中心",
+          "confirmedBy": "owner",
+          "confirmedAt": "2026-11-07",
+          "nodeId": "node:9a67a747c35d44edc6e7",
+          "previousName": "石山林道登山口",
+          "basis": "使用者 Google Sheet 第61列 Q156 指定改名；保留原 Node ID 與舊名別名。",
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1jW3YN5F_A6x6KT_3PevoV4iIhuTYFlicdkNgiXJ8G3s/edit?gid=1955437410"
         }
       ]
     },

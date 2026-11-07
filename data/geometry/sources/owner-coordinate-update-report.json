@@ -1,15 +1,31 @@
 {
   "changedNodeIds": [
+    "node:16d0ce554a26b76bdaa8",
+    "node:2fc23a0b794f59ec7196",
+    "node:4176c7ef6b3820715529",
+    "node:456202f4ff7dedc2df5e",
+    "node:47059555f89c94f5c563",
     "node:6238ba80f71b4e9faace",
+    "node:640f925a7809ca032704",
+    "node:8359e8efe649ea561e1d",
+    "node:9a67a747c35d44edc6e7",
+    "node:b46a34c41185b2670cbd",
     "node:b7b6bff9d61e63a89c58",
+    "node:bb83bae652d8bbcc5f86",
+    "node:bf84cd65b08abfe71cdd",
+    "node:c89901cb97ccbe4d145a",
+    "node:d2f31085a66df8fb4a30",
+    "node:db9d30cb40a2d5347caa",
+    "node:de958fbbd68222537e18",
+    "node:ea1afe9db60667f52737",
     "node:f6f2ba4c01559d0ff632",
     "shared:cw-v07-002",
     "shared:cw-v07-021"
   ],
   "removedNodeIds": [],
-  "preservedSpans": 654,
-  "generatedSpans": 0,
-  "bridgeSpans": 42,
+  "preservedSpans": 642,
+  "generatedSpans": 24,
+  "bridgeSpans": 33,
   "failedRoutes": [
     {
       "nodeIds": [
@@ -21,8 +37,8 @@
   ],
   "counts": {
     "activeNodes": 724,
-    "located": 622,
-    "unlocated": 102,
+    "located": 636,
+    "unlocated": 88,
     "ignored": 20,
     "vehicleOnly": 26
   }

@@ -5,6 +5,7 @@
 - [開啟正式版 v0.9.0](https://jkay-tw.github.io/mountain-planner/)
 - [開啟 功能預覽](https://jkay-tw.github.io/mountain-planner/preview/unified-editor.html?v=v090)
 - [v0.9.0 發布說明](docs/v0.9.0_RELEASE.md)
+- [2026-11-07 試算表節點座標、路徑與高程更新](docs/SHEET_COORDINATE_UPDATE_20261107.md)
 - [2026-11-06 G04 岔路資料更新：座標、OSM 路徑與 DEM 同步](docs/G04_COORDINATE_SYNC_20261106.md)
 - [圖文使用說明](https://jkay-tw.github.io/mountain-planner/guide.html?v=v090)
 - [v0.8 功能、資料範圍與驗收](docs/v0.8_RELEASE.md)

@@ -1,0 +1,76 @@
+name: Rebuild Sheet coordinates 2026-11-07
+on:
+  push:
+    branches: ['data/sheet-coordinates-20261107']
+    paths: ['.github/workflows/rebuild-sheet-coordinates-20261107.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: sheet-coordinates-20261107
+  cancel-in-progress: false
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Download and verify archived sources
+        run: |
+          mkdir -p "$RUNNER_TEMP/terrain-source"
+          gh release download terrain-sources-20261106 --dir "$RUNNER_TEMP/terrain-source" --pattern 'walking-network-roads.json.gz' --pattern 'hgtmix.zip' --pattern 'terrain-sources-manifest.json'
+          python3 - "$RUNNER_TEMP/terrain-source" <<'PY'
+          import hashlib,json,sys
+          from pathlib import Path
+          folder=Path(sys.argv[1]);manifest=json.loads((folder/'terrain-sources-manifest.json').read_text())
+          assert manifest['pbf']['sha256']=='72e6ec59e0b015aa52fd26b0240dc4155beca04a3071b0d07878eef6f02ba2b6'
+          for asset in manifest['assets']:
+              path=folder/asset['name']
+              assert path.stat().st_size==asset['bytes']
+              with path.open('rb') as f: assert hashlib.file_digest(f,'sha256').hexdigest()==asset['sha256']
+          PY
+      - run: python3 -m pip install numpy==2.3.5 scipy==1.17.0
+      - name: Import explicit decisions and recompute source paths
+        run: |
+          python3 tools/apply_sheet_coordinate_review.py data/geometry/sources/sheet-coordinate-review-20261107.json
+          cp data/geometry/planner-terrain-v1.json "$RUNNER_TEMP/before.json"
+          python3 tools/update_planner_terrain.py "$RUNNER_TEMP/terrain-source/walking-network-roads.json.gz" "$RUNNER_TEMP/terrain-source/hgtmix.zip" --output preview/data/geometry/planner-terrain-v1.json --report data/geometry/sources/owner-coordinate-update-report.json
+          python3 tools/sync_coordinate_geometry.py --build-preview "$RUNNER_TEMP/terrain-source/walking-network-roads.json.gz" "$RUNNER_TEMP/terrain-source/hgtmix.zip"
+          python3 tools/sync_coordinate_geometry.py --promote-production --approve-production
+      - name: Verify preserved geometry and absence of new routing failures
+        run: |
+          python3 - "$RUNNER_TEMP/before.json" <<'PY'
+          import json,sys
+          from pathlib import Path
+          old=json.loads(Path(sys.argv[1]).read_text());new=json.loads(Path('data/geometry/planner-terrain-v1.json').read_text())
+          report=json.loads(Path('data/geometry/sources/owner-coordinate-update-report.json').read_text())
+          changed=set(report['changedNodeIds']);spans={s['id']:s for s in new['spans']}
+          for s in old['spans']:
+              if not changed.intersection([s['fromId'],*s.get('viaNodeIds',[]),s['toId']]): assert spans[s['id']]==s,s['id']
+          assert report['failedRoutes']==old['coverage']['bridgeFailures']
+          assert not report['removedNodeIds']
+          assert new['counts']['located']==636
+          PY
+      - name: Validate shared data, planner, GPX, topology and source identity
+        run: |
+          python3 tools/sync_coordinate_geometry.py --check
+          cmp data/geometry/planner-terrain-v1.json preview/data/geometry/planner-terrain-v1.json
+          node --experimental-default-type=module --test tests/*.test.mjs
+          node --experimental-default-type=module --test preview/tests/quick-topology.test.mjs
+          python3 -m unittest discover -s tests -p 'test_*.py'
+          git diff --check
+      - name: Commit validated data and cache strings to the data branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/geometry/planner-terrain-v1.json preview/data/geometry/planner-terrain-v1.json data/geometry/sources/owner-coordinate-overrides.json data/geometry/sources/owner-coordinate-update-report.json data/geometry/sources/owner-update-osm-ways.json data/geometry/sources/sheet-coordinate-import-20261107.json data/routes/owner-reviewed/G19.json preview/data/routes/owner-reviewed/G19.json data/audits/main_step_chart_label_inventory_20261028.json js/unified-editor.js preview/js/unified-editor.js index.html preview/unified-editor.html
+          git commit -m 'data: rebuild 17 Sheet coordinates and publish synchronized geometry inputs'
+          git push origin HEAD:data/sheet-coordinates-20261107

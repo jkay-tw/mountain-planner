@@ -1,0 +1,21 @@
+name: Publish Sheet coordinate data release
+on:
+  push:
+    branches: [main]
+    paths: ['docs/SHEET_COORDINATE_UPDATE_20261107.md']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 tools/sync_coordinate_geometry.py --check
+      - name: Release data patch while retaining application v0.9.0 as latest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create data-coordinates-20261107 --target "$GITHUB_SHA" --title '節點座標與路徑資料更新（2026-11-07）' --notes-file docs/SHEET_COORDINATE_UPDATE_20261107.md --latest=false data/geometry/sources/sheet-coordinate-import-20261107.json data/geometry/sources/owner-coordinate-update-report.json
