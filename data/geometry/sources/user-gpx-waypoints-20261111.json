@@ -1,0 +1,1594 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "files": [
+    {
+      "file": "20261111-萬榮林道上六順山.gpx",
+      "sha256": "7d607c4b4c9059d9cfc548c8008daa0643215d9ba010029d3808023a3ad75a99",
+      "bytes": 500570,
+      "waypoints": [
+        {
+          "index": 0,
+          "name": "萬榮林道12.6k 萬善堂",
+          "coordinate": [
+            121.358080497245,
+            23.7201398781826
+          ],
+          "elevationMeters": 632.0
+        },
+        {
+          "index": 1,
+          "name": "21k台電工寮",
+          "coordinate": [
+            121.344927721556,
+            23.7527134328061
+          ],
+          "elevationMeters": 915.0
+        },
+        {
+          "index": 2,
+          "name": "31k統帥石礦工寮",
+          "coordinate": [
+            121.314650064784,
+            23.7330273867056
+          ],
+          "elevationMeters": 1421.0
+        },
+        {
+          "index": 3,
+          "name": "36k大崩壁",
+          "coordinate": [
+            121.301560860392,
+            23.7516416671128
+          ],
+          "elevationMeters": 1647.0
+        },
+        {
+          "index": 4,
+          "name": "42k阿道別墅",
+          "coordinate": [
+            121.282408977733,
+            23.7535320232158
+          ],
+          "elevationMeters": 1741.0
+        },
+        {
+          "index": 5,
+          "name": "46k九族工寮",
+          "coordinate": [
+            121.2757668,
+            23.7493741
+          ],
+          "elevationMeters": 1758.0
+        },
+        {
+          "index": 6,
+          "name": "情人吊橋",
+          "coordinate": [
+            121.26963022499,
+            23.7450473009844
+          ],
+          "elevationMeters": 1758.0
+        },
+        {
+          "index": 7,
+          "name": "天梯頂岔路口",
+          "coordinate": [
+            121.259447882696,
+            23.7399306677466
+          ],
+          "elevationMeters": 2507.0
+        },
+        {
+          "index": 8,
+          "name": "六順山新登山口",
+          "coordinate": [
+            121.259365077198,
+            23.7394690805851
+          ],
+          "elevationMeters": 2536.0
+        },
+        {
+          "index": 9,
+          "name": "2870草原水池",
+          "coordinate": [
+            121.251597185445,
+            23.7323388243641
+          ],
+          "elevationMeters": 2779.0
+        },
+        {
+          "index": 10,
+          "name": "2863峰",
+          "coordinate": [
+            121.248721460435,
+            23.7271627603782
+          ],
+          "elevationMeters": 2838.0
+        },
+        {
+          "index": 11,
+          "name": "六順山登山口",
+          "coordinate": [
+            121.239666855419,
+            23.7243387362713
+          ],
+          "elevationMeters": 3002.0
+        },
+        {
+          "index": 12,
+          "name": "2863峰",
+          "coordinate": [
+            121.248721460435,
+            23.7271627603782
+          ],
+          "elevationMeters": 2838.0
+        },
+        {
+          "index": 13,
+          "name": "2870草原水池",
+          "coordinate": [
+            121.251597185445,
+            23.7323388243641
+          ],
+          "elevationMeters": 2779.0
+        },
+        {
+          "index": 14,
+          "name": "六順山新登山口",
+          "coordinate": [
+            121.259365077198,
+            23.7394690805851
+          ],
+          "elevationMeters": 2536.0
+        },
+        {
+          "index": 15,
+          "name": "天梯頂岔路口",
+          "coordinate": [
+            121.259447882696,
+            23.7399306677466
+          ],
+          "elevationMeters": 2507.0
+        },
+        {
+          "index": 16,
+          "name": "情人吊橋",
+          "coordinate": [
+            121.26963022499,
+            23.7450473009844
+          ],
+          "elevationMeters": 1758.0
+        },
+        {
+          "index": 17,
+          "name": "46k九族工寮",
+          "coordinate": [
+            121.2757668,
+            23.7493741
+          ],
+          "elevationMeters": 1758.0
+        },
+        {
+          "index": 18,
+          "name": "42k阿道別墅",
+          "coordinate": [
+            121.282408977733,
+            23.7535320232158
+          ],
+          "elevationMeters": 1741.0
+        },
+        {
+          "index": 19,
+          "name": "36k大崩壁",
+          "coordinate": [
+            121.301560860392,
+            23.7516416671128
+          ],
+          "elevationMeters": 1647.0
+        },
+        {
+          "index": 20,
+          "name": "31k統帥石礦工寮",
+          "coordinate": [
+            121.314650064784,
+            23.7330273867056
+          ],
+          "elevationMeters": 1421.0
+        },
+        {
+          "index": 21,
+          "name": "21k台電工寮",
+          "coordinate": [
+            121.344927721556,
+            23.7527134328061
+          ],
+          "elevationMeters": 915.0
+        },
+        {
+          "index": 22,
+          "name": "萬榮林道12.6k 萬善堂",
+          "coordinate": [
+            121.358080497245,
+            23.7201398781826
+          ],
+          "elevationMeters": 632.0
+        }
+      ],
+      "trackPointCount": 3720,
+      "links": [],
+      "provenance": "user-supplied-file; not independently verified; track timestamps not used as walking times"
+    },
+    {
+      "file": "南三段_Joyhike.gpx",
+      "sha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+      "bytes": 198891,
+      "waypoints": [
+        {
+          "index": 0,
+          "name": "14.5K 瑞穗林道",
+          "coordinate": [
+            121.281421,
+            23.512987
+          ],
+          "elevationMeters": 1421.0
+        },
+        {
+          "index": 1,
+          "name": "19K 水泥橋",
+          "coordinate": [
+            121.2748901,
+            23.53498606
+          ],
+          "elevationMeters": 1470.0
+        },
+        {
+          "index": 2,
+          "name": "28K 工寮",
+          "coordinate": [
+            121.2542933,
+            23.53996867
+          ],
+          "elevationMeters": 2150.0
+        },
+        {
+          "index": 3,
+          "name": "32K 彈藥庫工寮",
+          "coordinate": [
+            121.2532023,
+            23.55629696
+          ],
+          "elevationMeters": 2387.0
+        },
+        {
+          "index": 4,
+          "name": "34K 登山口",
+          "coordinate": [
+            121.2504512,
+            23.56326311
+          ],
+          "elevationMeters": 2525.0
+        },
+        {
+          "index": 5,
+          "name": "沙武巒草原",
+          "coordinate": [
+            121.2503529,
+            23.56683973
+          ],
+          "elevationMeters": 2650.0
+        },
+        {
+          "index": 6,
+          "name": "水點",
+          "coordinate": [
+            121.2447382,
+            23.5803742
+          ],
+          "elevationMeters": 2895.0
+        },
+        {
+          "index": 7,
+          "name": "三岔路口",
+          "coordinate": [
+            121.2308374,
+            23.58101191
+          ],
+          "elevationMeters": 2432.0
+        },
+        {
+          "index": 8,
+          "name": "東源營地",
+          "coordinate": [
+            121.2297099,
+            23.58207744
+          ],
+          "elevationMeters": 2345.0
+        },
+        {
+          "index": 9,
+          "name": "2907峰",
+          "coordinate": [
+            121.214002,
+            23.576042
+          ],
+          "elevationMeters": 2907.0
+        },
+        {
+          "index": 10,
+          "name": "杜鵑營地",
+          "coordinate": [
+            121.2047056,
+            23.58399849
+          ],
+          "elevationMeters": 2970.0
+        },
+        {
+          "index": 11,
+          "name": "太平溪源",
+          "coordinate": [
+            121.1948142,
+            23.58992786
+          ],
+          "elevationMeters": 2829.0
+        },
+        {
+          "index": 12,
+          "name": "太平溪源營地",
+          "coordinate": [
+            121.1938442,
+            23.59065672
+          ],
+          "elevationMeters": 2860.0
+        },
+        {
+          "index": 13,
+          "name": "盧利拉駱山",
+          "coordinate": [
+            121.2003935,
+            23.59632599
+          ],
+          "elevationMeters": 3175.0
+        },
+        {
+          "index": 14,
+          "name": "丹大山",
+          "coordinate": [
+            121.2135382,
+            23.60040825
+          ],
+          "elevationMeters": 3325.0
+        },
+        {
+          "index": 15,
+          "name": "盧利拉駱山",
+          "coordinate": [
+            121.2003935,
+            23.59632599
+          ],
+          "elevationMeters": 3175.0
+        },
+        {
+          "index": 16,
+          "name": "太平溪源營地",
+          "coordinate": [
+            121.1938442,
+            23.59065672
+          ],
+          "elevationMeters": 2860.0
+        },
+        {
+          "index": 17,
+          "name": "三岔路營地",
+          "coordinate": [
+            121.1915141,
+            23.58037184
+          ],
+          "elevationMeters": 3185.0
+        },
+        {
+          "index": 18,
+          "name": "內嶺爾山",
+          "coordinate": [
+            121.1962842,
+            23.5791976
+          ],
+          "elevationMeters": 3275.0
+        },
+        {
+          "index": 19,
+          "name": "三岔路營地",
+          "coordinate": [
+            121.1915141,
+            23.58037184
+          ],
+          "elevationMeters": 3185.0
+        },
+        {
+          "index": 20,
+          "name": "馬路巴拉讓山",
+          "coordinate": [
+            121.1828013,
+            23.58129007
+          ],
+          "elevationMeters": 3255.0
+        },
+        {
+          "index": 21,
+          "name": "崖邊營地",
+          "coordinate": [
+            121.164274,
+            23.58706955
+          ],
+          "elevationMeters": 3045.0
+        },
+        {
+          "index": 22,
+          "name": "義西請馬至山",
+          "coordinate": [
+            121.1532122,
+            23.58678816
+          ],
+          "elevationMeters": 3245.0
+        },
+        {
+          "index": 23,
+          "name": "斷稜東山",
+          "coordinate": [
+            121.147016,
+            23.5948897
+          ],
+          "elevationMeters": 3286.0
+        },
+        {
+          "index": 24,
+          "name": "裡門山",
+          "coordinate": [
+            121.1381532,
+            23.59535706
+          ],
+          "elevationMeters": 3335.0
+        },
+        {
+          "index": 25,
+          "name": "丹大溪源營地",
+          "coordinate": [
+            121.135327,
+            23.599227
+          ],
+          "elevationMeters": 3170.0
+        },
+        {
+          "index": 26,
+          "name": "望崖山",
+          "coordinate": [
+            121.128336,
+            23.600943
+          ],
+          "elevationMeters": 3316.0
+        },
+        {
+          "index": 27,
+          "name": "天南可蘭山",
+          "coordinate": [
+            121.1302013,
+            23.60845264
+          ],
+          "elevationMeters": 3404.0
+        },
+        {
+          "index": 28,
+          "name": "可樂可樂安山",
+          "coordinate": [
+            121.1174209,
+            23.62332883
+          ],
+          "elevationMeters": 3505.0
+        },
+        {
+          "index": 29,
+          "name": "郡東山",
+          "coordinate": [
+            121.1056496,
+            23.62867557
+          ],
+          "elevationMeters": 3409.0
+        },
+        {
+          "index": 30,
+          "name": "郡東山西鞍營地",
+          "coordinate": [
+            121.1020841,
+            23.6276873
+          ],
+          "elevationMeters": 3260.0
+        },
+        {
+          "index": 31,
+          "name": "北鞍營地",
+          "coordinate": [
+            121.0909506,
+            23.62691215
+          ],
+          "elevationMeters": 3589.0
+        },
+        {
+          "index": 32,
+          "name": "取水岔路",
+          "coordinate": [
+            121.0855373,
+            23.63583673
+          ],
+          "elevationMeters": 3353.0
+        },
+        {
+          "index": 33,
+          "name": "烏達佩山岔路",
+          "coordinate": [
+            121.086954,
+            23.64227409
+          ],
+          "elevationMeters": 3510.0
+        },
+        {
+          "index": 34,
+          "name": "烏達佩山",
+          "coordinate": [
+            121.0882577,
+            23.64280197
+          ],
+          "elevationMeters": 3331.0
+        },
+        {
+          "index": 35,
+          "name": "烏達佩山岔路",
+          "coordinate": [
+            121.086954,
+            23.64227409
+          ],
+          "elevationMeters": 3510.0
+        },
+        {
+          "index": 36,
+          "name": "東巒大山",
+          "coordinate": [
+            121.0812979,
+            23.64865654
+          ],
+          "elevationMeters": 3479.0
+        },
+        {
+          "index": 37,
+          "name": "烏達佩山岔路",
+          "coordinate": [
+            121.086954,
+            23.64227409
+          ],
+          "elevationMeters": 3510.0
+        },
+        {
+          "index": 38,
+          "name": "取水岔路",
+          "coordinate": [
+            121.0855373,
+            23.63583673
+          ],
+          "elevationMeters": 3353.0
+        },
+        {
+          "index": 39,
+          "name": "北鞍營地",
+          "coordinate": [
+            121.0909506,
+            23.62691215
+          ],
+          "elevationMeters": 3589.0
+        },
+        {
+          "index": 40,
+          "name": "東郡大山",
+          "coordinate": [
+            121.092039,
+            23.626736
+          ],
+          "elevationMeters": 3619.0
+        },
+        {
+          "index": 41,
+          "name": "本鄉山",
+          "coordinate": [
+            121.085751,
+            23.61139669
+          ],
+          "elevationMeters": 3447.0
+        },
+        {
+          "index": 42,
+          "name": "櫧山北鞍營地",
+          "coordinate": [
+            121.0896261,
+            23.5992395
+          ],
+          "elevationMeters": 3110.0
+        },
+        {
+          "index": 43,
+          "name": "櫧山前營地",
+          "coordinate": [
+            121.0852783,
+            23.59397393
+          ],
+          "elevationMeters": 3285.0
+        },
+        {
+          "index": 44,
+          "name": "櫧山",
+          "coordinate": [
+            121.0821963,
+            23.59072478
+          ],
+          "elevationMeters": 3437.0
+        },
+        {
+          "index": 45,
+          "name": "無雙東峰",
+          "coordinate": [
+            121.058147,
+            23.591782
+          ],
+          "elevationMeters": 3228.0
+        },
+        {
+          "index": 46,
+          "name": "無雙最高峰",
+          "coordinate": [
+            121.057984,
+            23.591845
+          ],
+          "elevationMeters": 3250.0
+        },
+        {
+          "index": 47,
+          "name": "無雙山",
+          "coordinate": [
+            121.057191,
+            23.591001
+          ],
+          "elevationMeters": 3231.0
+        },
+        {
+          "index": 48,
+          "name": "水源",
+          "coordinate": [
+            121.048598,
+            23.57481
+          ],
+          "elevationMeters": 1907.0
+        },
+        {
+          "index": 49,
+          "name": "亞力士營地",
+          "coordinate": [
+            121.045941,
+            23.574338
+          ],
+          "elevationMeters": 1895.0
+        },
+        {
+          "index": 50,
+          "name": "無雙社",
+          "coordinate": [
+            121.013361,
+            23.577329
+          ],
+          "elevationMeters": 1600.0
+        },
+        {
+          "index": 51,
+          "name": "無雙吊橋",
+          "coordinate": [
+            121.010619,
+            23.577113
+          ],
+          "elevationMeters": 1478.0
+        },
+        {
+          "index": 52,
+          "name": "屋瓦拉鼻西營地",
+          "coordinate": [
+            121.001645,
+            23.580942
+          ],
+          "elevationMeters": 1633.0
+        },
+        {
+          "index": 53,
+          "name": "45.3K 無雙山登山口",
+          "coordinate": [
+            120.985703,
+            23.584155
+          ],
+          "elevationMeters": 2434.0
+        },
+        {
+          "index": 54,
+          "name": "43K 工寮",
+          "coordinate": [
+            120.971454,
+            23.58752
+          ],
+          "elevationMeters": 2498.0
+        },
+        {
+          "index": 55,
+          "name": "36K 支線岔路",
+          "coordinate": [
+            120.967895,
+            23.611091
+          ],
+          "elevationMeters": 2705.0
+        },
+        {
+          "index": 56,
+          "name": "33K 郡大林道",
+          "coordinate": [
+            120.955766,
+            23.592581
+          ],
+          "elevationMeters": 2868.0
+        }
+      ],
+      "trackPointCount": 2717,
+      "links": [],
+      "provenance": "user-supplied-file; not independently verified; track timestamps not used as walking times"
+    },
+    {
+      "file": "七彩湖｜六順山_Joyhike.gpx",
+      "sha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+      "bytes": 337378,
+      "waypoints": [
+        {
+          "index": 0,
+          "name": "孫安橋",
+          "coordinate": [
+            121.010877,
+            23.787202
+          ],
+          "elevationMeters": 480.0
+        },
+        {
+          "index": 1,
+          "name": "二分所管制站",
+          "coordinate": [
+            121.0452249,
+            23.7786522
+          ],
+          "elevationMeters": 972.0
+        },
+        {
+          "index": 2,
+          "name": "三分所",
+          "coordinate": [
+            121.0641952,
+            23.75603025
+          ],
+          "elevationMeters": 1267.0
+        },
+        {
+          "index": 3,
+          "name": "六分所",
+          "coordinate": [
+            121.1453587,
+            23.75076858
+          ],
+          "elevationMeters": 2415.0
+        },
+        {
+          "index": 4,
+          "name": "保線路捷徑入口",
+          "coordinate": [
+            121.16461,
+            23.76168463
+          ],
+          "elevationMeters": 2218.0
+        },
+        {
+          "index": 5,
+          "name": "丹大林道主線",
+          "coordinate": [
+            121.1833147,
+            23.76975331
+          ],
+          "elevationMeters": 2675.0
+        },
+        {
+          "index": 6,
+          "name": "隧道 1",
+          "coordinate": [
+            121.184084,
+            23.769674
+          ],
+          "elevationMeters": 2670.0
+        },
+        {
+          "index": 7,
+          "name": "隧道 2",
+          "coordinate": [
+            121.1869185,
+            23.77167847
+          ],
+          "elevationMeters": 2690.0
+        },
+        {
+          "index": 8,
+          "name": "隧道 3",
+          "coordinate": [
+            121.190325,
+            23.771792
+          ],
+          "elevationMeters": 2728.0
+        },
+        {
+          "index": 9,
+          "name": "台電招待所",
+          "coordinate": [
+            121.2070317,
+            23.76881545
+          ],
+          "elevationMeters": 2695.0
+        },
+        {
+          "index": 10,
+          "name": "丹大林道入口",
+          "coordinate": [
+            121.2334691,
+            23.75142241
+          ],
+          "elevationMeters": 2952.0
+        },
+        {
+          "index": 11,
+          "name": "七彩湖營地",
+          "coordinate": [
+            121.233284,
+            23.751237
+          ],
+          "elevationMeters": 2945.0
+        },
+        {
+          "index": 12,
+          "name": "七彩湖",
+          "coordinate": [
+            121.235276,
+            23.750941
+          ],
+          "elevationMeters": 2873.0
+        },
+        {
+          "index": 13,
+          "name": "七彩妹池",
+          "coordinate": [
+            121.238573,
+            23.748088
+          ],
+          "elevationMeters": 2867.0
+        },
+        {
+          "index": 14,
+          "name": "七彩湖",
+          "coordinate": [
+            121.235276,
+            23.750941
+          ],
+          "elevationMeters": 2873.0
+        },
+        {
+          "index": 15,
+          "name": "七彩湖營地",
+          "coordinate": [
+            121.233284,
+            23.751237
+          ],
+          "elevationMeters": 2945.0
+        },
+        {
+          "index": 16,
+          "name": "登山口",
+          "coordinate": [
+            121.2322807,
+            23.74990541
+          ],
+          "elevationMeters": 2945.0
+        },
+        {
+          "index": 17,
+          "name": "2960峰",
+          "coordinate": [
+            121.2288897,
+            23.7348541
+          ],
+          "elevationMeters": 2982.0
+        },
+        {
+          "index": 18,
+          "name": "六順山基石",
+          "coordinate": [
+            121.2395579,
+            23.72452401
+          ],
+          "elevationMeters": 3009.0
+        },
+        {
+          "index": 19,
+          "name": "2960峰",
+          "coordinate": [
+            121.2288897,
+            23.7348541
+          ],
+          "elevationMeters": 2982.0
+        },
+        {
+          "index": 20,
+          "name": "登山口",
+          "coordinate": [
+            121.2322807,
+            23.74990541
+          ],
+          "elevationMeters": 2945.0
+        },
+        {
+          "index": 21,
+          "name": "七彩湖營地",
+          "coordinate": [
+            121.233284,
+            23.751237
+          ],
+          "elevationMeters": 2945.0
+        },
+        {
+          "index": 22,
+          "name": "丹大林道入口",
+          "coordinate": [
+            121.2334691,
+            23.75142241
+          ],
+          "elevationMeters": 2952.0
+        },
+        {
+          "index": 23,
+          "name": "台電招待所",
+          "coordinate": [
+            121.2070317,
+            23.76881545
+          ],
+          "elevationMeters": 2695.0
+        },
+        {
+          "index": 24,
+          "name": "隧道 3",
+          "coordinate": [
+            121.190325,
+            23.771792
+          ],
+          "elevationMeters": 2728.0
+        },
+        {
+          "index": 25,
+          "name": "隧道 2",
+          "coordinate": [
+            121.1869185,
+            23.77167847
+          ],
+          "elevationMeters": 2690.0
+        },
+        {
+          "index": 26,
+          "name": "隧道 1",
+          "coordinate": [
+            121.184084,
+            23.769674
+          ],
+          "elevationMeters": 2670.0
+        },
+        {
+          "index": 27,
+          "name": "丹大林道主線",
+          "coordinate": [
+            121.1833147,
+            23.76975331
+          ],
+          "elevationMeters": 2675.0
+        },
+        {
+          "index": 28,
+          "name": "保線路捷徑入口",
+          "coordinate": [
+            121.16461,
+            23.76168463
+          ],
+          "elevationMeters": 2218.0
+        },
+        {
+          "index": 29,
+          "name": "六分所",
+          "coordinate": [
+            121.1453587,
+            23.75076858
+          ],
+          "elevationMeters": 2415.0
+        },
+        {
+          "index": 30,
+          "name": "三分所",
+          "coordinate": [
+            121.0641952,
+            23.75603025
+          ],
+          "elevationMeters": 1267.0
+        },
+        {
+          "index": 31,
+          "name": "二分所管制站",
+          "coordinate": [
+            121.0452249,
+            23.7786522
+          ],
+          "elevationMeters": 972.0
+        },
+        {
+          "index": 32,
+          "name": "孫安橋",
+          "coordinate": [
+            121.010877,
+            23.787202
+          ],
+          "elevationMeters": 480.0
+        }
+      ],
+      "trackPointCount": 4682,
+      "links": [],
+      "provenance": "user-supplied-file; not independently verified; track timestamps not used as walking times"
+    },
+    {
+      "file": "南三段.gpx",
+      "sha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+      "bytes": 496150,
+      "waypoints": [
+        {
+          "index": 0,
+          "name": "瑞穗林道14.6k行車終點",
+          "coordinate": [
+            121.28242631679075,
+            23.500960018246232
+          ],
+          "elevationMeters": 1399.0
+        },
+        {
+          "index": 1,
+          "name": "19.3k水泥橋",
+          "coordinate": [
+            121.27486436461368,
+            23.535046020904716
+          ],
+          "elevationMeters": 1503.0
+        },
+        {
+          "index": 2,
+          "name": "26k岔路",
+          "coordinate": [
+            121.2583571,
+            23.5314982
+          ],
+          "elevationMeters": 2033.0
+        },
+        {
+          "index": 3,
+          "name": "28k工寮",
+          "coordinate": [
+            121.25429306123345,
+            23.540004522415884
+          ],
+          "elevationMeters": 2158.0
+        },
+        {
+          "index": 4,
+          "name": "32k彈藥庫",
+          "coordinate": [
+            121.253055848252,
+            23.5566112689257
+          ],
+          "elevationMeters": 2411.0
+        },
+        {
+          "index": 5,
+          "name": "瑞隆林道34k",
+          "coordinate": [
+            121.25044780958967,
+            23.563272184143088
+          ],
+          "elevationMeters": 2552.0
+        },
+        {
+          "index": 6,
+          "name": "鐵線斷崖東口",
+          "coordinate": [
+            121.2487285,
+            23.5641999
+          ],
+          "elevationMeters": 2569.0
+        },
+        {
+          "index": 7,
+          "name": "鐵線斷崖西口",
+          "coordinate": [
+            121.229119067001,
+            23.575590975781
+          ],
+          "elevationMeters": 2458.0
+        },
+        {
+          "index": 8,
+          "name": "4.9k",
+          "coordinate": [
+            121.23089045318181,
+            23.580983826200708
+          ],
+          "elevationMeters": 2435.0
+        },
+        {
+          "index": 9,
+          "name": "5.1k三岔路口",
+          "coordinate": [
+            121.23076626223718,
+            23.581731720232796
+          ],
+          "elevationMeters": 2409.0
+        },
+        {
+          "index": 10,
+          "name": "5.3k東源營地",
+          "coordinate": [
+            121.22950632614499,
+            23.58214964604061
+          ],
+          "elevationMeters": 2345.0
+        },
+        {
+          "index": 11,
+          "name": "5.45k西源營地",
+          "coordinate": [
+            121.22878082311286,
+            23.58225041741852
+          ],
+          "elevationMeters": 2341.0
+        },
+        {
+          "index": 12,
+          "name": "2907峰",
+          "coordinate": [
+            121.2137896,
+            23.5756326
+          ],
+          "elevationMeters": 2896.0
+        },
+        {
+          "index": 13,
+          "name": "杜鵑營地",
+          "coordinate": [
+            121.2048309,
+            23.584159
+          ],
+          "elevationMeters": 2977.0
+        },
+        {
+          "index": 14,
+          "name": "太平溪源",
+          "coordinate": [
+            121.195394377085,
+            23.5891774825502
+          ],
+          "elevationMeters": 2848.0
+        },
+        {
+          "index": 15,
+          "name": "太平溪源營地",
+          "coordinate": [
+            121.19384810312391,
+            23.590654850387295
+          ],
+          "elevationMeters": 2862.0
+        },
+        {
+          "index": 16,
+          "name": "盧利拉駱山",
+          "coordinate": [
+            121.20041573616737,
+            23.59629942661607
+          ],
+          "elevationMeters": 3181.0
+        },
+        {
+          "index": 17,
+          "name": "丹大山",
+          "coordinate": [
+            121.213569104754,
+            23.6004177970101
+          ],
+          "elevationMeters": 3325.0
+        },
+        {
+          "index": 18,
+          "name": "盧利拉駱山",
+          "coordinate": [
+            121.20041592967044,
+            23.596299602789074
+          ],
+          "elevationMeters": 3181.0
+        },
+        {
+          "index": 19,
+          "name": "太平溪源營地",
+          "coordinate": [
+            121.19384810312391,
+            23.590654850387295
+          ],
+          "elevationMeters": 2862.0
+        },
+        {
+          "index": 20,
+          "name": "三岔路營地",
+          "coordinate": [
+            121.19151568292182,
+            23.580375113125285
+          ],
+          "elevationMeters": 3186.0
+        },
+        {
+          "index": 21,
+          "name": "內嶺爾山",
+          "coordinate": [
+            121.196435184604,
+            23.5793865880198
+          ],
+          "elevationMeters": 3275.0
+        },
+        {
+          "index": 22,
+          "name": "三岔路營地",
+          "coordinate": [
+            121.19151568292182,
+            23.580375113125285
+          ],
+          "elevationMeters": 3186.0
+        },
+        {
+          "index": 23,
+          "name": "馬路巴拉讓山",
+          "coordinate": [
+            121.18278109172229,
+            23.58129835226522
+          ],
+          "elevationMeters": 3245.0
+        },
+        {
+          "index": 24,
+          "name": "東鞍崖邊營地",
+          "coordinate": [
+            121.164863954351,
+            23.5871741327397
+          ],
+          "elevationMeters": 3008.0
+        },
+        {
+          "index": 25,
+          "name": "義西請馬至山",
+          "coordinate": [
+            121.153278252853,
+            23.586790587487684
+          ],
+          "elevationMeters": 3238.0
+        },
+        {
+          "index": 26,
+          "name": "斷稜東山",
+          "coordinate": [
+            121.14745235087,
+            23.5946269308804
+          ],
+          "elevationMeters": 3285.0
+        },
+        {
+          "index": 27,
+          "name": "裡門山",
+          "coordinate": [
+            121.138151087873,
+            23.5953741537795
+          ],
+          "elevationMeters": 3341.0
+        },
+        {
+          "index": 28,
+          "name": "丹大溪源營地",
+          "coordinate": [
+            121.13532883786502,
+            23.59922395281143
+          ],
+          "elevationMeters": 3175.0
+        },
+        {
+          "index": 29,
+          "name": "望崖山",
+          "coordinate": [
+            121.128471982123,
+            23.6009781898408
+          ],
+          "elevationMeters": 3304.0
+        },
+        {
+          "index": 30,
+          "name": "天南可蘭山岔路",
+          "coordinate": [
+            121.129159584431,
+            23.608174600702
+          ],
+          "elevationMeters": 3393.0
+        },
+        {
+          "index": 31,
+          "name": "可樂可樂安山",
+          "coordinate": [
+            121.11742237335801,
+            23.62333050388159
+          ],
+          "elevationMeters": 3493.0
+        },
+        {
+          "index": 32,
+          "name": "郡東山",
+          "coordinate": [
+            121.105647689112,
+            23.6281322506207
+          ],
+          "elevationMeters": 3452.0
+        },
+        {
+          "index": 33,
+          "name": "營地岔路",
+          "coordinate": [
+            121.10222553223406,
+            23.6276700024507
+          ],
+          "elevationMeters": 3282.0
+        },
+        {
+          "index": 34,
+          "name": "東郡北鞍營地",
+          "coordinate": [
+            121.09094916699098,
+            23.626912017657034
+          ],
+          "elevationMeters": 3588.0
+        },
+        {
+          "index": 35,
+          "name": "烏達佩山岔路",
+          "coordinate": [
+            121.08695259598892,
+            23.642273836641536
+          ],
+          "elevationMeters": 3514.0
+        },
+        {
+          "index": 36,
+          "name": "烏達佩山",
+          "coordinate": [
+            121.0882803845,
+            23.6428165438172
+          ],
+          "elevationMeters": 3517.0
+        },
+        {
+          "index": 37,
+          "name": "烏達佩山岔路",
+          "coordinate": [
+            121.08695259598892,
+            23.642273836641536
+          ],
+          "elevationMeters": 3514.0
+        },
+        {
+          "index": 38,
+          "name": "東巒大山",
+          "coordinate": [
+            121.081371002784,
+            23.6486961879805
+          ],
+          "elevationMeters": 3468.0
+        },
+        {
+          "index": 39,
+          "name": "烏達佩山岔路",
+          "coordinate": [
+            121.08695259598892,
+            23.642273836641536
+          ],
+          "elevationMeters": 3514.0
+        },
+        {
+          "index": 40,
+          "name": "東郡北鞍營地",
+          "coordinate": [
+            121.09094916699098,
+            23.626912017657034
+          ],
+          "elevationMeters": 3588.0
+        },
+        {
+          "index": 41,
+          "name": "東郡大山",
+          "coordinate": [
+            121.092083748574,
+            23.626724182171
+          ],
+          "elevationMeters": 3619.0
+        },
+        {
+          "index": 42,
+          "name": "東郡北鞍營地",
+          "coordinate": [
+            121.09094916699098,
+            23.626912017657034
+          ],
+          "elevationMeters": 3588.0
+        },
+        {
+          "index": 43,
+          "name": "本鄉山",
+          "coordinate": [
+            121.085728062929,
+            23.6114285857564
+          ],
+          "elevationMeters": 3441.0
+        },
+        {
+          "index": 44,
+          "name": "櫧山北鞍營地",
+          "coordinate": [
+            121.0899351720945,
+            23.599194142268118
+          ],
+          "elevationMeters": 3118.0
+        },
+        {
+          "index": 45,
+          "name": "櫧山",
+          "coordinate": [
+            121.08248579670703,
+            23.590767363467606
+          ],
+          "elevationMeters": 3442.0
+        },
+        {
+          "index": 46,
+          "name": "無雙山東峰",
+          "coordinate": [
+            121.060666341676,
+            23.5913233681112
+          ],
+          "elevationMeters": 3177.0
+        },
+        {
+          "index": 47,
+          "name": "無雙山最高峰",
+          "coordinate": [
+            121.059303065911,
+            23.5915495075007
+          ],
+          "elevationMeters": 3211.0
+        },
+        {
+          "index": 48,
+          "name": "無雙山基點峰",
+          "coordinate": [
+            121.057166640608,
+            23.5910284031043
+          ],
+          "elevationMeters": 3231.0
+        },
+        {
+          "index": 49,
+          "name": "最後水源",
+          "coordinate": [
+            121.04832291286311,
+            23.57488124486744
+          ],
+          "elevationMeters": 1920.0
+        },
+        {
+          "index": 50,
+          "name": "亞力士營地",
+          "coordinate": [
+            121.04589879870916,
+            23.574354428148688
+          ],
+          "elevationMeters": 1888.0
+        },
+        {
+          "index": 51,
+          "name": "無雙部落舊址",
+          "coordinate": [
+            121.0151662,
+            23.5771612
+          ],
+          "elevationMeters": 1630.0
+        },
+        {
+          "index": 52,
+          "name": "無雙吊橋",
+          "coordinate": [
+            121.010627746582,
+            23.5771348002162
+          ],
+          "elevationMeters": 1452.0
+        },
+        {
+          "index": 53,
+          "name": "烏瓦拉鼻溪營地",
+          "coordinate": [
+            121.001507548821,
+            23.5811663580373
+          ],
+          "elevationMeters": 1636.0
+        },
+        {
+          "index": 54,
+          "name": "45.3k登山口",
+          "coordinate": [
+            120.985758927637,
+            23.5841161999486
+          ],
+          "elevationMeters": 2450.0
+        },
+        {
+          "index": 55,
+          "name": "43k工寮",
+          "coordinate": [
+            120.971531226761,
+            23.5875182686252
+          ],
+          "elevationMeters": 2488.0
+        },
+        {
+          "index": 56,
+          "name": "39.6k大崩塌",
+          "coordinate": [
+            120.97273465404,
+            23.5980877169315
+          ],
+          "elevationMeters": 2503.0
+        },
+        {
+          "index": 57,
+          "name": "33.5k大崩塌",
+          "coordinate": [
+            120.956833362579,
+            23.5920484876008
+          ],
+          "elevationMeters": 2950.0
+        },
+        {
+          "index": 58,
+          "name": "郡大林道32k登山口",
+          "coordinate": [
+            120.946784462719,
+            23.5960874565317
+          ],
+          "elevationMeters": 2864.0
+        }
+      ],
+      "trackPointCount": 3729,
+      "links": [],
+      "provenance": "user-supplied-file; not independently verified; track timestamps not used as walking times"
+    }
+  ]
+}

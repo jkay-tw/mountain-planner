@@ -14,13 +14,16 @@
   "reviewBasis": "owner_workbook_review",
   "nodes": [
     {
-      "id": "node:1e33d65d02cee63e0cd4",
-      "name": "三岔路口",
-      "aliases": [],
-      "groups": [
-        "G02-6bd64eb7"
+      "id": "shared:cw-v07-015",
+      "name": "八通關山三岔路口",
+      "aliases": [
+        "三岔路口"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "groups": [
+        "G02-6bd64eb7",
+        "G17"
+      ],
+      "identityBasis": "owner-explicit-review-20261111"
     },
     {
       "id": "shared:cw-v07-008",
@@ -1890,9 +1893,9 @@
     },
     {
       "fromId": "shared:cw-v07-017",
-      "toId": "node:1e33d65d02cee63e0cd4",
+      "toId": "shared:cw-v07-015",
       "from": "八通關山西峰",
-      "to": "三岔路口",
+      "to": "八通關山三岔路口",
       "minutes": 50,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -1928,9 +1931,9 @@
       ]
     },
     {
-      "fromId": "node:1e33d65d02cee63e0cd4",
+      "fromId": "shared:cw-v07-015",
       "toId": "shared:cw-v07-017",
-      "from": "三岔路口",
+      "from": "八通關山三岔路口",
       "to": "八通關山西峰",
       "minutes": 50,
       "travelMode": "walking",
@@ -1967,9 +1970,9 @@
       ]
     },
     {
-      "fromId": "node:1e33d65d02cee63e0cd4",
+      "fromId": "shared:cw-v07-015",
       "toId": "shared:cw-v07-014",
-      "from": "三岔路口",
+      "from": "八通關山三岔路口",
       "to": "八通關山",
       "minutes": 30,
       "travelMode": "walking",
@@ -2007,9 +2010,9 @@
     },
     {
       "fromId": "shared:cw-v07-014",
-      "toId": "node:1e33d65d02cee63e0cd4",
+      "toId": "shared:cw-v07-015",
       "from": "八通關山",
-      "to": "三岔路口",
+      "to": "八通關山三岔路口",
       "minutes": 20,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -2046,9 +2049,9 @@
     },
     {
       "fromId": "shared:cw-v07-016",
-      "toId": "node:1e33d65d02cee63e0cd4",
+      "toId": "shared:cw-v07-015",
       "from": "八通關山登山口",
-      "to": "三岔路口",
+      "to": "八通關山三岔路口",
       "minutes": 60,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -2084,9 +2087,9 @@
       ]
     },
     {
-      "fromId": "node:1e33d65d02cee63e0cd4",
+      "fromId": "shared:cw-v07-015",
       "toId": "shared:cw-v07-016",
-      "from": "三岔路口",
+      "from": "八通關山三岔路口",
       "to": "八通關山登山口",
       "minutes": 45,
       "travelMode": "walking",

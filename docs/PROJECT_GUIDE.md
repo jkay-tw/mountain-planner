@@ -55,6 +55,10 @@
 
 ## 日常座標更新入口
 
+2026-11-11最新座標審查與資料版：見 [OWNER_COORDINATE_REVIEW_20261111.md](OWNER_COORDINATE_REVIEW_20261111.md)。歷史版本的節點數量不能代作現況。
+
+節點座標審查、Google Sheet 溝通及最小閱讀接手索引見 [NODE_COORDINATE_REVIEW_BRIDGE.md](NODE_COORDINATE_REVIEW_BRIDGE.md)。
+
 後續先讀 [COORDINATE_UPDATE_WORKFLOW.md](COORDINATE_UPDATE_WORKFLOW.md)，依指令匯入覆寫資料、局部重算及驗證。不需要重讀整個專案。現況與未完成資料見 [v0.8.1 更新](v0.8.1_COORDINATE_UPDATE_20261104.md)。
 
 ## v0.8.7 正式版

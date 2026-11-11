@@ -1,0 +1,2000 @@
+{
+  "sourceUrl": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+  "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+  "date": "2026-11-11",
+  "ownerAmendments": {
+    "confirmedDate": "2026-11-11",
+    "17K水泥橋": {
+      "x": 275885,
+      "y": 2590697
+    },
+    "杜鵑營地合併": [
+      "node:c68a6096c4fde85a1b28",
+      "node:8426704609cea5d43db4"
+    ],
+    "basis": "使用者於本對話明確回覆；保留原始讀取列中的259697作為更正前紀錄"
+  },
+  "merges": [
+    {
+      "oldId": "node:1e33d65d02cee63e0cd4",
+      "canonicalId": "shared:cw-v07-015",
+      "oldNode": {
+        "id": "node:1e33d65d02cee63e0cd4",
+        "name": "三岔路口",
+        "aliases": [],
+        "groups": [
+          "G02-6bd64eb7"
+        ],
+        "identityBasis": "group-scoped-owner-reviewed-label"
+      },
+      "canonicalNode": {
+        "id": "shared:cw-v07-015",
+        "name": "八通關山三岔路口",
+        "aliases": [
+          "三岔路口"
+        ],
+        "groups": [
+          "G17"
+        ],
+        "identityBasis": "reviewed-crosswalk"
+      },
+      "basis": "owner-explicit-sheet-and-chat-20261111",
+      "previousOverride": null,
+      "previousRuntimeNode": {
+        "nodeId": "node:1e33d65d02cee63e0cd4",
+        "name": "三岔路口",
+        "coordinate": [
+          121.0084413,
+          23.48836
+        ],
+        "elevationMeters": 3178.2,
+        "coordinateMethod": "unique-osm-junction-of-three-reviewed-branches",
+        "coordinateSource": {
+          "id": "osm-context:node/3535713713",
+          "source": "osm",
+          "url": "https://www.openstreetmap.org/node/3535713713"
+        },
+        "note": "",
+        "elevationSource": "rudy-dem",
+        "coordinatePolicy": "active"
+      }
+    },
+    {
+      "oldId": "node:351f4b260c8941f8d7e4",
+      "canonicalId": "node:1670c3f1247b747ba02a",
+      "oldNode": {
+        "id": "node:351f4b260c8941f8d7e4",
+        "name": "玉林橋大崩壁",
+        "aliases": [],
+        "groups": [
+          "G15"
+        ],
+        "identityBasis": "group-scoped-owner-reviewed-label"
+      },
+      "canonicalNode": {
+        "id": "node:1670c3f1247b747ba02a",
+        "name": "下切溪床點",
+        "aliases": [
+          "玉林橋大崩壁"
+        ],
+        "groups": [
+          "G16"
+        ],
+        "identityBasis": "group-scoped-owner-reviewed-label"
+      },
+      "basis": "owner-explicit-sheet-and-chat-20261111",
+      "previousOverride": null,
+      "previousRuntimeNode": {
+        "nodeId": "node:351f4b260c8941f8d7e4",
+        "name": "玉林橋大崩壁",
+        "coordinate": [
+          121.22854253125,
+          23.433420931121763
+        ],
+        "elevationMeters": 1476.5,
+        "coordinateMethod": "source-role-correction-v08",
+        "coordinateSource": {
+          "id": "happyman-v08:node:351f4b260c8941f8d7e4",
+          "source": "happyman",
+          "url": "https://tile.happyman.idv.tw/~happyman/gpx_map/20240813_155542/Happyman.map",
+          "rawName": "玉林橋崩壁頂",
+          "fileSha256": "2fd98c7a9de74afafe628c08f5a59ba3a027b995f05a3fa2394a0d59cd425de5"
+        },
+        "note": "",
+        "elevationSource": "rudy-dem",
+        "coordinatePolicy": "active"
+      }
+    },
+    {
+      "oldId": "node:c68a6096c4fde85a1b28",
+      "canonicalId": "node:8426704609cea5d43db4",
+      "oldNode": {
+        "id": "node:c68a6096c4fde85a1b28",
+        "name": "杜鵑營地",
+        "aliases": [
+          "杜騰營地"
+        ],
+        "groups": [
+          "G16"
+        ],
+        "identityBasis": "group-scoped-owner-reviewed-label"
+      },
+      "canonicalNode": {
+        "id": "node:8426704609cea5d43db4",
+        "name": "杜鵑營地",
+        "aliases": [
+          "杜騰營地"
+        ],
+        "groups": [
+          "G17"
+        ],
+        "identityBasis": "group-scoped-owner-reviewed-label"
+      },
+      "basis": "owner-explicit-sheet-and-chat-20261111",
+      "previousOverride": null,
+      "previousRuntimeNode": {
+        "nodeId": "node:c68a6096c4fde85a1b28",
+        "name": "杜鵑營地",
+        "coordinate": [
+          121.0274,
+          23.47447
+        ],
+        "elevationMeters": 3115.5,
+        "coordinateMethod": "source-agreement-and-neighbor-context",
+        "coordinateSource": {
+          "id": "twmap:2881",
+          "source": "twmap",
+          "url": "https://twmap.happyman.idv.tw/gen/api/pointdata.php?id=2881"
+        },
+        "note": "",
+        "elevationSource": "rudy-dem",
+        "coordinatePolicy": "active"
+      }
+    }
+  ],
+  "renames": [
+    {
+      "nodeId": "node:43c9393ad0d04c1318ea",
+      "oldName": "登山口",
+      "name": "3.1K登山口"
+    },
+    {
+      "nodeId": "node:ea1afe9db60667f52737",
+      "oldName": "岔路",
+      "name": "35K工寮岔路"
+    }
+  ],
+  "coordinates": [
+    {
+      "nodeId": "g04-039",
+      "sheetRow": 100,
+      "name": "圈谷底部",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 273980.0,
+        "y": 2698067.0
+      },
+      "coordinate": [
+        121.2364098,
+        24.3884737
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "g04-061",
+      "sheetRow": 120,
+      "name": "獵寮營地",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 280025.0,
+        "y": 2712250.0
+      },
+      "coordinate": [
+        121.2963039,
+        24.5164262
+      ],
+      "previousOverride": {
+        "reviewId": "Q013",
+        "nodeId": "g04-061",
+        "name": "獵寮營地",
+        "choice": "全部不符",
+        "note": "",
+        "coordinate": [
+          121.2881395,
+          24.5366847
+        ],
+        "action": "coordinate",
+        "originalCoordinate": {
+          "format": "TWD97",
+          "x": 279193.0,
+          "y": 2714492.0
+        },
+        "resolution": "Owner confirmed filled coordinates override rejection of original candidates."
+      }
+    },
+    {
+      "nodeId": "node:3470885973dafaf1a167",
+      "sheetRow": 144,
+      "name": "帆布獵寮(2082公尺)",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 273418.0,
+        "y": 2687516.0
+      },
+      "coordinate": [
+        121.2306966,
+        24.2932162
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "g07-029",
+      "sheetRow": 236,
+      "name": "思源埡口",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 285758.0,
+        "y": 2698406.0
+      },
+      "coordinate": [
+        121.3525317,
+        24.3913088
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:7f57c578802af8b68adc",
+      "sheetRow": 405,
+      "name": "大崩壁",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 273866.0,
+        "y": 2642888.0
+      },
+      "coordinate": [
+        121.2343759,
+        23.8902456
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "shared:cw-v07-001",
+      "sheetRow": 544,
+      "name": "16.5K行車終點",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 276332.0,
+        "y": 2590659.0
+      },
+      "coordinate": [
+        121.2576675,
+        23.4185847
+      ],
+      "previousOverride": {
+        "reviewId": "Q116",
+        "nodeId": "shared:cw-v07-001",
+        "name": "16.5K行車終點",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:1670c3f1247b747ba02a",
+      "sheetRow": 551,
+      "name": "下切溪床點",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 273310.0,
+        "y": 2592256.0
+      },
+      "coordinate": [
+        121.2281212,
+        23.4330519
+      ],
+      "previousOverride": {
+        "reviewId": "Q117",
+        "nodeId": "node:1670c3f1247b747ba02a",
+        "name": "下切溪床點",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:2858041ca3317f204e6e",
+      "sheetRow": 553,
+      "name": "2950鞍岔路",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 254087.0,
+        "y": 2603904.0
+      },
+      "coordinate": [
+        121.0400289,
+        23.5383969
+      ],
+      "previousOverride": {
+        "reviewId": "Q118",
+        "nodeId": "node:2858041ca3317f204e6e",
+        "name": "2950鞍岔路",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:43363368b3898fae5690",
+      "sheetRow": 556,
+      "name": "林道石壁營地",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 274675.0,
+        "y": 2590225.0
+      },
+      "coordinate": [
+        121.2414462,
+        23.4146915
+      ],
+      "previousOverride": {
+        "reviewId": "Q119",
+        "nodeId": "node:43363368b3898fae5690",
+        "name": "林道石壁營地",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:5fbb6bf151a762e5e1e0",
+      "sheetRow": 560,
+      "name": "林道崩毀處",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 274080.0,
+        "y": 2591660.0
+      },
+      "coordinate": [
+        121.2356471,
+        23.4276587
+      ],
+      "previousOverride": {
+        "reviewId": "Q123",
+        "nodeId": "node:5fbb6bf151a762e5e1e0",
+        "name": "林道崩毀處",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:95694ade39282d11e01e",
+      "sheetRow": 565,
+      "name": "大石帆布營地",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 273900.0,
+        "y": 2591902.0
+      },
+      "coordinate": [
+        121.2338895,
+        23.4298466
+      ],
+      "previousOverride": {
+        "reviewId": "Q125",
+        "nodeId": "node:95694ade39282d11e01e",
+        "name": "大石帆布營地",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:9849f71ae901b542f183",
+      "sheetRow": 567,
+      "name": "廢棄發電機",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 272824.0,
+        "y": 2593337.0
+      },
+      "coordinate": [
+        121.2233814,
+        23.4428204
+      ],
+      "previousOverride": {
+        "reviewId": "Q126",
+        "nodeId": "node:9849f71ae901b542f183",
+        "name": "廢棄發電機",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:9e9822f8d527f3ba8f6a",
+      "sheetRow": 570,
+      "name": "最低鞍部",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 256857.0,
+        "y": 2600978.0
+      },
+      "coordinate": [
+        121.0671454,
+        23.5119654
+      ],
+      "previousOverride": {
+        "reviewId": "Q127",
+        "nodeId": "node:9e9822f8d527f3ba8f6a",
+        "name": "最低鞍部",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:cc65a12ba6bd7fa8e91b",
+      "sheetRow": 575,
+      "name": "17K水泥橋",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 275885,
+        "y": 2590697
+      },
+      "coordinate": [
+        121.2532942,
+        23.418935
+      ],
+      "previousOverride": {
+        "reviewId": "Q129",
+        "nodeId": "node:cc65a12ba6bd7fa8e91b",
+        "name": "17K水泥橋",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:ea752355c7e8a54337b4",
+      "sheetRow": 583,
+      "name": "19K廢工寮",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 275020.0,
+        "y": 2590090.0
+      },
+      "coordinate": [
+        121.2448198,
+        23.4134672
+      ],
+      "previousOverride": {
+        "reviewId": "Q131",
+        "nodeId": "node:ea752355c7e8a54337b4",
+        "name": "19K廢工寮",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:fc6d7b252e462c969f91",
+      "sheetRow": 584,
+      "name": "溪谷上切處",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 273842.0,
+        "y": 2591853.0
+      },
+      "coordinate": [
+        121.2333211,
+        23.429405
+      ],
+      "previousOverride": {
+        "reviewId": "Q132",
+        "nodeId": "node:fc6d7b252e462c969f91",
+        "name": "溪谷上切處",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "shared:cw-v07-068",
+      "sheetRow": 600,
+      "name": "荖濃溪",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 252133.0,
+        "y": 2597860.0
+      },
+      "coordinate": [
+        121.0208824,
+        23.4838224
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:8897886192ce4320aec3",
+      "sheetRow": 615,
+      "name": "黑水塘",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 253383.0,
+        "y": 2593282.0
+      },
+      "coordinate": [
+        121.0331098,
+        23.44248
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "local:G19::shenchi-camp",
+      "sheetRow": 710,
+      "name": "神池營地",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 235729.0,
+        "y": 2561739.0
+      },
+      "coordinate": [
+        120.8606252,
+        23.1575762
+      ],
+      "previousOverride": null
+    }
+  ],
+  "retainedDecisions": [
+    {
+      "nodeId": "node:1e33d65d02cee63e0cd4",
+      "sheetRow": 2,
+      "decision": "提出其他修改",
+      "instruction": "與\"八通關山三岔路口\"同點，合併為\"八通關山三岔路口\""
+    },
+    {
+      "nodeId": "g03-005",
+      "sheetRow": 54,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "g04-014",
+      "sheetRow": 76,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "g04-027",
+      "sheetRow": 88,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "g04-040",
+      "sheetRow": 101,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "g04-041",
+      "sheetRow": 102,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "g04-058",
+      "sheetRow": 117,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "g04-fork-daba",
+      "sheetRow": 125,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "g04-fork-shengleng",
+      "sheetRow": 126,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "g04-fork-xueshan",
+      "sheetRow": 127,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "shared:cw-v07-003",
+      "sheetRow": 130,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:2765d1f4878df36ed535",
+      "sheetRow": 142,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:3f716b6b10260005c012",
+      "sheetRow": 146,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:43c9393ad0d04c1318ea",
+      "sheetRow": 148,
+      "decision": "保留現值",
+      "instruction": "正確；改名為\"3.1K登山口\""
+    },
+    {
+      "nodeId": "node:7e834e3946d8006bb547",
+      "sheetRow": 162,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:b212de5b9591198dc7d2",
+      "sheetRow": 175,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:bf7a9688d88faaf0650f",
+      "sheetRow": 179,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:e776e9d18056cbe071d6",
+      "sheetRow": 188,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "g07-004",
+      "sheetRow": 211,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "g08-010",
+      "sheetRow": 256,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "g08-031",
+      "sheetRow": 270,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:1c8dd60e5be898d71627",
+      "sheetRow": 288,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:361b16415de0e733ccab",
+      "sheetRow": 295,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:36ff3c081e402994db7b",
+      "sheetRow": 340,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:61e3a41ddc4421da6c4e",
+      "sheetRow": 341,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:d69a18f19c7940c3ebf4",
+      "sheetRow": 348,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:3f743c0af3f084ee1ad5",
+      "sheetRow": 394,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:5eb6459390f9db03adc8",
+      "sheetRow": 399,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:a20fa9b4a5899ee82159",
+      "sheetRow": 410,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:b856b38829fad3ecb7b8",
+      "sheetRow": 413,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:f365a90039ff7fe8bafb",
+      "sheetRow": 416,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:09f6213ee3eda95ab440",
+      "sheetRow": 418,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:351f4b260c8941f8d7e4",
+      "sheetRow": 490,
+      "decision": "提出其他修改",
+      "instruction": "與 node:1670c3f1247b747ba02a 合併；以 node:1670c3f1247b747ba02a 為主"
+    },
+    {
+      "nodeId": "node:47059555f89c94f5c563",
+      "sheetRow": 558,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:934af9a16803d9b9efb7",
+      "sheetRow": 564,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:c68a6096c4fde85a1b28",
+      "sheetRow": 573,
+      "decision": "提出其他修改",
+      "instruction": "同名，可以合併"
+    },
+    {
+      "nodeId": "node:d122b6870f9ac56ccb65",
+      "sheetRow": 576,
+      "decision": "",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:ea1afe9db60667f52737",
+      "sheetRow": 582,
+      "decision": "保留現值",
+      "instruction": "正確；改名\"35K工寮岔路\""
+    },
+    {
+      "nodeId": "shared:cw-v07-015",
+      "sheetRow": 588,
+      "decision": "保留現值",
+      "instruction": "與\"三岔路口\"同點，合併為\"八通關山三岔路口\""
+    },
+    {
+      "nodeId": "shared:cw-v07-033",
+      "sheetRow": 590,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "shared:cw-v07-064",
+      "sheetRow": 599,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:4e7ab2e2b7798527927f",
+      "sheetRow": 610,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:5bd0e4cd667031e35fc1",
+      "sheetRow": 611,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:6fbfce66af193ba46514",
+      "sheetRow": 612,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:8426704609cea5d43db4",
+      "sheetRow": 613,
+      "decision": "保留現值",
+      "instruction": "正確，如果同名為\"杜鵑營地\"node ID 就是同一個點"
+    },
+    {
+      "nodeId": "shared:cw-v07-027",
+      "sheetRow": 622,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "shared:cw-v07-031",
+      "sheetRow": 626,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "shared:cw-v07-032",
+      "sheetRow": 627,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:17949585e4110d530804",
+      "sheetRow": 651,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:68ed9d0821e485e82f8f",
+      "sheetRow": 657,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:bca4509332fbaaf5f94e",
+      "sheetRow": 660,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:c575dd7fad9439788a33",
+      "sheetRow": 663,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:16d0ce554a26b76bdaa8",
+      "sheetRow": 674,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:2fc23a0b794f59ec7196",
+      "sheetRow": 679,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:8359e8efe649ea561e1d",
+      "sheetRow": 689,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:bfbbd8c8c8ea8daaf965",
+      "sheetRow": 696,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "node:de958fbbd68222537e18",
+      "sheetRow": 704,
+      "decision": "保留現值",
+      "instruction": "正確"
+    },
+    {
+      "nodeId": "g20-003",
+      "sheetRow": 713,
+      "decision": "保留現值",
+      "instruction": "正確"
+    }
+  ],
+  "changedRoutes": [
+    {
+      "file": "data/routes/owner-reviewed/G02-6bd64eb7.json",
+      "previousNodes": [
+        {
+          "id": "node:1e33d65d02cee63e0cd4",
+          "name": "三岔路口",
+          "aliases": [],
+          "groups": [
+            "G02-6bd64eb7"
+          ],
+          "identityBasis": "group-scoped-owner-reviewed-label"
+        }
+      ],
+      "previousAffectedEdges": [
+        {
+          "fromId": "shared:cw-v07-017",
+          "toId": "node:1e33d65d02cee63e0cd4",
+          "from": "八通關山西峰",
+          "to": "三岔路口",
+          "minutes": 50,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "R62BB0AD0CC"
+          ],
+          "evidenceRows": [
+            47
+          ],
+          "sourceGroups": [
+            "八通關越嶺"
+          ],
+          "sourceChart": "G02",
+          "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "八通關越嶺",
+              "chartId": "G02",
+              "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+              "rowId": "R62BB0AD0CC",
+              "sheetRows": [
+                47
+              ],
+              "minutes": 50
+            }
+          ],
+          "sourceGroupNames": [
+            "八通關越嶺"
+          ]
+        },
+        {
+          "fromId": "node:1e33d65d02cee63e0cd4",
+          "toId": "shared:cw-v07-017",
+          "from": "三岔路口",
+          "to": "八通關山西峰",
+          "minutes": 50,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "R62BB0AD0CC"
+          ],
+          "evidenceRows": [
+            47
+          ],
+          "sourceGroups": [
+            "八通關越嶺"
+          ],
+          "sourceChart": "G02",
+          "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "八通關越嶺",
+              "chartId": "G02",
+              "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+              "rowId": "R62BB0AD0CC",
+              "sheetRows": [
+                47
+              ],
+              "minutes": 50
+            }
+          ],
+          "sourceGroupNames": [
+            "八通關越嶺"
+          ]
+        },
+        {
+          "fromId": "node:1e33d65d02cee63e0cd4",
+          "toId": "shared:cw-v07-014",
+          "from": "三岔路口",
+          "to": "八通關山",
+          "minutes": 30,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "RBC04035EC0"
+          ],
+          "evidenceRows": [
+            48
+          ],
+          "sourceGroups": [
+            "八通關越嶺"
+          ],
+          "sourceChart": "G02",
+          "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "八通關越嶺",
+              "chartId": "G02",
+              "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+              "rowId": "RBC04035EC0",
+              "sheetRows": [
+                48
+              ],
+              "minutes": 30
+            }
+          ],
+          "sourceGroupNames": [
+            "八通關越嶺"
+          ]
+        },
+        {
+          "fromId": "shared:cw-v07-014",
+          "toId": "node:1e33d65d02cee63e0cd4",
+          "from": "八通關山",
+          "to": "三岔路口",
+          "minutes": 20,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "RBC04035EC0"
+          ],
+          "evidenceRows": [
+            48
+          ],
+          "sourceGroups": [
+            "八通關越嶺"
+          ],
+          "sourceChart": "G02",
+          "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "八通關越嶺",
+              "chartId": "G02",
+              "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+              "rowId": "RBC04035EC0",
+              "sheetRows": [
+                48
+              ],
+              "minutes": 20
+            }
+          ],
+          "sourceGroupNames": [
+            "八通關越嶺"
+          ]
+        },
+        {
+          "fromId": "shared:cw-v07-016",
+          "toId": "node:1e33d65d02cee63e0cd4",
+          "from": "八通關山登山口",
+          "to": "三岔路口",
+          "minutes": 60,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "RA28AE283FA"
+          ],
+          "evidenceRows": [
+            49
+          ],
+          "sourceGroups": [
+            "八通關越嶺"
+          ],
+          "sourceChart": "G02",
+          "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "八通關越嶺",
+              "chartId": "G02",
+              "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+              "rowId": "RA28AE283FA",
+              "sheetRows": [
+                49
+              ],
+              "minutes": 60
+            }
+          ],
+          "sourceGroupNames": [
+            "八通關越嶺"
+          ]
+        },
+        {
+          "fromId": "node:1e33d65d02cee63e0cd4",
+          "toId": "shared:cw-v07-016",
+          "from": "三岔路口",
+          "to": "八通關山登山口",
+          "minutes": 45,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "RA28AE283FA"
+          ],
+          "evidenceRows": [
+            49
+          ],
+          "sourceGroups": [
+            "八通關越嶺"
+          ],
+          "sourceChart": "G02",
+          "source": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "八通關越嶺",
+              "chartId": "G02",
+              "url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg",
+              "rowId": "RA28AE283FA",
+              "sheetRows": [
+                49
+              ],
+              "minutes": 45
+            }
+          ],
+          "sourceGroupNames": [
+            "八通關越嶺"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data/routes/owner-reviewed/G05.json",
+      "previousNodes": [
+        {
+          "id": "node:43c9393ad0d04c1318ea",
+          "name": "登山口",
+          "aliases": [],
+          "groups": [
+            "G05"
+          ],
+          "identityBasis": "group-scoped-owner-reviewed-label"
+        }
+      ],
+      "previousAffectedEdges": [
+        {
+          "fromId": "node:23e78a62cdb1f7900031",
+          "toId": "node:43c9393ad0d04c1318ea",
+          "from": "苗圃工寮舊址",
+          "to": "登山口",
+          "minutes": 80,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "R5A7681D8ED"
+          ],
+          "evidenceRows": [
+            187,
+            207
+          ],
+          "sourceGroups": [
+            "雪山西南稜"
+          ],
+          "sourceChart": "G05",
+          "source": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+          "sourceNote": "回程 輕裝:80分；重裝140分",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "雪山西南稜",
+              "chartId": "G05",
+              "url": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+              "rowId": "R5A7681D8ED",
+              "sheetRows": [
+                187,
+                207
+              ],
+              "minutes": 80
+            }
+          ],
+          "sourceGroupNames": [
+            "雪山西南稜"
+          ]
+        },
+        {
+          "fromId": "node:43c9393ad0d04c1318ea",
+          "toId": "node:23e78a62cdb1f7900031",
+          "from": "登山口",
+          "to": "苗圃工寮舊址",
+          "minutes": 80,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [
+            {
+              "kind": "heavy_pack",
+              "minutes": 140
+            }
+          ],
+          "sourceRows": [
+            "R5A7681D8ED"
+          ],
+          "evidenceRows": [
+            187,
+            207
+          ],
+          "sourceGroups": [
+            "雪山西南稜"
+          ],
+          "sourceChart": "G05",
+          "source": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+          "sourceNote": "回程 輕裝:80分；重裝140分",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "雪山西南稜",
+              "chartId": "G05",
+              "url": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+              "rowId": "R5A7681D8ED",
+              "sheetRows": [
+                187,
+                207
+              ],
+              "minutes": 80
+            }
+          ],
+          "sourceGroupNames": [
+            "雪山西南稜"
+          ]
+        },
+        {
+          "fromId": "node:43c9393ad0d04c1318ea",
+          "toId": "node:67f469173d3d382ca79c",
+          "from": "登山口",
+          "to": "松柏農場",
+          "minutes": 60,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "R441054BB7A"
+          ],
+          "evidenceRows": [
+            188
+          ],
+          "sourceGroups": [
+            "雪山西南稜"
+          ],
+          "sourceChart": "G05",
+          "source": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "雪山西南稜",
+              "chartId": "G05",
+              "url": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+              "rowId": "R441054BB7A",
+              "sheetRows": [
+                188
+              ],
+              "minutes": 60
+            }
+          ],
+          "sourceGroupNames": [
+            "雪山西南稜"
+          ]
+        },
+        {
+          "fromId": "node:67f469173d3d382ca79c",
+          "toId": "node:43c9393ad0d04c1318ea",
+          "from": "松柏農場",
+          "to": "登山口",
+          "minutes": 70,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "R441054BB7A"
+          ],
+          "evidenceRows": [
+            188
+          ],
+          "sourceGroups": [
+            "雪山西南稜"
+          ],
+          "sourceChart": "G05",
+          "source": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "雪山西南稜",
+              "chartId": "G05",
+              "url": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+              "rowId": "R441054BB7A",
+              "sheetRows": [
+                188
+              ],
+              "minutes": 70
+            }
+          ],
+          "sourceGroupNames": [
+            "雪山西南稜"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data/routes/owner-reviewed/G15.json",
+      "previousNodes": [
+        {
+          "id": "node:351f4b260c8941f8d7e4",
+          "name": "玉林橋大崩壁",
+          "aliases": [],
+          "groups": [
+            "G15"
+          ],
+          "identityBasis": "group-scoped-owner-reviewed-label"
+        }
+      ],
+      "previousAffectedEdges": [
+        {
+          "fromId": "node:351f4b260c8941f8d7e4",
+          "toId": "shared:cw-v07-001",
+          "from": "玉林橋大崩壁",
+          "to": "16.5K行車終點",
+          "minutes": 225,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "R6234AD850D"
+          ],
+          "evidenceRows": [
+            599
+          ],
+          "sourceGroups": [
+            "丹大東郡"
+          ],
+          "sourceChart": "G15",
+          "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "丹大東郡",
+              "chartId": "G15",
+              "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+              "rowId": "R6234AD850D",
+              "sheetRows": [
+                599
+              ],
+              "minutes": 225
+            }
+          ],
+          "sourceGroupNames": [
+            "丹大東郡"
+          ]
+        },
+        {
+          "fromId": "shared:cw-v07-001",
+          "toId": "node:351f4b260c8941f8d7e4",
+          "from": "16.5K行車終點",
+          "to": "玉林橋大崩壁",
+          "minutes": 255,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "R6234AD850D"
+          ],
+          "evidenceRows": [
+            599
+          ],
+          "sourceGroups": [
+            "丹大東郡"
+          ],
+          "sourceChart": "G15",
+          "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "丹大東郡",
+              "chartId": "G15",
+              "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+              "rowId": "R6234AD850D",
+              "sheetRows": [
+                599
+              ],
+              "minutes": 255
+            }
+          ],
+          "sourceGroupNames": [
+            "丹大東郡"
+          ]
+        },
+        {
+          "fromId": "shared:cw-v07-040",
+          "toId": "node:351f4b260c8941f8d7e4",
+          "from": "太平谷南口",
+          "to": "玉林橋大崩壁",
+          "minutes": 355,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "RE5AF375D33"
+          ],
+          "evidenceRows": [
+            600
+          ],
+          "sourceGroups": [
+            "丹大東郡"
+          ],
+          "sourceChart": "G15",
+          "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "丹大東郡",
+              "chartId": "G15",
+              "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+              "rowId": "RE5AF375D33",
+              "sheetRows": [
+                600
+              ],
+              "minutes": 355
+            }
+          ],
+          "sourceGroupNames": [
+            "丹大東郡"
+          ]
+        },
+        {
+          "fromId": "node:351f4b260c8941f8d7e4",
+          "toId": "shared:cw-v07-040",
+          "from": "玉林橋大崩壁",
+          "to": "太平谷南口",
+          "minutes": 435,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "RE5AF375D33"
+          ],
+          "evidenceRows": [
+            600
+          ],
+          "sourceGroups": [
+            "丹大東郡"
+          ],
+          "sourceChart": "G15",
+          "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "丹大東郡",
+              "chartId": "G15",
+              "url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+              "rowId": "RE5AF375D33",
+              "sheetRows": [
+                600
+              ],
+              "minutes": 435
+            }
+          ],
+          "sourceGroupNames": [
+            "丹大東郡"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data/routes/owner-reviewed/G16.json",
+      "previousNodes": [
+        {
+          "id": "node:1670c3f1247b747ba02a",
+          "name": "下切溪床點",
+          "aliases": [],
+          "groups": [
+            "G16"
+          ],
+          "identityBasis": "group-scoped-owner-reviewed-label"
+        },
+        {
+          "id": "node:c68a6096c4fde85a1b28",
+          "name": "杜鵑營地",
+          "aliases": [
+            "杜騰營地"
+          ],
+          "groups": [
+            "G16"
+          ],
+          "identityBasis": "group-scoped-owner-reviewed-label"
+        },
+        {
+          "id": "node:ea1afe9db60667f52737",
+          "name": "岔路",
+          "aliases": [],
+          "groups": [
+            "G16"
+          ],
+          "identityBasis": "group-scoped-owner-reviewed-label"
+        },
+        {
+          "id": "shared:cw-v07-015",
+          "name": "八通關山三岔路口",
+          "aliases": [],
+          "groups": [
+            "G16"
+          ],
+          "identityBasis": "reviewed-crosswalk"
+        }
+      ],
+      "previousAffectedEdges": [
+        {
+          "fromId": "node:9849f71ae901b542f183",
+          "toId": "node:ea1afe9db60667f52737",
+          "from": "廢棄發電機",
+          "to": "岔路",
+          "minutes": 20,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "R5E1E0531F2"
+          ],
+          "evidenceRows": [
+            645
+          ],
+          "sourceGroups": [
+            "馬博拉斯橫斷"
+          ],
+          "sourceChart": "G16",
+          "source": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "馬博拉斯橫斷",
+              "chartId": "G16",
+              "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+              "rowId": "R5E1E0531F2",
+              "sheetRows": [
+                645
+              ],
+              "minutes": 20
+            }
+          ],
+          "sourceGroupNames": [
+            "馬博拉斯橫斷"
+          ]
+        },
+        {
+          "fromId": "node:ea1afe9db60667f52737",
+          "toId": "node:9849f71ae901b542f183",
+          "from": "岔路",
+          "to": "廢棄發電機",
+          "minutes": 25,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "R5E1E0531F2"
+          ],
+          "evidenceRows": [
+            645
+          ],
+          "sourceGroups": [
+            "馬博拉斯橫斷"
+          ],
+          "sourceChart": "G16",
+          "source": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "馬博拉斯橫斷",
+              "chartId": "G16",
+              "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+              "rowId": "R5E1E0531F2",
+              "sheetRows": [
+                645
+              ],
+              "minutes": 25
+            }
+          ],
+          "sourceGroupNames": [
+            "馬博拉斯橫斷"
+          ]
+        },
+        {
+          "fromId": "node:992b8a3173662270bdac",
+          "toId": "node:ea1afe9db60667f52737",
+          "from": "35K廢棄工寮",
+          "to": "岔路",
+          "minutes": 2,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "R7DCDB7A605",
+            "R8CE9ECBFA4"
+          ],
+          "evidenceRows": [
+            646,
+            648
+          ],
+          "sourceGroups": [
+            "馬博拉斯橫斷"
+          ],
+          "sourceChart": "G16",
+          "source": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "馬博拉斯橫斷",
+              "chartId": "G16",
+              "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+              "rowId": "R7DCDB7A605",
+              "sheetRows": [
+                646
+              ],
+              "minutes": 2
+            },
+            {
+              "group": "馬博拉斯橫斷",
+              "chartId": "G16",
+              "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+              "rowId": "R8CE9ECBFA4",
+              "sheetRows": [
+                648
+              ],
+              "minutes": 2
+            }
+          ],
+          "sourceGroupNames": [
+            "馬博拉斯橫斷"
+          ]
+        },
+        {
+          "fromId": "node:ea1afe9db60667f52737",
+          "toId": "node:992b8a3173662270bdac",
+          "from": "岔路",
+          "to": "35K廢棄工寮",
+          "minutes": 2,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "R7DCDB7A605",
+            "R8CE9ECBFA4"
+          ],
+          "evidenceRows": [
+            646,
+            648
+          ],
+          "sourceGroups": [
+            "馬博拉斯橫斷"
+          ],
+          "sourceChart": "G16",
+          "source": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "馬博拉斯橫斷",
+              "chartId": "G16",
+              "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+              "rowId": "R7DCDB7A605",
+              "sheetRows": [
+                646
+              ],
+              "minutes": 2
+            },
+            {
+              "group": "馬博拉斯橫斷",
+              "chartId": "G16",
+              "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+              "rowId": "R8CE9ECBFA4",
+              "sheetRows": [
+                648
+              ],
+              "minutes": 2
+            }
+          ],
+          "sourceGroupNames": [
+            "馬博拉斯橫斷"
+          ]
+        },
+        {
+          "fromId": "node:ea1afe9db60667f52737",
+          "toId": "node:c89901cb97ccbe4d145a",
+          "from": "岔路",
+          "to": "林道玉林橋下切點",
+          "minutes": 25,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "RC3828052F0"
+          ],
+          "evidenceRows": [
+            647
+          ],
+          "sourceGroups": [
+            "馬博拉斯橫斷"
+          ],
+          "sourceChart": "G16",
+          "source": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "馬博拉斯橫斷",
+              "chartId": "G16",
+              "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+              "rowId": "RC3828052F0",
+              "sheetRows": [
+                647
+              ],
+              "minutes": 25
+            }
+          ],
+          "sourceGroupNames": [
+            "馬博拉斯橫斷"
+          ]
+        },
+        {
+          "fromId": "node:c89901cb97ccbe4d145a",
+          "toId": "node:ea1afe9db60667f52737",
+          "from": "林道玉林橋下切點",
+          "to": "岔路",
+          "minutes": 30,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "RC3828052F0"
+          ],
+          "evidenceRows": [
+            647
+          ],
+          "sourceGroups": [
+            "馬博拉斯橫斷"
+          ],
+          "sourceChart": "G16",
+          "source": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "馬博拉斯橫斷",
+              "chartId": "G16",
+              "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+              "rowId": "RC3828052F0",
+              "sheetRows": [
+                647
+              ],
+              "minutes": 30
+            }
+          ],
+          "sourceGroupNames": [
+            "馬博拉斯橫斷"
+          ]
+        },
+        {
+          "fromId": "node:c68a6096c4fde85a1b28",
+          "toId": "shared:cw-v07-033",
+          "from": "杜鵑營地",
+          "to": "四岔路口",
+          "minutes": 70,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "R427B4F682B"
+          ],
+          "evidenceRows": [
+            662
+          ],
+          "sourceGroups": [
+            "馬博拉斯橫斷"
+          ],
+          "sourceChart": "G16",
+          "source": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "馬博拉斯橫斷",
+              "chartId": "G16",
+              "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+              "rowId": "R427B4F682B",
+              "sheetRows": [
+                662
+              ],
+              "minutes": 70
+            }
+          ],
+          "sourceGroupNames": [
+            "馬博拉斯橫斷"
+          ]
+        },
+        {
+          "fromId": "shared:cw-v07-033",
+          "toId": "node:c68a6096c4fde85a1b28",
+          "from": "四岔路口",
+          "to": "杜鵑營地",
+          "minutes": 65,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "R427B4F682B"
+          ],
+          "evidenceRows": [
+            662
+          ],
+          "sourceGroups": [
+            "馬博拉斯橫斷"
+          ],
+          "sourceChart": "G16",
+          "source": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "馬博拉斯橫斷",
+              "chartId": "G16",
+              "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+              "rowId": "R427B4F682B",
+              "sheetRows": [
+                662
+              ],
+              "minutes": 65
+            }
+          ],
+          "sourceGroupNames": [
+            "馬博拉斯橫斷"
+          ]
+        },
+        {
+          "fromId": "node:c68a6096c4fde85a1b28",
+          "toId": "shared:cw-v07-064",
+          "from": "杜鵑營地",
+          "to": "稜線岔路",
+          "minutes": 45,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "R01A6DF9600"
+          ],
+          "evidenceRows": [
+            663
+          ],
+          "sourceGroups": [
+            "馬博拉斯橫斷"
+          ],
+          "sourceChart": "G16",
+          "source": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "馬博拉斯橫斷",
+              "chartId": "G16",
+              "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+              "rowId": "R01A6DF9600",
+              "sheetRows": [
+                663
+              ],
+              "minutes": 45
+            }
+          ],
+          "sourceGroupNames": [
+            "馬博拉斯橫斷"
+          ]
+        },
+        {
+          "fromId": "shared:cw-v07-064",
+          "toId": "node:c68a6096c4fde85a1b28",
+          "from": "稜線岔路",
+          "to": "杜鵑營地",
+          "minutes": 45,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "R01A6DF9600"
+          ],
+          "evidenceRows": [
+            663
+          ],
+          "sourceGroups": [
+            "馬博拉斯橫斷"
+          ],
+          "sourceChart": "G16",
+          "source": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "馬博拉斯橫斷",
+              "chartId": "G16",
+              "url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+              "rowId": "R01A6DF9600",
+              "sheetRows": [
+                663
+              ],
+              "minutes": 45
+            }
+          ],
+          "sourceGroupNames": [
+            "馬博拉斯橫斷"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "data/routes/owner-reviewed/G17.json",
+      "previousNodes": [
+        {
+          "id": "node:8426704609cea5d43db4",
+          "name": "杜鵑營地",
+          "aliases": [],
+          "groups": [
+            "G17"
+          ],
+          "identityBasis": "group-scoped-owner-reviewed-label"
+        },
+        {
+          "id": "shared:cw-v07-015",
+          "name": "八通關山三岔路口",
+          "aliases": [],
+          "groups": [
+            "G17"
+          ],
+          "identityBasis": "reviewed-crosswalk"
+        }
+      ],
+      "previousAffectedEdges": []
+    }
+  ],
+  "timeSignatureBefore": "d805533c668d547f9b68771e91735bf8ada04ee32b0ffd5fa2feca3a14dd08f6",
+  "timeSignatureAfter": "d805533c668d547f9b68771e91735bf8ada04ee32b0ffd5fa2feca3a14dd08f6",
+  "productionTerrainSha256": "215552cb269f59ce2c9cf1e6179396f421f32a919f42c95df70dbc3af27a3c3b"
+}

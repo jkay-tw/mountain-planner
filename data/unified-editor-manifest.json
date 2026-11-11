@@ -5,7 +5,7 @@
     {
       "id": "G02-6bd64eb7",
       "name": "G02｜八通關越嶺",
-      "file": "data/routes/owner-reviewed/G02-6bd64eb7.json?v=v0724",
+      "file": "data/routes/owner-reviewed/G02-6bd64eb7.json?v=review055b30212d42",
       "status": "owner-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg"
     },
@@ -40,7 +40,7 @@
     {
       "id": "G05",
       "name": "G05｜雪山西南稜",
-      "file": "data/routes/owner-reviewed/G05.json?v=v0726",
+      "file": "data/routes/owner-reviewed/G05.json?v=review38b002450dd0",
       "status": "owner-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg"
     },
@@ -124,28 +124,28 @@
     {
       "id": "G14",
       "name": "G14｜七彩湖/六順山",
-      "file": "data/routes/owner-reviewed/G14.json?v=v0724",
+      "file": "data/routes/owner-reviewed/G14.json?v=review971cacf6dd09",
       "status": "owner-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G14_hiking.jpg"
     },
     {
       "id": "G15",
       "name": "G15｜丹大東郡",
-      "file": "data/routes/owner-reviewed/G15.json?v=v0724",
+      "file": "data/routes/owner-reviewed/G15.json?v=review35c4507cf652",
       "status": "owner-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg"
     },
     {
       "id": "G16",
       "name": "G16｜馬博拉斯橫斷",
-      "file": "data/routes/owner-reviewed/G16.json?v=v0724",
+      "file": "data/routes/owner-reviewed/G16.json?v=review119c7cc8966d",
       "status": "owner-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg"
     },
     {
       "id": "G17",
       "name": "G17｜南二段",
-      "file": "data/routes/owner-reviewed/G17.json?v=v081",
+      "file": "data/routes/owner-reviewed/G17.json?v=review4ca791067e9c",
       "status": "owner-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G17_hiking.jpg"
     },

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "createdDate": "2026-11-10",
+  "baseCommit": "dda008391e6d9118409fcca2095a7a40fd1d1250",
+  "spreadsheetId": "1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk",
+  "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+  "sheets": {
+    "使用說明": 101,
+    "節點總表": 102,
+    "來源明細": 103,
+    "相鄰關係": 104,
+    "審查與決策": 105,
+    "路線草案": 106,
+    "退休節點": 107,
+    "更新紀錄": 108
+  },
+  "humanDecisionColumns": "H:M",
+  "workingRuntimePath": "preview/data/geometry/planner-terrain-v1.json",
+  "workingState": "2026-11-11 second owner review source-rebuilt; production and Preview synchronized; data release workflow prepared",
+  "latestReview": {
+    "date": "2026-11-11",
+    "status": "applied-preview-unpublished",
+    "snapshot": "data/geometry/sources/node-review-decisions-20261111.json",
+    "application": "data/geometry/sources/node-review-application-20261111.json",
+    "terrainReport": "data/geometry/sources/node-review-terrain-report-20261111.json",
+    "gpxReport": "data/audits/g14-g15-gpx-review-20261111.json",
+    "gpxSources": "data/geometry/sources/user-gpx-waypoints-20261111.json",
+    "decisionRows": 77,
+    "coordinateDecisions": 19,
+    "explicitMerges": 3,
+    "renames": 2,
+    "activeNodes": 721,
+    "locatedNodes": 645,
+    "spans": 671,
+    "unrepresentedPairs": 6,
+    "gpxNodes": 103,
+    "gpxNodesWithCandidates": 67,
+    "gpxCandidateRecords": 108,
+    "gpxManualPriorityNodes": 4,
+    "sheets": {
+      "G14-G15座標討論": 112,
+      "GPX候選明細": 113,
+      "GPX來源檔案": 114,
+      "GPX未對應航點": 115,
+      "重算缺口待討論": 116
+    }
+  },
+  "initialCounts": {
+    "activeNodes": 724,
+    "retiredNodes": 3,
+    "sourceRecords": 3288,
+    "directionalSourceRecords": 1550
+  },
+  "sourceScope": [
+    "manifest-linked owner-reviewed routes",
+    "planner-terrain-v1",
+    "all-route-coordinates-v1 node-linked references",
+    "owner-coordinate-overrides",
+    "coordinate-corrections-v08",
+    "owner-update-source-corrections",
+    "owner-topology-retirements-20261104"
+  ],
+  "spatialAudit": {
+    "date": "2026-11-11",
+    "report": "data/audits/node-coordinate-spatial-audit-round2-20261111.json",
+    "previousReport": "data/audits/node-coordinate-spatial-audit-20261111.json",
+    "ruleVersion": "spatial-screen-v1",
+    "sheets": {
+      "檢閱總覽": 109,
+      "疑點明細": 110,
+      "檢查規則": 111
+    },
+    "counts": {
+      "未發現規則異常": 616,
+      "參考提醒": 51,
+      "建議複核": 8,
+      "待補座標": 0,
+      "依政策不定位": 46
+    },
+    "findingRecords": 61
+  },
+  "status": "owner decisions applied, source-aware terrain rebuilt, source differences and existing gaps preserved; not independent external verification",
+  "latestRound2": {
+    "date": "2026-11-11",
+    "status": "source-rebuilt-production-preview-synchronized",
+    "snapshot": "data/geometry/sources/g14-g15-decisions-synced-round2-20261111.json",
+    "application": "data/geometry/sources/owner-coordinate-round2-application-20261111.json",
+    "terrainReport": "data/geometry/sources/owner-coordinate-round2-terrain-20261111.json",
+    "coordinateDecisions": 56,
+    "renames": 2,
+    "newAliases": 1,
+    "identityMerges": 0,
+    "activeNodes": 721,
+    "locatedNodes": 675,
+    "policyUnlocated": 46,
+    "spans": 694,
+    "unrepresentedPairs": 4,
+    "nearbyPairsWithin50m": 17,
+    "normalizedNameDuplicatePairs": 0,
+    "nearbySheetId": 117,
+    "sourceRecords": 3318,
+    "directionalSourceRecords": 1550,
+    "publicationAuthorizedBy": "owner chat 2026-11-11 conditional on no new unresolved coordinate concerns",
+    "releaseTag": "data-coordinates-20261111"
+  }
+}

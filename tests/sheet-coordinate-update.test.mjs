@@ -8,13 +8,15 @@ import {buildQuickTopology,layoutQuickTopology,renderQuickTopologySvg} from '../
 const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
 const load=p=>JSON.parse(read(p));
 const imported=load('data/geometry/sources/sheet-coordinate-import-20261107.json');
-const data=load('data/geometry/planner-terrain-v1.json');
+const data=load('preview/data/geometry/planner-terrain-v1.json');
+const application=load('data/geometry/sources/node-review-application-20261111.json');
 const by=new Map(data.nodes.map(n=>[n.nodeId,n]));
 
 test('all 17 explicit Sheet coordinates reach the shared map, GPX and profile dataset',()=>{
  assert.equal(imported.decisions.length,17);
  assert.equal(imported.decisions.filter(n=>n.changed).length,16);
- assert.equal(read('data/geometry/planner-terrain-v1.json'),read('preview/data/geometry/planner-terrain-v1.json'));
+ // Explicit publication authorization now promotes the complete source-rebuilt dataset.
+ assert.deepEqual(load('data/geometry/planner-terrain-v1.json'),data);
  for(const decision of imported.decisions){
   const node=by.get(decision.nodeId);assert.deepEqual(node.coordinate,decision.coordinate,node.name);
   assert.equal(node.coordinatePolicy,'active');assert.ok(Number.isFinite(node.elevationMeters));
@@ -38,6 +40,15 @@ test('Sheet rename retains identity and old alias; mini maps consume all newly a
   assert.ok(!layout.estimatedIds.has(node.id),node.name);
   assert.match(renderQuickTopologySvg(choices,node.id,node.name,1,quickAddEstimatedMinutes,data),/目前位置/);
  }
- const signature=routes.map(r=>({id:r.route_id,nodes:r.nodes.map(n=>n.id),segments:r.segments.map(({from,to,...s})=>s),manualConnections:(r.manualConnections||[]).map(({from,to,...s})=>s)}));
+ // Reconstruct historical IDs only for routes containing an explicitly merged old node.
+ // Every original directional record/time must still reproduce the archived signature.
+ const signature=routes.map(r=>{
+  const path=manifest.routes.find(m=>m.id===r.route_id).file.split('?')[0];
+  const changed=application.changedRoutes.find(x=>x.file===path);
+  const inverse=new Map(application.merges.filter(m=>changed?.previousNodes.some(n=>n.id===m.oldId)).map(m=>[m.canonicalId,m.oldId]));
+  const id=n=>inverse.get(n)||n;
+  const edge=({from,to,...s})=>({...s,fromId:id(s.fromId),toId:id(s.toId)});
+  return {id:r.route_id,nodes:r.nodes.map(n=>id(n.id)),segments:r.segments.map(edge),manualConnections:(r.manualConnections||[]).map(edge)};
+ });
  assert.equal(createHash('sha256').update(JSON.stringify(signature)).digest('hex'),imported.topologyTimeSha256);
 });

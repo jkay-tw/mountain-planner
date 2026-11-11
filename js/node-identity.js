@@ -42,7 +42,12 @@ export function findNodeById(route,nodeId){return route?.nodes?.find(n=>n.id===n
 // Explicit owner-confirmed 2026-11-01 identities, scoped by old ID and label.
 const snowLegacyIds={
   'node:1c91e71b467300e90b6c':['雪山登山口','g04-045'],
-  'node:fba428b6693c1f3ff1b9':['武陵農場','node:f6f2ba4c01559d0ff632']
+  'node:fba428b6693c1f3ff1b9':['武陵農場','node:f6f2ba4c01559d0ff632'],
+  // Explicit Sheet decisions plus owner confirmation on 2026-11-11.
+  // These redirects are scoped to the retired ID AND its historical label.
+  'node:1e33d65d02cee63e0cd4':['三岔路口','shared:cw-v07-015'],
+  'node:351f4b260c8941f8d7e4':['玉林橋大崩壁','node:1670c3f1247b747ba02a'],
+  'node:c68a6096c4fde85a1b28':['杜鵑營地','node:8426704609cea5d43db4']
 };
 export function canonicalReviewedId(id,name){
   const record=snowLegacyIds[id];

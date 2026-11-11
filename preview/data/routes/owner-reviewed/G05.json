@@ -143,8 +143,10 @@
     },
     {
       "id": "node:43c9393ad0d04c1318ea",
-      "name": "登山口",
-      "aliases": [],
+      "name": "3.1K登山口",
+      "aliases": [
+        "登山口"
+      ],
       "groups": [
         "G05"
       ],
@@ -4421,7 +4423,7 @@
       "fromId": "node:23e78a62cdb1f7900031",
       "toId": "node:43c9393ad0d04c1318ea",
       "from": "苗圃工寮舊址",
-      "to": "登山口",
+      "to": "3.1K登山口",
       "minutes": 80,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -4461,7 +4463,7 @@
     {
       "fromId": "node:43c9393ad0d04c1318ea",
       "toId": "node:23e78a62cdb1f7900031",
-      "from": "登山口",
+      "from": "3.1K登山口",
       "to": "苗圃工寮舊址",
       "minutes": 80,
       "travelMode": "walking",
@@ -4507,7 +4509,7 @@
     {
       "fromId": "node:43c9393ad0d04c1318ea",
       "toId": "node:67f469173d3d382ca79c",
-      "from": "登山口",
+      "from": "3.1K登山口",
       "to": "松柏農場",
       "minutes": 60,
       "travelMode": "walking",
@@ -4547,7 +4549,7 @@
       "fromId": "node:67f469173d3d382ca79c",
       "toId": "node:43c9393ad0d04c1318ea",
       "from": "松柏農場",
-      "to": "登山口",
+      "to": "3.1K登山口",
       "minutes": 70,
       "travelMode": "walking",
       "verificationStatus": "verified",
