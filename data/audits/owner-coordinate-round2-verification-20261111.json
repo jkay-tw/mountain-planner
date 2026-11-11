@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-11",
+  "nativeSpreadsheetId": "1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk",
+  "exactReadbackRows": {
+    "nodes": 721,
+    "sources": 3318,
+    "directionalRecords": 1550,
+    "overview": 721,
+    "findings": 61,
+    "gaps": 4,
+    "nearbyPairs": 17
+  },
+  "formulaErrors": 0,
+  "preservedReviewIdsAndHumanRows": 724,
+  "preservedGPXOriginalNotesAndIds": 103,
+  "preservedGPXManualCoordinatesRows": 102,
+  "concurrentOwnerEdit": {
+    "nodeId": "node:c25918006df5f04534c8",
+    "change": "owner cleared the lone F/X while synchronization was running; retained without overwriting; same explicit retain-current decision"
+  },
+  "tests": {
+    "javascript": 139,
+    "python": 113,
+    "quickMap": 14
+  },
+  "productionMatchesPreview": true
+}

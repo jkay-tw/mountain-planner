@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {resolveItineraryGeometry,validateGeometry,geometryToGpx,distanceMeters,terrainMetrics} from '../js/itinerary-geometry.js';
 const load=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url),'utf8'));
-const data=load('data/geometry/planner-terrain-v1.json'),manifest=load('data/unified-editor-manifest.json');
+const data=load('preview/data/geometry/planner-terrain-v1.json'),manifest=load('data/unified-editor-manifest.json');
 const routes=manifest.routes.map(r=>load(r.file.split('?')[0]));
 const edges=new Map(routes.flatMap(r=>r.segments).map(s=>[s.fromId+'>'+s.toId,s]));
 const by=new Map(data.nodes.map(n=>[n.nodeId,n]));
@@ -36,8 +36,11 @@ test('span-specific source anchors are validated without changing label coordina
  s.coordinates[0]=[0,0];assert.throws(()=>validateGeometry(x),/錨點/);
 });
 test('waypoint-only export requires explicit choice and never invents a track',()=>{
- const gap=data.coverage.routeDataGaps.find(g=>g.reason==='missing-coordinate'&&[g.fromId,g.toId].every(id=>!['ignored','vehicle-only'].includes(by.get(id).coordinatePolicy))&&!!by.get(g.fromId).coordinate!==!!by.get(g.toId).coordinate);assert.ok(gap);
- const r=resolveItineraryGeometry([day(gap.fromId,gap.toId)],data);assert.equal(r.days[0].features.length,0);assert.equal(r.waypoints.length,1);
+ // Current active nodes are all located. Exercise missing-input behavior on an isolated fixture.
+ const span=data.spans.find(s=>!s.viaNodeIds?.length),gap={fromId:span.fromId,toId:span.toId,reason:'missing-coordinate'};
+ const sparse=structuredClone(data);sparse.spans=[];sparse.nodes.find(n=>n.nodeId===gap.toId).coordinate=null;
+ sparse.coverage.routeDataGaps=[gap];
+ const r=resolveItineraryGeometry([day(gap.fromId,gap.toId)],sparse);assert.equal(r.days[0].features.length,0);assert.equal(r.waypoints.length,1);
  assert.throws(()=>geometryToGpx(r,data),/缺漏/);assert.throws(()=>geometryToGpx(r,data,{allowPartial:true}),/沒有/);
  const gpx=geometryToGpx(r,data,{allowPartial:true,allowWaypointsOnly:true});assert.match(gpx,/<wpt /);assert.doesNotMatch(gpx,/<trk|<rte/);assert.match(gpx,/未定位/);
 });

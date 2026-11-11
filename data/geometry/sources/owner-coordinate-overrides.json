@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceUrl": "https://drive.google.com/file/d/1bfrGAJmiayJmqG600tlq93ld8slUqPRP/view",
   "sourceFileSha256": "7f90c190ad41a5745e02ad8ed1050d31a317abc0dbe733af78e9d36713bad12b",
-  "reviewDate": "2026-11-04",
+  "reviewDate": "2026-11-11",
   "nodes": [
     {
       "reviewId": "Q001",
@@ -90,11 +90,11 @@
       }
     },
     {
-      "reviewId": "Q006",
+      "reviewId": "R-26e667a7a4f57fe7614a",
       "nodeId": "shared:cw-v07-021",
       "name": "十八重溪橋",
-      "choice": "自行補座標",
-      "note": "",
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；[GPX比對 2026-11-11]\n保留手填座標為主。\n四份GPX未找到此節點的具名對應；無檔案座標可列，不任意從軌跡取點。",
       "coordinate": [
         120.8819606,
         23.658529
@@ -102,9 +102,36 @@
       "action": "coordinate",
       "originalCoordinate": {
         "format": "TWD97",
-        "x": 237959.0,
-        "y": 2617212.0
-      }
+        "x": 237959,
+        "y": 2617212
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 55,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q006",
+          "nodeId": "shared:cw-v07-021",
+          "name": "十八重溪橋",
+          "choice": "自行補座標",
+          "note": "",
+          "coordinate": [
+            120.8819606,
+            23.658529
+          ],
+          "action": "coordinate",
+          "originalCoordinate": {
+            "format": "TWD97",
+            "x": 237959.0,
+            "y": 2617212.0
+          }
+        }
+      ]
     },
     {
       "reviewId": "Q007",
@@ -209,22 +236,51 @@
       }
     },
     {
-      "reviewId": "Q013",
+      "reviewId": "R-a510209ee7cdcb963ba9",
       "nodeId": "g04-061",
       "name": "獵寮營地",
-      "choice": "全部不符",
-      "note": "",
+      "choice": "採用填入座標",
+      "note": "使用者 2026-11-11 明確採用；修改",
       "coordinate": [
-        121.2881395,
-        24.5366847
+        121.2963039,
+        24.5164262
       ],
       "action": "coordinate",
       "originalCoordinate": {
         "format": "TWD97",
-        "x": 279193.0,
-        "y": 2714492.0
+        "x": 280025.0,
+        "y": 2712250.0
       },
-      "resolution": "Owner confirmed filled coordinates override rejection of original candidates."
+      "resolution": "Owner confirmed filled coordinates override rejection of original candidates.",
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 120,
+        "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+        "verification": "user-supplied",
+        "supplementalSource": "",
+        "ownerAmended": false
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q013",
+          "nodeId": "g04-061",
+          "name": "獵寮營地",
+          "choice": "全部不符",
+          "note": "",
+          "coordinate": [
+            121.2881395,
+            24.5366847
+          ],
+          "action": "coordinate",
+          "originalCoordinate": {
+            "format": "TWD97",
+            "x": 279193.0,
+            "y": 2714492.0
+          },
+          "resolution": "Owner confirmed filled coordinates override rejection of original candidates."
+        }
+      ]
     },
     {
       "reviewId": "Q014",
@@ -301,7 +357,8 @@
         "format": "TWD97",
         "x": 277282.0,
         "y": 2691581.0
-      }
+      },
+      "displayName": "3.1K登山口"
     },
     {
       "reviewId": "Q019",
@@ -1298,112 +1355,436 @@
       }
     },
     {
-      "reviewId": "Q084",
+      "reviewId": "R-e6000f08c55b5744f28c",
       "nodeId": "g14-001",
       "name": "2603公尺鞍部",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.2279555,
+        23.6437597
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 273256,
+        "y": 2615590
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 2,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q084",
+          "nodeId": "g14-001",
+          "name": "2603公尺鞍部",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q085",
+      "reviewId": "R-c24c3e7dc6778f1b26c3",
       "nodeId": "g14-002",
       "name": "2761最低鞍部",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.2410496,
+        23.7071389
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 274580,
+        "y": 2622611
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 3,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q085",
+          "nodeId": "g14-002",
+          "name": "2761最低鞍部",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q086",
+      "reviewId": "R-86adae326420f6cc9642",
       "nodeId": "g14-003",
       "name": "2780草原黑水塘",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.2516009,
+        23.7323425
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 275651,
+        "y": 2625404
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 4,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q086",
+          "nodeId": "g14-003",
+          "name": "2780草原黑水塘",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q087",
+      "reviewId": "R-6fbfa29503ceedf25ef2",
       "nodeId": "g14-004",
       "name": "2813鞍營地",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.2391777,
+        23.7131647
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 274388,
+        "y": 2623278
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 5,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q087",
+          "nodeId": "g14-004",
+          "name": "2813鞍營地",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q088",
+      "reviewId": "R-21b24507c44221f8d95c",
       "nodeId": "g14-005",
       "name": "2833公尺鞍部",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.2247507,
+        23.62677
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 272932,
+        "y": 2613708
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 6,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q088",
+          "nodeId": "g14-005",
+          "name": "2833公尺鞍部",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q089",
+      "reviewId": "R-7460416b7e6afc3fc62c",
       "nodeId": "g14-008",
       "name": "3255公尺峰",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；座標暫定",
+      "coordinate": [
+        121.2172135,
+        23.6145903
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 272165,
+        "y": 2612358
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 9,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q089",
+          "nodeId": "g14-008",
+          "name": "3255公尺峰",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q090",
+      "reviewId": "R-540052090d93e439b094",
       "nodeId": "g14-021",
       "name": "林道入口",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.2334792,
+        23.7514238
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 273800,
+        "y": 2627514
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 25,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q090",
+          "nodeId": "g14-021",
+          "name": "林道入口",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q091",
+      "reviewId": "R-d0bc459a1d22bd640948",
       "nodeId": "g14-022",
       "name": "林道舊登山口",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.2322797,
+        23.7499086
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 273678,
+        "y": 2627346
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 26,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q091",
+          "nodeId": "g14-022",
+          "name": "林道舊登山口",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q092",
+      "reviewId": "R-aa22692eb0aa951cb196",
       "nodeId": "g14-024",
       "name": "廢棄工寮",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.2433632,
+        23.7384237
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 274810,
+        "y": 2626076
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 23,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q092",
+          "nodeId": "g14-024",
+          "name": "廢棄工寮",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q093",
+      "reviewId": "R-57ce7b4631e20fbda4c7",
       "nodeId": "g14-026",
       "name": "關門山凹",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；又稱\"關門大營地\"",
+      "coordinate": [
+        121.2322266,
+        23.6756019
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 273686,
+        "y": 2619117
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 30,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q093",
+          "nodeId": "g14-026",
+          "name": "關門山凹",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q094",
+      "reviewId": "R-558928844da40b2f110b",
       "nodeId": "g14-028",
       "name": "鐵軌岔路",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.2568062,
+        23.7407858
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 276180,
+        "y": 2626340
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 28,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q094",
+          "nodeId": "g14-028",
+          "name": "鐵軌岔路",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q095",
+      "reviewId": "R-a8cd6d20b968e72b5d30",
       "nodeId": "g14-029",
       "name": "巖山",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.2358435,
+        23.6641556
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 274057,
+        "y": 2617850
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 22,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q095",
+          "nodeId": "g14-029",
+          "name": "巖山",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
       "reviewId": "Q096",
@@ -1415,157 +1796,616 @@
       "action": "pending"
     },
     {
-      "reviewId": "Q097",
+      "reviewId": "R-2b42dc656f6e213dde99",
       "nodeId": "node:b2c4902bc8b8336f3277",
       "name": "孫海橋",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.0108725,
+        23.7872045
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 251108,
+        "y": 2631457
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 20,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q097",
+          "nodeId": "node:b2c4902bc8b8336f3277",
+          "name": "孫海橋",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q098",
+      "reviewId": "R-67dd6d0339c217721162",
       "nodeId": "node:2d8fc441e99a93bda219",
       "name": "33.5K大崩塌",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        120.9568292,
+        23.5920528
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 245594,
+        "y": 2609846
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 42,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q098",
+          "nodeId": "node:2d8fc441e99a93bda219",
+          "name": "33.5K大崩塌",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q099",
+      "reviewId": "R-751d8224c6ee4063474a",
       "nodeId": "node:4a0b2326333b6cbfd23e",
       "name": "松林營地",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.2306973,
+        23.5805729
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 273547,
+        "y": 2608593
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 78,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q099",
+          "nodeId": "node:4a0b2326333b6cbfd23e",
+          "name": "松林營地",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q100",
+      "reviewId": "R-cb1ec2f511d6f87f3031",
       "nodeId": "node:4d88bca8baa6a866c727",
       "name": "鐵線斷崖東口",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.2487326,
+        23.5642007
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 275391,
+        "y": 2606783
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 99,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q100",
+          "nodeId": "node:4d88bca8baa6a866c727",
+          "name": "鐵線斷崖東口",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q101",
+      "reviewId": "R-b65508cf0e3d50170e17",
       "nodeId": "node:4fca27364854ea7129d2",
       "name": "39.6K大崩塌",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        120.9727304,
+        23.5980885
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 247217,
+        "y": 2610514
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 45,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": "鯊小"
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q101",
+          "nodeId": "node:4fca27364854ea7129d2",
+          "name": "39.6K大崩塌",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q102",
+      "reviewId": "R-dd32433315ca98ce28d7",
       "nodeId": "node:5ab8c1b58de6eeb05b5d",
       "name": "2897草原水池",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.2405224,
+        23.5797182
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 274550,
+        "y": 2608500
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 38,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q102",
+          "nodeId": "node:5ab8c1b58de6eeb05b5d",
+          "name": "2897草原水池",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q103",
+      "reviewId": "R-0342106cb60cd6680b21",
       "nodeId": "node:5d3084736e9f8bce6d4a",
       "name": "19.3K水泥橋",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.2748666,
+        23.5350349
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 278065,
+        "y": 2603558
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 35,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q103",
+          "nodeId": "node:5d3084736e9f8bce6d4a",
+          "name": "19.3K水泥橋",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q104",
+      "reviewId": "R-a60506dbc696dded938e",
       "nodeId": "node:66b2dd2d91e301d84c73",
       "name": "東鞍營地",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.1648678,
+        23.5871764
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 266827,
+        "y": 2609315
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 77,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q104",
+          "nodeId": "node:66b2dd2d91e301d84c73",
+          "name": "東鞍營地",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q105",
+      "reviewId": "R-9e6afc7acfe3ad8c5104",
       "nodeId": "node:6b8235223e06105d242a",
       "name": "28K水泥工寮",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.2542894,
+        23.5400003
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 275963,
+        "y": 2604104
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 39,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q105",
+          "nodeId": "node:6b8235223e06105d242a",
+          "name": "28K水泥工寮",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q106",
+      "reviewId": "R-5facabd61dc38e49cf4d",
       "nodeId": "node:891637431112fc5688eb",
       "name": "34K登山口",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.2504452,
+        23.5632679
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 275566,
+        "y": 2606680
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 44,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q106",
+          "nodeId": "node:891637431112fc5688eb",
+          "name": "34K登山口",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q107",
+      "reviewId": "R-e3936d5ee333792f50b3",
       "nodeId": "node:a4c3afd25386960ea875",
       "name": "東北鞍營地",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.0909512,
+        23.6269152
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 259280,
+        "y": 2613709
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 72,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q107",
+          "nodeId": "node:a4c3afd25386960ea875",
+          "name": "東北鞍營地",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q108",
+      "reviewId": "R-4dd908af715a41c2214d",
       "nodeId": "node:aef6e30a59fdc407a2a2",
       "name": "無雙部落址",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.0139119,
+        23.5773753
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 251420,
+        "y": 2608220
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 91,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q108",
+          "nodeId": "node:aef6e30a59fdc407a2a2",
+          "name": "無雙部落址",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q109",
+      "reviewId": "R-ffc0304a3743a4f2f0d9",
       "nodeId": "node:bc117dbb33b03fe2cddf",
       "name": "沙武巒草原",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.2510178,
+        23.5656148
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 275624,
+        "y": 2606940
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 82,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q109",
+          "nodeId": "node:bc117dbb33b03fe2cddf",
+          "name": "沙武巒草原",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q110",
+      "reviewId": "R-9f74c461416437b67e92",
       "nodeId": "node:c8870812bd546115bac5",
       "name": "三岔路口營地",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.1915177,
+        23.5803733
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 269548,
+        "y": 2608565
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 49,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q110",
+          "nodeId": "node:c8870812bd546115bac5",
+          "name": "三岔路口營地",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q111",
+      "reviewId": "R-a0f47f0f1ef039b98885",
       "nodeId": "node:cb277db7b164105e3c17",
       "name": "三岔路口",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.2308841,
+        23.5809699
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 273566,
+        "y": 2608637
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 48,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q111",
+          "nodeId": "node:cb277db7b164105e3c17",
+          "name": "三岔路口",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q112",
+      "reviewId": "R-23913e0ffdd9a497e138",
       "nodeId": "node:d03e5cea91ce41e0ca2a",
       "name": "鐵線斷崖西口",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.2291211,
+        23.5755907
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 273387,
+        "y": 2608041
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 100,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q112",
+          "nodeId": "node:d03e5cea91ce41e0ca2a",
+          "name": "鐵線斷崖西口",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q113",
+      "reviewId": "R-19deae84cfbb98a58d89",
       "nodeId": "node:e9149e15effc99bc37f7",
       "name": "郡東營地",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.1022226,
+        23.6276667
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 260430,
+        "y": 2613793
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 98,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q113",
+          "nodeId": "node:e9149e15effc99bc37f7",
+          "name": "郡東營地",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
       "reviewId": "Q114",
@@ -1577,49 +2417,213 @@
       "action": "pending"
     },
     {
-      "reviewId": "Q115",
+      "reviewId": "R-a5b2ea24eefe3156b39f",
       "nodeId": "node:ef56761122345906961b",
       "name": "14.6K水泥路止",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "coordinate": [
+        121.2814208,
+        23.5129898
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 278739,
+        "y": 2601118
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 33,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q115",
+          "nodeId": "node:ef56761122345906961b",
+          "name": "14.6K水泥路止",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q116",
+      "reviewId": "R-657462f02d7d0cbb09d4",
       "nodeId": "shared:cw-v07-001",
       "name": "16.5K行車終點",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者 2026-11-11 明確採用；以17K位置估算",
+      "coordinate": [
+        121.2576675,
+        23.4185847
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 276332.0,
+        "y": 2590659.0
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 544,
+        "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+        "verification": "user-supplied",
+        "supplementalSource": "以17K位置估算",
+        "ownerAmended": false
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q116",
+          "nodeId": "shared:cw-v07-001",
+          "name": "16.5K行車終點",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q117",
+      "reviewId": "R-ed0813729ebe2ef9268c",
       "nodeId": "node:1670c3f1247b747ba02a",
       "name": "下切溪床點",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-11第二輪明確採用；[GPX比對 2026-11-11]\n保留手填座標為主。\n四份GPX未找到此節點的具名對應；無檔案座標可列，不任意從軌跡取點。",
+      "coordinate": [
+        121.2281212,
+        23.4330519
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 273310,
+        "y": 2592256
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 50,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q117",
+          "nodeId": "node:1670c3f1247b747ba02a",
+          "name": "下切溪床點",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        },
+        {
+          "reviewId": "R-ed0813729ebe2ef9268c",
+          "nodeId": "node:1670c3f1247b747ba02a",
+          "name": "下切溪床點",
+          "choice": "採用填入座標",
+          "note": "使用者 2026-11-11 明確採用；",
+          "coordinate": [
+            121.2281212,
+            23.4330519
+          ],
+          "action": "coordinate",
+          "originalCoordinate": {
+            "format": "TWD97",
+            "x": 273310.0,
+            "y": 2592256.0
+          },
+          "source": {
+            "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+            "sheetId": 105,
+            "row": 551,
+            "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+            "verification": "user-supplied",
+            "supplementalSource": "",
+            "ownerAmended": false
+          }
+        }
+      ]
     },
     {
-      "reviewId": "Q118",
+      "reviewId": "R-54b7f9836967d0e743c1",
       "nodeId": "node:2858041ca3317f204e6e",
       "name": "2950鞍岔路",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者 2026-11-11 明確採用；",
+      "coordinate": [
+        121.0400289,
+        23.5383969
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 254087.0,
+        "y": 2603904.0
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 553,
+        "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+        "verification": "user-supplied",
+        "supplementalSource": "",
+        "ownerAmended": false
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q118",
+          "nodeId": "node:2858041ca3317f204e6e",
+          "name": "2950鞍岔路",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q119",
+      "reviewId": "R-0ec6052f5b294db8e39c",
       "nodeId": "node:43363368b3898fae5690",
       "name": "林道石壁營地",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者 2026-11-11 明確採用；",
+      "coordinate": [
+        121.2414462,
+        23.4146915
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 274675.0,
+        "y": 2590225.0
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 556,
+        "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+        "verification": "user-supplied",
+        "supplementalSource": "",
+        "ownerAmended": false
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q119",
+          "nodeId": "node:43363368b3898fae5690",
+          "name": "林道石壁營地",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
       "reviewId": "Q120",
@@ -1679,13 +2683,41 @@
       "action": "pending"
     },
     {
-      "reviewId": "Q123",
+      "reviewId": "R-96606c413cddf3e375a4",
       "nodeId": "node:5fbb6bf151a762e5e1e0",
       "name": "林道崩毀處",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者 2026-11-11 明確採用；https://www.ysnp.gov.tw/Trail/8dbb3955-47fc-4311-8077-3518d1ad89b7?Tab=6",
+      "coordinate": [
+        121.2356471,
+        23.4276587
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 274080.0,
+        "y": 2591660.0
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 560,
+        "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+        "verification": "user-supplied",
+        "supplementalSource": "https://www.ysnp.gov.tw/Trail/8dbb3955-47fc-4311-8077-3518d1ad89b7?Tab=6",
+        "ownerAmended": false
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q123",
+          "nodeId": "node:5fbb6bf151a762e5e1e0",
+          "name": "林道崩毀處",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
       "reviewId": "Q124",
@@ -1712,31 +2744,115 @@
       }
     },
     {
-      "reviewId": "Q125",
+      "reviewId": "R-9f175235bd8a3e963947",
       "nodeId": "node:95694ade39282d11e01e",
       "name": "大石帆布營地",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者 2026-11-11 明確採用；",
+      "coordinate": [
+        121.2338895,
+        23.4298466
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 273900.0,
+        "y": 2591902.0
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 565,
+        "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+        "verification": "user-supplied",
+        "supplementalSource": "",
+        "ownerAmended": false
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q125",
+          "nodeId": "node:95694ade39282d11e01e",
+          "name": "大石帆布營地",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q126",
+      "reviewId": "R-9d1c9cc3413e75f4dc0b",
       "nodeId": "node:9849f71ae901b542f183",
       "name": "廢棄發電機",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者 2026-11-11 明確採用；https://www.ysnp.gov.tw/Trail/8dbb3955-47fc-4311-8077-3518d1ad89b7?Tab=6",
+      "coordinate": [
+        121.2233814,
+        23.4428204
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 272824.0,
+        "y": 2593337.0
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 567,
+        "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+        "verification": "user-supplied",
+        "supplementalSource": "https://www.ysnp.gov.tw/Trail/8dbb3955-47fc-4311-8077-3518d1ad89b7?Tab=6",
+        "ownerAmended": false
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q126",
+          "nodeId": "node:9849f71ae901b542f183",
+          "name": "廢棄發電機",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q127",
+      "reviewId": "R-dbb6d8f69de9299e2e1c",
       "nodeId": "node:9e9822f8d527f3ba8f6a",
       "name": "最低鞍部",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者 2026-11-11 明確採用；",
+      "coordinate": [
+        121.0671454,
+        23.5119654
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 256857.0,
+        "y": 2600978.0
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 570,
+        "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+        "verification": "user-supplied",
+        "supplementalSource": "",
+        "ownerAmended": false
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q127",
+          "nodeId": "node:9e9822f8d527f3ba8f6a",
+          "name": "最低鞍部",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
       "reviewId": "Q128",
@@ -1763,13 +2879,41 @@
       }
     },
     {
-      "reviewId": "Q129",
+      "reviewId": "R-b4b9ba0a743c05d39c92",
       "nodeId": "node:cc65a12ba6bd7fa8e91b",
       "name": "17K水泥橋",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者 2026-11-11 明確採用；https://hualien.forest.gov.tw/file/68516；鯊小",
+      "coordinate": [
+        121.2532942,
+        23.418935
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 275885,
+        "y": 2590697
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 575,
+        "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+        "verification": "user-supplied",
+        "supplementalSource": "https://hualien.forest.gov.tw/file/68516；鯊小",
+        "ownerAmended": true
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q129",
+          "nodeId": "node:cc65a12ba6bd7fa8e91b",
+          "name": "17K水泥橋",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
       "reviewId": "Q130",
@@ -1793,25 +2937,82 @@
         "row": 53,
         "snapshotSha256": "e97a019cf686673fc808c2b1c086385e3641a4a6716e4c9f7947fc1f5aa3de11",
         "verification": "user-supplied"
-      }
+      },
+      "displayName": "35K工寮岔路"
     },
     {
-      "reviewId": "Q131",
+      "reviewId": "R-ef74bafa3054cb7f1005",
       "nodeId": "node:ea752355c7e8a54337b4",
       "name": "19K廢工寮",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者 2026-11-11 明確採用；https://www.ysnp.gov.tw/Trail/8dbb3955-47fc-4311-8077-3518d1ad89b7?Tab=6",
+      "coordinate": [
+        121.2448198,
+        23.4134672
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 275020.0,
+        "y": 2590090.0
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 583,
+        "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+        "verification": "user-supplied",
+        "supplementalSource": "https://www.ysnp.gov.tw/Trail/8dbb3955-47fc-4311-8077-3518d1ad89b7?Tab=6",
+        "ownerAmended": false
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q131",
+          "nodeId": "node:ea752355c7e8a54337b4",
+          "name": "19K廢工寮",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
-      "reviewId": "Q132",
+      "reviewId": "R-91b78eadc935127387b7",
       "nodeId": "node:fc6d7b252e462c969f91",
       "name": "溪谷上切處",
-      "choice": "",
-      "note": "",
-      "coordinate": null,
-      "action": "pending"
+      "choice": "採用填入座標",
+      "note": "使用者 2026-11-11 明確採用；https://www.ysnp.gov.tw/Trail/8dbb3955-47fc-4311-8077-3518d1ad89b7?Tab=6",
+      "coordinate": [
+        121.2333211,
+        23.429405
+      ],
+      "action": "coordinate",
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 273842.0,
+        "y": 2591853.0
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 584,
+        "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+        "verification": "user-supplied",
+        "supplementalSource": "https://www.ysnp.gov.tw/Trail/8dbb3955-47fc-4311-8077-3518d1ad89b7?Tab=6",
+        "ownerAmended": false
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q132",
+          "nodeId": "node:fc6d7b252e462c969f91",
+          "name": "溪谷上切處",
+          "choice": "",
+          "note": "",
+          "coordinate": null,
+          "action": "pending"
+        }
+      ]
     },
     {
       "reviewId": "Q133",
@@ -2485,6 +3686,821 @@
         "snapshotSha256": "e97a019cf686673fc808c2b1c086385e3641a4a6716e4c9f7947fc1f5aa3de11",
         "verification": "user-supplied"
       }
+    },
+    {
+      "nodeId": "g04-039",
+      "reviewId": "R-f4dc083dd838ecc39c1f",
+      "name": "圈谷底部",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.2364098,
+        24.3884737
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 273980.0,
+        "y": 2698067.0
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 100,
+        "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+        "verification": "user-supplied",
+        "supplementalSource": "",
+        "ownerAmended": false
+      },
+      "note": "使用者 2026-11-11 明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:3470885973dafaf1a167",
+      "reviewId": "R-6787a1dfc5dba75b8644",
+      "name": "帆布獵寮(2082公尺)",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.2306966,
+        24.2932162
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 273418.0,
+        "y": 2687516.0
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 144,
+        "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+        "verification": "user-supplied",
+        "supplementalSource": "",
+        "ownerAmended": false
+      },
+      "note": "使用者 2026-11-11 明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "g07-029",
+      "reviewId": "R-831ad431436815fd5324",
+      "name": "思源埡口",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.3525317,
+        24.3913088
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 285758.0,
+        "y": 2698406.0
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 236,
+        "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+        "verification": "user-supplied",
+        "supplementalSource": "",
+        "ownerAmended": false
+      },
+      "note": "使用者 2026-11-11 明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:7f57c578802af8b68adc",
+      "reviewId": "R-71a4d5a5d04d5686fd79",
+      "name": "大崩壁",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.2343759,
+        23.8902456
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 273866.0,
+        "y": 2642888.0
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 405,
+        "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+        "verification": "user-supplied",
+        "supplementalSource": "",
+        "ownerAmended": false
+      },
+      "note": "使用者 2026-11-11 明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "shared:cw-v07-068",
+      "reviewId": "R-7da5c065ababa9ccd71e",
+      "name": "荖濃溪",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.0208824,
+        23.4838224
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 252133.0,
+        "y": 2597860.0
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 600,
+        "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+        "verification": "user-supplied",
+        "supplementalSource": "",
+        "ownerAmended": false
+      },
+      "note": "使用者 2026-11-11 明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:8897886192ce4320aec3",
+      "reviewId": "R-658446bcbf9ed9131e3d",
+      "name": "黑水塘",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.0331098,
+        23.44248
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 253383.0,
+        "y": 2593282.0
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 615,
+        "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+        "verification": "user-supplied",
+        "supplementalSource": "",
+        "ownerAmended": false
+      },
+      "note": "使用者 2026-11-11 明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "local:G19::shenchi-camp",
+      "reviewId": "R-603cd83f9e4093fcbdb1",
+      "name": "神池營地",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        120.8606252,
+        23.1575762
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 235729.0,
+        "y": 2561739.0
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 710,
+        "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+        "verification": "user-supplied",
+        "supplementalSource": "",
+        "ownerAmended": false
+      },
+      "note": "使用者 2026-11-11 明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "g14-014",
+      "reviewId": "R-ef3394f50594fd0c8991",
+      "name": "大石公山",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.2238431,
+        23.6348351
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 272838,
+        "y": 2614601
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 18,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "g14-015",
+      "reviewId": "R-a19c025f3394e44e1eb7",
+      "name": "小石公山",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.2238799,
+        23.6333812
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 272842,
+        "y": 2614440
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 21,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "g14-023",
+      "reviewId": "R-75c8518ba9e36fa71dca",
+      "name": "情人吊橋",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.2696258,
+        23.7450441
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 277486,
+        "y": 2626814
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 24,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "g14-027",
+      "reviewId": "R-b5fb35a7c04ea514a875",
+      "name": "關門北山",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.2390451,
+        23.6941932
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 274378,
+        "y": 2621177
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 29,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:0c8573830abcc97e1e32",
+      "reviewId": "R-3c2b3915da81d104407e",
+      "name": "26K岔路",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.258357,
+        23.5314963
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 276380,
+        "y": 2603163
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 37,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:9d5d4d1d5eb72f6f92cb",
+      "reviewId": "R-97fa41b4afdff803d02b",
+      "name": "2907峰",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.213789,
+        23.5756306
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 271822,
+        "y": 2608043
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 40,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:a17ec4e667d55d3d99c3",
+      "reviewId": "R-8489c4d12732c634620d",
+      "name": "33K行車終點",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        120.955761,
+        23.5925853
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 245485,
+        "y": 2609905
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 43,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:c61990dd30e7cb3d8213",
+      "reviewId": "R-136538e220ea5006a80f",
+      "name": "43K工寮",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        120.9715275,
+        23.5875231
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 247094,
+        "y": 2609344
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 46,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:8d079c5429db81492162",
+      "reviewId": "R-10a2676a11f5e7cc4d56",
+      "name": "僕落西擴山",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.1459512,
+        23.554371
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 264900,
+        "y": 2605680
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 53,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:2aa469a51f6331227667",
+      "reviewId": "R-d9ccc3984956dc98e3f8",
+      "name": "內嶺爾山",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.1965324,
+        23.5793918
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 270060,
+        "y": 2608457
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 54,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:01d1180c464fb08e5191",
+      "reviewId": "R-8284a8763f3ec3a89823",
+      "name": "可樂可樂安山",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.1174198,
+        23.6233306
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 261981,
+        "y": 2613314
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 56,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:bd25adc467b72fa6656f",
+      "reviewId": "R-a937a4fcbfacb1350966",
+      "name": "天南可蘭山",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.1302046,
+        23.608457
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 263287,
+        "y": 2611668
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 61,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:7b0dae68c98b7de79a40",
+      "reviewId": "R-e2f9bf9568c2b10c7cd9",
+      "name": "太平溪源",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.1948139,
+        23.589932
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 269883,
+        "y": 2609624
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 62,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:9f59facbac44a2e55ce7",
+      "reviewId": "R-be39628b5bded5655bb9",
+      "name": "太平溪源營地",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.1938449,
+        23.5906556
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 269784,
+        "y": 2609704
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 63,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "shared:cw-v07-040",
+      "reviewId": "R-9804e45fb64ce61192ce",
+      "name": "太平谷南口",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.2031001,
+        23.4540184
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 270750,
+        "y": 2594574
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 64,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:82e77090c06d1fe2aead",
+      "reviewId": "R-39412e4eb2f906e3e7ae",
+      "name": "無雙最高峰",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.0592885,
+        23.5914696
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 256051,
+        "y": 2609782
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 68,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": [],
+      "displayName": "無雙最高峰"
+    },
+    {
+      "nodeId": "node:c9115d117bdcc33b8c0b",
+      "reviewId": "R-2a2f76b1775c95ddf7aa",
+      "name": "東巒大山",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.0812912,
+        23.6486557
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 258293,
+        "y": 2616116
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 73,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:f3ea090758bb1302bc29",
+      "reviewId": "R-0496ae50f0cfec845bf3",
+      "name": "林道盡頭",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.2515621,
+        23.5633564
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 275680,
+        "y": 2606690
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 79,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:b68adbc4f51e0a71c87f",
+      "reviewId": "R-5b3d9874ac5179985189",
+      "name": "櫧山",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.0822059,
+        23.5907187
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 258390,
+        "y": 2609700
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 80,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:3bf4ec2f689a3b5c4930",
+      "reviewId": "R-47a3cb8d5a39f770b260",
+      "name": "烏瓦拉鼻溪營地",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.0015088,
+        23.5809879
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 250154,
+        "y": 2608620
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 86,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": [],
+      "displayName": "烏瓦拉鼻溪營地"
+    },
+    {
+      "nodeId": "node:4a1ca6c9c8adbf80fba0",
+      "reviewId": "R-a099f7643b92d232d00a",
+      "name": "烏達佩山",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.0882568,
+        23.6428005
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 259004,
+        "y": 2615468
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 87,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:c004ec6758328d3ce1cb",
+      "reviewId": "R-344fd5297d426842df5a",
+      "name": "無雙吊橋",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.0106102,
+        23.5771047
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 251083,
+        "y": 2608190
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 88,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:b865066ee7995702c0d4",
+      "reviewId": "R-dacaae821d063db25242",
+      "name": "盧利拉駱山",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.2004182,
+        23.5963
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 270454,
+        "y": 2610330
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 92,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:5048fd0d5be7a2b461be",
+      "reviewId": "R-a85eab5579b344e564d3",
+      "name": "義西請馬至山",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.1532079,
+        23.586782
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 265637,
+        "y": 2609270
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+        "sheetId": 112,
+        "row": 94,
+        "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+        "verification": "user-supplied",
+        "supplementalSource": ""
+      },
+      "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
     }
   ]
 }

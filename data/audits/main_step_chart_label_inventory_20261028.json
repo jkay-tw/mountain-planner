@@ -72,6 +72,15 @@
           "confirmedBy": "owner",
           "basis": "Owner-confirmed endpoint or existing reviewed canonical display alias; not a new claim about literal chart text",
           "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+        },
+        {
+          "nodeId": "shared:cw-v07-015",
+          "name": "八通關山三岔路口",
+          "confirmedBy": "owner",
+          "confirmedAt": "2026-11-11",
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+          "sheetRow": 2,
+          "basis": "使用者明確改名／合併決策；僅顯示名稱核准，不新增官方來源核實"
         }
       ]
     },
@@ -271,6 +280,15 @@
           "name": "武陵農場·遊客中心",
           "confirmedBy": "owner",
           "note": "2026-11-01 確認 G04/G05 同一實體地點並統一顯示名稱；保留原圖名稱為別名。"
+        },
+        {
+          "nodeId": "node:43c9393ad0d04c1318ea",
+          "name": "3.1K登山口",
+          "confirmedBy": "owner",
+          "confirmedAt": "2026-11-11",
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+          "sheetRow": 148,
+          "basis": "使用者明確改名／合併決策；僅顯示名稱核准，不新增官方來源核實"
         }
       ]
     },
@@ -818,6 +836,31 @@
           "confirmedBy": "owner",
           "basis": "Owner-confirmed endpoint or existing reviewed canonical display alias; not a new claim about literal chart text",
           "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527"
+        },
+        {
+          "nodeId": "node:1670c3f1247b747ba02a",
+          "name": "下切溪床點",
+          "confirmedBy": "owner",
+          "confirmedAt": "2026-11-11",
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+          "sheetRow": 490,
+          "basis": "使用者明確改名／合併決策；僅顯示名稱核准，不新增官方來源核實"
+        },
+        {
+          "nodeId": "node:3bf4ec2f689a3b5c4930",
+          "name": "烏瓦拉鼻溪營地",
+          "confirmedBy": "owner",
+          "confirmedAt": "2026-11-11",
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+          "basis": "審查頁明確改名；顯示名稱核准，不新增官方來源核實"
+        },
+        {
+          "nodeId": "node:82e77090c06d1fe2aead",
+          "name": "無雙最高峰",
+          "confirmedBy": "owner",
+          "confirmedAt": "2026-11-11",
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+          "basis": "審查頁明確改名；顯示名稱核准，不新增官方來源核實"
         }
       ]
     },
@@ -909,7 +952,18 @@
         "烏哇拉路",
         "馬西山口"
       ],
-      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety."
+      "inventoryLimit": "Names visually compared in main schematic; formatted distance prefixes and aliases remain explicit. Does not establish node identity or certify edge safety.",
+      "ownerApprovedDisplayLabels": [
+        {
+          "nodeId": "node:ea1afe9db60667f52737",
+          "name": "35K工寮岔路",
+          "confirmedBy": "owner",
+          "confirmedAt": "2026-11-11",
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+          "sheetRow": 582,
+          "basis": "使用者明確改名／合併決策；僅顯示名稱核准，不新增官方來源核實"
+        }
+      ]
     },
     {
       "chartId": "G17",

@@ -4,17 +4,19 @@ import {readFileSync} from 'node:fs';
 import {toTwd97} from '../js/twd97.js';
 import {resolveItineraryGeometry,geometryToGpx,renderTerrainProfile,terrainDayColor} from '../js/itinerary-geometry.js';
 const load=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url),'utf8'));
-const data=load('data/geometry/planner-terrain-v1.json'),review=load('data/geometry/sources/owner-coordinate-overrides.json');
+// Working inputs are staged in Preview until an explicit production promotion.
+const data=load('preview/data/geometry/planner-terrain-v1.json'),review=load('data/geometry/sources/owner-coordinate-overrides.json');
 const known=new Map(data.nodes.map(n=>[n.nodeId,n]));
 const plan=ids=>({coefficient:.8,items:ids.map((id,i)=>({id:'i'+i,nodeId:id,name:known.get(id).name,type:'location',note:'keep '+i,incoming:i?{kind:'official',fromNodeId:ids[i-1],toNodeId:id,officialMinutes:123,actualMinutes:77}:null}))});
 test('owner coordinates round-trip independently to source TWD97 and retain review identity',()=>{
- assert.equal(review.nodes.filter(n=>n.action==='coordinate').length,103);
+ assert.equal(review.nodes.filter(n=>n.action==='coordinate').length,175);
  for(const n of review.nodes.filter(n=>n.action==='coordinate')){
   const xy=toTwd97(n.coordinate);assert.ok(Math.abs(xy[0]-n.originalCoordinate.x)<=1,n.reviewId);assert.ok(Math.abs(xy[1]-n.originalCoordinate.y)<=1,n.reviewId);
   const active=known.get(n.nodeId);
   if(active?.coordinatePolicy==='active')assert.deepEqual(active.coordinate,n.coordinate);
  }
- assert.equal(review.nodes.find(n=>n.reviewId==='Q013').action,'coordinate');
+ const originalQ013=review.nodes.flatMap(n=>[n,...(n.previousDecisions||[])]).find(n=>n.reviewId==='Q013');
+ assert.equal(originalQ013.action,'coordinate');
  const fork=review.nodes.find(n=>n.nodeId==='g04-fork-daba');
  assert.ok(fork && fork.action==='coordinate');
  assert.deepEqual(fork.originalCoordinate,{format:'TWD97',x:276239,y:2705568});
@@ -32,7 +34,7 @@ test('G04 fork six official directional times stay unchanged',()=>{
  assert.deepEqual(actual,target);
 });
 test('all explicit missing-label bridges resolve in order, retain times and reverse without guessing waypoints',()=>{
- const bridges=data.spans.filter(s=>s.intermediateCoordinatesUnknown);assert.equal(bridges.length,33);
+ const bridges=data.spans.filter(s=>s.intermediateCoordinatesUnknown);assert.equal(bridges.length,4);
  for(const span of bridges){
   const ids=[span.fromId,...span.viaNodeIds,span.toId];
   for(const order of [ids,...(span.reversible?[[...ids].reverse()]:[])]){

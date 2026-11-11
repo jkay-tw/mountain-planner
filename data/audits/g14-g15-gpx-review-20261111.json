@@ -1,0 +1,7493 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "runtime": "preview\\data\\geometry\\planner-terrain-v1.json",
+  "files": [
+    {
+      "file": "20261111-萬榮林道上六順山.gpx",
+      "bytes": 500570,
+      "sha256": "7d607c4b4c9059d9cfc548c8008daa0643215d9ba010029d3808023a3ad75a99",
+      "waypoints": [
+        {
+          "index": 0,
+          "name": "萬榮林道12.6k 萬善堂",
+          "coordinate": [
+            121.358080497245,
+            23.7201398781826
+          ]
+        },
+        {
+          "index": 1,
+          "name": "21k台電工寮",
+          "coordinate": [
+            121.344927721556,
+            23.7527134328061
+          ]
+        },
+        {
+          "index": 2,
+          "name": "31k統帥石礦工寮",
+          "coordinate": [
+            121.314650064784,
+            23.7330273867056
+          ]
+        },
+        {
+          "index": 3,
+          "name": "36k大崩壁",
+          "coordinate": [
+            121.301560860392,
+            23.7516416671128
+          ]
+        },
+        {
+          "index": 4,
+          "name": "42k阿道別墅",
+          "coordinate": [
+            121.282408977733,
+            23.7535320232158
+          ]
+        },
+        {
+          "index": 5,
+          "name": "46k九族工寮",
+          "coordinate": [
+            121.2757668,
+            23.7493741
+          ]
+        },
+        {
+          "index": 6,
+          "name": "情人吊橋",
+          "coordinate": [
+            121.26963022499,
+            23.7450473009844
+          ]
+        },
+        {
+          "index": 7,
+          "name": "天梯頂岔路口",
+          "coordinate": [
+            121.259447882696,
+            23.7399306677466
+          ]
+        },
+        {
+          "index": 8,
+          "name": "六順山新登山口",
+          "coordinate": [
+            121.259365077198,
+            23.7394690805851
+          ]
+        },
+        {
+          "index": 9,
+          "name": "2870草原水池",
+          "coordinate": [
+            121.251597185445,
+            23.7323388243641
+          ]
+        },
+        {
+          "index": 10,
+          "name": "2863峰",
+          "coordinate": [
+            121.248721460435,
+            23.7271627603782
+          ]
+        },
+        {
+          "index": 11,
+          "name": "六順山登山口",
+          "coordinate": [
+            121.239666855419,
+            23.7243387362713
+          ]
+        },
+        {
+          "index": 12,
+          "name": "2863峰",
+          "coordinate": [
+            121.248721460435,
+            23.7271627603782
+          ]
+        },
+        {
+          "index": 13,
+          "name": "2870草原水池",
+          "coordinate": [
+            121.251597185445,
+            23.7323388243641
+          ]
+        },
+        {
+          "index": 14,
+          "name": "六順山新登山口",
+          "coordinate": [
+            121.259365077198,
+            23.7394690805851
+          ]
+        },
+        {
+          "index": 15,
+          "name": "天梯頂岔路口",
+          "coordinate": [
+            121.259447882696,
+            23.7399306677466
+          ]
+        },
+        {
+          "index": 16,
+          "name": "情人吊橋",
+          "coordinate": [
+            121.26963022499,
+            23.7450473009844
+          ]
+        },
+        {
+          "index": 17,
+          "name": "46k九族工寮",
+          "coordinate": [
+            121.2757668,
+            23.7493741
+          ]
+        },
+        {
+          "index": 18,
+          "name": "42k阿道別墅",
+          "coordinate": [
+            121.282408977733,
+            23.7535320232158
+          ]
+        },
+        {
+          "index": 19,
+          "name": "36k大崩壁",
+          "coordinate": [
+            121.301560860392,
+            23.7516416671128
+          ]
+        },
+        {
+          "index": 20,
+          "name": "31k統帥石礦工寮",
+          "coordinate": [
+            121.314650064784,
+            23.7330273867056
+          ]
+        },
+        {
+          "index": 21,
+          "name": "21k台電工寮",
+          "coordinate": [
+            121.344927721556,
+            23.7527134328061
+          ]
+        },
+        {
+          "index": 22,
+          "name": "萬榮林道12.6k 萬善堂",
+          "coordinate": [
+            121.358080497245,
+            23.7201398781826
+          ]
+        }
+      ],
+      "trackPointCount": 3720,
+      "trackSegmentCount": 1,
+      "links": [],
+      "verification": "user-supplied; source independence not verified; no walking times inferred"
+    },
+    {
+      "file": "南三段_Joyhike.gpx",
+      "bytes": 198891,
+      "sha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+      "waypoints": [
+        {
+          "index": 0,
+          "name": "14.5K 瑞穗林道",
+          "coordinate": [
+            121.281421,
+            23.512987
+          ]
+        },
+        {
+          "index": 1,
+          "name": "19K 水泥橋",
+          "coordinate": [
+            121.2748901,
+            23.53498606
+          ]
+        },
+        {
+          "index": 2,
+          "name": "28K 工寮",
+          "coordinate": [
+            121.2542933,
+            23.53996867
+          ]
+        },
+        {
+          "index": 3,
+          "name": "32K 彈藥庫工寮",
+          "coordinate": [
+            121.2532023,
+            23.55629696
+          ]
+        },
+        {
+          "index": 4,
+          "name": "34K 登山口",
+          "coordinate": [
+            121.2504512,
+            23.56326311
+          ]
+        },
+        {
+          "index": 5,
+          "name": "沙武巒草原",
+          "coordinate": [
+            121.2503529,
+            23.56683973
+          ]
+        },
+        {
+          "index": 6,
+          "name": "水點",
+          "coordinate": [
+            121.2447382,
+            23.5803742
+          ]
+        },
+        {
+          "index": 7,
+          "name": "三岔路口",
+          "coordinate": [
+            121.2308374,
+            23.58101191
+          ]
+        },
+        {
+          "index": 8,
+          "name": "東源營地",
+          "coordinate": [
+            121.2297099,
+            23.58207744
+          ]
+        },
+        {
+          "index": 9,
+          "name": "2907峰",
+          "coordinate": [
+            121.214002,
+            23.576042
+          ]
+        },
+        {
+          "index": 10,
+          "name": "杜鵑營地",
+          "coordinate": [
+            121.2047056,
+            23.58399849
+          ]
+        },
+        {
+          "index": 11,
+          "name": "太平溪源",
+          "coordinate": [
+            121.1948142,
+            23.58992786
+          ]
+        },
+        {
+          "index": 12,
+          "name": "太平溪源營地",
+          "coordinate": [
+            121.1938442,
+            23.59065672
+          ]
+        },
+        {
+          "index": 13,
+          "name": "盧利拉駱山",
+          "coordinate": [
+            121.2003935,
+            23.59632599
+          ]
+        },
+        {
+          "index": 14,
+          "name": "丹大山",
+          "coordinate": [
+            121.2135382,
+            23.60040825
+          ]
+        },
+        {
+          "index": 15,
+          "name": "盧利拉駱山",
+          "coordinate": [
+            121.2003935,
+            23.59632599
+          ]
+        },
+        {
+          "index": 16,
+          "name": "太平溪源營地",
+          "coordinate": [
+            121.1938442,
+            23.59065672
+          ]
+        },
+        {
+          "index": 17,
+          "name": "三岔路營地",
+          "coordinate": [
+            121.1915141,
+            23.58037184
+          ]
+        },
+        {
+          "index": 18,
+          "name": "內嶺爾山",
+          "coordinate": [
+            121.1962842,
+            23.5791976
+          ]
+        },
+        {
+          "index": 19,
+          "name": "三岔路營地",
+          "coordinate": [
+            121.1915141,
+            23.58037184
+          ]
+        },
+        {
+          "index": 20,
+          "name": "馬路巴拉讓山",
+          "coordinate": [
+            121.1828013,
+            23.58129007
+          ]
+        },
+        {
+          "index": 21,
+          "name": "崖邊營地",
+          "coordinate": [
+            121.164274,
+            23.58706955
+          ]
+        },
+        {
+          "index": 22,
+          "name": "義西請馬至山",
+          "coordinate": [
+            121.1532122,
+            23.58678816
+          ]
+        },
+        {
+          "index": 23,
+          "name": "斷稜東山",
+          "coordinate": [
+            121.147016,
+            23.5948897
+          ]
+        },
+        {
+          "index": 24,
+          "name": "裡門山",
+          "coordinate": [
+            121.1381532,
+            23.59535706
+          ]
+        },
+        {
+          "index": 25,
+          "name": "丹大溪源營地",
+          "coordinate": [
+            121.135327,
+            23.599227
+          ]
+        },
+        {
+          "index": 26,
+          "name": "望崖山",
+          "coordinate": [
+            121.128336,
+            23.600943
+          ]
+        },
+        {
+          "index": 27,
+          "name": "天南可蘭山",
+          "coordinate": [
+            121.1302013,
+            23.60845264
+          ]
+        },
+        {
+          "index": 28,
+          "name": "可樂可樂安山",
+          "coordinate": [
+            121.1174209,
+            23.62332883
+          ]
+        },
+        {
+          "index": 29,
+          "name": "郡東山",
+          "coordinate": [
+            121.1056496,
+            23.62867557
+          ]
+        },
+        {
+          "index": 30,
+          "name": "郡東山西鞍營地",
+          "coordinate": [
+            121.1020841,
+            23.6276873
+          ]
+        },
+        {
+          "index": 31,
+          "name": "北鞍營地",
+          "coordinate": [
+            121.0909506,
+            23.62691215
+          ]
+        },
+        {
+          "index": 32,
+          "name": "取水岔路",
+          "coordinate": [
+            121.0855373,
+            23.63583673
+          ]
+        },
+        {
+          "index": 33,
+          "name": "烏達佩山岔路",
+          "coordinate": [
+            121.086954,
+            23.64227409
+          ]
+        },
+        {
+          "index": 34,
+          "name": "烏達佩山",
+          "coordinate": [
+            121.0882577,
+            23.64280197
+          ]
+        },
+        {
+          "index": 35,
+          "name": "烏達佩山岔路",
+          "coordinate": [
+            121.086954,
+            23.64227409
+          ]
+        },
+        {
+          "index": 36,
+          "name": "東巒大山",
+          "coordinate": [
+            121.0812979,
+            23.64865654
+          ]
+        },
+        {
+          "index": 37,
+          "name": "烏達佩山岔路",
+          "coordinate": [
+            121.086954,
+            23.64227409
+          ]
+        },
+        {
+          "index": 38,
+          "name": "取水岔路",
+          "coordinate": [
+            121.0855373,
+            23.63583673
+          ]
+        },
+        {
+          "index": 39,
+          "name": "北鞍營地",
+          "coordinate": [
+            121.0909506,
+            23.62691215
+          ]
+        },
+        {
+          "index": 40,
+          "name": "東郡大山",
+          "coordinate": [
+            121.092039,
+            23.626736
+          ]
+        },
+        {
+          "index": 41,
+          "name": "本鄉山",
+          "coordinate": [
+            121.085751,
+            23.61139669
+          ]
+        },
+        {
+          "index": 42,
+          "name": "櫧山北鞍營地",
+          "coordinate": [
+            121.0896261,
+            23.5992395
+          ]
+        },
+        {
+          "index": 43,
+          "name": "櫧山前營地",
+          "coordinate": [
+            121.0852783,
+            23.59397393
+          ]
+        },
+        {
+          "index": 44,
+          "name": "櫧山",
+          "coordinate": [
+            121.0821963,
+            23.59072478
+          ]
+        },
+        {
+          "index": 45,
+          "name": "無雙東峰",
+          "coordinate": [
+            121.058147,
+            23.591782
+          ]
+        },
+        {
+          "index": 46,
+          "name": "無雙最高峰",
+          "coordinate": [
+            121.057984,
+            23.591845
+          ]
+        },
+        {
+          "index": 47,
+          "name": "無雙山",
+          "coordinate": [
+            121.057191,
+            23.591001
+          ]
+        },
+        {
+          "index": 48,
+          "name": "水源",
+          "coordinate": [
+            121.048598,
+            23.57481
+          ]
+        },
+        {
+          "index": 49,
+          "name": "亞力士營地",
+          "coordinate": [
+            121.045941,
+            23.574338
+          ]
+        },
+        {
+          "index": 50,
+          "name": "無雙社",
+          "coordinate": [
+            121.013361,
+            23.577329
+          ]
+        },
+        {
+          "index": 51,
+          "name": "無雙吊橋",
+          "coordinate": [
+            121.010619,
+            23.577113
+          ]
+        },
+        {
+          "index": 52,
+          "name": "屋瓦拉鼻西營地",
+          "coordinate": [
+            121.001645,
+            23.580942
+          ]
+        },
+        {
+          "index": 53,
+          "name": "45.3K 無雙山登山口",
+          "coordinate": [
+            120.985703,
+            23.584155
+          ]
+        },
+        {
+          "index": 54,
+          "name": "43K 工寮",
+          "coordinate": [
+            120.971454,
+            23.58752
+          ]
+        },
+        {
+          "index": 55,
+          "name": "36K 支線岔路",
+          "coordinate": [
+            120.967895,
+            23.611091
+          ]
+        },
+        {
+          "index": 56,
+          "name": "33K 郡大林道",
+          "coordinate": [
+            120.955766,
+            23.592581
+          ]
+        }
+      ],
+      "trackPointCount": 2717,
+      "trackSegmentCount": 1,
+      "links": [],
+      "verification": "user-supplied; source independence not verified; no walking times inferred"
+    },
+    {
+      "file": "七彩湖｜六順山_Joyhike.gpx",
+      "bytes": 337378,
+      "sha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+      "waypoints": [
+        {
+          "index": 0,
+          "name": "孫安橋",
+          "coordinate": [
+            121.010877,
+            23.787202
+          ]
+        },
+        {
+          "index": 1,
+          "name": "二分所管制站",
+          "coordinate": [
+            121.0452249,
+            23.7786522
+          ]
+        },
+        {
+          "index": 2,
+          "name": "三分所",
+          "coordinate": [
+            121.0641952,
+            23.75603025
+          ]
+        },
+        {
+          "index": 3,
+          "name": "六分所",
+          "coordinate": [
+            121.1453587,
+            23.75076858
+          ]
+        },
+        {
+          "index": 4,
+          "name": "保線路捷徑入口",
+          "coordinate": [
+            121.16461,
+            23.76168463
+          ]
+        },
+        {
+          "index": 5,
+          "name": "丹大林道主線",
+          "coordinate": [
+            121.1833147,
+            23.76975331
+          ]
+        },
+        {
+          "index": 6,
+          "name": "隧道 1",
+          "coordinate": [
+            121.184084,
+            23.769674
+          ]
+        },
+        {
+          "index": 7,
+          "name": "隧道 2",
+          "coordinate": [
+            121.1869185,
+            23.77167847
+          ]
+        },
+        {
+          "index": 8,
+          "name": "隧道 3",
+          "coordinate": [
+            121.190325,
+            23.771792
+          ]
+        },
+        {
+          "index": 9,
+          "name": "台電招待所",
+          "coordinate": [
+            121.2070317,
+            23.76881545
+          ]
+        },
+        {
+          "index": 10,
+          "name": "丹大林道入口",
+          "coordinate": [
+            121.2334691,
+            23.75142241
+          ]
+        },
+        {
+          "index": 11,
+          "name": "七彩湖營地",
+          "coordinate": [
+            121.233284,
+            23.751237
+          ]
+        },
+        {
+          "index": 12,
+          "name": "七彩湖",
+          "coordinate": [
+            121.235276,
+            23.750941
+          ]
+        },
+        {
+          "index": 13,
+          "name": "七彩妹池",
+          "coordinate": [
+            121.238573,
+            23.748088
+          ]
+        },
+        {
+          "index": 14,
+          "name": "七彩湖",
+          "coordinate": [
+            121.235276,
+            23.750941
+          ]
+        },
+        {
+          "index": 15,
+          "name": "七彩湖營地",
+          "coordinate": [
+            121.233284,
+            23.751237
+          ]
+        },
+        {
+          "index": 16,
+          "name": "登山口",
+          "coordinate": [
+            121.2322807,
+            23.74990541
+          ]
+        },
+        {
+          "index": 17,
+          "name": "2960峰",
+          "coordinate": [
+            121.2288897,
+            23.7348541
+          ]
+        },
+        {
+          "index": 18,
+          "name": "六順山基石",
+          "coordinate": [
+            121.2395579,
+            23.72452401
+          ]
+        },
+        {
+          "index": 19,
+          "name": "2960峰",
+          "coordinate": [
+            121.2288897,
+            23.7348541
+          ]
+        },
+        {
+          "index": 20,
+          "name": "登山口",
+          "coordinate": [
+            121.2322807,
+            23.74990541
+          ]
+        },
+        {
+          "index": 21,
+          "name": "七彩湖營地",
+          "coordinate": [
+            121.233284,
+            23.751237
+          ]
+        },
+        {
+          "index": 22,
+          "name": "丹大林道入口",
+          "coordinate": [
+            121.2334691,
+            23.75142241
+          ]
+        },
+        {
+          "index": 23,
+          "name": "台電招待所",
+          "coordinate": [
+            121.2070317,
+            23.76881545
+          ]
+        },
+        {
+          "index": 24,
+          "name": "隧道 3",
+          "coordinate": [
+            121.190325,
+            23.771792
+          ]
+        },
+        {
+          "index": 25,
+          "name": "隧道 2",
+          "coordinate": [
+            121.1869185,
+            23.77167847
+          ]
+        },
+        {
+          "index": 26,
+          "name": "隧道 1",
+          "coordinate": [
+            121.184084,
+            23.769674
+          ]
+        },
+        {
+          "index": 27,
+          "name": "丹大林道主線",
+          "coordinate": [
+            121.1833147,
+            23.76975331
+          ]
+        },
+        {
+          "index": 28,
+          "name": "保線路捷徑入口",
+          "coordinate": [
+            121.16461,
+            23.76168463
+          ]
+        },
+        {
+          "index": 29,
+          "name": "六分所",
+          "coordinate": [
+            121.1453587,
+            23.75076858
+          ]
+        },
+        {
+          "index": 30,
+          "name": "三分所",
+          "coordinate": [
+            121.0641952,
+            23.75603025
+          ]
+        },
+        {
+          "index": 31,
+          "name": "二分所管制站",
+          "coordinate": [
+            121.0452249,
+            23.7786522
+          ]
+        },
+        {
+          "index": 32,
+          "name": "孫安橋",
+          "coordinate": [
+            121.010877,
+            23.787202
+          ]
+        }
+      ],
+      "trackPointCount": 4682,
+      "trackSegmentCount": 1,
+      "links": [],
+      "verification": "user-supplied; source independence not verified; no walking times inferred"
+    },
+    {
+      "file": "南三段.gpx",
+      "bytes": 496150,
+      "sha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+      "waypoints": [
+        {
+          "index": 0,
+          "name": "瑞穗林道14.6k行車終點",
+          "coordinate": [
+            121.28242631679075,
+            23.500960018246232
+          ]
+        },
+        {
+          "index": 1,
+          "name": "19.3k水泥橋",
+          "coordinate": [
+            121.27486436461368,
+            23.535046020904716
+          ]
+        },
+        {
+          "index": 2,
+          "name": "26k岔路",
+          "coordinate": [
+            121.2583571,
+            23.5314982
+          ]
+        },
+        {
+          "index": 3,
+          "name": "28k工寮",
+          "coordinate": [
+            121.25429306123345,
+            23.540004522415884
+          ]
+        },
+        {
+          "index": 4,
+          "name": "32k彈藥庫",
+          "coordinate": [
+            121.253055848252,
+            23.5566112689257
+          ]
+        },
+        {
+          "index": 5,
+          "name": "瑞隆林道34k",
+          "coordinate": [
+            121.25044780958967,
+            23.563272184143088
+          ]
+        },
+        {
+          "index": 6,
+          "name": "鐵線斷崖東口",
+          "coordinate": [
+            121.2487285,
+            23.5641999
+          ]
+        },
+        {
+          "index": 7,
+          "name": "鐵線斷崖西口",
+          "coordinate": [
+            121.229119067001,
+            23.575590975781
+          ]
+        },
+        {
+          "index": 8,
+          "name": "4.9k",
+          "coordinate": [
+            121.23089045318181,
+            23.580983826200708
+          ]
+        },
+        {
+          "index": 9,
+          "name": "5.1k三岔路口",
+          "coordinate": [
+            121.23076626223718,
+            23.581731720232796
+          ]
+        },
+        {
+          "index": 10,
+          "name": "5.3k東源營地",
+          "coordinate": [
+            121.22950632614499,
+            23.58214964604061
+          ]
+        },
+        {
+          "index": 11,
+          "name": "5.45k西源營地",
+          "coordinate": [
+            121.22878082311286,
+            23.58225041741852
+          ]
+        },
+        {
+          "index": 12,
+          "name": "2907峰",
+          "coordinate": [
+            121.2137896,
+            23.5756326
+          ]
+        },
+        {
+          "index": 13,
+          "name": "杜鵑營地",
+          "coordinate": [
+            121.2048309,
+            23.584159
+          ]
+        },
+        {
+          "index": 14,
+          "name": "太平溪源",
+          "coordinate": [
+            121.195394377085,
+            23.5891774825502
+          ]
+        },
+        {
+          "index": 15,
+          "name": "太平溪源營地",
+          "coordinate": [
+            121.19384810312391,
+            23.590654850387295
+          ]
+        },
+        {
+          "index": 16,
+          "name": "盧利拉駱山",
+          "coordinate": [
+            121.20041573616737,
+            23.59629942661607
+          ]
+        },
+        {
+          "index": 17,
+          "name": "丹大山",
+          "coordinate": [
+            121.213569104754,
+            23.6004177970101
+          ]
+        },
+        {
+          "index": 18,
+          "name": "盧利拉駱山",
+          "coordinate": [
+            121.20041592967044,
+            23.596299602789074
+          ]
+        },
+        {
+          "index": 19,
+          "name": "太平溪源營地",
+          "coordinate": [
+            121.19384810312391,
+            23.590654850387295
+          ]
+        },
+        {
+          "index": 20,
+          "name": "三岔路營地",
+          "coordinate": [
+            121.19151568292182,
+            23.580375113125285
+          ]
+        },
+        {
+          "index": 21,
+          "name": "內嶺爾山",
+          "coordinate": [
+            121.196435184604,
+            23.5793865880198
+          ]
+        },
+        {
+          "index": 22,
+          "name": "三岔路營地",
+          "coordinate": [
+            121.19151568292182,
+            23.580375113125285
+          ]
+        },
+        {
+          "index": 23,
+          "name": "馬路巴拉讓山",
+          "coordinate": [
+            121.18278109172229,
+            23.58129835226522
+          ]
+        },
+        {
+          "index": 24,
+          "name": "東鞍崖邊營地",
+          "coordinate": [
+            121.164863954351,
+            23.5871741327397
+          ]
+        },
+        {
+          "index": 25,
+          "name": "義西請馬至山",
+          "coordinate": [
+            121.153278252853,
+            23.586790587487684
+          ]
+        },
+        {
+          "index": 26,
+          "name": "斷稜東山",
+          "coordinate": [
+            121.14745235087,
+            23.5946269308804
+          ]
+        },
+        {
+          "index": 27,
+          "name": "裡門山",
+          "coordinate": [
+            121.138151087873,
+            23.5953741537795
+          ]
+        },
+        {
+          "index": 28,
+          "name": "丹大溪源營地",
+          "coordinate": [
+            121.13532883786502,
+            23.59922395281143
+          ]
+        },
+        {
+          "index": 29,
+          "name": "望崖山",
+          "coordinate": [
+            121.128471982123,
+            23.6009781898408
+          ]
+        },
+        {
+          "index": 30,
+          "name": "天南可蘭山岔路",
+          "coordinate": [
+            121.129159584431,
+            23.608174600702
+          ]
+        },
+        {
+          "index": 31,
+          "name": "可樂可樂安山",
+          "coordinate": [
+            121.11742237335801,
+            23.62333050388159
+          ]
+        },
+        {
+          "index": 32,
+          "name": "郡東山",
+          "coordinate": [
+            121.105647689112,
+            23.6281322506207
+          ]
+        },
+        {
+          "index": 33,
+          "name": "營地岔路",
+          "coordinate": [
+            121.10222553223406,
+            23.6276700024507
+          ]
+        },
+        {
+          "index": 34,
+          "name": "東郡北鞍營地",
+          "coordinate": [
+            121.09094916699098,
+            23.626912017657034
+          ]
+        },
+        {
+          "index": 35,
+          "name": "烏達佩山岔路",
+          "coordinate": [
+            121.08695259598892,
+            23.642273836641536
+          ]
+        },
+        {
+          "index": 36,
+          "name": "烏達佩山",
+          "coordinate": [
+            121.0882803845,
+            23.6428165438172
+          ]
+        },
+        {
+          "index": 37,
+          "name": "烏達佩山岔路",
+          "coordinate": [
+            121.08695259598892,
+            23.642273836641536
+          ]
+        },
+        {
+          "index": 38,
+          "name": "東巒大山",
+          "coordinate": [
+            121.081371002784,
+            23.6486961879805
+          ]
+        },
+        {
+          "index": 39,
+          "name": "烏達佩山岔路",
+          "coordinate": [
+            121.08695259598892,
+            23.642273836641536
+          ]
+        },
+        {
+          "index": 40,
+          "name": "東郡北鞍營地",
+          "coordinate": [
+            121.09094916699098,
+            23.626912017657034
+          ]
+        },
+        {
+          "index": 41,
+          "name": "東郡大山",
+          "coordinate": [
+            121.092083748574,
+            23.626724182171
+          ]
+        },
+        {
+          "index": 42,
+          "name": "東郡北鞍營地",
+          "coordinate": [
+            121.09094916699098,
+            23.626912017657034
+          ]
+        },
+        {
+          "index": 43,
+          "name": "本鄉山",
+          "coordinate": [
+            121.085728062929,
+            23.6114285857564
+          ]
+        },
+        {
+          "index": 44,
+          "name": "櫧山北鞍營地",
+          "coordinate": [
+            121.0899351720945,
+            23.599194142268118
+          ]
+        },
+        {
+          "index": 45,
+          "name": "櫧山",
+          "coordinate": [
+            121.08248579670703,
+            23.590767363467606
+          ]
+        },
+        {
+          "index": 46,
+          "name": "無雙山東峰",
+          "coordinate": [
+            121.060666341676,
+            23.5913233681112
+          ]
+        },
+        {
+          "index": 47,
+          "name": "無雙山最高峰",
+          "coordinate": [
+            121.059303065911,
+            23.5915495075007
+          ]
+        },
+        {
+          "index": 48,
+          "name": "無雙山基點峰",
+          "coordinate": [
+            121.057166640608,
+            23.5910284031043
+          ]
+        },
+        {
+          "index": 49,
+          "name": "最後水源",
+          "coordinate": [
+            121.04832291286311,
+            23.57488124486744
+          ]
+        },
+        {
+          "index": 50,
+          "name": "亞力士營地",
+          "coordinate": [
+            121.04589879870916,
+            23.574354428148688
+          ]
+        },
+        {
+          "index": 51,
+          "name": "無雙部落舊址",
+          "coordinate": [
+            121.0151662,
+            23.5771612
+          ]
+        },
+        {
+          "index": 52,
+          "name": "無雙吊橋",
+          "coordinate": [
+            121.010627746582,
+            23.5771348002162
+          ]
+        },
+        {
+          "index": 53,
+          "name": "烏瓦拉鼻溪營地",
+          "coordinate": [
+            121.001507548821,
+            23.5811663580373
+          ]
+        },
+        {
+          "index": 54,
+          "name": "45.3k登山口",
+          "coordinate": [
+            120.985758927637,
+            23.5841161999486
+          ]
+        },
+        {
+          "index": 55,
+          "name": "43k工寮",
+          "coordinate": [
+            120.971531226761,
+            23.5875182686252
+          ]
+        },
+        {
+          "index": 56,
+          "name": "39.6k大崩塌",
+          "coordinate": [
+            120.97273465404,
+            23.5980877169315
+          ]
+        },
+        {
+          "index": 57,
+          "name": "33.5k大崩塌",
+          "coordinate": [
+            120.956833362579,
+            23.5920484876008
+          ]
+        },
+        {
+          "index": 58,
+          "name": "郡大林道32k登山口",
+          "coordinate": [
+            120.946784462719,
+            23.5960874565317
+          ]
+        }
+      ],
+      "trackPointCount": 3729,
+      "trackSegmentCount": 1,
+      "links": [],
+      "verification": "user-supplied; source independence not verified; no walking times inferred"
+    }
+  ],
+  "nodes": [
+    {
+      "nodeId": "g14-001",
+      "name": "2603公尺鞍部",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "大石公山",
+        "巖山"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "g14-002",
+      "name": "2761最低鞍部",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "2813鞍營地",
+        "關門北山"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "g14-003",
+      "name": "2780草原黑水塘",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "異名／角色候選待確認",
+      "candidates": [
+        {
+          "file": "20261111-萬榮林道上六順山.gpx",
+          "fileSha256": "7d607c4b4c9059d9cfc548c8008daa0643215d9ba010029d3808023a3ad75a99",
+          "waypointName": "2870草原水池",
+          "waypointIndices": [
+            9,
+            13
+          ],
+          "coordinate": [
+            121.251597185445,
+            23.7323388243641
+          ],
+          "twd97": [
+            275651,
+            2625404
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "六順山新登山口",
+          "nextWaypoint": "2863峰",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1816
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "2863公尺峰",
+        "六順山新登山口"
+      ],
+      "gpxNote": "20261111-萬榮林道上六順山.gpx｜2870草原水池｜TWD97 275651/2625404｜目前未定位｜航點 10,14"
+    },
+    {
+      "nodeId": "g14-004",
+      "name": "2813鞍營地",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "2761最低鞍部",
+        "六順山"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "g14-005",
+      "name": "2833公尺鞍部",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "3255公尺峰",
+        "小石公山"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "g14-006",
+      "name": "2863公尺峰",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": [
+        121.2487681875,
+        23.72711286576293
+      ],
+      "currentTwd97": [
+        275363,
+        2624824
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "20261111-萬榮林道上六順山.gpx",
+          "fileSha256": "7d607c4b4c9059d9cfc548c8008daa0643215d9ba010029d3808023a3ad75a99",
+          "waypointName": "2863峰",
+          "waypointIndices": [
+            10,
+            12
+          ],
+          "coordinate": [
+            121.248721460435,
+            23.7271627603782
+          ],
+          "twd97": [
+            275358,
+            2624830
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "2870草原水池",
+          "nextWaypoint": "六順山登山口",
+          "distanceFromCurrentMeters": 7.3,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1833
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": 7.3,
+      "neighbours": [
+        "2780草原黑水塘",
+        "六順山"
+      ],
+      "gpxNote": "20261111-萬榮林道上六順山.gpx｜2863峰｜TWD97 275358/2624830｜距目前值 7.3m｜航點 11,13"
+    },
+    {
+      "nodeId": "g14-007",
+      "name": "2897公尺峰",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": [
+        121.22918353125,
+        23.742255865762928
+      ],
+      "currentTwd97": [
+        273364,
+        2626498
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "異名／角色候選待確認",
+      "candidates": [
+        {
+          "file": "七彩湖｜六順山_Joyhike.gpx",
+          "fileSha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+          "waypointName": "2960峰",
+          "waypointIndices": [
+            17,
+            19
+          ],
+          "coordinate": [
+            121.2288897,
+            23.7348541
+          ],
+          "twd97": [
+            273335,
+            2625678
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "登山口",
+          "nextWaypoint": "六順山基石",
+          "distanceFromCurrentMeters": 823.6,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2308
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": 823.6,
+      "neighbours": [
+        "六順山",
+        "林道舊登山口"
+      ],
+      "gpxNote": "七彩湖｜六順山_Joyhike.gpx｜2960峰｜TWD97 273335/2625678｜距目前值 823.6m｜航點 18,20"
+    },
+    {
+      "nodeId": "g14-008",
+      "name": "3255公尺峰",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "2833公尺鞍部",
+        "丹大山"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "g14-009",
+      "name": "36K大崩壁",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": [
+        121.3043695,
+        23.750208889758667
+      ],
+      "currentTwd97": [
+        281027,
+        2627393
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "20261111-萬榮林道上六順山.gpx",
+          "fileSha256": "7d607c4b4c9059d9cfc548c8008daa0643215d9ba010029d3808023a3ad75a99",
+          "waypointName": "36k大崩壁",
+          "waypointIndices": [
+            3,
+            19
+          ],
+          "coordinate": [
+            121.301560860392,
+            23.7516416671128
+          ],
+          "twd97": [
+            280740,
+            2627551
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "31k統帥石礦工寮",
+          "nextWaypoint": "42k阿道別墅",
+          "distanceFromCurrentMeters": 327.3,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1263
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": 327.3,
+      "neighbours": [
+        "42K阿道別墅"
+      ],
+      "gpxNote": "20261111-萬榮林道上六順山.gpx｜36k大崩壁｜TWD97 280740/2627551｜距目前值 327.3m｜航點 4,20"
+    },
+    {
+      "nodeId": "g14-010",
+      "name": "42K阿道別墅",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": [
+        121.282298975,
+        23.753658962
+      ],
+      "currentTwd97": [
+        278776,
+        2627771
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "20261111-萬榮林道上六順山.gpx",
+          "fileSha256": "7d607c4b4c9059d9cfc548c8008daa0643215d9ba010029d3808023a3ad75a99",
+          "waypointName": "42k阿道別墅",
+          "waypointIndices": [
+            4,
+            18
+          ],
+          "coordinate": [
+            121.282408977733,
+            23.7535320232158
+          ],
+          "twd97": [
+            278787,
+            2627757
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "36k大崩壁",
+          "nextWaypoint": "46k九族工寮",
+          "distanceFromCurrentMeters": 18.0,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1521
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": 18.0,
+      "neighbours": [
+        "36K大崩壁",
+        "46K九族工寮"
+      ],
+      "gpxNote": "20261111-萬榮林道上六順山.gpx｜42k阿道別墅｜TWD97 278787/2627757｜距目前值 18.0m｜航點 5,19"
+    },
+    {
+      "nodeId": "g14-011",
+      "name": "46K九族工寮",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": [
+        121.27583984375,
+        23.74953988975867
+      ],
+      "currentTwd97": [
+        278119,
+        2627313
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "20261111-萬榮林道上六順山.gpx",
+          "fileSha256": "7d607c4b4c9059d9cfc548c8008daa0643215d9ba010029d3808023a3ad75a99",
+          "waypointName": "46k九族工寮",
+          "waypointIndices": [
+            5,
+            17
+          ],
+          "coordinate": [
+            121.2757668,
+            23.7493741
+          ],
+          "twd97": [
+            278111,
+            2627295
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "42k阿道別墅",
+          "nextWaypoint": "情人吊橋",
+          "distanceFromCurrentMeters": 19.9,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1716
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": 19.9,
+      "neighbours": [
+        "42K阿道別墅",
+        "情人吊橋"
+      ],
+      "gpxNote": "20261111-萬榮林道上六順山.gpx｜46k九族工寮｜TWD97 278111/2627295｜距目前值 19.9m｜航點 6,18"
+    },
+    {
+      "nodeId": "g14-012",
+      "name": "七彩妹池",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": [
+        121.23840253125,
+        23.747938889758668
+      ],
+      "currentTwd97": [
+        274303,
+        2627129
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "七彩湖｜六順山_Joyhike.gpx",
+          "fileSha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+          "waypointName": "七彩妹池",
+          "waypointIndices": [
+            13
+          ],
+          "coordinate": [
+            121.238573,
+            23.748088
+          ],
+          "twd97": [
+            274320,
+            2627145
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "七彩湖",
+          "nextWaypoint": "七彩湖",
+          "distanceFromCurrentMeters": 24.0,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2230
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": 24.0,
+      "neighbours": [
+        "七彩湖",
+        "雙龍瀑布"
+      ],
+      "gpxNote": "七彩湖｜六順山_Joyhike.gpx｜七彩妹池｜TWD97 274320/2627145｜距目前值 24.0m｜航點 14"
+    },
+    {
+      "nodeId": "g14-013",
+      "name": "七彩湖",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": [
+        121.235217992,
+        23.751027966
+      ],
+      "currentTwd97": [
+        273977,
+        2627470
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "七彩湖｜六順山_Joyhike.gpx",
+          "fileSha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+          "waypointName": "七彩湖",
+          "waypointIndices": [
+            12,
+            14
+          ],
+          "coordinate": [
+            121.235276,
+            23.750941
+          ],
+          "twd97": [
+            273983,
+            2627461
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "七彩湖營地",
+          "nextWaypoint": "七彩妹池",
+          "distanceFromCurrentMeters": 11.3,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2210
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": 11.3,
+      "neighbours": [
+        "七彩妹池",
+        "林道入口"
+      ],
+      "gpxNote": "七彩湖｜六順山_Joyhike.gpx｜七彩湖｜TWD97 273983/2627461｜距目前值 11.3m｜航點 13,15"
+    },
+    {
+      "nodeId": "g14-014",
+      "name": "大石公山",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": [
+        121.2242602,
+        23.6336304
+      ],
+      "currentTwd97": [
+        272881,
+        2614468
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "2603公尺鞍部",
+        "小石公山"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "g14-015",
+      "name": "小石公山",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": [
+        121.2248028,
+        23.6320166
+      ],
+      "currentTwd97": [
+        272936,
+        2614289
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "2833公尺鞍部",
+        "大石公山"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "g14-017",
+      "name": "六順山",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": [
+        121.239552,
+        23.724495
+      ],
+      "currentTwd97": [
+        274424,
+        2624533
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "異名／角色候選待確認",
+      "candidates": [
+        {
+          "file": "七彩湖｜六順山_Joyhike.gpx",
+          "fileSha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+          "waypointName": "六順山基石",
+          "waypointIndices": [
+            18
+          ],
+          "coordinate": [
+            121.2395579,
+            23.72452401
+          ],
+          "twd97": [
+            274425,
+            2624536
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "2960峰",
+          "nextWaypoint": "2960峰",
+          "distanceFromCurrentMeters": 3.3,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2372
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": 3.3,
+      "neighbours": [
+        "2813鞍營地",
+        "2863公尺峰",
+        "2897公尺峰"
+      ],
+      "gpxNote": "七彩湖｜六順山_Joyhike.gpx｜六順山基石｜TWD97 274425/2624536｜距目前值 3.3m｜航點 19"
+    },
+    {
+      "nodeId": "g14-018",
+      "name": "六順山新登山口",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": [
+        121.2594601875,
+        23.73995486576293
+      ],
+      "currentTwd97": [
+        276451,
+        2626248
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "20261111-萬榮林道上六順山.gpx",
+          "fileSha256": "7d607c4b4c9059d9cfc548c8008daa0643215d9ba010029d3808023a3ad75a99",
+          "waypointName": "六順山新登山口",
+          "waypointIndices": [
+            8,
+            14
+          ],
+          "coordinate": [
+            121.259365077198,
+            23.7394690805851
+          ],
+          "twd97": [
+            276441,
+            2626195
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "天梯頂岔路口",
+          "nextWaypoint": "2870草原水池",
+          "distanceFromCurrentMeters": 54.9,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1789
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": 54.9,
+      "neighbours": [
+        "2780草原黑水塘",
+        "天梯頂岔路口"
+      ],
+      "gpxNote": "20261111-萬榮林道上六順山.gpx｜六順山新登山口｜TWD97 276441/2626195｜距目前值 54.9m｜航點 9,15"
+    },
+    {
+      "nodeId": "g14-019",
+      "name": "天梯頂岔路口",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": [
+        121.2594781875,
+        23.73999086576293
+      ],
+      "currentTwd97": [
+        276453,
+        2626252
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "20261111-萬榮林道上六順山.gpx",
+          "fileSha256": "7d607c4b4c9059d9cfc548c8008daa0643215d9ba010029d3808023a3ad75a99",
+          "waypointName": "天梯頂岔路口",
+          "waypointIndices": [
+            7,
+            15
+          ],
+          "coordinate": [
+            121.259447882696,
+            23.7399306677466
+          ],
+          "twd97": [
+            276449,
+            2626246
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "情人吊橋",
+          "nextWaypoint": "六順山新登山口",
+          "distanceFromCurrentMeters": 7.4,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1785
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": 7.4,
+      "neighbours": [
+        "六順山新登山口",
+        "情人吊橋",
+        "鐵軌岔路"
+      ],
+      "gpxNote": "20261111-萬榮林道上六順山.gpx｜天梯頂岔路口｜TWD97 276449/2626246｜距目前值 7.4m｜航點 8,16"
+    },
+    {
+      "nodeId": "g14-020",
+      "name": "台電高登連絡站",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": [
+        121.2565672,
+        23.7428774
+      ],
+      "currentTwd97": [
+        276155,
+        2626572
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "GPX距現值>1km；需優先核對",
+      "candidates": [
+        {
+          "file": "七彩湖｜六順山_Joyhike.gpx",
+          "fileSha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+          "waypointName": "台電招待所",
+          "waypointIndices": [
+            9,
+            23
+          ],
+          "coordinate": [
+            121.2070317,
+            23.76881545
+          ],
+          "twd97": [
+            271101,
+            2629436
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "隧道 3",
+          "nextWaypoint": "丹大林道入口",
+          "distanceFromCurrentMeters": 5808.1,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1952
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": 5808.1,
+      "neighbours": [
+        "鐵軌岔路"
+      ],
+      "gpxNote": "七彩湖｜六順山_Joyhike.gpx｜台電招待所｜TWD97 271101/2629436｜距目前值 5808.1m｜航點 10,24"
+    },
+    {
+      "nodeId": "g14-021",
+      "name": "林道入口",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "異名／角色候選待確認",
+      "candidates": [
+        {
+          "file": "七彩湖｜六順山_Joyhike.gpx",
+          "fileSha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+          "waypointName": "丹大林道入口",
+          "waypointIndices": [
+            10,
+            22
+          ],
+          "coordinate": [
+            121.2334691,
+            23.75142241
+          ],
+          "twd97": [
+            273799,
+            2627514
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "台電招待所",
+          "nextWaypoint": "七彩湖營地",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2195
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "七彩湖",
+        "林道舊登山口"
+      ],
+      "gpxNote": "七彩湖｜六順山_Joyhike.gpx｜丹大林道入口｜TWD97 273799/2627514｜目前未定位｜航點 11,23"
+    },
+    {
+      "nodeId": "g14-022",
+      "name": "林道舊登山口",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "異名／角色候選待確認",
+      "candidates": [
+        {
+          "file": "七彩湖｜六順山_Joyhike.gpx",
+          "fileSha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+          "waypointName": "登山口",
+          "waypointIndices": [
+            16,
+            20
+          ],
+          "coordinate": [
+            121.2322807,
+            23.74990541
+          ],
+          "twd97": [
+            273678,
+            2627346
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "七彩湖營地",
+          "nextWaypoint": "2960峰",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2273
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "2897公尺峰",
+        "林道入口"
+      ],
+      "gpxNote": "七彩湖｜六順山_Joyhike.gpx｜登山口｜TWD97 273678/2627346｜目前未定位｜航點 17,21"
+    },
+    {
+      "nodeId": "g14-023",
+      "name": "情人吊橋",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": [
+        121.270138007,
+        23.745146971
+      ],
+      "currentTwd97": [
+        277538,
+        2626825
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "20261111-萬榮林道上六順山.gpx",
+          "fileSha256": "7d607c4b4c9059d9cfc548c8008daa0643215d9ba010029d3808023a3ad75a99",
+          "waypointName": "情人吊橋",
+          "waypointIndices": [
+            6,
+            16
+          ],
+          "coordinate": [
+            121.26963022499,
+            23.7450473009844
+          ],
+          "twd97": [
+            277486,
+            2626814
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "46k九族工寮",
+          "nextWaypoint": "天梯頂岔路口",
+          "distanceFromCurrentMeters": 52.9,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1749
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": 52.9,
+      "neighbours": [
+        "46K九族工寮",
+        "天梯頂岔路口"
+      ],
+      "gpxNote": "20261111-萬榮林道上六順山.gpx｜情人吊橋｜TWD97 277486/2626814｜距目前值 52.9m｜航點 7,17"
+    },
+    {
+      "nodeId": "g14-024",
+      "name": "廢棄工寮",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "鐵軌岔路",
+        "雙龍瀑布"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "g14-025",
+      "name": "雙龍瀑布",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": [
+        121.240158034,
+        23.741759006
+      ],
+      "currentTwd97": [
+        274483,
+        2626445
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "七彩妹池",
+        "廢棄工寮"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "g14-026",
+      "name": "關門山凹",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "巖山",
+        "關門北山"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "g14-027",
+      "name": "關門北山",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": [
+        121.2392179,
+        23.693782
+      ],
+      "currentTwd97": [
+        274396,
+        2621131
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "2761最低鞍部",
+        "關門山凹"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "g14-028",
+      "name": "鐵軌岔路",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "台電高登連絡站",
+        "天梯頂岔路口",
+        "廢棄工寮"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "g14-029",
+      "name": "巖山",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "2603公尺鞍部",
+        "關門山凹"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "node:7375c4ae1cea24a3f4dd",
+      "name": "水里",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "依政策不定位；候選保留討論",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "node:b2c4902bc8b8336f3277",
+      "name": "孫海橋",
+      "groups": [
+        "G14｜七彩湖/六順山"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "依政策不定位；候選保留討論",
+      "candidates": [
+        {
+          "file": "七彩湖｜六順山_Joyhike.gpx",
+          "fileSha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+          "waypointName": "孫安橋",
+          "waypointIndices": [
+            0,
+            32
+          ],
+          "coordinate": [
+            121.010877,
+            23.787202
+          ],
+          "twd97": [
+            251108,
+            2631457
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "",
+          "nextWaypoint": "二分所管制站",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 0
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [],
+      "gpxNote": "七彩湖｜六順山_Joyhike.gpx｜孫安橋｜TWD97 251108/2631457｜目前未定位｜航點 1,33"
+    },
+    {
+      "nodeId": "shared:cw-v07-011",
+      "name": "丹大山",
+      "groups": [
+        "G14｜七彩湖/六順山",
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.213559,
+        23.600424
+      ],
+      "currentTwd97": [
+        271794,
+        2610789
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "丹大山",
+          "waypointIndices": [
+            14
+          ],
+          "coordinate": [
+            121.2135382,
+            23.60040825
+          ],
+          "twd97": [
+            271792,
+            2610787
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "盧利拉駱山",
+          "nextWaypoint": "盧利拉駱山",
+          "distanceFromCurrentMeters": 2.7,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1281
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "丹大山",
+          "waypointIndices": [
+            17
+          ],
+          "coordinate": [
+            121.213569104754,
+            23.6004177970101
+          ],
+          "twd97": [
+            271795,
+            2610788
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "盧利拉駱山",
+          "nextWaypoint": "盧利拉駱山",
+          "distanceFromCurrentMeters": 1.2,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2237
+          }
+        }
+      ],
+      "candidateSpreadMeters": 3.3,
+      "maximumShiftFromCurrentMeters": 2.7,
+      "neighbours": [
+        "3255公尺峰",
+        "盧利拉駱山"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜丹大山｜TWD97 271792/2610787｜距目前值 2.7m｜航點 15\n南三段.gpx｜丹大山｜TWD97 271795/2610788｜距目前值 1.2m｜航點 18"
+    },
+    {
+      "nodeId": "node:01d1180c464fb08e5191",
+      "name": "可樂可樂安山",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.1174228,
+        23.6232216
+      ],
+      "currentTwd97": [
+        261981,
+        2613302
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "可樂可樂安山",
+          "waypointIndices": [
+            28
+          ],
+          "coordinate": [
+            121.1174209,
+            23.62332883
+          ],
+          "twd97": [
+            261981,
+            2613314
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "天南可蘭山",
+          "nextWaypoint": "郡東山",
+          "distanceFromCurrentMeters": 11.9,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1643
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "可樂可樂安山",
+          "waypointIndices": [
+            31
+          ],
+          "coordinate": [
+            121.11742237335801,
+            23.62333050388159
+          ],
+          "twd97": [
+            261981,
+            2613314
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "天南可蘭山岔路",
+          "nextWaypoint": "郡東山",
+          "distanceFromCurrentMeters": 12.1,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2556
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0.2,
+      "maximumShiftFromCurrentMeters": 12.1,
+      "neighbours": [
+        "天南可蘭/望崖岔路",
+        "郡東山"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜可樂可樂安山｜TWD97 261981/2613314｜距目前值 11.9m｜航點 29\n南三段.gpx｜可樂可樂安山｜TWD97 261981/2613314｜距目前值 12.1m｜航點 32"
+    },
+    {
+      "nodeId": "node:06b52b0f4a9c5db51f87",
+      "name": "東鑾/烏達佩岔路",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.0869999375,
+        23.642233198573678
+      ],
+      "currentTwd97": [
+        258876,
+        2615405
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "異名／角色候選待確認",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "烏達佩山岔路",
+          "waypointIndices": [
+            33,
+            35,
+            37
+          ],
+          "coordinate": [
+            121.086954,
+            23.64227409
+          ],
+          "twd97": [
+            258871,
+            2615410
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "取水岔路",
+          "nextWaypoint": "烏達佩山",
+          "distanceFromCurrentMeters": 6.5,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1763
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "烏達佩山岔路",
+          "waypointIndices": [
+            35,
+            37,
+            39
+          ],
+          "coordinate": [
+            121.08695259598892,
+            23.642273836641536
+          ],
+          "twd97": [
+            258871,
+            2615410
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "東郡北鞍營地",
+          "nextWaypoint": "烏達佩山",
+          "distanceFromCurrentMeters": 6.6,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2656
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0.1,
+      "maximumShiftFromCurrentMeters": 6.6,
+      "neighbours": [
+        "東北鞍營地",
+        "東巒大山",
+        "烏達佩山"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜烏達佩山岔路｜TWD97 258871/2615410｜距目前值 6.5m｜航點 34,36,38\n南三段.gpx｜烏達佩山岔路｜TWD97 258871/2615410｜距目前值 6.6m｜航點 36,38,40"
+    },
+    {
+      "nodeId": "node:0c0dc01565d03fae0e19",
+      "name": "裡門山",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.13813890625,
+        23.595321847070178
+      ],
+      "currentTwd97": [
+        264098,
+        2610214
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "裡門山",
+          "waypointIndices": [
+            24
+          ],
+          "coordinate": [
+            121.1381532,
+            23.59535706
+          ],
+          "twd97": [
+            264100,
+            2610218
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "斷稜東山",
+          "nextWaypoint": "丹大溪源營地",
+          "distanceFromCurrentMeters": 4.2,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1518
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "裡門山",
+          "waypointIndices": [
+            27
+          ],
+          "coordinate": [
+            121.138151087873,
+            23.5953741537795
+          ],
+          "twd97": [
+            264099,
+            2610220
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "斷稜東山",
+          "nextWaypoint": "丹大溪源營地",
+          "distanceFromCurrentMeters": 5.9,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2452
+          }
+        }
+      ],
+      "candidateSpreadMeters": 1.9,
+      "maximumShiftFromCurrentMeters": 5.9,
+      "neighbours": [
+        "丹大溪源營地",
+        "斷稜東山"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜裡門山｜TWD97 264100/2610218｜距目前值 4.2m｜航點 25\n南三段.gpx｜裡門山｜TWD97 264099/2610220｜距目前值 5.9m｜航點 28"
+    },
+    {
+      "nodeId": "node:0c8573830abcc97e1e32",
+      "name": "26K岔路",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.2586791875,
+        23.532049136505822
+      ],
+      "currentTwd97": [
+        276413,
+        2603224
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "26k岔路",
+          "waypointIndices": [
+            2
+          ],
+          "coordinate": [
+            121.2583571,
+            23.5314982
+          ],
+          "twd97": [
+            276380,
+            2603163
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "19.3k水泥橋",
+          "nextWaypoint": "28k工寮",
+          "distanceFromCurrentMeters": 69.5,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1153
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": 69.5,
+      "neighbours": [
+        "19.3K水泥橋",
+        "28K水泥工寮"
+      ],
+      "gpxNote": "南三段.gpx｜26k岔路｜TWD97 276380/2603163｜距目前值 69.5m｜航點 3"
+    },
+    {
+      "nodeId": "node:13132e8f44de031186fe",
+      "name": "烏可冬克山",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.146382,
+        23.534061
+      ],
+      "currentTwd97": [
+        264946,
+        2603431
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "哈伊拉羅溪中源",
+        "哈伊拉羅溪南源"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "node:21743079f36dd0ee5829",
+      "name": "櫧山北鞍營地",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.0896252,
+        23.5992432
+      ],
+      "currentTwd97": [
+        259147,
+        2610644
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "櫧山北鞍營地",
+          "waypointIndices": [
+            42
+          ],
+          "coordinate": [
+            121.0896261,
+            23.5992395
+          ],
+          "twd97": [
+            259147,
+            2610644
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "本鄉山",
+          "nextWaypoint": "櫧山前營地",
+          "distanceFromCurrentMeters": 0.4,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2029
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "櫧山北鞍營地",
+          "waypointIndices": [
+            44
+          ],
+          "coordinate": [
+            121.0899351720945,
+            23.599194142268118
+          ],
+          "twd97": [
+            259178,
+            2610639
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "本鄉山",
+          "nextWaypoint": "櫧山",
+          "distanceFromCurrentMeters": 32.1,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2949
+          }
+        }
+      ],
+      "candidateSpreadMeters": 31.9,
+      "maximumShiftFromCurrentMeters": 32.1,
+      "neighbours": [
+        "本鄉山",
+        "櫧山"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜櫧山北鞍營地｜TWD97 259147/2610644｜距目前值 0.4m｜航點 43\n南三段.gpx｜櫧山北鞍營地｜TWD97 259178/2610639｜距目前值 32.1m｜航點 45"
+    },
+    {
+      "nodeId": "node:29f7b222808645fa53ef",
+      "name": "45.3K登山口",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        120.9857963125,
+        23.584092032644108
+      ],
+      "currentTwd97": [
+        248550,
+        2608964
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "異名／角色候選待確認",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "45.3K 無雙山登山口",
+          "waypointIndices": [
+            53
+          ],
+          "coordinate": [
+            120.985703,
+            23.584155
+          ],
+          "twd97": [
+            248541,
+            2608971
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "屋瓦拉鼻西營地",
+          "nextWaypoint": "43K 工寮",
+          "distanceFromCurrentMeters": 11.8,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2386
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "45.3k登山口",
+          "waypointIndices": [
+            54
+          ],
+          "coordinate": [
+            120.985758927637,
+            23.5841161999486
+          ],
+          "twd97": [
+            248546,
+            2608966
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "烏瓦拉鼻溪營地",
+          "nextWaypoint": "43k工寮",
+          "distanceFromCurrentMeters": 4.7,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 3306
+          }
+        }
+      ],
+      "candidateSpreadMeters": 7.1,
+      "maximumShiftFromCurrentMeters": 11.8,
+      "neighbours": [
+        "43K工寮",
+        "烏瓦拉鼻溪"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜45.3K 無雙山登山口｜TWD97 248541/2608971｜距目前值 11.8m｜航點 54\n南三段.gpx｜45.3k登山口｜TWD97 248546/2608966｜距目前值 4.7m｜航點 55"
+    },
+    {
+      "nodeId": "node:2aa469a51f6331227667",
+      "name": "內嶺爾山",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.19605,
+        23.579269
+      ],
+      "currentTwd97": [
+        270011,
+        2608443
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "內嶺爾山",
+          "waypointIndices": [
+            18
+          ],
+          "coordinate": [
+            121.1962842,
+            23.5791976
+          ],
+          "twd97": [
+            270035,
+            2608435
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "三岔路營地",
+          "nextWaypoint": "三岔路營地",
+          "distanceFromCurrentMeters": 25.2,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1375
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "內嶺爾山",
+          "waypointIndices": [
+            21
+          ],
+          "coordinate": [
+            121.196435184604,
+            23.5793865880198
+          ],
+          "twd97": [
+            270050,
+            2608456
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "三岔路營地",
+          "nextWaypoint": "三岔路營地",
+          "distanceFromCurrentMeters": 41.4,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2322
+          }
+        }
+      ],
+      "candidateSpreadMeters": 26.0,
+      "maximumShiftFromCurrentMeters": 41.4,
+      "neighbours": [
+        "三岔路口營地"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜內嶺爾山｜TWD97 270035/2608435｜距目前值 25.2m｜航點 19\n南三段.gpx｜內嶺爾山｜TWD97 270050/2608456｜距目前值 41.4m｜航點 22"
+    },
+    {
+      "nodeId": "node:2d8fc441e99a93bda219",
+      "name": "33.5K大崩塌",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "33.5k大崩塌",
+          "waypointIndices": [
+            57
+          ],
+          "coordinate": [
+            120.956833362579,
+            23.5920484876008
+          ],
+          "twd97": [
+            245594,
+            2609846
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "39.6k大崩塌",
+          "nextWaypoint": "郡大林道32k登山口",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 3617
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "33K行車終點",
+        "39.6K大崩塌"
+      ],
+      "gpxNote": "南三段.gpx｜33.5k大崩塌｜TWD97 245594/2609846｜目前未定位｜航點 58"
+    },
+    {
+      "nodeId": "node:318b1240b1b28f23c14a",
+      "name": "亞力士營地",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.0458773,
+        23.5743126
+      ],
+      "currentTwd97": [
+        254683,
+        2607882
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "亞力士營地",
+          "waypointIndices": [
+            49
+          ],
+          "coordinate": [
+            121.045941,
+            23.574338
+          ],
+          "twd97": [
+            254689,
+            2607884
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "水源",
+          "nextWaypoint": "無雙社",
+          "distanceFromCurrentMeters": 7.1,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2224
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "亞力士營地",
+          "waypointIndices": [
+            50
+          ],
+          "coordinate": [
+            121.04589879870916,
+            23.574354428148688
+          ],
+          "twd97": [
+            254685,
+            2607886
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "最後水源",
+          "nextWaypoint": "無雙部落舊址",
+          "distanceFromCurrentMeters": 5.1,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 3155
+          }
+        }
+      ],
+      "candidateSpreadMeters": 4.7,
+      "maximumShiftFromCurrentMeters": 7.1,
+      "neighbours": [
+        "最後水源",
+        "無雙部落址"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜亞力士營地｜TWD97 254689/2607884｜距目前值 7.1m｜航點 50\n南三段.gpx｜亞力士營地｜TWD97 254685/2607886｜距目前值 5.1m｜航點 51"
+    },
+    {
+      "nodeId": "node:34b4ec45fd16d72ac1b6",
+      "name": "丹大溪源營地",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.1353129,
+        23.5991852
+      ],
+      "currentTwd97": [
+        263809,
+        2610642
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "丹大溪源營地",
+          "waypointIndices": [
+            25
+          ],
+          "coordinate": [
+            121.135327,
+            23.599227
+          ],
+          "twd97": [
+            263811,
+            2610646
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "裡門山",
+          "nextWaypoint": "望崖山",
+          "distanceFromCurrentMeters": 4.9,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1546
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "丹大溪源營地",
+          "waypointIndices": [
+            28
+          ],
+          "coordinate": [
+            121.13532883786502,
+            23.59922395281143
+          ],
+          "twd97": [
+            263811,
+            2610646
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "裡門山",
+          "nextWaypoint": "望崖山",
+          "distanceFromCurrentMeters": 4.6,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2480
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0.4,
+      "maximumShiftFromCurrentMeters": 4.9,
+      "neighbours": [
+        "望崖山",
+        "裡門山"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜丹大溪源營地｜TWD97 263811/2610646｜距目前值 4.9m｜航點 26\n南三段.gpx｜丹大溪源營地｜TWD97 263811/2610646｜距目前值 4.6m｜航點 29"
+    },
+    {
+      "nodeId": "node:1670c3f1247b747ba02a",
+      "name": "下切溪床點",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.2281212,
+        23.4330519
+      ],
+      "currentTwd97": [
+        273310,
+        2592256
+      ],
+      "manualCoordinate": [
+        121.2281212,
+        23.4330519
+      ],
+      "manualTwd97": [
+        273310,
+        2592256
+      ],
+      "status": "手填優先；GPX僅備註",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "16.5K行車終點",
+        "太平谷南口"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "node:37c859d291bd265bd3ce",
+      "name": "方便池",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.24456653125,
+        23.57431203264411
+      ],
+      "currentTwd97": [
+        274964,
+        2607902
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "2897草原水池",
+        "沙武巒草原"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "node:3bf4ec2f689a3b5c4930",
+      "name": "烏瓦拉鼻溪",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.0017813125,
+        23.580904032644106
+      ],
+      "currentTwd97": [
+        250182,
+        2608611
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "異名／角色候選待確認",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "屋瓦拉鼻西營地",
+          "waypointIndices": [
+            52
+          ],
+          "coordinate": [
+            121.001645,
+            23.580942
+          ],
+          "twd97": [
+            250168,
+            2608615
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "無雙吊橋",
+          "nextWaypoint": "45.3K 無雙山登山口",
+          "distanceFromCurrentMeters": 14.5,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2353
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "烏瓦拉鼻溪營地",
+          "waypointIndices": [
+            53
+          ],
+          "coordinate": [
+            121.001507548821,
+            23.5811663580373
+          ],
+          "twd97": [
+            250154,
+            2608640
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "無雙吊橋",
+          "nextWaypoint": "45.3k登山口",
+          "distanceFromCurrentMeters": 40.4,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 3280
+          }
+        }
+      ],
+      "candidateSpreadMeters": 28.6,
+      "maximumShiftFromCurrentMeters": 40.4,
+      "neighbours": [
+        "45.3K登山口",
+        "無雙吊橋"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜屋瓦拉鼻西營地｜TWD97 250168/2608615｜距目前值 14.5m｜航點 53\n南三段.gpx｜烏瓦拉鼻溪營地｜TWD97 250154/2608640｜距目前值 40.4m｜航點 54"
+    },
+    {
+      "nodeId": "node:4001696b7a0f069ffb0b",
+      "name": "本鄉山",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.0857309,
+        23.611404
+      ],
+      "currentTwd97": [
+        258748,
+        2611991
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "本鄉山",
+          "waypointIndices": [
+            41
+          ],
+          "coordinate": [
+            121.085751,
+            23.61139669
+          ],
+          "twd97": [
+            258750,
+            2611990
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "東郡大山",
+          "nextWaypoint": "櫧山北鞍營地",
+          "distanceFromCurrentMeters": 2.2,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1985
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "本鄉山",
+          "waypointIndices": [
+            43
+          ],
+          "coordinate": [
+            121.085728062929,
+            23.6114285857564
+          ],
+          "twd97": [
+            258748,
+            2611994
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "東郡北鞍營地",
+          "nextWaypoint": "櫧山北鞍營地",
+          "distanceFromCurrentMeters": 2.7,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2900
+          }
+        }
+      ],
+      "candidateSpreadMeters": 4.2,
+      "maximumShiftFromCurrentMeters": 2.7,
+      "neighbours": [
+        "東北鞍營地",
+        "櫧山北鞍營地"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜本鄉山｜TWD97 258750/2611990｜距目前值 2.2m｜航點 42\n南三段.gpx｜本鄉山｜TWD97 258748/2611994｜距目前值 2.7m｜航點 44"
+    },
+    {
+      "nodeId": "node:4a0b2326333b6cbfd23e",
+      "name": "松林營地",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "2897草原水池",
+        "三岔路口",
+        "鐵線斷崖西口"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "node:4a1ca6c9c8adbf80fba0",
+      "name": "烏達佩山",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.08778,
+        23.6425
+      ],
+      "currentTwd97": [
+        258955,
+        2615435
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "烏達佩山",
+          "waypointIndices": [
+            34
+          ],
+          "coordinate": [
+            121.0882577,
+            23.64280197
+          ],
+          "twd97": [
+            259004,
+            2615468
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "烏達佩山岔路",
+          "nextWaypoint": "烏達佩山岔路",
+          "distanceFromCurrentMeters": 59.1,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1772
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "烏達佩山",
+          "waypointIndices": [
+            36
+          ],
+          "coordinate": [
+            121.0882803845,
+            23.6428165438172
+          ],
+          "twd97": [
+            259006,
+            2615470
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "烏達佩山岔路",
+          "nextWaypoint": "烏達佩山岔路",
+          "distanceFromCurrentMeters": 61.9,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2667
+          }
+        }
+      ],
+      "candidateSpreadMeters": 2.8,
+      "maximumShiftFromCurrentMeters": 61.9,
+      "neighbours": [
+        "東鑾/烏達佩岔路"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜烏達佩山｜TWD97 259004/2615468｜距目前值 59.1m｜航點 35\n南三段.gpx｜烏達佩山｜TWD97 259006/2615470｜距目前值 61.9m｜航點 37"
+    },
+    {
+      "nodeId": "node:4d88bca8baa6a866c727",
+      "name": "鐵線斷崖東口",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "鐵線斷崖東口",
+          "waypointIndices": [
+            6
+          ],
+          "coordinate": [
+            121.2487285,
+            23.5641999
+          ],
+          "twd97": [
+            275391,
+            2606783
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "瑞隆林道34k",
+          "nextWaypoint": "鐵線斷崖西口",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1988
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "34K登山口",
+        "鐵線斷崖西口"
+      ],
+      "gpxNote": "南三段.gpx｜鐵線斷崖東口｜TWD97 275391/2606783｜目前未定位｜航點 7"
+    },
+    {
+      "nodeId": "node:4fca27364854ea7129d2",
+      "name": "39.6K大崩塌",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "39.6k大崩塌",
+          "waypointIndices": [
+            56
+          ],
+          "coordinate": [
+            120.97273465404,
+            23.5980877169315
+          ],
+          "twd97": [
+            247217,
+            2610514
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "43k工寮",
+          "nextWaypoint": "33.5k大崩塌",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 3458
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "33.5K大崩塌",
+        "43K工寮"
+      ],
+      "gpxNote": "南三段.gpx｜39.6k大崩塌｜TWD97 247217/2610514｜目前未定位｜航點 57"
+    },
+    {
+      "nodeId": "node:5048fd0d5be7a2b461be",
+      "name": "義西請馬至山",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.153265,
+        23.58646
+      ],
+      "currentTwd97": [
+        265643,
+        2609234
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "義西請馬至山",
+          "waypointIndices": [
+            22
+          ],
+          "coordinate": [
+            121.1532122,
+            23.58678816
+          ],
+          "twd97": [
+            265637,
+            2609271
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "崖邊營地",
+          "nextWaypoint": "斷稜東山",
+          "distanceFromCurrentMeters": 36.9,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1463
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "義西請馬至山",
+          "waypointIndices": [
+            25
+          ],
+          "coordinate": [
+            121.153278252853,
+            23.586790587487684
+          ],
+          "twd97": [
+            265644,
+            2609271
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "東鞍崖邊營地",
+          "nextWaypoint": "斷稜東山",
+          "distanceFromCurrentMeters": 36.8,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2398
+          }
+        }
+      ],
+      "candidateSpreadMeters": 6.7,
+      "maximumShiftFromCurrentMeters": 36.9,
+      "neighbours": [
+        "斷稜東山",
+        "東鞍營地",
+        "烏妹浪胖池"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜義西請馬至山｜TWD97 265637/2609271｜距目前值 36.9m｜航點 23\n南三段.gpx｜義西請馬至山｜TWD97 265644/2609271｜距目前值 36.8m｜航點 26"
+    },
+    {
+      "nodeId": "node:5ab8c1b58de6eeb05b5d",
+      "name": "2897草原水池",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "方便池",
+        "松林營地"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "node:5d3084736e9f8bce6d4a",
+      "name": "19.3K水泥橋",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "異名／角色候選待確認",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "19K 水泥橋",
+          "waypointIndices": [
+            1
+          ],
+          "coordinate": [
+            121.2748901,
+            23.53498606
+          ],
+          "twd97": [
+            278067,
+            2603553
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "14.5K 瑞穗林道",
+          "nextWaypoint": "28K 工寮",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 256
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "19.3k水泥橋",
+          "waypointIndices": [
+            1
+          ],
+          "coordinate": [
+            121.27486436461368,
+            23.535046020904716
+          ],
+          "twd97": [
+            278065,
+            2603559
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "瑞穗林道14.6k行車終點",
+          "nextWaypoint": "26k岔路",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 669
+          }
+        }
+      ],
+      "candidateSpreadMeters": 7.2,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "14.6K水泥路止",
+        "26K岔路"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜19K 水泥橋｜TWD97 278067/2603553｜目前未定位｜航點 2\n南三段.gpx｜19.3k水泥橋｜TWD97 278065/2603559｜目前未定位｜航點 2"
+    },
+    {
+      "nodeId": "node:66b2dd2d91e301d84c73",
+      "name": "東鞍營地",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "異名／角色候選待確認",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "崖邊營地",
+          "waypointIndices": [
+            21
+          ],
+          "coordinate": [
+            121.164274,
+            23.58706955
+          ],
+          "twd97": [
+            266766,
+            2609303
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "馬路巴拉讓山",
+          "nextWaypoint": "義西請馬至山",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1438
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "東鞍崖邊營地",
+          "waypointIndices": [
+            24
+          ],
+          "coordinate": [
+            121.164863954351,
+            23.5871741327397
+          ],
+          "twd97": [
+            266827,
+            2609315
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "馬路巴拉讓山",
+          "nextWaypoint": "義西請馬至山",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2377
+          }
+        }
+      ],
+      "candidateSpreadMeters": 61.2,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "義西請馬至山",
+        "馬路巴拉讓山"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜崖邊營地｜TWD97 266766/2609303｜目前未定位｜航點 22\n南三段.gpx｜東鞍崖邊營地｜TWD97 266827/2609315｜目前未定位｜航點 25"
+    },
+    {
+      "nodeId": "node:679d7475a6dd59c285e2",
+      "name": "無雙山東峰",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.0606932,
+        23.5913559
+      ],
+      "currentTwd97": [
+        256194,
+        2609769
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "異名／角色候選待確認",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "無雙東峰",
+          "waypointIndices": [
+            45
+          ],
+          "coordinate": [
+            121.058147,
+            23.591782
+          ],
+          "twd97": [
+            255934,
+            2609817
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "櫧山",
+          "nextWaypoint": "無雙最高峰",
+          "distanceFromCurrentMeters": 263.8,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2154
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "無雙山東峰",
+          "waypointIndices": [
+            46
+          ],
+          "coordinate": [
+            121.060666341676,
+            23.5913233681112
+          ],
+          "twd97": [
+            256192,
+            2609766
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "櫧山",
+          "nextWaypoint": "無雙山最高峰",
+          "distanceFromCurrentMeters": 4.5,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 3074
+          }
+        }
+      ],
+      "candidateSpreadMeters": 261.7,
+      "maximumShiftFromCurrentMeters": 263.8,
+      "neighbours": [
+        "最高峰",
+        "櫧山"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜無雙東峰｜TWD97 255934/2609817｜距目前值 263.8m｜航點 46\n南三段.gpx｜無雙山東峰｜TWD97 256192/2609766｜距目前值 4.5m｜航點 47"
+    },
+    {
+      "nodeId": "node:6976566bc1a316b8e079",
+      "name": "郡東山",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.1057068,
+        23.6287164
+      ],
+      "currentTwd97": [
+        260785,
+        2613910
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "郡東山",
+          "waypointIndices": [
+            29
+          ],
+          "coordinate": [
+            121.1056496,
+            23.62867557
+          ],
+          "twd97": [
+            260780,
+            2613905
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "可樂可樂安山",
+          "nextWaypoint": "郡東山西鞍營地",
+          "distanceFromCurrentMeters": 7.4,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1671
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "郡東山",
+          "waypointIndices": [
+            32
+          ],
+          "coordinate": [
+            121.105647689112,
+            23.6281322506207
+          ],
+          "twd97": [
+            260779,
+            2613845
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "可樂可樂安山",
+          "nextWaypoint": "營地岔路",
+          "distanceFromCurrentMeters": 65.2,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2573
+          }
+        }
+      ],
+      "candidateSpreadMeters": 60.4,
+      "maximumShiftFromCurrentMeters": 65.2,
+      "neighbours": [
+        "可樂可樂安山",
+        "郡東營地"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜郡東山｜TWD97 260780/2613905｜距目前值 7.4m｜航點 30\n南三段.gpx｜郡東山｜TWD97 260779/2613845｜距目前值 65.2m｜航點 33"
+    },
+    {
+      "nodeId": "node:6b8235223e06105d242a",
+      "name": "28K水泥工寮",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "異名／角色候選待確認",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "28K 工寮",
+          "waypointIndices": [
+            2
+          ],
+          "coordinate": [
+            121.2542933,
+            23.53996867
+          ],
+          "twd97": [
+            275963,
+            2604101
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "19K 水泥橋",
+          "nextWaypoint": "32K 彈藥庫工寮",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 656
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "28k工寮",
+          "waypointIndices": [
+            3
+          ],
+          "coordinate": [
+            121.25429306123345,
+            23.540004522415884
+          ],
+          "twd97": [
+            275963,
+            2604104
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "26k岔路",
+          "nextWaypoint": "32k彈藥庫",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1347
+          }
+        }
+      ],
+      "candidateSpreadMeters": 4.0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "26K岔路",
+        "32K水泥工寮"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜28K 工寮｜TWD97 275963/2604101｜目前未定位｜航點 3\n南三段.gpx｜28k工寮｜TWD97 275963/2604104｜目前未定位｜航點 4"
+    },
+    {
+      "nodeId": "node:6c72072c59b2ee211d05",
+      "name": "烏妹浪胖池",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.15257690625,
+        23.572613032644107
+      ],
+      "currentTwd97": [
+        265574,
+        2607701
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "烏妹浪胖山",
+        "義西請馬至山"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "node:757cb9b7c126e5300053",
+      "name": "西源營地",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.2288044,
+        23.5822778
+      ],
+      "currentTwd97": [
+        273353,
+        2608781
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "2907峰",
+        "東源營地"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "node:7b0dae68c98b7de79a40",
+      "name": "太平溪源",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.19364,
+        23.58991
+      ],
+      "currentTwd97": [
+        269763,
+        2609621
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "太平溪源",
+          "waypointIndices": [
+            11
+          ],
+          "coordinate": [
+            121.1948142,
+            23.58992786
+          ],
+          "twd97": [
+            269883,
+            2609624
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "杜鵑營地",
+          "nextWaypoint": "太平溪源營地",
+          "distanceFromCurrentMeters": 119.7,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1216
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "太平溪源",
+          "waypointIndices": [
+            14
+          ],
+          "coordinate": [
+            121.195394377085,
+            23.5891774825502
+          ],
+          "twd97": [
+            269942,
+            2609541
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "杜鵑營地",
+          "nextWaypoint": "太平溪源營地",
+          "distanceFromCurrentMeters": 196.5,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2176
+          }
+        }
+      ],
+      "candidateSpreadMeters": 102.3,
+      "maximumShiftFromCurrentMeters": 196.5,
+      "neighbours": [
+        "太平溪源營地",
+        "杜鵑營地"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜太平溪源｜TWD97 269883/2609624｜距目前值 119.7m｜航點 12\n南三段.gpx｜太平溪源｜TWD97 269942/2609541｜距目前值 196.5m｜航點 15"
+    },
+    {
+      "nodeId": "node:82e77090c06d1fe2aead",
+      "name": "最高峰",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.0593273,
+        23.5914881
+      ],
+      "currentTwd97": [
+        256055,
+        2609784
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "異名／角色候選待確認",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "無雙最高峰",
+          "waypointIndices": [
+            46
+          ],
+          "coordinate": [
+            121.057984,
+            23.591845
+          ],
+          "twd97": [
+            255918,
+            2609824
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "無雙東峰",
+          "nextWaypoint": "無雙山",
+          "distanceFromCurrentMeters": 142.5,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2157
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "無雙山最高峰",
+          "waypointIndices": [
+            47
+          ],
+          "coordinate": [
+            121.059303065911,
+            23.5915495075007
+          ],
+          "twd97": [
+            256052,
+            2609791
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "無雙山東峰",
+          "nextWaypoint": "無雙山基點峰",
+          "distanceFromCurrentMeters": 7.3,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 3082
+          }
+        }
+      ],
+      "candidateSpreadMeters": 138.4,
+      "maximumShiftFromCurrentMeters": 142.5,
+      "neighbours": [
+        "無雙山基點峰",
+        "無雙山東峰"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜無雙最高峰｜TWD97 255918/2609824｜距目前值 142.5m｜航點 47\n南三段.gpx｜無雙山最高峰｜TWD97 256052/2609791｜距目前值 7.3m｜航點 48"
+    },
+    {
+      "nodeId": "node:891637431112fc5688eb",
+      "name": "34K登山口",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "異名／角色候選待確認",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "34K 登山口",
+          "waypointIndices": [
+            4
+          ],
+          "coordinate": [
+            121.2504512,
+            23.56326311
+          ],
+          "twd97": [
+            275567,
+            2606679
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "32K 彈藥庫工寮",
+          "nextWaypoint": "沙武巒草原",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1005
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "瑞隆林道34k",
+          "waypointIndices": [
+            5
+          ],
+          "coordinate": [
+            121.25044780958967,
+            23.563272184143088
+          ],
+          "twd97": [
+            275566,
+            2606680
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "32k彈藥庫",
+          "nextWaypoint": "鐵線斷崖東口",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1979
+          }
+        }
+      ],
+      "candidateSpreadMeters": 1.1,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "32K水泥工寮",
+        "林道盡頭",
+        "鐵線斷崖東口"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜34K 登山口｜TWD97 275567/2606679｜目前未定位｜航點 5\n南三段.gpx｜瑞隆林道34k｜TWD97 275566/2606680｜目前未定位｜航點 6"
+    },
+    {
+      "nodeId": "node:8d079c5429db81492162",
+      "name": "僕落西擴山",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.146158,
+        23.554278
+      ],
+      "currentTwd97": [
+        264921,
+        2605670
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "哈伊拉羅溪中源",
+        "哈伊拉羅溪北源"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "node:927ab4029b6760846cdd",
+      "name": "烏妹浪胖山",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.1533045,
+        23.5717746
+      ],
+      "currentTwd97": [
+        265649,
+        2607608
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "哈伊拉羅溪北源",
+        "烏妹浪胖池"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "node:936c6cffc304b3e72668",
+      "name": "哈伊拉羅溪北源",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.15106690625,
+        23.56352212845122
+      ],
+      "currentTwd97": [
+        265421,
+        2606694
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "僕落西擴山",
+        "烏妹浪胖山"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "node:9d5d4d1d5eb72f6f92cb",
+      "name": "2907峰",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.214351875,
+        23.576419032644107
+      ],
+      "currentTwd97": [
+        271879,
+        2608130
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "2907峰",
+          "waypointIndices": [
+            9
+          ],
+          "coordinate": [
+            121.214002,
+            23.576042
+          ],
+          "twd97": [
+            271844,
+            2608089
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "東源營地",
+          "nextWaypoint": "杜鵑營地",
+          "distanceFromCurrentMeters": 55.0,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1152
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "2907峰",
+          "waypointIndices": [
+            12
+          ],
+          "coordinate": [
+            121.2137896,
+            23.5756326
+          ],
+          "twd97": [
+            271822,
+            2608043
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "5.45k西源營地",
+          "nextWaypoint": "杜鵑營地",
+          "distanceFromCurrentMeters": 104.6,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2121
+          }
+        }
+      ],
+      "candidateSpreadMeters": 50.4,
+      "maximumShiftFromCurrentMeters": 104.6,
+      "neighbours": [
+        "杜鵑營地",
+        "西源營地"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜2907峰｜TWD97 271844/2608089｜距目前值 55.0m｜航點 10\n南三段.gpx｜2907峰｜TWD97 271822/2608043｜距目前值 104.6m｜航點 13"
+    },
+    {
+      "nodeId": "node:9f59facbac44a2e55ce7",
+      "name": "太平溪源營地",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.1766025625,
+        23.583037032644107
+      ],
+      "currentTwd97": [
+        268025,
+        2608858
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "GPX距現值>1km；需優先核對",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "太平溪源營地",
+          "waypointIndices": [
+            12,
+            16
+          ],
+          "coordinate": [
+            121.1938442,
+            23.59065672
+          ],
+          "twd97": [
+            269784,
+            2609704
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "太平溪源",
+          "nextWaypoint": "盧利拉駱山",
+          "distanceFromCurrentMeters": 1950.6,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1224
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "太平溪源營地",
+          "waypointIndices": [
+            15,
+            19
+          ],
+          "coordinate": [
+            121.19384810312391,
+            23.590654850387295
+          ],
+          "twd97": [
+            269784,
+            2609704
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "太平溪源",
+          "nextWaypoint": "盧利拉駱山",
+          "distanceFromCurrentMeters": 1950.9,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2186
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0.4,
+      "maximumShiftFromCurrentMeters": 1950.9,
+      "neighbours": [
+        "三岔路口營地",
+        "太平溪源",
+        "盧利拉駱山"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜太平溪源營地｜TWD97 269784/2609704｜距目前值 1950.6m｜航點 13,17\n南三段.gpx｜太平溪源營地｜TWD97 269784/2609704｜距目前值 1950.9m｜航點 16,20"
+    },
+    {
+      "nodeId": "node:a17ec4e667d55d3d99c3",
+      "name": "33K行車終點",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        120.955653,
+        23.592712847070178
+      ],
+      "currentTwd97": [
+        245474,
+        2609919
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "33.5K大崩塌"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "node:a4c3afd25386960ea875",
+      "name": "東北鞍營地",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "異名／角色候選待確認",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "北鞍營地",
+          "waypointIndices": [
+            31,
+            39
+          ],
+          "coordinate": [
+            121.0909506,
+            23.62691215
+          ],
+          "twd97": [
+            259280,
+            2613709
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "郡東山西鞍營地",
+          "nextWaypoint": "取水岔路",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1706
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "東郡北鞍營地",
+          "waypointIndices": [
+            34,
+            40,
+            42
+          ],
+          "coordinate": [
+            121.09094916699098,
+            23.626912017657034
+          ],
+          "twd97": [
+            259280,
+            2613709
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "營地岔路",
+          "nextWaypoint": "烏達佩山岔路",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2596
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0.1,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "本鄉山",
+        "東郡大山",
+        "東鑾/烏達佩岔路",
+        "郡東營地"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜北鞍營地｜TWD97 259280/2613709｜目前未定位｜航點 32,40\n南三段.gpx｜東郡北鞍營地｜TWD97 259280/2613709｜目前未定位｜航點 35,41,43"
+    },
+    {
+      "nodeId": "node:a884c2a16afbdabf28de",
+      "name": "哈伊拉羅溪南源",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.14567890625,
+        23.528770136505823
+      ],
+      "currentTwd97": [
+        264875,
+        2602845
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "烏可冬克山",
+        "馬利加南東峰山屋"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "node:adc0d7c3c99b1752e68b",
+      "name": "東郡大山",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.092092,
+        23.626734
+      ],
+      "currentTwd97": [
+        259396,
+        2613689
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "東郡大山",
+          "waypointIndices": [
+            40
+          ],
+          "coordinate": [
+            121.092039,
+            23.626736
+          ],
+          "twd97": [
+            259391,
+            2613689
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "北鞍營地",
+          "nextWaypoint": "本鄉山",
+          "distanceFromCurrentMeters": 5.4,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1903
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "東郡大山",
+          "waypointIndices": [
+            41
+          ],
+          "coordinate": [
+            121.092083748574,
+            23.626724182171
+          ],
+          "twd97": [
+            259396,
+            2613688
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "東郡北鞍營地",
+          "nextWaypoint": "東郡北鞍營地",
+          "distanceFromCurrentMeters": 1.4,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2810
+          }
+        }
+      ],
+      "candidateSpreadMeters": 4.7,
+      "maximumShiftFromCurrentMeters": 5.4,
+      "neighbours": [
+        "東北鞍營地"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜東郡大山｜TWD97 259391/2613689｜距目前值 5.4m｜航點 41\n南三段.gpx｜東郡大山｜TWD97 259396/2613688｜距目前值 1.4m｜航點 42"
+    },
+    {
+      "nodeId": "node:aef6e30a59fdc407a2a2",
+      "name": "無雙部落址",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "異名／角色候選待確認",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "無雙社",
+          "waypointIndices": [
+            50
+          ],
+          "coordinate": [
+            121.013361,
+            23.577329
+          ],
+          "twd97": [
+            251364,
+            2608215
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "亞力士營地",
+          "nextWaypoint": "無雙吊橋",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2318
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "無雙部落舊址",
+          "waypointIndices": [
+            51
+          ],
+          "coordinate": [
+            121.0151662,
+            23.5771612
+          ],
+          "twd97": [
+            251548,
+            2608196
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "亞力士營地",
+          "nextWaypoint": "無雙吊橋",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 3247
+          }
+        }
+      ],
+      "candidateSpreadMeters": 184.9,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "亞力士營地",
+        "無雙吊橋"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜無雙社｜TWD97 251364/2608215｜目前未定位｜航點 51\n南三段.gpx｜無雙部落舊址｜TWD97 251548/2608196｜目前未定位｜航點 52"
+    },
+    {
+      "nodeId": "node:b68adbc4f51e0a71c87f",
+      "name": "櫧山",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.0824921,
+        23.5907585
+      ],
+      "currentTwd97": [
+        258419,
+        2609704
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "櫧山",
+          "waypointIndices": [
+            44
+          ],
+          "coordinate": [
+            121.0821963,
+            23.59072478
+          ],
+          "twd97": [
+            258389,
+            2609701
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "櫧山前營地",
+          "nextWaypoint": "無雙東峰",
+          "distanceFromCurrentMeters": 30.4,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2089
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "櫧山",
+          "waypointIndices": [
+            45
+          ],
+          "coordinate": [
+            121.08248579670703,
+            23.590767363467606
+          ],
+          "twd97": [
+            258419,
+            2609705
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "櫧山北鞍營地",
+          "nextWaypoint": "無雙山東峰",
+          "distanceFromCurrentMeters": 1.2,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 3013
+          }
+        }
+      ],
+      "candidateSpreadMeters": 29.9,
+      "maximumShiftFromCurrentMeters": 30.4,
+      "neighbours": [
+        "櫧山北鞍營地",
+        "無雙山東峰"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜櫧山｜TWD97 258389/2609701｜距目前值 30.4m｜航點 45\n南三段.gpx｜櫧山｜TWD97 258419/2609705｜距目前值 1.2m｜航點 46"
+    },
+    {
+      "nodeId": "node:b865066ee7995702c0d4",
+      "name": "盧利拉駱山",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.2002739,
+        23.5960651
+      ],
+      "currentTwd97": [
+        270439,
+        2610304
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "盧利拉駱山",
+          "waypointIndices": [
+            13,
+            15
+          ],
+          "coordinate": [
+            121.2003935,
+            23.59632599
+          ],
+          "twd97": [
+            270451,
+            2610333
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "太平溪源營地",
+          "nextWaypoint": "丹大山",
+          "distanceFromCurrentMeters": 31.5,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1252
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "盧利拉駱山",
+          "waypointIndices": [
+            16
+          ],
+          "coordinate": [
+            121.20041573616737,
+            23.59629942661607
+          ],
+          "twd97": [
+            270454,
+            2610330
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "太平溪源營地",
+          "nextWaypoint": "丹大山",
+          "distanceFromCurrentMeters": 29.8,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2212
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "盧利拉駱山",
+          "waypointIndices": [
+            18
+          ],
+          "coordinate": [
+            121.20041592967044,
+            23.596299602789074
+          ],
+          "twd97": [
+            270454,
+            2610330
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "丹大山",
+          "nextWaypoint": "太平溪源營地",
+          "distanceFromCurrentMeters": 29.8,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2213
+          }
+        }
+      ],
+      "candidateSpreadMeters": 3.7,
+      "maximumShiftFromCurrentMeters": 31.5,
+      "neighbours": [
+        "丹大山",
+        "太平溪源營地"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜盧利拉駱山｜TWD97 270451/2610333｜距目前值 31.5m｜航點 14,16\n南三段.gpx｜盧利拉駱山｜TWD97 270454/2610330｜距目前值 29.8m｜航點 17\n南三段.gpx｜盧利拉駱山｜TWD97 270454/2610330｜距目前值 29.8m｜航點 19"
+    },
+    {
+      "nodeId": "node:bc117dbb33b03fe2cddf",
+      "name": "沙武巒草原",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "沙武巒草原",
+          "waypointIndices": [
+            5
+          ],
+          "coordinate": [
+            121.2503529,
+            23.56683973
+          ],
+          "twd97": [
+            275556,
+            2607076
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "34K 登山口",
+          "nextWaypoint": "水點",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1022
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "方便池",
+        "林道盡頭"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜沙武巒草原｜TWD97 275556/2607076｜目前未定位｜航點 6"
+    },
+    {
+      "nodeId": "node:bce5fdf63beb2b9d5c29",
+      "name": "無雙山基點峰",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.0571492,
+        23.591011
+      ],
+      "currentTwd97": [
+        255833,
+        2609731
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "異名／角色候選待確認",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "無雙山",
+          "waypointIndices": [
+            47
+          ],
+          "coordinate": [
+            121.057191,
+            23.591001
+          ],
+          "twd97": [
+            255837,
+            2609730
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "無雙最高峰",
+          "nextWaypoint": "水源",
+          "distanceFromCurrentMeters": 4.4,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2160
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "無雙山基點峰",
+          "waypointIndices": [
+            48
+          ],
+          "coordinate": [
+            121.057166640608,
+            23.5910284031043
+          ],
+          "twd97": [
+            255834,
+            2609733
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "無雙山最高峰",
+          "nextWaypoint": "最後水源",
+          "distanceFromCurrentMeters": 2.6,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 3092
+          }
+        }
+      ],
+      "candidateSpreadMeters": 3.9,
+      "maximumShiftFromCurrentMeters": 4.4,
+      "neighbours": [
+        "最後水源",
+        "最高峰"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜無雙山｜TWD97 255837/2609730｜距目前值 4.4m｜航點 48\n南三段.gpx｜無雙山基點峰｜TWD97 255834/2609733｜距目前值 2.6m｜航點 49"
+    },
+    {
+      "nodeId": "node:bd25adc467b72fa6656f",
+      "name": "天南可蘭山",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.1303615,
+        23.6086318
+      ],
+      "currentTwd97": [
+        263303,
+        2611687
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "天南可蘭山",
+          "waypointIndices": [
+            27
+          ],
+          "coordinate": [
+            121.1302013,
+            23.60845264
+          ],
+          "twd97": [
+            263287,
+            2611668
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "望崖山",
+          "nextWaypoint": "可樂可樂安山",
+          "distanceFromCurrentMeters": 25.8,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1591
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": 25.8,
+      "neighbours": [
+        "天南可蘭/望崖岔路"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜天南可蘭山｜TWD97 263287/2611668｜距目前值 25.8m｜航點 28"
+    },
+    {
+      "nodeId": "node:c004ec6758328d3ce1cb",
+      "name": "無雙吊橋",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.01053396875,
+        23.576630032644108
+      ],
+      "currentTwd97": [
+        251075,
+        2608137
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "無雙吊橋",
+          "waypointIndices": [
+            51
+          ],
+          "coordinate": [
+            121.010619,
+            23.577113
+          ],
+          "twd97": [
+            251084,
+            2608191
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "無雙社",
+          "nextWaypoint": "屋瓦拉鼻西營地",
+          "distanceFromCurrentMeters": 54.4,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2329
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "無雙吊橋",
+          "waypointIndices": [
+            52
+          ],
+          "coordinate": [
+            121.010627746582,
+            23.5771348002162
+          ],
+          "twd97": [
+            251085,
+            2608193
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "無雙部落舊址",
+          "nextWaypoint": "烏瓦拉鼻溪營地",
+          "distanceFromCurrentMeters": 56.9,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 3261
+          }
+        }
+      ],
+      "candidateSpreadMeters": 2.6,
+      "maximumShiftFromCurrentMeters": 56.9,
+      "neighbours": [
+        "烏瓦拉鼻溪",
+        "無雙部落址"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜無雙吊橋｜TWD97 251084/2608191｜距目前值 54.4m｜航點 52\n南三段.gpx｜無雙吊橋｜TWD97 251085/2608193｜距目前值 56.9m｜航點 53"
+    },
+    {
+      "nodeId": "node:c25918006df5f04534c8",
+      "name": "馬路巴拉讓山",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.1827969,
+        23.5813811
+      ],
+      "currentTwd97": [
+        268658,
+        2608675
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "馬路巴拉讓山",
+          "waypointIndices": [
+            20
+          ],
+          "coordinate": [
+            121.1828013,
+            23.58129007
+          ],
+          "twd97": [
+            268658,
+            2608665
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "三岔路營地",
+          "nextWaypoint": "崖邊營地",
+          "distanceFromCurrentMeters": 10.1,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1402
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "馬路巴拉讓山",
+          "waypointIndices": [
+            23
+          ],
+          "coordinate": [
+            121.18278109172229,
+            23.58129835226522
+          ],
+          "twd97": [
+            268656,
+            2608666
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "三岔路營地",
+          "nextWaypoint": "東鞍崖邊營地",
+          "distanceFromCurrentMeters": 9.3,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2347
+          }
+        }
+      ],
+      "candidateSpreadMeters": 2.3,
+      "maximumShiftFromCurrentMeters": 10.1,
+      "neighbours": [
+        "三岔路口營地",
+        "東鞍營地"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜馬路巴拉讓山｜TWD97 268658/2608665｜距目前值 10.1m｜航點 21\n南三段.gpx｜馬路巴拉讓山｜TWD97 268656/2608666｜距目前值 9.3m｜航點 24"
+    },
+    {
+      "nodeId": "node:c61990dd30e7cb3d8213",
+      "name": "43K工寮",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        120.97142165625,
+        23.587408847070176
+      ],
+      "currentTwd97": [
+        247083,
+        2609331
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "43K 工寮",
+          "waypointIndices": [
+            54
+          ],
+          "coordinate": [
+            120.971454,
+            23.58752
+          ],
+          "twd97": [
+            247087,
+            2609344
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "45.3K 無雙山登山口",
+          "nextWaypoint": "36K 支線岔路",
+          "distanceFromCurrentMeters": 12.8,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2454
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "43k工寮",
+          "waypointIndices": [
+            55
+          ],
+          "coordinate": [
+            120.971531226761,
+            23.5875182686252
+          ],
+          "twd97": [
+            247094,
+            2609343
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "45.3k登山口",
+          "nextWaypoint": "39.6k大崩塌",
+          "distanceFromCurrentMeters": 16.5,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 3376
+          }
+        }
+      ],
+      "candidateSpreadMeters": 7.9,
+      "maximumShiftFromCurrentMeters": 16.5,
+      "neighbours": [
+        "39.6K大崩塌",
+        "45.3K登山口"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜43K 工寮｜TWD97 247087/2609344｜距目前值 12.8m｜航點 55\n南三段.gpx｜43k工寮｜TWD97 247094/2609343｜距目前值 16.5m｜航點 56"
+    },
+    {
+      "nodeId": "node:c8870812bd546115bac5",
+      "name": "三岔路口營地",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "三岔路營地",
+          "waypointIndices": [
+            17,
+            19
+          ],
+          "coordinate": [
+            121.1915141,
+            23.58037184
+          ],
+          "twd97": [
+            269548,
+            2608565
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "太平溪源營地",
+          "nextWaypoint": "內嶺爾山",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1363
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "三岔路營地",
+          "waypointIndices": [
+            20,
+            22
+          ],
+          "coordinate": [
+            121.19151568292182,
+            23.580375113125285
+          ],
+          "twd97": [
+            269548,
+            2608565
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "太平溪源營地",
+          "nextWaypoint": "內嶺爾山",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2312
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0.4,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "內嶺爾山",
+        "太平溪源營地",
+        "馬路巴拉讓山"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜三岔路營地｜TWD97 269548/2608565｜目前未定位｜航點 18,20\n南三段.gpx｜三岔路營地｜TWD97 269548/2608565｜目前未定位｜航點 21,23"
+    },
+    {
+      "nodeId": "node:c9115d117bdcc33b8c0b",
+      "name": "東巒大山",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.081564,
+        23.648667
+      ],
+      "currentTwd97": [
+        258321,
+        2616117
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "東巒大山",
+          "waypointIndices": [
+            36
+          ],
+          "coordinate": [
+            121.0812979,
+            23.64865654
+          ],
+          "twd97": [
+            258294,
+            2616116
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "烏達佩山岔路",
+          "nextWaypoint": "烏達佩山岔路",
+          "distanceFromCurrentMeters": 27.1,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1809
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "東巒大山",
+          "waypointIndices": [
+            38
+          ],
+          "coordinate": [
+            121.081371002784,
+            23.6486961879805
+          ],
+          "twd97": [
+            258301,
+            2616120
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "烏達佩山岔路",
+          "nextWaypoint": "烏達佩山岔路",
+          "distanceFromCurrentMeters": 19.9,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2708
+          }
+        }
+      ],
+      "candidateSpreadMeters": 8.7,
+      "maximumShiftFromCurrentMeters": 27.1,
+      "neighbours": [
+        "東鑾/烏達佩岔路"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜東巒大山｜TWD97 258294/2616116｜距目前值 27.1m｜航點 37\n南三段.gpx｜東巒大山｜TWD97 258301/2616120｜距目前值 19.9m｜航點 39"
+    },
+    {
+      "nodeId": "node:cb277db7b164105e3c17",
+      "name": "三岔路口",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "三岔路口",
+          "waypointIndices": [
+            7
+          ],
+          "coordinate": [
+            121.2308374,
+            23.58101191
+          ],
+          "twd97": [
+            273561,
+            2608642
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "水點",
+          "nextWaypoint": "東源營地",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1112
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "東源營地",
+        "松林營地"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜三岔路口｜TWD97 273561/2608642｜目前未定位｜航點 8"
+    },
+    {
+      "nodeId": "node:d03e5cea91ce41e0ca2a",
+      "name": "鐵線斷崖西口",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "鐵線斷崖西口",
+          "waypointIndices": [
+            7
+          ],
+          "coordinate": [
+            121.229119067001,
+            23.575590975781
+          ],
+          "twd97": [
+            273387,
+            2608041
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "鐵線斷崖東口",
+          "nextWaypoint": "4.9k",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2069
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "松林營地",
+        "鐵線斷崖東口"
+      ],
+      "gpxNote": "南三段.gpx｜鐵線斷崖西口｜TWD97 273387/2608041｜目前未定位｜航點 8"
+    },
+    {
+      "nodeId": "node:dee598e1b2437f4ec104",
+      "name": "32K水泥工寮",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.2531171875,
+        23.556532128451217
+      ],
+      "currentTwd97": [
+        275840,
+        2605935
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "異名／角色候選待確認",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "32K 彈藥庫工寮",
+          "waypointIndices": [
+            3
+          ],
+          "coordinate": [
+            121.2532023,
+            23.55629696
+          ],
+          "twd97": [
+            275849,
+            2605909
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "28K 工寮",
+          "nextWaypoint": "34K 登山口",
+          "distanceFromCurrentMeters": 27.6,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 985
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "32k彈藥庫",
+          "waypointIndices": [
+            4
+          ],
+          "coordinate": [
+            121.253055848252,
+            23.5566112689257
+          ],
+          "twd97": [
+            275834,
+            2605943
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "28k工寮",
+          "nextWaypoint": "瑞隆林道34k",
+          "distanceFromCurrentMeters": 10.8,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1958
+          }
+        }
+      ],
+      "candidateSpreadMeters": 38.0,
+      "maximumShiftFromCurrentMeters": 27.6,
+      "neighbours": [
+        "28K水泥工寮",
+        "34K登山口"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜32K 彈藥庫工寮｜TWD97 275849/2605909｜距目前值 27.6m｜航點 4\n南三段.gpx｜32k彈藥庫｜TWD97 275834/2605943｜距目前值 10.8m｜航點 5"
+    },
+    {
+      "nodeId": "node:e9149e15effc99bc37f7",
+      "name": "郡東營地",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "異名／角色候選待確認",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "郡東山西鞍營地",
+          "waypointIndices": [
+            30
+          ],
+          "coordinate": [
+            121.1020841,
+            23.6276873
+          ],
+          "twd97": [
+            260416,
+            2613795
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "郡東山",
+          "nextWaypoint": "北鞍營地",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1683
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "營地岔路",
+          "waypointIndices": [
+            33
+          ],
+          "coordinate": [
+            121.10222553223406,
+            23.6276700024507
+          ],
+          "twd97": [
+            260430,
+            2613793
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "郡東山",
+          "nextWaypoint": "東郡北鞍營地",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2580
+          }
+        }
+      ],
+      "candidateSpreadMeters": 14.5,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "東北鞍營地",
+        "郡東山"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜郡東山西鞍營地｜TWD97 260416/2613795｜目前未定位｜航點 31\n南三段.gpx｜營地岔路｜TWD97 260430/2613793｜目前未定位｜航點 34"
+    },
+    {
+      "nodeId": "node:eaf2fc50ab8c1afa9051",
+      "name": "紅葉村",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "依政策不定位；候選保留討論",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "node:ed8a1c3cd47fa986d90e",
+      "name": "最後水源",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.04846228125,
+        23.574952032644106
+      ],
+      "currentTwd97": [
+        254947,
+        2607952
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "最後水源",
+          "waypointIndices": [
+            49
+          ],
+          "coordinate": [
+            121.04832291286311,
+            23.57488124486744
+          ],
+          "twd97": [
+            254932,
+            2607945
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "無雙山基點峰",
+          "nextWaypoint": "亞力士營地",
+          "distanceFromCurrentMeters": 16.2,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 3148
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": 16.2,
+      "neighbours": [
+        "亞力士營地",
+        "無雙山基點峰"
+      ],
+      "gpxNote": "南三段.gpx｜最後水源｜TWD97 254932/2607945｜距目前值 16.2m｜航點 50"
+    },
+    {
+      "nodeId": "node:ef56761122345906961b",
+      "name": "14.6K水泥路止",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "異名／角色候選待確認",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "14.5K 瑞穗林道",
+          "waypointIndices": [
+            0
+          ],
+          "coordinate": [
+            121.281421,
+            23.512987
+          ],
+          "twd97": [
+            278739,
+            2601118
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "",
+          "nextWaypoint": "19K 水泥橋",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 0
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "瑞穗林道14.6k行車終點",
+          "waypointIndices": [
+            0
+          ],
+          "coordinate": [
+            121.28242631679075,
+            23.500960018246232
+          ],
+          "twd97": [
+            278844,
+            2599786
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "",
+          "nextWaypoint": "19.3k水泥橋",
+          "distanceFromCurrentMeters": null,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 0
+          }
+        }
+      ],
+      "candidateSpreadMeters": 1341.3,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "19.3K水泥橋"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜14.5K 瑞穗林道｜TWD97 278739/2601118｜目前未定位｜航點 1\n南三段.gpx｜瑞穗林道14.6k行車終點｜TWD97 278844/2599786｜目前未定位｜航點 1"
+    },
+    {
+      "nodeId": "node:f0bb47a73379bfdf496a",
+      "name": "天南可蘭/望崖岔路",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.1291378,
+        23.6081396
+      ],
+      "currentTwd97": [
+        263178,
+        2611633
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "異名／角色候選待確認",
+      "candidates": [
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "天南可蘭山岔路",
+          "waypointIndices": [
+            30
+          ],
+          "coordinate": [
+            121.129159584431,
+            23.608174600702
+          ],
+          "twd97": [
+            263180,
+            2611637
+          ],
+          "matchBasis": "明列異名／標示角色假說；需人工確認",
+          "previousWaypoint": "望崖山",
+          "nextWaypoint": "可樂可樂安山",
+          "distanceFromCurrentMeters": 4.5,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2517
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": 4.5,
+      "neighbours": [
+        "可樂可樂安山",
+        "天南可蘭山",
+        "望崖山"
+      ],
+      "gpxNote": "南三段.gpx｜天南可蘭山岔路｜TWD97 263180/2611637｜距目前值 4.5m｜航點 31"
+    },
+    {
+      "nodeId": "node:f0e2f3dceb1f3b093fe7",
+      "name": "哈伊拉羅溪中源",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.15070390625,
+        23.544817128451218
+      ],
+      "currentTwd97": [
+        265386,
+        2604622
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "僕落西擴山",
+        "烏可冬克山"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "node:f33cee319fc38118e03c",
+      "name": "東源營地",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.22962453125,
+        23.582339032644107
+      ],
+      "currentTwd97": [
+        273437,
+        2608788
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "東源營地",
+          "waypointIndices": [
+            8
+          ],
+          "coordinate": [
+            121.2297099,
+            23.58207744
+          ],
+          "twd97": [
+            273446,
+            2608759
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "三岔路口",
+          "nextWaypoint": "2907峰",
+          "distanceFromCurrentMeters": 30.4,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1118
+          }
+        }
+      ],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": 30.4,
+      "neighbours": [
+        "三岔路口",
+        "西源營地"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜東源營地｜TWD97 273446/2608759｜距目前值 30.4m｜航點 9"
+    },
+    {
+      "nodeId": "node:f3ea090758bb1302bc29",
+      "name": "林道盡頭",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": null,
+      "currentTwd97": [
+        "",
+        ""
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "34K登山口",
+        "沙武巒草原"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "node:fac669a79a9a25b63056",
+      "name": "杜鵑營地",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.2046453,
+        23.5841137
+      ],
+      "currentTwd97": [
+        270887,
+        2608981
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "杜鵑營地",
+          "waypointIndices": [
+            10
+          ],
+          "coordinate": [
+            121.2047056,
+            23.58399849
+          ],
+          "twd97": [
+            270894,
+            2608968
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "2907峰",
+          "nextWaypoint": "太平溪源",
+          "distanceFromCurrentMeters": 14.2,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1192
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "杜鵑營地",
+          "waypointIndices": [
+            13
+          ],
+          "coordinate": [
+            121.2048309,
+            23.584159
+          ],
+          "twd97": [
+            270906,
+            2608986
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "2907峰",
+          "nextWaypoint": "太平溪源",
+          "distanceFromCurrentMeters": 19.6,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2157
+          }
+        }
+      ],
+      "candidateSpreadMeters": 21.9,
+      "maximumShiftFromCurrentMeters": 19.6,
+      "neighbours": [
+        "2907峰",
+        "太平溪源"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜杜鵑營地｜TWD97 270894/2608968｜距目前值 14.2m｜航點 11\n南三段.gpx｜杜鵑營地｜TWD97 270906/2608986｜距目前值 19.6m｜航點 14"
+    },
+    {
+      "nodeId": "node:fda449ba3440ad785b68",
+      "name": "斷稜東山",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.1474417,
+        23.5946847
+      ],
+      "currentTwd97": [
+        265048,
+        2610145
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "斷稜東山",
+          "waypointIndices": [
+            23
+          ],
+          "coordinate": [
+            121.147016,
+            23.5948897
+          ],
+          "twd97": [
+            265004,
+            2610167
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "義西請馬至山",
+          "nextWaypoint": "裡門山",
+          "distanceFromCurrentMeters": 49.0,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1492
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "斷稜東山",
+          "waypointIndices": [
+            26
+          ],
+          "coordinate": [
+            121.14745235087,
+            23.5946269308804
+          ],
+          "twd97": [
+            265049,
+            2610138
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "義西請馬至山",
+          "nextWaypoint": "裡門山",
+          "distanceFromCurrentMeters": 6.5,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2421
+          }
+        }
+      ],
+      "candidateSpreadMeters": 53.2,
+      "maximumShiftFromCurrentMeters": 49.0,
+      "neighbours": [
+        "義西請馬至山",
+        "裡門山"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜斷稜東山｜TWD97 265004/2610167｜距目前值 49.0m｜航點 24\n南三段.gpx｜斷稜東山｜TWD97 265049/2610138｜距目前值 6.5m｜航點 27"
+    },
+    {
+      "nodeId": "node:ff06147be71a4346fbfc",
+      "name": "望崖山",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.1283231,
+        23.6009289
+      ],
+      "currentTwd97": [
+        263096,
+        2610834
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "具名候選待確認；尚未套用",
+      "candidates": [
+        {
+          "file": "南三段_Joyhike.gpx",
+          "fileSha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+          "waypointName": "望崖山",
+          "waypointIndices": [
+            26
+          ],
+          "coordinate": [
+            121.128336,
+            23.600943
+          ],
+          "twd97": [
+            263097,
+            2610836
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "丹大溪源營地",
+          "nextWaypoint": "天南可蘭山",
+          "distanceFromCurrentMeters": 2.0,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 1570
+          }
+        },
+        {
+          "file": "南三段.gpx",
+          "fileSha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+          "waypointName": "望崖山",
+          "waypointIndices": [
+            29
+          ],
+          "coordinate": [
+            121.128471982123,
+            23.6009781898408
+          ],
+          "twd97": [
+            263111,
+            2610840
+          ],
+          "matchBasis": "原名／既有別名吻合；仍是待確認候選",
+          "previousWaypoint": "丹大溪源營地",
+          "nextWaypoint": "天南可蘭山岔路",
+          "distanceFromCurrentMeters": 16.1,
+          "nearestTrackSample": {
+            "distanceMeters": 0.0,
+            "segment": 0,
+            "pointIndex": 2504
+          }
+        }
+      ],
+      "candidateSpreadMeters": 14.4,
+      "maximumShiftFromCurrentMeters": 16.1,
+      "neighbours": [
+        "丹大溪源營地",
+        "天南可蘭/望崖岔路"
+      ],
+      "gpxNote": "南三段_Joyhike.gpx｜望崖山｜TWD97 263097/2610836｜距目前值 2.0m｜航點 27\n南三段.gpx｜望崖山｜TWD97 263111/2610840｜距目前值 16.1m｜航點 30"
+    },
+    {
+      "nodeId": "shared:cw-v07-001",
+      "name": "16.5K行車終點",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.2576675,
+        23.4185847
+      ],
+      "currentTwd97": [
+        276332,
+        2590659
+      ],
+      "manualCoordinate": [
+        121.2576675,
+        23.4185847
+      ],
+      "manualTwd97": [
+        276332,
+        2590659
+      ],
+      "status": "手填優先；GPX僅備註",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "下切溪床點"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "shared:cw-v07-002",
+      "name": "23K望鄉工作站",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        120.9280568,
+        23.619051
+      ],
+      "currentTwd97": [
+        242659,
+        2612837
+      ],
+      "manualCoordinate": [
+        120.9280568,
+        23.619051
+      ],
+      "manualTwd97": [
+        242659,
+        2612837
+      ],
+      "status": "手填優先；GPX僅備註",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "shared:cw-v07-021",
+      "name": "十八重溪橋",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        120.8819606,
+        23.658529
+      ],
+      "currentTwd97": [
+        237959,
+        2617212
+      ],
+      "manualCoordinate": [
+        120.8819606,
+        23.658529
+      ],
+      "manualTwd97": [
+        237959,
+        2617212
+      ],
+      "status": "手填優先；GPX僅備註",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "shared:cw-v07-040",
+      "name": "太平谷南口",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.203651875,
+        23.45353033155035
+      ],
+      "currentTwd97": [
+        270806,
+        2594520
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "下切溪床點",
+        "馬布谷山屋"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "shared:cw-v07-078",
+      "name": "馬利加南山東峰",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.1347,
+        23.5147
+      ],
+      "currentTwd97": [
+        263756,
+        2601286
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "馬利加南東峰山屋",
+        "馬布谷山屋"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "shared:cw-v07-079",
+      "name": "馬利加南東峰山屋",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.13202,
+        23.51546
+      ],
+      "currentTwd97": [
+        263482,
+        2601370
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "哈伊拉羅溪南源",
+        "馬利加南山東峰"
+      ],
+      "gpxNote": ""
+    },
+    {
+      "nodeId": "shared:cw-v07-080",
+      "name": "馬布谷山屋",
+      "groups": [
+        "G15｜丹大東郡"
+      ],
+      "coordinate": [
+        121.1615735,
+        23.48128467
+      ],
+      "currentTwd97": [
+        266504,
+        2597588
+      ],
+      "manualCoordinate": null,
+      "manualTwd97": [
+        "",
+        ""
+      ],
+      "status": "四檔未找到具名對應；不猜點",
+      "candidates": [],
+      "candidateSpreadMeters": 0,
+      "maximumShiftFromCurrentMeters": null,
+      "neighbours": [
+        "太平谷南口",
+        "馬利加南山東峰"
+      ],
+      "gpxNote": ""
+    }
+  ],
+  "unmatchedWaypoints": [
+    {
+      "file": "20261111-萬榮林道上六順山.gpx",
+      "sha256": "7d607c4b4c9059d9cfc548c8008daa0643215d9ba010029d3808023a3ad75a99",
+      "index": 0,
+      "name": "萬榮林道12.6k 萬善堂",
+      "coordinate": [
+        121.358080497245,
+        23.7201398781826
+      ]
+    },
+    {
+      "file": "20261111-萬榮林道上六順山.gpx",
+      "sha256": "7d607c4b4c9059d9cfc548c8008daa0643215d9ba010029d3808023a3ad75a99",
+      "index": 1,
+      "name": "21k台電工寮",
+      "coordinate": [
+        121.344927721556,
+        23.7527134328061
+      ]
+    },
+    {
+      "file": "20261111-萬榮林道上六順山.gpx",
+      "sha256": "7d607c4b4c9059d9cfc548c8008daa0643215d9ba010029d3808023a3ad75a99",
+      "index": 2,
+      "name": "31k統帥石礦工寮",
+      "coordinate": [
+        121.314650064784,
+        23.7330273867056
+      ]
+    },
+    {
+      "file": "20261111-萬榮林道上六順山.gpx",
+      "sha256": "7d607c4b4c9059d9cfc548c8008daa0643215d9ba010029d3808023a3ad75a99",
+      "index": 11,
+      "name": "六順山登山口",
+      "coordinate": [
+        121.239666855419,
+        23.7243387362713
+      ]
+    },
+    {
+      "file": "20261111-萬榮林道上六順山.gpx",
+      "sha256": "7d607c4b4c9059d9cfc548c8008daa0643215d9ba010029d3808023a3ad75a99",
+      "index": 20,
+      "name": "31k統帥石礦工寮",
+      "coordinate": [
+        121.314650064784,
+        23.7330273867056
+      ]
+    },
+    {
+      "file": "20261111-萬榮林道上六順山.gpx",
+      "sha256": "7d607c4b4c9059d9cfc548c8008daa0643215d9ba010029d3808023a3ad75a99",
+      "index": 21,
+      "name": "21k台電工寮",
+      "coordinate": [
+        121.344927721556,
+        23.7527134328061
+      ]
+    },
+    {
+      "file": "20261111-萬榮林道上六順山.gpx",
+      "sha256": "7d607c4b4c9059d9cfc548c8008daa0643215d9ba010029d3808023a3ad75a99",
+      "index": 22,
+      "name": "萬榮林道12.6k 萬善堂",
+      "coordinate": [
+        121.358080497245,
+        23.7201398781826
+      ]
+    },
+    {
+      "file": "南三段_Joyhike.gpx",
+      "sha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+      "index": 6,
+      "name": "水點",
+      "coordinate": [
+        121.2447382,
+        23.5803742
+      ]
+    },
+    {
+      "file": "南三段_Joyhike.gpx",
+      "sha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+      "index": 32,
+      "name": "取水岔路",
+      "coordinate": [
+        121.0855373,
+        23.63583673
+      ]
+    },
+    {
+      "file": "南三段_Joyhike.gpx",
+      "sha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+      "index": 38,
+      "name": "取水岔路",
+      "coordinate": [
+        121.0855373,
+        23.63583673
+      ]
+    },
+    {
+      "file": "南三段_Joyhike.gpx",
+      "sha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+      "index": 43,
+      "name": "櫧山前營地",
+      "coordinate": [
+        121.0852783,
+        23.59397393
+      ]
+    },
+    {
+      "file": "南三段_Joyhike.gpx",
+      "sha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+      "index": 48,
+      "name": "水源",
+      "coordinate": [
+        121.048598,
+        23.57481
+      ]
+    },
+    {
+      "file": "南三段_Joyhike.gpx",
+      "sha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+      "index": 55,
+      "name": "36K 支線岔路",
+      "coordinate": [
+        120.967895,
+        23.611091
+      ]
+    },
+    {
+      "file": "南三段_Joyhike.gpx",
+      "sha256": "2102872d41b679a2e91e828295e6e1ca5d9f0a3aca071446b0f89cd446d26d32",
+      "index": 56,
+      "name": "33K 郡大林道",
+      "coordinate": [
+        120.955766,
+        23.592581
+      ]
+    },
+    {
+      "file": "七彩湖｜六順山_Joyhike.gpx",
+      "sha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+      "index": 1,
+      "name": "二分所管制站",
+      "coordinate": [
+        121.0452249,
+        23.7786522
+      ]
+    },
+    {
+      "file": "七彩湖｜六順山_Joyhike.gpx",
+      "sha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+      "index": 2,
+      "name": "三分所",
+      "coordinate": [
+        121.0641952,
+        23.75603025
+      ]
+    },
+    {
+      "file": "七彩湖｜六順山_Joyhike.gpx",
+      "sha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+      "index": 3,
+      "name": "六分所",
+      "coordinate": [
+        121.1453587,
+        23.75076858
+      ]
+    },
+    {
+      "file": "七彩湖｜六順山_Joyhike.gpx",
+      "sha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+      "index": 4,
+      "name": "保線路捷徑入口",
+      "coordinate": [
+        121.16461,
+        23.76168463
+      ]
+    },
+    {
+      "file": "七彩湖｜六順山_Joyhike.gpx",
+      "sha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+      "index": 5,
+      "name": "丹大林道主線",
+      "coordinate": [
+        121.1833147,
+        23.76975331
+      ]
+    },
+    {
+      "file": "七彩湖｜六順山_Joyhike.gpx",
+      "sha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+      "index": 6,
+      "name": "隧道 1",
+      "coordinate": [
+        121.184084,
+        23.769674
+      ]
+    },
+    {
+      "file": "七彩湖｜六順山_Joyhike.gpx",
+      "sha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+      "index": 7,
+      "name": "隧道 2",
+      "coordinate": [
+        121.1869185,
+        23.77167847
+      ]
+    },
+    {
+      "file": "七彩湖｜六順山_Joyhike.gpx",
+      "sha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+      "index": 8,
+      "name": "隧道 3",
+      "coordinate": [
+        121.190325,
+        23.771792
+      ]
+    },
+    {
+      "file": "七彩湖｜六順山_Joyhike.gpx",
+      "sha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+      "index": 11,
+      "name": "七彩湖營地",
+      "coordinate": [
+        121.233284,
+        23.751237
+      ]
+    },
+    {
+      "file": "七彩湖｜六順山_Joyhike.gpx",
+      "sha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+      "index": 15,
+      "name": "七彩湖營地",
+      "coordinate": [
+        121.233284,
+        23.751237
+      ]
+    },
+    {
+      "file": "七彩湖｜六順山_Joyhike.gpx",
+      "sha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+      "index": 21,
+      "name": "七彩湖營地",
+      "coordinate": [
+        121.233284,
+        23.751237
+      ]
+    },
+    {
+      "file": "七彩湖｜六順山_Joyhike.gpx",
+      "sha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+      "index": 24,
+      "name": "隧道 3",
+      "coordinate": [
+        121.190325,
+        23.771792
+      ]
+    },
+    {
+      "file": "七彩湖｜六順山_Joyhike.gpx",
+      "sha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+      "index": 25,
+      "name": "隧道 2",
+      "coordinate": [
+        121.1869185,
+        23.77167847
+      ]
+    },
+    {
+      "file": "七彩湖｜六順山_Joyhike.gpx",
+      "sha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+      "index": 26,
+      "name": "隧道 1",
+      "coordinate": [
+        121.184084,
+        23.769674
+      ]
+    },
+    {
+      "file": "七彩湖｜六順山_Joyhike.gpx",
+      "sha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+      "index": 27,
+      "name": "丹大林道主線",
+      "coordinate": [
+        121.1833147,
+        23.76975331
+      ]
+    },
+    {
+      "file": "七彩湖｜六順山_Joyhike.gpx",
+      "sha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+      "index": 28,
+      "name": "保線路捷徑入口",
+      "coordinate": [
+        121.16461,
+        23.76168463
+      ]
+    },
+    {
+      "file": "七彩湖｜六順山_Joyhike.gpx",
+      "sha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+      "index": 29,
+      "name": "六分所",
+      "coordinate": [
+        121.1453587,
+        23.75076858
+      ]
+    },
+    {
+      "file": "七彩湖｜六順山_Joyhike.gpx",
+      "sha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+      "index": 30,
+      "name": "三分所",
+      "coordinate": [
+        121.0641952,
+        23.75603025
+      ]
+    },
+    {
+      "file": "七彩湖｜六順山_Joyhike.gpx",
+      "sha256": "f919e916f94e4dbc0fef93f545c2a84ef830d2e7affccc78f62dcd6d5c36e081",
+      "index": 31,
+      "name": "二分所管制站",
+      "coordinate": [
+        121.0452249,
+        23.7786522
+      ]
+    },
+    {
+      "file": "南三段.gpx",
+      "sha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+      "index": 8,
+      "name": "4.9k",
+      "coordinate": [
+        121.23089045318181,
+        23.580983826200708
+      ]
+    },
+    {
+      "file": "南三段.gpx",
+      "sha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+      "index": 9,
+      "name": "5.1k三岔路口",
+      "coordinate": [
+        121.23076626223718,
+        23.581731720232796
+      ]
+    },
+    {
+      "file": "南三段.gpx",
+      "sha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+      "index": 10,
+      "name": "5.3k東源營地",
+      "coordinate": [
+        121.22950632614499,
+        23.58214964604061
+      ]
+    },
+    {
+      "file": "南三段.gpx",
+      "sha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+      "index": 11,
+      "name": "5.45k西源營地",
+      "coordinate": [
+        121.22878082311286,
+        23.58225041741852
+      ]
+    },
+    {
+      "file": "南三段.gpx",
+      "sha256": "16ed7b6fd677784cbbbe1b3fdd2825860c1f877a5ad02107e58056dfb95f8562",
+      "index": 58,
+      "name": "郡大林道32k登山口",
+      "coordinate": [
+        120.946784462719,
+        23.5960874565317
+      ]
+    }
+  ],
+  "policy": "Manual coordinates prevail. All GPX matches are discussion candidates, not accepted identities; no track time or straight-line geometry is imported."
+}

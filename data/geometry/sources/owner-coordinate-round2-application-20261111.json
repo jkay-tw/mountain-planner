@@ -1,0 +1,1096 @@
+{
+  "date": "2026-11-11",
+  "sourceUrl": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit",
+  "snapshotSha256": "973992454b573535028f40edd6ead9ba407194d6ec3fdf02438a3bf75436b9b7",
+  "ownerAmendments": {
+    "node:c25918006df5f04534c8": {
+      "action": "retain",
+      "x": 268658,
+      "y": 2608675,
+      "basis": "對話明確指示X、Y都不修改；訊息六位數Y不作新值"
+    }
+  },
+  "coordinates": [
+    {
+      "nodeId": "g14-001",
+      "name": "2603公尺鞍部",
+      "coordinate": [
+        121.2279555,
+        23.6437597
+      ],
+      "twd97": [
+        273256,
+        2615590
+      ],
+      "previousOverride": {
+        "reviewId": "Q084",
+        "nodeId": "g14-001",
+        "name": "2603公尺鞍部",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "g14-002",
+      "name": "2761最低鞍部",
+      "coordinate": [
+        121.2410496,
+        23.7071389
+      ],
+      "twd97": [
+        274580,
+        2622611
+      ],
+      "previousOverride": {
+        "reviewId": "Q085",
+        "nodeId": "g14-002",
+        "name": "2761最低鞍部",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "g14-003",
+      "name": "2780草原黑水塘",
+      "coordinate": [
+        121.2516009,
+        23.7323425
+      ],
+      "twd97": [
+        275651,
+        2625404
+      ],
+      "previousOverride": {
+        "reviewId": "Q086",
+        "nodeId": "g14-003",
+        "name": "2780草原黑水塘",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "g14-004",
+      "name": "2813鞍營地",
+      "coordinate": [
+        121.2391777,
+        23.7131647
+      ],
+      "twd97": [
+        274388,
+        2623278
+      ],
+      "previousOverride": {
+        "reviewId": "Q087",
+        "nodeId": "g14-004",
+        "name": "2813鞍營地",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "g14-005",
+      "name": "2833公尺鞍部",
+      "coordinate": [
+        121.2247507,
+        23.62677
+      ],
+      "twd97": [
+        272932,
+        2613708
+      ],
+      "previousOverride": {
+        "reviewId": "Q088",
+        "nodeId": "g14-005",
+        "name": "2833公尺鞍部",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "g14-008",
+      "name": "3255公尺峰",
+      "coordinate": [
+        121.2172135,
+        23.6145903
+      ],
+      "twd97": [
+        272165,
+        2612358
+      ],
+      "previousOverride": {
+        "reviewId": "Q089",
+        "nodeId": "g14-008",
+        "name": "3255公尺峰",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "g14-014",
+      "name": "大石公山",
+      "coordinate": [
+        121.2238431,
+        23.6348351
+      ],
+      "twd97": [
+        272838,
+        2614601
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:b2c4902bc8b8336f3277",
+      "name": "孫海橋",
+      "coordinate": [
+        121.0108725,
+        23.7872045
+      ],
+      "twd97": [
+        251108,
+        2631457
+      ],
+      "previousOverride": {
+        "reviewId": "Q097",
+        "nodeId": "node:b2c4902bc8b8336f3277",
+        "name": "孫海橋",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "g14-015",
+      "name": "小石公山",
+      "coordinate": [
+        121.2238799,
+        23.6333812
+      ],
+      "twd97": [
+        272842,
+        2614440
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "g14-029",
+      "name": "巖山",
+      "coordinate": [
+        121.2358435,
+        23.6641556
+      ],
+      "twd97": [
+        274057,
+        2617850
+      ],
+      "previousOverride": {
+        "reviewId": "Q095",
+        "nodeId": "g14-029",
+        "name": "巖山",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "g14-024",
+      "name": "廢棄工寮",
+      "coordinate": [
+        121.2433632,
+        23.7384237
+      ],
+      "twd97": [
+        274810,
+        2626076
+      ],
+      "previousOverride": {
+        "reviewId": "Q092",
+        "nodeId": "g14-024",
+        "name": "廢棄工寮",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "g14-023",
+      "name": "情人吊橋",
+      "coordinate": [
+        121.2696258,
+        23.7450441
+      ],
+      "twd97": [
+        277486,
+        2626814
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "g14-021",
+      "name": "林道入口",
+      "coordinate": [
+        121.2334792,
+        23.7514238
+      ],
+      "twd97": [
+        273800,
+        2627514
+      ],
+      "previousOverride": {
+        "reviewId": "Q090",
+        "nodeId": "g14-021",
+        "name": "林道入口",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "g14-022",
+      "name": "林道舊登山口",
+      "coordinate": [
+        121.2322797,
+        23.7499086
+      ],
+      "twd97": [
+        273678,
+        2627346
+      ],
+      "previousOverride": {
+        "reviewId": "Q091",
+        "nodeId": "g14-022",
+        "name": "林道舊登山口",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "g14-028",
+      "name": "鐵軌岔路",
+      "coordinate": [
+        121.2568062,
+        23.7407858
+      ],
+      "twd97": [
+        276180,
+        2626340
+      ],
+      "previousOverride": {
+        "reviewId": "Q094",
+        "nodeId": "g14-028",
+        "name": "鐵軌岔路",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "g14-027",
+      "name": "關門北山",
+      "coordinate": [
+        121.2390451,
+        23.6941932
+      ],
+      "twd97": [
+        274378,
+        2621177
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "g14-026",
+      "name": "關門山凹",
+      "coordinate": [
+        121.2322266,
+        23.6756019
+      ],
+      "twd97": [
+        273686,
+        2619117
+      ],
+      "previousOverride": {
+        "reviewId": "Q093",
+        "nodeId": "g14-026",
+        "name": "關門山凹",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:ef56761122345906961b",
+      "name": "14.6K水泥路止",
+      "coordinate": [
+        121.2814208,
+        23.5129898
+      ],
+      "twd97": [
+        278739,
+        2601118
+      ],
+      "previousOverride": {
+        "reviewId": "Q115",
+        "nodeId": "node:ef56761122345906961b",
+        "name": "14.6K水泥路止",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:5d3084736e9f8bce6d4a",
+      "name": "19.3K水泥橋",
+      "coordinate": [
+        121.2748666,
+        23.5350349
+      ],
+      "twd97": [
+        278065,
+        2603558
+      ],
+      "previousOverride": {
+        "reviewId": "Q103",
+        "nodeId": "node:5d3084736e9f8bce6d4a",
+        "name": "19.3K水泥橋",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:0c8573830abcc97e1e32",
+      "name": "26K岔路",
+      "coordinate": [
+        121.258357,
+        23.5314963
+      ],
+      "twd97": [
+        276380,
+        2603163
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:5ab8c1b58de6eeb05b5d",
+      "name": "2897草原水池",
+      "coordinate": [
+        121.2405224,
+        23.5797182
+      ],
+      "twd97": [
+        274550,
+        2608500
+      ],
+      "previousOverride": {
+        "reviewId": "Q102",
+        "nodeId": "node:5ab8c1b58de6eeb05b5d",
+        "name": "2897草原水池",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:6b8235223e06105d242a",
+      "name": "28K水泥工寮",
+      "coordinate": [
+        121.2542894,
+        23.5400003
+      ],
+      "twd97": [
+        275963,
+        2604104
+      ],
+      "previousOverride": {
+        "reviewId": "Q105",
+        "nodeId": "node:6b8235223e06105d242a",
+        "name": "28K水泥工寮",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:9d5d4d1d5eb72f6f92cb",
+      "name": "2907峰",
+      "coordinate": [
+        121.213789,
+        23.5756306
+      ],
+      "twd97": [
+        271822,
+        2608043
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:2d8fc441e99a93bda219",
+      "name": "33.5K大崩塌",
+      "coordinate": [
+        120.9568292,
+        23.5920528
+      ],
+      "twd97": [
+        245594,
+        2609846
+      ],
+      "previousOverride": {
+        "reviewId": "Q098",
+        "nodeId": "node:2d8fc441e99a93bda219",
+        "name": "33.5K大崩塌",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:a17ec4e667d55d3d99c3",
+      "name": "33K行車終點",
+      "coordinate": [
+        120.955761,
+        23.5925853
+      ],
+      "twd97": [
+        245485,
+        2609905
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:891637431112fc5688eb",
+      "name": "34K登山口",
+      "coordinate": [
+        121.2504452,
+        23.5632679
+      ],
+      "twd97": [
+        275566,
+        2606680
+      ],
+      "previousOverride": {
+        "reviewId": "Q106",
+        "nodeId": "node:891637431112fc5688eb",
+        "name": "34K登山口",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:4fca27364854ea7129d2",
+      "name": "39.6K大崩塌",
+      "coordinate": [
+        120.9727304,
+        23.5980885
+      ],
+      "twd97": [
+        247217,
+        2610514
+      ],
+      "previousOverride": {
+        "reviewId": "Q101",
+        "nodeId": "node:4fca27364854ea7129d2",
+        "name": "39.6K大崩塌",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:c61990dd30e7cb3d8213",
+      "name": "43K工寮",
+      "coordinate": [
+        120.9715275,
+        23.5875231
+      ],
+      "twd97": [
+        247094,
+        2609344
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:cb277db7b164105e3c17",
+      "name": "三岔路口",
+      "coordinate": [
+        121.2308841,
+        23.5809699
+      ],
+      "twd97": [
+        273566,
+        2608637
+      ],
+      "previousOverride": {
+        "reviewId": "Q111",
+        "nodeId": "node:cb277db7b164105e3c17",
+        "name": "三岔路口",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:c8870812bd546115bac5",
+      "name": "三岔路口營地",
+      "coordinate": [
+        121.1915177,
+        23.5803733
+      ],
+      "twd97": [
+        269548,
+        2608565
+      ],
+      "previousOverride": {
+        "reviewId": "Q110",
+        "nodeId": "node:c8870812bd546115bac5",
+        "name": "三岔路口營地",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:1670c3f1247b747ba02a",
+      "name": "下切溪床點",
+      "coordinate": [
+        121.2281212,
+        23.4330519
+      ],
+      "twd97": [
+        273310,
+        2592256
+      ],
+      "previousOverride": {
+        "reviewId": "R-ed0813729ebe2ef9268c",
+        "nodeId": "node:1670c3f1247b747ba02a",
+        "name": "下切溪床點",
+        "choice": "採用填入座標",
+        "note": "使用者 2026-11-11 明確採用；",
+        "coordinate": [
+          121.2281212,
+          23.4330519
+        ],
+        "action": "coordinate",
+        "originalCoordinate": {
+          "format": "TWD97",
+          "x": 273310.0,
+          "y": 2592256.0
+        },
+        "source": {
+          "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+          "sheetId": 105,
+          "row": 551,
+          "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+          "verification": "user-supplied",
+          "supplementalSource": "",
+          "ownerAmended": false
+        },
+        "previousDecisions": [
+          {
+            "reviewId": "Q117",
+            "nodeId": "node:1670c3f1247b747ba02a",
+            "name": "下切溪床點",
+            "choice": "",
+            "note": "",
+            "coordinate": null,
+            "action": "pending"
+          }
+        ]
+      }
+    },
+    {
+      "nodeId": "node:8d079c5429db81492162",
+      "name": "僕落西擴山",
+      "coordinate": [
+        121.1459512,
+        23.554371
+      ],
+      "twd97": [
+        264900,
+        2605680
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:2aa469a51f6331227667",
+      "name": "內嶺爾山",
+      "coordinate": [
+        121.1965324,
+        23.5793918
+      ],
+      "twd97": [
+        270060,
+        2608457
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "shared:cw-v07-021",
+      "name": "十八重溪橋",
+      "coordinate": [
+        120.8819606,
+        23.658529
+      ],
+      "twd97": [
+        237959,
+        2617212
+      ],
+      "previousOverride": {
+        "reviewId": "Q006",
+        "nodeId": "shared:cw-v07-021",
+        "name": "十八重溪橋",
+        "choice": "自行補座標",
+        "note": "",
+        "coordinate": [
+          120.8819606,
+          23.658529
+        ],
+        "action": "coordinate",
+        "originalCoordinate": {
+          "format": "TWD97",
+          "x": 237959.0,
+          "y": 2617212.0
+        }
+      }
+    },
+    {
+      "nodeId": "node:01d1180c464fb08e5191",
+      "name": "可樂可樂安山",
+      "coordinate": [
+        121.1174198,
+        23.6233306
+      ],
+      "twd97": [
+        261981,
+        2613314
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:bd25adc467b72fa6656f",
+      "name": "天南可蘭山",
+      "coordinate": [
+        121.1302046,
+        23.608457
+      ],
+      "twd97": [
+        263287,
+        2611668
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:7b0dae68c98b7de79a40",
+      "name": "太平溪源",
+      "coordinate": [
+        121.1948139,
+        23.589932
+      ],
+      "twd97": [
+        269883,
+        2609624
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:9f59facbac44a2e55ce7",
+      "name": "太平溪源營地",
+      "coordinate": [
+        121.1938449,
+        23.5906556
+      ],
+      "twd97": [
+        269784,
+        2609704
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "shared:cw-v07-040",
+      "name": "太平谷南口",
+      "coordinate": [
+        121.2031001,
+        23.4540184
+      ],
+      "twd97": [
+        270750,
+        2594574
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:82e77090c06d1fe2aead",
+      "name": "最高峰",
+      "coordinate": [
+        121.0592885,
+        23.5914696
+      ],
+      "twd97": [
+        256051,
+        2609782
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:a4c3afd25386960ea875",
+      "name": "東北鞍營地",
+      "coordinate": [
+        121.0909512,
+        23.6269152
+      ],
+      "twd97": [
+        259280,
+        2613709
+      ],
+      "previousOverride": {
+        "reviewId": "Q107",
+        "nodeId": "node:a4c3afd25386960ea875",
+        "name": "東北鞍營地",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:c9115d117bdcc33b8c0b",
+      "name": "東巒大山",
+      "coordinate": [
+        121.0812912,
+        23.6486557
+      ],
+      "twd97": [
+        258293,
+        2616116
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:66b2dd2d91e301d84c73",
+      "name": "東鞍營地",
+      "coordinate": [
+        121.1648678,
+        23.5871764
+      ],
+      "twd97": [
+        266827,
+        2609315
+      ],
+      "previousOverride": {
+        "reviewId": "Q104",
+        "nodeId": "node:66b2dd2d91e301d84c73",
+        "name": "東鞍營地",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:4a0b2326333b6cbfd23e",
+      "name": "松林營地",
+      "coordinate": [
+        121.2306973,
+        23.5805729
+      ],
+      "twd97": [
+        273547,
+        2608593
+      ],
+      "previousOverride": {
+        "reviewId": "Q099",
+        "nodeId": "node:4a0b2326333b6cbfd23e",
+        "name": "松林營地",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:f3ea090758bb1302bc29",
+      "name": "林道盡頭",
+      "coordinate": [
+        121.2515621,
+        23.5633564
+      ],
+      "twd97": [
+        275680,
+        2606690
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:b68adbc4f51e0a71c87f",
+      "name": "櫧山",
+      "coordinate": [
+        121.0822059,
+        23.5907187
+      ],
+      "twd97": [
+        258390,
+        2609700
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:bc117dbb33b03fe2cddf",
+      "name": "沙武巒草原",
+      "coordinate": [
+        121.2510178,
+        23.5656148
+      ],
+      "twd97": [
+        275624,
+        2606940
+      ],
+      "previousOverride": {
+        "reviewId": "Q109",
+        "nodeId": "node:bc117dbb33b03fe2cddf",
+        "name": "沙武巒草原",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:3bf4ec2f689a3b5c4930",
+      "name": "烏瓦拉鼻溪",
+      "coordinate": [
+        121.0015088,
+        23.5809879
+      ],
+      "twd97": [
+        250154,
+        2608620
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:4a1ca6c9c8adbf80fba0",
+      "name": "烏達佩山",
+      "coordinate": [
+        121.0882568,
+        23.6428005
+      ],
+      "twd97": [
+        259004,
+        2615468
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:c004ec6758328d3ce1cb",
+      "name": "無雙吊橋",
+      "coordinate": [
+        121.0106102,
+        23.5771047
+      ],
+      "twd97": [
+        251083,
+        2608190
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:aef6e30a59fdc407a2a2",
+      "name": "無雙部落址",
+      "coordinate": [
+        121.0139119,
+        23.5773753
+      ],
+      "twd97": [
+        251420,
+        2608220
+      ],
+      "previousOverride": {
+        "reviewId": "Q108",
+        "nodeId": "node:aef6e30a59fdc407a2a2",
+        "name": "無雙部落址",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:b865066ee7995702c0d4",
+      "name": "盧利拉駱山",
+      "coordinate": [
+        121.2004182,
+        23.5963
+      ],
+      "twd97": [
+        270454,
+        2610330
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:5048fd0d5be7a2b461be",
+      "name": "義西請馬至山",
+      "coordinate": [
+        121.1532079,
+        23.586782
+      ],
+      "twd97": [
+        265637,
+        2609270
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:e9149e15effc99bc37f7",
+      "name": "郡東營地",
+      "coordinate": [
+        121.1022226,
+        23.6276667
+      ],
+      "twd97": [
+        260430,
+        2613793
+      ],
+      "previousOverride": {
+        "reviewId": "Q113",
+        "nodeId": "node:e9149e15effc99bc37f7",
+        "name": "郡東營地",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:4d88bca8baa6a866c727",
+      "name": "鐵線斷崖東口",
+      "coordinate": [
+        121.2487326,
+        23.5642007
+      ],
+      "twd97": [
+        275391,
+        2606783
+      ],
+      "previousOverride": {
+        "reviewId": "Q100",
+        "nodeId": "node:4d88bca8baa6a866c727",
+        "name": "鐵線斷崖東口",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    },
+    {
+      "nodeId": "node:d03e5cea91ce41e0ca2a",
+      "name": "鐵線斷崖西口",
+      "coordinate": [
+        121.2291211,
+        23.5755907
+      ],
+      "twd97": [
+        273387,
+        2608041
+      ],
+      "previousOverride": {
+        "reviewId": "Q112",
+        "nodeId": "node:d03e5cea91ce41e0ca2a",
+        "name": "鐵線斷崖西口",
+        "choice": "",
+        "note": "",
+        "coordinate": null,
+        "action": "pending"
+      }
+    }
+  ],
+  "renames": [
+    {
+      "nodeId": "node:3bf4ec2f689a3b5c4930",
+      "oldName": "烏瓦拉鼻溪",
+      "name": "烏瓦拉鼻溪營地"
+    },
+    {
+      "nodeId": "node:82e77090c06d1fe2aead",
+      "oldName": "最高峰",
+      "name": "無雙最高峰"
+    }
+  ],
+  "aliases": [
+    {
+      "nodeId": "g14-026",
+      "alias": "關門大營地"
+    }
+  ],
+  "merges": [],
+  "timeSignatureBefore": "d805533c668d547f9b68771e91735bf8ada04ee32b0ffd5fa2feca3a14dd08f6",
+  "changedRoutes": [
+    {
+      "file": "data/routes/owner-reviewed/G14.json",
+      "previousNodes": [
+        {
+          "id": "g14-026",
+          "name": "關門山凹",
+          "aliases": [],
+          "groups": [
+            "G14"
+          ],
+          "identityBasis": "existing-reviewed-identity"
+        }
+      ]
+    },
+    {
+      "file": "data/routes/owner-reviewed/G15.json",
+      "previousNodes": [
+        {
+          "id": "node:3bf4ec2f689a3b5c4930",
+          "name": "烏瓦拉鼻溪",
+          "aliases": [],
+          "groups": [
+            "G15"
+          ],
+          "identityBasis": "group-scoped-owner-reviewed-label"
+        },
+        {
+          "id": "node:82e77090c06d1fe2aead",
+          "name": "最高峰",
+          "aliases": [],
+          "groups": [
+            "G15"
+          ],
+          "identityBasis": "group-scoped-owner-reviewed-label"
+        }
+      ]
+    }
+  ],
+  "state": "feature-inputs-applied",
+  "timeSignatureAfter": "d805533c668d547f9b68771e91735bf8ada04ee32b0ffd5fa2feca3a14dd08f6"
+}

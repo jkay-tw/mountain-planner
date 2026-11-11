@@ -1,0 +1,21 @@
+name: Publish owner coordinate review data release
+on:
+  push:
+    branches: [main]
+    paths: ['docs/OWNER_COORDINATE_REVIEW_20261111.md']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 tools/sync_coordinate_geometry.py --check
+      - name: Publish data patch while retaining application v0.9.0 as latest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create data-coordinates-20261111 --target "$GITHUB_SHA" --title '節點座標審查與路徑資料更新（2026-11-11）' --notes-file docs/OWNER_COORDINATE_REVIEW_20261111.md --latest=false data/geometry/sources/node-review-application-20261111.json data/geometry/sources/owner-coordinate-round2-application-20261111.json data/geometry/sources/owner-coordinate-round2-terrain-20261111.json

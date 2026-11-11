@@ -118,13 +118,16 @@
       "identityBasis": "group-scoped-owner-reviewed-label"
     },
     {
-      "id": "node:351f4b260c8941f8d7e4",
-      "name": "玉林橋大崩壁",
-      "aliases": [],
-      "groups": [
-        "G15"
+      "id": "node:1670c3f1247b747ba02a",
+      "name": "下切溪床點",
+      "aliases": [
+        "玉林橋大崩壁"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "groups": [
+        "G15",
+        "G16"
+      ],
+      "identityBasis": "owner-explicit-review-20261111"
     },
     {
       "id": "node:37c859d291bd265bd3ce",
@@ -137,8 +140,10 @@
     },
     {
       "id": "node:3bf4ec2f689a3b5c4930",
-      "name": "烏瓦拉鼻溪",
-      "aliases": [],
+      "name": "烏瓦拉鼻溪營地",
+      "aliases": [
+        "烏瓦拉鼻溪"
+      ],
       "groups": [
         "G15"
       ],
@@ -281,8 +286,10 @@
     },
     {
       "id": "node:82e77090c06d1fe2aead",
-      "name": "最高峰",
-      "aliases": [],
+      "name": "無雙最高峰",
+      "aliases": [
+        "最高峰"
+      ],
       "groups": [
         "G15"
       ],
@@ -999,7 +1006,7 @@
       "fromId": "node:29f7b222808645fa53ef",
       "toId": "node:3bf4ec2f689a3b5c4930",
       "from": "45.3K登山口",
-      "to": "烏瓦拉鼻溪",
+      "to": "烏瓦拉鼻溪營地",
       "minutes": 130,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -1037,7 +1044,7 @@
     {
       "fromId": "node:3bf4ec2f689a3b5c4930",
       "toId": "node:29f7b222808645fa53ef",
-      "from": "烏瓦拉鼻溪",
+      "from": "烏瓦拉鼻溪營地",
       "to": "45.3K登山口",
       "minutes": 200,
       "travelMode": "walking",
@@ -1076,7 +1083,7 @@
     {
       "fromId": "node:3bf4ec2f689a3b5c4930",
       "toId": "node:c004ec6758328d3ce1cb",
-      "from": "烏瓦拉鼻溪",
+      "from": "烏瓦拉鼻溪營地",
       "to": "無雙吊橋",
       "minutes": 60,
       "travelMode": "walking",
@@ -1116,7 +1123,7 @@
       "fromId": "node:c004ec6758328d3ce1cb",
       "toId": "node:3bf4ec2f689a3b5c4930",
       "from": "無雙吊橋",
-      "to": "烏瓦拉鼻溪",
+      "to": "烏瓦拉鼻溪營地",
       "minutes": 70,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -2013,7 +2020,7 @@
       "fromId": "node:679d7475a6dd59c285e2",
       "toId": "node:82e77090c06d1fe2aead",
       "from": "無雙山東峰",
-      "to": "最高峰",
+      "to": "無雙最高峰",
       "minutes": 35,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -2051,7 +2058,7 @@
     {
       "fromId": "node:82e77090c06d1fe2aead",
       "toId": "node:679d7475a6dd59c285e2",
-      "from": "最高峰",
+      "from": "無雙最高峰",
       "to": "無雙山東峰",
       "minutes": 35,
       "travelMode": "walking",
@@ -5130,9 +5137,9 @@
       ]
     },
     {
-      "fromId": "node:351f4b260c8941f8d7e4",
+      "fromId": "node:1670c3f1247b747ba02a",
       "toId": "shared:cw-v07-001",
-      "from": "玉林橋大崩壁",
+      "from": "下切溪床點",
       "to": "16.5K行車終點",
       "minutes": 225,
       "travelMode": "walking",
@@ -5170,9 +5177,9 @@
     },
     {
       "fromId": "shared:cw-v07-001",
-      "toId": "node:351f4b260c8941f8d7e4",
+      "toId": "node:1670c3f1247b747ba02a",
       "from": "16.5K行車終點",
-      "to": "玉林橋大崩壁",
+      "to": "下切溪床點",
       "minutes": 255,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -5209,9 +5216,9 @@
     },
     {
       "fromId": "shared:cw-v07-040",
-      "toId": "node:351f4b260c8941f8d7e4",
+      "toId": "node:1670c3f1247b747ba02a",
       "from": "太平谷南口",
-      "to": "玉林橋大崩壁",
+      "to": "下切溪床點",
       "minutes": 355,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -5247,9 +5254,9 @@
       ]
     },
     {
-      "fromId": "node:351f4b260c8941f8d7e4",
+      "fromId": "node:1670c3f1247b747ba02a",
       "toId": "shared:cw-v07-040",
-      "from": "玉林橋大崩壁",
+      "from": "下切溪床點",
       "to": "太平谷南口",
       "minutes": 435,
       "travelMode": "walking",
@@ -5288,7 +5295,7 @@
     {
       "fromId": "node:82e77090c06d1fe2aead",
       "toId": "node:bce5fdf63beb2b9d5c29",
-      "from": "最高峰",
+      "from": "無雙最高峰",
       "to": "無雙山基點峰",
       "minutes": 25,
       "travelMode": "walking",
@@ -5328,7 +5335,7 @@
       "fromId": "node:bce5fdf63beb2b9d5c29",
       "toId": "node:82e77090c06d1fe2aead",
       "from": "無雙山基點峰",
-      "to": "最高峰",
+      "to": "無雙最高峰",
       "minutes": 30,
       "travelMode": "walking",
       "verificationStatus": "verified",

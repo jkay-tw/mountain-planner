@@ -44,12 +44,15 @@ test('deleted catalog nodes in saved plans retain identity, notes and time snaps
  assert.equal(result.catalogStatus,'retired');assert.equal(result.note,'saved');assert.equal(result.nodeId,old.nodeId);
  assert.throws(()=>migrateDaysToNodeIds([{items:[{...old,name:'wrong'}]}],graph));
 });
-test('active geometry loads all selected active labels and keeps pilot geometry unchanged',()=>{
- const full=load('data/geometry/planner-terrain-v1.json'),pilot=load('data/geometry/xueshan-terrain-v1.json');
- assert.equal(full.counts.activeNodes,724);assert.equal(full.counts.located,636);assert.equal(full.counts.unlocated,88);
+test('working Preview geometry covers all active labels and preserves unaffected pilot geometry',()=>{
+ const full=load('preview/data/geometry/planner-terrain-v1.json'),pilot=load('data/geometry/xueshan-terrain-v1.json');
+ const applied=load('data/geometry/sources/node-review-application-20261111.json');
+ const changed=new Set([...applied.coordinates.map(n=>n.nodeId),...applied.merges.map(n=>n.oldId)]);
+ assert.equal(full.counts.activeNodes,721);assert.equal(full.counts.located,675);assert.equal(full.counts.unlocated,46);
  assert.deepEqual(new Set(full.nodes.map(n=>n.nodeId)),new Set(graph.nodes.map(n=>n.id)));
- for(const s of pilot.spans)assert.deepEqual(full.spans.find(x=>x.id===s.id),s);
- for(const n of pilot.nodes)assert.deepEqual(Object.fromEntries(Object.keys(n).map(k=>[k,full.nodes.find(x=>x.nodeId===n.nodeId)[k]])),n);
+ for(const s of pilot.spans)if(![s.fromId,...(s.viaNodeIds||[]),s.toId].some(id=>changed.has(id)))assert.deepEqual(full.spans.find(x=>x.id===s.id),s);
+ for(const n of pilot.nodes)if(!changed.has(n.nodeId))assert.deepEqual(Object.fromEntries(Object.keys(n).map(k=>[k,full.nodes.find(x=>x.nodeId===n.nodeId)[k]])),n);
  const d={items:[{id:'a',type:'location',nodeId:camp,name:'神池營地',incoming:null},{id:'b',type:'location',nodeId:summit,name:'小關山',incoming:incomingForSegment(ownerTimedConnection(graph,camp,summit),'a','b')}]};
- const result=resolveItineraryGeometry([d],full);assert.equal(result.waypoints.length,1);assert.equal(result.unlocated.length,1);assert.equal(result.gaps.length,1);assert.equal(result.days[0].features.length,0);
+ const result=resolveItineraryGeometry([d],full);assert.equal(result.waypoints.length,2);assert.equal(result.unlocated.length,0);assert.equal(result.gaps.length,0);assert.equal(result.days[0].features.length,1);
+ assert.equal(ownerTimedConnection(graph,camp,summit).minutes,null); // Positioned geometry never invents a walking time.
 });

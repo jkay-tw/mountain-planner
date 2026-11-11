@@ -124,7 +124,9 @@
     {
       "id": "node:8426704609cea5d43db4",
       "name": "杜鵑營地",
-      "aliases": [],
+      "aliases": [
+        "杜騰營地"
+      ],
       "groups": [
         "G17"
       ],
@@ -223,7 +225,9 @@
     {
       "id": "shared:cw-v07-015",
       "name": "八通關山三岔路口",
-      "aliases": [],
+      "aliases": [
+        "三岔路口"
+      ],
       "groups": [
         "G17"
       ],

@@ -34,7 +34,9 @@
     {
       "id": "node:1670c3f1247b747ba02a",
       "name": "下切溪床點",
-      "aliases": [],
+      "aliases": [
+        "玉林橋大崩壁"
+      ],
       "groups": [
         "G16"
       ],
@@ -232,15 +234,16 @@
       "identityBasis": "group-scoped-owner-reviewed-label"
     },
     {
-      "id": "node:c68a6096c4fde85a1b28",
+      "id": "node:8426704609cea5d43db4",
       "name": "杜鵑營地",
       "aliases": [
         "杜騰營地"
       ],
       "groups": [
-        "G16"
+        "G16",
+        "G17"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "owner-explicit-review-20261111"
     },
     {
       "id": "node:c89901cb97ccbe4d145a",
@@ -316,8 +319,10 @@
     },
     {
       "id": "node:ea1afe9db60667f52737",
-      "name": "岔路",
-      "aliases": [],
+      "name": "35K工寮岔路",
+      "aliases": [
+        "岔路"
+      ],
       "groups": [
         "G16"
       ],
@@ -407,9 +412,12 @@
     {
       "id": "shared:cw-v07-015",
       "name": "八通關山三岔路口",
-      "aliases": [],
+      "aliases": [
+        "三岔路口"
+      ],
       "groups": [
-        "G16"
+        "G16",
+        "G17"
       ],
       "identityBasis": "reviewed-crosswalk"
     },
@@ -4112,7 +4120,7 @@
       "fromId": "node:9849f71ae901b542f183",
       "toId": "node:ea1afe9db60667f52737",
       "from": "廢棄發電機",
-      "to": "岔路",
+      "to": "35K工寮岔路",
       "minutes": 20,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -4150,7 +4158,7 @@
     {
       "fromId": "node:ea1afe9db60667f52737",
       "toId": "node:9849f71ae901b542f183",
-      "from": "岔路",
+      "from": "35K工寮岔路",
       "to": "廢棄發電機",
       "minutes": 25,
       "travelMode": "walking",
@@ -4190,7 +4198,7 @@
       "fromId": "node:992b8a3173662270bdac",
       "toId": "node:ea1afe9db60667f52737",
       "from": "35K廢棄工寮",
-      "to": "岔路",
+      "to": "35K工寮岔路",
       "minutes": 2,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -4240,7 +4248,7 @@
     {
       "fromId": "node:ea1afe9db60667f52737",
       "toId": "node:992b8a3173662270bdac",
-      "from": "岔路",
+      "from": "35K工寮岔路",
       "to": "35K廢棄工寮",
       "minutes": 2,
       "travelMode": "walking",
@@ -4291,7 +4299,7 @@
     {
       "fromId": "node:ea1afe9db60667f52737",
       "toId": "node:c89901cb97ccbe4d145a",
-      "from": "岔路",
+      "from": "35K工寮岔路",
       "to": "林道玉林橋下切點",
       "minutes": 25,
       "travelMode": "walking",
@@ -4331,7 +4339,7 @@
       "fromId": "node:c89901cb97ccbe4d145a",
       "toId": "node:ea1afe9db60667f52737",
       "from": "林道玉林橋下切點",
-      "to": "岔路",
+      "to": "35K工寮岔路",
       "minutes": 30,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -5231,7 +5239,7 @@
       ]
     },
     {
-      "fromId": "node:c68a6096c4fde85a1b28",
+      "fromId": "node:8426704609cea5d43db4",
       "toId": "shared:cw-v07-033",
       "from": "杜鵑營地",
       "to": "四岔路口",
@@ -5271,7 +5279,7 @@
     },
     {
       "fromId": "shared:cw-v07-033",
-      "toId": "node:c68a6096c4fde85a1b28",
+      "toId": "node:8426704609cea5d43db4",
       "from": "四岔路口",
       "to": "杜鵑營地",
       "minutes": 65,
@@ -5309,7 +5317,7 @@
       ]
     },
     {
-      "fromId": "node:c68a6096c4fde85a1b28",
+      "fromId": "node:8426704609cea5d43db4",
       "toId": "shared:cw-v07-064",
       "from": "杜鵑營地",
       "to": "稜線岔路",
@@ -5349,7 +5357,7 @@
     },
     {
       "fromId": "shared:cw-v07-064",
-      "toId": "node:c68a6096c4fde85a1b28",
+      "toId": "node:8426704609cea5d43db4",
       "from": "稜線岔路",
       "to": "杜鵑營地",
       "minutes": 45,

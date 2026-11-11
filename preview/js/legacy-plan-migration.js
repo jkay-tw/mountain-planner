@@ -1,6 +1,6 @@
 // Safely migrate legacy single-chart itineraries into the global graph.
 // Preserve historical official-minute snapshots; never recalculate on import.
-import {buildNodeRegistry,isRetiredPreviewNode,canonicalReviewedId,acceptsReviewedName} from './node-identity.js?v=v080rc1';
+import {buildNodeRegistry,isRetiredPreviewNode,canonicalReviewedId,acceptsReviewedName} from './node-identity.js?v=review20261111r2';
 export function migrateLegacyPlanDays(days, sourceRoute, globalRoute) {
   if(!Array.isArray(days)||!sourceRoute?.route_id||!globalRoute?.nodes)throw new Error('Invalid legacy migration inputs');
   const legacy=buildNodeRegistry(sourceRoute);
