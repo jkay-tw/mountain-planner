@@ -13,7 +13,7 @@ const report=load('data/geometry/sources/node-review-application-20261111.json')
 test('three explicit owner merges retain every source directional time and do not merge G15 same-name camp',()=>{
  assert.equal(report.merges.length,3);
  assert.equal(report.timeSignatureBefore,report.timeSignatureAfter);
- assert.equal(graph.nodes.length,721);
+ assert.equal(graph.nodes.length,720);
  assert.ok(graph.nodes.some(n=>n.id==='node:fac669a79a9a25b63056'&&n.name==='杜鵑營地'));
  for(const m of report.merges){
   assert.ok(!graph.nodes.some(n=>n.id===m.oldId));

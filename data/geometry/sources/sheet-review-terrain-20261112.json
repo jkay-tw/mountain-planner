@@ -1,0 +1,81 @@
+{
+  "date": "2026-11-12",
+  "counts": {
+    "activeNodes": 720,
+    "located": 674,
+    "unlocated": 46,
+    "ignored": 19,
+    "vehicleOnly": 27
+  },
+  "spanCount": 694,
+  "unchangedSpanCount": 667,
+  "runtimeSha256": "1621bc09b70c9a54713a8164bc31212ccccf6d0f07b1ff524e4d882e29972846",
+  "unrepresentedPairs": [
+    {
+      "fromId": "node:4833a5913699184b5b35",
+      "toId": "node:7e834e3946d8006bb547",
+      "groups": [
+        "G05"
+      ],
+      "minutes": 30,
+      "ownerConfirmed": false,
+      "reason": "no-source-anchor-within-policy"
+    },
+    {
+      "fromId": "shared:cw-v07-064",
+      "toId": "shared:cw-v07-068",
+      "groups": [
+        "G16",
+        "G17"
+      ],
+      "minutes": 105,
+      "ownerConfirmed": false,
+      "reason": "OSM-route-detour-needs-review"
+    }
+  ],
+  "previousGapHistory": [
+    {
+      "fromId": "node:4833a5913699184b5b35",
+      "toId": "node:7e834e3946d8006bb547",
+      "groups": [
+        "G05"
+      ],
+      "minutes": 30,
+      "ownerConfirmed": false,
+      "reason": "no-source-anchor-within-policy"
+    },
+    {
+      "fromId": "node:413453c06804769a3470",
+      "toId": "node:a78dde46e2ca739d4ac9",
+      "groups": [
+        "G13"
+      ],
+      "minutes": 35,
+      "ownerConfirmed": false,
+      "reason": "missing-coordinate"
+    },
+    {
+      "fromId": "shared:cw-v07-064",
+      "toId": "shared:cw-v07-068",
+      "groups": [
+        "G16",
+        "G17"
+      ],
+      "minutes": 105,
+      "ownerConfirmed": false,
+      "reason": "OSM-route-detour-needs-review"
+    },
+    {
+      "fromId": "shared:cw-v07-007",
+      "toId": "shared:cw-v07-068",
+      "groups": [
+        "G16",
+        "G17"
+      ],
+      "minutes": 20,
+      "ownerConfirmed": false,
+      "reason": "OSM-route-detour-needs-review"
+    }
+  ],
+  "note": "原4組缺口歷史保留；G13隨節點退休，荖濃溪—三岔路口依既有OSM重算可表示；未新增補線來源或直線。"
+}

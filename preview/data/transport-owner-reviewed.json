@@ -4682,6 +4682,96 @@
           "minutes": 10
         }
       ]
+    },
+    {
+      "fromId": "node:68ed9d0821e485e82f8f",
+      "toId": "node:bca4509332fbaaf5f94e",
+      "from": "瓦拉米步道起點",
+      "to": "南安遊客中心",
+      "minutes": 20,
+      "travelMode": "vehicle",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RDF58359CAC"
+      ],
+      "evidenceRows": [
+        787
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RDF58359CAC",
+          "sheetRows": [
+            787
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ],
+      "routingEnabled": false,
+      "ownerModeCorrection": {
+        "date": "2026-11-12",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "basis": "使用者明確確認20分鐘為車行，不參與步行計算"
+      }
+    },
+    {
+      "fromId": "node:bca4509332fbaaf5f94e",
+      "toId": "node:68ed9d0821e485e82f8f",
+      "from": "南安遊客中心",
+      "to": "瓦拉米步道起點",
+      "minutes": 20,
+      "travelMode": "vehicle",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RDF58359CAC"
+      ],
+      "evidenceRows": [
+        787
+      ],
+      "sourceGroups": [
+        "新康橫斷/戒茂斯"
+      ],
+      "sourceChart": "G18",
+      "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+      "sourceNote": "",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "group": "新康橫斷/戒茂斯",
+          "chartId": "G18",
+          "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+          "rowId": "RDF58359CAC",
+          "sheetRows": [
+            787
+          ],
+          "minutes": 20
+        }
+      ],
+      "sourceGroupNames": [
+        "新康橫斷/戒茂斯"
+      ],
+      "routingEnabled": false,
+      "ownerModeCorrection": {
+        "date": "2026-11-12",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "basis": "使用者明確確認20分鐘為車行，不參與步行計算"
+      }
     }
   ]
 }

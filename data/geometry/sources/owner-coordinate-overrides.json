@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceUrl": "https://drive.google.com/file/d/1bfrGAJmiayJmqG600tlq93ld8slUqPRP/view",
   "sourceFileSha256": "7f90c190ad41a5745e02ad8ed1050d31a317abc0dbe733af78e9d36713bad12b",
-  "reviewDate": "2026-11-11",
+  "reviewDate": "2026-11-12",
   "nodes": [
     {
       "reviewId": "Q001",
@@ -404,21 +404,47 @@
       }
     },
     {
-      "reviewId": "Q022",
+      "reviewId": "R-391c9449976fc7486b86",
       "nodeId": "node:7e834e3946d8006bb547",
       "name": "大南山登山口",
-      "choice": "自行補座標",
-      "note": "",
+      "choice": "採用填入座標",
+      "note": "使用者2026-11-12指定；",
       "coordinate": [
-        121.172549,
-        24.3691022
+        121.1667052,
+        24.3626258
       ],
       "action": "coordinate",
       "originalCoordinate": {
         "format": "TWD97",
-        "x": 267505.0,
-        "y": 2695912.0
-      }
+        "x": 266913,
+        "y": 2695194
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 162,
+        "snapshotSha256": "8cd61125aff74f317716d74d8cd73483e4d16db54ec94820e7c0690e94e7604c",
+        "verification": "user-supplied"
+      },
+      "previousDecisions": [
+        {
+          "reviewId": "Q022",
+          "nodeId": "node:7e834e3946d8006bb547",
+          "name": "大南山登山口",
+          "choice": "自行補座標",
+          "note": "",
+          "coordinate": [
+            121.172549,
+            24.3691022
+          ],
+          "action": "coordinate",
+          "originalCoordinate": {
+            "format": "TWD97",
+            "x": 267505.0,
+            "y": 2695912.0
+          }
+        }
+      ]
     },
     {
       "reviewId": "Q023",
@@ -1289,10 +1315,10 @@
       "reviewId": "Q079",
       "nodeId": "node:413453c06804769a3470",
       "name": "東南鞍營地",
-      "choice": "暫不確定",
-      "note": "忽略",
+      "choice": "使用者指定退休",
+      "note": "2026-11-12使用者確認已不存在；原節點與兩方向35分鐘完整封存於data/geometry/sources/sheet-review-application-20261112.json",
       "coordinate": null,
-      "action": "ignore"
+      "action": "delete"
     },
     {
       "reviewId": "Q080",
@@ -4500,6 +4526,231 @@
         "supplementalSource": ""
       },
       "note": "使用者2026-11-11第二輪明確採用；",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "g07-005",
+      "reviewId": "R-09667813d3a94db11108",
+      "name": "大濁水南溪岔路",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.4632794,
+        24.3520869
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 297006,
+        "y": 2694095
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 212,
+        "snapshotSha256": "8cd61125aff74f317716d74d8cd73483e4d16db54ec94820e7c0690e94e7604c",
+        "verification": "user-supplied"
+      },
+      "note": "使用者2026-11-12指定；11/12新增修改",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:dca389db39359114677f",
+      "reviewId": "R-51783cab53cb46759505",
+      "name": "奇萊北峰岔路",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.3286996,
+        24.1140673
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 283413,
+        "y": 2667695
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 325,
+        "snapshotSha256": "8cd61125aff74f317716d74d8cd73483e4d16db54ec94820e7c0690e94e7604c",
+        "verification": "user-supplied"
+      },
+      "note": "使用者2026-11-12指定；11/12新增修改",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "shared:cw-v07-012",
+      "reviewId": "R-20a053719f6d13ea7156",
+      "name": "主北三岔路",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.326791,
+        24.1101436
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 283220,
+        "y": 2667260
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 326,
+        "snapshotSha256": "8cd61125aff74f317716d74d8cd73483e4d16db54ec94820e7c0690e94e7604c",
+        "verification": "user-supplied"
+      },
+      "note": "使用者2026-11-12指定；11/12新增修改",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:61e3a41ddc4421da6c4e",
+      "reviewId": "R-8f5bbff405b7189d142d",
+      "name": "塔次基里溪",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.3256722,
+        24.1617034
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 283093,
+        "y": 2672970
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 341,
+        "snapshotSha256": "8cd61125aff74f317716d74d8cd73483e4d16db54ec94820e7c0690e94e7604c",
+        "verification": "user-supplied"
+      },
+      "note": "使用者2026-11-12指定；11/12修改",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "node:1bafd281610a4bf66a4b",
+      "reviewId": "R-a8fd0846b675dace7790",
+      "name": "三叉營地",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.4199197,
+        24.0893834
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 292694,
+        "y": 2664986
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 354,
+        "snapshotSha256": "8cd61125aff74f317716d74d8cd73483e4d16db54ec94820e7c0690e94e7604c",
+        "verification": "user-supplied"
+      },
+      "note": "使用者2026-11-12指定；11/12修改\n新增備註\"北鞍營地\"、\"北鞍三叉避難小屋\"",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "shared:cw-v07-007",
+      "reviewId": "R-54bc504d5120aba39812",
+      "name": "三岔路口",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.0208827,
+        23.4855291
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 252133,
+        "y": 2598049
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 585,
+        "snapshotSha256": "8cd61125aff74f317716d74d8cd73483e4d16db54ec94820e7c0690e94e7604c",
+        "verification": "user-supplied"
+      },
+      "note": "使用者2026-11-12指定；11/12修改",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "shared:cw-v07-050",
+      "reviewId": "R-cf46ec63aec31fb9922b",
+      "name": "新康山岔路口",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.0343366,
+        23.3036297
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 253512,
+        "y": 2577906
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 629,
+        "snapshotSha256": "8cd61125aff74f317716d74d8cd73483e4d16db54ec94820e7c0690e94e7604c",
+        "verification": "user-supplied"
+      },
+      "note": "使用者2026-11-12指定；11/12修改",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "shared:owner-v0724-xiangyang-junction",
+      "reviewId": "R-714d7657370270c49e59",
+      "name": "向陽山三岔路口",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        120.998954,
+        23.2861506
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 249893,
+        "y": 2575970
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 632,
+        "snapshotSha256": "8cd61125aff74f317716d74d8cd73483e4d16db54ec94820e7c0690e94e7604c",
+        "verification": "user-supplied"
+      },
+      "note": "使用者2026-11-12指定；11/12修改",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "local:G18-OVERLAP::g18-overlap-015",
+      "reviewId": "R-1484b108007fff848438",
+      "name": "最低鞍部",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.1225776,
+        23.3189282
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 262536,
+        "y": 2579605
+      },
+      "source": {
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "sheetId": 105,
+        "row": 644,
+        "snapshotSha256": "8cd61125aff74f317716d74d8cd73483e4d16db54ec94820e7c0690e94e7604c",
+        "verification": "user-supplied"
+      },
+      "note": "使用者2026-11-12指定；11/12修改",
       "previousDecisions": []
     }
   ]

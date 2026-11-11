@@ -42,7 +42,17 @@ test('Sheet rename retains identity and old alias; mini maps consume all newly a
  }
  // Reconstruct historical IDs only for routes containing an explicitly merged old node.
  // Every original directional record/time must still reproduce the archived signature.
- const signature=routes.map(r=>{
+ const historical=structuredClone(routes);
+ const nov12=load('data/geometry/sources/sheet-review-application-20261112.json');
+ const retired=nov12.retirement;
+ const changed=historical.find(r=>r.route_id==='G13');
+ changed.nodes.splice(retired.nodeIndex,0,retired.node);
+ retired.segmentIndices.forEach((index,i)=>changed.segments.splice(index,0,retired.originalSegments[i]));
+ for(const c of nov12.vehicleCorrections){
+  const route=historical.find(r=>r.route_id==='G18');
+  const index=route.segments.findIndex(s=>s.fromId===c.original.fromId&&s.toId===c.original.toId);route.segments[index]=c.original;
+ }
+ const signature=historical.map(r=>{
   const path=manifest.routes.find(m=>m.id===r.route_id).file.split('?')[0];
   const changed=application.changedRoutes.find(x=>x.file===path);
   const inverse=new Map(application.merges.filter(m=>changed?.previousNodes.some(n=>n.id===m.oldId)).map(m=>[m.canonicalId,m.oldId]));

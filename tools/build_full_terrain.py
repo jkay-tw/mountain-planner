@@ -99,7 +99,9 @@ def pairs():
  out={}
  for row in json.loads((ROOT/'data/unified-editor-manifest.json').read_text())['routes']:
   r=json.loads((ROOT/row['file'].split('?')[0]).read_text())
+  if not r.get('routingEnabled',True):continue
   for s in [*r['segments'],*r.get('manualConnections',[])]:
+   if s.get('travelMode','walking')!='walking' or not s.get('routingEnabled',True):continue
    k=tuple(sorted((s['fromId'],s['toId'])))
    p=out.setdefault(k,{'fromId':k[0],'toId':k[1],'groups':[],'minutes':0,'ownerConfirmed':bool(s.get('manualTimeRequired'))})
    if row['id'] not in p['groups']:p['groups'].append(row['id'])

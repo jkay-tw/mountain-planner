@@ -1,0 +1,39 @@
+{
+  "changedNodeIds": [
+    "node:16d0ce554a26b76bdaa8",
+    "node:6238ba80f71b4e9faace",
+    "node:b2c4902bc8b8336f3277",
+    "node:b7b6bff9d61e63a89c58",
+    "node:f3ea090758bb1302bc29",
+    "node:f6f2ba4c01559d0ff632",
+    "shared:cw-v07-002",
+    "shared:cw-v07-021"
+  ],
+  "removedNodeIds": [],
+  "preservedSpans": 690,
+  "generatedSpans": 4,
+  "bridgeSpans": 4,
+  "failedRoutes": [
+    {
+      "nodeIds": [
+        "node:4833a5913699184b5b35",
+        "node:7e834e3946d8006bb547"
+      ],
+      "reason": "no-source-anchor-within-policy"
+    },
+    {
+      "nodeIds": [
+        "shared:cw-v07-064",
+        "shared:cw-v07-068"
+      ],
+      "reason": "OSM-route-detour-needs-review"
+    }
+  ],
+  "counts": {
+    "activeNodes": 720,
+    "located": 674,
+    "unlocated": 46,
+    "ignored": 19,
+    "vehicleOnly": 27
+  }
+}

@@ -9,7 +9,7 @@ const data=load('preview/data/geometry/planner-terrain-v1.json'),review=load('da
 const known=new Map(data.nodes.map(n=>[n.nodeId,n]));
 const plan=ids=>({coefficient:.8,items:ids.map((id,i)=>({id:'i'+i,nodeId:id,name:known.get(id).name,type:'location',note:'keep '+i,incoming:i?{kind:'official',fromNodeId:ids[i-1],toNodeId:id,officialMinutes:123,actualMinutes:77}:null}))});
 test('owner coordinates round-trip independently to source TWD97 and retain review identity',()=>{
- assert.equal(review.nodes.filter(n=>n.action==='coordinate').length,175);
+ assert.equal(review.nodes.filter(n=>n.action==='coordinate').length,184);
  for(const n of review.nodes.filter(n=>n.action==='coordinate')){
   const xy=toTwd97(n.coordinate);assert.ok(Math.abs(xy[0]-n.originalCoordinate.x)<=1,n.reviewId);assert.ok(Math.abs(xy[1]-n.originalCoordinate.y)<=1,n.reviewId);
   const active=known.get(n.nodeId);

@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-12",
+  "counts": {
+    "nodes": 720,
+    "sources": 3325,
+    "directionalRecords": 1548,
+    "findings": 59,
+    "retired": 7,
+    "confirmedNoMergePairs": 17,
+    "sourceGapHistory": 4,
+    "activeSourceGaps": 2
+  },
+  "nativeReadbackExact": true,
+  "preservedReviewIDsAndHumanRows": 724,
+  "formulaErrors": 0,
+  "tests": {
+    "javascript": 142,
+    "python": 116,
+    "quickMap": 14
+  },
+  "browserChecks": [
+    "G13選單不再提供東南鞍營地",
+    "南安遊客中心起點不提供相鄰步行捷徑"
+  ],
+  "notePresentation": "website primary name only; source notes may appear in GPX description; no alias-search or public-note UI added"
+}

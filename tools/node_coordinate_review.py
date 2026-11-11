@@ -113,6 +113,8 @@ def build(root=ROOT, previous=None, spatial_audit=None, runtime_path=None):
     retired = read('data/geometry/sources/owner-topology-retirements-20261104.json')
     application_path = 'data/geometry/sources/node-review-application-20261111.json'
     application = read(application_path) if (root/application_path).exists() else {'merges': []}
+    nov12_path = 'data/geometry/sources/sheet-review-application-20261112.json'
+    nov12 = read(nov12_path) if (root/nov12_path).exists() else None
     catalog, edges = {}, []
     for entry in manifest['routes']:
         path = entry['file'].split('?')[0]
@@ -227,6 +229,10 @@ def build(root=ROOT, previous=None, spatial_audit=None, runtime_path=None):
         n = merged['oldNode']
         retired_rows.append([merged['oldId'], n['name'], '；'.join(n.get('aliases', [])),
                              '已合併至 '+merged['canonicalId'], json.dumps(merged, ensure_ascii=False)])
+    if nov12:
+        retired = nov12['retirement']; n = retired['node']
+        retired_rows.append([n['id'], n['name'], '；'.join(n.get('aliases', [])),
+                             '2026-11-12使用者指定退休；未重接', json.dumps(retired, ensure_ascii=False)])
     base = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=root, text=True).strip()
     tables = {
         '使用說明': [['項目', '內容'], ['基底 commit', base], ['同步輸入摘要', digest(inputs)],
