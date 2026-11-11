@@ -671,10 +671,11 @@
       "reason": "OSM-route-detour-needs-review"
     }
   ],
-  "runtimeSha256": "cd12279b822c6ad15dfc39389db61c62a2aeabefdf49acd44f68d010377bf9f9",
+  "runtimeSha256": "5097b318ecc68ed804d69b4b9aafb3fbc82f50d66e145d50e63a51c0545273cd",
   "timeSignatureUnchanged": true,
   "mergesInThisRound": 0,
   "sourceArchiveTag": "terrain-sources-20261106",
   "status": "production-preview-synchronized",
-  "productionPromoted": true
+  "productionPromoted": true,
+  "hashByteConvention": "Git LF normalized UTF-8"
 }

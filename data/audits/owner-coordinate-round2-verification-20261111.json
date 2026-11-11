@@ -20,8 +20,9 @@
   },
   "tests": {
     "javascript": 139,
-    "python": 113,
+    "python": 115,
     "quickMap": 14
   },
-  "productionMatchesPreview": true
+  "productionMatchesPreview": true,
+  "cacheFingerprintConvention": "Git LF normalized UTF-8; verified Windows and Linux checkout behavior"
 }

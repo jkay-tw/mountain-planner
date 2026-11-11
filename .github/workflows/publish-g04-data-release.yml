@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
     paths:
+      - 'tools/sync_coordinate_geometry.py'
       - 'data/geometry/planner-terrain-v1.json'
       - 'docs/G04_COORDINATE_SYNC_20261106.md'
 

@@ -18,4 +18,4 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create data-coordinates-20261111 --target "$GITHUB_SHA" --title '節點座標審查與路徑資料更新（2026-11-11）' --notes-file docs/OWNER_COORDINATE_REVIEW_20261111.md --latest=false data/geometry/sources/node-review-application-20261111.json data/geometry/sources/owner-coordinate-round2-application-20261111.json data/geometry/sources/owner-coordinate-round2-terrain-20261111.json
+          gh release create data-coordinates-20261111-r1 --target "$GITHUB_SHA" --title '節點座標審查與路徑資料更新（2026-11-11，指紋修正版）' --notes-file docs/OWNER_COORDINATE_REVIEW_20261111.md --latest=false data/geometry/sources/node-review-application-20261111.json data/geometry/sources/owner-coordinate-round2-application-20261111.json data/geometry/sources/owner-coordinate-round2-terrain-20261111.json

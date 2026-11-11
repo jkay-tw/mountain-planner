@@ -82,6 +82,39 @@ class CoordinateSyncTests(unittest.TestCase):
             self.assertTrue(sync.atomic_copy(src, dst))
             self.assertFalse(sync.atomic_copy(src, dst))
 
+    def test_cache_fingerprints_match_git_lf_for_windows_and_linux(self):
+        with tempfile.TemporaryDirectory() as directory:
+            base = Path(directory)
+            results = []
+            for index, newline in enumerate((b'\n', b'\r\n')):
+                folder = base / str(index)
+                folder.mkdir()
+                geometry, script, html = (folder / p for p in ('data.json', 'app.js', 'index.html'))
+                geometry.write_bytes(b'{"nodes":[]}' + newline)
+                script.write_bytes(b"await fetch('data/geometry/planner-terrain-v1.json?v=old');" + newline)
+                html.write_bytes(b'<script src="js/unified-editor.js?v=old"></script>' + newline)
+                results.append(sync.refresh_cache(script, html, geometry))
+                sync.verify_cache(script, html, geometry)
+                # Simulate Git checkout in CI: normalize every asset to LF.
+                for path in (geometry, script, html):
+                    path.write_bytes(sync.canonical_bytes(path))
+                sync.verify_cache(script, html, geometry)
+            self.assertEqual(results[0], results[1])
+
+    def test_guard_rejects_module_edit_after_cache_refresh(self):
+        with tempfile.TemporaryDirectory() as directory:
+            base = Path(directory)
+            geometry, script, html = (base / p for p in ('data.json', 'app.js', 'index.html'))
+            geometry.write_bytes(b'{"nodes":[]}\n')
+            script.write_bytes(b"await fetch('data/geometry/planner-terrain-v1.json?v=old');\n")
+            html.write_bytes(b'<script src="js/unified-editor.js?v=old"></script>\n')
+            sync.refresh_cache(script, html, geometry)
+            script.write_bytes(script.read_bytes() + b'// edited dependency version\n')
+            with self.assertRaisesRegex(ValueError, 'HTML script cache URL is stale'):
+                sync.verify_cache(script, html, geometry)
+            sync.refresh_cache(script, html, geometry)
+            sync.verify_cache(script, html, geometry)
+
 
 if __name__ == "__main__":
     unittest.main()
