@@ -79,15 +79,6 @@
       "identityBasis": "group-scoped-owner-reviewed-label"
     },
     {
-      "id": "node:413453c06804769a3470",
-      "name": "東南鞍營地",
-      "aliases": [],
-      "groups": [
-        "G13"
-      ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
-    },
-    {
       "id": "node:47e2c171ae6079bdeb59",
       "name": "十粒溪源營地",
       "aliases": [
@@ -2173,84 +2164,6 @@
             499
           ],
           "minutes": 5
-        }
-      ],
-      "sourceGroupNames": [
-        "干卓萬群峰"
-      ]
-    },
-    {
-      "fromId": "node:a78dde46e2ca739d4ac9",
-      "toId": "node:413453c06804769a3470",
-      "from": "東峰下營地",
-      "to": "東南鞍營地",
-      "minutes": 35,
-      "travelMode": "walking",
-      "verificationStatus": "verified",
-      "verificationBasis": "owner_workbook_review",
-      "timeAlternatives": [],
-      "sourceRows": [
-        "RA4147BA4FE"
-      ],
-      "evidenceRows": [
-        500
-      ],
-      "sourceGroups": [
-        "干卓萬群峰"
-      ],
-      "sourceChart": "G13",
-      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
-      "sourceNote": "",
-      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
-      "sources": [
-        {
-          "group": "干卓萬群峰",
-          "chartId": "G13",
-          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
-          "rowId": "RA4147BA4FE",
-          "sheetRows": [
-            500
-          ],
-          "minutes": 35
-        }
-      ],
-      "sourceGroupNames": [
-        "干卓萬群峰"
-      ]
-    },
-    {
-      "fromId": "node:413453c06804769a3470",
-      "toId": "node:a78dde46e2ca739d4ac9",
-      "from": "東南鞍營地",
-      "to": "東峰下營地",
-      "minutes": 35,
-      "travelMode": "walking",
-      "verificationStatus": "verified",
-      "verificationBasis": "owner_workbook_review",
-      "timeAlternatives": [],
-      "sourceRows": [
-        "RA4147BA4FE"
-      ],
-      "evidenceRows": [
-        500
-      ],
-      "sourceGroups": [
-        "干卓萬群峰"
-      ],
-      "sourceChart": "G13",
-      "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
-      "sourceNote": "",
-      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
-      "sources": [
-        {
-          "group": "干卓萬群峰",
-          "chartId": "G13",
-          "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
-          "rowId": "RA4147BA4FE",
-          "sheetRows": [
-            500
-          ],
-          "minutes": 35
         }
       ],
       "sourceGroupNames": [

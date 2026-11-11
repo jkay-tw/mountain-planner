@@ -10,7 +10,7 @@ const manifest=load('data/unified-editor-manifest.json');
 const routes=manifest.routes.map(m=>addRouteIdentity(load(m.file)));
 const graph=mergeReviewedRoutes(routes);
 test('owner full preview shares reviewed physical nodes and keeps original chart IDs for imported plans',()=>{
- assert.equal(routes.length,24);assert.equal(graph.nodes.length,721);assert.equal(graph.segments.length,1402);
+ assert.equal(routes.length,24);assert.equal(graph.nodes.length,720);assert.equal(graph.segments.length,1398);
  assert.equal(new Set(routes.flatMap(r=>r.sourceChartIds)).size,19);
  for(const r of load('data/owner-review-base-catalog.json').routes){
   for(const n of load(r.file).nodes){if(['node:48968d2ec01d938dc670','node:502ad7507575bb341a28','node:bfffd1c12932fc2cd1e8'].includes(n.id))continue;const current=graph.nodes.find(x=>x.id===canonicalReviewedId(n.id,n.name));assert.ok(current,n.id);assert.ok(current.name===n.name||current.aliases.includes(n.name));}
@@ -30,7 +30,7 @@ test('full preview reconciles time overrides and condition-specific directional 
  for(const e of graph.segments){assert.equal(e.travelMode,'walking');assert.equal(e.verificationStatus,'verified');assert.ok(e.sources.every(s=>s.minutes===e.minutes));}
 });
 test('transport-only nodes remain addable but road legs never form walking shortcuts',()=>{
- const t=load('data/transport-owner-reviewed.json');assert.equal(t.segments.length,130);
+ const t=load('data/transport-owner-reviewed.json');assert.equal(t.segments.length,132);
  const g20=routes.find(r=>r.route_id==='G20');
  const a=g20.nodes.find(n=>n.name==='泰武'),b=g20.nodes.find(n=>n.name==='新登山口');
  assert.ok(nodesInScope(graph,'G20').some(n=>n.id===a.id));assert.equal(shortestPath(graph,a.id,b.id),null);

@@ -22,13 +22,13 @@ test('56 owner coordinates round-trip in TWD97; all walking points have DEM with
   if(n.coordinatePolicy==='active'){assert.deepEqual(n.coordinate,c.coordinate);assert.ok(Number.isFinite(n.elevationMeters));}
   else assert.equal(n.coordinate,null);
  }
- assert.equal(terrain.counts.located,675);
+ assert.equal(terrain.counts.located,674);
  assert.ok(terrain.nodes.every(n=>n.coordinatePolicy!=='active'||n.coordinate));
  assert.deepEqual(load('data/geometry/planner-terrain-v1.json'),terrain);
 });
 
 test('explicit names preserve IDs, old itinerary labels and owner alias without merging nearby places',()=>{
- assert.equal(graph.nodes.length,721);
+ assert.equal(graph.nodes.length,720);
  assert.equal(application.renames.length,2);
  for(const r of application.renames){
   const n=graph.nodes.find(n=>n.id===r.nodeId);assert.equal(n.name,r.name);assert.ok(n.aliases.includes(r.oldName));

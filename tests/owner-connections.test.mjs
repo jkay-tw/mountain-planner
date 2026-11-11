@@ -48,7 +48,7 @@ test('working Preview geometry covers all active labels and preserves unaffected
  const full=load('preview/data/geometry/planner-terrain-v1.json'),pilot=load('data/geometry/xueshan-terrain-v1.json');
  const applied=load('data/geometry/sources/node-review-application-20261111.json');
  const changed=new Set([...applied.coordinates.map(n=>n.nodeId),...applied.merges.map(n=>n.oldId)]);
- assert.equal(full.counts.activeNodes,721);assert.equal(full.counts.located,675);assert.equal(full.counts.unlocated,46);
+ assert.equal(full.counts.activeNodes,720);assert.equal(full.counts.located,674);assert.equal(full.counts.unlocated,46);
  assert.deepEqual(new Set(full.nodes.map(n=>n.nodeId)),new Set(graph.nodes.map(n=>n.id)));
  for(const s of pilot.spans)if(![s.fromId,...(s.viaNodeIds||[]),s.toId].some(id=>changed.has(id)))assert.deepEqual(full.spans.find(x=>x.id===s.id),s);
  for(const n of pilot.nodes)if(!changed.has(n.nodeId))assert.deepEqual(Object.fromEntries(Object.keys(n).map(k=>[k,full.nodes.find(x=>x.nodeId===n.nodeId)[k]])),n);

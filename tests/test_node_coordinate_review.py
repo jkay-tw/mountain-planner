@@ -24,7 +24,7 @@ class ReviewBridgeTests(unittest.TestCase):
         source_ids = {r[0] for r in tables['來源明細'][1:]}
         for row in nodes:
             self.assertTrue(set(row[13].split('；')) <= source_ids)
-        self.assertEqual(len(tables['退休節點'])-1, 6)
+        self.assertEqual(len(tables['退休節點'])-1, 7)
         expected = []
         manifest = json.loads((ROOT/'data/unified-editor-manifest.json').read_text(encoding='utf-8'))
         for entry in manifest['routes']:

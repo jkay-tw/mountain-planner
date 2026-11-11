@@ -1,0 +1,492 @@
+{
+  "date": "2026-11-12",
+  "sourceUrl": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+  "snapshotSha256": "8cd61125aff74f317716d74d8cd73483e4d16db54ec94820e7c0690e94e7604c",
+  "coordinates": [
+    {
+      "nodeId": "node:7e834e3946d8006bb547",
+      "name": "大南山登山口",
+      "coordinate": [
+        121.1667052,
+        24.3626258
+      ],
+      "twd97": [
+        266913,
+        2695194
+      ],
+      "previousOverride": {
+        "reviewId": "Q022",
+        "nodeId": "node:7e834e3946d8006bb547",
+        "name": "大南山登山口",
+        "choice": "自行補座標",
+        "note": "",
+        "coordinate": [
+          121.172549,
+          24.3691022
+        ],
+        "action": "coordinate",
+        "originalCoordinate": {
+          "format": "TWD97",
+          "x": 267505.0,
+          "y": 2695912.0
+        }
+      }
+    },
+    {
+      "nodeId": "g07-005",
+      "name": "大濁水南溪岔路",
+      "coordinate": [
+        121.4632794,
+        24.3520869
+      ],
+      "twd97": [
+        297006,
+        2694095
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:dca389db39359114677f",
+      "name": "奇萊北峰岔路",
+      "coordinate": [
+        121.3286996,
+        24.1140673
+      ],
+      "twd97": [
+        283413,
+        2667695
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "shared:cw-v07-012",
+      "name": "主北三岔路",
+      "coordinate": [
+        121.326791,
+        24.1101436
+      ],
+      "twd97": [
+        283220,
+        2667260
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:61e3a41ddc4421da6c4e",
+      "name": "塔次基里溪",
+      "coordinate": [
+        121.3256722,
+        24.1617034
+      ],
+      "twd97": [
+        283093,
+        2672970
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "node:1bafd281610a4bf66a4b",
+      "name": "三叉營地",
+      "coordinate": [
+        121.4199197,
+        24.0893834
+      ],
+      "twd97": [
+        292694,
+        2664986
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "shared:cw-v07-007",
+      "name": "三岔路口",
+      "coordinate": [
+        121.0208827,
+        23.4855291
+      ],
+      "twd97": [
+        252133,
+        2598049
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "shared:cw-v07-050",
+      "name": "新康山岔路口",
+      "coordinate": [
+        121.0343366,
+        23.3036297
+      ],
+      "twd97": [
+        253512,
+        2577906
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "shared:owner-v0724-xiangyang-junction",
+      "name": "向陽山三岔路口",
+      "coordinate": [
+        120.998954,
+        23.2861506
+      ],
+      "twd97": [
+        249893,
+        2575970
+      ],
+      "previousOverride": null
+    },
+    {
+      "nodeId": "local:G18-OVERLAP::g18-overlap-015",
+      "name": "最低鞍部",
+      "coordinate": [
+        121.1225776,
+        23.3189282
+      ],
+      "twd97": [
+        262536,
+        2579605
+      ],
+      "previousOverride": null
+    }
+  ],
+  "retirement": {
+    "file": "data/routes/owner-reviewed/G13.json",
+    "node": {
+      "id": "node:413453c06804769a3470",
+      "name": "東南鞍營地",
+      "aliases": [],
+      "groups": [
+        "G13"
+      ],
+      "identityBasis": "group-scoped-owner-reviewed-label"
+    },
+    "originalSegments": [
+      {
+        "fromId": "node:a78dde46e2ca739d4ac9",
+        "toId": "node:413453c06804769a3470",
+        "from": "東峰下營地",
+        "to": "東南鞍營地",
+        "minutes": 35,
+        "travelMode": "walking",
+        "verificationStatus": "verified",
+        "verificationBasis": "owner_workbook_review",
+        "timeAlternatives": [],
+        "sourceRows": [
+          "RA4147BA4FE"
+        ],
+        "evidenceRows": [
+          500
+        ],
+        "sourceGroups": [
+          "干卓萬群峰"
+        ],
+        "sourceChart": "G13",
+        "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+        "sourceNote": "",
+        "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+        "sources": [
+          {
+            "group": "干卓萬群峰",
+            "chartId": "G13",
+            "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+            "rowId": "RA4147BA4FE",
+            "sheetRows": [
+              500
+            ],
+            "minutes": 35
+          }
+        ],
+        "sourceGroupNames": [
+          "干卓萬群峰"
+        ]
+      },
+      {
+        "fromId": "node:413453c06804769a3470",
+        "toId": "node:a78dde46e2ca739d4ac9",
+        "from": "東南鞍營地",
+        "to": "東峰下營地",
+        "minutes": 35,
+        "travelMode": "walking",
+        "verificationStatus": "verified",
+        "verificationBasis": "owner_workbook_review",
+        "timeAlternatives": [],
+        "sourceRows": [
+          "RA4147BA4FE"
+        ],
+        "evidenceRows": [
+          500
+        ],
+        "sourceGroups": [
+          "干卓萬群峰"
+        ],
+        "sourceChart": "G13",
+        "source": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+        "sourceNote": "",
+        "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+        "sources": [
+          {
+            "group": "干卓萬群峰",
+            "chartId": "G13",
+            "url": "https://www.sunriver.com.tw/images/hiking/G13_hiking.jpg",
+            "rowId": "RA4147BA4FE",
+            "sheetRows": [
+              500
+            ],
+            "minutes": 35
+          }
+        ],
+        "sourceGroupNames": [
+          "干卓萬群峰"
+        ]
+      }
+    ],
+    "reason": "已不存在，刪除該節點",
+    "previousOverride": {
+      "reviewId": "Q079",
+      "nodeId": "node:413453c06804769a3470",
+      "name": "東南鞍營地",
+      "choice": "暫不確定",
+      "note": "忽略",
+      "coordinate": null,
+      "action": "ignore"
+    },
+    "nodeIndex": 7,
+    "segmentIndices": [
+      48,
+      49
+    ]
+  },
+  "vehicleCorrections": [
+    {
+      "file": "data/routes/owner-reviewed/G18.json",
+      "original": {
+        "fromId": "node:68ed9d0821e485e82f8f",
+        "toId": "node:bca4509332fbaaf5f94e",
+        "from": "瓦拉米步道起點",
+        "to": "南安遊客中心",
+        "minutes": 20,
+        "travelMode": "walking",
+        "verificationStatus": "verified",
+        "verificationBasis": "owner_workbook_review",
+        "timeAlternatives": [],
+        "sourceRows": [
+          "RDF58359CAC"
+        ],
+        "evidenceRows": [
+          787
+        ],
+        "sourceGroups": [
+          "新康橫斷/戒茂斯"
+        ],
+        "sourceChart": "G18",
+        "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+        "sourceNote": "",
+        "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+        "sources": [
+          {
+            "group": "新康橫斷/戒茂斯",
+            "chartId": "G18",
+            "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+            "rowId": "RDF58359CAC",
+            "sheetRows": [
+              787
+            ],
+            "minutes": 20
+          }
+        ],
+        "sourceGroupNames": [
+          "新康橫斷/戒茂斯"
+        ]
+      },
+      "current": {
+        "fromId": "node:68ed9d0821e485e82f8f",
+        "toId": "node:bca4509332fbaaf5f94e",
+        "from": "瓦拉米步道起點",
+        "to": "南安遊客中心",
+        "minutes": 20,
+        "travelMode": "vehicle",
+        "verificationStatus": "verified",
+        "verificationBasis": "owner_workbook_review",
+        "timeAlternatives": [],
+        "sourceRows": [
+          "RDF58359CAC"
+        ],
+        "evidenceRows": [
+          787
+        ],
+        "sourceGroups": [
+          "新康橫斷/戒茂斯"
+        ],
+        "sourceChart": "G18",
+        "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+        "sourceNote": "",
+        "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+        "sources": [
+          {
+            "group": "新康橫斷/戒茂斯",
+            "chartId": "G18",
+            "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+            "rowId": "RDF58359CAC",
+            "sheetRows": [
+              787
+            ],
+            "minutes": 20
+          }
+        ],
+        "sourceGroupNames": [
+          "新康橫斷/戒茂斯"
+        ],
+        "routingEnabled": false,
+        "ownerModeCorrection": {
+          "date": "2026-11-12",
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+          "basis": "使用者明確確認20分鐘為車行，不參與步行計算"
+        }
+      }
+    },
+    {
+      "file": "data/routes/owner-reviewed/G18.json",
+      "original": {
+        "fromId": "node:bca4509332fbaaf5f94e",
+        "toId": "node:68ed9d0821e485e82f8f",
+        "from": "南安遊客中心",
+        "to": "瓦拉米步道起點",
+        "minutes": 20,
+        "travelMode": "walking",
+        "verificationStatus": "verified",
+        "verificationBasis": "owner_workbook_review",
+        "timeAlternatives": [],
+        "sourceRows": [
+          "RDF58359CAC"
+        ],
+        "evidenceRows": [
+          787
+        ],
+        "sourceGroups": [
+          "新康橫斷/戒茂斯"
+        ],
+        "sourceChart": "G18",
+        "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+        "sourceNote": "",
+        "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+        "sources": [
+          {
+            "group": "新康橫斷/戒茂斯",
+            "chartId": "G18",
+            "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+            "rowId": "RDF58359CAC",
+            "sheetRows": [
+              787
+            ],
+            "minutes": 20
+          }
+        ],
+        "sourceGroupNames": [
+          "新康橫斷/戒茂斯"
+        ]
+      },
+      "current": {
+        "fromId": "node:bca4509332fbaaf5f94e",
+        "toId": "node:68ed9d0821e485e82f8f",
+        "from": "南安遊客中心",
+        "to": "瓦拉米步道起點",
+        "minutes": 20,
+        "travelMode": "vehicle",
+        "verificationStatus": "verified",
+        "verificationBasis": "owner_workbook_review",
+        "timeAlternatives": [],
+        "sourceRows": [
+          "RDF58359CAC"
+        ],
+        "evidenceRows": [
+          787
+        ],
+        "sourceGroups": [
+          "新康橫斷/戒茂斯"
+        ],
+        "sourceChart": "G18",
+        "source": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+        "sourceNote": "",
+        "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+        "sources": [
+          {
+            "group": "新康橫斷/戒茂斯",
+            "chartId": "G18",
+            "url": "https://www.sunriver.com.tw/images/hiking/G18_hiking.jpg",
+            "rowId": "RDF58359CAC",
+            "sheetRows": [
+              787
+            ],
+            "minutes": 20
+          }
+        ],
+        "sourceGroupNames": [
+          "新康橫斷/戒茂斯"
+        ],
+        "routingEnabled": false,
+        "ownerModeCorrection": {
+          "date": "2026-11-12",
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+          "basis": "使用者明確確認20分鐘為車行，不參與步行計算"
+        }
+      }
+    }
+  ],
+  "merges": [],
+  "confirmedDistinctPairs": 17,
+  "keptSourceGapHistory": [
+    {
+      "fromId": "node:4833a5913699184b5b35",
+      "toId": "node:7e834e3946d8006bb547",
+      "groups": [
+        "G05"
+      ],
+      "minutes": 30,
+      "ownerConfirmed": false,
+      "reason": "no-source-anchor-within-policy"
+    },
+    {
+      "fromId": "node:413453c06804769a3470",
+      "toId": "node:a78dde46e2ca739d4ac9",
+      "groups": [
+        "G13"
+      ],
+      "minutes": 35,
+      "ownerConfirmed": false,
+      "reason": "missing-coordinate"
+    },
+    {
+      "fromId": "shared:cw-v07-064",
+      "toId": "shared:cw-v07-068",
+      "groups": [
+        "G16",
+        "G17"
+      ],
+      "minutes": 105,
+      "ownerConfirmed": false,
+      "reason": "OSM-route-detour-needs-review"
+    },
+    {
+      "fromId": "shared:cw-v07-007",
+      "toId": "shared:cw-v07-068",
+      "groups": [
+        "G16",
+        "G17"
+      ],
+      "minutes": 20,
+      "ownerConfirmed": false,
+      "reason": "OSM-route-detour-needs-review"
+    }
+  ],
+  "nodeAnnotations": [
+    {
+      "nodeId": "node:1bafd281610a4bf66a4b",
+      "text": "北鞍營地；北鞍三叉避難小屋",
+      "sourceInstruction": "11/12修改\n新增備註\"北鞍營地\"、\"北鞍三叉避難小屋\"",
+      "presentation": "source record only; display preference not yet applied"
+    }
+  ],
+  "directionalSignatureBefore": "8d7eaf49d5bbf97f55b613b914afcf416c647bce4d02db84557c6099f85abf77",
+  "directionalSignatureAfter": "8d7eaf49d5bbf97f55b613b914afcf416c647bce4d02db84557c6099f85abf77"
+}

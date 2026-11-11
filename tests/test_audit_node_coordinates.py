@@ -23,7 +23,7 @@ class SpatialAuditTests(unittest.TestCase):
         report = audit(self.bridge, self.terrain, self.selected)
         self.assertEqual(self.terrain, baseline)
         self.assertEqual({n['nodeId'] for n in report['nodes']}, {n['nodeId'] for n in self.terrain['nodes']})
-        self.assertEqual(sum(report['counts'].values()), 721)
+        self.assertEqual(sum(report['counts'].values()), 720)
         self.assertEqual(report['counts']['依政策不定位'], 46)
         self.assertEqual(report['counts'].get('待補座標', 0), 0)
         self.assertNotIn('來源已核實', report['counts'])
@@ -52,8 +52,8 @@ class SpatialAuditTests(unittest.TestCase):
     def test_readable_tables_keep_all_ids_and_decision_targets(self):
         tables = presentation(self.report, self.bridge)
         rows = tables['檢閱總覽'][1:]
-        self.assertEqual(len(rows), 721)
-        self.assertEqual(len({r[-1] for r in rows}), 721)
+        self.assertEqual(len(rows), 720)
+        self.assertEqual(len({r[-1] for r in rows}), 720)
         self.assertTrue(all(r[12].startswith('#gid=105&range=H') for r in rows))
         self.assertEqual(len(tables['疑點明細'])-1, sum(self.report['flagCounts'].values()))
 

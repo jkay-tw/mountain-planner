@@ -16,7 +16,7 @@
   },
   "humanDecisionColumns": "H:M",
   "workingRuntimePath": "preview/data/geometry/planner-terrain-v1.json",
-  "workingState": "2026-11-11 second owner review source-rebuilt; production and Preview synchronized; data release workflow prepared",
+  "workingState": "2026-11-12 explicit owner decisions applied and source-rebuilt; publication workflow prepared",
   "latestReview": {
     "date": "2026-11-11",
     "status": "applied-preview-unpublished",
@@ -62,8 +62,8 @@
   ],
   "spatialAudit": {
     "date": "2026-11-11",
-    "report": "data/audits/node-coordinate-spatial-audit-round2-20261111.json",
-    "previousReport": "data/audits/node-coordinate-spatial-audit-20261111.json",
+    "report": "data/audits/node-coordinate-spatial-audit-20261112.json",
+    "previousReport": "data/audits/node-coordinate-spatial-audit-round2-20261111.json",
     "ruleVersion": "spatial-screen-v1",
     "sheets": {
       "檢閱總覽": 109,
@@ -71,13 +71,12 @@
       "檢查規則": 111
     },
     "counts": {
-      "未發現規則異常": 616,
-      "參考提醒": 51,
-      "建議複核": 8,
-      "待補座標": 0,
+      "未發現規則異常": 617,
+      "參考提醒": 56,
+      "建議複核": 1,
       "依政策不定位": 46
     },
-    "findingRecords": 61
+    "findingRecords": 59
   },
   "status": "owner decisions applied, source-aware terrain rebuilt, source differences and existing gaps preserved; not independent external verification",
   "latestRound2": {
@@ -102,5 +101,29 @@
     "directionalSourceRecords": 1550,
     "publicationAuthorizedBy": "owner chat 2026-11-11 conditional on no new unresolved coordinate concerns",
     "releaseTag": "data-coordinates-20261111-r1"
+  },
+  "latestNov12": {
+    "date": "2026-11-12",
+    "snapshot": "data/geometry/sources/sheet-review-20261112.json",
+    "application": "data/geometry/sources/sheet-review-application-20261112.json",
+    "terrainReport": "data/geometry/sources/sheet-review-terrain-20261112.json",
+    "coordinateDecisions": 10,
+    "retirements": 1,
+    "vehicleDirectionsReclassified": 2,
+    "identityMerges": 0,
+    "confirmedDistinctPairs": 17,
+    "activeNodes": 720,
+    "locatedNodes": 674,
+    "ignored": 19,
+    "vehicleOnly": 27,
+    "spans": 694,
+    "sourceGapHistory": 4,
+    "activeSourceGaps": 2,
+    "releaseTag": "data-coordinates-20261112",
+    "notePresentation": "source record only; no UI expansion",
+    "sourceRecords": 3325,
+    "directionalSourceRecords": 1548,
+    "retiredRecords": 7,
+    "preservedReviewRows": 724
   }
 }

@@ -36,7 +36,7 @@ class CoordinateInventoryTests(unittest.TestCase):
     def test_full_inventory_uses_manifest_ids_and_has_real_neighbors(self):
         manifest,nodes=inventory.load_nodes()
         self.assertEqual(len(manifest['routes']),24)
-        self.assertEqual(len(nodes),721)
+        self.assertEqual(len(nodes),720)
         self.assertEqual(nodes['g04-039']['name'],'圈谷底部')
         self.assertTrue(nodes['g04-039']['neighbors'])
 

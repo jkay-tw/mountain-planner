@@ -1,13 +1,13 @@
 // Safely migrate legacy single-chart itineraries into the global graph.
 // Preserve historical official-minute snapshots; never recalculate on import.
-import {buildNodeRegistry,isRetiredPreviewNode,canonicalReviewedId,acceptsReviewedName} from './node-identity.js?v=review20261111r2';
+import {buildNodeRegistry,isRetiredPreviewNode,canonicalReviewedId,acceptsReviewedName} from './node-identity.js?v=review20261112';
 export function migrateLegacyPlanDays(days, sourceRoute, globalRoute) {
   if(!Array.isArray(days)||!sourceRoute?.route_id||!globalRoute?.nodes)throw new Error('Invalid legacy migration inputs');
   const legacy=buildNodeRegistry(sourceRoute);
   const globalById=new Map(globalRoute.nodes.map(n=>[n.id,n]));
   return days.map(day=>({...day,items:day.items.map(item=>{
     if(item.type!=='location')return {...item};
-    if(['G07','G19'].includes(sourceRoute.route_id)&&isRetiredPreviewNode(item))return {...item,catalogStatus:'retired',incoming:item.incoming?{...item.incoming}:item.incoming};
+    if(['G07','G19','G13'].includes(sourceRoute.route_id)&&isRetiredPreviewNode(item))return {...item,catalogStatus:'retired',incoming:item.incoming?{...item.incoming}:item.incoming};
     let original;
     if(item.nodeId){
       original=legacy.byId.get(item.nodeId)||legacy.byId.get(canonicalReviewedId(item.nodeId,item.name));

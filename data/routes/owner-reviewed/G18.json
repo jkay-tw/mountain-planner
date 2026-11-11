@@ -3334,7 +3334,7 @@
       "from": "瓦拉米步道起點",
       "to": "南安遊客中心",
       "minutes": 20,
-      "travelMode": "walking",
+      "travelMode": "vehicle",
       "verificationStatus": "verified",
       "verificationBasis": "owner_workbook_review",
       "timeAlternatives": [],
@@ -3365,7 +3365,13 @@
       ],
       "sourceGroupNames": [
         "新康橫斷/戒茂斯"
-      ]
+      ],
+      "routingEnabled": false,
+      "ownerModeCorrection": {
+        "date": "2026-11-12",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "basis": "使用者明確確認20分鐘為車行，不參與步行計算"
+      }
     },
     {
       "fromId": "node:bca4509332fbaaf5f94e",
@@ -3373,7 +3379,7 @@
       "from": "南安遊客中心",
       "to": "瓦拉米步道起點",
       "minutes": 20,
-      "travelMode": "walking",
+      "travelMode": "vehicle",
       "verificationStatus": "verified",
       "verificationBasis": "owner_workbook_review",
       "timeAlternatives": [],
@@ -3404,7 +3410,13 @@
       ],
       "sourceGroupNames": [
         "新康橫斷/戒茂斯"
-      ]
+      ],
+      "routingEnabled": false,
+      "ownerModeCorrection": {
+        "date": "2026-11-12",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "basis": "使用者明確確認20分鐘為車行，不參與步行計算"
+      }
     },
     {
       "fromId": "node:cc6b151b8c6e1aeccea0",

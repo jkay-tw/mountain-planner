@@ -11,7 +11,7 @@ function day(a,b){return {items:[{id:'a',type:'location',nodeId:a,name:by.get(a)
 test('all positioned labels have elevations; every reviewed pair is covered or explicitly classified',()=>{
  assert.ok(validateGeometry(data));
  for(const n of data.nodes)if(n.coordinate)assert.ok(Number.isFinite(n.elevationMeters),n.nodeId);
- const pairs=new Set(routes.flatMap(r=>[...r.segments,...(r.manualConnections||[])]).map(s=>[s.fromId,s.toId].sort().join('>')));
+ const pairs=new Set(routes.flatMap(r=>[...r.segments.filter(s=>s.routingEnabled!==false&&s.travelMode!=='vehicle'),...(r.manualConnections||[])]).map(s=>[s.fromId,s.toId].sort().join('>')));
  const spans=new Set(data.spans.map(s=>[s.fromId,s.toId].sort().join('>'))),gaps=new Map(data.coverage.routeDataGaps.map(g=>[[g.fromId,g.toId].sort().join('>'),g]));
  assert.equal(data.coverage.routePairs,pairs.size);
  for(const pair of pairs){assert.notEqual(spans.has(pair),gaps.has(pair),pair);if(gaps.has(pair))assert.ok(gaps.get(pair).reason)}

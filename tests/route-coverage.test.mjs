@@ -7,11 +7,12 @@ test('unified-preview catalog has unique directional edges, stable physical IDs 
  const load=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url),'utf8'));
  const summary=reportCatalog(load('data/unified-editor-manifest.json'),load);
  assert.equal(summary.datasetCount,24);
- assert.equal(summary.inputDirectedEdges,1548);
+ assert.equal(summary.inputDirectedEdges,1546); // Two retired G13 records are archived; disabled vehicle records remain traceable.
  assert.ok(summary.uniqueDirectedEdges<=summary.inputDirectedEdges);
  assert.ok(summary.physicalNodes<=summary.inputNodes);
  assert.ok(summary.charts.some(r=>r.id==='G04'&&r.directedEdges===142));
  assert.ok(summary.charts.some(r=>r.id==='G18'&&r.directedEdges===94));
+ assert.ok(summary.charts.some(r=>r.id==='G18'&&r.disabledDirections===2));
 });
 test('coverage validator rejects duplicate chart IDs and illegal walking edge metadata',()=>{
  const base={route_id:'X',nodes:[{id:'a',name:'A'},{id:'b',name:'B'}],
