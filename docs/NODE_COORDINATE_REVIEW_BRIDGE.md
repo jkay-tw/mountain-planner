@@ -119,3 +119,7 @@ CSV 對試算表公式前綴加引號；native Sheets 寫入使用 `stringValue`
 - 全節點重檢616未命中、51參考提醒、8既有複核、0缺座標；8點已有明確保留／指定決策，無新增未解釋座標警示。4缺線仍不產生假GPX。17組50m內近點，沒有僅大小寫或空白不同的名稱；因此本輪未新增合併。近點核對gid117供指定ID後續討論。
 - 線上逐值讀回核對721節點、3318來源、1550方向紀錄、721總覽、61疑點、4缺口、17近點；724審查ID與H:M保留，103原GPX備註／ID保留，唯一並行人工清空F值已記錄。沒有公式錯誤。證據 `data/audits/owner-coordinate-round2-verification-20261111.json`。
 - 139項JS、113項Python、14項小地圖測試與同步／語法守門通過；資料版tag `data-coordinates-20261111`，應用程式維持v0.9.0。正式／Preview入口、身分遷移模組及6個修改路線的快取版號一併更新。
+
+### 發行指紋補正
+
+第一個main提交25f11eb的額外G04發布守門抓到換行差異：Windows工作檔的CRLF雜湊不能當作Git上LF檔案的雜湊。`sync_coordinate_geometry.py`改以Git LF正規化位元組計算資料／JS版本，並在check驗證HTML與資料引用；同步刷新兩個入口。座標、方向時間、OSM／DEM與線形均不變。修正版tag `data-coordinates-20261111-r1`，115項Python含2項新回歸測試；不覆寫初版tag。後續以修正版及最新main為準。

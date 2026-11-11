@@ -121,9 +121,23 @@ def atomic_copy(src, dst):
     return True
 
 
+def canonical_bytes(path):
+    """Git stores these text assets as LF, even with a Windows CRLF checkout."""
+    return path.read_bytes().replace(b"\r\n", b"\n")
+
+
+def verify_cache(js_path, html_path, geometry_path):
+    data_sha = hashlib.sha256(canonical_bytes(geometry_path)).hexdigest()[:12]
+    if "data/geometry/planner-terrain-v1.json?v=geo" + data_sha not in js_path.read_text(encoding="utf-8"):
+        raise ValueError("Geometry cache URL is stale: " + str(js_path))
+    script_sha = hashlib.sha256(canonical_bytes(js_path)).hexdigest()[:12]
+    if "js/unified-editor.js?v=geo" + script_sha not in html_path.read_text(encoding="utf-8"):
+        raise ValueError("HTML script cache URL is stale: " + str(html_path))
+
+
 def refresh_cache(js_path, html_path, geometry_path):
     """Data SHA drives the fetch query; app SHA drives the HTML module query."""
-    digest = hashlib.sha256(geometry_path.read_bytes()).hexdigest()[:12]
+    digest = hashlib.sha256(canonical_bytes(geometry_path)).hexdigest()[:12]
     js = js_path.read_text(encoding="utf-8")
     find = r"data/geometry/planner-terrain-v1\.json\?v=[A-Za-z0-9_.-]+"
     ref = "data/geometry/planner-terrain-v1.json?v=geo" + digest
@@ -139,7 +153,7 @@ def refresh_cache(js_path, html_path, geometry_path):
     )
     if updated != js:
         js_path.write_text(updated, encoding="utf-8")
-    script_sha = hashlib.sha256(js_path.read_bytes()).hexdigest()[:12]
+    script_sha = hashlib.sha256(canonical_bytes(js_path)).hexdigest()[:12]
     html = html_path.read_text(encoding="utf-8")
     # Root production uses js/, Preview uses js/ relative to its own HTML.
     updated_html, count = re.subn(
@@ -194,6 +208,9 @@ def main():
         print(f"Production geometry promoted (changed={copied}, data={v}, script={s}).")
     else:
         verify_runtime(PREVIEW, fingerprint, review, catalog_nodes)
+        verify_cache(PREVIEW_JS, PREVIEW_HTML, PREVIEW)
+        if canonical_bytes(OFFICIAL) == canonical_bytes(PREVIEW):
+            verify_cache(PRODUCTION_JS, PRODUCTION_HTML, OFFICIAL)
         print("Preview geometry is current with reviewed route/coordinate sources.")
     print("No node-ID merging, unverified routing or fabricated GPX spans were performed.")
 
