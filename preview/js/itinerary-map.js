@@ -5,7 +5,7 @@ import {twd97Label} from './twd97.js?v=v0731';
 import {nodeAliases} from './node-aliases.js?v=aliases1';
 import {resolveItineraryGeometry,geometryToGpx,formatTerrain,renderTerrainProfile,terrainDayColor} from './itinerary-geometry.js?v=v084';
 
-// No plan mutations or persistent state. Failure here must not block the editor.
+// Optional path edits use the host editor callback; map failure must not block the DAY editor.
 export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=null,getNode=()=>null,onChange=()=>{}}){
   let data=initialData,map=null,group=null,labelGroup=null,latest=null,ready=null,selectedNode=null;
   let editor=null;
