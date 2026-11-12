@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mountain Planner 登山行程規劃器</title>
-  <link rel="stylesheet" href="css/style.css?v=v090" />
+  <link rel="stylesheet" href="css/style.css?v=tripname1" />
   <link rel="stylesheet" href="css/itinerary-map.css?v=aliases2" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"></script>
@@ -35,6 +35,7 @@
         </div>
         <div class="copy-row">
           <a class="source compact-source guide-link" href="guide.html" target="_blank" rel="noopener">使用說明</a>
+          <a class="source compact-source feedback-link" href="https://docs.google.com/forms/d/e/1FAIpQLScZ__-dr9MfDNLtWpz0AvvUU1puMz_2-II7t1WCAZ8cwNTtFw/viewform?usp=publish-editor" target="_blank" rel="noopener">意見回饋</a>
           <a class="source compact-source" href="https://www.sunriver.com.tw/step2020.htm" target="_blank" rel="noreferrer">上河來源</a>
         </div>
       </div>
@@ -48,8 +49,9 @@
           <button id="mobileImport">匯入</button>
           <button id="mobileExcel">匯出 Excel</button>
           <button id="mobileCopy">複製行程文字</button>
-          <a href="https://www.sunriver.com.tw/step2020.htm" target="_blank" rel="noreferrer">上河來源</a>
           <a class="guide-link" href="guide.html" target="_blank" rel="noopener">使用說明</a>
+          <a class="feedback-link" href="https://docs.google.com/forms/d/e/1FAIpQLScZ__-dr9MfDNLtWpz0AvvUU1puMz_2-II7t1WCAZ8cwNTtFw/viewform?usp=publish-editor" target="_blank" rel="noopener">意見回饋</a>
+          <a href="https://www.sunriver.com.tw/step2020.htm" target="_blank" rel="noreferrer">上河來源</a>
           <button id="mobileReset" class="danger-text">全部清除</button>
         </div>
       </details>
@@ -61,6 +63,10 @@
       <div class="field route-field">
         <label for="routeSelect">上河圖群組</label>
         <select id="routeSelect"></select>
+      </div>
+      <div class="field trip-name-field">
+        <label for="tripName">行程名稱（選填）</label>
+        <input id="tripName" type="text" maxlength="100" placeholder="例如：雪山三日" />
       </div>
       <div class="field date-field">
         <label for="tripDate">出發日期</label>
@@ -98,6 +104,6 @@
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
-  <script type="module" src="js/unified-editor.js?v=geo718b539279be"></script>
+  <script type="module" src="js/unified-editor.js?v=geoaa0d5ac4c0ad"></script>
 </body>
 </html>

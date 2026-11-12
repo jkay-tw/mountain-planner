@@ -14,7 +14,7 @@ import {allNodes,shortestPath,uid,round2,edgeActual,referenceMinutes,setEdgeCoef
 import {validatePlan} from './validation.js?v=segments1';
 import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js?v=review20261112b';
 import {migrateLegacyPlanDays} from './legacy-plan-migration.js?v=review20261112b';
-import {exportExcel} from './exporter.js?v=segments1';
+import {exportExcel} from './exporter.js?v=tripname2';
 import {filterLocations,searchLocationLabel} from './node-browser.js?v=aliases2';
 import {nodeAliases,showNodeAliases} from './node-aliases.js?v=aliases1';
 import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=v084';
@@ -23,21 +23,21 @@ const $=id=>document.getElementById(id);
 const IS_PRODUCTION=document.body.dataset.mode==='production';
 const IS_DEMO=!IS_PRODUCTION&&new URLSearchParams(location.search).get('demo')==='xueshan';
 const STORAGE_KEY=IS_PRODUCTION?'mountain-planner.global-autosave.v1':'mountain-planner.unified-preview-autosave.v0711';
-const APP_VERSION=IS_PRODUCTION?'v0.9.0':'v0.9.0 Preview';
+const APP_VERSION=IS_PRODUCTION?'v0.9.1':'v0.9.1 Preview';
 const COLLAPSE_KEY=IS_PRODUCTION?'mountain-planner.collapsed-days.v1':'mountain-planner.unified-preview-collapsed.v0711';
 let collapsedDays=new Set();
-let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',scope='';
+let manifest,route=null,nodes=[],days=[],drag=null,tripStartDate='',tripName='',scope='';
 let itineraryMap=null,terrainData=null;
 const openProfiles=new Set();
 // Ephemeral UI state: the quick map stays open while a day is re-rendered.
 const openQuickMaps=new Set();
 let snapshots=[],at=-1,restoring=false;
-function checkpoint(){if(restoring)return;const state=JSON.stringify({routeId:route?.route_id||null,scope,tripStartDate,days});if(state===snapshots[at])return;snapshots=snapshots.slice(0,at+1);snapshots.push(state);if(snapshots.length>50)snapshots.shift();at=snapshots.length-1;buttons()}
+function checkpoint(){if(restoring)return;const state=JSON.stringify({routeId:route?.route_id||null,scope,tripStartDate,tripName,days});if(state===snapshots[at])return;snapshots=snapshots.slice(0,at+1);snapshots.push(state);if(snapshots.length>50)snapshots.shift();at=snapshots.length-1;buttons()}
 function buttons(){
   ['undoBtn','floatUndoBtn'].forEach(id=>{if($(id))$(id).disabled=at<1});
   ['redoBtn','floatRedoBtn'].forEach(id=>{if($(id))$(id).disabled=at>=snapshots.length-1});
 }
-async function restore(i){if(i<0||i>=snapshots.length)return;const x=JSON.parse(snapshots[i]);restoring=true;try{scope=x.scope||'all';$('routeSelect').value=scope;tripStartDate=x.tripStartDate;$('tripDate').value=tripStartDate;days=sanitizeDays(migrateDaysToNodeIds(x.days,route));$('dayCount').value=String(days.length);at=i;render(false);saveAutosave();buttons()}finally{restoring=false}}
+async function restore(i){if(i<0||i>=snapshots.length)return;const x=JSON.parse(snapshots[i]);restoring=true;try{scope=x.scope||'all';$('routeSelect').value=scope;tripStartDate=x.tripStartDate||'';tripName=x.tripName||'';$('tripDate').value=tripStartDate;$('tripName').value=tripName;days=sanitizeDays(migrateDaysToNodeIds(x.days,route));$('dayCount').value=String(days.length);at=i;render(false);saveAutosave();buttons()}finally{restoring=false}}
 const checkMissing=()=>{const n=days.reduce((sum,d)=>sum+missingSegments(d),0);return n===0||confirm('有 '+n+' 個路段未填時間，匯出結果含未完成時間。仍繼續？')};
 
 
@@ -62,6 +62,8 @@ async function init(){
   if(!['all',...manifest.routes.map(r=>r.id)].includes(scope))scope='all';
   $('routeSelect').value=scope;
 
+  tripName=typeof restored?.tripName==='string'?restored.tripName:'';
+  $('tripName').value=tripName;
   tripStartDate=restored?.tripStartDate||'';
   $('tripDate').value=tripStartDate;
   let restoredDays=restored?.days;
@@ -76,7 +78,7 @@ async function init(){
   try{const response=await fetch('data/geometry/planner-terrain-v1.json?v=geobc837ccbe83b',{cache:'no-store'});if(!response.ok)throw Error();terrainData=await response.json()}catch(error){console.warn('節點座標與地形資料未載入')}
   bindGlobal();
   render(false);saveAutosave(false);checkpoint();
-  if($('itineraryGeometry'))import('./itinerary-map.js?v=aliases1')
+  if($('itineraryGeometry'))import('./itinerary-map.js?v=autoload1')
     .then(({createItineraryMap})=>{itineraryMap=createItineraryMap({host:$('itineraryGeometry'),getDays:()=>days,initialData:terrainData,getNode:id=>route?.nodes.find(n=>n.id===id)})})
     .catch(error=>{$('itineraryGeometry').textContent='地圖載入失敗：'+error.message});
 }
@@ -115,7 +117,7 @@ const tabAutosave=createTabAutosave({
 function saveAutosave(shared=true){
   if(IS_DEMO)return;
   tabAutosave.save({format:'mountain-planner',schemaVersion:1,routeId:route?.route_id||null,
-    scope,datasetVersion:manifest.dataset_version,tripStartDate,days},{shared});
+    scope,datasetVersion:manifest.dataset_version,tripStartDate,tripName,days},{shared});
 }
 function loadAutosave(){return IS_DEMO?null:tabAutosave.load()}
 
@@ -125,6 +127,7 @@ function bindGlobal(){
     scope=e.target.value||'all';
     render();
   };
+  $('tripName').onchange=e=>{tripName=e.target.value;render()};
   $('tripDate').onchange=e=>{tripStartDate=e.target.value;render()};
   $('dayCount').onchange=e=>{
     const n=+e.target.value;
@@ -156,15 +159,15 @@ function bindGlobal(){
   $('resetBtn').onclick=()=>{
     if(!confirm('確定清除全部行程？可使用復原還原。'))return;
     setNoRoute();
-    tripStartDate='';$('tripDate').value='';
+    tripStartDate='';tripName='';$('tripDate').value='';$('tripName').value='';
     days=[newDay(0)];$('dayCount').value='1';
     render();
   };
   $('exportBtn').onclick=async()=>{
     if(!days.some(d=>locs(d).length)){alert('請先建立行程');return}
     if(!checkMissing())return;
-    const name=route.route_id+'_'+route.route_name+'_行程.xlsx';
-    try{const handle=await chooseSaveTarget(name,'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet','xlsx');await exportExcel({route,days,datasetVersion:manifest.dataset_version,tripStartDate,terrainData,handle})}catch(error){reportSaveError(error)}
+    const name=exportName('xlsx');
+    try{const handle=await chooseSaveTarget(name,'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet','xlsx');await exportExcel({route,days,datasetVersion:manifest.dataset_version,tripStartDate,tripName,terrainData,handle,name})}catch(error){reportSaveError(error)}
   };
   $('copyBtn').onclick=copyTextItinerary;
   $('saveBtn').onclick=downloadPlan;
@@ -269,9 +272,9 @@ function toast(msg){const t=document.createElement('div');t.className='toast';t.
 async function downloadPlan(){
   if(!checkMissing())return;
   if(!route&&!days.some(d=>d.items.length)){alert('目前沒有可匯出的行程');return}
-  const payload={format:'mountain-planner',schemaVersion:1,savedAt:new Date().toISOString(),routeId:route?.route_id||null,scope,datasetVersion:manifest.dataset_version,tripStartDate,days};
+  const payload={format:'mountain-planner',schemaVersion:1,savedAt:new Date().toISOString(),routeId:route?.route_id||null,scope,datasetVersion:manifest.dataset_version,tripStartDate,tripName,days};
   const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
-  const name=(route?route.route_id+'_'+route.route_name:'mountain-planner')+'.mplan.json';
+  const name=exportName('json');
   try{const handle=await chooseSaveTarget(name,'application/json','json');await writeDownload(blob,name,handle)}catch(error){reportSaveError(error)}
 }
 async function importPlan(e){
@@ -288,12 +291,21 @@ async function importPlan(e){
   if(days.some(d=>d.items.length)&&!confirm('匯入將取代目前行程，可以使用復原。確定？'))return;
   scope=data.scope&&['all',...manifest.routes.map(m=>m.id)].includes(data.scope)?data.scope:'all';
   $('routeSelect').value=scope;
+  tripName=typeof data.tripName==='string'?data.tripName:'';$('tripName').value=tripName;
   tripStartDate=data.tripStartDate||'';$('tripDate').value=tripStartDate;
   days=importedDays;$('dayCount').value=String(days.length);
   render();if(data.datasetVersion&&data.datasetVersion!==manifest.dataset_version)alert('資料庫版本不同；已保留檔案中的官方時間快照，請核對。');else toast('行程已匯入');
  }catch(err){alert('匯入失敗：'+err.message)}
 }
 
+function exportName(ext){
+  const base=tripName.trim().replace(/[<>:"/\\|?*\x00-\x1f]/g,'_').replace(/[. ]+$/,'').slice(0,100)||'登山行程';
+  if(!tripStartDate)return base+'.'+ext;
+  const start=tripStartDate.replaceAll('-','');
+  const end=new Date(tripStartDate+'T00:00:00');end.setDate(end.getDate()+days.length-1);
+  const finish=String(end.getFullYear())+String(end.getMonth()+1).padStart(2,'0')+String(end.getDate()).padStart(2,'0');
+  return base+'_'+start+(days.length>1?'-'+(start.slice(0,4)===finish.slice(0,4)?finish.slice(4):finish):'')+'.'+ext;
+}
 function dayDate(index){
   if(!tripStartDate)return '';
   const d=new Date(tripStartDate+'T00:00:00');d.setDate(d.getDate()+index);

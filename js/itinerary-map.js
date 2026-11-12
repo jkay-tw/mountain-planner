@@ -110,9 +110,15 @@ export function createItineraryMap({host,getDays,initialData=null,getNode=()=>nu
     }
     refresh();load.hidden=true;map.invalidateSize();if(group.getBounds().isValid())map.fitBounds(group.getBounds(),{padding:[25,25],maxZoom:16});
   }
-  load.onclick=()=>{if(ready)return;load.disabled=true;ready=initialize().catch(error=>{status.textContent=error.message;load.disabled=false}).finally(()=>{ready=null})};
+  function startLoading(){
+    if(ready||load.hidden)return;
+    load.hidden=true;load.disabled=true;
+    ready=initialize().catch(error=>{status.textContent=error.message;load.textContent='重新載入地圖';load.hidden=false;load.disabled=false}).finally(()=>{ready=null});
+  }
+  load.onclick=startLoading;
   fit.onclick=()=>{if(group?.getBounds().isValid())map.fitBounds(group.getBounds(),{padding:[25,25],maxZoom:16})};
-  host.addEventListener('toggle',()=>{if(host.open&&map)requestAnimationFrame(()=>map.invalidateSize())});
+  host.addEventListener('toggle',event=>{if(event.target!==host||!host.open)return;if(map&&load.hidden)requestAnimationFrame(()=>map.invalidateSize());else startLoading()});
+  if(host.open)startLoading();
   exp.onclick=async()=>{
     refresh();
     const hasTracks=latest.days.some(d=>d.features.length);

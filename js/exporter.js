@@ -5,14 +5,14 @@ const placeLabel=r=>(r.isPeak?'⛰ ':'')+r.name+(r.hasWater?' 💧':'');
 const excelDuration=min=>min==null||min===''?'':Number(min)/1440;
 const font='Microsoft JhengHei';
 const dateForDay=(startDate,index)=>{if(!startDate)return '';const d=new Date(startDate+'T00:00:00');d.setDate(d.getDate()+index);return d.getFullYear()+'/'+String(d.getMonth()+1).padStart(2,'0')+'/'+String(d.getDate()).padStart(2,'0')};
-export async function exportExcel({route,days,datasetVersion,tripStartDate,terrainData=null,handle=null}){
+export async function exportExcel({route,days,datasetVersion,tripStartDate,tripName='',terrainData=null,handle=null,name=null}){
  if(!window.ExcelJS)throw new Error('ExcelJS 尚未載入');
  const wb=new ExcelJS.Workbook();wb.creator='Mountain Planner';wb.created=new Date();
  const ws=wb.addWorksheet('登山行程',{views:[{state:'normal',showGridLines:true}]});
  ws.properties={defaultRowHeight:15.75};
  ws.columns=[18,8,7,7,5,7.5703125,6.85546875,6.85546875,20].map(width=>({width}));
  ws.pageSetup={paperSize:9,orientation:'portrait',fitToPage:true,fitToWidth:1,fitToHeight:0,horizontalCentered:true,margins:{left:.25,right:.25,top:.35,bottom:.35,header:.15,footer:.15},printTitlesRow:'1:1'};
- ws.mergeCells('A1:I1');ws.getCell('A1').value='登山行程規劃';ws.getCell('A1').font={name:font,bold:true,size:16};ws.getCell('A1').alignment={horizontal:'center',vertical:'middle'};ws.getRow(1).height=27.95;
+ ws.mergeCells('A1:I1');ws.getCell('A1').value=tripName.trim()||'登山行程規劃';ws.getCell('A1').font={name:font,bold:true,size:16};ws.getCell('A1').alignment={horizontal:'center',vertical:'middle'};ws.getRow(1).height=27.95;
  const border={top:{style:'thin',color:{argb:'FFB8C5BC'}},bottom:{style:'thin',color:{argb:'FFB8C5BC'}},left:{style:'thin',color:{argb:'FFB8C5BC'}},right:{style:'thin',color:{argb:'FFB8C5BC'}}};
  const addHeader=()=>{const header=ws.getRow(rowNo);header.values=['地點／事件','抵達','規劃','上河','係數','距離 km','↗ m','↘ m','備註'];header.height=15.75;header.eachCell(c=>{c.font={name:font,bold:true,size:9,color:{argb:'FFFFFFFF'}};c.alignment={horizontal:'center',vertical:'middle'};c.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FF426651'}};c.border=border});rowNo++};
  let rowNo=2;
@@ -39,6 +39,6 @@ export async function exportExcel({route,days,datasetVersion,tripStartDate,terra
   if(day.note){ws.mergeCells(rowNo,1,rowNo,9);const c=ws.getCell(rowNo,1);c.value='Day '+(i+1)+' 備註：'+day.note;c.font={name:font,size:10};c.alignment={vertical:'middle',wrapText:true};ws.getRow(rowNo).height=15.75;rowNo++}rowNo++;
  }
  ws.pageSetup.printArea='A1:I'+Math.max(3,rowNo-1);
- const buf=await wb.xlsx.writeBuffer(),blob=new Blob([buf],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});await writeDownload(blob,route.route_id+'_'+route.route_name+'_行程.xlsx',handle);
+ const buf=await wb.xlsx.writeBuffer(),blob=new Blob([buf],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});await writeDownload(blob,name||route.route_id+'_'+route.route_name+'_行程.xlsx',handle);
 }
 function minutesHHMM(min){const m=Math.max(0,Math.round(Number(min)||0));return Math.floor(m/60)+':'+String(m%60).padStart(2,'0')}
