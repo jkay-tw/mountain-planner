@@ -1,0 +1,21 @@
+name: Publish G04 and node alias update
+on:
+  push:
+    branches: [main]
+    paths: ['docs/RELEASE_G04_ALIAS_20261112.md']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 tools/sync_coordinate_geometry.py --check
+      - name: Publish update while retaining the current application latest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create update-g04-alias-20261112 --target "$GITHUB_SHA" --title '大霸霸基與節點別稱更新（2026-11-12）' --notes-file docs/RELEASE_G04_ALIAS_20261112.md --latest=false data/geometry/sources/g04-owner-followup-20261112.json data/geometry/sources/alias-sheet-application-20261112.json data/geometry/sources/lowest-saddle-review-20261112.json

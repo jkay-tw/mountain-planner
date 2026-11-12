@@ -31,7 +31,7 @@ test('explicit names preserve IDs, old itinerary labels and owner alias without 
  assert.equal(graph.nodes.length,720);
  assert.equal(application.renames.length,2);
  for(const r of application.renames){
-  const n=graph.nodes.find(n=>n.id===r.nodeId);assert.equal(n.name,r.name);assert.ok(n.aliases.includes(r.oldName));
+  const n=graph.nodes.find(n=>n.id===r.nodeId);assert.equal(n.name,r.name);assert.ok([...n.aliases,...(n.legacyAliases||[])].includes(r.oldName));
   const days=[{items:[{type:'location',nodeId:r.nodeId,name:r.oldName,note:'retain'}]}];
   const migrated=migrateDaysToNodeIds(days,graph);assert.equal(migrated[0].items[0].nodeId,r.nodeId);assert.equal(migrated[0].items[0].note,'retain');
  }

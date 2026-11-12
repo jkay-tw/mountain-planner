@@ -2848,25 +2848,23 @@
       "nodeId": "node:9e9822f8d527f3ba8f6a",
       "name": "最低鞍部",
       "choice": "採用填入座標",
-      "note": "使用者 2026-11-11 明確採用；",
+      "note": "使用者2026-11-12後續修正最低鞍部；11/12修改",
       "coordinate": [
-        121.0671454,
-        23.5119654
+        121.1026972,
+        23.5196126
       ],
       "action": "coordinate",
       "originalCoordinate": {
         "format": "TWD97",
-        "x": 256857.0,
-        "y": 2600978.0
+        "x": 260487,
+        "y": 2601827
       },
       "source": {
-        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+        "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105&range=A570:P570",
         "sheetId": 105,
         "row": 570,
-        "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
-        "verification": "user-supplied",
-        "supplementalSource": "",
-        "ownerAmended": false
+        "snapshotSha256": "20524290b06c7ac7fd9c185eabe4da2e0707e6a93868caa5f415785c91466581",
+        "verification": "user-supplied"
       },
       "previousDecisions": [
         {
@@ -2877,6 +2875,32 @@
           "note": "",
           "coordinate": null,
           "action": "pending"
+        },
+        {
+          "reviewId": "R-dbb6d8f69de9299e2e1c",
+          "nodeId": "node:9e9822f8d527f3ba8f6a",
+          "name": "最低鞍部",
+          "choice": "採用填入座標",
+          "note": "使用者 2026-11-11 明確採用；",
+          "coordinate": [
+            121.0671454,
+            23.5119654
+          ],
+          "action": "coordinate",
+          "originalCoordinate": {
+            "format": "TWD97",
+            "x": 256857.0,
+            "y": 2600978.0
+          },
+          "source": {
+            "url": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105",
+            "sheetId": 105,
+            "row": 570,
+            "snapshotSha256": "2891a3f2806d517cac35b42da644a51faab188ac2ac5ece18a031b3841c0f823",
+            "verification": "user-supplied",
+            "supplementalSource": "",
+            "ownerAmended": false
+          }
         }
       ]
     },
@@ -4751,6 +4775,29 @@
         "verification": "user-supplied"
       },
       "note": "使用者2026-11-12指定；11/12修改",
+      "previousDecisions": []
+    },
+    {
+      "nodeId": "g04-007",
+      "reviewId": "owner-chat-g04-base-20261112",
+      "name": "大霸霸基",
+      "choice": "採用填入座標",
+      "action": "coordinate",
+      "coordinate": [
+        121.2583824,
+        24.460065
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 276194,
+        "y": 2706000
+      },
+      "source": {
+        "kind": "owner-chat",
+        "date": "2026-11-12",
+        "verification": "user-supplied"
+      },
+      "note": "使用者明確指定大霸霸基座標；舊山頂名稱記錄於來源封存。",
       "previousDecisions": []
     }
   ]

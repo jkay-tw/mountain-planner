@@ -124,13 +124,14 @@
     {
       "id": "node:8426704609cea5d43db4",
       "name": "杜鵑營地",
-      "aliases": [
-        "杜騰營地"
-      ],
+      "aliases": [],
       "groups": [
         "G17"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "group-scoped-owner-reviewed-label",
+      "legacyAliases": [
+        "杜騰營地"
+      ]
     },
     {
       "id": "node:85bb625c5f4bcbcf9abe",
@@ -225,13 +226,14 @@
     {
       "id": "shared:cw-v07-015",
       "name": "八通關山三岔路口",
-      "aliases": [
-        "三岔路口"
-      ],
+      "aliases": [],
       "groups": [
         "G17"
       ],
-      "identityBasis": "reviewed-crosswalk"
+      "identityBasis": "reviewed-crosswalk",
+      "legacyAliases": [
+        "三岔路口"
+      ]
     },
     {
       "id": "shared:cw-v07-016",
@@ -517,13 +519,14 @@
     {
       "id": "shared:owner-v0724-xiangyang-junction",
       "name": "向陽山三岔路口",
-      "aliases": [
-        "三岔路口"
-      ],
+      "aliases": [],
       "groups": [
         "G17"
       ],
-      "identityBasis": "reviewed-crosswalk"
+      "identityBasis": "reviewed-crosswalk",
+      "legacyAliases": [
+        "三岔路口"
+      ]
     }
   ],
   "segments": [

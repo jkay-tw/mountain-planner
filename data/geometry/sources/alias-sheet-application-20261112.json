@@ -1,0 +1,385 @@
+{
+  "sourceUrl": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=118",
+  "decisions": [
+    {
+      "row": 2,
+      "nodeId": "shared:cw-v07-015",
+      "previousAliases": [
+        "三岔路口"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 26,
+      "nodeId": "g02-006",
+      "previousAliases": [
+        "大鐵山"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 66,
+      "nodeId": "g04-002",
+      "previousAliases": [
+        "8.8 K岔路"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 73,
+      "nodeId": "g04-011",
+      "previousAliases": [],
+      "newAliases": [
+        "中霸坪"
+      ],
+      "note": null
+    },
+    {
+      "row": 105,
+      "nodeId": "g04-045",
+      "previousAliases": [
+        "雪山登山口管理站"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 125,
+      "nodeId": "g04-fork-daba",
+      "previousAliases": [],
+      "newAliases": [
+        "IOU平台",
+        "I Love You平台"
+      ],
+      "note": null
+    },
+    {
+      "row": 129,
+      "nodeId": "node:f6f2ba4c01559d0ff632",
+      "previousAliases": [
+        "武陵農場"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 148,
+      "nodeId": "node:43c9393ad0d04c1318ea",
+      "previousAliases": [
+        "登山口"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 156,
+      "nodeId": "node:6baf8b591a14fd8fc6c7",
+      "previousAliases": [
+        "大雪北山"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 163,
+      "nodeId": "node:82dff090b3168d02688e",
+      "previousAliases": [
+        "大南山山西鞍營地"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 197,
+      "nodeId": "g06-003",
+      "previousAliases": [
+        "水管路岔路"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 272,
+      "nodeId": "g08-006",
+      "previousAliases": [
+        "8.4K登山口營地"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 288,
+      "nodeId": "node:1c8dd60e5be898d71627",
+      "previousAliases": [
+        "果原登山口"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 302,
+      "nodeId": "node:7ac8a3389a7896957791",
+      "previousAliases": [
+        "滑訓中心"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 315,
+      "nodeId": "node:ff6ed5559a33fffbf64f",
+      "previousAliases": [
+        "松泉崗/天池登山口"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 317,
+      "nodeId": "shared:cw-v07-058",
+      "previousAliases": [
+        "奇萊登山口滑雪山莊"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 337,
+      "nodeId": "shared:cw-v07-065",
+      "previousAliases": [
+        "縣界埡口"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 352,
+      "nodeId": "node:0bb05f369d27294e722d",
+      "previousAliases": [
+        "3.8K流龍頭"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 354,
+      "nodeId": "node:1bafd281610a4bf66a4b",
+      "previousAliases": [
+        "三岔營地",
+        "北鞍營地",
+        "北鞍三叉避難小屋"
+      ],
+      "newAliases": [
+        "北鞍營地",
+        "北鞍三叉避難小屋"
+      ],
+      "note": null
+    },
+    {
+      "row": 357,
+      "nodeId": "node:21e51a6d32e43eaff76d",
+      "previousAliases": [],
+      "newAliases": [
+        "大理石避難山屋"
+      ],
+      "note": null
+    },
+    {
+      "row": 369,
+      "nodeId": "node:87c8b5e14f11ef4a032c",
+      "previousAliases": [],
+      "newAliases": [
+        "磐石中鋒避難山屋"
+      ],
+      "note": null
+    },
+    {
+      "row": 423,
+      "nodeId": "node:2e635ae9938cef65b1ac",
+      "previousAliases": [
+        "萬里山西峰"
+      ],
+      "newAliases": [
+        "萬里山西峰"
+      ],
+      "note": null
+    },
+    {
+      "row": 425,
+      "nodeId": "node:47e2c171ae6079bdeb59",
+      "previousAliases": [
+        "十粒溪營地"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 471,
+      "nodeId": "g14-026",
+      "previousAliases": [
+        "關門大營地"
+      ],
+      "newAliases": [
+        "關門大營地"
+      ],
+      "note": null
+    },
+    {
+      "row": 479,
+      "nodeId": "node:06b52b0f4a9c5db51f87",
+      "previousAliases": [
+        "岔路",
+        "東巒/烏達岔路"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 486,
+      "nodeId": "node:2d8fc441e99a93bda219",
+      "previousAliases": [
+        "33.5K大崩山"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 489,
+      "nodeId": "node:1670c3f1247b747ba02a",
+      "previousAliases": [
+        "玉林橋大崩壁"
+      ],
+      "newAliases": [
+        "玉林橋大崩壁"
+      ],
+      "note": null
+    },
+    {
+      "row": 491,
+      "nodeId": "node:3bf4ec2f689a3b5c4930",
+      "previousAliases": [
+        "烏瓦拉鼻溪"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 507,
+      "nodeId": "node:82e77090c06d1fe2aead",
+      "previousAliases": [
+        "最高峰"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 527,
+      "nodeId": "node:c8870812bd546115bac5",
+      "previousAliases": [
+        "三岔路營地"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 532,
+      "nodeId": "node:e9149e15effc99bc37f7",
+      "previousAliases": [
+        "岔路"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 552,
+      "nodeId": "node:2f804109a33585abde92",
+      "previousAliases": [
+        "喀西帕南山登山口"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 571,
+      "nodeId": "node:8426704609cea5d43db4",
+      "previousAliases": [
+        "杜騰營地"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 580,
+      "nodeId": "node:ea1afe9db60667f52737",
+      "previousAliases": [
+        "岔路"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 595,
+      "nodeId": "shared:cw-v07-063",
+      "previousAliases": [
+        "秀姑巒山舊址"
+      ],
+      "newAliases": [
+        "秀姑巒山舊址"
+      ],
+      "note": null
+    },
+    {
+      "row": 628,
+      "nodeId": "shared:owner-v0724-xiangyang-junction",
+      "previousAliases": [
+        "三岔路口"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 677,
+      "nodeId": "node:31f296b050e717e75c1a",
+      "previousAliases": [
+        "3026山屋"
+      ],
+      "newAliases": [
+        "3026山屋"
+      ],
+      "note": null
+    },
+    {
+      "row": 686,
+      "nodeId": "node:9a67a747c35d44edc6e7",
+      "previousAliases": [
+        "石山林道登山口"
+      ],
+      "newAliases": [
+        "石山林道登山口"
+      ],
+      "note": null
+    },
+    {
+      "row": 706,
+      "nodeId": "local:G19::shenchi-camp",
+      "previousAliases": [
+        "第一水源"
+      ],
+      "newAliases": [],
+      "note": null
+    },
+    {
+      "row": 708,
+      "nodeId": "g20-002",
+      "previousAliases": [
+        "舊登登山口"
+      ],
+      "newAliases": [],
+      "note": null
+    }
+  ],
+  "note": "明確清空的公開別稱保留在legacyAliases以相容舊行程；不顯示、不參與搜尋。"
+}

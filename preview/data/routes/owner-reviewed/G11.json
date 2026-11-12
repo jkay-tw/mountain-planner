@@ -150,14 +150,15 @@
     },
     {
       "id": "shared:cw-v07-065",
-      "name": "縣界啞口",
-      "aliases": [
-        "縣界埡口"
-      ],
+      "name": "縣界埡口",
+      "aliases": [],
       "groups": [
         "G11"
       ],
-      "identityBasis": "existing-reviewed-identity"
+      "identityBasis": "existing-reviewed-identity",
+      "legacyAliases": [
+        "縣界啞口"
+      ]
     },
     {
       "id": "shared:cw-v07-067",
@@ -460,7 +461,7 @@
       "fromId": "shared:cw-v07-038",
       "toId": "shared:cw-v07-065",
       "from": "天池山莊",
-      "to": "縣界啞口",
+      "to": "縣界埡口",
       "minutes": 50,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -526,7 +527,7 @@
     {
       "fromId": "shared:cw-v07-065",
       "toId": "shared:cw-v07-038",
-      "from": "縣界啞口",
+      "from": "縣界埡口",
       "to": "天池山莊",
       "minutes": 55,
       "travelMode": "walking",
@@ -594,7 +595,7 @@
       "fromId": "shared:cw-v07-024",
       "toId": "shared:cw-v07-065",
       "from": "南華山",
-      "to": "縣界啞口",
+      "to": "縣界埡口",
       "minutes": 80,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -646,7 +647,7 @@
     {
       "fromId": "shared:cw-v07-065",
       "toId": "shared:cw-v07-024",
-      "from": "縣界啞口",
+      "from": "縣界埡口",
       "to": "南華山",
       "minutes": 120,
       "travelMode": "walking",
@@ -1123,7 +1124,7 @@
     {
       "fromId": "shared:cw-v07-065",
       "toId": "g11-013",
-      "from": "縣界啞口",
+      "from": "縣界埡口",
       "to": "檜林保線所",
       "minutes": 120,
       "travelMode": "walking",
@@ -1163,7 +1164,7 @@
       "fromId": "g11-013",
       "toId": "shared:cw-v07-065",
       "from": "檜林保線所",
-      "to": "縣界啞口",
+      "to": "縣界埡口",
       "minutes": 240,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -1357,7 +1358,7 @@
     {
       "fromId": "shared:cw-v07-065",
       "toId": "shared:cw-v07-025",
-      "from": "縣界啞口",
+      "from": "縣界埡口",
       "to": "卡賀爾山",
       "minutes": 170,
       "travelMode": "walking",
@@ -1411,7 +1412,7 @@
       "fromId": "shared:cw-v07-025",
       "toId": "shared:cw-v07-065",
       "from": "卡賀爾山",
-      "to": "縣界啞口",
+      "to": "縣界埡口",
       "minutes": 140,
       "travelMode": "walking",
       "verificationStatus": "verified",

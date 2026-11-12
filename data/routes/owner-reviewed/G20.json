@@ -25,13 +25,14 @@
     {
       "id": "g20-002",
       "name": "舊登山口",
-      "aliases": [
-        "舊登登山口"
-      ],
+      "aliases": [],
       "groups": [
         "G20"
       ],
-      "identityBasis": "existing-reviewed-identity"
+      "identityBasis": "existing-reviewed-identity",
+      "legacyAliases": [
+        "舊登登山口"
+      ]
     },
     {
       "id": "g20-003",

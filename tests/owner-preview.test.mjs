@@ -13,7 +13,7 @@ test('owner full preview shares reviewed physical nodes and keeps original chart
  assert.equal(routes.length,24);assert.equal(graph.nodes.length,720);assert.equal(graph.segments.length,1398);
  assert.equal(new Set(routes.flatMap(r=>r.sourceChartIds)).size,19);
  for(const r of load('data/owner-review-base-catalog.json').routes){
-  for(const n of load(r.file).nodes){if(['node:48968d2ec01d938dc670','node:502ad7507575bb341a28','node:bfffd1c12932fc2cd1e8'].includes(n.id))continue;const current=graph.nodes.find(x=>x.id===canonicalReviewedId(n.id,n.name));assert.ok(current,n.id);assert.ok(current.name===n.name||current.aliases.includes(n.name));}
+  for(const n of load(r.file).nodes){if(['node:48968d2ec01d938dc670','node:502ad7507575bb341a28','node:bfffd1c12932fc2cd1e8'].includes(n.id))continue;const current=graph.nodes.find(x=>x.id===canonicalReviewedId(n.id,n.name));assert.ok(current,n.id);assert.ok(current.name===n.name||current.aliases.includes(n.name)||(current.legacyAliases||[]).includes(n.name));}
   assert.ok(manifest.legacyRoutes.some(m=>m.id===r.id));
  }
  const n=graph.nodes.find(n=>n.id==='shared:owner-v0724-xiangyang-junction');
@@ -35,7 +35,7 @@ test('transport-only nodes remain addable but road legs never form walking short
  const a=g20.nodes.find(n=>n.name==='泰武'),b=g20.nodes.find(n=>n.name==='新登山口');
  assert.ok(nodesInScope(graph,'G20').some(n=>n.id===a.id));assert.equal(shortestPath(graph,a.id,b.id),null);
  assert.ok(!routes.find(r=>r.route_id==='G07').nodes.some(n=>n.name==='黑水塘'));
- for(const r of routes){assert.ok(r.segments.every(e=>e.source===r.source.image_url));}
+ for(const r of routes){assert.ok(r.segments.every(e=>e.source===r.source.image_url||e.verificationBasis==='owner_explicit_chat_20261112'&&e.sources.every(s=>s.kind==='owner-chat')));}
 });
 test('data updates preserve manual estimates and official snapshots even when new routing exists',()=>{
  const r={nodes:[{id:'a',name:'A'},{id:'b',name:'B'},{id:'c',name:'C'}],segments:[

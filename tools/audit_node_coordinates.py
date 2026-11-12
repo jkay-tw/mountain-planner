@@ -32,6 +32,7 @@ METHOD_LABELS = {
     'happyman-similar-name-with-reviewed-route-context': '依 Happyman 近似名稱與已審路線情境選用',
     'owner-workbook-coordinate': '使用者 Excel 覆核座標',
     'owner-sheet-coordinate': '使用者 Google Sheet 覆核座標',
+    'owner-chat-coordinate': '使用者對話指定座標',
     'named-feature-supported-by-osm-walking-topology': '依具名地物與 OSM 步行連通情境選用',
     'physical-landform-source-priority': '依地形角色選用來源',
     'OSM point': 'OSM 地物點',

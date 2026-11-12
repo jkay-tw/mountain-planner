@@ -34,13 +34,14 @@
     {
       "id": "g04-045",
       "name": "雪山登山口",
-      "aliases": [
-        "雪山登山口管理站"
-      ],
+      "aliases": [],
       "groups": [
         "G05"
       ],
-      "identityBasis": "owner-confirmed-G04-G05-20261101"
+      "identityBasis": "owner-confirmed-G04-G05-20261101",
+      "legacyAliases": [
+        "雪山登山口管理站"
+      ]
     },
     {
       "id": "node:1c9c90016a1db23f233e",
@@ -144,13 +145,14 @@
     {
       "id": "node:43c9393ad0d04c1318ea",
       "name": "3.1K登山口",
-      "aliases": [
-        "登山口"
-      ],
+      "aliases": [],
       "groups": [
         "G05"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "group-scoped-owner-reviewed-label",
+      "legacyAliases": [
+        "登山口"
+      ]
     },
     {
       "id": "node:4833a5913699184b5b35",
@@ -218,13 +220,14 @@
     {
       "id": "node:6baf8b591a14fd8fc6c7",
       "name": "大雪山",
-      "aliases": [
-        "大雪北山"
-      ],
+      "aliases": [],
       "groups": [
         "G05"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "group-scoped-owner-reviewed-label",
+      "legacyAliases": [
+        "大雪北山"
+      ]
     },
     {
       "id": "node:71fe09a0a3298b4338b1",
@@ -283,13 +286,14 @@
     {
       "id": "node:82dff090b3168d02688e",
       "name": "大南山西鞍營地",
-      "aliases": [
-        "大南山山西鞍營地"
-      ],
+      "aliases": [],
       "groups": [
         "G05"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "group-scoped-owner-reviewed-label",
+      "legacyAliases": [
+        "大南山山西鞍營地"
+      ]
     },
     {
       "id": "node:847092e10ea33bbd9eeb",
@@ -555,13 +559,14 @@
     {
       "id": "node:f6f2ba4c01559d0ff632",
       "name": "武陵農場·遊客中心",
-      "aliases": [
-        "武陵農場"
-      ],
+      "aliases": [],
       "groups": [
         "G05"
       ],
-      "identityBasis": "owner-confirmed-G04-G05-20261101"
+      "identityBasis": "owner-confirmed-G04-G05-20261101",
+      "legacyAliases": [
+        "武陵農場"
+      ]
     },
     {
       "id": "node:fe67bc0edd485e795809",

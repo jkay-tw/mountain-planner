@@ -18,23 +18,22 @@ test('three explicit owner merges retain every source directional time and do no
  for(const m of report.merges){
   assert.ok(!graph.nodes.some(n=>n.id===m.oldId));
   const n=graph.nodes.find(n=>n.id===m.canonicalId);assert.ok(n);
-  assert.ok(n.name===m.oldNode.name||n.aliases.includes(m.oldNode.name));
+  assert.ok(n.name===m.oldNode.name||n.aliases.includes(m.oldNode.name)||(n.legacyAliases||[]).includes(m.oldNode.name));
   assert.equal(canonicalReviewedId(m.oldId,m.oldNode.name),m.canonicalId);
   assert.equal(canonicalReviewedId(m.oldId,'unrelated label'),m.oldId);
  }
 });
 
-test('published terrain matches Preview and historical owner decisions remain traceable after round two',()=>{
+test('working terrain matches Preview and historical owner decisions remain traceable after subsequent reviews',()=>{
  const runtime=load('preview/data/geometry/planner-terrain-v1.json');
  assert.deepEqual(load('data/geometry/planner-terrain-v1.json'),runtime);
- const latest=load('data/geometry/sources/owner-coordinate-round2-application-20261111.json');
- const superseded=new Map(latest.coordinates.map(n=>[n.nodeId,n]));
  const review=load('data/geometry/sources/owner-coordinate-overrides.json');
  const by=new Map(runtime.nodes.map(n=>[n.nodeId,n]));
  for(const n of report.coordinates){
-  assert.deepEqual(by.get(n.nodeId).coordinate,superseded.get(n.nodeId)?.coordinate||n.coordinate);
+  const current=review.nodes.find(x=>x.nodeId===n.nodeId);
+  assert.deepEqual(by.get(n.nodeId).coordinate,current.coordinate);
   assert.ok(Number.isFinite(by.get(n.nodeId).elevationMeters));
-  if(superseded.has(n.nodeId))assert.ok(review.nodes.find(x=>x.nodeId===n.nodeId).previousDecisions.some(x=>JSON.stringify(x.coordinate)===JSON.stringify(n.coordinate)));
+  if(JSON.stringify(current.coordinate)!==JSON.stringify(n.coordinate))assert.ok(current.previousDecisions.some(x=>JSON.stringify(x.coordinate)===JSON.stringify(n.coordinate)));
  }
  assert.ok(load('data/geometry/sources/owner-coordinate-round2-terrain-20261111.json').unchangedSpanCount>=614);
 });
@@ -56,7 +55,7 @@ test('merged IDs migrate saved global items and endpoints without changing user 
 test('renamed nodes retain old aliases and exact explicit coordinate decisions include the corrected Y',()=>{
  const review=load('data/geometry/sources/owner-coordinate-overrides.json');
  assert.equal(report.coordinates.length,19);
- for(const r of report.renames)assert.ok(graph.nodes.find(n=>n.id===r.nodeId).aliases.includes(r.oldName));
+ for(const r of report.renames){const n=graph.nodes.find(n=>n.id===r.nodeId);assert.ok([...n.aliases,...(n.legacyAliases||[])].includes(r.oldName));}
  const bridge=review.nodes.find(n=>n.nodeId==='node:cc65a12ba6bd7fa8e91b');
  assert.equal(bridge.originalCoordinate.y,2590697);
  assert.ok(bridge.source.ownerAmended);

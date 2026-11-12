@@ -34,13 +34,14 @@
     {
       "id": "g06-003",
       "name": "水管路岔路口",
-      "aliases": [
-        "水管路岔路"
-      ],
+      "aliases": [],
       "groups": [
         "G06"
       ],
-      "identityBasis": "existing-reviewed-identity"
+      "identityBasis": "existing-reviewed-identity",
+      "legacyAliases": [
+        "水管路岔路"
+      ]
     },
     {
       "id": "g06-004",

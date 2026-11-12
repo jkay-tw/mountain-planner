@@ -430,13 +430,14 @@
     {
       "id": "shared:owner-v0724-xiangyang-junction",
       "name": "向陽山三岔路口",
-      "aliases": [
-        "三岔路口"
-      ],
+      "aliases": [],
       "groups": [
         "G18"
       ],
-      "identityBasis": "reviewed-crosswalk"
+      "identityBasis": "reviewed-crosswalk",
+      "legacyAliases": [
+        "三岔路口"
+      ]
     }
   ],
   "segments": [

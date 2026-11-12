@@ -25,13 +25,14 @@
     {
       "id": "node:0bb05f369d27294e722d",
       "name": "3.8K流籠頭",
-      "aliases": [
-        "3.8K流龍頭"
-      ],
+      "aliases": [],
       "groups": [
         "G10"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "group-scoped-owner-reviewed-label",
+      "legacyAliases": [
+        "3.8K流龍頭"
+      ]
     },
     {
       "id": "node:13d0fbdc03771c98e07c",
@@ -46,12 +47,16 @@
       "id": "node:1bafd281610a4bf66a4b",
       "name": "三叉營地",
       "aliases": [
-        "三岔營地"
+        "北鞍營地",
+        "北鞍三叉避難小屋"
       ],
       "groups": [
         "G10"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "group-scoped-owner-reviewed-label",
+      "legacyAliases": [
+        "三岔營地"
+      ]
     },
     {
       "id": "node:2025da6c6172a947207b",
@@ -74,7 +79,9 @@
     {
       "id": "node:21e51a6d32e43eaff76d",
       "name": "大理石營地",
-      "aliases": [],
+      "aliases": [
+        "大理石避難山屋"
+      ],
       "groups": [
         "G10"
       ],
@@ -182,7 +189,9 @@
     {
       "id": "node:87c8b5e14f11ef4a032c",
       "name": "磐石中峰營地",
-      "aliases": [],
+      "aliases": [
+        "磐石中鋒避難山屋"
+      ],
       "groups": [
         "G10"
       ],

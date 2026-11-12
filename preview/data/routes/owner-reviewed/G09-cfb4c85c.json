@@ -52,13 +52,14 @@
     {
       "id": "node:1c8dd60e5be898d71627",
       "name": "果園登山口",
-      "aliases": [
-        "果原登山口"
-      ],
+      "aliases": [],
       "groups": [
         "G09-cfb4c85c"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "group-scoped-owner-reviewed-label",
+      "legacyAliases": [
+        "果原登山口"
+      ]
     },
     {
       "id": "node:1ddc6373f34b6953e152",
@@ -182,13 +183,14 @@
     {
       "id": "node:7ac8a3389a7896957791",
       "name": "舊滑訓中心",
-      "aliases": [
-        "滑訓中心"
-      ],
+      "aliases": [],
       "groups": [
         "G09-cfb4c85c"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "group-scoped-owner-reviewed-label",
+      "legacyAliases": [
+        "滑訓中心"
+      ]
     },
     {
       "id": "node:86109c21519a6703cf9c",
@@ -305,13 +307,14 @@
     {
       "id": "node:ff6ed5559a33fffbf64f",
       "name": "松泉崗/天巒池登山口",
-      "aliases": [
-        "松泉崗/天池登山口"
-      ],
+      "aliases": [],
       "groups": [
         "G09-cfb4c85c"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "group-scoped-owner-reviewed-label",
+      "legacyAliases": [
+        "松泉崗/天池登山口"
+      ]
     },
     {
       "id": "shared:cw-v07-037",
@@ -334,13 +337,14 @@
     {
       "id": "shared:cw-v07-058",
       "name": "滑雪山莊奇萊登山口",
-      "aliases": [
-        "奇萊登山口滑雪山莊"
-      ],
+      "aliases": [],
       "groups": [
         "G09-cfb4c85c"
       ],
-      "identityBasis": "reviewed-crosswalk"
+      "identityBasis": "reviewed-crosswalk",
+      "legacyAliases": [
+        "奇萊登山口滑雪山莊"
+      ]
     },
     {
       "id": "shared:cw-v07-077",

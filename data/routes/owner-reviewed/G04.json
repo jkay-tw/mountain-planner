@@ -25,13 +25,14 @@
     {
       "id": "g04-002",
       "name": "8.8K岔路",
-      "aliases": [
-        "8.8 K岔路"
-      ],
+      "aliases": [],
       "groups": [
         "G04"
       ],
-      "identityBasis": "existing-reviewed-identity"
+      "identityBasis": "existing-reviewed-identity",
+      "legacyAliases": [
+        "8.8 K岔路"
+      ]
     },
     {
       "id": "g04-004",
@@ -53,12 +54,17 @@
     },
     {
       "id": "g04-007",
-      "name": "大霸尖山",
-      "aliases": [],
+      "name": "大霸霸基",
+      "aliases": [
+        "大霸尖山霸基"
+      ],
       "groups": [
         "G04"
       ],
-      "identityBasis": "existing-reviewed-identity"
+      "identityBasis": "existing-reviewed-identity",
+      "legacyAliases": [
+        "大霸尖山"
+      ]
     },
     {
       "id": "g04-008",
@@ -90,7 +96,9 @@
     {
       "id": "g04-011",
       "name": "中霸坪叉路",
-      "aliases": [],
+      "aliases": [
+        "中霸坪"
+      ],
       "groups": [
         "G04"
       ],
@@ -378,13 +386,14 @@
     {
       "id": "g04-045",
       "name": "雪山登山口",
-      "aliases": [
-        "雪山登山口管理站"
-      ],
+      "aliases": [],
       "groups": [
         "G04"
       ],
-      "identityBasis": "owner-confirmed-G04-G05-20261101"
+      "identityBasis": "owner-confirmed-G04-G05-20261101",
+      "legacyAliases": [
+        "雪山登山口管理站"
+      ]
     },
     {
       "id": "g04-046",
@@ -560,7 +569,10 @@
     {
       "id": "g04-fork-daba",
       "name": "岔路",
-      "aliases": [],
+      "aliases": [
+        "IOU平台",
+        "I Love You平台"
+      ],
       "groups": [
         "G04"
       ],
@@ -596,13 +608,14 @@
     {
       "id": "node:f6f2ba4c01559d0ff632",
       "name": "武陵農場·遊客中心",
-      "aliases": [
-        "武陵農場"
-      ],
+      "aliases": [],
       "groups": [
         "G04"
       ],
-      "identityBasis": "owner-confirmed-G04-G05-20261101"
+      "identityBasis": "owner-confirmed-G04-G05-20261101",
+      "legacyAliases": [
+        "武陵農場"
+      ]
     },
     {
       "id": "shared:cw-v07-003",
@@ -2047,84 +2060,6 @@
           "rowId": "R0A5826F8EA",
           "sheetRows": [
             81
-          ],
-          "minutes": 45
-        }
-      ],
-      "sourceGroupNames": [
-        "大霸/聖稜/四秀"
-      ]
-    },
-    {
-      "fromId": "g04-011",
-      "toId": "g04-010",
-      "from": "中霸坪叉路",
-      "to": "小霸岔路登山口",
-      "minutes": 40,
-      "travelMode": "walking",
-      "verificationStatus": "verified",
-      "verificationBasis": "owner_workbook_review",
-      "timeAlternatives": [],
-      "sourceRows": [
-        "RA3CCC6C53E"
-      ],
-      "evidenceRows": [
-        82
-      ],
-      "sourceGroups": [
-        "大霸/聖稜/四秀"
-      ],
-      "sourceChart": "G04",
-      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
-      "sourceNote": "",
-      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
-      "sources": [
-        {
-          "group": "大霸/聖稜/四秀",
-          "chartId": "G04",
-          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
-          "rowId": "RA3CCC6C53E",
-          "sheetRows": [
-            82
-          ],
-          "minutes": 40
-        }
-      ],
-      "sourceGroupNames": [
-        "大霸/聖稜/四秀"
-      ]
-    },
-    {
-      "fromId": "g04-010",
-      "toId": "g04-011",
-      "from": "小霸岔路登山口",
-      "to": "中霸坪叉路",
-      "minutes": 45,
-      "travelMode": "walking",
-      "verificationStatus": "verified",
-      "verificationBasis": "owner_workbook_review",
-      "timeAlternatives": [],
-      "sourceRows": [
-        "RA3CCC6C53E"
-      ],
-      "evidenceRows": [
-        82
-      ],
-      "sourceGroups": [
-        "大霸/聖稜/四秀"
-      ],
-      "sourceChart": "G04",
-      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
-      "sourceNote": "",
-      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
-      "sources": [
-        {
-          "group": "大霸/聖稜/四秀",
-          "chartId": "G04",
-          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
-          "rowId": "RA3CCC6C53E",
-          "sheetRows": [
-            82
           ],
           "minutes": 45
         }
@@ -5878,84 +5813,6 @@
       ]
     },
     {
-      "fromId": "g04-fork-daba",
-      "toId": "g04-007",
-      "from": "岔路",
-      "to": "大霸尖山",
-      "minutes": 70,
-      "travelMode": "walking",
-      "verificationStatus": "verified",
-      "verificationBasis": "owner_workbook_review",
-      "timeAlternatives": [],
-      "sourceRows": [
-        "R4230CFCD8E"
-      ],
-      "evidenceRows": [
-        134
-      ],
-      "sourceGroups": [
-        "大霸/聖稜/四秀"
-      ],
-      "sourceChart": "G04",
-      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
-      "sourceNote": "",
-      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
-      "sources": [
-        {
-          "group": "大霸/聖稜/四秀",
-          "chartId": "G04",
-          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
-          "rowId": "R4230CFCD8E",
-          "sheetRows": [
-            134
-          ],
-          "minutes": 70
-        }
-      ],
-      "sourceGroupNames": [
-        "大霸/聖稜/四秀"
-      ]
-    },
-    {
-      "fromId": "g04-007",
-      "toId": "g04-fork-daba",
-      "from": "大霸尖山",
-      "to": "岔路",
-      "minutes": 50,
-      "travelMode": "walking",
-      "verificationStatus": "verified",
-      "verificationBasis": "owner_workbook_review",
-      "timeAlternatives": [],
-      "sourceRows": [
-        "R4230CFCD8E"
-      ],
-      "evidenceRows": [
-        134
-      ],
-      "sourceGroups": [
-        "大霸/聖稜/四秀"
-      ],
-      "sourceChart": "G04",
-      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
-      "sourceNote": "",
-      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
-      "sources": [
-        {
-          "group": "大霸/聖稜/四秀",
-          "chartId": "G04",
-          "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
-          "rowId": "R4230CFCD8E",
-          "sheetRows": [
-            134
-          ],
-          "minutes": 50
-        }
-      ],
-      "sourceGroupNames": [
-        "大霸/聖稜/四秀"
-      ]
-    },
-    {
       "fromId": "g04-035",
       "toId": "g04-fork-shengleng",
       "from": "素密達山屋",
@@ -6186,6 +6043,94 @@
         }
       ],
       "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-011",
+      "toId": "g04-007",
+      "from": "中霸坪叉路",
+      "to": "大霸霸基",
+      "minutes": 30,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_explicit_chat_20261112",
+      "sourceChart": "G04",
+      "sourceNote": "使用者指定替換既有路段與時間；非重新核實原圖",
+      "sources": [
+        {
+          "kind": "owner-chat",
+          "date": "2026-11-12",
+          "minutes": 30
+        }
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-007",
+      "toId": "g04-011",
+      "from": "大霸霸基",
+      "to": "中霸坪叉路",
+      "minutes": 35,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_explicit_chat_20261112",
+      "sourceChart": "G04",
+      "sourceNote": "使用者指定替換既有路段與時間；非重新核實原圖",
+      "sources": [
+        {
+          "kind": "owner-chat",
+          "date": "2026-11-12",
+          "minutes": 35
+        }
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-007",
+      "toId": "g04-010",
+      "from": "大霸霸基",
+      "to": "小霸岔路登山口",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_explicit_chat_20261112",
+      "sourceChart": "G04",
+      "sourceNote": "使用者指定替換既有路段與時間；非重新核實原圖",
+      "sources": [
+        {
+          "kind": "owner-chat",
+          "date": "2026-11-12",
+          "minutes": 10
+        }
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-010",
+      "toId": "g04-007",
+      "from": "小霸岔路登山口",
+      "to": "大霸霸基",
+      "minutes": 10,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_explicit_chat_20261112",
+      "sourceChart": "G04",
+      "sourceNote": "使用者指定替換既有路段與時間；非重新核實原圖",
+      "sources": [
+        {
+          "kind": "owner-chat",
+          "date": "2026-11-12",
+          "minutes": 10
+        }
+      ],
+      "sourceGroups": [
         "大霸/聖稜/四秀"
       ]
     }

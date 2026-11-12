@@ -9,7 +9,7 @@ const data=load('preview/data/geometry/planner-terrain-v1.json'),review=load('da
 const known=new Map(data.nodes.map(n=>[n.nodeId,n]));
 const plan=ids=>({coefficient:.8,items:ids.map((id,i)=>({id:'i'+i,nodeId:id,name:known.get(id).name,type:'location',note:'keep '+i,incoming:i?{kind:'official',fromNodeId:ids[i-1],toNodeId:id,officialMinutes:123,actualMinutes:77}:null}))});
 test('owner coordinates round-trip independently to source TWD97 and retain review identity',()=>{
- assert.equal(review.nodes.filter(n=>n.action==='coordinate').length,184);
+ assert.equal(review.nodes.filter(n=>n.action==='coordinate').length,185);
  for(const n of review.nodes.filter(n=>n.action==='coordinate')){
   const xy=toTwd97(n.coordinate);assert.ok(Math.abs(xy[0]-n.originalCoordinate.x)<=1,n.reviewId);assert.ok(Math.abs(xy[1]-n.originalCoordinate.y)<=1,n.reviewId);
   const active=known.get(n.nodeId);
@@ -23,15 +23,17 @@ test('owner coordinates round-trip independently to source TWD97 and retain revi
  assert.equal(fork.source.name,'I Love You平台');
  for(const n of review.nodes.filter(n=>n.action==='delete'))assert.ok(!known.has(n.nodeId));
 });
-test('G04 fork six official directional times stay unchanged',()=>{
+test('G04 fork preserves four unaffected directions and archives the removed pair',()=>{
  const route=load('data/routes/owner-reviewed/G04.json');
  const target=new Map([
   ['g04-010>g04-fork-daba',15],['g04-fork-daba>g04-010',15],
-  ['g04-fork-daba>g04-007',70],['g04-007>g04-fork-daba',50],
   ['g04-fork-daba>g04-063',70],['g04-063>g04-fork-daba',100],
  ]);
  const actual=new Map(route.segments.filter(s=>s.fromId==='g04-fork-daba'||s.toId==='g04-fork-daba').map(s=>[s.fromId+'>'+s.toId,s.minutes]));
  assert.deepEqual(actual,target);
+ const old=load('data/geometry/sources/g04-owner-followup-20261112.json').oldDirectedEdges;
+ assert.equal(old.find(e=>e.fromId==='g04-007'&&e.toId==='g04-fork-daba').minutes,50);
+ assert.equal(old.find(e=>e.fromId==='g04-fork-daba'&&e.toId==='g04-007').minutes,70);
 });
 test('all explicit missing-label bridges resolve in order, retain times and reverse without guessing waypoints',()=>{
  const bridges=data.spans.filter(s=>s.intermediateCoordinatesUnknown);assert.equal(bridges.length,4);
