@@ -61,13 +61,14 @@
     {
       "id": "g02-006",
       "name": "大鐵杉",
-      "aliases": [
-        "大鐵山"
-      ],
+      "aliases": [],
       "groups": [
         "G02-d1e06c0d"
       ],
-      "identityBasis": "existing-reviewed-identity"
+      "identityBasis": "existing-reviewed-identity",
+      "legacyAliases": [
+        "大鐵山"
+      ]
     },
     {
       "id": "g02-007",

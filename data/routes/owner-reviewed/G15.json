@@ -25,14 +25,15 @@
     {
       "id": "node:06b52b0f4a9c5db51f87",
       "name": "東鑾/烏達佩岔路",
-      "aliases": [
-        "岔路",
-        "東巒/烏達岔路"
-      ],
+      "aliases": [],
       "groups": [
         "G15"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "group-scoped-owner-reviewed-label",
+      "legacyAliases": [
+        "岔路",
+        "東巒/烏達岔路"
+      ]
     },
     {
       "id": "node:0c0dc01565d03fae0e19",
@@ -91,13 +92,14 @@
     {
       "id": "node:2d8fc441e99a93bda219",
       "name": "33.5K大崩塌",
-      "aliases": [
-        "33.5K大崩山"
-      ],
+      "aliases": [],
       "groups": [
         "G15"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "group-scoped-owner-reviewed-label",
+      "legacyAliases": [
+        "33.5K大崩山"
+      ]
     },
     {
       "id": "node:318b1240b1b28f23c14a",
@@ -141,13 +143,14 @@
     {
       "id": "node:3bf4ec2f689a3b5c4930",
       "name": "烏瓦拉鼻溪營地",
-      "aliases": [
-        "烏瓦拉鼻溪"
-      ],
+      "aliases": [],
       "groups": [
         "G15"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "group-scoped-owner-reviewed-label",
+      "legacyAliases": [
+        "烏瓦拉鼻溪"
+      ]
     },
     {
       "id": "node:4001696b7a0f069ffb0b",
@@ -287,13 +290,14 @@
     {
       "id": "node:82e77090c06d1fe2aead",
       "name": "無雙最高峰",
-      "aliases": [
-        "最高峰"
-      ],
+      "aliases": [],
       "groups": [
         "G15"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "group-scoped-owner-reviewed-label",
+      "legacyAliases": [
+        "最高峰"
+      ]
     },
     {
       "id": "node:891637431112fc5688eb",
@@ -469,13 +473,14 @@
     {
       "id": "node:c8870812bd546115bac5",
       "name": "三岔路口營地",
-      "aliases": [
-        "三岔路營地"
-      ],
+      "aliases": [],
       "groups": [
         "G15"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "group-scoped-owner-reviewed-label",
+      "legacyAliases": [
+        "三岔路營地"
+      ]
     },
     {
       "id": "node:c9115d117bdcc33b8c0b",
@@ -516,13 +521,14 @@
     {
       "id": "node:e9149e15effc99bc37f7",
       "name": "郡東營地",
-      "aliases": [
-        "岔路"
-      ],
+      "aliases": [],
       "groups": [
         "G15"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "group-scoped-owner-reviewed-label",
+      "legacyAliases": [
+        "岔路"
+      ]
     },
     {
       "id": "node:eaf2fc50ab8c1afa9051",

@@ -81,13 +81,14 @@
     {
       "id": "node:47e2c171ae6079bdeb59",
       "name": "十粒溪源營地",
-      "aliases": [
-        "十粒溪營地"
-      ],
+      "aliases": [],
       "groups": [
         "G13"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "group-scoped-owner-reviewed-label",
+      "legacyAliases": [
+        "十粒溪營地"
+      ]
     },
     {
       "id": "node:4ba798293fb8d81ef646",

@@ -43,6 +43,10 @@ test('Sheet rename retains identity and old alias; mini maps consume all newly a
  // Reconstruct historical IDs only for routes containing an explicitly merged old node.
  // Every original directional record/time must still reproduce the archived signature.
  const historical=structuredClone(routes);
+ const g04followup=load('data/geometry/sources/g04-owner-followup-20261112.json');
+ const g04=historical.find(r=>r.route_id==='G04');
+ g04.segments=g04.segments.filter(e=>e.verificationBasis!=='owner_explicit_chat_20261112');
+ g04followup.oldSegmentIndices.forEach((index,i)=>g04.segments.splice(index,0,g04followup.oldDirectedEdges[i]));
  const nov12=load('data/geometry/sources/sheet-review-application-20261112.json');
  const retired=nov12.retirement;
  const changed=historical.find(r=>r.route_id==='G13');

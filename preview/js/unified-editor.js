@@ -6,16 +6,17 @@ import {chooseSaveTarget,writeDownload,reportSaveError} from './save-file.js?v=v
 import {bindProfileExports} from './profile-export.js?v=v084';
 import {makeDemoDays} from './demo-itinerary.js?v=segments1';
 import {directionalQuickAdd,appendQuickPath,quickAddEstimatedMinutes} from './quick-add.js?v=v090';
-import {renderQuickTopologySvg} from './quick-topology.js?v=v090';
+import {renderQuickTopologySvg} from './quick-topology.js?v=aliases1';
 import {dayTerrain,formatTerrain,renderTerrainProfile} from './itinerary-geometry.js?v=layout2';
 import {createTabAutosave} from './tab-autosave.js?v=v0725';
 import {loadManifest,loadRoute} from './data-loader.js';
 import {allNodes,shortestPath,uid,round2,edgeActual,referenceMinutes,setEdgeCoefficient,selectEdgeReference,adoptLegacyCoefficients,buildTimeline,summarizeDay,recalcConnections,formatDuration,missingSegments,canDeleteItem,normalizeDay,retargetSplitIncoming,ownerTimedConnection,incomingForSegment} from './planner.js?v=segments1';
 import {validatePlan} from './validation.js?v=segments1';
-import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js?v=review20261112';
-import {migrateLegacyPlanDays} from './legacy-plan-migration.js?v=review20261112';
+import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js?v=review20261112b';
+import {migrateLegacyPlanDays} from './legacy-plan-migration.js?v=review20261112b';
 import {exportExcel} from './exporter.js?v=segments1';
-import {filterLocations} from './node-browser.js?v=v074';
+import {filterLocations,searchLocationLabel} from './node-browser.js?v=aliases2';
+import {nodeAliases,showNodeAliases} from './node-aliases.js?v=aliases1';
 import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=v084';
 
 const $=id=>document.getElementById(id);
@@ -72,11 +73,11 @@ async function init(){
   days=restoredDays?.length?sanitizeDays(migrateDaysToNodeIds(restoredDays,route)):[newDay(0)];
   if(IS_DEMO){days=makeDemoDays(route,uid);scope='G04';$('routeSelect').value=scope;const banner=document.createElement('div');banner.className='notice';banner.textContent='範例模式：可以試用快速加入與編輯，這個頁面不讀寫原行程暫存。';$('daysContainer').before(banner)}
   $('dayCount').value=String(days.length);
-  try{const response=await fetch('data/geometry/planner-terrain-v1.json?v=geo1621bc09b70c',{cache:'no-store'});if(!response.ok)throw Error();terrainData=await response.json()}catch(error){console.warn('節點座標與地形資料未載入')}
+  try{const response=await fetch('data/geometry/planner-terrain-v1.json?v=geobc837ccbe83b',{cache:'no-store'});if(!response.ok)throw Error();terrainData=await response.json()}catch(error){console.warn('節點座標與地形資料未載入')}
   bindGlobal();
   render(false);saveAutosave(false);checkpoint();
-  if($('itineraryGeometry'))import('./itinerary-map.js?v=v087')
-    .then(({createItineraryMap})=>{itineraryMap=createItineraryMap({host:$('itineraryGeometry'),getDays:()=>days,initialData:terrainData})})
+  if($('itineraryGeometry'))import('./itinerary-map.js?v=aliases1')
+    .then(({createItineraryMap})=>{itineraryMap=createItineraryMap({host:$('itineraryGeometry'),getDays:()=>days,initialData:terrainData,getNode:id=>route?.nodes.find(n=>n.id===id)})})
     .catch(error=>{$('itineraryGeometry').textContent='地圖載入失敗：'+error.message});
 }
 
@@ -302,9 +303,12 @@ function scopedNodes(){return nodesInScope(route,scope)}
 function nodeOptionLabel(n,list){
   const duplicates=list.filter(x=>x.name===n.name);
   if(duplicates.length<2)return n.name;
-  const groups=(n.groups||[]).join(' / ');
-  const shortId=String(n.id).split(':').pop().slice(-12);
-  return n.name+'｜'+(groups||'同名節點')+' · '+shortId;
+  const groupName=id=>manifest.routes.find(r=>r.id===id)?.name||id;
+  const groups=(n.groups||[]).map(groupName).join(' / ')||'未分類';
+  const neighbours=id=>[...new Set((route.segments||[]).filter(e=>e.fromId===id||e.toId===id).map(e=>e.fromId===id?e.to:e.from))].sort((a,b)=>a.localeCompare(b,'zh-Hant')).slice(0,2).join('、');
+  const nearby=neighbours(n.id);
+  const same=duplicates.filter(x=>(x.groups||[]).map(groupName).join(' / ')===(n.groups||[]).map(groupName).join(' / ')&&neighbours(x.id)===nearby).sort((a,b)=>String(a.id).localeCompare(String(b.id)));
+  return n.name+'｜'+groups+(nearby?'（鄰近：'+nearby+'）':'')+(same.length>1?'（同名 '+(same.findIndex(x=>x.id===n.id)+1)+'）':'');
 }
 function opts(){
   const list=scopedNodes().slice().sort((a,b)=>a.name.localeCompare(b.name,'zh-Hant')||String(a.id).localeCompare(String(b.id)));
@@ -400,9 +404,11 @@ function terrainSegmentHtml(feature,bridged=false){
 }
 // Keep the water toggle immediately after the location's last characters,
 // including when the location wraps to a second line.
-function renderPlaceLabel(name){
+function renderPlaceLabel(name,nodeId){
   // The adjacent water button is a separate flex item; both icons center
   // beside the full, naturally wrapping location-name block.
+  const node=route?.nodes.find(n=>n.id===nodeId);
+  if(nodeAliases(node).length)return '<button type="button" class="place-name node-alias-trigger" data-alias-node="'+esc(nodeId)+'" aria-haspopup="dialog" aria-label="查看'+esc(node.name)+'別稱">'+esc(node.name)+'</button>';
   return '<span class="place-name">'+esc(name)+'</span>';
 }
 function renderTimeline(d){
@@ -434,7 +440,7 @@ function renderTimeline(d){
       const water='<button class="icon-toggle water '+(r.hasWater?'active':'')+'" data-index="'+idx+'" title="水源">💧</button>';
       const placeName=manual
         ?'<span class="drag-handle" draggable="true" data-index="'+idx+'">⋮⋮</span>'+peak+'<input class="manual-name" data-index="'+idx+'" value="'+esc(r.name)+'">'+water
-        :peak+renderPlaceLabel(r.name)+water;
+        :peak+renderPlaceLabel(r.name,r.nodeId)+water;
       html+='<div class="it-row" data-index="'+idx+'">'+
       '<div class="row-identity"><div class="place '+(manual?'':'place-inline')+'">'+placeName+'</div>'+
       '<div class="arrival">'+r.arrival+'</div></div>'+
@@ -530,17 +536,29 @@ function bindDays(){
       if(quickMap?.open)openQuickMaps.add(d.id);
       if(appendQuickPath(d,route,button.dataset.quickKey,uid)){unlinkNextIfEndpointChanges(d);render()}
     });
+    card.querySelectorAll('[data-alias-node]').forEach(button=>button.onclick=()=>showNodeAliases(route.nodes.find(n=>n.id===button.dataset.aliasNode)));
+    card.querySelectorAll('.topo-node[data-node-id]').forEach(element=>{
+      const node=route.nodes.find(n=>n.id===element.dataset.nodeId);
+      if(!nodeAliases(node).length)return;
+      element.ownerSVGElement?.setAttribute('role','group');
+      element.classList.add('topo-has-aliases');element.setAttribute('role','button');element.setAttribute('tabindex','0');element.setAttribute('aria-haspopup','dialog');element.setAttribute('aria-label','查看'+node.name+'別稱');
+      element.onclick=()=>showNodeAliases(node);
+      element.onkeydown=event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();showNodeAliases(node)}};
+    });
     const search=card.querySelector('.node-search-inline');
     const nodeSelect=card.querySelector('.add-node');
     if(search&&nodeSelect)search.oninput=()=>{
       const previouslySelected=nodeSelect.value;
-      const entries=filterLocations(scopedNodes().map(n=>({id:n.id,name:n.name,route:(n.groups||[]).join(' / ')})),search.value,100,{includeRoute:false});
+      const entries=filterLocations(scopedNodes().map(n=>({id:n.id,name:n.name,aliases:nodeAliases(n),route:(n.groups||[]).join(' / ')})),search.value,100,{includeRoute:false});
       nodeSelect.replaceChildren();
       const prompt=document.createElement('option');prompt.value='';
       prompt.textContent=entries.length?'選擇下一個行程點':'找不到符合的節點';
       nodeSelect.append(prompt);
       for(const entry of entries){
-        const option=document.createElement('option');option.value=entry.id;option.textContent=entry.name;
+        const option=document.createElement('option');option.value=entry.id;
+        const node=scopedNodes().find(n=>n.id===entry.id);
+        const aliasLabel=searchLocationLabel({...entry,route:''},search.value);
+        option.textContent=nodeOptionLabel(node,scopedNodes())+aliasLabel.slice(entry.name.length);
         nodeSelect.append(option);
       }
       if(entries.some(n=>n.id===previouslySelected))nodeSelect.value=previouslySelected;

@@ -1,10 +1,11 @@
 import {chooseSaveTarget,writeDownload,reportSaveError} from './save-file.js?v=v086';
-import {placeMapLabels} from './map-label-layout.js?v=v085';
+import {placeMapLabels} from './map-label-layout.js?v=aliases1';
 import {twd97Label} from './twd97.js?v=v0731';
+import {nodeAliases} from './node-aliases.js?v=aliases1';
 import {resolveItineraryGeometry,geometryToGpx,formatTerrain,renderTerrainProfile,terrainDayColor} from './itinerary-geometry.js?v=v084';
 
 // No plan mutations or persistent state. Failure here must not block the editor.
-export function createItineraryMap({host,getDays,initialData=null}){
+export function createItineraryMap({host,getDays,initialData=null,getNode=()=>null}){
   let data=initialData,map=null,group=null,labelGroup=null,latest=null,ready=null,selectedNode=null;
   const hiddenDays=new Set();
   const colors=Array.from({length:10},(_,i)=>terrainDayColor(i));
@@ -71,7 +72,9 @@ export function createItineraryMap({host,getDays,initialData=null}){
       const title=document.createElement('span');title.textContent=n.name;button.append(title);
       const selected=n.nodeId===selectedNode;button.setAttribute('aria-expanded',String(selected));
       if(selected){const height=document.createElement('span');height.className='geometry-label-height';height.textContent=Number.isFinite(n.elevationMeters)?`約 ${Math.round(n.elevationMeters).toLocaleString('en-US')} m`:'高度未取得';button.append(height);
-        const coord=document.createElement('span');coord.className='geometry-label-coordinate';coord.textContent=twd97Label(n.coordinate);button.append(coord)
+        const coord=document.createElement('span');coord.className='geometry-label-coordinate';coord.textContent=twd97Label(n.coordinate);button.append(coord);
+        const aliases=nodeAliases(getNode(n.nodeId));
+        if(aliases.length){const details=document.createElement('span');details.className='geometry-label-aliases';details.textContent='別稱：'+aliases.join('、');button.append(details)}
       }
       button.onclick=e=>{e.stopPropagation();selectedNode=selected?null:n.nodeId;drawLabels()};
       return {element:button,point:point(n),selected,...measure(button)};

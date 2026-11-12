@@ -416,15 +416,16 @@
     {
       "id": "local:G19::shenchi-camp",
       "name": "神池營地",
-      "aliases": [
-        "第一水源"
-      ],
+      "aliases": [],
       "groups": [
         "G19"
       ],
       "identityBasis": "owner-request-2026-11-03",
       "sourceLabel": "第一水源",
-      "coordinateStatus": "pending-owner-coordinate"
+      "coordinateStatus": "pending-owner-coordinate",
+      "legacyAliases": [
+        "第一水源"
+      ]
     }
   ],
   "segments": [

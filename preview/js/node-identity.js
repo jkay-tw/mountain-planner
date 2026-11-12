@@ -53,7 +53,7 @@ export function canonicalReviewedId(id,name){
   const record=snowLegacyIds[id];
   return record&&record[0]===name?record[1]:id;
 }
-export const acceptsReviewedName=(node,name)=>node?.name===name||(node?.aliases||[]).includes(name);
+export const acceptsReviewedName=(node,name)=>node?.name===name||(node?.aliases||[]).includes(name)||(node?.legacyAliases||[]).includes(name);
 // Retired preview-only catalog entry: retain user itinerary snapshots without reintroducing a selectable graph node.
 const retiredPreviewNames={'g07-043':'黑水塘','node:5432a0accfa0ca8738af':'鐵杉營地','node:c286f1b8b14919f6bc37':'登山口','node:2073e5ef3ab7ef6fb2f1':'凹谷營地','node:413453c06804769a3470':'東南鞍營地'};
 export const isRetiredPreviewNode=item=>!!item&&retiredPreviewNames[item.nodeId]===item.name;

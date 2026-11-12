@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-12",
+  "nodeId": "node:1bafd281610a4bf66a4b",
+  "name": "三叉營地",
+  "previousAliases": [
+    "三岔營地"
+  ],
+  "aliases": [
+    "北鞍營地",
+    "北鞍三叉避難小屋"
+  ],
+  "sourceUrl": "https://docs.google.com/spreadsheets/d/1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk/edit#gid=105&range=H354:M354",
+  "confirmation": "作為別稱：可搜尋，點節點查看；主標籤仍用三叉營地",
+  "basis": "owner explicit chat reply; not a physical identity merge"
+}

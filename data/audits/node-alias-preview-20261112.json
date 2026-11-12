@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-12",
+  "scope": "alias metadata and Preview UI only",
+  "nodesUnchanged": 720,
+  "spansByteContentUnchanged": 694,
+  "coverageUnchanged": true,
+  "directionsUnchanged": true,
+  "runtimeChange": "source input fingerprint only",
+  "previewOnlyUI": true,
+  "comparisonStage": "alias-only checkpoint before lowest-saddle follow-up; see lowest-saddle-followup-20261112.json for current geometry changes"
+}

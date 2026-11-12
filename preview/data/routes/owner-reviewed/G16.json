@@ -63,13 +63,14 @@
     {
       "id": "node:2f804109a33585abde92",
       "name": "喀西帕南登山口",
-      "aliases": [
-        "喀西帕南山登山口"
-      ],
+      "aliases": [],
       "groups": [
         "G16"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "group-scoped-owner-reviewed-label",
+      "legacyAliases": [
+        "喀西帕南山登山口"
+      ]
     },
     {
       "id": "node:400e6875b5d9d9e7f83b",
@@ -236,14 +237,15 @@
     {
       "id": "node:8426704609cea5d43db4",
       "name": "杜鵑營地",
-      "aliases": [
-        "杜騰營地"
-      ],
+      "aliases": [],
       "groups": [
         "G16",
         "G17"
       ],
-      "identityBasis": "owner-explicit-review-20261111"
+      "identityBasis": "owner-explicit-review-20261111",
+      "legacyAliases": [
+        "杜騰營地"
+      ]
     },
     {
       "id": "node:c89901cb97ccbe4d145a",
@@ -320,13 +322,14 @@
     {
       "id": "node:ea1afe9db60667f52737",
       "name": "35K工寮岔路",
-      "aliases": [
-        "岔路"
-      ],
+      "aliases": [],
       "groups": [
         "G16"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "group-scoped-owner-reviewed-label",
+      "legacyAliases": [
+        "岔路"
+      ]
     },
     {
       "id": "node:ea752355c7e8a54337b4",
@@ -412,14 +415,15 @@
     {
       "id": "shared:cw-v07-015",
       "name": "八通關山三岔路口",
-      "aliases": [
-        "三岔路口"
-      ],
+      "aliases": [],
       "groups": [
         "G16",
         "G17"
       ],
-      "identityBasis": "reviewed-crosswalk"
+      "identityBasis": "reviewed-crosswalk",
+      "legacyAliases": [
+        "三岔路口"
+      ]
     },
     {
       "id": "shared:cw-v07-016",

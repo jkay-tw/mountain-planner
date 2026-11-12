@@ -12,7 +12,8 @@ const camp='local:G19::shenchi-camp',summit='node:d93ab765aeb31141e24c';
 test('G19 removal and explicit alias do not rename the other water sources',()=>{
  const r=routes.find(r=>r.route_id==='G19');
  assert.ok(!r.nodes.some(n=>['鐵杉營地','登山口','凹谷營地'].includes(n.name)));
- assert.deepEqual(r.nodes.find(n=>n.id===camp).aliases,['第一水源']);
+ assert.deepEqual(r.nodes.find(n=>n.id===camp).aliases,[]);
+ assert.ok(r.nodes.find(n=>n.id===camp).legacyAliases.includes('第一水源'));
  assert.equal(r.nodes.filter(n=>n.name==='水源').length,2);
  for(const s of r.segments)assert.ok(r.nodes.some(n=>n.id===s.fromId)&&r.nodes.some(n=>n.id===s.toId));
 });

@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-12",
+  "scope": "lowest-saddle owner coordinate follow-up; aliases UI remains Preview only",
+  "nodeId": "node:9e9822f8d527f3ba8f6a",
+  "twd97": [
+    260487,
+    2601827
+  ],
+  "directionalSignatureBefore": "649936e9087e50b7461594d67c601c48b8f783f43b0228221bfb980e8e12ede0",
+  "directionalSignatureAfter": "649936e9087e50b7461594d67c601c48b8f783f43b0228221bfb980e8e12ede0",
+  "unchangedSpans": 692,
+  "changedSpanIds": [
+    "owner-update-9707cd26dcba5f70",
+    "owner-update-53cf9796ff85a05a"
+  ],
+  "removedSpanIds": [],
+  "addedSpanIds": [],
+  "unchangedNodes": 719,
+  "counts": {
+    "activeNodes": 720,
+    "located": 674,
+    "unlocated": 46,
+    "ignored": 19,
+    "vehicleOnly": 27
+  },
+  "state": "local feature branch, unpublished",
+  "coverageUnchanged": true,
+  "validation": {
+    "javascriptTests": 147,
+    "pythonTests": 119,
+    "quickTopologyTests": 14,
+    "sourceRuntimeCacheGate": "passed",
+    "browserChecks": [
+      "alias search includes matched alias and group",
+      "canonical title retained",
+      "timeline and quick-map alias dialog",
+      "map expanded label stays inside bounds",
+      "360px mobile dialog"
+    ],
+    "googleSheet": {
+      "aliasSheetId": 118,
+      "nodeRowsVerified": 720,
+      "editableColumns": "E:F",
+      "reviewRow": 570,
+      "manualDecisionColumnsPreserved": "H:M"
+    }
+  }
+}

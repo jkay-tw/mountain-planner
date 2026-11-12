@@ -16,14 +16,15 @@
     {
       "id": "shared:cw-v07-015",
       "name": "八通關山三岔路口",
-      "aliases": [
-        "三岔路口"
-      ],
+      "aliases": [],
       "groups": [
         "G02-6bd64eb7",
         "G17"
       ],
-      "identityBasis": "owner-explicit-review-20261111"
+      "identityBasis": "owner-explicit-review-20261111",
+      "legacyAliases": [
+        "三岔路口"
+      ]
     },
     {
       "id": "shared:cw-v07-008",

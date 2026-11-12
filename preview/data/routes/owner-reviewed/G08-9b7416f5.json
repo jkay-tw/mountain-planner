@@ -16,13 +16,14 @@
     {
       "id": "g08-006",
       "name": "8.4k登山口營地",
-      "aliases": [
-        "8.4K登山口營地"
-      ],
+      "aliases": [],
       "groups": [
         "G08-9b7416f5"
       ],
-      "identityBasis": "existing-reviewed-identity"
+      "identityBasis": "existing-reviewed-identity",
+      "legacyAliases": [
+        "8.4K登山口營地"
+      ]
     },
     {
       "id": "g08-007",
