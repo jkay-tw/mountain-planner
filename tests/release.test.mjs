@@ -6,7 +6,7 @@ const source=readFileSync(new URL('../js/unified-editor.js',import.meta.url),'ut
 test('production entry uses reviewed global editor while preview remains separate',()=>{
  const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
  const preview=readFileSync(new URL('../unified-editor.html',import.meta.url),'utf8');
- assert.match(html,/data-mode="production"/);assert.match(html,/js\/unified-editor.js\?v=tripname2/);
+ assert.match(html,/data-mode="production"/);assert.match(html,/js\/unified-editor.js\?v=geo[0-9a-f]{12}/);
  assert.match(html,/css\/style.css\?v=tripname1/);
  assert.doesNotMatch(preview,/data-mode="production"/);
  assert.match(html,/id="itineraryGeometry"/);assert.doesNotMatch(source,/if\(!IS_PRODUCTION&&\$\('itineraryGeometry'\)\)/);
