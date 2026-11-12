@@ -1,3 +1,4 @@
+import {validCoordinate} from './path-editor.js';
 // Validate untrusted plan JSON before mutating the current itinerary.
 const plain=o=>o!==null&&typeof o==='object'&&!Array.isArray(o);
 const finite=(v,min,max)=>typeof v==='number'&&Number.isFinite(v)&&v>=min&&v<=max;
@@ -18,6 +19,11 @@ export function validatePlan(data,routeIds){
     d.items.forEach((item,j)=>{
       const where='Day '+(i+1)+' 第 '+(j+1)+' 項';
       if(!plain(item)||!['location','manual-location','rest'].includes(item.type))fail(where+' 節點類型錯誤');
+      if(item.coordinate!==undefined&&(item.type!=='manual-location'||!validCoordinate(item.coordinate)))fail(where+' 手動座標錯誤');
+      if(item.pathManualMinutes!==undefined&&item.pathManualMinutes!==null&&!finite(item.pathManualMinutes,0,10080))fail(where+' 保存的手動時間錯誤');
+      if(item.pathOriginalIncoming!==undefined){const e=item.pathOriginalIncoming;if(!plain(e)||e.kind!=='official'||!finite(e.officialMinutes,0,10080)||typeof e.from!=='string'||typeof e.to!=='string'||(e.actualMinutes!=null&&!finite(e.actualMinutes,0,10080)))fail(where+' 原始路段時間錯誤');}
+      if(item.showInTable!==undefined&&typeof item.showInTable!=='boolean')fail(where+' 顯示設定錯誤');
+      if(item.pathEdit!==undefined){const e=item.pathEdit;if(!plain(e)||typeof e.fromItemId!=='string'||!['auto','straight'].includes(e.mode)||!Array.isArray(e.controls)||e.controls.length>200||e.controls.some(c=>!plain(c)||typeof c.id!=='string'||!validCoordinate(c.coordinate)))fail(where+' 控制點錯誤');}
       if(item.type==='rest'){
         if(!finite(item.minutes,0,10080))fail(where+' 休息時間錯誤');
         if(item.note!==undefined&&(typeof item.note!=='string'||item.note.length>10000))fail(where+' 休息備註錯誤');

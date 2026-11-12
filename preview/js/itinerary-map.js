@@ -1,3 +1,4 @@
+import {attachPathEditor} from './path-editor-ui.js';
 import {chooseSaveTarget,writeDownload,reportSaveError} from './save-file.js?v=v086';
 import {placeMapLabels} from './map-label-layout.js?v=aliases1';
 import {twd97Label} from './twd97.js?v=v0731';
@@ -5,8 +6,9 @@ import {nodeAliases} from './node-aliases.js?v=aliases1';
 import {resolveItineraryGeometry,geometryToGpx,formatTerrain,renderTerrainProfile,terrainDayColor} from './itinerary-geometry.js?v=v084';
 
 // No plan mutations or persistent state. Failure here must not block the editor.
-export function createItineraryMap({host,getDays,initialData=null,getNode=()=>null}){
+export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=null,getNode=()=>null,onChange=()=>{}}){
   let data=initialData,map=null,group=null,labelGroup=null,latest=null,ready=null,selectedNode=null;
+  let editor=null;
   const hiddenDays=new Set();
   const colors=Array.from({length:10},(_,i)=>terrainDayColor(i));
   host.innerHTML='<summary>行程地圖與 GPX</summary><div class="geometry-body"><div class="geometry-actions"><button type="button" data-action="load">載入行程地圖</button><button type="button" data-action="fit" disabled>縮放至行程</button><button type="button" data-action="export" disabled>匯出候選 GPX</button><button type="button" data-toggle-profiles aria-expanded="false">每日剖面</button></div><p class="geometry-label-hint">點選節點標籤，可查看海拔與座標</p><div class="geometry-summary"><p data-status role="status">地圖尚未載入。</p><div data-legend class="geometry-legend" aria-label="每日路線圖例"></div></div><ul data-warnings></ul><div data-profile class="terrain-profiles" hidden></div><div data-map class="itinerary-map" aria-label="行程候選路徑地圖"></div><div class="geometry-source"><span>地圖 © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a> · 高程：<a href="https://rudymap.tw/">魯地圖 DEM</a></span><details><summary>資料來源與說明</summary><p>© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a>，ODbL 1.0。規劃座標另參考 TWMap、Happyman 與具來源記錄點。參考線形包含 OSM 步行路網與另有標示的山友歷史行跡；不代表即時通行狀態。缺座標或缺線形會逐段提示，統計只計已知部分。OSM 全臺快照：2026-11-03。高度來源：<a href="https://rudymap.tw/">魯地圖 DEM mix v2026</a>，約30m格網估算。</p></details></div></div>';
@@ -39,9 +41,9 @@ export function createItineraryMap({host,getDays,initialData=null,getNode=()=>nu
       if(hiddenDays.has(day.dayIndex))continue;
       const label=document.createElement('span');label.textContent=`Day ${day.dayIndex+1} ${f.from} → ${f.to}（${f.sourceName} 參考）`;
       if(f.sourceUrl){const a=document.createElement('a');a.href=f.sourceUrl;a.target='_blank';a.rel='noreferrer';a.textContent=' 查看來源';label.append(a)}
-      L.polyline(f.coordinates.map(p=>[p[1],p[0]]),{weight:5,color:colors[day.dayIndex%colors.length]}).bindPopup(label).addTo(group);
+      L.polyline(f.coordinates.map(p=>[p[1],p[0]]),{bubblingMouseEvents:false,weight:7,dashArray:f.manual?'10 8':null,color:colors[day.dayIndex%colors.length]}).bindPopup(label).on('click',()=>editor?.select(day.dayIndex,f.toItemId)).addTo(group);
     }
-    const visibleIds=new Set(getDays().flatMap((d,i)=>hiddenDays.has(i)?[]:(d.items||[]).filter(x=>x.type==='location').map(x=>x.nodeId)));
+    const visibleIds=new Set(getDays().flatMap((d,i)=>hiddenDays.has(i)?[]:(d.items||[]).filter(x=>x.type!=='rest').map(x=>x.type==='manual-location'?x.id:x.nodeId)));
     const visible=latest.waypoints.filter(n=>visibleIds.has(n.nodeId));
     if(selectedNode&&!visible.some(n=>n.nodeId===selectedNode))selectedNode=null;
     for(const n of visible){
@@ -107,6 +109,7 @@ export function createItineraryMap({host,getDays,initialData=null,getNode=()=>nu
         layers.addBaseLayer(L.tileLayer(t.tiles[0],{maxZoom:t.maxzoom||18,minZoom:t.minzoom||7,attribution:t.attribution}),'魯地圖');
       }).catch(()=>{const p=document.createElement('li');p.textContent='魯地圖目前無法載入，可先使用 OpenStreetMap。';warnings.append(p)});
       group=L.featureGroup().addTo(map);labelGroup=L.layerGroup().addTo(map);
+      editor=attachPathEditor({host,map,getDays,getRoute,data,onChange});
     }
     refresh();load.hidden=true;map.invalidateSize();if(group.getBounds().isValid())map.fitBounds(group.getBounds(),{padding:[25,25],maxZoom:16});
   }
@@ -126,5 +129,5 @@ export function createItineraryMap({host,getDays,initialData=null,getNode=()=>nu
     const name=`mountain-planner-candidate${latest.gaps.length?'-partial':''}.gpx`;
     try{const handle=await chooseSaveTarget(name,'application/gpx+xml','gpx');const blob=new Blob([geometryToGpx(latest,data,{allowPartial:latest.gaps.length>0,allowWaypointsOnly:!hasTracks})],{type:'application/gpx+xml'});await writeDownload(blob,name,handle)}catch(error){reportSaveError(error)}
   };
-  return {update:()=>{try{refresh()}catch(error){status.textContent=error.message;exp.disabled=true}}};
+  return {update:()=>{try{refresh();editor?.refresh()}catch(error){status.textContent=error.message;exp.disabled=true}}};
 }

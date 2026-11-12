@@ -1,3 +1,4 @@
+import {coordinateOf,manualWarning} from './path-editor.js';
 // Candidate geometry is deliberately separate from times, plan snapshots and routing.
 export function distanceMeters(a,b){
   const r=Math.PI/180,h=Math.sin((b[1]-a[1])*r/2)**2+Math.cos(a[1]*r)*Math.cos(b[1]*r)*Math.sin((b[0]-a[0])*r/2)**2;
@@ -33,15 +34,23 @@ export function resolveItineraryGeometry(days,data){
   days.forEach((day,dayIndex)=>{
     const items=(day.items||[]).filter(i=>i.type!=='rest'),features=[],gaps=[];
     for(const item of items){
-      const n=known.get(item.nodeId);
+      const n=item.type==='manual-location'&&item.coordinate?{nodeId:item.id,name:item.name,coordinate:item.coordinate,note:'使用者指定座標',coordinateMethod:manualWarning}:known.get(item.nodeId);
       const suppressed=['ignored','vehicle-only'].includes(n?.coordinatePolicy);
       const index=items.indexOf(item),isVehicle=e=>e?.travelMode==='vehicle'||e?.kind==='vehicle';
-      const vehicleOnly=(index===0||isVehicle(item.incoming))&&(index===items.length-1||isVehicle(items[index+1]?.incoming));
+      const vehicleOnly=items.length>1&&(index===0||isVehicle(item.incoming))&&(index===items.length-1||isVehicle(items[index+1]?.incoming));
       if(n?.coordinate&&!suppressed&&!vehicleOnly&&!result.waypoints.some(w=>w.nodeId===n.nodeId))result.waypoints.push(n);
       if(n&&!n.coordinate&&!suppressed&&!result.unlocated.some(w=>w.nodeId===n.nodeId))result.unlocated.push(n);
     }
     for(let i=0;i<items.length-1;){
       if(items[i+1].incoming?.travelMode==='vehicle'||items[i+1].incoming?.kind==='vehicle'){i++;continue;}
+      const a=items[i],b=items[i+1],edit=b.pathEdit?.fromItemId===a.id?b.pathEdit:null;
+      const ca=coordinateOf(a,data),cb=coordinateOf(b,data);
+      const explicit=edit&&(edit.mode==='straight'||edit.controls.length);
+      const fallback=b.incoming?.kind==='manual'&&b.incoming.fromId===a.id&&b.incoming.toId===b.id&&b.incoming.connectionStatus!=='owner-confirmed';
+      if((explicit||fallback)&&ca&&cb){
+        const coordinates=[ca,...(edit?.controls||[]).map(c=>c.coordinate),cb].map(p=>[...p]);
+        features.push({profile:null,manual:true,sourceName:manualWarning,sourceUrl:null,fromItemId:a.id,toItemId:b.id,viaItemIds:[],dayIndex,from:a.name,to:b.name,coordinates,distanceMeters:length(coordinates)});i++;continue;
+      }
       let match=null;
       for(const span of data.spans){
         for(const reverse of [false,true]){
@@ -122,7 +131,7 @@ export function terrainMetrics(features){
 export function formatTerrain(value,{partial=false}={}){
   if(!value)return '地形資料未收錄';
   const m=value.features?value: {...value,...terrainMetrics([value])};
-  return `${partial?'已知部分':'約'} ${(m.distanceMeters/1000).toFixed(2)} km · 上升 ${m.ascentMeters===null?'未取得':Math.round(m.ascentMeters)+' m'} · 下降 ${m.descentMeters===null?'未取得':Math.round(m.descentMeters)+' m'}`;
+  return `${m.features?.some(f=>f.manual)||m.manual?'含手動水平距離・':''}${partial?'已知部分':'約'} ${(m.distanceMeters/1000).toFixed(2)} km · 上升 ${m.ascentMeters===null?'未取得':Math.round(m.ascentMeters)+' m'} · 下降 ${m.descentMeters===null?'未取得':Math.round(m.descentMeters)+' m'}`;
 }
 export function dayTerrain(day,data){return data?resolveItineraryGeometry([day],data).days[0]:null}
 export function profileNodeRows(day){
@@ -182,6 +191,6 @@ export function renderTerrainProfile(day){
  const top=-14,compact=nodes.length<=3&&!layout.numbered,chartShift=compact?45:0;
  const bottom=(layout.numbered?Math.max(340,348+Math.ceil(nodes.length/3)*38):432)-chartShift;
  const titleTop=-80,dayNumber=(day.dayIndex||0)+1;
- const summary=`${(day.distanceMeters/1000).toFixed(2)} km   ↗ ${Math.round(day.ascentMeters||0)} m   ↘ ${Math.round(day.descentMeters||0)} m${day.gaps.length?'（已知部分）':''}`;
+ const summary=`${(day.distanceMeters/1000).toFixed(2)} km   ↗ ${(day.ascentMeters==null?'無資料':Math.round(day.ascentMeters))} m   ↘ ${(day.descentMeters==null?'無資料':Math.round(day.descentMeters))} m${day.gaps.length?'（已知部分）':''}`;
  return `<section class="profile-card"><div class="profile-export-actions"><button type="button" class="secondary" data-profile-export="copy">複製圖片</button><button type="button" class="secondary" data-profile-export="download">下載 PNG</button><span role="status" data-profile-export-status></span></div><div class="profile-chart-scroll"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 ${titleTop} 800 ${bottom-titleTop}" role="img" aria-label="Day ${dayNumber} 高度剖面圖" style="font-family:system-ui,'Noto Sans TC',sans-serif"><rect x="0" y="${titleTop}" width="800" height="${bottom-titleTop}" rx="12" fill="#fff"/><rect x="20" y="${top-42}" width="5" height="32" rx="2" fill="${color}"/><text x="36" y="${top-24}" font-size="18" font-weight="700" fill="#243d35">Day ${dayNumber} · 高度剖面</text><text x="36" y="${top-4}" font-size="12" fill="#53665a">${summary}</text><g transform="translate(0,-${chartShift})"><g class="profile-grid" stroke="#e5ebe9" stroke-width="1" fill="#60736b" font-size="12">${grid}</g><path d="M60 100V300H760" fill="none" stroke="#89988c"/>${paths}${labels}${marks}<text x="780" y="322" fill="#60736b" font-size="11">km</text></g><text x="760" y="${bottom-3}" text-anchor="end" font-size="10" fill="#60736b">Mountain Planner · DEM 估算${day.gaps.length?' · 僅計已知部分':''}</text></svg></div><p>${day.gaps.length?'橫軸為已知路徑累計距離；缺漏未計入，各段分開繪製。':'橫軸：沿山徑累計距離；縱軸與節點海拔：DEM 估算。'}${day.features.some(f=>f.intermediateCoordinatesUnknown)?' 含跨未定位節點的連續參考線形；中間節點不標示推估位置。':''}</p></section>`;
 }
