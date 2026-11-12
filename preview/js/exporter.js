@@ -19,7 +19,7 @@ export async function exportExcel({route,days,datasetVersion,tripStartDate,tripN
  let rowNo=2;
  for(let i=0;i<days.length;i++){
   const day=days[i];if(!day.items.length)continue;
-  const terrain=dayTerrain(day,terrainData),byItem=new Map((terrain?.features||[]).map(f=>[f.toItemId,f]));
+  const terrain=dayTerrain(day,terrainData),byItem=new Map((terrain?.features||[]).map(f=>[f.toItemId,(terrain.features.filter(x=>x.toItemId===f.toItemId).length>1?aggregateTerrain(terrain.features,[f.toItemId]):f)]));
   const tl=buildTimeline(day),sum=summarizeDay(day),date=dateForDay(tripStartDate,i);
   ws.mergeCells(rowNo,1,rowNo,9);const title=ws.getCell(rowNo,1);title.value='Day '+(i+1)+(date?'｜'+date:'')+'｜'+day.startTime+' 出發 → '+tl.endTime+' 結束';title.font={name:font,bold:true,size:11};title.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FFDDE9DF'}};title.alignment={vertical:'middle',wrapText:true};ws.getRow(rowNo).height=24;rowNo++;addHeader();
   for(const r of visibleTimelineRows(tl.rows,day)){

@@ -19,6 +19,8 @@ export function validatePlan(data,routeIds){
     d.items.forEach((item,j)=>{
       const where='Day '+(i+1)+' 第 '+(j+1)+' 項';
       if(!plain(item)||!['location','manual-location','rest'].includes(item.type))fail(where+' 節點類型錯誤');
+      if(item.networkConnection!==undefined&&(!plain(item.networkConnection)||typeof item.networkConnection.nodeId!=='string'||typeof item.networkConnection.spanId!=='string'))fail(where+' 路網連接錯誤');
+      if(item.pathEdit?.networkNodeIds!==undefined&&(!Array.isArray(item.pathEdit.networkNodeIds)||item.pathEdit.networkNodeIds.length>1000||item.pathEdit.networkNodeIds.some(id=>typeof id!=='string')))fail(where+' 路網路徑錯誤');
       if(item.coordinate!==undefined&&(item.type!=='manual-location'||!validCoordinate(item.coordinate)))fail(where+' 手動座標錯誤');
       if(item.pathManualMinutes!==undefined&&item.pathManualMinutes!==null&&!finite(item.pathManualMinutes,0,10080))fail(where+' 保存的手動時間錯誤');
       if(item.pathOriginalIncoming!==undefined){const e=item.pathOriginalIncoming;if(!plain(e)||e.kind!=='official'||!finite(e.officialMinutes,0,10080)||typeof e.from!=='string'||typeof e.to!=='string'||(e.actualMinutes!=null&&!finite(e.actualMinutes,0,10080)))fail(where+' 原始路段時間錯誤');}

@@ -62,7 +62,7 @@ test('linked manual day starts copy exact coordinates and distinguish same-name 
  const a=day();a.items=[{id:'m',type:'manual-location',name:'same',coordinate:[121,24],incoming:null,note:''}];const b={...day(),linkedStart:true,items:[]};syncLinkedDays([a,b],route,()=> 'linked');assert.deepEqual(b.items[0].coordinate,[121,24]);a.items[0].coordinate=[121.1,24];syncLinkedDays([a,b],route,()=> 'linked2');assert.deepEqual(b.items[0].coordinate,[121.1,24]);
 });
 test('T14 editing affordances are explicit and mobile inputs avoid focus/auto-pan jumps',()=>{
- const s=readFileSync(new URL('../preview/js/path-editor-ui.js',import.meta.url),'utf8');assert.match(s,/編輯路徑模式/);assert.match(s,/autoPan:false/);assert.match(s,/draggable:true/);assert.match(s,/iconSize:\[44,44\]/);assert.doesNotMatch(s,/\.focus\(/);
+ const s=readFileSync(new URL('../preview/js/path-editor-ui.js',import.meta.url),'utf8');assert.match(s,/編輯路徑模式/);assert.match(s,/map.getContainer\(\).append\(box\)/);assert.match(s,/draggable:true/);assert.match(s,/iconSize:\[44,44\]/);assert.doesNotMatch(s,/\.focus\(/);
 });
 test('Excel exports visible rows with complete hidden distance/time and leaves unknown manual time blank',async()=>{
  let sheet;
@@ -83,4 +83,22 @@ test('Excel exports visible rows with complete hidden distance/time and leaves u
  await exportExcel({route:{route_id:'test',route_name:'test'},days:[d],terrainData:data,handle});
  const mixed=[...sheet.rows.values()].find(r=>r.values[0]==='d');assert.equal(mixed.values[2],'');assert.equal(mixed.values[6],'');assert.match(mixed.values[8],/手動水平直線距離/);
  delete globalThis.window;delete globalThis.ExcelJS;
+});
+import {attachmentCandidates,attachmentPath} from '../preview/js/network-attachment.js';
+test('confirmed attachment preserves manual position and follows source geometry before network routing',()=>{
+ const d=day(),original=[120.999,24.002];d.items[0]={...d.items[0],type:'manual-location',coordinate:original};delete d.items[0].nodeId;
+ assert.match(recalculateSegment(d,'b',route),/尚未確認/);
+ const candidate=attachmentCandidates(d.items[0],data).find(c=>c.nodeId==='a');assert.ok(candidate);
+ d.items[0].networkConnection={spanId:candidate.spanId,nodeId:candidate.nodeId};
+ assert.match(recalculateSegment(d,'b',route),/已沿確認/);
+ const r=resolve(d);assert.deepEqual(r.days[0].features[0].coordinates[0],original);assert.equal(r.days[0].features[0].manual,true);assert.ok(r.days[0].features.some(f=>!f.manual));assert.equal(r.days[0].ascentMeters,null);assert.equal(d.items[0].nodeId,undefined);
+ assert.deepEqual(resolve(JSON.parse(JSON.stringify(d))),r);
+ delete d.items[0].networkConnection;assert.equal(resolve(d).days[0].features[0].manual,true);assert.equal(resolve(d).days[0].features.filter(f=>f.toItemId==='b').length,1);
+});
+test('attachment follows a bent reference span; point is never replaced by projection',()=>{
+ const span={fromId:'a',toId:'b',coordinates:[[121,24],[121.01,24.01],[121.02,24]]},p=[121.015,24.006];
+ const a=attachmentPath(p,span,'a');assert.deepEqual(a.coordinates[0],p);assert.ok(a.coordinates.some(c=>c[0]===121.01&&c[1]===24.01));assert.deepEqual(a.coordinates.at(-1),[121,24]);assert.throws(()=>attachmentPath(p,span,'other'),/來源/);
+});
+test('recalculation reports disconnected attachment without changing other legs',()=>{
+ const d=day();d.items[0]={...d.items[0],type:'manual-location',coordinate:[121,24],networkConnection:{spanId:'0',nodeId:'unconnected'}};const before=JSON.stringify(d);assert.match(recalculateSegment(d,'b',route),/不連通/);assert.equal(JSON.stringify(d),before);
 });

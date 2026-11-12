@@ -1,3 +1,4 @@
+import {attachmentPath} from './network-attachment.js';
 import {coordinateOf,manualWarning} from './path-editor.js';
 // Candidate geometry is deliberately separate from times, plan snapshots and routing.
 export function distanceMeters(a,b){
@@ -45,6 +46,25 @@ export function resolveItineraryGeometry(days,data){
       if(items[i+1].incoming?.travelMode==='vehicle'||items[i+1].incoming?.kind==='vehicle'){i++;continue;}
       const a=items[i],b=items[i+1],edit=b.pathEdit?.fromItemId===a.id?b.pathEdit:null;
       const ca=coordinateOf(a,data),cb=coordinateOf(b,data);
+      if(edit?.mode==='auto'&&!edit.controls.length&&edit.networkNodeIds?.length&&ca&&cb){
+        const ids=edit.networkNodeIds;
+        const temp={items:ids.map((nodeId,j)=>({id:'network-'+j,type:'location',nodeId,name:known.get(nodeId)?.name||nodeId,incoming:j?{kind:'official',fromNodeId:ids[j-1],toNodeId:nodeId}:null}))};
+        const network=resolveItineraryGeometry([temp],data).days[0];
+        const expectedA=a.type==='location'?a.nodeId:a.networkConnection?.nodeId,expectedB=b.type==='location'?b.nodeId:b.networkConnection?.nodeId;
+        if(ids[0]===expectedA&&ids.at(-1)===expectedB&&!network.gaps.length){
+          const addAttachment=(item,point,reverse)=>{
+            if(item.type==='location')return;
+            const binding=item.networkConnection,span=data.spans.find(s=>s.id===binding?.spanId);
+            if(!span)throw Error('連接路段來源不存在，請重新確認');
+            let coordinates=attachmentPath(point,span,binding.nodeId).coordinates;
+            if(reverse)coordinates=coordinates.slice().reverse();
+            features.push({manual:true,profile:null,sourceName:manualWarning+' 使用者確認連接參考路段 '+span.id,sourceUrl:span.sourceUrl||data.source.url,coordinates,distanceMeters:length(coordinates),fromItemId:a.id,toItemId:b.id,viaItemIds:[],dayIndex,from:a.name,to:b.name});
+          };
+          addAttachment(a,ca,false);
+          features.push(...network.features.map(f=>({...f,dayIndex,fromItemId:a.id,toItemId:b.id,viaItemIds:[]})));
+          addAttachment(b,cb,true);i++;continue;
+        }
+      }
       const explicit=edit&&(edit.mode==='straight'||edit.controls.length);
       const fallback=b.incoming?.kind==='manual'&&b.incoming.fromId===a.id&&b.incoming.toId===b.id&&b.incoming.connectionStatus!=='owner-confirmed';
       if((explicit||fallback)&&ca&&cb){

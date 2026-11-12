@@ -18,10 +18,18 @@ export function recalculateSegment(day,toId,route){
  const items=day.items.filter(i=>i.type!=='rest'),index=items.findIndex(i=>i.id===toId),to=items[index],from=items[index-1];
  if(!from||!to)throw Error('請選擇有效路段');
  const edit=to.pathEdit?.fromItemId===from.id?to.pathEdit:null;
- if(edit?.mode==='straight'||edit?.controls.length){editSegment(day,toId,()=>{});return;}
- if(from.type!=='location'||to.type!=='location')return;
+ if(edit?.mode==='straight'||edit?.controls.length){editSegment(day,toId,()=>{});return '已更新指定折線與距離；控制點保留，手動路段尚無高程。';}
+ const fromNode=from.type==='location'?from.nodeId:from.networkConnection?.nodeId,toNode=to.type==='location'?to.nodeId:to.networkConnection?.nodeId;
+ if(!fromNode||!toNode)return '尚未確認路網連接，保留直線。請展開「連接路網」選擇來源路段。';
+ if(from.type!=='location'||to.type!=='location'){
+ const path=fromNode===toNode?{segments:[]}:shortestPath(route,fromNode,toNode);
+ if(!path)return '指定路網端點不連通，保留直線；未跳接其他路網。';
+ if(to.incoming?.kind==='official'){to.pathOriginalIncoming=structuredClone(to.incoming);to.incoming={kind:'manual',fromId:from.id,toId:to.id,actualMinutes:to.pathManualMinutes??null};}
+ to.pathEdit={fromItemId:from.id,mode:'auto',controls:[],networkNodeIds:[fromNode,...path.segments.map(s=>s.toId)]};
+ return '已沿確認的路段與連通路網重算；手動接入部分的時間與高程仍未知。';
+ }
  const path=shortestPath(route,from.nodeId,to.nodeId);
- if(!path?.segments.length)return;
+ if(!path?.segments.length)return '既有路網無可用路徑，原路段保持不變。';
  let previous=from;const inserted=[];
  for(const [i,s] of path.segments.entries()){
   const target=i===path.segments.length-1?to:{id:uid(),type:'location',nodeId:s.toId,name:s.to,note:'',auto:true,waypoint:false,showInTable:false,isPeak:false,hasWater:false};
@@ -32,6 +40,7 @@ export function recalculateSegment(day,toId,route){
  }
  delete to.pathEdit;
  day.items.splice(day.items.indexOf(to),0,...inserted);
+ return '已沿既有連通路網重算選定路段。';
 }
 export function visibleTimelineRows(rows,day){
  let pending=[];
