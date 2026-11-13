@@ -102,3 +102,28 @@ test('attachment follows a bent reference span; point is never replaced by proje
 test('recalculation reports disconnected attachment without changing other legs',()=>{
  const d=day();d.items[0]={...d.items[0],type:'manual-location',coordinate:[121,24],networkConnection:{spanId:'0',nodeId:'unconnected'}};const before=JSON.stringify(d);assert.match(recalculateSegment(d,'b',route),/不連通/);assert.equal(JSON.stringify(d),before);
 });
+
+test('manual names resolve from current itinerary and appear in GPX after rename',()=>{
+ const d=day();d.items=[{id:'custom',type:'manual-location',name:'新名稱',coordinate:[121,24],note:'',incoming:null}];
+ const r=resolve(d);assert.equal(r.waypoints[0].name,'新名稱');assert.match(geometryToGpx(r,data,{allowWaypointsOnly:true}),/新名稱/);
+ d.items[0].name='第二次改名';assert.equal(resolve(d).waypoints[0].name,'第二次改名');
+});
+import {insertShapeControl,deleteShapeControl,updateShapeControl,splitManualShape} from '../preview/js/path-editor.js';
+test('drag inserts controls at the selected position without discarding the source shape',()=>{
+ const d=day(),coords=[[121,24],[121.002,24.002],[121.006,24.003],[121.01,24]],other=JSON.stringify(d.items.slice(2));
+ insertShapeControl(d,'b',coords,[121.003,24.002],[121.003,24.004],'p');let f=resolve(d).days[0].features[0];assert.deepEqual(f.coordinates,[coords[0],coords[1],[121.003,24.004],coords[2],coords[3]]);assert.equal(JSON.stringify(d.items.slice(2)),other);assert.equal(d.items[1].incoming.actualMinutes,null);assert.equal(d.items[1].pathOriginalIncoming.officialMinutes,10);
+ editSegment(d,'b',e=>updateShapeControl(e,0,[121.004,24.005]));assert.deepEqual(resolve(d).days[0].features[0].coordinates[2],[121.004,24.005]);editSegment(d,'b',e=>deleteShapeControl(e,0));assert.deepEqual(resolve(d).days[0].features[0].coordinates,coords);
+});
+test('inserting a day waypoint splits shape in order without inventing segment time',()=>{
+ const d=day(),coords=[[121,24],[121.003,24.001],[121.006,24.002],[121.01,24]];insertShapeControl(d,'b',coords,[121.004,24.001],[121.004,24.003],'p');const geometry=resolve(d).days[0].features[0].coordinates,others=JSON.stringify(d.items.slice(2));
+ const m=splitManualShape(d,'b',geometry,[121.005,24.0025],'測試','new');assert.equal(m.name,'測試');assert.equal(m.incoming.actualMinutes,null);assert.equal(d.items[2].incoming.actualMinutes,null);assert.equal(d.items[2].splitOriginalPathIncoming.officialMinutes,10);assert.equal(JSON.stringify(d.items.slice(3)),others);const result=resolve(d).days[0].features;assert.deepEqual(result[0].coordinates.at(-1),[121.005,24.0025]);assert.deepEqual(result[1].coordinates[0],[121.005,24.0025]);assert.equal(result[0].coordinates.some(p=>p[0]===121.004),true);
+});
+import {directSpanCandidates} from '../preview/js/network-attachment.js';
+test('two manual endpoints offer only a single confirmed directed span with exact positions',()=>{
+ const a={coordinate:[121.002,24.00001]},b={coordinate:[121.008,24.00001]},c=directSpanCandidates(a,b,data,route);assert.equal(c.length,1);assert.equal(c[0].spanId,'0');assert.deepEqual(c[0].coordinates[0],a.coordinate);assert.deepEqual(c[0].coordinates.at(-1),b.coordinate);assert.equal(directSpanCandidates(b,a,data,route).length,0);assert.equal(directSpanCandidates(a,{coordinate:[121.008,24.01]},data,route).length,0);assert.equal(directSpanCandidates(a,b,data,{...route,segments:[]}).length,0);
+});
+import {refitConfirmedSpan} from '../preview/js/network-attachment.js';
+test('moving a control refits only the previously confirmed directed span without moving points',()=>{
+ const a={coordinate:[121.002,24.00001]},b={coordinate:[121.009,24.00001]},control={id:'p',coordinate:[121.005,24.00002]},e={mode:'straight',autoReference:true,candidateSource:{spanId:'0',name:'source',url:'https://example.org'},controls:[control]};
+ assert.equal(refitConfirmedSpan(e,a,b,data,route),true);assert.ok(e.shape.some(p=>p.controlId==='p'&&p.coordinate[0]===control.coordinate[0]&&p.coordinate[1]===control.coordinate[1]));assert.deepEqual(e.shape[0].coordinate,a.coordinate);assert.deepEqual(e.shape.at(-1).coordinate,b.coordinate);const before=JSON.stringify(e.shape);control.coordinate=[121.005,24.05];assert.equal(refitConfirmedSpan(e,a,b,data,route),false);assert.equal(JSON.stringify(e.shape),before);assert.equal(refitConfirmedSpan({...e,candidateSource:{spanId:'other'}},a,b,data,route),false);
+});

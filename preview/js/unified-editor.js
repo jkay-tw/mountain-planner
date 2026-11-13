@@ -80,7 +80,7 @@ async function init(){
   bindGlobal();
   render(false);saveAutosave(false);checkpoint();
   if($('itineraryGeometry'))import('./itinerary-map.js?v=autoload1')
-    .then(({createItineraryMap})=>{itineraryMap=createItineraryMap({host:$('itineraryGeometry'),getDays:()=>days,getRoute:()=>route,initialData:terrainData,getNode:id=>route?.nodes.find(n=>n.id===id),onChange:()=>render()})})
+    .then(({createItineraryMap})=>{itineraryMap=createItineraryMap({host:$('itineraryGeometry'),getDays:()=>days,getRoute:()=>route,initialData:terrainData,getNode:id=>route?.nodes.find(n=>n.id===id),onChange:()=>render(),onDeleteManual:id=>{for(const d of days){const index=d.items.findIndex(x=>x.type==='manual-location'&&x.id===id);if(index>=0){removeItem(d,index);break}}},onRenameManual:(id,name)=>{for(const d of days){const item=d.items.find(x=>x.type==='manual-location'&&x.id===id);if(item){if(last(d)?.id===item.id)unlinkNextIfEndpointChanges(d);item.name=name.trim()||'手動節點';render();break}}}})})
     .catch(error=>{$('itineraryGeometry').textContent='地圖載入失敗：'+error.message});
 }
 
@@ -452,6 +452,7 @@ function renderTimeline(d){
       const peak='<button class="icon-toggle peak '+(r.isPeak?'active':'')+'" data-index="'+idx+'" title="山頭">⛰</button>';
       const water='<button class="icon-toggle water '+(r.hasWater?'active':'')+'" data-index="'+idx+'" title="水源">💧</button>';
       if(r.aggregate)routeInfo='<span>合計 '+(a===null?'時間未知':a+' m')+'（含隱藏節點；展開地圖顯示設定可還原編輯）</span>';
+      if(r.splitOriginalIncoming){const prior=r.splitOriginalIncoming,priorTime=prior.kind==='manual'?prior.actualMinutes:edgeActual(prior,d.coefficient);routeInfo+='<span class="manual-note">拆段前整段時間：'+(priorTime==null?'未知':esc(priorTime)+'m')+'，僅供參考</span>';}
       const placeName=manual
         ?'<span class="drag-handle" draggable="true" data-index="'+idx+'">⋮⋮</span>'+peak+'<input class="manual-name" data-index="'+idx+'" value="'+esc(r.name)+'">'+water
         :peak+renderPlaceLabel(r.name,r.nodeId)+water;

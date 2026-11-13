@@ -68,8 +68,8 @@ export function resolveItineraryGeometry(days,data){
       const explicit=edit&&(edit.mode==='straight'||edit.controls.length);
       const fallback=b.incoming?.kind==='manual'&&b.incoming.fromId===a.id&&b.incoming.toId===b.id&&b.incoming.connectionStatus!=='owner-confirmed';
       if((explicit||fallback)&&ca&&cb){
-        const coordinates=[ca,...(edit?.controls||[]).map(c=>c.coordinate),cb].map(p=>[...p]);
-        features.push({profile:null,manual:true,sourceName:manualWarning,sourceUrl:null,fromItemId:a.id,toItemId:b.id,viaItemIds:[],dayIndex,from:a.name,to:b.name,coordinates,distanceMeters:length(coordinates)});i++;continue;
+        const coordinates=(edit?.shape?.length?edit.shape.map(p=>p.coordinate):[ca,...(edit?.controls||[]).map(c=>c.coordinate),cb]).map(p=>[...p]);
+        features.push({profile:null,manual:true,sourceName:manualWarning+(edit?.candidateSource?' 參考線形：'+edit.candidateSource.name+'（'+edit.candidateSource.spanId+'）':''),sourceUrl:edit?.candidateSource?.url||null,fromItemId:a.id,toItemId:b.id,viaItemIds:[],dayIndex,from:a.name,to:b.name,coordinates,distanceMeters:length(coordinates)});i++;continue;
       }
       let match=null;
       for(const span of data.spans){
