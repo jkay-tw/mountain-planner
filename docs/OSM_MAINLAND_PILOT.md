@@ -69,3 +69,7 @@ python tools/sync_coordinate_geometry.py --check
 本機結果：JavaScript 全套與 Preview tests **193/193**，Python **122/122**；Preview 全 JS 語法、既有 app／planner／node-identity 語法、座標幾何同步守門及 `git diff --check` 通過。Python 使用 CI 指定的 numpy／scipy 與 UTF-8 暫存環境；Node 24 不使用舊版的 default-type 旗標。
 
 桌面瀏覽器已驗證三區載入、起終點接入確認、尋路與 GPX 下載；390px 版面可見且無明顯橫向溢出。iPhone Safari／Chrome、Android 實機速度、觸控與捲動尚未驗收。OSM 標籤不能代替路況／安全核實；此試點不宣稱台灣所有實際步道均已收錄。
+
+## GPX 比較增補
+新增本機 GPX 匯入、同圖紫色軌跡與 waypoint、移除、規劃／匯入各自距離高度 SVG。限制 10 MiB／100,000 軌跡點，拒絕無效 XML／座標及外部實體；缺高度不補零、分段不跨缺口累距。顯示已載入線形包圍範圍，區分範圍外與範圍內無接入節點。尚未加入範圍多邊形、自動跨區、DAY 整合、固定間距 DEM 與手機效能優化。
+JavaScript 193 項通過，語法檢查通過。瀏覽器確認入口與範圍顯示；檔案上傳自動化遇到權限失敗及分頁崩潰，GPX 匯入端到端尚未通過瀏覽器驗證，不能宣稱已驗收。
