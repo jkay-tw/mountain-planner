@@ -1,3 +1,4 @@
+import {visibleTimelineRows,aggregateTerrain} from './path-editor.js';
 import {writeDownload} from './save-file.js?v=v086';
 import {dayTerrain,terrainMetrics} from './itinerary-geometry.js?v=v084';
 import {buildTimeline,summarizeDay,edgeActual,referenceMinutes,round2} from './planner.js?v=segments1';
@@ -18,14 +19,14 @@ export async function exportExcel({route,days,datasetVersion,tripStartDate,tripN
  let rowNo=2;
  for(let i=0;i<days.length;i++){
   const day=days[i];if(!day.items.length)continue;
-  const terrain=dayTerrain(day,terrainData),byItem=new Map((terrain?.features||[]).map(f=>[f.toItemId,f]));
+  const terrain=dayTerrain(day,terrainData),byItem=new Map((terrain?.features||[]).map(f=>[f.toItemId,(terrain.features.filter(x=>x.toItemId===f.toItemId).length>1?aggregateTerrain(terrain.features,[f.toItemId]):f)]));
   const tl=buildTimeline(day),sum=summarizeDay(day),date=dateForDay(tripStartDate,i);
   ws.mergeCells(rowNo,1,rowNo,9);const title=ws.getCell(rowNo,1);title.value='Day '+(i+1)+(date?'｜'+date:'')+'｜'+day.startTime+' 出發 → '+tl.endTime+' 結束';title.font={name:font,bold:true,size:11};title.fill={type:'pattern',pattern:'solid',fgColor:{argb:'FFDDE9DF'}};title.alignment={vertical:'middle',wrapText:true};ws.getRow(rowNo).height=24;rowNo++;addHeader();
-  for(const r of tl.rows){
-   const e=r.incoming,actual=e?edgeActual(e,day.coefficient):'',f=byItem.get(r.id),m=f?terrainMetrics([f]):null;
+  for(const r of visibleTimelineRows(tl.rows,day)){
+   const e=r.incoming,actual=e?edgeActual(e,day.coefficient):'',f=r.aggregate?aggregateTerrain(terrain?.features||[],r.aggregateItemIds):byItem.get(r.id),m=f?.features?f:f?terrainMetrics([f]):null;
    const isBridge=(terrain?.features||[]).some(x=>x.intermediateCoordinatesUnknown&&x.viaItemIds.includes(r.id));
-   const note=[r.note||'',isBridge?'路徑連續・分段待定位':f?.intermediateCoordinatesUnknown?'跨未定位點合計':r.type!=='rest'&&e&&!f?'地形資料未收錄':''].filter(Boolean).join('；');
-   const reference=e?.kind==='official'?referenceMinutes(e):null;
+   const note=[r.note||'',r.aggregate?'含隱藏節點合計'+(r.aggregateHasManual?'；上河僅計有來源部分':''):'',f?.manual||f?.features?.some(x=>x.manual)?'含手動水平直線距離；高程無資料':'',isBridge?'路徑連續・分段待定位':f?.intermediateCoordinatesUnknown?'跨未定位點合計':r.type!=='rest'&&e&&!f?'地形資料未收錄':''].filter(Boolean).join('；');
+   const reference=r.aggregate?r.aggregateOfficialMinutes||null:e?.kind==='official'?referenceMinutes(e):null;
    const k=e?.kind==='official'&&actual!==null&&reference?(e.coefficient??round2(actual/reference)):'';
    const values=r.type==='rest'?['☕ 休息',r.endTime,excelDuration(Number(r.minutes)||0),'','','','','',r.note||'']:[placeLabel(r),r.arrival,e?excelDuration(actual):'',reference!==null?excelDuration(reference):'',k,f?f.distanceMeters/1000:'',m?.ascentMeters??'',m?.descentMeters??'',note];
    const rr=ws.getRow(rowNo);rr.values=values;rr.height=15.75;

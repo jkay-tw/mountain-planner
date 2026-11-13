@@ -1,3 +1,4 @@
+import {validCoordinate} from './path-editor.js';
 // Validate untrusted plan JSON before mutating the current itinerary.
 const plain=o=>o!==null&&typeof o==='object'&&!Array.isArray(o);
 const finite=(v,min,max)=>typeof v==='number'&&Number.isFinite(v)&&v>=min&&v<=max;
@@ -18,6 +19,17 @@ export function validatePlan(data,routeIds){
     d.items.forEach((item,j)=>{
       const where='Day '+(i+1)+' 第 '+(j+1)+' 項';
       if(!plain(item)||!['location','manual-location','rest'].includes(item.type))fail(where+' 節點類型錯誤');
+      if(item.networkConnection!==undefined&&(!plain(item.networkConnection)||typeof item.networkConnection.nodeId!=='string'||typeof item.networkConnection.spanId!=='string'))fail(where+' 路網連接錯誤');
+      if(item.pathEdit?.networkNodeIds!==undefined&&(!Array.isArray(item.pathEdit.networkNodeIds)||item.pathEdit.networkNodeIds.length>1000||item.pathEdit.networkNodeIds.some(id=>typeof id!=='string')))fail(where+' 路網路徑錯誤');
+      if(item.pathEdit?.shape!==undefined&&(!Array.isArray(item.pathEdit.shape)||item.pathEdit.shape.length<2||item.pathEdit.shape.length>5000||item.pathEdit.shape.some(p=>!plain(p)||!validCoordinate(p.coordinate)||(p.controlId!==undefined&&typeof p.controlId!=='string'))))fail(where+' 手動線形錯誤');
+      if(item.pathEdit?.candidateSource!==undefined){const c=item.pathEdit.candidateSource;if(!plain(c)||typeof c.spanId!=='string'||typeof c.name!=='string'||typeof c.url!=='string'||(c.url&&!/^https?:\/\//i.test(c.url)))fail(where+' 參考線形來源錯誤');}
+      if(item.pathEdit?.autoReference!==undefined&&(typeof item.pathEdit.autoReference!=='boolean'||item.pathEdit.autoReference&&!item.pathEdit.candidateSource))fail(where+' 自動接入設定錯誤');
+      if(item.coordinate!==undefined&&(item.type!=='manual-location'||!validCoordinate(item.coordinate)))fail(where+' 手動座標錯誤');
+      if(item.pathManualMinutes!==undefined&&item.pathManualMinutes!==null&&!finite(item.pathManualMinutes,0,10080))fail(where+' 保存的手動時間錯誤');
+      if(item.pathOriginalIncoming!==undefined){const e=item.pathOriginalIncoming;if(!plain(e)||e.kind!=='official'||!finite(e.officialMinutes,0,10080)||typeof e.from!=='string'||typeof e.to!=='string'||(e.actualMinutes!=null&&!finite(e.actualMinutes,0,10080)))fail(where+' 原始路段時間錯誤');}
+      if(item.showInTable!==undefined&&typeof item.showInTable!=='boolean')fail(where+' 顯示設定錯誤');
+      if(item.pathEdit!==undefined){const e=item.pathEdit;if(!plain(e)||typeof e.fromItemId!=='string'||!['auto','straight'].includes(e.mode)||!Array.isArray(e.controls)||e.controls.length>200||e.controls.some(c=>!plain(c)||typeof c.id!=='string'||!validCoordinate(c.coordinate)))fail(where+' 控制點錯誤');}
+      if(item.pathEdit?.shape){const points=item.pathEdit.shape.filter(p=>p.controlId),controls=item.pathEdit.controls;if(points.length!==controls.length||new Set(points.map(p=>p.controlId)).size!==points.length||points.some(p=>!controls.some(c=>c.id===p.controlId&&c.coordinate[0]===p.coordinate[0]&&c.coordinate[1]===p.coordinate[1])))fail(where+' 控制點與線形不一致');}
       if(item.type==='rest'){
         if(!finite(item.minutes,0,10080))fail(where+' 休息時間錯誤');
         if(item.note!==undefined&&(typeof item.note!=='string'||item.note.length>10000))fail(where+' 休息備註錯誤');

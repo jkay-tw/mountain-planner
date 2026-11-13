@@ -4,3 +4,7 @@ Thumbs.db
 .idea/
 node_modules/
 *.log
+
+# Local IDEA-003 validation environments
+.idea003-test-*/
+__pycache__/
