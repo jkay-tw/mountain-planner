@@ -1,0 +1,32 @@
+[
+  {
+    "name": "雪山附近檢查區塊",
+    "file": "485_97.json.gz",
+    "bytes": 559006,
+    "jsonBytes": 2052537,
+    "nodes": 34387,
+    "ways": 829,
+    "elevationMissing": 0,
+    "sha256": "11bdf2e2ec43213ea537f60595fa269b253d667d6e684e24590a3c840b4bbeec"
+  },
+  {
+    "name": "玉山附近檢查區塊",
+    "file": "483_93.json.gz",
+    "bytes": 455992,
+    "jsonBytes": 1670075,
+    "nodes": 28329,
+    "ways": 529,
+    "elevationMissing": 0,
+    "sha256": "23b8dbe3cf8dc4145e369f06d98619c377ab810a32ec2ea34225ed3652f65596"
+  },
+  {
+    "name": "北部山區局部檢查（非整個台北）",
+    "file": "north-486_100.json.gz",
+    "bytes": 1634444,
+    "jsonBytes": 6240760,
+    "nodes": 91554,
+    "ways": 7637,
+    "elevationMissing": 0,
+    "sha256": "caa7e3d939bec6df4de5a68e4e22688d10caf6b0cf97d30b6201a65e76c765ea"
+  }
+]

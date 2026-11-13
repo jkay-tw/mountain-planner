@@ -144,6 +144,14 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
       const osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'}).addTo(map);
       const corridor=L.featureGroup(data.spans.filter(s=>!s.aggregate).map(s=>L.polyline(s.coordinates.map(p=>[p[1],p[0]]),{color:'#7a827a',weight:3,opacity:.55})));
       const layers=L.control.layers({'OpenStreetMap':osm},{'已收錄參考路徑（全路網）':corridor}).addTo(map);
+      const happyman=L.tileLayer('https://tile.happyman.idv.tw/mp/service?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=happyman&STYLE=default&TILEMATRIXSET=gm_grid&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image%2Fpng',{
+        minZoom:7,maxZoom:19,opacity:.7,attribution:'行跡參考 © <a href="https://twmap.happyman.idv.tw/map/" target="_blank" rel="noreferrer">Happyman／山友貢獻</a>'
+      });
+      layers.addOverlay(happyman,'Happyman 山友行跡（參考疊圖）');
+      const overlayOptions=document.createElement('details'),overlaySummary=document.createElement('summary'),overlayText=document.createElement('p'),opacity=document.createElement('input'),opacityLabel=document.createElement('label');
+      overlaySummary.textContent='Happyman 行跡疊圖說明';overlayText.textContent='可在地圖圖層選單開啟。行跡與文字為來源圖磚內容，僅供參考，不會自動納入尋路、DAY 或 GPX。個別行跡的作者、日期及原始檔請至來源網站查詢。';
+      opacity.type='range';opacity.min='0';opacity.max='1';opacity.step='.1';opacity.value='.7';opacity.setAttribute('aria-label','Happyman 行跡透明度');opacity.oninput=()=>happyman.setOpacity(Number(opacity.value));opacityLabel.append(document.createTextNode('行跡透明度 '),opacity);overlayOptions.append(overlaySummary,overlayText,opacityLabel);host.querySelector('.geometry-source').append(overlayOptions);
+      happyman.on('tileerror',()=>{status.textContent='Happyman 圖磚暫時無法載入；可關閉該圖層，行程仍可編輯。'});
       fetch('https://tiles.rudymap.tw/tilejson').then(r=>{if(!r.ok)throw Error();return r.json()}).then(t=>{
         if(!Array.isArray(t.tiles)||typeof t.tiles[0]!=='string'||typeof t.attribution!=='string')throw Error();
         layers.addBaseLayer(L.tileLayer(t.tiles[0],{maxZoom:t.maxzoom||18,minZoom:t.minzoom||7,attribution:t.attribution}),'魯地圖');
