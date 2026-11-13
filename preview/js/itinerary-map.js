@@ -1,3 +1,4 @@
+import {addFreeImagery} from './free-imagery.js';
 import {attachPathEditor} from './path-editor-ui.js';
 import {chooseSaveTarget,writeDownload,reportSaveError} from './save-file.js?v=v086';
 import {placeMapLabels} from './map-label-layout.js?v=aliases1';
@@ -144,6 +145,7 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
       const osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'}).addTo(map);
       const corridor=L.featureGroup(data.spans.filter(s=>!s.aggregate).map(s=>L.polyline(s.coordinates.map(p=>[p[1],p[0]]),{color:'#7a827a',weight:3,opacity:.55})));
       const layers=L.control.layers({'OpenStreetMap':osm},{'已收錄參考路徑（全路網）':corridor}).addTo(map);
+      addFreeImagery({L,map,layers,onError:message=>{status.textContent=message}});
       const happyman=L.tileLayer('https://tile.happyman.idv.tw/mp/service?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=happyman&STYLE=default&TILEMATRIXSET=gm_grid&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image%2Fpng',{
         minZoom:7,maxZoom:19,opacity:.7,attribution:'行跡參考 © <a href="https://twmap.happyman.idv.tw/map/" target="_blank" rel="noreferrer">Happyman／山友貢獻</a>'
       });

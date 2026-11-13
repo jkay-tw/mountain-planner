@@ -1,7 +1,9 @@
+import {addFreeImagery} from './free-imagery.js';
 import {buildGraph,nearestVertex,distanceRoute} from './osm-pilot-router.js';
 import {pilotGpx} from './osm-pilot-gpx.js';
 const status=document.querySelector('#status'),select=document.querySelector('#sample'),map=L.map('map').setView([24,121],8),geometry=L.featureGroup().addTo(map),plan=L.featureGroup().addTo(map);
-const base=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors'}).addTo(map),traces=L.tileLayer('https://tile.happyman.idv.tw/mp/service?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=happyman&STYLE=default&TILEMATRIXSET=gm_grid&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image%2Fpng',{minZoom:7,maxZoom:19,opacity:.7,attribution:'Happyman／山友行跡參考'});L.control.layers({'OSM':base},{'Happyman 行跡（只顯示）':traces}).addTo(map);
+const base=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors'}).addTo(map),traces=L.tileLayer('https://tile.happyman.idv.tw/mp/service?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=happyman&STYLE=default&TILEMATRIXSET=gm_grid&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image%2Fpng',{minZoom:7,maxZoom:19,opacity:.7,attribution:'Happyman／山友行跡參考'});const layers=L.control.layers({'OSM':base},{'Happyman 行跡（只顯示）':traces}).addTo(map);
+addFreeImagery({L,map,layers,onError:message=>{status.textContent=message}});
 let graph=null,chosen=[],loading=0,lastRoute=null,pending=null;const download=document.querySelector('#gpx'),candidate=document.querySelector('#candidate'),pick=L.featureGroup().addTo(map);
 function cancel(){pending=null;candidate.hidden=true;pick.clearLayers()}
 document.querySelector('#cancel').onclick=cancel;

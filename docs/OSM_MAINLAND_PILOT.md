@@ -73,3 +73,7 @@ python tools/sync_coordinate_geometry.py --check
 ## GPX 比較增補
 新增本機 GPX 匯入、同圖紫色軌跡與 waypoint、移除、規劃／匯入各自距離高度 SVG。限制 10 MiB／100,000 軌跡點，拒絕無效 XML／座標及外部實體；缺高度不補零、分段不跨缺口累距。顯示已載入線形包圍範圍，區分範圍外與範圍內無接入節點。尚未加入範圍多邊形、自動跨區、DAY 整合、固定間距 DEM 與手機效能優化。
 JavaScript 193 項通過，語法檢查通過。瀏覽器確認入口與範圍顯示；檔案上傳自動化遇到權限失敗及分頁崩潰，GPX 匯入端到端尚未通過瀏覽器驗證，不能宣稱已驗收。
+
+## 免費影像底圖（2026-11-13）
+兩個 Preview 共用 free-imagery.js：國土測繪中心 PHOTO2 正射影像，以及 NASA Blue Marble／MODIS 衛星概覽（原生最高 z8，放大不增細節）。兩者預設不載入，選用才請求圖磚；不需金鑰、計費帳號，無大量下載或離線鏡像，保留署名。國土測繪中心條款 https://maps.nlsc.gov.tw/pro/use_clause.jsp 允許本公開網站免費介接（付費且需登入才可看圖的網站除外），禁止大量下載，服務未來仍可能改變。NASA 公開 WMTS 規格 https://nasa-gibs.github.io/gibs-api-docs/access-basics/ 。影像非即時，不參與尋路、DEM 或 GPX；不能作路況判定。
+台灣單張圖磚端點兩者均 HTTP 200、image/jpeg；本機全 JS 193 項測試通過。限制 keepBuffer=1、updateWhenIdle=true、停用 Retina 雙倍圖磚；尚無手機影像流量實測。新增為獨立功能分支，沒有修改 main 或正式模組。
