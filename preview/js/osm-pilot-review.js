@@ -1,8 +1,10 @@
+import {meters} from './osm-pilot-router.js';
+export function mountReview(mapHost,initialMap=null){
 // Local-only GPX inspection; imported tracks never alter routing identities.
 const panel=document.createElement('section');
 panel.innerHTML='<h2>範圍與 GPX 比較</h2><p id="extent"></p><label>匯入 GPX（最多 10 MiB） <input id="review-file" type="file" accept=".gpx"></label><button id="review-remove">移除匯入</button><p id="review-status" role="status"></p><h3>規劃路徑高度（DEM 原頂點估算）</h3><div id="route-profile"></div><h3>匯入 GPX 高度（檔案原值）</h3><div id="import-profile"></div>';
-document.querySelector('#map').after(panel);
-import {meters} from './osm-pilot-router.js';
+mapHost.after(panel);
+
 function profile(segments,host){
  let distance=0;const rows=[];
  for(const segment of segments){for(let i=0;i<segment.length;i++){if(i)distance+=meters(segment[i-1],segment[i]);rows.push([distance,segment[i][2]]);}rows.push([distance,null]);}
@@ -15,7 +17,7 @@ function profile(segments,host){
  for(const [x,y,text] of [[0,20,`${max.toFixed(0)} m`],[0,145,`${min.toFixed(0)} m`],[40,175,'0 km'],[550,175,`${(distance/1000).toFixed(2)} km`]]){const t=document.createElementNS(svg.namespaceURI,'text');t.setAttribute('x',x);t.setAttribute('y',y);t.setAttribute('font-size','12');t.textContent=text;svg.append(t)}host.append(svg);
 }
 document.addEventListener('pilot-route',e=>profile([e.detail],document.querySelector('#route-profile')));
-let comparisonMap=null;
+let comparisonMap=initialMap;
 document.addEventListener('pilot-data',e=>{comparisonMap=e.detail.map;const p=Object.values(e.detail.nodes);let west=180,east=-180,south=90,north=-90;for(const a of p){west=Math.min(west,a[0]);east=Math.max(east,a[0]);south=Math.min(south,a[1]);north=Math.max(north,a[1])}document.querySelector('#extent').textContent=`已載入線形包圍範圍：東經 ${west.toFixed(4)}～${east.toFixed(4)}，北緯 ${south.toFixed(4)}～${north.toFixed(4)}。範圍內仍可能沒有路網；灰線才是已載入線形。`;document.querySelector('#route-profile').replaceChildren()});
 let imported=null;
 document.querySelector('#review-remove').onclick=()=>{imported?.remove();imported=null;document.querySelector('#import-profile').replaceChildren();document.querySelector('#review-status').textContent='匯入資料已移除';};
@@ -25,3 +27,6 @@ document.querySelector('#review-file').onchange=async e=>{const status=document.
  if(!comparisonMap)throw Error('請先載入樣本區域');
  const group=L.featureGroup();for(const s of segments)L.polyline(s.map(p=>[p[1],p[0]]),{color:'#8c459a'}).addTo(group);for(const w of doc.getElementsByTagNameNS('*','wpt')){const p=point(w);const label=document.createElement('span');label.textContent=w.getElementsByTagNameNS('*','name')[0]?.textContent||'路點';L.circleMarker([p[1],p[0]],{radius:5}).bindTooltip(label).addTo(group)}imported?.remove();imported=group.addTo(comparisonMap);comparisonMap.fitBounds(group.getBounds());profile(segments,document.querySelector('#import-profile'));status.textContent=file.name+'：只在本機檢視，未加入行程。';
  }catch(error){status.textContent=error.message}};
+
+}
+if(document.querySelector('#sample'))mountReview(document.querySelector('#map'));

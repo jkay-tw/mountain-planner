@@ -10,6 +10,16 @@
     "sha256": "11bdf2e2ec43213ea537f60595fa269b253d667d6e684e24590a3c840b4bbeec"
   },
   {
+    "name": "雪山北側相鄰區塊（跨區測試）",
+    "file": "485_98.json.gz",
+    "bytes": 1313732,
+    "jsonBytes": 4960099,
+    "nodes": 84356,
+    "ways": 2081,
+    "elevationMissing": 0,
+    "sha256": "f34ad02df03f009f56391296b85f2023a2087d4a5ad0797505c3f578fd2dd032"
+  },
+  {
     "name": "玉山附近檢查區塊",
     "file": "483_93.json.gz",
     "bytes": 455992,

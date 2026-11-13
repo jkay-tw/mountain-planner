@@ -1,3 +1,5 @@
+import {mountReview} from './osm-pilot-review.js';
+import {attachOsmPlanner} from './osm-planner-integration.js';
 import {addFreeImagery} from './free-imagery.js';
 import {attachPathEditor} from './path-editor-ui.js';
 import {chooseSaveTarget,writeDownload,reportSaveError} from './save-file.js?v=v086';
@@ -43,7 +45,9 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
       const label=document.createElement('span');label.textContent=`Day ${day.dayIndex+1} ${f.from} → ${f.to}（${f.sourceName} 參考）`;
       if(f.sourceUrl){const a=document.createElement('a');a.href=f.sourceUrl;a.target='_blank';a.rel='noreferrer';a.textContent=' 查看來源';label.append(a)}
       const points=f.coordinates.map(p=>[p[1],p[0]]);
-      L.polyline(points,{interactive:false,weight:7,dashArray:f.manual?'10 8':null,color:colors[day.dayIndex%colors.length]}).addTo(group);
+      L.polyline(points,{interactive:false,weight:12,color:'#15232d',opacity:.85}).addTo(group);
+      L.polyline(points,{interactive:false,weight:9,color:'#ffffff',opacity:.95}).addTo(group);
+      L.polyline(points,{interactive:false,weight:5,dashArray:f.manual?'10 8':null,color:colors[day.dayIndex%colors.length]}).addTo(group);
       // A continuous, transparent target keeps dashed lines usable on touch screens.
       const line=L.polyline(points,{bubblingMouseEvents:false,weight:24,opacity:0.01,color:colors[day.dayIndex%colors.length]}).addTo(group);
       let dragged=false;
@@ -143,7 +147,7 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
       map=L.map(host.querySelector('[data-map]')).setView([24.388,121.266],13);
       map.on('zoomend moveend',drawLabels);
       const osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'}).addTo(map);
-      const corridor=L.featureGroup(data.spans.filter(s=>!s.aggregate).map(s=>L.polyline(s.coordinates.map(p=>[p[1],p[0]]),{color:'#7a827a',weight:3,opacity:.55})));
+      const corridor=L.featureGroup(data.spans.filter(s=>!s.aggregate).map(s=>L.polyline(s.coordinates.map(p=>[p[1],p[0]]),{color:'#00e5ff',weight:4,opacity:.95})));
       const layers=L.control.layers({'OpenStreetMap':osm},{'已收錄參考路徑（全路網）':corridor}).addTo(map);
       addFreeImagery({L,map,layers,onError:message=>{status.textContent=message}});
       const happyman=L.tileLayer('https://tile.happyman.idv.tw/mp/service?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=happyman&STYLE=default&TILEMATRIXSET=gm_grid&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image%2Fpng',{
@@ -160,6 +164,8 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
       }).catch(()=>{const p=document.createElement('li');p.textContent='魯地圖目前無法載入，可先使用 OpenStreetMap。';warnings.append(p)});
       group=L.featureGroup().addTo(map);labelGroup=L.layerGroup().addTo(map);
       editor=attachPathEditor({host,map,getDays,getRoute,data,onChange});
+      mountReview(host.querySelector('[data-map]'),map);
+      attachOsmPlanner({host,map,layers,getDays,data,onChange});
     }
     refresh();load.hidden=true;map.invalidateSize();if(group.getBounds().isValid())map.fitBounds(group.getBounds(),{padding:[25,25],maxZoom:16});
   }
