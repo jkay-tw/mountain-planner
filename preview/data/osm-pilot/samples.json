@@ -20,6 +20,16 @@
     "sha256": "f34ad02df03f009f56391296b85f2023a2087d4a5ad0797505c3f578fd2dd032"
   },
   {
+    "name": "郡大山／郡大林道區塊",
+    "file": "483_94.json.gz",
+    "bytes": 997916,
+    "jsonBytes": 3729203,
+    "nodes": 61168,
+    "ways": 1968,
+    "elevationMissing": 0,
+    "sha256": "58a4a744f11a19043fcc318403665b5db424580a07cd802d3d5f0c38131ae576"
+  },
+  {
     "name": "玉山附近檢查區塊",
     "file": "483_93.json.gz",
     "bytes": 455992,

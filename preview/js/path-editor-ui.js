@@ -1,4 +1,4 @@
-import {attachmentCandidates,directSpanCandidates,refitConfirmedSpan} from './network-attachment.js';
+import {closestProjection,attachmentCandidates,directSpanCandidates,refitConfirmedSpan} from './network-attachment.js';
 import {coordinateOf,editSegment,recalculateSegment,manualWarning,insertShapeControl,updateShapeControl,deleteShapeControl,splitManualShape} from './path-editor.js';
 import {twd97Label} from './twd97.js?v=v0731';
 import {uid} from './planner.js?v=segments1';
@@ -8,7 +8,7 @@ export function attachPathEditor({host,map,getDays,getRoute,data,onChange}){
  const panel=document.createElement('div');panel.className='path-editor';
  panel.innerHTML='<label><input type="checkbox" data-edit> 編輯路徑模式</label><div data-tools hidden><label>DAY <select data-day></select></label><label>選定路段 <select data-segment></select></label><label>點擊地圖 <select data-click><option value="node">新增節點</option><option value="control">插入控制點</option></select></label><label>連接模式 <select data-mode><option value="auto">自動路網</option><option value="straight">手動直線</option></select></label><button type="button" data-recalc>重新計算選定路段</button><p data-detail role="status"></p><details><summary>控制點與操作</summary><div data-controls></div></details><details><summary>連接路網（需確認）</summary><p>只列附近候選，不代表已連通。確認後保留原座標，以幾何接入所選參考路段端點，再按重算；接入部分不視為已核實步道。</p><div data-connections></div></details><details><summary>顯示於行程表的節點</summary><div data-visible></div></details><details><summary>操作說明與資料限制</summary><p>拖曳移動地圖，點擊新增位置。控制點使用指定折線，不自動吸附。切回自動並移除控制點，可恢復原線形。復原／重做在頁面工具列。手動路段尚無高程，不代表實際步道、合法或安全可通行。</p></details></div>';
  host.querySelector('[data-map]').before(panel);
- const $=s=>panel.querySelector(s),layer=L.layerGroup().addTo(map);
+ const $=s=>panel.querySelector(s),layer=L.layerGroup().addTo(map),attachmentPreview=L.layerGroup().addTo(map);
  const enabled=()=> $('[data-edit]').checked,day=()=>getDays()[Number($('[data-day]').value)||0];
  const segment=()=>{const items=day()?.items.filter(x=>x.type!=='rest')||[],to=items.find(x=>x.id===$('[data-segment]').value);return {to,from:items[items.indexOf(to)-1]}};
  let feedback='',popupBox=null,previewMarker=null;
@@ -81,7 +81,7 @@ export function attachPathEditor({host,map,getDays,getRoute,data,onChange}){
    const row=document.createElement('div'),label=document.createElement('label'),select=document.createElement('select'),candidates=attachmentCandidates(item,data);
    label.textContent=item.name;select.setAttribute('aria-label',item.name+'的候選連接路段');select.append(new Option('選擇候選路段／連接端',''));
    candidates.forEach((c,i)=>select.append(new Option(c.label+'（距線約 '+Math.round(c.distance)+' m）',String(i))));label.append(select);row.append(label);
-   const confirm=button('確認連接',()=>{const c=candidates[Number(select.value)];if(select.value===''||!c)return;commit(()=>{item.networkConnection={spanId:c.spanId,nodeId:c.nodeId};for(const dest of day().items)if(dest.pathEdit?.fromItemId===item.id||dest.id===item.id)delete dest.pathEdit?.networkNodeIds;return '已確認連接 '+c.label+'；原座標保留，請按重新計算。';})},row);confirm.disabled=true;select.onchange=()=>{confirm.disabled=select.value===''};
+   const confirm=button('確認連接',()=>{const c=candidates[Number(select.value)];if(select.value===''||!c)return;commit(()=>{attachmentPreview.clearLayers();item.networkConnection={spanId:c.spanId,nodeId:c.nodeId};for(const dest of day().items)if(dest.pathEdit?.fromItemId===item.id||dest.id===item.id)delete dest.pathEdit?.networkNodeIds;return '已確認連接 '+c.label+'；原座標保留，請按重新計算。';})},row);confirm.disabled=true;select.onchange=()=>{confirm.disabled=select.value==='';attachmentPreview.clearLayers();const c=candidates[Number(select.value)];if(select.value===''||!c)return;const line=L.polyline(c.coordinates.map(p=>[p[1],p[0]]),{color:'#ec3d8f',weight:5,dashArray:'6 4',interactive:false}).addTo(attachmentPreview);map.fitBounds(line.getBounds(),{padding:[30,30],maxZoom:16});};
    if(item.networkConnection){const status=document.createElement('small');status.textContent='已確認：'+item.networkConnection.nodeId;row.append(status);button('取消連接',()=>commit(()=>{delete item.networkConnection;return '已取消路網連接，原座標保留。'}),row);}
    $('[data-connections]').append(row);
   }
@@ -92,7 +92,7 @@ export function attachPathEditor({host,map,getDays,getRoute,data,onChange}){
  }
  refresh();
  function choose(dayIndex,toId){$('[data-day]').value=String(dayIndex);refresh();$('[data-segment]').value=toId;refresh()}
- return {refresh,isEnabled:enabled,select(dayIndex,toId){if(enabled())choose(dayIndex,toId)},
+ return {refresh,isEnabled:enabled,addOnSpan(span,latlng){if(!enabled())return;const hit=closestProjection([latlng.lng,latlng.lat],span);if(!hit)return;popup(hit.p);const p=document.createElement('p');p.textContent='已對齊所選參考線形 '+span.id+'；按加入行程確認，仍保留獨立手動節點身分。';popupBox.prepend(p);},select(dayIndex,toId){if(enabled())choose(dayIndex,toId)},
   insertAt(dayIndex,toId,geometry,at,coordinate){if(!enabled())return;choose(dayIndex,toId);commit(()=>{insertShapeControl(day(),toId,geometry,at,coordinate);const {from,to}=segment();if(to.pathEdit.autoReference)return refitConfirmedSpan(to.pathEdit,from,to,data,getRoute())?'已插入控制點，並依確認線形微調接入。':'已插入控制點；無法沿原確認線形微調，保留手動折線。';return '已插入控制點；此段為手動幾何，高程與時間需另確認。'})},
   splitAt(dayIndex,toId,geometry,at,name){if(!enabled())return;choose(dayIndex,toId);commit(()=>{splitManualShape(day(),toId,geometry,at,name);return '已插入行程節點；前後兩段時間待填，原路段時間保留於備份資料。'})}
  };

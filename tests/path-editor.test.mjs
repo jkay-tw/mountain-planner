@@ -14,6 +14,12 @@ data.spans=data.nodes.slice(1).map((n,i)=>({id:String(i),fromId:data.nodes[i].no
 const route={nodes:data.nodes.map(n=>({id:n.nodeId,name:n.name})),segments:data.spans.map(s=>({fromId:s.fromId,toId:s.toId,from:s.fromId,to:s.toId,minutes:10}))};
 const day=()=>({id:'day',startTime:'06:00',coefficient:1,linkedStart:false,note:'',items:data.nodes.map((n,i)=>({id:n.nodeId,type:'location',nodeId:n.nodeId,name:n.name,note:'',incoming:i?{kind:'official',from:n.nodeId==='b'?'a':n.nodeId==='c'?'b':'c',to:n.nodeId,fromId:data.nodes[i-1].nodeId,toId:n.nodeId,fromNodeId:data.nodes[i-1].nodeId,toNodeId:n.nodeId,officialMinutes:10,actualMinutes:null,source:'preserved'}:null}))});
 const resolve=d=>resolveItineraryGeometry([d],data);
+test('linked manual endpoint follows source identity, rename and coordinate without replacing the linked item',()=>{
+ const first=day();first.items=[{id:'source',type:'manual-location',name:'營地',coordinate:[121,24],incoming:null,note:''}];const second={...day(),id:'second',linkedStart:true,items:[]};let n=0;
+ syncLinkedDays([first,second],route,()=>`linked-${++n}`);const id=second.items[0].id;
+ first.items[0].name='新營地';first.items[0].coordinate=[121.001,24.001];syncLinkedDays([first,second],route,()=>`linked-${++n}`);
+ assert.equal(second.items[0].id,id);assert.equal(second.items[0].name,'新營地');assert.deepEqual(second.items[0].coordinate,[121.001,24.001]);assert.equal(second.items.length,1);
+});
 test('confirmed OSM geometry keeps DEM and source in GPX, and edited geometry discards stale DEM',()=>{
  const d=day(),coords=[[121,24],[121.005,24.001],[121.01,24]];
  editSegment(d,'b',e=>{e.mode='straight';e.shape=coords.map(coordinate=>({coordinate}));e.osmSnapshot={shape:coords,coordinates:coords.map((p,i)=>[...p,100+i*10])};e.candidateSource={spanId:'osm:1',name:'OSM trial',url:'https://www.openstreetmap.org/copyright'}});
@@ -117,10 +123,10 @@ test('manual names resolve from current itinerary and appear in GPX after rename
  d.items[0].name='第二次改名';assert.equal(resolve(d).waypoints[0].name,'第二次改名');
 });
 import {insertShapeControl,deleteShapeControl,updateShapeControl,splitManualShape} from '../preview/js/path-editor.js';
-test('drag inserts controls at the selected position without discarding the source shape',()=>{
+test('drag rebuilds only the interval between mandatory anchors',()=>{
  const d=day(),coords=[[121,24],[121.002,24.002],[121.006,24.003],[121.01,24]],other=JSON.stringify(d.items.slice(2));
- insertShapeControl(d,'b',coords,[121.003,24.002],[121.003,24.004],'p');let f=resolve(d).days[0].features[0];assert.deepEqual(f.coordinates,[coords[0],coords[1],[121.003,24.004],coords[2],coords[3]]);assert.equal(JSON.stringify(d.items.slice(2)),other);assert.equal(d.items[1].incoming.actualMinutes,null);assert.equal(d.items[1].pathOriginalIncoming.officialMinutes,10);
- editSegment(d,'b',e=>updateShapeControl(e,0,[121.004,24.005]));assert.deepEqual(resolve(d).days[0].features[0].coordinates[2],[121.004,24.005]);editSegment(d,'b',e=>deleteShapeControl(e,0));assert.deepEqual(resolve(d).days[0].features[0].coordinates,coords);
+ insertShapeControl(d,'b',coords,[121.003,24.002],[121.003,24.004],'p');let f=resolve(d).days[0].features[0];assert.deepEqual(f.coordinates,[coords[0],[121.003,24.004],coords[3]]);assert.equal(JSON.stringify(d.items.slice(2)),other);assert.equal(d.items[1].incoming.actualMinutes,null);assert.equal(d.items[1].pathOriginalIncoming.officialMinutes,10);
+ editSegment(d,'b',e=>updateShapeControl(e,0,[121.004,24.005]));assert.deepEqual(resolve(d).days[0].features[0].coordinates[1],[121.004,24.005]);editSegment(d,'b',e=>deleteShapeControl(e,0));assert.deepEqual(resolve(d).days[0].features[0].coordinates,[coords[0],coords.at(-1)]);
 });
 test('inserting a day waypoint splits shape in order without inventing segment time',()=>{
  const d=day(),coords=[[121,24],[121.003,24.001],[121.006,24.002],[121.01,24]];insertShapeControl(d,'b',coords,[121.004,24.001],[121.004,24.003],'p');const geometry=resolve(d).days[0].features[0].coordinates,others=JSON.stringify(d.items.slice(2));

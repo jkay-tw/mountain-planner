@@ -5,7 +5,7 @@ from full_dem import Dem
 
 def build(source,dem_file,output):
     manifest=json.loads((source/'manifest.json').read_text(encoding='utf-8'));dem=Dem(dem_file);output.mkdir(parents=True,exist_ok=True);samples=[]
-    for name,file,north in [('雪山附近檢查區塊','485_97.json.gz',False),('雪山北側相鄰區塊（跨區測試）','485_98.json.gz',False),('玉山附近檢查區塊','483_93.json.gz',False),('北部山區局部檢查（非整個台北）','486_100.json.gz',True)]:
+    for name,file,north in [('雪山附近檢查區塊','485_97.json.gz',False),('雪山北側相鄰區塊（跨區測試）','485_98.json.gz',False),('郡大山／郡大林道區塊','483_94.json.gz',False),('玉山附近檢查區塊','483_93.json.gz',False),('北部山區局部檢查（非整個台北）','486_100.json.gz',True)]:
         data=json.loads(gzip.decompress((source/file).read_bytes()))
         if north:
             data['ways']=[w for w in data['ways'] if 25.125<=data['nodes'][str(w['refs'][len(w['refs'])//2])][1]<25.25]

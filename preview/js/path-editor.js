@@ -15,23 +15,28 @@ export function nearestShapeLeg(shape,point){
 function shapeFromGeometry(geometry,controls=[]){
  const unused=[...controls];return geometry.map(coordinate=>{const index=unused.findIndex(c=>c.coordinate[0]===coordinate[0]&&c.coordinate[1]===coordinate[1]);return {coordinate:[...coordinate],...(index<0?{}:{controlId:unused.splice(index,1)[0].id})}});
 }
+function rebuildControlNeighborhood(edit,id){
+ const shape=edit.shape;if(!shape)return;const index=shape.findIndex(p=>p.controlId===id);if(index<0)return;
+ let a=index-1,b=index+1;while(a>0&&!shape[a].controlId)a--;while(b<shape.length-1&&!shape[b].controlId)b++;
+ edit.shape=[...shape.slice(0,a+1),shape[index],...shape.slice(b)];delete edit.osmSnapshot;
+}
 export function insertShapeControl(day,toId,geometry,at,coordinate,id=uid()){
  if(!validCoordinate(at)||!validCoordinate(coordinate)||!Array.isArray(geometry)||geometry.length<2||geometry.length>5000||!geometry.every(validCoordinate))throw Error('路段線形不完整，無法在此插入控制點。');
  editSegment(day,toId,e=>{
   const shape=e.shape||shapeFromGeometry(geometry,e.controls);
   if(shape.length>=5000)throw Error('路段線形已達上限，無法再插入控制點。');
   const index=nearestShapeLeg(shape,at);shape.splice(index+1,0,{coordinate:[...coordinate],controlId:id});
-  e.shape=shape;e.controls=shape.filter(p=>p.controlId).map(p=>({id:p.controlId,coordinate:[...p.coordinate]}));e.mode='straight';delete e.networkNodeIds;
+  e.shape=shape;e.controls=shape.filter(p=>p.controlId).map(p=>({id:p.controlId,coordinate:[...p.coordinate]}));e.mode='straight';delete e.networkNodeIds;if(at[0]!==coordinate[0]||at[1]!==coordinate[1])rebuildControlNeighborhood(e,id);
  });
  return id;
 }
 export function updateShapeControl(edit,index,coordinate){
  const control=edit.controls[index];if(!control)throw Error('找不到控制點');
- control.coordinate=[...coordinate];const point=edit.shape?.find(p=>p.controlId===control.id);if(point)point.coordinate=[...coordinate];
+ control.coordinate=[...coordinate];const point=edit.shape?.find(p=>p.controlId===control.id);if(point)point.coordinate=[...coordinate];rebuildControlNeighborhood(edit,control.id);
 }
 export function deleteShapeControl(edit,index){
  const control=edit.controls[index];if(!control)throw Error('找不到控制點');
- edit.controls.splice(index,1);if(edit.shape)edit.shape=edit.shape.filter(p=>p.controlId!==control.id);
+ rebuildControlNeighborhood(edit,control.id);edit.controls.splice(index,1);if(edit.shape)edit.shape=edit.shape.filter(p=>p.controlId!==control.id);
 }
 export function splitManualShape(day,toId,geometry,at,name='手動節點',newId=uid()){
  const items=day.items.filter(i=>i.type!=='rest'),index=items.findIndex(i=>i.id===toId),to=items[index],from=items[index-1];
