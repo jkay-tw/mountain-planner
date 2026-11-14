@@ -65,6 +65,12 @@ export function resolveItineraryGeometry(days,data){
           addAttachment(b,cb,true);i++;continue;
         }
       }
+      if(edit?.osmSnapshot&&edit.mode==='straight'&&JSON.stringify(edit.shape?.map(p=>p.coordinate))===JSON.stringify(edit.osmSnapshot.shape)&&edit.osmSnapshot.coordinates.length>=2){
+        const coordinates=edit.osmSnapshot.coordinates;let walked=0;
+        const profile=coordinates.every(p=>Number.isFinite(p[2]))?coordinates.map((p,j)=>{if(j)walked+=distanceMeters(coordinates[j-1],p);return [walked,p[2]]}):null;
+        const feature=(points,profile,manual)=>({profile,manual,sourceName:manual?manualWarning:'OSM 2026-11-12；DEM 原頂點估算；非已核實步道',sourceUrl:edit.candidateSource?.url,fromItemId:a.id,toItemId:b.id,viaItemIds:[],dayIndex,from:a.name,to:b.name,coordinates:points,distanceMeters:length(points)});
+        if(ca&&cb){features.push(feature([ca,coordinates[0].slice(0,2)],null,true),feature(coordinates,profile,false),feature([coordinates.at(-1).slice(0,2),cb],null,true));i++;continue;}
+      }
       const explicit=edit&&(edit.mode==='straight'||edit.controls.length);
       const fallback=b.incoming?.kind==='manual'&&b.incoming.fromId===a.id&&b.incoming.toId===b.id&&b.incoming.connectionStatus!=='owner-confirmed';
       if((explicit||fallback)&&ca&&cb){
@@ -166,7 +172,7 @@ export function profileNodeRows(day){
  }
  return rows;
 }
-export const terrainDayColor=index=>['#b54b22','#146e91','#7955a5','#318354','#9b326c','#806000','#3455b0','#a43b3b','#007970','#62533c'][(index||0)%10];
+export const terrainDayColor=index=>['#0057d9','#ff7200','#9b16c4','#00a86b','#e32645','#00a9d6','#b36500','#df39a7','#496b00','#573dcc'][(index||0)%10];
 // Four bounded lanes; dense clusters use a compact numbered key instead.
 export function layoutProfileLabels(nodes,total,curve=[]){
  const boxes=[];
