@@ -11,7 +11,7 @@ import {resolveItineraryGeometry,geometryToGpx,formatTerrain,renderTerrainProfil
 // Optional path edits use the host editor callback; map failure must not block the DAY editor.
 export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=null,getNode=()=>null,onChange=()=>{},onRenameManual=()=>{},onDeleteManual=()=>{}}){
   let data=initialData,map=null,group=null,labelGroup=null,latest=null,ready=null,selectedNode=null;
-  let editor=null,imagery=null;
+  let editor=null,imagery=null,osmPlanner=null;
   const hiddenDays=new Set();
   const colors=Array.from({length:10},(_,i)=>terrainDayColor(i));
   host.innerHTML='<summary>行程地圖與 GPX</summary><div class="geometry-body"><div class="geometry-actions"><button type="button" data-action="load">載入行程地圖</button><button type="button" data-action="fit" disabled>縮放至行程</button><button type="button" data-action="export" disabled>匯出候選 GPX</button><button type="button" data-toggle-profiles aria-expanded="false">每日剖面</button></div><p class="geometry-label-hint">點選節點標籤，可查看海拔與座標</p><div class="geometry-summary"><p data-status role="status">地圖尚未載入。</p><div data-legend class="geometry-legend" aria-label="每日路線圖例"></div></div><ul data-warnings></ul><div data-profile class="terrain-profiles" hidden></div><div data-map class="itinerary-map" aria-label="行程候選路徑地圖"></div><div class="geometry-source"><span>地圖 © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a> · 高程：<a href="https://rudymap.tw/">魯地圖 DEM</a></span><details><summary>資料來源與說明</summary><p>© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a>，ODbL 1.0。規劃座標另參考 TWMap、Happyman 與具來源記錄點。參考線形包含 OSM 步行路網與另有標示的山友歷史行跡；不代表即時通行狀態。缺座標或缺線形會逐段提示，統計只計已知部分。OSM 全臺快照：2026-11-03。高度來源：<a href="https://rudymap.tw/">魯地圖 DEM mix v2026</a>，約30m格網估算。</p></details></div></div>';
@@ -131,7 +131,7 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
       const element=document.createElement('span');element.className='geometry-map-label geometry-map-day';element.textContent=`Day ${day.dayIndex+1}`;element.style.borderColor=colors[day.dayIndex%colors.length];
       return {element,point:map.latLngToContainerPoint([p[1],p[0]]),dayOffset:day.dayIndex*25,...measure(element)};
     });
-    const labels=[...selected,...dayLabels,...nodes.filter(n=>n.nodeId!==selectedNode).map(nodeLabel)];
+    const labels=[...selected,...nodes.filter(n=>n.nodeId!==selectedNode).map(nodeLabel),...dayLabels];
     for(const item of placeMapLabels(labels,points,segments,map.getSize())){
       const {box,element}=item;
       const icon=L.divIcon({className:'geometry-label-icon',html:element,iconSize:[box.w,box.h],iconAnchor:[0,0]});
@@ -163,9 +163,9 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
       }).catch(()=>{const p=document.createElement('li');p.textContent='魯地圖目前無法載入，可先使用 OpenStreetMap。';warnings.append(p)});
       map.on('baselayerchange',()=>refresh());
       group=L.featureGroup().addTo(map);labelGroup=L.layerGroup().addTo(map);
-      editor=attachPathEditor({host,map,getDays,getRoute,data,onChange});
+      editor=attachPathEditor({host,map,getDays,getRoute,data,onChange,refitNetwork:(day,toId,force)=>osmPlanner?.refit(day,toId,force)});
       mountReview(host.querySelector('[data-map]'),map);
-      attachOsmPlanner({host,map,layers,getDays,data,onChange,onPickSpan:(span,ll)=>editor.addOnSpan(span,ll)});
+      osmPlanner=attachOsmPlanner({host,map,layers,getDays,data,onChange,onPickSpan:(span,ll)=>editor.addOnSpan(span,ll)});
     }
     refresh();load.hidden=true;map.invalidateSize();if(group.getBounds().isValid())map.fitBounds(group.getBounds(),{padding:[25,25],maxZoom:16});
   }

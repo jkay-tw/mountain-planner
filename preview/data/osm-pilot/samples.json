@@ -30,6 +30,26 @@
     "sha256": "58a4a744f11a19043fcc318403665b5db424580a07cd802d3d5f0c38131ae576"
   },
   {
+    "name": "郡大西側相鄰區塊",
+    "file": "482_94.json.gz",
+    "bytes": 1484280,
+    "jsonBytes": 5675585,
+    "nodes": 87457,
+    "ways": 5360,
+    "elevationMissing": 0,
+    "sha256": "e0a2d250a3afc9e73b73b7bc17151f441266557d487b1f2a600c3b47c989d4be"
+  },
+  {
+    "name": "郡大東側相鄰區塊",
+    "file": "484_94.json.gz",
+    "bytes": 138148,
+    "jsonBytes": 501379,
+    "nodes": 8569,
+    "ways": 99,
+    "elevationMissing": 0,
+    "sha256": "a545f6d50c07e22dcf591a9b08d0210e31ba55d65fc93bcc76e4543db5cb8cc4"
+  },
+  {
     "name": "玉山附近檢查區塊",
     "file": "483_93.json.gz",
     "bytes": 455992,

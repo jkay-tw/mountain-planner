@@ -4,7 +4,7 @@ import {twd97Label} from './twd97.js?v=v0731';
 import {uid} from './planner.js?v=segments1';
 
 // All mutations use the editor's existing scroll guard, autosave and history.
-export function attachPathEditor({host,map,getDays,getRoute,data,onChange}){
+export function attachPathEditor({host,map,getDays,getRoute,data,onChange,refitNetwork=()=>null}){
  const panel=document.createElement('div');panel.className='path-editor';
  panel.innerHTML='<label><input type="checkbox" data-edit> 編輯路徑模式</label><div data-tools hidden><label>DAY <select data-day></select></label><label>選定路段 <select data-segment></select></label><label>點擊地圖 <select data-click><option value="node">新增節點</option><option value="control">插入控制點</option></select></label><label>連接模式 <select data-mode><option value="auto">自動路網</option><option value="straight">手動直線</option></select></label><button type="button" data-recalc>重新計算選定路段</button><p data-detail role="status"></p><details><summary>控制點與操作</summary><div data-controls></div></details><details><summary>連接路網（需確認）</summary><p>只列附近候選，不代表已連通。確認後保留原座標，以幾何接入所選參考路段端點，再按重算；接入部分不視為已核實步道。</p><div data-connections></div></details><details><summary>顯示於行程表的節點</summary><div data-visible></div></details><details><summary>操作說明與資料限制</summary><p>拖曳移動地圖，點擊新增位置。控制點使用指定折線，不自動吸附。切回自動並移除控制點，可恢復原線形。復原／重做在頁面工具列。手動路段尚無高程，不代表實際步道、合法或安全可通行。</p></details></div>';
  host.querySelector('[data-map]').before(panel);
@@ -13,7 +13,7 @@ export function attachPathEditor({host,map,getDays,getRoute,data,onChange}){
  const segment=()=>{const items=day()?.items.filter(x=>x.type!=='rest')||[],to=items.find(x=>x.id===$('[data-segment]').value);return {to,from:items[items.indexOf(to)-1]}};
  let feedback='',popupBox=null,previewMarker=null;
  function closePopup(){map.closePopup();popupBox?.remove();popupBox=null;if(previewMarker){map.removeLayer(previewMarker);previewMarker=null;}}
- const commit=fn=>{try{feedback=fn()||'';closePopup();onChange();refresh()}catch(e){$('[data-detail]').textContent=e.message}};
+ const commit=fn=>{try{const previous=JSON.stringify(segment().to?.pathEdit);feedback=fn()||'';const target=segment().to;if(target?.pathEdit&&JSON.stringify(target.pathEdit)!==previous){const result=refitNetwork(day(),target.id);if(result)feedback=result;}closePopup();onChange();refresh()}catch(e){$('[data-detail]').textContent=e.message}};
  const change=fn=>commit(()=>{const {to,from}=segment();if(!from||!to||!coordinateOf(from,data)||!coordinateOf(to,data))throw Error('端點缺少可靠座標；請先選擇有座標的路段，不會推測或吸附位置。');editSegment(day(),to.id,fn);if(to.pathEdit?.autoReference&&to.pathEdit.mode==='straight')return refitConfirmedSpan(to.pathEdit,from,to,data,getRoute())?'已依確認線形微調接入；控制點座標保持不變。':'無法沿原確認線形微調，保留手動折線；請核對路徑。'});
  function addControl(coordinate,name=''){
   const {to,from}=segment();if(!from||!to||!coordinateOf(from,data)||!coordinateOf(to,data)){feedback='端點缺少可靠座標，無法新增控制點。';refresh();return}
@@ -43,6 +43,7 @@ export function attachPathEditor({host,map,getDays,getRoute,data,onChange}){
  $('[data-mode]').onchange=()=>change(e=>{e.mode=$('[data-mode]').value});
  $('[data-recalc]').onclick=()=>{
   const {from,to}=segment();
+  const osm=refitNetwork(day(),to?.id,true);if(osm){feedback=osm;onChange();refresh();return;}
   if(from?.type==='manual-location'&&to?.type==='manual-location'&&!from.networkConnection&&!to.networkConnection&&!to.pathEdit?.controls?.length&&(!to.pathEdit||to.pathEdit.mode==='auto')){
    const candidates=directSpanCandidates(from,to,data,getRoute());
    if(candidates.length===1){
