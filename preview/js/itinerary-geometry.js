@@ -1,4 +1,5 @@
 import {attachmentPath} from './network-attachment.js';
+import {applyDemSnapshots} from './dem-profile.js';
 import {coordinateOf,manualWarning} from './path-editor.js';
 // Candidate geometry is deliberately separate from times, plan snapshots and routing.
 export function distanceMeters(a,b){
@@ -116,6 +117,7 @@ export function resolveItineraryGeometry(days,data){
         gaps.push(gap);result.gaps.push(gap);i++;
       }
     }
+    applyDemSnapshots(items,features);
     const distance=features.reduce((n,f)=>n+f.distanceMeters,0);
     const metrics=terrainMetrics(features);
     result.days.push({dayIndex,features,gaps,profileNodes:itineraryProfileNodes(items,features,known,data),distanceMeters:distance,...metrics});result.distanceMeters+=distance;
@@ -134,7 +136,7 @@ export function geometryToGpx(resolved,data,{allowPartial=false,allowWaypointsOn
   for(const n of resolved.waypoints)out+=`<wpt lat="${n.coordinate[1]}" lon="${n.coordinate[0]}">${Number.isFinite(n.elevationMeters)?`<ele>${n.elevationMeters}</ele>`:''}<name>${xml(n.name)}（候選）</name><desc>${xml([n.coordinateSource?.url||n.osmRef||'使用者指定位置',n.coordinateMethod,n.note].filter(Boolean).join('；'))}</desc></wpt>\n`;
   for(const day of resolved.days){
     if(!day.features.length)continue;
-    out+=`<trk><name>Day ${day.dayIndex+1}${day.gaps.length?'（部分路徑）':''}</name><desc>${xml(desc+' 路段來源：'+[...new Set(day.features.map(f=>f.sourceName+' '+(f.sourceUrl||'')))].join('；'))}</desc>\n`;
+    out+=`<trk><name>Day ${day.dayIndex+1}${day.gaps.length?'（部分路徑）':''}</name><desc>${xml(desc+' 路段來源：'+[...new Set(day.features.map(f=>f.sourceName+' '+(f.sourceUrl||'')+(f.demSource?' DEM: '+f.demSource.url+' SHA256 '+f.demSource.archiveSha256:'')))].join('；'))}</desc>\n`;
     // Each source span is a separate segment. Gaps and days never gain bridges.
     for(const f of day.features){
       let walked=0,pi=0;
@@ -144,7 +146,7 @@ export function geometryToGpx(resolved,data,{allowPartial=false,allowWaypointsOn
         if(f.profile?.length){
           while(pi<f.profile.length-2&&f.profile[pi+1][0]<walked)pi++;
           const [da,za]=f.profile[pi],[db,zb]=f.profile[Math.min(pi+1,f.profile.length-1)];
-          z=za+(zb-za)*(db===da?0:Math.max(0,Math.min(1,(walked-da)/(db-da))));
+          z=Number.isFinite(za)&&Number.isFinite(zb)?za+(zb-za)*(db===da?0:Math.max(0,Math.min(1,(walked-da)/(db-da)))):null;
         }
         return `<trkpt lat="${p[1]}" lon="${p[0]}">${Number.isFinite(z)?`<ele>${z.toFixed(1)}</ele>`:''}</trkpt>`;
       }).join('\n')+'\n</trkseg>\n';
@@ -227,16 +229,16 @@ export function layoutProfileLabels(nodes,total,curve=[]){
  return {numbered:false,boxes};
 }
 export function renderTerrainProfile(day){
- const features=day.features.filter(f=>f.profile?.length);if(!features.length)return '<p>沒有可繪製的高度資料。</p>';
- const zs=[...features.flatMap(f=>f.profile.map(p=>p[1])),...profileNodeRows(day).map(n=>n.elevationMeters).filter(Number.isFinite)],lo=Math.floor(Math.min(...zs)/100)*100,hi=Math.max(lo+100,Math.ceil(Math.max(...zs)/100)*100),total=day.distanceMeters||1;
+ const features=day.features.filter(f=>f.profile?.some(p=>Number.isFinite(p[1])));if(!features.length)return '<p>沒有可繪製的高度資料。</p>';
+ const zs=[...features.flatMap(f=>f.profile.map(p=>p[1]).filter(Number.isFinite)),...profileNodeRows(day).map(n=>n.elevationMeters).filter(Number.isFinite)],lo=Math.floor(zs.reduce((a,b)=>Math.min(a,b),Infinity)/100)*100,hi=Math.max(lo+100,Math.ceil(zs.reduce((a,b)=>Math.max(a,b),-Infinity)/100)*100),total=day.distanceMeters||1;
  const X=d=>60+700*d/total,Y=z=>300-200*(z-lo)/(hi-lo),allNodes=profileNodeRows(day),nodes=allNodes.filter(n=>Number.isFinite(n.distanceMeters));
- let curveOffset=0;const curve=[];for(const f of day.features){if(f.profile)for(const [d,z] of f.profile)curve.push({x:X(curveOffset+d),y:Y(z)});curveOffset+=f.distanceMeters}
+ let curveOffset=0;const curve=[];for(const f of day.features){if(f.profile)for(const [d,z] of f.profile)if(Number.isFinite(z))curve.push({x:X(curveOffset+d),y:Y(z)});curveOffset+=f.distanceMeters}
  const color=terrainDayColor(day.dayIndex),layout=layoutProfileLabels(nodes.map(n=>({...n,plotY:Number.isFinite(n.elevationMeters)?Y(n.elevationMeters):300})),total,curve);
  let offset=0,paths='',grid='',labels='',marks='';const boxes=layout.boxes;
  const heightStep=Math.max(100,Math.ceil((hi-lo)/500)*100),distanceStep=Math.max(.2,Math.ceil(total/1000/6*5)/5);
  for(let z=lo;z<=hi;z+=heightStep){const y=Y(z).toFixed(1);grid+=`<path d="M60 ${y}H760"/><text stroke="none" x="4" y="${Number(y)+4}">${z} m</text>`}
  for(let km=0;km<=total/1000;km+=distanceStep){const x=X(km*1000).toFixed(1);grid+=`<path d="M${x} 100V300"/><text stroke="none" x="${x}" y="322" text-anchor="middle">${km.toFixed(1)}</text>`}
- for(const f of day.features){if(f.profile){const points=f.profile.map(([d,z])=>`${X(offset+d).toFixed(1)},${Y(z).toFixed(1)}`).join(' ');paths+=`<polygon points="${X(offset).toFixed(1)},300 ${points} ${X(offset+f.distanceMeters).toFixed(1)},300" fill="${color}" fill-opacity=".12"/><polyline points="${points}" fill="none" stroke="${color}" stroke-linejoin="round" stroke-width="2.5"><title>${xml(f.from)} → ${xml(f.to)}</title></polyline>`}offset+=f.distanceMeters}
+ for(const f of day.features){if(f.profile){const pieces=[];let piece=[];for(const [d,z] of f.profile){if(Number.isFinite(z))piece.push([d,z]);else if(piece.length){pieces.push(piece);piece=[];}}if(piece.length)pieces.push(piece);for(const piece of pieces){const points=piece.map(([d,z])=>`${X(offset+d).toFixed(1)},${Y(z).toFixed(1)}`).join(' ');paths+=`<polygon points="${X(offset+piece[0][0]).toFixed(1)},300 ${points} ${X(offset+piece.at(-1)[0]).toFixed(1)},300" fill="${color}" fill-opacity=".12"/><polyline points="${points}" fill="none" stroke="${color}" stroke-linejoin="round" stroke-width="2.5"><title>${xml(f.from)} → ${xml(f.to)}</title></polyline>`}}offset+=f.distanceMeters}
  for(const [i,n] of nodes.entries()){
   const x=X(n.distanceMeters),knownHeight=Number.isFinite(n.elevationMeters),y=knownHeight?Y(n.elevationMeters):300,distance=(n.distanceMeters/1000).toFixed(2),height=knownHeight?'約 '+Math.round(n.elevationMeters).toLocaleString('en-US')+' m':'高度未取得';
   marks+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4" fill="${knownHeight?color:'#fff'}" stroke="${knownHeight?'#fff':color}" stroke-width="1.5"><title>${xml(n.name)}：${distance} km，${height}</title></circle>`;

@@ -2,7 +2,7 @@ import {meters} from './osm-pilot-router.js';
 export function mountReview(mapHost,initialMap=null){
 // Local-only GPX inspection; imported tracks never alter routing identities.
 const panel=document.createElement('section');
-panel.innerHTML='<h2>範圍與 GPX 比較</h2><p id="extent"></p><label>匯入 GPX（最多 10 MiB） <input id="review-file" type="file" accept=".gpx"></label><button id="review-remove">移除匯入</button><p id="review-status" role="status"></p><h3>規劃路徑高度（DEM 原頂點估算）</h3><div id="route-profile"></div><h3>匯入 GPX 高度（檔案原值）</h3><div id="import-profile"></div>';
+panel.innerHTML='<h2>範圍與 GPX 比較</h2><p id="extent"></p><label>匯入 GPX（最多 10 MiB） <input id="review-file" type="file" accept=".gpx"></label><button id="review-remove">移除匯入</button><p id="review-status" role="status"></p><h3>OSM 候選比較剖面（候選原值）</h3><p>目前行程更新的 DEM 估算請查看上方「每日剖面」；此處只比較候選原值與匯入 GPX。</p><div id="route-profile"></div><h3>匯入 GPX 高度（檔案原值）</h3><div id="import-profile"></div>';
 mapHost.after(panel);
 
 function profile(segments,host){

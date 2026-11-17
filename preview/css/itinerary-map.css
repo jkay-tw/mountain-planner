@@ -380,3 +380,9 @@
 .path-map-popup .leaflet-popup-close-button{width:28px;height:28px}
 @media(max-width:600px),(pointer:coarse){.path-popup button{min-height:44px}.path-map-popup .leaflet-popup-close-button{width:44px;height:44px}.path-map-popup .leaflet-popup-content{margin-right:28px}}
 .geometry-map-node input{font-size:16px}
+/* Reduce popup whitespace while retaining existing button and touch dimensions. */
+.path-popup{gap:2px}
+.path-popup p{margin:0 0 2px}
+.path-map-popup .leaflet-popup-content{margin:6px 8px}
+.itinerary-map>.path-popup{padding:6px}
+@media(max-width:600px),(pointer:coarse){.path-map-popup .leaflet-popup-content{margin-right:28px}}

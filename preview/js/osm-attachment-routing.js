@@ -2,13 +2,22 @@ import {meters,distanceRoute} from './osm-pilot-router.js';
 // Project onto actual directed graph edges, without merging nearby identities.
 export function edgeCandidates(graph,p,radius=120,limit=3){
  const seen=new Set(),out=[];
- for(const [a,edges] of graph.adjacency)for(const edge of edges){const b=edge.to,key=[a,b].sort().join('|');if(seen.has(key))continue;seen.add(key);
+ for(const [from,edges] of graph.adjacency)for(const edge of edges)for(const [a,b] of (edge.refs||[from,edge.to]).slice(1).map((b,i)=>[(edge.refs||[from,edge.to])[i],b])){const key=[a,b].sort().join('|');if(seen.has(key))continue;seen.add(key);
   const x=graph.nodes[a],y=graph.nodes[b],scale=Math.cos(p[1]*Math.PI/180),dx=(y[0]-x[0])*scale,dy=y[1]-x[1],t=Math.max(0,Math.min(1,((p[0]-x[0])*scale*dx+(p[1]-x[1])*dy)/(dx*dx+dy*dy||1))),point=[x[0]+t*(y[0]-x[0]),x[1]+t*(y[1]-x[1]),Number.isFinite(x[2])&&Number.isFinite(y[2])?x[2]+t*(y[2]-x[2]):null],distance=meters(p,point);
   if(distance<=radius)out.push({a,b,t,point,distance,key});
  }
  return out.sort((a,b)=>a.distance-b.distance).slice(0,limit);
 }
 function between(graph,x,y){
+ if(graph.compressed){
+  const expanded=new Map();
+  for(const [from,edges] of graph.adjacency){if(!expanded.has(from))expanded.set(from,[]);for(const edge of edges){
+   const refs=edge.refs||[from,edge.to],hit=refs.some((b,i)=>i&&[refs[i-1],b].sort().join('|')===x.key||i&&[refs[i-1],b].sort().join('|')===y.key);
+   if(!hit){expanded.get(from).push(edge);continue;}
+   for(let i=1;i<refs.length;i++){const a=refs[i-1],b=refs[i];if(!expanded.has(a))expanded.set(a,[]);if(!expanded.has(b))expanded.set(b,[]);expanded.get(a).push({to:b,way:edge.way,meters:meters(graph.nodes[a],graph.nodes[b])});}
+  }}
+  graph={...graph,adjacency:expanded};
+ }
  const nodes=Object.create(graph.nodes),adjacency=new Map(graph.adjacency),groups=new Map();
  for(const [id,c] of [['@start',x],['@end',y]]){nodes[id]=c.point;const g=groups.get(c.key)||{a:c.a,b:c.b,points:[]};g.points.push({id,t:c.a===g.a?c.t:1-c.t});groups.set(c.key,g);}
  for(const g of groups.values()){

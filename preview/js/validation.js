@@ -20,6 +20,7 @@ export function validatePlan(data,routeIds){
     d.items.forEach((item,j)=>{
       const where='Day '+(i+1)+' 第 '+(j+1)+' 項';
       if(!plain(item)||!['location','manual-location','rest'].includes(item.type))fail(where+' 節點類型錯誤');
+      if(item.demSnapshot!==undefined){const s=item.demSnapshot;if(!plain(s)||!Array.isArray(s.shape)||s.shape.length<2||s.shape.length>100000||s.shape.some(p=>!validCoordinate(p))||!Array.isArray(s.profile)||s.profile.length<2||s.profile.length>100000||s.profile.some((p,i)=>!Array.isArray(p)||p.length!==2||!finite(p[0],0,1e8)||(p[1]!==null&&!finite(p[1],-1000,10000))||(i&&p[0]<s.profile[i-1][0]))||!plain(s.source)||typeof s.version!=='string'||s.version.length>100||s.spacingMeters!==30)fail(where+' DEM 快照錯誤');}
       if(item.networkConnection!==undefined&&(!plain(item.networkConnection)||typeof item.networkConnection.nodeId!=='string'||typeof item.networkConnection.spanId!=='string'))fail(where+' 路網連接錯誤');
       if(item.pathEdit?.networkNodeIds!==undefined&&(!Array.isArray(item.pathEdit.networkNodeIds)||item.pathEdit.networkNodeIds.length>1000||item.pathEdit.networkNodeIds.some(id=>typeof id!=='string')))fail(where+' 路網路徑錯誤');
       if(item.pathEdit?.shape!==undefined&&(!Array.isArray(item.pathEdit.shape)||item.pathEdit.shape.length<2||item.pathEdit.shape.length>5000||item.pathEdit.shape.some(p=>!plain(p)||!validCoordinate(p.coordinate)||(p.controlId!==undefined&&typeof p.controlId!=='string'))))fail(where+' 手動線形錯誤');
