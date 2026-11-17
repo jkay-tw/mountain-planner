@@ -1,3 +1,4 @@
+import {captureRoutingRequest,resolveRoutingRequest} from './routing-request.js';
 import {routeIntervals,rememberIntervals} from './control-routing.js';
 import {attachedRoute,routeVia,attachedAlternatives} from './osm-attachment-routing.js';
 import {buildGraph,nearestVertex,distanceRoute} from './osm-pilot-router.js';
@@ -9,7 +10,7 @@ export function attachOsmPlanner({host,map,layers,getDays,data,onChange,onStatus
  let graph=null,pending=null,version=0;const merged={nodes:{},ways:[],blockedNodeIds:[]},loaded=new Set();
  fetch('data/osm-pilot/samples.json',{signal:AbortSignal.timeout(15000)}).then(r=>{if(!r.ok)throw Error('清單載入失敗');return r.json()}).then(items=>{for(const i of items)select.append(new Option(i.name,i.file))}).catch(e=>{status.textContent=e.message});
  panel.querySelector('[data-load]').onclick=async()=>{const token=++version;apply.disabled=true;pending=null;try{status.textContent='載入中…';for(const file of(select.value==='483_94.json.gz'?['483_94.json.gz','482_94.json.gz','484_94.json.gz']:[select.value])){if(loaded.has(file))continue;const res=await fetch('data/osm-pilot/'+file,{signal:AbortSignal.timeout(15000)});if(!res.ok)throw Error('區域載入失敗');const d=await new Response(res.body.pipeThrough(new DecompressionStream('gzip'))).json();if(token!==version)return;Object.assign(merged.nodes,d.nodes);merged.ways.push(...d.ways);merged.blockedNodeIds.push(...d.blockedNodeIds);loaded.add(file);for(const w of d.ways)L.polyline(w.refs.map(id=>d.nodes[id]).map(p=>[p[1],p[0]]),{color:'#00a9db',weight:5,opacity:.85,bubblingMouseEvents:false}).on('click',e=>onPickSpan({id:'OSM way '+w.id,coordinates:w.refs.map(id=>d.nodes[id])},e.latlng)).addTo(network)}graph=buildGraph(merged);network.addTo(map);map.fitBounds(network.getBounds());document.dispatchEvent(new CustomEvent('pilot-data',{detail:{nodes:merged.nodes,map}}));status.textContent=`已載入 ${loaded.size} 區域；可選定行程路段預覽。相鄰未載入區塊仍可能缺漏。`;}catch(e){status.textContent=e.message}};
- let autoLoading=null;
+ let autoLoading=null;const requests=new Map();
  async function ensureArea(points){
   if(autoLoading)await autoLoading;
   const samples=await fetch('data/osm-pilot/samples.json',{signal:AbortSignal.timeout(15000)}).then(r=>r.json());
@@ -29,7 +30,8 @@ export function attachOsmPlanner({host,map,layers,getDays,data,onChange,onStatus
   const items=day.items.filter(i=>i.type!=='rest'),to=items.find(i=>i.id===toId),from=items[items.indexOf(to)-1];if(!from||!to)return null;
   const e=to.pathEdit;if(e?.detour)return '局部繞行已固定 P／Q；請拖動接入點調整，刪除 B 可回復原路徑。';if(!force&&!e?.osmRouting&&!e?.controls?.length)return null;
   const a=coordinateOf(from,data),b=coordinateOf(to,data);if(!a||!b)return null;
-  if(!ready){const before=JSON.stringify(to.pathEdit);ensureArea([a,...(e?.controls||[]).map(c=>c.coordinate),b]).then(()=>{if(getDays().includes(day)&&day.items.includes(to)&&JSON.stringify(to.pathEdit)===before){const message=api.refit(day,toId,force,true);onChange();onStatus(message);}else onStatus('行程已變更，已取消舊的重算請求。');}).catch(error=>{status.textContent=error.message;onStatus('重算失敗：'+error.message+'；原路徑保持。')});return '計算中…放開後更新；僅採用仍有效的控制點位置。';}
+  if(!ready){const request=captureRoutingRequest(day,toId,data),key=day.id+'>'+toId,token={};requests.set(key,token);ensureArea([a,...(e?.controls||[]).map(c=>c.coordinate),b]).then(()=>{if(requests.get(key)!==token)return;const current=resolveRoutingRequest(getDays(),request,data);if(current){const message=api.refit(current.day,toId,force,true);onChange();onStatus(message);}else onStatus('路徑位置或控制點已變更，已取消舊的重算請求。');}).catch(error=>{if(requests.get(key)!==token)return;status.textContent=error.message;onStatus('重算失敗：'+error.message+'；原路徑保持。')});return '計算中…放開後更新；僅採用仍有效的控制點位置。';}
+
   if(!graph){status.textContent='此位置沒有已載入的可尋路資料，保留原路徑。';return status.textContent;}const trial=structuredClone(e||{controls:[]});if(force&&trial.shape&&!trial.intervals?.length)rememberIntervals(trial);const started=performance.now(),result=routeIntervals(trial,a,b,graph,{recalculate:force});if(result.failures.length&&!trial.shape){status.textContent='找不到方向連通的 OSM 路徑，保留原路徑。';return status.textContent;}
   editSegment(day,toId,next=>{next.mode='straight';next.osmRouting=true;next.intervals=result.intervals;next.shape=result.shape;next.candidateSource={spanId:'osm-20261112',name:'OSM 路網與手動連接混合規劃；接入需確認',url:'https://www.openstreetmap.org/copyright'};delete next.osmSnapshot;delete next.autoReference;delete next.networkNodeIds;});
   status.textContent=`已更新相鄰控制點區間（${Math.round(performance.now()-started)} ms）；${result.failures.length?'無連通路網的區間保留原線形；':''}${result.intervals.filter(p=>!p.network).length} 段手動／未核實線形。高程與時間未知。`;return status.textContent;

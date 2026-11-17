@@ -1,12 +1,29 @@
 import {meters} from './osm-pilot-router.js';
+export function displayedDetourBase(edit,geometry){
+ const shape=geometry.map(coordinate=>({coordinate:coordinate.slice(0,2)}));
+ if(JSON.stringify(edit?.shape?.map(p=>p.coordinate))===JSON.stringify(shape.map(p=>p.coordinate)))return structuredClone(edit.shape);
+ if(edit?.controls?.length)throw Error('目前顯示線形與保存的控制點不一致，請先撤銷或重算；不使用舊線形建立接入點。');
+ return shape;
+}
+function scopedProjection(shape,scope,origin){
+ if(!scope||scope.length<2)return projectOnShape(shape,origin);
+ const coords=scope.map(p=>p.slice(0,2));let walked=0;
+ for(let i=0;i<=shape.length-coords.length;i++){
+  if(i)walked+=meters(shape[i-1].coordinate,shape[i].coordinate);
+  if(coords.every((p,j)=>p[0]===shape[i+j].coordinate[0]&&p[1]===shape[i+j].coordinate[1])){
+   const hit=projectOnShape(shape.slice(i,i+coords.length),origin);return {...hit,along:walked+hit.along,total:projectOnShape(shape,origin).total};
+  }
+ }
+ throw Error('所選路段已變更，請重新拖動；不推測其他區間的接入位置。');
+}
 export function projectOnShape(shape,p){
  let best=null,total=0;const scale=Math.cos(p[1]*Math.PI/180);
  for(let i=1;i<shape.length;i++){const a=shape[i-1].coordinate,b=shape[i].coordinate,dx=(b[0]-a[0])*scale,dy=b[1]-a[1],t=Math.max(0,Math.min(1,((p[0]-a[0])*scale*dx+(p[1]-a[1])*dy)/(dx*dx+dy*dy||1))),coordinate=[a[0]+t*(b[0]-a[0]),a[1]+t*(b[1]-a[1])],length=meters(a,b),distance=meters(p,coordinate);if(!best||distance<best.distance)best={coordinate,along:total+t*length,distance};total+=length;}
  return {...best,total};
 }
 function at(shape,d){let walked=0;for(let i=1;i<shape.length;i++){const a=shape[i-1].coordinate,b=shape[i].coordinate,n=meters(a,b);if(walked+n>=d){const t=n?(d-walked)/n:0;return [a[0]+t*(b[0]-a[0]),a[1]+t*(b[1]-a[1])]}walked+=n}return [...shape.at(-1).coordinate]}
-export function proposeDetour(base,origin,target,id){
- const shape=structuredClone(base),hit=projectOnShape(shape,origin);let lower=0,upper=hit.total,walked=0;
+export function proposeDetour(base,origin,target,id,scope){
+ const shape=structuredClone(base),hit=scopedProjection(shape,scope,origin);let lower=0,upper=hit.total,walked=0;
  for(let i=0;i<shape.length;i++){if(i)walked+=meters(shape[i-1].coordinate,shape[i].coordinate);if(shape[i].controlId){if(walked<=hit.along)lower=walked;else{upper=walked;break}}}
  const start=Math.max(lower,hit.along-100),end=Math.min(upper,hit.along+100);let pId=id+'-P',qId=id+'-Q';walked=0;for(let i=0;i<shape.length;i++){if(i)walked+=meters(shape[i-1].coordinate,shape[i].coordinate);if(shape[i].controlId){if(Math.abs(walked-start)<.001)pId=shape[i].controlId;if(Math.abs(walked-end)<.001)qId=shape[i].controlId;}}
  return {base:shape,min:lower,max:upper,start:Math.max(lower,hit.along-100),end:Math.min(upper,hit.along+100),target:[...target],id,pId,qId};
