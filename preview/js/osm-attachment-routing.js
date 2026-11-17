@@ -22,9 +22,12 @@ function between(graph,x,y){
  return distanceRoute({nodes,adjacency},'@start','@end');
 }
 export function attachedRoute(graph,a,b){
- let best=null;
- for(const x of edgeCandidates(graph,a))for(const y of edgeCandidates(graph,b)){const r=between(graph,x,y);if(!r)continue;const score=x.distance+y.distance+r.distanceMeters;if(!best||score<best.score)best={...r,score,start:x,end:y};}
- return best;
+ return attachedAlternatives(graph,a,b)[0]||null;
+}
+export function attachedAlternatives(graph,a,b){
+ const routes=[];
+ for(const x of edgeCandidates(graph,a))for(const y of edgeCandidates(graph,b)){const r=between(graph,x,y);if(!r)continue;routes.push({...r,score:x.distance+y.distance+r.distanceMeters,start:x,end:y});}
+ const seen=new Set();return routes.sort((a,b)=>a.score-b.score).filter(r=>{const key=JSON.stringify(r.coordinates);if(seen.has(key))return false;seen.add(key);return true;}).slice(0,3);
 }
 export function routeVia(graph,points){
  const coordinates=[],controlIndices=[],wayIds=[];let distanceMeters=0,maxAccess=0;

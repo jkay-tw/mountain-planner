@@ -1,3 +1,4 @@
+import {rememberIntervals} from './control-routing.js';
 import {proposeDetour,detourShape,moveDetour,applyDetour,projectOnShape} from './local-detour.js';
 import {meters} from './osm-pilot-router.js';
 import {closestProjection,attachmentCandidates,directSpanCandidates,refitConfirmedSpan} from './network-attachment.js';
@@ -8,24 +9,25 @@ import {uid} from './planner.js?v=segments1';
 // All mutations use the editor's existing scroll guard, autosave and history.
 export function attachPathEditor({host,map,getDays,getRoute,data,onChange,refitNetwork=()=>null}){
  const panel=document.createElement('div');panel.className='path-editor';
- panel.innerHTML='<label><input type="checkbox" data-edit> 編輯路徑模式</label><div data-tools hidden><label>DAY <select data-day></select></label><label>選定路段 <select data-segment></select></label><label>點擊地圖 <select data-click><option value="node">新增節點</option><option value="control">插入控制點</option></select></label><label>連接模式 <select data-mode><option value="auto">自動路網</option><option value="straight">手動直線</option></select></label><button type="button" data-recalc>重新計算選定路段</button><p data-detail role="status"></p><details><summary>控制點與操作</summary><div data-controls></div></details><details><summary>連接路網（需確認）</summary><p>只列附近候選，不代表已連通。確認後保留原座標，以幾何接入所選參考路段端點，再按重算；接入部分不視為已核實步道。</p><div data-connections></div></details><details><summary>顯示於行程表的節點</summary><div data-visible></div></details><details><summary>操作說明與資料限制</summary><p>拖曳移動地圖，點擊新增位置。控制點使用指定折線，不自動吸附。切回自動並移除控制點，可恢復原線形。復原／重做在頁面工具列。手動路段尚無高程，不代表實際步道、合法或安全可通行。</p></details></div>';
+ panel.innerHTML='<label><input type="checkbox" data-edit> 編輯路徑模式</label><div data-tools hidden><label>DAY <select data-day></select></label><label>選定路段 <select data-segment></select></label><label>點擊地圖 <select data-click><option value="node">新增節點</option><option value="control">插入控制點</option></select></label><label>連接模式 <select data-mode><option value="auto">自動路網</option><option value="straight">手動直線</option></select></label><button type="button" data-recalc>重新計算選定路段</button><p data-detail role="status"></p><div data-intervals></div><details><summary>控制點與操作</summary><div data-controls></div></details><details><summary>進階：舊路網連接</summary><p>只列附近候選，不代表已連通。確認後保留原座標，以幾何接入所選參考路段端點，再按重算；接入部分不視為已核實步道。</p><div data-connections></div></details><details><summary>顯示於行程表的節點</summary><div data-visible></div></details><details><summary>操作說明與資料限制</summary><p>勾選編輯後，拖動 DAY 路線新增控制點；拖到路外會先預覽 P／B／Q。每對相鄰控制點可選沿路網或手動連接。P／Q 可沿原線調整，刪除 B 還原繞行；再插入控制點後轉為逐段編輯。復原／重做在頁面工具列。手動路段尚無高程，不代表實際步道、合法或安全可通行。</p></details></div>';
  host.querySelector('[data-map]').before(panel);
  const $=s=>panel.querySelector(s),layer=L.layerGroup().addTo(map),attachmentPreview=L.layerGroup().addTo(map);
  const enabled=()=> $('[data-edit]').checked,day=()=>getDays()[Number($('[data-day]').value)||0];
  const segment=()=>{const items=day()?.items.filter(x=>x.type!=='rest')||[],to=items.find(x=>x.id===$('[data-segment]').value);return {to,from:items[items.indexOf(to)-1]}};
  let feedback='',popupBox=null,previewMarker=null;
  function closePopup(){attachmentPreview.clearLayers();map.closePopup();popupBox?.remove();popupBox=null;if(previewMarker){map.removeLayer(previewMarker);previewMarker=null;}}
- const commit=fn=>{try{const previous=JSON.stringify(segment().to?.pathEdit),hadDetour=!!segment().to?.pathEdit?.detour;feedback=fn()||'';const target=segment().to;if(target?.pathEdit&&!hadDetour&&!target.pathEdit.detour&&JSON.stringify(target.pathEdit)!==previous){const result=refitNetwork(day(),target.id);if(result)feedback=result;}closePopup();onChange();refresh()}catch(e){$('[data-detail]').textContent=e.message}};
+ const commit=fn=>{try{const previous=JSON.stringify(segment().to?.pathEdit),hadDetour=!!segment().to?.pathEdit?.detour;feedback=fn()||'';const target=segment().to;if(target?.pathEdit&&!(hadDetour&&!target.pathEdit.detour&&!target.pathEdit.intervalModes)&&!target.pathEdit.detour&&JSON.stringify(target.pathEdit)!==previous){const result=refitNetwork(day(),target.id);if(result)feedback=result;}closePopup();onChange();refresh()}catch(e){$('[data-detail]').textContent=e.message}};
  const change=fn=>commit(()=>{const {to,from}=segment();if(!from||!to||!coordinateOf(from,data)||!coordinateOf(to,data))throw Error('端點缺少可靠座標；請先選擇有座標的路段，不會推測或吸附位置。');editSegment(day(),to.id,fn);if(to.pathEdit?.autoReference&&to.pathEdit.mode==='straight')return refitConfirmedSpan(to.pathEdit,from,to,data,getRoute())?'已依確認線形微調接入；控制點座標保持不變。':'無法沿原確認線形微調，保留手動折線；請核對路徑。'});
  function previewDetour(geometry,at,coordinate){
   closePopup();attachmentPreview.clearLayers();const {to}=segment();
-  if(to.pathEdit?.detour){feedback='此段已有局部繞行，請移動 B／P／Q；刪除 B 可回復原路徑後重新設定。';refresh();return;}
+  if(to.pathEdit?.detour){commit(()=>{insertShapeControl(day(),to.id,geometry,at,coordinate);return '已依線上順序插入控制點，可逐段選擇連接模式。'});return;}
   const base=to.pathEdit?.shape||geometry.map(coordinate=>({coordinate}));if(base.length>4997){feedback='原路段頂點太多，請先分段再建立繞行。';refresh();return;}const d=proposeDetour(base,at,coordinate,uid()),before=JSON.stringify(day()),selectedTo=to.id;
   const box=document.createElement('div');box.className='path-popup';const text=document.createElement('p');text.textContent='局部繞行預覽：P 離開、B 目標、Q 返回。拖動 P／Q 選擇接入位置；尚未修改行程。初始前後各約100m，非可通行判定。';box.append(text);
   const line=L.polyline([],{color:'#db6500',weight:5,dashArray:'7 5',interactive:false}).addTo(attachmentPreview),markers=[];
   const draw=()=>{const shape=detourShape(d);line.setLatLngs(shape.map(p=>[p.coordinate[1],p.coordinate[0]]));for(const m of markers){const p=shape.find(p=>p.controlId===m.id).coordinate;m.marker.setLatLng([p[1],p[0]])}};
   for(const [id,label] of [[d.pId,'P'],[d.id,'B'],[d.qId,'Q']]){const p=detourShape(d).find(p=>p.controlId===id).coordinate;const marker=L.marker([p[1],p[0]],{draggable:true,icon:L.divIcon({className:'path-control-marker',html:'<span>'+label+'</span>',iconSize:[44,44],iconAnchor:[22,22]})}).on('dragend',event=>{const p=event.target.getLatLng();try{moveDetour(d,id,[p.lng,p.lat]);draw()}catch(e){text.textContent=e.message;draw()}}).addTo(attachmentPreview);markers.push({id,marker});}
   draw();button('確認局部繞行',()=>{if(JSON.stringify(day())!==before||segment().to?.id!==selectedTo){text.textContent='行程已變更，請取消並重新預覽。';return;}commit(()=>{editSegment(day(),to.id,e=>applyDetour(e,d));attachmentPreview.clearLayers();return '已固定 P／Q；移動 B 保留接入位置，刪除 B 回復原線形。手動繞行高程與時間待確認。';})},box);
+  button('沿路網經過 B（另行重算）',()=>commit(()=>{insertShapeControl(day(),to.id,geometry,at,d.target,d.id);return '已加入 B，依相鄰控制點尋路；無連通資料時保留手動線。'}),box);
   button('取消預覽',()=>{attachmentPreview.clearLayers();closePopup()},box);L.DomEvent.disableClickPropagation(box);L.DomEvent.disableScrollPropagation(box);map.getContainer().append(box);popupBox=box;
  }
  function addControl(coordinate,name=''){
@@ -53,7 +55,7 @@ export function attachPathEditor({host,map,getDays,getRoute,data,onChange,refitN
  map.on('click',event=>{if(!enabled())return;const coordinate=[event.latlng.lng,event.latlng.lat];if($('[data-click]').value==='control')addControl(coordinate);else popup(coordinate)});
  $('[data-edit]').onchange=()=>{$('[data-tools]').hidden=!enabled();closePopup();refresh()};
  $('[data-day]').onchange=()=>{feedback='';refresh()};$('[data-segment]').onchange=()=>{feedback='';refresh()};
- $('[data-mode]').onchange=()=>change(e=>{e.mode=$('[data-mode]').value});
+ $( '[data-mode]').onchange=()=>change(e=>{e.mode=$('[data-mode]').value;e.intervalModes=Object.fromEntries(['start',...e.controls.map(c=>c.id)].map((id,i)=>[id+'>'+([...e.controls.map(c=>c.id),'end'][i]),e.mode]));e.intervals=[];e.osmRouting=true;delete e.detour;});
  $('[data-recalc]').onclick=()=>{
   const {from,to}=segment();
   const osm=refitNetwork(day(),to?.id,true);if(osm){feedback=osm;onChange();refresh();return;}
@@ -77,6 +79,13 @@ export function attachPathEditor({host,map,getDays,getRoute,data,onChange,refitN
   const {to,from}=segment(),edit=to?.pathEdit&&to.pathEdit.fromItemId===from?.id?to.pathEdit:null;
   $('[data-mode]').value=edit?.mode||'auto';$('[data-mode]').disabled=!to;$('[data-recalc]').disabled=!to;
   $('[data-detail]').textContent=feedback||(to?(coordinateOf(from,data)&&coordinateOf(to,data)?((edit?.controls.length||edit?.mode==='straight'||to.incoming?.kind==='manual')?'手動路段：尚無高程。':'沿既有已連通路網。'):'端點缺少可靠座標，無法產生手動線形。'):'點地圖新增位置，或先在 DAY 加入節點。');
+  $('[data-intervals]').replaceChildren();
+  const boundaries=[{id:'start',name:from?.name},...(edit?.controls||[]).map((c,i)=>({...c,name:c.name||'控制點 '+(i+1)})),{id:'end',name:to?.name}];
+  if(to)for(let i=1;i<boundaries.length;i++){
+   const key=boundaries[i-1].id+'>'+boundaries[i].id,label=document.createElement('label'),select=document.createElement('select');
+   label.textContent=boundaries[i-1].name+' → '+boundaries[i].name+' ';select.append(new Option('沿路網（不通則手動）','auto'),new Option('手動連接','straight'));select.value=edit?.intervalModes?.[key]||'auto';
+   select.onchange=()=>change(e=>{if(e.detour){e.intervalModes={...(e.intervalModes||{}),[e.detour.pId+'>'+e.detour.id]:'straight',[e.detour.id+'>'+e.detour.qId]:'straight'};delete e.detour;}rememberIntervals(e);e.intervalModes={...(e.intervalModes||{}),[key]:select.value};e.osmRouting=true;});label.append(select);$('[data-intervals]').append(label);
+  }
   layer.clearLayers();$('[data-controls]').replaceChildren();
   for(const [index,c] of (edit?.controls||[]).entries()){
    const row=document.createElement('div');row.className='path-control';row.textContent=`${index+1} · ${twd97Label(c.coordinate)} `;

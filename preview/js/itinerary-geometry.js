@@ -71,7 +71,13 @@ export function resolveItineraryGeometry(days,data){
         const feature=(points,profile,manual)=>({profile,manual,sourceName:manual?manualWarning:'OSM 2026-11-12；DEM 原頂點估算；非已核實步道',sourceUrl:edit.candidateSource?.url,fromItemId:a.id,toItemId:b.id,viaItemIds:[],dayIndex,from:a.name,to:b.name,coordinates:points,distanceMeters:length(points)});
         if(ca&&cb){features.push(feature([ca,coordinates[0].slice(0,2)],null,true),feature(coordinates,profile,false),feature([coordinates.at(-1).slice(0,2),cb],null,true));i++;continue;}
       }
-      const explicit=edit&&(edit.mode==='straight'||edit.controls.length);
+        if(edit?.intervals?.length&&JSON.stringify(edit.intervals.flatMap((p,j)=>p.coordinates.slice(j?1:0)))===JSON.stringify(edit.shape?.map(p=>p.coordinate))){
+          for(const part of edit.intervals){
+            const add=(coordinates,manual)=>features.push({profile:null,manual,sourceName:manual?manualWarning:'OSM 路網規劃；非已核實步道；高程及時間未知',sourceUrl:edit.candidateSource?.url||null,fromItemId:a.id,toItemId:b.id,viaItemIds:[],dayIndex,from:a.name,to:b.name,coordinates,distanceMeters:length(coordinates)});
+            if(part.network&&part.coordinates.length>=4){add(part.coordinates.slice(0,2),true);add(part.coordinates.slice(1,-1),false);add(part.coordinates.slice(-2),true);}else add(part.coordinates,true);
+          }i++;continue;
+        }
+        const explicit=edit&&(edit.mode==='straight'||edit.controls.length);
       const fallback=b.incoming?.kind==='manual'&&b.incoming.fromId===a.id&&b.incoming.toId===b.id&&b.incoming.connectionStatus!=='owner-confirmed';
       if((explicit||fallback)&&ca&&cb){
         const coordinates=(edit?.shape?.length?edit.shape.map(p=>p.coordinate):[ca,...(edit?.controls||[]).map(c=>c.coordinate),cb]).map(p=>[...p]);

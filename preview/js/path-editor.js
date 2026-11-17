@@ -1,4 +1,5 @@
 import {moveDetour,applyDetour} from './local-detour.js';
+import {rememberIntervals} from './control-routing.js';
 import {edgeActual,referenceMinutes,shortestPath,incomingForSegment,uid} from './planner.js?v=segments1';
 export const manualWarning='手動幾何連接：水平直線距離，不代表實際步道、合法或安全可通行；高程無資料。';
 export const validCoordinate=p=>Array.isArray(p)&&p.length===2&&p.every(Number.isFinite)&&Math.abs(p[0])<=180&&Math.abs(p[1])<=90;
@@ -24,20 +25,23 @@ function rebuildControlNeighborhood(edit,id){
 export function insertShapeControl(day,toId,geometry,at,coordinate,id=uid()){
  if(!validCoordinate(at)||!validCoordinate(coordinate)||!Array.isArray(geometry)||geometry.length<2||geometry.length>5000||!geometry.every(validCoordinate))throw Error('路段線形不完整，無法在此插入控制點。');
  editSegment(day,toId,e=>{
-  if(e.detour)throw Error('此段已有固定 P／Q 繞行；請移動現有標記，或刪除 B 後重新設定。');
+  if(e.detour){e.intervalModes={...(e.intervalModes||{}),[e.detour.pId+'>'+e.detour.id]:'straight',[e.detour.id+'>'+e.detour.qId]:'straight'};delete e.detour;}
   const shape=e.shape||shapeFromGeometry(geometry,e.controls);
+  e.shape=shape;rememberIntervals(e);
   if(shape.length>=5000)throw Error('路段線形已達上限，無法再插入控制點。');
-  const index=nearestShapeLeg(shape,at);shape.splice(index+1,0,{coordinate:[...coordinate],controlId:id});
+  const index=nearestShapeLeg(shape,at);const left=shape.slice(0,index+1).filter(p=>p.controlId).at(-1)?.controlId||'start',right=shape.slice(index+1).find(p=>p.controlId)?.controlId||'end';const inherited=e.intervalModes?.[left+'>'+right];if(inherited){e.intervalModes[left+'>'+id]=inherited;e.intervalModes[id+'>'+right]=inherited;}shape.splice(index+1,0,{coordinate:[...coordinate],controlId:id});
   e.shape=shape;e.controls=shape.filter(p=>p.controlId).map(p=>({id:p.controlId,coordinate:[...p.coordinate]}));e.mode='straight';delete e.networkNodeIds;if(at[0]!==coordinate[0]||at[1]!==coordinate[1])rebuildControlNeighborhood(e,id);
  });
  return id;
 }
 export function updateShapeControl(edit,index,coordinate){
+ rememberIntervals(edit);
  const control=edit.controls[index];if(!control)throw Error('找不到控制點');
  if(edit.detour&&[edit.detour.id,edit.detour.pId,edit.detour.qId].includes(control.id)){moveDetour(edit.detour,control.id,coordinate);applyDetour(edit,edit.detour);return;}
  control.coordinate=[...coordinate];const point=edit.shape?.find(p=>p.controlId===control.id);if(point)point.coordinate=[...coordinate];rebuildControlNeighborhood(edit,control.id);
 }
 export function deleteShapeControl(edit,index){
+ rememberIntervals(edit);
  const control=edit.controls[index];if(!control)throw Error('找不到控制點');
  if(edit.detour){if(control.id===edit.detour.id){edit.shape=structuredClone(edit.detour.base);edit.controls=edit.shape.filter(p=>p.controlId).map(p=>({id:p.controlId,coordinate:[...p.coordinate]}));delete edit.detour;return;}if([edit.detour.pId,edit.detour.qId].includes(control.id))throw Error('請拖動 P／Q 調整接入；刪除 B 可取消整個繞行。');}
  rebuildControlNeighborhood(edit,control.id);edit.controls.splice(index,1);if(edit.shape)edit.shape=edit.shape.filter(p=>p.controlId!==control.id);

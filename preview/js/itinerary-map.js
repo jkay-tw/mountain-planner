@@ -48,7 +48,7 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
       L.polyline(points,{interactive:false,weight:7,color:map.hasLayer(imagery?.aerial)?'#111820':'#ffffff',opacity:.65}).addTo(group);
       L.polyline(points,{interactive:false,weight:5,dashArray:f.manual?'10 8':null,color:colors[day.dayIndex%colors.length]}).addTo(group);
       // A continuous, transparent target keeps dashed lines usable on touch screens.
-      const line=L.polyline(points,{bubblingMouseEvents:false,weight:24,opacity:0.01,color:colors[day.dayIndex%colors.length]}).addTo(group);
+      const line=L.polyline(points,{pane:'routeEditPane',bubblingMouseEvents:false,weight:24,opacity:0.01,color:colors[day.dayIndex%colors.length]}).addTo(group);
       let dragged=false;
       line.on('click',event=>{
         if(dragged){dragged=false;return}
@@ -65,10 +65,11 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
       line.on('mousedown touchstart',event=>{
         if(!editor?.isEnabled())return;const geometry=editableGeometry(day.dayIndex,f.toItemId);if(!geometry)return;
         const start=[event.latlng.lng,event.latlng.lat],origin=map.latLngToContainerPoint(event.latlng);let end=event.latlng,moved=false;
-        L.DomEvent.stopPropagation(event);map.dragging.disable();
+        L.DomEvent.stopPropagation(event.originalEvent||event);map.dragging.disable();
         const point=e=>map.mouseEventToLatLng(e.changedTouches?.[0]||e.touches?.[0]||e);
-        const move=e=>{end=point(e);if(map.latLngToContainerPoint(end).distanceTo(origin)>6)moved=true;if(moved&&e.cancelable)e.preventDefault()};
-        const finish=e=>{document.removeEventListener('mousemove',move);document.removeEventListener('mouseup',finish);document.removeEventListener('touchmove',move);document.removeEventListener('touchend',finish);document.removeEventListener('touchcancel',finish);map.dragging.enable();if(e.type==='touchcancel')return;if(moved){end=point(e);dragged=true;setTimeout(()=>{dragged=false},300);editor.insertAt(day.dayIndex,f.toItemId,geometry,start,[end.lng,end.lat])}};
+        const ghost=L.polyline([event.latlng,event.latlng],{pane:'routeEditPane',interactive:false,color:'#f58220',weight:4,dashArray:'5 5'}).addTo(map);
+        const move=e=>{end=point(e);ghost.setLatLngs([event.latlng,end]);if(map.latLngToContainerPoint(end).distanceTo(origin)>6)moved=true;if(moved&&e.cancelable)e.preventDefault()};
+        const finish=e=>{document.removeEventListener('mousemove',move);document.removeEventListener('mouseup',finish);document.removeEventListener('touchmove',move);document.removeEventListener('touchend',finish);document.removeEventListener('touchcancel',finish);map.removeLayer(ghost);map.dragging.enable();if(e.type==='touchcancel')return;if(moved){end=point(e);dragged=true;setTimeout(()=>{dragged=false},300);editor.insertAt(day.dayIndex,f.toItemId,geometry,start,[end.lng,end.lat])}};
         document.addEventListener('mousemove',move);document.addEventListener('mouseup',finish);document.addEventListener('touchmove',move,{passive:false});document.addEventListener('touchend',finish);document.addEventListener('touchcancel',finish);
       });
     }
@@ -143,7 +144,7 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
     if(!data){const response=await fetch('data/geometry/planner-terrain-v1.json?v=v084');if(!response.ok)throw Error('候選線形載入失敗');data=await response.json()}
     if(!window.L)throw Error('地圖元件無法載入，請檢查網路後重試。');
     if(!map){
-      map=L.map(host.querySelector('[data-map]')).setView([24.388,121.266],13);
+      map=L.map(host.querySelector('[data-map]')).setView([24.388,121.266],13);map.createPane('routeEditPane').style.zIndex=450;
       map.on('zoomend moveend',drawLabels);
       const osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'}).addTo(map);
       const corridor=L.featureGroup(data.spans.filter(s=>!s.aggregate).map(s=>{const line=L.polyline(s.coordinates.map(p=>[p[1],p[0]]),{color:'#00a9db',weight:3,opacity:.9,bubblingMouseEvents:false});line.on('click',event=>editor?.addOnSpan(s,event.latlng));return line}));
