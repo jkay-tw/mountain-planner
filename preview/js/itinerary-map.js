@@ -1,3 +1,4 @@
+import {bindRouteDrag} from './route-drag.js';
 import {mountReview} from './osm-pilot-review.js';
 import {attachOsmPlanner} from './osm-planner-integration.js';
 import {addFreeImagery} from './free-imagery.js';
@@ -50,26 +51,23 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
       // A continuous, transparent target keeps dashed lines usable on touch screens.
       const line=L.polyline(points,{pane:'routeEditPane',bubblingMouseEvents:false,weight:24,opacity:0.01,color:colors[day.dayIndex%colors.length]}).addTo(group);
       const context={manual:!!f.manual,scope:f.coordinates.map(p=>p.slice(0,2)),intervalKey:f.intervalKey,sourceName:f.sourceName,sourceUrl:f.sourceUrl};
-      let dragged=false;
-      line.on('click',event=>{
-        if(dragged||performance.now()<(map._pathDragUntil||0)){dragged=false;return}
+      const openRoutePopup=event=>{
+        if(performance.now()<(map._pathDragUntil||0))return;
         if(!editor?.isEnabled()){line.bindPopup(label).openPopup(event.latlng);return}
-        editor.select(day.dayIndex,f.toItemId);const geometry=editableGeometry(day.dayIndex,f.toItemId),box=document.createElement('div');
+        editor.select(day.dayIndex,f.toItemId);const geometry=editableGeometry(day.dayIndex,f.toItemId),box=document.createElement('div');box.className='path-popup';
         const p=document.createElement('p');p.textContent=f.unconfirmedAccess?'未確認接入線':f.manual?'手動連接':'自動路網';box.append(p);
         const failureReason=f.failureReason||getDays()[day.dayIndex]?.items.find(item=>item.id===f.toItemId)?.pathEdit?.routingError;if(failureReason){const reason=document.createElement('p');reason.textContent=failureReason;box.append(reason);}
         if(geometry){const at=[event.latlng.lng,event.latlng.lat],toggle=document.createElement('button');toggle.type='button';toggle.textContent=f.manual?'嘗試自動連接':'改為手動連接';toggle.onclick=clickEvent=>{clickEvent.preventDefault();clickEvent.stopPropagation();editor.toggleAt(day.dayIndex,f.toItemId,geometry,at,context);};box.append(toggle);const add=document.createElement('button');add.type='button';add.textContent='加入行程點';add.onclick=clickEvent=>{clickEvent.preventDefault();clickEvent.stopPropagation();editor.nameForm(box,name=>editor.splitAt(day.dayIndex,f.toItemId,geometry,at,name,context));};box.append(add);}
-        line.bindPopup(box,{autoPan:false,maxWidth:240}).openPopup(event.latlng);
-      });
-      line.on('mousedown touchstart',event=>{
-        if(!editor?.isEnabled())return;const geometry=editableGeometry(day.dayIndex,f.toItemId);if(!geometry)return;
-        const start=[event.latlng.lng,event.latlng.lat],origin=map.latLngToContainerPoint(event.latlng);let end=event.latlng,moved=false;
-        L.DomEvent.stopPropagation(event.originalEvent||event);map.dragging.disable();
-        const point=e=>map.mouseEventToLatLng(e.changedTouches?.[0]||e.touches?.[0]||e);
-        const ghost=L.polyline([event.latlng,event.latlng],{pane:'routeEditPane',interactive:false,color:'#f58220',weight:4,dashArray:'5 5'}).addTo(map);
-        const move=e=>{end=point(e);ghost.setLatLngs([event.latlng,end]);if(map.latLngToContainerPoint(end).distanceTo(origin)>6)moved=true;if(moved&&e.cancelable)e.preventDefault()};
-        const finish=e=>{document.removeEventListener('mousemove',move);document.removeEventListener('mouseup',finish);document.removeEventListener('touchmove',move);document.removeEventListener('touchend',finish);document.removeEventListener('touchcancel',finish);map.removeLayer(ghost);map.dragging.enable();if(e.type==='touchcancel')return;if(moved){end=point(e);map._pathDragUntil=performance.now()+500;dragged=true;setTimeout(()=>{dragged=false},300);editor.insertAt(day.dayIndex,f.toItemId,geometry,start,[end.lng,end.lat],context)}};
-        document.addEventListener('mousemove',move);document.addEventListener('mouseup',finish);document.addEventListener('touchmove',move,{passive:false});document.addEventListener('touchend',finish);document.addEventListener('touchcancel',finish);
-      });
+        line.bindPopup(box,{autoPan:true,autoPanPadding:[16,16],autoPanPaddingTopLeft:[16,56],maxWidth:240,className:'path-map-popup'}).openPopup(event.latlng);
+      };
+      line.on('click',openRoutePopup);
+      let ghost=null;
+      const clearGhost=()=>{if(ghost){map.removeLayer(ghost);ghost=null;}};
+      const unbind=bindRouteDrag({element:line.getElement(),map,enabled:()=>!!editor?.isEnabled()&&!!editableGeometry(day.dayIndex,f.toItemId),
+        onPreview:(start,end,moved)=>{if(!moved)return;if(!ghost)ghost=L.polyline([start,end],{pane:'routeEditPane',interactive:false,color:'#f58220',weight:4,dashArray:'5 5'}).addTo(map);else ghost.setLatLngs([start,end]);},
+        onFinish:(start,end)=>{clearGhost();const geometry=editableGeometry(day.dayIndex,f.toItemId);if(geometry)editor.insertAt(day.dayIndex,f.toItemId,geometry,[start.lng,start.lat],[end.lng,end.lat],context);},
+        onTap:(latlng,originalEvent)=>openRoutePopup({latlng,originalEvent}),onCancel:clearGhost});
+      line.on('remove',unbind);
     }
     const visibleIds=new Set(getDays().flatMap((d,i)=>hiddenDays.has(i)?[]:(d.items||[]).filter(x=>x.type!=='rest').map(x=>x.type==='manual-location'?x.id:x.nodeId)));
     const visible=latest.waypoints.filter(n=>visibleIds.has(n.nodeId));
@@ -91,10 +89,10 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
   function openManual(n){
     const item=manualItem(n.nodeId);if(!item)return;
     const box=document.createElement('div'),label=document.createElement('label'),input=document.createElement('input'),save=document.createElement('button');
-    label.textContent='手動節點名稱';input.type='text';input.value=item.name;input.maxLength=250;input.setAttribute('aria-label','手動節點名稱');label.append(input);
+    box.className='path-popup';label.textContent='手動節點名稱';input.type='text';input.value=item.name;input.maxLength=250;input.setAttribute('aria-label','手動節點名稱');label.append(input);
     save.type='button';save.textContent='儲存名稱';save.onclick=()=>{onRenameManual(item.id,input.value);map.closePopup()};box.append(label,save);const remove=document.createElement('button');remove.type='button';remove.textContent='刪除節點';remove.onclick=()=>{map.closePopup();onDeleteManual(item.id)};box.append(remove);
     const coordinate=document.createElement('p');coordinate.textContent=twd97Label(n.coordinate);box.append(coordinate);
-    box.prepend(coordinate);L.popup({autoPan:false,maxWidth:240}).setLatLng([n.coordinate[1],n.coordinate[0]]).setContent(box).openOn(map);
+    box.prepend(coordinate);L.popup({autoPan:true,autoPanPadding:[16,16],autoPanPaddingTopLeft:[16,56],maxWidth:240,className:'path-map-popup'}).setLatLng([n.coordinate[1],n.coordinate[0]]).setContent(box).openOn(map);
   }
   function drawLabels(){
     if(!map||!latest||!labelGroup)return;

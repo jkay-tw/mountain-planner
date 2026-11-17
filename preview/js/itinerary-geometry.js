@@ -118,7 +118,7 @@ export function resolveItineraryGeometry(days,data){
     }
     const distance=features.reduce((n,f)=>n+f.distanceMeters,0);
     const metrics=terrainMetrics(features);
-    result.days.push({dayIndex,features,gaps,distanceMeters:distance,...metrics});result.distanceMeters+=distance;
+    result.days.push({dayIndex,features,gaps,profileNodes:itineraryProfileNodes(items,features,known,data),distanceMeters:distance,...metrics});result.distanceMeters+=distance;
   });
   return result;
 }
@@ -166,7 +166,36 @@ export function formatTerrain(value,{partial=false}={}){
   return `${m.features?.some(f=>f.manual)||m.manual?'含手動水平距離・':''}${partial?'已知部分':'約'} ${(m.distanceMeters/1000).toFixed(2)} km · 上升 ${m.ascentMeters===null?'未取得':Math.round(m.ascentMeters)+' m'} · 下降 ${m.descentMeters===null?'未取得':Math.round(m.descentMeters)+' m'}`;
 }
 export function dayTerrain(day,data){return data?resolveItineraryGeometry([day],data).days[0]:null}
+// Features describe source pieces (including access legs), not itinerary visits.
+// Bind labels by item identity and actual source boundaries, never feature names.
+function itineraryProfileNodes(items,features,known,data){
+ const positions=new Map();let offset=0;
+ function put(id,distance,coordinate,elevation){const list=positions.get(id)||[];list.push({distance,coordinate,elevation});positions.set(id,list);}
+ for(let i=0;i<features.length;i++){
+  const f=features[i],before=features[i-1],after=features[i+1],sameLeg=x=>x?.fromItemId===f.fromItemId&&x?.toItemId===f.toItemId;
+  if(!sameLeg(before))put(f.fromItemId,offset,f.coordinates[0],f.profile?.[0]?.[1]);
+  if(!sameLeg(after))put(f.toItemId,offset+f.distanceMeters,f.coordinates.at(-1),f.profile?.at(-1)?.[1]);
+  // A zero-length access leg may have no DEM, while its coincident network
+  // vertex does. Keep these samples only at the true itinerary boundary.
+  if(sameLeg(before)&&length(before.coordinates)<.01)put(f.fromItemId,offset,f.coordinates[0],f.profile?.[0]?.[1]);
+  if(sameLeg(after)&&length(after.coordinates)<.01)put(f.toItemId,offset+f.distanceMeters,f.coordinates.at(-1),f.profile?.at(-1)?.[1]);
+  let cursor=0;
+  for(const id of f.viaItemIds||[]){
+   if(f.intermediateCoordinatesUnknown)continue;
+   const item=items.find(x=>x.id===id),node=known.get(item?.nodeId),anchor=node?.anchor||node?.coordinate;
+   if(!anchor)continue;const at=f.coordinates.findIndex((p,j)=>j>=cursor&&same(p,anchor));if(at<0)continue;cursor=at;
+   put(id,offset+length(f.coordinates.slice(0,at+1)),f.coordinates[at],null);
+  }
+  offset+=f.distanceMeters;
+ }
+ return items.filter(item=>item.showInTable!==false).map(item=>{
+  const candidates=positions.get(item.id)||[],node=item.type==='location'?known.get(item.nodeId):null,coordinate=coordinateOf(item,data),position=candidates[0];
+  const sample=candidates.find(p=>Number.isFinite(p.elevation)&&coordinate&&distanceMeters(coordinate,p.coordinate)<.5);
+  return {itemId:item.id,name:item.name,distanceMeters:position?.distance??null,elevationMeters:Number.isFinite(node?.elevationMeters)?node.elevationMeters:sample?.elevation??null};
+ });
+}
 export function profileNodeRows(day){
+ if(Array.isArray(day.profileNodes))return day.profileNodes.map(n=>({...n}));
  let offset=0,rows=[];
  for(const f of day.features){
   if(f.profile?.length){
@@ -199,30 +228,30 @@ export function layoutProfileLabels(nodes,total,curve=[]){
 }
 export function renderTerrainProfile(day){
  const features=day.features.filter(f=>f.profile?.length);if(!features.length)return '<p>沒有可繪製的高度資料。</p>';
- const zs=features.flatMap(f=>f.profile.map(p=>p[1])),lo=Math.floor(Math.min(...zs)/100)*100,hi=Math.max(lo+100,Math.ceil(Math.max(...zs)/100)*100),total=day.distanceMeters||1;
- const X=d=>60+700*d/total,Y=z=>300-200*(z-lo)/(hi-lo),nodes=profileNodeRows(day);
+ const zs=[...features.flatMap(f=>f.profile.map(p=>p[1])),...profileNodeRows(day).map(n=>n.elevationMeters).filter(Number.isFinite)],lo=Math.floor(Math.min(...zs)/100)*100,hi=Math.max(lo+100,Math.ceil(Math.max(...zs)/100)*100),total=day.distanceMeters||1;
+ const X=d=>60+700*d/total,Y=z=>300-200*(z-lo)/(hi-lo),allNodes=profileNodeRows(day),nodes=allNodes.filter(n=>Number.isFinite(n.distanceMeters));
  let curveOffset=0;const curve=[];for(const f of day.features){if(f.profile)for(const [d,z] of f.profile)curve.push({x:X(curveOffset+d),y:Y(z)});curveOffset+=f.distanceMeters}
- const color=terrainDayColor(day.dayIndex),layout=layoutProfileLabels(nodes.map(n=>({...n,plotY:Y(n.elevationMeters)})),total,curve);
+ const color=terrainDayColor(day.dayIndex),layout=layoutProfileLabels(nodes.map(n=>({...n,plotY:Number.isFinite(n.elevationMeters)?Y(n.elevationMeters):300})),total,curve);
  let offset=0,paths='',grid='',labels='',marks='';const boxes=layout.boxes;
  const heightStep=Math.max(100,Math.ceil((hi-lo)/500)*100),distanceStep=Math.max(.2,Math.ceil(total/1000/6*5)/5);
  for(let z=lo;z<=hi;z+=heightStep){const y=Y(z).toFixed(1);grid+=`<path d="M60 ${y}H760"/><text stroke="none" x="4" y="${Number(y)+4}">${z} m</text>`}
  for(let km=0;km<=total/1000;km+=distanceStep){const x=X(km*1000).toFixed(1);grid+=`<path d="M${x} 100V300"/><text stroke="none" x="${x}" y="322" text-anchor="middle">${km.toFixed(1)}</text>`}
  for(const f of day.features){if(f.profile){const points=f.profile.map(([d,z])=>`${X(offset+d).toFixed(1)},${Y(z).toFixed(1)}`).join(' ');paths+=`<polygon points="${X(offset).toFixed(1)},300 ${points} ${X(offset+f.distanceMeters).toFixed(1)},300" fill="${color}" fill-opacity=".12"/><polyline points="${points}" fill="none" stroke="${color}" stroke-linejoin="round" stroke-width="2.5"><title>${xml(f.from)} → ${xml(f.to)}</title></polyline>`}offset+=f.distanceMeters}
  for(const [i,n] of nodes.entries()){
-  const x=X(n.distanceMeters),y=Y(n.elevationMeters),distance=(n.distanceMeters/1000).toFixed(2),height=Math.round(n.elevationMeters).toLocaleString('en-US');
-  marks+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4" fill="${color}" stroke="#fff" stroke-width="1.5"><title>${xml(n.name)}：${distance} km，約 ${height} m</title></circle>`;
+  const x=X(n.distanceMeters),knownHeight=Number.isFinite(n.elevationMeters),y=knownHeight?Y(n.elevationMeters):300,distance=(n.distanceMeters/1000).toFixed(2),height=knownHeight?'約 '+Math.round(n.elevationMeters).toLocaleString('en-US')+' m':'高度未取得';
+  marks+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4" fill="${knownHeight?color:'#fff'}" stroke="${knownHeight?'#fff':color}" stroke-width="1.5"><title>${xml(n.name)}：${distance} km，${height}</title></circle>`;
   if(layout.numbered){
    const col=i%3,row=Math.floor(i/3),lx=36+col*252,ly=348+row*38;
-   labels+=`<g class="profile-node-label"><text x="${lx}" y="${ly}" font-size="12" fill="#344b3d"><tspan font-weight="650">${i+1}. ${xml(n.name)}</tspan><tspan x="${lx}" dy="15" font-size="11">${distance} km · 約 ${height} m</tspan></text></g>`;
+   labels+=`<g class="profile-node-label"><text x="${lx}" y="${ly}" font-size="12" fill="#344b3d"><tspan font-weight="650">${i+1}. ${xml(n.name)}</tspan><tspan x="${lx}" dy="15" font-size="11">${distance} km · ${height}</tspan></text></g>`;
    marks+=`<text x="${x.toFixed(1)}" y="${(y-12-(i%3)*15).toFixed(1)}" text-anchor="middle" font-size="10" font-weight="700" fill="${color}" stroke="#fff" stroke-width="3" paint-order="stroke">${i+1}</text>`;
   }else{
    const box=boxes[i],above=box.y+box.h<y,tx=(box.x+8).toFixed(1),ty=(box.y+13).toFixed(1);
-   labels+=`<g class="profile-node-label"><path d="M${x.toFixed(1)} ${y.toFixed(1)}L${Math.max(box.x,Math.min(box.x+box.w,x)).toFixed(1)} ${(above?box.y+box.h:box.y).toFixed(1)}" stroke="#a6b7af" fill="none"/><rect x="${box.x.toFixed(1)}" y="${box.y}" width="${box.w}" height="36" rx="5" fill="#fff" fill-opacity=".96" stroke="#dce6dc"/><text x="${tx}" y="${ty}" fill="#344b3d" font-size="12"><tspan x="${tx}" font-weight="650">${xml(n.name)}</tspan><tspan x="${tx}" dy="16" font-size="10.5">${distance} km · 約 ${height} m</tspan></text></g>`;
+   labels+=`<g class="profile-node-label"><path d="M${x.toFixed(1)} ${y.toFixed(1)}L${Math.max(box.x,Math.min(box.x+box.w,x)).toFixed(1)} ${(above?box.y+box.h:box.y).toFixed(1)}" stroke="#a6b7af" fill="none"/><rect x="${box.x.toFixed(1)}" y="${box.y}" width="${box.w}" height="36" rx="5" fill="#fff" fill-opacity=".96" stroke="#dce6dc"/><text x="${tx}" y="${ty}" fill="#344b3d" font-size="12"><tspan x="${tx}" font-weight="650">${xml(n.name)}</tspan><tspan x="${tx}" dy="16" font-size="10.5">${distance} km · ${height}</tspan></text></g>`;
   }
  }
  const top=-14,compact=nodes.length<=3&&!layout.numbered,chartShift=compact?45:0;
  const bottom=(layout.numbered?Math.max(340,348+Math.ceil(nodes.length/3)*38):432)-chartShift;
  const titleTop=-80,dayNumber=(day.dayIndex||0)+1;
  const summary=`${(day.distanceMeters/1000).toFixed(2)} km   ↗ ${(day.ascentMeters==null?'無資料':Math.round(day.ascentMeters))} m   ↘ ${(day.descentMeters==null?'無資料':Math.round(day.descentMeters))} m${day.gaps.length?'（已知部分）':''}`;
- return `<section class="profile-card"><div class="profile-export-actions"><button type="button" class="secondary" data-profile-export="copy">複製圖片</button><button type="button" class="secondary" data-profile-export="download">下載 PNG</button><span role="status" data-profile-export-status></span></div><div class="profile-chart-scroll"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 ${titleTop} 800 ${bottom-titleTop}" role="img" aria-label="Day ${dayNumber} 高度剖面圖" style="font-family:system-ui,'Noto Sans TC',sans-serif"><rect x="0" y="${titleTop}" width="800" height="${bottom-titleTop}" rx="12" fill="#fff"/><rect x="20" y="${top-42}" width="5" height="32" rx="2" fill="${color}"/><text x="36" y="${top-24}" font-size="18" font-weight="700" fill="#243d35">Day ${dayNumber} · 高度剖面</text><text x="36" y="${top-4}" font-size="12" fill="#53665a">${summary}</text><g transform="translate(0,-${chartShift})"><g class="profile-grid" stroke="#e5ebe9" stroke-width="1" fill="#60736b" font-size="12">${grid}</g><path d="M60 100V300H760" fill="none" stroke="#89988c"/>${paths}${labels}${marks}<text x="780" y="322" fill="#60736b" font-size="11">km</text></g><text x="760" y="${bottom-3}" text-anchor="end" font-size="10" fill="#60736b">Mountain Planner · DEM 估算${day.gaps.length?' · 僅計已知部分':''}</text></svg></div><p>${day.gaps.length?'橫軸為已知路徑累計距離；缺漏未計入，各段分開繪製。':'橫軸：沿山徑累計距離；縱軸與節點海拔：DEM 估算。'}${day.features.some(f=>f.intermediateCoordinatesUnknown)?' 含跨未定位節點的連續參考線形；中間節點不標示推估位置。':''}</p></section>`;
+ return `<section class="profile-card"><div class="profile-export-actions"><button type="button" class="secondary" data-profile-export="copy">複製圖片</button><button type="button" class="secondary" data-profile-export="download">下載 PNG</button><span role="status" data-profile-export-status></span></div><div class="profile-chart-scroll"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 ${titleTop} 800 ${bottom-titleTop}" role="img" aria-label="Day ${dayNumber} 高度剖面圖" style="font-family:system-ui,'Noto Sans TC',sans-serif"><rect x="0" y="${titleTop}" width="800" height="${bottom-titleTop}" rx="12" fill="#fff"/><rect x="20" y="${top-42}" width="5" height="32" rx="2" fill="${color}"/><text x="36" y="${top-24}" font-size="18" font-weight="700" fill="#243d35">Day ${dayNumber} · 高度剖面</text><text x="36" y="${top-4}" font-size="12" fill="#53665a">${summary}</text><g transform="translate(0,-${chartShift})"><g class="profile-grid" stroke="#e5ebe9" stroke-width="1" fill="#60736b" font-size="12">${grid}</g><path d="M60 100V300H760" fill="none" stroke="#89988c"/>${paths}${labels}${marks}<text x="780" y="322" fill="#60736b" font-size="11">km</text></g><text x="760" y="${bottom-3}" text-anchor="end" font-size="10" fill="#60736b">Mountain Planner · DEM 估算${day.gaps.length?' · 僅計已知部分':''}</text></svg></div><p>${day.gaps.length?'橫軸為已知路徑累計距離；缺漏未計入，各段分開繪製。':'橫軸：路徑累計水平距離；手動線不代表實際步行距離。縱軸：沿線 DEM 估算；節點海拔使用該節點已取得的 DEM 或重合線形資料。'}${nodes.some(n=>!Number.isFinite(n.elevationMeters))?' 空心點只標示里程，並非零海拔；高度未取得。':''}${allNodes.some(n=>!Number.isFinite(n.distanceMeters))?' 未能定位於線形的行程點：'+allNodes.filter(n=>!Number.isFinite(n.distanceMeters)).map(n=>xml(n.name)).join('、')+'；不推估位置。':''}${day.features.some(f=>f.intermediateCoordinatesUnknown)?' 含跨未定位節點的連續參考線形；中間節點不標示推估位置。':''}</p></section>`;
 }
