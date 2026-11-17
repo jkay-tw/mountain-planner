@@ -5,7 +5,7 @@ export function displayedDetourBase(edit,geometry){
  if(edit?.controls?.length)throw Error('目前顯示線形與保存的控制點不一致，請先撤銷或重算；不使用舊線形建立接入點。');
  return shape;
 }
-function scopedProjection(shape,scope,origin){
+export function projectOnDisplayedScope(shape,scope,origin){
  if(!scope||scope.length<2)return projectOnShape(shape,origin);
  const coords=scope.map(p=>p.slice(0,2));let walked=0;
  for(let i=0;i<=shape.length-coords.length;i++){
@@ -23,7 +23,7 @@ export function projectOnShape(shape,p){
 }
 function at(shape,d){let walked=0;for(let i=1;i<shape.length;i++){const a=shape[i-1].coordinate,b=shape[i].coordinate,n=meters(a,b);if(walked+n>=d){const t=n?(d-walked)/n:0;return [a[0]+t*(b[0]-a[0]),a[1]+t*(b[1]-a[1])]}walked+=n}return [...shape.at(-1).coordinate]}
 export function proposeDetour(base,origin,target,id,scope){
- const shape=structuredClone(base),hit=scopedProjection(shape,scope,origin);let lower=0,upper=hit.total,walked=0;
+ const shape=structuredClone(base),hit=projectOnDisplayedScope(shape,scope,origin);let lower=0,upper=hit.total,walked=0;
  for(let i=0;i<shape.length;i++){if(i)walked+=meters(shape[i-1].coordinate,shape[i].coordinate);if(shape[i].controlId){if(walked<=hit.along)lower=walked;else{upper=walked;break}}}
  const start=Math.max(lower,hit.along-100),end=Math.min(upper,hit.along+100);let pId=id+'-P',qId=id+'-Q';walked=0;for(let i=0;i<shape.length;i++){if(i)walked+=meters(shape[i-1].coordinate,shape[i].coordinate);if(shape[i].controlId){if(Math.abs(walked-start)<.001)pId=shape[i].controlId;if(Math.abs(walked-end)<.001)qId=shape[i].controlId;}}
  return {base:shape,min:lower,max:upper,start:Math.max(lower,hit.along-100),end:Math.min(upper,hit.along+100),target:[...target],id,pId,qId};

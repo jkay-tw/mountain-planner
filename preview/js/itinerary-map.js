@@ -46,21 +46,18 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
       if(f.sourceUrl){const a=document.createElement('a');a.href=f.sourceUrl;a.target='_blank';a.rel='noreferrer';a.textContent=' 查看來源';label.append(a)}
       const points=f.coordinates.map(p=>[p[1],p[0]]);
       L.polyline(points,{interactive:false,weight:7,color:map.hasLayer(imagery?.aerial)?'#111820':'#ffffff',opacity:.65}).addTo(group);
-      L.polyline(points,{interactive:false,weight:5,dashArray:f.manual?'10 8':null,color:colors[day.dayIndex%colors.length]}).addTo(group);
+      L.polyline(points,{interactive:false,weight:5,dashArray:f.unconfirmedAccess?'3 7':f.manual?'10 8':null,opacity:f.unconfirmedAccess?0.65:1,color:colors[day.dayIndex%colors.length]}).addTo(group);
       // A continuous, transparent target keeps dashed lines usable on touch screens.
       const line=L.polyline(points,{pane:'routeEditPane',bubblingMouseEvents:false,weight:24,opacity:0.01,color:colors[day.dayIndex%colors.length]}).addTo(group);
+      const context={manual:!!f.manual,scope:f.coordinates.map(p=>p.slice(0,2)),intervalKey:f.intervalKey,sourceName:f.sourceName,sourceUrl:f.sourceUrl};
       let dragged=false;
       line.on('click',event=>{
         if(dragged||performance.now()<(map._pathDragUntil||0)){dragged=false;return}
         if(!editor?.isEnabled()){line.bindPopup(label).openPopup(event.latlng);return}
         editor.select(day.dayIndex,f.toItemId);const geometry=editableGeometry(day.dayIndex,f.toItemId),box=document.createElement('div');
-        const p=document.createElement('p');p.textContent=geometry?'選擇操作，或直接拖曳路線調整形狀。':'此線形跨越未定位點或有缺漏，暫不能拆分編輯。';box.append(p);
-        if(geometry){
-          const at=[event.latlng.lng,event.latlng.lat],input=document.createElement('input');input.placeholder='新行程節點名稱';input.setAttribute('aria-label','新行程節點名稱');input.maxLength=250;box.append(input);
-          const add=document.createElement('button');add.type='button';add.textContent='在此加入行程節點';add.onclick=()=>editor.splitAt(day.dayIndex,f.toItemId,geometry,at,input.value);box.append(add);
-          const toggle=document.createElement('button');toggle.type='button';toggle.textContent=f.manual?'嘗試沿路網連接':'改為手動連接';toggle.onclick=()=>editor.toggleAt(day.dayIndex,f.toItemId,geometry,at,f.manual);box.append(toggle);
-          const control=document.createElement('button');control.type='button';control.textContent='在此插入控制點';control.onclick=()=>editor.insertAt(day.dayIndex,f.toItemId,geometry,at,at);box.append(control);
-        }
+        const p=document.createElement('p');p.textContent=f.unconfirmedAccess?'未確認接入線':f.manual?'手動連接':'自動路網';box.append(p);
+        const failureReason=f.failureReason||getDays()[day.dayIndex]?.items.find(item=>item.id===f.toItemId)?.pathEdit?.routingError;if(failureReason){const reason=document.createElement('p');reason.textContent=failureReason;box.append(reason);}
+        if(geometry){const at=[event.latlng.lng,event.latlng.lat],toggle=document.createElement('button');toggle.type='button';toggle.textContent=f.manual?'嘗試自動連接':'改為手動連接';toggle.onclick=clickEvent=>{clickEvent.preventDefault();clickEvent.stopPropagation();editor.toggleAt(day.dayIndex,f.toItemId,geometry,at,context);};box.append(toggle);const add=document.createElement('button');add.type='button';add.textContent='加入行程點';add.onclick=clickEvent=>{clickEvent.preventDefault();clickEvent.stopPropagation();editor.nameForm(box,name=>editor.splitAt(day.dayIndex,f.toItemId,geometry,at,name,context));};box.append(add);}
         line.bindPopup(box,{autoPan:false,maxWidth:240}).openPopup(event.latlng);
       });
       line.on('mousedown touchstart',event=>{
@@ -70,7 +67,7 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
         const point=e=>map.mouseEventToLatLng(e.changedTouches?.[0]||e.touches?.[0]||e);
         const ghost=L.polyline([event.latlng,event.latlng],{pane:'routeEditPane',interactive:false,color:'#f58220',weight:4,dashArray:'5 5'}).addTo(map);
         const move=e=>{end=point(e);ghost.setLatLngs([event.latlng,end]);if(map.latLngToContainerPoint(end).distanceTo(origin)>6)moved=true;if(moved&&e.cancelable)e.preventDefault()};
-        const finish=e=>{document.removeEventListener('mousemove',move);document.removeEventListener('mouseup',finish);document.removeEventListener('touchmove',move);document.removeEventListener('touchend',finish);document.removeEventListener('touchcancel',finish);map.removeLayer(ghost);map.dragging.enable();if(e.type==='touchcancel')return;if(moved){end=point(e);map._pathDragUntil=performance.now()+500;dragged=true;setTimeout(()=>{dragged=false},300);editor.insertAt(day.dayIndex,f.toItemId,geometry,start,[end.lng,end.lat],f.coordinates)}};
+        const finish=e=>{document.removeEventListener('mousemove',move);document.removeEventListener('mouseup',finish);document.removeEventListener('touchmove',move);document.removeEventListener('touchend',finish);document.removeEventListener('touchcancel',finish);map.removeLayer(ghost);map.dragging.enable();if(e.type==='touchcancel')return;if(moved){end=point(e);map._pathDragUntil=performance.now()+500;dragged=true;setTimeout(()=>{dragged=false},300);editor.insertAt(day.dayIndex,f.toItemId,geometry,start,[end.lng,end.lat],context)}};
         document.addEventListener('mousemove',move);document.addEventListener('mouseup',finish);document.addEventListener('touchmove',move,{passive:false});document.addEventListener('touchend',finish);document.addEventListener('touchcancel',finish);
       });
     }
@@ -97,7 +94,7 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
     label.textContent='手動節點名稱';input.type='text';input.value=item.name;input.maxLength=250;input.setAttribute('aria-label','手動節點名稱');label.append(input);
     save.type='button';save.textContent='儲存名稱';save.onclick=()=>{onRenameManual(item.id,input.value);map.closePopup()};box.append(label,save);const remove=document.createElement('button');remove.type='button';remove.textContent='刪除節點';remove.onclick=()=>{map.closePopup();onDeleteManual(item.id)};box.append(remove);
     const coordinate=document.createElement('p');coordinate.textContent=twd97Label(n.coordinate);box.append(coordinate);
-    L.popup({autoPan:false,maxWidth:240}).setLatLng([n.coordinate[1],n.coordinate[0]]).setContent(box).openOn(map);
+    box.prepend(coordinate);L.popup({autoPan:false,maxWidth:240}).setLatLng([n.coordinate[1],n.coordinate[0]]).setContent(box).openOn(map);
   }
   function drawLabels(){
     if(!map||!latest||!labelGroup)return;

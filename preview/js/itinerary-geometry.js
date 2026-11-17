@@ -73,8 +73,8 @@ export function resolveItineraryGeometry(days,data){
       }
         if(edit?.intervals?.length&&JSON.stringify(edit.intervals.flatMap((p,j)=>p.coordinates.slice(j?1:0)))===JSON.stringify(edit.shape?.map(p=>p.coordinate))){
           for(const part of edit.intervals){
-            const add=(coordinates,manual)=>features.push({profile:null,manual,sourceName:manual?manualWarning:'OSM 路網規劃；非已核實步道；高程及時間未知',sourceUrl:edit.candidateSource?.url||null,fromItemId:a.id,toItemId:b.id,viaItemIds:[],dayIndex,from:a.name,to:b.name,coordinates,distanceMeters:length(coordinates)});
-            if(part.network&&part.coordinates.length>=4){add(part.coordinates.slice(0,2),true);add(part.coordinates.slice(1,-1),false);add(part.coordinates.slice(-2),true);}else add(part.coordinates,true);
+            const add=(coordinates,manual,unconfirmedAccess=false,profile=null)=>features.push({profile,manual,unconfirmedAccess,intervalKey:part.key,failureReason:part.failureReason||edit.routingError||null,sourceName:manual?(unconfirmedAccess?'未確認接入線。':'')+manualWarning:part.sourceName||'OSM 路網規劃；非已核實步道',sourceUrl:part.sourceUrl||edit.candidateSource?.url||null,fromItemId:a.id,toItemId:b.id,viaItemIds:[],dayIndex,from:a.name,to:b.name,coordinates,distanceMeters:length(coordinates)});
+            if(part.network&&part.accessSegments!==false){const first=part.startAccess!==false,last=part.endAccess!==false,network=part.coordinates.slice(first?1:0,last?-1:undefined);if(first)add(part.coordinates.slice(0,2),true,true);if(network.length>=2)add(network,false,false,part.networkProfile||null);if(last&&(!first||part.coordinates.length>2))add(part.coordinates.slice(-2),true,true);}else add(part.coordinates,!part.network,false,part.networkProfile||null);
           }i++;continue;
         }
         const explicit=edit&&(edit.mode==='straight'||edit.controls.length);

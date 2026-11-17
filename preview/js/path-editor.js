@@ -1,5 +1,7 @@
 import {moveDetour,applyDetour} from './local-detour.js';
 import {rememberIntervals} from './control-routing.js';
+import {seedRouteEdit} from './route-edit-operations.js';
+import {meters} from './osm-pilot-router.js';
 import {edgeActual,referenceMinutes,shortestPath,incomingForSegment,uid} from './planner.js?v=segments1';
 export const manualWarning='手動幾何連接：水平直線距離，不代表實際步道、合法或安全可通行；高程無資料。';
 export const validCoordinate=p=>Array.isArray(p)&&p.length===2&&p.every(Number.isFinite)&&Math.abs(p[0])<=180&&Math.abs(p[1])<=90;
@@ -46,18 +48,34 @@ export function deleteShapeControl(edit,index){
  if(edit.detour){if(control.id===edit.detour.id){edit.shape=structuredClone(edit.detour.base);edit.controls=edit.shape.filter(p=>p.controlId).map(p=>({id:p.controlId,coordinate:[...p.coordinate]}));delete edit.detour;return;}if([edit.detour.pId,edit.detour.qId].includes(control.id))throw Error('請拖動 P／Q 調整接入；刪除 B 可取消整個繞行。');}
  rebuildControlNeighborhood(edit,control.id);edit.controls.splice(index,1);if(edit.shape)edit.shape=edit.shape.filter(p=>p.controlId!==control.id);
 }
-export function splitManualShape(day,toId,geometry,at,name='手動節點',newId=uid()){
+const shapeLength=coordinates=>coordinates.slice(1).reduce((sum,p,i)=>sum+meters(coordinates[i],p),0);
+function inheritSplitIntervals(edit,original,offset){
+ if(!original?.intervals?.length)return;
+ if(JSON.stringify(original.intervals.flatMap((p,i)=>p.coordinates.slice(i?1:0)))!==JSON.stringify(original.shape?.map(p=>p.coordinate)))return;
+ rememberIntervals(edit);edit.intervalModes={};let walked=offset;
+ const ranges=[];let sourceOffset=0;for(const part of original.intervals){const length=shapeLength(part.coordinates);ranges.push({part,start:sourceOffset,end:sourceOffset+length});sourceOffset+=length;}
+ edit.intervals=edit.intervals.map(part=>{const length=shapeLength(part.coordinates),middle=walked+length/2,source=ranges.find(r=>middle>=r.start-.001&&middle<=r.end+.001);const start=walked;walked+=length;if(!source)return part;const old=source.part,same=JSON.stringify(part.coordinates)===JSON.stringify(old.coordinates),next={...old,...part,mode:old.mode,network:old.network,signature:JSON.stringify([part.coordinates[0],part.coordinates.at(-1),old.mode])};edit.intervalModes[part.key]=old.mode;delete next.retry;
+  if(!same){delete next.failureReason;delete next.networkProfile;const first=old.accessSegments!==false&&old.network?meters(old.coordinates[0],old.coordinates[1]):0,last=old.accessSegments!==false&&old.network?meters(old.coordinates.at(-2),old.coordinates.at(-1)):0;next.startAccess=old.startAccess!==false&&start<source.start+first-.001;next.endAccess=old.endAccess!==false&&walked>source.end-last+.001;}
+  return next;});
+}
+export function splitManualShape(day,toId,geometry,at,name='手動節點',newId=uid(),along=null,context=null){
  const items=day.items.filter(i=>i.type!=='rest'),index=items.findIndex(i=>i.id===toId),to=items[index],from=items[index-1];
  if(!from||!to||!validCoordinate(at)||!Array.isArray(geometry)||geometry.length<2||!geometry.every(validCoordinate))throw Error('路段線形不完整，無法插入行程節點。');
- const old=structuredClone(to.incoming),edit=to.pathEdit?.fromItemId===from.id?to.pathEdit:null;
+ const old=structuredClone(to.incoming);let edit=to.pathEdit?.fromItemId===from.id?to.pathEdit:null;
+ if(context){edit=structuredClone(edit||{fromItemId:from.id,mode:'auto',controls:[]});seedRouteEdit(edit,geometry,context);}
  const shape=edit?.shape?structuredClone(edit.shape):shapeFromGeometry(geometry,edit?.controls);
- const leg=nearestShapeLeg(shape,at),boundary={coordinate:[...at]},left=[...shape.slice(0,leg+1),boundary],right=[boundary,...shape.slice(leg+1)];
+ let leg=nearestShapeLeg(shape,at);if(Number.isFinite(along)){let walked=0;for(let i=1;i<shape.length;i++){walked+=meters(shape[i-1].coordinate,shape[i].coordinate);if(walked>=along-.001){leg=i-1;break;}}}
+ const boundary={coordinate:[...at]},left=[...shape.slice(0,leg+1),boundary],right=[boundary,...shape.slice(leg+1)];
  if(left.length>5000||right.length>5000)throw Error('路段線形已達上限，無法拆分。');
- const shapeEdit=(start,points)=>({fromItemId:start,mode:'straight',shape:points,controls:points.filter(p=>p.controlId).map(p=>({id:p.controlId,coordinate:[...p.coordinate]})),...(edit?.candidateSource?{candidateSource:structuredClone(edit.candidateSource)}:{})});
+ const shapeEdit=(start,points)=>({fromItemId:start,mode:'straight',shape:points,controls:points.filter(p=>p.controlId).map(p=>({...edit?.controls.find(c=>c.id===p.controlId),id:p.controlId,coordinate:[...p.coordinate]})),...(edit?.candidateSource?{candidateSource:structuredClone(edit.candidateSource)}:{})});
  const manual={id:newId,type:'manual-location',name:name.trim()||'手動節點',coordinate:[...at],showInTable:true,note:'',isPeak:false,hasWater:false,incoming:{kind:'manual',fromId:from.id,toId:newId,actualMinutes:null},pathEdit:shapeEdit(from.id,left)};
+ const endpoints=edit?.endpointCoordinates||context?.endpointCoordinates||[shape[0].coordinate,shape.at(-1).coordinate];manual.pathEdit.endpointCoordinates=[[...endpoints[0]],[...at]];
+ const splitDistance=shapeLength(left.map(p=>p.coordinate));inheritSplitIntervals(manual.pathEdit,edit,0);
  // Preserve the original full-leg source and estimate without distributing it.
  if(to.splitOriginalIncoming){to.splitHistory=[...(to.splitHistory||[]),{incoming:structuredClone(to.splitOriginalIncoming),...(to.splitOriginalPathIncoming?{sourceIncoming:structuredClone(to.splitOriginalPathIncoming)}:{})}];}
  to.splitOriginalIncoming=old;if(to.pathOriginalIncoming)to.splitOriginalPathIncoming=structuredClone(to.pathOriginalIncoming);else delete to.splitOriginalPathIncoming;to.incoming={kind:'manual',fromId:newId,toId:to.id,actualMinutes:null};to.pathEdit=shapeEdit(newId,right);
+ inheritSplitIntervals(to.pathEdit,edit,splitDistance);
+ to.pathEdit.endpointCoordinates=[[...at],[...endpoints[1]]];
  delete to.pathOriginalIncoming;day.items.splice(day.items.indexOf(to),0,manual);return manual;
 }
 export function promoteShapeControl(day,toId,controlId,name='手動節點'){
@@ -65,12 +83,13 @@ export function promoteShapeControl(day,toId,controlId,name='手動節點'){
  if(!control||index<=0||index>=edit.shape.length-1)throw Error('找不到可轉換的控制點');
  const coordinate=[...control.coordinate];
  // Split at the exact stored vertex, including self-crossing routes.
- const original=structuredClone(edit.shape),clean=structuredClone(original);delete clean[index].controlId;
+ const originalEdit=structuredClone(edit),original=structuredClone(edit.shape),clean=structuredClone(original);delete clean[index].controlId;
  const savedShape=edit.shape;edit.shape=clean;
  try{
-  const item=splitManualShape(day,toId,clean.map(p=>p.coordinate),coordinate,name);
+  const splitDistance=shapeLength(clean.slice(0,index+1).map(p=>p.coordinate));const item=splitManualShape(day,toId,clean.map(p=>p.coordinate),coordinate,name,uid(),splitDistance);
   item.pathEdit.shape=clean.slice(0,index+1);to.pathEdit.shape=clean.slice(index);
-  for(const part of [item.pathEdit,to.pathEdit]){part.controls=part.shape.filter(p=>p.controlId).map(p=>({id:p.controlId,coordinate:[...p.coordinate]}));rememberIntervals(part);}
+  for(const part of [item.pathEdit,to.pathEdit]){part.controls=part.shape.filter(p=>p.controlId).map(p=>({...originalEdit.controls.find(c=>c.id===p.controlId),id:p.controlId,coordinate:[...p.coordinate]}));rememberIntervals(part);}
+  inheritSplitIntervals(item.pathEdit,originalEdit,0);inheritSplitIntervals(to.pathEdit,originalEdit,splitDistance);
   return item;
  }catch(error){edit.shape=savedShape;throw error;}
 }
