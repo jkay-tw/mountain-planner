@@ -30,7 +30,7 @@ export function insertShapeControl(day,toId,geometry,at,coordinate,id=uid()){
   e.shape=shape;rememberIntervals(e);
   if(shape.length>=5000)throw Error('路段線形已達上限，無法再插入控制點。');
   const index=nearestShapeLeg(shape,at);const left=shape.slice(0,index+1).filter(p=>p.controlId).at(-1)?.controlId||'start',right=shape.slice(index+1).find(p=>p.controlId)?.controlId||'end';const inherited=e.intervalModes?.[left+'>'+right];if(inherited){e.intervalModes[left+'>'+id]=inherited;e.intervalModes[id+'>'+right]=inherited;}shape.splice(index+1,0,{coordinate:[...coordinate],controlId:id});
-  e.shape=shape;e.controls=shape.filter(p=>p.controlId).map(p=>({id:p.controlId,coordinate:[...p.coordinate]}));e.mode='straight';delete e.networkNodeIds;if(at[0]!==coordinate[0]||at[1]!==coordinate[1])rebuildControlNeighborhood(e,id);
+  e.shape=shape;e.controls=shape.filter(p=>p.controlId).map(p=>({id:p.controlId,coordinate:[...p.coordinate]}));e.mode='straight';delete e.networkNodeIds;if(at[0]!==coordinate[0]||at[1]!==coordinate[1])rebuildControlNeighborhood(e,id);else rememberIntervals(e);
  });
  return id;
 }
@@ -59,6 +59,20 @@ export function splitManualShape(day,toId,geometry,at,name='手動節點',newId=
  if(to.splitOriginalIncoming){to.splitHistory=[...(to.splitHistory||[]),{incoming:structuredClone(to.splitOriginalIncoming),...(to.splitOriginalPathIncoming?{sourceIncoming:structuredClone(to.splitOriginalPathIncoming)}:{})}];}
  to.splitOriginalIncoming=old;if(to.pathOriginalIncoming)to.splitOriginalPathIncoming=structuredClone(to.pathOriginalIncoming);else delete to.splitOriginalPathIncoming;to.incoming={kind:'manual',fromId:newId,toId:to.id,actualMinutes:null};to.pathEdit=shapeEdit(newId,right);
  delete to.pathOriginalIncoming;day.items.splice(day.items.indexOf(to),0,manual);return manual;
+}
+export function promoteShapeControl(day,toId,controlId,name='手動節點'){
+ const to=day.items.find(i=>i.id===toId),edit=to?.pathEdit,control=edit?.controls.find(c=>c.id===controlId),index=edit?.shape?.findIndex(p=>p.controlId===controlId);
+ if(!control||index<=0||index>=edit.shape.length-1)throw Error('找不到可轉換的控制點');
+ const coordinate=[...control.coordinate];
+ // Split at the exact stored vertex, including self-crossing routes.
+ const original=structuredClone(edit.shape),clean=structuredClone(original);delete clean[index].controlId;
+ const savedShape=edit.shape;edit.shape=clean;
+ try{
+  const item=splitManualShape(day,toId,clean.map(p=>p.coordinate),coordinate,name);
+  item.pathEdit.shape=clean.slice(0,index+1);to.pathEdit.shape=clean.slice(index);
+  for(const part of [item.pathEdit,to.pathEdit]){part.controls=part.shape.filter(p=>p.controlId).map(p=>({id:p.controlId,coordinate:[...p.coordinate]}));rememberIntervals(part);}
+  return item;
+ }catch(error){edit.shape=savedShape;throw error;}
 }
 export function editSegment(day,toId,change){
  const items=day.items.filter(i=>i.type!=='rest'),index=items.findIndex(i=>i.id===toId),to=items[index],from=items[index-1];

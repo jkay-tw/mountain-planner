@@ -51,13 +51,14 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
       const line=L.polyline(points,{pane:'routeEditPane',bubblingMouseEvents:false,weight:24,opacity:0.01,color:colors[day.dayIndex%colors.length]}).addTo(group);
       let dragged=false;
       line.on('click',event=>{
-        if(dragged){dragged=false;return}
+        if(dragged||performance.now()<(map._pathDragUntil||0)){dragged=false;return}
         if(!editor?.isEnabled()){line.bindPopup(label).openPopup(event.latlng);return}
         editor.select(day.dayIndex,f.toItemId);const geometry=editableGeometry(day.dayIndex,f.toItemId),box=document.createElement('div');
         const p=document.createElement('p');p.textContent=geometry?'選擇操作，或直接拖曳路線調整形狀。':'此線形跨越未定位點或有缺漏，暫不能拆分編輯。';box.append(p);
         if(geometry){
           const at=[event.latlng.lng,event.latlng.lat],input=document.createElement('input');input.placeholder='新行程節點名稱';input.setAttribute('aria-label','新行程節點名稱');input.maxLength=250;box.append(input);
           const add=document.createElement('button');add.type='button';add.textContent='在此加入行程節點';add.onclick=()=>editor.splitAt(day.dayIndex,f.toItemId,geometry,at,input.value);box.append(add);
+          const toggle=document.createElement('button');toggle.type='button';toggle.textContent=f.manual?'嘗試沿路網連接':'改為手動連接';toggle.onclick=()=>editor.toggleAt(day.dayIndex,f.toItemId,geometry,at,f.manual);box.append(toggle);
           const control=document.createElement('button');control.type='button';control.textContent='在此插入控制點';control.onclick=()=>editor.insertAt(day.dayIndex,f.toItemId,geometry,at,at);box.append(control);
         }
         line.bindPopup(box,{autoPan:false,maxWidth:240}).openPopup(event.latlng);
@@ -69,7 +70,7 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
         const point=e=>map.mouseEventToLatLng(e.changedTouches?.[0]||e.touches?.[0]||e);
         const ghost=L.polyline([event.latlng,event.latlng],{pane:'routeEditPane',interactive:false,color:'#f58220',weight:4,dashArray:'5 5'}).addTo(map);
         const move=e=>{end=point(e);ghost.setLatLngs([event.latlng,end]);if(map.latLngToContainerPoint(end).distanceTo(origin)>6)moved=true;if(moved&&e.cancelable)e.preventDefault()};
-        const finish=e=>{document.removeEventListener('mousemove',move);document.removeEventListener('mouseup',finish);document.removeEventListener('touchmove',move);document.removeEventListener('touchend',finish);document.removeEventListener('touchcancel',finish);map.removeLayer(ghost);map.dragging.enable();if(e.type==='touchcancel')return;if(moved){end=point(e);dragged=true;setTimeout(()=>{dragged=false},300);editor.insertAt(day.dayIndex,f.toItemId,geometry,start,[end.lng,end.lat])}};
+        const finish=e=>{document.removeEventListener('mousemove',move);document.removeEventListener('mouseup',finish);document.removeEventListener('touchmove',move);document.removeEventListener('touchend',finish);document.removeEventListener('touchcancel',finish);map.removeLayer(ghost);map.dragging.enable();if(e.type==='touchcancel')return;if(moved){end=point(e);map._pathDragUntil=performance.now()+500;dragged=true;setTimeout(()=>{dragged=false},300);editor.insertAt(day.dayIndex,f.toItemId,geometry,start,[end.lng,end.lat])}};
         document.addEventListener('mousemove',move);document.addEventListener('mouseup',finish);document.addEventListener('touchmove',move,{passive:false});document.addEventListener('touchend',finish);document.addEventListener('touchcancel',finish);
       });
     }
@@ -86,7 +87,7 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
   function editableGeometry(dayIndex,toId){
     const items=(getDays()[dayIndex]?.items||[]).filter(i=>i.type!=='rest'),index=items.findIndex(i=>i.id===toId),from=items[index-1];
     if(!from)return null;const features=latest.days[dayIndex].features.filter(f=>f.toItemId===toId);if(!features.length||features.some(f=>f.fromItemId!==from.id||f.viaItemIds?.length))return null;
-    const points=[];for(const feature of features){const coords=feature.coordinates;if(points.length&&distanceMeters(points.at(-1),coords[0])>2)return null;points.push(...(points.length?coords.slice(1):coords).map(p=>[...p]))}
+    const points=[];for(const feature of features){const coords=feature.coordinates;if(points.length&&distanceMeters(points.at(-1),coords[0])>2)return null;points.push(...(points.length?coords.slice(1):coords).map(p=>p.slice(0,2)))}
     return points.length>=2&&points.length<=5000?points:null;
   }
   function manualItem(id){return getDays().flatMap(d=>d.items||[]).find(item=>item.type==='manual-location'&&item.id===id)}
@@ -166,7 +167,7 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
       group=L.featureGroup().addTo(map);labelGroup=L.layerGroup().addTo(map);
       editor=attachPathEditor({host,map,getDays,getRoute,data,onChange,refitNetwork:(day,toId,force)=>osmPlanner?.refit(day,toId,force)});
       mountReview(host.querySelector('[data-map]'),map);
-      osmPlanner=attachOsmPlanner({host,map,layers,getDays,data,onChange,onPickSpan:(span,ll)=>editor.addOnSpan(span,ll)});
+      osmPlanner=attachOsmPlanner({host,map,layers,getDays,data,onChange,onStatus:message=>editor?.setStatus(message),onPickSpan:(span,ll)=>editor.addOnSpan(span,ll)});
     }
     refresh();load.hidden=true;map.invalidateSize();if(group.getBounds().isValid())map.fitBounds(group.getBounds(),{padding:[25,25],maxZoom:16});
   }
