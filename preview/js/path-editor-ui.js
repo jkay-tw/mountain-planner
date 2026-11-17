@@ -1,3 +1,5 @@
+import {proposeDetour,detourShape,moveDetour,applyDetour,projectOnShape} from './local-detour.js';
+import {meters} from './osm-pilot-router.js';
 import {closestProjection,attachmentCandidates,directSpanCandidates,refitConfirmedSpan} from './network-attachment.js';
 import {coordinateOf,editSegment,recalculateSegment,manualWarning,insertShapeControl,updateShapeControl,deleteShapeControl,splitManualShape} from './path-editor.js';
 import {twd97Label} from './twd97.js?v=v0731';
@@ -12,9 +14,20 @@ export function attachPathEditor({host,map,getDays,getRoute,data,onChange,refitN
  const enabled=()=> $('[data-edit]').checked,day=()=>getDays()[Number($('[data-day]').value)||0];
  const segment=()=>{const items=day()?.items.filter(x=>x.type!=='rest')||[],to=items.find(x=>x.id===$('[data-segment]').value);return {to,from:items[items.indexOf(to)-1]}};
  let feedback='',popupBox=null,previewMarker=null;
- function closePopup(){map.closePopup();popupBox?.remove();popupBox=null;if(previewMarker){map.removeLayer(previewMarker);previewMarker=null;}}
- const commit=fn=>{try{const previous=JSON.stringify(segment().to?.pathEdit);feedback=fn()||'';const target=segment().to;if(target?.pathEdit&&JSON.stringify(target.pathEdit)!==previous){const result=refitNetwork(day(),target.id);if(result)feedback=result;}closePopup();onChange();refresh()}catch(e){$('[data-detail]').textContent=e.message}};
+ function closePopup(){attachmentPreview.clearLayers();map.closePopup();popupBox?.remove();popupBox=null;if(previewMarker){map.removeLayer(previewMarker);previewMarker=null;}}
+ const commit=fn=>{try{const previous=JSON.stringify(segment().to?.pathEdit),hadDetour=!!segment().to?.pathEdit?.detour;feedback=fn()||'';const target=segment().to;if(target?.pathEdit&&!hadDetour&&!target.pathEdit.detour&&JSON.stringify(target.pathEdit)!==previous){const result=refitNetwork(day(),target.id);if(result)feedback=result;}closePopup();onChange();refresh()}catch(e){$('[data-detail]').textContent=e.message}};
  const change=fn=>commit(()=>{const {to,from}=segment();if(!from||!to||!coordinateOf(from,data)||!coordinateOf(to,data))throw Error('端點缺少可靠座標；請先選擇有座標的路段，不會推測或吸附位置。');editSegment(day(),to.id,fn);if(to.pathEdit?.autoReference&&to.pathEdit.mode==='straight')return refitConfirmedSpan(to.pathEdit,from,to,data,getRoute())?'已依確認線形微調接入；控制點座標保持不變。':'無法沿原確認線形微調，保留手動折線；請核對路徑。'});
+ function previewDetour(geometry,at,coordinate){
+  closePopup();attachmentPreview.clearLayers();const {to}=segment();
+  if(to.pathEdit?.detour){feedback='此段已有局部繞行，請移動 B／P／Q；刪除 B 可回復原路徑後重新設定。';refresh();return;}
+  const base=to.pathEdit?.shape||geometry.map(coordinate=>({coordinate}));if(base.length>4997){feedback='原路段頂點太多，請先分段再建立繞行。';refresh();return;}const d=proposeDetour(base,at,coordinate,uid()),before=JSON.stringify(day()),selectedTo=to.id;
+  const box=document.createElement('div');box.className='path-popup';const text=document.createElement('p');text.textContent='局部繞行預覽：P 離開、B 目標、Q 返回。拖動 P／Q 選擇接入位置；尚未修改行程。初始前後各約100m，非可通行判定。';box.append(text);
+  const line=L.polyline([],{color:'#db6500',weight:5,dashArray:'7 5',interactive:false}).addTo(attachmentPreview),markers=[];
+  const draw=()=>{const shape=detourShape(d);line.setLatLngs(shape.map(p=>[p.coordinate[1],p.coordinate[0]]));for(const m of markers){const p=shape.find(p=>p.controlId===m.id).coordinate;m.marker.setLatLng([p[1],p[0]])}};
+  for(const [id,label] of [[d.pId,'P'],[d.id,'B'],[d.qId,'Q']]){const p=detourShape(d).find(p=>p.controlId===id).coordinate;const marker=L.marker([p[1],p[0]],{draggable:true,icon:L.divIcon({className:'path-control-marker',html:'<span>'+label+'</span>',iconSize:[44,44],iconAnchor:[22,22]})}).on('dragend',event=>{const p=event.target.getLatLng();try{moveDetour(d,id,[p.lng,p.lat]);draw()}catch(e){text.textContent=e.message;draw()}}).addTo(attachmentPreview);markers.push({id,marker});}
+  draw();button('確認局部繞行',()=>{if(JSON.stringify(day())!==before||segment().to?.id!==selectedTo){text.textContent='行程已變更，請取消並重新預覽。';return;}commit(()=>{editSegment(day(),to.id,e=>applyDetour(e,d));attachmentPreview.clearLayers();return '已固定 P／Q；移動 B 保留接入位置，刪除 B 回復原線形。手動繞行高程與時間待確認。';})},box);
+  button('取消預覽',()=>{attachmentPreview.clearLayers();closePopup()},box);L.DomEvent.disableClickPropagation(box);L.DomEvent.disableScrollPropagation(box);map.getContainer().append(box);popupBox=box;
+ }
  function addControl(coordinate,name=''){
   const {to,from}=segment();if(!from||!to||!coordinateOf(from,data)||!coordinateOf(to,data)){feedback='端點缺少可靠座標，無法新增控制點。';refresh();return}
   const edit=to.pathEdit?.fromItemId===from.id?to.pathEdit:null;
@@ -74,7 +87,7 @@ export function attachPathEditor({host,map,getDays,getRoute,data,onChange,refitN
    if(enabled()){
     const content=document.createElement('div');content.append(document.createTextNode(`控制點 ${index+1} · ${twd97Label(c.coordinate)}`));
     button('刪除控制點',()=>change(e=>deleteShapeControl(e,index)),content);
-    L.marker([c.coordinate[1],c.coordinate[0]],{draggable:true,icon:L.divIcon({className:'path-control-marker',html:'<span>'+String(index+1)+'</span>',iconSize:[44,44],iconAnchor:[22,22]})}).bindPopup(content,{autoPan:false}).on('dragend',event=>{const p=event.target.getLatLng();change(e=>updateShapeControl(e,index,[p.lng,p.lat]))}).addTo(layer);
+    L.marker([c.coordinate[1],c.coordinate[0]],{draggable:true,icon:L.divIcon({className:'path-control-marker',html:'<span>'+(to.pathEdit?.detour?.pId===c.id?'P':to.pathEdit?.detour?.qId===c.id?'Q':to.pathEdit?.detour?.id===c.id?'B':String(index+1))+'</span>',iconSize:[44,44],iconAnchor:[22,22]})}).bindPopup(content,{autoPan:false}).on('dragend',event=>{const p=event.target.getLatLng();change(e=>updateShapeControl(e,index,[p.lng,p.lat]))}).addTo(layer);
    }
   }
   $('[data-connections]').replaceChildren();
@@ -94,7 +107,7 @@ export function attachPathEditor({host,map,getDays,getRoute,data,onChange,refitN
  refresh();
  function choose(dayIndex,toId){$('[data-day]').value=String(dayIndex);refresh();$('[data-segment]').value=toId;refresh()}
  return {refresh,isEnabled:enabled,addOnSpan(span,latlng){if(!enabled())return;const hit=closestProjection([latlng.lng,latlng.lat],span);if(!hit)return;popup(hit.p);const p=document.createElement('p');p.textContent='已對齊所選參考線形 '+span.id+'；按加入行程確認，仍保留獨立手動節點身分。';popupBox.prepend(p);},select(dayIndex,toId){if(enabled())choose(dayIndex,toId)},
-  insertAt(dayIndex,toId,geometry,at,coordinate){if(!enabled())return;choose(dayIndex,toId);commit(()=>{insertShapeControl(day(),toId,geometry,at,coordinate);const {from,to}=segment();if(to.pathEdit.autoReference)return refitConfirmedSpan(to.pathEdit,from,to,data,getRoute())?'已插入控制點，並依確認線形微調接入。':'已插入控制點；無法沿原確認線形微調，保留手動折線。';return '已插入控制點；此段為手動幾何，高程與時間需另確認。'})},
+  insertAt(dayIndex,toId,geometry,at,coordinate){if(!enabled())return;choose(dayIndex,toId);if(meters(at,coordinate)>10&&projectOnShape(geometry.map(coordinate=>({coordinate})),coordinate).distance>10){previewDetour(geometry,at,coordinate);return;}commit(()=>{insertShapeControl(day(),toId,geometry,at,coordinate);const {from,to}=segment();if(to.pathEdit.autoReference)return refitConfirmedSpan(to.pathEdit,from,to,data,getRoute())?'已插入控制點，並依確認線形微調接入。':'已插入控制點；無法沿原確認線形微調，保留手動折線。';return '已插入控制點；此段為手動幾何，高程與時間需另確認。'})},
   splitAt(dayIndex,toId,geometry,at,name){if(!enabled())return;choose(dayIndex,toId);commit(()=>{splitManualShape(day(),toId,geometry,at,name);return '已插入行程節點；前後兩段時間待填，原路段時間保留於備份資料。'})}
  };
 }

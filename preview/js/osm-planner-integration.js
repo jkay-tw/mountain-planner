@@ -13,7 +13,7 @@ export function attachOsmPlanner({host,map,layers,getDays,data,onChange,onPickSp
  return {refit(day,toId,force=false){
   if(!graph||!panel.querySelector('[data-autofit]').checked)return null;
   const items=day.items.filter(i=>i.type!=='rest'),to=items.find(i=>i.id===toId),from=items[items.indexOf(to)-1];if(!from||!to)return null;
-  const e=to.pathEdit;if(!force&&!e?.osmRouting&&!e?.controls?.length)return null;
+  const e=to.pathEdit;if(e?.detour)return '局部繞行已固定 P／Q；請拖動接入點調整，刪除 B 可回復原路徑。';if(!force&&!e?.osmRouting&&!e?.controls?.length)return null;
   const a=coordinateOf(from,data),b=coordinateOf(to,data);if(!a||!b)return null;
   const controls=e?.controls||[],r=routeVia(graph,[a,...controls.map(c=>c.coordinate),b]);
   if(!r){status.textContent='無可連通 OSM 路徑；保留指定幾何。請載入相鄰區域或移動控制點。';return status.textContent;}
