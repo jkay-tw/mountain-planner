@@ -1,3 +1,5 @@
+import {bindNameEnter} from './name-enter.js';
+import {itineraryExportName} from './export-name.js';
 import {bindRouteDrag} from './route-drag.js';
 import {mountReview} from './osm-pilot-review.js';
 import {joinLegCoordinates} from './dem-profile.js';
@@ -11,7 +13,7 @@ import {nodeAliases} from './node-aliases.js?v=aliases1';
 import {resolveItineraryGeometry,geometryToGpx,formatTerrain,renderTerrainProfile,terrainDayColor,distanceMeters} from './itinerary-geometry.js?v=v084';
 
 // Optional path edits use the host editor callback; map failure must not block the DAY editor.
-export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=null,getNode=()=>null,onChange=()=>{},onRenameManual=()=>{},onDeleteManual=()=>{}}){
+export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=null,getNode=()=>null,getExportName=(ext,options)=>itineraryExportName({dayCount:getDays().length},ext,options),onChange=()=>{},onRenameManual=()=>{},onDeleteManual=()=>{}}){
   let data=initialData,map=null,group=null,labelGroup=null,latest=null,ready=null,selectedNode=null;
   let editor=null,imagery=null,osmPlanner=null;
   const hiddenDays=new Set();
@@ -93,7 +95,7 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
     const item=manualItem(n.nodeId);if(!item)return;
     const box=document.createElement('div'),label=document.createElement('label'),input=document.createElement('input'),save=document.createElement('button');
     box.className='path-popup';label.textContent='手動節點名稱';input.type='text';input.value=item.name;input.maxLength=250;input.setAttribute('aria-label','手動節點名稱');label.append(input);
-    save.type='button';save.textContent='儲存名稱';save.onclick=()=>{onRenameManual(item.id,input.value);map.closePopup()};box.append(label,save);const remove=document.createElement('button');remove.type='button';remove.textContent='刪除節點';remove.onclick=()=>{map.closePopup();onDeleteManual(item.id)};box.append(remove);
+    save.type='button';save.textContent='儲存名稱';save.onclick=()=>{onRenameManual(item.id,input.value);map.closePopup()};bindNameEnter(input,()=>save.click());box.append(label,save);const remove=document.createElement('button');remove.type='button';remove.textContent='刪除節點';remove.onclick=()=>{map.closePopup();onDeleteManual(item.id)};box.append(remove);
     const coordinate=document.createElement('p');coordinate.textContent=twd97Label(n.coordinate);box.append(coordinate);
     box.prepend(coordinate);L.popup({autoPan:true,autoPanPadding:[16,16],autoPanPaddingTopLeft:[16,56],maxWidth:240,className:'path-map-popup'}).setLatLng([n.coordinate[1],n.coordinate[0]]).setContent(box).openOn(map);
   }
@@ -182,7 +184,7 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
     refresh();
     const hasTracks=latest.days.some(d=>d.features.length);
     if((latest.gaps.length||latest.unlocated.length||!hasTracks)&&!confirm(`${!hasTracks?'目前僅可匯出已定位節點。':''}有 ${latest.gaps.length} 段缺少線形、${latest.unlocated.length} 個節點未定位。僅匯出已取得部分，各段分開且不補直線，是否繼續？`))return;
-    const name=`mountain-planner-candidate${latest.gaps.length?'-partial':''}.gpx`;
+    const name=getExportName('gpx',{partial:latest.gaps.length>0||latest.unlocated.length>0});
     try{const handle=await chooseSaveTarget(name,'application/gpx+xml','gpx');const blob=new Blob([geometryToGpx(latest,data,{allowPartial:latest.gaps.length>0,allowWaypointsOnly:!hasTracks})],{type:'application/gpx+xml'});await writeDownload(blob,name,handle)}catch(error){reportSaveError(error)}
   };
   return {update:()=>{try{refresh();editor?.refresh()}catch(error){status.textContent=error.message;exp.disabled=true}}};

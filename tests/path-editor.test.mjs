@@ -95,7 +95,7 @@ test('Excel exports visible rows with complete hidden distance/time and leaves u
  const row=[...sheet.rows.values()].find(r=>r.values[0]==='d');assert.equal(row.values[2],30/1440);assert.equal(row.values[3],30/1440);assert.equal(row.values[5],resolve(d).distanceMeters/1000);assert.equal([...sheet.rows.values()].filter(r=>['b','c'].includes(r.values[0])).length,0);
  editSegment(d,'b',e=>{e.mode='straight'});
  await exportExcel({route:{route_id:'test',route_name:'test'},days:[d],terrainData:data,handle});
- const mixed=[...sheet.rows.values()].find(r=>r.values[0]==='d');assert.equal(mixed.values[2],'');assert.equal(mixed.values[6],'');assert.match(mixed.values[8],/手動水平直線距離/);
+ const mixed=[...sheet.rows.values()].find(r=>r.values[0]==='d');assert.equal(mixed.values[2],'');assert.equal(mixed.values[6],'');assert.match(mixed.values[8],/手動水平路徑距離估算/);assert.match(mixed.values[8],/DEM高程部分未取得/);
  delete globalThis.window;delete globalThis.ExcelJS;
 });
 import {attachmentCandidates,attachmentPath} from '../preview/js/network-attachment.js';

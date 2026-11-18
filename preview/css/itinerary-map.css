@@ -401,3 +401,8 @@
 .endpoint-notice,[data-dem-status]{font-size:12px;line-height:1.4;color:#6c4c16;margin:5px 0}
 .osm-sample-review{margin:5px 0}
 @media(max-width:600px),(pointer:coarse){.path-map-popup .leaflet-popup-content{margin-right:28px}}
+
+/* Same action typography across node, route and control popups. */
+.path-popup button,.path-popup button:last-child{font-size:13px;font-weight:600}
+
+.gpx-waypoint-labels{overflow-wrap:anywhere}

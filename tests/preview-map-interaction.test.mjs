@@ -59,8 +59,8 @@ test('real Junda source profile labels use source DEM for selected nodes and exa
  const day=resolveItineraryGeometry([{items}],data).days[0],rows=profileNodeRows(day);assert.equal(day.gaps.length,0);assert.deepEqual(rows.map(n=>n.name),['郡大山北峰','郡大山']);assert.deepEqual(rows.map(n=>n.elevationMeters),ids.map(id=>data.nodes.find(n=>n.nodeId===id).elevationMeters));assert.equal(rows[1].distanceMeters,day.distanceMeters);
  assert.ok(day.features.every(f=>f.profile?.length>1));assert.ok(Math.abs(day.distanceMeters-day.features.reduce((s,f)=>s+len(f.coordinates),0))<.001);
 });
-test('GPX map naming remains identical to the actual production map entry, distinct from dated plan exports',()=>{
+test('Preview GPX shares plan naming while the production map entry remains unchanged',()=>{
  const production=readFileSync(new URL('../js/itinerary-map.js',import.meta.url),'utf8'),preview=readFileSync(new URL('../preview/js/itinerary-map.js',import.meta.url),'utf8');
- const name=s=>s.match(/const name=`(mountain-planner-candidate[^`]+)`/)[1];assert.equal(name(preview),name(production));
+ assert.match(production,/const name=`mountain-planner-candidate/);assert.match(preview,/getExportName\('gpx',\{partial:/);
  const editor=readFileSync(new URL('../js/unified-editor.js',import.meta.url),'utf8');assert.match(editor,/function exportName/);assert.match(editor,/tripStartDate\.replaceAll/);
 });

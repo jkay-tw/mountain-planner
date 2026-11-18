@@ -1,3 +1,5 @@
+import {itineraryExportName} from './export-name.js';
+import {bindNameEnter} from './name-enter.js';
 import {markDestinationBatch,removeDestinationItem,hiddenEndpointNotice} from './itinerary-endpoints.js';
 import {visibleTimelineRows,aggregateTerrain} from './path-editor.js';
 import {captureScrollAnchor,restoreScrollAnchor} from './scroll-anchor.js?v=v088';
@@ -81,7 +83,7 @@ async function init(){
   bindGlobal();
   render(false);saveAutosave(false);checkpoint();
   if($('itineraryGeometry'))import('./itinerary-map.js?v=autoload1')
-    .then(({createItineraryMap})=>{itineraryMap=createItineraryMap({host:$('itineraryGeometry'),getDays:()=>days,getRoute:()=>route,initialData:terrainData,getNode:id=>route?.nodes.find(n=>n.id===id),onChange:()=>render(),onDeleteManual:id=>{for(const d of days){const index=d.items.findIndex(x=>x.type==='manual-location'&&x.id===id);if(index>=0){removeItem(d,index);break}}},onRenameManual:(id,name)=>{for(const d of days){const item=d.items.find(x=>x.type==='manual-location'&&x.id===id);if(item){if(last(d)?.id===item.id)unlinkNextIfEndpointChanges(d);item.name=name.trim()||'手動節點';render();break}}}})})
+    .then(({createItineraryMap})=>{itineraryMap=createItineraryMap({host:$('itineraryGeometry'),getDays:()=>days,getRoute:()=>route,initialData:terrainData,getNode:id=>route?.nodes.find(n=>n.id===id),getExportName:exportName,onChange:()=>render(),onDeleteManual:id=>{for(const d of days){const index=d.items.findIndex(x=>x.type==='manual-location'&&x.id===id);if(index>=0){removeItem(d,index);break}}},onRenameManual:(id,name)=>{for(const d of days){const item=d.items.find(x=>x.type==='manual-location'&&x.id===id);if(item){if(last(d)?.id===item.id)unlinkNextIfEndpointChanges(d);item.name=name.trim()||'手動節點';render();break}}}})})
     .catch(error=>{$('itineraryGeometry').textContent='地圖載入失敗：'+error.message});
 }
 
@@ -304,14 +306,8 @@ async function importPlan(e){
  }catch(err){alert('匯入失敗：'+err.message)}
 }
 
-function exportName(ext){
-  const base=tripName.trim().replace(/[<>:"/\\|?*\x00-\x1f]/g,'_').replace(/[. ]+$/,'').slice(0,100)||'登山行程';
-  if(!tripStartDate)return base+'.'+ext;
-  const start=tripStartDate.replaceAll('-','');
-  const end=new Date(tripStartDate+'T00:00:00');end.setDate(end.getDate()+days.length-1);
-  const finish=String(end.getFullYear())+String(end.getMonth()+1).padStart(2,'0')+String(end.getDate()).padStart(2,'0');
-  return base+'_'+start+(days.length>1?'-'+(start.slice(0,4)===finish.slice(0,4)?finish.slice(4):finish):'')+'.'+ext;
-}
+function exportName(ext,options){return itineraryExportName({tripName,tripStartDate,dayCount:days.length},ext,options)}
+
 function dayDate(index){
   if(!tripStartDate)return '';
   const d=new Date(tripStartDate+'T00:00:00');d.setDate(d.getDate()+index);
@@ -605,10 +601,10 @@ function bindDays(){
     });
     card.querySelectorAll('.alternate-time').forEach(btn=>btn.onclick=()=>{const it=d.items[+btn.dataset.index];if(it?.incoming&&selectEdgeReference(it.incoming,btn.dataset.kind))render()});
     card.querySelectorAll('.rest-min').forEach(x=>x.onchange=()=>{d.items[+x.dataset.index].minutes=clampMin(x.value);render()});
-    card.querySelectorAll('.manual-name').forEach(x=>x.onchange=()=>{
+    card.querySelectorAll('.manual-name').forEach(x=>{x.onchange=()=>{
       const it=d.items[+x.dataset.index];if(last(d)?.id===it.id)unlinkNextIfEndpointChanges(d);
       it.name=x.value.trim()||'手動節點';render();
-    });
+    };bindNameEnter(x,()=>x.onchange());});
     card.querySelectorAll('.note-input').forEach(x=>x.onchange=()=>{d.items[+x.dataset.index].note=x.value;render()});
     card.querySelectorAll('.peak').forEach(b=>b.onclick=()=>{const it=d.items[+b.dataset.index];it.isPeak=!it.isPeak;render()});
     card.querySelectorAll('.water').forEach(b=>b.onclick=()=>{const it=d.items[+b.dataset.index];it.hasWater=!it.hasWater;render()});
