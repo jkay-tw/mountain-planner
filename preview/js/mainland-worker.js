@@ -2,6 +2,7 @@ import {MainlandNetwork} from './mainland-network.js';
 import {attachedAlternatives} from './osm-attachment-routing.js';
 import {routeIntervals,rememberIntervals} from './control-routing.js';
 import {MainlandDem} from './mainland-dem.js';
+import {estimateGpxDem} from './gpx-dem-profile.js';
 const dem=new MainlandDem();
 const network=new MainlandNetwork();let queue=Promise.resolve();const latest=new Map();
 self.onmessage=({data:request})=>{if(request.key)latest.set(request.key,request.id);queue=queue.catch(()=>{}).then(async()=>{
@@ -11,6 +12,7 @@ self.onmessage=({data:request})=>{if(request.key)latest.set(request.key,request.
   const {id,kind,points}=request;let result;
   if(kind==='init'){result=await network.init();}
   else if(kind==='dem'){result=await dem.profile(points);}
+  else if(kind==='gpxDem'){result=await estimateGpxDem(request.segments,dem);}
   else if(kind==='manual'){await network.init();network.manualEnabled=true;await network.tile(network.manifest.tiles.find(t=>t.file==='2430_500.json.gz'));result={};}
   else{
    // The entire original way belongs to one tile; its actual bounds in the
