@@ -5,6 +5,11 @@ import {buildTimeline,summarizeDay,edgeActual,referenceMinutes,round2} from './p
 const placeLabel=r=>(r.isPeak?'⛰ ':'')+r.name+(r.hasWater?' 💧':'');
 const excelDuration=min=>min==null||min===''?'':Number(min)/1440;
 const font='Microsoft JhengHei';
+export function manualGeometryNote(feature){
+ const parts=feature?.features||[feature];if(!parts.some(part=>part?.manual))return '';
+ const known=parts.some(part=>part?.profile?.some(sample=>Number.isFinite(sample[1]))),missing=parts.some(part=>!part?.profile||part.profile.length<2||part.profile.some(sample=>!Number.isFinite(sample[1])));
+ return '含手動水平路徑距離估算'+(!known?'；高程未取得':missing?'；DEM高程部分未取得':'');
+}
 const dateForDay=(startDate,index)=>{if(!startDate)return '';const d=new Date(startDate+'T00:00:00');d.setDate(d.getDate()+index);return d.getFullYear()+'/'+String(d.getMonth()+1).padStart(2,'0')+'/'+String(d.getDate()).padStart(2,'0')};
 export async function exportExcel({route,days,datasetVersion,tripStartDate,tripName='',terrainData=null,handle=null,name=null}){
  if(!window.ExcelJS)throw new Error('ExcelJS 尚未載入');
@@ -25,7 +30,7 @@ export async function exportExcel({route,days,datasetVersion,tripStartDate,tripN
   for(const r of visibleTimelineRows(tl.rows,day)){
    const e=r.incoming,actual=e?edgeActual(e,day.coefficient):'',f=r.aggregate?aggregateTerrain(terrain?.features||[],r.aggregateItemIds):byItem.get(r.id),m=f?.features?f:f?terrainMetrics([f]):null;
    const isBridge=(terrain?.features||[]).some(x=>x.intermediateCoordinatesUnknown&&x.viaItemIds.includes(r.id));
-   const note=[r.note||'',r.aggregate?'含隱藏節點合計'+(r.aggregateHasManual?'；上河僅計有來源部分':''):'',f?.manual||f?.features?.some(x=>x.manual)?'含手動水平直線距離；高程無資料':'',isBridge?'路徑連續・分段待定位':f?.intermediateCoordinatesUnknown?'跨未定位點合計':r.type!=='rest'&&e&&!f?'地形資料未收錄':''].filter(Boolean).join('；');
+   const note=[r.note||'',r.aggregate?'含隱藏節點合計'+(r.aggregateHasManual?'；上河僅計有來源部分':''):'',manualGeometryNote(f),isBridge?'路徑連續・分段待定位':f?.intermediateCoordinatesUnknown?'跨未定位點合計':r.type!=='rest'&&e&&!f?'地形資料未收錄':''].filter(Boolean).join('；');
    const reference=r.aggregate?r.aggregateOfficialMinutes||null:e?.kind==='official'?referenceMinutes(e):null;
    const k=e?.kind==='official'&&actual!==null&&reference?(e.coefficient??round2(actual/reference)):'';
    const values=r.type==='rest'?['☕ 休息',r.endTime,excelDuration(Number(r.minutes)||0),'','','','','',r.note||'']:[placeLabel(r),r.arrival,e?excelDuration(actual):'',reference!==null?excelDuration(reference):'',k,f?f.distanceMeters/1000:'',m?.ascentMeters??'',m?.descentMeters??'',note];

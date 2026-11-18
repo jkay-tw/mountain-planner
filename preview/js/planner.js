@@ -151,6 +151,8 @@ export function recalcConnections(day,route){
         prevOut.note=prevOut.note||item.note||'';
         prevOut.isPeak=!!(prevOut.isPeak||item.isPeak);
         prevOut.hasWater=!!(prevOut.hasWater||item.hasWater);
+        if(item.showInTable!==false)prevOut.showInTable=true;
+        if(item.waypoint===true){prevOut.waypoint=true;prevOut.auto=false;delete prevOut._generatedForEndpoint;delete prevOut._generatedBaseline;}
         previous=prevOut;
         continue;
       }
