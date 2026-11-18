@@ -134,11 +134,12 @@ export function recalculateSegment(day,toId,route){
  return '已沿既有連通路網重算選定路段。';
 }
 export function visibleTimelineRows(rows,day){
+ const points=day.items.filter(item=>item.type!=='rest'),boundaryIds=new Set([points[0]?.id,points.at(-1)?.id]);
  let pending=[];
  return rows.flatMap(r=>{
   if(r.type==='rest')return [r];
   if(r.incoming)pending.push(r);
-  if(r.showInTable===false)return [];
+  if(r.showInTable===false&&!boundaryIds.has(r.id))return [];
   const parts=pending;pending=[];
   if(parts.length<2)return [r];
   const values=parts.map(x=>edgeActual(x.incoming,day.coefficient));
@@ -148,6 +149,6 @@ export function visibleTimelineRows(rows,day){
 export function aggregateTerrain(features,ids){
  const chosen=features.filter(f=>ids.includes(f.toItemId));
  if(!chosen.length)return null;
- const metric=sign=>chosen.some(f=>!f.profile)?null:chosen.reduce((n,f)=>n+f.profile.slice(1).reduce((a,p,i)=>a+Math.max(0,sign*(p[1]-f.profile[i][1])),0),0);
+ const metric=sign=>chosen.some(f=>!f.profile||f.profile.some(p=>!Number.isFinite(p[1])))?null:chosen.reduce((n,f)=>n+f.profile.slice(1).reduce((a,p,i)=>a+Math.max(0,sign*(p[1]-f.profile[i][1])),0),0);
  return {features:chosen,distanceMeters:chosen.reduce((n,f)=>n+f.distanceMeters,0),ascentMeters:metric(1),descentMeters:metric(-1)};
 }

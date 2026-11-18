@@ -385,4 +385,19 @@
 .path-popup p{margin:0 0 2px}
 .path-map-popup .leaflet-popup-content{margin:6px 8px}
 .itinerary-map>.path-popup{padding:6px}
+.itinerary-map>.path-popup{width:212px;padding:4px}
+.path-map-popup .path-popup{width:196px}
+.path-map-popup .leaflet-popup-content{margin:4px 6px;line-height:1.25}
+.path-popup p{font-size:12px;line-height:1.25}
+.path-map-popup .path-popup p{margin:0 0 2px;font-size:12px;line-height:1.25}
+.path-name-form{gap:2px}
+.gpx-comparison,.osm-planner{margin:6px 0;font-size:13px}
+.gpx-comparison>summary,.osm-planner>summary{cursor:pointer;padding:5px 0;font-weight:650}
+.gpx-comparison [data-import-state]{font-weight:400;color:#53665a;margin-left:6px}
+.gpx-comparison-body{padding:6px 0}
+.gpx-comparison-body label{display:block;margin:4px 0}
+.gpx-comparison-body p{margin:5px 0}
+.gpx-profile-card{margin:6px 0}
+.endpoint-notice,[data-dem-status]{font-size:12px;line-height:1.4;color:#6c4c16;margin:5px 0}
+.osm-sample-review{margin:5px 0}
 @media(max-width:600px),(pointer:coarse){.path-map-popup .leaflet-popup-content{margin-right:28px}}

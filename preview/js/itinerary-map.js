@@ -1,5 +1,6 @@
 import {bindRouteDrag} from './route-drag.js';
 import {mountReview} from './osm-pilot-review.js';
+import {joinLegCoordinates} from './dem-profile.js';
 import {attachOsmPlanner} from './osm-planner-integration.js';
 import {addFreeImagery} from './free-imagery.js';
 import {attachPathEditor} from './path-editor-ui.js';
@@ -15,13 +16,15 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
   let editor=null,imagery=null,osmPlanner=null;
   const hiddenDays=new Set();
   const colors=Array.from({length:10},(_,i)=>terrainDayColor(i));
-  host.innerHTML='<summary>行程地圖與 GPX</summary><div class="geometry-body"><div class="geometry-actions"><button type="button" data-action="load">載入行程地圖</button><button type="button" data-action="fit" disabled>縮放至行程</button><button type="button" data-action="export" disabled>匯出候選 GPX</button><button type="button" data-toggle-profiles aria-expanded="false">每日剖面</button></div><p class="geometry-label-hint">點選節點標籤，可查看海拔與座標</p><div class="geometry-summary"><p data-status role="status">地圖尚未載入。</p><div data-legend class="geometry-legend" aria-label="每日路線圖例"></div></div><ul data-warnings></ul><div data-profile class="terrain-profiles" hidden></div><div data-map class="itinerary-map" aria-label="行程候選路徑地圖"></div><div class="geometry-source"><span>地圖 © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a> · 高程：<a href="https://rudymap.tw/">魯地圖 DEM</a></span><details><summary>資料來源與說明</summary><p>© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a>，ODbL 1.0。規劃座標另參考 TWMap、Happyman 與具來源記錄點。參考線形包含 OSM 步行路網與另有標示的山友歷史行跡；不代表即時通行狀態。缺座標或缺線形會逐段提示，統計只計已知部分。OSM 全臺快照：2026-11-03。高度來源：<a href="https://rudymap.tw/">魯地圖 DEM mix v2026</a>，約30m格網估算。</p></details></div></div>';
+  host.innerHTML='<summary>行程地圖與 GPX</summary><div class="geometry-body"><div class="geometry-actions"><button type="button" data-action="load">載入行程地圖</button><button type="button" data-action="fit" disabled>縮放至行程</button><button type="button" data-action="export" disabled>匯出候選 GPX</button><button type="button" data-toggle-profiles aria-expanded="false">每日剖面</button></div><p class="geometry-label-hint">點選節點標籤，可查看海拔與座標</p><div class="geometry-summary"><p data-status role="status">地圖尚未載入。</p><div data-legend class="geometry-legend" aria-label="每日路線圖例"></div></div><ul data-warnings></ul><p data-dem-status role="status" hidden></p><div data-profile class="terrain-profiles" hidden></div><div data-map class="itinerary-map" aria-label="行程候選路徑地圖"></div><div class="geometry-source"><span>地圖 © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a> · 高程：<a href="https://rudymap.tw/">魯地圖 DEM</a></span><details><summary>資料來源與說明</summary><p>© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a>，ODbL 1.0。規劃座標另參考 TWMap、Happyman 與具來源記錄點。參考線形包含 OSM 步行路網與另有標示的山友歷史行跡；不代表即時通行狀態。缺座標或缺線形會逐段提示，統計只計已知部分。OSM 全臺快照：2026-11-03。高度來源：<a href="https://rudymap.tw/">魯地圖 DEM mix v2026</a>，約30m格網估算。</p></details></div></div>';
   const status=host.querySelector('[data-status]'),warnings=host.querySelector('[data-warnings]'),load=host.querySelector('[data-action="load"]'),exp=host.querySelector('[data-action="export"]'),fit=host.querySelector('[data-action="fit"]');
   const profiles=host.querySelector('[data-profile]'),profileToggle=host.querySelector('[data-toggle-profiles]');
   profileToggle.onclick=()=>{profiles.hidden=!profiles.hidden;profileToggle.setAttribute('aria-expanded',String(!profiles.hidden))};
   function refresh(){
     if(!data)return;
     latest=resolveItineraryGeometry(getDays(),data);
+    const demStatus=host.querySelector('[data-dem-status]');
+    if(demStatus&&!demStatus.dataset.busy){const stale=getDays().some((day,index)=>day.items.some(item=>item.demSnapshot&&JSON.stringify(item.demSnapshot.shape)!==JSON.stringify(joinLegCoordinates(latest.days[index].features.filter(f=>f.toItemId===item.id)))));if(stale){demStatus.dataset.transient='true';demStatus.hidden=false;demStatus.textContent='路徑已變更，高度需更新；舊快照不會套用到新線形。';}else if(latest.days.some(day=>day.features.some(f=>!f.profile))){demStatus.dataset.transient='true';demStatus.hidden=false;demStatus.textContent='部分路徑高度尚未取得，可更新 DEM；資料缺漏仍會標示未知。';}else if(demStatus.dataset.transient){demStatus.hidden=true;demStatus.textContent='';delete demStatus.dataset.transient;}}
     status.textContent=`${(latest.distanceMeters/1000).toFixed(2)} km · ${latest.gaps.length||latest.unlocated.length?`${latest.gaps.length} 段缺漏 · ${latest.unlocated.length} 點未定位`:'路徑完整'}`;
     warnings.replaceChildren();
     const notes=[...latest.unlocated.map(n=>`${n.name}：${n.note}`),...latest.days.flatMap(d=>d.features.filter(f=>f.routingAmbiguity).map(f=>`Day ${d.dayIndex+1} ${f.from} → ${f.to}：${f.routingAmbiguity}`)),...latest.gaps.map(g=>`Day ${g.dayIndex+1} ${g.from} → ${g.to}：${g.reason}`)];
@@ -161,8 +164,8 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
       map.on('baselayerchange',()=>refresh());
       group=L.featureGroup().addTo(map);labelGroup=L.layerGroup().addTo(map);
       editor=attachPathEditor({host,map,getDays,getRoute,data,onChange,refitNetwork:(day,toId,force)=>osmPlanner?.refit(day,toId,force)});
-      mountReview(host.querySelector('[data-map]'),map);
       osmPlanner=attachOsmPlanner({host,map,layers,getDays,data,onChange,onStatus:message=>editor?.setStatus(message),onPickSpan:(span,ll)=>editor.addOnSpan(span,ll)});
+      mountReview(host.querySelector('[data-map]'),map,{advancedHost:osmPlanner.panel});
     }
     refresh();load.hidden=true;map.invalidateSize();if(group.getBounds().isValid())map.fitBounds(group.getBounds(),{padding:[25,25],maxZoom:16});
   }

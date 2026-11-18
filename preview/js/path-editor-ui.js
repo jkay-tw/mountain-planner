@@ -41,7 +41,7 @@ export function attachPathEditor({host,map,getDays,data,onChange,refitNetwork=()
    L.marker([c.coordinate[1],c.coordinate[0]],{draggable:true,icon:L.divIcon({className:'path-control-marker',html:span,iconSize:[44,44],iconAnchor:[22,22]})}).bindPopup(content,{autoPan:true,autoPanPadding:[16,16],autoPanPaddingTopLeft:[16,56],maxWidth:240,className:'path-map-popup'}).on('dragend',event=>{const p=event.target.getLatLng();change(e=>{ensureControlShape(e);moveRouteControl(e,index,[p.lng,p.lat]);});}).addTo(layer);
   }
   $('[data-visible]').replaceChildren();
-  for(const [i,item] of items.entries()){const label=document.createElement('label'),check=document.createElement('input');check.type='checkbox';check.checked=item.showInTable!==false;check.disabled=i===0||i===items.length-1;check.onchange=()=>commit(()=>{item.showInTable=check.checked;},{refit:false});label.append(check,document.createTextNode(item.name));$('[data-visible]').append(label);}
+  for(const [i,item] of items.entries()){const label=document.createElement('label'),check=document.createElement('input');check.type='checkbox';check.checked=i===0||i===items.length-1||item.showInTable!==false;check.disabled=i===0||i===items.length-1;check.onchange=()=>commit(()=>{item.showInTable=check.checked;},{refit:false});label.append(check,document.createTextNode(item.name));$('[data-visible]').append(label);}
  }
  function choose(dayIndex,toId){$('[data-day]').value=String(dayIndex);refresh();$('[data-segment]').value=toId;refresh();}
  refresh();
