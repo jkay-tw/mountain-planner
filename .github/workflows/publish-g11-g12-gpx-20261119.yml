@@ -1,0 +1,21 @@
+name: Publish G11 G12 owner GPX update
+on:
+  push:
+    branches: [main]
+    paths: ['docs/G11_G12_OWNER_GPX_20261119.md']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 tools/sync_coordinate_geometry.py --check
+      - name: Publish source-preserving data update
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create data-g11-g12-gpx-20261119 --target "$GITHUB_SHA" --title '屯原—雲海—天池 GPX 線形更新（2026-11-19）' --notes-file docs/G11_G12_OWNER_GPX_20261119.md --latest=false data/geometry/sources/g11-g12-tunyuan-tianchi-owner-20261119.gpx data/geometry/sources/g11-g12-owner-gpx-application-20261119.json data/audits/g11-g12-owner-gpx-release-20261119.json
