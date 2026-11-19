@@ -1,0 +1,22 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {resolveItineraryGeometry,geometryToGpx,distanceMeters} from '../preview/js/itinerary-geometry.js';
+const data=JSON.parse(readFileSync(new URL('../preview/data/geometry/planner-terrain-v1.json',import.meta.url),'utf8'));
+const ids=['shared:cw-v07-045','shared:cw-v07-075','shared:cw-v07-038'];
+const day=order=>({items:order.map((id,i)=>({id:'i'+i,type:'location',nodeId:id,name:id,incoming:i?{kind:'official',fromNodeId:order[i-1],toNodeId:id}:null}))});
+test('owner-approved endpoint connectors retain their separate provenance and reverse exactly',()=>{
+ const forward=resolveItineraryGeometry([day(ids)],data),reverse=resolveItineraryGeometry([day([...ids].reverse())],data);
+ assert.equal(forward.days[0].features.length,2);assert.equal(reverse.days[0].features.length,2);
+ assert.ok(Math.abs(forward.distanceMeters-reverse.distanceMeters)<.001);
+ const [a,b]=forward.days[0].features;
+ assert.equal(distanceMeters(a.coordinates.at(-1),b.coordinates[0]),0);
+ assert.equal(data.ownerGpxReference.userConnectors.length,2);
+ assert.deepEqual(data.ownerGpxReference.userConnectors.map(c=>c.distanceMeters),[18.108,9.893]);
+ assert.ok(data.ownerGpxReference.userConnectors.every(c=>c.ownerPassable&&c.source.includes('not-GPX')));
+ const gpx=geometryToGpx(forward,data);
+ assert.equal((gpx.match(/<trkseg>/g)||[]).length,2);
+ assert.ok(gpx.includes('使用者提供屯原'));
+ assert.deepEqual(reverse.days[0].features[0].coordinates,[...b.coordinates].reverse());
+ assert.ok(data.notes.some(n=>n.includes('18m')&&n.includes('不是GPX實測')));
+});
