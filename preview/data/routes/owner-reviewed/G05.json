@@ -306,9 +306,9 @@
     },
     {
       "id": "node:85687363d4e92172c5af",
-      "name": "0K·49K岔路",
+      "name": "小雪山遊客中心",
       "aliases": [
-        "小雪山遊客中心"
+        "0K·49K岔路"
       ],
       "groups": [
         "G05"
@@ -2535,7 +2535,7 @@
       "fromId": "node:bf944315a8814addbcd8",
       "toId": "node:85687363d4e92172c5af",
       "from": "4K國家公園碑",
-      "to": "0K·49K岔路",
+      "to": "小雪山遊客中心",
       "minutes": 110,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -2573,7 +2573,7 @@
     {
       "fromId": "node:85687363d4e92172c5af",
       "toId": "node:bf944315a8814addbcd8",
-      "from": "0K·49K岔路",
+      "from": "小雪山遊客中心",
       "to": "4K國家公園碑",
       "minutes": 110,
       "travelMode": "walking",

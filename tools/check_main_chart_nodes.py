@@ -30,9 +30,18 @@ def check_catalog(root=ROOT):
     inventory=json.loads((root/'data/audits/main_step_chart_label_inventory_20261028.json').read_text())
     manifest=json.loads((root/'data/unified-editor-manifest.json').read_text())
     issues=[]
+    decisions_path=root/'data/geometry/sources/pingfeng-names-owner-20261120.json'
+    renames={n['id']:n for n in json.loads(decisions_path.read_text()).get('nameChanges',[])} if decisions_path.exists() else {}
     for row in manifest['routes']:
         route=json.loads((root/row['file'].split('?')[0]).read_text())
-        issues.extend(check_route(route,inventory))
+        # Owner-confirmed display renames retain the reviewed chart label as alias.
+        # Validate that original label against the inventory; never approve new IDs.
+        import copy
+        checked=copy.deepcopy(route)
+        for node in checked.get('nodes',[]):
+            decision=renames.get(node['id'])
+            if decision and node['name']==decision['newName'] and decision['oldName'] in node.get('aliases',[]):node['name']=decision['oldName']
+        issues.extend(check_route(checked,inventory))
     return issues
 
 if __name__=='__main__':

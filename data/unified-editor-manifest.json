@@ -40,7 +40,7 @@
     {
       "id": "G05",
       "name": "G05｜雪山西南稜",
-      "file": "data/routes/owner-reviewed/G05.json?v=aliasf0db3e2357ce",
+      "file": "data/routes/owner-reviewed/G05.json?v=names71021fd83c9e",
       "status": "owner-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg"
     },
@@ -54,7 +54,7 @@
     {
       "id": "G07",
       "name": "G07｜北一段",
-      "file": "data/routes/owner-reviewed/G07.json?v=v0724",
+      "file": "data/routes/owner-reviewed/G07.json?v=namesecf3aea4b028",
       "status": "owner-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G07_hiking_new.jpg"
     },
@@ -75,14 +75,14 @@
     {
       "id": "G09-cfb4c85c",
       "name": "G09｜合歡群峰",
-      "file": "data/routes/owner-reviewed/G09-cfb4c85c.json?v=review89a14f23dc6d",
+      "file": "data/routes/owner-reviewed/G09-cfb4c85c.json?v=namesf6c039ccaa4c",
       "status": "owner-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg"
     },
     {
       "id": "G09-19d020e9",
       "name": "G09｜奇萊群峰",
-      "file": "data/routes/owner-reviewed/G09-19d020e9.json?v=reviewdf867fe1d9c2",
+      "file": "data/routes/owner-reviewed/G09-19d020e9.json?v=names591e307b4bae",
       "status": "owner-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G09_hiking_new.jpg"
     },
@@ -96,14 +96,14 @@
     {
       "id": "G10",
       "name": "G10｜奇萊東稜",
-      "file": "data/routes/owner-reviewed/G10.json?v=review37227b4e70a2",
+      "file": "data/routes/owner-reviewed/G10.json?v=names13a54ed7f027",
       "status": "owner-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G10_hiking.jpg"
     },
     {
       "id": "G11",
       "name": "G11｜能高越嶺",
-      "file": "data/routes/owner-reviewed/G11.json?v=reviewb78d68b64b3f",
+      "file": "data/routes/owner-reviewed/G11.json?v=names3968f17f8795",
       "status": "owner-reviewed-preview",
       "source_url": "https://www.sunriver.com.tw/images/hiking/G11_hiking.jpg"
     },

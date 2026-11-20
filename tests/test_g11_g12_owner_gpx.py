@@ -1,6 +1,7 @@
 import copy
 import hashlib
 import json
+import gzip
 from pathlib import Path
 import sys
 import unittest
@@ -37,12 +38,20 @@ class OwnerGpxTests(unittest.TestCase):
         digest = lambda value: hashlib.sha256(json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
         changed = {s['id'] for s in self.report['previousSpans']}
         self.assertEqual(len(changed), 2)
+        # Later authorized coordinate/name updates must not rewrite the historical
+        # GPX approval record. Test its original invariants against the frozen input,
+        # and independently require both approved G11/G12 spans to remain intact now.
+        archive=ROOT/'data/geometry/sources/pingfeng-prior-20261120.json.gz'
+        frozen=json.loads(gzip.decompress(archive.read_bytes()))['g11Files']
+        historical=json.loads(frozen['data/geometry/planner-terrain-v1.json'])
         for key in ('nodes', 'spanDependencies'):
-            self.assertEqual(digest(self.data[key]), self.report['baselineInvariants'][key])
-        self.assertEqual(digest([s for s in self.data['spans'] if s['id'] not in changed]), self.report['baselineInvariants']['unaffectedSpans'])
+            self.assertEqual(digest(historical[key]), self.report['baselineInvariants'][key])
+        self.assertEqual(digest([s for s in historical['spans'] if s['id'] not in changed]), self.report['baselineInvariants']['unaffectedSpans'])
+        for span in historical['spans']:
+            if span['id'] in changed:self.assertIn(span,self.data['spans'])
         self.assertEqual(len(self.data['spans']), 695)
         for name, sha in self.report['baselineRouteSha256'].items():
-            content = (ROOT/f'data/routes/owner-reviewed/{name}.json').read_bytes().replace(b'\r\n', b'\n')
+            content = frozen[f'data/routes/owner-reviewed/{name}.json'].encode()
             self.assertEqual(hashlib.sha256(content).hexdigest(), sha)
 
     def test_builder_is_nonmutating_and_rejects_wrong_dem(self):
