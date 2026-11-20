@@ -24,8 +24,10 @@
     },
     {
       "id": "node:2b986c08a9f8d44153ea",
-      "name": "奇萊主山",
-      "aliases": [],
+      "name": "奇萊主峰",
+      "aliases": [
+        "奇萊主山"
+      ],
       "groups": [
         "G09-19d020e9"
       ],
@@ -96,8 +98,10 @@
     },
     {
       "id": "shared:cw-v07-022",
-      "name": "南峰登山口",
-      "aliases": [],
+      "name": "奇萊南峰登山口",
+      "aliases": [
+        "南峰登山口"
+      ],
       "groups": [
         "G09-19d020e9"
       ],
@@ -132,8 +136,10 @@
     },
     {
       "id": "shared:cw-v07-041",
-      "name": "奇萊主山北峰",
-      "aliases": [],
+      "name": "奇萊北峰",
+      "aliases": [
+        "奇萊主山北峰"
+      ],
       "groups": [
         "G09-19d020e9"
       ],
@@ -141,8 +147,10 @@
     },
     {
       "id": "shared:cw-v07-042",
-      "name": "奇萊主山南峰",
-      "aliases": [],
+      "name": "奇萊南峰",
+      "aliases": [
+        "奇萊主山南峰"
+      ],
       "groups": [
         "G09-19d020e9"
       ],
@@ -854,7 +862,7 @@
     {
       "fromId": "shared:cw-v07-022",
       "toId": "shared:cw-v07-039",
-      "from": "南峰登山口",
+      "from": "奇萊南峰登山口",
       "to": "天池岔路口",
       "minutes": 15,
       "travelMode": "walking",
@@ -908,7 +916,7 @@
       "fromId": "shared:cw-v07-039",
       "toId": "shared:cw-v07-022",
       "from": "天池岔路口",
-      "to": "南峰登山口",
+      "to": "奇萊南峰登山口",
       "minutes": 20,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -961,7 +969,7 @@
       "fromId": "node:77bc428ee25c80237c13",
       "toId": "shared:cw-v07-022",
       "from": "裡山森林入口",
-      "to": "南峰登山口",
+      "to": "奇萊南峰登山口",
       "minutes": 150,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -999,7 +1007,7 @@
     {
       "fromId": "shared:cw-v07-022",
       "toId": "node:77bc428ee25c80237c13",
-      "from": "南峰登山口",
+      "from": "奇萊南峰登山口",
       "to": "裡山森林入口",
       "minutes": 185,
       "travelMode": "walking",
@@ -1506,7 +1514,7 @@
     {
       "fromId": "shared:cw-v07-041",
       "toId": "node:dca389db39359114677f",
-      "from": "奇萊主山北峰",
+      "from": "奇萊北峰",
       "to": "奇萊北峰岔路",
       "minutes": 35,
       "travelMode": "walking",
@@ -1546,7 +1554,7 @@
       "fromId": "node:dca389db39359114677f",
       "toId": "shared:cw-v07-041",
       "from": "奇萊北峰岔路",
-      "to": "奇萊主山北峰",
+      "to": "奇萊北峰",
       "minutes": 55,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -2109,7 +2117,7 @@
       "fromId": "node:708f66f3eac743cb652e",
       "toId": "node:2b986c08a9f8d44153ea",
       "from": "主山登山口",
-      "to": "奇萊主山",
+      "to": "奇萊主峰",
       "minutes": 25,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -2147,7 +2155,7 @@
     {
       "fromId": "node:2b986c08a9f8d44153ea",
       "toId": "node:708f66f3eac743cb652e",
-      "from": "奇萊主山",
+      "from": "奇萊主峰",
       "to": "主山登山口",
       "minutes": 15,
       "travelMode": "walking",
@@ -2186,8 +2194,8 @@
     {
       "fromId": "shared:cw-v07-022",
       "toId": "shared:cw-v07-042",
-      "from": "南峰登山口",
-      "to": "奇萊主山南峰",
+      "from": "奇萊南峰登山口",
+      "to": "奇萊南峰",
       "minutes": 60,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -2239,8 +2247,8 @@
     {
       "fromId": "shared:cw-v07-042",
       "toId": "shared:cw-v07-022",
-      "from": "奇萊主山南峰",
-      "to": "南峰登山口",
+      "from": "奇萊南峰",
+      "to": "奇萊南峰登山口",
       "minutes": 40,
       "travelMode": "walking",
       "verificationStatus": "verified",

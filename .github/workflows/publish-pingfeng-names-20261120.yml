@@ -1,0 +1,21 @@
+name: Publish Pingfeng coordinates and owner display names
+on:
+  push:
+    branches: [main]
+    paths: ['docs/PINGFENG_NAMES_DATA_20261120.md']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 tools/sync_coordinate_geometry.py --check
+      - name: Publish approved data patch, retaining application latest release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create data-pingfeng-names-20261120 --target "$GITHUB_SHA" --title '屏風山座標、OSM 路徑與主名稱更新（2026-11-20）' --notes-file docs/PINGFENG_NAMES_DATA_20261120.md --latest=false data/audits/pingfeng-names-20261120.json data/geometry/sources/pingfeng-names-owner-20261120.json data/geometry/sources/pingfeng-owner-direction-20261120.gpx data/geometry/sources/pingfeng-prior-20261120.json.gz

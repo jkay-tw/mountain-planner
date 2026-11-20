@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-20",
+  "baseCommit": "57b5469c68321276ed6acbcadba54dc54ff81c5f",
+  "sheetId": "1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk",
+  "tabId": 118,
+  "tabName": "節點別稱填寫",
+  "nameChanges": [
+    {
+      "row": 165,
+      "id": "node:85687363d4e92172c5af",
+      "oldName": "0K·49K岔路",
+      "newName": "小雪山遊客中心",
+      "aliases": "",
+      "status": "未提出變更"
+    },
+    {
+      "row": 226,
+      "id": "g07-019",
+      "oldName": "南湖大山北峰",
+      "newName": "南湖北峰",
+      "aliases": "",
+      "status": "未提出變更"
+    },
+    {
+      "row": 227,
+      "id": "g07-020",
+      "oldName": "南湖大山東南峰",
+      "newName": "南湖東南峰",
+      "aliases": "",
+      "status": "未提出變更"
+    },
+    {
+      "row": 228,
+      "id": "g07-021",
+      "oldName": "南湖大山東峰",
+      "newName": "南湖東峰",
+      "aliases": "",
+      "status": "未提出變更"
+    },
+    {
+      "row": 229,
+      "id": "g07-022",
+      "oldName": "南湖大山南峰",
+      "newName": "南湖南峰",
+      "aliases": "",
+      "status": "未提出變更"
+    },
+    {
+      "row": 230,
+      "id": "g07-023",
+      "oldName": "南湖大山南峰岔路",
+      "newName": "南湖南峰岔路",
+      "aliases": "",
+      "status": "未提出變更"
+    },
+    {
+      "row": 231,
+      "id": "g07-024",
+      "oldName": "南湖主峰",
+      "newName": "南湖大山",
+      "aliases": "",
+      "status": "未提出變更"
+    },
+    {
+      "row": 287,
+      "id": "node:1c529b28513d982ad46e",
+      "oldName": "合歡山東峰",
+      "newName": "合歡東峰",
+      "aliases": "",
+      "status": "未提出變更"
+    },
+    {
+      "row": 296,
+      "id": "node:396247de591a031f9bfb",
+      "oldName": "北合歡山",
+      "newName": "合歡北峰",
+      "aliases": "",
+      "status": "未提出變更"
+    },
+    {
+      "row": 305,
+      "id": "node:988e2bd2e27c233431cf",
+      "oldName": "合歡山",
+      "newName": "合歡主峰",
+      "aliases": "",
+      "status": "未提出變更"
+    },
+    {
+      "row": 312,
+      "id": "node:ccb468c0ed9c0bdb556f",
+      "oldName": "北合歡山登山口",
+      "newName": "合歡北峰登山口",
+      "aliases": "",
+      "status": "未提出變更"
+    },
+    {
+      "row": 314,
+      "id": "node:e6b49d265bc73a591c95",
+      "oldName": "西合歡山",
+      "newName": "合歡西峰",
+      "aliases": "",
+      "status": "未提出變更"
+    },
+    {
+      "row": 319,
+      "id": "node:2b986c08a9f8d44153ea",
+      "oldName": "奇萊主山",
+      "newName": "奇萊主峰",
+      "aliases": "",
+      "status": "未提出變更"
+    },
+    {
+      "row": 327,
+      "id": "shared:cw-v07-022",
+      "oldName": "南峰登山口",
+      "newName": "奇萊南峰登山口",
+      "aliases": "",
+      "status": "未提出變更"
+    },
+    {
+      "row": 331,
+      "id": "shared:cw-v07-041",
+      "oldName": "奇萊主山北峰",
+      "newName": "奇萊北峰",
+      "aliases": "",
+      "status": "未提出變更"
+    },
+    {
+      "row": 332,
+      "id": "shared:cw-v07-042",
+      "oldName": "奇萊主山南峰",
+      "newName": "奇萊南峰",
+      "aliases": "",
+      "status": "未提出變更"
+    }
+  ],
+  "coordinateChanges": [
+    {
+      "nodeId": "node:97e309d22937a82f9ade",
+      "name": "鐵線吊橋",
+      "twd97": [
+        283047,
+        2673643
+      ]
+    },
+    {
+      "nodeId": "node:ac2e2b0473232211e496",
+      "name": "第一次過溪",
+      "twd97": [
+        282925,
+        2674044
+      ]
+    }
+  ],
+  "authorization": "Owner explicitly requested database recomputation, merge, release and source Google Sheet update in chat."
+}

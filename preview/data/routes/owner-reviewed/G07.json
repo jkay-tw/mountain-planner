@@ -177,8 +177,10 @@
     },
     {
       "id": "g07-019",
-      "name": "南湖大山北峰",
-      "aliases": [],
+      "name": "南湖北峰",
+      "aliases": [
+        "南湖大山北峰"
+      ],
       "groups": [
         "G07"
       ],
@@ -186,8 +188,10 @@
     },
     {
       "id": "g07-020",
-      "name": "南湖大山東南峰",
-      "aliases": [],
+      "name": "南湖東南峰",
+      "aliases": [
+        "南湖大山東南峰"
+      ],
       "groups": [
         "G07"
       ],
@@ -195,8 +199,10 @@
     },
     {
       "id": "g07-021",
-      "name": "南湖大山東峰",
-      "aliases": [],
+      "name": "南湖東峰",
+      "aliases": [
+        "南湖大山東峰"
+      ],
       "groups": [
         "G07"
       ],
@@ -204,8 +210,10 @@
     },
     {
       "id": "g07-022",
-      "name": "南湖大山南峰",
-      "aliases": [],
+      "name": "南湖南峰",
+      "aliases": [
+        "南湖大山南峰"
+      ],
       "groups": [
         "G07"
       ],
@@ -213,8 +221,10 @@
     },
     {
       "id": "g07-023",
-      "name": "南湖大山南峰岔路",
-      "aliases": [],
+      "name": "南湖南峰岔路",
+      "aliases": [
+        "南湖大山南峰岔路"
+      ],
       "groups": [
         "G07"
       ],
@@ -222,8 +232,10 @@
     },
     {
       "id": "g07-024",
-      "name": "南湖主峰",
-      "aliases": [],
+      "name": "南湖大山",
+      "aliases": [
+        "南湖主峰"
+      ],
       "groups": [
         "G07"
       ],
@@ -1411,7 +1423,7 @@
       "fromId": "g07-014",
       "toId": "g07-019",
       "from": "北山登山口",
-      "to": "南湖大山北峰",
+      "to": "南湖北峰",
       "minutes": 80,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -1449,7 +1461,7 @@
     {
       "fromId": "g07-019",
       "toId": "g07-014",
-      "from": "南湖大山北峰",
+      "from": "南湖北峰",
       "to": "北山登山口",
       "minutes": 70,
       "travelMode": "walking",
@@ -1488,7 +1500,7 @@
     {
       "fromId": "g07-019",
       "toId": "g07-027",
-      "from": "南湖大山北峰",
+      "from": "南湖北峰",
       "to": "南湖圈谷山莊",
       "minutes": 35,
       "travelMode": "walking",
@@ -1528,7 +1540,7 @@
       "fromId": "g07-027",
       "toId": "g07-019",
       "from": "南湖圈谷山莊",
-      "to": "南湖大山北峰",
+      "to": "南湖北峰",
       "minutes": 55,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -2346,7 +2358,7 @@
     {
       "fromId": "g07-024",
       "toId": "g07-013",
-      "from": "南湖主峰",
+      "from": "南湖大山",
       "to": "主峰、南峰三岔路口",
       "minutes": 30,
       "travelMode": "walking",
@@ -2386,7 +2398,7 @@
       "fromId": "g07-013",
       "toId": "g07-024",
       "from": "主峰、南峰三岔路口",
-      "to": "南湖主峰",
+      "to": "南湖大山",
       "minutes": 45,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -2503,7 +2515,7 @@
       "fromId": "g07-003",
       "toId": "g07-021",
       "from": "上圈谷",
-      "to": "南湖大山東峰",
+      "to": "南湖東峰",
       "minutes": 60,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -2541,7 +2553,7 @@
     {
       "fromId": "g07-021",
       "toId": "g07-003",
-      "from": "南湖大山東峰",
+      "from": "南湖東峰",
       "to": "上圈谷",
       "minutes": 30,
       "travelMode": "walking",
@@ -2659,7 +2671,7 @@
       "fromId": "g07-018",
       "toId": "g07-021",
       "from": "東峰登山口",
-      "to": "南湖大山東峰",
+      "to": "南湖東峰",
       "minutes": 15,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -2697,7 +2709,7 @@
     {
       "fromId": "g07-021",
       "toId": "g07-018",
-      "from": "南湖大山東峰",
+      "from": "南湖東峰",
       "to": "東峰登山口",
       "minutes": 10,
       "travelMode": "walking",
@@ -2815,7 +2827,7 @@
       "fromId": "g07-035",
       "toId": "g07-020",
       "from": "陶塞峰登山口",
-      "to": "南湖大山東南峰",
+      "to": "南湖東南峰",
       "minutes": 75,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -2853,7 +2865,7 @@
     {
       "fromId": "g07-020",
       "toId": "g07-035",
-      "from": "南湖大山東南峰",
+      "from": "南湖東南峰",
       "to": "陶塞峰登山口",
       "minutes": 70,
       "travelMode": "walking",
@@ -3204,7 +3216,7 @@
     {
       "fromId": "g07-020",
       "toId": "g07-031",
-      "from": "南湖大山東南峰",
+      "from": "南湖東南峰",
       "to": "指標2.2K岔路口",
       "minutes": 55,
       "travelMode": "walking",
@@ -3244,7 +3256,7 @@
       "fromId": "g07-031",
       "toId": "g07-020",
       "from": "指標2.2K岔路口",
-      "to": "南湖大山東南峰",
+      "to": "南湖東南峰",
       "minutes": 75,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -3517,7 +3529,7 @@
       "fromId": "g07-008",
       "toId": "g07-023",
       "from": "中央尖溪山屋",
-      "to": "南湖大山南峰岔路",
+      "to": "南湖南峰岔路",
       "minutes": 340,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -3555,7 +3567,7 @@
     {
       "fromId": "g07-023",
       "toId": "g07-008",
-      "from": "南湖大山南峰岔路",
+      "from": "南湖南峰岔路",
       "to": "中央尖溪山屋",
       "minutes": 190,
       "travelMode": "walking",
@@ -3595,7 +3607,7 @@
       "fromId": "g07-026",
       "toId": "g07-023",
       "from": "南湖池山屋(廢棄)",
-      "to": "南湖大山南峰岔路",
+      "to": "南湖南峰岔路",
       "minutes": 95,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -3633,7 +3645,7 @@
     {
       "fromId": "g07-023",
       "toId": "g07-026",
-      "from": "南湖大山南峰岔路",
+      "from": "南湖南峰岔路",
       "to": "南湖池山屋(廢棄)",
       "minutes": 120,
       "travelMode": "walking",
@@ -3672,8 +3684,8 @@
     {
       "fromId": "g07-023",
       "toId": "g07-022",
-      "from": "南湖大山南峰岔路",
-      "to": "南湖大山南峰",
+      "from": "南湖南峰岔路",
+      "to": "南湖南峰",
       "minutes": 15,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -3711,8 +3723,8 @@
     {
       "fromId": "g07-022",
       "toId": "g07-023",
-      "from": "南湖大山南峰",
-      "to": "南湖大山南峰岔路",
+      "from": "南湖南峰",
+      "to": "南湖南峰岔路",
       "minutes": 10,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -3750,7 +3762,7 @@
     {
       "fromId": "g07-022",
       "toId": "g07-010",
-      "from": "南湖大山南峰",
+      "from": "南湖南峰",
       "to": "巴巴山",
       "minutes": 55,
       "travelMode": "walking",
@@ -3790,7 +3802,7 @@
       "fromId": "g07-010",
       "toId": "g07-022",
       "from": "巴巴山",
-      "to": "南湖大山南峰",
+      "to": "南湖南峰",
       "minutes": 60,
       "travelMode": "walking",
       "verificationStatus": "verified",
