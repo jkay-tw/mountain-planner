@@ -1,0 +1,21 @@
+name: Publish Ize coordinate 20261123
+on:
+  push:
+    branches: [main]
+    paths: ['docs/IZE_COORDINATE_20261123.md']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 tools/sync_coordinate_geometry.py --check
+      - name: Publish approved data patch, retaining application latest release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create data-ize-coordinate-20261123 --target "$GITHUB_SHA" --title '伊澤山第二登山口座標更新（2026-11-23）' --notes-file docs/IZE_COORDINATE_20261123.md --latest=false data/geometry/sources/ize-owner-20261123.json data/geometry/sources/ize-prior-20261123.json.gz

@@ -4867,6 +4867,28 @@
         "coordinate": null,
         "action": "ignore"
       }
+    },
+    {
+      "nodeId": "g04-020",
+      "reviewId": "OWNER-20261123-IZE2",
+      "name": "伊澤山第二登山口",
+      "action": "coordinate",
+      "choice": "自行補座標",
+      "coordinate": [
+        121.241621,
+        24.469212
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 274493,
+        "y": 2707010
+      },
+      "source": {
+        "kind": "owner-chat",
+        "date": "2026-11-23",
+        "evidenceRef": "data/geometry/sources/ize-owner-20261123.json"
+      },
+      "note": "使用者指定 TWD97(274493,2707010)，固定封存OSM/DEM局部重算"
     }
   ]
 }
