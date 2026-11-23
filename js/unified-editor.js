@@ -15,9 +15,9 @@ import {validatePlan} from './validation.js?v=segments1';
 import {addRouteIdentity,migrateDaysToNodeIds,findNodeById} from './node-identity.js?v=review20261112b';
 import {migrateLegacyPlanDays} from './legacy-plan-migration.js?v=review20261112b';
 import {exportExcel} from './exporter.js?v=tripname2';
-import {filterLocations,searchLocationLabel} from './node-browser.js?v=aliases2';
+import {filterLocations,searchLocationLabel} from './node-browser.js?v=owner1123';
 import {nodeAliases,showNodeAliases} from './node-aliases.js?v=aliases1';
-import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=v084';
+import {mergeReviewedRoutes,nodesInScope,appendDisconnectedNode} from './global-route.js?v=owner1123';
 
 const $=id=>document.getElementById(id);
 const IS_PRODUCTION=document.body.dataset.mode==='production';
@@ -75,7 +75,7 @@ async function init(){
   days=restoredDays?.length?sanitizeDays(migrateDaysToNodeIds(restoredDays,route)):[newDay(0)];
   if(IS_DEMO){days=makeDemoDays(route,uid);scope='G04';$('routeSelect').value=scope;const banner=document.createElement('div');banner.className='notice';banner.textContent='範例模式：可以試用快速加入與編輯，這個頁面不讀寫原行程暫存。';$('daysContainer').before(banner)}
   $('dayCount').value=String(days.length);
-  try{const response=await fetch('data/geometry/planner-terrain-v1.json?v=geo9d92baaac24b',{cache:'no-store'});if(!response.ok)throw Error();terrainData=await response.json()}catch(error){console.warn('節點座標與地形資料未載入')}
+  try{const response=await fetch('data/geometry/planner-terrain-v1.json?v=geo3e0121a9a9c2',{cache:'no-store'});if(!response.ok)throw Error();terrainData=await response.json()}catch(error){console.warn('節點座標與地形資料未載入')}
   bindGlobal();
   render(false);saveAutosave(false);checkpoint();
   if($('itineraryGeometry'))import('./itinerary-map.js?v=autoload1')

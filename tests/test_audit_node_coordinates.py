@@ -24,7 +24,7 @@ class SpatialAuditTests(unittest.TestCase):
         self.assertEqual(self.terrain, baseline)
         self.assertEqual({n['nodeId'] for n in report['nodes']}, {n['nodeId'] for n in self.terrain['nodes']})
         self.assertEqual(sum(report['counts'].values()), 720)
-        self.assertEqual(report['counts']['依政策不定位'], 46)
+        self.assertEqual(report['counts']['依政策不定位'], 45)
         self.assertEqual(report['counts'].get('待補座標', 0), 0)
         self.assertNotIn('來源已核實', report['counts'])
 

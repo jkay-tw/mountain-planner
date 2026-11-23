@@ -1,4 +1,5 @@
 import test from 'node:test';
+import {gunzipSync} from 'node:zlib';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
@@ -42,7 +43,8 @@ test('Sheet rename retains identity and old alias; mini maps consume all newly a
  }
  // Reconstruct historical IDs only for routes containing an explicitly merged old node.
  // Every original directional record/time must still reproduce the archived signature.
- const historical=structuredClone(routes);
+ const prior=JSON.parse(gunzipSync(readFileSync(new URL('../data/geometry/sources/route-prior-20261123.json.gz',import.meta.url))));
+ const historical=manifest.routes.map(m=>JSON.parse(prior[m.file.split('?')[0]]));
  const g04followup=load('data/geometry/sources/g04-owner-followup-20261112.json');
  const g04=historical.find(r=>r.route_id==='G04');
  g04.segments=g04.segments.filter(e=>e.verificationBasis!=='owner_explicit_chat_20261112');
@@ -56,6 +58,7 @@ test('Sheet rename retains identity and old alias; mini maps consume all newly a
   const route=historical.find(r=>r.route_id==='G18');
   const index=route.segments.findIndex(s=>s.fromId===c.original.fromId&&s.toId===c.original.toId);route.segments[index]=c.original;
  }
+
  const signature=historical.map(r=>{
   const path=manifest.routes.find(m=>m.id===r.route_id).file.split('?')[0];
   const changed=application.changedRoutes.find(x=>x.file===path);

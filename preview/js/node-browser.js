@@ -8,7 +8,7 @@ export function searchLocationLabel(node,query){
 }
 export function filterLocations(options,query,limit=60,{includeRoute=true}={}){
   const needle=normalizeSearch(query);
-  return options.filter(x=>[x.name,...(x.aliases||[]),...(includeRoute?[x.route||'']:[])]
+  return options.filter(x=>!x.plannerHidden&&[x.name,...(x.aliases||[]),...(includeRoute?[x.route||'']:[])]
     .some(value=>normalizeSearch(value).includes(needle))).slice(0,limit);
 }
 export function adjacentLocations(graph,nodeId){

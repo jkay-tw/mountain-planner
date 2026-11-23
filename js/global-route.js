@@ -41,8 +41,8 @@ export function mergeReviewedRoutes(routes) {
 }
 export function nodesInScope(route,scope){
   if(!route)return [];
-  if(!scope||scope==='all')return route.nodes||[];
-  return (route.nodes||[]).filter(n=>(n.groups||[]).includes(scope));
+  if(!scope||scope==='all')return (route.nodes||[]).filter(n=>!n.plannerHidden);
+  return (route.nodes||[]).filter(n=>!n.plannerHidden&&(n.groups||[]).includes(scope));
 }
 export function appendDisconnectedNode(day,selected,uid) {
   const previous=[...day.items].reverse().find(x=>x.type!=='rest');

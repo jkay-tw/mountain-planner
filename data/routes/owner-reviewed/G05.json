@@ -215,7 +215,9 @@
       "groups": [
         "G05"
       ],
-      "identityBasis": "group-scoped-owner-reviewed-label"
+      "identityBasis": "group-scoped-owner-reviewed-label",
+      "plannerHidden": true,
+      "plannerHiddenReason": "Owner requested database-only intermediate 2026-11-23"
     },
     {
       "id": "node:6baf8b591a14fd8fc6c7",
@@ -4550,7 +4552,9 @@
       ],
       "sourceGroupNames": [
         "雪山西南稜"
-      ]
+      ],
+      "routingEnabled": false,
+      "archiveReason": "owner-consolidated-20261123"
     },
     {
       "fromId": "node:67f469173d3d382ca79c",
@@ -4589,7 +4593,9 @@
       ],
       "sourceGroupNames": [
         "雪山西南稜"
-      ]
+      ],
+      "routingEnabled": false,
+      "archiveReason": "owner-consolidated-20261123"
     },
     {
       "fromId": "node:67f469173d3d382ca79c",
@@ -4628,7 +4634,9 @@
       ],
       "sourceGroupNames": [
         "雪山西南稜"
-      ]
+      ],
+      "routingEnabled": false,
+      "archiveReason": "owner-consolidated-20261123"
     },
     {
       "fromId": "node:2765d1f4878df36ed535",
@@ -4667,7 +4675,9 @@
       ],
       "sourceGroupNames": [
         "雪山西南稜"
-      ]
+      ],
+      "routingEnabled": false,
+      "archiveReason": "owner-consolidated-20261123"
     },
     {
       "fromId": "g04-045",
@@ -5369,6 +5379,322 @@
       ],
       "sourceGroupNames": [
         "雪山西南稜"
+      ]
+    },
+    {
+      "fromId": "node:43c9393ad0d04c1318ea",
+      "toId": "node:2765d1f4878df36ed535",
+      "from": "3.1K登山口",
+      "to": "環山部落",
+      "minutes": 105,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "R441054BB7A",
+        "RDBA0FF3288"
+      ],
+      "evidenceRows": [
+        188
+      ],
+      "sourceGroups": [
+        "雪山西南稜"
+      ],
+      "sourceChart": "G05",
+      "source": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+      "sourceNote": "Owner-approved consolidation 2026-11-23; exact directed minutes summed",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "kind": "owner-approved-directional-sum",
+          "date": "2026-11-23",
+          "minutes": 105,
+          "parts": [
+            {
+              "fromId": "node:43c9393ad0d04c1318ea",
+              "toId": "node:67f469173d3d382ca79c",
+              "minutes": 60,
+              "sources": [
+                {
+                  "group": "雪山西南稜",
+                  "chartId": "G05",
+                  "url": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+                  "rowId": "R441054BB7A",
+                  "sheetRows": [
+                    188
+                  ],
+                  "minutes": 60
+                }
+              ]
+            },
+            {
+              "fromId": "node:67f469173d3d382ca79c",
+              "toId": "node:2765d1f4878df36ed535",
+              "minutes": 45,
+              "sources": [
+                {
+                  "group": "雪山西南稜",
+                  "chartId": "G05",
+                  "url": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+                  "rowId": "RDBA0FF3288",
+                  "sheetRows": [
+                    189
+                  ],
+                  "minutes": 45
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sourceGroupNames": [
+        "雪山西南稜"
+      ],
+      "sourceParts": [
+        {
+          "fromId": "node:43c9393ad0d04c1318ea",
+          "toId": "node:67f469173d3d382ca79c",
+          "from": "3.1K登山口",
+          "to": "松柏農場",
+          "minutes": 60,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "R441054BB7A"
+          ],
+          "evidenceRows": [
+            188
+          ],
+          "sourceGroups": [
+            "雪山西南稜"
+          ],
+          "sourceChart": "G05",
+          "source": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "雪山西南稜",
+              "chartId": "G05",
+              "url": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+              "rowId": "R441054BB7A",
+              "sheetRows": [
+                188
+              ],
+              "minutes": 60
+            }
+          ],
+          "sourceGroupNames": [
+            "雪山西南稜"
+          ],
+          "routingEnabled": false,
+          "archiveReason": "owner-consolidated-20261123"
+        },
+        {
+          "fromId": "node:67f469173d3d382ca79c",
+          "toId": "node:2765d1f4878df36ed535",
+          "from": "松柏農場",
+          "to": "環山部落",
+          "minutes": 45,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "RDBA0FF3288"
+          ],
+          "evidenceRows": [
+            189
+          ],
+          "sourceGroups": [
+            "雪山西南稜"
+          ],
+          "sourceChart": "G05",
+          "source": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "雪山西南稜",
+              "chartId": "G05",
+              "url": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+              "rowId": "RDBA0FF3288",
+              "sheetRows": [
+                189
+              ],
+              "minutes": 45
+            }
+          ],
+          "sourceGroupNames": [
+            "雪山西南稜"
+          ],
+          "routingEnabled": false,
+          "archiveReason": "owner-consolidated-20261123"
+        }
+      ],
+      "viaNodeIds": [
+        "node:67f469173d3d382ca79c"
+      ]
+    },
+    {
+      "fromId": "node:2765d1f4878df36ed535",
+      "toId": "node:43c9393ad0d04c1318ea",
+      "from": "環山部落",
+      "to": "3.1K登山口",
+      "minutes": 120,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RDBA0FF3288",
+        "R441054BB7A"
+      ],
+      "evidenceRows": [
+        189
+      ],
+      "sourceGroups": [
+        "雪山西南稜"
+      ],
+      "sourceChart": "G05",
+      "source": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+      "sourceNote": "Owner-approved consolidation 2026-11-23; exact directed minutes summed",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "kind": "owner-approved-directional-sum",
+          "date": "2026-11-23",
+          "minutes": 120,
+          "parts": [
+            {
+              "fromId": "node:2765d1f4878df36ed535",
+              "toId": "node:67f469173d3d382ca79c",
+              "minutes": 50,
+              "sources": [
+                {
+                  "group": "雪山西南稜",
+                  "chartId": "G05",
+                  "url": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+                  "rowId": "RDBA0FF3288",
+                  "sheetRows": [
+                    189
+                  ],
+                  "minutes": 50
+                }
+              ]
+            },
+            {
+              "fromId": "node:67f469173d3d382ca79c",
+              "toId": "node:43c9393ad0d04c1318ea",
+              "minutes": 70,
+              "sources": [
+                {
+                  "group": "雪山西南稜",
+                  "chartId": "G05",
+                  "url": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+                  "rowId": "R441054BB7A",
+                  "sheetRows": [
+                    188
+                  ],
+                  "minutes": 70
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sourceGroupNames": [
+        "雪山西南稜"
+      ],
+      "sourceParts": [
+        {
+          "fromId": "node:2765d1f4878df36ed535",
+          "toId": "node:67f469173d3d382ca79c",
+          "from": "環山部落",
+          "to": "松柏農場",
+          "minutes": 50,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "RDBA0FF3288"
+          ],
+          "evidenceRows": [
+            189
+          ],
+          "sourceGroups": [
+            "雪山西南稜"
+          ],
+          "sourceChart": "G05",
+          "source": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "雪山西南稜",
+              "chartId": "G05",
+              "url": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+              "rowId": "RDBA0FF3288",
+              "sheetRows": [
+                189
+              ],
+              "minutes": 50
+            }
+          ],
+          "sourceGroupNames": [
+            "雪山西南稜"
+          ],
+          "routingEnabled": false,
+          "archiveReason": "owner-consolidated-20261123"
+        },
+        {
+          "fromId": "node:67f469173d3d382ca79c",
+          "toId": "node:43c9393ad0d04c1318ea",
+          "from": "松柏農場",
+          "to": "3.1K登山口",
+          "minutes": 70,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "R441054BB7A"
+          ],
+          "evidenceRows": [
+            188
+          ],
+          "sourceGroups": [
+            "雪山西南稜"
+          ],
+          "sourceChart": "G05",
+          "source": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "雪山西南稜",
+              "chartId": "G05",
+              "url": "https://www.sunriver.com.tw/images/hiking/G05_hiking.jpg",
+              "rowId": "R441054BB7A",
+              "sheetRows": [
+                188
+              ],
+              "minutes": 70
+            }
+          ],
+          "sourceGroupNames": [
+            "雪山西南稜"
+          ],
+          "routingEnabled": false,
+          "archiveReason": "owner-consolidated-20261123"
+        }
+      ],
+      "viaNodeIds": [
+        "node:67f469173d3d382ca79c"
       ]
     }
   ],

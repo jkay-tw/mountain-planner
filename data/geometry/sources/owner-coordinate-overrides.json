@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceUrl": "https://drive.google.com/file/d/1bfrGAJmiayJmqG600tlq93ld8slUqPRP/view",
   "sourceFileSha256": "7f90c190ad41a5745e02ad8ed1050d31a317abc0dbe733af78e9d36713bad12b",
-  "reviewDate": "2026-11-20",
+  "reviewDate": "2026-11-23",
   "nodes": [
     {
       "reviewId": "Q001",
@@ -3378,15 +3378,6 @@
       "action": "ignore"
     },
     {
-      "reviewId": "Q152",
-      "nodeId": "node:2262a9d2e8c96b37a520",
-      "name": "3444主稜",
-      "choice": "暫不確定",
-      "note": "忽視",
-      "coordinate": null,
-      "action": "ignore"
-    },
-    {
       "reviewId": "Q153",
       "nodeId": "node:26df992c63cbe82936fa",
       "name": "中之關步道口",
@@ -4846,6 +4837,36 @@
         "evidenceRef": "data/geometry/sources/pingfeng-names-owner-20261120.json"
       },
       "note": "使用者明確指定座標；依 GPX 方向核對 OSM，保留 Node ID 與原方向時間。"
+    },
+    {
+      "nodeId": "node:2262a9d2e8c96b37a520",
+      "reviewId": "OWNER-20261123-3444",
+      "name": "3444主稜",
+      "action": "coordinate",
+      "choice": "自行補座標",
+      "coordinate": [
+        120.9153937,
+        23.2364966
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 241342,
+        "y": 2570474
+      },
+      "source": {
+        "kind": "owner-chat",
+        "date": "2026-11-23"
+      },
+      "note": "使用者指定 TWD97，固定來源 OSM/DEM 重算",
+      "previous": {
+        "reviewId": "Q152",
+        "nodeId": "node:2262a9d2e8c96b37a520",
+        "name": "3444主稜",
+        "choice": "暫不確定",
+        "note": "忽視",
+        "coordinate": null,
+        "action": "ignore"
+      }
     }
   ]
 }
