@@ -49,7 +49,7 @@ class OwnerGpxTests(unittest.TestCase):
         self.assertEqual(digest([s for s in historical['spans'] if s['id'] not in changed]), self.report['baselineInvariants']['unaffectedSpans'])
         for span in historical['spans']:
             if span['id'] in changed:self.assertIn(span,self.data['spans'])
-        self.assertEqual(len(self.data['spans']), 695)
+        self.assertEqual(len(self.data['spans']), 698)
         for name, sha in self.report['baselineRouteSha256'].items():
             content = frozen[f'data/routes/owner-reviewed/{name}.json'].encode()
             self.assertEqual(hashlib.sha256(content).hexdigest(), sha)

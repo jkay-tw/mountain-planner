@@ -603,7 +603,9 @@
       "groups": [
         "G04"
       ],
-      "identityBasis": "existing-reviewed-identity"
+      "identityBasis": "existing-reviewed-identity",
+      "plannerHidden": true,
+      "plannerHiddenReason": "Owner requested database-only intermediate 2026-11-23"
     },
     {
       "id": "node:f6f2ba4c01559d0ff632",
@@ -779,7 +781,9 @@
       ],
       "sourceGroupNames": [
         "大霸/聖稜/四秀"
-      ]
+      ],
+      "routingEnabled": false,
+      "archiveReason": "owner-consolidated-20261123"
     },
     {
       "fromId": "g04-fork-zhenxibao",
@@ -818,7 +822,9 @@
       ],
       "sourceGroupNames": [
         "大霸/聖稜/四秀"
-      ]
+      ],
+      "routingEnabled": false,
+      "archiveReason": "owner-consolidated-20261123"
     },
     {
       "fromId": "g04-fork-zhenxibao",
@@ -857,7 +863,9 @@
       ],
       "sourceGroupNames": [
         "大霸/聖稜/四秀"
-      ]
+      ],
+      "routingEnabled": false,
+      "archiveReason": "owner-consolidated-20261123"
     },
     {
       "fromId": "g04-024",
@@ -896,7 +904,9 @@
       ],
       "sourceGroupNames": [
         "大霸/聖稜/四秀"
-      ]
+      ],
+      "routingEnabled": false,
+      "archiveReason": "owner-consolidated-20261123"
     },
     {
       "fromId": "g04-024",
@@ -6132,6 +6142,322 @@
       ],
       "sourceGroups": [
         "大霸/聖稜/四秀"
+      ]
+    },
+    {
+      "fromId": "g04-065",
+      "toId": "g04-024",
+      "from": "A.B區神木岔路",
+      "to": "往馬洋山岔路口",
+      "minutes": 180,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RE2324F3D01",
+        "RA5AC1E5BB8"
+      ],
+      "evidenceRows": [
+        65
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "Owner-approved consolidation 2026-11-23; exact directed minutes summed",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "kind": "owner-approved-directional-sum",
+          "date": "2026-11-23",
+          "minutes": 180,
+          "parts": [
+            {
+              "fromId": "g04-065",
+              "toId": "g04-fork-zhenxibao",
+              "minutes": 50,
+              "sources": [
+                {
+                  "group": "大霸/聖稜/四秀",
+                  "chartId": "G04",
+                  "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+                  "rowId": "RE2324F3D01",
+                  "sheetRows": [
+                    65
+                  ],
+                  "minutes": 50
+                }
+              ]
+            },
+            {
+              "fromId": "g04-fork-zhenxibao",
+              "toId": "g04-024",
+              "minutes": 130,
+              "sources": [
+                {
+                  "group": "大霸/聖稜/四秀",
+                  "chartId": "G04",
+                  "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+                  "rowId": "RA5AC1E5BB8",
+                  "sheetRows": [
+                    66
+                  ],
+                  "minutes": 130
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceParts": [
+        {
+          "fromId": "g04-065",
+          "toId": "g04-fork-zhenxibao",
+          "from": "A.B區神木岔路",
+          "to": "岔路口",
+          "minutes": 50,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "RE2324F3D01"
+          ],
+          "evidenceRows": [
+            65
+          ],
+          "sourceGroups": [
+            "大霸/聖稜/四秀"
+          ],
+          "sourceChart": "G04",
+          "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "大霸/聖稜/四秀",
+              "chartId": "G04",
+              "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+              "rowId": "RE2324F3D01",
+              "sheetRows": [
+                65
+              ],
+              "minutes": 50
+            }
+          ],
+          "sourceGroupNames": [
+            "大霸/聖稜/四秀"
+          ],
+          "routingEnabled": false,
+          "archiveReason": "owner-consolidated-20261123"
+        },
+        {
+          "fromId": "g04-fork-zhenxibao",
+          "toId": "g04-024",
+          "from": "岔路口",
+          "to": "往馬洋山岔路口",
+          "minutes": 130,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "RA5AC1E5BB8"
+          ],
+          "evidenceRows": [
+            66
+          ],
+          "sourceGroups": [
+            "大霸/聖稜/四秀"
+          ],
+          "sourceChart": "G04",
+          "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "大霸/聖稜/四秀",
+              "chartId": "G04",
+              "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+              "rowId": "RA5AC1E5BB8",
+              "sheetRows": [
+                66
+              ],
+              "minutes": 130
+            }
+          ],
+          "sourceGroupNames": [
+            "大霸/聖稜/四秀"
+          ],
+          "routingEnabled": false,
+          "archiveReason": "owner-consolidated-20261123"
+        }
+      ],
+      "viaNodeIds": [
+        "g04-fork-zhenxibao"
+      ]
+    },
+    {
+      "fromId": "g04-024",
+      "toId": "g04-065",
+      "from": "往馬洋山岔路口",
+      "to": "A.B區神木岔路",
+      "minutes": 110,
+      "travelMode": "walking",
+      "verificationStatus": "verified",
+      "verificationBasis": "owner_workbook_review",
+      "timeAlternatives": [],
+      "sourceRows": [
+        "RA5AC1E5BB8",
+        "RE2324F3D01"
+      ],
+      "evidenceRows": [
+        66
+      ],
+      "sourceGroups": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceChart": "G04",
+      "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+      "sourceNote": "Owner-approved consolidation 2026-11-23; exact directed minutes summed",
+      "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+      "sources": [
+        {
+          "kind": "owner-approved-directional-sum",
+          "date": "2026-11-23",
+          "minutes": 110,
+          "parts": [
+            {
+              "fromId": "g04-024",
+              "toId": "g04-fork-zhenxibao",
+              "minutes": 70,
+              "sources": [
+                {
+                  "group": "大霸/聖稜/四秀",
+                  "chartId": "G04",
+                  "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+                  "rowId": "RA5AC1E5BB8",
+                  "sheetRows": [
+                    66
+                  ],
+                  "minutes": 70
+                }
+              ]
+            },
+            {
+              "fromId": "g04-fork-zhenxibao",
+              "toId": "g04-065",
+              "minutes": 40,
+              "sources": [
+                {
+                  "group": "大霸/聖稜/四秀",
+                  "chartId": "G04",
+                  "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+                  "rowId": "RE2324F3D01",
+                  "sheetRows": [
+                    65
+                  ],
+                  "minutes": 40
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sourceGroupNames": [
+        "大霸/聖稜/四秀"
+      ],
+      "sourceParts": [
+        {
+          "fromId": "g04-024",
+          "toId": "g04-fork-zhenxibao",
+          "from": "往馬洋山岔路口",
+          "to": "岔路口",
+          "minutes": 70,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "RA5AC1E5BB8"
+          ],
+          "evidenceRows": [
+            66
+          ],
+          "sourceGroups": [
+            "大霸/聖稜/四秀"
+          ],
+          "sourceChart": "G04",
+          "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "大霸/聖稜/四秀",
+              "chartId": "G04",
+              "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+              "rowId": "RA5AC1E5BB8",
+              "sheetRows": [
+                66
+              ],
+              "minutes": 70
+            }
+          ],
+          "sourceGroupNames": [
+            "大霸/聖稜/四秀"
+          ],
+          "routingEnabled": false,
+          "archiveReason": "owner-consolidated-20261123"
+        },
+        {
+          "fromId": "g04-fork-zhenxibao",
+          "toId": "g04-065",
+          "from": "岔路口",
+          "to": "A.B區神木岔路",
+          "minutes": 40,
+          "travelMode": "walking",
+          "verificationStatus": "verified",
+          "verificationBasis": "owner_workbook_review",
+          "timeAlternatives": [],
+          "sourceRows": [
+            "RE2324F3D01"
+          ],
+          "evidenceRows": [
+            65
+          ],
+          "sourceGroups": [
+            "大霸/聖稜/四秀"
+          ],
+          "sourceChart": "G04",
+          "source": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+          "sourceNote": "",
+          "sourceWorkbookSHA256": "1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527",
+          "sources": [
+            {
+              "group": "大霸/聖稜/四秀",
+              "chartId": "G04",
+              "url": "https://www.sunriver.com.tw/images/hiking/G04_hiking.jpg",
+              "rowId": "RE2324F3D01",
+              "sheetRows": [
+                65
+              ],
+              "minutes": 40
+            }
+          ],
+          "sourceGroupNames": [
+            "大霸/聖稜/四秀"
+          ],
+          "routingEnabled": false,
+          "archiveReason": "owner-consolidated-20261123"
+        }
+      ],
+      "viaNodeIds": [
+        "g04-fork-zhenxibao"
       ]
     }
   ],

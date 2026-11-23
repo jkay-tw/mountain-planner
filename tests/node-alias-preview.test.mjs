@@ -17,7 +17,7 @@ test('both owner-confirmed aliases find the original camp once and preserve its 
   assert.equal(camp.length,1);assert.equal(camp[0].name,'三叉營地');
   if(query==='北鞍三叉避難小屋')assert.equal(result.length,1);
  }
- assert.equal(graph.nodes.length,720);assert.equal(graph.segments.length,1398);
+ assert.equal(graph.nodes.length,720);assert.equal(graph.segments.length,1394);
 });
 
 test('alias search is case insensitive, respects scope options, and never merges matching labels',()=>{
