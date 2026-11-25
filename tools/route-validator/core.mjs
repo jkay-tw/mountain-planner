@@ -76,7 +76,7 @@ export function loadProject(root=ROOT,work=WORK) {
   const decisionsPath=resolve(root,'data/staging/idea002/decisions-20261120.json'),decisions=existsSync(decisionsPath)?read(decisionsPath):null;
   const graph={nodes:[...new Map(datasets.flatMap(d=>d.nodes.map(n=>[n.id,n]))).values()],segments:datasets.filter(d=>d.routingEnabled!==false).flatMap(d=>d.segments),manualConnections:datasets.filter(d=>d.routingEnabled!==false).flatMap(d=>d.manualConnections||[])};
   const transport=read(resolve(root,'data/transport-owner-reviewed.json'));
-  const authorityPath=existsSync(resolve(work,'node-authority.json'))?resolve(work,'node-authority.json'):resolve(root,'data/route-validator/snapshots/node-authority-20261124.json');
+  const authorityPath=existsSync(resolve(work,'node-authority.json'))?resolve(work,'node-authority.json'):resolve(root,'data/route-validator/snapshots/node-authority-order-20261125.json');
   const authority=read(authorityPath),authorityRows=table(authority.rows,['Node ID','節點名','相鄰 Node ID','來源 ID']);
   const nodeAuthority=new Map();
   for(const row of authorityRows){const id=nonempty(row['Node ID']);if(!id)continue;if(nodeAuthority.has(id))throw Error('原始節點表有重複 Node ID：'+id);nodeAuthority.set(id,{nodeId:id,name:row['節點名'],aliases:String(row['別名／其他圖名稱']||'').split(/[；;]/).filter(Boolean),neighborIds:String(row['相鄰 Node ID']||'').split(/[；;]/).filter(Boolean),sourceIds:String(row['來源 ID']||'').split(/[；;]/).filter(Boolean),fingerprint:row['基底指紋'],sheetRow:row.sheetRow});}
