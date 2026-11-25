@@ -1,3 +1,5 @@
+# Generated source snapshots retain portable byte hashes.
+*.json text eol=lf
 # Windows launcher scripts must retain CRLF when checked out.
 /路線檢查.cmd text eol=crlf
 /preview/data/routes/owner-reviewed/G02-6bd64eb7.json text eol=crlf
