@@ -1,0 +1,21 @@
+name: Publish Xiaoxue visitor center alias
+on:
+  push:
+    branches: [main]
+    paths: ['docs/XIAOXUE_VISITOR_ALIAS_20261119.md']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 tools/sync_coordinate_geometry.py --check
+      - name: Publish owner alias data update
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create data-xiaoxue-alias-20261119 --target "$GITHUB_SHA" --title '小雪山遊客中心別稱更新（2026-11-19）' --notes-file docs/XIAOXUE_VISITOR_ALIAS_20261119.md --latest=false data/geometry/sources/xiaoxue-alias-owner-20261119.json
