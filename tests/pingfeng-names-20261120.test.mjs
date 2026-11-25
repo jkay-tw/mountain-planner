@@ -1,0 +1,13 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';
+import {mergeReviewedRoutes} from '../js/global-route.js';import {migrateDaysToNodeIds} from '../js/node-identity.js';import {shortestPath,incomingForSegment,normalizeDay} from '../js/planner.js';import {toTwd97} from '../js/twd97.js';import {resolveItineraryGeometry,geometryToGpx} from '../js/itinerary-geometry.js';
+const load=p=>JSON.parse(readFileSync(new URL('../'+p.split('?')[0],import.meta.url),'utf8')),manifest=load('data/unified-editor-manifest.json'),graph=mergeReviewedRoutes(manifest.routes.map(r=>load(r.file))),terrain=load('data/geometry/planner-terrain-v1.json'),decision=load('data/geometry/sources/pingfeng-names-owner-20261120.json');
+test('two exact owner coordinates and sixteen new names retain IDs, old labels and aliases',()=>{
+ for(const c of decision.coordinateChanges){const n=terrain.nodes.find(n=>n.nodeId===c.nodeId);assert.deepEqual(toTwd97(n.coordinate),c.twd97);assert.ok(Number.isFinite(n.elevationMeters));}
+ for(const c of decision.nameChanges){const n=graph.nodes.find(n=>n.id===c.id);assert.equal(n.name,c.newName);assert.ok(n.aliases.includes(c.oldName));assert.ok(!n.aliases.includes(c.newName));const days=[{items:[{id:'old',type:'location',nodeId:c.id,name:c.oldName,note:'saved',incoming:null}]}];assert.equal(migrateDaysToNodeIds(days,graph)[0].items[0].name,c.oldName);}
+});
+test('corrected Pingfeng path keeps each source direction, continuous geometry and reversed GPX elevations',()=>{
+ const bridge='node:97e309d22937a82f9ade',cross='node:ac2e2b0473232211e496',entrance='node:d69a18f19c7940c3ebf4';const results=[];
+ for(const ids of [[bridge,cross,entrance],[entrance,cross,bridge]]){const route=shortestPath(graph,ids[0],ids.at(-1));assert.deepEqual(route.nodes,ids);assert.equal(route.minutes,ids[0]===bridge?175:120);const d={coefficient:.8,items:ids.map((nodeId,i)=>({id:String(i),type:'location',nodeId,name:graph.nodes.find(n=>n.id===nodeId).name,note:'',incoming:i?incomingForSegment(route.segments[i-1],String(i-1),String(i),null,.8):null}))};d.items[1].incoming.actualMinutes=117;normalizeDay(d,graph);assert.equal(d.items[1].incoming.actualMinutes,117);const resolved=resolveItineraryGeometry([d],terrain);assert.equal(resolved.gaps.length,0);assert.ok(resolved.distanceMeters>2000&&resolved.distanceMeters<2100);assert.ok(geometryToGpx(resolved,terrain).includes('<ele>'));results.push(resolved);}
+ assert.ok(Math.abs(results[0].days[0].ascentMeters-results[1].days[0].descentMeters)<.01);assert.deepEqual(results[0].days[0].features[0].coordinates,[...results[1].days[0].features.at(-1).coordinates].reverse());
+ assert.deepEqual(terrain,load('preview/data/geometry/planner-terrain-v1.json'));
+});

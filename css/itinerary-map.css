@@ -363,3 +363,57 @@
 .quick-add .topo-current-halo{
   pointer-events:none;
 }
+.path-editor{padding:12px;border:1px solid #ccdace;border-radius:10px;background:#f3f7f2;margin:12px 0}.path-editor label{display:inline-flex;align-items:center;gap:8px;margin:5px;max-width:100%}.path-editor select{max-width:100%;min-height:44px;font-size:16px}.path-editor button,.path-popup button{min-height:44px;margin:4px}.path-popup input{font-size:16px;max-width:100%;min-height:44px}.path-control{padding:8px;border-bottom:1px solid #dce6dc}.path-control-marker{background:#b95220;border:3px solid white;border-radius:50%;color:white;display:grid;place-items:center;font-weight:bold;box-shadow:0 1px 5px #3338;cursor:grab}.path-editor [data-visible]{display:flex;flex-wrap:wrap}.path-popup{max-width:260px}.path-editor [data-tools]>p{font-size:14px}.path-editor [data-edit]{width:24px;height:24px}@media(max-width:600px){.path-editor label{display:flex}.path-editor select{min-width:0;flex:1}}
+/* Compact IDEA-003 editor: small visible handle, separate 44px touch target. */
+.path-control-marker{background:transparent;border:0;box-shadow:none;display:grid;place-items:center;pointer-events:auto}.path-control-marker span{display:grid;place-items:center;box-sizing:border-box;width:23px;height:23px;background:#fff;border:2px solid #a5441b;color:#572209;border-radius:50%;font:800 13px/1 system-ui;box-shadow:0 1px 3px #0005;pointer-events:none}.path-editor{padding:8px;margin:8px 0}.path-editor label{margin:2px 5px 2px 0;gap:4px;font-size:13px}.path-editor select{min-height:34px;font-size:16px;padding:4px;max-width:280px}.path-editor button{min-height:36px;margin:2px;padding:5px 9px}.path-editor p{margin:5px 0;line-height:1.4}.path-editor details{margin:4px 0;font-size:13px}.path-editor summary{cursor:pointer}.path-control{padding:4px;line-height:1.4}.path-editor [data-detail]{font-size:13px;line-height:1.35}.path-popup input{box-sizing:border-box;width:100%;min-height:36px;margin:0 0 5px}.path-popup p{margin:4px 0;line-height:1.35}.path-popup button{min-height:36px;margin:2px;padding:5px 8px;font-size:13px}.path-popup details{font-size:12px;margin-top:4px}.path-coordinate{font-weight:700;font-size:13px}.path-popup{max-width:240px}.path-editor [data-connections] label{display:flex;flex-wrap:wrap}.path-editor [data-connections] select{width:100%;max-width:100%}@media(max-width:600px){.path-editor label{display:inline-flex;max-width:100%}.path-editor select{max-width:215px}.path-editor button,.path-popup button{min-height:40px}.path-editor [data-connections] label{display:flex}}
+.itinerary-map>.path-popup{position:absolute;bottom:8px;left:8px;z-index:1000;background:white;border-radius:8px;box-shadow:0 2px 12px #0004;padding:9px;width:240px;max-width:calc(100% - 16px);box-sizing:border-box}.path-popup button:last-child{float:right;font-size:12px}.path-popup input{padding:5px}
+.path-map-popup .leaflet-popup-content{margin:8px 10px;line-height:1.35}
+.path-map-popup .path-popup{width:220px;max-width:calc(100vw - 130px)}
+.path-popup button[hidden]{display:none}
+.path-popup{display:flex;flex-wrap:wrap;align-items:center;gap:4px;max-width:240px}
+.path-popup p{flex-basis:100%;margin:1px 0 3px;font-size:13px;line-height:1.35}
+.path-popup button{margin:0;padding:5px 8px;min-height:34px;float:none!important}
+.path-popup label,.path-name-form{width:100%;min-width:0}
+.path-popup input{box-sizing:border-box;width:100%;font-size:16px;min-height:36px;margin:3px 0 0}
+.path-name-form{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.path-name-form input{grid-column:1/-1}
+.path-map-popup .leaflet-popup-close-button{width:28px;height:28px}
+@media(max-width:600px),(pointer:coarse){.path-popup button{min-height:44px}.path-map-popup .leaflet-popup-close-button{width:44px;height:44px}.path-map-popup .leaflet-popup-content{margin-right:28px}}
+.geometry-map-node input{font-size:16px}
+/* Reduce popup whitespace while retaining existing button and touch dimensions. */
+.path-popup{gap:2px}
+.path-popup p{margin:0 0 2px}
+.path-map-popup .leaflet-popup-content{margin:6px 8px}
+.itinerary-map>.path-popup{padding:6px}
+.itinerary-map>.path-popup{width:212px;padding:4px}
+.path-map-popup .path-popup{width:196px}
+.path-map-popup .leaflet-popup-content{margin:4px 6px;line-height:1.25}
+.path-popup p{font-size:12px;line-height:1.25}
+.path-map-popup .path-popup p{margin:0 0 2px;font-size:12px;line-height:1.25}
+.path-name-form{gap:2px}
+.gpx-comparison{margin:6px 0;font-size:13px}
+.gpx-comparison>summary{cursor:pointer;padding:5px 0;font-weight:650}
+.path-editor{padding:0;border:0;background:none;border-radius:0;margin:6px 0}
+.path-edit-toggle{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:650;color:#344c3d}
+.path-editor [data-edit]{display:inline-flex;align-items:center;gap:6px;width:auto;height:auto;min-height:34px;margin:0;padding:2px 5px;border:0;background:transparent;color:#666e69;white-space:nowrap;font-size:12px}
+.path-edit-track{display:inline-flex;align-items:center;width:34px;height:20px;padding:2px;box-sizing:border-box;border-radius:999px;background:#9aa19c}
+.path-edit-thumb{width:16px;height:16px;border-radius:50%;background:#fff;box-shadow:0 1px 2px #0003;transition:transform .15s}
+.path-editor [data-edit]:hover{background:#f0f4f0}
+.path-editor [data-edit]:focus-visible{outline:2px solid #315b43;outline-offset:2px}
+.path-editor [data-edit][aria-checked="true"]{color:#20633a}
+.path-editor [data-edit][aria-checked="true"] .path-edit-track{background:#267b48}
+.path-editor [data-edit][aria-checked="true"] .path-edit-thumb{transform:translateX(14px)}
+.path-editor [data-detail][hidden]{display:none}
+.gpx-comparison [data-import-state]{font-weight:400;color:#53665a;margin-left:6px}
+.gpx-comparison-body{padding:6px 0}
+.gpx-comparison-body label{display:block;margin:4px 0}
+.gpx-comparison-body p{margin:5px 0}
+.gpx-profile-card{margin:6px 0}
+.endpoint-notice,[data-dem-status]{font-size:12px;line-height:1.4;color:#6c4c16;margin:5px 0}
+.osm-sample-review{margin:5px 0}
+@media(max-width:600px),(pointer:coarse){.path-map-popup .leaflet-popup-content{margin-right:28px}}
+
+/* Same action typography across node, route and control popups. */
+.path-popup button,.path-popup button:last-child{font-size:13px;font-weight:600}
+
+.gpx-waypoint-labels{overflow-wrap:anywhere}

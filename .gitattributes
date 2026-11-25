@@ -1,0 +1,2 @@
+# Windows launcher scripts must retain CRLF when checked out.
+/路線檢查.cmd text eol=crlf

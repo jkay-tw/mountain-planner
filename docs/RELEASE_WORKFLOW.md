@@ -42,3 +42,6 @@ A feature branch alone does NOT create a second GitHub Pages URL. Preview hostin
 ## Current release
 
 v0.9.0 (2026-11-06): production `index.html`, guide `guide.html`; accepted Preview UI promoted with existing production storage keys. Pre-release rollback SHA: `ffee1091adc4532149061b3c1ec5bc3cbfb72c91`. See `docs/v0.9.0_RELEASE.md`.
+
+
+v0.10.0 (2026-11-25): 經典路線、圖組起點、顯示管理與 GPX／路徑編輯整合。版本基點及回復資訊見 docs/v0.10.0_RELEASE.md。

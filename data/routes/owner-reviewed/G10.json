@@ -280,8 +280,10 @@
     },
     {
       "id": "shared:cw-v07-041",
-      "name": "奇萊主山北峰",
-      "aliases": [],
+      "name": "奇萊北峰",
+      "aliases": [
+        "奇萊主山北峰"
+      ],
       "groups": [
         "G10"
       ],
@@ -688,7 +690,7 @@
       "fromId": "shared:cw-v07-012",
       "toId": "shared:cw-v07-041",
       "from": "主北三岔路",
-      "to": "奇萊主山北峰",
+      "to": "奇萊北峰",
       "minutes": 95,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -726,7 +728,7 @@
     {
       "fromId": "shared:cw-v07-041",
       "toId": "shared:cw-v07-012",
-      "from": "奇萊主山北峰",
+      "from": "奇萊北峰",
       "to": "主北三岔路",
       "minutes": 65,
       "travelMode": "walking",
@@ -765,7 +767,7 @@
     {
       "fromId": "shared:cw-v07-041",
       "toId": "node:e26d4b155e5a18e5e82b",
-      "from": "奇萊主山北峰",
+      "from": "奇萊北峰",
       "to": "月形池",
       "minutes": 80,
       "travelMode": "walking",
@@ -805,7 +807,7 @@
       "fromId": "node:e26d4b155e5a18e5e82b",
       "toId": "shared:cw-v07-041",
       "from": "月形池",
-      "to": "奇萊主山北峰",
+      "to": "奇萊北峰",
       "minutes": 140,
       "travelMode": "walking",
       "verificationStatus": "verified",

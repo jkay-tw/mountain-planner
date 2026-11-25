@@ -1,0 +1,32 @@
+import {createRequire} from 'node:module';
+import {resolve} from 'node:path';
+import {mkdir} from 'node:fs/promises';
+const require=createRequire(import.meta.url),{chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
+const browser=await chromium.launch({headless:true,executablePath:process.env.BROWSER_EXECUTABLE});
+const output=resolve('preview/assets/guide');await mkdir(output,{recursive:true});
+const context=await browser.newContext({viewport:{width:1180,height:900},deviceScaleFactor:2});
+const page=await context.newPage();page.on('dialog',d=>d.accept());
+try{
+ await page.goto('http://127.0.0.1:56333/preview/unified-editor.html',{waitUntil:'domcontentloaded'});
+ await page.waitForFunction(()=>document.querySelector('#classicSelect').options.length===59);
+ await page.locator('#selectionSource').screenshot({path:resolve(output,'source-toggle-20261124.png')});
+ await page.click('[data-source="routes"]');await page.selectOption('#classicSelect','R027');
+ await page.locator('#classicPanel').screenshot({path:resolve(output,'classic-route-20261124.png')});
+ await page.setViewportSize({width:390,height:844});await page.locator('#classicPanel').screenshot({path:resolve(output,'classic-route-mobile-20261124.png')});await page.setViewportSize({width:1180,height:900});
+ await page.click('#classicApply');await page.waitForFunction(()=>document.querySelectorAll('.day-card .it-row').length>3);
+ await page.locator('.manage-display').first().screenshot({path:resolve(output,'display-trigger-20261124.png')});
+ await page.locator('.manage-display').first().click();await page.locator('.day-display-dialog').screenshot({path:resolve(output,'display-manage-20261124.png')});await page.locator('.day-display-dialog').getByRole('button',{name:'取消',exact:true}).click();
+ await page.locator('#itineraryGeometry > summary').click();await page.waitForSelector('.path-editor [data-edit]');await page.waitForFunction(()=>[...document.querySelectorAll('.leaflet-tile-pane img')].some(i=>i.complete&&i.naturalWidth>0),{timeout:20000});
+ await page.locator('#itineraryGeometry .geometry-body').screenshot({path:resolve(output,'map-edit-20261124.png')});
+ await page.locator('.leaflet-control-layers').hover();await page.locator('.leaflet-control-layers').screenshot({path:resolve(output,'map-layers-20261125.png')});
+ await page.locator('.path-editor [data-edit]').click();const toggleBox=await page.locator('.path-edit-toggle').boundingBox();await page.screenshot({path:resolve(output,'path-mode-20261124.png'),clip:{x:toggleBox.x,y:toggleBox.y,width:Math.min(230,toggleBox.width),height:toggleBox.height}});
+ await page.locator('[data-map]').scrollIntoViewIfNeeded();await page.locator('[data-action="fit"]').click();const hit=await page.evaluate(()=>{const m=document.querySelector('[data-map]').getBoundingClientRect();for(const p of document.querySelectorAll('.leaflet-routeEdit-pane path')){if(!p.getTotalLength?.())continue;const q=p.getPointAtLength(p.getTotalLength()/2),s=new DOMPoint(q.x,q.y).matrixTransform(p.getScreenCTM());if(s.x>m.left+40&&s.x<m.right-40&&s.y>Math.max(m.top+40,40)&&s.y<Math.min(m.bottom-40,innerHeight-40))return{x:s.x,y:s.y};}return null});if(!hit)throw Error('No visible editable route');await page.mouse.move(hit.x,hit.y);await page.mouse.down();await page.mouse.move(hit.x+25,hit.y+20,{steps:5});await page.mouse.up();await page.waitForSelector('.path-control-marker');await page.locator('[data-map]').screenshot({path:resolve(output,'path-example-20261125.png')});
+ const quickContext=await browser.newContext({viewport:{width:1180,height:900},deviceScaleFactor:2});const quickPage=await quickContext.newPage();
+ await quickPage.goto('http://127.0.0.1:56333/preview/unified-editor.html',{waitUntil:'domcontentloaded'});await quickPage.waitForSelector('.day-card .add-node');await quickPage.selectOption('#routeSelect','G04');
+ await quickPage.locator('.day-card .add-node').first().selectOption({label:'武陵山莊'});await quickPage.locator('.day-card .add-dest').first().click();
+ const quickBox=await quickPage.locator('.quick-add').first().boundingBox();await quickPage.screenshot({path:resolve(output,'quick-add-20261124.png'),clip:{x:quickBox.x,y:quickBox.y,width:Math.min(590,quickBox.width),height:quickBox.height}});
+ await quickPage.locator('.quick-relations summary').first().click();await quickPage.locator('.quick-route-panel').first().screenshot({path:resolve(output,'quick-network-20261124.png')});
+ await quickPage.locator('.quick-relations summary').first().click();await quickPage.locator('.row-menu summary').first().click();const row=quickPage.locator('.it-row').first(),menu=quickPage.locator('.menu-box').first();await menu.scrollIntoViewIfNeeded();const a=await row.boundingBox(),b=await menu.boundingBox();const left=Math.max(0,Math.min(a.x,b.x)-4),top=Math.max(0,Math.min(a.y,b.y)-4);await quickPage.screenshot({path:resolve(output,'row-menu-combined-20261125.png'),clip:{x:left,y:top,width:Math.min(1180-left,Math.max(a.x+a.width,b.x+b.width)-left+4),height:Math.max(a.y+a.height,b.y+b.height)-top+4}});await quickContext.close();
+ await page.setViewportSize({width:390,height:844});await page.locator('.day-card').first().locator('.day-head').first().screenshot({path:resolve(output,'mobile-day-20261124.png')}).catch(()=>{});
+ console.log('Guide screenshots captured');
+}finally{await context.close();await browser.close();}

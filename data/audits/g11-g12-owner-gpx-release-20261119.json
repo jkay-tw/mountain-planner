@@ -1,0 +1,88 @@
+{
+  "date": "2026-11-19",
+  "baseCommit": "39e23746caf0fd447db1d18601e3ffdca72716a9",
+  "sourceSha256": "84b1b819bf6e15880148172ae7ff01bbd0fa029d34f2cc8e516947438e45fc2b",
+  "runtimeSha256": "a0c3bf8556edc5a9820fa5af40b8e57a5441947cbfa2ac77c3d5e189fed6fdf3",
+  "baselineInvariants": {
+    "nodes": "a2b2414ce6d2ddb0b6f83a652fbabc1b7883ec11f690262cb994998d76020868",
+    "spanDependencies": "38f17e4f85b830273f5883f0a8694d27779223bdc17ea3081d36ecd90bac727b",
+    "unaffectedSpans": "ad1067cf150ca8ece6ba9e5fa8c32f10ac208d11fe0410eab6aef7acac957703"
+  },
+  "routeSha256": {
+    "G09-19d020e9": "df867fe1d9c2c4ede34c2e53a67cd4cda0c3e135c564f7ffa76797ea4049cec8",
+    "G11": "b78d68b64b3f907ef03810b0efba93ae9b619ca98b1068c84da887c44032cf70",
+    "G12": "18ea1dbe2c620b8f8121fb4d9d5b1200185f48dac2b3dca775f384d75d152d31"
+  },
+  "tests": {
+    "javascript": 151,
+    "python": 122,
+    "cacheGate": "passed"
+  },
+  "browserValidation": {
+    "status": "not-performed",
+    "reason": "CUA service_info timeout"
+  },
+  "updatedSpans": [
+    {
+      "id": "osm-full-3501f416d8e39985",
+      "fromId": "shared:cw-v07-045",
+      "toId": "shared:cw-v07-075",
+      "distanceMeters": 6317.317,
+      "anchorOffsetsMeters": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "osm-full-90492ed62a1bcae8",
+      "fromId": "shared:cw-v07-038",
+      "toId": "shared:cw-v07-075",
+      "distanceMeters": 9005.004,
+      "anchorOffsetsMeters": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "userConnectors": [
+    {
+      "nodeId": "shared:cw-v07-075",
+      "nodeCoordinate": [
+        121.2362509,
+        24.0467199
+      ],
+      "gpxEndpoint": [
+        121.2360909,
+        24.046648
+      ],
+      "distanceMeters": 18.108,
+      "source": "owner-explicit-straight-connector-not-GPX-or-official-survey",
+      "fromId": "shared:cw-v07-075",
+      "toId": "shared:cw-v07-038",
+      "atStart": true,
+      "ownerPassable": true
+    },
+    {
+      "nodeId": "shared:cw-v07-038",
+      "nodeCoordinate": [
+        121.2796946875,
+        24.0453156
+      ],
+      "gpxEndpoint": [
+        121.2797499,
+        24.0452423
+      ],
+      "distanceMeters": 9.893,
+      "source": "owner-explicit-straight-connector-not-GPX-or-official-survey",
+      "fromId": "shared:cw-v07-075",
+      "toId": "shared:cw-v07-038",
+      "atStart": false,
+      "ownerPassable": true
+    }
+  ],
+  "affectedGroups": [
+    "G09-19d020e9",
+    "G11",
+    "G12"
+  ]
+}

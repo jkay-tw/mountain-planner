@@ -1,0 +1,6 @@
+export class MainlandWorkerClient{
+ constructor({createWorker=()=>new Worker(new URL('./mainland-worker.js?v=compactedit1123',import.meta.url),{type:'module'}),timeoutMs=60000}={}){this.createWorker=createWorker;this.timeoutMs=timeoutMs;this.nextId=0;this.pending=new Map();}
+ start(){if(this.worker)return;this.worker=this.createWorker();this.worker.onmessage=({data})=>{const pending=this.pending.get(data.id);if(!pending)return;if(data.started){clearTimeout(pending.timer);pending.timer=setTimeout(()=>this.stop('路網計算逾時；請縮短區間，原路徑已保留。'),this.timeoutMs);return;}clearTimeout(pending.timer);this.pending.delete(data.id);if(data.error)pending.reject(Error(data.error));else pending.resolve(data);};this.worker.onerror=()=>this.stop('路網背景處理失敗；原路徑已保留。');}
+ stop(message='已取消路網計算。'){this.worker?.terminate();this.worker=null;for(const pending of this.pending.values()){clearTimeout(pending.timer);pending.reject(Error(message));}this.pending.clear();}
+ request(kind,details={}){this.start();const id=++this.nextId;return new Promise((resolve,reject)=>{const timer=setTimeout(()=>this.stop('路網背景工作未能開始；原路徑已保留。'),Math.max(120000,this.timeoutMs*4));this.pending.set(id,{resolve,reject,timer});this.worker.postMessage({id,kind,...details});});}
+}

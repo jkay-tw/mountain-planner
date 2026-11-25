@@ -76,7 +76,7 @@ test('linked manual day starts copy exact coordinates and distinguish same-name 
  const a=day();a.items=[{id:'m',type:'manual-location',name:'same',coordinate:[121,24],incoming:null,note:''}];const b={...day(),linkedStart:true,items:[]};syncLinkedDays([a,b],route,()=> 'linked');assert.deepEqual(b.items[0].coordinate,[121,24]);a.items[0].coordinate=[121.1,24];syncLinkedDays([a,b],route,()=> 'linked2');assert.deepEqual(b.items[0].coordinate,[121.1,24]);
 });
 test('T14 editing affordances are explicit and requested name focus prevents page scrolling',()=>{
- const s=readFileSync(new URL('../preview/js/path-editor-ui.js',import.meta.url),'utf8');assert.match(s,/編輯路徑模式/);assert.match(s,/map.getContainer\(\).append\(box\)/);assert.match(s,/draggable:true/);assert.match(s,/iconSize:\[44,44\]/);assert.match(s,/input\.focus\(\{preventScroll:true\}\)/);assert.doesNotMatch(s,/input\.focus\(\)/);
+ const s=readFileSync(new URL('../preview/js/path-editor-ui.js',import.meta.url),'utf8');assert.match(s,/路徑編輯模式/);assert.match(s,/map.getContainer\(\).append\(box\)/);assert.match(s,/draggable:true/);assert.match(s,/iconSize:\[44,44\]/);assert.match(s,/input\.focus\(\{preventScroll:true\}\)/);assert.doesNotMatch(s,/input\.focus\(\)/);
 });
 test('Excel exports visible rows with complete hidden distance/time and leaves unknown manual time blank',async()=>{
  let sheet;

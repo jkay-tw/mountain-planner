@@ -13,7 +13,7 @@ const terrain=load('preview/data/geometry/planner-terrain-v1.json');
 
 test('ten owner coordinates reach DEM runtime and no identity is merged',()=>{
  assert.equal(report.coordinates.length,10);assert.equal(report.merges.length,0);
- assert.equal(graph.nodes.length,720);assert.equal(graph.segments.length,1398);
+ assert.equal(graph.nodes.length,720);assert.equal(graph.segments.length,1394);
  assert.equal(report.directionalSignatureBefore,report.directionalSignatureAfter);
  for(const r of report.coordinates){const n=terrain.nodes.find(n=>n.nodeId===r.nodeId);assert.deepEqual(n.coordinate,r.coordinate);assert.deepEqual(toTwd97(n.coordinate),r.twd97);assert.ok(Number.isFinite(n.elevationMeters));}
 });

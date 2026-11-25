@@ -1,0 +1,437 @@
+{
+  "schemaVersion": 1,
+  "routeId": "R026",
+  "authorization": "使用者要求僅修正R026 Sheet及Preview，不重新檢查全路線",
+  "previousSnapshot": "data/route-validator/snapshots/sheet-20261125-order-complete.json",
+  "nextSnapshot": "data/route-validator/snapshots/sheet-20261125-r026-walking.json",
+  "beforeSha256": "ffc3d2e13c0648c15da854130db27fa059734e3f4e5b1b3ca61386b30673edd6",
+  "edits": [
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 428,
+      "columnIndex": 2,
+      "value": ""
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 429,
+      "columnIndex": 2,
+      "value": 1
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 430,
+      "columnIndex": 2,
+      "value": 2
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 431,
+      "columnIndex": 2,
+      "value": 3
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 432,
+      "columnIndex": 2,
+      "value": 4
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 433,
+      "columnIndex": 2,
+      "value": 5
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 434,
+      "columnIndex": 2,
+      "value": 6
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 435,
+      "columnIndex": 2,
+      "value": 7
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 436,
+      "columnIndex": 2,
+      "value": 8
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 437,
+      "columnIndex": 2,
+      "value": 9
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 438,
+      "columnIndex": 2,
+      "value": 10
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 439,
+      "columnIndex": 2,
+      "value": 11
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 440,
+      "columnIndex": 2,
+      "value": 12
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 441,
+      "columnIndex": 2,
+      "value": 13
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 442,
+      "columnIndex": 2,
+      "value": 14
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 443,
+      "columnIndex": 2,
+      "value": 15
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 444,
+      "columnIndex": 2,
+      "value": 16
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 445,
+      "columnIndex": 2,
+      "value": 17
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 446,
+      "columnIndex": 2,
+      "value": 18
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 447,
+      "columnIndex": 2,
+      "value": 19
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 448,
+      "columnIndex": 2,
+      "value": 20
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 449,
+      "columnIndex": 2,
+      "value": 21
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 450,
+      "columnIndex": 2,
+      "value": 22
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 451,
+      "columnIndex": 2,
+      "value": 23
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 452,
+      "columnIndex": 2,
+      "value": 24
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 453,
+      "columnIndex": 2,
+      "value": 25
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 454,
+      "columnIndex": 2,
+      "value": 26
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 455,
+      "columnIndex": 2,
+      "value": 27
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 456,
+      "columnIndex": 2,
+      "value": 28
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 457,
+      "columnIndex": 2,
+      "value": 29
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 458,
+      "columnIndex": 2,
+      "value": 30
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 459,
+      "columnIndex": 2,
+      "value": 31
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 460,
+      "columnIndex": 2,
+      "value": 32
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 461,
+      "columnIndex": 2,
+      "value": 33
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 462,
+      "columnIndex": 2,
+      "value": ""
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 428,
+      "columnIndex": 6,
+      "value": "交通／排除"
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 428,
+      "columnIndex": 9,
+      "value": "排除車行・歷史保留"
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 428,
+      "columnIndex": 10,
+      "value": "交通（去程）"
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 428,
+      "columnIndex": 11,
+      "value": "歷史備註（供追溯）：R026 已決定：中霸山屋暫略；鎮西堡↔神木區登山口須核對 OSM 步道線形與方向、對應既有 Node ID，再建立可追溯步行連接。未核實前不直接套用。；原序列標記：不可直接連續套用\n2026-11-25核准修正；原position 1\n2026-11-25使用者確認：鎮西堡↔神木區登山口僅列交通，不納入步行序列；有效步行起終點為神木區登山口。保留原Node ID與歷史，不新增步行連線。 原有效position 1。"
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 428,
+      "columnIndex": 12,
+      "value": "使用者核准排除首尾車行；交通紀錄保留"
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 462,
+      "columnIndex": 6,
+      "value": "交通／排除"
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 462,
+      "columnIndex": 9,
+      "value": "排除車行・歷史保留"
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 462,
+      "columnIndex": 10,
+      "value": "交通（回程）"
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 462,
+      "columnIndex": 11,
+      "value": "歷史備註（供追溯）：R026 已決定：中霸山屋暫略；鎮西堡↔神木區登山口須核對 OSM 步道線形與方向、對應既有 Node ID，再建立可追溯步行連接。未核實前不直接套用。；原序列標記：不可直接連續套用\n2026-11-25核准修正；原position 34\n2026-11-25使用者確認：鎮西堡↔神木區登山口僅列交通，不納入步行序列；有效步行起終點為神木區登山口。保留原Node ID與歷史，不新增步行連線。 原有效position 35。"
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 462,
+      "columnIndex": 12,
+      "value": "使用者核准排除首尾車行；交通紀錄保留"
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 429,
+      "columnIndex": 6,
+      "value": "起點"
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 429,
+      "columnIndex": 10,
+      "value": "起點"
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 429,
+      "columnIndex": 11,
+      "value": "歷史備註（供追溯）：R026 已決定：中霸山屋暫略；鎮西堡↔神木區登山口須核對 OSM 步道線形與方向、對應既有 Node ID，再建立可追溯步行連接。未核實前不直接套用。；原序列標記：不可直接連續套用\n2026-11-25核准修正；原position 2\n2026-11-25使用者確認：鎮西堡↔神木區登山口僅列交通，不納入步行序列；有效步行起終點為神木區登山口。保留原Node ID與歷史，不新增步行連線。"
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 461,
+      "columnIndex": 6,
+      "value": "終點"
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 461,
+      "columnIndex": 10,
+      "value": "終點（第2次）"
+    },
+    {
+      "sheetId": 1144715032,
+      "rowIndex": 461,
+      "columnIndex": 11,
+      "value": "歷史備註（供追溯）：R026 已決定：中霸山屋暫略；鎮西堡↔神木區登山口須核對 OSM 步道線形與方向、對應既有 Node ID，再建立可追溯步行連接。未核實前不直接套用。；原序列標記：不可直接連續套用\n2026-11-25核准修正；原position 33\n2026-11-25使用者確認：鎮西堡↔神木區登山口僅列交通，不納入步行序列；有效步行起終點為神木區登山口。保留原Node ID與歷史，不新增步行連線。"
+    },
+    {
+      "sheetId": 967124143,
+      "rowIndex": 26,
+      "columnIndex": 11,
+      "value": "重查既有有效序列、原始Node ID、方向路段、重要節點、外部行程與可用GPX；未因不同選峰或合法折返擅自改線。\n交通備註：鎮西堡↔神木區登山口為車行，既有來源各10分鐘；步行模組從神木區登山口出發並返回，不計入首尾交通。"
+    },
+    {
+      "sheetId": 967124143,
+      "rowIndex": 26,
+      "columnIndex": 13,
+      "value": "\"中霸山屋\"節點待未來更新，先略過，不影響路線\n補列伊澤山第二登山口；伊澤山僅由8.8K岔路登頂並返回8.8K，不使用伊澤山直連第二登山口。\n2026-11-25使用者確認：鎮西堡↔神木區登山口僅列交通，不納入步行序列；有效步行起終點為神木區登山口。保留原Node ID與歷史，不新增步行連線。"
+    },
+    {
+      "sheetId": 967124143,
+      "rowIndex": 26,
+      "columnIndex": 17,
+      "value": "2026-11-25 R026步行起終點修正；原有上河來源及其餘行走順序保留"
+    },
+    {
+      "sheetId": 967124143,
+      "rowIndex": 26,
+      "columnIndex": 18,
+      "value": "複合支線＋局部折返（步行；首尾交通另列）"
+    },
+    {
+      "sheetId": 967124143,
+      "rowIndex": 26,
+      "columnIndex": 20,
+      "value": "排除鎮西堡首尾車行；其他選峰、折返及排除政策保留"
+    },
+    {
+      "sheetId": 967124143,
+      "rowIndex": 26,
+      "columnIndex": 25,
+      "value": "大霸、四秀及聖稜分支逐一對照；伊澤只由8.8K往返。鎮西堡岔路按既有明示合併／排除政策保留，不自行恢復空白position。\n2026-11-25使用者確認：鎮西堡↔神木區登山口僅列交通，不納入步行序列；有效步行起終點為神木區登山口。保留原Node ID與歷史，不新增步行連線。"
+    }
+  ],
+  "before": [
+    "g04-062",
+    "g04-033",
+    "g04-065",
+    "g04-024",
+    "g04-061",
+    "g04-040",
+    "g04-041",
+    "g04-036",
+    "g04-037",
+    "g04-011",
+    "g04-007",
+    "g04-010",
+    "g04-009",
+    "g04-010",
+    "g04-007",
+    "g04-011",
+    "g04-002",
+    "g04-019",
+    "g04-002",
+    "g04-020",
+    "g04-016",
+    "g04-015",
+    "g04-016",
+    "g04-020",
+    "g04-002",
+    "g04-011",
+    "g04-037",
+    "g04-036",
+    "g04-041",
+    "g04-040",
+    "g04-061",
+    "g04-024",
+    "g04-065",
+    "g04-033",
+    "g04-062"
+  ],
+  "after": [
+    "g04-033",
+    "g04-065",
+    "g04-024",
+    "g04-061",
+    "g04-040",
+    "g04-041",
+    "g04-036",
+    "g04-037",
+    "g04-011",
+    "g04-007",
+    "g04-010",
+    "g04-009",
+    "g04-010",
+    "g04-007",
+    "g04-011",
+    "g04-002",
+    "g04-019",
+    "g04-002",
+    "g04-020",
+    "g04-016",
+    "g04-015",
+    "g04-016",
+    "g04-020",
+    "g04-002",
+    "g04-011",
+    "g04-037",
+    "g04-036",
+    "g04-041",
+    "g04-040",
+    "g04-061",
+    "g04-024",
+    "g04-065",
+    "g04-033"
+  ],
+  "note": "2026-11-25使用者確認：鎮西堡↔神木區登山口僅列交通，不納入步行序列；有效步行起終點為神木區登山口。保留原Node ID與歷史，不新增步行連線。",
+  "source": "使用者明確確認；既有上河G04車行時間；非新外部查證",
+  "verification": {
+    "checkedCells": 590,
+    "preservedFormulas": 45,
+    "formulaErrors": 0,
+    "status": "APPLIED_AND_READBACK_VERIFIED"
+  },
+  "snapshotSha256": "a13bcf8f91af4a19f2d1332d20d285faecb110dad2cb2ce2074d30e9d3095e1a",
+  "otherRoutesChanged": 0,
+  "activeNodes": 1469,
+  "excludedRows": 26,
+  "formalDataChanged": false
+}

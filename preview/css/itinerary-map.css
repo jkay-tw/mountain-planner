@@ -391,8 +391,19 @@
 .path-popup p{font-size:12px;line-height:1.25}
 .path-map-popup .path-popup p{margin:0 0 2px;font-size:12px;line-height:1.25}
 .path-name-form{gap:2px}
-.gpx-comparison,.osm-planner{margin:6px 0;font-size:13px}
-.gpx-comparison>summary,.osm-planner>summary{cursor:pointer;padding:5px 0;font-weight:650}
+.gpx-comparison{margin:6px 0;font-size:13px}
+.gpx-comparison>summary{cursor:pointer;padding:5px 0;font-weight:650}
+.path-editor{padding:0;border:0;background:none;border-radius:0;margin:6px 0}
+.path-edit-toggle{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:650;color:#344c3d}
+.path-editor [data-edit]{display:inline-flex;align-items:center;gap:6px;width:auto;height:auto;min-height:34px;margin:0;padding:2px 5px;border:0;background:transparent;color:#666e69;white-space:nowrap;font-size:12px}
+.path-edit-track{display:inline-flex;align-items:center;width:34px;height:20px;padding:2px;box-sizing:border-box;border-radius:999px;background:#9aa19c}
+.path-edit-thumb{width:16px;height:16px;border-radius:50%;background:#fff;box-shadow:0 1px 2px #0003;transition:transform .15s}
+.path-editor [data-edit]:hover{background:#f0f4f0}
+.path-editor [data-edit]:focus-visible{outline:2px solid #315b43;outline-offset:2px}
+.path-editor [data-edit][aria-checked="true"]{color:#20633a}
+.path-editor [data-edit][aria-checked="true"] .path-edit-track{background:#267b48}
+.path-editor [data-edit][aria-checked="true"] .path-edit-thumb{transform:translateX(14px)}
+.path-editor [data-detail][hidden]{display:none}
 .gpx-comparison [data-import-state]{font-weight:400;color:#53665a;margin-left:6px}
 .gpx-comparison-body{padding:6px 0}
 .gpx-comparison-body label{display:block;margin:4px 0}

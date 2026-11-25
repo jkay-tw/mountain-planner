@@ -1,0 +1,280 @@
+[
+  {
+    "recordingId": "6200892",
+    "author": "pinky",
+    "routeIds": [
+      "R069"
+    ],
+    "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6200892",
+    "sha256": "27887a1ef8655017153f2d4bf81b28f318cc396815a19a0510d2b50e3febb4b1",
+    "file": "gpx/27887a1ef8655017153f2d4bf81b28f318cc396815a19a0510d2b50e3febb4b1.gpx",
+    "observedDate": "2026-11-01",
+    "points": 51599,
+    "warnings": [
+      {
+        "code": "MULTI_SEGMENT",
+        "count": 9
+      },
+      {
+        "code": "SUSPECT_VEHICLE_OR_GPS",
+        "count": 3
+      }
+    ]
+  },
+  {
+    "recordingId": "6059402",
+    "author": "YaYa Hsiang",
+    "routeIds": [
+      "R069"
+    ],
+    "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6059402",
+    "sha256": "0b202835239937e244bd1d9824594708b48d149c399339d8a99a6e1922722e66",
+    "file": "gpx/0b202835239937e244bd1d9824594708b48d149c399339d8a99a6e1922722e66.gpx",
+    "observedDate": "2026-09-24",
+    "points": 82198,
+    "warnings": [
+      {
+        "code": "MULTI_SEGMENT",
+        "count": 6
+      }
+    ]
+  },
+  {
+    "recordingId": "6091299",
+    "author": "蔡宗佑",
+    "routeIds": [
+      "R070"
+    ],
+    "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6091299",
+    "sha256": "064727b0105eadb506d29c1081ba23d2849ce032e841713f019f09fac5ca5b62",
+    "file": "gpx/064727b0105eadb506d29c1081ba23d2849ce032e841713f019f09fac5ca5b62.gpx",
+    "observedDate": "2026-10-05",
+    "points": 20834,
+    "warnings": [
+      {
+        "code": "MULTI_SEGMENT",
+        "count": 6
+      }
+    ]
+  },
+  {
+    "recordingId": "6114364",
+    "author": "翁資焱",
+    "routeIds": [
+      "R069",
+      "R070",
+      "R072"
+    ],
+    "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6114364",
+    "sha256": "ff54deb7657ecbade9c92c7bdb368e07011965dd6a96671939fc77c65abd9abc",
+    "file": "gpx/ff54deb7657ecbade9c92c7bdb368e07011965dd6a96671939fc77c65abd9abc.gpx",
+    "observedDate": "2026-10-10",
+    "points": 7133,
+    "warnings": [
+      {
+        "code": "SUSPECT_VEHICLE_OR_GPS",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "recordingId": "5352731",
+    "author": "Vincent",
+    "routeIds": [
+      "R064"
+    ],
+    "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=5352731",
+    "sha256": "19299654b7a8f3bb1ae5cad49ab5a5381957db07c46197c17c42e5667e79db8c",
+    "file": "gpx/19299654b7a8f3bb1ae5cad49ab5a5381957db07c46197c17c42e5667e79db8c.gpx",
+    "observedDate": "2026-02-19",
+    "points": 18681,
+    "warnings": [
+      {
+        "code": "MULTI_SEGMENT",
+        "count": 3
+      },
+      {
+        "code": "SUSPECT_VEHICLE_OR_GPS",
+        "count": 5
+      }
+    ]
+  },
+  {
+    "recordingId": "2918540",
+    "author": "小楊小儀",
+    "routeIds": [
+      "R064"
+    ],
+    "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=2918540",
+    "sha256": "9512a26c4709da3ca1b0ab55099ff53f1baaee8c3d6e1b6011016e94931f5e64",
+    "file": "gpx/9512a26c4709da3ca1b0ab55099ff53f1baaee8c3d6e1b6011016e94931f5e64.gpx",
+    "observedDate": "2024-02-24",
+    "points": 9436,
+    "warnings": []
+  },
+  {
+    "recordingId": "6053878",
+    "author": "Chenling Hsu",
+    "routeIds": [
+      "R057"
+    ],
+    "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6053878",
+    "sha256": "06cf0fc3d0c390bb4b007b6126c58fd1bb52d7b982fdcd66ef2562672dd4c70e",
+    "file": "gpx/06cf0fc3d0c390bb4b007b6126c58fd1bb52d7b982fdcd66ef2562672dd4c70e.gpx",
+    "observedDate": "2026-06-19",
+    "points": 3652,
+    "warnings": []
+  },
+  {
+    "recordingId": "6008189",
+    "author": "pinky",
+    "routeIds": [
+      "R057"
+    ],
+    "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6008189",
+    "sha256": "2ac3b6853d010e13a7e79fe6af24db0ff2b38d2bb9a6ff4e0a8bd9384874038b",
+    "file": "gpx/2ac3b6853d010e13a7e79fe6af24db0ff2b38d2bb9a6ff4e0a8bd9384874038b.gpx",
+    "observedDate": "2026-09-18",
+    "points": 14326,
+    "warnings": [
+      {
+        "code": "MULTI_SEGMENT",
+        "count": 2
+      },
+      {
+        "code": "SUSPECT_VEHICLE_OR_GPS",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "recordingId": "6161659",
+    "author": "水躍魚登山隊",
+    "routeIds": [
+      "R027"
+    ],
+    "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6161659",
+    "sha256": "a38ce5eede2ef9bfe21905ec4fedef8a64fe5305a55c745405dc88e258f7bdda",
+    "file": "gpx/a38ce5eede2ef9bfe21905ec4fedef8a64fe5305a55c745405dc88e258f7bdda.gpx",
+    "observedDate": "2026-10-15",
+    "points": 8258,
+    "warnings": [
+      {
+        "code": "TRACK_GAP",
+        "meters": 963.7,
+        "point": 6754
+      },
+      {
+        "code": "TRACK_GAP",
+        "meters": 1478.5,
+        "point": 6784
+      },
+      {
+        "code": "TRACK_GAP",
+        "meters": 534.4,
+        "point": 6790
+      },
+      {
+        "code": "TRACK_GAP",
+        "meters": 521.9,
+        "point": 6810
+      },
+      {
+        "code": "TRACK_GAP",
+        "meters": 889.8,
+        "point": 6857
+      },
+      {
+        "code": "TRACK_GAP",
+        "meters": 1969.2,
+        "point": 8045
+      },
+      {
+        "code": "TRACK_GAP",
+        "meters": 794.9,
+        "point": 8059
+      },
+      {
+        "code": "TRACK_GAP",
+        "meters": 897,
+        "point": 8090
+      },
+      {
+        "code": "TRACK_GAP",
+        "meters": 1006.7,
+        "point": 8257
+      }
+    ]
+  },
+  {
+    "recordingId": "6114289",
+    "author": "MikeYeh",
+    "routeIds": [
+      "R027"
+    ],
+    "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6114289",
+    "sha256": "36598a212db8ee3252ba0be6273f4f2881abfbf88007bd09dd94c81d4dde93c2",
+    "file": "gpx/36598a212db8ee3252ba0be6273f4f2881abfbf88007bd09dd94c81d4dde93c2.gpx",
+    "observedDate": "2026-10-08",
+    "points": 25947,
+    "warnings": [
+      {
+        "code": "SUSPECT_VEHICLE_OR_GPS",
+        "count": 3
+      }
+    ]
+  },
+  {
+    "recordingId": "6220052",
+    "author": "🌟👶Ya-wen🎈",
+    "routeIds": [
+      "R072"
+    ],
+    "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6220052",
+    "sha256": "cfff140d5c32cfc41427bc3349bdd12a570fda33a3325116f708d0cdb7e9e200",
+    "file": "gpx/cfff140d5c32cfc41427bc3349bdd12a570fda33a3325116f708d0cdb7e9e200.gpx",
+    "observedDate": "2026-11-10",
+    "points": 14256,
+    "warnings": [
+      {
+        "code": "TRACK_GAP",
+        "meters": 905.9,
+        "point": 4005
+      },
+      {
+        "code": "TRACK_GAP",
+        "meters": 593.1,
+        "point": 12403
+      },
+      {
+        "code": "TRACK_GAP",
+        "meters": 9837.7,
+        "point": 14250
+      },
+      {
+        "code": "SUSPECT_VEHICLE_OR_GPS",
+        "count": 6
+      }
+    ]
+  },
+  {
+    "recordingId": "6207514",
+    "author": "草莓登山客",
+    "routeIds": [
+      "R069",
+      "R070",
+      "R072"
+    ],
+    "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6207514",
+    "sha256": "ff54deb7657ecbade9c92c7bdb368e07011965dd6a96671939fc77c65abd9abc",
+    "file": "gpx/ff54deb7657ecbade9c92c7bdb368e07011965dd6a96671939fc77c65abd9abc.gpx",
+    "observedDate": "2026-10-10",
+    "points": 7133,
+    "warnings": [
+      {
+        "code": "SUSPECT_VEHICLE_OR_GPS",
+        "count": 1
+      }
+    ]
+  }
+]

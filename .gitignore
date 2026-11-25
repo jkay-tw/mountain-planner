@@ -8,3 +8,6 @@ node_modules/
 # Local IDEA-003 validation environments
 .idea003-test-*/
 __pycache__/
+
+# Route Validator local GPX library, private source metadata, caches and reports
+.route-validator/

@@ -2,17 +2,17 @@
 
 以台灣上河步程資料為基礎的靜態網頁行程規劃工具。
 
-- [開啟正式版 v0.9.0](https://jkay-tw.github.io/mountain-planner/)
-- [開啟 功能預覽](https://jkay-tw.github.io/mountain-planner/preview/unified-editor.html?v=v090)
-- [v0.9.0 發布說明](docs/v0.9.0_RELEASE.md)
+- [開啟正式版 v0.10.0](https://jkay-tw.github.io/mountain-planner/)
+- [開啟 功能預覽](https://jkay-tw.github.io/mountain-planner/preview/unified-editor.html?v=v0100)
+- [v0.10.0 發布說明](docs/v0.10.0_RELEASE.md)
 - [2026-11-07 試算表節點座標、路徑與高程更新](docs/SHEET_COORDINATE_UPDATE_20261107.md)
 - [2026-11-06 G04 岔路資料更新：座標、OSM 路徑與 DEM 同步](docs/G04_COORDINATE_SYNC_20261106.md)
-- [圖文使用說明](https://jkay-tw.github.io/mountain-planner/guide.html?v=v090)
+- [圖文使用說明](https://jkay-tw.github.io/mountain-planner/guide.html?v=v0100)
 - [v0.8 功能、資料範圍與驗收](docs/v0.8_RELEASE.md)
 - [v0.8.1 座標、連續路徑與剩餘資料缺口](docs/v0.8.1_COORDINATE_UPDATE_20261104.md)
 - [補座標的局部更新流程](docs/COORDINATE_UPDATE_WORKFLOW.md)
 - [快速加入路網小地圖／座標同步交接（2026-11-05）](docs/QUICK_MAP_COORDINATE_SYNC_20261105.md)
-- 應用程式版本：`v0.9.0`；G04 座標與圖資資料補丁於 2026-11-06 完成來源重算及驗證，更新詳見上方紀錄。
+- 應用程式版本：`v0.10.0`；G04 座標與圖資資料補丁於 2026-11-06 完成來源重算及驗證，更新詳見上方紀錄。
 - [專案導覽與測試指令](docs/PROJECT_GUIDE.md)
 
 ## 主要功能
@@ -25,7 +25,13 @@
 - 前後兩段快速加入，只顯示「＋ 名稱」；手機備註換行；Excel 採 A4 直向、獨立距離／升降欄與時:分格式。
 - 各瀏覽器分頁獨立暫存行程；一般新分頁載入最後修改的共用備份。重要行程仍可匯出檔案備份。
 
-## v0.9.0 更新
+## v0.10.0 更新
+
+- 整合 60 條經典路線、1,469 次有效節點經過，支援路線套用、方向切換及重要／全部／自訂節點顯示。
+- 上河圖組提供路線起終點快速加入，包含跨圖起點；R026 從神木區登山口步行往返。
+- 整合參考 GPX、路徑編輯與圖層控制，更新圖文說明。
+- 新增開發者 Route Validator、來源快取與可重複的順序檢查。
+
 
 - 路網小地圖支援附近節點名稱、引線與目前位置；密集處採示意避讓，連續快速加入保持展開。
 - 快速加入顯示經由節點與返回方向，手機休息／手動點支援觸控拖曳。

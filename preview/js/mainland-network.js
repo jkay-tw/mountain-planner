@@ -26,6 +26,7 @@ export class MainlandNetwork{
   if(wanted.reduce((sum,t)=>sum+t.nodes,0)>800000||wanted.reduce((sum,t)=>sum+t.bytes,0)>32*1024*1024)throw Error('此搜尋超過80萬解碼頂點或32 MiB壓縮資料預算，請增加行程點分段；原路徑已保留。');
   for(const [file] of this.loaded)if(!keys.has(file)){this.loaded.delete(file);this.bytes-=this.manifest.tiles.find(t=>t.file===file).bytes;}
   for(const tile of wanted)await this.tile(tile);return wanted.length;}
+ needsManual(points,padding=.01){return !this.manualEnabled&&corridorTiles(this.manifest?.tiles||[],points,padding).some(t=>t.manualOnly);}
  graph(){const merged={nodes:{},ways:[],blockedNodeIds:[],junctionIds:[]},ways=new Set();for(const tile of this.loaded.values()){for(const [id,point] of Object.entries(tile.nodes)){const existing=merged.nodes[id];if(existing&&(existing[0]!==point[0]||existing[1]!==point[1]))throw Error('相同OSM ID有衝突座標，已拒絕建圖：'+id);merged.nodes[id]=point;}for(const way of tile.ways){if(ways.has(way.id))throw Error('重複OSM way來源，已拒絕建圖：'+way.id);ways.add(way.id);merged.ways.push(way);}merged.blockedNodeIds.push(...tile.blockedNodeIds);merged.junctionIds.push(...tile.junctionIds);}return buildGraph(merged);}
  stats(){return {version:this.manifest?.version,tiles:this.loaded.size,compressedBytes:this.bytes,downloadBytes:this.downloadBytes,cacheBytes:this.cacheBytes};}
 }

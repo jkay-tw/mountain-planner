@@ -1,0 +1,630 @@
+{
+  "date": "2026-11-23",
+  "spreadsheetId": "1Hfn-TT96JjGOnJXjNkoyWuCXrn-sw-pkuvACfLHSHVg",
+  "ranges": [
+    "A1:D90",
+    "T1:U90",
+    "V29"
+  ],
+  "rows": [
+    {
+      "row": 2,
+      "routeId": "R001",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 3,
+      "routeId": "R002",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 4,
+      "routeId": "R003",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 5,
+      "routeId": "R004",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 6,
+      "routeId": "R005",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 7,
+      "routeId": "R006",
+      "type": "縱走",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 8,
+      "routeId": "R007",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 9,
+      "routeId": "R008",
+      "type": "往返",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 10,
+      "routeId": "R009",
+      "type": "縱走",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 11,
+      "routeId": "R010",
+      "type": "往返",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 12,
+      "routeId": "R011",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 13,
+      "routeId": "R012",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 14,
+      "routeId": "R013",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 15,
+      "routeId": "R014",
+      "type": "往返",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 16,
+      "routeId": "R015",
+      "type": "環狀",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 17,
+      "routeId": "R016",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 18,
+      "routeId": "R017",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 19,
+      "routeId": "R018",
+      "type": "往返",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 20,
+      "routeId": "R019",
+      "type": "往返",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 21,
+      "routeId": "R020",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 22,
+      "routeId": "R021",
+      "type": "往返",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 23,
+      "routeId": "R022",
+      "type": "環狀",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 24,
+      "routeId": "R023",
+      "type": "縱走",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 25,
+      "routeId": "R024",
+      "type": "縱走",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 26,
+      "routeId": "R025",
+      "type": "縱走",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 27,
+      "routeId": "R026",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 28,
+      "routeId": "R027",
+      "type": "縱走",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 29,
+      "routeId": "R028",
+      "type": "縱走",
+      "direction": "逆行",
+      "changedImportant": "V"
+    },
+    {
+      "row": 30,
+      "routeId": "R029",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 31,
+      "routeId": "R030",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 32,
+      "routeId": "R031",
+      "type": "往返",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 33,
+      "routeId": "R032",
+      "type": "往返",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 34,
+      "routeId": "R033",
+      "type": "縱走",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 35,
+      "routeId": "R034",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 36,
+      "routeId": "R035",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 37,
+      "routeId": "R036",
+      "type": "往返",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 38,
+      "routeId": "R037",
+      "type": "往返",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 39,
+      "routeId": "R038",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 40,
+      "routeId": "R039",
+      "type": "環狀",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 41,
+      "routeId": "R040",
+      "type": "縱走",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 42,
+      "routeId": "R041",
+      "type": "環狀",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 43,
+      "routeId": "R042",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 44,
+      "routeId": "R043",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 45,
+      "routeId": "R044",
+      "type": "縱走",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 46,
+      "routeId": "R045",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 47,
+      "routeId": "R046",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 48,
+      "routeId": "R047",
+      "type": "往返",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 49,
+      "routeId": "R048",
+      "type": "往返",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 50,
+      "routeId": "R049",
+      "type": "往返",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 51,
+      "routeId": "R050",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 52,
+      "routeId": "R051",
+      "type": "往返",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 53,
+      "routeId": "R052",
+      "type": "多段行程",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 54,
+      "routeId": "R053",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 55,
+      "routeId": "R054",
+      "type": "縱走",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 56,
+      "routeId": "R055",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 57,
+      "routeId": "R056",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 58,
+      "routeId": "R057",
+      "type": "縱走",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 59,
+      "routeId": "R058",
+      "type": "縱走",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 60,
+      "routeId": "R059",
+      "type": "縱走",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 61,
+      "routeId": "R060",
+      "type": "往返",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 62,
+      "routeId": "R061",
+      "type": "縱走",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 63,
+      "routeId": "R062",
+      "type": "縱走",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 64,
+      "routeId": "R063",
+      "type": "往返",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 65,
+      "routeId": "R064",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 66,
+      "routeId": "R065",
+      "type": "往返",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 67,
+      "routeId": "R066",
+      "type": "縱走",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 68,
+      "routeId": "R067",
+      "type": "縱走",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 69,
+      "routeId": "R068",
+      "type": "縱走",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 70,
+      "routeId": "R069",
+      "type": "縱走",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 71,
+      "routeId": "R070",
+      "type": "往返",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 72,
+      "routeId": "R071",
+      "type": "縱走",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 73,
+      "routeId": "R072",
+      "type": "縱走",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 74,
+      "routeId": "R073",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 75,
+      "routeId": "R074",
+      "type": "往返",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 76,
+      "routeId": "R075",
+      "type": "往返",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 77,
+      "routeId": "R076",
+      "type": "往返",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 78,
+      "routeId": "R077",
+      "type": "縱走",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 79,
+      "routeId": "R078",
+      "type": "縱走",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 80,
+      "routeId": "R079",
+      "type": "縱走",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 81,
+      "routeId": "R080",
+      "type": "縱走",
+      "direction": "順行",
+      "changedImportant": ""
+    },
+    {
+      "row": 82,
+      "routeId": "R081",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 83,
+      "routeId": "R082",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 84,
+      "routeId": "R083",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 85,
+      "routeId": "R084",
+      "type": "往返",
+      "direction": "",
+      "changedImportant": ""
+    },
+    {
+      "row": 86,
+      "routeId": "R085",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 87,
+      "routeId": "R086",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 88,
+      "routeId": "R087",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    },
+    {
+      "row": 89,
+      "routeId": "R088",
+      "type": "往返",
+      "direction": "/",
+      "changedImportant": ""
+    }
+  ],
+  "changedOrders": {
+    "R028": "雪山登山口 → 雪山東峰 → 雪山主峰 →  雪山山莊舊址 → 志佳陽大山 → 環山部落"
+  }
+}

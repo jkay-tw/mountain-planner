@@ -12,14 +12,18 @@ export function validatePlan(data,routeIds){
   if(data.routeId!==null&&data.routeId!==undefined&&(!routeIds.includes(data.routeId)))fail('不支援的上河圖：'+data.routeId);
   if(!date(data.tripStartDate??''))fail('出發日期格式錯誤');
   if(!Array.isArray(data.days)||data.days.length<1||data.days.length>10)fail('行程天數必須為 1～10 天');
-  let count=0;
+  let count=0,classicPoints=0;
   data.days.forEach((d,i)=>{
     if(!plain(d)||!clock(d.startTime)||!finite(d.coefficient,.1,3)||typeof d.note!=='string')fail('Day '+(i+1)+' 基本資料有誤');
     if(typeof d.linkedStart!=='boolean'||!Array.isArray(d.items)||d.items.length>1000)fail('Day '+(i+1)+' 行程資料格式錯誤');
+    if(d.displayMode!==undefined&&!['all','important','custom'].includes(d.displayMode))fail('Day '+(i+1)+' 顯示模式錯誤');
     let last=null;
     d.items.forEach((item,j)=>{
       const where='Day '+(i+1)+' 第 '+(j+1)+' 項';
       if(!plain(item)||!['location','manual-location','rest'].includes(item.type))fail(where+' 節點類型錯誤');
+      if(item.classicRoute!==undefined){const r=item.classicRoute;if(!plain(r)||!/^R\d{3}$/.test(r.routeId)||!Number.isInteger(r.version)||r.version<1||!['forward','reverse'].includes(r.direction)||!Number.isInteger(r.position)||r.position<0||r.position>1000||(r.key!==undefined&&typeof r.key!=='boolean')||typeof r.batchId!=='string'||r.batchId.length>200||!['candidate','verified'].includes(r.verification)||!/^\w{40}$/.test(r.baseCommit)||(r.geometrySpanId!==undefined&&(typeof r.geometrySpanId!=='string'||r.geometrySpanId.length>200)))fail(where+' 路線位置來源錯誤');}
+      if(item.classicGeometry!==undefined){const s=item.classicGeometry;if(!plain(s)||typeof s.spanId!=='string'||s.spanId.length>200||typeof s.reverse!=='boolean'||typeof s.batchId!=='string'||s.batchId.length>200||!Array.isArray(s.nodeIds)||s.nodeIds.length<2||s.nodeIds.length>1000||s.nodeIds.some(id=>typeof id!=='string'||id.length>250)||!Array.isArray(s.positions)||s.positions.length!==s.nodeIds.length||s.positions.some((p,k)=>!Number.isInteger(p)||p<0||p>1000||k&&p!==s.positions[k-1]+1)||!Array.isArray(s.coordinates)||s.coordinates.length<2||s.coordinates.length>100000||s.coordinates.some(p=>!validCoordinate(p))||(s.profile!==null&&(!Array.isArray(s.profile)||s.profile.length<2||s.profile.length>100000||s.profile.some((p,k)=>!Array.isArray(p)||p.length!==2||!finite(p[0],0,1e8)||(p[1]!==null&&!finite(p[1],-1000,10000))||k&&p[0]<s.profile[k-1][0])))||typeof s.sourceName!=='string'||s.sourceName.length>1000||typeof s.sourceUrl!=='string'||s.sourceUrl.length>2000||!/^https?:\/\//i.test(s.sourceUrl))fail(where+' 已保存路線線形錯誤');}
+      if(item.classicGeometry){classicPoints+=item.classicGeometry.coordinates.length;if(classicPoints>200000)fail('已保存路線線形超過總點數限制');}
       if(item._generatedForEndpoint!==undefined&&(typeof item._generatedForEndpoint!=='string'||item._generatedForEndpoint.length>200))fail(where+' 自動中途點歸屬錯誤');
       if(item._generatedBaseline!==undefined&&(typeof item._generatedBaseline!=='string'||item._generatedBaseline.length>65536))fail(where+' 自動中途點快照錯誤');
       if(item.demSnapshot!==undefined){const s=item.demSnapshot;if(!plain(s)||!Array.isArray(s.shape)||s.shape.length<2||s.shape.length>100000||s.shape.some(p=>!validCoordinate(p))||!Array.isArray(s.profile)||s.profile.length<2||s.profile.length>100000||s.profile.some((p,i)=>!Array.isArray(p)||p.length!==2||!finite(p[0],0,1e8)||(p[1]!==null&&!finite(p[1],-1000,10000))||(i&&p[0]<s.profile[i-1][0]))||!plain(s.source)||typeof s.version!=='string'||s.version.length>100||s.spacingMeters!==30)fail(where+' DEM 快照錯誤');}

@@ -42,6 +42,10 @@
 
 資料工具、schema、跨圖身分、路徑或時間計算的變更，依影響範圍執行相關測試；發布或跨模組變更前執行完整 CI。CI 通過不等於瀏覽器視覺或操作驗收。
 
+## 開發者路線驗證工具
+
+雙擊專案根目錄的 `路線檢查.cmd` 開啟獨立操作頁，或執行 `node tools/route-validator.mjs`。採用兩個「順序校核」分頁及使用者指定的原始 Node ID 表，輸出合併異常、GPX 證據與修正候選，不自動覆寫正式路線。操作、資料取得限制與重跑方式見 [Route Validator](ROUTE_VALIDATOR.md)。
+
 ## v0.8 地形與參考線形
 
 - `data/geometry/planner-terrain-v1.json`：完整執行期資料，727 個現行節點；559 個定位點均有海拔；452 組已有端點座標的路段均有線形與沿線高程。
@@ -73,3 +77,7 @@
 ## v0.9.0 正式版
 
 已發布小地圖、引線排版、手機拖曳、工具列及圖文說明。正式入口 `index.html`，說明頁 `guide.html`；Preview 入口 `preview/unified-editor.html`。正式版暫存鍵維持不變，發布與回復點見 [v0.9.0](v0.9.0_RELEASE.md)。
+
+## v0.10.0 正式版
+
+正式入口 index.html，圖文說明 guide.html；經典路線及圖組快速起點已整合。發布紀錄見 [v0.10.0](v0.10.0_RELEASE.md)。

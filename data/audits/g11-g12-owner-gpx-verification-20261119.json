@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-19",
+  "previewBaselineSha256": "bc837ccbe83bf51119d4cddec6d09e16b37558b9826dbdef6fb0ecedc7ec0c1a",
+  "previewResultSha256": "b1dfc7a90eeefcaa495627160a9bca8f86bff351c60773ba55504b4dee3443e4",
+  "productionUnchanged": true,
+  "nodeRecordsUnchanged": true,
+  "spanDependenciesUnchanged": true,
+  "changedSpanIds": [
+    "osm-full-3501f416d8e39985",
+    "osm-full-90492ed62a1bcae8"
+  ],
+  "unchangedSpanCount": 693,
+  "directionalRoutes": {
+    "G09-19d020e9": {
+      "unchanged": true,
+      "sha256": "df867fe1d9c2c4ede34c2e53a67cd4cda0c3e135c564f7ffa76797ea4049cec8"
+    },
+    "G11": {
+      "unchanged": true,
+      "sha256": "b78d68b64b3f907ef03810b0efba93ae9b619ca98b1068c84da887c44032cf70"
+    },
+    "G12": {
+      "unchanged": true,
+      "sha256": "18ea1dbe2c620b8f8121fb4d9d5b1200185f48dac2b3dca775f384d75d152d31"
+    }
+  },
+  "cacheUpdatesNotApplied": {
+    "preview/js/unified-editor.js": {
+      "old": "geobc837ccbe83b",
+      "new": "geob1dfc7a90eee"
+    },
+    "preview/unified-editor.html": {
+      "old": "geo2278d5c8d1a0",
+      "new": "geo75e176d4e64a"
+    }
+  },
+  "validation": {
+    "pythonTests": 3,
+    "javascriptTests": 10,
+    "cacheGate": "not passed: old Preview cache URL; HTML/JS edits outside current scope",
+    "browserVisual": "not performed"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "result": "PASS",
+  "routeId": "R026",
+  "start": "神木區登山口",
+  "end": "神木區登山口",
+  "walkingOccurrences": 33,
+  "vehicleSegments": 0,
+  "checks": [
+    "G04 excludes vehicle-only Zhenxibao",
+    "connected Shenmu trailhead quick start",
+    "one-node addition",
+    "next walking node",
+    "undo/redo",
+    "whole R026 walking application",
+    "JSON roundtrip",
+    "reload",
+    "390px no overflow"
+  ],
+  "pageErrors": []
+}

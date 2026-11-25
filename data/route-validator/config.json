@@ -1,0 +1,9 @@
+{
+  "spreadsheetId": "1Hfn-TT96JjGOnJXjNkoyWuCXrn-sw-pkuvACfLHSHVg",
+  "sheetIds": {"Routes_順序校核": 967124143, "RouteNodes_順序校核": 1144715032},
+  "nearMeters": 30,
+  "reviewMeters": 100,
+  "geometryMaxMeters": 30,
+  "minIndependent": 3,
+  "maxEvidenceAgeDays": 1096
+}

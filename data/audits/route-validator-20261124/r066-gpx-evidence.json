@@ -1,0 +1,6125 @@
+{
+  "schemaVersion": 1,
+  "routeId": "R066",
+  "generatedAt": "2026-11-24T16:59:12.058Z",
+  "sheetReadAt": "2026-11-24T13:40:02.421Z",
+  "authority": {
+    "path": "data/route-validator/snapshots/node-authority-20261124.json",
+    "sha256": "f91b3ab0381a255cc75412cb263fd4b796b222a382f7f2c1053f1f1fecc83fc4",
+    "capturedAt": "2026-11-24T12:12:20.237Z",
+    "liveComparisonAt": "2026-11-24T13:42:33.133Z",
+    "liveRange": "'節點總表'!A477:M547"
+  },
+  "method": "Project to existing GPX edges only; components and jumps remain separate. Along-distance excludes missing links. Per-node proximity is diagnostic, never an identity or route correctness decision. Geometry availability is assessed independently using exact existing OSM spans.",
+  "existingStartSegment": {
+    "fromId": "node:ef56761122345906961b",
+    "toId": "node:5d3084736e9f8bce6d4a",
+    "geometryStatus": "EXISTING_OSM_GEOMETRY_AVAILABLE",
+    "sequenceEvidenceStatus": "GPX_NOT_COVERED_NOT_A_GEOMETRY_BLOCKER",
+    "spanId": "owner-update-f0bece11265a479a",
+    "geometryFile": "preview/data/geometry/planner-terrain-v1.json",
+    "geometryHash": "0d982bce01e49e3183c0012657b4d410ed2b5c2c74d86b3f72aeee40fa774e94",
+    "pointCount": 472,
+    "distanceMeters": 4755.362,
+    "endpointOffsetsMeters": [
+      2.03,
+      0.29
+    ],
+    "usedReverse": true,
+    "sourceWayIds": [
+      620898176,
+      782359160,
+      865982155
+    ],
+    "source": {
+      "name": "OpenStreetMap / Geofabrik Taiwan",
+      "url": "https://download.geofabrik.de/asia/taiwan-latest.osm.pbf",
+      "retrievedDate": "2026-11-03",
+      "sha256": "72e6ec59e0b015aa52fd26b0240dc4155beca04a3071b0d07878eef6f02ba2b6",
+      "license": "ODbL 1.0",
+      "copyrightUrl": "https://www.openstreetmap.org/copyright"
+    },
+    "directionalTimes": [
+      {
+        "fromId": "node:5d3084736e9f8bce6d4a",
+        "toId": "node:ef56761122345906961b",
+        "minutes": 90,
+        "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+        "sourceRows": [
+          "R71B6CF31BA"
+        ],
+        "evidenceRows": [
+          596
+        ],
+        "verificationBasis": "owner_workbook_review"
+      },
+      {
+        "fromId": "node:ef56761122345906961b",
+        "toId": "node:5d3084736e9f8bce6d4a",
+        "minutes": 100,
+        "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+        "sourceRows": [
+          "R71B6CF31BA"
+        ],
+        "evidenceRows": [
+          596
+        ],
+        "verificationBasis": "owner_workbook_review"
+      }
+    ],
+    "noNewRouting": true,
+    "noGeometryWritten": true,
+    "meaning": "Reuse existing OSM planning geometry and existing source times; not a new field survey or independently verified official map transcription."
+  },
+  "currentSequence": [
+    {
+      "position": 1,
+      "nodeId": "shared:cw-v07-011",
+      "name": "丹大山"
+    },
+    {
+      "position": 2,
+      "nodeId": "node:b865066ee7995702c0d4",
+      "name": "盧利拉駱山"
+    },
+    {
+      "position": 3,
+      "nodeId": "node:9f59facbac44a2e55ce7",
+      "name": "太平溪源營地"
+    },
+    {
+      "position": 4,
+      "nodeId": "node:c8870812bd546115bac5",
+      "name": "三岔路口營地"
+    },
+    {
+      "position": 5,
+      "nodeId": "node:2aa469a51f6331227667",
+      "name": "內嶺爾山"
+    },
+    {
+      "position": 6,
+      "nodeId": "node:c8870812bd546115bac5",
+      "name": "三岔路口營地"
+    },
+    {
+      "position": 7,
+      "nodeId": "node:c25918006df5f04534c8",
+      "name": "馬路巴拉讓山"
+    },
+    {
+      "position": 8,
+      "nodeId": "node:66b2dd2d91e301d84c73",
+      "name": "東鞍營地"
+    },
+    {
+      "position": 9,
+      "nodeId": "node:5048fd0d5be7a2b461be",
+      "name": "義西請馬至山"
+    },
+    {
+      "position": 10,
+      "nodeId": "node:fda449ba3440ad785b68",
+      "name": "斷稜東山"
+    },
+    {
+      "position": 11,
+      "nodeId": "node:0c0dc01565d03fae0e19",
+      "name": "裡門山"
+    },
+    {
+      "position": 12,
+      "nodeId": "node:34b4ec45fd16d72ac1b6",
+      "name": "丹大溪源營地"
+    },
+    {
+      "position": 13,
+      "nodeId": "node:ff06147be71a4346fbfc",
+      "name": "望崖山"
+    },
+    {
+      "position": 14,
+      "nodeId": "node:f0bb47a73379bfdf496a",
+      "name": "天南可蘭/望崖岔路"
+    },
+    {
+      "position": 15,
+      "nodeId": "node:01d1180c464fb08e5191",
+      "name": "可樂可樂安山"
+    },
+    {
+      "position": 16,
+      "nodeId": "node:6976566bc1a316b8e079",
+      "name": "郡東山"
+    },
+    {
+      "position": 17,
+      "nodeId": "node:e9149e15effc99bc37f7",
+      "name": "郡東營地"
+    },
+    {
+      "position": 18,
+      "nodeId": "node:a4c3afd25386960ea875",
+      "name": "東北鞍營地"
+    },
+    {
+      "position": 19,
+      "nodeId": "node:06b52b0f4a9c5db51f87",
+      "name": "東鑾/烏達佩岔路"
+    },
+    {
+      "position": 20,
+      "nodeId": "node:c9115d117bdcc33b8c0b",
+      "name": "東巒大山"
+    },
+    {
+      "position": 21,
+      "nodeId": "node:06b52b0f4a9c5db51f87",
+      "name": "東鑾/烏達佩岔路"
+    },
+    {
+      "position": 22,
+      "nodeId": "node:a4c3afd25386960ea875",
+      "name": "東北鞍營地"
+    },
+    {
+      "position": 23,
+      "nodeId": "node:adc0d7c3c99b1752e68b",
+      "name": "東郡大山"
+    },
+    {
+      "position": 24,
+      "nodeId": "node:a4c3afd25386960ea875",
+      "name": "東北鞍營地"
+    },
+    {
+      "position": 25,
+      "nodeId": "node:4001696b7a0f069ffb0b",
+      "name": "本鄉山"
+    },
+    {
+      "position": 26,
+      "nodeId": "node:21743079f36dd0ee5829",
+      "name": "櫧山北鞍營地"
+    },
+    {
+      "position": 27,
+      "nodeId": "node:b68adbc4f51e0a71c87f",
+      "name": "櫧山"
+    },
+    {
+      "position": 28,
+      "nodeId": "node:679d7475a6dd59c285e2",
+      "name": "無雙山東峰"
+    },
+    {
+      "position": 29,
+      "nodeId": "node:82e77090c06d1fe2aead",
+      "name": "無雙最高峰"
+    },
+    {
+      "position": 30,
+      "nodeId": "node:bce5fdf63beb2b9d5c29",
+      "name": "無雙山基點峰"
+    }
+  ],
+  "branches": {
+    "selectedStartExtension": [
+      "14.6K水泥路止",
+      "19.3K水泥橋"
+    ],
+    "ingressTraditional": [
+      "19.3K水泥橋",
+      "28K水泥工寮",
+      "32K水泥工寮",
+      "34K登山口",
+      "沙武巒草原",
+      "東源營地",
+      "西源營地",
+      "杜鵑營地",
+      "太平溪源",
+      "太平溪源營地"
+    ],
+    "dandaReturn": [
+      "太平溪源營地",
+      "盧利拉駱山",
+      "丹大山",
+      "盧利拉駱山",
+      "太平溪源營地"
+    ],
+    "eastFirst": [
+      "東北鞍營地",
+      "東鑾/烏達佩岔路",
+      "東巒大山",
+      "東鑾/烏達佩岔路",
+      "東北鞍營地",
+      "東郡大山",
+      "東北鞍營地"
+    ],
+    "dongFirst": [
+      "東北鞍營地",
+      "東郡大山",
+      "東鑾/烏達佩岔路",
+      "東巒大山",
+      "東鑾/烏達佩岔路",
+      "東北鞍營地"
+    ],
+    "egressTraditional": [
+      "無雙山基點峰",
+      "最後水源",
+      "亞力士營地",
+      "無雙部落址",
+      "無雙吊橋",
+      "烏瓦拉鼻溪營地",
+      "45.3K登山口",
+      "43K工寮",
+      "33K行車終點"
+    ]
+  },
+  "sources": [
+    {
+      "sourceId": "gpx-04c37ce0eef774ce",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=229060&q=trail",
+      "author": "保用十年",
+      "sha256": "04c37ce0eef774ced5bdbdd7b0872a8242e09ee08972fd22422b4ff0064d037a",
+      "recordingId": "229060",
+      "summary": {
+        "points": 10833,
+        "recordedSegments": 9,
+        "components": 9,
+        "distanceMeters": 107605.9,
+        "ascentMeters": 15912.6,
+        "descentMeters": 24525.5,
+        "timedEdges": 10823,
+        "speedSuspects": 0,
+        "start": [
+          121.274734,
+          23.535098
+        ],
+        "end": [
+          120.947108,
+          23.595656
+        ]
+      },
+      "warnings": [
+        {
+          "code": "MULTI_SEGMENT",
+          "count": 9
+        },
+        {
+          "code": "INVALID_TIME_ORDER",
+          "count": 1
+        }
+      ],
+      "componentGaps": [
+        {
+          "afterComponent": 1,
+          "meters": 33.3
+        },
+        {
+          "afterComponent": 2,
+          "meters": 17.1
+        },
+        {
+          "afterComponent": 3,
+          "meters": 31.4
+        },
+        {
+          "afterComponent": 4,
+          "meters": 937.5
+        },
+        {
+          "afterComponent": 5,
+          "meters": 18.9
+        },
+        {
+          "afterComponent": 6,
+          "meters": 68.1
+        },
+        {
+          "afterComponent": 7,
+          "meters": 158.8
+        },
+        {
+          "afterComponent": 8,
+          "meters": 39.7
+        }
+      ],
+      "branchMatches": {
+        "selectedStartExtension": {
+          "template": [
+            "14.6K水泥路止",
+            "19.3K水泥橋"
+          ],
+          "radiusMeters": 30,
+          "matched": 1,
+          "total": 2,
+          "truncated": false,
+          "matches": [
+            null,
+            {
+              "name": "19.3K水泥橋",
+              "component": 1,
+              "alongMeters": 4,
+              "offsetMeters": 13.6
+            }
+          ],
+          "meaning": "Within-radius sequence candidates only; not proof of physical node identity, continuous geometry, or variant equivalence."
+        },
+        "ingressTraditional": {
+          "template": [
+            "19.3K水泥橋",
+            "28K水泥工寮",
+            "32K水泥工寮",
+            "34K登山口",
+            "沙武巒草原",
+            "東源營地",
+            "西源營地",
+            "杜鵑營地",
+            "太平溪源",
+            "太平溪源營地"
+          ],
+          "radiusMeters": 30,
+          "matched": 10,
+          "total": 10,
+          "truncated": false,
+          "matches": [
+            {
+              "name": "19.3K水泥橋",
+              "component": 1,
+              "alongMeters": 4,
+              "offsetMeters": 13.6
+            },
+            {
+              "name": "28K水泥工寮",
+              "component": 1,
+              "alongMeters": 5828,
+              "offsetMeters": 16.4
+            },
+            {
+              "name": "32K水泥工寮",
+              "component": 1,
+              "alongMeters": 10109,
+              "offsetMeters": 2
+            },
+            {
+              "name": "34K登山口",
+              "component": 1,
+              "alongMeters": 11323,
+              "offsetMeters": 9
+            },
+            {
+              "name": "沙武巒草原",
+              "component": 1,
+              "alongMeters": 12047,
+              "offsetMeters": 0.2
+            },
+            {
+              "name": "東源營地",
+              "component": 1,
+              "alongMeters": 16333,
+              "offsetMeters": 13.7
+            },
+            {
+              "name": "西源營地",
+              "component": 2,
+              "alongMeters": 16647,
+              "offsetMeters": 6.4
+            },
+            {
+              "name": "杜鵑營地",
+              "component": 2,
+              "alongMeters": 23070,
+              "offsetMeters": 1
+            },
+            {
+              "name": "太平溪源",
+              "component": 2,
+              "alongMeters": 24745,
+              "offsetMeters": 10.7
+            },
+            {
+              "name": "太平溪源營地",
+              "component": 4,
+              "alongMeters": 32276,
+              "offsetMeters": 3.3
+            }
+          ],
+          "meaning": "Within-radius sequence candidates only; not proof of physical node identity, continuous geometry, or variant equivalence."
+        },
+        "dandaReturn": {
+          "template": [
+            "太平溪源營地",
+            "盧利拉駱山",
+            "丹大山",
+            "盧利拉駱山",
+            "太平溪源營地"
+          ],
+          "radiusMeters": 30,
+          "matched": 5,
+          "total": 5,
+          "truncated": false,
+          "matches": [
+            {
+              "name": "太平溪源營地",
+              "component": 3,
+              "alongMeters": 25027,
+              "offsetMeters": 7.7
+            },
+            {
+              "name": "盧利拉駱山",
+              "component": 3,
+              "alongMeters": 26786,
+              "offsetMeters": 8.2
+            },
+            {
+              "name": "丹大山",
+              "component": 3,
+              "alongMeters": 28675,
+              "offsetMeters": 1.6
+            },
+            {
+              "name": "盧利拉駱山",
+              "component": 3,
+              "alongMeters": 30868,
+              "offsetMeters": 16.8
+            },
+            {
+              "name": "太平溪源營地",
+              "component": 4,
+              "alongMeters": 32276,
+              "offsetMeters": 3.3
+            }
+          ],
+          "meaning": "Within-radius sequence candidates only; not proof of physical node identity, continuous geometry, or variant equivalence."
+        },
+        "eastFirst": {
+          "template": [
+            "東北鞍營地",
+            "東鑾/烏達佩岔路",
+            "東巒大山",
+            "東鑾/烏達佩岔路",
+            "東北鞍營地",
+            "東郡大山",
+            "東北鞍營地"
+          ],
+          "radiusMeters": 30,
+          "matched": 6,
+          "total": 7,
+          "truncated": false,
+          "matches": [
+            {
+              "name": "東北鞍營地",
+              "component": 5,
+              "alongMeters": 56263,
+              "offsetMeters": 4.5
+            },
+            {
+              "name": "東鑾/烏達佩岔路",
+              "component": 6,
+              "alongMeters": 58623,
+              "offsetMeters": 7.6
+            },
+            {
+              "name": "東巒大山",
+              "component": 6,
+              "alongMeters": 59900,
+              "offsetMeters": 0.5
+            },
+            {
+              "name": "東鑾/烏達佩岔路",
+              "component": 6,
+              "alongMeters": 61072,
+              "offsetMeters": 3.3
+            },
+            {
+              "name": "東北鞍營地",
+              "component": 6,
+              "alongMeters": 64150,
+              "offsetMeters": 0.6
+            },
+            null,
+            {
+              "name": "東北鞍營地",
+              "component": 7,
+              "alongMeters": 64211,
+              "offsetMeters": 15.3
+            }
+          ],
+          "meaning": "Within-radius sequence candidates only; not proof of physical node identity, continuous geometry, or variant equivalence."
+        },
+        "dongFirst": {
+          "template": [
+            "東北鞍營地",
+            "東郡大山",
+            "東鑾/烏達佩岔路",
+            "東巒大山",
+            "東鑾/烏達佩岔路",
+            "東北鞍營地"
+          ],
+          "radiusMeters": 30,
+          "matched": 5,
+          "total": 6,
+          "truncated": false,
+          "matches": [
+            {
+              "name": "東北鞍營地",
+              "component": 5,
+              "alongMeters": 56263,
+              "offsetMeters": 4.5
+            },
+            null,
+            {
+              "name": "東鑾/烏達佩岔路",
+              "component": 6,
+              "alongMeters": 58623,
+              "offsetMeters": 7.6
+            },
+            {
+              "name": "東巒大山",
+              "component": 6,
+              "alongMeters": 59900,
+              "offsetMeters": 0.5
+            },
+            {
+              "name": "東鑾/烏達佩岔路",
+              "component": 6,
+              "alongMeters": 61072,
+              "offsetMeters": 3.3
+            },
+            {
+              "name": "東北鞍營地",
+              "component": 6,
+              "alongMeters": 64150,
+              "offsetMeters": 0.6
+            }
+          ],
+          "meaning": "Within-radius sequence candidates only; not proof of physical node identity, continuous geometry, or variant equivalence."
+        },
+        "egressTraditional": {
+          "template": [
+            "無雙山基點峰",
+            "最後水源",
+            "亞力士營地",
+            "無雙部落址",
+            "無雙吊橋",
+            "烏瓦拉鼻溪營地",
+            "45.3K登山口",
+            "43K工寮",
+            "33K行車終點"
+          ],
+          "radiusMeters": 30,
+          "matched": 9,
+          "total": 9,
+          "truncated": false,
+          "matches": [
+            {
+              "name": "無雙山基點峰",
+              "component": 7,
+              "alongMeters": 76092,
+              "offsetMeters": 2.1
+            },
+            {
+              "name": "最後水源",
+              "component": 7,
+              "alongMeters": 79680,
+              "offsetMeters": 0.3
+            },
+            {
+              "name": "亞力士營地",
+              "component": 8,
+              "alongMeters": 80341,
+              "offsetMeters": 10.7
+            },
+            {
+              "name": "無雙部落址",
+              "component": 8,
+              "alongMeters": 85414,
+              "offsetMeters": 3.3
+            },
+            {
+              "name": "無雙吊橋",
+              "component": 8,
+              "alongMeters": 86962,
+              "offsetMeters": 1.3
+            },
+            {
+              "name": "烏瓦拉鼻溪營地",
+              "component": 8,
+              "alongMeters": 88734,
+              "offsetMeters": 3.3
+            },
+            {
+              "name": "45.3K登山口",
+              "component": 8,
+              "alongMeters": 92544,
+              "offsetMeters": 3.4
+            },
+            {
+              "name": "43K工寮",
+              "component": 8,
+              "alongMeters": 95809,
+              "offsetMeters": 0.8
+            },
+            {
+              "name": "33K行車終點",
+              "component": 9,
+              "alongMeters": 106176,
+              "offsetMeters": 5.2
+            }
+          ],
+          "meaning": "Within-radius sequence candidates only; not proof of physical node identity, continuous geometry, or variant equivalence."
+        }
+      },
+      "measurements": [
+        {
+          "nodeId": "shared:cw-v07-011",
+          "name": "丹大山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 1.6,
+            "component": 3,
+            "edge": 335,
+            "recordedAlongMeters": 28675.4,
+            "time": "2020-10-09T06:18:33.560Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 1.6,
+              "component": 3,
+              "edge": 335,
+              "recordedAlongMeters": 28675.4,
+              "time": "2020-10-09T06:18:33.560Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:01d1180c464fb08e5191",
+          "name": "可樂可樂安山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.6,
+            "component": 5,
+            "edge": 547,
+            "recordedAlongMeters": 50722.7,
+            "time": "2020-10-11T01:18:55.229Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.6,
+              "component": 5,
+              "edge": 547,
+              "recordedAlongMeters": 50722.7,
+              "time": "2020-10-11T01:18:55.229Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:06b52b0f4a9c5db51f87",
+          "name": "東鑾/烏達佩岔路",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 3.3,
+            "component": 6,
+            "edge": 450,
+            "recordedAlongMeters": 61072.1,
+            "time": "2020-10-11T07:51:13.574Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 7.6,
+              "component": 6,
+              "edge": 225,
+              "recordedAlongMeters": 58622.8,
+              "time": "2020-10-11T06:37:53.009Z"
+            },
+            {
+              "offsetMeters": 3.3,
+              "component": 6,
+              "edge": 450,
+              "recordedAlongMeters": 61072.1,
+              "time": "2020-10-11T07:51:13.574Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:0c0dc01565d03fae0e19",
+          "name": "裡門山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 493.7,
+            "component": 5,
+            "edge": 1,
+            "recordedAlongMeters": 44578.7,
+            "time": "2020-10-10T21:15:07.009Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:0c8573830abcc97e1e32",
+          "name": "26K岔路",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 3.9,
+            "component": 1,
+            "edge": 826,
+            "recordedAlongMeters": 4281.3,
+            "time": "2020-10-08T00:11:53.287Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 3.9,
+              "component": 1,
+              "edge": 826,
+              "recordedAlongMeters": 4281.3,
+              "time": "2020-10-08T00:11:53.287Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:13132e8f44de031186fe",
+          "name": "烏可冬克山",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 5839.7,
+            "component": 4,
+            "edge": 794,
+            "recordedAlongMeters": 41234.3,
+            "time": "2020-10-10T03:37:46.171Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:21743079f36dd0ee5829",
+          "name": "櫧山北鞍營地",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 49.5,
+            "component": 7,
+            "edge": 451,
+            "recordedAlongMeters": 69106.7,
+            "time": "2020-10-12T01:09:28.641Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 49.5,
+              "component": 7,
+              "edge": 451,
+              "recordedAlongMeters": 69106.7,
+              "time": "2020-10-12T01:09:28.641Z"
+            },
+            {
+              "offsetMeters": 95.2,
+              "component": 7,
+              "edge": 465,
+              "recordedAlongMeters": 69259.2,
+              "time": "2020-10-12T01:17:09.677Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:29f7b222808645fa53ef",
+          "name": "45.3K登山口",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 3.4,
+            "component": 8,
+            "edge": 965,
+            "recordedAlongMeters": 92544,
+            "time": "2020-10-13T04:57:29.517Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 3.4,
+              "component": 8,
+              "edge": 965,
+              "recordedAlongMeters": 92544,
+              "time": "2020-10-13T04:57:29.517Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:2aa469a51f6331227667",
+          "name": "內嶺爾山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.6,
+            "component": 4,
+            "edge": 267,
+            "recordedAlongMeters": 35211.1,
+            "time": "2020-10-09T23:49:00.083Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.6,
+              "component": 4,
+              "edge": 267,
+              "recordedAlongMeters": 35211.1,
+              "time": "2020-10-09T23:49:00.083Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:2d8fc441e99a93bda219",
+          "name": "33.5K大崩塌",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 29.9,
+            "component": 9,
+            "edge": 651,
+            "recordedAlongMeters": 106069.3,
+            "time": "2020-10-13T23:54:49.009Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 29.9,
+              "component": 9,
+              "edge": 650,
+              "recordedAlongMeters": 106069.3,
+              "time": "2020-10-13T23:54:49.009Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:318b1240b1b28f23c14a",
+          "name": "亞力士營地",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 10.7,
+            "component": 8,
+            "edge": 4,
+            "recordedAlongMeters": 80341,
+            "time": "2020-10-12T22:03:58.874Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 10.7,
+              "component": 8,
+              "edge": 4,
+              "recordedAlongMeters": 80341,
+              "time": "2020-10-12T22:03:58.874Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:34b4ec45fd16d72ac1b6",
+          "name": "丹大溪源營地",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 7.4,
+            "component": 5,
+            "edge": 12,
+            "recordedAlongMeters": 44623.6,
+            "time": "2020-10-10T21:17:24.430Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 7.4,
+              "component": 5,
+              "edge": 12,
+              "recordedAlongMeters": 44623.6,
+              "time": "2020-10-10T21:17:24.430Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:1670c3f1247b747ba02a",
+          "name": "下切溪床點",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 11364.7,
+            "component": 1,
+            "edge": 607,
+            "recordedAlongMeters": 3170.1,
+            "time": "2020-10-07T23:25:40.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:37c859d291bd265bd3ce",
+          "name": "方便池",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 8.4,
+            "component": 1,
+            "edge": 2563,
+            "recordedAlongMeters": 13462.9,
+            "time": "2020-10-08T06:38:39.390Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 8.4,
+              "component": 1,
+              "edge": 2563,
+              "recordedAlongMeters": 13462.9,
+              "time": "2020-10-08T06:38:39.390Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:3bf4ec2f689a3b5c4930",
+          "name": "烏瓦拉鼻溪營地",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 3.3,
+            "component": 8,
+            "edge": 721,
+            "recordedAlongMeters": 88734.1,
+            "time": "2020-10-13T02:24:57.431Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 3.3,
+              "component": 8,
+              "edge": 721,
+              "recordedAlongMeters": 88734.1,
+              "time": "2020-10-13T02:24:57.431Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:4001696b7a0f069ffb0b",
+          "name": "本鄉山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 2.4,
+            "component": 7,
+            "edge": 278,
+            "recordedAlongMeters": 67247.1,
+            "time": "2020-10-12T00:14:08.054Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 2.4,
+              "component": 7,
+              "edge": 278,
+              "recordedAlongMeters": 67247.1,
+              "time": "2020-10-12T00:14:08.054Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:4a0b2326333b6cbfd23e",
+          "name": "松林營地",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 7.1,
+            "component": 1,
+            "edge": 3068,
+            "recordedAlongMeters": 16020.7,
+            "time": "2020-10-08T08:41:20.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 7.1,
+              "component": 1,
+              "edge": 3068,
+              "recordedAlongMeters": 16020.7,
+              "time": "2020-10-08T08:41:20.000Z"
+            },
+            {
+              "offsetMeters": 92.1,
+              "component": 1,
+              "edge": 3092,
+              "recordedAlongMeters": 16161.1,
+              "time": "2020-10-08T08:46:25.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:4a1ca6c9c8adbf80fba0",
+          "name": "烏達佩山",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 142.6,
+            "component": 6,
+            "edge": 449,
+            "recordedAlongMeters": 61065.7,
+            "time": "2020-10-11T07:50:41.010Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:4d88bca8baa6a866c727",
+          "name": "鐵線斷崖東口",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 187.6,
+            "component": 1,
+            "edge": 2172,
+            "recordedAlongMeters": 11337.2,
+            "time": "2020-10-08T05:07:03.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:4fca27364854ea7129d2",
+          "name": "39.6K大崩塌",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 23.1,
+            "component": 9,
+            "edge": 108,
+            "recordedAlongMeters": 99390.3,
+            "time": "2020-10-13T21:53:19.416Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 23.1,
+              "component": 9,
+              "edge": 107,
+              "recordedAlongMeters": 99389.3,
+              "time": "2020-10-13T21:53:19.010Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:5048fd0d5be7a2b461be",
+          "name": "義西請馬至山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 2.5,
+            "component": 4,
+            "edge": 897,
+            "recordedAlongMeters": 42407.8,
+            "time": "2020-10-10T05:09:09.268Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 92.8,
+              "component": 4,
+              "edge": 868,
+              "recordedAlongMeters": 42074.1,
+              "time": "2020-10-10T04:46:25.322Z"
+            },
+            {
+              "offsetMeters": 2.5,
+              "component": 4,
+              "edge": 897,
+              "recordedAlongMeters": 42407.8,
+              "time": "2020-10-10T05:09:09.268Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:5ab8c1b58de6eeb05b5d",
+          "name": "2897草原水池",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 3.1,
+            "component": 1,
+            "edge": 2788,
+            "recordedAlongMeters": 14636.9,
+            "time": "2020-10-08T07:34:46.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 3.1,
+              "component": 1,
+              "edge": 2788,
+              "recordedAlongMeters": 14636.9,
+              "time": "2020-10-08T07:34:46.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:5d3084736e9f8bce6d4a",
+          "name": "19.3K水泥橋",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 13.6,
+            "component": 1,
+            "edge": 2,
+            "recordedAlongMeters": 4.5,
+            "time": "2020-10-07T21:15:49.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 13.6,
+              "component": 1,
+              "edge": 2,
+              "recordedAlongMeters": 4.5,
+              "time": "2020-10-07T21:15:49.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:66b2dd2d91e301d84c73",
+          "name": "東鞍營地",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 2.7,
+            "component": 4,
+            "edge": 712,
+            "recordedAlongMeters": 40225,
+            "time": "2020-10-10T03:01:34.263Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 2.7,
+              "component": 4,
+              "edge": 712,
+              "recordedAlongMeters": 40225,
+              "time": "2020-10-10T03:01:34.263Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:679d7475a6dd59c285e2",
+          "name": "無雙山東峰",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 4.6,
+            "component": 7,
+            "edge": 944,
+            "recordedAlongMeters": 75157.4,
+            "time": "2020-10-12T05:37:36.924Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 4.6,
+              "component": 7,
+              "edge": 944,
+              "recordedAlongMeters": 75157.4,
+              "time": "2020-10-12T05:37:36.924Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:6976566bc1a316b8e079",
+          "name": "郡東山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 1.9,
+            "component": 5,
+            "edge": 723,
+            "recordedAlongMeters": 52627.9,
+            "time": "2020-10-11T02:41:48.175Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 1.9,
+              "component": 5,
+              "edge": 723,
+              "recordedAlongMeters": 52627.9,
+              "time": "2020-10-11T02:41:48.175Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:6b8235223e06105d242a",
+          "name": "28K水泥工寮",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 16.4,
+            "component": 1,
+            "edge": 1127,
+            "recordedAlongMeters": 5828.5,
+            "time": "2020-10-08T01:15:34.963Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 16.4,
+              "component": 1,
+              "edge": 1127,
+              "recordedAlongMeters": 5828.5,
+              "time": "2020-10-08T01:15:34.963Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:6c72072c59b2ee211d05",
+          "name": "烏妹浪胖池",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 1520.7,
+            "component": 4,
+            "edge": 805,
+            "recordedAlongMeters": 41361.8,
+            "time": "2020-10-10T03:45:43.171Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:757cb9b7c126e5300053",
+          "name": "西源營地",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 6.4,
+            "component": 2,
+            "edge": 17,
+            "recordedAlongMeters": 16647.2,
+            "time": "2020-10-08T21:39:34.638Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 24.1,
+              "component": 1,
+              "edge": 3122,
+              "recordedAlongMeters": 16422.5,
+              "time": "2020-10-08T08:52:52.471Z"
+            },
+            {
+              "offsetMeters": 6.4,
+              "component": 2,
+              "edge": 17,
+              "recordedAlongMeters": 16647.2,
+              "time": "2020-10-08T21:39:34.638Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:7b0dae68c98b7de79a40",
+          "name": "太平溪源",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 10.7,
+            "component": 2,
+            "edge": 645,
+            "recordedAlongMeters": 24744.8,
+            "time": "2020-10-09T02:41:47.487Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 10.7,
+              "component": 2,
+              "edge": 644,
+              "recordedAlongMeters": 24743.6,
+              "time": "2020-10-09T02:41:46.405Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:82e77090c06d1fe2aead",
+          "name": "無雙最高峰",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 4,
+            "component": 7,
+            "edge": 975,
+            "recordedAlongMeters": 75486.4,
+            "time": "2020-10-12T06:15:49.474Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 4,
+              "component": 7,
+              "edge": 974,
+              "recordedAlongMeters": 75486.1,
+              "time": "2020-10-12T06:15:38.275Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:891637431112fc5688eb",
+          "name": "34K登山口",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 9,
+            "component": 1,
+            "edge": 2168,
+            "recordedAlongMeters": 11322.9,
+            "time": "2020-10-08T05:06:15.336Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 9,
+              "component": 1,
+              "edge": 2168,
+              "recordedAlongMeters": 11322.9,
+              "time": "2020-10-08T05:06:15.336Z"
+            },
+            {
+              "offsetMeters": 94,
+              "component": 1,
+              "edge": 2236,
+              "recordedAlongMeters": 11648,
+              "time": "2020-10-08T05:20:51.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:8d079c5429db81492162",
+          "name": "僕落西擴山",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 3658.4,
+            "component": 4,
+            "edge": 805,
+            "recordedAlongMeters": 41361.8,
+            "time": "2020-10-10T03:45:43.171Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:927ab4029b6760846cdd",
+          "name": "烏妹浪胖山",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 1590.9,
+            "component": 4,
+            "edge": 805,
+            "recordedAlongMeters": 41361.8,
+            "time": "2020-10-10T03:45:43.171Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:936c6cffc304b3e72668",
+          "name": "哈伊拉羅溪北源",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 2536.4,
+            "component": 4,
+            "edge": 805,
+            "recordedAlongMeters": 41361.8,
+            "time": "2020-10-10T03:45:43.171Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:9d5d4d1d5eb72f6f92cb",
+          "name": "2907峰",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 1,
+            "component": 2,
+            "edge": 243,
+            "recordedAlongMeters": 19857.1,
+            "time": "2020-10-08T23:55:45.764Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 1,
+              "component": 2,
+              "edge": 243,
+              "recordedAlongMeters": 19857.1,
+              "time": "2020-10-08T23:55:45.764Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:9f59facbac44a2e55ce7",
+          "name": "太平溪源營地",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 3.3,
+            "component": 4,
+            "edge": 7,
+            "recordedAlongMeters": 32275.5,
+            "time": "2020-10-09T21:34:12.935Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 11.8,
+              "component": 2,
+              "edge": 669,
+              "recordedAlongMeters": 25012.1,
+              "time": "2020-10-09T02:59:06.638Z"
+            },
+            {
+              "offsetMeters": 7.7,
+              "component": 3,
+              "edge": 1,
+              "recordedAlongMeters": 25026.7,
+              "time": "2020-10-09T03:41:50.639Z"
+            },
+            {
+              "offsetMeters": 6.3,
+              "component": 3,
+              "edge": 660,
+              "recordedAlongMeters": 32189.8,
+              "time": "2020-10-09T08:26:31.090Z"
+            },
+            {
+              "offsetMeters": 3.3,
+              "component": 4,
+              "edge": 7,
+              "recordedAlongMeters": 32275.5,
+              "time": "2020-10-09T21:34:12.935Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:a17ec4e667d55d3d99c3",
+          "name": "33K行車終點",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 5.2,
+            "component": 9,
+            "edge": 661,
+            "recordedAlongMeters": 106176.2,
+            "time": "2020-10-13T23:57:10.404Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 5.2,
+              "component": 9,
+              "edge": 661,
+              "recordedAlongMeters": 106176.2,
+              "time": "2020-10-13T23:57:10.404Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:a4c3afd25386960ea875",
+          "name": "東北鞍營地",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.6,
+            "component": 6,
+            "edge": 727,
+            "recordedAlongMeters": 64149.5,
+            "time": "2020-10-11T09:48:03.241Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 4.5,
+              "component": 5,
+              "edge": 1051,
+              "recordedAlongMeters": 56262.5,
+              "time": "2020-10-11T05:13:25.843Z"
+            },
+            {
+              "offsetMeters": 7.3,
+              "component": 6,
+              "edge": 1,
+              "recordedAlongMeters": 56272.8,
+              "time": "2020-10-11T05:42:15.009Z"
+            },
+            {
+              "offsetMeters": 0.6,
+              "component": 6,
+              "edge": 727,
+              "recordedAlongMeters": 64149.5,
+              "time": "2020-10-11T09:48:03.241Z"
+            },
+            {
+              "offsetMeters": 15.3,
+              "component": 7,
+              "edge": 11,
+              "recordedAlongMeters": 64210.6,
+              "time": "2020-10-11T22:11:02.643Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:a884c2a16afbdabf28de",
+          "name": "哈伊拉羅溪南源",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 6430.5,
+            "component": 4,
+            "edge": 794,
+            "recordedAlongMeters": 41234.3,
+            "time": "2020-10-10T03:37:46.171Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:adc0d7c3c99b1752e68b",
+          "name": "東郡大山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 38.8,
+            "component": 5,
+            "edge": 1029,
+            "recordedAlongMeters": 56022.1,
+            "time": "2020-10-11T05:08:01.009Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 38.8,
+              "component": 5,
+              "edge": 1029,
+              "recordedAlongMeters": 56022.1,
+              "time": "2020-10-11T05:08:01.009Z"
+            },
+            {
+              "offsetMeters": 62.9,
+              "component": 7,
+              "edge": 1,
+              "recordedAlongMeters": 64160.1,
+              "time": "2020-10-11T22:08:25.643Z"
+            },
+            {
+              "offsetMeters": 78,
+              "component": 7,
+              "edge": 16,
+              "recordedAlongMeters": 64263.1,
+              "time": "2020-10-11T22:13:08.643Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:aef6e30a59fdc407a2a2",
+          "name": "無雙部落址",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 3.3,
+            "component": 8,
+            "edge": 458,
+            "recordedAlongMeters": 85414,
+            "time": "2020-10-13T00:24:58.249Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 3.3,
+              "component": 8,
+              "edge": 458,
+              "recordedAlongMeters": 85414,
+              "time": "2020-10-13T00:24:58.249Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:b68adbc4f51e0a71c87f",
+          "name": "櫧山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 7.9,
+            "component": 7,
+            "edge": 644,
+            "recordedAlongMeters": 71677.9,
+            "time": "2020-10-12T02:43:22.726Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 97.1,
+              "component": 7,
+              "edge": 625,
+              "recordedAlongMeters": 71432.5,
+              "time": "2020-10-12T02:29:12.655Z"
+            },
+            {
+              "offsetMeters": 7.9,
+              "component": 7,
+              "edge": 643,
+              "recordedAlongMeters": 71677.9,
+              "time": "2020-10-12T02:43:22.641Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:b865066ee7995702c0d4",
+          "name": "盧利拉駱山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 8.2,
+            "component": 3,
+            "edge": 156,
+            "recordedAlongMeters": 26786.1,
+            "time": "2020-10-09T04:40:13.802Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 8.2,
+              "component": 3,
+              "edge": 156,
+              "recordedAlongMeters": 26786.1,
+              "time": "2020-10-09T04:40:13.802Z"
+            },
+            {
+              "offsetMeters": 16.8,
+              "component": 3,
+              "edge": 535,
+              "recordedAlongMeters": 30868.1,
+              "time": "2020-10-09T07:51:58.019Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:bc117dbb33b03fe2cddf",
+          "name": "沙武巒草原",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 0.2,
+            "component": 1,
+            "edge": 2332,
+            "recordedAlongMeters": 12047,
+            "time": "2020-10-08T05:41:06.866Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.2,
+              "component": 1,
+              "edge": 2332,
+              "recordedAlongMeters": 12047,
+              "time": "2020-10-08T05:41:06.866Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:bce5fdf63beb2b9d5c29",
+          "name": "無雙山基點峰",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 2.1,
+            "component": 7,
+            "edge": 1027,
+            "recordedAlongMeters": 76092,
+            "time": "2020-10-12T06:42:14.138Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 2.1,
+              "component": 7,
+              "edge": 1027,
+              "recordedAlongMeters": 76092,
+              "time": "2020-10-12T06:42:14.138Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:bd25adc467b72fa6656f",
+          "name": "天南可蘭山",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 98.9,
+            "component": 5,
+            "edge": 214,
+            "recordedAlongMeters": 46864.8,
+            "time": "2020-10-10T22:53:26.009Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 98.9,
+              "component": 5,
+              "edge": 213,
+              "recordedAlongMeters": 46864.8,
+              "time": "2020-10-10T22:53:26.009Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:c004ec6758328d3ce1cb",
+          "name": "無雙吊橋",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 1.3,
+            "component": 8,
+            "edge": 601,
+            "recordedAlongMeters": 86961.5,
+            "time": "2020-10-13T01:31:11.073Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 68.3,
+              "component": 8,
+              "edge": 517,
+              "recordedAlongMeters": 86041.9,
+              "time": "2020-10-13T00:52:50.638Z"
+            },
+            {
+              "offsetMeters": 1.3,
+              "component": 8,
+              "edge": 601,
+              "recordedAlongMeters": 86961.5,
+              "time": "2020-10-13T01:31:11.073Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:c25918006df5f04534c8",
+          "name": "馬路巴拉讓山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 3,
+            "component": 4,
+            "edge": 472,
+            "recordedAlongMeters": 37566.4,
+            "time": "2020-10-10T01:09:13.064Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 3,
+              "component": 4,
+              "edge": 472,
+              "recordedAlongMeters": 37566.4,
+              "time": "2020-10-10T01:09:13.064Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:c61990dd30e7cb3d8213",
+          "name": "43K工寮",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 0.8,
+            "component": 8,
+            "edge": 1171,
+            "recordedAlongMeters": 95808.6,
+            "time": "2020-10-13T06:47:27.405Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.8,
+              "component": 8,
+              "edge": 1171,
+              "recordedAlongMeters": 95808.6,
+              "time": "2020-10-13T06:47:27.405Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:c8870812bd546115bac5",
+          "name": "三岔路口營地",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.3,
+            "component": 4,
+            "edge": 164,
+            "recordedAlongMeters": 34061.6,
+            "time": "2020-10-09T22:57:04.228Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.3,
+              "component": 4,
+              "edge": 164,
+              "recordedAlongMeters": 34061.6,
+              "time": "2020-10-09T22:57:04.228Z"
+            },
+            {
+              "offsetMeters": 4.3,
+              "component": 4,
+              "edge": 338,
+              "recordedAlongMeters": 35986.5,
+              "time": "2020-10-10T00:17:53.170Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:c9115d117bdcc33b8c0b",
+          "name": "東巒大山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.5,
+            "component": 6,
+            "edge": 342,
+            "recordedAlongMeters": 59900.4,
+            "time": "2020-10-11T07:17:17.598Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.5,
+              "component": 6,
+              "edge": 342,
+              "recordedAlongMeters": 59900.4,
+              "time": "2020-10-11T07:17:17.598Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:cb277db7b164105e3c17",
+          "name": "三岔路口",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 0.7,
+            "component": 1,
+            "edge": 3073,
+            "recordedAlongMeters": 16068,
+            "time": "2020-10-08T08:42:18.554Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.7,
+              "component": 1,
+              "edge": 3073,
+              "recordedAlongMeters": 16068,
+              "time": "2020-10-08T08:42:18.554Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:d03e5cea91ce41e0ca2a",
+          "name": "鐵線斷崖西口",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 414.7,
+            "component": 1,
+            "edge": 3044,
+            "recordedAlongMeters": 15833.5,
+            "time": "2020-10-08T08:36:16.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:dee598e1b2437f4ec104",
+          "name": "32K水泥工寮",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 2,
+            "component": 1,
+            "edge": 1933,
+            "recordedAlongMeters": 10108.7,
+            "time": "2020-10-08T04:07:12.170Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 2,
+              "component": 1,
+              "edge": 1933,
+              "recordedAlongMeters": 10108.7,
+              "time": "2020-10-08T04:07:12.170Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:e9149e15effc99bc37f7",
+          "name": "郡東營地",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.8,
+            "component": 5,
+            "edge": 857,
+            "recordedAlongMeters": 54073.5,
+            "time": "2020-10-11T03:34:42.748Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 3.6,
+              "component": 5,
+              "edge": 785,
+              "recordedAlongMeters": 53272.1,
+              "time": "2020-10-11T03:07:29.461Z"
+            },
+            {
+              "offsetMeters": 0.8,
+              "component": 5,
+              "edge": 857,
+              "recordedAlongMeters": 54073.5,
+              "time": "2020-10-11T03:34:42.748Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:ed8a1c3cd47fa986d90e",
+          "name": "最後水源",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 0.3,
+            "component": 7,
+            "edge": 1364,
+            "recordedAlongMeters": 79679.6,
+            "time": "2020-10-12T09:18:37.672Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.3,
+              "component": 7,
+              "edge": 1364,
+              "recordedAlongMeters": 79679.6,
+              "time": "2020-10-12T09:18:37.672Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:ef56761122345906961b",
+          "name": "14.6K水泥路止",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 2488.5,
+            "component": 1,
+            "edge": 544,
+            "recordedAlongMeters": 2842.8,
+            "time": "2020-10-07T23:12:19.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:f0bb47a73379bfdf496a",
+          "name": "天南可蘭/望崖岔路",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 6.2,
+            "component": 5,
+            "edge": 215,
+            "recordedAlongMeters": 46877.3,
+            "time": "2020-10-10T22:53:37.884Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 6.2,
+              "component": 5,
+              "edge": 215,
+              "recordedAlongMeters": 46877.3,
+              "time": "2020-10-10T22:53:37.884Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:f0e2f3dceb1f3b093fe7",
+          "name": "哈伊拉羅溪中源",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 4582.8,
+            "component": 4,
+            "edge": 794,
+            "recordedAlongMeters": 41234.3,
+            "time": "2020-10-10T03:37:46.171Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:f33cee319fc38118e03c",
+          "name": "東源營地",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 13.7,
+            "component": 1,
+            "edge": 3116,
+            "recordedAlongMeters": 16333.2,
+            "time": "2020-10-08T08:51:27.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 13.7,
+              "component": 1,
+              "edge": 3116,
+              "recordedAlongMeters": 16333.2,
+              "time": "2020-10-08T08:51:27.000Z"
+            },
+            {
+              "offsetMeters": 64.2,
+              "component": 2,
+              "edge": 1,
+              "recordedAlongMeters": 16428.1,
+              "time": "2020-10-08T21:34:25.638Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:f3ea090758bb1302bc29",
+          "name": "林道盡頭",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 0.8,
+            "component": 1,
+            "edge": 2247,
+            "recordedAlongMeters": 11705,
+            "time": "2020-10-08T05:23:04.163Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 90.4,
+              "component": 1,
+              "edge": 2182,
+              "recordedAlongMeters": 11405.8,
+              "time": "2020-10-08T05:09:24.000Z"
+            },
+            {
+              "offsetMeters": 0.8,
+              "component": 1,
+              "edge": 2247,
+              "recordedAlongMeters": 11705,
+              "time": "2020-10-08T05:23:04.163Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:fac669a79a9a25b63056",
+          "name": "杜鵑營地",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 1,
+            "component": 2,
+            "edge": 496,
+            "recordedAlongMeters": 23070.1,
+            "time": "2020-10-09T01:45:08.543Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 1,
+              "component": 2,
+              "edge": 496,
+              "recordedAlongMeters": 23070.1,
+              "time": "2020-10-09T01:45:08.543Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:fda449ba3440ad785b68",
+          "name": "斷稜東山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 12.7,
+            "component": 4,
+            "edge": 1047,
+            "recordedAlongMeters": 44097.6,
+            "time": "2020-10-10T06:14:44.262Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 12.7,
+              "component": 4,
+              "edge": 1047,
+              "recordedAlongMeters": 44097.6,
+              "time": "2020-10-10T06:14:44.262Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:ff06147be71a4346fbfc",
+          "name": "望崖山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.9,
+            "component": 5,
+            "edge": 112,
+            "recordedAlongMeters": 45686.9,
+            "time": "2020-10-10T22:04:54.019Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.9,
+              "component": 5,
+              "edge": 112,
+              "recordedAlongMeters": 45686.9,
+              "time": "2020-10-10T22:04:54.019Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "shared:cw-v07-001",
+          "name": "16.5K行車終點",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 12401.4,
+            "component": 1,
+            "edge": 607,
+            "recordedAlongMeters": 3170.1,
+            "time": "2020-10-07T23:25:40.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "shared:cw-v07-040",
+          "name": "太平谷南口",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 10244.7,
+            "component": 1,
+            "edge": 892,
+            "recordedAlongMeters": 4593.5,
+            "time": "2020-10-08T00:25:46.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "shared:cw-v07-078",
+          "name": "馬利加南山東峰",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 8213,
+            "component": 4,
+            "edge": 805,
+            "recordedAlongMeters": 41361.8,
+            "time": "2020-10-10T03:45:43.171Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "shared:cw-v07-079",
+          "name": "馬利加南東峰山屋",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 8212.4,
+            "component": 4,
+            "edge": 805,
+            "recordedAlongMeters": 41361.8,
+            "time": "2020-10-10T03:45:43.171Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "shared:cw-v07-080",
+          "name": "馬布谷山屋",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 11146.9,
+            "component": 1,
+            "edge": 908,
+            "recordedAlongMeters": 4650.1,
+            "time": "2020-10-08T00:29:27.000Z"
+          },
+          "visitsWithin100m": []
+        }
+      ]
+    },
+    {
+      "sourceId": "gpx-918267497a738c32",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=6204736&q=trail",
+      "author": "灰灰",
+      "sha256": "918267497a738c32c58517031bd98d838198785d8bcd96d39f4cb5154958789b",
+      "recordingId": "6204736",
+      "summary": {
+        "points": 80063,
+        "recordedSegments": 10,
+        "components": 10,
+        "distanceMeters": 130146.5,
+        "ascentMeters": 13921.6,
+        "descentMeters": 14249.8,
+        "timedEdges": 80053,
+        "speedSuspects": 0,
+        "start": [
+          121.27584415487945,
+          23.524307208135724
+        ],
+        "end": [
+          120.92641459777951,
+          23.56155328452587
+        ]
+      },
+      "warnings": [
+        {
+          "code": "MULTI_SEGMENT",
+          "count": 10
+        }
+      ],
+      "componentGaps": [
+        {
+          "afterComponent": 1,
+          "meters": 2.9
+        },
+        {
+          "afterComponent": 2,
+          "meters": 23.1
+        },
+        {
+          "afterComponent": 3,
+          "meters": 4.1
+        },
+        {
+          "afterComponent": 4,
+          "meters": 589
+        },
+        {
+          "afterComponent": 5,
+          "meters": 5.2
+        },
+        {
+          "afterComponent": 6,
+          "meters": 128
+        },
+        {
+          "afterComponent": 7,
+          "meters": 8.6
+        },
+        {
+          "afterComponent": 8,
+          "meters": 6.1
+        },
+        {
+          "afterComponent": 9,
+          "meters": 78.6
+        }
+      ],
+      "branchMatches": {
+        "selectedStartExtension": {
+          "template": [
+            "14.6K水泥路止",
+            "19.3K水泥橋"
+          ],
+          "radiusMeters": 30,
+          "matched": 1,
+          "total": 2,
+          "truncated": false,
+          "matches": [
+            null,
+            {
+              "name": "19.3K水泥橋",
+              "component": 1,
+              "alongMeters": 1545,
+              "offsetMeters": 1
+            }
+          ],
+          "meaning": "Within-radius sequence candidates only; not proof of physical node identity, continuous geometry, or variant equivalence."
+        },
+        "ingressTraditional": {
+          "template": [
+            "19.3K水泥橋",
+            "28K水泥工寮",
+            "32K水泥工寮",
+            "34K登山口",
+            "沙武巒草原",
+            "東源營地",
+            "西源營地",
+            "杜鵑營地",
+            "太平溪源",
+            "太平溪源營地"
+          ],
+          "radiusMeters": 30,
+          "matched": 10,
+          "total": 10,
+          "truncated": false,
+          "matches": [
+            {
+              "name": "19.3K水泥橋",
+              "component": 1,
+              "alongMeters": 1545,
+              "offsetMeters": 1
+            },
+            {
+              "name": "28K水泥工寮",
+              "component": 1,
+              "alongMeters": 8649,
+              "offsetMeters": 0.2
+            },
+            {
+              "name": "32K水泥工寮",
+              "component": 1,
+              "alongMeters": 13592,
+              "offsetMeters": 6.6
+            },
+            {
+              "name": "34K登山口",
+              "component": 1,
+              "alongMeters": 15862,
+              "offsetMeters": 8.7
+            },
+            {
+              "name": "沙武巒草原",
+              "component": 2,
+              "alongMeters": 16754,
+              "offsetMeters": 0.9
+            },
+            {
+              "name": "東源營地",
+              "component": 2,
+              "alongMeters": 22621,
+              "offsetMeters": 5.9
+            },
+            {
+              "name": "西源營地",
+              "component": 2,
+              "alongMeters": 23153,
+              "offsetMeters": 0.9
+            },
+            {
+              "name": "杜鵑營地",
+              "component": 2,
+              "alongMeters": 29560,
+              "offsetMeters": 3.1
+            },
+            {
+              "name": "太平溪源",
+              "component": 2,
+              "alongMeters": 31590,
+              "offsetMeters": 11.5
+            },
+            {
+              "name": "太平溪源營地",
+              "component": 3,
+              "alongMeters": 31917,
+              "offsetMeters": 7.7
+            }
+          ],
+          "meaning": "Within-radius sequence candidates only; not proof of physical node identity, continuous geometry, or variant equivalence."
+        },
+        "dandaReturn": {
+          "template": [
+            "太平溪源營地",
+            "盧利拉駱山",
+            "丹大山",
+            "盧利拉駱山",
+            "太平溪源營地"
+          ],
+          "radiusMeters": 30,
+          "matched": 5,
+          "total": 5,
+          "truncated": false,
+          "matches": [
+            {
+              "name": "太平溪源營地",
+              "component": 3,
+              "alongMeters": 31917,
+              "offsetMeters": 7.7
+            },
+            {
+              "name": "盧利拉駱山",
+              "component": 3,
+              "alongMeters": 33432,
+              "offsetMeters": 0.3
+            },
+            {
+              "name": "丹大山",
+              "component": 3,
+              "alongMeters": 35701,
+              "offsetMeters": 0
+            },
+            {
+              "name": "盧利拉駱山",
+              "component": 3,
+              "alongMeters": 37847,
+              "offsetMeters": 0.3
+            },
+            {
+              "name": "太平溪源營地",
+              "component": 3,
+              "alongMeters": 39791,
+              "offsetMeters": 12.2
+            }
+          ],
+          "meaning": "Within-radius sequence candidates only; not proof of physical node identity, continuous geometry, or variant equivalence."
+        },
+        "eastFirst": {
+          "template": [
+            "東北鞍營地",
+            "東鑾/烏達佩岔路",
+            "東巒大山",
+            "東鑾/烏達佩岔路",
+            "東北鞍營地",
+            "東郡大山",
+            "東北鞍營地"
+          ],
+          "radiusMeters": 30,
+          "matched": 6,
+          "total": 7,
+          "truncated": false,
+          "matches": [
+            {
+              "name": "東北鞍營地",
+              "component": 7,
+              "alongMeters": 70139,
+              "offsetMeters": 3.3
+            },
+            {
+              "name": "東鑾/烏達佩岔路",
+              "component": 7,
+              "alongMeters": 72652,
+              "offsetMeters": 0.3
+            },
+            {
+              "name": "東巒大山",
+              "component": 7,
+              "alongMeters": 74438,
+              "offsetMeters": 0.9
+            },
+            {
+              "name": "東鑾/烏達佩岔路",
+              "component": 7,
+              "alongMeters": 75646,
+              "offsetMeters": 2.1
+            },
+            {
+              "name": "東北鞍營地",
+              "component": 7,
+              "alongMeters": 77942,
+              "offsetMeters": 3.6
+            },
+            null,
+            {
+              "name": "東北鞍營地",
+              "component": 7,
+              "alongMeters": 78081,
+              "offsetMeters": 2.3
+            }
+          ],
+          "meaning": "Within-radius sequence candidates only; not proof of physical node identity, continuous geometry, or variant equivalence."
+        },
+        "dongFirst": {
+          "template": [
+            "東北鞍營地",
+            "東郡大山",
+            "東鑾/烏達佩岔路",
+            "東巒大山",
+            "東鑾/烏達佩岔路",
+            "東北鞍營地"
+          ],
+          "radiusMeters": 30,
+          "matched": 6,
+          "total": 6,
+          "truncated": false,
+          "matches": [
+            {
+              "name": "東北鞍營地",
+              "component": 7,
+              "alongMeters": 69533,
+              "offsetMeters": 6.1
+            },
+            {
+              "name": "東郡大山",
+              "component": 7,
+              "alongMeters": 69823,
+              "offsetMeters": 0.8
+            },
+            {
+              "name": "東鑾/烏達佩岔路",
+              "component": 7,
+              "alongMeters": 72652,
+              "offsetMeters": 0.3
+            },
+            {
+              "name": "東巒大山",
+              "component": 7,
+              "alongMeters": 74438,
+              "offsetMeters": 0.9
+            },
+            {
+              "name": "東鑾/烏達佩岔路",
+              "component": 7,
+              "alongMeters": 75646,
+              "offsetMeters": 2.1
+            },
+            {
+              "name": "東北鞍營地",
+              "component": 7,
+              "alongMeters": 78081,
+              "offsetMeters": 2.3
+            }
+          ],
+          "meaning": "Within-radius sequence candidates only; not proof of physical node identity, continuous geometry, or variant equivalence."
+        },
+        "egressTraditional": {
+          "template": [
+            "無雙山基點峰",
+            "最後水源",
+            "亞力士營地",
+            "無雙部落址",
+            "無雙吊橋",
+            "烏瓦拉鼻溪營地",
+            "45.3K登山口",
+            "43K工寮",
+            "33K行車終點"
+          ],
+          "radiusMeters": 30,
+          "matched": 2,
+          "total": 9,
+          "truncated": false,
+          "matches": [
+            {
+              "name": "無雙山基點峰",
+              "component": 9,
+              "alongMeters": 92555,
+              "offsetMeters": 0.2
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "name": "33K行車終點",
+              "component": 10,
+              "alongMeters": 119905,
+              "offsetMeters": 2.8
+            }
+          ],
+          "meaning": "Within-radius sequence candidates only; not proof of physical node identity, continuous geometry, or variant equivalence."
+        }
+      },
+      "measurements": [
+        {
+          "nodeId": "shared:cw-v07-011",
+          "name": "丹大山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0,
+            "component": 3,
+            "edge": 2670,
+            "recordedAlongMeters": 35701.2,
+            "time": "2026-11-01T23:45:42.245Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0,
+              "component": 3,
+              "edge": 2670,
+              "recordedAlongMeters": 35701.2,
+              "time": "2026-11-01T23:45:42.245Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:01d1180c464fb08e5191",
+          "name": "可樂可樂安山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 1.2,
+            "component": 6,
+            "edge": 4949,
+            "recordedAlongMeters": 63521.3,
+            "time": "2026-11-04T02:51:41.707Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 1.2,
+              "component": 6,
+              "edge": 4949,
+              "recordedAlongMeters": 63521.3,
+              "time": "2026-11-04T02:51:41.707Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:06b52b0f4a9c5db51f87",
+          "name": "東鑾/烏達佩岔路",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.3,
+            "component": 7,
+            "edge": 3488,
+            "recordedAlongMeters": 72652.4,
+            "time": "2026-11-05T00:03:35.558Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.3,
+              "component": 7,
+              "edge": 3488,
+              "recordedAlongMeters": 72652.4,
+              "time": "2026-11-05T00:03:35.558Z"
+            },
+            {
+              "offsetMeters": 5.2,
+              "component": 7,
+              "edge": 3879,
+              "recordedAlongMeters": 73130.6,
+              "time": "2026-11-05T00:29:31.879Z"
+            },
+            {
+              "offsetMeters": 2.1,
+              "component": 7,
+              "edge": 5428,
+              "recordedAlongMeters": 75646.1,
+              "time": "2026-11-05T02:09:34.763Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:0c0dc01565d03fae0e19",
+          "name": "裡門山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.2,
+            "component": 5,
+            "edge": 6147,
+            "recordedAlongMeters": 55437.3,
+            "time": "2026-11-03T04:54:03.108Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 96.5,
+              "component": 5,
+              "edge": 5822,
+              "recordedAlongMeters": 55048.4,
+              "time": "2026-11-03T04:31:14.000Z"
+            },
+            {
+              "offsetMeters": 0.2,
+              "component": 5,
+              "edge": 6147,
+              "recordedAlongMeters": 55437.3,
+              "time": "2026-11-03T04:54:03.108Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:0c8573830abcc97e1e32",
+          "name": "26K岔路",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 1.3,
+            "component": 1,
+            "edge": 2854,
+            "recordedAlongMeters": 6974.4,
+            "time": "2026-10-31T02:10:45.118Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 1.3,
+              "component": 1,
+              "edge": 2854,
+              "recordedAlongMeters": 6974.4,
+              "time": "2026-10-31T02:10:45.118Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:13132e8f44de031186fe",
+          "name": "烏可冬克山",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 5839.9,
+            "component": 5,
+            "edge": 1130,
+            "recordedAlongMeters": 49805.6,
+            "time": "2026-11-02T22:56:12.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:21743079f36dd0ee5829",
+          "name": "櫧山北鞍營地",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 2.3,
+            "component": 7,
+            "edge": 10664,
+            "recordedAlongMeters": 83617.4,
+            "time": "2026-11-05T08:13:01.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 2.3,
+              "component": 7,
+              "edge": 10664,
+              "recordedAlongMeters": 83617.4,
+              "time": "2026-11-05T08:13:01.000Z"
+            },
+            {
+              "offsetMeters": 6.6,
+              "component": 8,
+              "edge": 1,
+              "recordedAlongMeters": 83620,
+              "time": "2026-11-05T08:42:43.000Z"
+            },
+            {
+              "offsetMeters": 8.2,
+              "component": 8,
+              "edge": 905,
+              "recordedAlongMeters": 84830,
+              "time": "2026-11-05T09:39:33.000Z"
+            },
+            {
+              "offsetMeters": 12.7,
+              "component": 9,
+              "edge": 1,
+              "recordedAlongMeters": 84830.4,
+              "time": "2026-11-05T20:15:18.000Z"
+            },
+            {
+              "offsetMeters": 96.1,
+              "component": 9,
+              "edge": 81,
+              "recordedAlongMeters": 84996.6,
+              "time": "2026-11-05T20:20:15.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:29f7b222808645fa53ef",
+          "name": "45.3K登山口",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 799,
+            "component": 10,
+            "edge": 2619,
+            "recordedAlongMeters": 107497,
+            "time": "2026-11-06T20:34:36.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:2aa469a51f6331227667",
+          "name": "內嶺爾山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0,
+            "component": 3,
+            "edge": 7288,
+            "recordedAlongMeters": 42993.2,
+            "time": "2026-11-02T05:34:39.819Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0,
+              "component": 3,
+              "edge": 7288,
+              "recordedAlongMeters": 42993.2,
+              "time": "2026-11-02T05:34:39.819Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:2d8fc441e99a93bda219",
+          "name": "33.5K大崩塌",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 0.4,
+            "component": 10,
+            "edge": 8471,
+            "recordedAlongMeters": 119774,
+            "time": "2026-11-07T03:21:49.733Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.4,
+              "component": 10,
+              "edge": 8471,
+              "recordedAlongMeters": 119774,
+              "time": "2026-11-07T03:21:49.733Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:318b1240b1b28f23c14a",
+          "name": "亞力士營地",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 1819.4,
+            "component": 9,
+            "edge": 7693,
+            "recordedAlongMeters": 95061.5,
+            "time": "2026-11-06T05:04:09.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:34b4ec45fd16d72ac1b6",
+          "name": "丹大溪源營地",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.7,
+            "component": 5,
+            "edge": 6911,
+            "recordedAlongMeters": 56688.1,
+            "time": "2026-11-03T05:44:20.763Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.7,
+              "component": 5,
+              "edge": 6911,
+              "recordedAlongMeters": 56688.1,
+              "time": "2026-11-03T05:44:20.763Z"
+            },
+            {
+              "offsetMeters": 9,
+              "component": 6,
+              "edge": 1,
+              "recordedAlongMeters": 56696.8,
+              "time": "2026-11-03T21:11:20.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:1670c3f1247b747ba02a",
+          "name": "下切溪床點",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 11247.5,
+            "component": 1,
+            "edge": 1,
+            "recordedAlongMeters": 15.7,
+            "time": "2026-10-30T22:57:27.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:37c859d291bd265bd3ce",
+          "name": "方便池",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 3.3,
+            "component": 2,
+            "edge": 1351,
+            "recordedAlongMeters": 18757.3,
+            "time": "2026-10-31T21:46:09.863Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 3.3,
+              "component": 2,
+              "edge": 1351,
+              "recordedAlongMeters": 18757.3,
+              "time": "2026-10-31T21:46:09.863Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:3bf4ec2f689a3b5c4930",
+          "name": "烏瓦拉鼻溪營地",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 1231.1,
+            "component": 10,
+            "edge": 1267,
+            "recordedAlongMeters": 105237.2,
+            "time": "2026-11-06T18:55:04.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:4001696b7a0f069ffb0b",
+          "name": "本鄉山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 1.3,
+            "component": 7,
+            "edge": 9582,
+            "recordedAlongMeters": 81572.1,
+            "time": "2026-11-05T07:02:01.202Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 1.3,
+              "component": 7,
+              "edge": 9582,
+              "recordedAlongMeters": 81572.1,
+              "time": "2026-11-05T07:02:01.202Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:4a0b2326333b6cbfd23e",
+          "name": "松林營地",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 7,
+            "component": 2,
+            "edge": 3453,
+            "recordedAlongMeters": 22128.2,
+            "time": "2026-11-01T00:08:51.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 7,
+              "component": 2,
+              "edge": 3452,
+              "recordedAlongMeters": 22128.2,
+              "time": "2026-11-01T00:08:51.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:4a1ca6c9c8adbf80fba0",
+          "name": "烏達佩山",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 0,
+            "component": 7,
+            "edge": 3754,
+            "recordedAlongMeters": 72935.2,
+            "time": "2026-11-05T00:21:22.899Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0,
+              "component": 7,
+              "edge": 3653,
+              "recordedAlongMeters": 72878.3,
+              "time": "2026-11-05T00:14:36.911Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:4d88bca8baa6a866c727",
+          "name": "鐵線斷崖東口",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 169.7,
+            "component": 1,
+            "edge": 5963,
+            "recordedAlongMeters": 15291.6,
+            "time": "2026-10-31T05:46:52.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:4fca27364854ea7129d2",
+          "name": "39.6K大崩塌",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 6.3,
+            "component": 10,
+            "edge": 5534,
+            "recordedAlongMeters": 112847.3,
+            "time": "2026-11-06T23:51:10.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 6.3,
+              "component": 10,
+              "edge": 5534,
+              "recordedAlongMeters": 112847.3,
+              "time": "2026-11-06T23:51:10.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:5048fd0d5be7a2b461be",
+          "name": "義西請馬至山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.2,
+            "component": 5,
+            "edge": 2769,
+            "recordedAlongMeters": 51238.8,
+            "time": "2026-11-03T00:58:40.436Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.2,
+              "component": 5,
+              "edge": 2769,
+              "recordedAlongMeters": 51238.8,
+              "time": "2026-11-03T00:58:40.436Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:5ab8c1b58de6eeb05b5d",
+          "name": "2897草原水池",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 3.5,
+            "component": 2,
+            "edge": 2514,
+            "recordedAlongMeters": 20438.9,
+            "time": "2026-10-31T23:13:42.044Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 3.5,
+              "component": 2,
+              "edge": 2514,
+              "recordedAlongMeters": 20438.9,
+              "time": "2026-10-31T23:13:42.044Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:5d3084736e9f8bce6d4a",
+          "name": "19.3K水泥橋",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 1,
+            "component": 1,
+            "edge": 372,
+            "recordedAlongMeters": 1544.8,
+            "time": "2026-10-30T23:21:57.223Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 1,
+              "component": 1,
+              "edge": 372,
+              "recordedAlongMeters": 1544.8,
+              "time": "2026-10-30T23:21:57.223Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:66b2dd2d91e301d84c73",
+          "name": "東鞍營地",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 7.2,
+            "component": 5,
+            "edge": 249,
+            "recordedAlongMeters": 48627.9,
+            "time": "2026-11-02T21:51:22.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 7.2,
+              "component": 5,
+              "edge": 249,
+              "recordedAlongMeters": 48627.9,
+              "time": "2026-11-02T21:51:22.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:679d7475a6dd59c285e2",
+          "name": "無雙山東峰",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.5,
+            "component": 9,
+            "edge": 4920,
+            "recordedAlongMeters": 91244.1,
+            "time": "2026-11-06T01:53:52.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 99.4,
+              "component": 9,
+              "edge": 4706,
+              "recordedAlongMeters": 91029.5,
+              "time": "2026-11-06T01:38:18.000Z"
+            },
+            {
+              "offsetMeters": 0.5,
+              "component": 9,
+              "edge": 4920,
+              "recordedAlongMeters": 91244.1,
+              "time": "2026-11-06T01:53:52.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:6976566bc1a316b8e079",
+          "name": "郡東山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 5.9,
+            "component": 6,
+            "edge": 6720,
+            "recordedAlongMeters": 65900.7,
+            "time": "2026-11-04T04:58:50.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 5.9,
+              "component": 6,
+              "edge": 6720,
+              "recordedAlongMeters": 65900.7,
+              "time": "2026-11-04T04:58:50.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:6b8235223e06105d242a",
+          "name": "28K水泥工寮",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 0.2,
+            "component": 1,
+            "edge": 3356,
+            "recordedAlongMeters": 8648.9,
+            "time": "2026-10-31T02:44:44.110Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.2,
+              "component": 1,
+              "edge": 3356,
+              "recordedAlongMeters": 8648.9,
+              "time": "2026-10-31T02:44:44.110Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:6c72072c59b2ee211d05",
+          "name": "烏妹浪胖池",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 1524.1,
+            "component": 5,
+            "edge": 1274,
+            "recordedAlongMeters": 49973.9,
+            "time": "2026-11-02T23:06:47.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:757cb9b7c126e5300053",
+          "name": "西源營地",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 0.9,
+            "component": 2,
+            "edge": 4161,
+            "recordedAlongMeters": 23153,
+            "time": "2026-11-01T00:59:18.407Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.9,
+              "component": 2,
+              "edge": 4161,
+              "recordedAlongMeters": 23153,
+              "time": "2026-11-01T00:59:18.407Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:7b0dae68c98b7de79a40",
+          "name": "太平溪源",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 11.5,
+            "component": 2,
+            "edge": 9609,
+            "recordedAlongMeters": 31589.6,
+            "time": "2026-11-01T07:44:42.966Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 11.5,
+              "component": 2,
+              "edge": 9609,
+              "recordedAlongMeters": 31589.6,
+              "time": "2026-11-01T07:44:42.966Z"
+            },
+            {
+              "offsetMeters": 97.2,
+              "component": 3,
+              "edge": 4753,
+              "recordedAlongMeters": 39393.6,
+              "time": "2026-11-02T02:01:59.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:82e77090c06d1fe2aead",
+          "name": "無雙最高峰",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0,
+            "component": 9,
+            "edge": 5525,
+            "recordedAlongMeters": 91751.5,
+            "time": "2026-11-06T02:40:00.540Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0,
+              "component": 9,
+              "edge": 5524,
+              "recordedAlongMeters": 91751.5,
+              "time": "2026-11-06T02:40:00.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:891637431112fc5688eb",
+          "name": "34K登山口",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 8.7,
+            "component": 1,
+            "edge": 6362,
+            "recordedAlongMeters": 15862.3,
+            "time": "2026-10-31T06:17:32.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 8.7,
+              "component": 1,
+              "edge": 6362,
+              "recordedAlongMeters": 15862.3,
+              "time": "2026-10-31T06:17:32.000Z"
+            },
+            {
+              "offsetMeters": 92.1,
+              "component": 1,
+              "edge": 6516,
+              "recordedAlongMeters": 16244.3,
+              "time": "2026-10-31T06:27:35.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:8d079c5429db81492162",
+          "name": "僕落西擴山",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 3661.8,
+            "component": 5,
+            "edge": 1274,
+            "recordedAlongMeters": 49973.9,
+            "time": "2026-11-02T23:06:47.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:927ab4029b6760846cdd",
+          "name": "烏妹浪胖山",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 1594.4,
+            "component": 5,
+            "edge": 1274,
+            "recordedAlongMeters": 49973.9,
+            "time": "2026-11-02T23:06:47.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:936c6cffc304b3e72668",
+          "name": "哈伊拉羅溪北源",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 2539.9,
+            "component": 5,
+            "edge": 1274,
+            "recordedAlongMeters": 49973.9,
+            "time": "2026-11-02T23:06:47.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:9d5d4d1d5eb72f6f92cb",
+          "name": "2907峰",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 0.7,
+            "component": 2,
+            "edge": 6676,
+            "recordedAlongMeters": 26693.2,
+            "time": "2026-11-01T04:03:02.455Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.7,
+              "component": 2,
+              "edge": 6676,
+              "recordedAlongMeters": 26693.2,
+              "time": "2026-11-01T04:03:02.455Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:9f59facbac44a2e55ce7",
+          "name": "太平溪源營地",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 7.7,
+            "component": 3,
+            "edge": 19,
+            "recordedAlongMeters": 31916.9,
+            "time": "2026-11-01T20:40:29.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 13.4,
+              "component": 2,
+              "edge": 9773,
+              "recordedAlongMeters": 31887.5,
+              "time": "2026-11-01T07:57:00.000Z"
+            },
+            {
+              "offsetMeters": 7.7,
+              "component": 3,
+              "edge": 19,
+              "recordedAlongMeters": 31916.9,
+              "time": "2026-11-01T20:40:29.000Z"
+            },
+            {
+              "offsetMeters": 12.2,
+              "component": 3,
+              "edge": 5325,
+              "recordedAlongMeters": 39791.2,
+              "time": "2026-11-02T03:04:50.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:a17ec4e667d55d3d99c3",
+          "name": "33K行車終點",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 2.8,
+            "component": 10,
+            "edge": 8495,
+            "recordedAlongMeters": 119904.7,
+            "time": "2026-11-07T03:23:47.853Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 2.8,
+              "component": 10,
+              "edge": 8495,
+              "recordedAlongMeters": 119904.7,
+              "time": "2026-11-07T03:23:47.853Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:a4c3afd25386960ea875",
+          "name": "東北鞍營地",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 2.3,
+            "component": 7,
+            "edge": 6989,
+            "recordedAlongMeters": 78081.1,
+            "time": "2026-11-05T04:06:53.545Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 6.1,
+              "component": 7,
+              "edge": 1578,
+              "recordedAlongMeters": 69532.8,
+              "time": "2026-11-04T21:58:03.000Z"
+            },
+            {
+              "offsetMeters": 3.3,
+              "component": 7,
+              "edge": 2195,
+              "recordedAlongMeters": 70139.3,
+              "time": "2026-11-04T22:40:11.798Z"
+            },
+            {
+              "offsetMeters": 2.3,
+              "component": 7,
+              "edge": 6988,
+              "recordedAlongMeters": 78080.7,
+              "time": "2026-11-05T04:06:53.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:a884c2a16afbdabf28de",
+          "name": "哈伊拉羅溪南源",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 6430.8,
+            "component": 5,
+            "edge": 1130,
+            "recordedAlongMeters": 49805.6,
+            "time": "2026-11-02T22:56:12.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:adc0d7c3c99b1752e68b",
+          "name": "東郡大山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.8,
+            "component": 7,
+            "edge": 1925,
+            "recordedAlongMeters": 69822.9,
+            "time": "2026-11-04T22:20:52.461Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 49.7,
+              "component": 7,
+              "edge": 1533,
+              "recordedAlongMeters": 69395,
+              "time": "2026-11-04T21:55:09.000Z"
+            },
+            {
+              "offsetMeters": 0.8,
+              "component": 7,
+              "edge": 1925,
+              "recordedAlongMeters": 69822.9,
+              "time": "2026-11-04T22:20:52.461Z"
+            },
+            {
+              "offsetMeters": 78.1,
+              "component": 7,
+              "edge": 7028,
+              "recordedAlongMeters": 78172.4,
+              "time": "2026-11-05T04:09:39.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:aef6e30a59fdc407a2a2",
+          "name": "無雙部落址",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 611,
+            "component": 9,
+            "edge": 9606,
+            "recordedAlongMeters": 98851.6,
+            "time": "2026-11-06T06:44:34.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:b68adbc4f51e0a71c87f",
+          "name": "櫧山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 1.3,
+            "component": 9,
+            "edge": 1627,
+            "recordedAlongMeters": 87012.6,
+            "time": "2026-11-05T22:10:30.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 1.3,
+              "component": 9,
+              "edge": 1626,
+              "recordedAlongMeters": 87011.4,
+              "time": "2026-11-05T22:10:20.743Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:b865066ee7995702c0d4",
+          "name": "盧利拉駱山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.3,
+            "component": 3,
+            "edge": 899,
+            "recordedAlongMeters": 33431.9,
+            "time": "2026-11-01T21:37:51.531Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.3,
+              "component": 3,
+              "edge": 899,
+              "recordedAlongMeters": 33431.9,
+              "time": "2026-11-01T21:37:51.531Z"
+            },
+            {
+              "offsetMeters": 0.3,
+              "component": 3,
+              "edge": 4031,
+              "recordedAlongMeters": 37846.6,
+              "time": "2026-11-02T01:19:43.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:bc117dbb33b03fe2cddf",
+          "name": "沙武巒草原",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 0.9,
+            "component": 2,
+            "edge": 3,
+            "recordedAlongMeters": 16754.3,
+            "time": "2026-10-31T20:13:23.541Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 5.9,
+              "component": 1,
+              "edge": 6785,
+              "recordedAlongMeters": 16749.4,
+              "time": "2026-10-31T06:46:31.000Z"
+            },
+            {
+              "offsetMeters": 0.9,
+              "component": 2,
+              "edge": 3,
+              "recordedAlongMeters": 16754.3,
+              "time": "2026-10-31T20:13:23.541Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:bce5fdf63beb2b9d5c29",
+          "name": "無雙山基點峰",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.2,
+            "component": 9,
+            "edge": 6217,
+            "recordedAlongMeters": 92555.1,
+            "time": "2026-11-06T03:30:20.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.2,
+              "component": 9,
+              "edge": 6217,
+              "recordedAlongMeters": 92555.1,
+              "time": "2026-11-06T03:30:20.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:bd25adc467b72fa6656f",
+          "name": "天南可蘭山",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 0.5,
+            "component": 6,
+            "edge": 2245,
+            "recordedAlongMeters": 59676.4,
+            "time": "2026-11-03T23:44:36.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 90.8,
+              "component": 6,
+              "edge": 2061,
+              "recordedAlongMeters": 59398.3,
+              "time": "2026-11-03T23:32:01.000Z"
+            },
+            {
+              "offsetMeters": 0.5,
+              "component": 6,
+              "edge": 2245,
+              "recordedAlongMeters": 59676.4,
+              "time": "2026-11-03T23:44:36.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:c004ec6758328d3ce1cb",
+          "name": "無雙吊橋",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 856.6,
+            "component": 9,
+            "edge": 9750,
+            "recordedAlongMeters": 99078.8,
+            "time": "2026-11-06T06:51:53.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:c25918006df5f04534c8",
+          "name": "馬路巴拉讓山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 3,
+            "component": 3,
+            "edge": 8697,
+            "recordedAlongMeters": 45382,
+            "time": "2026-11-02T07:17:21.765Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 3,
+              "component": 3,
+              "edge": 8697,
+              "recordedAlongMeters": 45382,
+              "time": "2026-11-02T07:17:21.765Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:c61990dd30e7cb3d8213",
+          "name": "43K工寮",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 813.9,
+            "component": 10,
+            "edge": 5418,
+            "recordedAlongMeters": 112368.4,
+            "time": "2026-11-06T23:43:50.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:c8870812bd546115bac5",
+          "name": "三岔路口營地",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.4,
+            "component": 3,
+            "edge": 6785,
+            "recordedAlongMeters": 42120,
+            "time": "2026-11-02T05:00:19.616Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.4,
+              "component": 3,
+              "edge": 6785,
+              "recordedAlongMeters": 42120,
+              "time": "2026-11-02T05:00:19.616Z"
+            },
+            {
+              "offsetMeters": 1.5,
+              "component": 3,
+              "edge": 7665,
+              "recordedAlongMeters": 43816.6,
+              "time": "2026-11-02T05:58:15.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:c9115d117bdcc33b8c0b",
+          "name": "東巒大山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.9,
+            "component": 7,
+            "edge": 4780,
+            "recordedAlongMeters": 74438.3,
+            "time": "2026-11-05T01:28:15.230Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.9,
+              "component": 7,
+              "edge": 4772,
+              "recordedAlongMeters": 74438.3,
+              "time": "2026-11-05T01:27:20.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:cb277db7b164105e3c17",
+          "name": "三岔路口",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 4.5,
+            "component": 2,
+            "edge": 3484,
+            "recordedAlongMeters": 22187.8,
+            "time": "2026-11-01T00:10:25.327Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 4.5,
+              "component": 2,
+              "edge": 3483,
+              "recordedAlongMeters": 22187.5,
+              "time": "2026-11-01T00:10:25.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:d03e5cea91ce41e0ca2a",
+          "name": "鐵線斷崖西口",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 415.7,
+            "component": 2,
+            "edge": 3320,
+            "recordedAlongMeters": 21882.1,
+            "time": "2026-11-01T00:01:15.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:dee598e1b2437f4ec104",
+          "name": "32K水泥工寮",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 6.6,
+            "component": 1,
+            "edge": 5111,
+            "recordedAlongMeters": 13591.8,
+            "time": "2026-10-31T04:44:29.271Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 6.6,
+              "component": 1,
+              "edge": 5111,
+              "recordedAlongMeters": 13591.8,
+              "time": "2026-10-31T04:44:29.271Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:e9149e15effc99bc37f7",
+          "name": "郡東營地",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 4.1,
+            "component": 6,
+            "edge": 7486,
+            "recordedAlongMeters": 66836.8,
+            "time": "2026-11-04T06:33:48.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 4.1,
+              "component": 6,
+              "edge": 7486,
+              "recordedAlongMeters": 66836.8,
+              "time": "2026-11-04T06:33:48.000Z"
+            },
+            {
+              "offsetMeters": 68.1,
+              "component": 6,
+              "edge": 8162,
+              "recordedAlongMeters": 67803.9,
+              "time": "2026-11-04T07:53:58.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:ed8a1c3cd47fa986d90e",
+          "name": "最後水源",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 1810.4,
+            "component": 9,
+            "edge": 7674,
+            "recordedAlongMeters": 95007.3,
+            "time": "2026-11-06T05:03:02.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:ef56761122345906961b",
+          "name": "14.6K水泥路止",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 1365.6,
+            "component": 1,
+            "edge": 1,
+            "recordedAlongMeters": 15.7,
+            "time": "2026-10-30T22:57:27.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:f0bb47a73379bfdf496a",
+          "name": "天南可蘭/望崖岔路",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 2,
+            "component": 6,
+            "edge": 2631,
+            "recordedAlongMeters": 60026.1,
+            "time": "2026-11-04T00:12:21.362Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 2.2,
+              "component": 6,
+              "edge": 2118,
+              "recordedAlongMeters": 59449.8,
+              "time": "2026-11-03T23:36:13.183Z"
+            },
+            {
+              "offsetMeters": 2,
+              "component": 6,
+              "edge": 2631,
+              "recordedAlongMeters": 60026.1,
+              "time": "2026-11-04T00:12:21.362Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:f0e2f3dceb1f3b093fe7",
+          "name": "哈伊拉羅溪中源",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 4583.4,
+            "component": 5,
+            "edge": 1130,
+            "recordedAlongMeters": 49805.6,
+            "time": "2026-11-02T22:56:12.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:f33cee319fc38118e03c",
+          "name": "東源營地",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 5.9,
+            "component": 2,
+            "edge": 3756,
+            "recordedAlongMeters": 22621,
+            "time": "2026-11-01T00:26:36.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 5.9,
+              "component": 2,
+              "edge": 3756,
+              "recordedAlongMeters": 22621,
+              "time": "2026-11-01T00:26:36.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:f3ea090758bb1302bc29",
+          "name": "林道盡頭",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 2.6,
+            "component": 1,
+            "edge": 6532,
+            "recordedAlongMeters": 16292.9,
+            "time": "2026-10-31T06:28:34.984Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 97.6,
+              "component": 1,
+              "edge": 6376,
+              "recordedAlongMeters": 15885.5,
+              "time": "2026-10-31T06:18:07.000Z"
+            },
+            {
+              "offsetMeters": 60.8,
+              "component": 1,
+              "edge": 6443,
+              "recordedAlongMeters": 16048.1,
+              "time": "2026-10-31T06:22:23.000Z"
+            },
+            {
+              "offsetMeters": 2.6,
+              "component": 1,
+              "edge": 6532,
+              "recordedAlongMeters": 16292.9,
+              "time": "2026-10-31T06:28:34.984Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:fac669a79a9a25b63056",
+          "name": "杜鵑營地",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 3.1,
+            "component": 2,
+            "edge": 8415,
+            "recordedAlongMeters": 29559.5,
+            "time": "2026-11-01T06:13:06.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 3.1,
+              "component": 2,
+              "edge": 8415,
+              "recordedAlongMeters": 29559.5,
+              "time": "2026-11-01T06:13:06.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:fda449ba3440ad785b68",
+          "name": "斷稜東山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 4.9,
+            "component": 5,
+            "edge": 4341,
+            "recordedAlongMeters": 53069.9,
+            "time": "2026-11-03T02:51:52.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 4.9,
+              "component": 5,
+              "edge": 4341,
+              "recordedAlongMeters": 53069.9,
+              "time": "2026-11-03T02:51:52.000Z"
+            },
+            {
+              "offsetMeters": 99.9,
+              "component": 5,
+              "edge": 4399,
+              "recordedAlongMeters": 53193.2,
+              "time": "2026-11-03T02:56:04.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:ff06147be71a4346fbfc",
+          "name": "望崖山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.2,
+            "component": 6,
+            "edge": 987,
+            "recordedAlongMeters": 58059.3,
+            "time": "2026-11-03T22:17:47.129Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.2,
+              "component": 6,
+              "edge": 986,
+              "recordedAlongMeters": 58059.2,
+              "time": "2026-11-03T22:17:46.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "shared:cw-v07-001",
+          "name": "16.5K行車終點",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 11890.2,
+            "component": 1,
+            "edge": 1,
+            "recordedAlongMeters": 15.7,
+            "time": "2026-10-30T22:57:27.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "shared:cw-v07-040",
+          "name": "太平谷南口",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 10236.4,
+            "component": 1,
+            "edge": 2972,
+            "recordedAlongMeters": 7299.3,
+            "time": "2026-10-31T02:17:55.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "shared:cw-v07-078",
+          "name": "馬利加南山東峰",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 8216.4,
+            "component": 5,
+            "edge": 1274,
+            "recordedAlongMeters": 49973.9,
+            "time": "2026-11-02T23:06:47.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "shared:cw-v07-079",
+          "name": "馬利加南東峰山屋",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 8211,
+            "component": 5,
+            "edge": 2422,
+            "recordedAlongMeters": 50948.8,
+            "time": "2026-11-03T00:30:05.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "shared:cw-v07-080",
+          "name": "馬布谷山屋",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 11141.1,
+            "component": 1,
+            "edge": 2992,
+            "recordedAlongMeters": 7361.9,
+            "time": "2026-10-31T02:19:23.000Z"
+          },
+          "visitsWithin100m": []
+        }
+      ]
+    },
+    {
+      "sourceId": "gpx-d5b36fdbadab9709",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=6099041&q=trail",
+      "author": "Willy Wang",
+      "sha256": "d5b36fdbadab9709515122fe2ee3d188b28cc90053a7b92fc0b7c46d45e7758e",
+      "recordingId": "6099041",
+      "summary": {
+        "points": 29102,
+        "recordedSegments": 86,
+        "components": 86,
+        "distanceMeters": 107443,
+        "ascentMeters": 10931.9,
+        "descentMeters": 12941.9,
+        "timedEdges": 29015,
+        "speedSuspects": 19,
+        "start": [
+          121.19383734037048,
+          23.591303012709893
+        ],
+        "end": [
+          120.88486577810284,
+          23.65727933595919
+        ]
+      },
+      "warnings": [
+        {
+          "code": "MULTI_SEGMENT",
+          "count": 86
+        },
+        {
+          "code": "INVALID_TIME_ORDER",
+          "count": 1
+        },
+        {
+          "code": "SUSPECT_VEHICLE_OR_GPS",
+          "count": 19
+        }
+      ],
+      "componentGaps": [
+        {
+          "afterComponent": 1,
+          "meters": 4.8
+        },
+        {
+          "afterComponent": 2,
+          "meters": 6
+        },
+        {
+          "afterComponent": 3,
+          "meters": 1.3
+        },
+        {
+          "afterComponent": 4,
+          "meters": 8
+        },
+        {
+          "afterComponent": 5,
+          "meters": 6.3
+        },
+        {
+          "afterComponent": 6,
+          "meters": 9.9
+        },
+        {
+          "afterComponent": 7,
+          "meters": 15
+        },
+        {
+          "afterComponent": 8,
+          "meters": 19.3
+        },
+        {
+          "afterComponent": 9,
+          "meters": 28.2
+        },
+        {
+          "afterComponent": 10,
+          "meters": 2.3
+        },
+        {
+          "afterComponent": 11,
+          "meters": 9.3
+        },
+        {
+          "afterComponent": 12,
+          "meters": 6.3
+        },
+        {
+          "afterComponent": 13,
+          "meters": 5.7
+        },
+        {
+          "afterComponent": 14,
+          "meters": 5.1
+        },
+        {
+          "afterComponent": 15,
+          "meters": 4.6
+        },
+        {
+          "afterComponent": 16,
+          "meters": 4.8
+        },
+        {
+          "afterComponent": 17,
+          "meters": 7.2
+        },
+        {
+          "afterComponent": 18,
+          "meters": 1.6
+        },
+        {
+          "afterComponent": 19,
+          "meters": 9.9
+        },
+        {
+          "afterComponent": 20,
+          "meters": 7.6
+        },
+        {
+          "afterComponent": 21,
+          "meters": 6.6
+        },
+        {
+          "afterComponent": 22,
+          "meters": 3.8
+        },
+        {
+          "afterComponent": 23,
+          "meters": 1.3
+        },
+        {
+          "afterComponent": 24,
+          "meters": 8.6
+        },
+        {
+          "afterComponent": 25,
+          "meters": 1.6
+        },
+        {
+          "afterComponent": 26,
+          "meters": 6.4
+        },
+        {
+          "afterComponent": 27,
+          "meters": 3
+        },
+        {
+          "afterComponent": 28,
+          "meters": 4.8
+        },
+        {
+          "afterComponent": 29,
+          "meters": 2.5
+        },
+        {
+          "afterComponent": 30,
+          "meters": 5.8
+        },
+        {
+          "afterComponent": 31,
+          "meters": 1.8
+        },
+        {
+          "afterComponent": 32,
+          "meters": 2.2
+        },
+        {
+          "afterComponent": 33,
+          "meters": 5.7
+        },
+        {
+          "afterComponent": 34,
+          "meters": 6.4
+        },
+        {
+          "afterComponent": 35,
+          "meters": 0.8
+        },
+        {
+          "afterComponent": 36,
+          "meters": 9.8
+        },
+        {
+          "afterComponent": 37,
+          "meters": 2.6
+        },
+        {
+          "afterComponent": 38,
+          "meters": 9.5
+        },
+        {
+          "afterComponent": 39,
+          "meters": 17.1
+        },
+        {
+          "afterComponent": 40,
+          "meters": 10.1
+        },
+        {
+          "afterComponent": 41,
+          "meters": 11.6
+        },
+        {
+          "afterComponent": 42,
+          "meters": 269.8
+        },
+        {
+          "afterComponent": 43,
+          "meters": 7.7
+        },
+        {
+          "afterComponent": 44,
+          "meters": 1.4
+        },
+        {
+          "afterComponent": 45,
+          "meters": 2.4
+        },
+        {
+          "afterComponent": 46,
+          "meters": 0.4
+        },
+        {
+          "afterComponent": 47,
+          "meters": 2.9
+        },
+        {
+          "afterComponent": 48,
+          "meters": 0.9
+        },
+        {
+          "afterComponent": 49,
+          "meters": 3.7
+        },
+        {
+          "afterComponent": 50,
+          "meters": 3.4
+        },
+        {
+          "afterComponent": 51,
+          "meters": 8.1
+        },
+        {
+          "afterComponent": 52,
+          "meters": 4.7
+        },
+        {
+          "afterComponent": 53,
+          "meters": 4
+        },
+        {
+          "afterComponent": 54,
+          "meters": 1.7
+        },
+        {
+          "afterComponent": 55,
+          "meters": 10.5
+        },
+        {
+          "afterComponent": 56,
+          "meters": 9.7
+        },
+        {
+          "afterComponent": 57,
+          "meters": 16.8
+        },
+        {
+          "afterComponent": 58,
+          "meters": 5.3
+        },
+        {
+          "afterComponent": 59,
+          "meters": 1.4
+        },
+        {
+          "afterComponent": 60,
+          "meters": 5.5
+        },
+        {
+          "afterComponent": 61,
+          "meters": 7.5
+        },
+        {
+          "afterComponent": 62,
+          "meters": 0.8
+        },
+        {
+          "afterComponent": 63,
+          "meters": 8
+        },
+        {
+          "afterComponent": 64,
+          "meters": 6.9
+        },
+        {
+          "afterComponent": 65,
+          "meters": 6.8
+        },
+        {
+          "afterComponent": 66,
+          "meters": 3.9
+        },
+        {
+          "afterComponent": 67,
+          "meters": 2.2
+        },
+        {
+          "afterComponent": 68,
+          "meters": 13.1
+        },
+        {
+          "afterComponent": 69,
+          "meters": 21.5
+        },
+        {
+          "afterComponent": 70,
+          "meters": 29.8
+        },
+        {
+          "afterComponent": 71,
+          "meters": 14.7
+        },
+        {
+          "afterComponent": 72,
+          "meters": 3.4
+        },
+        {
+          "afterComponent": 73,
+          "meters": 25.5
+        },
+        {
+          "afterComponent": 74,
+          "meters": 19.7
+        },
+        {
+          "afterComponent": 75,
+          "meters": 12.7
+        },
+        {
+          "afterComponent": 76,
+          "meters": 2.3
+        },
+        {
+          "afterComponent": 77,
+          "meters": 2.5
+        },
+        {
+          "afterComponent": 78,
+          "meters": 32
+        },
+        {
+          "afterComponent": 79,
+          "meters": 9.6
+        },
+        {
+          "afterComponent": 80,
+          "meters": 9.9
+        },
+        {
+          "afterComponent": 81,
+          "meters": 4
+        },
+        {
+          "afterComponent": 82,
+          "meters": 16.7
+        },
+        {
+          "afterComponent": 83,
+          "meters": 3.9
+        },
+        {
+          "afterComponent": 84,
+          "meters": 6.2
+        },
+        {
+          "afterComponent": 85,
+          "meters": 732.9
+        }
+      ],
+      "branchMatches": {
+        "selectedStartExtension": {
+          "template": [
+            "14.6K水泥路止",
+            "19.3K水泥橋"
+          ],
+          "radiusMeters": 30,
+          "matched": 0,
+          "total": 2,
+          "truncated": false,
+          "matches": [
+            null,
+            null
+          ],
+          "meaning": "Within-radius sequence candidates only; not proof of physical node identity, continuous geometry, or variant equivalence."
+        },
+        "ingressTraditional": {
+          "template": [
+            "19.3K水泥橋",
+            "28K水泥工寮",
+            "32K水泥工寮",
+            "34K登山口",
+            "沙武巒草原",
+            "東源營地",
+            "西源營地",
+            "杜鵑營地",
+            "太平溪源",
+            "太平溪源營地"
+          ],
+          "radiusMeters": 30,
+          "matched": 1,
+          "total": 10,
+          "truncated": false,
+          "matches": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "name": "太平溪源營地",
+              "component": 7,
+              "alongMeters": 6413,
+              "offsetMeters": 16.1
+            }
+          ],
+          "meaning": "Within-radius sequence candidates only; not proof of physical node identity, continuous geometry, or variant equivalence."
+        },
+        "dandaReturn": {
+          "template": [
+            "太平溪源營地",
+            "盧利拉駱山",
+            "丹大山",
+            "盧利拉駱山",
+            "太平溪源營地"
+          ],
+          "radiusMeters": 30,
+          "matched": 4,
+          "total": 5,
+          "truncated": false,
+          "matches": [
+            null,
+            {
+              "name": "盧利拉駱山",
+              "component": 2,
+              "alongMeters": 1296,
+              "offsetMeters": 0.6
+            },
+            {
+              "name": "丹大山",
+              "component": 4,
+              "alongMeters": 3210,
+              "offsetMeters": 0.2
+            },
+            {
+              "name": "盧利拉駱山",
+              "component": 5,
+              "alongMeters": 5047,
+              "offsetMeters": 1.6
+            },
+            {
+              "name": "太平溪源營地",
+              "component": 7,
+              "alongMeters": 6413,
+              "offsetMeters": 16.1
+            }
+          ],
+          "meaning": "Within-radius sequence candidates only; not proof of physical node identity, continuous geometry, or variant equivalence."
+        },
+        "eastFirst": {
+          "template": [
+            "東北鞍營地",
+            "東鑾/烏達佩岔路",
+            "東巒大山",
+            "東鑾/烏達佩岔路",
+            "東北鞍營地",
+            "東郡大山",
+            "東北鞍營地"
+          ],
+          "radiusMeters": 30,
+          "matched": 7,
+          "total": 7,
+          "truncated": false,
+          "matches": [
+            {
+              "name": "東北鞍營地",
+              "component": 41,
+              "alongMeters": 29455,
+              "offsetMeters": 13
+            },
+            {
+              "name": "東鑾/烏達佩岔路",
+              "component": 42,
+              "alongMeters": 32086,
+              "offsetMeters": 2.9
+            },
+            {
+              "name": "東巒大山",
+              "component": 43,
+              "alongMeters": 33181,
+              "offsetMeters": 0.4
+            },
+            {
+              "name": "東鑾/烏達佩岔路",
+              "component": 44,
+              "alongMeters": 34304,
+              "offsetMeters": 3.3
+            },
+            {
+              "name": "東北鞍營地",
+              "component": 50,
+              "alongMeters": 36479,
+              "offsetMeters": 12.3
+            },
+            {
+              "name": "東郡大山",
+              "component": 52,
+              "alongMeters": 36622,
+              "offsetMeters": 1.5
+            },
+            {
+              "name": "東北鞍營地",
+              "component": 54,
+              "alongMeters": 36735,
+              "offsetMeters": 26.4
+            }
+          ],
+          "meaning": "Within-radius sequence candidates only; not proof of physical node identity, continuous geometry, or variant equivalence."
+        },
+        "dongFirst": {
+          "template": [
+            "東北鞍營地",
+            "東郡大山",
+            "東鑾/烏達佩岔路",
+            "東巒大山",
+            "東鑾/烏達佩岔路",
+            "東北鞍營地"
+          ],
+          "radiusMeters": 30,
+          "matched": 5,
+          "total": 6,
+          "truncated": false,
+          "matches": [
+            {
+              "name": "東北鞍營地",
+              "component": 41,
+              "alongMeters": 29455,
+              "offsetMeters": 13
+            },
+            null,
+            {
+              "name": "東鑾/烏達佩岔路",
+              "component": 42,
+              "alongMeters": 32086,
+              "offsetMeters": 2.9
+            },
+            {
+              "name": "東巒大山",
+              "component": 43,
+              "alongMeters": 33181,
+              "offsetMeters": 0.4
+            },
+            {
+              "name": "東鑾/烏達佩岔路",
+              "component": 44,
+              "alongMeters": 34304,
+              "offsetMeters": 3.3
+            },
+            {
+              "name": "東北鞍營地",
+              "component": 50,
+              "alongMeters": 36479,
+              "offsetMeters": 12.3
+            }
+          ],
+          "meaning": "Within-radius sequence candidates only; not proof of physical node identity, continuous geometry, or variant equivalence."
+        },
+        "egressTraditional": {
+          "template": [
+            "無雙山基點峰",
+            "最後水源",
+            "亞力士營地",
+            "無雙部落址",
+            "無雙吊橋",
+            "烏瓦拉鼻溪營地",
+            "45.3K登山口",
+            "43K工寮",
+            "33K行車終點"
+          ],
+          "radiusMeters": 30,
+          "matched": 2,
+          "total": 9,
+          "truncated": false,
+          "matches": [
+            {
+              "name": "無雙山基點峰",
+              "component": 63,
+              "alongMeters": 46732,
+              "offsetMeters": 0.6
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+              "name": "33K行車終點",
+              "component": 79,
+              "alongMeters": 68980,
+              "offsetMeters": 12.4
+            }
+          ],
+          "meaning": "Within-radius sequence candidates only; not proof of physical node identity, continuous geometry, or variant equivalence."
+        }
+      },
+      "measurements": [
+        {
+          "nodeId": "shared:cw-v07-011",
+          "name": "丹大山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.2,
+            "component": 4,
+            "edge": 549,
+            "recordedAlongMeters": 3209.7,
+            "time": "2026-10-05T05:43:37.578Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.2,
+              "component": 4,
+              "edge": 548,
+              "recordedAlongMeters": 3209.7,
+              "time": "2026-10-05T05:43:37.000Z"
+            },
+            {
+              "offsetMeters": 8.2,
+              "component": 5,
+              "edge": 1,
+              "recordedAlongMeters": 3210.5,
+              "time": "2026-10-05T05:53:37.748Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:01d1180c464fb08e5191",
+          "name": "可樂可樂安山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 3.1,
+            "component": 33,
+            "edge": 550,
+            "recordedAlongMeters": 24825.4,
+            "time": "2026-10-07T01:49:53.630Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 3.1,
+              "component": 33,
+              "edge": 549,
+              "recordedAlongMeters": 24825.2,
+              "time": "2026-10-07T01:49:53.000Z"
+            },
+            {
+              "offsetMeters": 6.2,
+              "component": 34,
+              "edge": 3,
+              "recordedAlongMeters": 24854.1,
+              "time": "2026-10-07T02:36:34.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:06b52b0f4a9c5db51f87",
+          "name": "東鑾/烏達佩岔路",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 2.9,
+            "component": 42,
+            "edge": 575,
+            "recordedAlongMeters": 32085.9,
+            "time": "2026-10-07T21:35:29.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 2.9,
+              "component": 42,
+              "edge": 575,
+              "recordedAlongMeters": 32085.9,
+              "time": "2026-10-07T21:35:29.000Z"
+            },
+            {
+              "offsetMeters": 3.3,
+              "component": 44,
+              "edge": 338,
+              "recordedAlongMeters": 34304.1,
+              "time": "2026-10-07T23:07:24.480Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:0c0dc01565d03fae0e19",
+          "name": "裡門山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.7,
+            "component": 26,
+            "edge": 336,
+            "recordedAlongMeters": 18638.8,
+            "time": "2026-10-06T06:01:02.924Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 96.8,
+              "component": 26,
+              "edge": 187,
+              "recordedAlongMeters": 18355.8,
+              "time": "2026-10-06T05:46:13.000Z"
+            },
+            {
+              "offsetMeters": 0.7,
+              "component": 26,
+              "edge": 336,
+              "recordedAlongMeters": 18638.8,
+              "time": "2026-10-06T06:01:02.924Z"
+            },
+            {
+              "offsetMeters": 6.4,
+              "component": 27,
+              "edge": 1,
+              "recordedAlongMeters": 18640,
+              "time": "2026-10-06T06:02:00.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:0c8573830abcc97e1e32",
+          "name": "26K岔路",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 8247,
+            "component": 15,
+            "edge": 149,
+            "recordedAlongMeters": 9369.5,
+            "time": "2026-10-05T22:15:29.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:13132e8f44de031186fe",
+          "name": "烏可冬克山",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 5842.4,
+            "component": 22,
+            "edge": 278,
+            "recordedAlongMeters": 14873.4,
+            "time": "2026-10-06T02:52:30.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:21743079f36dd0ee5829",
+          "name": "櫧山北鞍營地",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 62.1,
+            "component": 60,
+            "edge": 601,
+            "recordedAlongMeters": 41187.9,
+            "time": "2026-10-08T03:56:45.999Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 62.1,
+              "component": 60,
+              "edge": 601,
+              "recordedAlongMeters": 41187.9,
+              "time": "2026-10-08T03:56:45.999Z"
+            },
+            {
+              "offsetMeters": 79.8,
+              "component": 61,
+              "edge": 12,
+              "recordedAlongMeters": 41378,
+              "time": "2026-10-08T19:07:22.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:29f7b222808645fa53ef",
+          "name": "45.3K登山口",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 796.1,
+            "component": 74,
+            "edge": 91,
+            "recordedAlongMeters": 58649.2,
+            "time": "2026-10-09T06:39:54.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:2aa469a51f6331227667",
+          "name": "內嶺爾山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 3.3,
+            "component": 16,
+            "edge": 1,
+            "recordedAlongMeters": 9371.1,
+            "time": "2026-10-05T22:20:33.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 4.2,
+              "component": 15,
+              "edge": 147,
+              "recordedAlongMeters": 9368.2,
+              "time": "2026-10-05T22:15:16.808Z"
+            },
+            {
+              "offsetMeters": 3.3,
+              "component": 16,
+              "edge": 1,
+              "recordedAlongMeters": 9371.1,
+              "time": "2026-10-05T22:20:33.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:2d8fc441e99a93bda219",
+          "name": "33.5K大崩塌",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 3.2,
+            "component": 79,
+            "edge": 200,
+            "recordedAlongMeters": 68835.6,
+            "time": "2026-10-09T23:11:05.026Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 3.2,
+              "component": 79,
+              "edge": 200,
+              "recordedAlongMeters": 68835.6,
+              "time": "2026-10-09T23:11:05.026Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:318b1240b1b28f23c14a",
+          "name": "亞力士營地",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 1816.4,
+            "component": 65,
+            "edge": 247,
+            "recordedAlongMeters": 48606.1,
+            "time": "2026-10-09T00:11:15.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:34b4ec45fd16d72ac1b6",
+          "name": "丹大溪源營地",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 4.8,
+            "component": 27,
+            "edge": 223,
+            "recordedAlongMeters": 19492,
+            "time": "2026-10-06T06:24:09.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 4.8,
+              "component": 27,
+              "edge": 223,
+              "recordedAlongMeters": 19492,
+              "time": "2026-10-06T06:24:09.000Z"
+            },
+            {
+              "offsetMeters": 5.4,
+              "component": 28,
+              "edge": 1,
+              "recordedAlongMeters": 19492,
+              "time": "2026-10-06T21:24:44.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:1670c3f1247b747ba02a",
+          "name": "下切溪床點",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 16508,
+            "component": 16,
+            "edge": 55,
+            "recordedAlongMeters": 9698.6,
+            "time": "2026-10-05T22:25:46.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:37c859d291bd265bd3ce",
+          "name": "方便池",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 4291.3,
+            "component": 4,
+            "edge": 547,
+            "recordedAlongMeters": 3209.3,
+            "time": "2026-10-05T05:43:32.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:3bf4ec2f689a3b5c4930",
+          "name": "烏瓦拉鼻溪營地",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 1243.4,
+            "component": 71,
+            "edge": 121,
+            "recordedAlongMeters": 56234,
+            "time": "2026-10-09T05:05:40.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:4001696b7a0f069ffb0b",
+          "name": "本鄉山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 1,
+            "component": 60,
+            "edge": 79,
+            "recordedAlongMeters": 39488.3,
+            "time": "2026-10-08T03:12:30.044Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 1,
+              "component": 60,
+              "edge": 79,
+              "recordedAlongMeters": 39488.3,
+              "time": "2026-10-08T03:12:30.044Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:4a0b2326333b6cbfd23e",
+          "name": "松林營地",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 2771.5,
+            "component": 5,
+            "edge": 132,
+            "recordedAlongMeters": 3607.3,
+            "time": "2026-10-05T06:04:45.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:4a1ca6c9c8adbf80fba0",
+          "name": "烏達佩山",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 0.5,
+            "component": 42,
+            "edge": 630,
+            "recordedAlongMeters": 32242.3,
+            "time": "2026-10-07T21:40:08.225Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.5,
+              "component": 42,
+              "edge": 630,
+              "recordedAlongMeters": 32242.3,
+              "time": "2026-10-07T21:40:08.225Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:4d88bca8baa6a866c727",
+          "name": "鐵線斷崖東口",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 5358.9,
+            "component": 5,
+            "edge": 133,
+            "recordedAlongMeters": 3607.3,
+            "time": "2026-10-05T06:04:45.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:4fca27364854ea7129d2",
+          "name": "39.6K大崩塌",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 8.7,
+            "component": 76,
+            "edge": 1364,
+            "recordedAlongMeters": 63088.9,
+            "time": "2026-10-09T20:43:19.618Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 8.7,
+              "component": 76,
+              "edge": 1364,
+              "recordedAlongMeters": 63088.9,
+              "time": "2026-10-09T20:43:19.618Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:5048fd0d5be7a2b461be",
+          "name": "義西請馬至山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 1.2,
+            "component": 22,
+            "edge": 749,
+            "recordedAlongMeters": 15650.1,
+            "time": "2026-10-06T03:39:21.709Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 1.2,
+              "component": 22,
+              "edge": 749,
+              "recordedAlongMeters": 15650.1,
+              "time": "2026-10-06T03:39:21.709Z"
+            },
+            {
+              "offsetMeters": 2.8,
+              "component": 23,
+              "edge": 1,
+              "recordedAlongMeters": 15653.6,
+              "time": "2026-10-06T03:51:49.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:5ab8c1b58de6eeb05b5d",
+          "name": "2897草原水池",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 3584.7,
+            "component": 4,
+            "edge": 547,
+            "recordedAlongMeters": 3209.3,
+            "time": "2026-10-05T05:43:32.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:5d3084736e9f8bce6d4a",
+          "name": "19.3K水泥橋",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 9381.8,
+            "component": 15,
+            "edge": 149,
+            "recordedAlongMeters": 9369.5,
+            "time": "2026-10-05T22:15:29.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:66b2dd2d91e301d84c73",
+          "name": "東鞍營地",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 10.8,
+            "component": 21,
+            "edge": 247,
+            "recordedAlongMeters": 13956.9,
+            "time": "2026-10-06T02:18:06.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 10.8,
+              "component": 21,
+              "edge": 247,
+              "recordedAlongMeters": 13956.9,
+              "time": "2026-10-06T02:18:06.000Z"
+            },
+            {
+              "offsetMeters": 24.6,
+              "component": 22,
+              "edge": 1,
+              "recordedAlongMeters": 13977.4,
+              "time": "2026-10-06T02:25:00.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:679d7475a6dd59c285e2",
+          "name": "無雙山東峰",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 3.2,
+            "component": 62,
+            "edge": 1095,
+            "recordedAlongMeters": 46102.3,
+            "time": "2026-10-08T22:12:23.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 3.2,
+              "component": 62,
+              "edge": 1095,
+              "recordedAlongMeters": 46102.3,
+              "time": "2026-10-08T22:12:23.000Z"
+            },
+            {
+              "offsetMeters": 4.5,
+              "component": 63,
+              "edge": 11,
+              "recordedAlongMeters": 46113.2,
+              "time": "2026-10-08T22:25:44.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:6976566bc1a316b8e079",
+          "name": "郡東山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 1.3,
+            "component": 35,
+            "edge": 2,
+            "recordedAlongMeters": 26510.9,
+            "time": "2026-10-07T03:23:11.432Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 11.2,
+              "component": 34,
+              "edge": 523,
+              "recordedAlongMeters": 26502.3,
+              "time": "2026-10-07T03:20:36.000Z"
+            },
+            {
+              "offsetMeters": 1.3,
+              "component": 35,
+              "edge": 2,
+              "recordedAlongMeters": 26510.9,
+              "time": "2026-10-07T03:23:11.432Z"
+            },
+            {
+              "offsetMeters": 19.9,
+              "component": 36,
+              "edge": 1,
+              "recordedAlongMeters": 26552,
+              "time": "2026-10-07T03:24:16.000Z"
+            },
+            {
+              "offsetMeters": 10.8,
+              "component": 37,
+              "edge": 5,
+              "recordedAlongMeters": 26617.2,
+              "time": "2026-10-07T03:32:03.000Z"
+            },
+            {
+              "offsetMeters": 49.2,
+              "component": 38,
+              "edge": 1,
+              "recordedAlongMeters": 26663.7,
+              "time": "2026-10-07T03:35:32.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:6b8235223e06105d242a",
+          "name": "28K水泥工寮",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 7333.8,
+            "component": 15,
+            "edge": 149,
+            "recordedAlongMeters": 9369.5,
+            "time": "2026-10-05T22:15:29.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:6c72072c59b2ee211d05",
+          "name": "烏妹浪胖池",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 1527.2,
+            "component": 22,
+            "edge": 350,
+            "recordedAlongMeters": 15006.2,
+            "time": "2026-10-06T02:59:46.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:757cb9b7c126e5300053",
+          "name": "西源營地",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 2501.1,
+            "component": 5,
+            "edge": 132,
+            "recordedAlongMeters": 3607.3,
+            "time": "2026-10-05T06:04:45.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:7b0dae68c98b7de79a40",
+          "name": "太平溪源",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 137.6,
+            "component": 10,
+            "edge": 1,
+            "recordedAlongMeters": 6679.1,
+            "time": "2026-10-05T20:14:23.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:82e77090c06d1fe2aead",
+          "name": "無雙最高峰",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.4,
+            "component": 63,
+            "edge": 227,
+            "recordedAlongMeters": 46393,
+            "time": "2026-10-08T22:44:03.122Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.4,
+              "component": 63,
+              "edge": 223,
+              "recordedAlongMeters": 46389.8,
+              "time": "2026-10-08T22:43:41.841Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:891637431112fc5688eb",
+          "name": "34K登山口",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 5556.1,
+            "component": 5,
+            "edge": 132,
+            "recordedAlongMeters": 3607.3,
+            "time": "2026-10-05T06:04:45.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:8d079c5429db81492162",
+          "name": "僕落西擴山",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 3664.8,
+            "component": 22,
+            "edge": 350,
+            "recordedAlongMeters": 15006.2,
+            "time": "2026-10-06T02:59:46.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:927ab4029b6760846cdd",
+          "name": "烏妹浪胖山",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 1597.7,
+            "component": 22,
+            "edge": 350,
+            "recordedAlongMeters": 15006.2,
+            "time": "2026-10-06T02:59:46.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:936c6cffc304b3e72668",
+          "name": "哈伊拉羅溪北源",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 2543.3,
+            "component": 22,
+            "edge": 350,
+            "recordedAlongMeters": 15006.2,
+            "time": "2026-10-06T02:59:46.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:9d5d4d1d5eb72f6f92cb",
+          "name": "2907峰",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 1804.3,
+            "component": 15,
+            "edge": 149,
+            "recordedAlongMeters": 9369.5,
+            "time": "2026-10-05T22:15:29.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:9f59facbac44a2e55ce7",
+          "name": "太平溪源營地",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 16.1,
+            "component": 7,
+            "edge": 10,
+            "recordedAlongMeters": 6412.5,
+            "time": "2026-10-05T07:53:25.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 72,
+              "component": 1,
+              "edge": 1,
+              "recordedAlongMeters": 0,
+              "time": "2026-10-05T03:45:05.000Z"
+            },
+            {
+              "offsetMeters": 61.4,
+              "component": 6,
+              "edge": 287,
+              "recordedAlongMeters": 6366,
+              "time": "2026-10-05T07:41:17.000Z"
+            },
+            {
+              "offsetMeters": 16.1,
+              "component": 7,
+              "edge": 10,
+              "recordedAlongMeters": 6412.5,
+              "time": "2026-10-05T07:53:25.000Z"
+            },
+            {
+              "offsetMeters": 18.4,
+              "component": 8,
+              "edge": 7,
+              "recordedAlongMeters": 6484.9,
+              "time": "2026-10-05T08:08:13.530Z"
+            },
+            {
+              "offsetMeters": 51.3,
+              "component": 9,
+              "edge": 1,
+              "recordedAlongMeters": 6677.3,
+              "time": "2026-10-05T20:02:17.000Z"
+            },
+            {
+              "offsetMeters": 20.5,
+              "component": 10,
+              "edge": 12,
+              "recordedAlongMeters": 6729.7,
+              "time": "2026-10-05T20:15:26.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:a17ec4e667d55d3d99c3",
+          "name": "33K行車終點",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 12.4,
+            "component": 79,
+            "edge": 232,
+            "recordedAlongMeters": 68980,
+            "time": "2026-10-09T23:13:51.424Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 12.4,
+              "component": 79,
+              "edge": 232,
+              "recordedAlongMeters": 68980,
+              "time": "2026-10-09T23:13:51.424Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:a4c3afd25386960ea875",
+          "name": "東北鞍營地",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 12.3,
+            "component": 50,
+            "edge": 35,
+            "recordedAlongMeters": 36478.6,
+            "time": "2026-10-08T00:33:26.499Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 13,
+              "component": 41,
+              "edge": 871,
+              "recordedAlongMeters": 29454.6,
+              "time": "2026-10-07T20:26:55.536Z"
+            },
+            {
+              "offsetMeters": 12.3,
+              "component": 50,
+              "edge": 34,
+              "recordedAlongMeters": 36478,
+              "time": "2026-10-08T00:33:26.000Z"
+            },
+            {
+              "offsetMeters": 33.9,
+              "component": 51,
+              "edge": 1,
+              "recordedAlongMeters": 36520.6,
+              "time": "2026-10-08T00:35:23.000Z"
+            },
+            {
+              "offsetMeters": 28.2,
+              "component": 52,
+              "edge": 1,
+              "recordedAlongMeters": 36520.6,
+              "time": "2026-10-08T00:39:55.000Z"
+            },
+            {
+              "offsetMeters": 39.3,
+              "component": 53,
+              "edge": 34,
+              "recordedAlongMeters": 36716.4,
+              "time": "2026-10-08T00:51:02.000Z"
+            },
+            {
+              "offsetMeters": 26.4,
+              "component": 54,
+              "edge": 4,
+              "recordedAlongMeters": 36734.9,
+              "time": "2026-10-08T00:57:04.000Z"
+            },
+            {
+              "offsetMeters": 48.4,
+              "component": 55,
+              "edge": 1,
+              "recordedAlongMeters": 36809.5,
+              "time": "2026-10-08T00:59:58.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:a884c2a16afbdabf28de",
+          "name": "哈伊拉羅溪南源",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 6433.3,
+            "component": 22,
+            "edge": 277,
+            "recordedAlongMeters": 14873.4,
+            "time": "2026-10-06T02:52:30.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:adc0d7c3c99b1752e68b",
+          "name": "東郡大山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 1.5,
+            "component": 52,
+            "edge": 41,
+            "recordedAlongMeters": 36622.2,
+            "time": "2026-10-08T00:43:24.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 51.5,
+              "component": 41,
+              "edge": 837,
+              "recordedAlongMeters": 29333,
+              "time": "2026-10-07T20:24:06.000Z"
+            },
+            {
+              "offsetMeters": 77.2,
+              "component": 50,
+              "edge": 43,
+              "recordedAlongMeters": 36515.1,
+              "time": "2026-10-08T00:34:11.000Z"
+            },
+            {
+              "offsetMeters": 83.9,
+              "component": 51,
+              "edge": 1,
+              "recordedAlongMeters": 36519.9,
+              "time": "2026-10-08T00:35:17.000Z"
+            },
+            {
+              "offsetMeters": 1.5,
+              "component": 52,
+              "edge": 41,
+              "recordedAlongMeters": 36622.2,
+              "time": "2026-10-08T00:43:24.000Z"
+            },
+            {
+              "offsetMeters": 6.1,
+              "component": 53,
+              "edge": 1,
+              "recordedAlongMeters": 36622.2,
+              "time": "2026-10-08T00:48:07.000Z"
+            },
+            {
+              "offsetMeters": 81,
+              "component": 54,
+              "edge": 1,
+              "recordedAlongMeters": 36718.4,
+              "time": "2026-10-08T00:56:42.000Z"
+            },
+            {
+              "offsetMeters": 90.2,
+              "component": 54,
+              "edge": 32,
+              "recordedAlongMeters": 36809.5,
+              "time": "2026-10-08T00:59:26.000Z"
+            },
+            {
+              "offsetMeters": 78,
+              "component": 55,
+              "edge": 15,
+              "recordedAlongMeters": 36850.4,
+              "time": "2026-10-08T01:01:15.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:aef6e30a59fdc407a2a2",
+          "name": "無雙部落址",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 597.8,
+            "component": 67,
+            "edge": 191,
+            "recordedAlongMeters": 51799.9,
+            "time": "2026-10-09T01:41:10.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:b68adbc4f51e0a71c87f",
+          "name": "櫧山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 1.3,
+            "component": 61,
+            "edge": 661,
+            "recordedAlongMeters": 43123.6,
+            "time": "2026-10-08T20:02:00.611Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 1.3,
+              "component": 61,
+              "edge": 660,
+              "recordedAlongMeters": 43123.3,
+              "time": "2026-10-08T20:02:00.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:b865066ee7995702c0d4",
+          "name": "盧利拉駱山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.6,
+            "component": 2,
+            "edge": 18,
+            "recordedAlongMeters": 1295.6,
+            "time": "2026-10-05T04:21:39.854Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 60.4,
+              "component": 1,
+              "edge": 393,
+              "recordedAlongMeters": 1226.2,
+              "time": "2026-10-05T04:18:23.000Z"
+            },
+            {
+              "offsetMeters": 0.6,
+              "component": 2,
+              "edge": 18,
+              "recordedAlongMeters": 1295.6,
+              "time": "2026-10-05T04:21:39.854Z"
+            },
+            {
+              "offsetMeters": 1,
+              "component": 3,
+              "edge": 1,
+              "recordedAlongMeters": 1302.1,
+              "time": "2026-10-05T04:24:31.841Z"
+            },
+            {
+              "offsetMeters": 1.6,
+              "component": 5,
+              "edge": 702,
+              "recordedAlongMeters": 5046.9,
+              "time": "2026-10-05T06:53:01.287Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:bc117dbb33b03fe2cddf",
+          "name": "沙武巒草原",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 5420.7,
+            "component": 5,
+            "edge": 132,
+            "recordedAlongMeters": 3607.3,
+            "time": "2026-10-05T06:04:45.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:bce5fdf63beb2b9d5c29",
+          "name": "無雙山基點峰",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.6,
+            "component": 63,
+            "edge": 400,
+            "recordedAlongMeters": 46732.4,
+            "time": "2026-10-08T22:58:39.567Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.6,
+              "component": 63,
+              "edge": 400,
+              "recordedAlongMeters": 46732.4,
+              "time": "2026-10-08T22:58:39.567Z"
+            },
+            {
+              "offsetMeters": 9.4,
+              "component": 64,
+              "edge": 1,
+              "recordedAlongMeters": 46746.8,
+              "time": "2026-10-08T23:07:30.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:bd25adc467b72fa6656f",
+          "name": "天南可蘭山",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 2.8,
+            "component": 31,
+            "edge": 3,
+            "recordedAlongMeters": 21797.7,
+            "time": "2026-10-07T00:00:33.799Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 4,
+              "component": 30,
+              "edge": 461,
+              "recordedAlongMeters": 21789.5,
+              "time": "2026-10-06T23:16:52.000Z"
+            },
+            {
+              "offsetMeters": 2.8,
+              "component": 31,
+              "edge": 3,
+              "recordedAlongMeters": 21797.7,
+              "time": "2026-10-07T00:00:33.799Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:c004ec6758328d3ce1cb",
+          "name": "無雙吊橋",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 849.2,
+            "component": 67,
+            "edge": 278,
+            "recordedAlongMeters": 52014.3,
+            "time": "2026-10-09T01:48:34.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:c25918006df5f04534c8",
+          "name": "馬路巴拉讓山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 2,
+            "component": 18,
+            "edge": 55,
+            "recordedAlongMeters": 11395.9,
+            "time": "2026-10-06T00:31:41.443Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 96.2,
+              "component": 17,
+              "edge": 411,
+              "recordedAlongMeters": 11283.3,
+              "time": "2026-10-05T23:40:35.000Z"
+            },
+            {
+              "offsetMeters": 2,
+              "component": 18,
+              "edge": 55,
+              "recordedAlongMeters": 11395.9,
+              "time": "2026-10-06T00:31:41.443Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:c61990dd30e7cb3d8213",
+          "name": "43K工寮",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 822.3,
+            "component": 76,
+            "edge": 1267,
+            "recordedAlongMeters": 62638.5,
+            "time": "2026-10-09T20:35:07.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:c8870812bd546115bac5",
+          "name": "三岔路口營地",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.6,
+            "component": 14,
+            "edge": 163,
+            "recordedAlongMeters": 8660.9,
+            "time": "2026-10-05T21:58:36.162Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.6,
+              "component": 14,
+              "edge": 162,
+              "recordedAlongMeters": 8660.6,
+              "time": "2026-10-05T21:58:35.000Z"
+            },
+            {
+              "offsetMeters": 6.9,
+              "component": 15,
+              "edge": 1,
+              "recordedAlongMeters": 8665.9,
+              "time": "2026-10-05T22:01:22.000Z"
+            },
+            {
+              "offsetMeters": 4,
+              "component": 16,
+              "edge": 110,
+              "recordedAlongMeters": 10076.8,
+              "time": "2026-10-05T22:31:01.326Z"
+            },
+            {
+              "offsetMeters": 0.8,
+              "component": 17,
+              "edge": 17,
+              "recordedAlongMeters": 10097.5,
+              "time": "2026-10-05T23:01:28.206Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:c9115d117bdcc33b8c0b",
+          "name": "東巒大山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 0.4,
+            "component": 43,
+            "edge": 302,
+            "recordedAlongMeters": 33180.9,
+            "time": "2026-10-07T22:22:12.294Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 0.4,
+              "component": 43,
+              "edge": 302,
+              "recordedAlongMeters": 33180.9,
+              "time": "2026-10-07T22:22:12.294Z"
+            },
+            {
+              "offsetMeters": 4.1,
+              "component": 44,
+              "edge": 2,
+              "recordedAlongMeters": 33214.8,
+              "time": "2026-10-07T22:38:57.128Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:cb277db7b164105e3c17",
+          "name": "三岔路口",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 2754.4,
+            "component": 5,
+            "edge": 132,
+            "recordedAlongMeters": 3607.3,
+            "time": "2026-10-05T06:04:45.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:d03e5cea91ce41e0ca2a",
+          "name": "鐵線斷崖西口",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 3089.2,
+            "component": 5,
+            "edge": 132,
+            "recordedAlongMeters": 3607.3,
+            "time": "2026-10-05T06:04:45.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:dee598e1b2437f4ec104",
+          "name": "32K水泥工寮",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 6283.3,
+            "component": 5,
+            "edge": 132,
+            "recordedAlongMeters": 3607.3,
+            "time": "2026-10-05T06:04:45.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:e9149e15effc99bc37f7",
+          "name": "郡東營地",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 1.3,
+            "component": 38,
+            "edge": 216,
+            "recordedAlongMeters": 27116.7,
+            "time": "2026-10-07T03:53:46.296Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 1.3,
+              "component": 38,
+              "edge": 216,
+              "recordedAlongMeters": 27116.7,
+              "time": "2026-10-07T03:53:46.296Z"
+            },
+            {
+              "offsetMeters": 67.5,
+              "component": 39,
+              "edge": 1,
+              "recordedAlongMeters": 27206.2,
+              "time": "2026-10-07T04:25:28.000Z"
+            },
+            {
+              "offsetMeters": 67.1,
+              "component": 39,
+              "edge": 195,
+              "recordedAlongMeters": 27655.7,
+              "time": "2026-10-07T04:42:00.000Z"
+            },
+            {
+              "offsetMeters": 2.1,
+              "component": 40,
+              "edge": 34,
+              "recordedAlongMeters": 27771.6,
+              "time": "2026-10-07T19:04:29.270Z"
+            },
+            {
+              "offsetMeters": 71.2,
+              "component": 41,
+              "edge": 1,
+              "recordedAlongMeters": 27927.3,
+              "time": "2026-10-07T19:12:59.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:ed8a1c3cd47fa986d90e",
+          "name": "最後水源",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 1808.4,
+            "component": 65,
+            "edge": 236,
+            "recordedAlongMeters": 48562.5,
+            "time": "2026-10-09T00:10:25.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:ef56761122345906961b",
+          "name": "14.6K水泥路止",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 11372.2,
+            "component": 15,
+            "edge": 149,
+            "recordedAlongMeters": 9369.5,
+            "time": "2026-10-05T22:15:29.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:f0bb47a73379bfdf496a",
+          "name": "天南可蘭/望崖岔路",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 2.1,
+            "component": 31,
+            "edge": 43,
+            "recordedAlongMeters": 21923.2,
+            "time": "2026-10-07T00:03:53.161Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 22,
+              "component": 30,
+              "edge": 427,
+              "recordedAlongMeters": 21685.6,
+              "time": "2026-10-06T23:13:30.000Z"
+            },
+            {
+              "offsetMeters": 2.1,
+              "component": 31,
+              "edge": 42,
+              "recordedAlongMeters": 21923,
+              "time": "2026-10-07T00:03:53.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:f0e2f3dceb1f3b093fe7",
+          "name": "哈伊拉羅溪中源",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 4586.1,
+            "component": 22,
+            "edge": 270,
+            "recordedAlongMeters": 14863.3,
+            "time": "2026-10-06T02:51:50.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:f33cee319fc38118e03c",
+          "name": "東源營地",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 2556.4,
+            "component": 5,
+            "edge": 132,
+            "recordedAlongMeters": 3607.3,
+            "time": "2026-10-05T06:04:45.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:f3ea090758bb1302bc29",
+          "name": "林道盡頭",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 5631.5,
+            "component": 5,
+            "edge": 132,
+            "recordedAlongMeters": 3607.3,
+            "time": "2026-10-05T06:04:45.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:fac669a79a9a25b63056",
+          "name": "杜鵑營地",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 979.7,
+            "component": 15,
+            "edge": 149,
+            "recordedAlongMeters": 9369.5,
+            "time": "2026-10-05T22:15:29.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "node:fda449ba3440ad785b68",
+          "name": "斷稜東山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 5.4,
+            "component": 24,
+            "edge": 12,
+            "recordedAlongMeters": 16991.5,
+            "time": "2026-10-06T04:44:58.477Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 15.7,
+              "component": 23,
+              "edge": 499,
+              "recordedAlongMeters": 16968.1,
+              "time": "2026-10-06T04:41:21.000Z"
+            },
+            {
+              "offsetMeters": 5.4,
+              "component": 24,
+              "edge": 12,
+              "recordedAlongMeters": 16991.5,
+              "time": "2026-10-06T04:44:58.477Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "node:ff06147be71a4346fbfc",
+          "name": "望崖山",
+          "inCurrentSheet": true,
+          "nearest": {
+            "offsetMeters": 2.7,
+            "component": 29,
+            "edge": 1,
+            "recordedAlongMeters": 20528.8,
+            "time": "2026-10-06T22:12:46.000Z"
+          },
+          "visitsWithin100m": [
+            {
+              "offsetMeters": 4.5,
+              "component": 28,
+              "edge": 549,
+              "recordedAlongMeters": 20525.2,
+              "time": "2026-10-06T22:10:59.000Z"
+            },
+            {
+              "offsetMeters": 2.7,
+              "component": 29,
+              "edge": 1,
+              "recordedAlongMeters": 20528.8,
+              "time": "2026-10-06T22:12:46.000Z"
+            },
+            {
+              "offsetMeters": 6.7,
+              "component": 30,
+              "edge": 1,
+              "recordedAlongMeters": 20539.8,
+              "time": "2026-10-06T22:31:03.000Z"
+            }
+          ]
+        },
+        {
+          "nodeId": "shared:cw-v07-001",
+          "name": "16.5K行車終點",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 18900.2,
+            "component": 16,
+            "edge": 55,
+            "recordedAlongMeters": 9698.6,
+            "time": "2026-10-05T22:25:46.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "shared:cw-v07-040",
+          "name": "太平谷南口",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 13833.5,
+            "component": 16,
+            "edge": 55,
+            "recordedAlongMeters": 9698.6,
+            "time": "2026-10-05T22:25:46.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "shared:cw-v07-078",
+          "name": "馬利加南山東峰",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 8219.6,
+            "component": 22,
+            "edge": 350,
+            "recordedAlongMeters": 15006.2,
+            "time": "2026-10-06T02:59:46.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "shared:cw-v07-079",
+          "name": "馬利加南東峰山屋",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 8213.8,
+            "component": 22,
+            "edge": 724,
+            "recordedAlongMeters": 15600.9,
+            "time": "2026-10-06T03:36:55.000Z"
+          },
+          "visitsWithin100m": []
+        },
+        {
+          "nodeId": "shared:cw-v07-080",
+          "name": "馬布谷山屋",
+          "inCurrentSheet": false,
+          "nearest": {
+            "offsetMeters": 11156.3,
+            "component": 17,
+            "edge": 147,
+            "recordedAlongMeters": 10658.6,
+            "time": "2026-10-05T23:14:24.000Z"
+          },
+          "visitsWithin100m": []
+        }
+      ]
+    }
+  ]
+}

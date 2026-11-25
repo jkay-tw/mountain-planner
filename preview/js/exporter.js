@@ -1,6 +1,6 @@
 import {visibleTimelineRows,aggregateTerrain} from './path-editor.js';
 import {writeDownload} from './save-file.js?v=v086';
-import {dayTerrain,terrainMetrics} from './itinerary-geometry.js?v=v084';
+import {dayTerrain,terrainMetrics} from './itinerary-geometry.js?v=idea002p2';
 import {buildTimeline,summarizeDay,edgeActual,referenceMinutes,round2} from './planner.js?v=segments1';
 const placeLabel=r=>(r.isPeak?'⛰ ':'')+r.name+(r.hasWater?' 💧':'');
 const excelDuration=min=>min==null||min===''?'':Number(min)/1440;

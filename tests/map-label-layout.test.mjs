@@ -12,7 +12,7 @@ test('node title remains at same position when expanded and collisions are hidde
 });
 test('out and back day labels keep stable offsets and avoid overlap',()=>{
  const p={x:100,y:100};
- const labels=[{point:p,w:45,h:18,dayOffset:0},{point:p,w:45,h:18,dayOffset:25}];
+ const labels=[{point:p,w:45,h:18,dayLabel:true},{point:p,w:45,h:18,dayLabel:true}];
  const placed=placeMapLabels(labels,[],[],size);
- assert.equal(placed.length,2);assert.equal(placed[1].box.y-placed[0].box.y,25);
+ assert.equal(placed.length,2);assert.ok(Math.abs(placed[1].box.y-placed[0].box.y)>=21);
 });

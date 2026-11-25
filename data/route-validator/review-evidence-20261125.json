@@ -1,0 +1,472 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-25",
+  "reviewedSnapshot": "data/route-validator/snapshots/sheet-20261125.json",
+  "snapshotSha256": "3ff6114e98746155823a25abc937f8c606911610b5f2af7252862dedcdfff5a6",
+  "scope": "外部主要錨點、行走結構與路線變體人工查證；不是每個Node的獨立實測，也不是下載網頁GPX。",
+  "groups": [
+    {
+      "routeIds": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R005",
+        "R007"
+      ],
+      "sources": [
+        "https://www.ysnp.gov.tw/Trail/7fa5c242-df1a-4a8e-bcab-32dc55b1f7b6?Tab=4",
+        "https://hiking.biji.co/index.php?act=detail&id=591&q=trail",
+        "https://hiking.biji.co/index.php?act=detail&id=590&q=trail"
+      ],
+      "finding": "玉山前後群峰的支線可分次往返；官方允許由上東埔步行，保留指定停車場起終點。前峰、西峰與後四峰的登頂先後屬行程安排差異，不能以網頁範例日期順序覆寫。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R011"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=500&q=trail"
+      ],
+      "finding": "登山口經望鄉山、郡大北峰至郡大山並原路返回，主要順序相符。",
+      "classification": "MAJOR_ORDER_SUPPORTED"
+    },
+    {
+      "routeIds": [
+        "R012"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=617&q=trail"
+      ],
+      "finding": "管制站、登山口、森林營地、瞭望台、西巒大山往返的結構相符；不同人倫里程名稱保留原ID。",
+      "classification": "MAJOR_ORDER_SUPPORTED"
+    },
+    {
+      "routeIds": [
+        "R013"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=242&q=trail"
+      ],
+      "finding": "大霸／小霸、伊澤、加利為分支型行程，可將伊澤及加利留到回程。Sheet有8.8K岔路直接跳加利登山口的精確接線缺口，另列修正建議。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R015",
+        "R016",
+        "R017"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=540&q=trail"
+      ],
+      "finding": "池有與品田、桃山與喀拉業是兩組登頂支線，四秀可雙向串接；保留Sheet桃山先行的反向安排。單獨池品與桃喀不需把其餘山峰加進去。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R020"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=431&q=trail"
+      ],
+      "finding": "雪山登山口、七卡、東峰、三六九、圈谷、主峰往返主序相符。",
+      "classification": "MAJOR_ORDER_SUPPORTED"
+    },
+    {
+      "routeIds": [
+        "R022"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=431&q=trail",
+        "https://heidisplanet.com/mt-xue-north-peak/",
+        "https://wellkangtoworld.com/xueshan-north-peak/"
+      ],
+      "finding": "補查當事人記錄後，黑森林水源路經凱蘭特崑山附近接聖稜至雪北的走法有來源；可與雪主路組合為環線。原GPX頁1200481只是原路往返，不能單獨作環線證據。保留主峰去、水源路回；此為分段來源支持，未稱為單份完整同變體GPX。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R023"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=719&q=trail"
+      ],
+      "finding": "I聖可大霸進雪山出或反向。保留Sheet大霸向雪山、排除加利伊澤的指定走法；不強加來源中的穆特勒布選登。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R024"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=636&q=trail"
+      ],
+      "finding": "來源是武陵至雪山方向，Sheet為反向且未選喀拉業；雪山、雪北、素密達、布秀蘭、品田、池有、桃山串接方向相容。O型不代表兩個登山口完全相同。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R025"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=710&q=trail"
+      ],
+      "finding": "四秀、大霸支線與聖稜主線是Y型組合；保留使用者選峰及合理折返。8.8K與加利間缺中間點問題另列。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R026"
+      ],
+      "sources": [
+        "https://hike.taiwan.gov.tw/en/information_1.aspx?c_id=243"
+      ],
+      "finding": "官方大霸北稜介紹列鎮西堡、馬洋山、南馬洋山、馬洋池、中霸坪、大霸。Sheet馬洋山直接至馬洋池，未列南馬洋山；是否登頂或腰繞仍需定位。鎮西堡至神木登山口車行須保留模式。",
+      "classification": "EXACT_VARIANT_NOT_CONFIRMED"
+    },
+    {
+      "routeIds": [
+        "R027"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=641&q=trail"
+      ],
+      "finding": "雪山、翠池、火石、頭鷹、大雪、中雪及230林道的主要順序相符；火石、大雪及中雪支線往返保留。",
+      "classification": "MAJOR_ORDER_SUPPORTED"
+    },
+    {
+      "routeIds": [
+        "R028",
+        "R029"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=531&q=trail",
+        "https://hike.taiwan.gov.tw/nationpark/manasystem/news/files/news/39f9c4a9-9ca3-452e-89fc-743aabc66ea1.pdf"
+      ],
+      "finding": "志佳陽基點峰至最高點、雪山為可串接方向。R028實際是雪山進環山出，保留反向；R029基點與最高點皆登的往返版保留。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R030",
+        "R031"
+      ],
+      "sources": [
+        "https://www.taiwan.nps.gov.tw/home/zh-tw/trails/21204.html",
+        "https://hiking.biji.co/index.php?act=gpx_detail&id=3865504&q=trail"
+      ],
+      "finding": "雪山至大劍稜脈的山峰先後與組合方向相符；志雪劍由志佳陽接雪主、翠池、完美谷、西南峰、大劍、松茂下山。大小劍是由油婆蘭分別選登佳陽／小劍及大劍。來源含雪山南峰等加選，不強加到Sheet。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R034"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=653&q=trail"
+      ],
+      "finding": "紅香登山口、三錐山、司晏池、白姑東南峰、吉他營地、草青池至白姑主峰的往返結構相符。",
+      "classification": "MAJOR_ORDER_SUPPORTED"
+    },
+    {
+      "routeIds": [
+        "R035",
+        "R038",
+        "R039"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=646&q=trail"
+      ],
+      "finding": "北一段來源可支持南湖支線群峰及中央尖分支的主要方向；南湖群峰保留原路出，中央尖單攻走木杆至南湖溪／中央尖溪的分支。舊林道起點與Sheet勝光替代入口分開記錄。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R041",
+        "R042",
+        "R043"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=666&q=trail"
+      ],
+      "finding": "730林道、閂山、鈴鳴、無明、甘薯、耳無溪的主要相對順序相符。R043由耳無溪反向接無明再往甘薯，保留；R042回程再次經閂山是額外登頂安排，不能僅因重複刪除。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R044",
+        "R045",
+        "R046"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=655&q=trail"
+      ],
+      "finding": "820林道接畢祿、鋸山稜線接羊頭，再下羊頭登山口的結構相符；兩端單攻保留各自山峰折返。",
+      "classification": "MAJOR_ORDER_SUPPORTED"
+    },
+    {
+      "routeIds": [
+        "R050"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=536&q=trail"
+      ],
+      "finding": "北峰經華岡岔路至西峰原路往返，主要順序相符；不強改為華岡出山。",
+      "classification": "MAJOR_ORDER_SUPPORTED"
+    },
+    {
+      "routeIds": [
+        "R053"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=542&q=trail"
+      ],
+      "finding": "成功山屋接奇萊主北岔路，主峰與北峰為可分別往返的支線；來源先主再北、Sheet先北再主是行程安排差異。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R054"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=644&q=trail"
+      ],
+      "finding": "北峰、主峰、卡羅樓山區、南峰、天池至屯原的順序相容。來源續登南華，但Sheet錨點沒有指定南華，保留不登南華版；不能宣稱與來源選峰完全相同。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R055"
+      ],
+      "sources": [
+        "https://www.hiking.biji.co/index.php?act=detail&id=1768&q=trail"
+      ],
+      "finding": "屯原至天池，南峰與南華各自折返的走法有明確行程支持。",
+      "classification": "MAJOR_ORDER_SUPPORTED"
+    },
+    {
+      "routeIds": [
+        "R056"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=656&q=trail"
+      ],
+      "finding": "新登山口、吊橋、松針營地至屏風主線與來源相容；另沿用專案2026-11-20使用者GPX點名與坐標核對紀錄。塔次基里溪主流與支流的個別名稱不因同名當作新獨立身分證據。",
+      "classification": "SUPPORTED_WITH_VARIANTS",
+      "localReferences": [
+        "data/audits/pingfeng-names-20261120.json",
+        "data/geometry/sources/pingfeng-owner-direction-20261120.gpx"
+      ]
+    },
+    {
+      "routeIds": [
+        "R057"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=1485&q=trail"
+      ],
+      "finding": "來源明列北峰岩洞、雙塔、屏風南峰等中間技術段。Sheet北峰直接接屏風沿用既有特殊連接／手填政策，是摘要路段，不是本輪新核實的逐點完整步道；不重複要求使用者確認既有政策。",
+      "classification": "ACCEPTED_SUMMARY_CONNECTION"
+    },
+    {
+      "routeIds": [
+        "R058"
+      ],
+      "sources": [
+        "https://ws.moi.gov.tw/001/Upload/OldFile_TAROKO/WebFiles/AttractionsFiles/9181/file2636892994921269408.pdf",
+        "https://hiking.biji.co/index.php?act=info&q=review&review_id=27571"
+      ],
+      "finding": "奇萊北、磐石、太魯閣、立霧、帕托魯至岳王亭主序有圖資與當事人紀錄支持，太魯閣及帕托魯支線往返保留。",
+      "classification": "MAJOR_ORDER_SUPPORTED"
+    },
+    {
+      "routeIds": [
+        "R059"
+      ],
+      "sources": [
+        "https://recreation.forest.gov.tw/Trail/RT?tr_id=066&typ=3"
+      ],
+      "finding": "屯原、天池、縣界、檜林、五甲崩山至奇萊路的相對方向有官方來源支持；保留Sheet指定奇萊保線所作終點，不偷換成26.5K東段登山口或行車終點。名稱應註明指定範圍，不能宣稱同於官方整段步道。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R061"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=gpx_detail&id=1496470&q=trail",
+        "https://hiking.biji.co/index.php?act=info&q=review&review_id=5670"
+      ],
+      "finding": "能高主、能高南、光頭、白石、安東軍後下奧萬大的主要方向相符。安東軍峰由三岔營地往返保留。",
+      "classification": "MAJOR_ORDER_SUPPORTED"
+    },
+    {
+      "routeIds": [
+        "R062"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=881&q=trail",
+        "https://www.tycs.com.tw/event/1826",
+        "https://www.ptt.cc/bbs/Hiking/M.1542633720.A.5C9.html"
+      ],
+      "finding": "補查武界出口隊伍紀錄後，牧山／火山往返、卓社東鞍、十八連峰、卓社、2899鞍、卓社山、林道、大鐵牌、栗栖溪的主要順序有對應支持。來源881本身是萬大原路返，不再拿它單獨證明武界出口。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R064"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=1668&q=trail"
+      ],
+      "finding": "來源是孫海橋至七彩湖／六順的完整丹大進出；Sheet只有湖區林道入口至六順的核心段。起點身分、2897峰與來源2960峰也未證明同點，不能宣稱完整進出。",
+      "classification": "EXACT_VARIANT_NOT_CONFIRMED"
+    },
+    {
+      "routeIds": [
+        "R066"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=667&q=trail",
+        "https://hiking.biji.co/index.php?act=gpx_detail&id=229060&q=trail",
+        "https://hiking.biji.co/index.php?act=gpx_detail&id=6204736&q=trail"
+      ],
+      "finding": "已另完成三份實際GPX局部順序與變體分析，Sheet仍只核心段。使用者已指定14.6K起步，首段既有OSM及時間可重用，需補丹大去程及完整出山。",
+      "classification": "INCOMPLETE_DEFINITION"
+    },
+    {
+      "routeIds": [
+        "R069"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=625&q=trail"
+      ],
+      "finding": "秀姑巒、馬博、盆駒折返、馬利加南、馬西、喀西帕南至中平的主序相符。未選八通關登頂不強加。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R070"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=623&q=trail",
+        "https://hiking.biji.co/index.php?act=gpx_detail&id=768851&q=trail",
+        "https://www.keepon.com.tw/thread-83c48ffe-16d8-e411-93ec-000e04b74954.html?AspxAutoDetectCookieSupport=1"
+      ],
+      "finding": "補查杜鵑／古道下切紀錄後，大水窟與中央金礦間確有不同於白洋金礦的歷史走法。保留Sheet先大水窟、再秀姑巒後折返的變體與排除決策；並非來源623的相同環線，也不由歷史記錄宣稱今日現地通行。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R072"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=632&q=trail",
+        "https://www.keepon.com.tw/thread-40814363-10d8-e411-93ec-000e04b74954.html?AspxAutoDetectCookieSupport=1",
+        "https://www.keepon.com.tw/thread-b924148d-10d8-e411-93ec-000e04b74954.html?AspxAutoDetectCookieSupport=1"
+      ],
+      "finding": "南二段主要山峰先後相符；補查歷史當事人記錄，杜鵑營地接中央金礦的腰繞路有來源。保留此版本及既有排除點，不改成常見秀姑坪線；嘉明湖避難山屋未列不自動恢復，沿途未列建物不等於軌跡避開該處。歷史路線不代表即時開放。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R073"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=347&q=trail",
+        "https://hiking.biji.co/index.php?act=detail&id=1771&q=trail"
+      ],
+      "finding": "向陽、三叉、嘉明湖的相對方向相符。Sheet回程再次登向陽及三叉，來源多走腰繞，保留重複登頂版並明列差異，不判錯。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R077"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=631&q=trail",
+        "https://sunnyman.pixnet.net/blog/posts/9469249886"
+      ],
+      "finding": "布拉克桑支線先行、再新康與抱崖／瓦拉米的主序相符；另找到2020四日記錄先訪嘉明湖再回新康岔路，支持保留Sheet嘉明湖支線，不因三份GPX未到湖便刪除。布新營地與岔路仍按原ID區分，天宮堡壘不強加。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R078"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=1432&q=trail",
+        "https://hiking.biji.co/index.php?act=detail&id=347&q=trail"
+      ],
+      "finding": "戒茂斯、溪谷、嘉明湖接三叉、向陽出山可由兩段來源支持；第一來源本身是原路返，不能稱它支持完整縱走。足球場與排球場是不同點，不合併。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R080",
+        "R081",
+        "R082",
+        "R083",
+        "R087"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=630&q=trail",
+        "https://hiking.biji.co/index.php?act=gpx_detail&id=444509&q=trail",
+        "https://www.ysnp.gov.tw/Trail/382f4797-1eb1-4746-a122-4e13a9e0c7e4?Tab=2"
+      ],
+      "finding": "南一段來源支持庫哈諾辛、關山、海諾南、小關、卑南、石山至藤枝方向；各單攻保留對應支線。R081神池接小關是既有特殊人工連接，本來源不核實該連接。R087去回重登石山是指定行程差異，不直接刪點。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    },
+    {
+      "routeIds": [
+        "R085"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=1760&q=trail"
+      ],
+      "finding": "關山嶺登山口至關山嶺原路往返，相對方向相符。",
+      "classification": "MAJOR_ORDER_SUPPORTED"
+    },
+    {
+      "routeIds": [
+        "R086"
+      ],
+      "sources": [
+        "https://hiking.biji.co/index.php?act=detail&id=1761&q=trail"
+      ],
+      "finding": "塔關登山口至塔關山原路往返，相對方向相符。",
+      "classification": "MAJOR_ORDER_SUPPORTED"
+    },
+    {
+      "routeIds": [
+        "R088"
+      ],
+      "sources": [
+        "https://recreation.forest.gov.tw/Trail/RT?tr_id=119&typ=",
+        "https://hiking.biji.co/index.php?act=info&id=8627&q=news"
+      ],
+      "finding": "檜谷岔路、神木、最後水源、主稜、大武祠、北大武的主要順序相符；回程不再次進檜谷山莊是合理行程安排。",
+      "classification": "MAJOR_ORDER_SUPPORTED"
+    },
+    {
+      "routeIds": [
+        "R052"
+      ],
+      "sources": [
+        "https://www.nlma.gov.tw/filesys/file/chinese/o_gov/021_.pdf",
+        "https://recreation.forest.gov.tw/Files/Forest/RA/DM/0300004/0300004_DM.pdf",
+        "https://hiking.biji.co/index.php?act=detail&id=536&q=trail"
+      ],
+      "finding": "官方圖資及路線表支持主峰、東峰、石門、北西峰的分入口組合與相對位置；沿用已確認車行轉場和手填時間政策，不將整串標為純步行或環型。沒有重新核實每次接駁的實際行車狀況。",
+      "classification": "SUPPORTED_WITH_VARIANTS"
+    }
+  ],
+  "sourceLimitations": [
+    "部分引用頁只有搜尋引擎可讀內容，非完整網頁或原始GPX；來源粒度記為主要錨點，不記為逐點驗證。",
+    "R026舊來源c_id=357未讀到南馬洋內容，改查可讀c_id=243；不將舊連結讀取成功當成內容符合。",
+    "R055原引用奇萊連峰644無法單獨證明南華分支，改用明列兩支線往返的1768。",
+    "已選定走法與來源不同時保留差異，不以來源多數或OSM連通作為覆寫依據。"
+  ]
+}

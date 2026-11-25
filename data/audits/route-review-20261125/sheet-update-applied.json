@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-25",
+  "status": "APPLIED_AND_READ_BACK",
+  "spreadsheetId": "1Hfn-TT96JjGOnJXjNkoyWuCXrn-sw-pkuvACfLHSHVg",
+  "onlySheetIds": [
+    967124143,
+    1144715032
+  ],
+  "approvedSequences": {
+    "R013": 21,
+    "R025": 64,
+    "R026": 35,
+    "R064": 7,
+    "R066": 59
+  },
+  "activeOccurrences": 1431,
+  "excludedHistoricalRows": 15,
+  "notesPreserved": 12,
+  "formulaErrors": 0,
+  "prohibitedPair": "g04-019 <-> g04-020 not used; 伊澤山 must return to g04-002",
+  "scope": "All route metadata updated at documented evidence level; formulas and checkbox validation preserved. Original historical tabs and formal app unchanged.",
+  "r064": "林道舊登山口往返，林道入口最近既有線形點視為湖區到達；孫海橋至登山口一般機車交通另記。",
+  "backup": ".route-validator/backups/sheet-before-approved-update-20261125.json",
+  "readback": ".route-validator/backups/approved-update-readback.json",
+  "snapshot": "data/route-validator/snapshots/sheet-20261125-approved.json",
+  "visualCheck": "Native AX showed saved-to-Drive state; screenshot unavailable because Chrome window was minimized. Values, formulas and metadata verified through connector."
+}

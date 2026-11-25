@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "preparedAt": "2026-11-24T12:13:46.011Z",
+  "authorization": "使用者指定最初節點表為 Node ID 基準，並要求一併修正；2026-11-24",
+  "targetSpreadsheetId": "1Hfn-TT96JjGOnJXjNkoyWuCXrn-sw-pkuvACfLHSHVg",
+  "targetSheet": "RouteNodes_順序校核",
+  "targetSheetId": 1144715032,
+  "authoritySpreadsheetId": "1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk",
+  "authoritySheet": "節點總表",
+  "authoritySheetId": 102,
+  "authorityRows": [
+    22,
+    26,
+    45,
+    49
+  ],
+  "edgeEvidenceRange": "相鄰關係!A42:L45",
+  "edgeEvidence": [
+    [
+      "E-3557de580dacd47fc528",
+      "G02｜玉山群峰",
+      "g02-026",
+      "排雲管理站",
+      "g02-006",
+      "大鐵杉",
+      "25",
+      "segments/walking",
+      "{\"fromId\":\"g02-026\",\"toId\":\"g02-006\",\"from\":\"排雲管理站\",\"to\":\"大鐵杉\",\"minutes\":25,\"travelMode\":\"walking\",\"verificationStatus\":\"verified\",\"verificationBasis\":\"owner_workbook_review\",\"timeAlternatives\":[],\"sourceRows\":[\"RC1A5E2C502\"],\"evidenceRows\":[4],\"sourceGroups\":[\"玉山群峰\"],\"sourceChart\":\"G02\",\"source\":\"https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg\",\"sourceNote\":\"\",\"sourceWorkbookSHA256\":\"1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527\",\"sources\":[{\"group\":\"玉山群峰\",\"chartId\":\"G02\",\"url\":\"https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg\",\"rowId\":\"RC1A5E2C502\",\"sheetRows\":[4],\"minutes\":25}],\"sourceGroupNames\":[\"玉山群峰\"]}",
+      "data/routes/owner-reviewed/G02-d1e06c0d.json",
+      "來源步行方向邊",
+      "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg"
+    ],
+    [
+      "E-774a7ef2cc00e2f97865",
+      "G02｜玉山群峰",
+      "g02-006",
+      "大鐵杉",
+      "g02-026",
+      "排雲管理站",
+      "20",
+      "segments/walking",
+      "{\"fromId\":\"g02-006\",\"toId\":\"g02-026\",\"from\":\"大鐵杉\",\"to\":\"排雲管理站\",\"minutes\":20,\"travelMode\":\"walking\",\"verificationStatus\":\"verified\",\"verificationBasis\":\"owner_workbook_review\",\"timeAlternatives\":[],\"sourceRows\":[\"RC1A5E2C502\"],\"evidenceRows\":[4],\"sourceGroups\":[\"玉山群峰\"],\"sourceChart\":\"G02\",\"source\":\"https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg\",\"sourceNote\":\"\",\"sourceWorkbookSHA256\":\"1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527\",\"sources\":[{\"group\":\"玉山群峰\",\"chartId\":\"G02\",\"url\":\"https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg\",\"rowId\":\"RC1A5E2C502\",\"sheetRows\":[4],\"minutes\":20}],\"sourceGroupNames\":[\"玉山群峰\"]}",
+      "data/routes/owner-reviewed/G02-d1e06c0d.json",
+      "來源步行方向邊",
+      "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg"
+    ],
+    [
+      "E-dd2ef7dfe22ac8317a87",
+      "G02｜玉山群峰",
+      "g02-006",
+      "大鐵杉",
+      "g02-030",
+      "塔塔加鞍部",
+      "25",
+      "segments/walking",
+      "{\"fromId\":\"g02-006\",\"toId\":\"g02-030\",\"from\":\"大鐵杉\",\"to\":\"塔塔加鞍部\",\"minutes\":25,\"travelMode\":\"walking\",\"verificationStatus\":\"verified\",\"verificationBasis\":\"owner_workbook_review\",\"timeAlternatives\":[],\"sourceRows\":[\"REF16EC83C3\"],\"evidenceRows\":[5],\"sourceGroups\":[\"玉山群峰\"],\"sourceChart\":\"G02\",\"source\":\"https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg\",\"sourceNote\":\"\",\"sourceWorkbookSHA256\":\"1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527\",\"sources\":[{\"group\":\"玉山群峰\",\"chartId\":\"G02\",\"url\":\"https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg\",\"rowId\":\"REF16EC83C3\",\"sheetRows\":[5],\"minutes\":25}],\"sourceGroupNames\":[\"玉山群峰\"]}",
+      "data/routes/owner-reviewed/G02-d1e06c0d.json",
+      "來源步行方向邊",
+      "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg"
+    ],
+    [
+      "E-d7375fe50e764813da99",
+      "G02｜玉山群峰",
+      "g02-030",
+      "塔塔加鞍部",
+      "g02-006",
+      "大鐵杉",
+      "30",
+      "segments/walking",
+      "{\"fromId\":\"g02-030\",\"toId\":\"g02-006\",\"from\":\"塔塔加鞍部\",\"to\":\"大鐵杉\",\"minutes\":30,\"travelMode\":\"walking\",\"verificationStatus\":\"verified\",\"verificationBasis\":\"owner_workbook_review\",\"timeAlternatives\":[],\"sourceRows\":[\"REF16EC83C3\"],\"evidenceRows\":[5],\"sourceGroups\":[\"玉山群峰\"],\"sourceChart\":\"G02\",\"source\":\"https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg\",\"sourceNote\":\"\",\"sourceWorkbookSHA256\":\"1cef2d2580a93378bca12f02838aaefaf4ed6b7563b583fb3ae61299ceb80527\",\"sources\":[{\"group\":\"玉山群峰\",\"chartId\":\"G02\",\"url\":\"https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg\",\"rowId\":\"REF16EC83C3\",\"sheetRows\":[5],\"minutes\":30}],\"sourceGroupNames\":[\"玉山群峰\"]}",
+      "data/routes/owner-reviewed/G02-d1e06c0d.json",
+      "來源步行方向邊",
+      "https://www.sunriver.com.tw/images/hiking/G02_hiking.jpg"
+    ]
+  ],
+  "changes": [
+    {
+      "row": 4,
+      "route": "R001",
+      "position": "3",
+      "id": "g02-002",
+      "name": "大鐵杉",
+      "authorityName": "三叉峰",
+      "candidates": [
+        {
+          "id": "g02-006",
+          "neighbors": "g02-026；g02-028；g02-030",
+          "sourceIds": "S-8bca0c97b51e65140c88；S-16cba2f31b7523cc567c",
+          "authorityRow": 26
+        }
+      ],
+      "before": "g02-002",
+      "after": "g02-006",
+      "basis": "使用者指定節點表明確 ID／角色，並有排雲管理站↔大鐵杉↔塔塔加鞍部四條來源方向關係支持；不是只依同名或距離推定。"
+    },
+    {
+      "row": 22,
+      "route": "R001",
+      "position": "21",
+      "id": "g02-002",
+      "name": "大鐵杉",
+      "authorityName": "三叉峰",
+      "candidates": [
+        {
+          "id": "g02-006",
+          "neighbors": "g02-026；g02-028；g02-030",
+          "sourceIds": "S-8bca0c97b51e65140c88；S-16cba2f31b7523cc567c",
+          "authorityRow": 26
+        }
+      ],
+      "before": "g02-002",
+      "after": "g02-006",
+      "basis": "使用者指定節點表明確 ID／角色，並有排雲管理站↔大鐵杉↔塔塔加鞍部四條來源方向關係支持；不是只依同名或距離推定。"
+    },
+    {
+      "row": 27,
+      "route": "R002",
+      "position": "3",
+      "id": "g02-002",
+      "name": "大鐵杉",
+      "authorityName": "三叉峰",
+      "candidates": [
+        {
+          "id": "g02-006",
+          "neighbors": "g02-026；g02-028；g02-030",
+          "sourceIds": "S-8bca0c97b51e65140c88；S-16cba2f31b7523cc567c",
+          "authorityRow": 26
+        }
+      ],
+      "before": "g02-002",
+      "after": "g02-006",
+      "basis": "使用者指定節點表明確 ID／角色，並有排雲管理站↔大鐵杉↔塔塔加鞍部四條來源方向關係支持；不是只依同名或距離推定。"
+    },
+    {
+      "row": 47,
+      "route": "R002",
+      "position": "23",
+      "id": "g02-002",
+      "name": "大鐵杉",
+      "authorityName": "三叉峰",
+      "candidates": [
+        {
+          "id": "g02-006",
+          "neighbors": "g02-026；g02-028；g02-030",
+          "sourceIds": "S-8bca0c97b51e65140c88；S-16cba2f31b7523cc567c",
+          "authorityRow": 26
+        }
+      ],
+      "before": "g02-002",
+      "after": "g02-006",
+      "basis": "使用者指定節點表明確 ID／角色，並有排雲管理站↔大鐵杉↔塔塔加鞍部四條來源方向關係支持；不是只依同名或距離推定。"
+    },
+    {
+      "row": 52,
+      "route": "R003",
+      "position": "3",
+      "id": "g02-002",
+      "name": "大鐵杉",
+      "authorityName": "三叉峰",
+      "candidates": [
+        {
+          "id": "g02-006",
+          "neighbors": "g02-026；g02-028；g02-030",
+          "sourceIds": "S-8bca0c97b51e65140c88；S-16cba2f31b7523cc567c",
+          "authorityRow": 26
+        }
+      ],
+      "before": "g02-002",
+      "after": "g02-006",
+      "basis": "使用者指定節點表明確 ID／角色，並有排雲管理站↔大鐵杉↔塔塔加鞍部四條來源方向關係支持；不是只依同名或距離推定。"
+    },
+    {
+      "row": 74,
+      "route": "R003",
+      "position": "25",
+      "id": "g02-002",
+      "name": "大鐵杉",
+      "authorityName": "三叉峰",
+      "candidates": [
+        {
+          "id": "g02-006",
+          "neighbors": "g02-026；g02-028；g02-030",
+          "sourceIds": "S-8bca0c97b51e65140c88；S-16cba2f31b7523cc567c",
+          "authorityRow": 26
+        }
+      ],
+      "before": "g02-002",
+      "after": "g02-006",
+      "basis": "使用者指定節點表明確 ID／角色，並有排雲管理站↔大鐵杉↔塔塔加鞍部四條來源方向關係支持；不是只依同名或距離推定。"
+    },
+    {
+      "row": 79,
+      "route": "R004",
+      "position": "3",
+      "id": "g02-002",
+      "name": "大鐵杉",
+      "authorityName": "三叉峰",
+      "candidates": [
+        {
+          "id": "g02-006",
+          "neighbors": "g02-026；g02-028；g02-030",
+          "sourceIds": "S-8bca0c97b51e65140c88；S-16cba2f31b7523cc567c",
+          "authorityRow": 26
+        }
+      ],
+      "before": "g02-002",
+      "after": "g02-006",
+      "basis": "使用者指定節點表明確 ID／角色，並有排雲管理站↔大鐵杉↔塔塔加鞍部四條來源方向關係支持；不是只依同名或距離推定。"
+    },
+    {
+      "row": 107,
+      "route": "R004",
+      "position": "31",
+      "id": "g02-002",
+      "name": "大鐵杉",
+      "authorityName": "三叉峰",
+      "candidates": [
+        {
+          "id": "g02-006",
+          "neighbors": "g02-026；g02-028；g02-030",
+          "sourceIds": "S-8bca0c97b51e65140c88；S-16cba2f31b7523cc567c",
+          "authorityRow": 26
+        }
+      ],
+      "before": "g02-002",
+      "after": "g02-006",
+      "basis": "使用者指定節點表明確 ID／角色，並有排雲管理站↔大鐵杉↔塔塔加鞍部四條來源方向關係支持；不是只依同名或距離推定。"
+    },
+    {
+      "row": 112,
+      "route": "R005",
+      "position": "3",
+      "id": "g02-002",
+      "name": "大鐵杉",
+      "authorityName": "三叉峰",
+      "candidates": [
+        {
+          "id": "g02-006",
+          "neighbors": "g02-026；g02-028；g02-030",
+          "sourceIds": "S-8bca0c97b51e65140c88；S-16cba2f31b7523cc567c",
+          "authorityRow": 26
+        }
+      ],
+      "before": "g02-002",
+      "after": "g02-006",
+      "basis": "使用者指定節點表明確 ID／角色，並有排雲管理站↔大鐵杉↔塔塔加鞍部四條來源方向關係支持；不是只依同名或距離推定。"
+    },
+    {
+      "row": 146,
+      "route": "R005",
+      "position": "37",
+      "id": "g02-002",
+      "name": "大鐵杉",
+      "authorityName": "三叉峰",
+      "candidates": [
+        {
+          "id": "g02-006",
+          "neighbors": "g02-026；g02-028；g02-030",
+          "sourceIds": "S-8bca0c97b51e65140c88；S-16cba2f31b7523cc567c",
+          "authorityRow": 26
+        }
+      ],
+      "before": "g02-002",
+      "after": "g02-006",
+      "basis": "使用者指定節點表明確 ID／角色，並有排雲管理站↔大鐵杉↔塔塔加鞍部四條來源方向關係支持；不是只依同名或距離推定。"
+    },
+    {
+      "row": 151,
+      "route": "R007",
+      "position": "3",
+      "id": "g02-002",
+      "name": "大鐵杉",
+      "authorityName": "三叉峰",
+      "candidates": [
+        {
+          "id": "g02-006",
+          "neighbors": "g02-026；g02-028；g02-030",
+          "sourceIds": "S-8bca0c97b51e65140c88；S-16cba2f31b7523cc567c",
+          "authorityRow": 26
+        }
+      ],
+      "before": "g02-002",
+      "after": "g02-006",
+      "basis": "使用者指定節點表明確 ID／角色，並有排雲管理站↔大鐵杉↔塔塔加鞍部四條來源方向關係支持；不是只依同名或距離推定。"
+    },
+    {
+      "row": 159,
+      "route": "R007",
+      "position": "11",
+      "id": "g02-002",
+      "name": "大鐵杉",
+      "authorityName": "三叉峰",
+      "candidates": [
+        {
+          "id": "g02-006",
+          "neighbors": "g02-026；g02-028；g02-030",
+          "sourceIds": "S-8bca0c97b51e65140c88；S-16cba2f31b7523cc567c",
+          "authorityRow": 26
+        }
+      ],
+      "before": "g02-002",
+      "after": "g02-006",
+      "basis": "使用者指定節點表明確 ID／角色，並有排雲管理站↔大鐵杉↔塔塔加鞍部四條來源方向關係支持；不是只依同名或距離推定。"
+    }
+  ],
+  "boundaries": "只更正候選路線引用，不重編全域 Node ID，不改時間、座標、線形、Routes/RouteNodes 原始分頁或正式路線模組",
+  "status": "applied-and-read-back",
+  "verifiedAt": "2026-11-24T12:51:28.729Z",
+  "correctedSnapshotRef": "data/route-validator/snapshots/sheet-20261124-corrected.json",
+  "correctedSnapshotSha256": "22400843f2b9f04ad4cdef2fd8fc79f8e5d6b62e8637d065e29b65013e5d627e",
+  "verifiedCellCount": 12
+}

@@ -1,16 +1,16 @@
 import {bindNameEnter} from './name-enter.js';
 import {itineraryExportName} from './export-name.js';
 import {bindRouteDrag} from './route-drag.js';
-import {mountReview} from './osm-pilot-review.js';
+import {mountReview} from './osm-pilot-review.js?v=gpxlayer1125';
 import {joinLegCoordinates} from './dem-profile.js';
-import {attachOsmPlanner} from './osm-planner-integration.js';
+import {attachOsmPlanner} from './osm-planner-integration.js?v=compactedit1123';
 import {addFreeImagery} from './free-imagery.js';
-import {attachPathEditor} from './path-editor-ui.js';
+import {attachPathEditor} from './path-editor-ui.js?v=editonoff1124';
 import {chooseSaveTarget,writeDownload,reportSaveError} from './save-file.js?v=v086';
-import {placeMapLabels} from './map-label-layout.js?v=aliases1';
+import {placeMapLabels} from './map-label-layout.js?v=daylabels1124';
 import {twd97Label} from './twd97.js?v=v0731';
 import {nodeAliases} from './node-aliases.js?v=aliases1';
-import {resolveItineraryGeometry,geometryToGpx,formatTerrain,renderTerrainProfile,terrainDayColor,distanceMeters} from './itinerary-geometry.js?v=v084';
+import {resolveItineraryGeometry,geometryToGpx,formatTerrain,renderTerrainProfile,terrainDayColor,distanceMeters} from './itinerary-geometry.js?v=daycolors1124';
 
 // Optional path edits use the host editor callback; map failure must not block the DAY editor.
 export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=null,getNode=()=>null,getExportName=(ext,options)=>itineraryExportName({dayCount:getDays().length},ext,options),onChange=()=>{},onRenameManual=()=>{},onDeleteManual=()=>{}}){
@@ -131,7 +131,7 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
     const dayLabels=latest.days.filter(d=>!hiddenDays.has(d.dayIndex)&&d.features.length).map(day=>{
       const longest=day.features.reduce((a,b)=>a.distanceMeters>=b.distanceMeters?a:b),p=longest.coordinates[Math.floor(longest.coordinates.length/2)];
       const element=document.createElement('span');element.className='geometry-map-label geometry-map-day';element.textContent=`Day ${day.dayIndex+1}`;element.style.borderColor=colors[day.dayIndex%colors.length];
-      return {element,point:map.latLngToContainerPoint([p[1],p[0]]),dayOffset:day.dayIndex*25,...measure(element)};
+      return {element,point:map.latLngToContainerPoint([p[1],p[0]]),dayLabel:true,...measure(element)};
     });
     const labels=[...selected,...nodes.filter(n=>n.nodeId!==selectedNode).map(nodeLabel),...dayLabels];
     for(const item of placeMapLabels(labels,points,segments,map.getSize())){
@@ -146,13 +146,14 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
     if(!window.L)throw Error('地圖元件無法載入，請檢查網路後重試。');
     if(!map){
       map=L.map(host.querySelector('[data-map]')).setView([24.388,121.266],13);map.createPane('routeEditPane').style.zIndex=450;
+      const tracksPane=map.createPane('happymanTracksPane');tracksPane.style.zIndex=250;tracksPane.style.pointerEvents='none';
       map.on('zoomend moveend',drawLabels);
       const osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'}).addTo(map);
       const corridor=L.featureGroup(data.spans.filter(s=>!s.aggregate).map(s=>{const line=L.polyline(s.coordinates.map(p=>[p[1],p[0]]),{color:'#00a9db',weight:3,opacity:.9,bubblingMouseEvents:false});line.on('click',event=>editor?.addOnSpan(s,event.latlng));return line}));
       const layers=L.control.layers({'OpenStreetMap':osm},{'上河行程參考線形（非完整 OSM）':corridor}).addTo(map);
       imagery=addFreeImagery({L,map,layers,onError:message=>{status.textContent=message}});
       const happyman=L.tileLayer('https://tile.happyman.idv.tw/mp/service?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=happyman&STYLE=default&TILEMATRIXSET=gm_grid&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&FORMAT=image%2Fpng',{
-        minZoom:7,maxZoom:19,opacity:.7,attribution:'行跡參考 © <a href="https://twmap.happyman.idv.tw/map/" target="_blank" rel="noreferrer">Happyman／山友貢獻</a>'
+        pane:'happymanTracksPane',minZoom:7,maxZoom:19,opacity:.7,attribution:'行跡參考 © <a href="https://twmap.happyman.idv.tw/map/" target="_blank" rel="noreferrer">Happyman／山友貢獻</a>'
       });
       layers.addOverlay(happyman,'Happyman 山友行跡（參考疊圖）');
       const overlayOptions=document.createElement('details'),overlaySummary=document.createElement('summary'),overlayText=document.createElement('p'),opacity=document.createElement('input'),opacityLabel=document.createElement('label');
@@ -166,8 +167,8 @@ export function createItineraryMap({host,getDays,getRoute=()=>null,initialData=n
       map.on('baselayerchange',()=>refresh());
       group=L.featureGroup().addTo(map);labelGroup=L.layerGroup().addTo(map);
       editor=attachPathEditor({host,map,getDays,getRoute,data,onChange,refitNetwork:(day,toId,force)=>osmPlanner?.refit(day,toId,force)});
-      osmPlanner=attachOsmPlanner({host,map,layers,getDays,data,onChange,onStatus:message=>editor?.setStatus(message),onPickSpan:(span,ll)=>editor.addOnSpan(span,ll)});
-      mountReview(host.querySelector('[data-map]'),map,{advancedHost:osmPlanner.panel});
+      osmPlanner=attachOsmPlanner({host,getDays,data,onChange,onStatus:message=>editor?.setStatus(message)});
+      mountReview(host.querySelector('[data-map]'),map,{layers});
     }
     refresh();load.hidden=true;map.invalidateSize();if(group.getBounds().isValid())map.fitBounds(group.getBounds(),{padding:[25,25],maxZoom:16});
   }

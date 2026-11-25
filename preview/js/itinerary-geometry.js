@@ -1,4 +1,5 @@
 import {attachmentPath} from './network-attachment.js';
+import {classicGeometryMatch} from './classic-route-geometry.js';
 import {applyDemSnapshots} from './dem-profile.js';
 import {coordinateOf,manualWarning} from './path-editor.js';
 // Candidate geometry is deliberately separate from times, plan snapshots and routing.
@@ -84,8 +85,16 @@ export function resolveItineraryGeometry(days,data){
         const coordinates=(edit?.shape?.length?edit.shape.map(p=>p.coordinate):[ca,...(edit?.controls||[]).map(c=>c.coordinate),cb]).map(p=>[...p]);
         features.push({profile:null,manual:true,sourceName:manualWarning+(edit?.candidateSource?' 參考線形：'+edit.candidateSource.name+'（'+edit.candidateSource.spanId+'）':''),sourceUrl:edit?.candidateSource?.url||null,fromItemId:a.id,toItemId:b.id,viaItemIds:[],dayIndex,from:a.name,to:b.name,coordinates,distanceMeters:length(coordinates)});i++;continue;
       }
+      const pinned=classicGeometryMatch(items,i);
+      if(pinned?.invalid){const gap={dayIndex,from:a.name,to:b.name,reason:'已保存路段被分天或編輯切開，需核對來源線形'};gaps.push(gap);result.gaps.push(gap);i++;continue;}
+      if(pinned){
+        const s=pinned.saved,coordinates=s.coordinates.map(p=>[...p]);
+        features.push({profile:s.profile?.map(p=>[...p])||null,spanId:s.spanId,reverse:s.reverse,sourceName:s.sourceName,sourceUrl:s.sourceUrl,intermediateCoordinatesUnknown:s.intermediateCoordinatesUnknown,fromItemId:a.id,toItemId:items[i+pinned.count-1].id,viaItemIds:items.slice(i+1,i+pinned.count-1).map(x=>x.id),dayIndex,from:a.name,to:items[i+pinned.count-1].name,coordinates,distanceMeters:length(coordinates)});
+        i+=pinned.count-1;continue;
+      }
       let match=null;
       for(const span of data.spans){
+        if(a.classicRoute?.geometrySpanId&&span.id!==a.classicRoute.geometrySpanId)continue;
         for(const reverse of [false,true]){
           if(reverse&&!span.reversible)continue;
           const full=[span.fromId,...(span.viaNodeIds||[]),span.toId];
@@ -209,7 +218,7 @@ export function profileNodeRows(day){
  }
  return rows;
 }
-export const terrainDayColor=index=>['#0057d9','#ff7200','#9b16c4','#00a86b','#e32645','#00a9d6','#b36500','#df39a7','#496b00','#573dcc'][(index||0)%10];
+export const terrainDayColor=index=>['#0072b2','#d55e00','#cc79a7','#56b4e9','#8b5a00','#009e73','#7d3c98','#3b3b3b','#c49400','#a04060'][(index||0)%10];
 // Four bounded lanes; dense clusters use a compact numbered key instead.
 export function layoutProfileLabels(nodes,total,curve=[]){
  const boxes=[];

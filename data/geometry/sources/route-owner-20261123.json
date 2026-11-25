@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-23",
+  "authorization": "Owner requested coordinate, database-only nodes, directed time consolidation, recomputation and release",
+  "coordinate": {
+    "nodeId": "node:2262a9d2e8c96b37a520",
+    "reviewId": "OWNER-20261123-3444",
+    "name": "3444主稜",
+    "action": "coordinate",
+    "choice": "自行補座標",
+    "coordinate": [
+      120.9153937,
+      23.2364966
+    ],
+    "originalCoordinate": {
+      "format": "TWD97",
+      "x": 241342,
+      "y": 2570474
+    },
+    "source": {
+      "kind": "owner-chat",
+      "date": "2026-11-23"
+    },
+    "note": "使用者指定 TWD97，固定來源 OSM/DEM 重算",
+    "previous": {
+      "reviewId": "Q152",
+      "nodeId": "node:2262a9d2e8c96b37a520",
+      "name": "3444主稜",
+      "choice": "暫不確定",
+      "note": "忽視",
+      "coordinate": null,
+      "action": "ignore"
+    }
+  },
+  "consolidations": [
+    {
+      "nodeId": "g04-fork-zhenxibao",
+      "fromId": "g04-065",
+      "toId": "g04-024",
+      "minutes": 180
+    },
+    {
+      "nodeId": "g04-fork-zhenxibao",
+      "fromId": "g04-024",
+      "toId": "g04-065",
+      "minutes": 110
+    },
+    {
+      "nodeId": "node:67f469173d3d382ca79c",
+      "fromId": "node:43c9393ad0d04c1318ea",
+      "toId": "node:2765d1f4878df36ed535",
+      "minutes": 105
+    },
+    {
+      "nodeId": "node:67f469173d3d382ca79c",
+      "fromId": "node:2765d1f4878df36ed535",
+      "toId": "node:43c9393ad0d04c1318ea",
+      "minutes": 120
+    }
+  ],
+  "vehicle": {
+    "nodeId": "g04-062",
+    "fromId": "g04-062",
+    "toId": "g04-033",
+    "minutes": 10,
+    "coordinateRequired": false,
+    "basis": "existing directed transport source; both directions separately present"
+  }
+}

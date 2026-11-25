@@ -1,0 +1,510 @@
+[
+  {
+    "recordingId": "85",
+    "status": "PARSED_TRACK",
+    "file": "gpx/7c60d55cf7d35a38cd19f8601d3a07257b388e62262e214d2f2ad9248703f2cc.gpx",
+    "sha256": "7c60d55cf7d35a38cd19f8601d3a07257b388e62262e214d2f2ad9248703f2cc",
+    "author": "曾錦源",
+    "routeIds": [
+      "R011"
+    ],
+    "observedDate": "2016-01-02",
+    "points": 980
+  },
+  {
+    "recordingId": "158424",
+    "status": "PARSED_TRACK",
+    "file": "gpx/d51d1158a79a7c2be64b12f18df5a67b20d7343e39f84b939c623069714e3084.gpx",
+    "sha256": "d51d1158a79a7c2be64b12f18df5a67b20d7343e39f84b939c623069714e3084",
+    "author": "草莓登山客",
+    "routeIds": [
+      "R012"
+    ],
+    "observedDate": "2020-08-08",
+    "points": 6357
+  },
+  {
+    "recordingId": "86266",
+    "status": "PARSED_TRACK",
+    "file": "gpx/7df81ea7342c82a4c58ef1aaaf843b0da62b14986c9818707ac357075e3f99b8.gpx",
+    "sha256": "7df81ea7342c82a4c58ef1aaaf843b0da62b14986c9818707ac357075e3f99b8",
+    "author": "Amy Cheng",
+    "routeIds": [
+      "R013"
+    ],
+    "observedDate": "2019-12-28",
+    "points": 20003
+  },
+  {
+    "recordingId": "86204",
+    "status": "PARSED_TRACK",
+    "file": "gpx/0079b639fc510d743d1b302366a78b215a2a46229c9e5e5a4908f8789f27f5f3.gpx",
+    "sha256": "0079b639fc510d743d1b302366a78b215a2a46229c9e5e5a4908f8789f27f5f3",
+    "author": "Amy Cheng",
+    "routeIds": [
+      "R015",
+      "R016",
+      "R017"
+    ],
+    "observedDate": "2020-01-17",
+    "points": 3581
+  },
+  {
+    "recordingId": "86206",
+    "status": "PARSED_TRACK",
+    "file": "gpx/6f9b110809e6fe4470655e93d3f5715a7c44e792e2ccab0fe8edfb0d51e6d083.gpx",
+    "sha256": "6f9b110809e6fe4470655e93d3f5715a7c44e792e2ccab0fe8edfb0d51e6d083",
+    "author": "Amy Cheng",
+    "routeIds": [
+      "R020",
+      "R022"
+    ],
+    "observedDate": "2018-09-21",
+    "points": 1451
+  },
+  {
+    "recordingId": "5977",
+    "status": "PARSED_TRACK",
+    "file": "gpx/8e6ac0104a8abde3985c95692a38388fad9054846860f2088ce00a859477e1ba.gpx",
+    "sha256": "8e6ac0104a8abde3985c95692a38388fad9054846860f2088ce00a859477e1ba",
+    "author": "李麗瑛",
+    "routeIds": [
+      "R023"
+    ],
+    "observedDate": "2018-06-26",
+    "points": 2236
+  },
+  {
+    "recordingId": "544",
+    "status": "PARSED_TRACK",
+    "file": "gpx/044858cb27cb4742dc652f076c5d5959f4a26fc65204f74be31684606d61e478.gpx",
+    "sha256": "044858cb27cb4742dc652f076c5d5959f4a26fc65204f74be31684606d61e478",
+    "author": "Amy Chen",
+    "routeIds": [
+      "R024"
+    ],
+    "observedDate": null,
+    "points": 5720
+  },
+  {
+    "recordingId": "1500268",
+    "status": "PARSED_TRACK",
+    "file": "gpx/c62cd7f4f5791612acda4bbf3498bbe01b29af23cfa323bd837546be426e6405.gpx",
+    "sha256": "c62cd7f4f5791612acda4bbf3498bbe01b29af23cfa323bd837546be426e6405",
+    "author": "Amy Cheng",
+    "routeIds": [
+      "R025"
+    ],
+    "observedDate": null,
+    "points": 5024
+  },
+  {
+    "recordingId": "476",
+    "status": "PARSED_TRACK",
+    "file": "gpx/23f2d91aa3d24ec6f8da7b0e6090ad78fff7735d127d8cdd08b9cc35b7e2a1e6.gpx",
+    "sha256": "23f2d91aa3d24ec6f8da7b0e6090ad78fff7735d127d8cdd08b9cc35b7e2a1e6",
+    "author": "老王",
+    "routeIds": [
+      "R027"
+    ],
+    "observedDate": "2016-12-01",
+    "points": 9442
+  },
+  {
+    "recordingId": "282191",
+    "status": "PARSED_TRACK",
+    "file": "gpx/1d4a7235c1faa690d6b7fd0553b72c857dd682b43f7c00ffd18f24642d34f0d0.gpx",
+    "sha256": "1d4a7235c1faa690d6b7fd0553b72c857dd682b43f7c00ffd18f24642d34f0d0",
+    "author": "YiiSin",
+    "routeIds": [
+      "R028",
+      "R029"
+    ],
+    "observedDate": "2020-12-16",
+    "points": 1432
+  },
+  {
+    "recordingId": "248881",
+    "status": "PARSED_TRACK",
+    "file": "gpx/1c94c857b06a8268ecd021e5343ad6154b46b7419854a7ae864812c6a29c6012.gpx",
+    "sha256": "1c94c857b06a8268ecd021e5343ad6154b46b7419854a7ae864812c6a29c6012",
+    "author": "Jim",
+    "routeIds": [
+      "R034"
+    ],
+    "observedDate": "2020-11-07",
+    "points": 11673
+  },
+  {
+    "recordingId": "178049",
+    "status": "PARSED_TRACK",
+    "file": "gpx/4785865cd9ea9d77a4e7adcf6820924c69f94b1884b46c9af9be6f80f423ede3.gpx",
+    "sha256": "4785865cd9ea9d77a4e7adcf6820924c69f94b1884b46c9af9be6f80f423ede3",
+    "author": "Chen James",
+    "routeIds": [
+      "R035",
+      "R038",
+      "R039"
+    ],
+    "observedDate": "2020-07-21",
+    "points": 5739
+  },
+  {
+    "recordingId": "95050",
+    "status": "PARSED_TRACK",
+    "file": "gpx/08694298be7d62a443f179076ad2e7415190c3e93fbb8fa5c1979afe98c4d9a2.gpx",
+    "sha256": "08694298be7d62a443f179076ad2e7415190c3e93fbb8fa5c1979afe98c4d9a2",
+    "author": "Felix Tien",
+    "routeIds": [
+      "R041",
+      "R042",
+      "R043"
+    ],
+    "observedDate": "2020-04-29",
+    "points": 9760
+  },
+  {
+    "recordingId": "1819",
+    "status": "PARSED_TRACK",
+    "file": "gpx/46af55c65218e8d21387198e5bf583deb1644a13d6d5cb9a3df4e6dbaea83fb8.gpx",
+    "sha256": "46af55c65218e8d21387198e5bf583deb1644a13d6d5cb9a3df4e6dbaea83fb8",
+    "author": "國維大仁",
+    "routeIds": [
+      "R044",
+      "R045",
+      "R046"
+    ],
+    "observedDate": "2017-07-14",
+    "points": 1615
+  },
+  {
+    "recordingId": "1273",
+    "status": "PARSED_TRACK",
+    "file": "gpx/0c1197c45fffeea16d54d066f2117ae80b54c9785964144c816becde022703bd.gpx",
+    "sha256": "0c1197c45fffeea16d54d066f2117ae80b54c9785964144c816becde022703bd",
+    "author": "彭德昌",
+    "routeIds": [
+      "R050",
+      "R052"
+    ],
+    "observedDate": "2017-05-20",
+    "points": 1166
+  },
+  {
+    "recordingId": "7434",
+    "status": "PARSED_TRACK",
+    "file": "gpx/94f25d0004cd1005c75cb73864e4b138548547eab8eecf10b42e00d0479a1120.gpx",
+    "sha256": "94f25d0004cd1005c75cb73864e4b138548547eab8eecf10b42e00d0479a1120",
+    "author": "趙彥緯",
+    "routeIds": [
+      "R053"
+    ],
+    "observedDate": "2018-08-17",
+    "points": 13787
+  },
+  {
+    "recordingId": "191",
+    "status": "PARSED_TRACK",
+    "file": "gpx/2b780dc9e9b8e802848b3de7842f1090c64419140656d97c9a7214913cae28b6.gpx",
+    "sha256": "2b780dc9e9b8e802848b3de7842f1090c64419140656d97c9a7214913cae28b6",
+    "author": "粉圓妹",
+    "routeIds": [
+      "R054"
+    ],
+    "observedDate": null,
+    "points": 1430
+  },
+  {
+    "recordingId": "178435",
+    "status": "PARSED_TRACK",
+    "file": "gpx/da7224db8e4c3a744dd43b927a051e85499f0203b2044729650cfed04343ce62.gpx",
+    "sha256": "da7224db8e4c3a744dd43b927a051e85499f0203b2044729650cfed04343ce62",
+    "author": "Amy Cheng",
+    "routeIds": [
+      "R055"
+    ],
+    "observedDate": null,
+    "points": 10520
+  },
+  {
+    "recordingId": "490770",
+    "status": "PARSED_TRACK",
+    "file": "gpx/10593c03f55bf117a9502b3d202eb62b8f4eb1edbdfc8d9403c92460d601ad7c.gpx",
+    "sha256": "10593c03f55bf117a9502b3d202eb62b8f4eb1edbdfc8d9403c92460d601ad7c",
+    "author": "小嵐趣走走",
+    "routeIds": [
+      "R056"
+    ],
+    "observedDate": "2021-05-06",
+    "points": 1627
+  },
+  {
+    "recordingId": "259330",
+    "status": "PARSED_TRACK",
+    "file": "gpx/af0756c9c2e98ec05abf46f1717dcde882955313cac16de9945176fbe4e39a1a.gpx",
+    "sha256": "af0756c9c2e98ec05abf46f1717dcde882955313cac16de9945176fbe4e39a1a",
+    "author": "恩仔",
+    "routeIds": [
+      "R072"
+    ],
+    "observedDate": "2020-10-30",
+    "points": 39205
+  },
+  {
+    "recordingId": "11822",
+    "status": "PARSED_TRACK",
+    "file": "gpx/26c356a9e62e01f996f89d73a57a9dd51a1b0b47aebdc2ec74e31baf8cf73ff0.gpx",
+    "sha256": "26c356a9e62e01f996f89d73a57a9dd51a1b0b47aebdc2ec74e31baf8cf73ff0",
+    "author": "Amy Chen",
+    "routeIds": [
+      "R057"
+    ],
+    "observedDate": null,
+    "points": 557
+  },
+  {
+    "recordingId": "270348",
+    "status": "PARSED_TRACK",
+    "file": "gpx/bafb26f4f507b8fa943cde0d5e992381e3efde051c3859e04bb339445a2a25db.gpx",
+    "sha256": "bafb26f4f507b8fa943cde0d5e992381e3efde051c3859e04bb339445a2a25db",
+    "author": "Lucky Chang",
+    "routeIds": [
+      "R062"
+    ],
+    "observedDate": "2020-04-29",
+    "points": 10264
+  },
+  {
+    "recordingId": "69537",
+    "status": "PARSED_TRACK",
+    "file": "gpx/8c8564053e1b112086b7083f25421b007e7f2feeb271a186b64171d49a17d6c7.gpx",
+    "sha256": "8c8564053e1b112086b7083f25421b007e7f2feeb271a186b64171d49a17d6c7",
+    "author": "Amy Cheng",
+    "routeIds": [
+      "R064"
+    ],
+    "observedDate": null,
+    "points": 3183
+  },
+  {
+    "recordingId": "85832",
+    "status": "PARSED_TRACK",
+    "file": "gpx/13fecc47f0d9b5f45eb18fc07a178b3c9457652561151e41a3fc7f338553e699.gpx",
+    "sha256": "13fecc47f0d9b5f45eb18fc07a178b3c9457652561151e41a3fc7f338553e699",
+    "author": "小威",
+    "routeIds": [
+      "R066"
+    ],
+    "observedDate": "2020-03-27",
+    "points": 11325
+  },
+  {
+    "recordingId": "86214",
+    "status": "PARSED_TRACK",
+    "file": "gpx/dd3406370331396188ee56fb15d09bda2a8f3bafbc80a69152e16a1c25fa851a.gpx",
+    "sha256": "dd3406370331396188ee56fb15d09bda2a8f3bafbc80a69152e16a1c25fa851a",
+    "author": "Amy Cheng",
+    "routeIds": [
+      "R073",
+      "R078"
+    ],
+    "observedDate": "2019-08-31",
+    "points": 8899
+  },
+  {
+    "recordingId": "179101",
+    "status": "PARSED_TRACK",
+    "file": "gpx/726f7265fa340b67859856b3945a83dba0a246e9042a191817bcd386255e3f39.gpx",
+    "sha256": "726f7265fa340b67859856b3945a83dba0a246e9042a191817bcd386255e3f39",
+    "author": "Amy Cheng",
+    "routeIds": [
+      "R073"
+    ],
+    "observedDate": null,
+    "points": 2419
+  },
+  {
+    "recordingId": "8993",
+    "status": "PARSED_TRACK",
+    "file": "gpx/6fb57b7bfbd5f438743e6a4a6816dc0ce5625c3f372c28265287e74580a98586.gpx",
+    "sha256": "6fb57b7bfbd5f438743e6a4a6816dc0ce5625c3f372c28265287e74580a98586",
+    "author": "Amy Chen",
+    "routeIds": [
+      "R078"
+    ],
+    "observedDate": null,
+    "points": 1949
+  },
+  {
+    "recordingId": "47705",
+    "status": "PARSED_TRACK",
+    "file": "gpx/9634da8b4665febabc60cdf07955b2f3b35afb5696bdecfb8c229f98e160fec4.gpx",
+    "sha256": "9634da8b4665febabc60cdf07955b2f3b35afb5696bdecfb8c229f98e160fec4",
+    "author": "陳家文",
+    "routeIds": [
+      "R080",
+      "R081",
+      "R082",
+      "R083",
+      "R087"
+    ],
+    "observedDate": "2019-12-18",
+    "points": 24888
+  },
+  {
+    "recordingId": "119",
+    "status": "PARSED_TRACK",
+    "file": "gpx/909b28a3da1c05a51e274d6cbe738c96def47f18e1ddaa4a1cf4884a7ba92c16.gpx",
+    "sha256": "909b28a3da1c05a51e274d6cbe738c96def47f18e1ddaa4a1cf4884a7ba92c16",
+    "author": "粉圓妹",
+    "routeIds": [
+      "R001",
+      "R002",
+      "R003",
+      "R004",
+      "R005",
+      "R007"
+    ],
+    "observedDate": null,
+    "points": 1114
+  },
+  {
+    "recordingId": "118",
+    "status": "PARSED_TRACK",
+    "file": "gpx/4229ffc95d2601679302f0fa3e959230e38b0d778bbab7ee11cf3637bb735f50.gpx",
+    "sha256": "4229ffc95d2601679302f0fa3e959230e38b0d778bbab7ee11cf3637bb735f50",
+    "author": "粉圓妹",
+    "routeIds": [
+      "R001",
+      "R002",
+      "R003",
+      "R004",
+      "R005",
+      "R007"
+    ],
+    "observedDate": null,
+    "points": 925
+  },
+  {
+    "recordingId": "154180",
+    "status": "PARSED_TRACK",
+    "file": "gpx/6fb43c583d8a8ed19ab75376533c73150334ee1a4dcea4aed6136dfab6cf62bd.gpx",
+    "sha256": "6fb43c583d8a8ed19ab75376533c73150334ee1a4dcea4aed6136dfab6cf62bd",
+    "author": "Amy Cheng",
+    "routeIds": [
+      "R085"
+    ],
+    "observedDate": null,
+    "points": 44
+  },
+  {
+    "recordingId": "154181",
+    "status": "PARSED_TRACK",
+    "file": "gpx/441eb7cb6c073e7590547d6dca7cd086e2e82ea6cd84264d7b6cb4e4f20bc3b8.gpx",
+    "sha256": "441eb7cb6c073e7590547d6dca7cd086e2e82ea6cd84264d7b6cb4e4f20bc3b8",
+    "author": "Amy Cheng",
+    "routeIds": [
+      "R086"
+    ],
+    "observedDate": null,
+    "points": 72
+  },
+  {
+    "recordingId": "1496470",
+    "status": "PARSED_TRACK",
+    "file": "gpx/3c94d14886d1113b0199e9d2d90c1dbf646e04f0252922f3d4c0877c4d287e90.gpx",
+    "sha256": "3c94d14886d1113b0199e9d2d90c1dbf646e04f0252922f3d4c0877c4d287e90",
+    "author": "Ada Chao",
+    "routeIds": [
+      "R061"
+    ],
+    "observedDate": "2022-09-30",
+    "points": 8711
+  },
+  {
+    "recordingId": "4170827",
+    "status": "PARSED_TRACK",
+    "file": "gpx/12bc6e50636031e6428e898bfebcfc592756676c2e21ccf59ef14816dd55b404.gpx",
+    "sha256": "12bc6e50636031e6428e898bfebcfc592756676c2e21ccf59ef14816dd55b404",
+    "author": "金牌",
+    "routeIds": [
+      "R070",
+      "R069",
+      "R072"
+    ],
+    "observedDate": "2024-12-11",
+    "points": 10677
+  },
+  {
+    "recordingId": "668052",
+    "status": "PARSED_TRACK",
+    "file": "gpx/d36ee0058a2fe68f717be89ab5ad3735cb9734b46a2dcaac3ee75f735c940261.gpx",
+    "sha256": "d36ee0058a2fe68f717be89ab5ad3735cb9734b46a2dcaac3ee75f735c940261",
+    "author": "紅綠燈",
+    "routeIds": [
+      "R088"
+    ],
+    "observedDate": "2021-12-03",
+    "points": 2166
+  },
+  {
+    "recordingId": "1852782",
+    "status": "PARSED_TRACK",
+    "file": "gpx/1be440ff4046d64d5f71e0ed95f00e4289c141b711071b0fda194d0a2428e8fc.gpx",
+    "sha256": "1be440ff4046d64d5f71e0ed95f00e4289c141b711071b0fda194d0a2428e8fc",
+    "author": "紹忠",
+    "routeIds": [
+      "R059"
+    ],
+    "observedDate": "2023-04-28",
+    "points": 5026
+  },
+  {
+    "recordingId": "1765487",
+    "status": "PARSED_TRACK",
+    "file": "gpx/7e9b7638ae0b520b843055744bf0a9fe3a255aa2dcc7df09cf3fc020651c6c41.gpx",
+    "sha256": "7e9b7638ae0b520b843055744bf0a9fe3a255aa2dcc7df09cf3fc020651c6c41",
+    "author": "小楊小儀",
+    "routeIds": [
+      "R058"
+    ],
+    "observedDate": "2023-04-01",
+    "points": 2011
+  },
+  {
+    "recordingId": "1765488",
+    "status": "PARSED_TRACK",
+    "file": "gpx/f0406faf4096b20efa7f7b38a68c28cd3f242e7695b23d6a20d60768d6d3a3e2.gpx",
+    "sha256": "f0406faf4096b20efa7f7b38a68c28cd3f242e7695b23d6a20d60768d6d3a3e2",
+    "author": "小楊小儀",
+    "routeIds": [
+      "R058"
+    ],
+    "observedDate": "2023-04-02",
+    "points": 2068
+  },
+  {
+    "recordingId": "1765489",
+    "status": "PARSED_TRACK",
+    "file": "gpx/5a882724b293246d2f32c1afc4e74459272b3265c6e26cc79ebbb17b02699905.gpx",
+    "sha256": "5a882724b293246d2f32c1afc4e74459272b3265c6e26cc79ebbb17b02699905",
+    "author": "小楊小儀",
+    "routeIds": [
+      "R058"
+    ],
+    "observedDate": "2023-04-03",
+    "points": 2119
+  },
+  {
+    "recordingId": "1765491",
+    "status": "PARSED_TRACK",
+    "file": "gpx/150eeb8c3121b9e853bd5ad1fd7cd90a01cd38a81cc1708013248a1d00f10d2b.gpx",
+    "sha256": "150eeb8c3121b9e853bd5ad1fd7cd90a01cd38a81cc1708013248a1d00f10d2b",
+    "author": "小楊小儀",
+    "routeIds": [
+      "R058"
+    ],
+    "observedDate": "2023-04-04",
+    "points": 2557
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {"url":"https://hiking.biji.co/index.php?act=gpx_detail&id=2302095&q=trail","role":"gpx-page","routeIds":["R001","R002","R003","R004","R005"],"author":"Wei","observedDate":"2023-07-10","reviewedAt":"2026-11-24","notice":"公開頁面為玉山群峰合輯，包含額外登頂支線；不能當作 R001 完整同變體證據。頁面文字已讀，GPX 未取得。"},
+  {"url":"https://hiking.biji.co/index.php?act=gpx_detail&id=229060&q=trail","role":"gpx-page","routeIds":["R066"],"author":"保用十年","observedDate":"2020-10-08","reviewedAt":"2026-11-24","notice":"公開頁面列有七日多段軌跡；未取得 GPX，不推定分段可直接接合。"},
+  {"url":"https://hiking.biji.co/index.php?act=gpx_detail&id=6204736&q=trail","role":"gpx-page","routeIds":["R066"],"author":"灰灰","observedDate":"2026-10-31","reviewedAt":"2026-11-24","notice":"公開頁面含取水支線及東埔出入口，與核心片段及其他進出路線須分開分類；GPX 未取得。"},
+  {"url":"https://hiking.biji.co/index.php?act=gpx_detail&id=5499076&q=trail","role":"gpx-page","routeIds":["R031"],"author":"小蜜蜂","observedDate":"2024-12-07","reviewedAt":"2026-11-24","notice":"一日志雪劍公開頁面；包含額外山峰，須比對變體，不能只依名稱歸類；GPX 未取得。"},
+  {"url":"https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=682913","role":"gpx-page","routeIds":["R030"],"author":"小楊小儀","observedDate":"2021-12-11","reviewedAt":"2026-11-24","notice":"行程文章 review_id=20338 的 D1 連結；僅部分軌跡，同作者三日不能當三份獨立完整證據。"},
+  {"url":"https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=682917","role":"gpx-page","routeIds":["R030"],"author":"小楊小儀","observedDate":"2021-12-12","reviewedAt":"2026-11-24","notice":"同一行程 D2，小劍往返部分；GPX 未取得。"},
+  {"url":"https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=682918","role":"gpx-page","routeIds":["R030"],"author":"小楊小儀","observedDate":"2021-12-13","reviewedAt":"2026-11-24","notice":"同一行程 D3，含劍南尖山變體；GPX 未取得。"},
+  {"url":"https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=1108989","role":"gpx-page","routeIds":["R077"],"author":"","reviewedAt":"2026-11-24","notice":"來自行程文章 review_id=24140 的外部連結；作者及 GPX 完整性未獨立確認。"},
+  {"url":"https://impoca.com/wuling/","role":"web-reference","routeIds":["R015"],"author":"波卡","reviewedAt":"2026-11-24","notice":"公開文章描述與候選相反方向，且池有／品田支線順序不同；保留為變體線索，不視為候選錯誤，沒有取得軌跡。"},
+  {"url":"https://hiking.biji.co/index.php?act=info&q=review&review_id=37490","role":"web-reference","routeIds":["R031"],"author":"小孟","reviewedAt":"2026-11-24","notice":"公開三日行程含雪山南峰及部分接駁；不是已完成軌跡驗證。"}
+]

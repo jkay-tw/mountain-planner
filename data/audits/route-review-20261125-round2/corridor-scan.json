@@ -1,0 +1,2305 @@
+{
+  "snapshotSha256": "49d794ba98fba4cb9e7b01509a206bceb44811e38881ed93394b6c88304cb03a",
+  "graphDigest": "13e872c2bb3ce33de1851b6dbd40bed5ef59e91635ffbb1d5cbb1eab06ca080a",
+  "results": [
+    {
+      "routeId": "R001",
+      "name": "玉山主峰單攻",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R002",
+      "name": "玉山主西峰",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R003",
+      "name": "玉山主北峰",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R004",
+      "name": "玉山前五峰",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R005",
+      "name": "玉山後四峰",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R007",
+      "name": "玉山前峰單攻",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R011",
+      "name": "郡大山單攻",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R012",
+      "name": "西巒大山單攻",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [
+        {
+          "position": 5,
+          "nodeId": "g03-011",
+          "name": "瞭望台營地"
+        },
+        {
+          "position": 9,
+          "nodeId": "g03-011",
+          "name": "瞭望台營地"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R013",
+      "name": "大霸群峰",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R015",
+      "name": "武陵四秀",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R016",
+      "name": "池有品田",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R017",
+      "name": "桃山喀拉業",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R020",
+      "name": "雪山主東峰",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R022",
+      "name": "雪主北環狀",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R023",
+      "name": "聖稜線 I 型",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R024",
+      "name": "聖稜線 O 型",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R025",
+      "name": "聖稜線 Y 型",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [
+        {
+          "position": 12,
+          "nodeId": "g04-005",
+          "name": "三叉營地"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R026",
+      "name": "鎮西堡上大霸",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [
+        {
+          "position": 6,
+          "nodeId": "g04-040",
+          "name": "第一營地"
+        },
+        {
+          "position": 7,
+          "nodeId": "g04-041",
+          "name": "第二營地"
+        },
+        {
+          "position": 29,
+          "nodeId": "g04-041",
+          "name": "第二營地"
+        },
+        {
+          "position": 30,
+          "nodeId": "g04-040",
+          "name": "第一營地"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R027",
+      "name": "雪山西稜",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [
+        {
+          "positions": [
+            5,
+            6
+          ],
+          "fromId": "shared:cw-v07-004",
+          "toId": "shared:cw-v07-074",
+          "spanId": "owner-update-ff87bb011020277f",
+          "sourceUrl": "https://download.geofabrik.de/asia/taiwan-latest.osm.pbf",
+          "sourceWayIds": [
+            464085679,
+            464085687,
+            464086142,
+            464086143,
+            464086144,
+            1222030825,
+            1222034814,
+            1222034815
+          ],
+          "events": [
+            {
+              "nodeId": "g04-039",
+              "name": "圈谷底部",
+              "alongMeters": 2420.2575894314373,
+              "offsetMeters": 2.169703889363584,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            6,
+            7
+          ],
+          "fromId": "shared:cw-v07-074",
+          "toId": "shared:cw-v07-066",
+          "spanId": "osm-full-f7b38df1aa705f9f",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            138697675,
+            464086144,
+            708207513,
+            708207514
+          ],
+          "events": [
+            {
+              "nodeId": "g04-fork-xueshan",
+              "name": "岔路口",
+              "alongMeters": 294.2141258450645,
+              "offsetMeters": 0,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            30,
+            31
+          ],
+          "fromId": "node:5ce6ad1e65d900d4031c",
+          "toId": "node:dc9f7fd24048107fb9fd",
+          "spanId": "osm-full-f56d6273a62a5653",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            411636699,
+            797168927,
+            797169471,
+            848034864,
+            983631287,
+            983631288,
+            1457082794,
+            1457082795
+          ],
+          "events": [
+            {
+              "nodeId": "node:9d098b5e375e248161a3",
+              "name": "中雪山",
+              "alongMeters": 1701.5303684837847,
+              "offsetMeters": 1.0326176224565158,
+              "important": true
+            },
+            {
+              "nodeId": "node:8e80aebcd869621fae6f",
+              "name": "林文安紀念碑",
+              "alongMeters": 2015.4769390987797,
+              "offsetMeters": 0,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        }
+      ],
+      "missingImportance": [
+        {
+          "position": 31,
+          "nodeId": "node:dc9f7fd24048107fb9fd",
+          "name": "11.5K雙流水營地"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R028",
+      "name": "志佳陽上雪主",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [
+        {
+          "positions": [
+            5,
+            6
+          ],
+          "fromId": "shared:cw-v07-004",
+          "toId": "shared:cw-v07-074",
+          "spanId": "owner-update-ff87bb011020277f",
+          "sourceUrl": "https://download.geofabrik.de/asia/taiwan-latest.osm.pbf",
+          "sourceWayIds": [
+            464085679,
+            464085687,
+            464086142,
+            464086143,
+            464086144,
+            1222030825,
+            1222034814,
+            1222034815
+          ],
+          "events": [
+            {
+              "nodeId": "g04-039",
+              "name": "圈谷底部",
+              "alongMeters": 2420.2575894314373,
+              "offsetMeters": 2.169703889363584,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        }
+      ],
+      "missingImportance": [
+        {
+          "position": 12,
+          "nodeId": "node:23e78a62cdb1f7900031",
+          "name": "苗圃工寮舊址"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R029",
+      "name": "志佳陽大山單攻",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [
+        {
+          "position": 3,
+          "nodeId": "node:23e78a62cdb1f7900031",
+          "name": "苗圃工寮舊址"
+        },
+        {
+          "position": 11,
+          "nodeId": "node:23e78a62cdb1f7900031",
+          "name": "苗圃工寮舊址"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R030",
+      "name": "大小劍",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [
+        {
+          "position": 12,
+          "nodeId": "node:7bec9defdb2f42115f39",
+          "name": "老伍營地"
+        },
+        {
+          "position": 16,
+          "nodeId": "node:7bec9defdb2f42115f39",
+          "name": "老伍營地"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R031",
+      "name": "志雪劍",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [
+        {
+          "positions": [
+            9,
+            10
+          ],
+          "fromId": "shared:cw-v07-074",
+          "toId": "shared:cw-v07-066",
+          "spanId": "osm-full-f7b38df1aa705f9f",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            138697675,
+            464086144,
+            708207513,
+            708207514
+          ],
+          "events": [
+            {
+              "nodeId": "g04-fork-xueshan",
+              "name": "岔路口",
+              "alongMeters": 294.2141258450645,
+              "offsetMeters": 0,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        }
+      ],
+      "missingImportance": [
+        {
+          "position": 3,
+          "nodeId": "node:23e78a62cdb1f7900031",
+          "name": "苗圃工寮舊址"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R034",
+      "name": "白姑大山單攻",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [
+        {
+          "position": 3,
+          "nodeId": "g06-002",
+          "name": "三錐山"
+        },
+        {
+          "position": 5,
+          "nodeId": "g06-006",
+          "name": "白姑大山東南峰"
+        },
+        {
+          "position": 13,
+          "nodeId": "g06-006",
+          "name": "白姑大山東南峰"
+        },
+        {
+          "position": 15,
+          "nodeId": "g06-002",
+          "name": "三錐山"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R035",
+      "name": "南湖群峰",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [
+        {
+          "positions": [
+            16,
+            17
+          ],
+          "fromId": "g07-027",
+          "toId": "g07-003",
+          "spanId": "osm-full-37d960ab9b333464",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            171969822,
+            409907384,
+            736967155,
+            814419469
+          ],
+          "events": [
+            {
+              "nodeId": "g07-015",
+              "name": "四岔路口",
+              "alongMeters": 1043.2783946916484,
+              "offsetMeters": 2.5472256754478813,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            17,
+            18
+          ],
+          "fromId": "g07-003",
+          "toId": "g07-021",
+          "spanId": "osm-full-e845359bbdf35907",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            409907384,
+            411423418,
+            814419469
+          ],
+          "events": [
+            {
+              "nodeId": "g07-015",
+              "name": "四岔路口",
+              "alongMeters": 142.05814007882637,
+              "offsetMeters": 0.4503375013947971,
+              "important": false
+            },
+            {
+              "nodeId": "g07-018",
+              "name": "東峰登山口",
+              "alongMeters": 490.4283615864499,
+              "offsetMeters": 5.488378568987549,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            31,
+            32
+          ],
+          "fromId": "g07-003",
+          "toId": "g07-027",
+          "spanId": "osm-full-37d960ab9b333464",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            171969822,
+            409907384,
+            736967155,
+            814419469
+          ],
+          "events": [
+            {
+              "nodeId": "g07-015",
+              "name": "四岔路口",
+              "alongMeters": 139.55138637464063,
+              "offsetMeters": 2.5472256754478813,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        }
+      ],
+      "missingImportance": [
+        {
+          "position": 11,
+          "nodeId": "g07-040",
+          "name": "審馬陣山莊岔路口"
+        },
+        {
+          "position": 15,
+          "nodeId": "g07-019",
+          "name": "南湖大山北峰"
+        },
+        {
+          "position": 21,
+          "nodeId": "g07-020",
+          "name": "南湖大山東南峰"
+        },
+        {
+          "position": 27,
+          "nodeId": "g07-042",
+          "name": "獵寮岔路"
+        },
+        {
+          "position": 37,
+          "nodeId": "g07-026",
+          "name": "南湖池山屋(廢棄)"
+        },
+        {
+          "position": 43,
+          "nodeId": "g07-026",
+          "name": "南湖池山屋(廢棄)"
+        },
+        {
+          "position": 47,
+          "nodeId": "g07-019",
+          "name": "南湖大山北峰"
+        },
+        {
+          "position": 49,
+          "nodeId": "g07-040",
+          "name": "審馬陣山莊岔路口"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R038",
+      "name": "中央尖山單攻",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R039",
+      "name": "北一段",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [
+        {
+          "positions": [
+            16,
+            17
+          ],
+          "fromId": "g07-027",
+          "toId": "g07-003",
+          "spanId": "osm-full-37d960ab9b333464",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            171969822,
+            409907384,
+            736967155,
+            814419469
+          ],
+          "events": [
+            {
+              "nodeId": "g07-015",
+              "name": "四岔路口",
+              "alongMeters": 1043.2783946916484,
+              "offsetMeters": 2.5472256754478813,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            17,
+            18
+          ],
+          "fromId": "g07-003",
+          "toId": "g07-021",
+          "spanId": "osm-full-e845359bbdf35907",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            409907384,
+            411423418,
+            814419469
+          ],
+          "events": [
+            {
+              "nodeId": "g07-015",
+              "name": "四岔路口",
+              "alongMeters": 142.05814007882637,
+              "offsetMeters": 0.4503375013947971,
+              "important": false
+            },
+            {
+              "nodeId": "g07-018",
+              "name": "東峰登山口",
+              "alongMeters": 490.4283615864499,
+              "offsetMeters": 5.488378568987549,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            31,
+            32
+          ],
+          "fromId": "g07-003",
+          "toId": "g07-027",
+          "spanId": "osm-full-37d960ab9b333464",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            171969822,
+            409907384,
+            736967155,
+            814419469
+          ],
+          "events": [
+            {
+              "nodeId": "g07-015",
+              "name": "四岔路口",
+              "alongMeters": 139.55138637464063,
+              "offsetMeters": 2.5472256754478813,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        }
+      ],
+      "missingImportance": [
+        {
+          "position": 11,
+          "nodeId": "g07-040",
+          "name": "審馬陣山莊岔路口"
+        },
+        {
+          "position": 15,
+          "nodeId": "g07-019",
+          "name": "南湖大山北峰"
+        },
+        {
+          "position": 21,
+          "nodeId": "g07-020",
+          "name": "南湖大山東南峰"
+        },
+        {
+          "position": 27,
+          "nodeId": "g07-042",
+          "name": "獵寮岔路"
+        },
+        {
+          "position": 37,
+          "nodeId": "g07-026",
+          "name": "南湖池山屋(廢棄)"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R041",
+      "name": "北二段",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [
+        {
+          "position": 10,
+          "nodeId": "g08-019",
+          "name": "東鞍營地"
+        },
+        {
+          "position": 11,
+          "nodeId": "g08-027",
+          "name": "無明山西峰"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R042",
+      "name": "鈴鳴閂山",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R043",
+      "name": "無明甘薯",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R044",
+      "name": "畢羊縱走",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R045",
+      "name": "畢祿山單攻",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R046",
+      "name": "羊頭山單攻",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R050",
+      "name": "合歡北西峰",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [
+        {
+          "positions": [
+            2,
+            3
+          ],
+          "fromId": "node:a2beed4133924a6a596b",
+          "toId": "node:396247de591a031f9bfb",
+          "spanId": "osm-full-bb2d6e2781941ebd",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            65642285,
+            221217867,
+            221502570
+          ],
+          "events": [
+            {
+              "nodeId": "node:55ef0e380aa957d3deb4",
+              "name": "叉路",
+              "alongMeters": 586.882510103904,
+              "offsetMeters": 7.664369067129642,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            11,
+            12
+          ],
+          "fromId": "node:396247de591a031f9bfb",
+          "toId": "node:a2beed4133924a6a596b",
+          "spanId": "osm-full-bb2d6e2781941ebd",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            65642285,
+            221217867,
+            221502570
+          ],
+          "events": [
+            {
+              "nodeId": "node:55ef0e380aa957d3deb4",
+              "name": "叉路",
+              "alongMeters": 108.3299001132757,
+              "offsetMeters": 7.664369067129642,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        }
+      ],
+      "missingImportance": [
+        {
+          "position": 5,
+          "nodeId": "node:720f63e68790d607b486",
+          "name": "水池營地"
+        },
+        {
+          "position": 9,
+          "nodeId": "node:720f63e68790d607b486",
+          "name": "水池營地"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R052",
+      "name": "合歡群峰",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "fromId": "shared:cw-v07-058",
+          "toId": "node:1c529b28513d982ad46e",
+          "spanId": "osm-full-c31e50bf7d1e3555",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            221220041,
+            414136009,
+            428833703,
+            431812609,
+            874921841,
+            1165334442,
+            1307041563
+          ],
+          "events": [
+            {
+              "nodeId": "node:7ac8a3389a7896957791",
+              "name": "舊滑訓中心",
+              "alongMeters": 63.769894253748845,
+              "offsetMeters": 0.746898347944708,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            5,
+            6
+          ],
+          "fromId": "node:1c529b28513d982ad46e",
+          "toId": "shared:cw-v07-058",
+          "spanId": "osm-full-c31e50bf7d1e3555",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            221220041,
+            414136009,
+            428833703,
+            431812609,
+            874921841,
+            1165334442,
+            1307041563
+          ],
+          "events": [
+            {
+              "nodeId": "node:7ac8a3389a7896957791",
+              "name": "舊滑訓中心",
+              "alongMeters": 1005.4692726056348,
+              "offsetMeters": 0.7468983479447077,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            7,
+            8
+          ],
+          "fromId": "node:7ac8a3389a7896957791",
+          "toId": "node:25ba30201c2b93a7a1ee",
+          "spanId": "owner-update-f69b525f16deeb9d",
+          "sourceUrl": "https://download.geofabrik.de/asia/taiwan-latest.osm.pbf",
+          "sourceWayIds": [
+            65642295,
+            512264680,
+            874921841
+          ],
+          "events": [
+            {
+              "nodeId": "node:96283ea7f31d0727b692",
+              "name": "合歡山松雪樓",
+              "alongMeters": 235.054233213697,
+              "offsetMeters": 29.41122672687184,
+              "important": false
+            },
+            {
+              "nodeId": "node:41b89d8a56a193aacfca",
+              "name": "合歡山莊",
+              "alongMeters": 430.52353178330804,
+              "offsetMeters": 8.396140043432094,
+              "important": true
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            8,
+            9
+          ],
+          "fromId": "node:25ba30201c2b93a7a1ee",
+          "toId": "node:7ac8a3389a7896957791",
+          "spanId": "owner-update-f69b525f16deeb9d",
+          "sourceUrl": "https://download.geofabrik.de/asia/taiwan-latest.osm.pbf",
+          "sourceWayIds": [
+            65642295,
+            512264680,
+            874921841
+          ],
+          "events": [
+            {
+              "nodeId": "node:41b89d8a56a193aacfca",
+              "name": "合歡山莊",
+              "alongMeters": 1183.9856521142387,
+              "offsetMeters": 8.396140043432096,
+              "important": true
+            },
+            {
+              "nodeId": "node:96283ea7f31d0727b692",
+              "name": "合歡山松雪樓",
+              "alongMeters": 1379.4549506838498,
+              "offsetMeters": 29.41122672687184,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            11,
+            12
+          ],
+          "fromId": "node:a2beed4133924a6a596b",
+          "toId": "node:396247de591a031f9bfb",
+          "spanId": "osm-full-bb2d6e2781941ebd",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            65642285,
+            221217867,
+            221502570
+          ],
+          "events": [
+            {
+              "nodeId": "node:55ef0e380aa957d3deb4",
+              "name": "叉路",
+              "alongMeters": 586.882510103904,
+              "offsetMeters": 7.664369067129642,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            20,
+            21
+          ],
+          "fromId": "node:396247de591a031f9bfb",
+          "toId": "node:a2beed4133924a6a596b",
+          "spanId": "osm-full-bb2d6e2781941ebd",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            65642285,
+            221217867,
+            221502570
+          ],
+          "events": [
+            {
+              "nodeId": "node:55ef0e380aa957d3deb4",
+              "name": "叉路",
+              "alongMeters": 108.3299001132757,
+              "offsetMeters": 7.664369067129642,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        }
+      ],
+      "missingImportance": [
+        {
+          "position": 14,
+          "nodeId": "node:720f63e68790d607b486",
+          "name": "水池營地"
+        },
+        {
+          "position": 18,
+          "nodeId": "node:720f63e68790d607b486",
+          "name": "水池營地"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R053",
+      "name": "奇萊主北",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R054",
+      "name": "奇萊連峰",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R055",
+      "name": "奇萊南華",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R056",
+      "name": "屏風山單攻",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R057",
+      "name": "奇萊北壁下屏風",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [
+        {
+          "positions": [
+            7,
+            8
+          ],
+          "fromId": "shared:cw-v07-041",
+          "toId": "node:f2ece3876a2d0d5ba88c",
+          "spanId": "classic-R057-osm-north-ridge-20261120",
+          "sourceUrl": "https://www.openstreetmap.org/way/220625143",
+          "sourceWayIds": [],
+          "events": [
+            {
+              "nodeId": "node:79b43ef005b9dfe9c481",
+              "name": "3241稜線",
+              "alongMeters": 3164.4476758892133,
+              "offsetMeters": 0.553606996532749,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        }
+      ],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R058",
+      "name": "奇萊東稜",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [
+        {
+          "position": 13,
+          "nodeId": "node:fe7f3ab4207baa1fdb11",
+          "name": "鐵線斷崖前營地"
+        },
+        {
+          "position": 14,
+          "nodeId": "node:35db518d5bc47d630e39",
+          "name": "鐵線斷崖後營地"
+        },
+        {
+          "position": 16,
+          "nodeId": "node:4856d9ae24dfc6bc20f7",
+          "name": "3077峰"
+        },
+        {
+          "position": 24,
+          "nodeId": "node:6e54333cde2175624dd1",
+          "name": "沼澤營地"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R059",
+      "name": "能高越嶺",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [
+        {
+          "position": 6,
+          "nodeId": "g11-001",
+          "name": "五甲崩山"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R061",
+      "name": "能高安東軍",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [
+        {
+          "position": 8,
+          "nodeId": "node:67f57cbaed69e5e84ce3",
+          "name": "台灣池營地"
+        },
+        {
+          "position": 15,
+          "nodeId": "node:7e6d427f1bf037d68dcb",
+          "name": "南峰南鞍營地"
+        },
+        {
+          "position": 16,
+          "nodeId": "node:acdbe0b925a6f0ccb8ba",
+          "name": "3039鞍營地"
+        },
+        {
+          "position": 27,
+          "nodeId": "node:f365a90039ff7fe8bafb",
+          "name": "第二獵寮"
+        },
+        {
+          "position": 33,
+          "nodeId": "node:5b14299a5943cdec0daf",
+          "name": "第三支流合匯點/鐵皮工寮營地"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R062",
+      "name": "干卓萬群峰縱走",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [
+        {
+          "position": 3,
+          "nodeId": "node:d1600d992e14668a055b",
+          "name": "環形營地"
+        },
+        {
+          "position": 13,
+          "nodeId": "node:afa9a8c85b77128ce54b",
+          "name": "東北鞍營地"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R064",
+      "name": "六順山七彩湖",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R066",
+      "name": "南三段（丹大東郡）",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [
+        {
+          "positions": [
+            10,
+            11
+          ],
+          "fromId": "node:5ab8c1b58de6eeb05b5d",
+          "toId": "node:4a0b2326333b6cbfd23e",
+          "spanId": "owner-update-822f0601885290b6",
+          "sourceUrl": "https://download.geofabrik.de/asia/taiwan-latest.osm.pbf",
+          "sourceWayIds": [
+            1165632270,
+            1456496914
+          ],
+          "events": [
+            {
+              "nodeId": "node:cb277db7b164105e3c17",
+              "name": "三岔路口",
+              "alongMeters": 1427.407763352897,
+              "offsetMeters": 0.12811026547241217,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        }
+      ],
+      "missingImportance": [
+        {
+          "position": 5,
+          "nodeId": "node:dee598e1b2437f4ec104",
+          "name": "32K水泥工寮"
+        },
+        {
+          "position": 15,
+          "nodeId": "node:9d5d4d1d5eb72f6f92cb",
+          "name": "2907峰"
+        },
+        {
+          "position": 47,
+          "nodeId": "node:679d7475a6dd59c285e2",
+          "name": "無雙山東峰"
+        },
+        {
+          "position": 48,
+          "nodeId": "node:82e77090c06d1fe2aead",
+          "name": "無雙最高峰"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R069",
+      "name": "馬博橫斷",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [
+        {
+          "positions": [
+            11,
+            12
+          ],
+          "fromId": "shared:cw-v07-019",
+          "toId": "shared:cw-v07-016",
+          "spanId": "osm-full-c9ff6d814103eea5",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            347190236,
+            409195098,
+            409195099,
+            409205674,
+            409205675,
+            409205676,
+            879191824,
+            1222930676
+          ],
+          "events": [
+            {
+              "nodeId": "shared:cw-v07-071",
+              "name": "西峰岔路",
+              "alongMeters": 1514.4832017245474,
+              "offsetMeters": 0,
+              "important": false
+            },
+            {
+              "nodeId": "shared:cw-v07-017",
+              "name": "八通關山西峰",
+              "alongMeters": 1881.7139060570435,
+              "offsetMeters": 0.3693008526902749,
+              "important": true
+            },
+            {
+              "nodeId": "shared:cw-v07-015",
+              "name": "八通關山三岔路口",
+              "alongMeters": 2396.6654981024335,
+              "offsetMeters": 0,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            37,
+            38
+          ],
+          "fromId": "shared:cw-v07-078",
+          "toId": "shared:cw-v07-080",
+          "spanId": "osm-full-ef4eeb8ce2827e23",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            585904238
+          ],
+          "events": [
+            {
+              "nodeId": "node:e9cc87a6032a69ff2163",
+              "name": "3191公尺峰",
+              "alongMeters": 3463.769889916392,
+              "offsetMeters": 5.156863439371499,
+              "important": true
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            45,
+            46
+          ],
+          "fromId": "shared:cw-v07-040",
+          "toId": "node:1670c3f1247b747ba02a",
+          "spanId": "owner-update-69f7ccc2fb31ed7c",
+          "sourceUrl": "https://download.geofabrik.de/asia/taiwan-latest.osm.pbf",
+          "sourceWayIds": [
+            585904238
+          ],
+          "events": [
+            {
+              "nodeId": "node:a06583d74a359cd32e16",
+              "name": "太平谷東北口",
+              "alongMeters": 1040.8157825321482,
+              "offsetMeters": 3.026669729580539,
+              "important": false
+            },
+            {
+              "nodeId": "node:640f925a7809ca032704",
+              "name": "44K林道盡頭",
+              "alongMeters": 2092.152945057813,
+              "offsetMeters": 1.123805668841107,
+              "important": false
+            },
+            {
+              "nodeId": "node:d122b6870f9ac56ccb65",
+              "name": "43K廢棄工寮",
+              "alongMeters": 2543.48053987487,
+              "offsetMeters": 3.175331069568976,
+              "important": true
+            },
+            {
+              "nodeId": "node:456202f4ff7dedc2df5e",
+              "name": "捷徑下切點",
+              "alongMeters": 6317.769991254171,
+              "offsetMeters": 0.022483636217893718,
+              "important": false
+            },
+            {
+              "nodeId": "node:9849f71ae901b542f183",
+              "name": "廢棄發電機",
+              "alongMeters": 7143.023997994624,
+              "offsetMeters": 17.47779767376375,
+              "important": false
+            },
+            {
+              "nodeId": "node:ea1afe9db60667f52737",
+              "name": "35K工寮岔路",
+              "alongMeters": 7348.051396032175,
+              "offsetMeters": 5.76468761638144,
+              "important": true
+            },
+            {
+              "nodeId": "node:992b8a3173662270bdac",
+              "name": "35K廢棄工寮",
+              "alongMeters": 7349.403915818518,
+              "offsetMeters": 21.323722819660233,
+              "important": true
+            },
+            {
+              "nodeId": "node:c89901cb97ccbe4d145a",
+              "name": "林道玉林橋下切點",
+              "alongMeters": 7916.721210985984,
+              "offsetMeters": 4.419674743800247,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            46,
+            47
+          ],
+          "fromId": "node:1670c3f1247b747ba02a",
+          "toId": "shared:cw-v07-001",
+          "spanId": "owner-update-8ae8ac8c4e708873",
+          "sourceUrl": "https://download.geofabrik.de/asia/taiwan-latest.osm.pbf",
+          "sourceWayIds": [
+            296151229,
+            585904238,
+            620906310,
+            620906311,
+            1278175547,
+            1436401970
+          ],
+          "events": [
+            {
+              "nodeId": "node:95694ade39282d11e01e",
+              "name": "大石帆布營地",
+              "alongMeters": 863.288319304419,
+              "offsetMeters": 6.580802179332339,
+              "important": true
+            },
+            {
+              "nodeId": "node:5fbb6bf151a762e5e1e0",
+              "name": "林道崩毀處",
+              "alongMeters": 1224.9066843688818,
+              "offsetMeters": 29.99750619588787,
+              "important": false
+            },
+            {
+              "nodeId": "node:43363368b3898fae5690",
+              "name": "林道石壁營地",
+              "alongMeters": 3769.1171290939956,
+              "offsetMeters": 3.8313955517348557,
+              "important": true
+            },
+            {
+              "nodeId": "node:ea752355c7e8a54337b4",
+              "name": "19K廢工寮",
+              "alongMeters": 5326.879359433349,
+              "offsetMeters": 0.04230224379289837,
+              "important": true
+            },
+            {
+              "nodeId": "node:cc65a12ba6bd7fa8e91b",
+              "name": "17K水泥橋",
+              "alongMeters": 7141.648683858978,
+              "offsetMeters": 0.13682759844123438,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        }
+      ],
+      "missingImportance": [
+        {
+          "position": 13,
+          "nodeId": "shared:cw-v07-046",
+          "name": "巴奈伊克山屋"
+        },
+        {
+          "position": 20,
+          "nodeId": "shared:cw-v07-063",
+          "name": "秀馬山屋舊址"
+        },
+        {
+          "position": 24,
+          "nodeId": "node:0cb3329644d8610f7c1a",
+          "name": "盆駒山南峰"
+        },
+        {
+          "position": 28,
+          "nodeId": "node:0cb3329644d8610f7c1a",
+          "name": "盆駒山南峰"
+        },
+        {
+          "position": 32,
+          "nodeId": "node:400e6875b5d9d9e7f83b",
+          "name": "馬利亞文路山"
+        },
+        {
+          "position": 33,
+          "nodeId": "node:db13566c4ae479bb8ff9",
+          "name": "馬利亞文路山東峰"
+        },
+        {
+          "position": 36,
+          "nodeId": "shared:cw-v07-079",
+          "name": "馬利加南東峰山屋"
+        },
+        {
+          "position": 37,
+          "nodeId": "shared:cw-v07-078",
+          "name": "馬利加南山東峰"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R070",
+      "name": "八大秀",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [
+        {
+          "positions": [
+            2,
+            3
+          ],
+          "fromId": "shared:cw-v07-018",
+          "toId": "shared:cw-v07-076",
+          "spanId": "osm-full-6b497eff2d72c550",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            203994206,
+            203994208,
+            724652998,
+            871522022,
+            871522023,
+            871522024,
+            1178601357,
+            1270595212,
+            1271230421,
+            1271230422,
+            1271485265,
+            1271485266,
+            1271485268
+          ],
+          "events": [
+            {
+              "nodeId": "shared:cw-v07-055",
+              "name": "樂樂溫泉岔路",
+              "alongMeters": 3413.0991201977413,
+              "offsetMeters": 1.8884149461544364,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "fromId": "shared:cw-v07-054",
+          "toId": "shared:cw-v07-072",
+          "spanId": "osm-full-c19ca5015794047d",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            621931750
+          ],
+          "events": [
+            {
+              "nodeId": "shared:cw-v07-013",
+              "name": "乙女瀑布",
+              "alongMeters": 555.9778879537708,
+              "offsetMeters": 27.99891830171612,
+              "important": false
+            },
+            {
+              "nodeId": "shared:cw-v07-044",
+              "name": "對觀",
+              "alongMeters": 4221.546516849099,
+              "offsetMeters": 10.171129076480112,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            5,
+            6
+          ],
+          "fromId": "shared:cw-v07-072",
+          "toId": "shared:cw-v07-019",
+          "spanId": "osm-full-0243dd7910c3a5bd",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            409195098,
+            621931750,
+            879191824,
+            879191825,
+            1222930676
+          ],
+          "events": [
+            {
+              "nodeId": "shared:cw-v07-026",
+              "name": "古道崩斷岔路",
+              "alongMeters": 269.00111494623985,
+              "offsetMeters": 1.202400244314397,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            6,
+            7
+          ],
+          "fromId": "shared:cw-v07-019",
+          "toId": "shared:cw-v07-016",
+          "spanId": "osm-full-c9ff6d814103eea5",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            347190236,
+            409195098,
+            409195099,
+            409205674,
+            409205675,
+            409205676,
+            879191824,
+            1222930676
+          ],
+          "events": [
+            {
+              "nodeId": "shared:cw-v07-071",
+              "name": "西峰岔路",
+              "alongMeters": 1514.4832017245474,
+              "offsetMeters": 0,
+              "important": false
+            },
+            {
+              "nodeId": "shared:cw-v07-017",
+              "name": "八通關山西峰",
+              "alongMeters": 1881.7139060570435,
+              "offsetMeters": 0.3693008526902749,
+              "important": true
+            },
+            {
+              "nodeId": "shared:cw-v07-015",
+              "name": "八通關山三岔路口",
+              "alongMeters": 2396.6654981024335,
+              "offsetMeters": 0,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            31,
+            32
+          ],
+          "fromId": "shared:cw-v07-016",
+          "toId": "shared:cw-v07-019",
+          "spanId": "osm-full-c9ff6d814103eea5",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            347190236,
+            409195098,
+            409195099,
+            409205674,
+            409205675,
+            409205676,
+            879191824,
+            1222930676
+          ],
+          "events": [
+            {
+              "nodeId": "shared:cw-v07-015",
+              "name": "八通關山三岔路口",
+              "alongMeters": 647.63376219961,
+              "offsetMeters": 0,
+              "important": false
+            },
+            {
+              "nodeId": "shared:cw-v07-017",
+              "name": "八通關山西峰",
+              "alongMeters": 1162.5853542450004,
+              "offsetMeters": 0.36930085269027396,
+              "important": true
+            },
+            {
+              "nodeId": "shared:cw-v07-071",
+              "name": "西峰岔路",
+              "alongMeters": 1529.8160585774965,
+              "offsetMeters": 0,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            32,
+            33
+          ],
+          "fromId": "shared:cw-v07-019",
+          "toId": "shared:cw-v07-072",
+          "spanId": "osm-full-0243dd7910c3a5bd",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            409195098,
+            621931750,
+            879191824,
+            879191825,
+            1222930676
+          ],
+          "events": [
+            {
+              "nodeId": "shared:cw-v07-026",
+              "name": "古道崩斷岔路",
+              "alongMeters": 2227.767646239557,
+              "offsetMeters": 1.202400244314397,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            33,
+            34
+          ],
+          "fromId": "shared:cw-v07-072",
+          "toId": "shared:cw-v07-054",
+          "spanId": "osm-full-c19ca5015794047d",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            621931750
+          ],
+          "events": [
+            {
+              "nodeId": "shared:cw-v07-044",
+              "name": "對觀",
+              "alongMeters": 4041.365950182397,
+              "offsetMeters": 10.171129076480112,
+              "important": false
+            },
+            {
+              "nodeId": "shared:cw-v07-013",
+              "name": "乙女瀑布",
+              "alongMeters": 7706.934579077731,
+              "offsetMeters": 27.99891830171612,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            35,
+            36
+          ],
+          "fromId": "shared:cw-v07-076",
+          "toId": "shared:cw-v07-018",
+          "spanId": "osm-full-6b497eff2d72c550",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            203994206,
+            203994208,
+            724652998,
+            871522022,
+            871522023,
+            871522024,
+            1178601357,
+            1270595212,
+            1271230421,
+            1271230422,
+            1271485265,
+            1271485266,
+            1271485268
+          ],
+          "events": [
+            {
+              "nodeId": "shared:cw-v07-055",
+              "name": "樂樂溫泉岔路",
+              "alongMeters": 1297.4675559074255,
+              "offsetMeters": 1.8884149461544368,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        }
+      ],
+      "missingImportance": [
+        {
+          "position": 12,
+          "nodeId": "shared:cw-v07-046",
+          "name": "巴奈伊克山屋"
+        },
+        {
+          "position": 16,
+          "nodeId": "node:8426704609cea5d43db4",
+          "name": "杜鵑營地"
+        },
+        {
+          "position": 26,
+          "nodeId": "node:8426704609cea5d43db4",
+          "name": "杜鵑營地"
+        },
+        {
+          "position": 28,
+          "nodeId": "shared:cw-v07-009",
+          "name": "中央金礦山屋"
+        },
+        {
+          "position": 30,
+          "nodeId": "shared:cw-v07-046",
+          "name": "巴奈伊克山屋"
+        },
+        {
+          "position": 34,
+          "nodeId": "shared:cw-v07-054",
+          "name": "樂樂山屋"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R072",
+      "name": "南二段",
+      "issues": [
+        {
+          "code": "BLOCKED_APPROACH",
+          "position": 5,
+          "neighborPosition": 6,
+          "nodeId": "shared:cw-v07-027",
+          "neighbor": "shared:owner-v0724-xiangyang-junction",
+          "rule": "xiangyang-west-only",
+          "reason": "2026-11-25使用者指定：向陽山只能由西側登山口原路往返，三岔路口登頂線不通。"
+        }
+      ],
+      "compileIssues": [],
+      "omissions": [
+        {
+          "positions": [
+            18,
+            19
+          ],
+          "fromId": "local:G17-OVERLAP::g17-overlap-008",
+          "toId": "local:G17-OVERLAP::g17-overlap-007",
+          "spanId": "osm-full-e66f64d037341b78",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            412634206
+          ],
+          "events": [
+            {
+              "nodeId": "node:4b535e7d68c379a6c905",
+              "name": "轆轆東峰",
+              "alongMeters": 840.9265643922975,
+              "offsetMeters": 25.332374185626033,
+              "important": true
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            46,
+            47
+          ],
+          "fromId": "shared:cw-v07-071",
+          "toId": "shared:cw-v07-072",
+          "spanId": "osm-full-6727ccc9cd512de7",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            409195099,
+            621931750
+          ],
+          "events": [
+            {
+              "nodeId": "shared:cw-v07-057",
+              "name": "溪水營地",
+              "alongMeters": 412.722054939088,
+              "offsetMeters": 2.6178580869509442,
+              "important": true
+            },
+            {
+              "nodeId": "shared:cw-v07-026",
+              "name": "古道崩斷岔路",
+              "alongMeters": 1369.2911656158585,
+              "offsetMeters": 1.202400244314397,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            47,
+            48
+          ],
+          "fromId": "shared:cw-v07-072",
+          "toId": "shared:cw-v07-054",
+          "spanId": "osm-full-c19ca5015794047d",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            621931750
+          ],
+          "events": [
+            {
+              "nodeId": "shared:cw-v07-044",
+              "name": "對觀",
+              "alongMeters": 4041.365950182397,
+              "offsetMeters": 10.171129076480112,
+              "important": false
+            },
+            {
+              "nodeId": "shared:cw-v07-013",
+              "name": "乙女瀑布",
+              "alongMeters": 7706.934579077731,
+              "offsetMeters": 27.99891830171612,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            49,
+            50
+          ],
+          "fromId": "shared:cw-v07-076",
+          "toId": "shared:cw-v07-018",
+          "spanId": "osm-full-6b497eff2d72c550",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            203994206,
+            203994208,
+            724652998,
+            871522022,
+            871522023,
+            871522024,
+            1178601357,
+            1270595212,
+            1271230421,
+            1271230422,
+            1271485265,
+            1271485266,
+            1271485268
+          ],
+          "events": [
+            {
+              "nodeId": "shared:cw-v07-055",
+              "name": "樂樂溫泉岔路",
+              "alongMeters": 1297.4675559074255,
+              "offsetMeters": 1.8884149461544368,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        }
+      ],
+      "missingImportance": [
+        {
+          "position": 12,
+          "nodeId": "shared:cw-v07-049",
+          "name": "拉庫音溪山屋"
+        },
+        {
+          "position": 14,
+          "nodeId": "local:G17-OVERLAP::g17-overlap-010",
+          "name": "西北鞍南雙池營地"
+        },
+        {
+          "position": 15,
+          "nodeId": "local:G17-OVERLAP::g17-overlap-009",
+          "name": "雲峰東峰三岔路口營地"
+        },
+        {
+          "position": 17,
+          "nodeId": "local:G17-OVERLAP::g17-overlap-009",
+          "name": "雲峰東峰三岔路口營地"
+        },
+        {
+          "position": 20,
+          "nodeId": "node:4b535e7d68c379a6c905",
+          "name": "轆轆東峰"
+        },
+        {
+          "position": 22,
+          "nodeId": "node:4b535e7d68c379a6c905",
+          "name": "轆轆東峰"
+        },
+        {
+          "position": 36,
+          "nodeId": "node:8426704609cea5d43db4",
+          "name": "杜鵑營地"
+        },
+        {
+          "position": 45,
+          "nodeId": "shared:cw-v07-017",
+          "name": "八通關山西峰"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R073",
+      "name": "嘉明湖向陽三叉",
+      "issues": [
+        {
+          "code": "BLOCKED_APPROACH",
+          "position": 5,
+          "neighborPosition": 6,
+          "nodeId": "shared:cw-v07-027",
+          "neighbor": "shared:owner-v0724-xiangyang-junction",
+          "rule": "xiangyang-west-only",
+          "reason": "2026-11-25使用者指定：向陽山只能由西側登山口原路往返，三岔路口登頂線不通。"
+        },
+        {
+          "code": "BLOCKED_APPROACH",
+          "position": 17,
+          "neighborPosition": 16,
+          "nodeId": "shared:cw-v07-027",
+          "neighbor": "shared:owner-v0724-xiangyang-junction",
+          "rule": "xiangyang-west-only",
+          "reason": "2026-11-25使用者指定：向陽山只能由西側登山口原路往返，三岔路口登頂線不通。"
+        }
+      ],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R077",
+      "name": "新康橫斷",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [
+        {
+          "position": 14,
+          "nodeId": "node:cc46f14c3898e5aedb0d",
+          "name": "三叉稜下營地"
+        },
+        {
+          "position": 23,
+          "nodeId": "local:G18-OVERLAP::g18-overlap-006",
+          "name": "連理西峰前營地"
+        },
+        {
+          "position": 27,
+          "nodeId": "local:G18-OVERLAP::g18-overlap-010",
+          "name": "連理山"
+        },
+        {
+          "position": 29,
+          "nodeId": "local:G18-OVERLAP::g18-overlap-012",
+          "name": "新仙山前營地"
+        },
+        {
+          "position": 30,
+          "nodeId": "local:G18-OVERLAP::g18-overlap-013",
+          "name": "新仙山營地"
+        },
+        {
+          "position": 31,
+          "nodeId": "local:G18-OVERLAP::g18-overlap-014",
+          "name": "新仙山"
+        },
+        {
+          "position": 35,
+          "nodeId": "local:G18-OVERLAP::g18-overlap-014",
+          "name": "新仙山"
+        },
+        {
+          "position": 36,
+          "nodeId": "local:G18-OVERLAP::g18-overlap-013",
+          "name": "新仙山營地"
+        },
+        {
+          "position": 37,
+          "nodeId": "node:c575dd7fad9439788a33",
+          "name": "松針營地"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R078",
+      "name": "戒茂斯上嘉明湖",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R080",
+      "name": "南一段",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [
+        {
+          "positions": [
+            9,
+            10
+          ],
+          "fromId": "node:dd92f355119f688e96e5",
+          "toId": "node:f1a56c966825aab02800",
+          "spanId": "osm-full-3fda1be2591caff8",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            408879707
+          ],
+          "events": [
+            {
+              "nodeId": "node:13d504bd8b2807b99c9d",
+              "name": "最低鞍部",
+              "alongMeters": 1136.7111803167843,
+              "offsetMeters": 0.7004681087863219,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            13,
+            14
+          ],
+          "fromId": "node:13d504bd8b2807b99c9d",
+          "toId": "node:6da1ed550b6f967e49ba",
+          "spanId": "osm-full-211f8a409160188a",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            408879707
+          ],
+          "events": [
+            {
+              "nodeId": "node:f1a56c966825aab02800",
+              "name": "四岔路口",
+              "alongMeters": 1399.426467034978,
+              "offsetMeters": 6.356865216051017,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        }
+      ],
+      "missingImportance": [
+        {
+          "position": 9,
+          "nodeId": "node:dd92f355119f688e96e5",
+          "name": "小關山北峰"
+        },
+        {
+          "position": 18,
+          "nodeId": "node:d2f31085a66df8fb4a30",
+          "name": "3237公尺峰"
+        }
+      ],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R081",
+      "name": "小關海諾",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [
+        {
+          "positions": [
+            3,
+            4
+          ],
+          "fromId": "node:f1a56c966825aab02800",
+          "toId": "node:dd92f355119f688e96e5",
+          "spanId": "osm-full-3fda1be2591caff8",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            408879707
+          ],
+          "events": [
+            {
+              "nodeId": "node:13d504bd8b2807b99c9d",
+              "name": "最低鞍部",
+              "alongMeters": 1399.4288222417754,
+              "offsetMeters": 0.700468108786323,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        },
+        {
+          "positions": [
+            6,
+            7
+          ],
+          "fromId": "node:dd92f355119f688e96e5",
+          "toId": "node:f1a56c966825aab02800",
+          "spanId": "osm-full-3fda1be2591caff8",
+          "sourceUrl": null,
+          "sourceWayIds": [
+            408879707
+          ],
+          "events": [
+            {
+              "nodeId": "node:13d504bd8b2807b99c9d",
+              "name": "最低鞍部",
+              "alongMeters": 1136.7111803167843,
+              "offsetMeters": 0.7004681087863219,
+              "important": false
+            }
+          ],
+          "notice": "幾何走廊待交叉核對；距離接近不證明經過，不自動插入。"
+        }
+      ],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R082",
+      "name": "關山單攻",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R083",
+      "name": "庫哈諾辛山單攻",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R085",
+      "name": "關山嶺山單攻",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R086",
+      "name": "塔關山單攻",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R087",
+      "name": "卑南主山",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    },
+    {
+      "routeId": "R088",
+      "name": "北大武山",
+      "issues": [],
+      "compileIssues": [],
+      "omissions": [],
+      "missingImportance": [],
+      "eligibleForImport": false
+    }
+  ]
+}

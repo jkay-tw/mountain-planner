@@ -61,6 +61,6 @@ test('real Junda source profile labels use source DEM for selected nodes and exa
 });
 test('Preview GPX shares plan naming while the production map entry remains unchanged',()=>{
  const production=readFileSync(new URL('../js/itinerary-map.js',import.meta.url),'utf8'),preview=readFileSync(new URL('../preview/js/itinerary-map.js',import.meta.url),'utf8');
- assert.match(production,/const name=`mountain-planner-candidate/);assert.match(preview,/getExportName\('gpx',\{partial:/);
- const editor=readFileSync(new URL('../js/unified-editor.js',import.meta.url),'utf8');assert.match(editor,/function exportName/);assert.match(editor,/tripStartDate\.replaceAll/);
+ assert.match(production,/getExportName\('gpx',\{partial:/);assert.match(preview,/getExportName\('gpx',\{partial:/);
+ const editor=readFileSync(new URL('../js/unified-editor.js',import.meta.url),'utf8');assert.match(editor,/function exportName/);assert.match(editor,/itineraryExportName/);
 });

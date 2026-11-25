@@ -42,8 +42,10 @@
     },
     {
       "id": "node:1c529b28513d982ad46e",
-      "name": "合歡山東峰",
-      "aliases": [],
+      "name": "合歡東峰",
+      "aliases": [
+        "合歡山東峰"
+      ],
       "groups": [
         "G09-cfb4c85c"
       ],
@@ -126,8 +128,10 @@
     },
     {
       "id": "node:396247de591a031f9bfb",
-      "name": "北合歡山",
-      "aliases": [],
+      "name": "合歡北峰",
+      "aliases": [
+        "北合歡山"
+      ],
       "groups": [
         "G09-cfb4c85c"
       ],
@@ -214,8 +218,10 @@
     },
     {
       "id": "node:988e2bd2e27c233431cf",
-      "name": "合歡山",
-      "aliases": [],
+      "name": "合歡主峰",
+      "aliases": [
+        "合歡山"
+      ],
       "groups": [
         "G09-cfb4c85c"
       ],
@@ -279,8 +285,10 @@
     },
     {
       "id": "node:ccb468c0ed9c0bdb556f",
-      "name": "北合歡山登山口",
-      "aliases": [],
+      "name": "合歡北峰登山口",
+      "aliases": [
+        "北合歡山登山口"
+      ],
       "groups": [
         "G09-cfb4c85c"
       ],
@@ -297,8 +305,10 @@
     },
     {
       "id": "node:e6b49d265bc73a591c95",
-      "name": "西合歡山",
-      "aliases": [],
+      "name": "合歡西峰",
+      "aliases": [
+        "西合歡山"
+      ],
       "groups": [
         "G09-cfb4c85c"
       ],
@@ -751,7 +761,7 @@
       "fromId": "node:361b16415de0e733ccab",
       "toId": "node:396247de591a031f9bfb",
       "from": "最低鞍部",
-      "to": "北合歡山",
+      "to": "合歡北峰",
       "minutes": 110,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -789,7 +799,7 @@
     {
       "fromId": "node:396247de591a031f9bfb",
       "toId": "node:361b16415de0e733ccab",
-      "from": "北合歡山",
+      "from": "合歡北峰",
       "to": "最低鞍部",
       "minutes": 75,
       "travelMode": "walking",
@@ -828,7 +838,7 @@
     {
       "fromId": "node:396247de591a031f9bfb",
       "toId": "node:a2beed4133924a6a596b",
-      "from": "北合歡山",
+      "from": "合歡北峰",
       "to": "反射板",
       "minutes": 15,
       "travelMode": "walking",
@@ -868,7 +878,7 @@
       "fromId": "node:a2beed4133924a6a596b",
       "toId": "node:396247de591a031f9bfb",
       "from": "反射板",
-      "to": "北合歡山",
+      "to": "合歡北峰",
       "minutes": 20,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -907,7 +917,7 @@
       "fromId": "node:a2beed4133924a6a596b",
       "toId": "node:ccb468c0ed9c0bdb556f",
       "from": "反射板",
-      "to": "北合歡山登山口",
+      "to": "合歡北峰登山口",
       "minutes": 45,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -945,7 +955,7 @@
     {
       "fromId": "node:ccb468c0ed9c0bdb556f",
       "toId": "node:a2beed4133924a6a596b",
-      "from": "北合歡山登山口",
+      "from": "合歡北峰登山口",
       "to": "反射板",
       "minutes": 70,
       "travelMode": "walking",
@@ -1344,7 +1354,7 @@
     {
       "fromId": "node:1c529b28513d982ad46e",
       "toId": "shared:cw-v07-058",
-      "from": "合歡山東峰",
+      "from": "合歡東峰",
       "to": "滑雪山莊奇萊登山口",
       "minutes": 60,
       "travelMode": "walking",
@@ -1384,7 +1394,7 @@
       "fromId": "shared:cw-v07-058",
       "toId": "node:1c529b28513d982ad46e",
       "from": "滑雪山莊奇萊登山口",
-      "to": "合歡山東峰",
+      "to": "合歡東峰",
       "minutes": 80,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -1423,7 +1433,7 @@
       "fromId": "node:043095d97e26cc162e8e",
       "toId": "node:988e2bd2e27c233431cf",
       "from": "武嶺",
-      "to": "合歡山",
+      "to": "合歡主峰",
       "minutes": 60,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -1461,7 +1471,7 @@
     {
       "fromId": "node:988e2bd2e27c233431cf",
       "toId": "node:043095d97e26cc162e8e",
-      "from": "合歡山",
+      "from": "合歡主峰",
       "to": "武嶺",
       "minutes": 40,
       "travelMode": "walking",
@@ -1812,7 +1822,7 @@
     {
       "fromId": "node:396247de591a031f9bfb",
       "toId": "node:55ef0e380aa957d3deb4",
-      "from": "北合歡山",
+      "from": "合歡北峰",
       "to": "叉路",
       "minutes": 15,
       "travelMode": "walking",
@@ -1852,7 +1862,7 @@
       "fromId": "node:55ef0e380aa957d3deb4",
       "toId": "node:396247de591a031f9bfb",
       "from": "叉路",
-      "to": "北合歡山",
+      "to": "合歡北峰",
       "minutes": 30,
       "travelMode": "walking",
       "verificationStatus": "verified",
@@ -1890,7 +1900,7 @@
     {
       "fromId": "node:e6b49d265bc73a591c95",
       "toId": "node:9a25af7dace0cef43a67",
-      "from": "西合歡山",
+      "from": "合歡西峰",
       "to": "華岡岔路口",
       "minutes": 45,
       "travelMode": "walking",
@@ -1930,7 +1940,7 @@
       "fromId": "node:9a25af7dace0cef43a67",
       "toId": "node:e6b49d265bc73a591c95",
       "from": "華岡岔路口",
-      "to": "西合歡山",
+      "to": "合歡西峰",
       "minutes": 35,
       "travelMode": "walking",
       "verificationStatus": "verified",

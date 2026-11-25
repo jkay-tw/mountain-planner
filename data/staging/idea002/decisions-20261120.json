@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "source": "User confirmation in IDEA-002 chat, 2026-11-20 Asia/Taipei",
+  "baseCommit": "65d10c572b278d96c146d9f2a9d88cd69ba3cdfe",
+  "pilotRouteIds": [
+    "R001",
+    "R015",
+    "R027",
+    "R057"
+  ],
+  "anchorOverrides": {
+    "R030": [
+      "node:1cf8b3c84c8feaa7f234",
+      "node:423790cb65cc1bad5df4",
+      "node:cfc709350cf852b13fe1",
+      "node:0969f8657ba80bf5fdd2",
+      "node:cfc709350cf852b13fe1",
+      "node:423790cb65cc1bad5df4",
+      "node:194fcc1bb298ce914692",
+      "node:423790cb65cc1bad5df4",
+      "node:1cf8b3c84c8feaa7f234"
+    ]
+  },
+  "excludedNodeIds": {
+    "R070": [
+      "shared:cw-v07-068"
+    ],
+    "R072": [
+      "shared:cw-v07-068"
+    ]
+  },
+  "omittedSourceLabels": {
+    "R026": [
+      "中霸山屋"
+    ]
+  },
+  "vehicleTimePolicy": {
+    "default": "exact-directed-shanghe-vehicle-minutes",
+    "manualOverride": true,
+    "walkingCoefficientApplies": false,
+    "missingSourceMinutes": null,
+    "reverseSourcePolicy": "require-exact-reverse-reference"
+  },
+  "notes": [
+    "Preserve the original Sheet N/T text in the snapshot; chat overrides are separate.",
+    "R070/R072 exclude 荖濃溪 (shared:cw-v07-068), not 荖濃溪營地 (shared:cw-v07-069).",
+    "R052 remains multi-segment pending reviewed entrances, exits and vehicle geometry.",
+    "R057 route-local OSM candidate integration authorized after coordinate/path correction; unknown minutes stay manual, authoritative graph unchanged."
+  ],
+  "dataCommit": "2e1989818849b108c1a54c2daf08a8b3a16ce363"
+}

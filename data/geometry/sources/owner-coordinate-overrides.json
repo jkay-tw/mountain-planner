@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "sourceUrl": "https://drive.google.com/file/d/1bfrGAJmiayJmqG600tlq93ld8slUqPRP/view",
   "sourceFileSha256": "7f90c190ad41a5745e02ad8ed1050d31a317abc0dbe733af78e9d36713bad12b",
-  "reviewDate": "2026-11-12",
+  "reviewDate": "2026-11-23",
   "nodes": [
     {
       "reviewId": "Q001",
@@ -978,20 +978,42 @@
       }
     },
     {
-      "reviewId": "Q057",
+      "reviewId": "OWNER-20261120-ac2e2b0473232211e496",
       "nodeId": "node:ac2e2b0473232211e496",
       "name": "第一次過溪",
       "choice": "自行補座標",
-      "note": "",
+      "note": "使用者明確指定座標；依 GPX 方向核對 OSM，保留 Node ID 與原方向時間。",
       "coordinate": [
-        121.3119183,
-        24.1754567
+        121.3240434,
+        24.1714043
       ],
       "action": "coordinate",
       "originalCoordinate": {
         "format": "TWD97",
-        "x": 281692.0,
-        "y": 2674490.0
+        "x": 282925,
+        "y": 2674044
+      },
+      "priorTo20261120": {
+        "reviewId": "Q057",
+        "nodeId": "node:ac2e2b0473232211e496",
+        "name": "第一次過溪",
+        "choice": "自行補座標",
+        "note": "",
+        "coordinate": [
+          121.3119183,
+          24.1754567
+        ],
+        "action": "coordinate",
+        "originalCoordinate": {
+          "format": "TWD97",
+          "x": 281692.0,
+          "y": 2674490.0
+        }
+      },
+      "source": {
+        "kind": "owner-chat",
+        "date": "2026-11-20",
+        "evidenceRef": "data/geometry/sources/pingfeng-names-owner-20261120.json"
       }
     },
     {
@@ -3356,15 +3378,6 @@
       "action": "ignore"
     },
     {
-      "reviewId": "Q152",
-      "nodeId": "node:2262a9d2e8c96b37a520",
-      "name": "3444主稜",
-      "choice": "暫不確定",
-      "note": "忽視",
-      "coordinate": null,
-      "action": "ignore"
-    },
-    {
       "reviewId": "Q153",
       "nodeId": "node:26df992c63cbe82936fa",
       "name": "中之關步道口",
@@ -4799,6 +4812,83 @@
       },
       "note": "使用者明確指定大霸霸基座標；舊山頂名稱記錄於來源封存。",
       "previousDecisions": []
+    },
+    {
+      "nodeId": "node:97e309d22937a82f9ade",
+      "priorTo20261120": {
+        "nodeId": "node:97e309d22937a82f9ade"
+      },
+      "reviewId": "OWNER-20261120-97e309d22937a82f9ade",
+      "name": "鐵線吊橋",
+      "action": "coordinate",
+      "choice": "自行補座標",
+      "coordinate": [
+        121.3252349,
+        24.167781
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 283047,
+        "y": 2673643
+      },
+      "source": {
+        "kind": "owner-chat",
+        "date": "2026-11-20",
+        "evidenceRef": "data/geometry/sources/pingfeng-names-owner-20261120.json"
+      },
+      "note": "使用者明確指定座標；依 GPX 方向核對 OSM，保留 Node ID 與原方向時間。"
+    },
+    {
+      "nodeId": "node:2262a9d2e8c96b37a520",
+      "reviewId": "OWNER-20261123-3444",
+      "name": "3444主稜",
+      "action": "coordinate",
+      "choice": "自行補座標",
+      "coordinate": [
+        120.9153937,
+        23.2364966
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 241342,
+        "y": 2570474
+      },
+      "source": {
+        "kind": "owner-chat",
+        "date": "2026-11-23"
+      },
+      "note": "使用者指定 TWD97，固定來源 OSM/DEM 重算",
+      "previous": {
+        "reviewId": "Q152",
+        "nodeId": "node:2262a9d2e8c96b37a520",
+        "name": "3444主稜",
+        "choice": "暫不確定",
+        "note": "忽視",
+        "coordinate": null,
+        "action": "ignore"
+      }
+    },
+    {
+      "nodeId": "g04-020",
+      "reviewId": "OWNER-20261123-IZE2",
+      "name": "伊澤山第二登山口",
+      "action": "coordinate",
+      "choice": "自行補座標",
+      "coordinate": [
+        121.241621,
+        24.469212
+      ],
+      "originalCoordinate": {
+        "format": "TWD97",
+        "x": 274493,
+        "y": 2707010
+      },
+      "source": {
+        "kind": "owner-chat",
+        "date": "2026-11-23",
+        "evidenceRef": "data/geometry/sources/ize-owner-20261123.json"
+      },
+      "note": "使用者指定 TWD97(274493,2707010)，固定封存OSM/DEM局部重算"
     }
   ]
 }

@@ -1,0 +1,704 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-24",
+  "status": "tool-implemented; actual-route-evidence-incomplete",
+  "counts": {
+    "routes": 86,
+    "enabled": 60,
+    "validOccurrences": 1400,
+    "excludedRows": 13,
+    "pass": 0,
+    "review": 4,
+    "evidenceInsufficient": 60,
+    "unexpanded": 26,
+    "cachedRoutes": 6
+  },
+  "pilotCounts": {
+    "routes": 6,
+    "enabled": 6,
+    "validOccurrences": 172,
+    "excludedRows": 13,
+    "pass": 0,
+    "review": 1,
+    "evidenceInsufficient": 6,
+    "unexpanded": 0,
+    "cachedRoutes": 0
+  },
+  "nodeAuthority": {
+    "spreadsheetId": "1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk",
+    "sheetId": 102,
+    "sheet": "節點總表",
+    "path": "data/route-validator/snapshots/node-authority-20261124.json",
+    "sha256": "f91b3ab0381a255cc75412cb263fd4b796b222a382f7f2c1053f1f1fecc83fc4"
+  },
+  "nodeCorrectionRef": "data/route-validator/node-id-corrections-20261124.json",
+  "nodeIdCorrectionReadback": {
+    "cells": 12,
+    "routeIds": [
+      "R001",
+      "R002",
+      "R003",
+      "R004",
+      "R005",
+      "R007"
+    ],
+    "source": "使用者指定節點表及四條相鄰方向來源，已讀回且渲染確認"
+  },
+  "acquisition": {
+    "downloaded": 23,
+    "parseFailures": 0,
+    "reusedExisting": 2,
+    "rawFiles": "Only in ignored .route-validator/gpx; not published"
+  },
+  "inputProblems": [],
+  "libraryProblems": [],
+  "anomalyGroups": [
+    {
+      "id": "GROUP-d562cf2bff",
+      "title": "路段的方向／時間／線形資料有缺口",
+      "routeIds": [
+        "R013",
+        "R025",
+        "R026"
+      ],
+      "codes": [
+        "MISSING_EDGE",
+        "MISSING_GEOMETRY",
+        "MISSING_TIME"
+      ],
+      "details": [
+        {
+          "positions": [
+            15,
+            16
+          ],
+          "nodeIds": [
+            "g04-002",
+            "g04-016"
+          ],
+          "message": "8.8K岔路 → 加利山登山口：NO_CONSTRAINED_PATH；未改走最短路或直線。"
+        },
+        {
+          "positions": [
+            15,
+            16
+          ],
+          "nodeIds": [
+            "g04-002",
+            "g04-016"
+          ],
+          "message": "8.8K岔路 → 加利山登山口：MISSING_GEOMETRY；未改走最短路或直線。"
+        },
+        {
+          "positions": [
+            15,
+            16
+          ],
+          "nodeIds": [
+            "g04-002",
+            "g04-016"
+          ],
+          "message": "8.8K岔路 → 加利山登山口：來源分鐘缺漏；分鐘保留未知，不借反向或 GPX 時間。"
+        },
+        {
+          "positions": [
+            30,
+            31
+          ],
+          "nodeIds": [
+            "g04-002",
+            "g04-016"
+          ],
+          "message": "8.8K岔路 → 加利山登山口：NO_CONSTRAINED_PATH；未改走最短路或直線。"
+        },
+        {
+          "positions": [
+            30,
+            31
+          ],
+          "nodeIds": [
+            "g04-002",
+            "g04-016"
+          ],
+          "message": "8.8K岔路 → 加利山登山口：MISSING_GEOMETRY；未改走最短路或直線。"
+        },
+        {
+          "positions": [
+            30,
+            31
+          ],
+          "nodeIds": [
+            "g04-002",
+            "g04-016"
+          ],
+          "message": "8.8K岔路 → 加利山登山口：來源分鐘缺漏；分鐘保留未知，不借反向或 GPX 時間。"
+        },
+        {
+          "positions": [
+            34,
+            33
+          ],
+          "nodeIds": [
+            "g04-002",
+            "g04-016"
+          ],
+          "message": "反向 8.8K岔路 → 加利山登山口：缺少來源分鐘，不借順向時間。"
+        },
+        {
+          "positions": [
+            34,
+            33
+          ],
+          "nodeIds": [
+            "g04-002",
+            "g04-016"
+          ],
+          "message": "反向線形：8.8K岔路 → 加利山登山口；MISSING_GEOMETRY。"
+        },
+        {
+          "positions": [
+            19,
+            20
+          ],
+          "nodeIds": [
+            "g04-002",
+            "g04-016"
+          ],
+          "message": "8.8K岔路 → 加利山登山口：NO_CONSTRAINED_PATH；未改走最短路或直線。"
+        },
+        {
+          "positions": [
+            19,
+            20
+          ],
+          "nodeIds": [
+            "g04-002",
+            "g04-016"
+          ],
+          "message": "8.8K岔路 → 加利山登山口：MISSING_GEOMETRY；未改走最短路或直線。"
+        },
+        {
+          "positions": [
+            19,
+            20
+          ],
+          "nodeIds": [
+            "g04-002",
+            "g04-016"
+          ],
+          "message": "8.8K岔路 → 加利山登山口：來源分鐘缺漏；分鐘保留未知，不借反向或 GPX 時間。"
+        }
+      ]
+    },
+    {
+      "id": "GROUP-8de6894f13",
+      "title": "路段的方向／時間／線形資料有缺口",
+      "routeIds": [
+        "R025"
+      ],
+      "codes": [
+        "MISSING_EDGE",
+        "MISSING_GEOMETRY",
+        "MISSING_TIME"
+      ],
+      "details": [
+        {
+          "positions": [
+            33,
+            34
+          ],
+          "nodeIds": [
+            "g04-016",
+            "g04-002"
+          ],
+          "message": "加利山登山口 → 8.8K岔路：NO_CONSTRAINED_PATH；未改走最短路或直線。"
+        },
+        {
+          "positions": [
+            33,
+            34
+          ],
+          "nodeIds": [
+            "g04-016",
+            "g04-002"
+          ],
+          "message": "加利山登山口 → 8.8K岔路：MISSING_GEOMETRY；未改走最短路或直線。"
+        },
+        {
+          "positions": [
+            33,
+            34
+          ],
+          "nodeIds": [
+            "g04-016",
+            "g04-002"
+          ],
+          "message": "加利山登山口 → 8.8K岔路：來源分鐘缺漏；分鐘保留未知，不借反向或 GPX 時間。"
+        },
+        {
+          "positions": [
+            31,
+            30
+          ],
+          "nodeIds": [
+            "g04-016",
+            "g04-002"
+          ],
+          "message": "反向 加利山登山口 → 8.8K岔路：缺少來源分鐘，不借順向時間。"
+        },
+        {
+          "positions": [
+            31,
+            30
+          ],
+          "nodeIds": [
+            "g04-016",
+            "g04-002"
+          ],
+          "message": "反向線形：加利山登山口 → 8.8K岔路；MISSING_GEOMETRY。"
+        }
+      ]
+    },
+    {
+      "id": "GROUP-f4be0b8664",
+      "title": "路線或軌跡不完整",
+      "routeIds": [
+        "R066"
+      ],
+      "codes": [
+        "INCOMPLETE_ROUTE"
+      ],
+      "details": [
+        {
+          "positions": [],
+          "nodeIds": [],
+          "message": "Sheet 已明列完整性缺口：依健行筆記 2020 七日 GPX 行程及南三段路線文字，丹大→內嶺爾→義西→東巒→東郡→無雙方向成立；原 53→30。瑞穗林道至丹大及無雙至郡大林道無既有節點，東巒／東郡接線、烏達佩與天南可蘭峰／岔路亦未驗；目前僅核心片段。 已查公開行程/官方頁面或 GPX 頁面文字；未取得並逐點匹配 GPX 軌跡。"
+        }
+      ]
+    }
+  ],
+  "pilots": [
+    {
+      "routeId": "R001",
+      "name": "玉山主峰單攻",
+      "nodes": 23,
+      "status": "INSUFFICIENT_GPX",
+      "sourceCount": 4,
+      "maximumCandidateMatches": 23,
+      "qualifiedIndependentSupporting": 0,
+      "commonUnmatched": [],
+      "sourceObservations": 19,
+      "issues": [
+        {
+          "code": "SOURCE_DIFFERENCE",
+          "severity": "info",
+          "message": "本機候選 17 次經過；最新 Sheet 23 次。尚未同步，不代表 Sheet 有錯。"
+        },
+        {
+          "code": "MANUAL_REVIEW",
+          "severity": "data",
+          "message": "4 份來源共有 19 個局部差異訊號，保存在證據明細；不足以直接判定候選走法錯誤，未逐項要求人工修改。"
+        },
+        {
+          "code": "INSUFFICIENT_GPX",
+          "severity": "data",
+          "message": "已收錄 4 份，符合指定走法／完整性／品質的獨立支持組 0 組；門檻 3 組。"
+        }
+      ]
+    },
+    {
+      "routeId": "R015",
+      "name": "武陵四秀",
+      "nodes": 23,
+      "status": "INSUFFICIENT_GPX",
+      "sourceCount": 3,
+      "maximumCandidateMatches": 23,
+      "qualifiedIndependentSupporting": 0,
+      "commonUnmatched": [],
+      "sourceObservations": 31,
+      "issues": [
+        {
+          "code": "MANUAL_REVIEW",
+          "severity": "data",
+          "message": "3 份來源共有 31 個局部差異訊號，保存在證據明細；不足以直接判定候選走法錯誤，未逐項要求人工修改。"
+        },
+        {
+          "code": "INSUFFICIENT_GPX",
+          "severity": "data",
+          "message": "已收錄 3 份，符合指定走法／完整性／品質的獨立支持組 0 組；門檻 3 組。"
+        }
+      ]
+    },
+    {
+      "routeId": "R030",
+      "name": "大小劍",
+      "nodes": 31,
+      "status": "INSUFFICIENT_GPX",
+      "sourceCount": 6,
+      "maximumCandidateMatches": 27,
+      "qualifiedIndependentSupporting": 0,
+      "commonUnmatched": [
+        {
+          "position": 1,
+          "nodeId": "node:1cf8b3c84c8feaa7f234",
+          "name": "中興路口(66.55K)",
+          "independentSourceGroups": 3,
+          "sourceIds": [
+            "gpx-07ca099c0540f43c",
+            "gpx-d057fa2d95481a4d",
+            "gpx-b8732912e22ec854"
+          ],
+          "kind": "reference-endpoint-gap",
+          "meaning": "多來源未匹配的具體位置；可能是進出方式、變體、座標／角色或軌跡缺漏，不自動刪點。"
+        },
+        {
+          "position": 8,
+          "nodeId": "node:ef9d6d7b507c200ba66a",
+          "name": "油婆蘭山",
+          "independentSourceGroups": 3,
+          "sourceIds": [
+            "gpx-07ca099c0540f43c",
+            "gpx-d057fa2d95481a4d",
+            "gpx-b8732912e22ec854"
+          ],
+          "kind": "common-unmatched-interior",
+          "meaning": "多來源未匹配的具體位置；可能是進出方式、變體、座標／角色或軌跡缺漏，不自動刪點。"
+        },
+        {
+          "position": 31,
+          "nodeId": "node:1cf8b3c84c8feaa7f234",
+          "name": "中興路口(66.55K)",
+          "independentSourceGroups": 3,
+          "sourceIds": [
+            "gpx-07ca099c0540f43c",
+            "gpx-d057fa2d95481a4d",
+            "gpx-b8732912e22ec854"
+          ],
+          "kind": "reference-endpoint-gap",
+          "meaning": "多來源未匹配的具體位置；可能是進出方式、變體、座標／角色或軌跡缺漏，不自動刪點。"
+        }
+      ],
+      "sourceObservations": 39,
+      "issues": [
+        {
+          "code": "MANUAL_REVIEW",
+          "severity": "data",
+          "message": "6 份來源共有 39 個局部差異訊號，保存在證據明細；不足以直接判定候選走法錯誤，未逐項要求人工修改。"
+        },
+        {
+          "code": "INSUFFICIENT_GPX",
+          "severity": "data",
+          "message": "已收錄 6 份，符合指定走法／完整性／品質的獨立支持組 0 組；門檻 3 組。"
+        }
+      ]
+    },
+    {
+      "routeId": "R031",
+      "name": "志雪劍",
+      "nodes": 23,
+      "status": "INSUFFICIENT_GPX",
+      "sourceCount": 3,
+      "maximumCandidateMatches": 21,
+      "qualifiedIndependentSupporting": 0,
+      "commonUnmatched": [
+        {
+          "position": 1,
+          "nodeId": "node:2765d1f4878df36ed535",
+          "name": "環山部落",
+          "independentSourceGroups": 3,
+          "sourceIds": [
+            "gpx-a914ac2230a2979c",
+            "gpx-9e882ddf816aa034",
+            "gpx-dfca3c949702653c"
+          ],
+          "kind": "reference-endpoint-gap",
+          "meaning": "多來源未匹配的具體位置；可能是進出方式、變體、座標／角色或軌跡缺漏，不自動刪點。"
+        },
+        {
+          "position": 23,
+          "nodeId": "node:1cf8b3c84c8feaa7f234",
+          "name": "中興路口(66.55K)",
+          "independentSourceGroups": 3,
+          "sourceIds": [
+            "gpx-a914ac2230a2979c",
+            "gpx-9e882ddf816aa034",
+            "gpx-dfca3c949702653c"
+          ],
+          "kind": "reference-endpoint-gap",
+          "meaning": "多來源未匹配的具體位置；可能是進出方式、變體、座標／角色或軌跡缺漏，不自動刪點。"
+        }
+      ],
+      "sourceObservations": 24,
+      "issues": [
+        {
+          "code": "SOURCE_DIFFERENCE",
+          "severity": "info",
+          "message": "最新路線尚未存在於本機候選。"
+        },
+        {
+          "code": "MANUAL_REVIEW",
+          "severity": "data",
+          "message": "3 份來源共有 24 個局部差異訊號，保存在證據明細；不足以直接判定候選走法錯誤，未逐項要求人工修改。"
+        },
+        {
+          "code": "INSUFFICIENT_GPX",
+          "severity": "data",
+          "message": "已收錄 3 份，符合指定走法／完整性／品質的獨立支持組 0 組；門檻 3 組。"
+        }
+      ]
+    },
+    {
+      "routeId": "R066",
+      "name": "南三段（丹大東郡）",
+      "nodes": 30,
+      "status": "MANUAL_REVIEW",
+      "sourceCount": 3,
+      "maximumCandidateMatches": 30,
+      "qualifiedIndependentSupporting": 0,
+      "commonUnmatched": [],
+      "sourceObservations": 41,
+      "issues": [
+        {
+          "code": "INCOMPLETE_ROUTE",
+          "severity": "review",
+          "message": "Sheet 已明列完整性缺口：依健行筆記 2020 七日 GPX 行程及南三段路線文字，丹大→內嶺爾→義西→東巒→東郡→無雙方向成立；原 53→30。瑞穗林道至丹大及無雙至郡大林道無既有節點，東巒／東郡接線、烏達佩與天南可蘭峰／岔路亦未驗；目前僅核心片段。 已查公開行程/官方頁面或 GPX 頁面文字；未取得並逐點匹配 GPX 軌跡。"
+        },
+        {
+          "code": "SOURCE_DIFFERENCE",
+          "severity": "info",
+          "message": "本機候選 53 次經過；最新 Sheet 30 次。尚未同步，不代表 Sheet 有錯。"
+        },
+        {
+          "code": "MANUAL_REVIEW",
+          "severity": "data",
+          "message": "3 份來源共有 41 個局部差異訊號，保存在證據明細；不足以直接判定候選走法錯誤，未逐項要求人工修改。"
+        },
+        {
+          "code": "INSUFFICIENT_GPX",
+          "severity": "data",
+          "message": "已收錄 3 份，符合指定走法／完整性／品質的獨立支持組 0 組；門檻 3 組。"
+        }
+      ]
+    },
+    {
+      "routeId": "R077",
+      "name": "新康橫斷",
+      "nodes": 42,
+      "status": "INSUFFICIENT_GPX",
+      "sourceCount": 4,
+      "maximumCandidateMatches": 41,
+      "qualifiedIndependentSupporting": 0,
+      "commonUnmatched": [
+        {
+          "position": 10,
+          "nodeId": "shared:cw-v07-030",
+          "name": "嘉明湖",
+          "independentSourceGroups": 3,
+          "sourceIds": [
+            "gpx-d9e3f5b15b1332e2",
+            "gpx-6daf149998f4e35f",
+            "gpx-c03e007389d59561"
+          ],
+          "kind": "common-unmatched-interior",
+          "meaning": "多來源未匹配的具體位置；可能是進出方式、變體、座標／角色或軌跡缺漏，不自動刪點。"
+        }
+      ],
+      "sourceObservations": 60,
+      "issues": [
+        {
+          "code": "SOURCE_DIFFERENCE",
+          "severity": "info",
+          "message": "本機候選 60 次經過；最新 Sheet 42 次。尚未同步，不代表 Sheet 有錯。"
+        },
+        {
+          "code": "MANUAL_REVIEW",
+          "severity": "data",
+          "message": "4 份來源共有 60 個局部差異訊號，保存在證據明細；不足以直接判定候選走法錯誤，未逐項要求人工修改。"
+        },
+        {
+          "code": "INSUFFICIENT_GPX",
+          "severity": "data",
+          "message": "已收錄 4 份，符合指定走法／完整性／品質的獨立支持組 0 組；門檻 3 組。"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "unitTests": 19,
+    "relatedExistingTests": 39,
+    "browserAcceptance": "PASS; no page errors; 320/390/768/1280px; new route CSV, upload/dedup/rejection",
+    "notRun": [
+      "Full project CI",
+      "Physical phone",
+      "Other operating systems",
+      "Full GPX verification of all 60 expanded routes"
+    ],
+    "totalRelevantTests": 58
+  },
+  "provenance": {
+    "sheetSnapshotSha256": "22400843f2b9f04ad4cdef2fd8fc79f8e5d6b62e8637d065e29b65013e5d627e",
+    "snapshotPath": "data/route-validator/snapshots/sheet-20261124-corrected.json",
+    "capturedAt": "2026-11-24T12:14:10.870Z",
+    "spreadsheetId": "1Hfn-TT96JjGOnJXjNkoyWuCXrn-sw-pkuvACfLHSHVg",
+    "nodeAuthority": {
+      "spreadsheetId": "1qj9As7i-02V3MxdN1KuCtN_OkQAYYRHrimbxq6Jf5jk",
+      "sheetId": 102,
+      "sheet": "節點總表",
+      "path": "data/route-validator/snapshots/node-authority-20261124.json",
+      "sha256": "f91b3ab0381a255cc75412cb263fd4b796b222a382f7f2c1053f1f1fecc83fc4"
+    },
+    "correctionRef": "data/route-validator/node-id-corrections-20261124.json",
+    "graphDigest": "53c836ee9f34bce0192747e315d2560f1d2209e56ef6a84e16d2c1dd3d12991a",
+    "graphInputs": [
+      {
+        "path": "preview/data/routes/owner-reviewed/G02-6bd64eb7.json",
+        "sha256": "a43ff357b86832455a8bf84ff869246dd546a1606ecfe1c7541cdf8138b389c2"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G02-d1e06c0d.json",
+        "sha256": "251573388e091b7e988698cc25524063320b1dc54fe2bd35e0f3814b61e441f0"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G03-ca0bd50b.json",
+        "sha256": "26a236e1f7e5347467fef179e60e55c4419a798fe8428944d4276f950ded67a0"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G03-b3980295.json",
+        "sha256": "6a7f3c3eb63af03ec2f583f9f2a47554a053b925d27ba0f66011fa454236ba60"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G04.json",
+        "sha256": "c1925edcd2fc6312098add11f2e7314e744cc851415d11c9f192511a72aa5ca8"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G05.json",
+        "sha256": "bbd03d5a600497ddbc541e5c89aed86c5415eb4d2e4f022b32f1766748f18bd9"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G06.json",
+        "sha256": "dd43bfff0cac569dc37696053830dbe464e18e1243863ed9d11dfc5ced92faf4"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G07.json",
+        "sha256": "b8ffa1ba9149813a35a60bebb6e1a986522b426603d4f353233a4d4e2c6874c9"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G08-183e4516.json",
+        "sha256": "6cc51a7c1588fd54b7005780182da9bf2f36a877791d1ee1327482b7c3f26746"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G08-9b7416f5.json",
+        "sha256": "29a965738a4b0bc3c87d88af2dc68026f760d8f385d5b0692157291ce3f27d9c"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G09-cfb4c85c.json",
+        "sha256": "e67f8c29e1c00eb2c338963934b7f79a60101693ece71a8fcc3ddeca9253046f"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G09-19d020e9.json",
+        "sha256": "78af4b2e25fd2230edff50f5fa1578e13664ec6cdb4e29a9679c6b074e85e867"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G09-ee5545d1.json",
+        "sha256": "900580b943ffd01724775aad7d46ce1d0d22af11a35d88131dcbd9fb2a2ec648"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G10.json",
+        "sha256": "fe5bfe27cc8f428e077a097f3f8b23cde002085befb86e07d76f0b1a6a5e6768"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G11.json",
+        "sha256": "f3650cd2b8a9da0add69dbeccd31b5047b37b23b4e290ff978f5c17b02163c62"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G12.json",
+        "sha256": "bcdd8c02841b21dc51817f8e25f10d091c1a4ceb5f5325e995d6e09d6750b864"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G13.json",
+        "sha256": "6914d8af4ef45cc6cbdeb08ce1f57abbe12026efb24a799ef26bd7c77fdd6e41"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G14.json",
+        "sha256": "f1b364d6188f8e9919829dfbab4bdd7e782322081a28f1aa4305fe5ec3aa2bbb"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G15.json",
+        "sha256": "6280d18664e62957d9f939be0314ffae986a9fd7ae8a8222bc0e0bfd094a2060"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G16.json",
+        "sha256": "361b09f0388522ef81e4485d1e31d4522531b5a6501e4dc3d5bfb5cfed61f4f7"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G17.json",
+        "sha256": "19007e53c463112b3a54c24a649dcf1dd4f62b8b98f3ac7bc7d138d7e3dd57e7"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G18.json",
+        "sha256": "0cc2810d2a7c326b99949b119cb87ad39562329f0f6ae80569d04097904ceaed"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G19.json",
+        "sha256": "ec93fb5b9a525b229eec140819d28f12e9ac10f54ae1b8dc37aa3d0f96d88214"
+      },
+      {
+        "path": "preview/data/routes/owner-reviewed/G20.json",
+        "sha256": "cd3396db94b86cd1091c1c6d2d6fb3788d4eb123fda0a4d472fd6e6496ad69fe"
+      },
+      {
+        "path": "preview/data/geometry/planner-terrain-v1.json",
+        "sha256": "8627921bba1c68ef19176a4f27eb15c9393ec4c0b99e96eeabd6687379e3fadd"
+      },
+      {
+        "path": "data/staging/idea002/classic-routes.candidate.json",
+        "sha256": "9fde494eb5af48c596b45701ebfec7330500bf401e5a88cd0537e0fbcd733d66"
+      },
+      {
+        "path": "data/staging/idea002/decisions-20261120.json",
+        "sha256": "5f95d5ae98260cea95d575d00ef133fd7f6b0f31fe28409a339c0a015f46c90e"
+      },
+      {
+        "path": "data/transport-owner-reviewed.json",
+        "sha256": "4e57f4d8304b4bba186ce5f9cbc708620c2ec8a92577e4a38a0300ebc33bea77"
+      },
+      {
+        "path": "data/route-validator/snapshots/node-authority-20261124.json",
+        "sha256": "f91b3ab0381a255cc75412cb263fd4b796b222a382f7f2c1053f1f1fecc83fc4"
+      },
+      {
+        "path": "preview/data/unified-editor-manifest.json",
+        "sha256": "00bfbe8ebe9dd00be9f57e34ebeb4c3c9e5a6285a58c808337c09eff2427731d"
+      }
+    ],
+    "source": "Node ID 以使用者指定原始節點總表為基準；路網採目前 Preview 工作樹，逐檔雜湊鎖定，非新增官方核實",
+    "config": {
+      "nearMeters": 30,
+      "reviewMeters": 100,
+      "maxGapMeters": 500,
+      "minProgressMeters": 1,
+      "minIndependent": 3,
+      "endpointMeters": 150,
+      "maxCandidates": 256,
+      "maxChecks": 20000000,
+      "geometrySampleMeters": 50,
+      "geometryMaxMeters": 30,
+      "lengthToleranceFraction": 0.25,
+      "lengthToleranceMeters": 100,
+      "spreadsheetId": "1Hfn-TT96JjGOnJXjNkoyWuCXrn-sw-pkuvACfLHSHVg",
+      "sheetIds": {
+        "Routes_順序校核": 967124143,
+        "RouteNodes_順序校核": 1144715032
+      }
+    }
+  },
+  "limitations": [
+    "未自動覆寫 Google Sheets、候選編譯檔、全域 Node ID、時間、座標或正式版。",
+    "公開網頁的文字及 GPX 連結不等於已下載並匹配的軌跡。",
+    "只比較精確有向邊與來源 span；不靠最短路徑或直線補缺口。",
+    "有效獨立證據採保守去重；同作者、同來源、同形狀或近乎相同軌跡合併。",
+    "工具未替未觀測到的地點自動建立新 Node；缺少必要節點仍須有來源的路線定義支持。",
+    "本輪所有路線執行資料結構檢查；實際 GPX 驗證未達門檻者不得納入通過統計。"
+  ],
+  "reportGeneratedAt": "2026-11-24T12:58:49.381Z"
+}

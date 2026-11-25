@@ -1,3 +1,7 @@
+import {attachmentPath} from './network-attachment.js';
+import {classicGeometryMatch} from './classic-route-geometry.js';
+import {applyDemSnapshots} from './dem-profile.js';
+import {coordinateOf,manualWarning} from './path-editor.js';
 // Candidate geometry is deliberately separate from times, plan snapshots and routing.
 export function distanceMeters(a,b){
   const r=Math.PI/180,h=Math.sin((b[1]-a[1])*r/2)**2+Math.cos(a[1]*r)*Math.cos(b[1]*r)*Math.sin((b[0]-a[0])*r/2)**2;
@@ -33,17 +37,64 @@ export function resolveItineraryGeometry(days,data){
   days.forEach((day,dayIndex)=>{
     const items=(day.items||[]).filter(i=>i.type!=='rest'),features=[],gaps=[];
     for(const item of items){
-      const n=known.get(item.nodeId);
+      const n=item.type==='manual-location'&&item.coordinate?{nodeId:item.id,name:item.name,coordinate:item.coordinate,note:'使用者指定座標',coordinateMethod:manualWarning}:known.get(item.nodeId);
       const suppressed=['ignored','vehicle-only'].includes(n?.coordinatePolicy);
       const index=items.indexOf(item),isVehicle=e=>e?.travelMode==='vehicle'||e?.kind==='vehicle';
-      const vehicleOnly=(index===0||isVehicle(item.incoming))&&(index===items.length-1||isVehicle(items[index+1]?.incoming));
+      const vehicleOnly=items.length>1&&(index===0||isVehicle(item.incoming))&&(index===items.length-1||isVehicle(items[index+1]?.incoming));
       if(n?.coordinate&&!suppressed&&!vehicleOnly&&!result.waypoints.some(w=>w.nodeId===n.nodeId))result.waypoints.push(n);
       if(n&&!n.coordinate&&!suppressed&&!result.unlocated.some(w=>w.nodeId===n.nodeId))result.unlocated.push(n);
     }
     for(let i=0;i<items.length-1;){
       if(items[i+1].incoming?.travelMode==='vehicle'||items[i+1].incoming?.kind==='vehicle'){i++;continue;}
+      const a=items[i],b=items[i+1],edit=b.pathEdit?.fromItemId===a.id?b.pathEdit:null;
+      const ca=coordinateOf(a,data),cb=coordinateOf(b,data);
+      if(edit?.mode==='auto'&&!edit.controls.length&&edit.networkNodeIds?.length&&ca&&cb){
+        const ids=edit.networkNodeIds;
+        const temp={items:ids.map((nodeId,j)=>({id:'network-'+j,type:'location',nodeId,name:known.get(nodeId)?.name||nodeId,incoming:j?{kind:'official',fromNodeId:ids[j-1],toNodeId:nodeId}:null}))};
+        const network=resolveItineraryGeometry([temp],data).days[0];
+        const expectedA=a.type==='location'?a.nodeId:a.networkConnection?.nodeId,expectedB=b.type==='location'?b.nodeId:b.networkConnection?.nodeId;
+        if(ids[0]===expectedA&&ids.at(-1)===expectedB&&!network.gaps.length){
+          const addAttachment=(item,point,reverse)=>{
+            if(item.type==='location')return;
+            const binding=item.networkConnection,span=data.spans.find(s=>s.id===binding?.spanId);
+            if(!span)throw Error('連接路段來源不存在，請重新確認');
+            let coordinates=attachmentPath(point,span,binding.nodeId).coordinates;
+            if(reverse)coordinates=coordinates.slice().reverse();
+            features.push({manual:true,profile:null,sourceName:manualWarning+' 使用者確認連接參考路段 '+span.id,sourceUrl:span.sourceUrl||data.source.url,coordinates,distanceMeters:length(coordinates),fromItemId:a.id,toItemId:b.id,viaItemIds:[],dayIndex,from:a.name,to:b.name});
+          };
+          addAttachment(a,ca,false);
+          features.push(...network.features.map(f=>({...f,dayIndex,fromItemId:a.id,toItemId:b.id,viaItemIds:[]})));
+          addAttachment(b,cb,true);i++;continue;
+        }
+      }
+      if(edit?.osmSnapshot&&edit.mode==='straight'&&JSON.stringify(edit.shape?.map(p=>p.coordinate))===JSON.stringify(edit.osmSnapshot.shape)&&edit.osmSnapshot.coordinates.length>=2){
+        const coordinates=edit.osmSnapshot.coordinates;let walked=0;
+        const profile=coordinates.every(p=>Number.isFinite(p[2]))?coordinates.map((p,j)=>{if(j)walked+=distanceMeters(coordinates[j-1],p);return [walked,p[2]]}):null;
+        const feature=(points,profile,manual)=>({profile,manual,sourceName:manual?manualWarning:'OSM 2026-11-12；DEM 原頂點估算；非已核實步道',sourceUrl:edit.candidateSource?.url,fromItemId:a.id,toItemId:b.id,viaItemIds:[],dayIndex,from:a.name,to:b.name,coordinates:points,distanceMeters:length(points)});
+        if(ca&&cb){features.push(feature([ca,coordinates[0].slice(0,2)],null,true),feature(coordinates,profile,false),feature([coordinates.at(-1).slice(0,2),cb],null,true));i++;continue;}
+      }
+        if(edit?.intervals?.length&&JSON.stringify(edit.intervals.flatMap((p,j)=>p.coordinates.slice(j?1:0)))===JSON.stringify(edit.shape?.map(p=>p.coordinate))){
+          for(const part of edit.intervals){
+            const add=(coordinates,manual,unconfirmedAccess=false,profile=null)=>features.push({profile,manual,unconfirmedAccess,intervalKey:part.key,failureReason:part.failureReason||edit.routingError||null,sourceName:manual?(unconfirmedAccess?'未確認接入線。':'')+manualWarning:part.sourceName||'OSM 路網規劃；非已核實步道',sourceUrl:part.sourceUrl||edit.candidateSource?.url||null,fromItemId:a.id,toItemId:b.id,viaItemIds:[],dayIndex,from:a.name,to:b.name,coordinates,distanceMeters:length(coordinates)});
+            if(part.network&&part.accessSegments!==false){const first=part.startAccess!==false,last=part.endAccess!==false,network=part.coordinates.slice(first?1:0,last?-1:undefined);if(first)add(part.coordinates.slice(0,2),true,true);if(network.length>=2)add(network,false,false,part.networkProfile||null);if(last&&(!first||part.coordinates.length>2))add(part.coordinates.slice(-2),true,true);}else add(part.coordinates,!part.network,false,part.networkProfile||null);
+          }i++;continue;
+        }
+        const explicit=edit&&(edit.mode==='straight'||edit.controls.length);
+      const fallback=b.incoming?.kind==='manual'&&b.incoming.fromId===a.id&&b.incoming.toId===b.id&&b.incoming.connectionStatus!=='owner-confirmed';
+      if((explicit||fallback)&&ca&&cb){
+        const coordinates=(edit?.shape?.length?edit.shape.map(p=>p.coordinate):[ca,...(edit?.controls||[]).map(c=>c.coordinate),cb]).map(p=>[...p]);
+        features.push({profile:null,manual:true,sourceName:manualWarning+(edit?.candidateSource?' 參考線形：'+edit.candidateSource.name+'（'+edit.candidateSource.spanId+'）':''),sourceUrl:edit?.candidateSource?.url||null,fromItemId:a.id,toItemId:b.id,viaItemIds:[],dayIndex,from:a.name,to:b.name,coordinates,distanceMeters:length(coordinates)});i++;continue;
+      }
+      const pinned=classicGeometryMatch(items,i);
+      if(pinned?.invalid){const gap={dayIndex,from:a.name,to:b.name,reason:'已保存路段被分天或編輯切開，需核對來源線形'};gaps.push(gap);result.gaps.push(gap);i++;continue;}
+      if(pinned){
+        const s=pinned.saved,coordinates=s.coordinates.map(p=>[...p]);
+        features.push({profile:s.profile?.map(p=>[...p])||null,spanId:s.spanId,reverse:s.reverse,sourceName:s.sourceName,sourceUrl:s.sourceUrl,intermediateCoordinatesUnknown:s.intermediateCoordinatesUnknown,fromItemId:a.id,toItemId:items[i+pinned.count-1].id,viaItemIds:items.slice(i+1,i+pinned.count-1).map(x=>x.id),dayIndex,from:a.name,to:items[i+pinned.count-1].name,coordinates,distanceMeters:length(coordinates)});
+        i+=pinned.count-1;continue;
+      }
       let match=null;
       for(const span of data.spans){
+        if(a.classicRoute?.geometrySpanId&&span.id!==a.classicRoute.geometrySpanId)continue;
         for(const reverse of [false,true]){
           if(reverse&&!span.reversible)continue;
           const full=[span.fromId,...(span.viaNodeIds||[]),span.toId];
@@ -75,9 +126,10 @@ export function resolveItineraryGeometry(days,data){
         gaps.push(gap);result.gaps.push(gap);i++;
       }
     }
+    applyDemSnapshots(items,features);
     const distance=features.reduce((n,f)=>n+f.distanceMeters,0);
     const metrics=terrainMetrics(features);
-    result.days.push({dayIndex,features,gaps,distanceMeters:distance,...metrics});result.distanceMeters+=distance;
+    result.days.push({dayIndex,features,gaps,profileNodes:itineraryProfileNodes(items,features,known,data),distanceMeters:distance,...metrics});result.distanceMeters+=distance;
   });
   return result;
 }
@@ -93,7 +145,7 @@ export function geometryToGpx(resolved,data,{allowPartial=false,allowWaypointsOn
   for(const n of resolved.waypoints)out+=`<wpt lat="${n.coordinate[1]}" lon="${n.coordinate[0]}">${Number.isFinite(n.elevationMeters)?`<ele>${n.elevationMeters}</ele>`:''}<name>${xml(n.name)}（候選）</name><desc>${xml([n.coordinateSource?.url||n.osmRef||'使用者指定位置',n.coordinateMethod,n.note].filter(Boolean).join('；'))}</desc></wpt>\n`;
   for(const day of resolved.days){
     if(!day.features.length)continue;
-    out+=`<trk><name>Day ${day.dayIndex+1}${day.gaps.length?'（部分路徑）':''}</name><desc>${xml(desc+' 路段來源：'+[...new Set(day.features.map(f=>f.sourceName+' '+(f.sourceUrl||'')))].join('；'))}</desc>\n`;
+    out+=`<trk><name>Day ${day.dayIndex+1}${day.gaps.length?'（部分路徑）':''}</name><desc>${xml(desc+' 路段來源：'+[...new Set(day.features.map(f=>f.sourceName+' '+(f.sourceUrl||'')+(f.demSource?' DEM: '+f.demSource.url+' SHA256 '+f.demSource.archiveSha256:'')))].join('；'))}</desc>\n`;
     // Each source span is a separate segment. Gaps and days never gain bridges.
     for(const f of day.features){
       let walked=0,pi=0;
@@ -103,7 +155,7 @@ export function geometryToGpx(resolved,data,{allowPartial=false,allowWaypointsOn
         if(f.profile?.length){
           while(pi<f.profile.length-2&&f.profile[pi+1][0]<walked)pi++;
           const [da,za]=f.profile[pi],[db,zb]=f.profile[Math.min(pi+1,f.profile.length-1)];
-          z=za+(zb-za)*(db===da?0:Math.max(0,Math.min(1,(walked-da)/(db-da))));
+          z=Number.isFinite(za)&&Number.isFinite(zb)?za+(zb-za)*(db===da?0:Math.max(0,Math.min(1,(walked-da)/(db-da)))):null;
         }
         return `<trkpt lat="${p[1]}" lon="${p[0]}">${Number.isFinite(z)?`<ele>${z.toFixed(1)}</ele>`:''}</trkpt>`;
       }).join('\n')+'\n</trkseg>\n';
@@ -122,10 +174,39 @@ export function terrainMetrics(features){
 export function formatTerrain(value,{partial=false}={}){
   if(!value)return '地形資料未收錄';
   const m=value.features?value: {...value,...terrainMetrics([value])};
-  return `${partial?'已知部分':'約'} ${(m.distanceMeters/1000).toFixed(2)} km · 上升 ${m.ascentMeters===null?'未取得':Math.round(m.ascentMeters)+' m'} · 下降 ${m.descentMeters===null?'未取得':Math.round(m.descentMeters)+' m'}`;
+  return `${m.features?.some(f=>f.manual)||m.manual?'含手動水平距離・':''}${partial?'已知部分':'約'} ${(m.distanceMeters/1000).toFixed(2)} km · 上升 ${m.ascentMeters===null?'未取得':Math.round(m.ascentMeters)+' m'} · 下降 ${m.descentMeters===null?'未取得':Math.round(m.descentMeters)+' m'}`;
 }
 export function dayTerrain(day,data){return data?resolveItineraryGeometry([day],data).days[0]:null}
+// Features describe source pieces (including access legs), not itinerary visits.
+// Bind labels by item identity and actual source boundaries, never feature names.
+function itineraryProfileNodes(items,features,known,data){
+ const positions=new Map();let offset=0;
+ function put(id,distance,coordinate,elevation){const list=positions.get(id)||[];list.push({distance,coordinate,elevation});positions.set(id,list);}
+ for(let i=0;i<features.length;i++){
+  const f=features[i],before=features[i-1],after=features[i+1],sameLeg=x=>x?.fromItemId===f.fromItemId&&x?.toItemId===f.toItemId;
+  if(!sameLeg(before))put(f.fromItemId,offset,f.coordinates[0],f.profile?.[0]?.[1]);
+  if(!sameLeg(after))put(f.toItemId,offset+f.distanceMeters,f.coordinates.at(-1),f.profile?.at(-1)?.[1]);
+  // A zero-length access leg may have no DEM, while its coincident network
+  // vertex does. Keep these samples only at the true itinerary boundary.
+  if(sameLeg(before)&&length(before.coordinates)<.01)put(f.fromItemId,offset,f.coordinates[0],f.profile?.[0]?.[1]);
+  if(sameLeg(after)&&length(after.coordinates)<.01)put(f.toItemId,offset+f.distanceMeters,f.coordinates.at(-1),f.profile?.at(-1)?.[1]);
+  let cursor=0;
+  for(const id of f.viaItemIds||[]){
+   if(f.intermediateCoordinatesUnknown)continue;
+   const item=items.find(x=>x.id===id),node=known.get(item?.nodeId),anchor=node?.anchor||node?.coordinate;
+   if(!anchor)continue;const at=f.coordinates.findIndex((p,j)=>j>=cursor&&same(p,anchor));if(at<0)continue;cursor=at;
+   put(id,offset+length(f.coordinates.slice(0,at+1)),f.coordinates[at],null);
+  }
+  offset+=f.distanceMeters;
+ }
+ return items.filter(item=>item.showInTable!==false).map(item=>{
+  const candidates=positions.get(item.id)||[],node=item.type==='location'?known.get(item.nodeId):null,coordinate=coordinateOf(item,data),position=candidates[0];
+  const sample=candidates.find(p=>Number.isFinite(p.elevation)&&coordinate&&distanceMeters(coordinate,p.coordinate)<.5);
+  return {itemId:item.id,name:item.name,distanceMeters:position?.distance??null,elevationMeters:Number.isFinite(node?.elevationMeters)?node.elevationMeters:sample?.elevation??null};
+ });
+}
 export function profileNodeRows(day){
+ if(Array.isArray(day.profileNodes))return day.profileNodes.map(n=>({...n}));
  let offset=0,rows=[];
  for(const f of day.features){
   if(f.profile?.length){
@@ -137,7 +218,7 @@ export function profileNodeRows(day){
  }
  return rows;
 }
-export const terrainDayColor=index=>['#b54b22','#146e91','#7955a5','#318354','#9b326c','#806000','#3455b0','#a43b3b','#007970','#62533c'][(index||0)%10];
+export const terrainDayColor=index=>['#0072b2','#d55e00','#cc79a7','#56b4e9','#8b5a00','#009e73','#7d3c98','#3b3b3b','#c49400','#a04060'][(index||0)%10];
 // Four bounded lanes; dense clusters use a compact numbered key instead.
 export function layoutProfileLabels(nodes,total,curve=[]){
  const boxes=[];
@@ -157,31 +238,31 @@ export function layoutProfileLabels(nodes,total,curve=[]){
  return {numbered:false,boxes};
 }
 export function renderTerrainProfile(day){
- const features=day.features.filter(f=>f.profile?.length);if(!features.length)return '<p>沒有可繪製的高度資料。</p>';
- const zs=features.flatMap(f=>f.profile.map(p=>p[1])),lo=Math.floor(Math.min(...zs)/100)*100,hi=Math.max(lo+100,Math.ceil(Math.max(...zs)/100)*100),total=day.distanceMeters||1;
- const X=d=>60+700*d/total,Y=z=>300-200*(z-lo)/(hi-lo),nodes=profileNodeRows(day);
- let curveOffset=0;const curve=[];for(const f of day.features){if(f.profile)for(const [d,z] of f.profile)curve.push({x:X(curveOffset+d),y:Y(z)});curveOffset+=f.distanceMeters}
- const color=terrainDayColor(day.dayIndex),layout=layoutProfileLabels(nodes.map(n=>({...n,plotY:Y(n.elevationMeters)})),total,curve);
+ const features=day.features.filter(f=>f.profile?.some(p=>Number.isFinite(p[1])));if(!features.length)return '<p>沒有可繪製的高度資料。</p>';
+ const zs=[...features.flatMap(f=>f.profile.map(p=>p[1]).filter(Number.isFinite)),...profileNodeRows(day).map(n=>n.elevationMeters).filter(Number.isFinite)],lo=Math.floor(zs.reduce((a,b)=>Math.min(a,b),Infinity)/100)*100,hi=Math.max(lo+100,Math.ceil(zs.reduce((a,b)=>Math.max(a,b),-Infinity)/100)*100),total=day.distanceMeters||1;
+ const X=d=>60+700*d/total,Y=z=>300-200*(z-lo)/(hi-lo),allNodes=profileNodeRows(day),nodes=allNodes.filter(n=>Number.isFinite(n.distanceMeters));
+ let curveOffset=0;const curve=[];for(const f of day.features){if(f.profile)for(const [d,z] of f.profile)if(Number.isFinite(z))curve.push({x:X(curveOffset+d),y:Y(z)});curveOffset+=f.distanceMeters}
+ const color=terrainDayColor(day.dayIndex),layout=layoutProfileLabels(nodes.map(n=>({...n,plotY:Number.isFinite(n.elevationMeters)?Y(n.elevationMeters):300})),total,curve);
  let offset=0,paths='',grid='',labels='',marks='';const boxes=layout.boxes;
  const heightStep=Math.max(100,Math.ceil((hi-lo)/500)*100),distanceStep=Math.max(.2,Math.ceil(total/1000/6*5)/5);
  for(let z=lo;z<=hi;z+=heightStep){const y=Y(z).toFixed(1);grid+=`<path d="M60 ${y}H760"/><text stroke="none" x="4" y="${Number(y)+4}">${z} m</text>`}
  for(let km=0;km<=total/1000;km+=distanceStep){const x=X(km*1000).toFixed(1);grid+=`<path d="M${x} 100V300"/><text stroke="none" x="${x}" y="322" text-anchor="middle">${km.toFixed(1)}</text>`}
- for(const f of day.features){if(f.profile){const points=f.profile.map(([d,z])=>`${X(offset+d).toFixed(1)},${Y(z).toFixed(1)}`).join(' ');paths+=`<polygon points="${X(offset).toFixed(1)},300 ${points} ${X(offset+f.distanceMeters).toFixed(1)},300" fill="${color}" fill-opacity=".12"/><polyline points="${points}" fill="none" stroke="${color}" stroke-linejoin="round" stroke-width="2.5"><title>${xml(f.from)} → ${xml(f.to)}</title></polyline>`}offset+=f.distanceMeters}
+ for(const f of day.features){if(f.profile){const pieces=[];let piece=[];for(const [d,z] of f.profile){if(Number.isFinite(z))piece.push([d,z]);else if(piece.length){pieces.push(piece);piece=[];}}if(piece.length)pieces.push(piece);for(const piece of pieces){const points=piece.map(([d,z])=>`${X(offset+d).toFixed(1)},${Y(z).toFixed(1)}`).join(' ');paths+=`<polygon points="${X(offset+piece[0][0]).toFixed(1)},300 ${points} ${X(offset+piece.at(-1)[0]).toFixed(1)},300" fill="${color}" fill-opacity=".12"/><polyline points="${points}" fill="none" stroke="${color}" stroke-linejoin="round" stroke-width="2.5"><title>${xml(f.from)} → ${xml(f.to)}</title></polyline>`}}offset+=f.distanceMeters}
  for(const [i,n] of nodes.entries()){
-  const x=X(n.distanceMeters),y=Y(n.elevationMeters),distance=(n.distanceMeters/1000).toFixed(2),height=Math.round(n.elevationMeters).toLocaleString('en-US');
-  marks+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4" fill="${color}" stroke="#fff" stroke-width="1.5"><title>${xml(n.name)}：${distance} km，約 ${height} m</title></circle>`;
+  const x=X(n.distanceMeters),knownHeight=Number.isFinite(n.elevationMeters),y=knownHeight?Y(n.elevationMeters):300,distance=(n.distanceMeters/1000).toFixed(2),height=knownHeight?'約 '+Math.round(n.elevationMeters).toLocaleString('en-US')+' m':'高度未取得';
+  marks+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4" fill="${knownHeight?color:'#fff'}" stroke="${knownHeight?'#fff':color}" stroke-width="1.5"><title>${xml(n.name)}：${distance} km，${height}</title></circle>`;
   if(layout.numbered){
    const col=i%3,row=Math.floor(i/3),lx=36+col*252,ly=348+row*38;
-   labels+=`<g class="profile-node-label"><text x="${lx}" y="${ly}" font-size="12" fill="#344b3d"><tspan font-weight="650">${i+1}. ${xml(n.name)}</tspan><tspan x="${lx}" dy="15" font-size="11">${distance} km · 約 ${height} m</tspan></text></g>`;
+   labels+=`<g class="profile-node-label"><text x="${lx}" y="${ly}" font-size="12" fill="#344b3d"><tspan font-weight="650">${i+1}. ${xml(n.name)}</tspan><tspan x="${lx}" dy="15" font-size="11">${distance} km · ${height}</tspan></text></g>`;
    marks+=`<text x="${x.toFixed(1)}" y="${(y-12-(i%3)*15).toFixed(1)}" text-anchor="middle" font-size="10" font-weight="700" fill="${color}" stroke="#fff" stroke-width="3" paint-order="stroke">${i+1}</text>`;
   }else{
    const box=boxes[i],above=box.y+box.h<y,tx=(box.x+8).toFixed(1),ty=(box.y+13).toFixed(1);
-   labels+=`<g class="profile-node-label"><path d="M${x.toFixed(1)} ${y.toFixed(1)}L${Math.max(box.x,Math.min(box.x+box.w,x)).toFixed(1)} ${(above?box.y+box.h:box.y).toFixed(1)}" stroke="#a6b7af" fill="none"/><rect x="${box.x.toFixed(1)}" y="${box.y}" width="${box.w}" height="36" rx="5" fill="#fff" fill-opacity=".96" stroke="#dce6dc"/><text x="${tx}" y="${ty}" fill="#344b3d" font-size="12"><tspan x="${tx}" font-weight="650">${xml(n.name)}</tspan><tspan x="${tx}" dy="16" font-size="10.5">${distance} km · 約 ${height} m</tspan></text></g>`;
+   labels+=`<g class="profile-node-label"><path d="M${x.toFixed(1)} ${y.toFixed(1)}L${Math.max(box.x,Math.min(box.x+box.w,x)).toFixed(1)} ${(above?box.y+box.h:box.y).toFixed(1)}" stroke="#a6b7af" fill="none"/><rect x="${box.x.toFixed(1)}" y="${box.y}" width="${box.w}" height="36" rx="5" fill="#fff" fill-opacity=".96" stroke="#dce6dc"/><text x="${tx}" y="${ty}" fill="#344b3d" font-size="12"><tspan x="${tx}" font-weight="650">${xml(n.name)}</tspan><tspan x="${tx}" dy="16" font-size="10.5">${distance} km · ${height}</tspan></text></g>`;
   }
  }
  const top=-14,compact=nodes.length<=3&&!layout.numbered,chartShift=compact?45:0;
  const bottom=(layout.numbered?Math.max(340,348+Math.ceil(nodes.length/3)*38):432)-chartShift;
  const titleTop=-80,dayNumber=(day.dayIndex||0)+1;
- const summary=`${(day.distanceMeters/1000).toFixed(2)} km   ↗ ${Math.round(day.ascentMeters||0)} m   ↘ ${Math.round(day.descentMeters||0)} m${day.gaps.length?'（已知部分）':''}`;
- return `<section class="profile-card"><div class="profile-export-actions"><button type="button" class="secondary" data-profile-export="copy">複製圖片</button><button type="button" class="secondary" data-profile-export="download">下載 PNG</button><span role="status" data-profile-export-status></span></div><div class="profile-chart-scroll"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 ${titleTop} 800 ${bottom-titleTop}" role="img" aria-label="Day ${dayNumber} 高度剖面圖" style="font-family:system-ui,'Noto Sans TC',sans-serif"><rect x="0" y="${titleTop}" width="800" height="${bottom-titleTop}" rx="12" fill="#fff"/><rect x="20" y="${top-42}" width="5" height="32" rx="2" fill="${color}"/><text x="36" y="${top-24}" font-size="18" font-weight="700" fill="#243d35">Day ${dayNumber} · 高度剖面</text><text x="36" y="${top-4}" font-size="12" fill="#53665a">${summary}</text><g transform="translate(0,-${chartShift})"><g class="profile-grid" stroke="#e5ebe9" stroke-width="1" fill="#60736b" font-size="12">${grid}</g><path d="M60 100V300H760" fill="none" stroke="#89988c"/>${paths}${labels}${marks}<text x="780" y="322" fill="#60736b" font-size="11">km</text></g><text x="760" y="${bottom-3}" text-anchor="end" font-size="10" fill="#60736b">Mountain Planner · DEM 估算${day.gaps.length?' · 僅計已知部分':''}</text></svg></div><p>${day.gaps.length?'橫軸為已知路徑累計距離；缺漏未計入，各段分開繪製。':'橫軸：沿山徑累計距離；縱軸與節點海拔：DEM 估算。'}${day.features.some(f=>f.intermediateCoordinatesUnknown)?' 含跨未定位節點的連續參考線形；中間節點不標示推估位置。':''}</p></section>`;
+ const summary=`${(day.distanceMeters/1000).toFixed(2)} km   ↗ ${(day.ascentMeters==null?'無資料':Math.round(day.ascentMeters))} m   ↘ ${(day.descentMeters==null?'無資料':Math.round(day.descentMeters))} m${day.gaps.length?'（已知部分）':''}`;
+ return `<section class="profile-card"><div class="profile-export-actions"><button type="button" class="secondary" data-profile-export="copy">複製圖片</button><button type="button" class="secondary" data-profile-export="download">下載 PNG</button><span role="status" data-profile-export-status></span></div><div class="profile-chart-scroll"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 ${titleTop} 800 ${bottom-titleTop}" role="img" aria-label="Day ${dayNumber} 高度剖面圖" style="font-family:system-ui,'Noto Sans TC',sans-serif"><rect x="0" y="${titleTop}" width="800" height="${bottom-titleTop}" rx="12" fill="#fff"/><rect x="20" y="${top-42}" width="5" height="32" rx="2" fill="${color}"/><text x="36" y="${top-24}" font-size="18" font-weight="700" fill="#243d35">Day ${dayNumber} · 高度剖面</text><text x="36" y="${top-4}" font-size="12" fill="#53665a">${summary}</text><g transform="translate(0,-${chartShift})"><g class="profile-grid" stroke="#e5ebe9" stroke-width="1" fill="#60736b" font-size="12">${grid}</g><path d="M60 100V300H760" fill="none" stroke="#89988c"/>${paths}${labels}${marks}<text x="780" y="322" fill="#60736b" font-size="11">km</text></g><text x="760" y="${bottom-3}" text-anchor="end" font-size="10" fill="#60736b">Mountain Planner · DEM 估算${day.gaps.length?' · 僅計已知部分':''}</text></svg></div><p>${day.gaps.length?'橫軸為已知路徑累計距離；缺漏未計入，各段分開繪製。':'橫軸：路徑累計水平距離；手動線不代表實際步行距離。縱軸：沿線 DEM 估算；節點海拔使用該節點已取得的 DEM 或重合線形資料。'}${nodes.some(n=>!Number.isFinite(n.elevationMeters))?' 空心點只標示里程，並非零海拔；高度未取得。':''}${allNodes.some(n=>!Number.isFinite(n.distanceMeters))?' 未能定位於線形的行程點：'+allNodes.filter(n=>!Number.isFinite(n.distanceMeters)).map(n=>xml(n.name)).join('、')+'；不推估位置。':''}${day.features.some(f=>f.intermediateCoordinatesUnknown)?' 含跨未定位節點的連續參考線形；中間節點不標示推估位置。':''}</p></section>`;
 }
