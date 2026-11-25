@@ -32,7 +32,7 @@ test('歷史60條核對以當時候選版本重現；現行版本不能沿用舊
   const legacySha256=hash(JSON.stringify(legacy,null,2)+'\n');
   assert.equal(legacySha256,JSON.parse(readFileSync(resolve(ROOT,'data/staging/idea002/classic-sources-20261125.json'))).sourceCatalogSha256);
   // Recreate the exact historical catalog input, leaving current data untouched.
-  project.catalog=legacy;project.inputs=project.inputs.map(i=>i.path==='data/staging/idea002/classic-routes.candidate.json'?{...i,sha256:legacySha256}:i);project.digest=hash(project.inputs);
+  project.catalog=legacy;project.inputs=project.inputs.map(i=>i.path==='data/staging/idea002/classic-routes.candidate.json'?{...i,sha256:legacySha256}:i.path==='data/route-validator/snapshots/node-authority-20261124.json'?{...i,path:'.route-validator/node-authority.json'}:i);project.digest=hash(project.inputs);
   const r=buildReview({project}),snapshot=JSON.parse(readFileSync(resolve(ROOT,'data/route-validator/snapshots/sheet-20261125.json')));
   assert.equal(r.results.length,60);assert.equal(new Set(r.results.map(r=>r.routeId)).size,60);
   assert.equal(r.summary.validOccurrences,1400);assert.equal(r.unexpanded.length,26);assert.equal(r.excluded.length,13);
