@@ -1,0 +1,36 @@
+{
+  "status": "APPLIED_AND_READBACK_VERIFIED",
+  "verifiedAt": "2026-11-25T02:11:07.782Z",
+  "spreadsheetId": "1Hfn-TT96JjGOnJXjNkoyWuCXrn-sw-pkuvACfLHSHVg",
+  "sheetIds": [
+    967124143,
+    1144715032
+  ],
+  "snapshot": "data/route-validator/snapshots/sheet-20261125-round2-applied.json",
+  "snapshotSha256": "39390ad721d27eace670ca8afbd99bd8fc2604533afe6f59bb5944f03c9b4cc6",
+  "checkedCells": 23540,
+  "formulas": 2035,
+  "checkboxValidations": 2988,
+  "notes": 12,
+  "formulaErrors": 0,
+  "counts": {
+    "active": 1470,
+    "excluded": 24,
+    "totalNodeRows": 1494,
+    "importanceChanges": 98,
+    "sequenceChanged": 9
+  },
+  "routeIdsChanged": [
+    "R027",
+    "R028",
+    "R031",
+    "R057",
+    "R058",
+    "R069",
+    "R070",
+    "R072",
+    "R073"
+  ],
+  "historicalSheetsModified": false,
+  "formalProjectDataModified": false
+}

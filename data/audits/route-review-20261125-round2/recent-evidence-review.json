@@ -1,0 +1,925 @@
+{
+  "generatedAt": "2026-11-25T02:37:54.608Z",
+  "snapshotSha256": "39390ad721d27eace670ca8afbd99bd8fc2604533afe6f59bb5944f03c9b4cc6",
+  "acquisitions": 12,
+  "uniqueAcquiredFiles": 11,
+  "results": [
+    {
+      "routeId": "R027",
+      "name": "雪山西稜",
+      "interpretation": "兩份近期不同作者均未匹配火石山下營地、弓水營地；先核對座標與支線，不能直接刪點。",
+      "status": "RECENT_CROSS_CHECK_WITH_LIMITATIONS_NOT_ROUTE_PASS",
+      "sources": [
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6161659",
+          "author": "水躍魚登山隊",
+          "sha256": "a38ce5eede2ef9bfe21905ec4fedef8a64fe5305a55c745405dc88e258f7bdda",
+          "recency": {
+            "status": "RECENT_REFERENCE",
+            "date": "2026-10-15",
+            "assessmentDate": "2026-11-25",
+            "ageDays": 41,
+            "eligible": true,
+            "reason": "日期符合優先範圍；仍需獨立來源、完整性、變體及模式檢查"
+          },
+          "direction": "forward",
+          "matched": 31,
+          "total": 35,
+          "missing": [
+            {
+              "position": 14,
+              "nodeId": "node:1e99056a3627a036f32a",
+              "name": "火石山下營地"
+            },
+            {
+              "position": 17,
+              "nodeId": "node:60fb1b5f65ba3b9a71d0",
+              "name": "弓水營地"
+            },
+            {
+              "position": 34,
+              "nodeId": "node:bf944315a8814addbcd8",
+              "name": "4K國家公園碑"
+            },
+            {
+              "position": 35,
+              "nodeId": "node:85687363d4e92172c5af",
+              "name": "小雪山遊客中心"
+            }
+          ],
+          "warnings": [
+            {
+              "code": "TRACK_GAP",
+              "meters": 963.7,
+              "point": 6754
+            },
+            {
+              "code": "TRACK_GAP",
+              "meters": 1478.5,
+              "point": 6784
+            },
+            {
+              "code": "TRACK_GAP",
+              "meters": 534.4,
+              "point": 6790
+            },
+            {
+              "code": "TRACK_GAP",
+              "meters": 521.9,
+              "point": 6810
+            },
+            {
+              "code": "TRACK_GAP",
+              "meters": 889.8,
+              "point": 6857
+            },
+            {
+              "code": "TRACK_GAP",
+              "meters": 1969.2,
+              "point": 8045
+            },
+            {
+              "code": "TRACK_GAP",
+              "meters": 794.9,
+              "point": 8059
+            },
+            {
+              "code": "TRACK_GAP",
+              "meters": 897,
+              "point": 8090
+            },
+            {
+              "code": "TRACK_GAP",
+              "meters": 1006.7,
+              "point": 8257
+            }
+          ],
+          "segmentCrossings": 5
+        },
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6114289",
+          "author": "MikeYeh",
+          "sha256": "36598a212db8ee3252ba0be6273f4f2881abfbf88007bd09dd94c81d4dde93c2",
+          "recency": {
+            "status": "RECENT_REFERENCE",
+            "date": "2026-10-08",
+            "assessmentDate": "2026-11-25",
+            "ageDays": 48,
+            "eligible": true,
+            "reason": "日期符合優先範圍；仍需獨立來源、完整性、變體及模式檢查"
+          },
+          "direction": "forward",
+          "matched": 33,
+          "total": 35,
+          "missing": [
+            {
+              "position": 14,
+              "nodeId": "node:1e99056a3627a036f32a",
+              "name": "火石山下營地"
+            },
+            {
+              "position": 17,
+              "nodeId": "node:60fb1b5f65ba3b9a71d0",
+              "name": "弓水營地"
+            }
+          ],
+          "warnings": [
+            {
+              "code": "SUSPECT_VEHICLE_OR_GPS",
+              "count": 3
+            }
+          ],
+          "segmentCrossings": 0
+        }
+      ]
+    },
+    {
+      "routeId": "R057",
+      "name": "奇萊北壁下屏風",
+      "interpretation": "順向與逆向兩位作者均可依序匹配目前16次經過；仍未證明岩洞、雙塔等缺少獨立Node ID的重要地標，不能稱全程完整。",
+      "status": "RECENT_CROSS_CHECK_WITH_LIMITATIONS_NOT_ROUTE_PASS",
+      "sources": [
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6053878",
+          "author": "Chenling Hsu",
+          "sha256": "06cf0fc3d0c390bb4b007b6126c58fd1bb52d7b982fdcd66ef2562672dd4c70e",
+          "recency": {
+            "status": "RECENT_REFERENCE",
+            "date": "2026-06-19",
+            "assessmentDate": "2026-11-25",
+            "ageDays": 159,
+            "eligible": true,
+            "reason": "日期符合優先範圍；仍需獨立來源、完整性、變體及模式檢查"
+          },
+          "direction": "forward",
+          "matched": 16,
+          "total": 16,
+          "missing": [],
+          "warnings": [],
+          "segmentCrossings": 0
+        },
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6008189",
+          "author": "pinky",
+          "sha256": "2ac3b6853d010e13a7e79fe6af24db0ff2b38d2bb9a6ff4e0a8bd9384874038b",
+          "recency": {
+            "status": "RECENT_REFERENCE",
+            "date": "2026-09-18",
+            "assessmentDate": "2026-11-25",
+            "ageDays": 68,
+            "eligible": true,
+            "reason": "日期符合優先範圍；仍需獨立來源、完整性、變體及模式檢查"
+          },
+          "direction": "reverse",
+          "matched": 16,
+          "total": 16,
+          "missing": [],
+          "warnings": [
+            {
+              "code": "MULTI_SEGMENT",
+              "count": 2
+            },
+            {
+              "code": "SUSPECT_VEHICLE_OR_GPS",
+              "count": 1
+            }
+          ],
+          "segmentCrossings": 1
+        }
+      ]
+    },
+    {
+      "routeId": "R064",
+      "name": "六順山七彩湖",
+      "interpretation": "兩份行程進出不同，不能當同一完整變體。保留使用者已改序列，不因單份未匹配回程就刪除回程。",
+      "status": "RECENT_CROSS_CHECK_WITH_LIMITATIONS_NOT_ROUTE_PASS",
+      "sources": [
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=5352731",
+          "author": "Vincent",
+          "sha256": "19299654b7a8f3bb1ae5cad49ab5a5381957db07c46197c17c42e5667e79db8c",
+          "recency": {
+            "status": "RECENT_REFERENCE",
+            "date": "2026-02-19",
+            "assessmentDate": "2026-11-25",
+            "ageDays": 279,
+            "eligible": true,
+            "reason": "日期符合優先範圍；仍需獨立來源、完整性、變體及模式檢查"
+          },
+          "direction": "forward",
+          "matched": 5,
+          "total": 7,
+          "missing": [
+            {
+              "position": 6,
+              "nodeId": "g14-007",
+              "name": "2897公尺峰"
+            },
+            {
+              "position": 7,
+              "nodeId": "g14-022",
+              "name": "林道舊登山口"
+            }
+          ],
+          "warnings": [
+            {
+              "code": "MULTI_SEGMENT",
+              "count": 3
+            },
+            {
+              "code": "SUSPECT_VEHICLE_OR_GPS",
+              "count": 5
+            }
+          ],
+          "segmentCrossings": 0
+        },
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=2918540",
+          "author": "小楊小儀",
+          "sha256": "9512a26c4709da3ca1b0ab55099ff53f1baaee8c3d6e1b6011016e94931f5e64",
+          "recency": {
+            "status": "RECENT_REFERENCE",
+            "date": "2024-02-24",
+            "assessmentDate": "2026-11-25",
+            "ageDays": 1005,
+            "eligible": true,
+            "reason": "日期符合優先範圍；仍需獨立來源、完整性、變體及模式檢查"
+          },
+          "direction": "reverse",
+          "matched": 7,
+          "total": 7,
+          "missing": [],
+          "warnings": [],
+          "segmentCrossings": 0
+        }
+      ]
+    },
+    {
+      "routeId": "R069",
+      "name": "馬博橫斷",
+      "interpretation": "兩位作者進出變體不同，只比較共同路段。兩份均未佐證17K橋至16.5K終點；保留指定終點，此段不能宣稱GPX完整驗證。",
+      "status": "RECENT_CROSS_CHECK_WITH_LIMITATIONS_NOT_ROUTE_PASS",
+      "sources": [
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6200892",
+          "author": "pinky",
+          "sha256": "27887a1ef8655017153f2d4bf81b28f318cc396815a19a0510d2b50e3febb4b1",
+          "recency": {
+            "status": "RECENT_REFERENCE",
+            "date": "2026-11-01",
+            "assessmentDate": "2026-11-25",
+            "ageDays": 24,
+            "eligible": true,
+            "reason": "日期符合優先範圍；仍需獨立來源、完整性、變體及模式檢查"
+          },
+          "direction": "forward",
+          "matched": 59,
+          "total": 63,
+          "missing": [
+            {
+              "position": 1,
+              "nodeId": "shared:cw-v07-051",
+              "name": "東埔溫泉"
+            },
+            {
+              "position": 11,
+              "nodeId": "shared:cw-v07-019",
+              "name": "八通關草原"
+            },
+            {
+              "position": 62,
+              "nodeId": "node:cc65a12ba6bd7fa8e91b",
+              "name": "17K水泥橋"
+            },
+            {
+              "position": 63,
+              "nodeId": "shared:cw-v07-001",
+              "name": "16.5K行車終點"
+            }
+          ],
+          "warnings": [
+            {
+              "code": "MULTI_SEGMENT",
+              "count": 9
+            },
+            {
+              "code": "SUSPECT_VEHICLE_OR_GPS",
+              "count": 3
+            }
+          ],
+          "segmentCrossings": 8
+        },
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6059402",
+          "author": "YaYa Hsiang",
+          "sha256": "0b202835239937e244bd1d9824594708b48d149c399339d8a99a6e1922722e66",
+          "recency": {
+            "status": "RECENT_REFERENCE",
+            "date": "2026-09-24",
+            "assessmentDate": "2026-11-25",
+            "ageDays": 62,
+            "eligible": true,
+            "reason": "日期符合優先範圍；仍需獨立來源、完整性、變體及模式檢查"
+          },
+          "direction": "forward",
+          "matched": 43,
+          "total": 63,
+          "missing": [
+            {
+              "position": 1,
+              "nodeId": "shared:cw-v07-051",
+              "name": "東埔溫泉"
+            },
+            {
+              "position": 9,
+              "nodeId": "shared:cw-v07-072",
+              "name": "觀高坪"
+            },
+            {
+              "position": 10,
+              "nodeId": "shared:cw-v07-026",
+              "name": "古道崩斷岔路"
+            },
+            {
+              "position": 11,
+              "nodeId": "shared:cw-v07-019",
+              "name": "八通關草原"
+            },
+            {
+              "position": 12,
+              "nodeId": "shared:cw-v07-016",
+              "name": "八通關山登山口"
+            },
+            {
+              "position": 13,
+              "nodeId": "shared:cw-v07-046",
+              "name": "巴奈伊克山屋"
+            },
+            {
+              "position": 14,
+              "nodeId": "shared:cw-v07-007",
+              "name": "三岔路口"
+            },
+            {
+              "position": 15,
+              "nodeId": "shared:cw-v07-009",
+              "name": "中央金礦山屋"
+            },
+            {
+              "position": 16,
+              "nodeId": "shared:cw-v07-059",
+              "name": "白洋金礦山屋"
+            },
+            {
+              "position": 17,
+              "nodeId": "shared:cw-v07-060",
+              "name": "秀姑坪岔路"
+            },
+            {
+              "position": 18,
+              "nodeId": "shared:cw-v07-062",
+              "name": "秀姑巒山南登山口"
+            },
+            {
+              "position": 19,
+              "nodeId": "shared:cw-v07-061",
+              "name": "秀姑巒山"
+            },
+            {
+              "position": 20,
+              "nodeId": "shared:cw-v07-063",
+              "name": "秀馬山屋舊址"
+            },
+            {
+              "position": 21,
+              "nodeId": "node:dbd832f1cb9ab568470c",
+              "name": "最低鞍部"
+            },
+            {
+              "position": 22,
+              "nodeId": "node:990307d114e98fcedc53",
+              "name": "馬博前岔路"
+            },
+            {
+              "position": 23,
+              "nodeId": "node:1e2be1da821269c797af",
+              "name": "馬博拉斯山"
+            },
+            {
+              "position": 24,
+              "nodeId": "node:0cb3329644d8610f7c1a",
+              "name": "盆駒山南峰"
+            },
+            {
+              "position": 25,
+              "nodeId": "node:2858041ca3317f204e6e",
+              "name": "2950鞍岔路"
+            },
+            {
+              "position": 62,
+              "nodeId": "node:cc65a12ba6bd7fa8e91b",
+              "name": "17K水泥橋"
+            },
+            {
+              "position": 63,
+              "nodeId": "shared:cw-v07-001",
+              "name": "16.5K行車終點"
+            }
+          ],
+          "warnings": [
+            {
+              "code": "MULTI_SEGMENT",
+              "count": 6
+            }
+          ],
+          "segmentCrossings": 4
+        }
+      ]
+    },
+    {
+      "routeId": "R070",
+      "name": "八大秀",
+      "interpretation": "2024與2026兩位作者均未匹配草原、大水窟山及部分往返接點。需分辨高繞、座標及分日中斷，不直接重排。",
+      "status": "RECENT_CROSS_CHECK_WITH_LIMITATIONS_NOT_ROUTE_PASS",
+      "sources": [
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=4170827",
+          "author": "金牌",
+          "sha256": "12bc6e50636031e6428e898bfebcfc592756676c2e21ccf59ef14816dd55b404",
+          "recency": {
+            "status": "RECENT_REFERENCE",
+            "date": "2024-12-11",
+            "assessmentDate": "2026-11-25",
+            "ageDays": 714,
+            "eligible": true,
+            "reason": "日期符合優先範圍；仍需獨立來源、完整性、變體及模式檢查"
+          },
+          "direction": "reverse",
+          "matched": 36,
+          "total": 43,
+          "missing": [
+            {
+              "position": 1,
+              "nodeId": "shared:cw-v07-051",
+              "name": "東埔溫泉"
+            },
+            {
+              "position": 11,
+              "nodeId": "shared:cw-v07-019",
+              "name": "八通關草原"
+            },
+            {
+              "position": 14,
+              "nodeId": "shared:cw-v07-007",
+              "name": "三岔路口"
+            },
+            {
+              "position": 22,
+              "nodeId": "shared:cw-v07-035",
+              "name": "大水窟山"
+            },
+            {
+              "position": 32,
+              "nodeId": "shared:cw-v07-016",
+              "name": "八通關山登山口"
+            },
+            {
+              "position": 33,
+              "nodeId": "shared:cw-v07-019",
+              "name": "八通關草原"
+            },
+            {
+              "position": 43,
+              "nodeId": "shared:cw-v07-051",
+              "name": "東埔溫泉"
+            }
+          ],
+          "warnings": [
+            {
+              "code": "MULTI_SEGMENT",
+              "count": 4
+            },
+            {
+              "code": "SUSPECT_VEHICLE_OR_GPS",
+              "count": 2
+            }
+          ],
+          "segmentCrossings": 3
+        },
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6091299",
+          "author": "蔡宗佑",
+          "sha256": "064727b0105eadb506d29c1081ba23d2849ce032e841713f019f09fac5ca5b62",
+          "recency": {
+            "status": "RECENT_REFERENCE",
+            "date": "2026-10-05",
+            "assessmentDate": "2026-11-25",
+            "ageDays": 51,
+            "eligible": true,
+            "reason": "日期符合優先範圍；仍需獨立來源、完整性、變體及模式檢查"
+          },
+          "direction": "reverse",
+          "matched": 37,
+          "total": 43,
+          "missing": [
+            {
+              "position": 1,
+              "nodeId": "shared:cw-v07-051",
+              "name": "東埔溫泉"
+            },
+            {
+              "position": 11,
+              "nodeId": "shared:cw-v07-019",
+              "name": "八通關草原"
+            },
+            {
+              "position": 22,
+              "nodeId": "shared:cw-v07-035",
+              "name": "大水窟山"
+            },
+            {
+              "position": 32,
+              "nodeId": "shared:cw-v07-016",
+              "name": "八通關山登山口"
+            },
+            {
+              "position": 33,
+              "nodeId": "shared:cw-v07-019",
+              "name": "八通關草原"
+            },
+            {
+              "position": 43,
+              "nodeId": "shared:cw-v07-051",
+              "name": "東埔溫泉"
+            }
+          ],
+          "warnings": [
+            {
+              "code": "MULTI_SEGMENT",
+              "count": 6
+            }
+          ],
+          "segmentCrossings": 4
+        }
+      ]
+    },
+    {
+      "routeId": "R072",
+      "name": "南二段",
+      "interpretation": "完整行程與末日高繞片段分開；後兩帳號提供相同檔案，只算一份軌跡。完整行程仍有斷軌與速度異常，不能直接通過。",
+      "status": "RECENT_CROSS_CHECK_WITH_LIMITATIONS_NOT_ROUTE_PASS",
+      "sources": [
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6207514",
+          "author": "草莓登山客",
+          "sha256": "ff54deb7657ecbade9c92c7bdb368e07011965dd6a96671939fc77c65abd9abc",
+          "recency": {
+            "status": "RECENT_REFERENCE",
+            "date": "2026-10-10",
+            "assessmentDate": "2026-11-25",
+            "ageDays": 46,
+            "eligible": true,
+            "reason": "日期符合優先範圍；仍需獨立來源、完整性、變體及模式檢查"
+          },
+          "direction": "forward",
+          "matched": 13,
+          "total": 58,
+          "missing": [
+            {
+              "position": 1,
+              "nodeId": "shared:cw-v07-029",
+              "name": "向陽森林遊樂區"
+            },
+            {
+              "position": 2,
+              "nodeId": "shared:cw-v07-052",
+              "name": "林道登山口"
+            },
+            {
+              "position": 3,
+              "nodeId": "shared:cw-v07-028",
+              "name": "向陽山屋"
+            },
+            {
+              "position": 4,
+              "nodeId": "shared:cw-v07-070",
+              "name": "西側登山口"
+            },
+            {
+              "position": 5,
+              "nodeId": "shared:cw-v07-027",
+              "name": "向陽山"
+            },
+            {
+              "position": 6,
+              "nodeId": "shared:cw-v07-070",
+              "name": "西側登山口"
+            },
+            {
+              "position": 7,
+              "nodeId": "shared:cw-v07-032",
+              "name": "嘉明湖避難山屋"
+            },
+            {
+              "position": 8,
+              "nodeId": "shared:owner-v0724-xiangyang-junction",
+              "name": "向陽山三岔路口"
+            },
+            {
+              "position": 9,
+              "nodeId": "shared:cw-v07-020",
+              "name": "北峰下解說牌"
+            },
+            {
+              "position": 10,
+              "nodeId": "shared:cw-v07-006",
+              "name": "三叉山登山口"
+            },
+            {
+              "position": 11,
+              "nodeId": "shared:cw-v07-005",
+              "name": "三叉山"
+            },
+            {
+              "position": 12,
+              "nodeId": "shared:cw-v07-031",
+              "name": "嘉明湖岔路口"
+            },
+            {
+              "position": 13,
+              "nodeId": "shared:cw-v07-050",
+              "name": "新康山岔路口"
+            },
+            {
+              "position": 14,
+              "nodeId": "shared:cw-v07-049",
+              "name": "拉庫音溪山屋"
+            },
+            {
+              "position": 15,
+              "nodeId": "local:G17-OVERLAP::g17-overlap-002",
+              "name": "南雙頭山"
+            },
+            {
+              "position": 16,
+              "nodeId": "local:G17-OVERLAP::g17-overlap-010",
+              "name": "西北鞍南雙池營地"
+            },
+            {
+              "position": 17,
+              "nodeId": "local:G17-OVERLAP::g17-overlap-009",
+              "name": "雲峰東峰三岔路口營地"
+            },
+            {
+              "position": 18,
+              "nodeId": "node:85bb625c5f4bcbcf9abe",
+              "name": "雲峰"
+            },
+            {
+              "position": 19,
+              "nodeId": "local:G17-OVERLAP::g17-overlap-009",
+              "name": "雲峰東峰三岔路口營地"
+            },
+            {
+              "position": 20,
+              "nodeId": "local:G17-OVERLAP::g17-overlap-008",
+              "name": "轆轆谷山屋"
+            },
+            {
+              "position": 21,
+              "nodeId": "local:G17-OVERLAP::g17-overlap-007",
+              "name": "轆轆山登山口"
+            },
+            {
+              "position": 22,
+              "nodeId": "node:4b535e7d68c379a6c905",
+              "name": "轆轆東峰"
+            },
+            {
+              "position": 23,
+              "nodeId": "node:9af65faed0dfd594da63",
+              "name": "轆轆山"
+            },
+            {
+              "position": 24,
+              "nodeId": "node:4b535e7d68c379a6c905",
+              "name": "轆轆東峰"
+            },
+            {
+              "position": 25,
+              "nodeId": "local:G17-OVERLAP::g17-overlap-007",
+              "name": "轆轆山登山口"
+            },
+            {
+              "position": 26,
+              "nodeId": "local:G17-OVERLAP::g17-overlap-006",
+              "name": "塔芬池"
+            },
+            {
+              "position": 27,
+              "nodeId": "node:b3c1f683294e1bc1252b",
+              "name": "塔芬山"
+            },
+            {
+              "position": 28,
+              "nodeId": "node:1916736d90dd9626ece3",
+              "name": "塔芬谷山屋"
+            },
+            {
+              "position": 29,
+              "nodeId": "node:4e7ab2e2b7798527927f",
+              "name": "達芬尖山登山口"
+            },
+            {
+              "position": 30,
+              "nodeId": "node:5bd0e4cd667031e35fc1",
+              "name": "達芬尖山"
+            },
+            {
+              "position": 31,
+              "nodeId": "node:4e7ab2e2b7798527927f",
+              "name": "達芬尖山登山口"
+            },
+            {
+              "position": 32,
+              "nodeId": "node:8897886192ce4320aec3",
+              "name": "黑水塘"
+            },
+            {
+              "position": 33,
+              "nodeId": "node:6fbfce66af193ba46514",
+              "name": "大水窟山三岔路口"
+            },
+            {
+              "position": 34,
+              "nodeId": "node:95bb6c335556ae3a2cd6",
+              "name": "南大水窟山"
+            },
+            {
+              "position": 35,
+              "nodeId": "shared:cw-v07-036",
+              "name": "大水窟山屋"
+            },
+            {
+              "position": 36,
+              "nodeId": "shared:cw-v07-035",
+              "name": "大水窟山"
+            },
+            {
+              "position": 37,
+              "nodeId": "shared:cw-v07-060",
+              "name": "秀姑坪岔路"
+            },
+            {
+              "position": 38,
+              "nodeId": "shared:cw-v07-059",
+              "name": "白洋金礦山屋"
+            },
+            {
+              "position": 39,
+              "nodeId": "shared:cw-v07-009",
+              "name": "中央金礦山屋"
+            },
+            {
+              "position": 43,
+              "nodeId": "shared:cw-v07-015",
+              "name": "八通關山三岔路口"
+            },
+            {
+              "position": 44,
+              "nodeId": "shared:cw-v07-014",
+              "name": "八通關山"
+            },
+            {
+              "position": 45,
+              "nodeId": "shared:cw-v07-015",
+              "name": "八通關山三岔路口"
+            },
+            {
+              "position": 46,
+              "nodeId": "shared:cw-v07-017",
+              "name": "八通關山西峰"
+            },
+            {
+              "position": 57,
+              "nodeId": "shared:cw-v07-018",
+              "name": "八通關登山口"
+            },
+            {
+              "position": 58,
+              "nodeId": "shared:cw-v07-051",
+              "name": "東埔溫泉"
+            }
+          ],
+          "warnings": [
+            {
+              "code": "SUSPECT_VEHICLE_OR_GPS",
+              "count": 1
+            }
+          ],
+          "segmentCrossings": 0
+        },
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6220052",
+          "author": "🌟👶Ya-wen🎈",
+          "sha256": "cfff140d5c32cfc41427bc3349bdd12a570fda33a3325116f708d0cdb7e9e200",
+          "recency": {
+            "status": "RECENT_REFERENCE",
+            "date": "2026-11-10",
+            "assessmentDate": "2026-11-25",
+            "ageDays": 15,
+            "eligible": true,
+            "reason": "日期符合優先範圍；仍需獨立來源、完整性、變體及模式檢查"
+          },
+          "direction": "forward",
+          "matched": 46,
+          "total": 58,
+          "missing": [
+            {
+              "position": 19,
+              "nodeId": "local:G17-OVERLAP::g17-overlap-009",
+              "name": "雲峰東峰三岔路口營地"
+            },
+            {
+              "position": 34,
+              "nodeId": "node:95bb6c335556ae3a2cd6",
+              "name": "南大水窟山"
+            },
+            {
+              "position": 40,
+              "nodeId": "shared:cw-v07-007",
+              "name": "三岔路口"
+            },
+            {
+              "position": 47,
+              "nodeId": "shared:cw-v07-071",
+              "name": "西峰岔路"
+            },
+            {
+              "position": 51,
+              "nodeId": "shared:cw-v07-044",
+              "name": "對觀"
+            },
+            {
+              "position": 52,
+              "nodeId": "shared:cw-v07-013",
+              "name": "乙女瀑布"
+            },
+            {
+              "position": 53,
+              "nodeId": "shared:cw-v07-054",
+              "name": "樂樂山屋"
+            },
+            {
+              "position": 54,
+              "nodeId": "shared:cw-v07-076",
+              "name": "雲龍瀑布"
+            },
+            {
+              "position": 55,
+              "nodeId": "shared:cw-v07-055",
+              "name": "樂樂溫泉岔路"
+            },
+            {
+              "position": 56,
+              "nodeId": "shared:cw-v07-008",
+              "name": "三聖宮"
+            },
+            {
+              "position": 57,
+              "nodeId": "shared:cw-v07-018",
+              "name": "八通關登山口"
+            },
+            {
+              "position": 58,
+              "nodeId": "shared:cw-v07-051",
+              "name": "東埔溫泉"
+            }
+          ],
+          "warnings": [
+            {
+              "code": "TRACK_GAP",
+              "meters": 905.9,
+              "point": 4005
+            },
+            {
+              "code": "TRACK_GAP",
+              "meters": 593.1,
+              "point": 12403
+            },
+            {
+              "code": "TRACK_GAP",
+              "meters": 9837.7,
+              "point": 14250
+            },
+            {
+              "code": "SUSPECT_VEHICLE_OR_GPS",
+              "count": 6
+            }
+          ],
+          "segmentCrossings": 2
+        }
+      ]
+    }
+  ]
+}

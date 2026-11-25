@@ -541,13 +541,13 @@ test('v0.7.12 global route browser keeps scopes without clearing itinerary',asyn
  const html=readFileSync(new URL('../unified-editor.html',import.meta.url),'utf8');
  const app=readFileSync(new URL('../js/unified-editor.js',import.meta.url),'utf8');
  assert.match(html,/js\/unified-editor\.js\?v=v\d+/);
- assert.ok(app.includes('v0.9.1 Preview'));
+ assert.ok(app.includes('v0.10.0 Preview'));
  assert.match(app,/mergeReviewedRoutes/);
  assert.ok(app.includes('nodesInScope(route,scope)'));
  assert.match(app,/appendDisconnectedNode/);
  assert.doesNotMatch(app,/切換上河圖會清空目前行程/);
  assert.match(app,/未連通・手動估時/);
- assert.ok(app.includes('unified-preview-autosave.v0711'));
+ assert.ok(app.includes('mountain-planner.idea003-autosave.v1'));
 });
 
 test('v0.7.12 verified global graph does not invent connection between G06 and G17',async()=>{

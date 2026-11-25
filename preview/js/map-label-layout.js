@@ -4,10 +4,16 @@ export function placeMapLabels(labels,points,segments,size){
  const placed=[],occupied=[];
  for(const label of labels){
   const {point:p,w,h}=label;
-  const box={x:p.x+8,y:p.y-10+(label.dayOffset||0),w,h};
+  let box={x:p.x+8,y:p.y-10,w,h};
   if(label.selected){
    box.x=Math.max(4,Math.min(box.x,size.x-w-4));
    box.y=Math.max(4,Math.min(box.y,size.y-h-4));
+  }
+  if(label.dayLabel){
+   const candidates=[[8,-10],[8,12],[8,-h-12],[-w-8,-10],[-w-8,12],[-w-8,-h-12]];
+   const candidate=candidates.map(([dx,dy])=>({x:p.x+dx,y:p.y+dy,w,h})).find(b=>b.x>=0&&b.y>=0&&b.x+w<=size.x&&b.y+h<=size.y&&!occupied.some(o=>overlaps(b,o)));
+   if(!candidate)continue;
+   box=candidate;
   }
   if(box.x+w<0||box.y+h<0||box.x>size.x||box.y>size.y)continue;
   if(occupied.some(b=>overlaps(box,b)))continue;

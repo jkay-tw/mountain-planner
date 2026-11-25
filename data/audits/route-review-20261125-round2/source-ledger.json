@@ -1,0 +1,2450 @@
+{
+  "references": [
+    {
+      "url": "https://www.ysnp.gov.tw/Trail/7fa5c242-df1a-4a8e-bcab-32dc55b1f7b6?Tab=4",
+      "retrievedAt": "2026-11-25T01:41:51.570Z",
+      "sha256": "c6ee173f41f7fe1ab615a26a0fd8d6c7ce50f51164bcd6650e33e2bf5df0540a",
+      "status": "FETCHED",
+      "gpxLinks": [],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=591&q=trail",
+      "retrievedAt": "2026-11-25T01:41:53.175Z",
+      "sha256": "83e1d1fca16a03d8be2ffa4c621b9e8f21b0dc5525b784ecb3168b0cb401578e",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=119",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=119"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=590&q=trail",
+      "retrievedAt": "2026-11-25T01:41:53.983Z",
+      "sha256": "6a1c40fe7812c8d5275e3e8349b23d60528fc527692bf5c2e4ac91215ceacccd",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=118",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=118"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=500&q=trail",
+      "retrievedAt": "2026-11-25T01:41:54.808Z",
+      "sha256": "e772180f20c57d6015325303bf785044bbad7bbf2582c19a31af34e4d0eda46f",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=85",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=85"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=617&q=trail",
+      "retrievedAt": "2026-11-25T01:41:55.609Z",
+      "sha256": "fef12be5582f432b7a1570d20c0f15dbee3b7b31499dbdda3bde208feaf9fff4",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=158424",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=158424"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=242&q=trail",
+      "retrievedAt": "2026-11-25T01:41:56.397Z",
+      "sha256": "9a4ee0227efee5c5ed10d38950ed0004b261e5ceff52cdfd43a59fce9ee8f1d1",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=86266",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=86266"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=540&q=trail",
+      "retrievedAt": "2026-11-25T01:41:57.202Z",
+      "sha256": "fd0e09008a0eb9df363c67dac4952f6199ab9dedea1b6b00d53570465809418a",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=86204",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=86204"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=431&q=trail",
+      "retrievedAt": "2026-11-25T01:41:58.009Z",
+      "sha256": "58d6204353c7c37ffdb70bdca5c1116f8c9163869ad75b91375f8f9ac733a02f",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=86206",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=86206"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://heidisplanet.com/mt-xue-north-peak/",
+      "retrievedAt": "2026-11-25T01:41:58.678Z",
+      "sha256": "c46b5d57d654a4b2e16bb9e328ea9971d2885666092fd3c07a3601d23dc4023d",
+      "status": "FETCHED",
+      "gpxLinks": [],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://wellkangtoworld.com/xueshan-north-peak/",
+      "retrievedAt": "2026-11-25T01:41:58.997Z",
+      "sha256": "3f281f6f63f43305cdac803b7f2ca4c24756f871b2b5657b94a424a0456ed576",
+      "status": "FETCHED",
+      "gpxLinks": [],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=719&q=trail",
+      "retrievedAt": "2026-11-25T01:41:59.874Z",
+      "sha256": "2b5f33a063f6f97b1a2c03ee5c430a0348d7771a39103b3cb328acd0777c5ef0",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=5977",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=5977"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=636&q=trail",
+      "retrievedAt": "2026-11-25T01:42:00.718Z",
+      "sha256": "b9138ff3de8939258e8ccace1496f74b6736195d835ed25087772824da7ae766",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=544",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=544"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=710&q=trail",
+      "retrievedAt": "2026-11-25T01:42:01.591Z",
+      "sha256": "edfd765964e49fe426f22ff403a23ab40dba516be38c4e7d1837427e81e18f5d",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=1500268",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=1500268"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hike.taiwan.gov.tw/en/information_1.aspx?c_id=243",
+      "retrievedAt": "2026-11-25T01:42:01.701Z",
+      "sha256": "e95f6570b66562b15c783353127a231f1638ef2e225196b6fe092518a2a0ee42",
+      "status": "FETCHED",
+      "gpxLinks": [],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=641&q=trail",
+      "retrievedAt": "2026-11-25T01:42:02.538Z",
+      "sha256": "480671a11d84ceb41a0d0548253d7e9a48c0a070e04331391c797fc4b717cd15",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=476",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=476"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=531&q=trail",
+      "retrievedAt": "2026-11-25T01:42:03.357Z",
+      "sha256": "09ef0471f81f752beb003f4543ac7fce88cee19519a53007fd0bac09190feb14",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=282191",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=282191"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hike.taiwan.gov.tw/nationpark/manasystem/news/files/news/39f9c4a9-9ca3-452e-89fc-743aabc66ea1.pdf",
+      "retrievedAt": "2026-11-25T01:42:03.683Z",
+      "sha256": "9159e08eb675071b7ca3cc86654f8b46248ca9fa8254171ad6f34bf1a8a61c8e",
+      "status": "PDF_CONTENT_NOT_USED_IN_THIS_ROUND",
+      "gpxLinks": [],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://www.taiwan.nps.gov.tw/home/zh-tw/trails/21204.html",
+      "retrievedAt": "2026-11-25T01:42:04.019Z",
+      "sha256": "b0347b12426a62eeba2b374e1f7eebe453dd6b1197f8b26d23730672d4ca1b5e",
+      "status": "FETCHED",
+      "gpxLinks": [],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=gpx_detail&id=3865504&q=trail",
+      "retrievedAt": "2026-11-25T01:42:04.636Z",
+      "sha256": "30acfe72a25fbc69b076629d0c82fecd4053eab401967876a1b861c726774b0b",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=3865504",
+        "https://hiking.biji.co/index.php?act=gpx_detail&id=3865504&q=trail",
+        "https://hiking.biji.co/index.php?act=gpx_detail&id=3865504&q=trail",
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=3865504",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6200799",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6151043",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=5743021",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=5592711"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=653&q=trail",
+      "retrievedAt": "2026-11-25T01:42:05.458Z",
+      "sha256": "7037e754a97eec64a9aea64305d0d5df5a590d7099276dc1703c16d3c48bef09",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=248881",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=248881"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=646&q=trail",
+      "retrievedAt": "2026-11-25T01:42:06.299Z",
+      "sha256": "e7eede45cb49f5a08437e5a34735d669056f40c3341b76a0afe974f56576027e",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=178049",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=178049"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=666&q=trail",
+      "retrievedAt": "2026-11-25T01:42:07.115Z",
+      "sha256": "0adf9fecc626e6628fa8086695ec844ce25cb9c9dd768948d78b58da5d0322a6",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=95050",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=95050"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=655&q=trail",
+      "retrievedAt": "2026-11-25T01:42:07.742Z",
+      "sha256": "17d923c1cfa7a93d0a69a31dcbf5d34060a8501adb425b9c31618aeae09146ab",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=1819",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=1819"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=536&q=trail",
+      "retrievedAt": "2026-11-25T01:42:08.349Z",
+      "sha256": "e0d39aaa74416d4a94c8c49d4ca038928f1086a8222f7e6326c2ad866d9395c7",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=1273",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=1273"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=542&q=trail",
+      "retrievedAt": "2026-11-25T01:42:09.146Z",
+      "sha256": "2efbf5392074a703c8cd03398486acb57b3f633d08e6ee13f07a2c92f25742be",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=7434",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=7434"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=644&q=trail",
+      "retrievedAt": "2026-11-25T01:42:09.811Z",
+      "sha256": "5aaded1c594be36e15a237ab91f6450c05195c39f3c54e30e2c3567e1f959df9",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=191",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=191"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://www.hiking.biji.co/index.php?act=detail&id=1768&q=trail",
+      "retrievedAt": "2026-11-25T01:42:11.450Z",
+      "sha256": "84eca11df4fb5b0d46c75c0cb55389c2ad56f862a53ba2161ce5ad90057be86d",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://www.hiking.biji.co/index.php?q=trail&act=download_gpx&id=178435",
+        "https://www.hiking.biji.co/index.php?q=trail&act=gpx_detail&id=178435"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=656&q=trail",
+      "retrievedAt": "2026-11-25T01:42:12.797Z",
+      "sha256": "7dec85bdcfa9caeaa04bd209f341634be9da9613d5c9d7ee8ed3cd6b964d4312",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=490770",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=490770"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=1485&q=trail",
+      "retrievedAt": "2026-11-25T01:42:13.448Z",
+      "sha256": "0110fc070984a581ffd3a361364704aa46fb9f4d7fe7953604cf8ddeed644785",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=11822",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=11822"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://ws.moi.gov.tw/001/Upload/OldFile_TAROKO/WebFiles/AttractionsFiles/9181/file2636892994921269408.pdf",
+      "retrievedAt": "2026-11-25T01:42:13.658Z",
+      "sha256": "5a86577d6277039b6c6c86ccc4e09e0622628e74b02d02238297b19e9428166b",
+      "status": "PDF_CONTENT_NOT_USED_IN_THIS_ROUND",
+      "gpxLinks": [],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=info&q=review&review_id=27571",
+      "retrievedAt": "2026-11-25T01:42:14.112Z",
+      "sha256": "00bf115b6eb84ae4fcb820c530c1e19c3bf39e5900d0e86f8119137ada6feddd",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=1765487",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=1765488",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=1765489",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=1765491"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://recreation.forest.gov.tw/Trail/RT?tr_id=066&typ=3",
+      "retrievedAt": "2026-11-25T01:42:15.348Z",
+      "sha256": "6da4dde07a71647fb80ec817a56758d5a90a1dc76825af851e46d09db7b920cb",
+      "status": "FETCHED",
+      "gpxLinks": [],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=gpx_detail&id=1496470&q=trail",
+      "retrievedAt": "2026-11-25T01:42:15.964Z",
+      "sha256": "cf549a7e96c9c7939f618ca206b3147a0ae3d8f559f893baefd14643b01693b6",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=1496470",
+        "https://hiking.biji.co/index.php?act=gpx_detail&id=1496470&q=trail",
+        "https://hiking.biji.co/index.php?act=gpx_detail&id=1496470&q=trail",
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=1496470",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6219778",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6200694",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6151234",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6118661"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=info&q=review&review_id=5670",
+      "retrievedAt": "2026-11-25T01:42:16.410Z",
+      "sha256": "7eae3c2e51e2bb7dc7fceb48e787e706f7bf0547e8afe5dd12aa08688149567a",
+      "status": "FETCHED",
+      "gpxLinks": [],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=881&q=trail",
+      "retrievedAt": "2026-11-25T01:42:17.125Z",
+      "sha256": "014dcb0249c6cfc4a8dbbe6e596d3553103f010bc65ccb16782f45e46c43fe11",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=270348",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=270348"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://www.tycs.com.tw/event/1826",
+      "retrievedAt": "2026-11-25T01:42:17.339Z",
+      "sha256": "c1376abf57c4eaafb4e8bd8340ffcbc589a1743a1b2aae34930fd9fbf0cbe1e7",
+      "status": "FETCHED",
+      "gpxLinks": [],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://www.ptt.cc/bbs/Hiking/M.1542633720.A.5C9.html",
+      "retrievedAt": "2026-11-25T01:42:17.930Z",
+      "sha256": "5d7542a603a934da0dd0f978c16c6ad2f0f3618e8a156443c1a9e60a783ee1d8",
+      "status": "FETCHED",
+      "gpxLinks": [],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=1668&q=trail",
+      "retrievedAt": "2026-11-25T01:42:18.772Z",
+      "sha256": "a7467fbc9c913c5af6bc565838f4e3deb1d7475553a21d3d0197434a25946e6e",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=69537",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=69537"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=667&q=trail",
+      "retrievedAt": "2026-11-25T01:42:19.604Z",
+      "sha256": "25d181c01c0eb2db770d7b34e7f3ccd888e993589a71472b15a30dec1337dccc",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=85832",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=85832"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=gpx_detail&id=229060&q=trail",
+      "retrievedAt": "2026-11-25T01:42:20.026Z",
+      "sha256": "4d97d2e0f0a6ae1695e6b78c8c658a482a1934871b982bf5a344165a7b4a7da9",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=229060",
+        "https://hiking.biji.co/index.php?act=gpx_detail&id=229060&q=trail",
+        "https://hiking.biji.co/index.php?act=gpx_detail&id=229060&q=trail",
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=229060",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6204736",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6204736",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6145308",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6145305"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=gpx_detail&id=6204736&q=trail",
+      "retrievedAt": "2026-11-25T01:42:20.452Z",
+      "sha256": "8e841bc52f5e783f7bf3f29288bfc79dabb78fad38a281f276812ae22bf0d78b",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6204736",
+        "https://hiking.biji.co/index.php?act=gpx_detail&id=6204736&q=trail",
+        "https://hiking.biji.co/index.php?act=gpx_detail&id=6204736&q=trail",
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=6204736",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6243026",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6242452",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6239612",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6239249"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=625&q=trail",
+      "retrievedAt": "2026-11-25T01:42:21.278Z",
+      "sha256": "07a92f0a1a79c79699632deef326dc5d819d5c657959fd29d2d203485a0e2af5",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=1622",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=1622"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=623&q=trail",
+      "retrievedAt": "2026-11-25T01:42:22.086Z",
+      "sha256": "3e53704ec4fa630937e6681e1b6cc37b4004cd417c623858151c6559b07517d4",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=272178",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=272178"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=gpx_detail&id=768851&q=trail",
+      "retrievedAt": "2026-11-25T01:42:22.555Z",
+      "sha256": "1fe0f2ff19d3a80c8994a3366d166e36a1ccd580f4bc15e3838e42fd77c89e7e",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=768851",
+        "https://hiking.biji.co/index.php?act=gpx_detail&id=768851&q=trail",
+        "https://hiking.biji.co/index.php?act=gpx_detail&id=768851&q=trail",
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=768851",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6220052",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6217289",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6213789",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6213124"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://www.keepon.com.tw/thread-83c48ffe-16d8-e411-93ec-000e04b74954.html?AspxAutoDetectCookieSupport=1",
+      "status": "UNAVAILABLE",
+      "reason": "來源轉址過多",
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=632&q=trail",
+      "retrievedAt": "2026-11-25T01:42:25.670Z",
+      "sha256": "9bcb681ec395c798a6615d63199a1e385292e8fc3c07650e4994a746ee8020cc",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=259330",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=259330"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://www.keepon.com.tw/thread-40814363-10d8-e411-93ec-000e04b74954.html?AspxAutoDetectCookieSupport=1",
+      "status": "UNAVAILABLE",
+      "reason": "來源轉址過多",
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://www.keepon.com.tw/thread-b924148d-10d8-e411-93ec-000e04b74954.html?AspxAutoDetectCookieSupport=1",
+      "status": "UNAVAILABLE",
+      "reason": "來源轉址過多",
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=347&q=trail",
+      "retrievedAt": "2026-11-25T01:42:29.134Z",
+      "sha256": "de68b44794a426f7cc5e31b22c898dc40fb5e7512d5bffe957e3737915d612ba",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=86214",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=86214"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=1771&q=trail",
+      "retrievedAt": "2026-11-25T01:42:29.965Z",
+      "sha256": "ecec995ece151626d3c22145e5481107ccdf43b9cc563e8c6407e1e462274693",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=179101",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=179101"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=631&q=trail",
+      "retrievedAt": "2026-11-25T01:42:30.849Z",
+      "sha256": "bdc22949f95fb2148cb30755eb5dc388d362dd774dfd5d1f46492b0fd497603b",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=254570",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=254570"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://sunnyman.pixnet.net/blog/posts/9469249886",
+      "retrievedAt": "2026-11-25T01:42:30.975Z",
+      "sha256": "882de5d19e0d199b34b4b6a5b3d31292f471bc4d7588dd715d5c455ed4478ced",
+      "status": "FETCHED",
+      "gpxLinks": [],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=1432&q=trail",
+      "retrievedAt": "2026-11-25T01:42:31.811Z",
+      "sha256": "e277d189bec5bd4f5b914eb74aa6593a0e8879a03ad5a14481dfefe8c647bdd7",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=8993",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=8993"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=630&q=trail",
+      "retrievedAt": "2026-11-25T01:42:32.624Z",
+      "sha256": "5c54a0b9e15ce572b2f72fe245cf7169da95d623f4bba90bef9ec168acc2efe1",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=47705",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=47705"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=gpx_detail&id=444509&q=trail",
+      "retrievedAt": "2026-11-25T01:42:33.062Z",
+      "sha256": "75b1a385d71fa004891a1456a7fd80ad282eb72a8cae8cd1c64d67f00ab9545e",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=444509",
+        "https://hiking.biji.co/index.php?act=gpx_detail&id=444509&q=trail",
+        "https://hiking.biji.co/index.php?act=gpx_detail&id=444509&q=trail",
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=444509",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6242239",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6232790",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6231090",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6223859"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://www.ysnp.gov.tw/Trail/382f4797-1eb1-4746-a122-4e13a9e0c7e4?Tab=2",
+      "retrievedAt": "2026-11-25T01:42:33.285Z",
+      "sha256": "8ec8100d48510787a50f85e836e8cc1cefeebe2b13762ec2c10d1a37e6a160b5",
+      "status": "FETCHED",
+      "gpxLinks": [],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=1760&q=trail",
+      "retrievedAt": "2026-11-25T01:42:34.159Z",
+      "sha256": "c2f338684c88dc26ef397378574f1cbca21609f5970edfbb407665863bc50522",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=154180",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=154180"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=detail&id=1761&q=trail",
+      "retrievedAt": "2026-11-25T01:42:34.974Z",
+      "sha256": "3192b9929aa1f1fe7abea99cb07f43c01c935949074012cdc040542262ef3c1e",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=download_gpx&id=154181",
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=154181"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://recreation.forest.gov.tw/Trail/RT?tr_id=119&typ=",
+      "retrievedAt": "2026-11-25T01:42:36.291Z",
+      "sha256": "51f1000a9c00c4e0dffc0794dfee52ee0547ea6556d334a6a2c563fbff3c78f0",
+      "status": "FETCHED",
+      "gpxLinks": [],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=info&id=8627&q=news",
+      "retrievedAt": "2026-11-25T01:42:36.935Z",
+      "sha256": "2009a927c41aa98d72ea46fffebc4e5f48e24b4d387a021361a4a316171cae4d",
+      "status": "FETCHED",
+      "gpxLinks": [],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://www.nlma.gov.tw/filesys/file/chinese/o_gov/021_.pdf",
+      "status": "PDF_CONTENT_NOT_USED_IN_THIS_ROUND",
+      "reason": "下載超出大小上限",
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://recreation.forest.gov.tw/Files/Forest/RA/DM/0300004/0300004_DM.pdf",
+      "retrievedAt": "2026-11-25T01:42:37.634Z",
+      "sha256": "99e167851f8a661573daa9bdf376204bc445c5834d120fd9d96fe1cbe88f720d",
+      "status": "PDF_CONTENT_NOT_USED_IN_THIS_ROUND",
+      "gpxLinks": [],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://www.samejantravel.tw/trails/3de644c1a89b81cb9814dc6e52127196",
+      "retrievedAt": "2026-11-25T01:42:37.826Z",
+      "sha256": "513c021f7946436c7ce742ac995a02c01eca0a39fd140a721314cc0573d4d266",
+      "status": "FETCHED",
+      "gpxLinks": [],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    },
+    {
+      "url": "https://hiking.biji.co/index.php?act=info&q=review&review_id=34188",
+      "retrievedAt": "2026-11-25T01:42:38.457Z",
+      "sha256": "c2d481a596072d3a01cd8e11a1898c664bd8c5cc99f9a1ba7db274f18dabf2f9",
+      "status": "FETCHED",
+      "gpxLinks": [
+        "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=4170827"
+      ],
+      "role": "網站原始資料快取；HTTP成功不等於行走順序已通過"
+    }
+  ],
+  "gpx": [
+    {
+      "id": "owner-tunyuan-tianchi-20261119",
+      "projectFile": "data/geometry/sources/g11-g12-tunyuan-tianchi-owner-20261119.gpx",
+      "sha256": "84b1b819bf6e15880148172ae7ff01bbd0fa029d34f2cc8e516947438e45fc2b",
+      "routeIds": [
+        "R055",
+        "R059",
+        "R061"
+      ],
+      "author": "",
+      "sourceUrl": "",
+      "provenanceRef": "docs/G11_G12_OWNER_GPX_20261119.md",
+      "scope": "partial",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "usage": "既有使用者提供規劃參考；部分線形已由此檔建立，不作獨立外部證據，不重新散布"
+    },
+    {
+      "id": "owner-pingfeng-20261120",
+      "projectFile": "data/geometry/sources/pingfeng-owner-direction-20261120.gpx",
+      "sha256": "660226f1c753ba5613d9cf7af65910caf718edf5493ccfde3533f0e3513b406a",
+      "routeIds": [
+        "R056",
+        "R057"
+      ],
+      "author": "",
+      "sourceUrl": "",
+      "provenanceRef": "docs/IDEA_002_PREVIEW_DIRECTION_20261120.md",
+      "scope": "partial",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "usage": "既有使用者提供方向參考，非完整行程；不作獨立外部證據，不重新散布"
+    },
+    {
+      "routeIds": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R005"
+      ],
+      "author": "Wei",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=2302095&q=trail",
+      "scope": "partial",
+      "variant": "yushan-multiple-branches",
+      "travelMode": "walking",
+      "id": "gpx-d8e90d200f073f7e",
+      "file": "gpx/d8e90d200f073f7efae23906ebe1526d78e92c78a15afb9ffabb178de5b2d66d.gpx",
+      "sha256": "d8e90d200f073f7efae23906ebe1526d78e92c78a15afb9ffabb178de5b2d66d",
+      "acquiredAt": "2026-11-24T12:20:02.231Z",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "observedDate": "2023-07-10",
+      "label": "玉山前後十峰",
+      "recordingId": "2302095",
+      "name": "玉山群九峰(全路線).玉山前五峰.玉山後四峰.gpx",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體"
+    },
+    {
+      "recordingId": "229060",
+      "name": "南三段(2020完整版7日).gpx",
+      "author": "保用十年",
+      "routeIds": [
+        "R066"
+      ],
+      "scope": "complete",
+      "variant": "unclassified",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=229060&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-04c37ce0eef774ce",
+      "file": "gpx/04c37ce0eef774ced5bdbdd7b0872a8242e09ee08972fd22422b4ff0064d037a.gpx",
+      "sha256": "04c37ce0eef774ced5bdbdd7b0872a8242e09ee08972fd22422b4ff0064d037a",
+      "acquiredAt": "2026-11-24T12:27:46.718Z",
+      "observedDate": "2020-10-07",
+      "label": "D1-瑞穗林道19K-32K工寮-34K活水源-太平溪西源營地BY卡卡"
+    },
+    {
+      "recordingId": "6204736",
+      "name": "南三段丹大東郡橫斷八日（含取水）.gpx",
+      "author": "灰灰",
+      "routeIds": [
+        "R066"
+      ],
+      "scope": "complete",
+      "variant": "south3-water-detours",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=6204736&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-918267497a738c32",
+      "file": "gpx/918267497a738c32c58517031bd98d838198785d8bcd96d39f4cb5154958789b.gpx",
+      "sha256": "918267497a738c32c58517031bd98d838198785d8bcd96d39f4cb5154958789b",
+      "acquiredAt": "2026-11-24T12:27:48.794Z",
+      "observedDate": "2026-10-30",
+      "label": "南三段丹大東郡橫斷八日 Day 1：瑞穗林道17.8K啟登-瑞穗林道34K登山口-沙武巒草原"
+    },
+    {
+      "recordingId": "5499076",
+      "name": "一日志雪劍.gpx",
+      "author": "小蜜蜂",
+      "routeIds": [
+        "R031"
+      ],
+      "scope": "complete",
+      "variant": "zhi-xue-jian-optional-peaks",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=5499076&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-a914ac2230a2979c",
+      "file": "gpx/a914ac2230a2979ce0bbb3f13510cc478a3f0f568bdb8793ff958d0b5bbcd3c3.gpx",
+      "sha256": "a914ac2230a2979ce0bbb3f13510cc478a3f0f568bdb8793ff958d0b5bbcd3c3",
+      "acquiredAt": "2026-11-24T12:27:49.601Z",
+      "observedDate": "2024-12-06",
+      "label": "一日志雪劍"
+    },
+    {
+      "recordingId": "682913",
+      "name": "大小劍-停車場~油婆蘭營地(第一天).gpx",
+      "author": "小楊小儀",
+      "routeIds": [
+        "R030"
+      ],
+      "scope": "partial",
+      "variant": "day-1",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=682913&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-3cfc88d108642e7e",
+      "file": "gpx/3cfc88d108642e7ea1dc11ae030543f6c85d0966eac1b996b759e9032a1ca9dc.gpx",
+      "sha256": "3cfc88d108642e7ea1dc11ae030543f6c85d0966eac1b996b759e9032a1ca9dc",
+      "acquiredAt": "2026-11-24T12:27:49.665Z",
+      "observedDate": "2021-12-10",
+      "label": "大小劍-停車場~油婆蘭營地(第一天)"
+    },
+    {
+      "recordingId": "682917",
+      "name": "大小劍-油婆蘭營地~小劍山來回(第二天).gpx",
+      "author": "小楊小儀",
+      "routeIds": [
+        "R030"
+      ],
+      "scope": "partial",
+      "variant": "day-2",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=682917&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-4c80aee949bd1ad8",
+      "file": "gpx/4c80aee949bd1ad8ac877239c569d63fc8eebb4739be2a06ca5a39fd0f337180.gpx",
+      "sha256": "4c80aee949bd1ad8ac877239c569d63fc8eebb4739be2a06ca5a39fd0f337180",
+      "acquiredAt": "2026-11-24T12:27:49.717Z",
+      "observedDate": "2021-12-11",
+      "label": "大小劍-油婆蘭營地~小劍山來回(第二天)"
+    },
+    {
+      "recordingId": "682918",
+      "name": "大小劍-油婆蘭營地~劍南尖山~大劍山(第三天).gpx",
+      "author": "小楊小儀",
+      "routeIds": [
+        "R030"
+      ],
+      "scope": "partial",
+      "variant": "day-3-optional-peak",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=682918&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-1189d0334fe6aee2",
+      "file": "gpx/1189d0334fe6aee2159392afb7c8adda1fa8eb44da33512b0092ffc27bd15a27.gpx",
+      "sha256": "1189d0334fe6aee2159392afb7c8adda1fa8eb44da33512b0092ffc27bd15a27",
+      "acquiredAt": "2026-11-24T12:27:49.755Z",
+      "observedDate": "2021-12-12",
+      "label": "大小劍-油婆蘭營地~劍南尖山~大劍山(第三天)"
+    },
+    {
+      "recordingId": "1108989",
+      "name": "2022_08_20-23 新康橫斷四日 Day 3.gpx",
+      "author": "徐彥暉",
+      "routeIds": [
+        "R077"
+      ],
+      "scope": "partial",
+      "variant": "day-3",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=1108989&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-4ee786a5f6e2387a",
+      "file": "gpx/4ee786a5f6e2387a101c9a5250a57f77e86b60182d9c6be91530ad537cf7250d.gpx",
+      "sha256": "4ee786a5f6e2387a101c9a5250a57f77e86b60182d9c6be91530ad537cf7250d",
+      "acquiredAt": "2026-11-24T12:27:50.649Z",
+      "observedDate": "2022-08-21",
+      "label": "新康橫斷 Day 3 卓溪鄉 登山"
+    },
+    {
+      "recordingId": "651127",
+      "name": "一日武陵四秀(先桃喀).gpx",
+      "author": "翁資焱",
+      "routeIds": [
+        "R015"
+      ],
+      "scope": "complete",
+      "variant": "defined-route",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=651127&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "同走法待驗候選；仍須通過軌跡、完整性與線形門檻",
+      "id": "gpx-23161da74e6f26c1",
+      "file": "gpx/23161da74e6f26c10412fda0e8e442ca7dcf6d7a84b0887e7dd9c3dc643cc8fd.gpx",
+      "sha256": "23161da74e6f26c10412fda0e8e442ca7dcf6d7a84b0887e7dd9c3dc643cc8fd",
+      "acquiredAt": "2026-11-24T12:27:50.856Z",
+      "observedDate": "2021-11-20",
+      "label": "武陵四秀一日單攻"
+    },
+    {
+      "recordingId": "2658502",
+      "name": "20231027~29武陵四秀且三刷桃山.gpx",
+      "author": "+G",
+      "routeIds": [
+        "R015"
+      ],
+      "scope": "complete",
+      "variant": "four-peaks-repeat-taoshan",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=2658502&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-ddcc6be45fa65fae",
+      "file": "gpx/ddcc6be45fa65faeca4e150d1c5729283e379d558588a44fbbc7421051c90e6b.gpx",
+      "sha256": "ddcc6be45fa65faeca4e150d1c5729283e379d558588a44fbbc7421051c90e6b",
+      "acquiredAt": "2026-11-24T12:27:50.959Z",
+      "observedDate": "2023-10-26",
+      "label": "2"
+    },
+    {
+      "recordingId": "63884",
+      "name": "20190624-0626 武陵四秀.gpx",
+      "author": "李詠寬",
+      "routeIds": [
+        "R015"
+      ],
+      "scope": "complete",
+      "variant": "four-peaks-pintian-first",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=63884&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-3bf46ef535936900",
+      "file": "gpx/3bf46ef53593690017017d1417ad560ac653e533a3722c62a263c46ca70a2115.gpx",
+      "sha256": "3bf46ef53593690017017d1417ad560ac653e533a3722c62a263c46ca70a2115",
+      "acquiredAt": "2026-11-24T12:27:51.076Z",
+      "observedDate": "2019-06-23",
+      "label": "Track 0 (06:06:17)"
+    },
+    {
+      "recordingId": "2769000",
+      "name": "大小劍 三天兩夜.gpx",
+      "author": "Talent Lee",
+      "routeIds": [
+        "R030"
+      ],
+      "scope": "complete",
+      "variant": "unclassified",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=2769000&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-07ca099c0540f43c",
+      "file": "gpx/07ca099c0540f43c553b878f2c4c0a4b46c14fcecbb4e7c443a98ae376356532.gpx",
+      "sha256": "07ca099c0540f43c553b878f2c4c0a4b46c14fcecbb4e7c443a98ae376356532",
+      "acquiredAt": "2026-11-24T12:27:51.302Z",
+      "observedDate": "2023-11-30",
+      "label": "大小劍 三天兩夜"
+    },
+    {
+      "recordingId": "5144593",
+      "name": "志雪劍.gpx",
+      "author": "pinky",
+      "routeIds": [
+        "R031"
+      ],
+      "scope": "complete",
+      "variant": "unclassified",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=5144593&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-9e882ddf816aa034",
+      "file": "gpx/9e882ddf816aa0342c81098589799a403cc814e6492fb9b99df463d93b14223f.gpx",
+      "sha256": "9e882ddf816aa0342c81098589799a403cc814e6492fb9b99df463d93b14223f",
+      "acquiredAt": "2026-11-24T12:27:51.533Z",
+      "observedDate": "2025-11-07",
+      "label": "志雪劍"
+    },
+    {
+      "recordingId": "3865504",
+      "name": "20240927-29志雪劍.gpx",
+      "author": "郭鴻寬",
+      "routeIds": [
+        "R031"
+      ],
+      "scope": "complete",
+      "variant": "unclassified",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=3865504&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-dfca3c949702653c",
+      "file": "gpx/dfca3c949702653ca50de220e2bf625e729a6d54e015ed960b22d5f690802ac5.gpx",
+      "sha256": "dfca3c949702653ca50de220e2bf625e729a6d54e015ed960b22d5f690802ac5",
+      "acquiredAt": "2026-11-24T12:27:51.614Z",
+      "observedDate": "2024-09-26",
+      "label": "航跡"
+    },
+    {
+      "recordingId": "990993",
+      "name": "大小劍.gpx",
+      "author": "蔡承志",
+      "routeIds": [
+        "R030"
+      ],
+      "scope": "complete",
+      "variant": "unclassified",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=990993&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-d057fa2d95481a4d",
+      "file": "gpx/d057fa2d95481a4d18212b245b14b83fe8448113cae8cb4f15f418c9cd0bb8c3.gpx",
+      "sha256": "d057fa2d95481a4d18212b245b14b83fe8448113cae8cb4f15f418c9cd0bb8c3",
+      "acquiredAt": "2026-11-24T12:27:51.813Z",
+      "observedDate": "2022-06-25",
+      "label": "大小劍"
+    },
+    {
+      "recordingId": "1036224",
+      "name": "大小劍 (1).gpx",
+      "author": "李麗瑛",
+      "routeIds": [
+        "R030"
+      ],
+      "scope": "complete",
+      "variant": "unclassified",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=1036224&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-b8732912e22ec854",
+      "file": "gpx/b8732912e22ec85450691bae263569bef5ced48a0cf864785cc9992d8776295f.gpx",
+      "sha256": "b8732912e22ec85450691bae263569bef5ced48a0cf864785cc9992d8776295f",
+      "acquiredAt": "2026-11-24T12:27:51.870Z",
+      "observedDate": "2022-07-12",
+      "label": "大小劍2022-07-13 06:22:19"
+    },
+    {
+      "recordingId": "955",
+      "name": "玉山主峰.gpx",
+      "author": "KaoChiuan",
+      "routeIds": [
+        "R001"
+      ],
+      "scope": "complete",
+      "variant": "defined-route",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=955&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "同走法待驗候選；仍須通過軌跡、完整性與線形門檻",
+      "id": "gpx-e4804d02054a206c",
+      "file": "gpx/e4804d02054a206c3c8e49bb33feb15d5682b0d633de0621f27650a704797cc8.gpx",
+      "sha256": "e4804d02054a206c3c8e49bb33feb15d5682b0d633de0621f27650a704797cc8",
+      "acquiredAt": "2026-11-24T12:27:51.914Z",
+      "observedDate": "2015-09-07",
+      "label": "2015-09-08 03:30 玉山主峰單攻"
+    },
+    {
+      "recordingId": "11086",
+      "name": "玉山主峰 (1).gpx",
+      "author": "洪經岳",
+      "routeIds": [
+        "R001"
+      ],
+      "scope": "complete",
+      "variant": "defined-route",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=11086&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "同走法待驗候選；仍須通過軌跡、完整性與線形門檻",
+      "id": "gpx-f8d3118d36f7705f",
+      "file": "gpx/f8d3118d36f7705fcf4546e211e3a0a96b14324d65cb47b5c14989b30bff1fd9.gpx",
+      "sha256": "f8d3118d36f7705fcf4546e211e3a0a96b14324d65cb47b5c14989b30bff1fd9",
+      "acquiredAt": "2026-11-24T12:27:51.957Z",
+      "observedDate": "2018-12-23",
+      "label": "2018-12-23 08:13"
+    },
+    {
+      "recordingId": "117887",
+      "name": "玉山主峰 (2).gpx",
+      "author": "顏小趴",
+      "routeIds": [
+        "R001"
+      ],
+      "scope": "complete",
+      "variant": "defined-route",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=117887&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "同走法待驗候選；仍須通過軌跡、完整性與線形門檻",
+      "id": "gpx-519c016cc9ec564a",
+      "file": "gpx/519c016cc9ec564a2f41ce0b6074a6aecfbcfb815acaf6df48525a19ffbd99d0.gpx",
+      "sha256": "519c016cc9ec564a2f41ce0b6074a6aecfbcfb815acaf6df48525a19ffbd99d0",
+      "acquiredAt": "2026-11-24T12:27:52.104Z",
+      "observedDate": "2020-06-17",
+      "label": "Track"
+    },
+    {
+      "recordingId": "6099041",
+      "name": "南三段 (1).gpx",
+      "author": "Willy Wang",
+      "routeIds": [
+        "R066"
+      ],
+      "scope": "complete",
+      "variant": "unclassified",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=6099041&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-d5b36fdbadab9709",
+      "file": "gpx/d5b36fdbadab9709515122fe2ee3d188b28cc90053a7b92fc0b7c46d45e7758e.gpx",
+      "sha256": "d5b36fdbadab9709515122fe2ee3d188b28cc90053a7b92fc0b7c46d45e7758e",
+      "acquiredAt": "2026-11-24T12:27:52.433Z",
+      "observedDate": "2026-10-05",
+      "label": "南三段"
+    },
+    {
+      "recordingId": "254570",
+      "name": "新康橫斷.gpx",
+      "author": "洪啟揚",
+      "routeIds": [
+        "R077"
+      ],
+      "scope": "complete",
+      "variant": "unclassified",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=254570&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-d9e3f5b15b1332e2",
+      "file": "gpx/d9e3f5b15b1332e206f099cd7e37c15c3b123b1d05dc31e2f79bf00920a484b6.gpx",
+      "sha256": "d9e3f5b15b1332e206f099cd7e37c15c3b123b1d05dc31e2f79bf00920a484b6",
+      "acquiredAt": "2026-11-24T12:27:52.573Z",
+      "observedDate": "2020-11-10",
+      "label": "新康橫斷"
+    },
+    {
+      "recordingId": "2028252",
+      "name": "新康橫斷 (1).gpx",
+      "author": "杜拉拉",
+      "routeIds": [
+        "R077"
+      ],
+      "scope": "complete",
+      "variant": "unclassified",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=2028252&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-6daf149998f4e35f",
+      "file": "gpx/6daf149998f4e35f8755e4dc989c4ced4a182d019661b948177fdc5ce6710cc9.gpx",
+      "sha256": "6daf149998f4e35f8755e4dc989c4ced4a182d019661b948177fdc5ce6710cc9",
+      "acquiredAt": "2026-11-24T12:27:52.884Z",
+      "observedDate": "2023-06-25",
+      "label": "新康橫斷"
+    },
+    {
+      "recordingId": "6108167",
+      "name": "新康橫斷 (2).gpx",
+      "author": "李信毅",
+      "routeIds": [
+        "R077"
+      ],
+      "scope": "complete",
+      "variant": "unclassified",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=6108167&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-c03e007389d59561",
+      "file": "gpx/c03e007389d59561814cdca92348ab4bdf558f2739e35256f193070aa48f9511.gpx",
+      "sha256": "c03e007389d59561814cdca92348ab4bdf558f2739e35256f193070aa48f9511",
+      "acquiredAt": "2026-11-24T12:27:53.009Z",
+      "observedDate": "2026-10-08",
+      "label": "新康橫斷"
+    },
+    {
+      "routeIds": [
+        "R070"
+      ],
+      "author": "Amy Cheng",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=272178",
+      "recordingId": "272178",
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome登入後正常直接下載；downloadMedia",
+      "usage": "本機核對與規劃參考；不公開散布",
+      "id": "gpx-c74c486f5022ea15",
+      "file": "gpx/c74c486f5022ea156d6606d058c3d8b0dc93f52f94b5c0dcfe4f3a1e1d9a00a8.gpx",
+      "sha256": "c74c486f5022ea156d6606d058c3d8b0dc93f52f94b5c0dcfe4f3a1e1d9a00a8",
+      "acquiredAt": "2026-11-25T01:44:37.002Z",
+      "observedDate": "2020-01-01",
+      "label": "2020-01-01八大秀"
+    },
+    {
+      "routeIds": [
+        "R069"
+      ],
+      "author": "羅德榮",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=1622",
+      "recordingId": "1622",
+      "scope": "unknown",
+      "variant": "reverse",
+      "travelMode": "unknown",
+      "acquisition": "Chrome登入後正常直接下載；downloadMedia",
+      "usage": "本機核對與規劃參考；不公開散布",
+      "id": "gpx-364c14bbaa7761d6",
+      "file": "gpx/364c14bbaa7761d6dec9d517076ff0152b28cbfdba38a948acd379ef47a44122.gpx",
+      "sha256": "364c14bbaa7761d6dec9d517076ff0152b28cbfdba38a948acd379ef47a44122",
+      "acquiredAt": "2026-11-25T01:48:44.129Z",
+      "observedDate": "2015-07-02",
+      "label": "20150702 09:04 馬博橫斷逆走"
+    },
+    {
+      "recordingId": "85",
+      "author": "曾錦源",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=85",
+      "routeIds": [
+        "R011"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "百岳-郡大山.gpx",
+      "id": "gpx-7c60d55cf7d35a38",
+      "file": "gpx/7c60d55cf7d35a38cd19f8601d3a07257b388e62262e214d2f2ad9248703f2cc.gpx",
+      "sha256": "7c60d55cf7d35a38cd19f8601d3a07257b388e62262e214d2f2ad9248703f2cc",
+      "acquiredAt": "2026-11-25T02:24:22.830Z",
+      "observedDate": "2016-01-02",
+      "label": "16-01-02 11:44-郡大山2"
+    },
+    {
+      "recordingId": "158424",
+      "author": "草莓登山客",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=158424",
+      "routeIds": [
+        "R012"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "2020_08_09-西巒大山.gpx",
+      "id": "gpx-d51d1158a79a7c2b",
+      "file": "gpx/d51d1158a79a7c2be64b12f18df5a67b20d7343e39f84b939c623069714e3084.gpx",
+      "sha256": "d51d1158a79a7c2be64b12f18df5a67b20d7343e39f84b939c623069714e3084",
+      "acquiredAt": "2026-11-25T02:24:22.937Z",
+      "observedDate": "2020-08-08",
+      "label": "Track"
+    },
+    {
+      "recordingId": "86266",
+      "author": "Amy Cheng",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=86266",
+      "routeIds": [
+        "R013"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "大霸群峰登山步道(大鹿林道線).gpx",
+      "id": "gpx-7df81ea7342c82a4",
+      "file": "gpx/7df81ea7342c82a4c58ef1aaaf843b0da62b14986c9818707ac357075e3f99b8.gpx",
+      "sha256": "7df81ea7342c82a4c58ef1aaaf843b0da62b14986c9818707ac357075e3f99b8",
+      "acquiredAt": "2026-11-25T02:24:23.183Z",
+      "observedDate": "2019-12-28",
+      "label": "大霸群峰（九九山莊到觀霧）"
+    },
+    {
+      "recordingId": "86204",
+      "author": "Amy Cheng",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=86204",
+      "routeIds": [
+        "R015",
+        "R016",
+        "R017"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "武陵四秀登山步道.gpx",
+      "id": "gpx-0079b639fc510d74",
+      "file": "gpx/0079b639fc510d743d1b302366a78b215a2a46229c9e5e5a4908f8789f27f5f3.gpx",
+      "sha256": "0079b639fc510d743d1b302366a78b215a2a46229c9e5e5a4908f8789f27f5f3",
+      "acquiredAt": "2026-11-25T02:24:23.263Z",
+      "observedDate": "2020-01-17",
+      "label": "20200117武陵四秀"
+    },
+    {
+      "recordingId": "86206",
+      "author": "Amy Cheng",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=86206",
+      "routeIds": [
+        "R020",
+        "R022"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "雪山主東峰步道.gpx",
+      "id": "gpx-6f9b110809e6fe44",
+      "file": "gpx/6f9b110809e6fe4470655e93d3f5715a7c44e792e2ccab0fe8edfb0d51e6d083.gpx",
+      "sha256": "6f9b110809e6fe4470655e93d3f5715a7c44e792e2ccab0fe8edfb0d51e6d083",
+      "acquiredAt": "2026-11-25T02:24:23.314Z",
+      "observedDate": "2018-09-21",
+      "label": "2018-09-22hua 369-雪山主峰-登山口"
+    },
+    {
+      "recordingId": "5977",
+      "author": "李麗瑛",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=5977",
+      "routeIds": [
+        "R023"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "聖稜i線.gpx",
+      "id": "gpx-8e6ac0104a8abde3",
+      "file": "gpx/8e6ac0104a8abde3985c95692a38388fad9054846860f2088ce00a859477e1ba.gpx",
+      "sha256": "8e6ac0104a8abde3985c95692a38388fad9054846860f2088ce00a859477e1ba",
+      "acquiredAt": "2026-11-25T02:24:23.372Z",
+      "observedDate": "2018-06-26",
+      "label": "大鹿林道2018-06-27 05:07"
+    },
+    {
+      "recordingId": "544",
+      "author": "Amy Chen",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=544",
+      "routeIds": [
+        "R024"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "聖稜線O型縱走.gpx",
+      "id": "gpx-044858cb27cb4742",
+      "file": "gpx/044858cb27cb4742dc652f076c5d5959f4a26fc65204f74be31684606d61e478.gpx",
+      "sha256": "044858cb27cb4742dc652f076c5d5959f4a26fc65204f74be31684606d61e478",
+      "acquiredAt": "2026-11-25T02:24:23.455Z",
+      "observedDate": null,
+      "label": "D1武陵山莊～桃山山屋"
+    },
+    {
+      "recordingId": "1500268",
+      "author": "Amy Cheng",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=509841",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=1500268",
+      "routeIds": [
+        "R025"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "聖稜線Y型縱走(Y聖).gpx",
+      "id": "gpx-c62cd7f4f5791612",
+      "file": "gpx/c62cd7f4f5791612acda4bbf3498bbe01b29af23cfa323bd837546be426e6405.gpx",
+      "sha256": "c62cd7f4f5791612acda4bbf3498bbe01b29af23cfa323bd837546be426e6405",
+      "acquiredAt": "2026-11-25T02:24:23.525Z",
+      "observedDate": null,
+      "label": "聖稜線Y型縱走(Y聖)"
+    },
+    {
+      "recordingId": "476",
+      "author": "老王",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=27510",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=476",
+      "routeIds": [
+        "R027"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "雪山西稜.gpx",
+      "id": "gpx-23f2d91aa3d24ec6",
+      "file": "gpx/23f2d91aa3d24ec6f8da7b0e6090ad78fff7735d127d8cdd08b9cc35b7e2a1e6.gpx",
+      "sha256": "23f2d91aa3d24ec6f8da7b0e6090ad78fff7735d127d8cdd08b9cc35b7e2a1e6",
+      "acquiredAt": "2026-11-25T02:24:23.672Z",
+      "observedDate": "2016-12-01",
+      "label": "1.登山口到七卡"
+    },
+    {
+      "recordingId": "282191",
+      "author": "YiiSin",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1076095",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=282191",
+      "routeIds": [
+        "R028",
+        "R029"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "志佳陽大山單攻.gpx",
+      "id": "gpx-1d4a7235c1faa690",
+      "file": "gpx/1d4a7235c1faa690d6b7fd0553b72c857dd682b43f7c00ffd18f24642d34f0d0.gpx",
+      "sha256": "1d4a7235c1faa690d6b7fd0553b72c857dd682b43f7c00ffd18f24642d34f0d0",
+      "acquiredAt": "2026-11-25T02:24:23.725Z",
+      "observedDate": "2020-12-16",
+      "label": "和平區 Walking Dec 17, 2020 at 1:11 AM"
+    },
+    {
+      "recordingId": "248881",
+      "author": "Jim",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1121074",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=248881",
+      "routeIds": [
+        "R034"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "白姑大山2Day.gpx",
+      "id": "gpx-1c94c857b06a8268",
+      "file": "gpx/1c94c857b06a8268ecd021e5343ad6154b46b7419854a7ae864812c6a29c6012.gpx",
+      "sha256": "1c94c857b06a8268ecd021e5343ad6154b46b7419854a7ae864812c6a29c6012",
+      "acquiredAt": "2026-11-25T02:24:23.890Z",
+      "observedDate": "2020-11-07",
+      "label": "Track"
+    },
+    {
+      "recordingId": "178049",
+      "author": "Chen James",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=996136",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=178049",
+      "routeIds": [
+        "R035",
+        "R038",
+        "R039"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "北一段逆走.gpx",
+      "id": "gpx-4785865cd9ea9d77",
+      "file": "gpx/4785865cd9ea9d77a4e7adcf6820924c69f94b1884b46c9af9be6f80f423ede3.gpx",
+      "sha256": "4785865cd9ea9d77a4e7adcf6820924c69f94b1884b46c9af9be6f80f423ede3",
+      "acquiredAt": "2026-11-25T02:24:23.988Z",
+      "observedDate": "2020-07-21",
+      "label": "2020-07-21 北一逆走"
+    },
+    {
+      "recordingId": "95050",
+      "author": "Felix Tien",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=708575",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=95050",
+      "routeIds": [
+        "R041",
+        "R042",
+        "R043"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "北二段O型縱走.gpx",
+      "id": "gpx-08694298be7d62a4",
+      "file": "gpx/08694298be7d62a443f179076ad2e7415190c3e93fbb8fa5c1979afe98c4d9a2.gpx",
+      "sha256": "08694298be7d62a443f179076ad2e7415190c3e93fbb8fa5c1979afe98c4d9a2",
+      "acquiredAt": "2026-11-25T02:24:24.123Z",
+      "observedDate": "2020-04-29",
+      "label": "ACTIVE LOG075542"
+    },
+    {
+      "recordingId": "1819",
+      "author": "國維大仁",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=75823",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=1819",
+      "routeIds": [
+        "R044",
+        "R045",
+        "R046"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "畢羊縱走一日單攻.gpx",
+      "id": "gpx-46af55c65218e8d2",
+      "file": "gpx/46af55c65218e8d21387198e5bf583deb1644a13d6d5cb9a3df4e6dbaea83fb8.gpx",
+      "sha256": "46af55c65218e8d21387198e5bf583deb1644a13d6d5cb9a3df4e6dbaea83fb8",
+      "acquiredAt": "2026-11-25T02:24:24.173Z",
+      "observedDate": "2017-07-14",
+      "label": ""
+    },
+    {
+      "recordingId": "1273",
+      "author": "彭德昌",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=514454",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=1273",
+      "routeIds": [
+        "R050",
+        "R052"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "20170521合歡西北峰.gpx",
+      "id": "gpx-0c1197c45fffeea1",
+      "file": "gpx/0c1197c45fffeea16d54d066f2117ae80b54c9785964144c816becde022703bd.gpx",
+      "sha256": "0c1197c45fffeea16d54d066f2117ae80b54c9785964144c816becde022703bd",
+      "acquiredAt": "2026-11-25T02:24:24.217Z",
+      "observedDate": "2017-05-20",
+      "label": "2017-05-21 04:35"
+    },
+    {
+      "recordingId": "7434",
+      "author": "趙彥緯",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=701378",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=7434",
+      "routeIds": [
+        "R053"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "20180817-0819 奇萊主北.gpx",
+      "id": "gpx-94f25d0004cd1005",
+      "file": "gpx/94f25d0004cd1005c75cb73864e4b138548547eab8eecf10b42e00d0479a1120.gpx",
+      "sha256": "94f25d0004cd1005c75cb73864e4b138548547eab8eecf10b42e00d0479a1120",
+      "acquiredAt": "2026-11-25T02:24:24.391Z",
+      "observedDate": "2018-08-17",
+      "label": "Track 0 (09:18:04)"
+    },
+    {
+      "recordingId": "191",
+      "author": "粉圓妹",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=10416",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=191",
+      "routeIds": [
+        "R054"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "奇萊連峰的副本.gpx",
+      "id": "gpx-2b780dc9e9b8e802",
+      "file": "gpx/2b780dc9e9b8e802848b3de7842f1090c64419140656d97c9a7214913cae28b6.gpx",
+      "sha256": "2b780dc9e9b8e802848b3de7842f1090c64419140656d97c9a7214913cae28b6",
+      "acquiredAt": "2026-11-25T02:24:24.439Z",
+      "observedDate": null,
+      "label": "奇萊連峰的副本"
+    },
+    {
+      "recordingId": "178435",
+      "author": "Amy Cheng",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=509841",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=178435",
+      "routeIds": [
+        "R055"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "奇萊南峰步道、南華山步道(奇萊南華)單日往返.gpx",
+      "id": "gpx-da7224db8e4c3a74",
+      "file": "gpx/da7224db8e4c3a744dd43b927a051e85499f0203b2044729650cfed04343ce62.gpx",
+      "sha256": "da7224db8e4c3a744dd43b927a051e85499f0203b2044729650cfed04343ce62",
+      "acquiredAt": "2026-11-25T02:24:24.577Z",
+      "observedDate": null,
+      "label": "奇萊南華健行.gpx"
+    },
+    {
+      "recordingId": "490770",
+      "author": "小嵐趣走走",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=896237",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=490770",
+      "routeIds": [
+        "R056"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "百岳 台8線111.2K新登山口_屏風山.gpx",
+      "id": "gpx-10593c03f55bf117",
+      "file": "gpx/10593c03f55bf117a9502b3d202eb62b8f4eb1edbdfc8d9403c92460d601ad7c.gpx",
+      "sha256": "10593c03f55bf117a9502b3d202eb62b8f4eb1edbdfc8d9403c92460d601ad7c",
+      "acquiredAt": "2026-11-25T02:24:24.627Z",
+      "observedDate": "2021-05-06",
+      "label": "workout 560"
+    },
+    {
+      "recordingId": "259330",
+      "author": "恩仔",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=597188",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=259330",
+      "routeIds": [
+        "R072"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "南二段縱走.gpx",
+      "id": "gpx-af0756c9c2e98ec0",
+      "file": "gpx/af0756c9c2e98ec05abf46f1717dcde882955313cac16de9945176fbe4e39a1a.gpx",
+      "sha256": "af0756c9c2e98ec05abf46f1717dcde882955313cac16de9945176fbe4e39a1a",
+      "acquiredAt": "2026-11-25T02:24:25.063Z",
+      "observedDate": "2020-10-30",
+      "label": "001"
+    },
+    {
+      "recordingId": "11822",
+      "author": "Amy Chen",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=597204",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=11822",
+      "routeIds": [
+        "R057"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "奇萊北壁下屏風山.gpx",
+      "id": "gpx-26c356a9e62e01f9",
+      "file": "gpx/26c356a9e62e01f996f89d73a57a9dd51a1b0b47aebdc2ec74e31baf8cf73ff0.gpx",
+      "sha256": "26c356a9e62e01f996f89d73a57a9dd51a1b0b47aebdc2ec74e31baf8cf73ff0",
+      "acquiredAt": "2026-11-25T02:24:25.091Z",
+      "observedDate": null,
+      "label": "奇萊北壁下屏風山"
+    },
+    {
+      "recordingId": "270348",
+      "author": "Lucky Chang",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=729421",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=270348",
+      "routeIds": [
+        "R062"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "干卓萬群峰下武界（經卓社山新路）.gpx",
+      "id": "gpx-bafb26f4f507b8fa",
+      "file": "gpx/bafb26f4f507b8fa943cde0d5e992381e3efde051c3859e04bb339445a2a25db.gpx",
+      "sha256": "bafb26f4f507b8fa943cde0d5e992381e3efde051c3859e04bb339445a2a25db",
+      "acquiredAt": "2026-11-25T02:24:25.227Z",
+      "observedDate": "2020-04-29",
+      "label": "D0 行車終點至工寮"
+    },
+    {
+      "recordingId": "69537",
+      "author": "Amy Cheng",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=509841",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=69537",
+      "routeIds": [
+        "R064"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "六順山、七彩湖（丹大進出）.gpx",
+      "id": "gpx-8c8564053e1b1120",
+      "file": "gpx/8c8564053e1b112086b7083f25421b007e7f2feeb271a186b64171d49a17d6c7.gpx",
+      "sha256": "8c8564053e1b112086b7083f25421b007e7f2feeb271a186b64171d49a17d6c7",
+      "acquiredAt": "2026-11-25T02:24:25.319Z",
+      "observedDate": null,
+      "label": "六順山、七彩湖"
+    },
+    {
+      "recordingId": "85832",
+      "author": "小威",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=813374",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=85832",
+      "routeIds": [
+        "R066"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "南三段 2020_3_28-4_3.gpx",
+      "id": "gpx-13fecc47f0d9b5f4",
+      "file": "gpx/13fecc47f0d9b5f45eb18fc07a178b3c9457652561151e41a3fc7f338553e699.gpx",
+      "sha256": "13fecc47f0d9b5f45eb18fc07a178b3c9457652561151e41a3fc7f338553e699",
+      "acquiredAt": "2026-11-25T02:24:25.469Z",
+      "observedDate": "2020-03-27",
+      "label": "2020-03-28_07-24-20 day7"
+    },
+    {
+      "recordingId": "86214",
+      "author": "Amy Cheng",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=509841",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=86214",
+      "routeIds": [
+        "R073",
+        "R078"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "嘉明湖步道.gpx",
+      "id": "gpx-dd34063703313961",
+      "file": "gpx/dd3406370331396188ee56fb15d09bda2a8f3bafbc80a69152e16a1c25fa851a.gpx",
+      "sha256": "dd3406370331396188ee56fb15d09bda2a8f3bafbc80a69152e16a1c25fa851a",
+      "acquiredAt": "2026-11-25T02:24:25.597Z",
+      "observedDate": "2019-08-31",
+      "label": "Track"
+    },
+    {
+      "recordingId": "179101",
+      "author": "Amy Cheng",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=509841",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=179101",
+      "routeIds": [
+        "R073"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "嘉明湖單日往返.gpx",
+      "id": "gpx-726f7265fa340b67",
+      "file": "gpx/726f7265fa340b67859856b3945a83dba0a246e9042a191817bcd386255e3f39.gpx",
+      "sha256": "726f7265fa340b67859856b3945a83dba0a246e9042a191817bcd386255e3f39",
+      "acquiredAt": "2026-11-25T02:24:25.654Z",
+      "observedDate": null,
+      "label": "嘉明湖單攻.gpx"
+    },
+    {
+      "recordingId": "8993",
+      "author": "Amy Chen",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=597204",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=8993",
+      "routeIds": [
+        "R078"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "戒茂斯上嘉明湖.gpx",
+      "id": "gpx-6fb57b7bfbd5f438",
+      "file": "gpx/6fb57b7bfbd5f438743e6a4a6816dc0ce5625c3f372c28265287e74580a98586.gpx",
+      "sha256": "6fb57b7bfbd5f438743e6a4a6816dc0ce5625c3f372c28265287e74580a98586",
+      "acquiredAt": "2026-11-25T02:24:25.708Z",
+      "observedDate": null,
+      "label": "戒茂斯上嘉明湖"
+    },
+    {
+      "recordingId": "47705",
+      "author": "陳家文",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=589297",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=47705",
+      "routeIds": [
+        "R080",
+        "R081",
+        "R082",
+        "R083",
+        "R087"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "南一段.gpx",
+      "id": "gpx-9634da8b4665feba",
+      "file": "gpx/9634da8b4665febabc60cdf07955b2f3b35afb5696bdecfb8c229f98e160fec4.gpx",
+      "sha256": "9634da8b4665febabc60cdf07955b2f3b35afb5696bdecfb8c229f98e160fec4",
+      "acquiredAt": "2026-11-25T02:24:26.049Z",
+      "observedDate": "2019-12-18",
+      "label": "南一段"
+    },
+    {
+      "recordingId": "119",
+      "author": "粉圓妹",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=10416",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=119",
+      "routeIds": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R005",
+        "R007"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "玉山前五峰.gpx",
+      "id": "gpx-909b28a3da1c05a5",
+      "file": "gpx/909b28a3da1c05a51e274d6cbe738c96def47f18e1ddaa4a1cf4884a7ba92c16.gpx",
+      "sha256": "909b28a3da1c05a51e274d6cbe738c96def47f18e1ddaa4a1cf4884a7ba92c16",
+      "acquiredAt": "2026-11-25T02:24:26.097Z",
+      "observedDate": null,
+      "label": "停車場～登山口"
+    },
+    {
+      "recordingId": "118",
+      "author": "粉圓妹",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=10416",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=118",
+      "routeIds": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R005",
+        "R007"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "玉山後四峰.gpx",
+      "id": "gpx-4229ffc95d260167",
+      "file": "gpx/4229ffc95d2601679302f0fa3e959230e38b0d778bbab7ee11cf3637bb735f50.gpx",
+      "sha256": "4229ffc95d2601679302f0fa3e959230e38b0d778bbab7ee11cf3637bb735f50",
+      "acquiredAt": "2026-11-25T02:24:26.140Z",
+      "observedDate": null,
+      "label": "停車場～登山口"
+    },
+    {
+      "recordingId": "154180",
+      "author": "Amy Cheng",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=509841",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=154180",
+      "routeIds": [
+        "R085"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "關山嶺山登山步道.gpx",
+      "id": "gpx-6fb43c583d8a8ed1",
+      "file": "gpx/6fb43c583d8a8ed19ab75376533c73150334ee1a4dcea4aed6136dfab6cf62bd.gpx",
+      "sha256": "6fb43c583d8a8ed19ab75376533c73150334ee1a4dcea4aed6136dfab6cf62bd",
+      "acquiredAt": "2026-11-25T02:24:26.171Z",
+      "observedDate": null,
+      "label": "關山嶺山"
+    },
+    {
+      "recordingId": "154181",
+      "author": "Amy Cheng",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=509841",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=154181",
+      "routeIds": [
+        "R086"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "塔關山登山步道.gpx",
+      "id": "gpx-441eb7cb6c073e75",
+      "file": "gpx/441eb7cb6c073e7590547d6dca7cd086e2e82ea6cd84264d7b6cb4e4f20bc3b8.gpx",
+      "sha256": "441eb7cb6c073e7590547d6dca7cd086e2e82ea6cd84264d7b6cb4e4f20bc3b8",
+      "acquiredAt": "2026-11-25T02:24:26.195Z",
+      "observedDate": null,
+      "label": "塔關山"
+    },
+    {
+      "recordingId": "1496470",
+      "author": "Ada Chao",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=556197",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=1496470",
+      "routeIds": [
+        "R061"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "能高安東軍（北三段）20221001-6.gpx",
+      "id": "gpx-3c94d14886d1113b",
+      "file": "gpx/3c94d14886d1113b0199e9d2d90c1dbf646e04f0252922f3d4c0877c4d287e90.gpx",
+      "sha256": "3c94d14886d1113b0199e9d2d90c1dbf646e04f0252922f3d4c0877c4d287e90",
+      "acquiredAt": "2026-11-25T02:24:26.344Z",
+      "observedDate": "2022-09-30",
+      "label": "2022-10-01能高安東軍.gpx"
+    },
+    {
+      "recordingId": "4170827",
+      "author": "金牌",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=629628",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=4170827",
+      "routeIds": [
+        "R070",
+        "R069",
+        "R072"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "八通關古道與八大秀(2024.12.12-15金牌).gpx",
+      "id": "gpx-12bc6e50636031e6",
+      "file": "gpx/12bc6e50636031e6428e898bfebcfc592756676c2e21ccf59ef14816dd55b404.gpx",
+      "sha256": "12bc6e50636031e6428e898bfebcfc592756676c2e21ccf59ef14816dd55b404",
+      "acquiredAt": "2026-11-25T02:24:26.529Z",
+      "observedDate": "2024-12-11",
+      "label": "D1.登山口→觀高山屋2024-12-12"
+    },
+    {
+      "recordingId": "668052",
+      "author": "紅綠燈",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=962584",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=668052",
+      "routeIds": [
+        "R088"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "一日北大武單攻.gpx",
+      "id": "gpx-d36ee0058a2fe68f",
+      "file": "gpx/d36ee0058a2fe68f717be89ab5ad3735cb9734b46a2dcaac3ee75f735c940261.gpx",
+      "sha256": "d36ee0058a2fe68f717be89ab5ad3735cb9734b46a2dcaac3ee75f735c940261",
+      "acquiredAt": "2026-11-25T02:24:26.592Z",
+      "observedDate": "2021-12-03",
+      "label": "2021-12-04_00-49-16.gpx"
+    },
+    {
+      "recordingId": "1852782",
+      "author": "紹忠",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1240839",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=1852782",
+      "routeIds": [
+        "R059"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "能高越嶺（東進西出）.gpx",
+      "id": "gpx-1be440ff4046d64d",
+      "file": "gpx/1be440ff4046d64d5f71e0ed95f00e4289c141b711071b0fda194d0a2428e8fc.gpx",
+      "sha256": "1be440ff4046d64d5f71e0ed95f00e4289c141b711071b0fda194d0a2428e8fc",
+      "acquiredAt": "2026-11-25T02:24:26.718Z",
+      "observedDate": "2023-04-28",
+      "label": "2023-04-29_能高越嶺全段（東進西出）.gpx"
+    },
+    {
+      "recordingId": "1765487",
+      "author": "小楊小儀",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=967625",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=1765487",
+      "routeIds": [
+        "R058"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "2023奇萊東稜四天D1_奇萊登山口～奇萊北峰~磐石中峰避難山屋.gpx",
+      "tripId": "biji-20230402-chilai-east-four-days",
+      "id": "gpx-7e9b7638ae0b520b",
+      "file": "gpx/7e9b7638ae0b520b843055744bf0a9fe3a255aa2dcc7df09cf3fc020651c6c41.gpx",
+      "sha256": "7e9b7638ae0b520b843055744bf0a9fe3a255aa2dcc7df09cf3fc020651c6c41",
+      "acquiredAt": "2026-11-25T02:24:26.807Z",
+      "observedDate": "2023-04-01",
+      "label": "奇萊東稜D1_奇萊登山口～盤石中峰避難山屋"
+    },
+    {
+      "recordingId": "1765488",
+      "author": "小楊小儀",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=967625",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=1765488",
+      "routeIds": [
+        "R058"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "2023奇萊東稜四天D2_磐石中峰山屋~磐石山~太魯閣大山~平安池營地.gpx",
+      "tripId": "biji-20230402-chilai-east-four-days",
+      "id": "gpx-f0406faf4096b20e",
+      "file": "gpx/f0406faf4096b20efa7f7b38a68c28cd3f242e7695b23d6a20d60768d6d3a3e2.gpx",
+      "sha256": "f0406faf4096b20efa7f7b38a68c28cd3f242e7695b23d6a20d60768d6d3a3e2",
+      "acquiredAt": "2026-11-25T02:24:26.873Z",
+      "observedDate": "2023-04-02",
+      "label": "奇萊東稜D2_磐石中峰山屋~磐石山~太魯閣大山~平安池營地"
+    },
+    {
+      "recordingId": "1765489",
+      "author": "小楊小儀",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=967625",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=1765489",
+      "routeIds": [
+        "R058"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "2023奇萊東稜四天D3_平安池~立霧主山~帕托魯山~11.2K紮營.gpx",
+      "tripId": "biji-20230402-chilai-east-four-days",
+      "id": "gpx-5a882724b293246d",
+      "file": "gpx/5a882724b293246d2f32c1afc4e74459272b3265c6e26cc79ebbb17b02699905.gpx",
+      "sha256": "5a882724b293246d2f32c1afc4e74459272b3265c6e26cc79ebbb17b02699905",
+      "acquiredAt": "2026-11-25T02:24:26.941Z",
+      "observedDate": "2023-04-03",
+      "label": "奇萊東稜D3_平安池~立霧主山~帕托魯山~11.2K紮營"
+    },
+    {
+      "recordingId": "1765491",
+      "author": "小楊小儀",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=967625",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=1765491",
+      "routeIds": [
+        "R058"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "acquisition": "Chrome已登入；每份來源新頁正常直接下載；沒有保存Cookie或帳密",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "name": "2023奇萊東稜四天D4_11.2K營地~岳王亭.gpx",
+      "tripId": "biji-20230402-chilai-east-four-days",
+      "id": "gpx-150eeb8c3121b9e8",
+      "file": "gpx/150eeb8c3121b9e853bd5ad1fd7cd90a01cd38a81cc1708013248a1d00f10d2b.gpx",
+      "sha256": "150eeb8c3121b9e853bd5ad1fd7cd90a01cd38a81cc1708013248a1d00f10d2b",
+      "acquiredAt": "2026-11-25T02:24:27.003Z",
+      "observedDate": "2023-04-04",
+      "label": "奇萊東稜D4_11.2K營地~岳王亭"
+    },
+    {
+      "recordingId": "6200892",
+      "author": "pinky",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1391733",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6200892",
+      "routeIds": [
+        "R069"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "name": "馬博縱走.gpx",
+      "acquisition": "Chrome登入後正常直接下載；日期以GPX實際時間解析，不採上傳日期",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "id": "gpx-27887a1ef8655017",
+      "file": "gpx/27887a1ef8655017153f2d4bf81b28f318cc396815a19a0510d2b50e3febb4b1.gpx",
+      "sha256": "27887a1ef8655017153f2d4bf81b28f318cc396815a19a0510d2b50e3febb4b1",
+      "acquiredAt": "2026-11-25T02:33:01.528Z",
+      "observedDate": "2026-11-01",
+      "label": "馬博縱走",
+      "sourceRecords": [
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6200892",
+          "author": "pinky",
+          "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1391733",
+          "recordingId": "6200892"
+        }
+      ]
+    },
+    {
+      "recordingId": "6059402",
+      "author": "YaYa Hsiang",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=777946",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6059402",
+      "routeIds": [
+        "R069"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "name": "2026-09-25 盆駒西稜接馬博橫斷下嘆息灣出中平林道5日.gpx",
+      "acquisition": "Chrome登入後正常直接下載；日期以GPX實際時間解析，不採上傳日期",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "id": "gpx-0b202835239937e2",
+      "file": "gpx/0b202835239937e244bd1d9824594708b48d149c399339d8a99a6e1922722e66.gpx",
+      "sha256": "0b202835239937e244bd1d9824594708b48d149c399339d8a99a6e1922722e66",
+      "acquiredAt": "2026-11-25T02:33:02.265Z",
+      "observedDate": "2026-09-24",
+      "label": "2026-09-25 盆駒西稜接馬博橫斷下嘆息灣出中平林道5日",
+      "sourceRecords": [
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6059402",
+          "author": "YaYa Hsiang",
+          "authorProfile": "https://hiking.biji.co/index.php?q=member&member=777946",
+          "recordingId": "6059402"
+        }
+      ]
+    },
+    {
+      "recordingId": "6091299",
+      "author": "蔡宗佑",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1899151",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6091299",
+      "routeIds": [
+        "R070"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "name": "八大秀4天.gpx",
+      "acquisition": "Chrome登入後正常直接下載；日期以GPX實際時間解析，不採上傳日期",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "id": "gpx-064727b0105eadb5",
+      "file": "gpx/064727b0105eadb506d29c1081ba23d2849ce032e841713f019f09fac5ca5b62.gpx",
+      "sha256": "064727b0105eadb506d29c1081ba23d2849ce032e841713f019f09fac5ca5b62",
+      "acquiredAt": "2026-11-25T02:33:02.490Z",
+      "observedDate": "2026-10-05",
+      "label": "八大秀4天",
+      "sourceRecords": [
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6091299",
+          "author": "蔡宗佑",
+          "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1899151",
+          "recordingId": "6091299"
+        }
+      ]
+    },
+    {
+      "recordingId": "6207514",
+      "author": "草莓登山客",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1001030",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6207514",
+      "routeIds": [
+        "R069",
+        "R070",
+        "R072"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "name": "2026.10.11 南二段 中央金礦至東埔(八通關古道高繞，沒走八通關山).gpx",
+      "acquisition": "Chrome登入後正常直接下載；日期以GPX實際時間解析，不採上傳日期",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "id": "gpx-ff54deb7657ecbad",
+      "file": "gpx/ff54deb7657ecbade9c92c7bdb368e07011965dd6a96671939fc77c65abd9abc.gpx",
+      "sha256": "ff54deb7657ecbade9c92c7bdb368e07011965dd6a96671939fc77c65abd9abc",
+      "acquiredAt": "2026-11-25T02:33:02.604Z",
+      "observedDate": "2026-10-10",
+      "label": "2026-10-11 06:26:18",
+      "sourceRecords": [
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6207514",
+          "author": "草莓登山客",
+          "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1001030",
+          "recordingId": "6207514"
+        },
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6114364",
+          "author": "翁資焱",
+          "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1395527",
+          "recordingId": "6114364"
+        }
+      ]
+    },
+    {
+      "recordingId": "5352731",
+      "author": "Vincent",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1090490",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=5352731",
+      "routeIds": [
+        "R064"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "name": "260219-21-六順山七彩湖三日行.gpx",
+      "acquisition": "Chrome登入後正常直接下載；日期以GPX實際時間解析，不採上傳日期",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "id": "gpx-19299654b7a8f3bb",
+      "file": "gpx/19299654b7a8f3bb1ae5cad49ab5a5381957db07c46197c17c42e5667e79db8c.gpx",
+      "sha256": "19299654b7a8f3bb1ae5cad49ab5a5381957db07c46197c17c42e5667e79db8c",
+      "acquiredAt": "2026-11-25T02:33:02.815Z",
+      "observedDate": "2026-02-19",
+      "label": "260219-21-六順山七彩湖三日行",
+      "sourceRecords": [
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=5352731",
+          "author": "Vincent",
+          "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1090490",
+          "recordingId": "5352731"
+        }
+      ]
+    },
+    {
+      "recordingId": "2918540",
+      "author": "小楊小儀",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=967625",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=2918540",
+      "routeIds": [
+        "R064"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "name": "六順山七彩湖 兩天一夜‘’機+走‘’行程.gpx",
+      "acquisition": "Chrome登入後正常直接下載；日期以GPX實際時間解析，不採上傳日期",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "id": "gpx-9512a26c4709da3c",
+      "file": "gpx/9512a26c4709da3ca1b0ab55099ff53f1baaee8c3d6e1b6011016e94931f5e64.gpx",
+      "sha256": "9512a26c4709da3ca1b0ab55099ff53f1baaee8c3d6e1b6011016e94931f5e64",
+      "acquiredAt": "2026-11-25T02:33:02.941Z",
+      "observedDate": "2024-02-24",
+      "label": "六順山七彩湖 兩天一夜\"機+走\"行程",
+      "sourceRecords": [
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=2918540",
+          "author": "小楊小儀",
+          "authorProfile": "https://hiking.biji.co/index.php?q=member&member=967625",
+          "recordingId": "2918540"
+        }
+      ]
+    },
+    {
+      "recordingId": "6053878",
+      "author": "Chenling Hsu",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1921646",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6053878",
+      "routeIds": [
+        "R057"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "name": "奇萊北壁下屏風.gpx",
+      "acquisition": "Chrome登入後正常直接下載；日期以GPX實際時間解析，不採上傳日期",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "id": "gpx-06cf0fc3d0c390bb",
+      "file": "gpx/06cf0fc3d0c390bb4b007b6126c58fd1bb52d7b982fdcd66ef2562672dd4c70e.gpx",
+      "sha256": "06cf0fc3d0c390bb4b007b6126c58fd1bb52d7b982fdcd66ef2562672dd4c70e",
+      "acquiredAt": "2026-11-25T02:33:03.024Z",
+      "observedDate": "2026-06-19",
+      "label": "2026-06-19_21奇萊北壁下屏風三天",
+      "sourceRecords": [
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6053878",
+          "author": "Chenling Hsu",
+          "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1921646",
+          "recordingId": "6053878"
+        }
+      ]
+    },
+    {
+      "recordingId": "6008189",
+      "author": "pinky",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1391733",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6008189",
+      "routeIds": [
+        "R057"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "name": "屏風上北壁.gpx",
+      "acquisition": "Chrome登入後正常直接下載；日期以GPX實際時間解析，不採上傳日期",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "id": "gpx-2ac3b6853d010e13",
+      "file": "gpx/2ac3b6853d010e13a7e79fe6af24db0ff2b38d2bb9a6ff4e0a8bd9384874038b.gpx",
+      "sha256": "2ac3b6853d010e13a7e79fe6af24db0ff2b38d2bb9a6ff4e0a8bd9384874038b",
+      "acquiredAt": "2026-11-25T02:33:03.217Z",
+      "observedDate": "2026-09-18",
+      "label": "屏風上北壁",
+      "sourceRecords": [
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6008189",
+          "author": "pinky",
+          "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1391733",
+          "recordingId": "6008189"
+        }
+      ]
+    },
+    {
+      "recordingId": "6161659",
+      "author": "水躍魚登山隊",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1157450",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6161659",
+      "routeIds": [
+        "R027"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "name": "雪山西稜 (1).gpx",
+      "acquisition": "Chrome登入後正常直接下載；日期以GPX實際時間解析，不採上傳日期",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "id": "gpx-a38ce5eede2ef9bf",
+      "file": "gpx/a38ce5eede2ef9bfe21905ec4fedef8a64fe5305a55c745405dc88e258f7bdda.gpx",
+      "sha256": "a38ce5eede2ef9bfe21905ec4fedef8a64fe5305a55c745405dc88e258f7bdda",
+      "acquiredAt": "2026-11-25T02:33:03.352Z",
+      "observedDate": "2026-10-15",
+      "label": "狗魚_雪山西稜四天三夜",
+      "sourceRecords": [
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6161659",
+          "author": "水躍魚登山隊",
+          "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1157450",
+          "recordingId": "6161659"
+        }
+      ]
+    },
+    {
+      "recordingId": "6114289",
+      "author": "MikeYeh",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1363963",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6114289",
+      "routeIds": [
+        "R027"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "name": "【雪山西稜四日】雪山登山口至小雪山旅遊資訊站.gpx",
+      "acquisition": "Chrome登入後正常直接下載；日期以GPX實際時間解析，不採上傳日期",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "id": "gpx-36598a212db8ee32",
+      "file": "gpx/36598a212db8ee3252ba0be6273f4f2881abfbf88007bd09dd94c81d4dde93c2.gpx",
+      "sha256": "36598a212db8ee3252ba0be6273f4f2881abfbf88007bd09dd94c81d4dde93c2",
+      "acquiredAt": "2026-11-25T02:33:03.904Z",
+      "observedDate": "2026-10-08",
+      "label": "GOTOES Export",
+      "sourceRecords": [
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6114289",
+          "author": "MikeYeh",
+          "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1363963",
+          "recordingId": "6114289"
+        }
+      ]
+    },
+    {
+      "recordingId": "6220052",
+      "author": "🌟👶Ya-wen🎈",
+      "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1469037",
+      "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6220052",
+      "routeIds": [
+        "R072"
+      ],
+      "scope": "unknown",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "name": "1151110-17南二段.gpx",
+      "acquisition": "Chrome登入後正常直接下載；日期以GPX實際時間解析，不採上傳日期",
+      "usage": "本機資料核對與規劃參考；不公開再散布",
+      "id": "gpx-cfff140d5c32cfc4",
+      "file": "gpx/cfff140d5c32cfc41427bc3349bdd12a570fda33a3325116f708d0cdb7e9e200.gpx",
+      "sha256": "cfff140d5c32cfc41427bc3349bdd12a570fda33a3325116f708d0cdb7e9e200",
+      "acquiredAt": "2026-11-25T02:33:04.053Z",
+      "observedDate": "2026-11-10",
+      "label": "1151110-17南二段",
+      "sourceRecords": [
+        {
+          "sourceUrl": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=6220052",
+          "author": "🌟👶Ya-wen🎈",
+          "authorProfile": "https://hiking.biji.co/index.php?q=member&member=1469037",
+          "recordingId": "6220052"
+        }
+      ]
+    }
+  ],
+  "notice": "原始GPX只留本機快取，不隨報告公開散布。"
+}

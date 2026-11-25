@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "owner-tunyuan-tianchi-20261119",
+      "projectFile": "data/geometry/sources/g11-g12-tunyuan-tianchi-owner-20261119.gpx",
+      "sha256": "84b1b819bf6e15880148172ae7ff01bbd0fa029d34f2cc8e516947438e45fc2b",
+      "routeIds": ["R055", "R059", "R061"],
+      "author": "",
+      "sourceUrl": "",
+      "provenanceRef": "docs/G11_G12_OWNER_GPX_20261119.md",
+      "scope": "partial",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "usage": "既有使用者提供規劃參考；部分線形已由此檔建立，不作獨立外部證據，不重新散布"
+    },
+    {
+      "id": "owner-pingfeng-20261120",
+      "projectFile": "data/geometry/sources/pingfeng-owner-direction-20261120.gpx",
+      "sha256": "660226f1c753ba5613d9cf7af65910caf718edf5493ccfde3533f0e3513b406a",
+      "routeIds": ["R056", "R057"],
+      "author": "",
+      "sourceUrl": "",
+      "provenanceRef": "docs/IDEA_002_PREVIEW_DIRECTION_20261120.md",
+      "scope": "partial",
+      "variant": "unclassified",
+      "travelMode": "unknown",
+      "usage": "既有使用者提供方向參考，非完整行程；不作獨立外部證據，不重新散布"
+    }
+  ]
+}

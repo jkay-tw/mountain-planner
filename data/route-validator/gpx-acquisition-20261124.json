@@ -1,0 +1,822 @@
+{
+  "schemaVersion": 1,
+  "acquisition": "Chrome; user authenticated; normal website download; no stored credentials",
+  "notice": "Only source metadata and hashes; raw GPX and GPX overlay report stay local and are not published",
+  "sources": [
+    {
+      "routeIds": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R005"
+      ],
+      "author": "Wei",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=2302095&q=trail",
+      "scope": "partial",
+      "variant": "yushan-multiple-branches",
+      "travelMode": "walking",
+      "id": "gpx-d8e90d200f073f7e",
+      "sha256": "d8e90d200f073f7efae23906ebe1526d78e92c78a15afb9ffabb178de5b2d66d",
+      "acquiredAt": "2026-11-24T12:20:02.231Z",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "observedDate": "2023-07-10",
+      "label": "玉山前後十峰",
+      "recordingId": "2302095",
+      "name": "玉山群九峰(全路線).玉山前五峰.玉山後四峰.gpx",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "localCacheRelativeFile": "gpx/d8e90d200f073f7efae23906ebe1526d78e92c78a15afb9ffabb178de5b2d66d.gpx",
+      "parsedSummary": {
+        "source": "2302095",
+        "id": "gpx-d8e90d200f073f7e",
+        "routeIds": [
+          "R001",
+          "R002",
+          "R003",
+          "R004",
+          "R005"
+        ],
+        "points": 3945,
+        "distanceKm": 64.3,
+        "components": 1,
+        "warnings": [
+          "INVALID_TIME_ORDER"
+        ]
+      }
+    },
+    {
+      "recordingId": "229060",
+      "name": "南三段(2020完整版7日).gpx",
+      "author": "保用十年",
+      "routeIds": [
+        "R066"
+      ],
+      "scope": "complete",
+      "variant": "unclassified",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=229060&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-04c37ce0eef774ce",
+      "sha256": "04c37ce0eef774ced5bdbdd7b0872a8242e09ee08972fd22422b4ff0064d037a",
+      "acquiredAt": "2026-11-24T12:27:46.718Z",
+      "observedDate": "2020-10-07",
+      "label": "D1-瑞穗林道19K-32K工寮-34K活水源-太平溪西源營地BY卡卡",
+      "localCacheRelativeFile": "gpx/04c37ce0eef774ced5bdbdd7b0872a8242e09ee08972fd22422b4ff0064d037a.gpx",
+      "parsedSummary": {
+        "source": "229060",
+        "id": "gpx-04c37ce0eef774ce",
+        "routeIds": [
+          "R066"
+        ],
+        "points": 10833,
+        "distanceKm": 107.6,
+        "components": 9,
+        "warnings": [
+          "MULTI_SEGMENT",
+          "INVALID_TIME_ORDER"
+        ]
+      }
+    },
+    {
+      "recordingId": "6204736",
+      "name": "南三段丹大東郡橫斷八日（含取水）.gpx",
+      "author": "灰灰",
+      "routeIds": [
+        "R066"
+      ],
+      "scope": "complete",
+      "variant": "south3-water-detours",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=6204736&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-918267497a738c32",
+      "sha256": "918267497a738c32c58517031bd98d838198785d8bcd96d39f4cb5154958789b",
+      "acquiredAt": "2026-11-24T12:27:48.794Z",
+      "observedDate": "2026-10-30",
+      "label": "南三段丹大東郡橫斷八日 Day 1：瑞穗林道17.8K啟登-瑞穗林道34K登山口-沙武巒草原",
+      "localCacheRelativeFile": "gpx/918267497a738c32c58517031bd98d838198785d8bcd96d39f4cb5154958789b.gpx",
+      "parsedSummary": {
+        "source": "6204736",
+        "id": "gpx-918267497a738c32",
+        "routeIds": [
+          "R066"
+        ],
+        "points": 80063,
+        "distanceKm": 130.1,
+        "components": 10,
+        "warnings": [
+          "MULTI_SEGMENT"
+        ]
+      }
+    },
+    {
+      "recordingId": "5499076",
+      "name": "一日志雪劍.gpx",
+      "author": "小蜜蜂",
+      "routeIds": [
+        "R031"
+      ],
+      "scope": "complete",
+      "variant": "zhi-xue-jian-optional-peaks",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=5499076&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-a914ac2230a2979c",
+      "sha256": "a914ac2230a2979ce0bbb3f13510cc478a3f0f568bdb8793ff958d0b5bbcd3c3",
+      "acquiredAt": "2026-11-24T12:27:49.601Z",
+      "observedDate": "2024-12-06",
+      "label": "一日志雪劍",
+      "localCacheRelativeFile": "gpx/a914ac2230a2979ce0bbb3f13510cc478a3f0f568bdb8793ff958d0b5bbcd3c3.gpx",
+      "parsedSummary": {
+        "source": "5499076",
+        "id": "gpx-a914ac2230a2979c",
+        "routeIds": [
+          "R031"
+        ],
+        "points": 34399,
+        "distanceKm": 38,
+        "components": 1,
+        "warnings": []
+      }
+    },
+    {
+      "recordingId": "682913",
+      "name": "大小劍-停車場~油婆蘭營地(第一天).gpx",
+      "author": "小楊小儀",
+      "routeIds": [
+        "R030"
+      ],
+      "scope": "partial",
+      "variant": "day-1",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=682913&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-3cfc88d108642e7e",
+      "sha256": "3cfc88d108642e7ea1dc11ae030543f6c85d0966eac1b996b759e9032a1ca9dc",
+      "acquiredAt": "2026-11-24T12:27:49.665Z",
+      "observedDate": "2021-12-10",
+      "label": "大小劍-停車場~油婆蘭營地(第一天)",
+      "localCacheRelativeFile": "gpx/3cfc88d108642e7ea1dc11ae030543f6c85d0966eac1b996b759e9032a1ca9dc.gpx",
+      "parsedSummary": {
+        "source": "682913",
+        "id": "gpx-3cfc88d108642e7e",
+        "routeIds": [
+          "R030"
+        ],
+        "points": 2246,
+        "distanceKm": 13.9,
+        "components": 1,
+        "warnings": []
+      }
+    },
+    {
+      "recordingId": "682917",
+      "name": "大小劍-油婆蘭營地~小劍山來回(第二天).gpx",
+      "author": "小楊小儀",
+      "routeIds": [
+        "R030"
+      ],
+      "scope": "partial",
+      "variant": "day-2",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=682917&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-4c80aee949bd1ad8",
+      "sha256": "4c80aee949bd1ad8ac877239c569d63fc8eebb4739be2a06ca5a39fd0f337180",
+      "acquiredAt": "2026-11-24T12:27:49.717Z",
+      "observedDate": "2021-12-11",
+      "label": "大小劍-油婆蘭營地~小劍山來回(第二天)",
+      "localCacheRelativeFile": "gpx/4c80aee949bd1ad8ac877239c569d63fc8eebb4739be2a06ca5a39fd0f337180.gpx",
+      "parsedSummary": {
+        "source": "682917",
+        "id": "gpx-4c80aee949bd1ad8",
+        "routeIds": [
+          "R030"
+        ],
+        "points": 1843,
+        "distanceKm": 11.3,
+        "components": 1,
+        "warnings": []
+      }
+    },
+    {
+      "recordingId": "682918",
+      "name": "大小劍-油婆蘭營地~劍南尖山~大劍山(第三天).gpx",
+      "author": "小楊小儀",
+      "routeIds": [
+        "R030"
+      ],
+      "scope": "partial",
+      "variant": "day-3-optional-peak",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=682918&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-1189d0334fe6aee2",
+      "sha256": "1189d0334fe6aee2159392afb7c8adda1fa8eb44da33512b0092ffc27bd15a27",
+      "acquiredAt": "2026-11-24T12:27:49.755Z",
+      "observedDate": "2021-12-12",
+      "label": "大小劍-油婆蘭營地~劍南尖山~大劍山(第三天)",
+      "localCacheRelativeFile": "gpx/1189d0334fe6aee2159392afb7c8adda1fa8eb44da33512b0092ffc27bd15a27.gpx",
+      "parsedSummary": {
+        "source": "682918",
+        "id": "gpx-1189d0334fe6aee2",
+        "routeIds": [
+          "R030"
+        ],
+        "points": 834,
+        "distanceKm": 5.1,
+        "components": 1,
+        "warnings": []
+      }
+    },
+    {
+      "recordingId": "1108989",
+      "name": "2022_08_20-23 新康橫斷四日 Day 3.gpx",
+      "author": "徐彥暉",
+      "routeIds": [
+        "R077"
+      ],
+      "scope": "partial",
+      "variant": "day-3",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=1108989&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-4ee786a5f6e2387a",
+      "sha256": "4ee786a5f6e2387a101c9a5250a57f77e86b60182d9c6be91530ad537cf7250d",
+      "acquiredAt": "2026-11-24T12:27:50.649Z",
+      "observedDate": "2022-08-21",
+      "label": "新康橫斷 Day 3 卓溪鄉 登山",
+      "localCacheRelativeFile": "gpx/4ee786a5f6e2387a101c9a5250a57f77e86b60182d9c6be91530ad537cf7250d.gpx",
+      "parsedSummary": {
+        "source": "1108989",
+        "id": "gpx-4ee786a5f6e2387a",
+        "routeIds": [
+          "R077"
+        ],
+        "points": 40968,
+        "distanceKm": 20.8,
+        "components": 1,
+        "warnings": [
+          "SUSPECT_VEHICLE_OR_GPS"
+        ]
+      }
+    },
+    {
+      "recordingId": "651127",
+      "name": "一日武陵四秀(先桃喀).gpx",
+      "author": "翁資焱",
+      "routeIds": [
+        "R015"
+      ],
+      "scope": "complete",
+      "variant": "defined-route",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=651127&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "同走法待驗候選；仍須通過軌跡、完整性與線形門檻",
+      "id": "gpx-23161da74e6f26c1",
+      "sha256": "23161da74e6f26c10412fda0e8e442ca7dcf6d7a84b0887e7dd9c3dc643cc8fd",
+      "acquiredAt": "2026-11-24T12:27:50.856Z",
+      "observedDate": "2021-11-20",
+      "label": "武陵四秀一日單攻",
+      "localCacheRelativeFile": "gpx/23161da74e6f26c10412fda0e8e442ca7dcf6d7a84b0887e7dd9c3dc643cc8fd.gpx",
+      "parsedSummary": {
+        "source": "651127",
+        "id": "gpx-23161da74e6f26c1",
+        "routeIds": [
+          "R015"
+        ],
+        "points": 10979,
+        "distanceKm": 34.9,
+        "components": 1,
+        "warnings": []
+      }
+    },
+    {
+      "recordingId": "2658502",
+      "name": "20231027~29武陵四秀且三刷桃山.gpx",
+      "author": "+G",
+      "routeIds": [
+        "R015"
+      ],
+      "scope": "complete",
+      "variant": "four-peaks-repeat-taoshan",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=2658502&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-ddcc6be45fa65fae",
+      "sha256": "ddcc6be45fa65faeca4e150d1c5729283e379d558588a44fbbc7421051c90e6b",
+      "acquiredAt": "2026-11-24T12:27:50.959Z",
+      "observedDate": "2023-10-26",
+      "label": "2",
+      "localCacheRelativeFile": "gpx/ddcc6be45fa65faeca4e150d1c5729283e379d558588a44fbbc7421051c90e6b.gpx",
+      "parsedSummary": {
+        "source": "2658502",
+        "id": "gpx-ddcc6be45fa65fae",
+        "routeIds": [
+          "R015"
+        ],
+        "points": 5095,
+        "distanceKm": 37.6,
+        "components": 6,
+        "warnings": [
+          "MULTI_SEGMENT",
+          "SUSPECT_VEHICLE_OR_GPS"
+        ]
+      }
+    },
+    {
+      "recordingId": "63884",
+      "name": "20190624-0626 武陵四秀.gpx",
+      "author": "李詠寬",
+      "routeIds": [
+        "R015"
+      ],
+      "scope": "complete",
+      "variant": "four-peaks-pintian-first",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=63884&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-3bf46ef535936900",
+      "sha256": "3bf46ef53593690017017d1417ad560ac653e533a3722c62a263c46ca70a2115",
+      "acquiredAt": "2026-11-24T12:27:51.076Z",
+      "observedDate": "2019-06-23",
+      "label": "Track 0 (06:06:17)",
+      "localCacheRelativeFile": "gpx/3bf46ef53593690017017d1417ad560ac653e533a3722c62a263c46ca70a2115.gpx",
+      "parsedSummary": {
+        "source": "63884",
+        "id": "gpx-3bf46ef535936900",
+        "routeIds": [
+          "R015"
+        ],
+        "points": 8068,
+        "distanceKm": 37.5,
+        "components": 40,
+        "warnings": [
+          "MULTI_SEGMENT"
+        ]
+      }
+    },
+    {
+      "recordingId": "2769000",
+      "name": "大小劍 三天兩夜.gpx",
+      "author": "Talent Lee",
+      "routeIds": [
+        "R030"
+      ],
+      "scope": "complete",
+      "variant": "unclassified",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=2769000&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-07ca099c0540f43c",
+      "sha256": "07ca099c0540f43c553b878f2c4c0a4b46c14fcecbb4e7c443a98ae376356532",
+      "acquiredAt": "2026-11-24T12:27:51.302Z",
+      "observedDate": "2023-11-30",
+      "label": "大小劍 三天兩夜",
+      "localCacheRelativeFile": "gpx/07ca099c0540f43c553b878f2c4c0a4b46c14fcecbb4e7c443a98ae376356532.gpx",
+      "parsedSummary": {
+        "source": "2769000",
+        "id": "gpx-07ca099c0540f43c",
+        "routeIds": [
+          "R030"
+        ],
+        "points": 19809,
+        "distanceKm": 57.4,
+        "components": 1,
+        "warnings": [
+          "SUSPECT_VEHICLE_OR_GPS"
+        ]
+      }
+    },
+    {
+      "recordingId": "5144593",
+      "name": "志雪劍.gpx",
+      "author": "pinky",
+      "routeIds": [
+        "R031"
+      ],
+      "scope": "complete",
+      "variant": "unclassified",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=5144593&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-9e882ddf816aa034",
+      "sha256": "9e882ddf816aa0342c81098589799a403cc814e6492fb9b99df463d93b14223f",
+      "acquiredAt": "2026-11-24T12:27:51.533Z",
+      "observedDate": "2025-11-07",
+      "label": "志雪劍",
+      "localCacheRelativeFile": "gpx/9e882ddf816aa0342c81098589799a403cc814e6492fb9b99df463d93b14223f.gpx",
+      "parsedSummary": {
+        "source": "5144593",
+        "id": "gpx-9e882ddf816aa034",
+        "routeIds": [
+          "R031"
+        ],
+        "points": 21759,
+        "distanceKm": 47.2,
+        "components": 6,
+        "warnings": [
+          "MULTI_SEGMENT",
+          "SUSPECT_VEHICLE_OR_GPS"
+        ]
+      }
+    },
+    {
+      "recordingId": "3865504",
+      "name": "20240927-29志雪劍.gpx",
+      "author": "郭鴻寬",
+      "routeIds": [
+        "R031"
+      ],
+      "scope": "complete",
+      "variant": "unclassified",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=3865504&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-dfca3c949702653c",
+      "sha256": "dfca3c949702653ca50de220e2bf625e729a6d54e015ed960b22d5f690802ac5",
+      "acquiredAt": "2026-11-24T12:27:51.614Z",
+      "observedDate": "2024-09-26",
+      "label": "航跡",
+      "localCacheRelativeFile": "gpx/dfca3c949702653ca50de220e2bf625e729a6d54e015ed960b22d5f690802ac5.gpx",
+      "parsedSummary": {
+        "source": "3865504",
+        "id": "gpx-dfca3c949702653c",
+        "routeIds": [
+          "R031"
+        ],
+        "points": 5091,
+        "distanceKm": 40.4,
+        "components": 1,
+        "warnings": [
+          "SUSPECT_VEHICLE_OR_GPS"
+        ]
+      }
+    },
+    {
+      "recordingId": "990993",
+      "name": "大小劍.gpx",
+      "author": "蔡承志",
+      "routeIds": [
+        "R030"
+      ],
+      "scope": "complete",
+      "variant": "unclassified",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=990993&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-d057fa2d95481a4d",
+      "sha256": "d057fa2d95481a4d18212b245b14b83fe8448113cae8cb4f15f418c9cd0bb8c3",
+      "acquiredAt": "2026-11-24T12:27:51.813Z",
+      "observedDate": "2022-06-25",
+      "label": "大小劍",
+      "localCacheRelativeFile": "gpx/d057fa2d95481a4d18212b245b14b83fe8448113cae8cb4f15f418c9cd0bb8c3.gpx",
+      "parsedSummary": {
+        "source": "990993",
+        "id": "gpx-d057fa2d95481a4d",
+        "routeIds": [
+          "R030"
+        ],
+        "points": 19615,
+        "distanceKm": 48.6,
+        "components": 3,
+        "warnings": [
+          "TRACK_GAP",
+          "TRACK_GAP",
+          "SUSPECT_VEHICLE_OR_GPS"
+        ]
+      }
+    },
+    {
+      "recordingId": "1036224",
+      "name": "大小劍 (1).gpx",
+      "author": "李麗瑛",
+      "routeIds": [
+        "R030"
+      ],
+      "scope": "complete",
+      "variant": "unclassified",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=1036224&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-b8732912e22ec854",
+      "sha256": "b8732912e22ec85450691bae263569bef5ced48a0cf864785cc9992d8776295f",
+      "acquiredAt": "2026-11-24T12:27:51.870Z",
+      "observedDate": "2022-07-12",
+      "label": "大小劍2022-07-13 06:22:19",
+      "localCacheRelativeFile": "gpx/b8732912e22ec85450691bae263569bef5ced48a0cf864785cc9992d8776295f.gpx",
+      "parsedSummary": {
+        "source": "1036224",
+        "id": "gpx-b8732912e22ec854",
+        "routeIds": [
+          "R030"
+        ],
+        "points": 2180,
+        "distanceKm": 44.5,
+        "components": 4,
+        "warnings": [
+          "MULTI_SEGMENT"
+        ]
+      }
+    },
+    {
+      "recordingId": "955",
+      "name": "玉山主峰.gpx",
+      "author": "KaoChiuan",
+      "routeIds": [
+        "R001"
+      ],
+      "scope": "complete",
+      "variant": "defined-route",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=955&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "同走法待驗候選；仍須通過軌跡、完整性與線形門檻",
+      "id": "gpx-e4804d02054a206c",
+      "sha256": "e4804d02054a206c3c8e49bb33feb15d5682b0d633de0621f27650a704797cc8",
+      "acquiredAt": "2026-11-24T12:27:51.914Z",
+      "observedDate": "2015-09-07",
+      "label": "2015-09-08 03:30 玉山主峰單攻",
+      "localCacheRelativeFile": "gpx/e4804d02054a206c3c8e49bb33feb15d5682b0d633de0621f27650a704797cc8.gpx",
+      "parsedSummary": {
+        "source": "955",
+        "id": "gpx-e4804d02054a206c",
+        "routeIds": [
+          "R001"
+        ],
+        "points": 1154,
+        "distanceKm": 24.1,
+        "components": 1,
+        "warnings": []
+      }
+    },
+    {
+      "recordingId": "11086",
+      "name": "玉山主峰 (1).gpx",
+      "author": "洪經岳",
+      "routeIds": [
+        "R001"
+      ],
+      "scope": "complete",
+      "variant": "defined-route",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=11086&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "同走法待驗候選；仍須通過軌跡、完整性與線形門檻",
+      "id": "gpx-f8d3118d36f7705f",
+      "sha256": "f8d3118d36f7705fcf4546e211e3a0a96b14324d65cb47b5c14989b30bff1fd9",
+      "acquiredAt": "2026-11-24T12:27:51.957Z",
+      "observedDate": "2018-12-23",
+      "label": "2018-12-23 08:13",
+      "localCacheRelativeFile": "gpx/f8d3118d36f7705fcf4546e211e3a0a96b14324d65cb47b5c14989b30bff1fd9.gpx",
+      "parsedSummary": {
+        "source": "11086",
+        "id": "gpx-f8d3118d36f7705f",
+        "routeIds": [
+          "R001"
+        ],
+        "points": 1329,
+        "distanceKm": 27.4,
+        "components": 1,
+        "warnings": [
+          "SUSPECT_VEHICLE_OR_GPS"
+        ]
+      }
+    },
+    {
+      "recordingId": "117887",
+      "name": "玉山主峰 (2).gpx",
+      "author": "顏小趴",
+      "routeIds": [
+        "R001"
+      ],
+      "scope": "complete",
+      "variant": "defined-route",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=117887&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "同走法待驗候選；仍須通過軌跡、完整性與線形門檻",
+      "id": "gpx-519c016cc9ec564a",
+      "sha256": "519c016cc9ec564a2f41ce0b6074a6aecfbcfb815acaf6df48525a19ffbd99d0",
+      "acquiredAt": "2026-11-24T12:27:52.104Z",
+      "observedDate": "2020-06-17",
+      "label": "Track",
+      "localCacheRelativeFile": "gpx/519c016cc9ec564a2f41ce0b6074a6aecfbcfb815acaf6df48525a19ffbd99d0.gpx",
+      "parsedSummary": {
+        "source": "117887",
+        "id": "gpx-519c016cc9ec564a",
+        "routeIds": [
+          "R001"
+        ],
+        "points": 11973,
+        "distanceKm": 24.2,
+        "components": 2,
+        "warnings": [
+          "MULTI_SEGMENT",
+          "INVALID_TIME_ORDER"
+        ]
+      }
+    },
+    {
+      "recordingId": "6099041",
+      "name": "南三段 (1).gpx",
+      "author": "Willy Wang",
+      "routeIds": [
+        "R066"
+      ],
+      "scope": "complete",
+      "variant": "unclassified",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=6099041&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-d5b36fdbadab9709",
+      "sha256": "d5b36fdbadab9709515122fe2ee3d188b28cc90053a7b92fc0b7c46d45e7758e",
+      "acquiredAt": "2026-11-24T12:27:52.433Z",
+      "observedDate": "2026-10-05",
+      "label": "南三段",
+      "localCacheRelativeFile": "gpx/d5b36fdbadab9709515122fe2ee3d188b28cc90053a7b92fc0b7c46d45e7758e.gpx",
+      "parsedSummary": {
+        "source": "6099041",
+        "id": "gpx-d5b36fdbadab9709",
+        "routeIds": [
+          "R066"
+        ],
+        "points": 29102,
+        "distanceKm": 107.4,
+        "components": 86,
+        "warnings": [
+          "MULTI_SEGMENT",
+          "INVALID_TIME_ORDER",
+          "SUSPECT_VEHICLE_OR_GPS"
+        ]
+      }
+    },
+    {
+      "recordingId": "254570",
+      "name": "新康橫斷.gpx",
+      "author": "洪啟揚",
+      "routeIds": [
+        "R077"
+      ],
+      "scope": "complete",
+      "variant": "unclassified",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=254570&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-d9e3f5b15b1332e2",
+      "sha256": "d9e3f5b15b1332e206f099cd7e37c15c3b123b1d05dc31e2f79bf00920a484b6",
+      "acquiredAt": "2026-11-24T12:27:52.573Z",
+      "observedDate": "2020-11-10",
+      "label": "新康橫斷",
+      "localCacheRelativeFile": "gpx/d9e3f5b15b1332e206f099cd7e37c15c3b123b1d05dc31e2f79bf00920a484b6.gpx",
+      "parsedSummary": {
+        "source": "254570",
+        "id": "gpx-d9e3f5b15b1332e2",
+        "routeIds": [
+          "R077"
+        ],
+        "points": 13474,
+        "distanceKm": 83.4,
+        "components": 16,
+        "warnings": [
+          "TRACK_GAP",
+          "MULTI_SEGMENT"
+        ]
+      }
+    },
+    {
+      "recordingId": "2028252",
+      "name": "新康橫斷 (1).gpx",
+      "author": "杜拉拉",
+      "routeIds": [
+        "R077"
+      ],
+      "scope": "complete",
+      "variant": "unclassified",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=2028252&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-6daf149998f4e35f",
+      "sha256": "6daf149998f4e35f8755e4dc989c4ced4a182d019661b948177fdc5ce6710cc9",
+      "acquiredAt": "2026-11-24T12:27:52.884Z",
+      "observedDate": "2023-06-25",
+      "label": "新康橫斷",
+      "localCacheRelativeFile": "gpx/6daf149998f4e35f8755e4dc989c4ced4a182d019661b948177fdc5ce6710cc9.gpx",
+      "parsedSummary": {
+        "source": "2028252",
+        "id": "gpx-6daf149998f4e35f",
+        "routeIds": [
+          "R077"
+        ],
+        "points": 28635,
+        "distanceKm": 96.6,
+        "components": 3,
+        "warnings": [
+          "TRACK_GAP",
+          "TRACK_GAP",
+          "TRACK_GAP",
+          "SUSPECT_VEHICLE_OR_GPS"
+        ]
+      }
+    },
+    {
+      "recordingId": "6108167",
+      "name": "新康橫斷 (2).gpx",
+      "author": "李信毅",
+      "routeIds": [
+        "R077"
+      ],
+      "scope": "complete",
+      "variant": "unclassified",
+      "travelMode": "walking",
+      "sourceUrl": "https://hiking.biji.co/index.php?act=gpx_detail&id=6108167&q=trail",
+      "acquisition": "Chrome：使用者正常登入後，點擊網站直接下載；沒有保存帳密或 Cookie",
+      "usage": "山友歷史行跡，僅本機規劃與資料比對；未取得再散布授權，不公開原始 GPX",
+      "scopeMeaning": "依來源頁行程標示；實際完整性仍以程式檢查，不因標題認定完整",
+      "variantMeaning": "來源走法線索，未自動裁定為相同變體",
+      "id": "gpx-c03e007389d59561",
+      "sha256": "c03e007389d59561814cdca92348ab4bdf558f2739e35256f193070aa48f9511",
+      "acquiredAt": "2026-11-24T12:27:53.009Z",
+      "observedDate": "2026-10-08",
+      "label": "新康橫斷",
+      "localCacheRelativeFile": "gpx/c03e007389d59561814cdca92348ab4bdf558f2739e35256f193070aa48f9511.gpx",
+      "parsedSummary": {
+        "source": "6108167",
+        "id": "gpx-c03e007389d59561",
+        "routeIds": [
+          "R077"
+        ],
+        "points": 10137,
+        "distanceKm": 65.4,
+        "components": 4,
+        "warnings": [
+          "TRACK_GAP",
+          "MULTI_SEGMENT",
+          "SUSPECT_VEHICLE_OR_GPS"
+        ]
+      }
+    }
+  ]
+}

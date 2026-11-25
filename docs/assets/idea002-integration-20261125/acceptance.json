@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "routeCount": 60,
+  "occurrences": 1471,
+  "appliedDirections": 83,
+  "chartChecks": 24,
+  "widths": [
+    320,
+    390,
+    768,
+    1280
+  ],
+  "checks": [
+    "Dongpu and Shangdongpu only in Yushan starts",
+    "one-node addition",
+    "existing directional quick add",
+    "undo/redo",
+    "group and source switching preserve itinerary",
+    "all chart endpoints",
+    "all route UI directions",
+    "R031",
+    "notes retained",
+    "JSON download/import",
+    "reload"
+  ],
+  "pageErrors": []
+}

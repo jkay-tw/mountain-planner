@@ -1,0 +1,1774 @@
+{
+  "schemaVersion": 1,
+  "spreadsheetId": "1Hfn-TT96JjGOnJXjNkoyWuCXrn-sw-pkuvACfLHSHVg",
+  "readDate": "2026-11-20",
+  "baseCommit": "65d10c572b278d96c146d9f2a9d88cd69ba3cdfe",
+  "routes": [
+    {
+      "routeId": "R001",
+      "name": "玉山主峰單攻",
+      "type": "往返",
+      "originalDecision": "",
+      "originalKeyOrder": "塔塔加鞍部 → 排雲山莊 → 玉山主峰 → 排雲山莊 → 塔塔加鞍部",
+      "originalStatus": "依指定順序展開候選・待核對",
+      "nodes": [
+        {
+          "position": 1,
+          "nodeId": "g02-030",
+          "name": "塔塔加鞍部",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 2,
+          "nodeId": "g02-019",
+          "name": "孟祿亭",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 3,
+          "nodeId": "g02-021",
+          "name": "前峰登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 4,
+          "nodeId": "g02-018",
+          "name": "西峰下觀景台",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 5,
+          "nodeId": "g02-005",
+          "name": "大峭壁",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 6,
+          "nodeId": "g02-025",
+          "name": "排雲山莊",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 7,
+          "nodeId": "g02-008",
+          "name": "主南岔路",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 8,
+          "nodeId": "g02-007",
+          "name": "主北岔路",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 9,
+          "nodeId": "g02-011",
+          "name": "玉山主峰",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 10,
+          "nodeId": "g02-007",
+          "name": "主北岔路",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 11,
+          "nodeId": "g02-008",
+          "name": "主南岔路",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 12,
+          "nodeId": "g02-025",
+          "name": "排雲山莊",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 13,
+          "nodeId": "g02-005",
+          "name": "大峭壁",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 14,
+          "nodeId": "g02-018",
+          "name": "西峰下觀景台",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 15,
+          "nodeId": "g02-021",
+          "name": "前峰登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 16,
+          "nodeId": "g02-019",
+          "name": "孟祿亭",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 17,
+          "nodeId": "g02-030",
+          "name": "塔塔加鞍部",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        }
+      ]
+    },
+    {
+      "routeId": "R015",
+      "name": "武陵四秀",
+      "type": "環狀",
+      "originalDecision": "",
+      "originalKeyOrder": "武陵山莊 → 桃山登山口 → 桃山 → 喀拉業山 → 桃山 → 池有山 → 品田山 → 武陵山莊",
+      "originalStatus": "依指定順序展開候選・待核對",
+      "nodes": [
+        {
+          "position": 1,
+          "nodeId": "shared:cw-v07-056",
+          "name": "武陵山莊",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 2,
+          "nodeId": "g04-031",
+          "name": "桃山岔路口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 3,
+          "nodeId": "g04-032",
+          "name": "桃山登山口",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 4,
+          "nodeId": "g04-029",
+          "name": "桃山2K",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 5,
+          "nodeId": "g04-038",
+          "name": "停機坪",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 6,
+          "nodeId": "g04-028",
+          "name": "桃山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 7,
+          "nodeId": "g04-055",
+          "name": "詩崙山",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 8,
+          "nodeId": "g04-050",
+          "name": "喀拉業山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 9,
+          "nodeId": "g04-055",
+          "name": "詩崙山",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 10,
+          "nodeId": "g04-028",
+          "name": "桃山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 11,
+          "nodeId": "g04-030",
+          "name": "桃山山屋",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 12,
+          "nodeId": "g04-005",
+          "name": "三叉營地",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 13,
+          "nodeId": "g04-022",
+          "name": "池有山岔路口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 14,
+          "nodeId": "g04-021",
+          "name": "池有山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 15,
+          "nodeId": "g04-022",
+          "name": "池有山岔路口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 16,
+          "nodeId": "g04-052",
+          "name": "新達山屋(水池)",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 17,
+          "nodeId": "g04-026",
+          "name": "品田山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 18,
+          "nodeId": "g04-052",
+          "name": "新達山屋(水池)",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 19,
+          "nodeId": "g04-022",
+          "name": "池有山岔路口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 20,
+          "nodeId": "g04-005",
+          "name": "三叉營地",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 21,
+          "nodeId": "g04-023",
+          "name": "池有山登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 22,
+          "nodeId": "g04-031",
+          "name": "桃山岔路口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 23,
+          "nodeId": "shared:cw-v07-056",
+          "name": "武陵山莊",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        }
+      ]
+    },
+    {
+      "routeId": "R026",
+      "name": "鎮西堡上大霸",
+      "type": "往返",
+      "originalDecision": "\"中霸山屋\"節點待未來更新，先略過，不影響路線",
+      "originalKeyOrder": "鎮西堡 → 神木區登山口 → 馬洋山 → 大霸霸基 → 小霸尖山→  中霸山屋 → 伊澤山 → 加利山 →  馬洋山 → 神木區登山口 → 鎮西堡 ",
+      "originalStatus": "僅重要錨點・待OSM有向連接",
+      "nodes": [
+        {
+          "position": 1,
+          "nodeId": "g04-062",
+          "name": "鎮西堡",
+          "key": true,
+          "reviewStatus": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "position": 2,
+          "nodeId": "g04-033",
+          "name": "神木區登山口",
+          "key": true,
+          "reviewStatus": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "position": 3,
+          "nodeId": "g04-036",
+          "name": "馬洋山",
+          "key": true,
+          "reviewStatus": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "position": 4,
+          "nodeId": "g04-007",
+          "name": "大霸霸基",
+          "key": true,
+          "reviewStatus": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "position": 5,
+          "nodeId": "g04-009",
+          "name": "小霸尖山",
+          "key": true,
+          "reviewStatus": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "position": 6,
+          "nodeId": "g04-019",
+          "name": "伊澤山",
+          "key": true,
+          "reviewStatus": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "position": 7,
+          "nodeId": "g04-015",
+          "name": "加利山",
+          "key": true,
+          "reviewStatus": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "position": 8,
+          "nodeId": "g04-036",
+          "name": "馬洋山",
+          "key": true,
+          "reviewStatus": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "position": 9,
+          "nodeId": "g04-033",
+          "name": "神木區登山口",
+          "key": true,
+          "reviewStatus": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "position": 10,
+          "nodeId": "g04-062",
+          "name": "鎮西堡",
+          "key": true,
+          "reviewStatus": "僅重要點・OSM步行線形待接入"
+        }
+      ]
+    },
+    {
+      "routeId": "R027",
+      "name": "雪山西稜",
+      "type": "縱走",
+      "originalDecision": "小雪山遊客中心(0K·49K岔路)為\"0K·49K岔路\"(node:85687363d4e92172c5af)",
+      "originalKeyOrder": "雪山登山口 → 雪山東峰 → 雪山主峰 → 火石山 → 頭鷹山 → 大雪山 → 28.5K登山口 → 中雪山 → 28.5K登山口 → 小雪山遊客中心(0K·49K岔路)",
+      "originalStatus": "依指定順序展開候選・待核對",
+      "nodes": [
+        {
+          "position": 1,
+          "nodeId": "g04-045",
+          "name": "雪山登山口",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 2,
+          "nodeId": "shared:cw-v07-003",
+          "name": "七卡山莊",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 3,
+          "nodeId": "g04-027",
+          "name": "哭坡觀景台",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 4,
+          "nodeId": "g04-044",
+          "name": "雪山東峰",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 5,
+          "nodeId": "shared:cw-v07-004",
+          "name": "三六九山莊",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 6,
+          "nodeId": "shared:cw-v07-074",
+          "name": "雪山主峰",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 7,
+          "nodeId": "shared:cw-v07-066",
+          "name": "翠池山屋",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 8,
+          "nodeId": "node:1c9c90016a1db23f233e",
+          "name": "下翠池",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 9,
+          "nodeId": "node:cd5dba31bdb2acdc9337",
+          "name": "博可爾草原",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 10,
+          "nodeId": "node:1e99056a3627a036f32a",
+          "name": "火石山下營地",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 11,
+          "nodeId": "node:2c745bdf179d402f4687",
+          "name": "火石山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 12,
+          "nodeId": "node:1e99056a3627a036f32a",
+          "name": "火石山下營地",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 13,
+          "nodeId": "node:7e834e3946d8006bb547",
+          "name": "大南山登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 14,
+          "nodeId": "node:82dff090b3168d02688e",
+          "name": "大南山西鞍營地",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 15,
+          "nodeId": "node:60fb1b5f65ba3b9a71d0",
+          "name": "弓水營地",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 16,
+          "nodeId": "node:8f5b2c0068850cf10d1f",
+          "name": "頭鷹山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 17,
+          "nodeId": "node:fe67bc0edd485e795809",
+          "name": "奇峻山",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 18,
+          "nodeId": "node:7a6b376b27881d7b8135",
+          "name": "奇峻水池",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 19,
+          "nodeId": "node:f047168bc57b17e9261f",
+          "name": "大雪山北峰",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 20,
+          "nodeId": "node:e776e9d18056cbe071d6",
+          "name": "岔路口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 21,
+          "nodeId": "node:6baf8b591a14fd8fc6c7",
+          "name": "大雪山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 22,
+          "nodeId": "node:e776e9d18056cbe071d6",
+          "name": "岔路口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 23,
+          "nodeId": "node:71fe09a0a3298b4338b1",
+          "name": "匹匹達東鞍營地",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 24,
+          "nodeId": "node:aed9f633f47cebaca19e",
+          "name": "匹匹達山",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 25,
+          "nodeId": "node:bb909b8922168303b56d",
+          "name": "主稜鞍部",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 26,
+          "nodeId": "node:7b6b39564c1c4e24a3e0",
+          "name": "28.5K登山口",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 27,
+          "nodeId": "node:7375ea9255db4b6cb9ef",
+          "name": "28K工寮",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 28,
+          "nodeId": "node:5ce6ad1e65d900d4031c",
+          "name": "26K登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 29,
+          "nodeId": "node:9d098b5e375e248161a3",
+          "name": "中雪山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 30,
+          "nodeId": "node:5ce6ad1e65d900d4031c",
+          "name": "26K登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 31,
+          "nodeId": "node:7375ea9255db4b6cb9ef",
+          "name": "28K工寮",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 32,
+          "nodeId": "node:7b6b39564c1c4e24a3e0",
+          "name": "28.5K登山口",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 33,
+          "nodeId": "node:7375ea9255db4b6cb9ef",
+          "name": "28K工寮",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 34,
+          "nodeId": "node:5ce6ad1e65d900d4031c",
+          "name": "26K登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 35,
+          "nodeId": "node:dc9f7fd24048107fb9fd",
+          "name": "11.5K雙流水營地",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 36,
+          "nodeId": "node:bf944315a8814addbcd8",
+          "name": "4K國家公園碑",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 37,
+          "nodeId": "node:85687363d4e92172c5af",
+          "name": "0K·49K岔路",
+          "key": true,
+          "reviewStatus": "既有 Node ID 已對應・名稱差異保留"
+        }
+      ]
+    },
+    {
+      "routeId": "R030",
+      "name": "大小劍",
+      "type": "往返",
+      "originalDecision": "",
+      "originalKeyOrder": "中興路口(66.55K) → 油婆蘭營地 → 佳陽山 → 劍山 → 佳陽山 → 油婆蘭營地 → 大劍山  → 油婆蘭營地 → 中興路口(66.55K)",
+      "originalStatus": "依指定順序展開候選・待核對",
+      "nodes": [
+        {
+          "position": 1,
+          "nodeId": "node:67f469173d3d382ca79c",
+          "name": "松柏農場",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 2,
+          "nodeId": "node:43c9393ad0d04c1318ea",
+          "name": "3.1K登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 3,
+          "nodeId": "node:23e78a62cdb1f7900031",
+          "name": "苗圃工寮舊址",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 4,
+          "nodeId": "node:b177c2fbf3ce1d786e10",
+          "name": "賽良久",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 5,
+          "nodeId": "node:b43dec22007f4f23d9f4",
+          "name": "瓢簞山莊",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 6,
+          "nodeId": "node:94e1beaedf30d622dec0",
+          "name": "志佳陽基點峰",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 7,
+          "nodeId": "node:847092e10ea33bbd9eeb",
+          "name": "志佳陽大山",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 8,
+          "nodeId": "node:e2c27ef9a7436ae25637",
+          "name": "雪山山莊舊址",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 9,
+          "nodeId": "shared:cw-v07-074",
+          "name": "雪山主峰",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 10,
+          "nodeId": "shared:cw-v07-066",
+          "name": "翠池山屋",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 11,
+          "nodeId": "node:a41e14d35855c558911e",
+          "name": "完美谷營地",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 12,
+          "nodeId": "node:d63a66a9a404c2d156a6",
+          "name": "雪山西南峰",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 13,
+          "nodeId": "node:194fcc1bb298ce914692",
+          "name": "大劍山",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 14,
+          "nodeId": "node:1fc2a408255b40a4d818",
+          "name": "鞍部水源岔路",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 15,
+          "nodeId": "node:423790cb65cc1bad5df4",
+          "name": "油婆蘭營地",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 16,
+          "nodeId": "node:ef9d6d7b507c200ba66a",
+          "name": "油婆蘭山",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 17,
+          "nodeId": "node:f6a9075ee1d04429206c",
+          "name": "布伕奇寒山",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 18,
+          "nodeId": "node:7bec9defdb2f42115f39",
+          "name": "老伍營地",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 19,
+          "nodeId": "node:cfc709350cf852b13fe1",
+          "name": "佳陽山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 20,
+          "nodeId": "node:0969f8657ba80bf5fdd2",
+          "name": "劍山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 21,
+          "nodeId": "node:cfc709350cf852b13fe1",
+          "name": "佳陽山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 22,
+          "nodeId": "node:7bec9defdb2f42115f39",
+          "name": "老伍營地",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 23,
+          "nodeId": "node:f6a9075ee1d04429206c",
+          "name": "布伕奇寒山",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 24,
+          "nodeId": "node:ef9d6d7b507c200ba66a",
+          "name": "油婆蘭山",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 25,
+          "nodeId": "node:423790cb65cc1bad5df4",
+          "name": "油婆蘭營地",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 26,
+          "nodeId": "node:1fc2a408255b40a4d818",
+          "name": "鞍部水源岔路",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 27,
+          "nodeId": "node:194fcc1bb298ce914692",
+          "name": "大劍山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 28,
+          "nodeId": "node:1fc2a408255b40a4d818",
+          "name": "鞍部水源岔路",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 29,
+          "nodeId": "node:423790cb65cc1bad5df4",
+          "name": "油婆蘭營地",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 30,
+          "nodeId": "node:1fc2a408255b40a4d818",
+          "name": "鞍部水源岔路",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 31,
+          "nodeId": "node:194fcc1bb298ce914692",
+          "name": "大劍山",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 32,
+          "nodeId": "node:d63a66a9a404c2d156a6",
+          "name": "雪山西南峰",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 33,
+          "nodeId": "node:a41e14d35855c558911e",
+          "name": "完美谷營地",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 34,
+          "nodeId": "shared:cw-v07-066",
+          "name": "翠池山屋",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 35,
+          "nodeId": "shared:cw-v07-074",
+          "name": "雪山主峰",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 36,
+          "nodeId": "node:e2c27ef9a7436ae25637",
+          "name": "雪山山莊舊址",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 37,
+          "nodeId": "node:847092e10ea33bbd9eeb",
+          "name": "志佳陽大山",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 38,
+          "nodeId": "node:94e1beaedf30d622dec0",
+          "name": "志佳陽基點峰",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 39,
+          "nodeId": "node:b43dec22007f4f23d9f4",
+          "name": "瓢簞山莊",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 40,
+          "nodeId": "node:b177c2fbf3ce1d786e10",
+          "name": "賽良久",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 41,
+          "nodeId": "node:23e78a62cdb1f7900031",
+          "name": "苗圃工寮舊址",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 42,
+          "nodeId": "node:43c9393ad0d04c1318ea",
+          "name": "3.1K登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 43,
+          "nodeId": "node:67f469173d3d382ca79c",
+          "name": "松柏農場",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        }
+      ]
+    },
+    {
+      "routeId": "R052",
+      "name": "合歡群峰",
+      "type": "多段行程",
+      "originalDecision": "多段路程，非環型",
+      "originalKeyOrder": "武嶺 → 合歡山 → 合歡山東峰 → 石門山 → 北合歡山 → 西合歡山 → 北合歡山登山口",
+      "originalStatus": "多段行程・步行/車行分段待建模",
+      "nodes": [
+        {
+          "position": 1,
+          "nodeId": "node:043095d97e26cc162e8e",
+          "name": "武嶺",
+          "key": true,
+          "reviewStatus": "多段錨點・步行/車行待拆分"
+        },
+        {
+          "position": 2,
+          "nodeId": "node:988e2bd2e27c233431cf",
+          "name": "合歡山",
+          "key": true,
+          "reviewStatus": "多段錨點・步行/車行待拆分"
+        },
+        {
+          "position": 3,
+          "nodeId": "node:1c529b28513d982ad46e",
+          "name": "合歡山東峰",
+          "key": true,
+          "reviewStatus": "多段錨點・步行/車行待拆分"
+        },
+        {
+          "position": 4,
+          "nodeId": "node:25ba30201c2b93a7a1ee",
+          "name": "石門山",
+          "key": true,
+          "reviewStatus": "多段錨點・步行/車行待拆分"
+        },
+        {
+          "position": 5,
+          "nodeId": "node:396247de591a031f9bfb",
+          "name": "北合歡山",
+          "key": true,
+          "reviewStatus": "多段錨點・步行/車行待拆分"
+        },
+        {
+          "position": 6,
+          "nodeId": "node:e6b49d265bc73a591c95",
+          "name": "西合歡山",
+          "key": true,
+          "reviewStatus": "多段錨點・步行/車行待拆分"
+        },
+        {
+          "position": 7,
+          "nodeId": "node:ccb468c0ed9c0bdb556f",
+          "name": "北合歡山登山口",
+          "key": true,
+          "reviewStatus": "多段錨點・步行/車行待拆分"
+        }
+      ]
+    },
+    {
+      "routeId": "R057",
+      "name": "奇萊北壁下屏風",
+      "type": "縱走",
+      "originalDecision": "依OSM路徑找路網，不需要時間",
+      "originalKeyOrder": "滑雪山莊奇萊登山口 → 奇萊主山北峰 → 屏風山 → 屏風山新登山口",
+      "originalStatus": "僅重要錨點・待OSM有向連接",
+      "nodes": [
+        {
+          "position": 1,
+          "nodeId": "shared:cw-v07-058",
+          "name": "滑雪山莊奇萊登山口",
+          "key": true,
+          "reviewStatus": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "position": 2,
+          "nodeId": "shared:cw-v07-041",
+          "name": "奇萊主山北峰",
+          "key": true,
+          "reviewStatus": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "position": 3,
+          "nodeId": "node:f2ece3876a2d0d5ba88c",
+          "name": "屏風山",
+          "key": true,
+          "reviewStatus": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "position": 4,
+          "nodeId": "node:d69a18f19c7940c3ebf4",
+          "name": "屏風山新登山口",
+          "key": true,
+          "reviewStatus": "僅重要點・OSM步行線形待接入"
+        }
+      ]
+    },
+    {
+      "routeId": "R070",
+      "name": "八大秀",
+      "type": "往返",
+      "originalDecision": "節點座標與路徑誤差，距離100m以內視為到達",
+      "originalKeyOrder": "東埔溫泉 → 八通關山 → 大水窟山 → 秀姑巒山 → 大水窟山 → 東埔溫泉",
+      "originalStatus": "依指定順序展開候選・待核對",
+      "nodes": [
+        {
+          "position": 1,
+          "nodeId": "shared:cw-v07-051",
+          "name": "東埔溫泉",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 2,
+          "nodeId": "shared:cw-v07-018",
+          "name": "八通關登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 3,
+          "nodeId": "shared:cw-v07-076",
+          "name": "雲龍瀑布",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 4,
+          "nodeId": "shared:cw-v07-054",
+          "name": "樂樂山屋",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 5,
+          "nodeId": "shared:cw-v07-072",
+          "name": "觀高坪",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 6,
+          "nodeId": "shared:cw-v07-019",
+          "name": "八通關草原",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 7,
+          "nodeId": "shared:cw-v07-016",
+          "name": "八通關山登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 8,
+          "nodeId": "shared:cw-v07-015",
+          "name": "八通關山三岔路口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 9,
+          "nodeId": "shared:cw-v07-014",
+          "name": "八通關山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 10,
+          "nodeId": "shared:cw-v07-015",
+          "name": "八通關山三岔路口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 11,
+          "nodeId": "shared:cw-v07-016",
+          "name": "八通關山登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 12,
+          "nodeId": "shared:cw-v07-046",
+          "name": "巴奈伊克山屋",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 13,
+          "nodeId": "shared:cw-v07-007",
+          "name": "三岔路口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 14,
+          "nodeId": "shared:cw-v07-068",
+          "name": "荖濃溪",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 15,
+          "nodeId": "shared:cw-v07-064",
+          "name": "稜線岔路",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 16,
+          "nodeId": "node:8426704609cea5d43db4",
+          "name": "杜鵑營地",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 17,
+          "nodeId": "shared:cw-v07-033",
+          "name": "四岔路口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 18,
+          "nodeId": "shared:cw-v07-035",
+          "name": "大水窟山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 19,
+          "nodeId": "shared:cw-v07-060",
+          "name": "秀姑坪岔路",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 20,
+          "nodeId": "shared:cw-v07-062",
+          "name": "秀姑巒山南登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 21,
+          "nodeId": "shared:cw-v07-061",
+          "name": "秀姑巒山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 22,
+          "nodeId": "shared:cw-v07-062",
+          "name": "秀姑巒山南登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 23,
+          "nodeId": "shared:cw-v07-060",
+          "name": "秀姑坪岔路",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 24,
+          "nodeId": "shared:cw-v07-035",
+          "name": "大水窟山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 25,
+          "nodeId": "shared:cw-v07-033",
+          "name": "四岔路口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 26,
+          "nodeId": "node:8426704609cea5d43db4",
+          "name": "杜鵑營地",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 27,
+          "nodeId": "shared:cw-v07-064",
+          "name": "稜線岔路",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 28,
+          "nodeId": "shared:cw-v07-068",
+          "name": "荖濃溪",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 29,
+          "nodeId": "shared:cw-v07-007",
+          "name": "三岔路口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 30,
+          "nodeId": "shared:cw-v07-046",
+          "name": "巴奈伊克山屋",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 31,
+          "nodeId": "shared:cw-v07-016",
+          "name": "八通關山登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 32,
+          "nodeId": "shared:cw-v07-019",
+          "name": "八通關草原",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 33,
+          "nodeId": "shared:cw-v07-072",
+          "name": "觀高坪",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 34,
+          "nodeId": "shared:cw-v07-054",
+          "name": "樂樂山屋",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 35,
+          "nodeId": "shared:cw-v07-076",
+          "name": "雲龍瀑布",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 36,
+          "nodeId": "shared:cw-v07-018",
+          "name": "八通關登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 37,
+          "nodeId": "shared:cw-v07-051",
+          "name": "東埔溫泉",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        }
+      ]
+    },
+    {
+      "routeId": "R072",
+      "name": "南二段",
+      "type": "縱走",
+      "originalDecision": "東埔溫泉 在G16圖組",
+      "originalKeyOrder": "向陽森林遊樂區 → 向陽山 → 三叉山 → 南雙頭山 → 雲峰 → 轆轆山 → 塔芬山 → 達芬尖山 → 大水窟山 → 八通關山 → 東埔溫泉",
+      "originalStatus": "依指定順序展開候選・待核對",
+      "nodes": [
+        {
+          "position": 1,
+          "nodeId": "shared:cw-v07-029",
+          "name": "向陽森林遊樂區",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 2,
+          "nodeId": "shared:cw-v07-052",
+          "name": "林道登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 3,
+          "nodeId": "shared:cw-v07-028",
+          "name": "向陽山屋",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 4,
+          "nodeId": "shared:cw-v07-070",
+          "name": "西側登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 5,
+          "nodeId": "shared:cw-v07-027",
+          "name": "向陽山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 6,
+          "nodeId": "shared:owner-v0724-xiangyang-junction",
+          "name": "向陽山三岔路口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 7,
+          "nodeId": "shared:cw-v07-020",
+          "name": "北峰下解說牌",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 8,
+          "nodeId": "shared:cw-v07-006",
+          "name": "三叉山登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 9,
+          "nodeId": "shared:cw-v07-005",
+          "name": "三叉山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 10,
+          "nodeId": "shared:cw-v07-031",
+          "name": "嘉明湖岔路口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 11,
+          "nodeId": "shared:cw-v07-050",
+          "name": "新康山岔路口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 12,
+          "nodeId": "shared:cw-v07-049",
+          "name": "拉庫音溪山屋",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 13,
+          "nodeId": "local:G17-OVERLAP::g17-overlap-002",
+          "name": "南雙頭山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 14,
+          "nodeId": "local:G17-OVERLAP::g17-overlap-010",
+          "name": "西北鞍南雙池營地",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 15,
+          "nodeId": "local:G17-OVERLAP::g17-overlap-009",
+          "name": "雲峰東峰三岔路口營地",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 16,
+          "nodeId": "node:85bb625c5f4bcbcf9abe",
+          "name": "雲峰",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 17,
+          "nodeId": "local:G17-OVERLAP::g17-overlap-009",
+          "name": "雲峰東峰三岔路口營地",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 18,
+          "nodeId": "local:G17-OVERLAP::g17-overlap-008",
+          "name": "轆轆谷山屋",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 19,
+          "nodeId": "local:G17-OVERLAP::g17-overlap-007",
+          "name": "轆轆山登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 20,
+          "nodeId": "node:4b535e7d68c379a6c905",
+          "name": "轆轆東峰",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 21,
+          "nodeId": "node:9af65faed0dfd594da63",
+          "name": "轆轆山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 22,
+          "nodeId": "node:4b535e7d68c379a6c905",
+          "name": "轆轆東峰",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 23,
+          "nodeId": "local:G17-OVERLAP::g17-overlap-007",
+          "name": "轆轆山登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 24,
+          "nodeId": "local:G17-OVERLAP::g17-overlap-006",
+          "name": "塔芬池",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 25,
+          "nodeId": "node:b3c1f683294e1bc1252b",
+          "name": "塔芬山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 26,
+          "nodeId": "node:1916736d90dd9626ece3",
+          "name": "塔芬谷山屋",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 27,
+          "nodeId": "node:4e7ab2e2b7798527927f",
+          "name": "達芬尖山登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 28,
+          "nodeId": "node:5bd0e4cd667031e35fc1",
+          "name": "達芬尖山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 29,
+          "nodeId": "node:4e7ab2e2b7798527927f",
+          "name": "達芬尖山登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 30,
+          "nodeId": "node:8897886192ce4320aec3",
+          "name": "黑水塘",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 31,
+          "nodeId": "node:6fbfce66af193ba46514",
+          "name": "大水窟山三岔路口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 32,
+          "nodeId": "node:95bb6c335556ae3a2cd6",
+          "name": "南大水窟山",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 33,
+          "nodeId": "shared:cw-v07-036",
+          "name": "大水窟山屋",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 34,
+          "nodeId": "shared:cw-v07-035",
+          "name": "大水窟山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 35,
+          "nodeId": "shared:cw-v07-033",
+          "name": "四岔路口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 36,
+          "nodeId": "node:8426704609cea5d43db4",
+          "name": "杜鵑營地",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 37,
+          "nodeId": "shared:cw-v07-064",
+          "name": "稜線岔路",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 38,
+          "nodeId": "shared:cw-v07-068",
+          "name": "荖濃溪",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 39,
+          "nodeId": "shared:cw-v07-007",
+          "name": "三岔路口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 40,
+          "nodeId": "shared:cw-v07-046",
+          "name": "巴奈伊克山屋",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 41,
+          "nodeId": "shared:cw-v07-016",
+          "name": "八通關山登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 42,
+          "nodeId": "shared:cw-v07-015",
+          "name": "八通關山三岔路口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 43,
+          "nodeId": "shared:cw-v07-014",
+          "name": "八通關山",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 44,
+          "nodeId": "shared:cw-v07-015",
+          "name": "八通關山三岔路口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 45,
+          "nodeId": "shared:cw-v07-017",
+          "name": "八通關山西峰",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 46,
+          "nodeId": "shared:cw-v07-071",
+          "name": "西峰岔路",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 47,
+          "nodeId": "shared:cw-v07-072",
+          "name": "觀高坪",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 48,
+          "nodeId": "shared:cw-v07-054",
+          "name": "樂樂山屋",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 49,
+          "nodeId": "shared:cw-v07-076",
+          "name": "雲龍瀑布",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 50,
+          "nodeId": "shared:cw-v07-018",
+          "name": "八通關登山口",
+          "key": false,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        },
+        {
+          "position": 51,
+          "nodeId": "shared:cw-v07-051",
+          "name": "東埔溫泉",
+          "key": true,
+          "reviewStatus": "有向步行邊可連通・線形待核"
+        }
+      ]
+    },
+    {
+      "routeId": "R081",
+      "name": "小關海諾",
+      "type": "往返",
+      "originalDecision": "確認現有資料後有路徑；節點座標與路徑誤差，距離100m以內視為到達",
+      "originalKeyOrder": "神池營地 → 小關山 → 海諾南山 → 神池營地 ",
+      "originalStatus": "候選路線已展開・含手動時間",
+      "nodes": [
+        {
+          "position": 1,
+          "nodeId": "local:G19::shenchi-camp",
+          "name": "神池營地",
+          "key": true,
+          "reviewStatus": "步行路網可串接・含手動時間"
+        },
+        {
+          "position": 2,
+          "nodeId": "node:d93ab765aeb31141e24c",
+          "name": "小關山",
+          "key": true,
+          "reviewStatus": "人工確認連接・時間待填"
+        },
+        {
+          "position": 3,
+          "nodeId": "node:f1a56c966825aab02800",
+          "name": "四岔路口",
+          "key": false,
+          "reviewStatus": "步行路網可串接・含手動時間"
+        },
+        {
+          "position": 4,
+          "nodeId": "node:dd92f355119f688e96e5",
+          "name": "小關山北峰",
+          "key": false,
+          "reviewStatus": "步行路網可串接・含手動時間"
+        },
+        {
+          "position": 5,
+          "nodeId": "node:71734cf8829f6a3b81e3",
+          "name": "海諾南山",
+          "key": true,
+          "reviewStatus": "步行路網可串接・含手動時間"
+        },
+        {
+          "position": 6,
+          "nodeId": "node:dd92f355119f688e96e5",
+          "name": "小關山北峰",
+          "key": false,
+          "reviewStatus": "步行路網可串接・含手動時間"
+        },
+        {
+          "position": 7,
+          "nodeId": "node:f1a56c966825aab02800",
+          "name": "四岔路口",
+          "key": false,
+          "reviewStatus": "步行路網可串接・含手動時間"
+        },
+        {
+          "position": 8,
+          "nodeId": "node:d93ab765aeb31141e24c",
+          "name": "小關山",
+          "key": false,
+          "reviewStatus": "步行路網可串接・含手動時間"
+        },
+        {
+          "position": 9,
+          "nodeId": "local:G19::shenchi-camp",
+          "name": "神池營地",
+          "key": true,
+          "reviewStatus": "人工確認連接・時間待填"
+        }
+      ]
+    }
+  ]
+}

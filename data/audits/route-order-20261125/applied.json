@@ -1,0 +1,17 @@
+{
+  "snapshot": "data/route-validator/snapshots/sheet-20261125-order-complete.json",
+  "snapshotSha256": "0898036b742fde95d0da9fba762b6fda4c35e25a5e6a4902451b233cff1226e4",
+  "status": "APPLIED_AND_READBACK_VERIFIED",
+  "verifiedAt": "2026-11-25T05:59:02.331Z",
+  "checkedCells": 23554,
+  "formulas": 2036,
+  "notes": 12,
+  "validations": 3076,
+  "formulaErrors": 0,
+  "activeNodes": 1471,
+  "excludedRows": 24,
+  "reviewedRoutes": 60,
+  "unexpandedRoutes": 26,
+  "historicalSheetsModified": false,
+  "formalProjectDataModified": false
+}

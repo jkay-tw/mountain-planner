@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mountain Planner 登山行程規劃器</title>
-  <link rel="stylesheet" href="css/style.css?v=tripname1" />
-  <link rel="stylesheet" href="css/itinerary-map.css?v=aliases2" />
+  <link rel="stylesheet" href="css/style.css?v=tripname1-display1123" />
+  <link rel="stylesheet" href="css/itinerary-map.css?v=editonoff1124" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"></script>
 </head>
@@ -58,11 +58,10 @@
       <input id="importFile" type="file" accept=".json,.mplan.json,application/json" hidden />
     </header>
 
-    <div class="notice"><strong>登山行程規劃</strong><span>已收錄路段經人工核對；車行不參與步行尋路，未連通處可手動估時。時間與路線供規劃參考，請核對原始資料及現地狀況。</span></div>
+    <div class="notice"><strong>單一編輯器整合測試</strong><span>已收錄路段經人工核對；車行不參與步行尋路，未連通處可手動估時。此頁為測試模式，非現地導航。</span></div>
     <section class="card controls">
       <div class="field route-field">
-        <label for="routeSelect">上河圖群組</label>
-        <select id="routeSelect"></select>
+        <div id="selectionSource" class="source-buttons" role="group" aria-label="選點來源"><button type="button" data-source="groups" aria-pressed="true">上河圖組</button><button type="button" data-source="routes" aria-pressed="false">經典路線</button></div>
       </div>
       <div class="field trip-name-field">
         <label for="tripName">行程名稱（選填）</label>
@@ -76,6 +75,19 @@
         <label for="dayCount">行程天數</label>
         <select id="dayCount"></select>
       </div>
+    </section>
+
+    <section id="groupPicker" class="card group-picker-panel"><label for="routeSelect">上河圖群組</label><select id="routeSelect"></select></section>
+    <section id="classicPanel" class="card classic-panel" hidden aria-label="經典路線試作">
+      <div class="classic-fields">
+        <label>搜尋路線<input id="classicSearch" type="search" placeholder="路線名稱、別名或編號" autocomplete="off"></label>
+        <label>經典路線<select id="classicSelect"></select></label>
+        <label>方向<select id="classicDirection"><option value="forward">順行</option><option value="reverse">逆行</option></select></label>
+      </div>
+      <p id="classicSummary" role="status">候選路線載入中。</p>
+      <div id="classicPreview" class="classic-preview" hidden></div>
+      <div class="classic-actions"><label>步行上河係數<input id="classicCoefficient" type="number" min="0.1" max="3" step="0.1" value="0.8"></label><button id="classicApply" type="button" disabled>套用路線</button></div>
+      <p class="classic-hint">套用後完整路線放入 DAY 1；已有行程會先確認取代。逐點加入沿用一般尋路。</p>
     </section>
 
     <div class="notice">
@@ -104,6 +116,6 @@
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
-  <script type="module" src="js/unified-editor.js?v=geo647cb2c06f30"></script>
+  <script type="module" src="js/unified-editor.js?v=geo90bb5f8a83e0"></script>
 </body>
 </html>

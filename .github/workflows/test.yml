@@ -3,6 +3,8 @@ on:
   pull_request:
   push:
     branches:
+      - main
+      - codex/idea-002-phase1
       - feature/v0.6-reliability
       - feature/v0.7-node-identity
 jobs:
@@ -10,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'

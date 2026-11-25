@@ -1,0 +1,15 @@
+{
+  "status": "SOURCE_TRANSCRIBED_STAGING_ONLY",
+  "routeId": "R069",
+  "fromId": "node:c89901cb97ccbe4d145a",
+  "toId": "node:1670c3f1247b747ba02a",
+  "from": "林道玉林橋下切點",
+  "to": "下切溪床點",
+  "forwardMinutes": 85,
+  "reverseMinutes": 120,
+  "sourceUrl": "https://www.sunriver.com.tw/images/hiking/G16_hiking.jpg",
+  "sourceImageSha256": "1d185743d1a067512c942bcf87ddf55981833e02ffedb81d811a2e254b4ef69f",
+  "verificationBasis": "本輪直接讀取G16原圖箭頭；不是新人工核准／現地測量",
+  "geometryStatus": "現行圖缺精確端點綁定；保留既有摘要OSM及GPX線索，不製造直線",
+  "sourceGpx": "https://hiking.biji.co/index.php?q=trail&act=gpx_detail&id=1622"
+}

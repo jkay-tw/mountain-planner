@@ -1,0 +1,16 @@
+{
+  "commands": [
+    "node tools/route-validator.mjs order-check",
+    "node --test tests/route-ordinal-review.test.mjs tests/route-evidence-age.test.mjs tests/route-validator.test.mjs tests/route-sequence-review.test.mjs tests/route-review.test.mjs"
+  ],
+  "passed": 38,
+  "failed": 0,
+  "scope": "現有上河節點順序、分段匹配、合法折返／額外支線、偏移、獨立性與日期、寫回資料結構及本機存取保護",
+  "nativeReadback": "applied.json",
+  "visualCheck": {
+    "status": "BROWSER_CONNECTION_TIMEOUT",
+    "fallback": "已完成線上值、公式、驗證規則及相鄰格式metadata檢查；未完成Google瀏覽器畫面檢視"
+  },
+  "fullProductCIExecuted": false,
+  "published": false
+}

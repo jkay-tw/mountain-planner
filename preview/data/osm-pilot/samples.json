@@ -1,0 +1,72 @@
+[
+  {
+    "name": "雪山附近檢查區塊",
+    "file": "485_97.json.gz",
+    "bytes": 559006,
+    "jsonBytes": 2052537,
+    "nodes": 34387,
+    "ways": 829,
+    "elevationMissing": 0,
+    "sha256": "11bdf2e2ec43213ea537f60595fa269b253d667d6e684e24590a3c840b4bbeec"
+  },
+  {
+    "name": "雪山北側相鄰區塊（跨區測試）",
+    "file": "485_98.json.gz",
+    "bytes": 1313732,
+    "jsonBytes": 4960099,
+    "nodes": 84356,
+    "ways": 2081,
+    "elevationMissing": 0,
+    "sha256": "f34ad02df03f009f56391296b85f2023a2087d4a5ad0797505c3f578fd2dd032"
+  },
+  {
+    "name": "郡大山／郡大林道區塊",
+    "file": "483_94.json.gz",
+    "bytes": 997916,
+    "jsonBytes": 3729203,
+    "nodes": 61168,
+    "ways": 1968,
+    "elevationMissing": 0,
+    "sha256": "58a4a744f11a19043fcc318403665b5db424580a07cd802d3d5f0c38131ae576"
+  },
+  {
+    "name": "郡大西側相鄰區塊",
+    "file": "482_94.json.gz",
+    "bytes": 1484280,
+    "jsonBytes": 5675585,
+    "nodes": 87457,
+    "ways": 5360,
+    "elevationMissing": 0,
+    "sha256": "e0a2d250a3afc9e73b73b7bc17151f441266557d487b1f2a600c3b47c989d4be"
+  },
+  {
+    "name": "郡大東側相鄰區塊",
+    "file": "484_94.json.gz",
+    "bytes": 138148,
+    "jsonBytes": 501379,
+    "nodes": 8569,
+    "ways": 99,
+    "elevationMissing": 0,
+    "sha256": "a545f6d50c07e22dcf591a9b08d0210e31ba55d65fc93bcc76e4543db5cb8cc4"
+  },
+  {
+    "name": "玉山附近檢查區塊",
+    "file": "483_93.json.gz",
+    "bytes": 455992,
+    "jsonBytes": 1670075,
+    "nodes": 28329,
+    "ways": 529,
+    "elevationMissing": 0,
+    "sha256": "23b8dbe3cf8dc4145e369f06d98619c377ab810a32ec2ea34225ed3652f65596"
+  },
+  {
+    "name": "北部山區局部檢查（非整個台北）",
+    "file": "north-486_100.json.gz",
+    "bytes": 1634444,
+    "jsonBytes": 6240760,
+    "nodes": 91554,
+    "ways": 7637,
+    "elevationMissing": 0,
+    "sha256": "caa7e3d939bec6df4de5a68e4e22688d10caf6b0cf97d30b6201a65e76c765ea"
+  }
+]

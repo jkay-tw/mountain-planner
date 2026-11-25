@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "routeId": "R066",
+  "date": "2026-11-25",
+  "start": {
+    "status": "USER_SELECTED_EXISTING_NODE",
+    "nodeId": "node:ef56761122345906961b",
+    "name": "14.6K水泥路止",
+    "userInstruction": "14.6K水泥路止' 作為起點",
+    "travelMode": "walking",
+    "supersedes": "先前14.5K附近的概略描述及19.3K起步建議",
+    "doesNotVerify": "使用者指定路線起點，不代表新取得獨立座標、線形或GPX證據。"
+  },
+  "exit": {
+    "status": "USER_SELECTED_EXISTING_ROUTE",
+    "via": "無雙部落／無雙吊橋",
+    "endNodeId": "node:a17ec4e667d55d3d99c3",
+    "endName": "33K行車終點"
+  },
+  "sheetApplied": true,
+  "formalRouteApplied": false
+}

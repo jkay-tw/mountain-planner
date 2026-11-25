@@ -1,0 +1,537 @@
+{
+  "schemaVersion": 1,
+  "routeId": "R066",
+  "status": "REVIEWABLE_PROPOSAL_NOT_APPLIED",
+  "eligibleForImport": false,
+  "requiresConfirmation": true,
+  "sourceSheetRanges": [
+    "'Routes_順序校核'!A67:AC67",
+    "'RouteNodes_順序校核'!A1049:N1078"
+  ],
+  "before": [
+    {
+      "position": 1,
+      "nodeId": "shared:cw-v07-011",
+      "name": "丹大山"
+    },
+    {
+      "position": 2,
+      "nodeId": "node:b865066ee7995702c0d4",
+      "name": "盧利拉駱山"
+    },
+    {
+      "position": 3,
+      "nodeId": "node:9f59facbac44a2e55ce7",
+      "name": "太平溪源營地"
+    },
+    {
+      "position": 4,
+      "nodeId": "node:c8870812bd546115bac5",
+      "name": "三岔路口營地"
+    },
+    {
+      "position": 5,
+      "nodeId": "node:2aa469a51f6331227667",
+      "name": "內嶺爾山"
+    },
+    {
+      "position": 6,
+      "nodeId": "node:c8870812bd546115bac5",
+      "name": "三岔路口營地"
+    },
+    {
+      "position": 7,
+      "nodeId": "node:c25918006df5f04534c8",
+      "name": "馬路巴拉讓山"
+    },
+    {
+      "position": 8,
+      "nodeId": "node:66b2dd2d91e301d84c73",
+      "name": "東鞍營地"
+    },
+    {
+      "position": 9,
+      "nodeId": "node:5048fd0d5be7a2b461be",
+      "name": "義西請馬至山"
+    },
+    {
+      "position": 10,
+      "nodeId": "node:fda449ba3440ad785b68",
+      "name": "斷稜東山"
+    },
+    {
+      "position": 11,
+      "nodeId": "node:0c0dc01565d03fae0e19",
+      "name": "裡門山"
+    },
+    {
+      "position": 12,
+      "nodeId": "node:34b4ec45fd16d72ac1b6",
+      "name": "丹大溪源營地"
+    },
+    {
+      "position": 13,
+      "nodeId": "node:ff06147be71a4346fbfc",
+      "name": "望崖山"
+    },
+    {
+      "position": 14,
+      "nodeId": "node:f0bb47a73379bfdf496a",
+      "name": "天南可蘭/望崖岔路"
+    },
+    {
+      "position": 15,
+      "nodeId": "node:01d1180c464fb08e5191",
+      "name": "可樂可樂安山"
+    },
+    {
+      "position": 16,
+      "nodeId": "node:6976566bc1a316b8e079",
+      "name": "郡東山"
+    },
+    {
+      "position": 17,
+      "nodeId": "node:e9149e15effc99bc37f7",
+      "name": "郡東營地"
+    },
+    {
+      "position": 18,
+      "nodeId": "node:a4c3afd25386960ea875",
+      "name": "東北鞍營地"
+    },
+    {
+      "position": 19,
+      "nodeId": "node:06b52b0f4a9c5db51f87",
+      "name": "東鑾/烏達佩岔路"
+    },
+    {
+      "position": 20,
+      "nodeId": "node:c9115d117bdcc33b8c0b",
+      "name": "東巒大山"
+    },
+    {
+      "position": 21,
+      "nodeId": "node:06b52b0f4a9c5db51f87",
+      "name": "東鑾/烏達佩岔路"
+    },
+    {
+      "position": 22,
+      "nodeId": "node:a4c3afd25386960ea875",
+      "name": "東北鞍營地"
+    },
+    {
+      "position": 23,
+      "nodeId": "node:adc0d7c3c99b1752e68b",
+      "name": "東郡大山"
+    },
+    {
+      "position": 24,
+      "nodeId": "node:a4c3afd25386960ea875",
+      "name": "東北鞍營地"
+    },
+    {
+      "position": 25,
+      "nodeId": "node:4001696b7a0f069ffb0b",
+      "name": "本鄉山"
+    },
+    {
+      "position": 26,
+      "nodeId": "node:21743079f36dd0ee5829",
+      "name": "櫧山北鞍營地"
+    },
+    {
+      "position": 27,
+      "nodeId": "node:b68adbc4f51e0a71c87f",
+      "name": "櫧山"
+    },
+    {
+      "position": 28,
+      "nodeId": "node:679d7475a6dd59c285e2",
+      "name": "無雙山東峰"
+    },
+    {
+      "position": 29,
+      "nodeId": "node:82e77090c06d1fe2aead",
+      "name": "無雙最高峰"
+    },
+    {
+      "position": 30,
+      "nodeId": "node:bce5fdf63beb2b9d5c29",
+      "name": "無雙山基點峰"
+    }
+  ],
+  "after": null,
+  "whyNoCompleteAfter": "14.6K起點已指定，首段已有既有OSM線形與方向時間可重用，無須等待GPX。全線尚待整合逐段來源與順序，出山方案未明確確認。",
+  "recommendedOption": null,
+  "options": [
+    {
+      "id": "A",
+      "startCandidate": "node:5d3084736e9f8bce6d4a",
+      "endCandidate": "node:a17ec4e667d55d3d99c3",
+      "exit": "無雙部落／無雙吊橋",
+      "boundaryIdentityPending": true
+    },
+    {
+      "id": "B",
+      "startCandidate": "node:ef56761122345906961b",
+      "endCandidate": "node:a17ec4e667d55d3d99c3",
+      "exit": "無雙部落／無雙吊橋",
+      "additionalEvidenceNeeded": "14.6K至既有GPX起點之步行段"
+    },
+    {
+      "id": "C",
+      "startCandidate": null,
+      "endCandidate": null,
+      "exit": "無雙溫泉／郡大林道／望鄉山／開高山／東埔",
+      "note": "17.8K起點及新增出山變體，部分節點待查證；不自動新增ID"
+    }
+  ],
+  "changes": [
+    {
+      "id": "ingress",
+      "oldPositions": [
+        1,
+        1
+      ],
+      "suggestedAnchors": [
+        {
+          "nodeId": "node:ef56761122345906961b",
+          "name": "14.6K水泥路止",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:5d3084736e9f8bce6d4a",
+          "name": "19.3K水泥橋",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:6b8235223e06105d242a",
+          "name": "28K水泥工寮",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:dee598e1b2437f4ec104",
+          "name": "32K水泥工寮",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:891637431112fc5688eb",
+          "name": "34K登山口",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:bc117dbb33b03fe2cddf",
+          "name": "沙武巒草原",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:f33cee319fc38118e03c",
+          "name": "東源營地",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:757cb9b7c126e5300053",
+          "name": "西源營地",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:fac669a79a9a25b63056",
+          "name": "杜鵑營地",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:7b0dae68c98b7de79a40",
+          "name": "太平溪源",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:9f59facbac44a2e55ce7",
+          "name": "太平溪源營地",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        }
+      ],
+      "reason": "使用者指定14.6K起步；14.6K至19.3K直接重用精確對應的既有OSM線形與方向時間，GPX未覆蓋不構成此段線形缺漏。",
+      "sourceIds": [
+        "229060",
+        "6204736"
+      ],
+      "completeNodeSequence": false,
+      "geometryVerified": false,
+      "directionalTimeVerified": false,
+      "availableSubsections": [
+        {
+          "fromId": "node:ef56761122345906961b",
+          "toId": "node:5d3084736e9f8bce6d4a",
+          "geometryStatus": "EXISTING_OSM_GEOMETRY_AVAILABLE",
+          "sequenceEvidenceStatus": "GPX_NOT_COVERED_NOT_A_GEOMETRY_BLOCKER",
+          "spanId": "owner-update-f0bece11265a479a",
+          "geometryFile": "preview/data/geometry/planner-terrain-v1.json",
+          "geometryHash": "0d982bce01e49e3183c0012657b4d410ed2b5c2c74d86b3f72aeee40fa774e94",
+          "pointCount": 472,
+          "distanceMeters": 4755.362,
+          "endpointOffsetsMeters": [
+            2.03,
+            0.29
+          ],
+          "usedReverse": true,
+          "sourceWayIds": [
+            620898176,
+            782359160,
+            865982155
+          ],
+          "source": {
+            "name": "OpenStreetMap / Geofabrik Taiwan",
+            "url": "https://download.geofabrik.de/asia/taiwan-latest.osm.pbf",
+            "retrievedDate": "2026-11-03",
+            "sha256": "72e6ec59e0b015aa52fd26b0240dc4155beca04a3071b0d07878eef6f02ba2b6",
+            "license": "ODbL 1.0",
+            "copyrightUrl": "https://www.openstreetmap.org/copyright"
+          },
+          "directionalTimes": [
+            {
+              "fromId": "node:5d3084736e9f8bce6d4a",
+              "toId": "node:ef56761122345906961b",
+              "minutes": 90,
+              "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+              "sourceRows": [
+                "R71B6CF31BA"
+              ],
+              "evidenceRows": [
+                596
+              ],
+              "verificationBasis": "owner_workbook_review"
+            },
+            {
+              "fromId": "node:ef56761122345906961b",
+              "toId": "node:5d3084736e9f8bce6d4a",
+              "minutes": 100,
+              "source": "https://www.sunriver.com.tw/images/hiking/G15_hiking.jpg",
+              "sourceRows": [
+                "R71B6CF31BA"
+              ],
+              "evidenceRows": [
+                596
+              ],
+              "verificationBasis": "owner_workbook_review"
+            }
+          ],
+          "noNewRouting": true,
+          "noGeometryWritten": true,
+          "meaning": "Reuse existing OSM planning geometry and existing source times; not a new field survey or independently verified official map transcription."
+        }
+      ]
+    },
+    {
+      "id": "danda-return",
+      "oldPositions": [
+        1,
+        3
+      ],
+      "suggestedAnchors": [
+        {
+          "nodeId": "node:9f59facbac44a2e55ce7",
+          "name": "太平溪源營地",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:b865066ee7995702c0d4",
+          "name": "盧利拉駱山",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "shared:cw-v07-011",
+          "name": "丹大山",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:b865066ee7995702c0d4",
+          "name": "盧利拉駱山",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:9f59facbac44a2e55ce7",
+          "name": "太平溪源營地",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        }
+      ],
+      "reason": "補齊登頂去程；回到太平溪源營地後接目前position4。重複節點屬合法支線往返。",
+      "sourceIds": [
+        "229060",
+        "6204736"
+      ],
+      "completeNodeSequence": false,
+      "geometryVerified": false,
+      "directionalTimeVerified": false
+    },
+    {
+      "id": "egress",
+      "oldPositions": [
+        30,
+        30
+      ],
+      "suggestedAnchors": [
+        {
+          "nodeId": "node:bce5fdf63beb2b9d5c29",
+          "name": "無雙山基點峰",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:ed8a1c3cd47fa986d90e",
+          "name": "最後水源",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:318b1240b1b28f23c14a",
+          "name": "亞力士營地",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:aef6e30a59fdc407a2a2",
+          "name": "無雙部落址",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:c004ec6758328d3ce1cb",
+          "name": "無雙吊橋",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:3bf4ec2f689a3b5c4930",
+          "name": "烏瓦拉鼻溪營地",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:29f7b222808645fa53ef",
+          "name": "45.3K登山口",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:c61990dd30e7cb3d8213",
+          "name": "43K工寮",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:a17ec4e667d55d3d99c3",
+          "name": "33K行車終點",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        }
+      ],
+      "reason": "A/B傳統出山錨點草案；需查核林道崩塌／高繞線形，不代表已完整可用。",
+      "sourceIds": [
+        "229060"
+      ],
+      "completeNodeSequence": false,
+      "geometryVerified": false,
+      "directionalTimeVerified": false
+    },
+    {
+      "id": "optional-tiannankelan",
+      "oldPositions": [
+        14,
+        15
+      ],
+      "suggestedAnchors": [
+        {
+          "nodeId": "node:f0bb47a73379bfdf496a",
+          "name": "天南可蘭/望崖岔路",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:bd25adc467b72fa6656f",
+          "name": "天南可蘭山",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:f0bb47a73379bfdf496a",
+          "name": "天南可蘭/望崖岔路",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        }
+      ],
+      "reason": "可選登頂支線，保留現有Sheet選峰意圖，不默認新增。",
+      "sourceIds": [
+        "6204736",
+        "6099041"
+      ],
+      "completeNodeSequence": false,
+      "geometryVerified": false,
+      "directionalTimeVerified": false
+    },
+    {
+      "id": "optional-wudapei",
+      "oldPositions": [
+        19,
+        21
+      ],
+      "suggestedAnchors": [
+        {
+          "nodeId": "node:06b52b0f4a9c5db51f87",
+          "name": "東鑾/烏達佩岔路",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:4a1ca6c9c8adbf80fba0",
+          "name": "烏達佩山",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        },
+        {
+          "nodeId": "node:06b52b0f4a9c5db51f87",
+          "name": "東鑾/烏達佩岔路",
+          "identityStatus": "original-registry-record; physical correspondence and exact span still require source review"
+        }
+      ],
+      "reason": "可選登頂支線，實際插入去程或回程依變體決定，不同時自動插兩次。",
+      "sourceIds": [
+        "6204736",
+        "6099041"
+      ],
+      "completeNodeSequence": false,
+      "geometryVerified": false,
+      "directionalTimeVerified": false
+    }
+  ],
+  "retain": [
+    {
+      "oldPositions": [
+        4,
+        6
+      ],
+      "reason": "內嶺爾支線往返，保留重複三岔路口。"
+    },
+    {
+      "oldPositions": [
+        18,
+        24
+      ],
+      "reason": "保留先東巒的候選意圖；另有先東郡走法，不憑多數決覆寫。"
+    }
+  ],
+  "metadataProposal": {
+    "range": "Routes_順序校核!Z67",
+    "reason": "既有無節點與未取得GPX敘述已過時。",
+    "suggested": "使用者已指定14.6K水泥路止為步行起點。14.6K至19.3K已有OSM線形及方向時間可用；GPX主要核對行走順序，不因缺GPX視為缺線形。已取得三份GPX並進行局部查證，原始節點表已有進出段候選。Sheet目前仍為核心片段，完整序列與出山方案尚待整合。"
+  },
+  "needsNewNodes": "不先建立。既有ID優先；17.8K／溫泉等點待來源與身分核對。",
+  "scopeDecision": {
+    "schemaVersion": 1,
+    "routeId": "R066",
+    "date": "2026-11-25",
+    "start": {
+      "status": "USER_SELECTED_EXISTING_NODE",
+      "nodeId": "node:ef56761122345906961b",
+      "name": "14.6K水泥路止",
+      "userInstruction": "14.6K水泥路止' 作為起點",
+      "travelMode": "walking",
+      "supersedes": "先前14.5K附近的概略描述及19.3K起步建議",
+      "doesNotVerify": "使用者指定路線起點，不代表新取得獨立座標、線形或GPX證據。"
+    },
+    "exit": {
+      "status": "PROPOSED_NOT_EXPLICITLY_CONFIRMED",
+      "via": "無雙部落／無雙吊橋",
+      "endNodeId": "node:a17ec4e667d55d3d99c3",
+      "endName": "33K行車終點"
+    },
+    "sheetApplied": false,
+    "formalRouteApplied": false
+  },
+  "selectedStartOption": "B"
+}

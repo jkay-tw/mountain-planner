@@ -1,0 +1,6783 @@
+{
+  "date": "2026-11-23",
+  "spreadsheetId": "1Hfn-TT96JjGOnJXjNkoyWuCXrn-sw-pkuvACfLHSHVg",
+  "sheet": "RouteNodes",
+  "rows": [
+    {
+      "sheetRow": 388,
+      "cells": [
+        {
+          "stringValue": "R026"
+        },
+        {
+          "numberValue": 1
+        },
+        {
+          "stringValue": "g04-062"
+        },
+        {
+          "stringValue": "鎮西堡"
+        },
+        {
+          "stringValue": "G04"
+        },
+        {
+          "stringValue": "規劃起點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "使用者核對的關鍵節點"
+        },
+        {
+          "stringValue": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "stringValue": "不可直接連續套用"
+        },
+        {
+          "stringValue": "R026 已決定：中霸山屋暫略；鎮西堡↔神木區登山口須核對 OSM 步道線形與方向、對應既有 Node ID，再建立可追溯步行連接。未核實前不直接套用。"
+        },
+        null
+      ]
+    },
+    {
+      "sheetRow": 389,
+      "cells": [
+        {
+          "stringValue": "R026"
+        },
+        {
+          "numberValue": 2
+        },
+        {
+          "stringValue": "g04-033"
+        },
+        {
+          "stringValue": "神木區登山口"
+        },
+        {
+          "stringValue": "G04"
+        },
+        {
+          "stringValue": "待核對錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "使用者核對的關鍵節點"
+        },
+        {
+          "stringValue": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "stringValue": "不可直接連續套用"
+        },
+        {
+          "stringValue": "R026 已決定：中霸山屋暫略；鎮西堡↔神木區登山口須核對 OSM 步道線形與方向、對應既有 Node ID，再建立可追溯步行連接。未核實前不直接套用。"
+        },
+        null
+      ]
+    },
+    {
+      "sheetRow": 390,
+      "cells": [
+        {
+          "stringValue": "R026"
+        },
+        {
+          "numberValue": 3
+        },
+        {
+          "stringValue": "g04-036"
+        },
+        {
+          "stringValue": "馬洋山"
+        },
+        {
+          "stringValue": "G04"
+        },
+        {
+          "stringValue": "待核對錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "使用者核對的關鍵節點"
+        },
+        {
+          "stringValue": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "stringValue": "不可直接連續套用"
+        },
+        {
+          "stringValue": "R026 已決定：中霸山屋暫略；鎮西堡↔神木區登山口須核對 OSM 步道線形與方向、對應既有 Node ID，再建立可追溯步行連接。未核實前不直接套用。"
+        },
+        null
+      ]
+    },
+    {
+      "sheetRow": 391,
+      "cells": [
+        {
+          "stringValue": "R026"
+        },
+        {
+          "numberValue": 4
+        },
+        {
+          "stringValue": "g04-007"
+        },
+        {
+          "stringValue": "大霸霸基"
+        },
+        {
+          "stringValue": "G04"
+        },
+        {
+          "stringValue": "待核對錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "使用者核對的關鍵節點"
+        },
+        {
+          "stringValue": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "stringValue": "不可直接連續套用"
+        },
+        {
+          "stringValue": "R026 已決定：中霸山屋暫略；鎮西堡↔神木區登山口須核對 OSM 步道線形與方向、對應既有 Node ID，再建立可追溯步行連接。未核實前不直接套用。"
+        },
+        null
+      ]
+    },
+    {
+      "sheetRow": 392,
+      "cells": [
+        {
+          "stringValue": "R026"
+        },
+        {
+          "numberValue": 5
+        },
+        {
+          "stringValue": "g04-009"
+        },
+        {
+          "stringValue": "小霸尖山"
+        },
+        {
+          "stringValue": "G04"
+        },
+        {
+          "stringValue": "待核對錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "使用者核對的關鍵節點"
+        },
+        {
+          "stringValue": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "stringValue": "不可直接連續套用"
+        },
+        {
+          "stringValue": "R026 已決定：中霸山屋暫略；鎮西堡↔神木區登山口須核對 OSM 步道線形與方向、對應既有 Node ID，再建立可追溯步行連接。未核實前不直接套用。"
+        },
+        null
+      ]
+    },
+    {
+      "sheetRow": 393,
+      "cells": [
+        {
+          "stringValue": "R026"
+        },
+        {
+          "numberValue": 6
+        },
+        {
+          "stringValue": "g04-019"
+        },
+        {
+          "stringValue": "伊澤山"
+        },
+        {
+          "stringValue": "G04"
+        },
+        {
+          "stringValue": "待核對錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "使用者核對的關鍵節點"
+        },
+        {
+          "stringValue": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "stringValue": "不可直接連續套用"
+        },
+        {
+          "stringValue": "R026 已決定：中霸山屋暫略；鎮西堡↔神木區登山口須核對 OSM 步道線形與方向、對應既有 Node ID，再建立可追溯步行連接。未核實前不直接套用。"
+        },
+        null
+      ]
+    },
+    {
+      "sheetRow": 394,
+      "cells": [
+        {
+          "stringValue": "R026"
+        },
+        {
+          "numberValue": 7
+        },
+        {
+          "stringValue": "g04-015"
+        },
+        {
+          "stringValue": "加利山"
+        },
+        {
+          "stringValue": "G04"
+        },
+        {
+          "stringValue": "待核對錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "使用者核對的關鍵節點"
+        },
+        {
+          "stringValue": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "stringValue": "不可直接連續套用"
+        },
+        {
+          "stringValue": "R026 已決定：中霸山屋暫略；鎮西堡↔神木區登山口須核對 OSM 步道線形與方向、對應既有 Node ID，再建立可追溯步行連接。未核實前不直接套用。"
+        },
+        null
+      ]
+    },
+    {
+      "sheetRow": 395,
+      "cells": [
+        {
+          "stringValue": "R026"
+        },
+        {
+          "numberValue": 8
+        },
+        {
+          "stringValue": "g04-036"
+        },
+        {
+          "stringValue": "馬洋山"
+        },
+        {
+          "stringValue": "G04"
+        },
+        {
+          "stringValue": "待核對錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "使用者核對的關鍵節點"
+        },
+        {
+          "stringValue": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "stringValue": "不可直接連續套用"
+        },
+        {
+          "stringValue": "R026 已決定：中霸山屋暫略；鎮西堡↔神木區登山口須核對 OSM 步道線形與方向、對應既有 Node ID，再建立可追溯步行連接。未核實前不直接套用。"
+        },
+        null
+      ]
+    },
+    {
+      "sheetRow": 396,
+      "cells": [
+        {
+          "stringValue": "R026"
+        },
+        {
+          "numberValue": 9
+        },
+        {
+          "stringValue": "g04-033"
+        },
+        {
+          "stringValue": "神木區登山口"
+        },
+        {
+          "stringValue": "G04"
+        },
+        {
+          "stringValue": "待核對錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "使用者核對的關鍵節點"
+        },
+        {
+          "stringValue": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "stringValue": "不可直接連續套用"
+        },
+        {
+          "stringValue": "R026 已決定：中霸山屋暫略；鎮西堡↔神木區登山口須核對 OSM 步道線形與方向、對應既有 Node ID，再建立可追溯步行連接。未核實前不直接套用。"
+        },
+        null
+      ]
+    },
+    {
+      "sheetRow": 397,
+      "cells": [
+        {
+          "stringValue": "R026"
+        },
+        {
+          "numberValue": 10
+        },
+        {
+          "stringValue": "g04-062"
+        },
+        {
+          "stringValue": "鎮西堡"
+        },
+        {
+          "stringValue": "G04"
+        },
+        {
+          "stringValue": "規劃終點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "使用者核對的關鍵節點"
+        },
+        {
+          "stringValue": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "stringValue": "不可直接連續套用"
+        },
+        {
+          "stringValue": "R026 已決定：中霸山屋暫略；鎮西堡↔神木區登山口須核對 OSM 步道線形與方向、對應既有 Node ID，再建立可追溯步行連接。未核實前不直接套用。"
+        },
+        null
+      ]
+    },
+    {
+      "sheetRow": 435,
+      "cells": [
+        {
+          "stringValue": "R028"
+        },
+        {
+          "numberValue": 1
+        },
+        {
+          "stringValue": "g04-045"
+        },
+        {
+          "stringValue": "雪山登山口"
+        },
+        {
+          "stringValue": "G04 / G05"
+        },
+        {
+          "stringValue": "起點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "起點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 436,
+      "cells": [
+        {
+          "stringValue": "R028"
+        },
+        {
+          "numberValue": 2
+        },
+        {
+          "stringValue": "shared:cw-v07-003"
+        },
+        {
+          "stringValue": "七卡山莊"
+        },
+        {
+          "stringValue": "G04 / G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 437,
+      "cells": [
+        {
+          "stringValue": "R028"
+        },
+        {
+          "numberValue": 3
+        },
+        {
+          "stringValue": "g04-027"
+        },
+        {
+          "stringValue": "哭坡觀景台"
+        },
+        {
+          "stringValue": "G04"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 438,
+      "cells": [
+        {
+          "stringValue": "R028"
+        },
+        {
+          "numberValue": 4
+        },
+        {
+          "stringValue": "g04-044"
+        },
+        {
+          "stringValue": "雪山東峰"
+        },
+        {
+          "stringValue": "G04"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 439,
+      "cells": [
+        {
+          "stringValue": "R028"
+        },
+        {
+          "numberValue": 5
+        },
+        {
+          "stringValue": "shared:cw-v07-004"
+        },
+        {
+          "stringValue": "三六九山莊"
+        },
+        {
+          "stringValue": "G04 / G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 440,
+      "cells": [
+        {
+          "stringValue": "R028"
+        },
+        {
+          "numberValue": 6
+        },
+        {
+          "stringValue": "shared:cw-v07-074"
+        },
+        {
+          "stringValue": "雪山主峰"
+        },
+        {
+          "stringValue": "G04 / G05"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 441,
+      "cells": [
+        {
+          "stringValue": "R028"
+        },
+        {
+          "numberValue": 7
+        },
+        {
+          "stringValue": "node:e2c27ef9a7436ae25637"
+        },
+        {
+          "stringValue": "雪山山莊舊址"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 442,
+      "cells": [
+        {
+          "stringValue": "R028"
+        },
+        {
+          "numberValue": 8
+        },
+        {
+          "stringValue": "node:847092e10ea33bbd9eeb"
+        },
+        {
+          "stringValue": "志佳陽大山"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 443,
+      "cells": [
+        {
+          "stringValue": "R028"
+        },
+        {
+          "numberValue": 9
+        },
+        {
+          "stringValue": "node:94e1beaedf30d622dec0"
+        },
+        {
+          "stringValue": "志佳陽基點峰"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 444,
+      "cells": [
+        {
+          "stringValue": "R028"
+        },
+        {
+          "numberValue": 10
+        },
+        {
+          "stringValue": "node:b43dec22007f4f23d9f4"
+        },
+        {
+          "stringValue": "瓢簞山莊"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 445,
+      "cells": [
+        {
+          "stringValue": "R028"
+        },
+        {
+          "numberValue": 11
+        },
+        {
+          "stringValue": "node:b177c2fbf3ce1d786e10"
+        },
+        {
+          "stringValue": "賽良久"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 446,
+      "cells": [
+        {
+          "stringValue": "R028"
+        },
+        {
+          "numberValue": 12
+        },
+        {
+          "stringValue": "node:23e78a62cdb1f7900031"
+        },
+        {
+          "stringValue": "苗圃工寮舊址"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 447,
+      "cells": [
+        {
+          "stringValue": "R028"
+        },
+        {
+          "numberValue": 13
+        },
+        {
+          "stringValue": "node:43c9393ad0d04c1318ea"
+        },
+        {
+          "stringValue": "3.1K登山口"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 448,
+      "cells": [
+        {
+          "stringValue": "R028"
+        },
+        {
+          "numberValue": 14
+        },
+        {
+          "stringValue": "node:67f469173d3d382ca79c"
+        },
+        {
+          "stringValue": "松柏農場"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 449,
+      "cells": [
+        {
+          "stringValue": "R028"
+        },
+        {
+          "numberValue": 15
+        },
+        {
+          "stringValue": "node:2765d1f4878df36ed535"
+        },
+        {
+          "stringValue": "環山部落"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "終點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "終點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 450,
+      "cells": [
+        {
+          "stringValue": "R029"
+        },
+        {
+          "numberValue": 1
+        },
+        {
+          "stringValue": "node:2765d1f4878df36ed535"
+        },
+        {
+          "stringValue": "環山部落"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "起點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "起點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 451,
+      "cells": [
+        {
+          "stringValue": "R029"
+        },
+        {
+          "numberValue": 2
+        },
+        {
+          "stringValue": "node:67f469173d3d382ca79c"
+        },
+        {
+          "stringValue": "松柏農場"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 452,
+      "cells": [
+        {
+          "stringValue": "R029"
+        },
+        {
+          "numberValue": 3
+        },
+        {
+          "stringValue": "node:43c9393ad0d04c1318ea"
+        },
+        {
+          "stringValue": "3.1K登山口"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 453,
+      "cells": [
+        {
+          "stringValue": "R029"
+        },
+        {
+          "numberValue": 4
+        },
+        {
+          "stringValue": "node:23e78a62cdb1f7900031"
+        },
+        {
+          "stringValue": "苗圃工寮舊址"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 454,
+      "cells": [
+        {
+          "stringValue": "R029"
+        },
+        {
+          "numberValue": 5
+        },
+        {
+          "stringValue": "node:b177c2fbf3ce1d786e10"
+        },
+        {
+          "stringValue": "賽良久"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 455,
+      "cells": [
+        {
+          "stringValue": "R029"
+        },
+        {
+          "numberValue": 6
+        },
+        {
+          "stringValue": "node:b43dec22007f4f23d9f4"
+        },
+        {
+          "stringValue": "瓢簞山莊"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 456,
+      "cells": [
+        {
+          "stringValue": "R029"
+        },
+        {
+          "numberValue": 7
+        },
+        {
+          "stringValue": "node:94e1beaedf30d622dec0"
+        },
+        {
+          "stringValue": "志佳陽基點峰"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 457,
+      "cells": [
+        {
+          "stringValue": "R029"
+        },
+        {
+          "numberValue": 8
+        },
+        {
+          "stringValue": "node:847092e10ea33bbd9eeb"
+        },
+        {
+          "stringValue": "志佳陽大山"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 458,
+      "cells": [
+        {
+          "stringValue": "R029"
+        },
+        {
+          "numberValue": 9
+        },
+        {
+          "stringValue": "node:94e1beaedf30d622dec0"
+        },
+        {
+          "stringValue": "志佳陽基點峰"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 459,
+      "cells": [
+        {
+          "stringValue": "R029"
+        },
+        {
+          "numberValue": 10
+        },
+        {
+          "stringValue": "node:b43dec22007f4f23d9f4"
+        },
+        {
+          "stringValue": "瓢簞山莊"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 460,
+      "cells": [
+        {
+          "stringValue": "R029"
+        },
+        {
+          "numberValue": 11
+        },
+        {
+          "stringValue": "node:b177c2fbf3ce1d786e10"
+        },
+        {
+          "stringValue": "賽良久"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 461,
+      "cells": [
+        {
+          "stringValue": "R029"
+        },
+        {
+          "numberValue": 12
+        },
+        {
+          "stringValue": "node:23e78a62cdb1f7900031"
+        },
+        {
+          "stringValue": "苗圃工寮舊址"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 462,
+      "cells": [
+        {
+          "stringValue": "R029"
+        },
+        {
+          "numberValue": 13
+        },
+        {
+          "stringValue": "node:43c9393ad0d04c1318ea"
+        },
+        {
+          "stringValue": "3.1K登山口"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 463,
+      "cells": [
+        {
+          "stringValue": "R029"
+        },
+        {
+          "numberValue": 14
+        },
+        {
+          "stringValue": "node:67f469173d3d382ca79c"
+        },
+        {
+          "stringValue": "松柏農場"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 464,
+      "cells": [
+        {
+          "stringValue": "R029"
+        },
+        {
+          "numberValue": 15
+        },
+        {
+          "stringValue": "node:2765d1f4878df36ed535"
+        },
+        {
+          "stringValue": "環山部落"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "終點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "終點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 465,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 1
+        },
+        {
+          "stringValue": "node:67f469173d3d382ca79c"
+        },
+        {
+          "stringValue": "松柏農場"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "起點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "起點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 466,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 2
+        },
+        {
+          "stringValue": "node:43c9393ad0d04c1318ea"
+        },
+        {
+          "stringValue": "3.1K登山口"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 467,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 3
+        },
+        {
+          "stringValue": "node:23e78a62cdb1f7900031"
+        },
+        {
+          "stringValue": "苗圃工寮舊址"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 468,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 4
+        },
+        {
+          "stringValue": "node:b177c2fbf3ce1d786e10"
+        },
+        {
+          "stringValue": "賽良久"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 469,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 5
+        },
+        {
+          "stringValue": "node:b43dec22007f4f23d9f4"
+        },
+        {
+          "stringValue": "瓢簞山莊"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 470,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 6
+        },
+        {
+          "stringValue": "node:94e1beaedf30d622dec0"
+        },
+        {
+          "stringValue": "志佳陽基點峰"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 471,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 7
+        },
+        {
+          "stringValue": "node:847092e10ea33bbd9eeb"
+        },
+        {
+          "stringValue": "志佳陽大山"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 472,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 8
+        },
+        {
+          "stringValue": "node:e2c27ef9a7436ae25637"
+        },
+        {
+          "stringValue": "雪山山莊舊址"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 473,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 9
+        },
+        {
+          "stringValue": "shared:cw-v07-074"
+        },
+        {
+          "stringValue": "雪山主峰"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 474,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 10
+        },
+        {
+          "stringValue": "shared:cw-v07-066"
+        },
+        {
+          "stringValue": "翠池山屋"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 475,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 11
+        },
+        {
+          "stringValue": "node:a41e14d35855c558911e"
+        },
+        {
+          "stringValue": "完美谷營地"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 476,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 12
+        },
+        {
+          "stringValue": "node:d63a66a9a404c2d156a6"
+        },
+        {
+          "stringValue": "雪山西南峰"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 477,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 13
+        },
+        {
+          "stringValue": "node:194fcc1bb298ce914692"
+        },
+        {
+          "stringValue": "大劍山"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 478,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 14
+        },
+        {
+          "stringValue": "node:1fc2a408255b40a4d818"
+        },
+        {
+          "stringValue": "鞍部水源岔路"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 479,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 15
+        },
+        {
+          "stringValue": "node:423790cb65cc1bad5df4"
+        },
+        {
+          "stringValue": "油婆蘭營地"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 480,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 16
+        },
+        {
+          "stringValue": "node:ef9d6d7b507c200ba66a"
+        },
+        {
+          "stringValue": "油婆蘭山"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 481,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 17
+        },
+        {
+          "stringValue": "node:f6a9075ee1d04429206c"
+        },
+        {
+          "stringValue": "布伕奇寒山"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 482,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 18
+        },
+        {
+          "stringValue": "node:7bec9defdb2f42115f39"
+        },
+        {
+          "stringValue": "老伍營地"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 483,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 19
+        },
+        {
+          "stringValue": "node:cfc709350cf852b13fe1"
+        },
+        {
+          "stringValue": "佳陽山"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 484,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 20
+        },
+        {
+          "stringValue": "node:0969f8657ba80bf5fdd2"
+        },
+        {
+          "stringValue": "劍山"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 485,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 21
+        },
+        {
+          "stringValue": "node:cfc709350cf852b13fe1"
+        },
+        {
+          "stringValue": "佳陽山"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 486,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 22
+        },
+        {
+          "stringValue": "node:7bec9defdb2f42115f39"
+        },
+        {
+          "stringValue": "老伍營地"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 487,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 23
+        },
+        {
+          "stringValue": "node:f6a9075ee1d04429206c"
+        },
+        {
+          "stringValue": "布伕奇寒山"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 488,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 24
+        },
+        {
+          "stringValue": "node:ef9d6d7b507c200ba66a"
+        },
+        {
+          "stringValue": "油婆蘭山"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 489,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 25
+        },
+        {
+          "stringValue": "node:423790cb65cc1bad5df4"
+        },
+        {
+          "stringValue": "油婆蘭營地"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 490,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 26
+        },
+        {
+          "stringValue": "node:1fc2a408255b40a4d818"
+        },
+        {
+          "stringValue": "鞍部水源岔路"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 491,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 27
+        },
+        {
+          "stringValue": "node:194fcc1bb298ce914692"
+        },
+        {
+          "stringValue": "大劍山"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 492,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 28
+        },
+        {
+          "stringValue": "node:1fc2a408255b40a4d818"
+        },
+        {
+          "stringValue": "鞍部水源岔路"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 493,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 29
+        },
+        {
+          "stringValue": "node:423790cb65cc1bad5df4"
+        },
+        {
+          "stringValue": "油婆蘭營地"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 494,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 30
+        },
+        {
+          "stringValue": "node:1fc2a408255b40a4d818"
+        },
+        {
+          "stringValue": "鞍部水源岔路"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 495,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 31
+        },
+        {
+          "stringValue": "node:194fcc1bb298ce914692"
+        },
+        {
+          "stringValue": "大劍山"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 496,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 32
+        },
+        {
+          "stringValue": "node:d63a66a9a404c2d156a6"
+        },
+        {
+          "stringValue": "雪山西南峰"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 497,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 33
+        },
+        {
+          "stringValue": "node:a41e14d35855c558911e"
+        },
+        {
+          "stringValue": "完美谷營地"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 498,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 34
+        },
+        {
+          "stringValue": "shared:cw-v07-066"
+        },
+        {
+          "stringValue": "翠池山屋"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 499,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 35
+        },
+        {
+          "stringValue": "shared:cw-v07-074"
+        },
+        {
+          "stringValue": "雪山主峰"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 500,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 36
+        },
+        {
+          "stringValue": "node:e2c27ef9a7436ae25637"
+        },
+        {
+          "stringValue": "雪山山莊舊址"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 501,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 37
+        },
+        {
+          "stringValue": "node:847092e10ea33bbd9eeb"
+        },
+        {
+          "stringValue": "志佳陽大山"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 502,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 38
+        },
+        {
+          "stringValue": "node:94e1beaedf30d622dec0"
+        },
+        {
+          "stringValue": "志佳陽基點峰"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 503,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 39
+        },
+        {
+          "stringValue": "node:b43dec22007f4f23d9f4"
+        },
+        {
+          "stringValue": "瓢簞山莊"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 504,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 40
+        },
+        {
+          "stringValue": "node:b177c2fbf3ce1d786e10"
+        },
+        {
+          "stringValue": "賽良久"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 505,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 41
+        },
+        {
+          "stringValue": "node:23e78a62cdb1f7900031"
+        },
+        {
+          "stringValue": "苗圃工寮舊址"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 506,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 42
+        },
+        {
+          "stringValue": "node:43c9393ad0d04c1318ea"
+        },
+        {
+          "stringValue": "3.1K登山口"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 507,
+      "cells": [
+        {
+          "stringValue": "R030"
+        },
+        {
+          "numberValue": 43
+        },
+        {
+          "stringValue": "node:67f469173d3d382ca79c"
+        },
+        {
+          "stringValue": "松柏農場"
+        },
+        {
+          "stringValue": "G05"
+        },
+        {
+          "stringValue": "終點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "終點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 757,
+      "cells": [
+        {
+          "stringValue": "R052"
+        },
+        {
+          "numberValue": 1
+        },
+        {
+          "stringValue": "node:043095d97e26cc162e8e"
+        },
+        {
+          "stringValue": "武嶺"
+        },
+        {
+          "stringValue": "G09-cfb4c85c"
+        },
+        {
+          "stringValue": "規劃起點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "使用者核對的關鍵節點"
+        },
+        {
+          "stringValue": "多段錨點・步行/車行待拆分"
+        },
+        {
+          "stringValue": "不可直接連續套用"
+        },
+        {
+          "stringValue": "R052 僅為重要節點順序，未拆出完整轉場。相鄰節點不代表可步行；車行段須有 OSM 道路線形與核實端點，時間依上河有向車行資料，無則保留手動輸入。分段建模前不可連續一鍵套用。"
+        },
+        null
+      ]
+    },
+    {
+      "sheetRow": 758,
+      "cells": [
+        {
+          "stringValue": "R052"
+        },
+        {
+          "numberValue": 2
+        },
+        {
+          "stringValue": "node:988e2bd2e27c233431cf"
+        },
+        {
+          "stringValue": "合歡山"
+        },
+        {
+          "stringValue": "G09-cfb4c85c"
+        },
+        {
+          "stringValue": "待核對錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "使用者核對的關鍵節點"
+        },
+        {
+          "stringValue": "多段錨點・步行/車行待拆分"
+        },
+        {
+          "stringValue": "不可直接連續套用"
+        },
+        {
+          "stringValue": "R052 僅為重要節點順序，未拆出完整轉場。相鄰節點不代表可步行；車行段須有 OSM 道路線形與核實端點，時間依上河有向車行資料，無則保留手動輸入。分段建模前不可連續一鍵套用。"
+        },
+        null
+      ]
+    },
+    {
+      "sheetRow": 759,
+      "cells": [
+        {
+          "stringValue": "R052"
+        },
+        {
+          "numberValue": 3
+        },
+        {
+          "stringValue": "node:1c529b28513d982ad46e"
+        },
+        {
+          "stringValue": "合歡山東峰"
+        },
+        {
+          "stringValue": "G09-cfb4c85c"
+        },
+        {
+          "stringValue": "待核對錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "使用者核對的關鍵節點"
+        },
+        {
+          "stringValue": "多段錨點・步行/車行待拆分"
+        },
+        {
+          "stringValue": "不可直接連續套用"
+        },
+        {
+          "stringValue": "R052 僅為重要節點順序，未拆出完整轉場。相鄰節點不代表可步行；車行段須有 OSM 道路線形與核實端點，時間依上河有向車行資料，無則保留手動輸入。分段建模前不可連續一鍵套用。"
+        },
+        null
+      ]
+    },
+    {
+      "sheetRow": 760,
+      "cells": [
+        {
+          "stringValue": "R052"
+        },
+        {
+          "numberValue": 4
+        },
+        {
+          "stringValue": "node:25ba30201c2b93a7a1ee"
+        },
+        {
+          "stringValue": "石門山"
+        },
+        {
+          "stringValue": "G09-cfb4c85c"
+        },
+        {
+          "stringValue": "待核對錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "使用者核對的關鍵節點"
+        },
+        {
+          "stringValue": "多段錨點・步行/車行待拆分"
+        },
+        {
+          "stringValue": "不可直接連續套用"
+        },
+        {
+          "stringValue": "R052 僅為重要節點順序，未拆出完整轉場。相鄰節點不代表可步行；車行段須有 OSM 道路線形與核實端點，時間依上河有向車行資料，無則保留手動輸入。分段建模前不可連續一鍵套用。"
+        },
+        null
+      ]
+    },
+    {
+      "sheetRow": 761,
+      "cells": [
+        {
+          "stringValue": "R052"
+        },
+        {
+          "numberValue": 5
+        },
+        {
+          "stringValue": "node:396247de591a031f9bfb"
+        },
+        {
+          "stringValue": "北合歡山"
+        },
+        {
+          "stringValue": "G09-cfb4c85c"
+        },
+        {
+          "stringValue": "待核對錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "使用者核對的關鍵節點"
+        },
+        {
+          "stringValue": "多段錨點・步行/車行待拆分"
+        },
+        {
+          "stringValue": "不可直接連續套用"
+        },
+        {
+          "stringValue": "R052 僅為重要節點順序，未拆出完整轉場。相鄰節點不代表可步行；車行段須有 OSM 道路線形與核實端點，時間依上河有向車行資料，無則保留手動輸入。分段建模前不可連續一鍵套用。"
+        },
+        null
+      ]
+    },
+    {
+      "sheetRow": 762,
+      "cells": [
+        {
+          "stringValue": "R052"
+        },
+        {
+          "numberValue": 6
+        },
+        {
+          "stringValue": "node:e6b49d265bc73a591c95"
+        },
+        {
+          "stringValue": "西合歡山"
+        },
+        {
+          "stringValue": "G09-cfb4c85c"
+        },
+        {
+          "stringValue": "待核對錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "使用者核對的關鍵節點"
+        },
+        {
+          "stringValue": "多段錨點・步行/車行待拆分"
+        },
+        {
+          "stringValue": "不可直接連續套用"
+        },
+        {
+          "stringValue": "R052 僅為重要節點順序，未拆出完整轉場。相鄰節點不代表可步行；車行段須有 OSM 道路線形與核實端點，時間依上河有向車行資料，無則保留手動輸入。分段建模前不可連續一鍵套用。"
+        },
+        null
+      ]
+    },
+    {
+      "sheetRow": 763,
+      "cells": [
+        {
+          "stringValue": "R052"
+        },
+        {
+          "numberValue": 7
+        },
+        {
+          "stringValue": "node:ccb468c0ed9c0bdb556f"
+        },
+        {
+          "stringValue": "北合歡山登山口"
+        },
+        {
+          "stringValue": "G09-cfb4c85c"
+        },
+        {
+          "stringValue": "規劃終點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "使用者核對的關鍵節點"
+        },
+        {
+          "stringValue": "多段錨點・步行/車行待拆分"
+        },
+        {
+          "stringValue": "不可直接連續套用"
+        },
+        {
+          "stringValue": "R052 僅為重要節點順序，未拆出完整轉場。相鄰節點不代表可步行；車行段須有 OSM 道路線形與核實端點，時間依上河有向車行資料，無則保留手動輸入。分段建模前不可連續一鍵套用。"
+        },
+        null
+      ]
+    },
+    {
+      "sheetRow": 837,
+      "cells": [
+        {
+          "stringValue": "R057"
+        },
+        {
+          "numberValue": 1
+        },
+        {
+          "stringValue": "shared:cw-v07-058"
+        },
+        {
+          "stringValue": "滑雪山莊奇萊登山口"
+        },
+        {
+          "stringValue": "G09-19d020e9"
+        },
+        {
+          "stringValue": "規劃起點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "使用者核對的關鍵節點"
+        },
+        {
+          "stringValue": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "stringValue": "不可直接連續套用"
+        },
+        {
+          "stringValue": "R057 已決定：奇萊主山北峰→屏風山須核對 OSM 真實步道線形與方向，建立可追溯有向連接；無上河時間可保留手動輸入。未核實前不可直接一鍵套用。"
+        },
+        null
+      ]
+    },
+    {
+      "sheetRow": 838,
+      "cells": [
+        {
+          "stringValue": "R057"
+        },
+        {
+          "numberValue": 2
+        },
+        {
+          "stringValue": "shared:cw-v07-041"
+        },
+        {
+          "stringValue": "奇萊主山北峰"
+        },
+        {
+          "stringValue": "G09-19d020e9"
+        },
+        {
+          "stringValue": "待核對錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "使用者核對的關鍵節點"
+        },
+        {
+          "stringValue": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "stringValue": "不可直接連續套用"
+        },
+        {
+          "stringValue": "R057 已決定：奇萊主山北峰→屏風山須核對 OSM 真實步道線形與方向，建立可追溯有向連接；無上河時間可保留手動輸入。未核實前不可直接一鍵套用。"
+        },
+        null
+      ]
+    },
+    {
+      "sheetRow": 839,
+      "cells": [
+        {
+          "stringValue": "R057"
+        },
+        {
+          "numberValue": 3
+        },
+        {
+          "stringValue": "node:f2ece3876a2d0d5ba88c"
+        },
+        {
+          "stringValue": "屏風山"
+        },
+        {
+          "stringValue": "G09-ee5545d1"
+        },
+        {
+          "stringValue": "待核對錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "使用者核對的關鍵節點"
+        },
+        {
+          "stringValue": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "stringValue": "不可直接連續套用"
+        },
+        {
+          "stringValue": "R057 已決定：奇萊主山北峰→屏風山須核對 OSM 真實步道線形與方向，建立可追溯有向連接；無上河時間可保留手動輸入。未核實前不可直接一鍵套用。"
+        },
+        null
+      ]
+    },
+    {
+      "sheetRow": 840,
+      "cells": [
+        {
+          "stringValue": "R057"
+        },
+        {
+          "numberValue": 4
+        },
+        {
+          "stringValue": "node:d69a18f19c7940c3ebf4"
+        },
+        {
+          "stringValue": "屏風山新登山口"
+        },
+        {
+          "stringValue": "G09-ee5545d1"
+        },
+        {
+          "stringValue": "規劃終點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "使用者核對的關鍵節點"
+        },
+        {
+          "stringValue": "僅重要點・OSM步行線形待接入"
+        },
+        {
+          "stringValue": "不可直接連續套用"
+        },
+        {
+          "stringValue": "R057 已決定：奇萊主山北峰→屏風山須核對 OSM 真實步道線形與方向，建立可追溯有向連接；無上河時間可保留手動輸入。未核實前不可直接一鍵套用。"
+        },
+        null
+      ]
+    },
+    {
+      "sheetRow": 1051,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 1
+        },
+        {
+          "stringValue": "shared:cw-v07-051"
+        },
+        {
+          "stringValue": "東埔溫泉"
+        },
+        {
+          "stringValue": "G16"
+        },
+        {
+          "stringValue": "起點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "起點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1052,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 2
+        },
+        {
+          "stringValue": "shared:cw-v07-018"
+        },
+        {
+          "stringValue": "八通關登山口"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1053,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 3
+        },
+        {
+          "stringValue": "shared:cw-v07-076"
+        },
+        {
+          "stringValue": "雲龍瀑布"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1054,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 4
+        },
+        {
+          "stringValue": "shared:cw-v07-054"
+        },
+        {
+          "stringValue": "樂樂山屋"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1055,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 5
+        },
+        {
+          "stringValue": "shared:cw-v07-072"
+        },
+        {
+          "stringValue": "觀高坪"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1056,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 6
+        },
+        {
+          "stringValue": "shared:cw-v07-019"
+        },
+        {
+          "stringValue": "八通關草原"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1057,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 7
+        },
+        {
+          "stringValue": "shared:cw-v07-016"
+        },
+        {
+          "stringValue": "八通關山登山口"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1058,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 8
+        },
+        {
+          "stringValue": "shared:cw-v07-015"
+        },
+        {
+          "stringValue": "八通關山三岔路口"
+        },
+        {
+          "stringValue": "G17 / G16"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1059,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 9
+        },
+        {
+          "stringValue": "shared:cw-v07-014"
+        },
+        {
+          "stringValue": "八通關山"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1060,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 10
+        },
+        {
+          "stringValue": "shared:cw-v07-015"
+        },
+        {
+          "stringValue": "八通關山三岔路口"
+        },
+        {
+          "stringValue": "G17 / G16"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1061,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 11
+        },
+        {
+          "stringValue": "shared:cw-v07-016"
+        },
+        {
+          "stringValue": "八通關山登山口"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1062,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 12
+        },
+        {
+          "stringValue": "shared:cw-v07-046"
+        },
+        {
+          "stringValue": "巴奈伊克山屋"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1063,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 13
+        },
+        {
+          "stringValue": "shared:cw-v07-007"
+        },
+        {
+          "stringValue": "三岔路口"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1064,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 14
+        },
+        {
+          "stringValue": "shared:cw-v07-068"
+        },
+        {
+          "stringValue": "荖濃溪"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1065,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 15
+        },
+        {
+          "stringValue": "shared:cw-v07-064"
+        },
+        {
+          "stringValue": "稜線岔路"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1066,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 16
+        },
+        {
+          "stringValue": "node:8426704609cea5d43db4"
+        },
+        {
+          "stringValue": "杜鵑營地"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1067,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 17
+        },
+        {
+          "stringValue": "shared:cw-v07-033"
+        },
+        {
+          "stringValue": "四岔路口"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1068,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 18
+        },
+        {
+          "stringValue": "shared:cw-v07-035"
+        },
+        {
+          "stringValue": "大水窟山"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1069,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 19
+        },
+        {
+          "stringValue": "shared:cw-v07-060"
+        },
+        {
+          "stringValue": "秀姑坪岔路"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1070,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 20
+        },
+        {
+          "stringValue": "shared:cw-v07-062"
+        },
+        {
+          "stringValue": "秀姑巒山南登山口"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1071,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 21
+        },
+        {
+          "stringValue": "shared:cw-v07-061"
+        },
+        {
+          "stringValue": "秀姑巒山"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1072,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 22
+        },
+        {
+          "stringValue": "shared:cw-v07-062"
+        },
+        {
+          "stringValue": "秀姑巒山南登山口"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1073,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 23
+        },
+        {
+          "stringValue": "shared:cw-v07-060"
+        },
+        {
+          "stringValue": "秀姑坪岔路"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1074,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 24
+        },
+        {
+          "stringValue": "shared:cw-v07-035"
+        },
+        {
+          "stringValue": "大水窟山"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1075,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 25
+        },
+        {
+          "stringValue": "shared:cw-v07-033"
+        },
+        {
+          "stringValue": "四岔路口"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1076,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 26
+        },
+        {
+          "stringValue": "node:8426704609cea5d43db4"
+        },
+        {
+          "stringValue": "杜鵑營地"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1077,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 27
+        },
+        {
+          "stringValue": "shared:cw-v07-064"
+        },
+        {
+          "stringValue": "稜線岔路"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1078,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 28
+        },
+        {
+          "stringValue": "shared:cw-v07-068"
+        },
+        {
+          "stringValue": "荖濃溪"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1079,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 29
+        },
+        {
+          "stringValue": "shared:cw-v07-007"
+        },
+        {
+          "stringValue": "三岔路口"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1080,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 30
+        },
+        {
+          "stringValue": "shared:cw-v07-046"
+        },
+        {
+          "stringValue": "巴奈伊克山屋"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1081,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 31
+        },
+        {
+          "stringValue": "shared:cw-v07-016"
+        },
+        {
+          "stringValue": "八通關山登山口"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1082,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 32
+        },
+        {
+          "stringValue": "shared:cw-v07-019"
+        },
+        {
+          "stringValue": "八通關草原"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1083,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 33
+        },
+        {
+          "stringValue": "shared:cw-v07-072"
+        },
+        {
+          "stringValue": "觀高坪"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1084,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 34
+        },
+        {
+          "stringValue": "shared:cw-v07-054"
+        },
+        {
+          "stringValue": "樂樂山屋"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1085,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 35
+        },
+        {
+          "stringValue": "shared:cw-v07-076"
+        },
+        {
+          "stringValue": "雲龍瀑布"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1086,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 36
+        },
+        {
+          "stringValue": "shared:cw-v07-018"
+        },
+        {
+          "stringValue": "八通關登山口"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1087,
+      "cells": [
+        {
+          "stringValue": "R070"
+        },
+        {
+          "numberValue": 37
+        },
+        {
+          "stringValue": "shared:cw-v07-051"
+        },
+        {
+          "stringValue": "東埔溫泉"
+        },
+        {
+          "stringValue": "G16"
+        },
+        {
+          "stringValue": "終點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "終點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1088,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 1
+        },
+        {
+          "stringValue": "shared:cw-v07-029"
+        },
+        {
+          "stringValue": "向陽森林遊樂區"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "起點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "起點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1089,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 2
+        },
+        {
+          "stringValue": "shared:cw-v07-052"
+        },
+        {
+          "stringValue": "林道登山口"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1090,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 3
+        },
+        {
+          "stringValue": "shared:cw-v07-028"
+        },
+        {
+          "stringValue": "向陽山屋"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1091,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 4
+        },
+        {
+          "stringValue": "shared:cw-v07-070"
+        },
+        {
+          "stringValue": "西側登山口"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1092,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 5
+        },
+        {
+          "stringValue": "shared:cw-v07-027"
+        },
+        {
+          "stringValue": "向陽山"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1093,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 6
+        },
+        {
+          "stringValue": "shared:owner-v0724-xiangyang-junction"
+        },
+        {
+          "stringValue": "向陽山三岔路口"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1094,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 7
+        },
+        {
+          "stringValue": "shared:cw-v07-020"
+        },
+        {
+          "stringValue": "北峰下解說牌"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1095,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 8
+        },
+        {
+          "stringValue": "shared:cw-v07-006"
+        },
+        {
+          "stringValue": "三叉山登山口"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1096,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 9
+        },
+        {
+          "stringValue": "shared:cw-v07-005"
+        },
+        {
+          "stringValue": "三叉山"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1097,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 10
+        },
+        {
+          "stringValue": "shared:cw-v07-031"
+        },
+        {
+          "stringValue": "嘉明湖岔路口"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1098,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 11
+        },
+        {
+          "stringValue": "shared:cw-v07-050"
+        },
+        {
+          "stringValue": "新康山岔路口"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1099,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 12
+        },
+        {
+          "stringValue": "shared:cw-v07-049"
+        },
+        {
+          "stringValue": "拉庫音溪山屋"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1100,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 13
+        },
+        {
+          "stringValue": "local:G17-OVERLAP::g17-overlap-002"
+        },
+        {
+          "stringValue": "南雙頭山"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1101,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 14
+        },
+        {
+          "stringValue": "local:G17-OVERLAP::g17-overlap-010"
+        },
+        {
+          "stringValue": "西北鞍南雙池營地"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1102,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 15
+        },
+        {
+          "stringValue": "local:G17-OVERLAP::g17-overlap-009"
+        },
+        {
+          "stringValue": "雲峰東峰三岔路口營地"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1103,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 16
+        },
+        {
+          "stringValue": "node:85bb625c5f4bcbcf9abe"
+        },
+        {
+          "stringValue": "雲峰"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1104,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 17
+        },
+        {
+          "stringValue": "local:G17-OVERLAP::g17-overlap-009"
+        },
+        {
+          "stringValue": "雲峰東峰三岔路口營地"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1105,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 18
+        },
+        {
+          "stringValue": "local:G17-OVERLAP::g17-overlap-008"
+        },
+        {
+          "stringValue": "轆轆谷山屋"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1106,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 19
+        },
+        {
+          "stringValue": "local:G17-OVERLAP::g17-overlap-007"
+        },
+        {
+          "stringValue": "轆轆山登山口"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1107,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 20
+        },
+        {
+          "stringValue": "node:4b535e7d68c379a6c905"
+        },
+        {
+          "stringValue": "轆轆東峰"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1108,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 21
+        },
+        {
+          "stringValue": "node:9af65faed0dfd594da63"
+        },
+        {
+          "stringValue": "轆轆山"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1109,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 22
+        },
+        {
+          "stringValue": "node:4b535e7d68c379a6c905"
+        },
+        {
+          "stringValue": "轆轆東峰"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1110,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 23
+        },
+        {
+          "stringValue": "local:G17-OVERLAP::g17-overlap-007"
+        },
+        {
+          "stringValue": "轆轆山登山口"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1111,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 24
+        },
+        {
+          "stringValue": "local:G17-OVERLAP::g17-overlap-006"
+        },
+        {
+          "stringValue": "塔芬池"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1112,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 25
+        },
+        {
+          "stringValue": "node:b3c1f683294e1bc1252b"
+        },
+        {
+          "stringValue": "塔芬山"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1113,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 26
+        },
+        {
+          "stringValue": "node:1916736d90dd9626ece3"
+        },
+        {
+          "stringValue": "塔芬谷山屋"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1114,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 27
+        },
+        {
+          "stringValue": "node:4e7ab2e2b7798527927f"
+        },
+        {
+          "stringValue": "達芬尖山登山口"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1115,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 28
+        },
+        {
+          "stringValue": "node:5bd0e4cd667031e35fc1"
+        },
+        {
+          "stringValue": "達芬尖山"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1116,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 29
+        },
+        {
+          "stringValue": "node:4e7ab2e2b7798527927f"
+        },
+        {
+          "stringValue": "達芬尖山登山口"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1117,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 30
+        },
+        {
+          "stringValue": "node:8897886192ce4320aec3"
+        },
+        {
+          "stringValue": "黑水塘"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1118,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 31
+        },
+        {
+          "stringValue": "node:6fbfce66af193ba46514"
+        },
+        {
+          "stringValue": "大水窟山三岔路口"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1119,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 32
+        },
+        {
+          "stringValue": "node:95bb6c335556ae3a2cd6"
+        },
+        {
+          "stringValue": "南大水窟山"
+        },
+        {
+          "stringValue": "G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1120,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 33
+        },
+        {
+          "stringValue": "shared:cw-v07-036"
+        },
+        {
+          "stringValue": "大水窟山屋"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1121,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 34
+        },
+        {
+          "stringValue": "shared:cw-v07-035"
+        },
+        {
+          "stringValue": "大水窟山"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1122,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 35
+        },
+        {
+          "stringValue": "shared:cw-v07-033"
+        },
+        {
+          "stringValue": "四岔路口"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1123,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 36
+        },
+        {
+          "stringValue": "node:8426704609cea5d43db4"
+        },
+        {
+          "stringValue": "杜鵑營地"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1124,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 37
+        },
+        {
+          "stringValue": "shared:cw-v07-064"
+        },
+        {
+          "stringValue": "稜線岔路"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1125,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 38
+        },
+        {
+          "stringValue": "shared:cw-v07-068"
+        },
+        {
+          "stringValue": "荖濃溪"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1126,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 39
+        },
+        {
+          "stringValue": "shared:cw-v07-007"
+        },
+        {
+          "stringValue": "三岔路口"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1127,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 40
+        },
+        {
+          "stringValue": "shared:cw-v07-046"
+        },
+        {
+          "stringValue": "巴奈伊克山屋"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1128,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 41
+        },
+        {
+          "stringValue": "shared:cw-v07-016"
+        },
+        {
+          "stringValue": "八通關山登山口"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1129,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 42
+        },
+        {
+          "stringValue": "shared:cw-v07-015"
+        },
+        {
+          "stringValue": "八通關山三岔路口"
+        },
+        {
+          "stringValue": "G17 / G16"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1130,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 43
+        },
+        {
+          "stringValue": "shared:cw-v07-014"
+        },
+        {
+          "stringValue": "八通關山"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "指定錨點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "指定節點"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1131,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 44
+        },
+        {
+          "stringValue": "shared:cw-v07-015"
+        },
+        {
+          "stringValue": "八通關山三岔路口"
+        },
+        {
+          "stringValue": "G17 / G16"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1132,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 45
+        },
+        {
+          "stringValue": "shared:cw-v07-017"
+        },
+        {
+          "stringValue": "八通關山西峰"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1133,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 46
+        },
+        {
+          "stringValue": "shared:cw-v07-071"
+        },
+        {
+          "stringValue": "西峰岔路"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1134,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 47
+        },
+        {
+          "stringValue": "shared:cw-v07-072"
+        },
+        {
+          "stringValue": "觀高坪"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1135,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 48
+        },
+        {
+          "stringValue": "shared:cw-v07-054"
+        },
+        {
+          "stringValue": "樂樂山屋"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1136,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 49
+        },
+        {
+          "stringValue": "shared:cw-v07-076"
+        },
+        {
+          "stringValue": "雲龍瀑布"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1137,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 50
+        },
+        {
+          "stringValue": "shared:cw-v07-018"
+        },
+        {
+          "stringValue": "八通關登山口"
+        },
+        {
+          "stringValue": "G16 / G17"
+        },
+        {
+          "stringValue": "一般途經點"
+        },
+        {
+          "stringValue": "否"
+        },
+        {
+          "stringValue": "路網候選展開"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "途經"
+        },
+        null,
+        null
+      ]
+    },
+    {
+      "sheetRow": 1138,
+      "cells": [
+        {
+          "stringValue": "R072"
+        },
+        {
+          "numberValue": 51
+        },
+        {
+          "stringValue": "shared:cw-v07-051"
+        },
+        {
+          "stringValue": "東埔溫泉"
+        },
+        {
+          "stringValue": "G16"
+        },
+        {
+          "stringValue": "終點"
+        },
+        {
+          "stringValue": "是"
+        },
+        {
+          "stringValue": "依使用者核對的行走順序"
+        },
+        {
+          "stringValue": "有向步行邊可連通・線形待核"
+        },
+        {
+          "stringValue": "終點"
+        },
+        null,
+        null
+      ]
+    }
+  ]
+}

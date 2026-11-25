@@ -1,0 +1,7 @@
+{
+  "command": "node --test tests/route-validator.test.mjs tests/route-evidence-age.test.mjs tests/route-sequence-review.test.mjs tests/route-review.test.mjs",
+  "passed": 33,
+  "failed": 0,
+  "scope": "Route Validator、來源判定、單調匹配、合法重複、通行限制、boolean及修正資料；未執行完整產品CI／現地驗證",
+  "runtime": "Node 24；不使用已移除的experimental-default-type旗標"
+}

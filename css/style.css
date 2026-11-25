@@ -354,4 +354,67 @@ a.feedback-link{background:#a8481f!important;color:#fff!important;font-weight:70
 a.feedback-link:hover{background:#813716!important}
 a.feedback-link:focus-visible{outline:3px solid #28583d;outline-offset:3px}
 .controls{grid-template-columns:minmax(200px,1fr) minmax(160px,1fr) 150px 100px}
+.classic-panel[hidden]{display:none}
+.source-buttons{display:flex;gap:0;margin-bottom:8px}
+.source-buttons button{flex:1;min-height:44px;border-radius:0;background:#eef3ef;color:#315c45;border:1px solid #bbcbbf;font-size:14px}
+.source-buttons button:first-child{border-radius:7px 0 0 7px}
+.source-buttons button:last-child{border-radius:0 7px 7px 0}
+.source-buttons button[aria-pressed=true]{background:#315f45;color:#fff;border-color:#315f45}
+.manage-display{min-height:44px}
+.day-display-dialog{width:min(640px,94vw);max-height:85dvh;padding:20px;border:1px solid #b8c8bd;border-radius:14px;color:#243e31;box-sizing:border-box;overflow:auto}
+.day-display-dialog::backdrop{background:#142a2080}
+.day-display-dialog h2{margin:0 0 16px;font-size:20px}
+.display-modes,.display-bulk,.display-dialog-actions{display:flex;gap:10px;flex-wrap:wrap}
+.display-modes label{display:flex;gap:6px;align-items:center;min-height:44px;padding:0 12px;border:1px solid #b8c8bd;border-radius:7px;cursor:pointer}
+.display-modes input,.display-node-list input{width:20px;height:20px;flex:none}
+.display-help{font-size:14px;line-height:1.6}
+.display-node-list{max-height:40dvh;overflow:auto;margin:12px 0}
+.display-node-list label{display:flex;align-items:center;gap:10px;min-height:44px;padding:6px;border-bottom:1px solid #e6ece8;font-size:16px}
+.display-dialog-actions{justify-content:flex-end;margin-top:16px}
+.day-display-dialog button{min-height:44px}
+.day-display-dialog [hidden]{display:none}
+.classic-panel{margin:12px 0;padding:16px}
+.classic-fields{display:grid;grid-template-columns:1fr 1fr 130px;gap:12px}
+.classic-panel label{display:flex;flex-direction:column;gap:6px;min-width:0}
+.classic-panel input,.classic-panel select{width:100%;min-width:0;min-height:44px;font-size:16px}
+.classic-actions{display:flex;align-items:end;gap:12px;flex-wrap:wrap}
+.classic-actions label{flex:1;max-width:320px}
+.classic-hint{color:#53665a;font-size:13px;line-height:1.6}
+@media(max-width:600px){.classic-fields{grid-template-columns:1fr}.classic-actions label{max-width:none}.classic-actions button{min-height:44px}.classic-panel{padding:12px}}
 @media(max-width:900px){.controls{grid-template-columns:minmax(0,1fr) 135px}.route-field,.trip-name-field{grid-column:1/-1}}
+/* Keep the metadata block stable when changing the selection source. */
+.controls{align-items:end}
+.controls .source-buttons{margin:0}
+.group-picker-panel{display:flex;align-items:center;gap:10px;padding:12px 14px;margin:12px 0}
+.group-picker-panel label{white-space:nowrap;font-size:13px}
+.group-picker-panel select{min-width:0;flex:1;max-width:420px}
+.group-picker-panel[hidden],.classic-fields label[hidden]{display:none}
+.classic-preview{border:1px solid #d7e2d9;border-radius:9px;padding:12px;margin:12px 0;background:#f8fbf9}
+.classic-preview h3{font-size:15px;margin:0 0 8px}
+.classic-sequence{line-height:1.8;margin:0;overflow-wrap:anywhere}
+
+.classic-preview summary{cursor:pointer;font-size:13px;min-height:32px}
+.classic-preview ol{max-height:220px;overflow:auto;line-height:1.8;margin-bottom:0}
+.day-tools>.node-action-controls{flex-wrap:nowrap}
+.day-tools .node-action-controls>button{height:44px;box-sizing:border-box}
+.day-tools .node-action-controls>.manage-display{margin:0 0 0 clamp(8px, calc((100cqw - 380px) * .5), 160px);min-height:36px;font-size:12px}
+@container dayCard (max-width:1000px){
+ .day-tools{grid-template-columns:minmax(0,1fr);grid-template-areas:"link" "picker" "actions"}
+ .day-tools>.node-action-controls{min-width:0;flex-wrap:nowrap}
+}
+@media(max-width:600px){
+ .day-tools>.node-action-controls{gap:4px;flex-wrap:nowrap;min-width:0}
+ .day-tools .node-action-controls>.add-dest{width:40px;min-width:40px;padding:7px 4px;min-height:44px}
+ .day-tools .node-action-controls>.compact-day-action{padding:7px 5px;font-size:11px;min-height:44px}
+ .day-tools .node-action-controls>.manage-display{margin-left:8px;flex:0 1 auto}
+}
+
+@media(max-width:360px){.day-tools .node-action-controls>.compact-day-action{font-size:10px;padding-left:3px;padding-right:3px}.day-tools .node-action-controls>.manage-display{margin-left:4px}}
+
+/* Display controls belong to the itinerary table. */
+.table-display-tools{padding:5px 13px 0;border-top:1px solid #edf0ed;background:transparent}
+.table-display-tools .manage-display{display:inline-flex;align-items:center;min-height:28px;padding:3px 6px;background:#f4f5f2;color:#40574a;border:1px solid #cbd4cc;border-radius:5px;font-size:12px;font-weight:600;line-height:1.4;margin:0}
+.table-display-tools .manage-display:hover{background:#f0f3f0;border-color:#d9e0d9}
+.table-display-tools .manage-display:focus-visible{outline:3px solid #6487b0;outline-offset:2px}
+.day-card.collapsed .table-display-tools{display:none}
+@media(max-width:600px){.table-display-tools .manage-display{min-height:32px;font-size:12px}}
